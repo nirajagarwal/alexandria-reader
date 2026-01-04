@@ -551,7 +551,7 @@ a:hover {
 
 .entry-content {
     flex: 1;
-    max-width: 680px;
+    max-width: 800px;
     margin: 0 auto;
     padding: var(--space-2xl) var(--space-xl);
     width: 100%;
