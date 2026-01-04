@@ -239,7 +239,7 @@ def generate_cover_image(
     
     # Default style for alexandria.press covers
     if style_prompt is None:
-        style_prompt = """Modern look with light background. Not too busy. Suitable for dark text overlay.
+        style_prompt = """Modern abstract style. Not too busy. Suitable for dark text overlay.
 IMPORTANT: No text, letters, numbers, or symbols anywhere on the image."""
     
     prompt = f"""Create a book cover image (3:4 aspect ratio, portrait orientation).
