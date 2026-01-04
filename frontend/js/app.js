@@ -71,6 +71,18 @@ async function loadBook(bookId) {
         currentBook = await fetchAPI(`/books/${bookId}`);
         document.title = `${currentBook.title} | Alexandria Press`;
 
+        // Update Meta Tags
+        const desc = currentBook.descriptor || `A generated book: ${currentBook.title}`;
+        document.querySelector('meta[name="description"]').setAttribute('content', desc);
+        document.querySelector('meta[property="og:title"]').setAttribute('content', `${currentBook.title} | Alexandria Press`);
+        document.querySelector('meta[property="og:description"]').setAttribute('content', desc);
+        if (currentBook.cover_url) {
+            // Resolve relative path if needed, though usually it's served from root if using /outputs
+            // If cover_url is like "outputs/body/cover.png", we might need to prepend origin if we want full URL
+            const fullCoverUrl = new URL(currentBook.cover_url, window.location.origin).href;
+            document.querySelector('meta[property="og:image"]').setAttribute('content', fullCoverUrl);
+        }
+
         // Load entries for card grid
         currentEntries = await fetchAPI(`/books/${bookId}/entries`);
 
