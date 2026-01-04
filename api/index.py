@@ -17,7 +17,7 @@ from pathlib import Path
 from contextlib import asynccontextmanager
 
 from dotenv import load_dotenv
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
@@ -145,7 +145,26 @@ app.add_middleware(
 
 @app.exception_handler(404)
 async def custom_404_handler(request, __):
-    return FileResponse(BASE_DIR / "public" / "404.html", status_code=404)
+    # Retrieve the path that caused the 404
+    path = request.url.path
+    # Check if we should serve the HTML 404
+    html_404 = BASE_DIR / "public" / "404.html"
+    if html_404.exists():
+        return FileResponse(html_404, status_code=404)
+    return {"error": "Not Found", "detail": f"Path '{path}' not found in API"}
+
+
+@app.get("/debug", tags=["system"])
+async def debug_request(request: Request):
+    """Debug endpoint to inspect request scope."""
+    return {
+        "url": str(request.url),
+        "base_url": str(request.base_url),
+        "path": request.url.path,
+        "root_path": request.scope.get("root_path"),
+        "headers": dict(request.headers),
+        "env_vercel": os.environ.get("VERCEL", "false"),
+    }
 
 
 
