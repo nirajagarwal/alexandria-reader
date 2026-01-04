@@ -671,6 +671,26 @@ a:hover {
     font-weight: 600;
 }
 
+.entry-content ul,
+.content-page-content ul {
+    list-style-type: disc;
+    padding-left: var(--space-xl);
+    margin-bottom: var(--space-md);
+}
+
+.entry-content ol,
+.content-page-content ol {
+    list-style-type: decimal;
+    padding-left: var(--space-xl);
+    margin-bottom: var(--space-md);
+}
+
+.entry-content li,
+.content-page-content li {
+    margin-bottom: var(--space-sm);
+    padding-left: var(--space-xs);
+}
+
 .entry-footer {
     display: flex;
     justify-content: space-between;
