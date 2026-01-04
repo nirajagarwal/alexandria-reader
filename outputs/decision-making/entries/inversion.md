@@ -21,4 +21,4 @@
 **Watch out for:** Inversion finds floor, not ceiling. It tells you how not to lose, not necessarily how to win big. Some opportunities require risk-taking that inversion might screen out. Also, focusing too much on avoiding failure can create analysis paralysis — sometimes you need to move forward despite risks. Use inversion to set boundaries, but don't let it paralyze action. The goal is informed boldness, not fearful avoidance.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

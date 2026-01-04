@@ -28,4 +28,4 @@ Grove's question works because it bypasses emotion: What would someone without o
 When you're trapped debating the same choice endlessly, ask it. If someone replaced you tomorrow, what would they do? Then walk out the door and come back in as that person.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

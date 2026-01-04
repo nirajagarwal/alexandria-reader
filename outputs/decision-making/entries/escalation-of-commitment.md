@@ -22,4 +22,4 @@ Reframe quitting as smart pivoting, not failure. Netflix started as a DVD-by-mai
 **Example:** Concorde, the supersonic passenger jet, became a cautionary tale. By the 1970s, the British and French governments knew the economics didn't work. Fuel costs made tickets unaffordable except for the ultra-wealthy. But they'd invested billions across decades. Politicians couldn't face the headlines: "Government Wastes Taxpayer Money on Failed Jet." So they kept funding it. Concorde flew for 27 years, never turning a profit, hemorrhaging money the entire time. It finally stopped in 2003 not because someone made the hard call, but because a crash forced their hand. The investment was already lost in 1970. They just refused to admit it for three more decades.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

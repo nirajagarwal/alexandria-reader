@@ -16,4 +16,4 @@ Sometimes it helps to flip the frame: every day you continue is a new investment
 **Example:** In 1982, Washington State was building five nuclear power plants. Costs exploded from $4 billion to over $24 billion. Two plants were clearly doomed — wrong locations, impossible construction, massive cost overruns. But the Washington Public Power Supply System kept pouring money in for years, arguing they couldn't "waste" what they'd already spent. They eventually defaulted on $2.25 billion in bonds, the largest municipal bond default in U.S. history. If they'd cut their losses earlier, they would have saved billions. The sunk costs were gone either way. The question was always: should we spend *more*? The trap made them blind to it.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

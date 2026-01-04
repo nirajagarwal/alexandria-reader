@@ -24,4 +24,4 @@ The genius was reframing the decision. Not "Should we help Europe?" but "What do
 When facing a deteriorating situation, ask: Are we treating symptoms or causes? Is the real cost of action higher than the hidden cost of inaction? And critically: What conditions could we attach that align everyone's incentives with the outcome we need?
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

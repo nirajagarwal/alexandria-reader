@@ -20,4 +20,4 @@
 **Watch out for:** This tool assumes you can predict future feelings, but you're probably worse at that than you think. You might underestimate how quickly you'll adapt to either success or failure. It also privileges long-term thinking, which isn't always right — sometimes the urgent matters more than the important. And some people use this to avoid all short-term discomfort, turning it into a procrastination engine. The rule works best as a check on impulse, not as a replacement for values or as permission to ignore present needs.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

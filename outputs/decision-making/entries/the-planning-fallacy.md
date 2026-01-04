@@ -31,4 +31,4 @@ Finally, track your estimates versus reality. Keep a log. The pattern becomes un
 **Example:** In 1977, the Sydney Opera House opened — ten years late and 1,357% over budget. The original estimate: four years and $7 million. The reality: fourteen years and $102 million. The architects planned for the building tasks but not for the unprecedented engineering challenges of those dramatic concrete shells, or the political fights, or the design changes, or the acoustic complexities discovered mid-construction. They used the inside view of their ambitious design and ignored the outside view that groundbreaking buildings always take longer than planned.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

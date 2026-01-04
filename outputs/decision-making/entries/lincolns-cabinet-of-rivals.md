@@ -30,4 +30,4 @@ Ask: Am I avoiding this person because they're wrong, or because they make me un
 The cost is real. Managing strong personalities with competing ambitions takes energy that could go elsewhere. But for decisions that shape years or lives or organizations, the alternative — a team that never challenges you — is more dangerous than the friction.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

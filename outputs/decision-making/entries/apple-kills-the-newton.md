@@ -20,4 +20,4 @@ Meanwhile, Palm filled the PDA void. Microsoft poured resources into Windows Mob
 This is the hardest kind of decision: when your best option still hurts. When you know you're sacrificing something valuable but can't afford to keep it. The discipline isn't choosing between good and bad — it's choosing between survival and potential, between today and tomorrow. Jobs made the only choice he could. But understanding it was necessary doesn't make it painless.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

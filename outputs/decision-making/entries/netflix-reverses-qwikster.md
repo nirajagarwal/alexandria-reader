@@ -24,4 +24,4 @@ Three weeks feels fast for a corporate reversal, but it was slow enough that it 
 When you've made a wrong choice, ask: What would I decide if this were someone else's mistake? That distance helps. Your ego wants to defend the original decision. Your customers, your team, your future self — they all want you to fix it.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

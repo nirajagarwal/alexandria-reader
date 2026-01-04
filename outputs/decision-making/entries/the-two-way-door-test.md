@@ -22,4 +22,4 @@
 **Watch out for:** Calling something a two-way door when it isn't. Sunk costs accumulate. Momentum builds. Relationships change. A "temporary" hire becomes hard to fire. A "trial" partnership creates dependencies. Test your reversal scenario: Would you actually walk back through? What would stop you? Also: some leaders overuse this framework to justify recklessness ("Everything's reversible!") or analysis paralysis ("Nothing's truly reversible!"). The tool works when you're honest about real reversal costs.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

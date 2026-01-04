@@ -25,4 +25,4 @@ Stop when you reach something you can actually fix. Here, the root cause isn't "
 The 5 Whys works because problems rarely are what they appear to be. The late launch isn't really about bugs. The broken machine isn't really about fuses. The technique forces you past your first explanation to something you can actually change.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

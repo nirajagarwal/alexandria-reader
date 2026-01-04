@@ -26,4 +26,4 @@ Suddenly clear: "I'd tell Mark to let it go. Document the learnings. Move to som
 **Watch out for:** The test fails if you're too generous or too harsh with the hypothetical friend. Some people give others permission they won't give themselves ("It's okay to quit"). Others hold others to impossible standards ("They should make it work"). The goal isn't to be nice or tough — it's to be clear. Also, if you already know what you "should" do but don't want to, the outsider test just becomes another voice you'll ignore.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

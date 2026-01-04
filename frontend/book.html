@@ -25,34 +25,15 @@
 
 <body>
 
-    <!-- Book View (Card Grid) -->
-    <div class="book-view hidden" id="bookView">
-        <header class="book-header">
-            <button class="back-to-cover" id="backToCover">←</button>
-            <div class="book-header-title">
-                <h1 id="bookTitle"></h1>
-                <p id="bookDescriptor"></p>
-            </div>
-            <nav class="book-nav">
-                <a href="#" id="introLink">Introduction</a>
-                <a href="#" id="appendixLink">Appendix</a>
-                <a href="#" id="colophonLink">Colophon</a>
-            </nav>
-        </header>
-
-        <main class="card-grid" id="cardGrid">
-            <!-- Cards loaded dynamically -->
-        </main>
-    </div>
-
     <!-- Entry View -->
     <div class="entry-view hidden" id="entryView">
         <header class="entry-header">
-            <button class="back-to-grid" id="backToGrid">←</button>
-            <span class="entry-position" id="entryPosition"></span>
-            <div class="entry-nav">
-                <button class="nav-prev" id="prevEntry" disabled>Previous</button>
-                <button class="nav-next" id="nextEntry" disabled>Next</button>
+            <button class="nav-btn-back" id="backToGrid" title="Back to Library">←</button>
+            <div class="entry-header-right">
+                <span class="entry-position" id="entryPosition"></span>
+                <button class="nav-btn-contents" id="contentsTrigger">Contents</button>
+                <button class="nav-btn" id="prevEntry" disabled>Previous</button>
+                <button class="nav-btn" id="nextEntry" disabled>Next</button>
             </div>
         </header>
 
@@ -61,10 +42,23 @@
         </article>
 
         <footer class="entry-footer">
-            <button class="nav-prev-footer" id="prevEntryFooter" disabled>← Previous</button>
-            <button class="back-to-grid-footer" id="backToGridFooter">All Entries</button>
-            <button class="nav-next-footer" id="nextEntryFooter" disabled>Next →</button>
+            <button class="nav-btn nav-prev-footer" id="prevEntryFooter" disabled>← Previous</button>
+            <button class="nav-btn back-to-grid-footer" id="backToGridFooter">Library</button>
+            <button class="nav-btn nav-next-footer" id="nextEntryFooter" disabled>Next →</button>
         </footer>
+    </div>
+
+    <!-- Contents Menu Overlay -->
+    <div class="contents-overlay hidden" id="contentsOverlay">
+        <div class="contents-menu">
+            <header class="contents-menu-header">
+                <h2>Contents</h2>
+                <button class="contents-close" id="contentsClose">×</button>
+            </header>
+            <nav class="contents-menu-links" id="contentsMenuLinks">
+                <!-- Links populated dynamically -->
+            </nav>
+        </div>
     </div>
 
     <!-- Content Page View (Introduction, Appendix, Colophon) -->
@@ -77,6 +71,10 @@
         <article class="content-page-content" id="contentPageContent">
             <!-- Content rendered here -->
         </article>
+
+        <footer class="content-page-footer hidden" id="contentPageFooter">
+            <!-- Dynamic buttons like "Start Reading" here -->
+        </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>

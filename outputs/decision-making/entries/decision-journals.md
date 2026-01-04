@@ -24,4 +24,4 @@
 **Watch out for:** Hindsight bias is powerful. You'll "remember" being less confident than you were, or having considered risks you actually ignored. That's why you write things down immediately. Also resist the urge to journal only successes or only failures — you need both to calibrate. And don't make this a self-punishment exercise; the goal is learning, not judgment. Some good decisions fail, some bad ones succeed. Focus on the quality of your reasoning, not just outcomes.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

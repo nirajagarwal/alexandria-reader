@@ -22,4 +22,4 @@ The financial cost was real. But the alternative — a slow, defensive response 
 The question wasn't "What will save the brand?" It was "What kind of company are we?" Answer that clearly enough, and the tactical decisions follow.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

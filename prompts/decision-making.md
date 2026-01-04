@@ -2,7 +2,7 @@
 
 ## The Work
 
-You are writing entries for Decision-Making: One Page at a Time. Each entry is a self-contained page about one tool, trap, or story related to making decisions.
+You are writing entries for Decision-Making: Tools, Traps and Stories. Each entry is a self-contained page about one tool, trap, or story related to making decisions.
 
 The reader is someone facing choices — career, financial, relational, ethical. They want practical wisdom, not theory. They want to understand enough to act, not to become an expert. Each page should leave them better equipped.
 
@@ -42,7 +42,7 @@ Frameworks and techniques for making better decisions.
 **Watch out for:** [Limits or ways this tool can mislead]
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*
 ```
 
 ### Traps
@@ -67,7 +67,7 @@ The ways decisions go wrong.
 **Example:** [A specific scenario showing the trap]
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*
 ```
 
 ### Stories
@@ -90,7 +90,7 @@ Real decisions — famous, infamous, consequential.
 **The lesson:** [What we learn from this — make it applicable beyond the specific case]
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*
 ```
 
 ## Length

@@ -18,4 +18,4 @@ Ask others to steelman the opposite view — not to dismiss it, but to present i
 **Example:** In 2003, the CIA believed Iraq had weapons of mass destruction. They had some evidence: past programs, suspicious shipments, defector testimony. But they also had a belief, shaped by years of watching Saddam Hussein. When sources contradicted the WMD narrative, analysts found reasons to discount them — "unreliable source," "probably deception," "inconsistent with other intelligence." When sources supported it, even weak ones, they seemed credible. The conclusion felt obvious. The evidence was shaped around it. The invasion happened. The weapons were never found. The cost was hundreds of thousands of lives and trillions of dollars. The analysts weren't corrupt or stupid. They just saw what they expected to see.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

@@ -20,4 +20,4 @@ Consider opportunity cost. Holding that declining stock isn't "avoiding a loss" 
 **Example:** Blockbuster had everything to lose and Netflix had everything to gain. In 2000, Netflix offered to sell to Blockbuster for $50 million. Blockbuster said no. They couldn't see past the loss — cannibalizing their profitable late-fee business, abandoning their massive real estate investment, admitting the world had changed. By 2010, Blockbuster filed for bankruptcy. Netflix became worth billions. Blockbuster's loss aversion protected them from risk in the short term and guaranteed catastrophe in the long term. They were so focused on not losing what they had that they lost everything.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

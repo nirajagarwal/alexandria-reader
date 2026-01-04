@@ -24,4 +24,4 @@ Accept that good decisions don't require certainty. They require enough informat
 The research hadn't revealed anything new after the first week. It had just postponed the moment where Sarah had to choose one path and abandon the other. The paralysis cost her both options.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

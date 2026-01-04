@@ -24,4 +24,4 @@
 **Watch out for:** Satisficing fails when your threshold is wrong. Set it too low and you'll regret taking the first mediocre option. Set it too high and you'll never find anything that qualifies — you've turned satisficing back into maximizing. Also, beware using satisficing for rare, high-stakes decisions (choosing a spouse, picking a business partner, buying a house). When you'll live with the choice for years and there's genuine variance in outcomes, the exhaustive search might be worth it.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

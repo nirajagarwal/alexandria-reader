@@ -26,4 +26,4 @@ Watch for decisions where people with the most relevant knowledge aren't the one
 And if you're the engineer in the room — the one with the charts everyone's stopped looking at — document it. Say it clearly. Know that even if you're overruled, speaking up matters. Ebeling and Boisjoly were right. They said so. The record shows it. That's not nothing.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

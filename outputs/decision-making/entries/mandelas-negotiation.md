@@ -24,4 +24,4 @@ The harder lesson: major decisions sometimes require you to act alone, before co
 When you face an impossible situation, ask yourself: is there a conversation I'm refusing to have? Not because it won't work, but because having it feels like betrayal, or weakness, or premature compromise? Mandela chose to have that conversation. It changed a country.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

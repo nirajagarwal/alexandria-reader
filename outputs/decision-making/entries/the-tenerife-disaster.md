@@ -26,4 +26,4 @@ When someone junior to you expresses doubt, treat it as crucial data, not insubo
 The industry learned. Modern cockpit resource management training explicitly addresses power dynamics and encourages crew members to challenge captains. The lesson cost 583 lives to learn, but it changed how aviation handles decisions under pressure.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

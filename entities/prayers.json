@@ -1,7 +1,7 @@
 {
   "collection_id": "prayers",
   "title": "Prayers",
-  "descriptor": null,
+  "descriptor": "A Collection",
   "card_display": {
     "primary": "name",
     "secondary": "tradition",

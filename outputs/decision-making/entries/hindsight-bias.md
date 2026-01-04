@@ -20,4 +20,4 @@ Judge decisions by their process, not just their results. A good decision with a
 **Example:** In 2006, Yahoo turned down Microsoft's offer to buy them for $44.6 billion. By 2008, Yahoo's value had collapsed. In hindsight, this looks catastrophically stupid. But at the time of the decision, Yahoo was a major internet player, Google was their real competition, and many analysts thought they could recover. The decision was debatable then — we've just rewritten it as obvious because we know how the story ends.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

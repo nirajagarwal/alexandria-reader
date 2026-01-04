@@ -14,4 +14,4 @@
 **Watch out for:** The pressure to say "go" can become overwhelming. If the boss is pushing, if everyone else has said "go," if delay is expensive — the pull toward conformity is strong. The process only works if "no-go" is genuinely acceptable. Also, you need real criteria. If people are guessing what "go" means, you're just performing certainty. Finally, this isn't consensus-building. It's not a discussion. That can feel cold, but speed and clarity are the point. Run your debates before the poll, not during.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

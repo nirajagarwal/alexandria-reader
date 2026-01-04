@@ -14,4 +14,4 @@
 **Example:** Netflix in 2011 faced what seemed like a binary choice: raise prices on their combined DVD-mail and streaming service, or keep prices low and sacrifice margins. They chose to raise prices and split the services — Qwikster for DVDs, Netflix for streaming. Customers revolted. 800,000 cancelled. Stock dropped 77%. The narrow frame was "raise prices or don't raise prices." The unconsidered alternative: raise prices gradually, grandfather existing customers, invest the profits in content to make the value obvious before changing the price. They were so locked into their either-or that they missed the spectrum between. Reed Hastings later called it his biggest mistake. The lesson wasn't about pricing. It was about noticing when you're only seeing two doors in a hallway that has many.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

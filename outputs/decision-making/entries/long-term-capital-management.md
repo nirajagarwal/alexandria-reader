@@ -24,4 +24,4 @@ The smartest people in the room forgot that intelligence doesn't eliminate uncer
 Trust your models, but never stop asking: what could happen that we haven't modeled? What are we not seeing? The most dangerous decision is the one you don't realize you're making.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

@@ -14,4 +14,4 @@
 **Watch out for:** Kill criteria can become too rigid. Revisit them periodically — your circumstances change. Also resist the temptation to add criteria mid-evaluation to rationalize a decision you've already emotionally made. The power comes from deciding your deal-breakers before you fall in love with (or against) a specific option.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

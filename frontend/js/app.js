@@ -9,6 +9,7 @@ const API_BASE = '';
 let currentBook = null;
 let currentEntries = [];
 let currentEntry = null;
+let isMenuOpen = false;
 
 /* -----------------------------------------------------------------------------
    API Calls
@@ -84,6 +85,9 @@ async function loadBook(bookId) {
         // Load entries for navigation
         currentEntries = await fetchAPI(`/books/${bookId}/entries`);
 
+        // Populate the contents menu
+        populateMenu(bookId);
+
         // Navigate directly to first entry if available
         if (currentEntries.length > 0) {
             loadEntry(bookId, currentEntries[0].slug);
@@ -105,19 +109,95 @@ async function loadBook(bookId) {
 // Grid view removed as per requirements
 
 function setupBookNav(bookId) {
-    document.getElementById('introLink').addEventListener('click', (e) => {
-        e.preventDefault();
-        loadContentPage(bookId, 'introduction', 'Introduction');
-    });
+    // Menu trigger
+    const trigger = document.getElementById('contentsTrigger');
+    if (trigger) {
+        trigger.onclick = toggleMenu;
+    }
 
-    document.getElementById('appendixLink').addEventListener('click', (e) => {
-        e.preventDefault();
-        loadContentPage(bookId, 'appendix', 'Appendix: The Prompt');
-    });
+    // Menu close
+    const closeBtn = document.getElementById('contentsClose');
+    if (closeBtn) {
+        closeBtn.onclick = closeMenu;
+    }
 
-    document.getElementById('colophonLink').addEventListener('click', (e) => {
-        e.preventDefault();
-        loadContentPage(bookId, 'colophon', 'Colophon');
+    // Overlay click to close
+    const overlay = document.getElementById('contentsOverlay');
+    if (overlay) {
+        overlay.onclick = (e) => {
+            if (e.target === overlay) closeMenu();
+        };
+    }
+}
+
+function toggleMenu() {
+    isMenuOpen = !isMenuOpen;
+    const overlay = document.getElementById('contentsOverlay');
+    if (isMenuOpen) {
+        overlay.classList.remove('hidden');
+        document.body.style.overflow = 'hidden'; // Prevent scroll
+    } else {
+        overlay.classList.add('hidden');
+        document.body.style.overflow = '';
+    }
+}
+
+function closeMenu() {
+    isMenuOpen = false;
+    document.getElementById('contentsOverlay').classList.add('hidden');
+    document.body.style.overflow = '';
+}
+
+async function populateMenu(bookId) {
+    const menuLinks = document.getElementById('contentsMenuLinks');
+    if (!menuLinks) return;
+
+    let html = '';
+
+    // Entries Section
+    html += '<h3 class="menu-section-title">Chapters</h3>';
+    html += '<ul class="menu-list primary-entries">';
+    html += currentEntries.map(entry => `
+        <li>
+            <a href="#" data-slug="${entry.slug}" class="${currentEntry && currentEntry.slug === entry.slug ? 'active' : ''}">
+                <span class="menu-name">${entry.name}</span>
+            </a>
+        </li>
+    `).join('');
+    html += '</ul>';
+
+    html += '<hr class="menu-divider">';
+
+    // Standard pages (now at the bottom)
+    const pages = [
+        { id: 'introLink', type: 'introduction', label: 'About' },
+        { id: 'appendixLink', type: 'appendix', label: 'Prompt' },
+        { id: 'colophonLink', type: 'colophon', label: 'Colophon' }
+    ];
+
+    html += '<ul class="menu-list secondary-pages">';
+    pages.forEach(page => {
+        html += `<li><a href="#" data-type="${page.type}">${page.label}</a></li>`;
+    });
+    html += '</ul>';
+
+    menuLinks.innerHTML = html;
+
+    // Add click handlers
+    menuLinks.querySelectorAll('a').forEach(link => {
+        link.onclick = (e) => {
+            e.preventDefault();
+            const slug = link.dataset.slug;
+            const type = link.dataset.type;
+
+            if (slug) {
+                loadEntry(bookId, slug);
+            } else if (type) {
+                const label = pages.find(p => p.type === type).label;
+                loadContentPage(bookId, type, label);
+            }
+            closeMenu();
+        };
     });
 }
 
@@ -181,11 +261,11 @@ function setupEntryNav(nav) {
         prevBtnFooter.disabled = false;
         prevBtn.onclick = () => loadEntry(currentBook.book_id, nav.prev.slug);
         prevBtnFooter.onclick = prevBtn.onclick;
-        prevBtnFooter.textContent = `← ${nav.prev.name}`;
+        prevBtnFooter.textContent = 'Previous';
     } else {
         prevBtn.disabled = true;
         prevBtnFooter.disabled = true;
-        prevBtnFooter.textContent = '← Previous';
+        prevBtnFooter.textContent = 'Previous';
     }
 
     // Next
@@ -194,11 +274,11 @@ function setupEntryNav(nav) {
         nextBtnFooter.disabled = false;
         nextBtn.onclick = () => loadEntry(currentBook.book_id, nav.next.slug);
         nextBtnFooter.onclick = nextBtn.onclick;
-        nextBtnFooter.textContent = `${nav.next.name} →`;
+        nextBtnFooter.textContent = 'Next';
     } else {
         nextBtn.disabled = true;
         nextBtnFooter.disabled = true;
-        nextBtnFooter.textContent = 'Next →';
+        nextBtnFooter.textContent = 'Next';
     }
 }
 
@@ -209,14 +289,14 @@ function setupEntryNav(nav) {
 async function loadContentPage(bookId, type, title) {
     try {
         const data = await fetchAPI(`/books/${bookId}/${type}`);
-        showContentPage(title, data.content);
+        showContentPage(title, data.content, bookId, type);
     } catch (error) {
         console.error(`Failed to load ${type}:`, error);
         alert(`Failed to load ${type}`);
     }
 }
 
-function showContentPage(title, content) {
+function showContentPage(title, content, bookId, type) {
     if (document.getElementById('bookView')) {
         document.getElementById('bookView').classList.add('hidden');
     }
@@ -226,15 +306,57 @@ function showContentPage(title, content) {
     document.getElementById('contentPageTitle').textContent = title;
 
     const contentEl = document.getElementById('contentPageContent');
+    const footer = document.getElementById('contentPageFooter');
+    const pageView = document.getElementById('contentPageView');
 
-    // Check if it looks like markdown (has headers, etc)
-    if (content && (content.includes('#') || content.includes('**'))) {
-        contentEl.innerHTML = marked.parse(content);
+    // Reset specific page classes
+    pageView.classList.remove('is-appendix');
+
+    // Handle content rendering based on page type
+    if (type === 'appendix') {
+        pageView.classList.add('is-appendix');
+
+        // Truly raw rendering: No markdown, no paragraphs, just a pre block
+        contentEl.innerHTML = '<pre class="appendix-code"><code id="rawAppendixCode"></code></pre>';
+        document.getElementById('rawAppendixCode').textContent = content;
+
+        footer.innerHTML = `<button class="start-reading-btn" id="copyAppendixBtn">Copy Prompt</button>`;
+        footer.classList.remove('hidden');
+
+        document.getElementById('copyAppendixBtn').onclick = (e) => {
+            navigator.clipboard.writeText(content).then(() => {
+                const btn = e.target;
+                const originalText = btn.textContent;
+                btn.textContent = 'Copied!';
+                btn.style.background = 'var(--text-secondary)';
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.style.background = '';
+                }, 2000);
+            });
+        };
     } else {
-        // Wrap plain text in paragraphs
-        contentEl.innerHTML = content
-            ? content.split('\n\n').map(p => `<p>${p}</p>`).join('')
-            : '<p>No content available.</p>';
+        // Standard rendering for About, Colophon, etc.
+        if (content && (content.includes('#') || content.includes('**'))) {
+            contentEl.innerHTML = marked.parse(content);
+        } else {
+            // Wrap plain text in paragraphs
+            contentEl.innerHTML = content
+                ? content.split('\n\n').map(p => `<p>${p}</p>`).join('')
+                : '<p>No content available.</p>';
+        }
+
+        // About page logic
+        if (type === 'introduction' && currentEntries.length > 0) {
+            footer.innerHTML = `<button class="start-reading-btn" id="startReadingBtn">Start Reading</button>`;
+            footer.classList.remove('hidden');
+            document.getElementById('startReadingBtn').onclick = () => {
+                loadEntry(bookId, currentEntries[0].slug);
+            };
+        } else {
+            footer.innerHTML = '';
+            footer.classList.add('hidden');
+        }
     }
 
     // Setup back button to go to library
@@ -260,6 +382,10 @@ document.addEventListener('keydown', (e) => {
         const nextBtn = document.getElementById('nextEntry');
         if (!nextBtn.disabled) nextBtn.click();
     } else if (e.key === 'Escape') {
-        document.getElementById('backToGrid').click();
+        if (isMenuOpen) {
+            closeMenu();
+        } else {
+            document.getElementById('backToGrid').click();
+        }
     }
 });

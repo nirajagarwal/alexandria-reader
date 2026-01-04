@@ -14,4 +14,4 @@
 **Watch out for:** Some decisions genuinely need more time — don't time-box life-or-death medical choices or major financial commitments without proper due diligence. The tool works when the timer forces you to act on available information, not when it forces you to act without necessary information. Also watch for using artificially short timers to avoid difficult emotional work. "I gave myself five minutes to decide about the relationship" might mean you're running from the real conversation you need to have.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

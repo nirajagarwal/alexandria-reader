@@ -18,4 +18,4 @@ Third, take real breaks. Decision fatigue isn't permanent. Food helps — Israel
 **Example:** A hospital emergency room at 2 AM. The doctors have been on shift for 11 hours. A patient arrives with ambiguous symptoms. The tired doctor, facing her 40th decision of the shift, orders the standard battery of tests instead of thinking through what's actually needed. Not because she's incompetent — she's exhausted. The morning version of herself would have made a different choice. Now she defaults to the protocol, which is usually fine but occasionally misses something important. Decision fatigue doesn't announce itself. It just quietly degrades your judgment until someone else points out the pattern.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

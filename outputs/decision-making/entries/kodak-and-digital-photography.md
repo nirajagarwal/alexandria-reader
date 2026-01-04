@@ -20,4 +20,4 @@ Meanwhile, competitors with no film business to protect — Sony, Canon, Nikon, 
 When you're facing a choice between protecting what's working now and preparing for what's coming next, ask yourself: am I making this decision, or is my current business model making it for me? The answer matters more than you think.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

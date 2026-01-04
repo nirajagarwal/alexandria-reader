@@ -37,4 +37,4 @@ The invasion was a disaster: 1,400 Cuban exiles defeated in three days.
 Kennedy learned. During the Cuban Missile Crisis eighteen months later, he deliberately stayed out of early meetings to avoid swaying the group. He brought in outside experts. He encouraged debate and protected dissenters. The decision-making was messier — and it prevented nuclear war.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

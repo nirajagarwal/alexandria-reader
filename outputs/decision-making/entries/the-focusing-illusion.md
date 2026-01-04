@@ -26,4 +26,4 @@ Ask people who've made similar changes what surprised them. They'll tell you wha
 She takes the higher-paying job. Three months in, the salary feels normal. She barely notices it day-to-day. The weekly travel exhausts her. The micromanagement frustrates her. The work bores her. The money didn't become unimportant — but it became one factor among many, not the dominant one her decision-making assumed.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

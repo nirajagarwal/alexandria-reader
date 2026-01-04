@@ -28,4 +28,4 @@ When facing a decision that seems risky, ask: what am I really choosing between?
 The hardest part isn't making bold decisions. It's sticking with them through the initial chaos when they seem to be failing. Ohno's competitors saw the chaos and retreated. Ohno saw it and leaned in.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

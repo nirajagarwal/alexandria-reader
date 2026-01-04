@@ -14,4 +14,4 @@
 **Watch out for:** Fake red teaming is worse than none. If the exercise is theater — if the red team knows their job is to raise concerns that will be noted and ignored — you've just inoculated yourself against real criticism. Also, red teams can be wrong. They might find flaws in a sound plan or miss the actual vulnerabilities. The goal isn't to follow their recommendations blindly, but to stress-test your thinking against an intelligent adversary. Finally, don't red team trivial decisions. The process has costs — time, energy, morale. Save it for when the stakes justify the scrutiny.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

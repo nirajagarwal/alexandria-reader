@@ -22,4 +22,4 @@ The board? No criminal liability. But their reputations bore the stain of being 
 The right question—"Show me the test results compared to standard labs"—would have ended this in 2011. Nobody with power asked it. They were captured by the founder they were supposed to oversee, chosen precisely because they wouldn't know what questions to ask.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

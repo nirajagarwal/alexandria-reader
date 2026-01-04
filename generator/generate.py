@@ -199,7 +199,7 @@ This is an AI-generated collection published on alexandria.press. The introducti
 - Match the voice: restrained, clear, confident, no flourishes
 - End with an invitation to begin
 
-Do not use headers. Write in paragraphs."""
+Do not use headers. Do NOT add a title. Write in paragraphs."""
 
     message = client.messages.create(
         model=ANTHROPIC_MODEL,

@@ -14,4 +14,4 @@
 **Example:** In 1985, Coca-Cola launched New Coke after extensive taste tests showed people preferred it to both Pepsi and original Coke. The company was certain — the data was clear, the research was thorough. They discontinued the original formula. Within weeks, the backlash was massive. They'd been overconfident about what the taste tests measured. People weren't just buying a flavor; they were buying tradition, identity, nostalgia. Coca-Cola knew the data perfectly but overestimated how much the data mattered. Three months later, they brought back "Coca-Cola Classic."
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

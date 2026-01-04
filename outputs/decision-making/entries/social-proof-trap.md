@@ -33,4 +33,4 @@ He stayed B2B. Eighteen months later, most of those e-commerce companies were go
 The trap isn't that popular choices are always wrong — sometimes they're right. The trap is outsourcing your judgment to a crowd that's outsourcing theirs.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

@@ -26,4 +26,4 @@ What the story reveals is what happens when you can't gather more information, c
 The lesson isn't whether Truman was right. Historians still argue. The lesson is that consequential decisions often have this shape: incomplete information, irreversible consequences, impossible alternatives, and no time to wait. When you face that shape, understand what you're choosing between, be clear about whose interests you're prioritizing, and accept that history's judgment will depend on facts you can't yet see.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

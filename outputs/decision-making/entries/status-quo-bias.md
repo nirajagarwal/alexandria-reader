@@ -14,4 +14,4 @@
 **Example:** In the 1980s, New Jersey and Pennsylvania offered drivers different car insurance options. New Jersey made full tort the default (you can sue for damages) with an option to choose limited tort (lower premiums, restricted lawsuits). Pennsylvania flipped it — limited tort was default. Economically identical choices. But in New Jersey, only 20% switched to limited tort. In Pennsylvania, only 25% switched to full tort. The default won in both states. Four out of five drivers simply accepted whatever was already checked on the form, even though checking a different box cost nothing and the decision affected thousands of dollars and legal rights. The status quo shaped choices more than preferences did.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

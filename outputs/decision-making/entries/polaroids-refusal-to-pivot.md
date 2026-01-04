@@ -34,4 +34,4 @@ Polaroid could have led digital photography. They had the brand, the engineers, 
 That's not stupidity. That's the trap of success — when what works today blinds you to what's required tomorrow.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

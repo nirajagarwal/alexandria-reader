@@ -21,4 +21,4 @@
 **Watch out for:** This test only works if you're honest about your reaction. If you immediately rationalize the result ("Well, the coin said corporate, so that must be the smart choice"), you're defeating the purpose. Also, it doesn't work for complex decisions with more than two real options — you can't meaningfully flip a coin between four different graduate programs. And it's useless for decisions where your gut instinct is the problem, like addictions or self-destructive patterns. The coin flip test assumes your intuition knows something worth listening to. Sometimes it doesn't.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

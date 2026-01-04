@@ -16,4 +16,4 @@ He bought when others were fearful, but not blindly. He'd spent years understand
 **The lesson:** Great decisions often require three elements that Buffett displayed: patience to wait for the right price (he'd watched Coke for decades), conviction to act when others won't (buying during market fear), and clarity about what makes something valuable long-term (the moat, not the moment). Notice he didn't need to predict when sentiment would turn — he just needed to be right about the underlying business value. The market eventually came around to his view, but he would have been fine waiting years if needed. He wasn't making a bet on timing. He was making a bet on value that would compound regardless of short-term market mood.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

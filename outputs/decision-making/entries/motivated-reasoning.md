@@ -14,4 +14,4 @@
 **Example:** In 2003, Kodak's leadership evaluated whether to invest heavily in digital photography. They had access to the same market data as everyone else — digital was obviously the future. But Kodak made money from film and printing, so their analysis kept finding reasons to protect the traditional business. Digital cameras needed better quality. Consumers weren't ready. The printing business would remain strong. Each argument had some truth, but together they formed a motivated conclusion: we can delay. By 2012, Kodak filed for bankruptcy. They weren't stupid — they were reasoning toward an answer that preserved what they had built, rather than reasoning toward what was true.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

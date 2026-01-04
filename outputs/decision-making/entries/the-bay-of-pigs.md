@@ -24,4 +24,4 @@ Ask: Who isn't speaking? What aren't we questioning? What would we do differentl
 The smartest group can make the dumbest decision if no one will risk breaking consensus.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

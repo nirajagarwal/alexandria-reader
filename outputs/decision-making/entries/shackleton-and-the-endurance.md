@@ -28,4 +28,4 @@ Shackleton didn't say "We'll cross a smaller section" or "We'll make important s
 When your plan fails catastrophically, the decision isn't whether to adjust. It's whether you can abandon your original goal completely and commit fully to what survival requires.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

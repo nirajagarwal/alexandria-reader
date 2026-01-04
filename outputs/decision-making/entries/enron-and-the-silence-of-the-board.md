@@ -24,4 +24,4 @@ When you're the person who sees the problem others are ignoring, you face a choi
 The next time you're in a room where everyone seems aligned and you feel doubt, remember: the Enron board wasn't full of fools. It was full of people who decided not to be the one who objects.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

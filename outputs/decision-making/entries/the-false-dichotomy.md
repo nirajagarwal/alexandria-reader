@@ -28,4 +28,4 @@ A friend asked: "What would you need to make Singapore work?" Sarah listed condi
 The real options: negotiate different terms for Singapore, pursue growth locally, or look for international opportunities in cities that fit her life better. The choice wasn't binary. The urgency was artificial. She took three weeks, got creative, and ended up with a hybrid role no one had initially considered.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

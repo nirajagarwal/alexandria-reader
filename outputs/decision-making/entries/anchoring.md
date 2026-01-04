@@ -18,4 +18,4 @@ Get a second opinion from someone who hasn't seen the anchor. They'll often name
 **Example:** In 2008, Lehman Brothers was shopping itself to potential buyers. The asking price was around $4 billion. Barclays and Bank of America examined the books and walked away — even at that anchor point, the deal looked bad. When Lehman went to $2 billion, then $1 billion in desperation, it still found no buyers. The firm was worth less than zero. But for crucial days, everyone involved spent energy negotiating around those initial billions, asking "how much less than $4 billion?" instead of "should we be involved at all?" The anchor delayed the real question.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

@@ -28,4 +28,4 @@ The Apollo 13 decision-making model works when three conditions hold: the stakes
 Most decisions aren't Apollo 13. But when they are — when failure truly isn't acceptable and there's no time for contingency planning — frame it clearly, commit completely, and improvise relentlessly.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

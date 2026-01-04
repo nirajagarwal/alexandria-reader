@@ -16,4 +16,4 @@ He quit his job, drove cross-country, and wrote the business plan in the passeng
 **The lesson:** When facing an uncertain opportunity, two questions clarify: What will I regret not trying? And what's the real worst case? Bezos didn't minimize the risk of failure — he expected it might happen. But he distinguished between two kinds of failure: the kind you can recover from, and the kind you can't. A failed startup was recoverable. A lifetime wondering "what if" wasn't. This framing doesn't work for every decision — some risks truly are catastrophic. But many decisions we agonize over have bearable downsides and unbearable regrets. The question isn't whether you might fail. It's whether you can live with not having tried.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

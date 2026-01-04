@@ -22,4 +22,4 @@ In 2011, Bangalore banned plastic bags. Fruit vendors who'd relied on plastic to
 **Watch out for:** Paralysis — you can always imagine another consequence. Stop at 3-5 steps or when you hit genuine uncertainty. Also watch for motivated reasoning: tracing only the consequences that support your preferred choice. The tool works only if you're genuinely curious about what happens, not just marshaling arguments.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

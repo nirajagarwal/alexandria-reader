@@ -39,4 +39,4 @@ Also, reversibility changes with context. For a large company, most product feat
 Check your assumptions about what's reversible. Then match your decision process to the door type.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

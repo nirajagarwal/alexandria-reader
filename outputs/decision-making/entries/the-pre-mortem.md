@@ -21,4 +21,4 @@
 **Watch out for:** Pre-mortems work because they license people to voice doubts. But that only happens if the leader genuinely welcomes bad news. If you're defensive, people will self-censor and you'll waste everyone's time. Also, don't let it paralyze you — every decision has risks. The goal is to see clearly, not to find reasons to never act.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

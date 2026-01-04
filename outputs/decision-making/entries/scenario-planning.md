@@ -24,4 +24,4 @@
 **Watch out for:** Scenarios can become an excuse for indecision — "we're ready for anything" sometimes means you're committed to nothing. The scenarios themselves can be unconsciously biased toward your preferences. And spending three months crafting beautiful scenarios is worthless if you never translate them into actual decisions. The point isn't the stories; it's making better choices today because you've thought seriously about tomorrow's possibilities.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

@@ -20,4 +20,4 @@ Kennedy chose a naval blockade — which he called a "quarantine" to avoid the l
 Kennedy's strength wasn't knowing the answer on day one. It was building a system that found better answers by day thirteen.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

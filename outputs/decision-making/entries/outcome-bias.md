@@ -37,4 +37,4 @@ Not necessarily. In 2000, Google was a two-year-old search engine with no busine
 But that's not the story we tell. We say Yahoo "missed" Google, as if the outcome was obvious. We judge them by knowing how the movie ends.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

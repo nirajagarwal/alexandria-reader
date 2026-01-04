@@ -21,4 +21,4 @@ Most powerful: invert it. Ask "What would make me think the opposite?" If plane 
 **Example:** After the 2008 financial crisis, MBA applications surged. Finance seemed too risky — everyone could recall banks collapsing, friends losing jobs, dramatic headlines. Meanwhile, applications to law school had been climbing for years despite a saturated legal market. Why? No dramatic images. No Lehman Brothers moment. The slow accumulation of underemployed lawyers didn't create memorable stories. Five years later, law graduates faced worse employment odds than finance MBAs, but the availability of crisis images had shaped thousands of career decisions.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

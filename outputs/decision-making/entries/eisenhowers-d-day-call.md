@@ -24,4 +24,4 @@ He wrote a note to keep in his pocket in case of disaster: "Our landings have fa
 The mark of command isn't having perfect clarity — it's accepting responsibility when clarity is impossible.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

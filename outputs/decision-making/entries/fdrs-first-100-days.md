@@ -20,4 +20,4 @@ Not all the programs worked. Some created new problems. The economy wouldn't ful
 This isn't a license for recklessness. Roosevelt was operating in an emergency where doing nothing was obviously failing. But when the cost of delay is high and the path forward is uncertain, the bias toward action — trying multiple approaches, adjusting as you learn — can break through gridlock. Sometimes you decide to decide, then figure out the details while moving.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

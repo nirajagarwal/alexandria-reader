@@ -26,4 +26,4 @@ So he didn't check. Didn't sell. Didn't do anything. The precommitment made the 
 **Watch out for:** Precommitments can become straitjackets. The world changes, and sometimes the rule that made sense last year is genuinely wrong today. Build in a review mechanism — not an escape hatch for every moment of discomfort, but a genuine check on whether the underlying logic still holds. Also, don't precommit to something you're not truly willing to follow through on. A broken precommitment is worse than no precommitment — you learn you can't trust your own rules.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*

@@ -22,4 +22,4 @@ Get contrary evidence. Actively look for ways the person or thing might be weak 
 Venture capitalists consistently fall into this trap with founders who resemble previous successes. The founder went to Stanford like the last winner did? Suddenly their unproven business model looks more solid, their thin team looks more capable. One trait creates a halo that makes investors see strengths that aren't there yet.
 
 ---
-*Part of Decision-Making: One Page at a Time at alexandria.press*
+*Part of Decision-Making: Tools, Traps and Stories at alexandria.press*
