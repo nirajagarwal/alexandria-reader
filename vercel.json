@@ -8,12 +8,20 @@
     ],
     "rewrites": [
         {
-            "source": "/outputs/(.*)",
-            "destination": "/outputs/$1"
+            "source": "/api/(.*)",
+            "destination": "/api/index.py"
         },
         {
-            "source": "/(.*)",
+            "source": "/books",
             "destination": "/api/index.py"
+        },
+        {
+            "source": "/books/(.*)",
+            "destination": "/api/index.py"
+        },
+        {
+            "source": "/outputs/(.*)",
+            "destination": "/outputs/$1"
         }
     ],
     "headers": [
