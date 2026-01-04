@@ -77,105 +77,32 @@ async function loadBook(bookId) {
         document.querySelector('meta[property="og:title"]').setAttribute('content', `${currentBook.title} | Alexandria Press`);
         document.querySelector('meta[property="og:description"]').setAttribute('content', desc);
         if (currentBook.cover_url) {
-            // Resolve relative path if needed, though usually it's served from root if using /outputs
-            // If cover_url is like "outputs/body/cover.png", we might need to prepend origin if we want full URL
             const fullCoverUrl = new URL(currentBook.cover_url, window.location.origin).href;
             document.querySelector('meta[property="og:image"]').setAttribute('content', fullCoverUrl);
         }
 
-        // Load entries for card grid
+        // Load entries for navigation
         currentEntries = await fetchAPI(`/books/${bookId}/entries`);
 
-        // Show book view immediately
-        showBookView();
+        // Navigate directly to first entry if available
+        if (currentEntries.length > 0) {
+            loadEntry(bookId, currentEntries[0].slug);
+        } else {
+            console.error('No entries found for book:', bookId);
+            window.location.href = '/';
+        }
 
-        // Setup navigation links
+        // Setup navigation links (for Intro, Appendix, etc if visible)
         setupBookNav(bookId);
 
     } catch (error) {
         console.error('Failed to load book:', error);
         alert('Failed to load book');
+        window.location.href = '/';
     }
 }
 
-function showBookView() {
-    const coverView = document.getElementById('coverView');
-    if (coverView) coverView.classList.add('hidden');
-
-    document.getElementById('bookView').classList.remove('hidden');
-
-    // Populate header
-    document.getElementById('bookTitle').textContent = currentBook.title;
-    document.getElementById('bookDescriptor').textContent = currentBook.descriptor || '';
-
-    // Populate card grid
-    renderCardGrid();
-
-    // Setup back button to go to library
-    const backBtn = document.getElementById('backToCover');
-    if (backBtn) {
-        backBtn.onclick = () => {
-            window.location.href = '/';
-        };
-    }
-}
-
-function renderCardGrid() {
-    const grid = document.getElementById('cardGrid');
-    const cardDisplay = currentBook.card_display || {};
-
-    // Determine grid style
-    let useWideGrid = false;
-
-    if (cardDisplay.grid_style === 'wide') {
-        useWideGrid = true;
-    } else if (cardDisplay.grid_style !== 'square') {
-        // Smart heuristic: if >30% of titles are long (>15 chars), use wide
-        const sampleSize = Math.min(currentEntries.length, 20);
-        const sample = currentEntries.slice(0, sampleSize);
-        const longTitles = sample.filter(e => (e.name || '').length > 10).length;
-        useWideGrid = (longTitles / sampleSize) > 0.3;
-    }
-
-    if (useWideGrid) {
-        grid.classList.add('card-grid-wide');
-    } else {
-        grid.classList.remove('card-grid-wide');
-    }
-
-    grid.innerHTML = currentEntries.map(entry => {
-        const metadata = entry.metadata || {};
-
-        // Helper to get value from metadata or root entry
-        const getValue = (key) => {
-            if (key === 'order' || key === 'sort_order') return entry.order;
-            if (key === 'name' || key === 'title') return entry.name;
-            if (key === 'descriptor') return entry.descriptor;
-            return metadata[key] || '';
-        };
-
-        // Get display values based on card_display config
-        const primary = getValue(cardDisplay.primary || 'name');
-        const secondary = getValue(cardDisplay.secondary || 'descriptor');
-        const tertiary = getValue(cardDisplay.tertiary || 'order');
-
-        return `
-            <div class="entry-card" data-slug="${entry.slug}" data-order="${entry.order}">
-                <div class="entry-card-primary">${primary || entry.name.charAt(0)}</div>
-                <div class="entry-card-secondary">${secondary}</div>
-                <div class="entry-card-tertiary">${tertiary}</div>
-            </div>
-        `;
-    }).join('');
-
-    // Add click handlers
-    grid.querySelectorAll('.entry-card').forEach(card => {
-        card.addEventListener('click', () => {
-            const slug = card.dataset.slug;
-            loadEntry(currentBook.book_id, slug);
-        });
-    });
-}
+// Grid view removed as per requirements
 
 function setupBookNav(bookId) {
     document.getElementById('introLink').addEventListener('click', (e) => {
@@ -211,7 +138,10 @@ async function loadEntry(bookId, slug) {
 }
 
 function showEntryView(data) {
-    document.getElementById('bookView').classList.add('hidden');
+    if (document.getElementById('bookView')) {
+        document.getElementById('bookView').classList.add('hidden');
+    }
+    document.getElementById('contentPageView').classList.add('hidden');
     document.getElementById('entryView').classList.remove('hidden');
 
     const { entry, nav } = data;
@@ -230,11 +160,10 @@ function showEntryView(data) {
     // Scroll to top
     window.scrollTo(0, 0);
 
-    // Setup back button
+    // Setup back button to go to library
     const backBtn = document.getElementById('backToGrid');
     backBtn.onclick = () => {
-        document.getElementById('entryView').classList.add('hidden');
-        document.getElementById('bookView').classList.remove('hidden');
+        window.location.href = '/';
     };
 
     document.getElementById('backToGridFooter').onclick = backBtn.onclick;
@@ -288,7 +217,10 @@ async function loadContentPage(bookId, type, title) {
 }
 
 function showContentPage(title, content) {
-    document.getElementById('bookView').classList.add('hidden');
+    if (document.getElementById('bookView')) {
+        document.getElementById('bookView').classList.add('hidden');
+    }
+    document.getElementById('entryView').classList.add('hidden');
     document.getElementById('contentPageView').classList.remove('hidden');
 
     document.getElementById('contentPageTitle').textContent = title;
@@ -305,10 +237,9 @@ function showContentPage(title, content) {
             : '<p>No content available.</p>';
     }
 
-    // Setup back button
+    // Setup back button to go to library
     document.getElementById('backFromContentPage').onclick = () => {
-        document.getElementById('contentPageView').classList.add('hidden');
-        document.getElementById('bookView').classList.remove('hidden');
+        window.location.href = '/';
     };
 
     window.scrollTo(0, 0);
