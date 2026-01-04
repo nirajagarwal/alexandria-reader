@@ -2,6 +2,42 @@
     "cleanUrls": true,
     "rewrites": [
         {
+            "source": "/css/(.*)",
+            "destination": "/frontend/css/$1"
+        },
+        {
+            "source": "/js/(.*)",
+            "destination": "/frontend/js/$1"
+        },
+        {
+            "source": "/assets/(.*)",
+            "destination": "/frontend/assets/$1"
+        },
+        {
+            "source": "/outputs/(.*)",
+            "destination": "/outputs/$1"
+        },
+        {
+            "source": "/robots.txt",
+            "destination": "/frontend/robots.txt"
+        },
+        {
+            "source": "/sitemap.xml",
+            "destination": "/frontend/sitemap.xml"
+        },
+        {
+            "source": "/manifest.json",
+            "destination": "/frontend/manifest.json"
+        },
+        {
+            "source": "/book.html",
+            "destination": "/frontend/book.html"
+        },
+        {
+            "source": "/",
+            "destination": "/frontend/index.html"
+        },
+        {
             "source": "/(.*)",
             "destination": "/api/main.py"
         }
