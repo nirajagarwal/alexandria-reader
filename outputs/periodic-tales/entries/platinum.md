@@ -1,0 +1,35 @@
+# Platinum
+
+***The Incorruptible Metal***
+
+> **Atomic Number:** 78 | **Symbol:** Pt | **Category:** Transition Metal
+
+Platinum forms in the final moments of dying stars, forged when neutron-rich nuclei capture additional neutrons in rapid succession. This r-process creates heavy elements that scatter into space during supernova explosions, later condensing into planetary bodies. On Earth, platinum concentrations reach economic viability only where ancient meteorite impacts or deep mantle plumes brought dense metallic materials near the surface. The metal resists nearly all chemical attack, maintaining its luster and integrity across geological time. Its extraordinary catalytic properties allow it to accelerate chemical reactions without being consumed. Pre-Columbian Ecuadorian smiths worked platinum into jewelry despite its 1,768°C melting point, a feat European metallurgists could not replicate until the 18th century. Modern civilization depends on platinum's catalytic function in automotive exhaust systems, petroleum refining, and industrial chemistry. Annual production reaches approximately 180 tons, with South Africa and Russia holding the vast majority of reserves.
+
+## The White Gold Mystery
+
+Spanish conquistadors encountered platinum in Colombian river deposits during the 1500s. They called it platina, little silver, and considered it a nuisance that contaminated gold panning operations. The metal's refusal to melt in furnaces of the era made it useless by European standards. Colonial administrators mandated its disposal in rivers to prevent gold adulteration. Samples reaching Europe in 1735 puzzled natural philosophers. The metal proved denser than gold, resisted all known acids except aqua regia, and required temperatures beyond contemporary furnace capabilities. By 1783, techniques for consolidating platinum powder enabled production of usable objects. The metal's rarity and workability established it as a prestige material, though industrial applications remained limited until the 19th century development of high-temperature techniques.
+
+## Catalytic Transformation
+
+Platinum's electronic structure makes it an exceptional catalyst. Surface atoms bind reactant molecules in orientations that lower activation energy barriers, allowing reactions to proceed at lower temperatures or faster rates. The metal emerges unchanged. This property revolutionized sulfuric acid production in the 1830s, enabling industrial-scale manufacture. Petroleum refining adopted platinum catalysts in the 1940s for reforming low-octane hydrocarbons into high-octane gasoline components. The catalytic converter, introduced in the 1970s to meet air quality standards, uses platinum group metals to transform carbon monoxide, nitrogen oxides, and unburned hydrocarbons into carbon dioxide, nitrogen, and water. Each converter contains roughly 3-7 grams of platinum. Global automotive demand accounts for approximately 40% of annual platinum consumption.
+
+## Fuel Cell Future
+
+Hydrogen fuel cells require platinum catalysts at both electrodes. At the anode, platinum facilitates hydrogen's splitting into protons and electrons. At the cathode, it enables oxygen's combination with protons and electrons to form water. The process generates electricity without combustion. Current fuel cell vehicles use 30-60 grams of platinum per unit. Scaling to mass transportation would strain platinum supplies beyond sustainable levels. Research pursues platinum reduction through optimized catalyst structures, alloying with less expensive metals, and exploration of alternative materials. Nanoparticle configurations maximize surface area per gram. Single-atom catalysts show promise in laboratory conditions. The gap between hydrogen economy ambitions and platinum availability remains substantial. Resolution requires either dramatic catalyst efficiency improvements or departure from platinum-based systems.
+
+## Medical Precision
+
+Platinum compounds kill rapidly dividing cells by binding to DNA and disrupting replication. Cisplatin, synthesized in 1845 but recognized as chemotherapeutic only in 1965, treats testicular, ovarian, bladder, and lung cancers. The drug's discovery emerged from bacterial growth experiments near platinum electrodes. Subsequent platinum-based drugs—carboplatin, oxaliplatin—modified the original structure to reduce toxicity while maintaining efficacy. These compounds now appear in roughly half of all chemotherapy regimens. Treatment effectiveness must be balanced against kidney damage, hearing loss, and nerve toxicity. Platinum also serves in medical devices requiring biocompatibility and corrosion resistance: pacemaker electrodes, catheter components, surgical instruments. The metal's inertness prevents adverse tissue reactions. Its radiopacity aids in imaging during procedures.
+
+## Extraction Consequences
+
+Platinum deposits concentrate in a few geological formations. South Africa's Bushveld Complex contains 80% of global reserves. Mining reaches depths exceeding 2,000 meters. Extraction requires processing roughly 10 tons of ore to yield one troy ounce of platinum. The operation generates substantial rock waste and consumes enormous energy. Workers face risks from rock falls, heat stress, and silica dust exposure. Refining involves multiple chemical treatments, including dissolution in aqua regia and precipitation through complex procedures. Environmental impacts extend beyond the mine site. Smelting releases sulfur dioxide unless captured. Tailings contain heavy metals that can contaminate groundwater. Communities near mining operations report health problems and ecological degradation. Recycling recovers approximately 30% of annual platinum supply, primarily from spent catalytic converters. Recovery rates must increase to reduce primary extraction pressure.
+
+## The Kilogram's Definition
+
+From 1889 to 2019, the kilogram was defined by a physical object: the International Prototype Kilogram, a cylinder of 90% platinum and 10% iridium housed in Paris. Platinum's resistance to oxidation and chemical attack made it the only practical choice for a mass standard requiring century-long stability. Yet even this carefully preserved artifact gained mass through surface contamination, introducing uncertainty into humanity's fundamental measurement system. In 2019, the kilogram's definition shifted to fundamental physical constants, ending platinum's role as the arbiter of mass. The original cylinder remains, now measured rather than measuring. The transition illustrates a progression from material standards to abstract precision, though platinum's selection for the original prototype reflected practical recognition that no other material could maintain such constancy across time.
+
+---
+
+*Part of the Periodic Tales collection at alexandria.press*

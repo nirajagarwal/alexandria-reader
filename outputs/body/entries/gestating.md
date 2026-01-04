@@ -1,0 +1,38 @@
+# Gestating
+
+***Two Bodies, One Blood***
+
+> **Category:** Reproduction
+
+A human begins inside another human. For roughly 280 days, a fertilized egg divides, differentiates, and grows into a child while suspended in fluid inside the uterus. The pregnant body does not merely house this development. It actively builds the fetus, sustains it, protects it, and prepares itself for the violence of birth. Every organ system adjusts. The heart pumps more blood. The lungs move differently. The immune system performs a careful suppression to prevent attacking what it would normally recognize as foreign tissue. Two circulatory systems run in parallel, separated by a membrane so thin that oxygen, nutrients, and waste pass through, but blood does not mix. The body that gestates is transformed by the process. Some changes reverse after birth. Others remain permanent, written into bone density, metabolism, and cellular memory.
+
+## The Uterine Environment
+
+The uterus, normally the size of a fist, expands to five hundred times its original volume. Its muscle fibers lengthen and thicken. Blood vessels proliferate, turning the organ into one of the most densely vascularized tissues in the body. The lining, already thick with preparation during each menstrual cycle, becomes the decidua, a specialized tissue that will form half of the placenta. The fetus floats in amniotic fluid, which cushions impacts, allows movement, and maintains constant temperature. This fluid is not static. The fetus swallows it, urinates into it, breathes it in and out of developing lungs. The pregnant body produces roughly a liter of it, refreshing the entire volume every three hours.
+
+## The Placental Exchange
+
+The placenta grows from both fetal and maternal tissue, a temporary organ that exists only during gestation. It attaches to the uterine wall and extends finger-like projections called villi into maternal blood vessels. Here, two bloodstreams come within micrometers of each other. Oxygen diffuses from maternal blood into fetal blood. Carbon dioxide moves the opposite direction. Glucose, amino acids, antibodies, hormones cross the barrier. Some substances are blocked: most bacteria, many viruses, large proteins. Others pass through despite the danger: alcohol, nicotine, certain medications. The placenta also functions as an endocrine organ, producing progesterone and estrogen in quantities that would be toxic outside pregnancy, hormones that prevent menstruation, maintain the uterine lining, and trigger the cascade of changes throughout the pregnant body.
+
+## The Mother's Adaptation
+
+The heart increases its output by thirty to fifty percent. Blood volume rises by nearly half, diluting red blood cells and creating the anemia of pregnancy. Blood pressure often drops in the second trimester as vessels dilate. The diaphragm is pushed upward by the expanding uterus, reducing lung capacity, yet the body compensates by breathing more deeply and frequently. The kidneys filter fifty percent more blood. The digestive system slows, allowing more time to extract nutrients, often causing constipation and reflux. Joints loosen as the hormone relaxin softens ligaments, preparing the pelvis for birth but also making the entire skeleton less stable. The immune system downregulates certain responses to tolerate the genetically distinct fetus, which increases vulnerability to some infections. Insulin resistance develops, shunting more glucose to the fetus. In some bodies, this tips into gestational diabetes.
+
+## The Fetal Development
+
+The embryo begins as a hollow ball of cells. Within weeks, it folds into layers that will become skin, nervous system, gut, heart, lungs, skeleton. The heart starts beating at twenty-two days, before the brain has formed. By eight weeks, all major organs exist in rudimentary form, though the fetus is less than an inch long. The second trimester brings rapid growth. Bones ossify. The brain develops sulci and gyri. Eyelids separate. The fetus begins to hear, swallow, hiccup, respond to touch. In the third trimester, fat accumulates beneath the skin. Lungs practice breathing movements with amniotic fluid. The brain triples in volume. The immune system receives antibodies from maternal blood, a passive immunity that will protect the newborn for months. The fetus usually rotates head-down in the final weeks, pressed against the cervix by gravity and uterine shape.
+
+## When It Fails
+
+Ten to twenty percent of known pregnancies end in miscarriage, most in the first trimester. Chromosomal abnormalities account for half of these. Others result from implantation failures, hormonal imbalances, anatomical problems, infections. Ectopic pregnancies occur when the fertilized egg implants outside the uterus, usually in a fallopian tube, a life-threatening condition that requires intervention. Preeclampsia develops in three to five percent of pregnancies, marked by high blood pressure and protein in the urine, caused by abnormal placental development. Severe cases cause seizures, organ failure, death. Placental abruption tears the placenta from the uterine wall before birth, cutting off the fetal blood supply. Preterm labor, before thirty-seven weeks, leaves the fetus underdeveloped, particularly the lungs and brain. Stillbirth, the death of a fetus after twenty weeks, occurs in roughly one in every 160 pregnancies, half from unknown causes.
+
+## The Postpartum Body
+
+Birth does not end gestation's changes. The uterus contracts over weeks, returning to near its original size but never quite the same. Stretch marks remain where skin exceeded its elastic limit. The linea nigra, a dark line down the abdomen, usually fades. Diastasis recti, the separation of abdominal muscles, may persist. Bone density often drops during breastfeeding, usually recovering afterward, but some loss becomes permanent. The brain undergoes structural changes during pregnancy and the postpartum period, with gray matter volume decreasing in regions associated with social cognition, possibly enhancing the ability to interpret infant cues. These changes persist for at least two years. The cardiovascular and metabolic adjustments of pregnancy create a stress test that predicts future disease risk. Those who develop preeclampsia or gestational diabetes show increased likelihood of hypertension and type 2 diabetes decades later.
+
+## Across Cultures
+
+Nearly every human society has ritualized pregnancy and birth. Dietary restrictions, often framed as protecting the fetus, sometimes reflect nutritional wisdom, sometimes enforce social control. The lying-in period, common across cultures, mandates rest for days or weeks after birth. Some traditions isolate the mother and newborn. Others surround them with female relatives. The fear of miscarriage and infant death shapes behavior and belief. Amulets ward off evil. Certain actions are forbidden lest they cause harm: reaching overhead, stepping over thresholds, looking at eclipses. The pregnant body becomes public property in many societies, touched without permission, subjected to advice and scrutiny. Midwifery, once universal, was suppressed in many places by medicalized birth, then revived. The experience of gestation varies with access to nutrition, medical care, and physical labor, but the biology remains largely invariant across populations.
+
+---
+*Part of the Body collection at alexandria.press*

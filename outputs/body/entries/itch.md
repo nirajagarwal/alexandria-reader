@@ -1,0 +1,38 @@
+# Itch
+
+***The Skin's Insistent Alarm***
+
+> **Category:** Response
+
+The sensation arrives without warning: a precise location on the skin demands attention. The urge to scratch becomes nearly irresistible, a compulsion that overrides thought. This is itch, the body's alarm system for potential threats at the surface. Unlike pain, which warns of damage, itch signals the presence of something that should be removed: a crawling insect, a plant toxin, a parasite attempting entry. The response is mechanical—scratch the spot, dislodge the threat. What begins as protective signaling can become its own torment. Chronic itch drives people to scratch until they bleed, the relief lasting only seconds before the sensation returns. The nervous system that evolved to save the skin sometimes turns against it, firing the alarm when no threat exists. Yet the impulse remains absolute. To itch is to be commanded by the body's oldest fears: invasion, contamination, things with legs moving across the boundary between self and world.
+
+## The Nerve Endings
+
+Itch begins in the skin's outer layer, the epidermis, where specialized nerve fibers terminate. These C-fibers respond to chemical signals: histamine released by immune cells, plant compounds like urushiol from poison ivy, or the saliva of biting insects. The nerves lack the protective myelin coating that speeds other signals, so itch travels slowly to the spinal cord, then upward to the brain's sensory cortex. This sluggish transmission explains why itch builds gradually rather than striking instantly like pain. The same nerve pathways can carry both sensations, but itch activates a distinct pattern of firing. When the brain receives this specific pattern, it generates the urge to scratch. The pathway is ancient, shared with reptiles and mammals. Even fish demonstrate scratching behaviors, rubbing against rocks to dislodge parasites.
+
+## The Scratch Reflex
+
+Scratching provides relief through a simple mechanism: it creates pain. The sharper sensation of fingernails dragging across skin temporarily overwhelms the itch signal, occupying the same neural pathways. The spinal cord can only process so much input from one location. Pain wins. This suppression lasts only while scratching continues and for a brief period after. The itch nerves reset within seconds to minutes. The relief is real but ephemeral, which explains the cycle: scratch, relief, return, scratch again. Scratching also damages the skin slightly, triggering inflammatory responses that can intensify the original itch. What began as protective behavior becomes self-perpetuating. The body designed to remove threats now creates them. Yet the urge persists because in the ancestral environment, the threat was real: a mosquito, a tick, a flea. Better to scratch and risk minor damage than leave a parasite undisturbed.
+
+## Chemical Triggers
+
+Histamine is the most common itch molecule. When allergens bind to immune cells called mast cells, they rupture and release histamine into surrounding tissue. The chemical finds receptors on nearby nerve endings and activates them. This is why antihistamines relieve many itches: they block the receptor, silencing the alarm. But histamine is not the only trigger. Other immune molecules, neuropeptides, and even opioids can activate itch pathways. Some itches respond to antihistamines; others ignore them completely. Kidney disease produces itch through uremic toxins in the blood. Liver disease causes itch through bile salt accumulation. Cancer can generate itch through unknown mechanisms. Each pathway leads to the same sensation, but the chemical journey differs. The skin translates dozens of molecular languages into one urgent message: something is here that should not be.
+
+## Phantom Itch
+
+The brain can generate itch without input from the skin. Watching someone scratch triggers mirror neurons that produce the sensation in the observer. Reading the word "lice" makes scalps prickle in lecture halls. This is psychogenic itch, the nervous system running its protective program on phantom data. Patients with spinal cord injuries report intense itching in paralyzed limbs, areas where no signal could possibly reach the brain. The itch exists entirely in neural loops above the injury site. Similarly, damage to itch pathways in the brain can produce neuropathic itch, a constant sensation with no peripheral cause. These patients scratch themselves raw while the skin beneath remains healthy. The alarm system has become untethered from reality, firing continuously. No amount of scratching helps because there is nothing to remove. The body is responding to a threat that exists only in its own wiring.
+
+## Age and Duration
+
+Infants respond to itch within weeks of birth, though they lack the motor control to scratch effectively. By six months, the scratch reflex is fully developed. Children experience more intense itching from insect bites and allergic reactions than adults, their immune systems more reactive to novel threats. The threshold for itch rises with age. Older skin becomes drier, its moisture barrier compromised, which paradoxically increases susceptibility to chronic itch. Elderly patients report constant low-level itching, particularly on the back and lower legs. Acute itch from a mosquito bite lasts minutes to hours. Chronic itch from eczema or psoriasis persists for years, the inflamed skin continuously signaling threat. The longest-documented case of localized itch lasted decades, a small patch of back skin that never stopped firing, resistant to every treatment attempted.
+
+## When It Fails
+
+Some people are born without the ability to feel itch. They suffer repeated skin infections and injuries because they cannot detect parasites or irritants. Small cuts become infected. Insect bites go unnoticed until they swell dramatically. The protective function becomes clear only in its absence. More common is the opposite problem: itch that will not stop. Prurigo nodularis creates a vicious cycle where chronic scratching produces nodules of thickened skin that itch more intensely, demanding more scratching. The skin becomes studded with lesions, each one a monument to unsuccessful relief. Brachioradial pruritus causes intense itching of the forearms, often triggered by sun damage to nerves in the neck. Patients scratch until they bleed, finding no relief. Some chronic itch patients resort to ice, heat, or capsaicin cream, trying to override the signal through other sensations. Others simply endure.
+
+## Cultural Attention
+
+Societies have long recognized itch as distinct from pain. Ancient Egyptians used herbs to treat itching. Traditional Chinese medicine developed elaborate theories about itch types and their meanings. The English language contains dozens of itch-related metaphors: itching for a fight, itchy feet, seven-year itch. All reflect the sensation's particular quality—the maddening specificity, the demand for action. Scratching appears in art and literature as a sign of anxiety, disease, or contamination. Medieval Europeans believed itching indicated demonic attention. Modern advertising exploits itch to sell relief, from antihistamines to anti-itch creams. Support groups exist for chronic itch sufferers, people whose lives are dominated by a sensation most experience only occasionally. The intensity of the suffering surprises those who have never endured it. To itch continuously is to be tortured by the body's protective instinct, an alarm that cannot be silenced.
+
+---
+*Part of the Body collection at alexandria.press*

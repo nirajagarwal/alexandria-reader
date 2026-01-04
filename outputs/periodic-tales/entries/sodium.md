@@ -1,0 +1,39 @@
+# Sodium
+
+***Soft Metal, Hard Currency***
+
+> **Atomic Number:** 11 | **Symbol:** Na | **Category:** Alkali Metal
+
+Sodium forms in the collapsing cores of massive stars, forged during their final seconds before detonation. It ranks sixth among elements in cosmic abundance. On Earth, it constitutes 2.6 percent of the crust, but never appears alone. Too reactive to exist as pure metal, it binds with chlorine in vast salt deposits, dissolves in seawater, locks into feldspars and other minerals. The pure element, when finally isolated, proves startlingly soft. A knife cuts through it like cold butter. Freshly sliced, the surface gleams silver, then tarnishes within seconds as air attacks it. Drop sodium into water and it skitters across the surface, hissing, trailing smoke, sometimes bursting into yellow flame. That yellow marks sodium's signature. Heat any sodium compound in a flame and the same color appears, a diagnostic so reliable that it identified sodium in the sun before anyone found it there.
+
+### Salt Roads
+
+Sodium chloride shaped ancient economies. Roman soldiers received part of their wages as salt, the origin of the word salary. Trade routes crossed deserts and mountains to move it. Cities rose where salt springs bubbled from the ground or where seawater could be evaporated in pans. Venice built maritime power on salt monopolies. The Saharan salt trade sustained kingdoms. Salt taxes triggered revolutions. In 1930, Gandhi marched to the sea to make salt in defiance of British law, a gesture that rallied millions. The compound's value lay in its necessity. Humans require sodium to live, but evolution shaped them in seas and forests where salt was scarce. Agricultural societies, eating grain instead of meat, needed supplemental salt or faced deficiency, weakness, death.
+
+### The Metal Itself
+
+Humphry Davy isolated sodium in 1807 through electrolysis of molten sodium hydroxide. The metal he produced astonished him. Lighter than water. Soft enough to mold by hand. Violently reactive with moisture. For decades, sodium remained a laboratory curiosity. Then chemists found it could reduce other metals from their ores. Sodium vapor lamps followed, efficient sources of that characteristic yellow light. Nuclear reactors use liquid sodium as coolant, its low neutron absorption and high heat capacity ideal for the purpose. The metal flows at 98 degrees Celsius, well below water's boiling point, allowing compact cooling systems. France's Superphénix reactor circulated 3,000 tons of liquid sodium. The metal's reactivity requires elaborate safety systems. Contact with water produces hydrogen gas and intense heat, a combination prone to explosion.
+
+### Biological Necessity
+
+Every nerve impulse depends on sodium. The element concentrates outside cells while potassium concentrates inside, maintained by molecular pumps that consume a quarter of the body's resting energy. When a nerve fires, sodium channels open, ions rush inward, and the voltage spike propagates along the axon. Muscle contraction follows the same mechanism. Sodium also regulates blood pressure and volume. The kidneys constantly adjust sodium excretion to maintain balance. Too little sodium causes confusion, seizures, coma. Too much raises blood pressure, strains the heart, damages vessels. Modern diets typically provide excess. The body evolved expecting scarcity. Salt now appears in processed foods at concentrations that would astonish any pre-industrial human. Current medical guidance suggests limiting intake to 2,300 milligrams daily, less than a teaspoon of salt, a target most populations exceed substantially.
+
+### Chemical Versatility
+
+Sodium hydroxide, produced by electrolysis of brine, ranks among the most important industrial chemicals. Global production exceeds 70 million tons annually. Paper mills use it to break down wood fibers. Soap makers combine it with fats to produce cleansers. Water treatment plants add it to adjust pH. Chemical manufacturers employ it in countless syntheses. Sodium carbonate, historically obtained from plant ash or natural mineral deposits, now comes primarily from the Solvay process. It goes into glass, detergents, and chemical processing. Sodium bicarbonate acts as antacid, leavening agent, fire suppressant. Sodium chlorate bleaches wood pulp. Sodium sulfate fills detergents. Sodium thiosulfate fixes photographic images. The element's chemistry, simple in principle, proves endlessly useful in practice. One electron in the outer shell, easily surrendered, makes sodium compounds stable, abundant, and cheap to produce.
+
+### Ocean Dominance
+
+Seawater contains 10,800 parts per million sodium, making it the sixth most abundant element in the ocean, but the most abundant metal. Sodium ions give seawater much of its salinity. Rivers continuously deliver sodium eroded from rocks. Evaporation removes water but leaves sodium behind. Over geological time, the ocean has become a sodium reservoir. Salt lakes represent extreme examples. The Dead Sea reaches 340 grams per liter, nearly ten times ocean concentration. Great Salt Lake varies by season but averages 150 grams per liter. These lakes support few organisms. High sodium concentration draws water from cells, causing dehydration and death. Yet specialized organisms thrive. Halophilic archaea and bacteria adapt by accumulating compatible solutes or pumping sodium out aggressively. Some algae turn red in hypersaline conditions, coloring entire lakes. Where seawater evaporates in shallow basins, sodium chloride crystallizes in thick beds. Ancient deposits, buried and compressed, become rock salt, mined by dissolving it with water or cutting blocks directly.
+
+### Yellow Light
+
+Sodium vapor lamps dominated street lighting for decades. Low-pressure versions produce nearly pure yellow light at 589 nanometers, so monochromatic that colors become indistinguishable beneath them. High-pressure lamps add other wavelengths, producing a more natural white. Both types convert electricity to light more efficiently than incandescent bulbs or early fluorescents. A 50-watt low-pressure sodium lamp produces as much light as a 250-watt incandescent. Cities embraced them for highways and parking lots. The yellow glow became synonymous with urban nights. Astronomers hated them. Sodium light polluted observations, particularly at 589 nanometers where filters could not help without blocking the same wavelength from astronomical sources. LEDs now replace sodium lamps, offering better color rendering, longer life, and comparable efficiency. The yellow glow fades from cities. Within a generation, it may exist only in photographs and memory.
+
+### Sodium's Flame
+
+That same 589-nanometer emission allows sodium to be detected anywhere. Flame tests identify it in minerals, soils, solutions. Atomic absorption spectroscopy measures sodium concentrations to parts per billion. The technique extends beyond Earth. In 1814, Joseph Fraunhofer observed dark lines in the solar spectrum. By 1860, Gustav Kirchhoff and Robert Bunsen realized these lines represented elements absorbing light at specific wavelengths. Sodium's distinctive pair of lines, the D-lines, appeared prominently. The sun contains sodium. So do other stars, planetary atmospheres, comets, interstellar clouds. Astronomers measure sodium in the atmospheres of exoplanets by watching starlight filter through as the planet transits. High sodium suggests clear skies. Low sodium indicates clouds obscuring the atmosphere. The element that flavors food and conducts nerve impulses also serves as a probe of distant worlds, its quantum signature unchanged across cosmic distances.
+
+---
+
+*Part of the Periodic Tales collection at alexandria.press*

@@ -1,0 +1,42 @@
+# Neptunium
+
+***First Element Beyond Uranium***
+
+> **Atomic Number:** 93 | **Symbol:** Np | **Category:** Actinide
+
+Neptunium holds the distinction of being the first transuranium element, the first to extend the periodic table beyond what nature placed on Earth in measurable quantities. It forms in trace amounts when uranium absorbs neutrons, but it remained unknown until 1940, when Edwin McMillan and Philip Abelson created it deliberately at Berkeley by bombarding uranium with neutrons from a cyclotron. The element takes its name from Neptune, the planet beyond Uranus, continuing the astronomical naming convention uranium had established. All isotopes are radioactive. The most stable, neptunium-237, has a half-life of 2.14 million years, long enough to accumulate as a byproduct in nuclear reactors but short enough to pose lasting concerns. Neptunium occupies an unusual position: synthetic yet inevitable, a bridge between naturally occurring heavy elements and the purely artificial ones that follow. It exists in reactor fuel, in spent nuclear waste, and in minute quantities wherever uranium undergoes neutron bombardment. Its chemistry resembles uranium's closely enough to complicate separation, different enough to require attention.
+
+## Creation at Berkeley
+
+The cyclotron at Berkeley in 1940 operated as the world's premier tool for nuclear transmutation. McMillan, studying uranium fission products, noticed an activity that did not match known elements. The material behaved chemically unlike any fission fragment. Further investigation revealed element 93, produced when uranium-238 captured a neutron and underwent beta decay. The discovery required four days of bombardment and careful chemical separation. McMillan and Abelson published their findings in the Physical Review, establishing that the periodic table extended beyond its previous boundary. The work earned McMillan a share of the 1951 Nobel Prize in Chemistry. Neptunium opened the transuranium sequence, a series that would eventually reach element 118 and beyond.
+
+## Reactor Byproduct
+
+Every commercial nuclear reactor produces neptunium. Uranium-238, the dominant isotope in reactor fuel, captures neutrons during operation. Some of these transmutations lead to neptunium-239, which decays to plutonium-239. Other pathways produce neptunium-237, which accumulates because its half-life exceeds the reactor's operational lifetime. When spent fuel is reprocessed, neptunium appears in the waste stream alongside plutonium and other actinides. A typical light water reactor generates several kilograms of neptunium-237 per year. The material concentrates in high-level waste, where its radioactivity contributes to long-term hazard. Unlike plutonium, neptunium has limited use, so most remains in storage. Its presence complicates waste management because the 2.14-million-year half-life means containment must function across geological timescales.
+
+## Nuclear Weapon Potential
+
+Neptunium-237 can sustain a nuclear chain reaction, but barely. Its critical mass exceeds 60 kilograms, far larger than plutonium's or uranium-235's. This poor efficiency has prevented its use in weapons, though experiments confirmed the possibility. During the Cold War, both the United States and Soviet Union investigated neptunium's weapon potential. Tests showed it could be made to work, but required impractical quantities and offered no advantages. The element remains classified as special nuclear material, subject to safeguards and accounting. Its real proliferation risk lies elsewhere: neptunium-237 can be irradiated to produce plutonium-238, a valuable isotope for space power systems. This pathway makes neptunium stocks strategically significant, though the conversion process is complex and expensive.
+
+## Oxidation States
+
+Neptunium exhibits five oxidation states in solution: +3, +4, +5, +6, and +7. This range exceeds uranium's and approaches the complexity of the transition metals below it in the periodic table. The +5 state is most stable in neutral or basic conditions, forming the neptunyl ion (NpO₂⁺). In acidic solution, +4 dominates. The +7 state, achieved only under strong oxidizing conditions, remains rare. These varied oxidation states give neptunium complex chemistry. Solutions change color with oxidation state: pale purple for +3, yellow-green for +4, green-blue for +5, pink for +6. This sensitivity to chemical environment makes neptunium behavior difficult to predict in waste repositories, where conditions vary. The element can migrate through groundwater, or precipitate, or sorb onto minerals, depending on local chemistry.
+
+## Environmental Mobility
+
+Unlike plutonium, which binds tightly to soil and sediment, neptunium moves through the environment. The neptunyl ion does not sorb strongly to most minerals. In oxidizing groundwater, neptunium-237 can travel considerable distances from a source. This mobility makes it a critical concern in nuclear waste disposal. Studies at proposed repository sites model neptunium transport through fractured rock, examining how it might reach the biosphere over millennia. The Yucca Mountain site analysis identified neptunium-237 as a key dose contributor in far-future scenarios, not because of high inventory, but because of its combination of moderate half-life and environmental mobility. Remediation efforts at contaminated sites must account for neptunium differently than for other actinides, using methods that address soluble species rather than particles.
+
+## Isotopic Heat Source
+
+Neptunium-238, with a half-life of 2.1 days, has seen niche application. Its decay produces heat at predictable rates. Milligram quantities generate enough warmth to power sensors in inaccessible locations. The Soviet Union used neptunium-238 in remote weather stations in the Arctic, where battery replacement was impractical and solar panels ineffective during polar night. These radioisotope thermoelectric generators operated for decades. The isotope's short half-life means the material decays to manageable levels within months, unlike plutonium-238, which remains hazardous for centuries. Production requires irradiating neptunium-237 in a reactor, adding expense. Plutonium-238 has largely supplanted neptunium-238 for space missions requiring long-lived power, but neptunium retains advantages for applications needing medium-term heat with rapid decay afterward.
+
+## Waste Transmutation
+
+Proposals exist to transmute neptunium-237 into less problematic isotopes. Fast neutron reactors or accelerator-driven systems could convert it to plutonium-238 or fission it directly. Either pathway reduces the long-lived radioactive inventory in nuclear waste. France's Phénix reactor demonstrated neptunium transmutation on an experimental scale, achieving significant reduction in a target assembly. The process requires separating neptunium from waste, fabricating it into transmutation targets, and irradiating these in a suitable neutron flux. Each step adds complexity and cost. No country has implemented neptunium transmutation at industrial scale. The approach remains in research, evaluated against alternatives like deep geological disposal. If advanced reactor designs proliferate, neptunium transmutation may become practical, converting a liability into fuel.
+
+## Future Stockpiles
+
+Global neptunium-237 inventory grows with every reactor that operates. Estimates place current stockpiles above 100 metric tons, with accumulation continuing at several tons per year. This material sits in spent fuel pools and reprocessing plant waste tanks, awaiting final disposition. No large-scale use has emerged. Proposals include using it for plutonium-238 production or as target material in fundamental physics experiments. Some advanced reactor concepts envision burning neptunium as supplemental fuel, extracting energy while reducing waste radiotoxicity. Without deployment of these technologies, neptunium accumulation continues. The element represents an unintended consequence of nuclear power, a substance created incidentally, useful in limited ways, problematic in large quantities, and present in quantities that will only increase as long as fission reactors generate electricity.
+
+---
+*Part of the Periodic Tales collection at alexandria.press*

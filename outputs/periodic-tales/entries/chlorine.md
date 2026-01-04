@@ -1,0 +1,39 @@
+# Chlorine
+
+***Salt's Other Half***
+
+> **Atomic Number:** 17 | **Symbol:** Cl | **Category:** Halogen
+
+Chlorine exists rarely as a free element. In nature, it binds almost immediately with sodium to form salt, with hydrogen to form acid, with calcium in the bones of ancient seas. The universe produces it in dying stars, scattering it through supernovae. Earth concentrates it in ocean water, where every liter holds nineteen grams of chloride ions. The element itself, isolated, is a yellow-green gas that reacts violently with nearly everything it touches. Humans encountered chlorine compounds for millennia before Carl Wilhelm Scheele freed the pure element in 1774, heating hydrochloric acid with manganese dioxide in his Swedish laboratory. He noticed the bleaching power immediately. The gas revolutionized sanitation and warfare in equal measure. Today chlorine disinfects the water supply of cities, synthesizes a third of all manufactured chemicals, and remains locked in the salt that preserves food and seasons every meal. It splits the difference between essential and lethal with perfect chemical indifference.
+
+## Breaking From Salt
+
+Scheele produced the first chlorine by accident, pursuing other questions. He saw green fumes and burning sensations but failed to recognize a new element, calling it "dephlogisticated marine acid." Humphry Davy proved its elemental nature in 1810 and named it from the Greek *chloros*, meaning green. The chemistry was straightforward: pass electricity through brine, separate the sodium that migrates to one electrode from the chlorine that collects at the other. Industrial electrolysis came in 1892. The Dow Chemical Company built plants beside Michigan salt deposits and became the world's largest chlorine producer. The process remains essentially unchanged. Chlorine production now exceeds seventy million tons annually, nearly all of it immediately reacted into other compounds rather than stored as gas.
+
+## Yellow Cloud
+
+Chlorine weaponization began in April 1915 at Ypres, Belgium. German forces released 168 tons of the gas from cylinders, relying on wind to carry it toward Allied trenches. The heavier-than-air cloud crept along the ground, turning lungs into chemical burn chambers. Five thousand soldiers died in the first attack. Both sides deployed it afterward, then moved to phosgene and mustard gas, which incorporated chlorine into more persistent compounds. By war's end, chlorine weapons had killed ninety thousand and injured over a million. The 1925 Geneva Protocol banned chemical warfare. Chlorine's military use ended, but its reactivity and availability meant it remained a terrorist material of concern. The same properties that bleach and disinfect also corrode tissue on contact. The line between industrial chemical and weapon depends entirely on intent.
+
+## Water Supply Chemistry
+
+Chlorination transformed public health. Before it, waterborne diseases killed tens of thousands in American cities every year. Jersey City began continuous chlorination in 1908, and typhoid deaths dropped ninety percent within a decade. Chlorine kills bacteria by oxidizing their cell walls and disrupting metabolic enzymes. The process requires careful dosing: enough to eliminate pathogens, not so much that taste becomes objectionable or byproducts reach harmful levels. Residual chlorine persists in pipes, preventing recontamination between treatment plant and tap. Most municipal systems maintain 0.2 to 1.0 parts per million. A century of chlorination has saved more lives than any other public health intervention except vaccination. The infrastructure is simple, the chemical inexpensive, the effectiveness proven. Developing nations still struggle to implement it. Where chlorination fails, waterborne illness remains endemic.
+
+## PVC and Polymers
+
+Polyvinyl chloride accounts for a third of all chlorine production. The polymer forms when vinyl chloride monomers link into chains thousands of units long. PVC is rigid and durable, easily molded, resistant to weathering and chemicals. It appears in construction as pipes, siding, window frames. Flexible PVC, plasticized with additives, becomes medical tubing, cable insulation, synthetic leather. The industry produces forty million tons per year. Environmental concerns focus on production and disposal: vinyl chloride is carcinogenic, and PVC incineration can release dioxins if combustion temperature is insufficient. Mechanical recycling is technically possible but economically marginal. Most PVC ends up in landfills, where it persists indefinitely. The material's longevity is its advantage in use and its problem in waste. No clear alternative matches its combination of performance and cost.
+
+## Ozone Depletion
+
+Chlorofluorocarbons combined chlorine with fluorine and carbon into molecules chemically inert at ground level. They made ideal refrigerants and aerosol propellants, replacing toxic or flammable alternatives. Production began in the 1930s and expanded for fifty years. The stability that made CFCs useful also made them dangerous. Released into the atmosphere, they drift upward into the stratosphere, where ultraviolet light breaks chlorine atoms free. A single chlorine atom catalyzes the destruction of a hundred thousand ozone molecules before other reactions remove it from the cycle. The Antarctic ozone hole, discovered in 1985, provided proof. The Montreal Protocol of 1987 phased out CFCs globally. Ozone layer recovery is underway but will take until mid-century. The episode demonstrated that industrial chemistry could alter planetary systems and that international cooperation could reverse the damage. The chlorine remains relevant as a cautionary variable.
+
+## Biological Absence
+
+Chlorine plays almost no role in human biochemistry beyond chloride ions for fluid balance and stomach acid. No enzymes use it catalytically. No proteins incorporate it structurally. This distinguishes chlorine from its periodic table neighbors: fluorine strengthens tooth enamel, bromine sedates the nervous system, iodine regulates metabolism through thyroid hormones. Chlorine's reactivity explains its biological absence. In living tissue, it would oxidize indiscriminately. Cells use it only in its inert ionic form. Table salt provides all the chloride a body requires, around two grams daily. Deficiency is rare; excess is common. The kidneys regulate chloride levels precisely, excreting surplus through urine. The element essential for disinfecting water is largely irrelevant inside the organisms drinking it. Chemistry determines possibility; biology determines necessity.
+
+## Bleach and Brightness
+
+Sodium hypochlorite solution, common household bleach, contains five to nine percent active chlorine. It whitens by oxidizing chromophores, the molecular structures that absorb visible light and create color. The fabric itself remains intact while stains break down into colorless fragments. Industrial bleaching uses chlorine dioxide for wood pulp, producing the white paper on which most printed material appears. The process also generates dioxins as byproducts, and mills have reduced chlorine use through oxygen-based alternatives. Textile mills bleach cotton with hydrogen peroxide now more than chlorine compounds. The shift reflects environmental regulation and changing economics. Chlorine bleaching persists where nothing else works as well or as cheaply. The chemical that removes color from fabric cannot help but add color to water downstream. The tradeoff is managed, not eliminated.
+
+---
+
+*Part of the Periodic Tales collection at alexandria.press*

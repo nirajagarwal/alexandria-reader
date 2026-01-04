@@ -1,0 +1,42 @@
+# Oxygen
+
+***The Breath of Fire and Life***
+
+> **Atomic Number:** 8 | **Symbol:** O | **Category:** Nonmetal
+
+Oxygen emerged in the first generations of massive stars, forged when helium nuclei fused under temperatures exceeding 100 million degrees. It is the third most abundant element in the universe and the most abundant in Earth's crust. Two atoms bind into the diatomic molecule that makes up one-fifth of the atmosphere. This molecule is both the sustainer of aerobic life and the driver of combustion. Reactive by nature, oxygen forms compounds with nearly every other element. It strips electrons, oxidizes metals, enables cellular respiration. The element exists in constant circulation: photosynthesis releases it, respiration consumes it, weathering binds it into rock. Without it, complex multicellular life could not exist. With too much of it, organic matter burns. The same chemistry that powers human metabolism corrodes iron and fuels forest fires. Oxygen's abundance and reactivity make it simultaneously essential and destructive, the element that defines Earth's surface chemistry.
+
+## The Late Atmosphere
+
+Earth's early atmosphere held almost no free oxygen. Cyanobacteria began releasing it as a waste product of photosynthesis roughly 2.4 billion years ago. The gas initially reacted with dissolved iron in the oceans, precipitating out as rust-colored bands now visible in ancient rock formations. Only after the oceans' iron was exhausted did oxygen begin accumulating in the atmosphere. This Great Oxidation Event transformed the planet's chemistry and triggered the first mass extinction, killing organisms adapted to oxygen-free conditions. The rise of atmospheric oxygen also enabled the emergence of aerobic metabolism, which extracts far more energy from nutrients than anaerobic processes. Complex multicellular life followed. The oxygen content of the atmosphere has fluctuated since, reaching peaks of perhaps 35% during the Carboniferous period before settling near today's 21%.
+
+## Isolation and Identity
+
+Joseph Priestley produced oxygen in 1774 by focusing sunlight through a lens onto mercuric oxide. He called it "dephlogisticated air" and noted that mice lived longer breathing it and candles burned brighter in its presence. Carl Wilhelm Scheele had isolated the gas two years earlier but published later. Antoine Lavoisier recognized oxygen as an element in 1777 and named it for the Greek words meaning "acid former," mistakenly believing all acids contained it. Lavoisier demonstrated that combustion was not the release of phlogiston but the combination of materials with oxygen. This understanding dismantled centuries of alchemical theory. The element's isolation required no exotic materials or elaborate apparatus, only heat and the right compound. Yet its identification reshaped chemistry, replacing a mystical substance with a quantifiable reaction.
+
+## The Respiration Engine
+
+Aerobic organisms extract energy by combining glucose with oxygen in cellular mitochondria. This process yields carbon dioxide, water, and approximately 36 molecules of ATP per glucose molecule, compared to the two molecules produced by anaerobic fermentation. Oxygen accepts electrons at the end of the electron transport chain, making the entire process possible. Hemoglobin in red blood cells carries oxygen from lungs to tissues, binding it loosely enough to release where needed. The human body at rest consumes about 250 milliliters of oxygen per minute. During intense exercise, consumption can exceed four liters per minute. Oxygen deprivation kills brain cells within minutes. The element's role in respiration is so fundamental that its absence defines the boundary between aerobic and anaerobic life, between environments where complex organisms can exist and those where they cannot.
+
+## Industrial Gas
+
+Oxygen production now exceeds 100 million tons annually, making it the second most manufactured industrial gas after nitrogen. Fractional distillation of liquid air separates oxygen from nitrogen at facilities that cool air to minus 183 degrees Celsius. Steel production consumes the largest share, using pure oxygen to burn impurities from molten iron in basic oxygen furnaces. The process replaced older methods and now produces most of the world's steel. Chemical manufacturing uses oxygen to synthesize ethylene oxide, propylene oxide, and other compounds. Water treatment plants inject it to promote aerobic decomposition of organic matter. Medical oxygen supports patients with respiratory failure or undergoes surgery. Rockets burn it with hydrogen or kerosene for propulsion. The element's industrial applications all exploit its eagerness to combine with other substances, the same reactivity that makes it essential to life.
+
+## Ozone's Thin Shield
+
+Three oxygen atoms bound together form ozone, a molecule concentrated in a stratospheric layer 15 to 35 kilometers above Earth's surface. This layer absorbs most incoming ultraviolet-B and all ultraviolet-C radiation, preventing it from reaching the surface where it would damage DNA and disrupt photosynthesis. Chlorofluorocarbons released by human activity depleted this layer beginning in the 1970s, particularly over Antarctica. The Montreal Protocol of 1987 phased out these compounds. The ozone layer has since begun recovering, projected to return to 1980 levels by mid-century. At ground level, ozone forms through reactions between nitrogen oxides and volatile organic compounds in the presence of sunlight, creating smog that irritates lungs and damages plants. The same molecule acts as shield and poison depending on altitude.
+
+## Fire's Chemistry
+
+Combustion is oxygen combining with fuel in an exothermic reaction. The process requires three elements: fuel, oxygen, and heat sufficient to initiate the reaction. Remove any one and fire stops. Flames are not objects but zones where gaseous fuel and oxygen react, releasing heat and light. The color of flame indicates temperature: red-orange flames burn around 800 degrees Celsius, yellow around 1200, blue above 1400. Pure oxygen allows materials to burn that will not ignite in air. A steel wool pad smolders in air but bursts into brilliant flame in pure oxygen. Oxy-acetylene torches mix oxygen with acetylene to reach temperatures of 3500 degrees Celsius, hot enough to cut steel. Oxygen's concentration determines not just whether something burns but how vigorously. At elevated partial pressures, even fireproof materials ignite.
+
+## Corrosion and Preservation
+
+Oxidation slowly disassembles what organisms and industry build. Iron rust, silver tarnish, copper patina, all are oxygen binding to metal atoms. The process extracts electrons, converting pure elements into compounds. Aluminum forms a thin oxide layer that protects the metal beneath; iron's oxide flakes away, exposing fresh metal to further attack. Bronze survives millennia; iron crumbles to powder. Oxygen dissolved in water accelerates corrosion. Salt water corrodes faster than fresh. Preventing oxidation drives much of materials science: stainless steel alloys, protective coatings, galvanization, cathodic protection. Food preservation fights the same process. Vacuum sealing removes oxygen. Refrigeration slows reactions. Antioxidants interrupt oxidation chains. The element that enables complex life also ensures that all complex structures eventually return to simpler forms.
+
+## The Breathing Planet
+
+Oxygen concentration varies by location and time. Forests produce it during the day, consume it at night. Oceans hold dissolved oxygen in temperature-dependent amounts, more in cold polar waters than in warm tropical seas. Phytoplankton in the ocean's sunlit surface layer generate roughly half the oxygen entering the atmosphere, with land plants contributing the other half. Seasonal cycles shift concentrations: oxygen rises in spring when plant growth accelerates, falls in autumn as organic matter decomposes. Human activity is altering these patterns. Burning fossil fuels consumes oxygen and releases carbon dioxide. Nitrogen runoff creates ocean dead zones where oxygen depletion kills marine life. Climate warming reduces oxygen solubility in seawater. The element cycles between atmosphere, biosphere, and lithosphere on timescales from seconds to millions of years, a global metabolism that maintains the conditions for aerobic life.
+
+---
+*Part of the Periodic Tales collection at alexandria.press*
