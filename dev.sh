@@ -23,7 +23,7 @@ pids=""
 
 if [ "$1" == "prod" ]; then
     echo "Starting Alexandria Press API (PROD)..."
-    uvicorn api.index:app --host 0.0.0.0 --port 8000 &
+    uvicorn api.main:app --host 0.0.0.0 --port 8000 &
     pids="$pids $!"
 else
     echo "Starting Alexandria Press API (http://localhost:8000)..."
@@ -31,6 +31,6 @@ else
     # Run uvicorn
     # --reload: watches for python file changes
     # --reload-dir: explicitly watch api and entities/prompts if needed
-    uvicorn api.index:app --host 0.0.0.0 --port 8000 --reload --reload-dir api --reload-dir db &
+    uvicorn api.main:app --host 0.0.0.0 --port 8000 --reload --reload-dir api --reload-dir db &
     pids="$pids $!"
 fi
