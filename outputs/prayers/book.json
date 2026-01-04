@@ -1,7 +1,7 @@
 {
   "book_id": "prayers",
   "title": "Prayers",
-  "descriptor": null,
+  "descriptor": "A Collection",
   "cover_path": "/Users/niraj/alexandria-press/outputs/prayers/cover.png",
   "model": "claude-sonnet-4-5",
   "created_at": "2026-01-04T18:54:28.707514+00:00",
