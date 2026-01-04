@@ -80,7 +80,7 @@ def generate_sitemap():
     xml_content.append('</urlset>')
     
     # Write to file
-    output_path = BASE_DIR / "frontend" / "sitemap.xml"
+    output_path = BASE_DIR / "public" / "sitemap.xml"
     with open(output_path, "w") as f:
         f.write("\n".join(xml_content))
         

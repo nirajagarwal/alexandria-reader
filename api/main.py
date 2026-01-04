@@ -145,7 +145,7 @@ app.add_middleware(
 
 @app.exception_handler(404)
 async def custom_404_handler(request, __):
-    return FileResponse(BASE_DIR / "frontend" / "404.html", status_code=404)
+    return FileResponse(BASE_DIR / "public" / "404.html", status_code=404)
 
 
 
@@ -350,34 +350,34 @@ if (BASE_DIR / "outputs").exists():
     app.mount("/outputs", StaticFiles(directory=str(BASE_DIR / "outputs")), name="outputs")
 
 # Serve CSS and JS subdirectories
-if (BASE_DIR / "frontend" / "css").exists():
-    app.mount("/css", StaticFiles(directory=str(BASE_DIR / "frontend" / "css")), name="css")
+if (BASE_DIR / "public" / "css").exists():
+    app.mount("/css", StaticFiles(directory=str(BASE_DIR / "public" / "css")), name="css")
 
-if (BASE_DIR / "frontend" / "js").exists():
-    app.mount("/js", StaticFiles(directory=str(BASE_DIR / "frontend" / "js")), name="js")
+if (BASE_DIR / "public" / "js").exists():
+    app.mount("/js", StaticFiles(directory=str(BASE_DIR / "public" / "js")), name="js")
 
-if (BASE_DIR / "frontend" / "assets").exists():
-    app.mount("/assets", StaticFiles(directory=str(BASE_DIR / "frontend" / "assets")), name="assets")
+if (BASE_DIR / "public" / "assets").exists():
+    app.mount("/assets", StaticFiles(directory=str(BASE_DIR / "public" / "assets")), name="assets")
 
 # Explicit routes for frontend HTML files
 @app.get("/", include_in_schema=False)
 async def serve_index():
-    return FileResponse(BASE_DIR / "frontend" / "index.html")
+    return FileResponse(BASE_DIR / "public" / "index.html")
 
 @app.get("/book.html", include_in_schema=False)
 async def serve_book():
-    return FileResponse(BASE_DIR / "frontend" / "book.html")
+    return FileResponse(BASE_DIR / "public" / "book.html")
 
 @app.get("/robots.txt", include_in_schema=False)
 async def serve_robots():
-    return FileResponse(BASE_DIR / "frontend" / "robots.txt")
+    return FileResponse(BASE_DIR / "public" / "robots.txt")
 
 @app.get("/manifest.json", include_in_schema=False)
 async def serve_manifest():
-    return FileResponse(BASE_DIR / "frontend" / "manifest.json")
+    return FileResponse(BASE_DIR / "public" / "manifest.json")
 
 
 @app.get("/sitemap.xml", include_in_schema=False)
 async def serve_sitemap():
-    return FileResponse(BASE_DIR / "frontend" / "sitemap.xml")
+    return FileResponse(BASE_DIR / "public" / "sitemap.xml")
 
