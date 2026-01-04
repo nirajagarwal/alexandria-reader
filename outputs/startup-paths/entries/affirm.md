@@ -1,13 +1,21 @@
-I understand. I'm ready to write entries for *All Paths Through a Startup: From Idea to Exit or Failure*.
+I'm ready to write entries for *All Paths Through a Startup*. 
 
-I will:
+I understand the structure:
+- Title and descriptor that captures the arc
+- Meta line with years
+- 800-1000 word narrative covering founding, early days, growth, crisis (if applicable), and outcome
+- Closing line
 
-- Write 800-1000 word narratives telling the full arc of a company
-- Use the structure: Title, Descriptor, Meta line, continuous narrative, closing line
-- Focus on the contingency of decisions, the people involved, and the market context
-- Show how this path was one of many possible paths
-- Write in a grounded, narrative voice — neither celebratory nor cynical
-- Let facts speak and patterns emerge rather than editorializing
-- Help the reader understand not just what happened, but why
+I understand the voice:
+- Narrative and grounded
+- Show the contingency and alternative paths
+- No hagiography, no schadenfreude
+- Let facts speak, avoid editorial verdicts
+- Make patterns visible
+
+I understand the goal:
+- Each entry maps one path through the startup landscape
+- Together they reveal patterns in how companies succeed, fail, transform, and end
+- Reader should finish understanding not just what happened, but why
 
 Which company should I write about first?

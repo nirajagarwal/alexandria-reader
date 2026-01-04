@@ -1,50 +1,36 @@
 # Descript
 
-***The audio editor that became a video company by making the timeline obsolete***
+***The pivot from failed podcast app to category-defining audio editor***
 
-> **Years:** 2017-present
+> **Years:** 2016-present
 
-Andrew Mason had already lived one complete startup arc. He'd founded Groupon, taken it public at a $13 billion valuation, then watched it collapse under the weight of its own scale and his inexperience as CEO. The board fired him in 2013. He was 32 years old and done with startups — or so he thought.
+Andrew Mason knew what it felt like to be a cautionary tale. He'd founded Groupon, taken it public, watched it soar, then got fired as it collapsed. By 2013, he was that guy — the kid who got lucky once and wouldn't again. He spent the next few years experimenting, making music, thinking about tools. He noticed something: editing audio was broken. Not broken like "needs improvement." Broken like "nobody has rethought this in decades."
 
-But Mason was a musician, and he kept running into the same frustrating problem: editing audio was tedious. Professional tools like Pro Tools assumed you wanted to manipulate waveforms. Mason wanted to edit words. He wondered: what if you could edit audio by editing text?
+The insight came from podcasting. Mason and his co-founder, Martin Ried, saw podcasting taking off but editing remained medieval. You looked at waveforms — visual representations of sound — and tried to remember what was said where. You scrubbed through, listening, cutting, moving pieces around. It was slow, technical, unintuitive. Non-engineers couldn't do it. Even engineers hated it.
 
-The technical insight came from machine learning advances in speech recognition. By 2016, automated transcription was finally good enough to be useful. Mason saw the bridge: transcribe the audio, let users edit the transcript, then automatically generate the edited audio file. Instead of scrubbing through waveforms hunting for the phrase you wanted to cut, you'd just delete the words.
+They started building in 2016 with a different question: what if you edited the transcript instead of the waveform? Speech recognition was getting good enough. What if you could edit audio like you edit text — highlight a sentence, delete it, the audio deletes too? No waveforms. No scrubbing. Just words.
 
-He called it Descript and launched in 2017. The early product was rough — a desktop app for podcasters who needed to edit interviews. But the core interaction worked. You highlighted text, hit delete, and the audio changed. It felt like magic because it violated how audio editing was supposed to work.
+The first product wasn't that. The first product was Detour, a platform for creating location-based audio tours. Walk through a neighborhood, the app plays stories tied to where you are. It was clever. It was well-designed. Nobody cared. They spent a year building it, launched to mild interest, watched it fail to gain traction. By late 2016, they knew Detour was dead.
 
-Podcasters loved it. The tool grew through word of mouth in a community that desperately needed faster workflows. Editing a one-hour interview in traditional software took hours. In Descript, it took minutes. Mason raised a seed round, then a Series A led by Andreessen Horowitz in 2018.
+But they'd built something while making Detour: an internal tool for editing the audio tours. It used speech recognition to generate transcripts, let you edit the transcript, and the audio changed to match. They'd made it because editing audio tours the normal way was unbearable. A few people outside the company had seen it. Those people wanted it more than they wanted Detour.
 
-But podcasting was a limited market. Most podcasters were hobbyists or small creators who couldn't pay much. The company needed to expand. The question was: where?
+Mason made the call in early 2017: kill Detour, pivot to the editing tool. They renamed it Descript. The pitch was simple: edit audio by editing text. If someone says "um" thirty times, search for "um," delete them all at once. Rearrange sentences by cutting and pasting. Add a word someone forgot to say by typing it — the AI generates their voice speaking it. This last part, launched as "Overdub" in 2019, was either magic or terrifying depending on who you asked.
 
-The answer emerged from what users were already doing. They were importing video files into Descript's audio editor and using the text-based editing to cut interview videos. It was a hack — the product wasn't designed for video — but it worked well enough that people preferred it to real video editors.
+The early users were podcasters. Podcasting was exploding — everyone from comedians to corporations wanted a show — but editing was the bottleneck. Descript removed it. You didn't need to be technical. You didn't need expensive editors. You just needed to read and type. The product spread through podcast communities like folklore. People made tutorial videos. Facebook groups formed around it. Gimlet Media, Spotify's podcast studio, used it for everything.
 
-Mason saw the pattern. The same pain that plagued audio editing plagued video editing worse. Video timelines were even more complex, with multiple tracks of footage, audio, graphics, and effects. Professional tools like Premiere Pro and Final Cut had steep learning curves. Most people who needed to edit video — marketers, educators, YouTubers — weren't trained editors. They just wanted to remove filler words and tighten pacing.
+Revenue followed users. Descript launched with a freemium model: free for light use, subscription for heavy use. The subscriptions were recurring, predictable, growing. By 2018, they'd raised a $15 million Series A led by Andreessen Horowitz. Marc Andreessen called it "spellcheck for audio." The comparison stuck. Spellcheck hadn't made better writers, but it made everyone better than they would have been. Descript did that for audio.
 
-Descript pivoted to video in 2019. The product would still work through transcription and text editing, but now it would handle video tracks too. You could edit a talking-head video as easily as editing a document. Cut a sentence, and both audio and video would adjust automatically.
+The competition noticed. Adobe owned Audition, the professional standard. They had infinitely more resources. But Descript wasn't competing on features — it was competing on paradigm. Waveform editing was like command-line interfaces. Transcript editing was like graphical user interfaces. The old way wasn't slightly worse; it was a different species. Adobe could copy the features, but the users who'd switched weren't coming back.
 
-The expansion worked because it didn't abandon the core insight — it extended it. The company wasn't chasing a bigger market; it was following the same idea into a different medium.
+Descript expanded. Video editing in 2020 — same principle, edit the transcript, the video changes. Screen recording. Collaboration features so teams could edit together. Each addition made sense because the core insight held: people think in words, not waveforms or timelines. The AI improved. Overdub got better, faster, more natural-sounding. Filler word removal became automatic. Background noise vanished with one click. The product was accumulating capabilities that would have required six different tools two years earlier.
 
-Then came the feature that changed everything: Overdub. Using voice synthesis technology, Descript could generate new audio in a speaker's voice. You could type a sentence, and the software would produce audio that sounded like the speaker saying those words. For podcasters, this meant you could fix verbal mistakes without re-recording. For video creators, you could correct errors or update information without reshooting.
+By 2021, they'd raised $50 million at a $400 million valuation. The user base had gone from podcasters to video editors to corporate communications teams to individual creators. OpenAI invested. The AI thesis was obvious: Descript was the interface layer between humans and generative audio/video. As the models got better, Descript got better automatically.
 
-Overdub launched in 2019 and immediately generated controversy. The technology raised obvious questions about deepfakes and misinformation. Descript addressed this by requiring explicit permission — you had to record yourself reading a script before the system would generate your voice — and by watermarking synthetic audio. But the ethical debate persisted.
+The business model worked because the problem was evergreen. Audio and video weren't fads. Editing wasn't optional. Every company, every creator, every educator needed these tools. Descript sold seats, charged for usage above free limits, and took a percentage of transcription volume. The unit economics were clean. Retention was high. Growth was compounding.
 
-What Overdub also did was demonstrate ambition. Descript wasn't just building productivity tools. It was rebuilding how audio and video content could be created. The company raised a $50 million Series B in 2020 at a $150 million valuation.
+The story is still being written. Descript has competitors now — SquadCast, Riverside, tools with similar features. But they have the users, the brand, and the AI advantage. They're racing to build features fast enough that switching costs stay high. Whether they become the default interface for audio/video creation or get subsumed by larger platforms remains open.
 
-The pandemic accelerated everything. Remote work exploded demand for video creation and editing. Companies needed to produce training videos, presentations, and marketing content. Descript's text-based editing lowered the barrier enough that non-specialists could do the work. Revenue grew fast.
-
-Mason raised a $50 million Series C in 2021, then a $100 million Series D just six months later at a $553 million valuation. OpenAI was an investor this time, signaling that Descript sat at the intersection of AI and creativity.
-
-The company kept shipping. Screen recording. Multi-track editing. Studio-quality audio processing with one click. Templates for common video formats. Collaborative editing. Each feature moved Descript from niche tool to full production suite.
-
-By 2023, Descript had over a million users and was generating tens of millions in revenue. The product handled podcasts, video podcasts, YouTube videos, corporate training, online courses, and marketing clips. The core insight — edit media by editing text — had proven flexible enough to span use cases.
-
-But competition emerged. Adobe added AI features to Premiere. Newer tools like Riverside and Squadcast offered recording and editing in one platform. Video editing was becoming a crowded space, with every tool racing to add AI capabilities.
-
-Descript's advantage remained the interface. While competitors bolted AI onto traditional timeline editors, Descript had designed everything around transcription from the start. The text-first approach was still faster and more intuitive for the majority of use cases.
-
-The company now faces the scaling question every successful startup confronts: how big can this get? Podcasting and YouTube are limited markets. Corporate video is enormous but fragmented. Hollywood and professional media represent huge potential but require different features and credibility.
-
-Mason's second startup arc looks nothing like his first. Groupon chased growth everywhere, burning capital to expand faster than it could build operational competence. Descript has grown carefully, focused on product quality and user workflow. The company may or may not reach Groupon's scale, but it's already changed how millions of people make media. Sometimes the second time through, you get to build what you wish you'd built the first time.
+What's clear is the path: start with one problem, build a tool, realize the tool is bigger than the problem, kill the original idea, ride the tool into a category. Mason's second act isn't Groupon redux. It's the thing he learned after Groupon — pick smaller problems with deeper solutions. Let the product dictate the market, not the other way around. Survive long enough to pivot when the pivot reveals itself.
 
 ---
 *Part of All Paths Through a Startup at alexandria.press*

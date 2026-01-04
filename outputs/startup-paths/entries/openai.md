@@ -1,42 +1,46 @@
 # OpenAI
 
-***The nonprofit that became a capped-profit that became the most valuable AI company in the world***
+***The nonprofit that became a capped-profit that became the most valuable AI company in history***
 
-> **Years:** 2015–present
+> **Years:** 2015-present
 
----
+In December 2015, a group of Silicon Valley luminaries announced they were starting a nonprofit artificial intelligence research laboratory. The mission: ensure that artificial general intelligence benefits all of humanity. The founding team included Ilya Sutskever, Greg Brockman, and Wojciech Zaremba — serious researchers frustrated with the AI brain drain toward big tech. Sam Altman, president of Y Combinator, would chair the board. Elon Musk would be a co-chair and major donor. They raised a billion dollars in commitments. The plan was simple: do cutting-edge AI research, publish everything, and make sure no single company controlled humanity's future.
 
-In December 2015, Sam Altman and Elon Musk announced OpenAI as a nonprofit AI research lab with $1 billion in pledged funding. The stated mission: ensure artificial general intelligence benefits all of humanity. The implicit mission: prevent Google DeepMind from monopolizing the path to AGI.
+The nonprofit structure was deliberate. Academia was too slow, but corporations couldn't be trusted with something this important. OpenAI would be different — transparent, safety-focused, and unconcerned with profit. They hired top talent by offering research freedom and the promise of working on something bigger than a product roadmap.
 
-The founding team read like a who's who of deep learning: Ilya Sutskever from Google, Greg Brockman from Stripe, Wojciech Zaremba, John Schulman. They set up in San Francisco's Mission District and started publishing everything. Radical transparency was the point. If AGI was coming, its development should happen in the open, not behind corporate walls.
+By 2016, they were publishing papers and releasing tools. They built a bot that beat professional Dota 2 players, demonstrating reinforcement learning at unprecedented scale. They released Gym, a toolkit for training AI agents. The work was impressive but expensive. Training large models required compute resources that cost millions. The billion-dollar commitment was real money, but finite.
 
-For three years, OpenAI published groundbreaking research and bled money. They made advances in reinforcement learning, trained AI to beat humans at Dota 2, and released clever demos. But publishing everything meant Google and others could incorporate their breakthroughs immediately. The nonprofit structure meant they couldn't offer competitive equity. Top researchers left for DeepMind's bigger paychecks and compute budgets. Musk departed the board in 2018, citing conflicts with Tesla's own AI work.
+In 2018, Musk left the board, reportedly concerned about conflicts with Tesla's AI work and frustrated with OpenAI's progress. Altman took over as CEO. The organization faced a hard reality: to compete with Google DeepMind and other well-funded labs, they needed more capital than donations could provide. Serious AI research wasn't just expensive — it was getting exponentially more expensive.
 
-The existential problem: training cutting-edge AI required hundreds of millions in compute. OpenAI was spending $50 million annually with no revenue and a nonprofit structure that couldn't raise serious capital or properly compensate talent. They had conviction about the AGI path but no sustainable way to walk it.
+In 2019, OpenAI announced a new structure: OpenAI LP, a "capped-profit" company. Returns to investors would be capped at 100x their investment. The nonprofit would remain as a parent entity, controlling the for-profit subsidiary. The structure was unprecedented and legally complex, designed to square a circle: raise venture capital while maintaining the mission. They closed a billion-dollar investment from Microsoft.
 
-In 2019, OpenAI created a new structure: a "capped-profit" company, OpenAI LP, controlled by the original nonprofit. Investors could earn returns up to 100x their investment, after which excess profits would flow to the nonprofit. It was a legal architecture that had never been attempted at this scale. Microsoft invested $1 billion for exclusive cloud computing rights and a minority stake.
+The announcement was controversial. Critics called it mission drift, a betrayal of the founding vision. Supporters argued it was pragmatic — better to adapt than become irrelevant. The alternative was watching Big Tech swallow AI entirely.
 
-The Microsoft capital let OpenAI do what mattered: scale. They licensed and built on GPT-2, the language model they'd developed but initially refused to release, claiming it was "too dangerous." When they did release it months later, the catastrophic misuse they'd warned about didn't materialize. The caution looked like marketing.
+The Microsoft deal brought more than money. It provided access to Azure's computing infrastructure and a partner with distribution. Microsoft integrated OpenAI's models into its products. The relationship was symbiotic but unequal — OpenAI needed Microsoft more than Microsoft needed OpenAI.
 
-GPT-3 launched in 2020 as an API, not an open release. This was the full pivot: OpenAI was now a product company with a business model. Developers paid per token to access the model. The waiting list grew to hundreds of thousands. Y Combinator startups built entire companies on top of GPT-3. OpenAI's revenue reached tens of millions.
+In June 2020, they released GPT-3 via API. The model could write essays, code, poetry. It understood context and instruction with startling fluency. Developers built hundreds of applications on top of it. The API business model meant OpenAI could monetize the research without compromising the mission. Or so the reasoning went.
 
-Internally, the company had become a pressure cooker. The original vision of open research collided with commercial reality. Safety teams clashed with capabilities teams over release decisions. The capped-profit structure meant Microsoft had extraordinary influence. Some early employees left, disillusioned. But the talent they were attracting now was different: engineers who wanted to ship products, not just publish papers.
+GPT-3 made it clear that scaling worked. More data, more compute, bigger models — the curve kept climbing. This wasn't a breakthrough in architecture. It was a breakthrough in understanding that scale itself was the breakthrough.
 
-In November 2022, they released ChatGPT as a research preview. It was GPT-3.5 with a conversational interface and reinforcement learning from human feedback to make it helpful and harder to misuse. The team expected modest interest. Instead, it became the fastest-growing consumer application in history, hitting 100 million users in two months.
+In November 2022, they launched ChatGPT as a free research preview. It was a simple interface wrapped around GPT-3.5, designed to gather data on conversational AI. Within a week, it had a million users. Within two months, a hundred million. It became the fastest-growing consumer application in history.
 
-The release scrambled the entire technology industry. Google declared a "code red" and rushed to release Bard. Microsoft invested another $10 billion in OpenAI and integrated GPT-4 into Bing. Every major tech company suddenly needed an AI strategy. OpenAI went from research lab to the center of the technology universe in ninety days.
+The launch broke something open in the public consciousness. AI was no longer science fiction or academic abstraction. It was a thing anyone could use, that understood them, that was shockingly capable and occasionally absurd. Suddenly every tech company was pivoting to AI, every board meeting included "our AI strategy," every think piece worried about displacement or utopia.
 
-ChatGPT Plus launched at $20/month. Enterprise contracts followed. By mid-2023, OpenAI's revenue run rate exceeded $1 billion. The valuation reached $29 billion, then $80 billion in secondary sales. The capped-profit structure that seemed like a compromise now looked like a masterstroke: investor returns were capped, but the caps were so high and distant that capital flowed freely.
+Microsoft announced a multi-billion dollar extension of their partnership, reportedly valuing OpenAI at $29 billion. Other rounds followed. By early 2023, the valuation hit $80 billion. By 2024, over $150 billion.
 
-Then in November 2023, the board fired Altman. The stated reason: he had not been "consistently candid" with the board. The real reasons remained opaque. Within 48 hours, most of OpenAI's 700+ employees signed a letter threatening to quit and follow Altman to Microsoft unless the board resigned. Investors revolted. The board capitulated. Altman returned. Several board members were replaced.
+In November 2023, the board fired Sam Altman. The announcement was terse and shocking. Altman had not been "consistently candid in his communications with the board." The board included Ilya Sutskever, OpenAI's chief scientist, and several members affiliated with effective altruism and AI safety. The firing appeared to be about diverging visions: Altman pushing for growth and commercialization, the board concerned about safety and mission drift.
 
-The crisis revealed the contradictions the capped-profit structure had papered over. The nonprofit board was supposed to ensure mission alignment, but it had become disconnected from the commercial entity it ostensibly controlled. Employees were loyal to Altman and their equity, not the nonprofit's mission. The AGI safety concerns that justified the original structure had been subordinated to growth.
+What followed was five days of chaos. OpenAI employees threatened to quit en masse. Microsoft, blindsided, offered to hire Altman and any employees who wanted to join. Investors panicked. The board attempted to negotiate with Altman, then appointed an interim CEO, then another. Microsoft's CEO openly backed Altman. Over 700 of OpenAI's 770 employees signed a letter demanding the board resign and Altman return.
 
-OpenAI emerged from the crisis more conventional: a heavily funded, rapidly scaling company with founder-CEO control and a board that wouldn't interfere. The nonprofit governance structure remained, but its power was theoretical. What had started as an idealistic attempt to democratize AGI had become the industry's dominant player, with market power to match incumbents it was founded to counterbalance.
+Five days later, Altman was back. The board was reconstituted. Sutskever, who had reportedly regretted the firing immediately, did not return to the board. The new board was more aligned with Altman's vision. The attempted coup had failed completely.
 
-By 2024, OpenAI was valued at $150 billion. It had evolved from nonprofit to capped-profit to something approximating a traditional venture-backed company that happened to have a nonprofit parent. The mission language persisted, but the path was unmistakable: this was a company optimizing for commercial AI dominance, not a research collective ensuring AGI benefits everyone.
+The incident revealed the tensions inherent in OpenAI's structure. The nonprofit board had formal control but no practical power when billions in capital and the entire workforce chose otherwise. The capped-profit structure had been designed to preserve mission alignment. Instead, it created ambiguity about who really controlled the company.
 
-The outcome wasn't failure or success but transformation. OpenAI had solved the hardest problem in AI—not technical but structural: how to fund AGI research at scale. The answer required abandoning almost every principle it was founded on. Whether that made it the cautionary tale or the template, the verdict remained unwritten.
+OpenAI kept shipping. GPT-4, DALL-E 3, custom GPTs, enterprise offerings. They signed deals with Apple, news publishers, universities. Revenue reportedly passed $3 billion annually. They were no longer a research lab. They were a product company in a heated competition with Google, Anthropic, and dozens of others.
+
+The founding vision — transparent, nonprofit, safety-focused — had evolved into something else. They stopped publishing model details, citing safety concerns and competitive pressures. The research was still cutting-edge, but it was also proprietary. The mission was still stated prominently, but the incentives had shifted.
+
+OpenAI remains the most valuable AI company in history, the face of the AI revolution, the organization that made neural networks matter to regular people. Whether it will actually ensure AGI benefits all of humanity remains uncertain. The path from idealistic nonprofit to $150 billion capped-profit shows how hard it is to stay mission-driven when the mission requires competing with the largest companies on Earth.
 
 ---
 *Part of All Paths Through a Startup at alexandria.press*

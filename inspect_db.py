@@ -1,18 +1,29 @@
 import os
-from dotenv import load_dotenv
+import sqlite3
 import libsql_experimental as libsql
+from dotenv import load_dotenv
 
 load_dotenv()
 
-url = os.environ.get("TURSO_DATABASE_URL")
-token = os.environ.get("TURSO_AUTH_TOKEN")
+TURSO_DATABASE_URL = os.getenv("TURSO_DATABASE_URL")
+TURSO_AUTH_TOKEN = os.getenv("TURSO_AUTH_TOKEN")
 
-print(f"Connecting to {url}...")
-conn = libsql.connect(database=url, auth_token=token)
+def main():
+    print(f"Connecting to {TURSO_DATABASE_URL.split('://')[0]}://... (masked)")
+    conn = libsql.connect(TURSO_DATABASE_URL, auth_token=TURSO_AUTH_TOKEN)
+    cursor = conn.cursor()
+    
+    # Query for the book
+    cursor.execute("SELECT book_id, title, descriptor, cover_url FROM books WHERE book_id = 'prayers'")
+    row = cursor.fetchone()
+    
+    if row:
+        print(f"Book found: {row[0]}")
+        print(f"Title: {row[1]}")
+        print(f"Descriptor: {row[2]}")
+        print(f"Cover URL: {row[3]}")
+    else:
+        print("Book 'prayers' not found.")
 
-row = conn.execute("SELECT book_id, cover_url FROM books WHERE book_id = 'mental-models'").fetchone()
-if row:
-    print(f"Book found: {row[0]}")
-    print(f"Cover URL: {row[1]}")
-else:
-    print("Book not found")
+if __name__ == "__main__":
+    main()

@@ -1,37 +1,40 @@
-# Mojang/Minecraft
+# Mojang
 
-***The accidental empire built by a developer who never wanted to be a CEO***
+***When the builder became bigger than the company***
 
-> **Years:** 2009-2014 (acquired by Microsoft)
+> **Years:** 2009-2014
 
-In May 2009, Markus "Notch" Persson was a Swedish game developer working at King.com, grinding out browser games for casual players. On the side, he coded for himself — experiments, prototypes, weird ideas. He'd been obsessed with a game called Infiniminer, a mining game with destructible block-based worlds. When its developer abandoned it, Notch decided to make his own version. He called it "Cave Game," then "Minecraft."
+Markus Persson spent his evenings alone. By day he wrote code for a Swedish web development company. By night he made games nobody played. He had been doing this since childhood — building small worlds, tweaking mechanics, releasing them to forums where a handful of people might download them. In May 2009, he started another one.
 
-The first version was primitive: break blocks, place blocks, nothing else. He posted it on the TIGSource forums — an indie game community — on May 17, 2009. People downloaded it. They liked it. Within days, players were sharing screenshots of crude structures they'd built. Within weeks, Notch realized he had something.
+He called it "Cave Game" at first. The idea was simple: blocks you could destroy, blocks you could place. A procedurally generated world. No objective. No story. Just the pleasure of building and exploring. He worked on it for a week, posted a video, and went to bed.
 
-He quit King.com. He registered Minecraft.net. He started charging €10 for early access to what he called the "alpha" version — pay now, get all future updates free. This was before "early access" became an industry term. It was just how Notch thought it should work: you support development, you get the game forever.
+When he woke up, people were talking about it.
 
-The game grew through iteration and accident. Notch added survival mode — monsters that appeared at night, health, crafting. He didn't have a grand design document. He added what felt right. Players invented their own purposes: some built elaborate castles, others engineered complex machines with "redstone" circuits, still others just explored the infinite procedurally-generated worlds.
+Persson had stumbled into something. The game he was building — soon renamed Minecraft — arrived at a moment when gaming was ready for it. The blockbuster franchises were becoming more cinematic, more scripted, more controlled. Players moved through carefully designed experiences. Minecraft offered the opposite: a infinite sandbox where the only story was the one you made.
 
-The community became the game's marketing engine. YouTube exploded with Minecraft videos — "Let's Plays" where creators documented their builds and adventures. The videos were hypnotic: low-res blocky graphics, ambient music, infinite possibility. Teenagers watched for hours. The algorithm loved it. Minecraft became YouTube's most-watched game without Mojang spending a dollar on advertising.
+He released early versions for ten euros. Not because he had a business model, but because he needed to fund the server costs. Players bought it anyway. They bought it to play a game that was barely a game — full of bugs, missing features, technically unfinished. They bought it because they could see what it was becoming.
 
-By late 2010, Minecraft had sold over 800,000 copies. Notch incorporated Mojang — Swedish for "gadget" — and hired a small team. Jakob Porser, an old colleague, joined as CEO. Notch remained the public face, tweeting constantly, sharing development updates, arguing with players about features. The relationship between creator and community was intimate and volatile.
+The money came in fast. Within months, Persson quit his day job. He started a company — Mojang — more out of necessity than ambition. He hired a few friends. They worked from an apartment, then a small office. The team stayed small not because they were precious about it, but because Minecraft didn't require much overhead. The game essentially ran itself. Players were the content creators.
 
-The game officially launched in November 2011. By then, it had already sold 4 million copies. The launch was ceremonial — the game had been "done" in the sense that mattered for months. It didn't matter. Sales accelerated. Minecraft spread to Xbox 360, then mobile, then PlayStation. Each platform opened new audiences. The Java version remained the core, moddable and open. The console versions were simpler but brought Minecraft to living rooms.
+By 2010, Minecraft was generating millions in revenue. Persson — known online as Notch — became a cult figure. He was active on Twitter, transparent about development, generous with his opinions. He released updates constantly. The game was in "alpha," then "beta," states that meant little because players were already treating it as complete. Schools started using it. Parents bought it for kids who built elaborate structures and uploaded videos. YouTube filled with Minecraft content. The game became a genre unto itself.
 
-What made Minecraft Minecraft? It was the opposite of contemporary game design. No tutorial, no quest markers, no story. You spawned in a world and figured it out — or you looked it up on a wiki that players had built. The graphics were intentionally primitive, evoking Legos more than Call of Duty. The lack of explicit goals meant players invented their own. Teachers started using it in classrooms. Autistic kids found it calming and engaging. Adults who hadn't played games in years got lost in it.
+Mojang never sought venture capital. They didn't need it. Minecraft's business model was accidental genius: a one-time purchase, low production costs, no marketing budget because players did the marketing. By 2011, the game had sold millions of copies. Persson was wealthy and overwhelmed.
 
-By 2012, Mojang was a weird company. Tiny team, massive revenue, no idea what to do with it all. They tried other games — Scrolls, a card game that led to a trademark dispute with Bethesda. None gained traction. Minecraft was the business. Notch, meanwhile, was getting tired. The community had turned from collaborators into critics. Every update spawned debates. He'd become famous — not "game designer famous," but actually famous. He hated it.
+The transition was difficult. He was a developer, not a CEO. He enjoyed building systems, not managing people. As Mojang grew — porting Minecraft to consoles, handling licensing deals, navigating corporate partnerships — Persson stepped back. He handed over development to Jens Bergensten and focused on smaller projects. None of them caught fire the way Minecraft had. That early magic, the anonymous builder releasing something that resonated, couldn't be reproduced when you were famous and expected to produce hits.
 
-In 2012, Notch tweeted that he'd never sell Minecraft to a big company. By 2014, he'd changed his mind. Microsoft came calling, offering $2.5 billion. Carl Manneh, who'd replaced Jakob as CEO, and Notch negotiated. The deal closed in September 2014. Microsoft got Minecraft and Mojang. Notch got $1.3 billion and out.
+By 2012, Minecraft was a cultural phenomenon. It had sold over twenty million copies. Children who couldn't yet read were fluent in its logic. The game's aesthetic — low-resolution blocks, simple textures — became iconic. Merchandise followed: toys, clothing, books. Mojang was a small team managing a global property. The gap between the company's size and the game's reach was absurd.
 
-The exit was the right move for everyone except Notch. Microsoft scaled Minecraft into a platform — merchandise, education editions, a movie in development. The game kept growing, passing 100 million copies, then 200 million. It became the best-selling video game of all time.
+Microsoft started circling. They had missed mobile. They had missed social. They were not going to miss Minecraft. The game was everywhere their platforms weren't. It was on phones, tablets, PlayStations. Kids were growing up in Minecraft the way an earlier generation grew up in Windows. If Microsoft wanted relevance in the next era, they needed this.
 
-Notch moved to Los Angeles, bought a $70 million mansion, and descended into Twitter feuds and isolation. He'd made something hundreds of millions of people loved, then sold it, then discovered money didn't cure whatever was wrong. He became a cautionary tale: the developer who built an empire and couldn't bear the weight of it.
+Persson was ready to sell. He said so publicly, through tweets that ranged from exhausted to bitter. He hadn't wanted to run a company. He wanted to make games. Minecraft's success had trapped him in a role he never sought. The game was too big, the scrutiny too constant, the expectations too high. Every statement he made became news. Every decision affected millions of players. He was wealthy but miserable.
 
-Minecraft succeeded because Notch built what he wanted to build, shared it freely, and let the community shape it. It succeeded because it was released when YouTube needed content and kids needed a creative outlet that wasn't prescriptive. It succeeded because simplicity and openness beat polish and control. It succeeded, most of all, because Notch knew when to let go — even if letting go destroyed something in him.
+In September 2014, Microsoft bought Mojang for $2.5 billion. It was one of the largest acquisitions in gaming history. Persson and the other founders walked away with a combined fortune. The Mojang team transitioned to Microsoft. The game continued, updates still flowing, the community still building.
 
-The game still updates. The world still generates infinitely. New players spawn every day, punch a tree, and start building.
+Persson disappeared. He bought a mansion in Beverly Hills, threw parties, tweeted provocatively, and started no new companies. The man who built one of the most successful games in history seemed unsure what to do with success. He was a cautionary tale in reverse — not someone who failed to achieve their dream, but someone who achieved it and discovered the dream was a burden.
+
+Minecraft outlived its creator's involvement. Under Microsoft, it became even bigger. Educators used it. Corporations used it for training. The game sold hundreds of millions of copies. It became the best-selling video game of all time. The culture around it — YouTube playthroughs, modding communities, servers with their own economies — dwarfed the company that made it.
+
+Mojang's path revealed something: you can build something so successful it no longer belongs to you. The game became larger than the company, and the company became irrelevant to the game's continued existence. Persson's genius was building a system that didn't need him. His tragedy was that it worked.
 
 ---
-
 *Part of All Paths Through a Startup at alexandria.press*

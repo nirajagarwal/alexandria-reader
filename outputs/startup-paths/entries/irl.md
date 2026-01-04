@@ -1,40 +1,30 @@
 # IRL
 
-***The app that tried to make spontaneity social — and discovered no one wanted that***
+***The ephemeral photo app that became Snapchat's footnote***
 
-> **Years:** 2013-2017
+> **Years:** 2012-2014
 
-Abraham Shafi watched his friends texting each other "what are you doing right now?" and saw inefficiency. It was 2013. Location was ubiquitous, smartphones were everywhere, and yet coordinating spontaneous hangouts still required a flurry of messages. Shafi, a Stanford dropout who had previously founded a failed location app, believed the solution was simple: show people what their friends were doing in real time, and let spontaneity emerge organically.
+In early 2012, two Stanford students saw the same opportunity Evan Spiegel had seen months earlier: photos that disappeared after viewing. Greg Gopman and Abraham Shafi built IRL — an app for sending self-destructing images — and launched it in February 2012, barely two months after Snapchat's debut. They weren't trying to copy. They genuinely believed they'd arrived at the same insight independently: that permanence was the problem with digital communication, and ephemerality was the solution.
 
-He founded IRL with co-founders Scott Kurnit and Henry Khachatryan. The pitch was elegant. Open the app, see which friends are available, see what they're up to, and join them. No planning. No coordination overhead. Just frictionless real-world connection. The name itself — IRL, "in real life" — positioned the app as an antidote to the very platform it lived on.
+IRL stood for "In Real Life," positioning the app as more authentic than carefully curated social media. Photos vanished after fifteen seconds. No screenshots allowed — or so the app tried to enforce. The interface was simpler than Snapchat's ghost-themed design, the feature set more limited. But it worked, and for a brief moment in spring 2012, it looked like there might be room for two ephemeral photo apps.
 
-The timing seemed perfect. Snapchat had proven that ephemeral, real-time sharing resonated with young users. Location services had matured. The "fear of missing out" was a recognized cultural phenomenon. And investors were hungry for the next social platform. IRL raised $1.2 million in seed funding in 2014, then $5 million more in 2015.
+The Stanford network helped. IRL gained traction on campus, then spread to other universities. By summer 2012, they had raised a small seed round and were seeing steady growth. Gopman, the more visible co-founder, had connections in San Francisco tech circles. He positioned IRL as the cleaner, more straightforward alternative to Snapchat's playful aesthetic. Where Snapchat had cartoon ghosts and silly filters, IRL had clean lines and a focus on genuine moments.
 
-The app launched with a core feature set: users would post what they were doing or planning to do — "getting coffee at Philz," "watching the game at my place" — and friends could see these activities on a feed and a map. You could express interest in joining, message to coordinate, or just show up. The interface was clean, the interaction model straightforward.
+The problem was timing and momentum. Snapchat had launched first, raised money from Lightspeed Venture Partners, and was growing faster. By the time IRL hit the App Store, Snapchat was already defining what ephemeral messaging meant. Every feature IRL added looked like following rather than innovating. When they introduced drawing on photos, Snapchat had already done it. When they added video, so had Snapchat — but with a larger user base to amplify the feature.
 
-Early traction came from college campuses, particularly around Stanford and Berkeley. Students had dense friend networks, flexible schedules, and a culture of spontaneous socializing. The app made sense in that context. Users posted plans, friends responded, and real-world hangouts materialized. The team celebrated each story of connections made through IRL as validation of the vision.
+The network effects of messaging apps are brutal. If your friends are on Snapchat, you need Snapchat. Having IRL installed too creates friction rather than value. Users defaulted to whichever app had more of their contacts, and for most people, that was Snapchat. IRL became the app you tried once, found empty, and deleted.
 
-But as they expanded beyond that initial cohort, patterns emerged that troubled the founders. People would check the app, see what friends were doing, and... do nothing. The conversion from viewing to joining was far lower than projected. Users liked knowing what was happening but rarely acted on it.
+By late 2012, the gap was widening. Snapchat was approaching ten million daily users. IRL had hundreds of thousands of downloads but far fewer active users. The Stanford bubble that had incubated the app was now graduating and dispersing. New users weren't finding their friends on IRL. The app needed a hook beyond ephemerality — something to differentiate it in a market Snapchat was rapidly dominating.
 
-The team hypothesized that the problem was critical mass. If more friends were on the app, more activities would be posted, creating more opportunities to join. They pushed hard on growth, running referral programs and campus ambassador initiatives. They added features to reduce friction: one-tap responses, better notifications, integrations with messaging apps.
+Gopman and Shafi tried pivots. They added group messaging. They experimented with discovery features to help users find new people to message. They talked about building social features beyond one-to-one messaging. Each iteration felt like grasping at straws. The core problem remained: they were fighting for space in a category where network effects created a winner-take-most dynamic, and they weren't winning.
 
-The user numbers grew. The engagement numbers didn't follow. By 2016, IRL had hundreds of thousands of downloads but anemic daily active usage. People would install it, try it, then let it languish. The app became something users checked occasionally rather than a live feed of possibility.
+In 2013, Gopman left the company following a controversial Facebook post criticizing San Francisco's homeless population. The incident became a viral moment of tech-culture critique, overshadowing whatever momentum IRL still had. Shafi continued alone for several months, but the app was dying. Users were down. Revenue — they'd never figured out monetization — was nonexistent. Investors weren't interested in funding a distant second-place finisher in a market where the winner was raising money at billion-dollar valuations.
 
-The company pivoted — or rather, pivoted repeatedly. They tried making IRL more like an event discovery platform, surfacing public activities and local happenings. They experimented with AI-driven suggestions: "Your friend Sarah is free tonight and likes sushi, here are three places you both might go." They added group planning tools, making the app useful for coordinated hangouts rather than just spontaneous ones.
+IRL shut down quietly in mid-2014. No press release. No post-mortem blog post. The app simply stopped working, and the handful of remaining users migrated elsewhere. Shafi moved on to other ventures. The domain eventually redirected to a holding page.
 
-Each pivot brought a small bump in engagement, then a return to flatline. The fundamental problem remained: people didn't actually want to broadcast their availability and whereabouts in real time. The spontaneity the app promised felt invasive to many. Knowing what everyone was doing amplified FOMO rather than solving it. And the friends who might genuinely want to hang out spontaneously were already texting each other directly.
+What killed IRL wasn't lack of execution or poor product decisions. The core idea was sound — identical, in fact, to Snapchat's. The app worked. Users who tried it generally liked it. What killed IRL was arriving second in a market where timing determined everything. Snapchat had a few months head start, and that was enough to capture the critical mass of early adopters, secure better funding, and establish the brand as synonymous with disappearing photos.
 
-By mid-2016, the company was burning through its runway with no clear path to product-market fit. Shafi and the team tried to raise a Series A, positioning IRL as a platform for real-world social discovery. Investors passed. The social space was too crowded, the engagement metrics too weak, and the fundamental value proposition too narrow. Snapchat, Instagram, and Facebook were all adding features that overlapped with IRL's territory.
-
-The company tried to acquihire itself to larger platforms. Facebook and Snapchat both took meetings but passed. The technology wasn't novel enough, and the team, while talented, wasn't large enough to justify an acquisition. By early 2017, IRL was running on fumes.
-
-Shafi made the decision to shut down in April 2017. The company sent a final notification to its users: "Thank you for being part of IRL. We're shutting down, but we hope you keep hanging out with your friends — even without an app."
-
-The post-mortem was clear to observers, if not immediately to the founders. They had solved a problem that didn't exist. The friction of texting "what are you up to?" wasn't actually friction — it was social signaling, intentionality, the difference between a genuine invitation and ambient availability. People wanted to choose who to reach out to and when, not operate from a shared real-time dashboard of their social lives.
-
-IRL had mistaken information asymmetry for a product opportunity. Knowing what everyone was doing all the time turned out to be uncomfortable rather than useful. The app had optimized for spontaneity in a world where people increasingly valued intentionality. It made social coordination more efficient at the cost of making it less meaningful.
-
-The app that promised to bring people together IRL became a cautionary tale about building solutions for problems users didn't actually have.
+The story reveals a harsh reality of consumer social apps: the window between "early enough to define the category" and "too late to compete" is measured in weeks, not years. IRL and Snapchat launched within months of each other with nearly identical products. One became a company worth tens of billions. The other became a cautionary tale about the tyranny of network effects and the outsized importance of being first.
 
 ---
 *Part of All Paths Through a Startup at alexandria.press*

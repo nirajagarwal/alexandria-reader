@@ -1,50 +1,44 @@
 # Snapchat
 
-***The ephemeral pivot that refused a fortune***
+***The disappearing message that refused to disappear***
 
 > **Years:** 2011-present
 
-Evan Spiegel and Bobby Murphy met at Stanford, not in the computer science department but through a fraternity. Spiegel studied product design. Murphy was the engineer. The pairing mattered — Snapchat would become a product where design intuition drove technical decisions, not the other way around.
+In 2011, Evan Spiegel was a product design student at Stanford with a problem most college students recognized: the permanence of the internet. Every drunken photo, every ill-considered post, every moment of youth became a permanent record. His solution, developed with fraternity brother Bobby Murphy, seemed trivial to almost everyone who heard it: messages that disappeared.
 
-Their first collaboration was a failed social network called Future Freshman. Their second was a website for trading celebrity gossip. Then in April 2011, a third fraternity brother named Reggie Brown walked into Spiegel's room with an idea: photos that disappear. Messages you couldn't save. Communication that evaporated.
+They called it Picaboo. It launched in July 2011 and went nowhere. Spiegel's father, a lawyer, sent a cease-and-desist to the third co-founder, Reggie Brown, over a dispute about credit and equity. Brown was out. They renamed it Snapchat and relaunched in September.
 
-Spiegel saw it immediately. Everyone else was building permanence into the internet. Facebook made everything a record. Instagram turned photos into portfolios. Twitter was an archive. The internet remembered everything. Brown's idea was the opposite — what if it forgot?
+For months, nothing happened. Then Spiegel's mother, a private school marketing consultant, suggested they focus on high schools. She knew someone at a Southern California prep school. Within weeks, teenage girls discovered that Snapchat let them send photos without the anxiety of permanence. Boys discovered that girls were using it. By December 2011, the app had users.
 
-They built the first version that summer. Brown contributed early ideas but left the project amid disputes over equity before launch. What emerged was called Picaboo: send a photo, set a timer, it vanishes. When they launched in July 2011, almost nobody used it. The concept seemed pointless. Why would you want messages to disappear?
+The growth curve looked insane. High schoolers told middle schoolers. Siblings brought it home. Parents didn't understand it, which made it more attractive. By spring 2012, students were sending thousands of snaps. The media narrative was predictable and wrong: this was obviously a sexting app, doomed to scandal and irrelevance.
 
-They rebranded to Snapchat that September. Spiegel's mother helped spread it to high school students in Los Angeles. This turned out to be the right audience. Teenagers grasped what adults missed. They didn't want disappearing messages for nefarious reasons. They wanted communication that felt like real conversation — ephemeral, low-stakes, authentic. On Facebook, everything you posted became part of your permanent record, judged by parents and future employers. Snapchat let you be stupid without consequences.
+Spiegel, twenty-one and arrogant in the particular way of Stanford product designers, knew something the critics didn't. Disappearing messages weren't about hiding bad behavior. They were about lowering the stakes of communication. On Facebook, every post was performed for an audience, curated for permanence, optimized for likes. On Snapchat, you could be ugly, boring, real. You could send a photo of your homework or your ceiling or your dog. It didn't matter. It would vanish.
 
-The app spread through high schools like wildfire. By spring 2012, students were sending millions of snaps per day. This terrified parents and fascinated investors. Lightspeed Venture Partners led a seed round. The pitch was simple: we're where young people actually communicate.
+The investors who got it early made fortunes. Lightspeed Venture Partners led a $485,000 seed round in early 2012. Benchmark invested $13.5 million that May at a $70 million valuation. By November 2012, users were sharing 20 million photos a day. Benchmark doubled down with another $8.5 million.
 
-But Silicon Valley didn't get it. The tech press called it a sexting app. Investors saw a feature, not a platform. Facebook tried to copy it with Poke in December 2012. The clone was competent but missed something essential. Snapchat wasn't just about disappearing photos. It was about designing for ephemerality as the default state. That changed how people used it.
+Then Facebook noticed. In November 2012, Mark Zuckerberg launched Poke, a Snapchat clone. It had Facebook's resources, Facebook's distribution, Facebook's brand. It should have killed Snapchat. Instead, Poke died in months. Zuckerberg, who had built an empire on permanent identity, couldn't understand ephemeral communication. His execution was technically correct but spiritually dead.
 
-The real product innovation came with Stories in October 2013. Instead of sending snaps one-to-one, you could post to a timeline that vanished after twenty-four hours. This turned Snapchat into something bigger — not just messaging but a new format for social media. Instagram would later copy Stories wholesale, but Snapchat had the authentic version. Users knew the difference.
+In December 2013, Zuckerberg tried again, this time with an acquisition offer: $3 billion in cash. Spiegel was twenty-three. He said no. The decision seemed insane to everyone except Spiegel. He saw what others didn't: Snapchat wasn't a feature, it was a different philosophy of communication. Facebook couldn't acquire its way to understanding ephemerality.
 
-Then came the moment that defined Snapchat's path. In November 2013, Mark Zuckerberg offered three billion dollars to acquire the company. Spiegel was twenty-three years old. Murphy was twenty-five. They said no.
+By 2014, Snapchat was a phenomenon and a mystery. Wall Street analysts couldn't understand a product where nothing was saved and everything disappeared. There were no like counts to optimize, no viral posts to chase. The product felt anti-growth. Instead, it grew faster. Users were sending 700 million photos and videos daily.
 
-The Valley thought they were insane. You don't turn down Zuckerberg. You don't bet that you can compete with Facebook. But Spiegel believed Snapchat was building something genuinely different, and Facebook's DNA was wrong for it. Permanence versus ephemerality. Profiles versus privacy. The old internet versus what came next.
+Stories launched in October 2013 — a feature that let users post photos visible to friends for twenty-four hours. It seemed like a minor addition. It became the template for social media's next decade. Instagram would copy it. Facebook would copy it. Everyone would copy it. But Stories made sense on Snapchat in a way it never would on platforms built for permanence.
 
-The rejection made them famous and marked. Facebook would spend years trying to kill them.
+The company struggled with monetization. Snapchat Discover, launched in 2015, brought media partners onto the platform with daily editions. It was awkward and confusing. Advertisers couldn't measure disappearing ads with traditional metrics. Spiegel insisted on vertical video when the industry standard was horizontal. He was right, but years early.
 
-Snapchat kept growing. They added features constantly — chat, video, filters, lenses, Discover. The lenses turned faces into puppies or rainbows, absurd and addictive. Discover brought media partners onto the platform. Each addition reinforced the core insight: design for the moment, not the archive.
+The real product innovation came from augmented reality. Lenses — those dog ears and rainbow vomit filters — seemed like toys. They were actually the most sophisticated consumer AR product in the world. Snapchat was building a camera company disguised as a messaging app. Spiegel talked about Snapchat as a camera company while everyone else still thought in terms of social networks.
 
-They raised money at higher and higher valuations. By 2015, they were valued at sixteen billion dollars. By 2017, they went public at twenty-four billion. Spiegel was twenty-six at IPO, Murphy twenty-eight. They structured the company with supervoting shares that gave them permanent control. The market was buying into a vision of the future where young people's preferences mattered more than advertising revenue.
+In 2016, they launched Spectacles: sunglasses with a built-in camera that uploaded directly to Snapchat. They sold them from pop-up vending machines. The hype was enormous. The execution was flawed. Spectacles became a punchline, a cautionary tale about hardware hubris.
 
-But the forces arrayed against them were immense. Instagram launched Stories in August 2016 and growth exploded. Facebook had a billion users to distribute to. Snapchat had to earn every new user. Instagram Stories quickly surpassed Snapchat Stories in daily users. The clone was winning.
+The IPO came in March 2017 at a $24 billion valuation. Spiegel and Murphy retained effective control through a special class of stock. Wall Street hated it. The company was burning cash, user growth was slowing, Facebook's copying was working. Instagram Stories had more daily users than all of Snapchat within a year of launching.
 
-Worse, Snapchat made unforced errors. In late 2017, they redesigned the app to separate social from media. Users hated it. Celebrities hated it. Kylie Jenner tweeted that she didn't open Snapchat anymore, and the stock dropped over a billion dollars. They partially rolled back the redesign, but the damage was done.
+Then came the redesign disaster of 2018. Spiegel, convinced he knew better than his users, split the app into separate social and media sections. Users revolted. Kylie Jenner tweeted that she didn't open Snapchat anymore. The stock lost $1.3 billion in value in a day. They partially rolled back the changes. The damage was done.
 
-The business model was always fragile. Snapchat pioneered vanishing content, but advertisers want permanence. They pioneered camera-first design, but that made ads harder to serve. They pioneered privacy, but that limited targeting. Every innovation that made the product beloved made the business harder.
+The company should have died. Instead, it found a floor. The user base stabilized around the people who actually preferred Snapchat's model: younger users who wanted privacy, authenticity, communication with close friends rather than broadcast to the world. By 2020, they were profitable. The AR products matured. Brands learned how to advertise on a platform where nothing lasted.
 
-By 2018, user growth stalled. Instagram was everywhere. Facebook had copied every feature. The company laid off engineers and restructured. The stock fell below the IPO price. Analysts called it a feature, not a company — exactly what they'd said six years earlier.
+Snap today is worth around $17 billion, down from its $100 billion peak but alive, profitable, and growing. It owns the under-25 demographic in ways Facebook never could. Three hundred million people use it daily. It never became the giant it might have been, but it survived being copied by the largest social network in history. It proved that saying no to $3 billion can be the right call. It showed that disappearing messages were never the product — a different relationship to communication was.
 
-But Snapchat didn't die. They rebuilt the Android app from scratch, fixing years of technical debt. They leaned into augmented reality, building the best AR platform in consumer social. They focused on the users they had — young, engaged, impossible to replicate. Daily active users stabilized, then grew again. By 2021, they crossed three hundred million daily users.
-
-The business slowly worked. Revenue grew. Losses shrank. The stock recovered. They weren't going to beat Instagram, but they didn't need to. The bet was that there would always be users who wanted something different — more private, more playful, more ephemeral.
-
-Today Snapchat remains independent, worth around twenty billion dollars, with over four hundred million daily users. It's not the giant it might have been. Instagram Stories has over a billion users. But it's not dead, either. It carved out territory and held it.
-
-The path Spiegel and Murphy chose — turn down acquisition, stay independent, fight the giants — is the path that most often leads to failure. But occasionally it leads here: a company that survived, that mattered, that changed how a generation communicates. Not the biggest. Not the richest. But still here, still theirs.
+Spiegel is still CEO. He's still arrogant. He's still building a camera company while everyone else builds social networks. He was wrong about enough things that Snapchat became smaller than it might have been. He was right about enough things that it still exists at all.
 
 ---
 *Part of All Paths Through a Startup at alexandria.press*

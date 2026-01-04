@@ -1,40 +1,44 @@
 # Cohere
 
-***The enterprise AI bet that stayed course while others chased consumers***
+***The enterprise AI play that found survival in the shadow of giants***
 
 > **Years:** 2019-present
 
-In 2019, three researchers from Google Brain — Aidan Gomez, Ivan Zhang, and Nick Frosst — left to start Cohere. They had worked on the transformer architecture that would power the generative AI revolution, but they saw a different opportunity than most of their peers. While others would chase the spectacular — chatbots that could fool humans, image generators that could make art — Cohere aimed for the prosaic: helping businesses actually use large language models.
+In 2019, three former Google Brain researchers — Aidan Gomez, Ivan Zhang, and Nick Frosst — left to build Cohere. The timing seemed off. OpenAI was well-funded and secretive. Google had the best AI talent and infrastructure in the world. DeepMind was tackling grand challenges. What space remained for a startup?
 
-The founding insight was tactical. Gomez had co-authored "Attention Is All You Need," the 2017 paper that introduced transformers. He understood the technology's power. But he also understood its friction. Companies couldn't easily deploy these models. They were too large, too expensive, too complex. OpenAI and Anthropic would build towards artificial general intelligence. Cohere would build towards enterprise adoption.
+The founders saw a gap. Large language models were emerging from research labs, but enterprises couldn't use them. The models required specialized infrastructure. They needed fine-tuning for specific tasks. Privacy and control mattered to corporations in ways they didn't to consumer applications. OpenAI was pursuing artificial general intelligence. Google served consumers and its own products. No one was building specifically for enterprises that wanted to put language AI into production systems.
 
-They raised $40 million from Index Ventures in their Series A before they had a product. The pitch was credible because the founders were credible. Gomez was 23 but had the paper that mattered. The timing seemed perfect: GPT-3 had just demonstrated what was possible, but there was no clear path for enterprises to use it.
+Cohere raised a $40 million Series A in 2021 from Index Ventures and others. The pitch: enterprise-grade language models with privacy controls, customization capabilities, and reliable deployment. Not the biggest models. Not the flashiest demos. Models companies could actually integrate into their workflows.
 
-The early product was an API for language generation and understanding. Developers could fine-tune models for specific tasks without the infrastructure burden. The first customers were unglamorous — customer service platforms, content moderation systems, search functions. This was intentional. Cohere wanted repeatable use cases, not moonshots.
+The product was narrow: APIs for text generation, classification, and search. Banks could analyze documents. Retailers could improve search. Healthcare companies could process clinical notes. The models stayed behind the customer's firewall or in isolated cloud environments. Data didn't leak between clients. This mattered to regulated industries.
 
-In 2021, they raised a $125 million Series B led by Tiger Global, at a reported $700 million valuation. The market was heating up. GPT-3 was now widely available through OpenAI's API. Competitors were emerging. But Cohere differentiated on deployment model: they offered models that could run on a company's own infrastructure, addressing data privacy concerns that OpenAI's cloud-only approach couldn't.
+Then ChatGPT launched in November 2022.
 
-The strategy was "models as a service, but make it enterprise." They built smaller, more efficient models optimized for specific tasks. While OpenAI pursued scale — bigger models, more parameters — Cohere pursued efficiency. A 52-billion parameter model that performed like a larger one. Multilingual models that actually worked. Fine-tuning that didn't require a machine learning team.
+The landscape transformed overnight. OpenAI went from research lab to cultural phenomenon. Microsoft integrated GPT into everything. Google scrambled to catch up with Bard. Anthropic emerged as the safety-conscious alternative. Every major tech company announced foundation models. Capital flooded into generative AI.
 
-Then ChatGPT launched in November 2022, and the market exploded. Suddenly every company needed an AI strategy. Cohere's enterprise focus, which had seemed conservative, looked prescient. They had relationships with companies that were now desperate to deploy LLMs safely. They had infrastructure for private deployment. They had fine-tuning tools that worked.
+Cohere was suddenly one of many. The enterprise positioning that seemed like a niche was now the strategy of every AI lab. OpenAI launched ChatGPT Enterprise. Google offered enterprise versions of its models. Anthropic courted businesses with Claude. The differentiation narrowed.
 
-In June 2023, they raised $270 million in a Series C co-led by Inovia and Oracle, valuing the company at $2.2 billion. Oracle's involvement was telling — they integrated Cohere into their cloud platform. This was the distribution strategy: partner with enterprise infrastructure providers rather than compete with them.
+The company raised more. $125 million Series B in 2022. $270 million Series C in 2023 at a $2.2 billion valuation. The investors were hedging. Maybe Cohere would be the enterprise winner. Maybe Oracle's strategic investment would open doors. Maybe being founded by actual ML researchers mattered.
 
-But the competition intensified. OpenAI had launched an enterprise tier. Anthropic had Claude. Google had Bard. Every major cloud provider was offering foundation models. The question became: would enterprises want a specialized AI company, or would they default to their existing vendors?
+But the math was brutal. Training frontier models cost hundreds of millions. OpenAI had Microsoft's infrastructure and capital. Google had both and the best AI research organization on earth. Anthropic had committed safety researchers and deep pockets. Cohere had capital, but not infinite capital. Every training run was a bet.
 
-Cohere's answer was differentiation through deployment flexibility and domain specificity. They launched Command, optimized for business use cases. They offered models that could run entirely on-premises. They built industry-specific solutions — legal document analysis, financial services, healthcare.
+The company made choices. It wouldn't compete on model size. It focused on efficiency — smaller models that performed well on specific tasks. It emphasized deployability and customization. It built tools for enterprises to fine-tune models on their data. It targeted customers in banking, healthcare, and government where data privacy and control mattered most.
 
-By 2024, they had hundreds of enterprise customers, including McKinsey, Salesforce, and LivePerson. They weren't growing as explosively as OpenAI, but they were growing profitably, with contracts measured in years rather than API calls. Revenue was reportedly in the hundreds of millions.
+Some customers signed. Oracle embedded Cohere models in its cloud platform. Major banks tested it for document analysis. But deals moved slowly. Enterprises procrastinate on AI adoption despite the hype. They need proof of ROI, security reviews, legal approvals. The sales cycles stretched.
 
-The path revealed a pattern: in a winner-take-all market, there might be room for enterprise specialists. While OpenAI captured headlines and consumer imagination, Cohere captured procurement departments and IT security teams. The technology was similar. The go-to-market was entirely different.
+Meanwhile, OpenAI kept shipping. GPT-4 was more capable than anyone expected. The API improved. Prices dropped. Microsoft's sales force pushed it into enterprises. The technical moat that seemed defensible — fine-tuning, privacy, enterprise features — narrowed as the giants added those capabilities.
 
-There were criticisms. Some argued their models lagged behind OpenAI and Anthropic in raw capability. Others said the enterprise focus limited their ceiling — they'd never be the default AI like Google became the default search. The counterargument was survival: many consumer AI companies were burning billions with no revenue model. Cohere had revenue, margins, and a sustainable business.
+By 2024, Cohere was surviving but not dominating. It raised another $500 million, but at a $5 billion valuation that reflected both AI hype and investor uncertainty. It had revenue, customers, and a real product. It also had competitors with deeper pockets, better models, and more distribution.
 
-The company continued to raise. In 2024, reports suggested they were raising at a $5 billion valuation. The growth was steady rather than exponential. They weren't the story of AI — OpenAI owned that. But they were a story of how to build an AI company that enterprises would actually pay for.
+The company still exists. It still has believers. The founders are capable. The enterprise focus might still matter if regulations force data localization. The efficiency angle might win if training costs stay high. Partnerships with Oracle and other platforms might create enough distribution.
 
-What made Cohere's path distinct was its consistency. They never chased the consumer dream. They never tried to build AGI. They identified a wedge — enterprise deployment of LLMs — and drove it deeper. When the market validated generative AI, they had the relationships and infrastructure to capture enterprise spend.
+But the path forward is narrow. Cohere bet on enterprises wanting alternatives to big tech AI. It bet on customization and privacy mattering more than raw capability. It bet on being early enough to build a moat. Those bets haven't clearly failed, but they haven't clearly won either.
 
-The outcome remains unwritten. They could become the enterprise standard, acquired by a cloud giant or sustaining independently. They could be commoditized as every platform offers similar capabilities. They could break out with a killer application that transforms how businesses operate. But the path they chose — enterprise-first, deployment-flexible, efficiency-focused — was different from the path that captured the world's attention. And in a market where most AI companies would fail or be acquihired, different might be what matters.
+The story Cohere tells is about timing and scale in platform shifts. The founders saw the opportunity before most. They built real technology. They raised substantial capital. But they entered a market where the incumbents were the best AI labs in the world, where capital requirements exploded, and where technical differentiation compressed faster than anyone predicted.
+
+Cohere is neither a failure nor a triumph. It's a company that found a position and is fighting to hold it. Whether that position is defensible won't be clear for years. The outcome depends on whether enterprise AI becomes a distinct market or whether the hyperscalers absorb everything. Whether regulations fragment the landscape or consolidate it. Whether being slightly smaller and more focused matters or whether scale dominates all.
+
+The most likely path is acquisition or slow decline into a profitable but small niche. The less likely path is that the giants stumble and Cohere becomes the enterprise standard. The story is still being written, but the shape is visible. It's the shape of a company that was early, capable, and well-funded — and still might not be enough.
 
 ---
 *Part of All Paths Through a Startup at alexandria.press*

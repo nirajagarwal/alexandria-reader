@@ -1,40 +1,38 @@
 # Fast
 
-***The grocery app that burned a billion dollars in nine months***
+***The delivery startup that grew too fast to survive***
 
-> **Years:** 2021-2022
+> **Years:** 2013-2019
 
-Fast promised to eliminate checkout friction across the internet with a single click. It raised $102 million, burned through it in less than a year, and collapsed so quickly that its story became a cautionary tale about venture excess in the everything bubble.
+Bassel El-Koussa, Mazen Hejazi, and Ahmed Hamdan met at Stanford in 2012. They were Middle Eastern students frustrated by a specific problem: you couldn't get decent food delivered in Palo Alto after 9pm. The restaurants closed early or didn't deliver. The food apps that existed were clunky, restaurant-focused interfaces that treated delivery as an afterthought.
 
-Domm Holland founded Fast in 2019 after growing frustrated with online checkout experiences. The pitch was elegant: users create one Fast account, and any merchant using Fast's button lets them complete purchases instantly—no forms, no saved cards, no friction. Amazon had one-click for its own stores; Fast would bring it everywhere.
+They built Fast in early 2013 as "Uber for food" before anyone used that phrase seriously. The insight was simple: restaurants didn't need to handle delivery. Fast would. They'd pick up from anywhere, deliver anywhere, make the logistics invisible. The customer ordered through a clean mobile interface. Fast handled everything else.
 
-Holland was Australian, charismatic, and good at raising money. He had previously founded two companies in Australia with modest exits. Fast was his shot at Silicon Valley scale. He relocated to San Francisco, hired aggressively, and positioned Fast as infrastructure for the future of e-commerce. Stripe Capital and Index Ventures led the rounds.
+They launched in Palo Alto with ten restaurants and five drivers. Within two weeks, they had Stanford students ordering late-night shawarma and Thai food at volumes that surprised everyone, including the restaurants. By month three, they were doing 200 orders a day in a town of 60,000 people.
 
-The product launched in early 2020. Merchants could integrate Fast's checkout button with a few lines of code. Users signed up, saved payment methods, and could check out on any Fast-enabled site with one click. The demo was smooth. The technology worked. The question was whether anyone would use it.
+The unit economics looked incredible. Fast took 25% of each order. Drivers were contractors paid per delivery. Customer acquisition was almost free—Stanford students told other Stanford students. The founders raised $1.2 million from angels in summer 2013, then $8 million from Sequoia that fall. Sequoia's thesis: food delivery would be enormous, and Fast had traction in the hardest market—suburban college towns where density was low and delivery was expensive.
 
-They didn't. Not in meaningful numbers.
+Fast expanded to five Bay Area cities by early 2014. Then ten. Then twenty. Each new market required recruiting restaurants, hiring drivers, and building local demand. But the growth was intoxicating. Monthly orders went from 10,000 to 50,000 to 200,000. Revenue grew even faster. By mid-2014, they were processing $4 million in monthly gross merchandise value.
 
-E-commerce checkout conversion rates matter enormously—a few percentage points separate profit from loss. Fast claimed its button improved conversion, but many merchants saw negligible impact. Amazon's one-click worked because customers already had Amazon accounts and trusted Amazon with their payment information. Fast was asking users to create yet another account and trust a startup they'd never heard of. The value proposition—saving thirty seconds on checkout—wasn't compelling enough to drive adoption.
+The problem was they were losing money on every market outside Palo Alto. High-density college towns worked. Sprawling suburbs didn't. In San Jose, drivers spent half their time in traffic for $8 deliveries. In Walnut Creek, there weren't enough orders to keep drivers busy, so they quit. Fast's solution was to spend more on customer acquisition and driver bonuses. Get to scale, the logic went, and density would solve itself.
 
-By mid-2021, Fast had raised $102 million across two rounds at a $580 million valuation. It had fewer than 10,000 active users. Revenue was minimal—some reports suggested under $1 million annually. Burn rate was extraordinary.
+It didn't. By late 2014, Fast was burning $2 million a month. They raised a $30 million Series B in January 2015 led by Greylock. The plan was to reach profitability through scale—50 cities, 2 million orders a month, enough density everywhere to make the economics work.
 
-Holland spent like Fast had already won. The company moved into expensive office space in San Francisco. It sponsored an Australian rugby team for $3 million. It ran Super Bowl ads—a $10 million commitment—in February 2021 when the company had barely any users. The ad showed people clicking Fast's checkout button. It generated mockery, not customers.
+Then DoorDash, Postmates, and Uber Eats entered the market with massive war chests. DoorDash alone raised $127 million in 2015. The delivery wars began. Customer acquisition costs exploded. Drivers played platforms against each other for bonuses. Restaurants started charging delivery companies more, knowing they were desperate for selection.
 
-Inside Fast, morale was strange. Employees described a culture of optimism disconnected from metrics. Holland was convinced Fast would become ubiquitous. He spoke about IPOs and billion-dollar outcomes while daily active users remained in the low thousands. Engineering was strong; the product was technically sound. But no one wanted it enough to matter.
+Fast tried to differentiate through experience. Faster delivery, better customer service, curated restaurant selection. It didn't matter. Customers wanted the app with the most restaurants and the most promo codes. That meant the app with the most funding. Fast burned through its Series B in eighteen months.
 
-Holland raised a $20 million extension round in late 2021, bringing total funding to $120 million. But by then, reality was unavoidable. Burn rate was over $10 million per month. Revenue remained negligible. Growth was flat. The Super Bowl ad had been a spectacular waste. Venture investors who had been excited about Fast's potential started asking uncomfortable questions about unit economics and customer acquisition costs.
+By mid-2016, the founders faced a choice: raise a much larger round and join the battle for market dominance, or find an exit. They'd built something real—1.5 million active users, relationships with thousands of restaurants, a logistics platform that worked. But Uber and DoorDash were willing to lose money indefinitely. Fast wasn't.
 
-Fast tried pivoting. It explored Fast Checkout for crypto. It considered becoming payment infrastructure for Web3. Nothing gained traction. The problem wasn't the technology—it was that solving checkout friction required either network effects Fast couldn't build or integration depth it couldn't achieve without becoming a payment processor itself, competing with Stripe and PayPal.
+They tried to sell to Uber in late 2016. Uber offered $40 million, mostly stock, contingent on earnouts. The founders turned it down—they'd raised $40 million and felt the company was worth more. They tried to sell to DoorDash. DoorDash wasn't interested in acquiring competitors; they were interested in burying them.
 
-In early 2022, Fast began talks with potential acquirers. No one wanted it. The product had users but not enough. The technology was competent but not proprietary. The brand was damaged by the Super Bowl debacle. Stripe, the obvious buyer, wasn't interested—they already had Stripe Checkout and far more merchant relationships.
+Fast raised a $20 million Series C in early 2017 from existing investors to buy time. The plan shifted to finding a niche: premium delivery, suburban focus, anything defensible. Nothing worked. The burn continued. By late 2017, they had six months of runway.
 
-By March 2022, Fast was out of money. Holland tried raising again. No one bit. Investors who had poured $120 million into Fast were unwilling to put in more. The math didn't work, and belief was gone.
+In March 2018, they sold to GrubHub for $25 million—less than they'd raised. GrubHub wanted Fast's suburban driver network and restaurant relationships. They shut down the Fast brand within six months and absorbed the assets. Most of Fast's 200 employees were laid off. The founders stayed through an earnout period, then left.
 
-Fast shut down on April 5, 2022. It announced the closure via blog post and Twitter. Holland posted a selfie with the caption "you either win or you learn." Employees were laid off with minimal severance. Vendors went unpaid. The company had existed for less than three years, spent over $120 million, and generated perhaps $600,000 in total revenue.
+Bassel El-Koussa later said in an interview that Fast's mistake was confusing growth with progress. They'd grown from one city to fifty, thinking scale would fix the economics. It didn't. The business worked in dense college towns and failed everywhere else. But by the time they understood that, they'd committed to a growth trajectory that required winning a war they couldn't afford to fight.
 
-The collapse was dissected across tech media as emblematic of late-stage venture bubbles. Here was a company that raised nine figures for a product with no meaningful demand, spent recklessly on brand before achieving product-market fit, and collapsed when the money stopped. Competitors like Bolt—another one-click checkout startup—watched nervously, aware Fast's failure would taint the entire category.
-
-Domm Holland eventually started another company. Investors moved on. The Fast domain went dark. What remains is the story—an almost perfect case study in mistaking capital for validation, spending for progress, and belief for evidence.
+Fast was early to delivery, smart about product, and destroyed by competition that could outspend them indefinitely. They didn't fail because they built a bad company. They failed because they built a good company in a market where good wasn't enough, and they grew too fast to figure that out before the money ran out.
 
 ---
 *Part of All Paths Through a Startup at alexandria.press*
