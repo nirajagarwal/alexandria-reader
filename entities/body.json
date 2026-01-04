@@ -1,0 +1,706 @@
+{
+  "collection_id": "body",
+  "title": "Body",
+  "descriptor": "What we are in the flesh",
+  "created_at": "2024-01-01T00:00:00Z",
+  "card_display": {
+    "secondary": "category",
+    "tertiary": "order",
+    "grid_style": "wide"
+  },
+  "entries": [
+    {
+      "order": 1,
+      "slug": "heartbeat",
+      "name": "Heartbeat",
+      "category": "Rhythm",
+      "descriptor": null
+    },
+    {
+      "order": 2,
+      "slug": "breathing",
+      "name": "Breathing",
+      "category": "Rhythm",
+      "descriptor": null
+    },
+    {
+      "order": 3,
+      "slug": "blinking",
+      "name": "Blinking",
+      "category": "Rhythm",
+      "descriptor": null
+    },
+    {
+      "order": 4,
+      "slug": "sleeping",
+      "name": "Sleeping",
+      "category": "Rhythm",
+      "descriptor": null
+    },
+    {
+      "order": 5,
+      "slug": "dreaming",
+      "name": "Dreaming",
+      "category": "Rhythm",
+      "descriptor": null
+    },
+    {
+      "order": 6,
+      "slug": "falling-asleep",
+      "name": "Falling Asleep",
+      "category": "Rhythm",
+      "descriptor": null
+    },
+    {
+      "order": 7,
+      "slug": "hunger",
+      "name": "Hunger",
+      "category": "Sustenance",
+      "descriptor": null
+    },
+    {
+      "order": 8,
+      "slug": "thirst",
+      "name": "Thirst",
+      "category": "Sustenance",
+      "descriptor": null
+    },
+    {
+      "order": 9,
+      "slug": "eating",
+      "name": "Eating",
+      "category": "Sustenance",
+      "descriptor": null
+    },
+    {
+      "order": 10,
+      "slug": "swallowing",
+      "name": "Swallowing",
+      "category": "Sustenance",
+      "descriptor": null
+    },
+    {
+      "order": 11,
+      "slug": "digesting",
+      "name": "Digesting",
+      "category": "Sustenance",
+      "descriptor": null
+    },
+    {
+      "order": 12,
+      "slug": "excreting",
+      "name": "Excreting",
+      "category": "Sustenance",
+      "descriptor": null
+    },
+    {
+      "order": 13,
+      "slug": "urinating",
+      "name": "Urinating",
+      "category": "Sustenance",
+      "descriptor": null
+    },
+    {
+      "order": 14,
+      "slug": "seeing",
+      "name": "Seeing",
+      "category": "Sense",
+      "descriptor": null
+    },
+    {
+      "order": 15,
+      "slug": "hearing",
+      "name": "Hearing",
+      "category": "Sense",
+      "descriptor": null
+    },
+    {
+      "order": 16,
+      "slug": "tasting",
+      "name": "Tasting",
+      "category": "Sense",
+      "descriptor": null
+    },
+    {
+      "order": 17,
+      "slug": "smelling",
+      "name": "Smelling",
+      "category": "Sense",
+      "descriptor": null
+    },
+    {
+      "order": 18,
+      "slug": "touching",
+      "name": "Touching",
+      "category": "Sense",
+      "descriptor": null
+    },
+    {
+      "order": 19,
+      "slug": "balance",
+      "name": "Balance",
+      "category": "Sense",
+      "descriptor": null
+    },
+    {
+      "order": 20,
+      "slug": "proprioception",
+      "name": "Proprioception",
+      "category": "Sense",
+      "descriptor": null
+    },
+    {
+      "order": 21,
+      "slug": "pain",
+      "name": "Pain",
+      "category": "Sense",
+      "descriptor": null
+    },
+    {
+      "order": 22,
+      "slug": "itch",
+      "name": "Itch",
+      "category": "Sense",
+      "descriptor": null
+    },
+    {
+      "order": 23,
+      "slug": "temperature",
+      "name": "Temperature",
+      "category": "Sense",
+      "descriptor": null
+    },
+    {
+      "order": 24,
+      "slug": "sneezing",
+      "name": "Sneezing",
+      "category": "Response",
+      "descriptor": null
+    },
+    {
+      "order": 25,
+      "slug": "coughing",
+      "name": "Coughing",
+      "category": "Response",
+      "descriptor": null
+    },
+    {
+      "order": 26,
+      "slug": "yawning",
+      "name": "Yawning",
+      "category": "Response",
+      "descriptor": null
+    },
+    {
+      "order": 27,
+      "slug": "hiccupping",
+      "name": "Hiccupping",
+      "category": "Response",
+      "descriptor": null
+    },
+    {
+      "order": 28,
+      "slug": "shivering",
+      "name": "Shivering",
+      "category": "Response",
+      "descriptor": null
+    },
+    {
+      "order": 29,
+      "slug": "sweating",
+      "name": "Sweating",
+      "category": "Response",
+      "descriptor": null
+    },
+    {
+      "order": 30,
+      "slug": "blushing",
+      "name": "Blushing",
+      "category": "Response",
+      "descriptor": null
+    },
+    {
+      "order": 31,
+      "slug": "goosebumps",
+      "name": "Goosebumps",
+      "category": "Response",
+      "descriptor": null
+    },
+    {
+      "order": 32,
+      "slug": "flinching",
+      "name": "Flinching",
+      "category": "Response",
+      "descriptor": null
+    },
+    {
+      "order": 33,
+      "slug": "startling",
+      "name": "Startling",
+      "category": "Response",
+      "descriptor": null
+    },
+    {
+      "order": 34,
+      "slug": "gagging",
+      "name": "Gagging",
+      "category": "Response",
+      "descriptor": null
+    },
+    {
+      "order": 35,
+      "slug": "vomiting",
+      "name": "Vomiting",
+      "category": "Response",
+      "descriptor": null
+    },
+    {
+      "order": 36,
+      "slug": "tearing",
+      "name": "Tearing",
+      "category": "Response",
+      "descriptor": null
+    },
+    {
+      "order": 37,
+      "slug": "nausea",
+      "name": "Nausea",
+      "category": "State",
+      "descriptor": null
+    },
+    {
+      "order": 38,
+      "slug": "fatigue",
+      "name": "Fatigue",
+      "category": "State",
+      "descriptor": null
+    },
+    {
+      "order": 39,
+      "slug": "arousal",
+      "name": "Arousal",
+      "category": "State",
+      "descriptor": null
+    },
+    {
+      "order": 40,
+      "slug": "fever",
+      "name": "Fever",
+      "category": "State",
+      "descriptor": null
+    },
+    {
+      "order": 41,
+      "slug": "intoxication",
+      "name": "Intoxication",
+      "category": "State",
+      "descriptor": null
+    },
+    {
+      "order": 42,
+      "slug": "withdrawal",
+      "name": "Withdrawal",
+      "category": "State",
+      "descriptor": null
+    },
+    {
+      "order": 43,
+      "slug": "numbness",
+      "name": "Numbness",
+      "category": "State",
+      "descriptor": null
+    },
+    {
+      "order": 44,
+      "slug": "dizziness",
+      "name": "Dizziness",
+      "category": "State",
+      "descriptor": null
+    },
+    {
+      "order": 45,
+      "slug": "adrenaline",
+      "name": "Adrenaline",
+      "category": "State",
+      "descriptor": null
+    },
+    {
+      "order": 46,
+      "slug": "clotting",
+      "name": "Clotting",
+      "category": "Healing",
+      "descriptor": null
+    },
+    {
+      "order": 47,
+      "slug": "scarring",
+      "name": "Scarring",
+      "category": "Healing",
+      "descriptor": null
+    },
+    {
+      "order": 48,
+      "slug": "bruising",
+      "name": "Bruising",
+      "category": "Healing",
+      "descriptor": null
+    },
+    {
+      "order": 49,
+      "slug": "inflammation",
+      "name": "Inflammation",
+      "category": "Healing",
+      "descriptor": null
+    },
+    {
+      "order": 50,
+      "slug": "immune-response",
+      "name": "Immune Response",
+      "category": "Healing",
+      "descriptor": null
+    },
+    {
+      "order": 51,
+      "slug": "healing",
+      "name": "Healing",
+      "category": "Healing",
+      "descriptor": null
+    },
+    {
+      "order": 52,
+      "slug": "allergic-reaction",
+      "name": "Allergic Reaction",
+      "category": "Healing",
+      "descriptor": null
+    },
+    {
+      "order": 53,
+      "slug": "ovulating",
+      "name": "Ovulating",
+      "category": "Reproduction",
+      "descriptor": null
+    },
+    {
+      "order": 54,
+      "slug": "menstruating",
+      "name": "Menstruating",
+      "category": "Reproduction",
+      "descriptor": null
+    },
+    {
+      "order": 55,
+      "slug": "erection",
+      "name": "Erection",
+      "category": "Reproduction",
+      "descriptor": null
+    },
+    {
+      "order": 56,
+      "slug": "ejaculating",
+      "name": "Ejaculating",
+      "category": "Reproduction",
+      "descriptor": null
+    },
+    {
+      "order": 57,
+      "slug": "orgasm",
+      "name": "Orgasm",
+      "category": "Reproduction",
+      "descriptor": null
+    },
+    {
+      "order": 58,
+      "slug": "conceiving",
+      "name": "Conceiving",
+      "category": "Reproduction",
+      "descriptor": null
+    },
+    {
+      "order": 59,
+      "slug": "gestating",
+      "name": "Gestating",
+      "category": "Reproduction",
+      "descriptor": null
+    },
+    {
+      "order": 60,
+      "slug": "childbirth",
+      "name": "Childbirth",
+      "category": "Reproduction",
+      "descriptor": null
+    },
+    {
+      "order": 61,
+      "slug": "lactating",
+      "name": "Lactating",
+      "category": "Reproduction",
+      "descriptor": null
+    },
+    {
+      "order": 62,
+      "slug": "growing",
+      "name": "Growing",
+      "category": "Growth",
+      "descriptor": null
+    },
+    {
+      "order": 63,
+      "slug": "teething",
+      "name": "Teething",
+      "category": "Growth",
+      "descriptor": null
+    },
+    {
+      "order": 64,
+      "slug": "puberty",
+      "name": "Puberty",
+      "category": "Growth",
+      "descriptor": null
+    },
+    {
+      "order": 65,
+      "slug": "menopause",
+      "name": "Menopause",
+      "category": "Growth",
+      "descriptor": null
+    },
+    {
+      "order": 66,
+      "slug": "aging",
+      "name": "Aging",
+      "category": "Growth",
+      "descriptor": null
+    },
+    {
+      "order": 67,
+      "slug": "graying",
+      "name": "Graying",
+      "category": "Growth",
+      "descriptor": null
+    },
+    {
+      "order": 68,
+      "slug": "wrinkling",
+      "name": "Wrinkling",
+      "category": "Growth",
+      "descriptor": null
+    },
+    {
+      "order": 69,
+      "slug": "weakening",
+      "name": "Weakening",
+      "category": "Decline",
+      "descriptor": null
+    },
+    {
+      "order": 70,
+      "slug": "stiffening",
+      "name": "Stiffening",
+      "category": "Decline",
+      "descriptor": null
+    },
+    {
+      "order": 71,
+      "slug": "forgetting",
+      "name": "Forgetting",
+      "category": "Decline",
+      "descriptor": null
+    },
+    {
+      "order": 72,
+      "slug": "losing-hearing",
+      "name": "Losing Hearing",
+      "category": "Decline",
+      "descriptor": null
+    },
+    {
+      "order": 73,
+      "slug": "losing-sight",
+      "name": "Losing Sight",
+      "category": "Decline",
+      "descriptor": null
+    },
+    {
+      "order": 74,
+      "slug": "losing-taste",
+      "name": "Losing Taste",
+      "category": "Decline",
+      "descriptor": null
+    },
+    {
+      "order": 75,
+      "slug": "chronic-pain",
+      "name": "Chronic Pain",
+      "category": "Decline",
+      "descriptor": null
+    },
+    {
+      "order": 76,
+      "slug": "dying",
+      "name": "Dying",
+      "category": "Decline",
+      "descriptor": null
+    },
+    {
+      "order": 77,
+      "slug": "fainting",
+      "name": "Fainting",
+      "category": "Extreme",
+      "descriptor": null
+    },
+    {
+      "order": 78,
+      "slug": "seizing",
+      "name": "Seizing",
+      "category": "Extreme",
+      "descriptor": null
+    },
+    {
+      "order": 79,
+      "slug": "shock",
+      "name": "Shock",
+      "category": "Extreme",
+      "descriptor": null
+    },
+    {
+      "order": 80,
+      "slug": "cardiac-arrest",
+      "name": "Cardiac Arrest",
+      "category": "Extreme",
+      "descriptor": null
+    },
+    {
+      "order": 81,
+      "slug": "choking",
+      "name": "Choking",
+      "category": "Extreme",
+      "descriptor": null
+    },
+    {
+      "order": 82,
+      "slug": "drowning",
+      "name": "Drowning",
+      "category": "Extreme",
+      "descriptor": null
+    },
+    {
+      "order": 83,
+      "slug": "hypothermia",
+      "name": "Hypothermia",
+      "category": "Extreme",
+      "descriptor": null
+    },
+    {
+      "order": 84,
+      "slug": "heatstroke",
+      "name": "Heatstroke",
+      "category": "Extreme",
+      "descriptor": null
+    },
+    {
+      "order": 85,
+      "slug": "anaphylaxis",
+      "name": "Anaphylaxis",
+      "category": "Extreme",
+      "descriptor": null
+    },
+    {
+      "order": 86,
+      "slug": "crying",
+      "name": "Crying",
+      "category": "Expression",
+      "descriptor": null
+    },
+    {
+      "order": 87,
+      "slug": "laughing",
+      "name": "Laughing",
+      "category": "Expression",
+      "descriptor": null
+    },
+    {
+      "order": 88,
+      "slug": "speaking",
+      "name": "Speaking",
+      "category": "Expression",
+      "descriptor": null
+    },
+    {
+      "order": 89,
+      "slug": "singing",
+      "name": "Singing",
+      "category": "Expression",
+      "descriptor": null
+    },
+    {
+      "order": 90,
+      "slug": "sighing",
+      "name": "Sighing",
+      "category": "Expression",
+      "descriptor": null
+    },
+    {
+      "order": 91,
+      "slug": "screaming",
+      "name": "Screaming",
+      "category": "Expression",
+      "descriptor": null
+    },
+    {
+      "order": 92,
+      "slug": "stretching",
+      "name": "Stretching",
+      "category": "Expression",
+      "descriptor": null
+    },
+    {
+      "order": 93,
+      "slug": "cramp",
+      "name": "Cramp",
+      "category": "Expression",
+      "descriptor": null
+    },
+    {
+      "order": 94,
+      "slug": "holding-breath",
+      "name": "Holding Breath",
+      "category": "Threshold",
+      "descriptor": null
+    },
+    {
+      "order": 95,
+      "slug": "muscle-memory",
+      "name": "Muscle Memory",
+      "category": "Threshold",
+      "descriptor": null
+    },
+    {
+      "order": 96,
+      "slug": "first-breath",
+      "name": "First Breath",
+      "category": "Threshold",
+      "descriptor": null
+    },
+    {
+      "order": 97,
+      "slug": "first-step",
+      "name": "First Step",
+      "category": "Threshold",
+      "descriptor": null
+    },
+    {
+      "order": 98,
+      "slug": "giving-birth",
+      "name": "Giving Birth",
+      "category": "Threshold",
+      "descriptor": null
+    },
+    {
+      "order": 99,
+      "slug": "last-breath",
+      "name": "Last Breath",
+      "category": "Threshold",
+      "descriptor": null
+    }
+  ]
+}

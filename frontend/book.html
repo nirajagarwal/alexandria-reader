@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading... | Alexandria Press</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Lora:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Book View (Card Grid) -->
+    <div class="book-view hidden" id="bookView">
+        <header class="book-header">
+            <button class="back-to-cover" id="backToCover">←</button>
+            <div class="book-header-title">
+                <h1 id="bookTitle"></h1>
+                <p id="bookDescriptor"></p>
+            </div>
+            <nav class="book-nav">
+                <a href="#" id="introLink">Introduction</a>
+                <a href="#" id="appendixLink">Appendix</a>
+                <a href="#" id="colophonLink">Colophon</a>
+            </nav>
+        </header>
+
+        <main class="card-grid" id="cardGrid">
+            <!-- Cards loaded dynamically -->
+        </main>
+    </div>
+
+    <!-- Entry View -->
+    <div class="entry-view hidden" id="entryView">
+        <header class="entry-header">
+            <button class="back-to-grid" id="backToGrid">←</button>
+            <span class="entry-position" id="entryPosition"></span>
+            <div class="entry-nav">
+                <button class="nav-prev" id="prevEntry" disabled>Previous</button>
+                <button class="nav-next" id="nextEntry" disabled>Next</button>
+            </div>
+        </header>
+
+        <article class="entry-content" id="entryContent">
+            <!-- Entry markdown rendered here -->
+        </article>
+
+        <footer class="entry-footer">
+            <button class="nav-prev-footer" id="prevEntryFooter" disabled>← Previous</button>
+            <button class="back-to-grid-footer" id="backToGridFooter">All Entries</button>
+            <button class="nav-next-footer" id="nextEntryFooter" disabled>Next →</button>
+        </footer>
+    </div>
+
+    <!-- Content Page View (Introduction, Appendix, Colophon) -->
+    <div class="content-page-view hidden" id="contentPageView">
+        <header class="content-page-header">
+            <button class="back-to-grid" id="backFromContentPage">←</button>
+            <h1 id="contentPageTitle"></h1>
+        </header>
+
+        <article class="content-page-content" id="contentPageContent">
+            <!-- Content rendered here -->
+        </article>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const bookId = params.get('id');
+            if (bookId) {
+                loadBook(bookId);
+            } else {
+                window.location.href = '/';
+            }
+        });
+    </script>
+</body>
+
+</html>

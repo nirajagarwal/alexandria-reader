@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandria Press</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Lora:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="library">
+        <header class="library-header">
+            <h1 class="library-title">Alexandria</h1>
+            <p class="library-tagline">Books only AI can write</p>
+        </header>
+
+        <main class="library-shelf" id="bookShelf">
+            <!-- Books loaded dynamically -->
+        </main>
+
+        <footer class="library-footer">
+            <p>alexandria.press</p>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadLibrary();
+        });
+    </script>
+</body>
+
+</html>

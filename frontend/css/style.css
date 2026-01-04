@@ -1,0 +1,810 @@
+/* =============================================================================
+   Alexandria Press - Stylesheet
+   
+   Aesthetic: Restrained reverence. Quiet confidence. 
+   The content is sovereign. The design is invisible.
+   ============================================================================= */
+
+/* -----------------------------------------------------------------------------
+   CSS Variables
+   ----------------------------------------------------------------------------- */
+
+:root {
+    /* Light mode (Parchment) */
+    --bg-primary: #F7F4ED;
+    --bg-secondary: #FFFDF7;
+    --bg-elevated: #FFFFFF;
+    --text-primary: #1A1A1A;
+    --text-secondary: #4A4A4A;
+    --text-tertiary: #757575;
+    --border: #E0DCD3;
+    --border-subtle: #EBE8E1;
+    --accent: #4A4A4A;
+
+    /* Typography */
+    --font-serif: 'Lora', serif;
+    --font-display: 'Lato', sans-serif;
+    --font-sans: 'IBM Plex Sans', -apple-system, sans-serif;
+
+    /* Spacing */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    --space-3xl: 4rem;
+
+    /* Transitions */
+    --transition-fast: 150ms ease;
+    --transition-medium: 300ms ease;
+    --transition-slow: 500ms ease;
+}
+
+/* Dark mode (Vault) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-primary: #121212;
+        --bg-secondary: #181818;
+        --bg-elevated: #202020;
+        --text-primary: #F2F2F2;
+        --text-secondary: #CCCCCC;
+        --text-tertiary: #999999;
+        --border: #333333;
+        --border-subtle: #222222;
+        --accent: #E0E0E0;
+    }
+}
+
+/* Manual theme override */
+[data-theme="light"] {
+    --bg-primary: #F7F4ED;
+    --bg-secondary: #FFFDF7;
+    --bg-elevated: #FFFFFF;
+    --text-primary: #1A1A1A;
+    --text-secondary: #4A4A4A;
+    --text-tertiary: #757575;
+    --border: #E0DCD3;
+    --border-subtle: #EBE8E1;
+    --accent: #4A4A4A;
+}
+
+[data-theme="dark"] {
+    --bg-primary: #141414;
+    --bg-secondary: #1A1A1A;
+    --bg-elevated: #222222;
+    --text-primary: #F0EDE8;
+    --text-secondary: #B0B0B0;
+    --text-tertiary: #808080;
+    --border: #2A2A2A;
+    --border-subtle: #222222;
+    --accent: #C0C0C0;
+}
+
+/* -----------------------------------------------------------------------------
+   Reset & Base
+   ----------------------------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 18px;
+    /* Increased base size */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: var(--font-sans);
+    font-weight: 500;
+    /* Increased weight */
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    min-height: 100vh;
+}
+
+/* -----------------------------------------------------------------------------
+   Typography
+   ----------------------------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    /* Semi-Bold */
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+p {
+    margin-bottom: var(--space-md);
+}
+
+a {
+    color: var(--text-primary);
+    text-decoration: none;
+    border-bottom: 2px solid var(--border);
+    /* Thicker border */
+    transition: all var(--transition-fast);
+}
+
+a:hover {
+    border-color: var(--text-primary);
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* -----------------------------------------------------------------------------
+   Utilities
+   ----------------------------------------------------------------------------- */
+
+.hidden {
+    display: none !important;
+}
+
+/* -----------------------------------------------------------------------------
+   Library View
+   ----------------------------------------------------------------------------- */
+
+.library {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-2xl);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.library-header {
+    text-align: center;
+    margin-bottom: var(--space-3xl);
+    padding-top: var(--space-3xl);
+}
+
+.library-title {
+    font-family: var(--font-display);
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: var(--space-sm);
+}
+
+.library-tagline {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+}
+
+.library-shelf {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: var(--space-2xl);
+    margin-bottom: var(--space-3xl);
+}
+
+.library-footer {
+    text-align: center;
+    padding: var(--space-xl) 0;
+    color: var(--text-tertiary);
+    font-size: 0.875rem;
+}
+
+/* Book Card (Library) */
+.book-card {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+    transition: transform var(--transition-medium);
+}
+
+.book-card:hover {
+    transform: translateY(-4px);
+}
+
+.book-card-cover {
+    aspect-ratio: 1 / 1.5;
+    /* More classic book ratio */
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.book-card-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.book-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 50%, transparent 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: var(--space-lg);
+    opacity: 1;
+    transition: background var(--transition-medium);
+}
+
+.book-card:hover .book-card-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%);
+}
+
+.book-card-overlay-content {
+    transform: translateY(10px);
+    transition: transform var(--transition-medium) ease;
+}
+
+.book-card:hover .book-card-overlay-content {
+    transform: translateY(0);
+}
+
+.book-card-title {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: var(--space-xs);
+    line-height: 1.2;
+}
+
+.book-card-descriptor {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: var(--space-md);
+    font-family: var(--font-serif);
+    font-style: italic;
+}
+
+.book-card-button {
+    display: inline-block;
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: white;
+    padding: var(--space-xs) var(--space-sm);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    transition: all var(--transition-fast);
+}
+
+.book-card:hover .book-card-button {
+    opacity: 1;
+    border-color: white;
+}
+
+/* -----------------------------------------------------------------------------
+   Cover View
+   ----------------------------------------------------------------------------- */
+
+.cover-view {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-2xl);
+    position: relative;
+}
+
+.cover-content {
+    text-align: center;
+    max-width: 500px;
+    animation: fadeIn var(--transition-slow) ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cover-image {
+    width: 280px;
+    height: 373px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    margin: 0 auto var(--space-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cover-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cover-title {
+    font-family: var(--font-display);
+    font-size: 2.8rem;
+    margin-bottom: var(--space-sm);
+}
+
+.cover-descriptor {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-xl);
+}
+
+.cover-enter {
+    font-family: var(--font-sans);
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: var(--space-md) var(--space-xl);
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.cover-enter:hover {
+    background: var(--text-primary);
+    color: var(--bg-primary);
+    border-color: var(--text-primary);
+}
+
+.back-to-library {
+    position: absolute;
+    top: var(--space-xl);
+    left: var(--space-xl);
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    border: none;
+}
+
+.back-to-library:hover {
+    color: var(--text-primary);
+}
+
+/* -----------------------------------------------------------------------------
+   Book View (Card Grid)
+   ----------------------------------------------------------------------------- */
+
+.book-view {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+    padding: var(--space-lg) var(--space-xl);
+    border-bottom: 1px solid var(--border-subtle);
+    position: sticky;
+    top: 0;
+    background: var(--bg-primary);
+    z-index: 100;
+}
+
+.back-to-cover {
+    font-size: 1.25rem;
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: var(--space-sm);
+    transition: color var(--transition-fast);
+}
+
+.back-to-cover:hover {
+    color: var(--text-primary);
+}
+
+.book-header-title {
+    flex: 1;
+}
+
+.book-header-title h1 {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+
+.book-header-title p {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.book-nav {
+    display: flex;
+    gap: var(--space-lg);
+}
+
+.book-nav a {
+    font-size: 0.8125rem;
+    color: var(--text-secondary);
+    border: none;
+    transition: color var(--transition-fast);
+}
+
+.book-nav a:hover {
+    color: var(--text-primary);
+}
+
+.card-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: var(--space-md);
+    padding: var(--space-xl);
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.card-grid-wide {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+/* Entry Card */
+.entry-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-subtle);
+    padding: var(--space-lg);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    display: flex;
+    flex-direction: column;
+    min-height: 140px;
+}
+
+.entry-card:hover {
+    border-color: var(--border);
+    background: var(--bg-elevated);
+}
+
+.entry-card-primary {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: var(--space-xs);
+    line-height: 1.2;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.entry-card-secondary {
+    font-size: 0.875rem;
+    color: var(--text-primary);
+    margin-bottom: auto;
+}
+
+.entry-card-tertiary {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    margin-top: var(--space-sm);
+}
+
+/* -----------------------------------------------------------------------------
+   Entry View
+   ----------------------------------------------------------------------------- */
+
+.entry-view {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.entry-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+    padding: var(--space-lg) var(--space-xl);
+    border-bottom: 1px solid var(--border-subtle);
+    position: sticky;
+    top: 0;
+    background: var(--bg-primary);
+    z-index: 100;
+}
+
+.back-to-grid {
+    font-size: 1.25rem;
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: var(--space-sm);
+    transition: color var(--transition-fast);
+}
+
+.back-to-grid:hover {
+    color: var(--text-primary);
+}
+
+.entry-position {
+    flex: 1;
+    font-size: 0.875rem;
+    color: var(--text-tertiary);
+}
+
+.entry-nav {
+    display: flex;
+    gap: var(--space-md);
+}
+
+.entry-nav button,
+.entry-footer button {
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
+    padding: var(--space-sm) var(--space-md);
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.entry-nav button:hover:not(:disabled),
+.entry-footer button:hover:not(:disabled) {
+    border-color: var(--text-primary);
+    color: var(--text-primary);
+}
+
+.entry-nav button:disabled,
+.entry-footer button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.entry-content {
+    flex: 1;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: var(--space-2xl) var(--space-xl);
+    width: 100%;
+}
+
+/* Entry Content Typography */
+.entry-content h1 {
+    font-size: 2.4rem;
+    /* Slightly smaller */
+    margin-bottom: var(--space-md);
+    /* More spacing */
+    font-weight: 600;
+}
+
+.entry-content h1+p {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.4rem;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-lg);
+}
+
+.entry-content h1+p+blockquote {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    border-left: none;
+    padding: 0;
+    margin-bottom: var(--space-2xl);
+}
+
+.entry-content h2 {
+    font-size: 1.4rem;
+    /* Only a bit bigger than p (1.25rem) */
+    margin-top: var(--space-3xl);
+    margin-bottom: var(--space-lg);
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.entry-content h3 {
+    font-size: 1.25rem;
+    /* Match p size but bold */
+    margin-top: var(--space-2xl);
+    margin-bottom: var(--space-md);
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.entry-content p {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    /* Large, readable text */
+    font-weight: 400;
+    /* Lora looks great at 400 with 18px base */
+    line-height: 1.8;
+    color: var(--text-primary);
+    margin-bottom: var(--space-md);
+}
+
+.entry-content hr {
+    border: none;
+    border-top: 1px solid var(--border-subtle);
+    margin: var(--space-2xl) 0;
+}
+
+.entry-content em {
+    font-style: italic;
+}
+
+.entry-content strong {
+    font-weight: 600;
+}
+
+.entry-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-lg) var(--space-xl);
+    border-top: 1px solid var(--border-subtle);
+    max-width: 680px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* -----------------------------------------------------------------------------
+   Content Page View (Introduction, Appendix, Colophon)
+   ----------------------------------------------------------------------------- */
+
+.content-page-view {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-page-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+    padding: var(--space-lg) var(--space-xl);
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.content-page-header h1 {
+    font-size: 1.25rem;
+}
+
+.content-page-content {
+    flex: 1;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: var(--space-2xl) var(--space-xl);
+    width: 100%;
+}
+
+.content-page-content p {
+    font-family: var(--font-serif);
+    font-size: 1.125rem;
+    line-height: 1.7;
+}
+
+.content-page-content pre {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    background: var(--bg-secondary);
+    padding: var(--space-lg);
+    overflow-x: auto;
+    border: 1px solid var(--border-subtle);
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.content-page-content code {
+    font-family: 'SF Mono', 'Consolas', monospace;
+    font-size: 0.875em;
+}
+
+/* -----------------------------------------------------------------------------
+   Responsive
+   ----------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    .library {
+        padding: var(--space-lg);
+    }
+
+    .library-title {
+        font-size: 2.5rem;
+    }
+
+    .library-shelf {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .book-header {
+        flex-wrap: wrap;
+        padding: var(--space-md);
+    }
+
+    .book-nav {
+        width: 100%;
+        justify-content: center;
+        margin-top: var(--space-sm);
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        padding: var(--space-md);
+        gap: var(--space-sm);
+    }
+
+    .entry-card {
+        padding: var(--space-md);
+        min-height: 100px;
+    }
+
+    .entry-card-primary {
+        font-size: 1.5rem;
+    }
+
+    .entry-header {
+        padding: var(--space-md);
+    }
+
+    .entry-content {
+        padding: var(--space-lg);
+    }
+
+    .entry-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .entry-footer {
+        padding: var(--space-md);
+    }
+
+    .cover-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .entry-nav {
+        display: none;
+    }
+
+    .book-nav {
+        gap: var(--space-md);
+        font-size: 0.75rem;
+    }
+}

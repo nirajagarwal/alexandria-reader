@@ -1,0 +1,20 @@
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Environment
+.env
+
+# System
+.DS_Store
+
+# Outputs/Artifacts
+outputs/
+
+# Database (if local sqlite)
+*.db
+*.sqlite3

@@ -1,0 +1,6 @@
+anthropic
+google-genai
+python-dotenv
+fastapi
+uvicorn
+libsql-experimental
