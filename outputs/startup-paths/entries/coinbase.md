@@ -1,0 +1,32 @@
+# Coinbase
+
+***The pragmatist who made crypto safe for institutions***
+
+> **Years:** 2012–present
+
+In June 2012, Brian Armstrong was a software engineer at Airbnb, watching Bitcoin's price oscillate wildly while its infrastructure remained dangerously amateur. The Mt. Gox exchange — then handling 70% of all Bitcoin trades — was a repurposed Magic: The Gathering card trading site run from Tokyo. To buy Bitcoin, you sent a wire transfer to Japan and hoped it arrived. Private keys were stored in hot wallets. Security was an afterthought. Armstrong saw the gap between crypto's promise and its reality: brilliant technology wrapped in user experience that guaranteed it would never escape the cypherpunk underground.
+
+He applied to Y Combinator with a simple thesis: make buying and storing Bitcoin as easy as opening a bank account. Not decentralized. Not anonymous. Compliant with regulations, integrated with the banking system, designed for people who would never compile code from GitHub. This was heresy in crypto circles, where the whole point was escaping government and banks. Armstrong didn't care. He wanted crypto to work.
+
+YC accepted him. He recruited Fred Ehrsam, a Goldman Sachs trader who understood both finance and Bitcoin's potential. They launched with features the crypto world considered boring: accounts backed by FDIC-insured bank accounts, two-factor authentication, 98% of funds in cold storage, immediate compliance with FinCEN money transmission regulations. The first version was unglamorous — a simple interface to buy and sell Bitcoin. No trading. No leverage. No promises of anonymity. Just a product that worked when you clicked the button.
+
+The timing was accidental brilliance. They launched months before Cyprus's banking crisis sent people scrambling for alternatives to traditional banks. Bitcoin's price surged from $13 to over $200 in early 2013. Coinbase's user-friendly interface became the on-ramp for a wave of new buyers who would never have navigated Mt. Gox's wire transfer maze. When Mt. Gox collapsed in 2014 — $450 million in customer Bitcoin lost or stolen — Coinbase's boring approach to security suddenly looked visionary.
+
+But growth created problems the crypto world had never solved. Banks kept closing Coinbase's accounts, terrified of money laundering liability. State regulators threatened action over money transmission licenses. Armstrong spent as much time in lawyers' offices as writing code. The solution was counterintuitive: rather than fight regulation, embrace it completely. Coinbase hired lawyers before marketers, obtained money transmission licenses in every state, implemented AML/KYC procedures that the crypto community found offensive. They rejected customers from unsanctioned countries. They reported suspicious transactions. They became what crypto purists hated: a regulated financial institution.
+
+It made them the only crypto company that banks would work with. By 2015, they had proper banking relationships, legitimate regulatory status, and venture capital from andreessen Horowitz that signaled crypto had crossed into respectability. When the New York Department of Financial Services created the BitLicense — regulations so onerous that most crypto companies fled New York — Coinbase was among the few to comply. Each regulatory victory narrowed their competitive moat.
+
+The 2017 crypto boom tested everything. Bitcoin surged toward $20,000. Ethereum, which Coinbase had added in 2016, exploded. Retail investors poured in. Coinbase's systems, built for steady growth, collapsed under traffic. The app crashed during peak trading. Customer service tickets piled into six-figure backlogs. Competitors with sleeker interfaces and more coins — Binance, Kraken, Gemini — siphoned off frustrated users. Armstrong faced the classic scale crisis: grow infrastructure or grow revenue. Building servers doesn't show up in monthly active users.
+
+They chose infrastructure. Spent 2018 — as crypto crashed and competitors laid off staff — building institutional-grade custody solutions and prime brokerage services. While retail was collapsing, institutions were finally getting curious. Hedge funds wanted exposure. University endowments asked questions. None would trust their capital to exchanges run from Malta or the Seychelles. Coinbase built Coinbase Custody with insurance, segregated accounts, and the regulatory compliance that made CFOs comfortable. When crypto bottomed in late 2018, Coinbase had institutional customers and the infrastructure to serve them when the next wave came.
+
+The decision to go public via direct listing in April 2021 was the ultimate validation. Coinbase opened at a $85 billion valuation, making Armstrong one of the world's wealthiest people overnight. But it locked them into a different game. Public companies face quarterly earnings pressure. Crypto volatility meant wild revenue swings — up 500% in bull markets, down 75% in busts. They laid off 18% of staff in 2022 as crypto crashed again. Stock price followed crypto sentiment, falling 85% from peak.
+
+Yet the infrastructure held. When FTX collapsed in November 2022 — Sam Bankman-Fried's empire revealed as fraud built on commingled customer funds — Coinbase's boring approach justified itself again. Proof of reserves. Segregated accounts. Regulatory compliance. They survived because Armstrong had built a financial institution, not a crypto casino. Customers fled unregulated exchanges for the safety of regulation.
+
+The company today is something crypto founders of 2012 would barely recognize: a publicly-traded financial institution with government lobbyists, institutional custody serving trillions, and a business model dependent on regulatory clarity. Armstrong's pragmatism won. Crypto went mainstream not through revolution but through submission to the existing financial system's rules.
+
+Whether that's triumph or tragedy depends on what you thought crypto was for. Armstrong never cared about the ideology. He saw technology that didn't work for normal people and built a bridge. The bridge became a fortress. And the fortress became the thing it was built to circumvent.
+
+---
+*Part of All Paths Through a Startup at alexandria.press*

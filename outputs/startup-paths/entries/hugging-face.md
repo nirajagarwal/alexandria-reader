@@ -1,0 +1,32 @@
+# Hugging Face
+
+***The open-source gambit that made AI infrastructure inevitable***
+
+> **Years:** 2016-present
+
+In 2016, three French engineers created a chatbot app for teenagers. By 2024, their company hosted the infrastructure for the entire open-source AI movement, reached a $4.5 billion valuation, and became as essential to machine learning as GitHub is to code. The path from emoji-laden chat app to AI platform reveals how betting on community and open access can build moats deeper than any proprietary technology.
+
+Clément Delangue, Julien Chaumond, and Thomas Wolf met in the Paris startup scene. Delangue had sold a previous company. Chaumond and Wolf were machine learning researchers who'd grown frustrated with how hard it was to deploy models. Their first product was utterly different from what Hugging Face would become: a chatbot app where teenagers could talk to AI personas about their feelings, their crushes, their fears. The mascot was a yellow hugging face emoji. The app used natural language processing to generate empathetic responses. It was personal AI before anyone called it that.
+
+The app gained users — enough to raise $1.2 million in seed funding — but not enough to justify the ambition. What Delangue and team noticed was something more interesting than their product: the AI models powering the chatbot were impossibly difficult to work with. Every time they wanted to try a new model architecture, it meant weeks of implementation work. The research community was publishing breakthroughs daily, but actually using those breakthroughs required rebuilding everything from scratch. The best models lived in academic papers, not production systems.
+
+In 2018, they pivoted. Instead of building a consumer app, they would build infrastructure for AI developers. They started with a library called Transformers — an open-source Python package that made state-of-the-art natural language processing models accessible with just a few lines of code. Want to use BERT, the breakthrough model from Google? Download it from Hugging Face, load it with three lines of Python, and start using it. No need to read the paper, reimplement the architecture, hunt for pre-trained weights, or debug obscure tensor operations.
+
+The timing was exquisite. Transformer models — the architecture underlying GPT, BERT, and eventually everything in modern AI — were exploding in capability and complexity. Google, Facebook, and OpenAI were publishing new models constantly. But each one required expertise to deploy. Hugging Face became the translation layer between cutting-edge research and working code. Researchers started uploading their models directly to the platform. Companies started building products on top of them.
+
+The Transformers library grew from a tool to an ecosystem. Hugging Face launched the Model Hub, a repository where anyone could upload, share, and download machine learning models. It was GitHub for AI — except instead of code repositories, it hosted trained neural networks. By 2020, thousands of models lived on the platform. By 2024, over a million. The models ranged from Google's most powerful language models to small specialized networks trained to detect hate speech in Portuguese or classify plant diseases from photos.
+
+The business model emerged gradually. The core technology remained open source — the Transformers library is MIT licensed, free forever — but Hugging Face offered paid services around it. Need to fine-tune a model on your company's proprietary data? Pay for compute. Need private model hosting? Subscribe. Want enterprise support? There's a tier for that. The revenue came from making open-source AI easier to use, not from locking it away.
+
+They raised $40 million in 2021, then $100 million in 2022 at a $2 billion valuation. By then, Hugging Face wasn't just a platform; it was infrastructure. When researchers published a new model, they published it on Hugging Face. When companies needed to add AI capabilities, they pulled models from Hugging Face. When Meta released Llama 2, arguably the most important open-source large language model, they released it on Hugging Face. It became the default, the standard, the place where open AI lived.
+
+The company expanded beyond language models. They added support for image generation, audio processing, reinforcement learning. They launched Spaces, a hosting service where developers could deploy machine learning demos and applications directly on the platform. They introduced Datasets, a library for downloading and processing the massive datasets required to train modern AI. Each product extended the ecosystem, made open-source AI more accessible, pulled more users into the platform.
+
+The competition was fierce and existential. OpenAI, Google, and Anthropic were building closed systems — powerful models you could only access through APIs, never download or modify. AWS, Google Cloud, and Microsoft Azure offered their own model hosting and deployment services. GitHub, owned by Microsoft, launched GitHub Models, directly targeting Hugging Face's territory. But Hugging Face had something the giants couldn't easily replicate: the trust of the open-source community and the network effects of being where everyone already published their work.
+
+By 2024, Hugging Face employed over 400 people, had raised more than $400 million, and was valued at $4.5 billion. The platform hosted over a million models, 300,000 datasets, and 500,000 applications. More than 50,000 companies used it. The teenage chatbot was long forgotten, but the hugging face emoji remained — a reminder that the best products often emerge from abandoned ideas, that infrastructure businesses hide inside failed consumer apps, and that opening the castle gates can build a stronger kingdom than any wall.
+
+The company still faced existential questions. Could they remain independent as Big Tech consolidated AI infrastructure? Would open-source AI survive regulatory pressure and copyright battles? Could they build a sustainable business while keeping the core technology free? The answers would determine not just Hugging Face's fate, but the fate of open AI itself. For now, they had proven something crucial: you can build a giant company by giving everything away, if what you give away makes everyone more powerful.
+
+---
+*Part of All Paths Through a Startup at alexandria.press*

@@ -1,0 +1,32 @@
+# Microsoft
+
+***From garage to monopoly to reinvention***
+
+> **Years:** 1975-present
+
+In December 1974, Paul Allen walked past a newsstand in Harvard Square and saw the cover of Popular Electronics: the Altair 8800, the first commercially available personal computer. He bought the magazine and ran to find his friend Bill Gates. They both understood immediately. The computer industry was about to explode, and it would need software. They called MITS, the Altair's manufacturer, and claimed they had written a BASIC interpreter for the machine. They hadn't. They didn't even have an Altair. But MITS was interested, so they built the interpreter in eight weeks, using a simulator Allen wrote, and tested it for the first time when Allen flew to Albuquerque to demonstrate it. It worked.
+
+Gates dropped out of Harvard. They founded Micro-Soft in Albuquerque in 1975, hyphen later dropped. The early years were pure execution: writing BASIC interpreters for every microcomputer that emerged. Their insight was simple but not obvious: software would be more valuable than hardware. The machine would become commodity. The programs would be the prize.
+
+The turn came in 1980. IBM, late to personal computing and desperate to catch up, needed an operating system for its PC. They went first to Digital Research, whose CP/M dominated microcomputers. The meeting went badly — founder Gary Kildall allegedly flew his plane instead of meeting IBM. IBM asked Microsoft if they could provide an operating system. Gates said yes, though Microsoft didn't have one. He bought QDOS ("Quick and Dirty Operating System") from Seattle Computer Products for $75,000, modified it, and licensed it to IBM as PC-DOS. Critically, Gates retained the right to license the OS to other manufacturers as MS-DOS.
+
+When IBM launched the PC in 1981, it became the standard. And when clones emerged — Compaq, Dell, dozens of others — they all needed MS-DOS. Microsoft had positioned itself as the tollbooth on the industry's main road. By 1983, thirty percent of computers ran Microsoft software. By 1985, that number was seventy percent.
+
+Windows, released in 1985, was the next expansion. It was initially terrible — a graphical shell over DOS that crashed constantly. Apple, which had pioneered the graphical interface with the Mac in 1984, sued for copyright infringement. But Microsoft iterated, and Windows 3.0 in 1990 finally worked well enough to matter. By then, the installed base of DOS machines meant Windows could spread like fire through dry grass. Apple's closed ecosystem — beautiful, integrated, expensive — couldn't compete with Windows' chaotic ubiquity.
+
+The 1990s were dominance. Windows 95 was a cultural event. Office became the standard for productivity software, leveraging Windows' market position. Internet Explorer, bundled free with Windows, destroyed Netscape's browser business. Microsoft's strategy was ruthlessly effective: embrace, extend, extinguish. Identify a successful product category, create a competing version, bundle it with Windows, iterate until the competitor died.
+
+The problem was that this looked exactly like monopoly behavior. The Department of Justice filed antitrust charges in 1998. The trial was a disaster for Microsoft. Internal emails revealed executives discussing strategies to "cut off Netscape's air supply." Gates, deposed for days, was evasive and combative. In 2000, Judge Thomas Penfield Jackson ruled that Microsoft was a monopoly that had abused its power and ordered the company split in two. The decision was overturned on appeal in 2001, but Microsoft accepted a consent decree limiting its behavior.
+
+The ruling came just as Microsoft was missing the future. Google launched in 1998 and became the gateway to the internet that Explorer never was. The iPod arrived in 2001, the iPhone in 2007, and Microsoft's mobile strategy — Windows Mobile, then Windows Phone — failed completely. Social media emerged with Facebook in 2004, and Microsoft's attempts (MSN, Windows Live) went nowhere. Cloud computing began its rise with Amazon Web Services in 2006. Microsoft's response, Windows Azure, was late and initially incoherent.
+
+Gates stepped down as CEO in 2000, though he remained chairman. His successor, Steve Ballmer, was a brilliant operator of the existing business but struggled with new paradigms. Revenue grew — Windows and Office printed money — but the company felt slow, defensive, consumed by internal politics. By 2013, when Ballmer announced his retirement, Microsoft's stock had been essentially flat for a decade while Apple and Google soared.
+
+Satya Nadella, who became CEO in 2014, inherited a company in crisis of relevance. His response was philosophical and practical. He declared Microsoft a "mobile-first, cloud-first" company, even though Microsoft had no mobile platform worth mentioning. He meant the world was mobile-first, and Microsoft needed to serve that world. Office came to iPad and iPhone. Windows became less central to Microsoft's identity. Most dramatically, Nadella embraced open source — once called "a cancer" by Ballmer — and focused the company on Azure, the cloud platform.
+
+It worked. Azure became the second-largest cloud platform after AWS. Office 365's subscription model created predictable recurring revenue. Microsoft bought LinkedIn for $26 billion in 2016 and GitHub for $7.5 billion in 2018, integrating them without destroying their value. The company's market capitalization, which had stagnated around $250 billion for years, reached $3 trillion by 2024, briefly making Microsoft the world's most valuable company.
+
+The arc is unusual. Most companies that achieve Microsoft's dominance in the 1990s either collapse (Nokia, BlackBerry) or calcify (IBM, Oracle). Microsoft nearly calcified. The consent decree constrained its monopoly tactics just as the industry shifted to platforms it didn't control. But where other aging giants clung to past glories, Nadella forced a pivot. Microsoft remains massive, profitable, and relevant fifty years after its founding — not because it won every battle, but because it survived enough defeats to learn humility.
+
+---
+*Part of All Paths Through a Startup at alexandria.press*

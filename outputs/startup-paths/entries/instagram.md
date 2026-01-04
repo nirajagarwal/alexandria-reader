@@ -1,0 +1,30 @@
+# Instagram
+
+***The photo app that nearly died at launch, then conquered social media in two years***
+
+> **Years:** 2010-2012 (acquired), 2012-present (as Meta subsidiary)
+
+Kevin Systrom was working at Google when he started building a location check-in app called Burbn on nights and weekends. He had taught himself to code but wasn't a traditional engineer. His co-founder, Mike Krieger, was — a Stanford graduate who joined after Systrom raised $500,000 in seed funding from Baseline Ventures and Andreessen Horowitz in March 2010. The pitch was simple: Burbn would let users check in to locations, make plans, share photos, and earn points. It tried to do everything Foursquare, Yelp, and Facebook were doing, all at once.
+
+The app was cluttered and confusing. Users ignored most features but kept posting photos. Systrom and Krieger had a decision to make. They could keep adding features, hoping something would stick, or they could strip everything away and focus on the one thing people actually used. In late summer 2010, they rebuilt from scratch. They kept photos. They added filters to make iPhone photos look better than they were. They added a feed, likes, and comments. They removed everything else. They renamed it Instagram — instant camera, instant telegram.
+
+On October 6, 2010, Instagram launched on the iPhone App Store. Within hours, the server crashed. They had built for gradual growth. They got exponential adoption. The app hit 25,000 users on day one. Systrom and Krieger spent the first week scrambling to keep the servers running, moving to Amazon Web Services, desperately scaling infrastructure they had never planned to need so soon. By December, Instagram had one million users. It had no revenue model. It had no Android app. It had no obvious path to monetization. What it had was growth that made investors pay attention.
+
+The product worked because it solved a problem users didn't know they had. Smartphone cameras were improving, but photos still looked amateurish compared to professional photography. Instagram's filters — X-Pro II, Lo-fi, Nashville — applied a nostalgic aesthetic that made casual snapshots feel intentional. The square format evoked Polaroids. The feed design made scrolling addictive. The like button provided instant social validation. It wasn't a better camera app. It was a better way to be seen.
+
+The growth created its own momentum. Early adopters were often photographers, designers, and tastemakers who attracted audiences. Celebrities followed. Brands followed celebrities. By April 2011, Instagram raised a Series A from Benchmark at a $25 million valuation, despite having zero revenue. The company had thirteen employees. The app had five million users. Jack Dorsey, Twitter's co-founder, joined the board. The trajectory was clear: Instagram was becoming the default place to share photos online. Facebook noticed.
+
+Mark Zuckerberg had watched Instagram closely. Facebook had tried to build photo-sharing features for years. They had acquired photo apps, launched products, and iterated constantly. Nothing matched Instagram's simplicity or cultural cachet. By early 2012, Instagram was adding users faster than Facebook had at the same stage. Sequoia led a $50 million Series B in April 2012, valuing Instagram at $500 million. The round had barely closed when Facebook made an offer: $1 billion in cash and stock.
+
+The deal shocked Silicon Valley. Instagram had thirteen employees, no revenue, and had been free for eighteen months. Facebook was paying $1 billion — $33 per user — for an app that made no money. Critics called it a bubble. Zuckerberg called it insurance. Instagram was the biggest threat to Facebook's dominance in social sharing. Buying it eliminated the threat and absorbed its growth. The acquisition closed in September 2012 for $715 million in cash and stock after Facebook's IPO had reduced the stock portion's value.
+
+Instagram remained largely independent at first. Systrom reported to Zuckerberg but ran the product. The Android app launched three months after the acquisition, adding millions of users immediately. Instagram reached 100 million users in 2013, 300 million in 2014, 400 million in 2015. The growth was relentless. Facebook's infrastructure made scaling easy. Its business model made monetization inevitable. Ads launched in 2013 — first as sponsored posts from brands, then as algorithmic insertion into feeds. Instagram Stories launched in 2016, directly copying Snapchat's format, and became more popular than Snapchat within a year.
+
+The independence didn't last. As Instagram's growth continued — reaching 500 million users in 2016, then 800 million in 2017, then a billion in 2018 — Facebook integrated more deeply. Shared infrastructure, shared ad systems, shared data. Systrom and Krieger chafed at the loss of autonomy. In September 2018, they resigned without explanation. The official story was about wanting new challenges. The real story was about control. Zuckerberg wanted Instagram fully integrated into Facebook's empire. The founders wanted to protect what they had built.
+
+Under Facebook — rebranded as Meta in 2021 — Instagram kept growing. It launched Reels to compete with TikTok, shopping features to compete with e-commerce, subscriptions to diversify revenue. It added two billion users globally. It became one of the most valuable acquisitions in tech history, worth an estimated $100 billion-plus within Meta's portfolio. The app that nearly crashed on launch day became a pillar of the social media landscape.
+
+What made Instagram work was focus. Systrom and Krieger saw the one thing users wanted and cut everything else. The filters were technology, but the insight was cultural: people wanted to look good online. The business model was uncertain, but the growth was undeniable. Facebook saw the trajectory and paid what seemed absurd to stop a competitor and own the future of photo sharing. The founders got their exit. Facebook got its insurance policy. Users got an app that changed how billions of people communicate.
+
+---
+*Part of All Paths Through a Startup at alexandria.press*

@@ -1,0 +1,30 @@
+# BlackBerry
+
+***The fortress that couldn't evolve***
+
+> **Years:** 1984-2016 (as independent company)
+
+In 1999, if you were important, you had a BlackBerry. By 2009, if you were important, you still had a BlackBerry — and probably an iPhone hidden in your other pocket. By 2016, BlackBerry had stopped making the devices that once defined mobile email, corporate security, and executive status. The company that owned enterprise mobility so completely that its devices were called "CrackBerries" couldn't survive the shift from communication tool to computing platform.
+
+Research In Motion started in 1984 in Waterloo, Ontario, founded by Mike Lazaridis, an engineering prodigy who'd dropped out of university to build wireless technology. For over a decade, RIM was an engineering services company, building wireless modems and displaying point-of-sale terminals. Competent but unremarkable. The insight that changed everything came from observing the emerging pager market: people desperately wanted mobile communication, but pagers were one-way. Email was exploding in offices but remained tethered to desks. The combination seemed obvious — once someone thought of it.
+
+The first BlackBerry device launched in 1999 as a two-way pager with email capability. Ugly, utilitarian, with a tiny screen and a keyboard that seemed designed for thumbs. Which it was — Lazaridis obsessed over the physical interface. The device pushed email instantly to the user rather than requiring them to check. For executives who lived and died by email, this was transformative. More important: RIM built the infrastructure to make it work securely through corporate firewalls. BlackBerry Enterprise Server became the moat. IT departments loved it. It was secure, manageable, controllable. Everything could be encrypted and remotely wiped.
+
+The device spread through financial services and government like wildfire. By 2003, BlackBerry was an executive status symbol. By 2007, it had 10 million users. The physical keyboard made email fast — faster than any touchscreen could manage, everyone agreed. The devices were tools, not toys. They did one thing supremely well: secure, instant, mobile communication for professionals who needed to stay connected.
+
+Then Steve Jobs walked onto a stage in January 2007 with a device that did everything BlackBerry didn't. The iPhone was beautiful where BlackBerry was functional, open where BlackBerry was controlled, a computer where BlackBerry was a communications device. It had a real web browser, real apps, real media. RIM's co-CEOs, Lazaridis and Jim Balsillie, famously dismissed it. The battery life was terrible. The keyboard was missing. It wasn't secure. Corporate IT would never approve it. They were right about all of this. They were also doomed.
+
+The iPhone didn't beat BlackBerry in enterprise — at first. It beat BlackBerry in culture. Employees wanted iPhones. They bought them personally and demanded IT support them. "Bring Your Own Device" policies emerged not from strategic planning but from executives who wanted iPhones and had the authority to demand exceptions. The consumerization of IT inverted everything RIM had built its business on. Security and control, once advantages, became inconveniences to route around.
+
+RIM's response was confusion masquerading as confidence. They released the BlackBerry Storm in 2008, a touchscreen device that clicked when you pressed it — a physical response to touch, as if the problem with touchscreens was that users needed mechanical feedback. It was terrible. They released the PlayBook tablet in 2011 without native email support. A BlackBerry tablet that couldn't do email without tethering to a BlackBerry phone. The company that had made mobile email ubiquitous shipped a tablet that treated email as an afterthought.
+
+The deeper problem was architectural. BlackBerry 10, released in 2013 as the company's salvation, was a genuinely good operating system — modern, gesture-based, elegant. It arrived six years after the iPhone and three years after Android had flooded the market. Developers had already chosen iOS and Android. Apps were the new moat, and BlackBerry had none of the apps that mattered. The company tried everything: allowing Android apps to run on BlackBerry, paying developers to port apps, building their own versions of popular services. Nothing worked. Platform effects are brutal: users go where apps are, developers go where users are, and late entrants can't break the cycle without some massive advantage. BlackBerry's advantage — security, keyboard, corporate integration — no longer mattered enough.
+
+The decline was swift once it started. Market share collapsed from 20% in 2009 to under 1% by 2016. The company that once had 80 million users was losing them at a rate of millions per quarter. Balsillie left in 2012. Lazaridis left shortly after. New CEO John Chen tried to pivot the company toward software and services — the enterprise security business still existed, still mattered. In 2016, BlackBerry announced it would stop designing its own hardware, licensing the brand to other manufacturers. The devices would continue, but the company behind them had moved on.
+
+What killed BlackBerry wasn't that they built bad products. The Bold 9900, released in 2011, was perhaps the best physical keyboard phone ever made. What killed them was building for a world that had already ended. They optimized for corporate IT departments in an era when users had seized control. They perfected secure email in an era when apps had become the interface. They built a fortress when everyone else was building an ecosystem.
+
+The company still exists, profitably, selling security software and services to enterprises and governments. The brand persists. But the path from dominance to irrelevance took less than a decade. BlackBerry was never disrupted by a better BlackBerry. It was disrupted by a different definition of what a mobile device should be.
+
+---
+*Part of All Paths Through a Startup at alexandria.press*

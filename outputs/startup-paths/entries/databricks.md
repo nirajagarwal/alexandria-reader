@@ -1,0 +1,34 @@
+# Databricks
+
+***From Spark's creators to the lakehouse that rewrote data infrastructure***
+
+> **Years:** 2013-present
+
+In 2013, three computer science professors at UC Berkeley — Ali Ghodsi, Ion Stoica, and Matei Zaharia — commercialized what Zaharia had built as a PhD student: Apache Spark, a distributed computing framework that made processing massive datasets dramatically faster than Hadoop. They'd already seen Spark adopted at scale — at Yahoo, at Alibaba, across research labs — but they'd also watched companies struggle to deploy it. Setting up clusters, managing infrastructure, debugging distributed systems: these tasks consumed weeks of engineering time and required specialized expertise most companies lacked.
+
+They founded Databricks with a straightforward premise: make Spark accessible. Not just open source accessible — operationally accessible. Their first product was a managed platform where data scientists and engineers could spin up Spark clusters, write code in notebooks, collaborate on analyses, and shut everything down when finished. No infrastructure to provision, no jar files to compile, no cluster configurations to debug at 2 AM.
+
+The timing aligned with a shift in how companies thought about data. The Hadoop era had promised big data democratization but delivered complexity. Spark was faster — sometimes a hundred times faster — but still required significant overhead. Databricks removed that friction. For Andreessen Horowitz, which led the Series A, the bet was simple: the creators of the most important data processing framework building the easiest way to use it.
+
+Early customers were predictable: technology companies with large datasets and engineering teams that understood distributed systems. But the product's notebook interface and collaborative features attracted a different constituency — data scientists who wanted to focus on models and analysis rather than infrastructure. This dual appeal — to engineers and data scientists — became foundational. Databricks wasn't just a platform; it was a workspace where different roles could work together on the same data.
+
+By 2015, competition was clarifying. Amazon had its own managed Spark service through EMR. Google had Dataproc. Microsoft would launch HDInsight. Every cloud provider offered some version of "Spark as a service." But Databricks had advantages beyond being first: they controlled Spark's development direction, they understood its internals better than anyone, and they were building features — Delta Lake, MLflow — that extended beyond basic cluster management.
+
+Delta Lake, released in 2019, represented the company's most significant architectural bet. The data world had split into two paradigms: data warehouses for structured analytics and data lakes for raw, unstructured storage. Warehouses were expensive and rigid. Lakes were cheap and chaotic. Data teams ran both, shuttling data between them, managing consistency problems and version conflicts. Delta Lake proposed something different: a "lakehouse" that combined warehouse reliability with lake flexibility. ACID transactions on object storage. Time travel through data versions. Schema enforcement without schema rigidity.
+
+The lakehouse architecture wasn't just a product feature — it was a market repositioning. Databricks was no longer the "Spark company." It was competing directly with Snowflake, the cloud data warehouse that had captured mindshare and market capitalization by making analytics simple and fast. Snowflake's pitch was elegant: load your data, run SQL, scale automatically. But Databricks could now counter: why move data into a warehouse when you can analyze it where it lives? Why pay warehouse pricing for storage when object storage costs pennies? Why limit yourself to SQL when you can run Python, R, Scala, machine learning pipelines?
+
+The competition drove both companies to extraordinary growth. Snowflake IPO'd in 2020 at a $70 billion valuation. Databricks raised at $28 billion in 2021, then $38 billion in 2023. The enterprise data market had room for multiple giants, each pulling different levers. Snowflake emphasized simplicity and SQL familiarity. Databricks emphasized flexibility and AI workloads.
+
+AI became the next battleground. When generative AI exploded in late 2022, every enterprise suddenly needed infrastructure for training and deploying models. Databricks already had the pieces: distributed compute for training large models, feature stores for managing training data, MLflow for tracking experiments, the lakehouse for storing embeddings and training sets. They added Mosaic, acquiring an AI training specialist, and positioned themselves as the platform where companies would build custom AI — not just consume APIs from OpenAI.
+
+The founders remained unusually involved for a company at this scale. Ghodsi as CEO, steering strategy. Stoica as executive chairman. Zaharia as chief technologist, still writing code, still directing Spark's evolution. This wasn't unusual in academic spinouts — the founders genuinely were the world's experts in their domain — but it created continuity of vision. Databricks never had the identity crisis that afflicts companies when founders depart and professional managers lose the thread.
+
+Revenue crossed $1.5 billion in 2023. The path to IPO seemed inevitable, though timing remained uncertain. The market for data infrastructure had matured enough that categories were clear: Snowflake for data warehouses, Databricks for lakehouses and AI workloads, various players for streaming and real-time analytics. But beneath the categories, the companies were converging, each adding features from the other's core territory. Snowflake added Python and external tables. Databricks added SQL analytics and serverless compute.
+
+What started as "make Spark easy to use" had become infrastructure for how enterprises store, process, and extract value from data. The lakehouse wasn't just a product architecture — it reflected a larger pattern in enterprise software. Stop forcing data to move. Bring compute to storage. Let different workloads run on the same foundation. Make the complex simple without making the powerful weak.
+
+The outcome isn't written, but the path is visible. Academic research into production software. Open source foundation supporting commercial product. Technical depth enabling market repositioning. Competition driving innovation rather than commoditization. A company worth tens of billions built on making hard things possible for people who aren't experts. The Spark that started in a Berkeley lab now processes petabytes of data daily, and Databricks is the platform that made that scale accessible.
+
+---
+*Part of All Paths Through a Startup at alexandria.press*

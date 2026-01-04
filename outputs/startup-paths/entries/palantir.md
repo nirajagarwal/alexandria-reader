@@ -1,0 +1,34 @@
+# Palantir
+
+***The intelligence company that waited twenty years to go public***
+
+> **Years:** 2003-present
+
+In 2003, Peter Thiel and a group of PayPal alumni started building software for the CIA. The company would not turn a profit for seventeen years. It would refuse to go public for even longer. And it would become one of the most valuable and controversial software companies in the world by doing exactly what its founders intended from day one: building tools for intelligence agencies and large institutions to find patterns in data that humans alone could not see.
+
+The founding insight came from PayPal's fraud detection systems. Thiel and his co-founders — Alex Karp, Joe Lonsdale, Stephen Cohen, and Nathan Gettings — had built algorithms that could spot criminals moving money through elaborate networks of accounts. After 9/11, it became clear that intelligence agencies needed similar capabilities. They had mountains of data but no way to connect the dots. The CIA's venture capital arm, In-Q-Tel, became Palantir's first customer.
+
+The name came from Tolkien — the seeing stones that allowed characters to perceive distant events. The product was called Gotham, after Batman's city. The metaphor was clear: these were tools for the watchers, the protectors operating in shadows. The company built software that could ingest data from dozens of sources — phone records, financial transactions, surveillance footage, social networks — and let analysts explore connections through an interface that felt less like a database and more like a detective's corkboard.
+
+The CIA contract kept the company alive, but barely. For years, Palantir burned through capital with no clear path to profitability. Thiel invested his own money repeatedly. Other PayPal alumni followed. Traditional venture capitalists were skeptical. The company was selling to governments — notoriously slow buyers with Byzantine procurement processes. The sales cycles took years. And Palantir refused to sell self-service software. Each deployment required "forward deployed engineers" who would embed with clients for months, customizing the platform and training analysts. It was the opposite of the SaaS playbook that was minting unicorns elsewhere.
+
+But the product worked. By 2009, Palantir's software had been used to help find patterns in insurgent networks in Iraq and Afghanistan. Analysts who had spent careers staring at link charts suddenly had tools that could surface connections across millions of data points in seconds. The company won more intelligence contracts. Then it expanded: FBI, ICE, police departments, financial institutions investigating fraud, pharmaceutical companies tracking drug counterfeiting.
+
+The business model emerged slowly. Palantir charged millions per deployment. Contracts ran for years. Revenue was lumpy but grew steadily. By 2013, the company was valued at $9 billion despite never having gone public. Thiel insisted on staying private. He believed public markets would force short-term thinking. Palantir needed time to build properly. Employees were given equity but couldn't easily sell it. Some left frustrated. Others stayed, believing in the mission or the eventual payout.
+
+Then the controversies began. In 2014, journalists revealed that Palantir had pitched the Chamber of Commerce on infiltrating progressive groups. The company denied involvement but the story stuck. Immigration activists protested Palantir's contracts with ICE. Employees inside the company began to organize, demanding the company drop government work they found morally troubling. Karp, the CEO — a philosophy PhD who ran the company from New Hampshire and wore hiking boots to meetings — refused. Palantir's software was a tool, he argued. Democracies needed surveillance capabilities. The alternative was leaving those capabilities to autocracies.
+
+The internal battles intensified. In 2019, a group of employees wrote an open letter demanding Palantir stop working with ICE. Karp responded by saying anyone who disagreed with the company's government work should leave. Some did. Others stayed and continued organizing. The company became a flashpoint in the broader tech industry debate about complicity: Should companies that built powerful tools refuse to sell them to controversial government agencies? Or was that itself a form of power that unelected technologists should not wield?
+
+Through it all, Palantir kept winning contracts. The UK's National Health Service. The U.S. Army. Major corporations. The software evolved into two main platforms: Gotham for defense and intelligence, Foundry for commercial enterprises. Revenue grew. Losses persisted. In 2019, Palantir passed $1 billion in revenue but still lost $580 million. The company had never been profitable. Critics questioned whether it ever would be.
+
+In September 2020, Palantir finally went public through a direct listing — no traditional IPO, no roadshow, just existing shares trading on the New York Stock Exchange. The company was valued at $16 billion. Thiel and Karp had waited seventeen years. In the prospectus, they were blunt: "We have a long history of suffering losses" and "We have a limited operating history with our Palantir Foundry product." They warned that their government work made them controversial. They did not apologize.
+
+The timing turned out to be perfect. COVID-19 had made governments desperate for data integration tools. Palantir's software helped the UK and several U.S. states manage vaccine distribution. Then, in 2022, Russia invaded Ukraine. Palantir's defense contracts suddenly looked prescient. The company finally turned profitable in 2023. The stock surged. By 2024, Palantir was worth over $100 billion.
+
+The path had been singular. No other major tech company had stayed private so long while losing so much money. No other had been so willing to embrace controversy. And no other had stuck so rigidly to a founding vision while the rest of Silicon Valley pivoted toward consumer apps and advertising. Palantir had made a bet that intelligence — both corporate and governmental — would become infrastructure. That data integration was hard enough and valuable enough to support massive contracts. That patient capital and long time horizons could build something impossible under quarterly earnings pressure.
+
+Whether that makes Palantir a triumph of conviction or an outlier that proves the rule depends on what comes next. The company is profitable now but still controversial. Its software is more powerful than ever but so are the questions about how that power gets used. The path from CIA contract to $100 billion market cap took two decades. The path forward is less clear.
+
+---
+*Part of All Paths Through a Startup at alexandria.press*
