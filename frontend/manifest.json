@@ -1,0 +1,16 @@
+{
+    "name": "Alexandria Press",
+    "short_name": "Alexandria",
+    "description": "Books only AI can write. Deep Learning for Humans.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#F7F4ED",
+    "theme_color": "#1A1A1A",
+    "icons": [
+        {
+            "src": "/assets/favicon.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        }
+    ]
+}

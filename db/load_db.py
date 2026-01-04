@@ -269,7 +269,20 @@ def main():
     if args.init_schema:
         init_schema(conn)
     
-    load_book(conn, args.book, args.cover_url)
+    # Resolve book path
+    book_path = Path(args.book)
+    if not book_path.exists():
+        # Check if it's a collection name in outputs
+        possible_path = Path(__file__).parent.parent / "outputs" / args.book / "book.json"
+        if possible_path.exists():
+            book_path = possible_path
+        else:
+            print(f"Error: Book file not found: {args.book}")
+            print(f"Also checked: {possible_path}")
+            conn.close()
+            return
+
+    load_book(conn, str(book_path), args.cover_url)
     
     # Verify
     books = get_all_books(conn)

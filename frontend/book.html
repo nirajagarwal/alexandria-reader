@@ -21,6 +21,10 @@
         href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Lora:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Sans:wght@400;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="canonical" href="https://alexandria.press/book.html">
+    <link rel="manifest" href="/manifest.json">
+    <!-- Structured Data -->
+    <script type="application/ld+json" id="schemaData"></script>
 </head>
 
 <body>
@@ -32,17 +36,27 @@
             <div class="entry-header-right">
                 <span class="entry-position" id="entryPosition"></span>
                 <button class="nav-btn-contents" id="contentsTrigger">Contents</button>
-                <button class="nav-btn" id="prevEntry" disabled>Previous</button>
+                <button class="nav-btn" id="prevEntry" disabled>Back</button>
                 <button class="nav-btn" id="nextEntry" disabled>Next</button>
             </div>
         </header>
 
         <article class="entry-content" id="entryContent">
-            <!-- Entry markdown rendered here -->
+            <!-- Loading Skeleton -->
+            <div class="skeleton-loading-view">
+                <div class="skeleton skeleton-title"></div>
+                <div class="skeleton skeleton-text" style="width: 90%;"></div>
+                <div class="skeleton skeleton-text" style="width: 95%;"></div>
+                <div class="skeleton skeleton-text" style="width: 85%;"></div>
+                <br>
+                <div class="skeleton skeleton-text" style="width: 92%;"></div>
+                <div class="skeleton skeleton-text" style="width: 88%;"></div>
+                <div class="skeleton skeleton-text" style="width: 94%;"></div>
+            </div>
         </article>
 
         <footer class="entry-footer">
-            <button class="nav-btn nav-prev-footer" id="prevEntryFooter" disabled>← Previous</button>
+            <button class="nav-btn nav-prev-footer" id="prevEntryFooter" disabled>← Back</button>
             <button class="nav-btn back-to-grid-footer" id="backToGridFooter">Library</button>
             <button class="nav-btn nav-next-footer" id="nextEntryFooter" disabled>Next →</button>
         </footer>

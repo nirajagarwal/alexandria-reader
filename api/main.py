@@ -143,6 +143,11 @@ app.add_middleware(
 )
 
 
+@app.exception_handler(404)
+async def custom_404_handler(request, __):
+    return FileResponse(BASE_DIR / "frontend" / "404.html", status_code=404)
+
+
 
 # =============================================================================
 # Routes: Library
@@ -351,6 +356,9 @@ if (BASE_DIR / "frontend" / "css").exists():
 if (BASE_DIR / "frontend" / "js").exists():
     app.mount("/js", StaticFiles(directory=str(BASE_DIR / "frontend" / "js")), name="js")
 
+if (BASE_DIR / "frontend" / "assets").exists():
+    app.mount("/assets", StaticFiles(directory=str(BASE_DIR / "frontend" / "assets")), name="assets")
+
 # Explicit routes for frontend HTML files
 @app.get("/", include_in_schema=False)
 async def serve_index():
@@ -359,4 +367,17 @@ async def serve_index():
 @app.get("/book.html", include_in_schema=False)
 async def serve_book():
     return FileResponse(BASE_DIR / "frontend" / "book.html")
+
+@app.get("/robots.txt", include_in_schema=False)
+async def serve_robots():
+    return FileResponse(BASE_DIR / "frontend" / "robots.txt")
+
+@app.get("/manifest.json", include_in_schema=False)
+async def serve_manifest():
+    return FileResponse(BASE_DIR / "frontend" / "manifest.json")
+
+
+@app.get("/sitemap.xml", include_in_schema=False)
+async def serve_sitemap():
+    return FileResponse(BASE_DIR / "frontend" / "sitemap.xml")
 

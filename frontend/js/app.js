@@ -88,9 +88,14 @@ async function loadBook(bookId) {
         // Populate the contents menu
         populateMenu(bookId);
 
-        // Navigate directly to first entry if available
-        if (currentEntries.length > 0) {
-            loadEntry(bookId, currentEntries[0].slug);
+        // Navigate to entry from URL or first entry
+        const params = new URLSearchParams(window.location.search);
+        const slug = params.get('slug');
+
+        if (slug) {
+            loadEntry(bookId, slug, false); // false = don't push state again
+        } else if (currentEntries.length > 0) {
+            loadEntry(bookId, currentEntries[0].slug, true);
         } else {
             console.error('No entries found for book:', bookId);
             window.location.href = '/';
@@ -98,6 +103,9 @@ async function loadBook(bookId) {
 
         // Setup navigation links (for Intro, Appendix, etc if visible)
         setupBookNav(bookId);
+
+        // Update Schema
+        updateSchema();
 
     } catch (error) {
         console.error('Failed to load book:', error);
@@ -205,17 +213,59 @@ async function populateMenu(bookId) {
    Entry View
    ----------------------------------------------------------------------------- */
 
-async function loadEntry(bookId, slug) {
+async function loadEntry(bookId, slug, pushState = true) {
     try {
+        // Show entry view immediately to display skeleton
+        const entryView = document.getElementById('entryView');
+        if (entryView) entryView.classList.remove('hidden');
+        document.getElementById('contentPageView').classList.add('hidden');
+
+        const contentEl = document.getElementById('entryContent');
+        if (contentEl) {
+            contentEl.innerHTML = `
+                <div class="skeleton-loading-view">
+                    <div class="skeleton skeleton-title"></div>
+                    <div class="skeleton skeleton-text" style="width: 90%;"></div>
+                    <div class="skeleton skeleton-text" style="width: 95%;"></div>
+                    <div class="skeleton skeleton-text" style="width: 85%;"></div>
+                    <br>
+                    <div class="skeleton skeleton-text" style="width: 92%;"></div>
+                    <div class="skeleton skeleton-text" style="width: 88%;"></div>
+                    <div class="skeleton skeleton-text" style="width: 94%;"></div>
+                </div>
+            `;
+        }
+
         const data = await fetchAPI(`/books/${bookId}/entries/${slug}`);
         currentEntry = data.entry;
 
+        if (pushState) {
+            const newUrl = `${window.location.pathname}?id=${bookId}&slug=${slug}`;
+            window.history.pushState({ bookId, slug }, '', newUrl);
+        }
+
+        updateSchema();
         showEntryView(data);
     } catch (error) {
         console.error('Failed to load entry:', error);
         alert('Failed to load entry');
     }
 }
+
+// Handle browser back/forward buttons
+window.onpopstate = (event) => {
+    if (event.state && event.state.bookId && event.state.slug) {
+        loadEntry(event.state.bookId, event.state.slug, false);
+    } else {
+        // Fallback or home
+        const params = new URLSearchParams(window.location.search);
+        const bookId = params.get('id');
+        const slug = params.get('slug');
+        if (bookId && slug) {
+            loadEntry(bookId, slug, false);
+        }
+    }
+};
 
 function showEntryView(data) {
     if (document.getElementById('bookView')) {
@@ -261,11 +311,11 @@ function setupEntryNav(nav) {
         prevBtnFooter.disabled = false;
         prevBtn.onclick = () => loadEntry(currentBook.book_id, nav.prev.slug);
         prevBtnFooter.onclick = prevBtn.onclick;
-        prevBtnFooter.textContent = 'Previous';
+        prevBtnFooter.textContent = '← Back';
     } else {
         prevBtn.disabled = true;
         prevBtnFooter.disabled = true;
-        prevBtnFooter.textContent = 'Previous';
+        prevBtnFooter.textContent = '← Back';
     }
 
     // Next
@@ -274,11 +324,11 @@ function setupEntryNav(nav) {
         nextBtnFooter.disabled = false;
         nextBtn.onclick = () => loadEntry(currentBook.book_id, nav.next.slug);
         nextBtnFooter.onclick = nextBtn.onclick;
-        nextBtnFooter.textContent = 'Next';
+        nextBtnFooter.textContent = 'Next →';
     } else {
         nextBtn.disabled = true;
         nextBtnFooter.disabled = true;
-        nextBtnFooter.textContent = 'Next';
+        nextBtnFooter.textContent = 'Next →';
     }
 }
 
@@ -365,6 +415,50 @@ function showContentPage(title, content, bookId, type) {
     };
 
     window.scrollTo(0, 0);
+}
+
+/* -----------------------------------------------------------------------------
+   SEO & Structured Data
+   ----------------------------------------------------------------------------- */
+
+function updateSchema() {
+    if (!currentBook) return;
+
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "Book",
+        "name": currentBook.title,
+        "description": currentBook.descriptor,
+        "author": {
+            "@type": "Organization",
+            "name": "Alexandria Press"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Alexandria Press"
+        }
+    };
+
+    if (currentBook.cover_url) {
+        schema.image = new URL(currentBook.cover_url, window.location.origin).href;
+    }
+
+    if (currentEntry) {
+        schema.mainEntity = {
+            "@type": "Article",
+            "headline": currentEntry.name,
+            "description": currentEntry.descriptor,
+            "author": {
+                "@type": "Organization",
+                "name": "Alexandria Press"
+            }
+        };
+    }
+
+    const schemaScript = document.getElementById('schemaData');
+    if (schemaScript) {
+        schemaScript.textContent = JSON.stringify(schema, null, 2);
+    }
 }
 
 /* -----------------------------------------------------------------------------

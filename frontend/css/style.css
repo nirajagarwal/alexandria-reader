@@ -353,7 +353,7 @@ a:hover {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    height: 40px;
+    height: 44px;
     padding: 0 var(--space-lg);
     background: var(--bg-secondary);
     border: 1px solid var(--border);
@@ -381,7 +381,7 @@ a:hover {
 /* Specific button tweaks */
 .nav-btn-back {
     font-size: 1.25rem;
-    width: 40px;
+    width: 44px;
     padding: 0;
 }
 
@@ -781,6 +781,43 @@ a:hover {
 /* -----------------------------------------------------------------------------
    Responsive
    ----------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+   Skeletons & Loading
+   ----------------------------------------------------------------------------- */
+
+.skeleton {
+    background: var(--bg-secondary);
+    background: linear-gradient(90deg,
+            var(--bg-secondary) 25%,
+            var(--border-subtle) 50%,
+            var(--bg-secondary) 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite;
+    border-radius: 4px;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+.skeleton-text {
+    height: 1.25rem;
+    margin-bottom: var(--space-md);
+    width: 100%;
+}
+
+.skeleton-title {
+    height: 2.8rem;
+    width: 60%;
+    margin-bottom: var(--space-xl);
+}
 
 @media (max-width: 768px) {
     .library {
