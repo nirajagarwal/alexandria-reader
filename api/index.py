@@ -149,6 +149,12 @@ async def custom_404_handler(request, __):
 
 
 
+@app.get("/health", tags=["system"])
+async def health_check():
+    """Health check endpoint."""
+    return {"status": "ok", "env": "production" if not os.environ.get("VERCEL_DEV") else "dev"}
+
+
 # =============================================================================
 # Routes: Library
 # =============================================================================

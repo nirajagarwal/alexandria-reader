@@ -58,7 +58,7 @@ async function loadLibrary() {
         `).join('');
     } catch (error) {
         console.error('Failed to load library:', error);
-        shelf.innerHTML = '<p class="error-state">Failed to load books.</p>';
+        shelf.innerHTML = `<p class="error-state">Failed to load books. ${error.message}</p>`;
     }
 }
 

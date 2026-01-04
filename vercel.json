@@ -1,5 +1,11 @@
 {
     "cleanUrls": true,
+    "builds": [
+        {
+            "src": "api/index.py",
+            "use": "@vercel/python"
+        }
+    ],
     "rewrites": [
         {
             "source": "/outputs/(.*)",
@@ -7,7 +13,7 @@
         },
         {
             "source": "/(.*)",
-            "destination": "/api/main.py"
+            "destination": "/api/index.py"
         }
     ],
     "headers": [
