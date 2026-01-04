@@ -1,1 +1,0 @@
-I'm ready to write entries for Body. Please provide the name of the experience you'd like me to document (e.g., "Heartbeat," "Hunger," "Fever," "Orgasm," "Crying," etc.), and I'll create a complete entry following the structure and voice guidelines.

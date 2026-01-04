@@ -1,0 +1,16 @@
+# Pregnancy
+
+**1. The Parasite Bargain:** A fetus is genetically foreign — half its DNA comes from someone else. The immune system should attack it like a transplanted organ. Instead, the placenta secretes proteins that suppress local immune response, creating a truce zone. The fetus also sends fetal cells into maternal blood; they cross into organs, persist for decades. Women who carried sons harbor Y-chromosome cells in their brains forty years later. The body accepts invasion, then keeps pieces of the invader forever.
+
+**2. The Geometric Problem:** A full-term fetus weighs seven to nine pounds. The uterus, pre-pregnancy, weighs two ounces and holds less than a teaspoon of fluid. To accommodate growth, smooth muscle cells don't multiply — they stretch. Each cell becomes ten times larger. The organ expands five hundred times in volume. After birth, it shrinks back in six weeks through a process called involution: cells self-digest, shrinking while staying alive, returning to near-original size.
+
+**3. The Boston Measurement:** In 1846, obstetrician Walter Channing needed to know how long pregnancy lasted. He tracked two hundred cases, measuring from last menstruation to birth. His answer: 280 days, or forty weeks. This became medical standard worldwide. But ovulation occurs roughly two weeks after menstruation begins, meaning the "forty-week" count includes two weeks before conception. Actual gestation: thirty-eight weeks. The error persists in every due date calculator. Pregnancy is dated from before it starts.
+
+**4. The Hidden Twins:** One in eight confirmed pregnancies begins as twins. Most become singletons. Early ultrasounds reveal two gestational sacs; later scans show one fetus, one empty sac — "vanishing twin syndrome." The lost embryo is typically absorbed by the surviving twin, the placenta, or the uterine lining. Sometimes fragments remain: teeth, hair, bone discovered decades later inside the survivor's body. Twin chimerism can cause failed paternity tests when absorbed tissue produces different DNA in blood or saliva.
+
+**5. The Irish Binding:** From 1935 to 1972, Irish law banned the sale and import of contraceptives. From 1983 to 2018, the Eighth Amendment gave equal right to life to fetus and mother, criminalizing abortion even in cases of rape, incest, or fatal fetal abnormality. Savita Halappanavar died in 2012 from sepsis during miscarriage; doctors refused intervention while the fetal heartbeat persisted. Her death catalyzed repeal. For eighty-three years, Irish law treated pregnancy as compulsory.
+
+**6. The Ectopic Migration:** Ninety-eight percent of pregnancies implant in the uterus. The remaining two percent attach elsewhere: fallopian tube, ovary, cervix, abdominal cavity. In 1999, British doctors discovered a fetus growing in a woman's liver. It had implanted in the peritoneum, developed blood supply from hepatic vessels, gestated to twenty-eight weeks. Surgeons delivered a living infant via laparotomy. Abdominal pregnancies can reach term if placental blood supply develops adequately. Without intervention, they're usually fatal. The body will accept implantation almost anywhere.
+
+---
+*Part of Body: What We Are in the Flesh at alexandria.press*

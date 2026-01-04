@@ -1,0 +1,16 @@
+# The Tongue
+
+**1. The Strongest Myth:** The tongue is not the strongest muscle in the body — not by force, not by endurance. That title belongs to the masseter, which closes your jaw, or the heart, which never stops. The tongue isn't even one muscle. It's eight, woven together like rope: four intrinsic muscles that change its shape, four extrinsic that move it through space. What makes it remarkable isn't strength but dexterity. No other muscle in your body can form a dozen different shapes in a second, or touch every tooth in your mouth without looking.
+
+**2. The Egyptian Weighing:** Ancient Egyptians believed the heart was weighed against a feather after death to judge a person's worth. But in mummification, they removed the tongue separately and preserved it with special care. The dead would need it in the afterlife — not for taste, but for speech. To speak the correct words, the passwords and denials, the claims of innocence before the gods. A body without its tongue was a body that couldn't defend itself in eternity.
+
+**3. The Map That Wasn't:** For a century, textbooks showed the tongue divided into taste zones: sweet at the tip, bitter at the back, sour on the sides. The map was wrong. A German scientist misread a paper in 1901, and the error spread through every biology classroom in the world. Every part of your tongue tastes everything. The slight variations in sensitivity are real but minor. We taught generations of children a beautiful, orderly lie about their own mouths.
+
+**4. The Rolling Gene:** Whether you can roll your tongue into a U-shape was once taught as simple Mendelian genetics — one gene, two options. Then identical twins appeared with different abilities. Then people who couldn't roll their tongues learned how. The trait isn't genetic destiny but developmental chance, practice, and whatever unmapped factors shape the small muscular coordinations of childhood. Your party trick may have nothing to do with your parents.
+
+**5. The Buddhist Omens:** Classical Buddhist texts describe the Buddha's body with thirty-two major marks and eighty minor ones. Among them: a tongue so long he could touch his forehead, or lick both ears. This wasn't metaphor but literal expectation. Tibetan teachers are sometimes examined for tongue length as a sign of reincarnation. The logic: if speech carries dharma, the organ of speech must be extraordinary. The longer the tongue, the more past lives of teaching it implies.
+
+**6. The Severed Speech:** Cut the lingual nerve during wisdom tooth surgery and you lose taste on half your tongue, feeling in your lower lip, or both. It happens more often than dentists admit — studies suggest permanent damage in one of every two hundred extractions. Some patients describe phantom tastes: metal, burning, sweetness where there's nothing. The brain, expecting signals that don't arrive, invents them. Your tongue becomes a storyteller even when it's lost the plot.
+
+---
+*Part of Body: What We Are in the Flesh at alexandria.press*
