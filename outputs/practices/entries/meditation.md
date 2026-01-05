@@ -1,0 +1,30 @@
+# Meditation
+
+Seated in stillness, watching the mind. Meditation is the deliberate practice of sustained attention — noticing thoughts, sensations, and emotions without being carried away by them. People meditate to cultivate awareness, to find steadiness amid mental chaos, to know their own minds more clearly.
+
+## What It Is
+
+Meditation is training attention through sustained focus on a chosen object — breath, body sensations, a phrase, or awareness itself. The practitioner sits (usually), settles into a posture, and returns attention repeatedly to the anchor when the mind wanders. It's not emptying the mind or achieving bliss, but developing meta-awareness: noticing you're thinking without being lost in thought. Different traditions emphasize different objects and intentions — concentration, insight, compassion — but the core is the same: deliberate work with attention. The psychologist William James wrote that "the faculty of voluntarily bringing back a wandering attention, over and over again, is the very root of judgment, character, and will."
+
+## Where It Comes From
+
+Meditation emerges from contemplative traditions spanning millennia. Buddhist practices developed systematic methods for training attention and investigating mind states, distinguishing between concentration (samatha) and insight (vipassana) meditation. Hindu traditions pursued meditative absorption through various yogic paths. Christian contemplatives practiced forms of prayer that resemble meditation — the Jesus Prayer, centering prayer, Lectio Divina's sustained pondering. Taoist and Confucian practices cultivated stillness and presence. In the 20th century, meditation migrated from monasteries to clinics and apps, stripped of religious cosmology but retaining core techniques. Jon Kabat-Zinn's Mindfulness-Based Stress Reduction brought Buddhist practices into medicine in 1979, launching meditation into mainstream psychology and neuroscience.
+
+## How It's Done
+
+Find a stable posture — sitting on a cushion, bench, or chair, spine upright but not rigid. Set a duration: beginners often start with 10-20 minutes. Choose an anchor for attention: commonly the breath at the nostrils or abdomen, but could be body sensations, sounds, or a phrase. Place attention on the anchor. When you notice the mind has wandered — into planning, remembering, fantasizing, judging — note that it has wandered and return to the anchor. This happens constantly. The practice is the returning, not the staying. Some traditions add techniques: counting breaths, noting sensations ("rising, falling"), investigating the nature of thoughts themselves. Consistency matters more than duration — daily practice, even brief, builds the capacity more effectively than occasional long sessions.
+
+## What It Cultivates
+
+Meditation strengthens meta-cognitive awareness: the ability to observe mental processes rather than being identical with them. This creates space between stimulus and response — you notice anger arising rather than being immediately possessed by it. Research shows measurable changes: improved attention regulation, reduced rumination, decreased stress reactivity, enhanced emotional regulation. Richard Davidson's neuroscience work reveals increased activity in brain regions associated with attention and decreased activity in the default mode network responsible for mind-wandering and self-referential thought. Regular practitioners report greater equanimity — less reactivity to pleasant and unpleasant experiences. The practice cultivates what Buddhists call "bare attention": seeing what's actually happening rather than the story about what's happening. This clarity supports better decisions, deeper relationships, and the capacity to be present rather than perpetually elsewhere.
+
+## The Dangers
+
+Meditation can become spiritual bypassing — using practice to avoid rather than engage difficult emotions or necessary action. Some practitioners become attached to pleasant states, turning meditation into an escape. Others develop a harsh, striving relationship with the practice itself: self-judgment when the mind wanders, frustration at "failing" to achieve calm. Meditation can also dislodge psychological material practitioners aren't equipped to process; intensive retreats occasionally precipitate mental health crises in vulnerable individuals. There's a subtle narcissism possible: the meditator preoccupied with their own consciousness, cultivating refined states while ignoring suffering around them. Apps and commercialized mindfulness can reduce meditation to stress management tool, losing the ethical and existential dimensions that give the practice depth. The psychologist Willoughby Britton notes that meditation is a powerful intervention, not uniformly positive — it requires the same care we'd apply to any intervention affecting consciousness and emotion.
+
+## A Practitioner
+
+Thích Nhất Hạnh, the Vietnamese Zen master, brought meditation into action. Exiled during the Vietnam War for advocating peace, he developed "Engaged Buddhism" — meditation inseparable from ethics and social responsibility. He taught walking meditation to refugees, sitting practice to war veterans, mindful breathing to activists burning out from their work. When a community member asked how to maintain practice amid chaos, he suggested washing dishes as meditation: full attention to the water, the soap, the bowl. His practice was not withdrawal but preparation for engagement. In Plum Village, his monastery, he taught "telephone meditation" — three conscious breaths before answering a call. Every act an opportunity for presence. He demonstrated that meditation isn't about achieving special states but bringing awareness to ordinary life. The stillness cultivated in formal practice isn't separate from compassionate action in the world — they're the same work.
+
+---
+*Part of Practices at alexandria.press*

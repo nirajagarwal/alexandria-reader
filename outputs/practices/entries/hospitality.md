@@ -1,0 +1,30 @@
+# Hospitality
+
+Opening the door to a stranger, setting another place at the table, making room in your home and schedule — hospitality is the practice of welcoming others into your space and life. It's more than entertaining; it's the deliberate act of creating conditions where both host and guest can be themselves, where boundaries soften without disappearing, and where the simple act of sharing food or shelter becomes an expression of human dignity.
+
+## What It Is
+
+Hospitality is the intentional practice of receiving another person into your space — home, table, time, attention — with generosity and without expectation of return. It differs from entertaining, which performs; hospitality reveals. The host opens their actual life, not a curated version. The guest receives welcome as they are, not as they might be useful or impressive. Benedict of Nursia wrote that all guests should be "received as Christ," but the practice doesn't require religious framing — it requires recognizing the person before you as worthy of welcome simply because they're human. Hospitality creates a threshold space where strangers can become friends, where isolation breaks, where the walls we build around our private lives become doors.
+
+## Where It Comes From
+
+Hospitality runs through ancient cultures as both sacred duty and survival necessity. The Greek *xenia* demanded hosts protect traveling strangers; the Bedouin tradition offered sanctuary even to enemies once they entered a tent. Early Christianity made it central: "Do not neglect to show hospitality to strangers, for thereby some have entertained angels unawares." Medieval monasteries kept guesthouses; the Rule of Benedict devoted an entire chapter to receiving guests. Modern hospitality inherits this lineage but faces a culture of privacy, busyness, and stranger-danger. The philosopher Henri Nouwen distinguished hospitality from hostility — creating "a free space where the stranger can enter and become a friend instead of an enemy." Contemporary practitioners reclaim the practice against the isolating defaults of modern life.
+
+## How It's Done
+
+Hospitality begins with invitation — asking someone to your table, into your home, to share a meal or conversation. Preparation matters: clean the space, prepare food, create an atmosphere that says "you're expected and wanted." But preparation shouldn't become performance anxiety; better a simple meal shared warmly than elaborate hosting that exhausts. Set a time with margins — don't rush. When the guest arrives, give attention. Put phones away. Ask questions that invite real answers, not small talk. Serve food family-style when possible; the act of passing dishes creates participation. Psychologist Karen Swallow Prior notes that "hospitality is the practice of making room," which means being present, not just providing. Some practitioners keep an open table night — a standing invitation for friends to drop by. Others offer spare rooms to travelers or strangers needing shelter. The core is this: open your door, share what you have, and attend to the person who comes.
+
+## What It Cultivates
+
+Hospitality builds connection across the fractures of modern isolation. Research on loneliness shows that face-to-face interaction in homes creates stronger bonds than public meetups; the vulnerability of entering someone's private space deepens trust. For hosts, the practice cultivates generosity — not just material but attentional. You learn to notice needs before they're spoken, to make room in crowded schedules, to share resources without calculating return. For guests, hospitality teaches the grace of receiving — acknowledging dependence, accepting care, entering another's space with respect. The practice also creates what sociologist Ray Oldenburg called "third places" — spaces neither work nor private retreat where community forms organically. Regular hospitality weaves social fabric that institutional programs can't replicate. You practice seeing the image of God, or simply human dignity, in whoever crosses your threshold.
+
+## The Dangers
+
+Hospitality distorts when it becomes performance — the Instagram-perfect table settings, the stress-inducing dinner party, the host too anxious about impressions to actually be present. It can become exploitation when hosts exhaust themselves or guests take advantage, treating welcome as entitlement. Hospitality without boundaries invites burnout; the practice requires wisdom about capacity and timing. Some use hospitality as power — welcoming others to demonstrate superiority or create obligation. Others practice a selective hospitality that welcomes only the interesting, attractive, or useful, which is merely social climbing. The philosopher Derrida warned of "conditional hospitality" that calculates worth before opening doors. Hospitality can also enable harm — welcoming toxic people damages communities. The practice requires discernment: radical welcome doesn't mean radical naivety.
+
+## A Practitioner
+
+Dorothy Day ran hospitality houses for decades through the Catholic Worker movement, opening doors to whoever needed shelter — addicts, mentally ill, homeless, angry, difficult people alongside the grateful poor. Her New York house served hundreds of meals daily in crowded, chaotic rooms. She wrote: "We cannot love God unless we love each other, and to love we must know each other. We know him in the breaking of bread, and we know each other in the breaking of bread, and we are not alone anymore." Day's hospitality wasn't sentimental; she recorded frustrations, thefts, failures. But she kept setting tables, kept making room, kept believing that welcoming the stranger was welcoming Christ. Her practice cost her privacy, comfort, and ease — but it built communities that outlived her, spaces where dignity was restored through the simple act of being welcomed at a table.
+
+---
+*Part of Practices at alexandria.press*

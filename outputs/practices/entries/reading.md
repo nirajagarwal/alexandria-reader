@@ -1,0 +1,31 @@
+# Reading
+
+People have always gathered around stories and ideas, but the solitary practice of reading — eyes moving across a page, mind engaged with another's thought — creates a particular kind of attention. Reading is deliberate absorption in text, whether for knowledge, beauty, or transformation. It trains the mind to follow complex chains of reasoning, inhabit other perspectives, and sustain focus in an age of fragmentation.
+
+## What It Is
+
+Reading as practice means something more than scanning screens or skimming for information. It's the sustained engagement with substantial texts — books, essays, articles that demand and reward attention. The practice involves choosing what to read with intention, setting aside protected time, and bringing full presence to the page. It includes rereading, marking passages, wrestling with difficult ideas, and letting words settle into understanding. Reading for flourishing differs from reading for utility or entertainment; it's the deliberate use of text to shape thought, expand empathy, and cultivate wisdom. The practice encompasses everything from poetry that arrests the heart to philosophy that restructures thinking to narrative that reveals human complexity.
+
+## Where It Comes From
+
+Silent, solitary reading is a relatively recent practice in human history. For most of civilization, reading meant speaking texts aloud — even the monastery libraries echoed with murmured recitation. Augustine famously marveled at Ambrose reading silently in the fourth century, eyes moving across the page without his lips forming words. The printing press democratized access to texts, but deep reading as a widespread contemplative practice emerged only in the past few centuries. Buddhist monks copied sutras as meditation. Jewish scholars developed complex practices of textual study — *chevruta* partnerships wrestling with Talmud. The Islamic tradition honored *tadabbur*, contemplative reflection on the Quran. Modern bibliotherapy, reader response theory, and research on sustained attention have given ancient reading practices contemporary vocabulary while confirming what practitioners always knew: how we read shapes who we become.
+
+## How It's Done
+
+The practice begins with selection — choosing texts that challenge, nourish, or illuminate rather than merely confirm existing views. Set aside dedicated time, ideally daily, in a space free from digital interruption. Physical books or e-readers without notification systems work better than phones or computers. Start by settling attention: a few breaths, clearing mental clutter. Read at the pace the text requires — not racing to finish but moving slowly enough to comprehend. "The man who reads only for improvement is beyond all hope of improvement before he begins," wrote C.S. Lewis; pleasure and growth interweave. Mark passages that resonate. Pause to reflect. For difficult texts, read aloud or copy key passages by hand. Keep a reading journal — not book reports but conversation with the text. Reread important books; they change as you do. Vary genres and perspectives deliberately. Protect this time as fiercely as any spiritual practice.
+
+## What It Cultivates
+
+Reading builds the capacity for sustained attention in an economy designed to fracture it. Neuroscience research shows that deep reading activates networks of cognition different from scanning — engaging areas associated with embodied simulation, empathy, and abstract reasoning. The practice cultivates what Maryanne Wolf calls "deep reading processes": perspective-taking, critical analysis, emotional resonance, moral reasoning. Reading widely expands the architecture of possible thought; you can't think thoughts for which you lack words. Narrative builds empathy by creating "experience" of other minds and lives. Philosophy trains systematic thinking. Poetry sharpens attention to language's music and precision. As Harold Bloom argued, "We read to strengthen the self, and to learn its authentic interests." The practice creates internal resources — frameworks for understanding, vocabulary for experience, models for being — that persist long after the book is closed.
+
+## The Dangers
+
+Reading becomes performative when it's about displaying intellectual sophistication rather than genuine engagement. The danger of "tsundoku" — acquiring books never read — signals collecting as substitute for practice. Reading only for information extraction treats texts as databases rather than encounters with minds. Narrow reading — consuming only authors who confirm existing beliefs — calcifies rather than expands perspective. David Foster Wallace warned that too much reading can become avoidance of living, "preferring the cleaner theater of the written word to the confusions of actual experience." Academic reading can degrade into credentialing rather than understanding. Speed-reading techniques that promise comprehension without time investment usually deliver neither. The practice fails when it becomes compulsive productivity — tracking books finished, competing on Goodreads — rather than transformation through attention.
+
+## A Practitioner
+
+Simone Weil read with the intensity others bring to prayer. She copied out passages from philosophers and mystics by hand, believing the slow work of transcription was itself contemplative. In her notebooks, texts from Plato, the Gospels, Sanskrit poetry sit beside her own fierce reflections. "Absolutely unmixed attention is prayer," she wrote — and she read with that quality of attention. Working in factories, organizing labor unions, she maintained daily reading as discipline. Her reading wasn't scholarly accumulation but spiritual practice; she read to be transformed. In her final years, weakened by illness and self-imposed hunger, she continued working through Greek texts, seeking what she called "the real." She demonstrated reading as a form of love — attention so complete it requires everything you have.
+
+---
+
+*Part of Practices at alexandria.press*

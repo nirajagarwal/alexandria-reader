@@ -1,0 +1,30 @@
+# Community
+
+People gather. They form bonds that outlast individual need, create structures that support flourishing, and build lives together that none could sustain alone. Community is the deliberate cultivation of these bonds — not the accident of proximity but the work of weaving connection into something that holds.
+
+## What It Is
+
+Community is intentional belonging among people committed to mutual care and shared purpose. It differs from mere social connection by its depth of commitment, from family by choice rather than blood, from organization by prioritizing relationship over function. A community forms when people choose to show up for each other repeatedly, building patterns of care that become reliable. The philosopher Alasdair MacIntyre writes that community requires "a shared understanding of goods, of the kinds of life in which those goods are embodied, and of the practices through which they are realized." It's not just gathering — it's gathering toward something, with agreements about what matters and how to treat each other when it's hard.
+
+## Where It Comes From
+
+The practice of intentional community has ancient roots. Monastic traditions — Buddhist sanghas, Christian monasteries, Jewish kibbutzim — formalized community as spiritual practice. These weren't just living arrangements but laboratories for human flourishing, testing what happens when people commit to shared life under shared values. Indigenous cultures maintained community through ceremony, storytelling, and structured interdependence. The 20th century saw waves of intentional communities: communes, cohousing movements, L'Arche communities for people with disabilities. Each generation rediscovers that isolation corrodes human thriving and experiments with alternatives. Modern expressions include everything from dinner groups that meet weekly for years to urban co-ops to digital communities that support specific practices or struggles.
+
+## How It's Done
+
+Community building starts with clear intention: What are we gathering for? Who do we want to become together? Physical proximity helps — shared meals, regular gatherings, overlapping daily life — but isn't required. What matters is showing up consistently. Effective communities establish rhythms: weekly dinners, monthly check-ins, annual retreats. They create structures for honesty: agreements about conflict, practices for speaking difficult truths, ways to repair harm. They distribute care so no one person carries everything. They mark transitions together — births, deaths, commitments — making them communal rather than private events. They tend boundaries: who's in, how someone joins, what happens when someone needs to leave. The sociologist Robert Putnam found that communities thrive on both bonding (deep connection within) and bridging (generous connection beyond), so healthy communities cultivate both intimacy and openness.
+
+## What It Cultivates
+
+Community builds resilience against isolation and despair. Research consistently shows that strong social ties predict longevity, recovery from illness, and subjective well-being more reliably than many medical interventions. Community provides what psychologist Abraham Maslow called belonging needs — the knowledge that you matter to others, that your absence would be felt. It creates accountability: when people know your commitments, you're more likely to keep them. It distributes wisdom: communities hold knowledge no individual could maintain. It enables practices too hard to sustain alone: prayer vigils, care for the dying, resistance against injustice. It generates what political theorist Robert Putnam calls "social capital" — the trust and reciprocity that make cooperation possible. Most fundamentally, community confirms that you're not making this up alone, that the life you're trying to build makes sense to others pursuing similar goods.
+
+## The Dangers
+
+Community can become insular, elevating "us" while dismissing "them." It can demand conformity, punishing difference in the name of unity. The very structures that create safety can become coercive — expectations turn into obligations, care becomes control, belonging requires betraying your own judgment. Communities can enable harm by protecting abusers or silencing victims to "preserve unity." They can become identity rather than practice, where membership matters more than the goods the community supposedly serves. Communities can also simply exhaust: the constant demand for presence, the emotional labor of collective life, the way others' crises become your crises. Anthropologist Robin Dunbar suggests humans can maintain only about 150 stable relationships; communities that ignore this scale can overwhelm their members. The practice requires knowing when to let someone go, when to rest from collective life, when your community has become the thing preventing your flourishing.
+
+## A Practitioner
+
+Dorothy Day co-founded the Catholic Worker movement in 1933, creating communities of hospitality for the poor that continue today. Her communities gathered around shared work — running soup kitchens, publishing a newspaper, protesting war — but also around shared rhythms: daily Mass, communal meals, Friday night discussions. Day insisted that community meant actually living together, not just helping from a distance: "What we would like to do is change the world — make it a little simpler for people to feed, clothe, and shelter themselves as God intended them to do." She stayed when it was hard, when people stole from the community or when mental illness made someone dangerous, treating these not as failures but as the actual work. She understood community as practice, not sentiment: "We have all known the long loneliness and we have learned that the only solution is love and that love comes with community."
+
+---
+*Part of Practices at alexandria.press*

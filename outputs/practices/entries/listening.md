@@ -1,0 +1,30 @@
+# Listening
+
+We speak far more than we listen, and when we do listen, we're often waiting for our turn to talk. Real listening — the kind that creates space for another person to be fully present — is rarer than we think. It's the practice of giving complete attention to what someone is saying, not to respond or fix or judge, but to understand. Cultures across the world have recognized that this kind of receptive presence is both an art and a discipline, something that must be cultivated deliberately if we're to do it well.
+
+## What It Is
+
+Listening as a practice means attending fully to another person's words, tone, and presence without simultaneously preparing your response. It's distinct from hearing (passive reception of sound) and from analytical listening (mining for information). The practice involves stilling your own internal commentary, resisting the urge to interrupt or redirect, and creating spaciousness for the other person's experience. This means noticing when your attention drifts to your own reactions, judgments, or stories, and gently returning focus to the speaker. It includes attention to what's said and what's left unsaid, to emotional content beneath the words. The psychiatrist Karl Menninger observed, "Listening is a magnetic and strange thing, a creative force. The friends who listen to us are the ones we move toward. When we are listened to, it creates us, makes us unfold and expand."
+
+## Where It Comes From
+
+Deep listening appears across contemplative traditions. In Buddhist practice, "mindful listening" is part of Right Speech — the Eightfold Path includes both speaking and receiving speech with awareness. Quaker meetings rely on "listening for the Light," a corporate silence in which members attend to both spoken ministry and the space around it. The Hebrew scriptures repeat *Shema* — "Hear, O Israel" — making listening the first religious act. In the 20th century, psychologist Carl Rogers developed "active listening" as a therapeutic technique, later adapted for conflict resolution, education, and pastoral care. Indigenous councils from the Haudenosaunee to Australian Aboriginal elders have practiced structured listening where speaking follows careful attention, often with a talking stick ensuring no interruption.
+
+## How It's Done
+
+Set aside distractions — phone away, laptop closed, body turned toward the speaker. Make eye contact without staring. When the person speaks, resist rehearsing your response. Notice when your mind wanders to judgment ("That's wrong"), comparison ("I had it worse"), or solution-finding ("Here's what you should do"), and return to their words. Reflect back what you hear: "It sounds like you're saying..." or "I'm hearing that..." not to agree or solve but to confirm understanding. Allow silence. Don't fill pauses or finish sentences. Pay attention to tone, pace, and body language. When you do speak, ask questions that open rather than close: "What was that like?" not "Why did you do that?" A practice session might be 15-30 minutes where you listen to someone without offering advice, sharing similar experiences, or steering the conversation.
+
+## What It Cultivates
+
+Listening builds relational capacity — the ability to be with another person without making their experience about you. Research shows that feeling heard reduces stress, clarifies thinking, and strengthens connection. Studies on "active-constructive responding" (responding with genuine attention and interest) correlate with relationship satisfaction and trust. The practice develops patience, humility, and the recognition that understanding takes time. It cultivates what psychologist Adam Kahane calls "generative listening" — the kind that allows new possibilities to emerge rather than simply confirming what you already think. For the listener, the discipline of returning attention when it wanders strengthens metacognitive awareness, the capacity to notice your own mental patterns. Regular practice decreases defensiveness and the need to be right.
+
+## The Dangers
+
+Listening becomes performative when you're more concerned with appearing empathetic than actually attending. The practice distorts into therapeutic cosplay — nodding earnestly while mentally rehearsing your own wisdom. It can enable harmful behavior if listening becomes passive acceptance of abuse or manipulation without appropriate boundary-setting. Some use "just listening" to avoid difficult conversations, mistaking silence for wisdom when truth-telling is required. The practice can become one-sided, where certain people always listen and others always speak, replicating existing power dynamics. Listening without discernment can mean absorbing toxic content or conspiracy theories without critical engagement. Professional listeners (therapists, counselors) can experience compassion fatigue from sustained empathetic attention without adequate support structures.
+
+## A Practitioner
+
+Rachel Naomi Remen, physician and author, learned listening from her grandfather, an Orthodox rabbi who taught her that "the most basic and powerful way to connect to another person is to listen. Just listen." In her medical practice with cancer patients, she developed "generous listening" — attention that creates space for difficult truths. She describes moments when patients, given unhurried presence, would move from surface complaints to deeper fears and hopes they hadn't voiced before. Remen trained physicians in this practice, teaching them to set aside the medical chart during crucial conversations, to hear not just symptoms but the person's experience of illness. She noticed that patients who felt heard were more likely to follow treatment plans and reported better quality of life regardless of prognosis. Her work helped establish narrative medicine, where listening to patients' stories became recognized as diagnostic and therapeutic, not merely preliminary to "real" medical work.
+
+---
+*Part of Practices at alexandria.press*

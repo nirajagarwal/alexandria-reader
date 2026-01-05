@@ -1,0 +1,31 @@
+# Yoga
+
+A person sits cross-legged on a mat, breath synchronized with movement, holding a posture that stretches and strengthens simultaneously. This is yoga in its most familiar Western form — but the practice extends far beyond the physical sequences that fill studios across cities. At its root, yoga means "union" — a deliberate attempt to integrate body, breath, and attention into a coherent whole.
+
+## What It Is
+
+Yoga is a practice of coordinated movement, breath control, and focused attention designed to cultivate physical vitality and mental clarity. The physical practice (*asana*) involves holding specific postures — some strengthening, some stretching, some balancing — while maintaining steady breathing and present awareness. But yoga encompasses more than postures: breath practices (*pranayama*), concentration techniques, and in traditional forms, ethical disciplines and meditation. The contemporary Western practice typically emphasizes the physical — strength, flexibility, balance — while traditional yoga treats the body as the gateway to deeper transformation. What distinguishes yoga from mere exercise is this integration: you're not just moving, but coordinating movement with breath and sustaining attention throughout.
+
+## Where It Comes From
+
+Yoga emerged in India at least 2,500 years ago, codified in Patanjali's *Yoga Sutras* around the 2nd century BCE. The tradition developed through Hindu and Buddhist lineages, with different schools emphasizing different paths — devotional (*bhakti*), knowledge-based (*jnana*), action-oriented (*karma*), or meditative (*raja*). The physical practice most Westerners know derives largely from *hatha yoga*, which flowered in medieval India. In the early 20th century, teachers like Krishnamacharya synthesized traditional forms with modern influences, and his students — including B.K.S. Iyengar and Pattabhi Jois — brought yoga to the West. Today's practice ranges from spiritually-grounded traditions maintaining the full eight-limbed path to fitness-oriented classes focused purely on the physical. The same word now encompasses thousand-year-old contemplative disciplines and Instagram-friendly workouts.
+
+## How It's Done
+
+Begin with a mat and comfortable clothing. Most practices start with centering — sitting or lying still, attending to breath. Then movement: flowing between postures (*vinyasa*) or holding them longer (*hatha*). Common sequences include sun salutations, standing poses like warrior, balancing poses like tree, seated forward bends, and final relaxation. "The yoga pose is not about touching your toes," B.K.S. Iyengar observed. "It's what you learn on the way down." Throughout, the instruction is to coordinate breath with movement — typically inhaling on expansions, exhaling on contractions — and notice sensations without forcing past limits. Sessions typically last 60-90 minutes, ending with *savasana* — lying flat in stillness. Some practices add explicit breath work or meditation. The specifics vary enormously by tradition: Iyengar emphasizes precise alignment, Ashtanga follows a fixed sequence, Yin holds poses for minutes.
+
+## What It Cultivates
+
+Yoga builds physical capacity — strength, flexibility, balance — but its real work is integration. Regular practice develops what researchers call "interoceptive awareness" — the ability to sense and interpret bodily signals. A 2016 meta-analysis in the *Journal of Clinical Psychology* found yoga effective for reducing anxiety and depression, comparable to exercise but with added benefits for body awareness and emotional regulation. The practice trains sustained attention: holding challenging poses while breathing steadily requires moment-to-moment awareness, strengthening the capacity to remain present under difficulty. Traditional practitioners describe it as cultivating *sthira* and *sukha* — steadiness and ease — the ability to be both grounded and relaxed. Physically, it counters the body's tendency toward imbalance and rigidity. Mentally, it offers repeated practice in meeting discomfort without either collapsing or forcing through — a template that extends beyond the mat into daily challenges.
+
+## The Dangers
+
+Yoga becomes problematic when the ego hijacks the practice. The competitive instinct to push into deeper poses leads to injury — torn hamstrings, strained backs, damaged joints. "The practice is not about being better than someone else," yoga teacher Judith Hanson Lasater warns, "or even being better than you used to be. It's about being present with what is." The culture of Instagram yoga turns the practice performative, valuing aesthetically impressive poses over genuine inquiry. Some practitioners use yoga as sophisticated self-punishment, another domain for perfectionism. Others spiritually bypass — using practice to avoid difficult emotions or necessary changes rather than meeting them. The physical focus can become another form of body obsession, just with more Sanskrit. And the Western appropriation of Eastern traditions raises questions about commercialization and cultural respect. Yoga practiced without honesty about limits becomes just another way to prove something rather than discover something.
+
+## A Practitioner
+
+Krishnamacharya (1888-1989) spent his long life adapting yoga for different students and contexts. As a young scholar, he mastered traditional texts in Tibet and India. Later, teaching in Mysore, he developed rigorous practices for young men while creating gentler sequences for others. His students included his brother-in-law Iyengar, whom he taught despite Iyengar's childhood illness and stiffness, and Pattabhi Jois, who systematized Ashtanga. Krishnamacharya insisted that yoga must meet people where they are: "If you can breathe, you can do yoga." He taught well into his nineties, still demonstrating difficult poses but emphasizing that the practice belonged to everyone. His legacy is a tradition flexible enough for athletes and elderly students, ancient enough to carry centuries of wisdom yet practical enough to fit contemporary life. He embodied yoga's central claim: the practice should serve the practitioner, never the reverse.
+
+---
+
+*Part of Practices at alexandria.press*
