@@ -1,0 +1,26 @@
+# Temperance
+
+The temperate person is not someone who white-knuckles through life, resisting every pleasure. They are someone who has ordered their appetites — for food, drink, sex, comfort — so that these desires serve rather than master them. Temperance is the virtue of right relationship to bodily pleasure. It asks: who is in charge here?
+
+## What It Is
+
+Temperance is the habitual moderation of physical appetites according to reason and one's genuine good. It governs our relationship to pleasures that come through the body — primarily food, drink, and sex, but extending to comfort, rest, stimulation. The temperate person neither suppresses these desires nor indulges them without limit. They enjoy pleasures in their proper context, proportion, and purpose. This requires self-knowledge: understanding which appetites tend toward excess in you, what triggers override judgment, when legitimate need becomes compulsive wanting. Temperance is fundamentally about freedom — not freedom *from* pleasure, but freedom *in* it. The temperate person can enjoy a fine meal without needing to overeat, can drink without getting drunk, can experience sexual desire without being tyrannized by it.
+
+## What It Isn't
+
+Temperance is not puritanism, abstinence, or the suspicious rejection of pleasure. The person who cannot enjoy anything, who regards all bodily pleasure as shameful or dangerous, lacks temperance just as much as the glutton or drunkard. Temperance is also not mere willpower — the constant exhausting battle against desire. That's continence, which Aristotle distinguished from genuine temperance. The continent person *does* the right thing but still wars with desire; the temperate person has shaped their desires themselves. Their appetites have been educated, not just suppressed. Neither is temperance about following external rules mechanically. The anorexic controlling every calorie, the teetotaler who's simply terrified of alcohol — these may look temperate but lack the virtue's essential quality: the integrated ordering of desire toward genuine human flourishing.
+
+## The Opposing Vices
+
+Temperance fails in two directions. The deficiency is insensibility or insensitivity — a hardness toward pleasure that Aristotle noted was rare but real. These are people who take no pleasure in food, who regard their body's needs with contempt, who have deadened themselves to physical enjoyment. The excess appears in various forms: intemperance, licentiousness, self-indulgence. This is enslavement to appetite — the person who cannot say no, who needs more to feel satisfied, whose desires have outgrown their proper bounds. The incontinent person knows better but cannot resist. The intemperate person has convinced themselves that their excess is fine, has rationalized their slavery into a philosophy. Both failures share this: the person is not free. Either they cannot enjoy legitimate pleasures or they cannot stop pursuing pleasures that harm them.
+
+## How It's Cultivated
+
+Temperance begins with honest self-examination. Which appetites run strongest in you? Where do you rationalize? Where does "just this once" become a pattern? The cultivation then requires small, repeated acts of moderation — not dramatic gestures but steady practice. Eating reasonable portions at ordinary meals. Stopping at one or two drinks. Keeping the sabbath from work. These small disciplines train the appetites, teaching them their proper place. Temperance also requires understanding *why* moderation matters — not arbitrary rules but genuine care for yourself and others. The alcoholic's family, the glutton's health, the workaholic's relationships — these give reason for restraint that pure willpower cannot sustain. Community helps: people who will tell the truth about your excesses, who model healthy enjoyment, who celebrate appropriate pleasure without enabling indulgence. Finally, temperance requires mercy toward yourself. You will fail. The point is the direction, not perfection.
+
+## A Life
+
+Dorothy Day, founder of the Catholic Worker movement, embodied temperance in unexpected ways. In her bohemian twenties, she drank heavily, had an abortion, attempted suicide. But her conversion didn't lead to grim asceticism. She loved good coffee, maintained her subscription to *The New Yorker*, took genuine pleasure in beauty. Yet she lived in voluntary poverty, sharing cramped quarters with the homeless men and women the Catholic Worker served. When admirers sent expensive gifts, she gave them away or sold them for the work. She fasted regularly but not fanatically. She could enjoy a beer but wasn't controlled by alcohol anymore. What's striking is the integration: Day had strong appetites but had learned to order them toward love of God and neighbor. She neither despised the body nor indulged it at others' expense. Her temperance wasn't joyless restraint but freedom — the ability to enjoy genuine goods without being owned by them.
+
+---
+*Part of The Virtues at alexandria.press*
