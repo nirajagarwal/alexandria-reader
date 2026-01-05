@@ -94,7 +94,7 @@
 }
 
 html {
-    font-size: 18px;
+    font-size: 16px;
     /* Increased base size */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -606,7 +606,7 @@ a:hover {
     /* Large, readable text */
     font-weight: 400;
     /* Lora looks great at 400 with 18px base */
-    line-height: 1.8;
+    line-height: 1.6;
     color: var(--text-primary);
     margin-bottom: var(--space-md);
 }
@@ -690,7 +690,7 @@ a:hover {
     width: 100%;
     font-family: var(--font-serif);
     font-size: 1.125rem;
-    line-height: 1.7;
+    line-height: 1.6;
     color: var(--text-primary);
 }
 
