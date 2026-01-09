@@ -17,12 +17,13 @@ from pathlib import Path
 from contextlib import asynccontextmanager
 
 from dotenv import load_dotenv
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import FastAPI, HTTPException, Request, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 import libsql_experimental as libsql
+from google import genai
 
 # Load environment variables
 load_dotenv()
@@ -37,9 +38,41 @@ BASE_DIR = Path(__file__).parent.parent
 
 TURSO_DATABASE_URL = os.environ.get("TURSO_DATABASE_URL")
 TURSO_AUTH_TOKEN = os.environ.get("TURSO_AUTH_TOKEN")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
-# Global connection
+# Global connections
 db = None
+gemini_client = None
+
+EMBEDDING_MODEL = "text-embedding-004"
+EMBEDDING_DIMS = 768
+
+
+def get_gemini_client():
+    """Get Gemini client for embeddings."""
+    global gemini_client
+    if gemini_client is None and GEMINI_API_KEY:
+        gemini_client = genai.Client(api_key=GEMINI_API_KEY)
+    return gemini_client
+
+
+def generate_embedding(text: str) -> list[float] | None:
+    """Generate embedding for text using Gemini."""
+    client = get_gemini_client()
+    if not client:
+        return None
+    
+    try:
+        # Truncate very long text to avoid token limits
+        truncated = text[:8000] if len(text) > 8000 else text
+        result = client.models.embed_content(
+            model=EMBEDDING_MODEL,
+            contents=truncated
+        )
+        return result.embeddings[0].values
+    except Exception as e:
+        print(f"Embedding generation failed: {e}")
+        return None
 
 
 # =============================================================================
@@ -96,6 +129,16 @@ class Navigation(BaseModel):
 class EntryWithNav(BaseModel):
     entry: Entry
     nav: Navigation
+
+
+class SearchResult(BaseModel):
+    """Search result with book context."""
+    book_id: str
+    book_title: str
+    slug: str
+    name: str
+    descriptor: str | None
+    score: float
 
 
 # =============================================================================
@@ -173,6 +216,86 @@ async def debug_request(request: Request):
 async def health_check():
     """Health check endpoint."""
     return {"status": "ok", "env": "production" if not os.environ.get("VERCEL_DEV") else "dev"}
+
+
+# =============================================================================
+# Routes: Search
+# =============================================================================
+
+@app.get("/search", response_model=list[SearchResult], tags=["search"])
+async def search_entries(
+    q: str = Query(..., min_length=1, description="Search query"),
+    limit: int = Query(10, ge=1, le=50, description="Max results")
+):
+    """Semantic search across all book entries."""
+    # Generate embedding for query
+    query_embedding = generate_embedding(q)
+    
+    if not query_embedding:
+        raise HTTPException(status_code=503, detail="Embedding service unavailable")
+    
+    conn = get_connection()
+    
+    # Convert embedding to vector format for Turso
+    vector_str = "[" + ",".join(str(v) for v in query_embedding) + "]"
+    
+    try:
+        # Use vector_top_k for efficient similarity search
+        rows = conn.execute("""
+            SELECT 
+                e.book_id,
+                b.title as book_title,
+                e.slug,
+                e.name,
+                e.descriptor,
+                vector_distance_cos(e.embedding, vector(?)) as distance
+            FROM entries e
+            JOIN books b ON e.book_id = b.book_id
+            WHERE e.embedding IS NOT NULL
+            ORDER BY distance ASC
+            LIMIT ?
+        """, (vector_str, limit)).fetchall()
+        
+        # Convert distance to similarity score (1 - distance for cosine)
+        return [
+            SearchResult(
+                book_id=r[0],
+                book_title=r[1],
+                slug=r[2],
+                name=r[3],
+                descriptor=r[4],
+                score=round(1 - (r[5] or 0), 4)
+            )
+            for r in rows
+        ]
+    except Exception as e:
+        # Fallback if vector search not supported (e.g., local dev without vec)
+        print(f"Vector search failed: {e}")
+        # Simple text search fallback
+        rows = conn.execute("""
+            SELECT 
+                e.book_id,
+                b.title as book_title,
+                e.slug,
+                e.name,
+                e.descriptor
+            FROM entries e
+            JOIN books b ON e.book_id = b.book_id
+            WHERE e.name LIKE ? OR e.descriptor LIKE ? OR e.content LIKE ?
+            LIMIT ?
+        """, (f"%{q}%", f"%{q}%", f"%{q}%", limit)).fetchall()
+        
+        return [
+            SearchResult(
+                book_id=r[0],
+                book_title=r[1],
+                slug=r[2],
+                name=r[3],
+                descriptor=r[4],
+                score=0.5  # Default score for text matches
+            )
+            for r in rows
+        ]
 
 
 # =============================================================================

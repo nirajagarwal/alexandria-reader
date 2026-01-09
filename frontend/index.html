@@ -41,6 +41,17 @@
             <p class="library-sub-tagline">Made with Anthropic Claude</p>
         </header>
 
+        <div class="search-container">
+            <input 
+                type="text" 
+                id="searchInput" 
+                class="search-input" 
+                placeholder="Search across all books..."
+                autocomplete="off"
+            >
+            <div id="searchResults" class="search-results hidden"></div>
+        </div>
+
         <main class="library-shelf" id="bookShelf">
             <!-- Books loaded dynamically -->
         </main>

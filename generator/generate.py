@@ -50,6 +50,36 @@ def get_gemini_client():
     return genai.Client(api_key=GEMINI_API_KEY)
 
 
+# Embedding configuration
+EMBEDDING_MODEL = "text-embedding-004"
+
+
+def generate_embedding(text: str) -> list[float] | None:
+    """Generate embedding for text using Gemini."""
+    client = get_gemini_client()
+    try:
+        # Truncate very long text to avoid token limits
+        truncated = text[:8000] if len(text) > 8000 else text
+        result = client.models.embed_content(
+            model=EMBEDDING_MODEL,
+            contents=truncated
+        )
+        return result.embeddings[0].values
+    except Exception as e:
+        print(f"  Embedding generation failed: {e}")
+        return None
+
+
+def create_embedding_text(name: str, descriptor: str | None, content: str | None) -> str:
+    """Create text for embedding from entry fields."""
+    parts = [name]
+    if descriptor:
+        parts.append(descriptor)
+    if content:
+        parts.append(content[:4000])
+    return "\n\n".join(parts)
+
+
 # =============================================================================
 # Content Generation
 # =============================================================================
@@ -297,6 +327,21 @@ def assemble_book(collection_id: str) -> dict:
                 "descriptor": extract_descriptor(content)
             }
             entries.append(entry)
+    
+    # Generate embeddings for entries
+    print(f"Generating embeddings for {len(entries)} entries...")
+    for i, entry in enumerate(entries):
+        text = create_embedding_text(
+            entry["name"],
+            entry.get("descriptor"),
+            entry.get("content")
+        )
+        embedding = generate_embedding(text)
+        if embedding:
+            entry["embedding"] = embedding
+            print(f"  [{i + 1}/{len(entries)}] ✓ {entry['name']}")
+        else:
+            print(f"  [{i + 1}/{len(entries)}] ✗ {entry['name']}")
     
     # Generate other components
     print("Generating introduction...")

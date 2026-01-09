@@ -31,6 +31,7 @@ CREATE TABLE IF NOT EXISTS entries (
     descriptor TEXT,
     content TEXT,
     metadata TEXT,  -- JSON: element-specific fields (symbol, atomic_number, etc.)
+    embedding F32_BLOB(768),  -- Vector embedding for semantic search (768 dims for text-embedding-004)
     
     FOREIGN KEY (book_id) REFERENCES books(book_id),
     UNIQUE(book_id, slug)
@@ -38,6 +39,9 @@ CREATE TABLE IF NOT EXISTS entries (
 
 -- Index for fast card grid queries
 CREATE INDEX IF NOT EXISTS idx_entries_book_order ON entries(book_id, sort_order);
+
+-- Vector index for semantic search
+CREATE INDEX IF NOT EXISTS idx_entries_embedding ON entries(libsql_vector_idx(embedding));
 
 -- =============================================================================
 -- Example Queries

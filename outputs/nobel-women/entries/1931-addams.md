@@ -1,0 +1,28 @@
+# 1931 — Hull House and Peace (Jane Addams)
+
+She won the Nobel Peace Prize for work she'd begun forty-two years earlier, in a dilapidated mansion on Halsted Street in Chicago. Jane Addams was seventy-one, her health failing, her politics out of fashion. The award recognized what she'd built at Hull House — the settlement house that became a model for social reform — and her decades of peace activism that had made her both celebrated and reviled. By 1931, few remembered how radical Hull House had been in 1889, or how lonely her opposition to World War I had made her.
+
+Hull House began with a simple premise: the educated should live among the poor, not observe them from a distance. Addams and Ellen Gates Starr rented the old Hull mansion in Chicago's Near West Side, a neighborhood packed with recent immigrants — Italians, Greeks, Russians, Poles — working brutal hours in sweatshops and factories. Middle-class reformers had theories about poverty. Addams wanted to live in it and see what was actually needed.
+
+What emerged was something between a community center, a political laboratory, and a home. Hull House offered kindergarten and daycare, English classes and citizenship preparation, art studios and theater productions. It provided public baths — most tenement apartments had none — and a boarding club for working women. But Addams understood that individual help wasn't enough. Hull House became an incubator for reform: labor laws, factory inspection, juvenile courts, worker's compensation, women's suffrage. The residents — many of them college-educated women with nowhere else to channel their intelligence — researched conditions, drafted legislation, built coalitions, and testified before lawmakers.
+
+The genius of Hull House was that it worked in both directions. Addams learned from the neighborhood. The immigrants weren't problems to be solved but people with skills, traditions, and dignity that industrial capitalism was crushing. Hull House celebrated Greek theater and Italian festivals while fighting the twelve-hour workday. "The good we secure for ourselves is precarious and uncertain until it is secured for all of us," she wrote. This wasn't charity. It was democracy made tangible.
+
+Her philosophy came partly from pragmatist philosophy — she knew William James and John Dewey — but more from observation. She watched children work night shifts in canneries while their mothers scrubbed floors in mansions. She saw garment workers locked in buildings that became fire traps. She knew families living eight to a room while millionaires built summer estates. Hull House responded to what was actually happening, not what theories predicted.
+
+By 1914, Addams was famous. Hull House had become an international model. She'd published books, advised presidents, and helped found the NAACP and the ACLU. When World War I began, she turned that reputation toward peace activism.
+
+It nearly destroyed her.
+
+Addams opposed American entry into the war, not from pacifist abstraction but from settlement house experience. She'd spent twenty-five years watching immigrant families — the very people now being asked to kill each other on European battlefields. War, she argued, solved nothing and made poverty worse. In 1915, she led a delegation of women to meet with leaders on both sides, seeking a negotiated peace. Theodore Roosevelt called the women's peace congress "silly and base." The press mocked them. When America entered the war in 1917, Addams refused to support it.
+
+The backlash was swift. She was called a traitor, a German sympathizer, a coward. Patriotic societies expelled her. Speaking invitations vanished. The Daughters of the American Revolution — her own ancestors had fought in the Revolution — revoked her membership. She endured the vitriol quietly, continuing to oppose the war and, later, to document its human costs. "I do not know that I have ever been so disillusioned," she wrote of the war years, not about the attacks but about watching civilization collapse into mechanized slaughter.
+
+After the war, she helped found the Women's International League for Peace and Freedom and served as its president. She pushed for international cooperation and disarmament, though the world was moving toward nationalism and rearmament. By 1931, when the Nobel Committee awarded her the prize — split with Nicholas Murray Butler — her reputation had partially recovered, but America was sliding toward another war. She was too ill to travel to Oslo. Her acceptance speech, read by an American diplomat, was brief and pragmatic. She'd spent her life trying to prevent the next war and knew she'd failed.
+
+"Civilization is a method of living, an attitude of equal respect for all men," she'd written years earlier. Hull House embodied that method: practical, patient, grounded in daily life. Her peace work extended it — the idea that cooperation built slowly through institutions and laws was stronger than military force. Neither Hull House nor the peace movement solved the problems they addressed. But they changed how Americans thought about poverty, democracy, and war.
+
+She died four years after receiving the prize, as Europe moved toward the conflict she'd spent decades trying to prevent. Hull House survived until 2012, when the University of Illinois demolished most of the complex. Two buildings remain, preserved as a museum. What endures more fully is the model she created: the idea that social reform requires not just good intentions but proximity, observation, and the hard work of living among those you hope to serve.
+
+---
+*Part of Nobel Prizes at alexandria.press*

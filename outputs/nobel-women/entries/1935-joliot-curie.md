@@ -1,0 +1,42 @@
+# 1935 — Artificial Radioactivity (Irène Joliot-Curie)
+
+In January 1934, Irène Joliot-Curie and her husband Frédéric bombarded aluminum with alpha particles and noticed something strange. The aluminum became radioactive — but the radioactivity didn't stop when they removed the alpha source. It continued, decaying with a half-life they could measure. They had done what many thought impossible: created a radioactive element that didn't exist in nature. The aluminum had transmuted into a new isotope of phosphorus, one that emitted positrons as it decayed back to stable silicon.
+
+For centuries, alchemists had dreamed of transmutation. Now it was real, reproducible, and entirely controlled. Within months, dozens of laboratories worldwide were creating artificial radioactive isotopes. Within years, these isotopes would become fundamental tools in medicine, biology, and physics itself. Irène Joliot-Curie had opened a new chapter in nuclear science.
+
+She was born into radioactivity. Her mother Marie Curie had discovered radium and polonium; her father Pierre had helped establish the science of radioactivity before his death in 1906. Irène grew up in a household where physics was the dinner conversation and the Sorbonne was practically an extension of home. During World War I, at seventeen, she operated mobile X-ray units with her mother near the front lines, learning radiation physics in field hospitals.
+
+After the war, she returned to the Radium Institute her mother directed. She prepared radioactive sources, learned the techniques of radiation measurement, and began research of her own. In 1926, she married Frédéric Joliot, a young engineer her mother had hired as a laboratory assistant. They became collaborators — equal partners in research, publishing together, eventually hyphenating both their names. The Paris physics community called them "the Joliot-Curies."
+
+They made an effective team. Irène had inherited her mother's meticulous experimental technique and deep understanding of radioactive materials. Frédéric brought engineering creativity and bold theoretical intuition. Through the late 1920s and early 1930s, they studied how different elements responded to bombardment by alpha particles — helium nuclei emitted by radioactive materials.
+
+The field was moving fast. In Cambridge, James Chadwick had discovered the neutron in 1932. In Rome, Enrico Fermi was bombarding elements with neutrons to study nuclear reactions. The atom's nucleus, once thought indivisible, was revealing itself as a complex system that could be probed, altered, transformed. The Joliot-Curies focused on alpha bombardment, mapping what happened when different elements absorbed these high-energy particles.
+
+The January 1934 experiment was deceptively simple. They placed a thin foil of aluminum in front of a polonium source — polonium being one of the elements Marie Curie had discovered decades earlier. Alpha particles from the polonium struck the aluminum. A detector measured the radiation emitted. Standard procedure.
+
+Except this time, when they removed the polonium source, the detector kept clicking. The aluminum itself was now radioactive. The effect was temporary — the artificial radioactivity decayed with a half-life of about three minutes — but it was unmistakable.
+
+They worked quickly to understand what was happening. The alpha particles were being absorbed by aluminum nuclei, which then emitted neutrons and transformed into an isotope of phosphorus that didn't exist in nature: phosphorus-30, with fifteen protons and fifteen neutrons. This isotope was unstable, decaying by emitting positrons — the antimatter counterpart of electrons, themselves only recently discovered. The positron emission transformed the phosphorus back into stable silicon.
+
+The elegance was in the control. Natural radioactivity, discovered by Becquerel and studied by the Curies, was a property of certain heavy elements. You could purify these elements, study their decay, but you couldn't create or stop it. Artificial radioactivity was different. You could choose which element to irradiate, control the intensity of bombardment, create isotopes to order. The Joliot-Curies rapidly extended the technique to boron and magnesium, creating a series of new radioactive isotopes.
+
+They published in February 1934. The physics community immediately grasped the significance. Ernest Rutherford, the dean of nuclear physics, called it a "beautiful discovery." Within weeks, laboratories in Cambridge, Rome, and Berkeley were reproducing the results. Within months, researchers had created dozens of new radioactive isotopes. The nuclear periodic table was suddenly far larger and more malleable than anyone had imagined.
+
+The medical implications were almost immediately clear. Natural radioactive materials were useful but limited — radium, for instance, was rare, dangerous to handle, and produced only certain types of radiation. Artificial isotopes could be tailored to specific needs. A radioactive isotope of iodine could be used to study thyroid function. Radioactive phosphorus could trace metabolic pathways. The body couldn't distinguish between a stable atom and its radioactive twin, so radioactive tracers could follow biological processes in living organisms for the first time.
+
+The Nobel Committee moved unusually fast. In November 1935, less than two years after the discovery, Irène Joliot-Curie received the Nobel Prize in Chemistry. (Frédéric received it jointly; the hyphenated surname appeared on both medals.) She was the second woman to win a Nobel Prize in Chemistry — after her mother, who had won it in 1911 for isolating radium and polonium.
+
+The symmetry was striking but incomplete. Marie Curie had died in July 1934, just six months after Irène and Frédéric's discovery. She had seen the work, understood its importance, but didn't live to see the Nobel Prize awarded. Irène delivered her Nobel lecture in Stockholm without her mother in the audience.
+
+The discovery's impact accelerated through the late 1930s. In 1938, Otto Hahn and Fritz Strassmann, building on techniques developed by the Joliot-Curies, discovered nuclear fission — the splitting of uranium atoms into lighter elements, releasing enormous energy. The Joliot-Curies themselves, bombarding uranium with neutrons, had come close to discovering fission but misinterpreted their results, one of physics's famous near-misses.
+
+When World War II began, the Joliot-Curies were at the center of early French nuclear research. Frédéric, a communist and active in the Resistance, stayed in occupied Paris and helped protect the Radium Institute's equipment from German seizure. Irène, her health failing from decades of radiation exposure, evacuated to Switzerland with their children. After the war, they returned to France, where Irène served as a commissioner in the new Commissariat à l'énergie atomique, France's atomic energy agency.
+
+She continued research despite declining health. Radiation exposure — from her childhood around her mother's radium sources, from years of handling radioactive materials, from X-ray work in World War I — had taken its toll. She developed leukemia, the same disease that had killed her mother. In 1956, at fifty-eight, she died.
+
+By then, artificial radioactive isotopes were everywhere in science and medicine. Carbon-14 dating was revolutionizing archaeology. Radioactive tracers were standard tools in biochemistry. Nuclear medicine was an established medical specialty. The positron-emitting isotopes Irène and Frédéric had created were the foundation of PET scans, though those wouldn't be developed until decades after her death.
+
+"It was like the revelation of a new world," Frédéric later said of that January 1934 discovery. The alpha particles, the aluminum foil, the detector that kept clicking after the source was removed — these simple elements had opened that world. Irène Joliot-Curie had demonstrated that radioactivity wasn't just something to be found and measured, but something to be created, controlled, and used. The atoms themselves were now tools. What had seemed like nature's fixed architecture was revealed as something far more fluid, far more powerful, and far more dangerous than anyone had imagined.
+
+---
+*Part of Nobel Prizes at alexandria.press*

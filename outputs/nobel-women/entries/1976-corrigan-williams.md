@@ -1,0 +1,30 @@
+# 1976 — Peace in Northern Ireland (Mairead Corrigan, Betty Williams)
+
+On August 10, 1976, a car careened out of control on Finaghy Road North in Belfast. The driver, an IRA member named Danny Lennon, had been shot dead by British soldiers pursuing him. The vehicle mounted the pavement and struck Anne Maguire, who was walking with her four children. Three of the children — Joanne, eight; John, two; and six-week-old Andrew — died. Anne Maguire survived physically but never recovered; she took her own life four years later.
+
+Betty Williams witnessed the impact. She lived nearby, heard the crash, and ran to the scene. What she saw that day — the bodies of children killed not by deliberate violence but by its chaotic overflow — crystallized years of rage and grief into something else: a conviction that this had to stop, that ordinary people could make it stop.
+
+The dead children's aunt, Mairead Corrigan, appeared on television the next day. Grief-stricken but composed, she made a direct appeal: no more violence. The response was immediate. Within days, thousands of Protestant and Catholic women were meeting, planning, marching. Williams and Corrigan, who had never met before, became the public face of what would be called the Peace People.
+
+The movement emerged from exhaustion as much as hope. By 1976, Northern Ireland had endured seven years of the Troubles — sectarian violence so entrenched it had its own grim routine. Paramilitaries on both sides planted bombs, shot civilians, enforced territorial control through fear. The British Army patrolled Catholic neighborhoods like an occupying force. Over three thousand people would die before the conflict formally ended; hundreds of thousands lived with trauma, displacement, economic devastation. The political structures offered no resolution. The violence was ideological, tribal, historical — but also mundane, repetitive, numbing.
+
+What Williams and Corrigan organized was not a peace plan but a refusal. Women from both communities — housewives, workers, mothers — marched together through Protestant and Catholic neighborhoods. They held rallies that drew tens of thousands. They stood between armed men and their targets. They were not neutral; they named the paramilitaries directly, demanding they lay down weapons. This was dangerous. Both women received death threats. The IRA, in particular, viewed them as collaborators, undermining the armed struggle for Irish unity.
+
+The Peace People had no institutional backing, no political party, no coherent ideology beyond the conviction that ordinary citizens could reject violence even when their leaders could not. Williams was a Protestant housewife with no political experience. Corrigan was a Catholic secretary, devout and soft-spoken. Neither fit the mold of activist leadership, which was part of the point. They were not politicians negotiating ceasefires or intellectuals proposing frameworks. They were neighbors saying: enough.
+
+The movement spread beyond Northern Ireland — to Britain, to the United States, to Europe. International attention brought money, which proved divisive. The structure was loose, decisions unclear, spending disputed. By 1978, Corrigan and Williams had resigned from the organization they'd founded. The rallies dwindled. The paramilitaries did not disarm; the violence continued for another two decades.
+
+The Nobel Committee awarded the 1976 Peace Prize to both women in October, though the formal ceremony occurred in 1977. The citation praised their efforts to end violence through nonviolent means, to bridge sectarian divides, to mobilize citizens against terror. It was controversial almost immediately. Critics pointed out that the violence had not ended, that the Peace People had not achieved lasting institutional change, that the prize seemed premature — recognition for effort rather than success.
+
+Yet the effort itself was not nothing. For months in 1976 and 1977, the Peace People demonstrated that cross-community organizing was possible, that ordinary citizens could act when leaders wouldn't, that the grip of paramilitaries was not absolute. They showed that women — long excluded from formal political structures in Northern Ireland — could lead, mobilize, and command attention. Whether this constituted peace was debatable. Whether it mattered was not.
+
+"I went down on my knees and I said if there is a God, let Him take this anger out of my heart," Williams said, recalling the moment she saw the Maguire children. "Because if I was a man, I think I would have gone to get a gun." That transformation — from rage to mobilization, from despair to action — was what the Peace People offered. Not a solution, but a channel for collective grief that didn't lead through violence.
+
+Corrigan remained more cautious in her claims. "We didn't bring peace," she said years later. "What we did was to give people some hope." Hope that sectarian lines could be crossed. Hope that citizens were not powerless. Hope that the cycle could be interrupted, even if not broken.
+
+The Good Friday Agreement, signed in 1998, ended the Troubles through political negotiation, institutional reform, and careful compromise — the kind of structural work the Peace People never attempted. But the groundwork for cross-community trust, for the idea that peace was possible and desirable, had been laid by movements like theirs. The women who marched in 1976 didn't end the war. They testified that ending it was imaginable.
+
+Both women continued peace work after the movement dissolved. Corrigan founded the Peace People organization on more stable footing, working on reconciliation and human rights. Williams moved to the United States, then returned to activism focused on children's welfare and nonviolence. Their partnership was brief; their legacy, contested. The prize recognized not achievement but witness — two women who, in the midst of despair, insisted another way was possible and mobilized thousands to believe it.
+
+---
+*Part of Nobel Prizes at alexandria.press*

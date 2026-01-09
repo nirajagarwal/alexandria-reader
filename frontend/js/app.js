@@ -56,10 +56,89 @@ async function loadLibrary() {
                 </div>
             </a>
         `).join('');
+
+        // Setup search after loading library
+        setupSearch();
     } catch (error) {
         console.error('Failed to load library:', error);
         shelf.innerHTML = `<p class="error-state">Failed to load books. ${error.message}</p>`;
     }
+}
+
+/* -----------------------------------------------------------------------------
+   Search
+   ----------------------------------------------------------------------------- */
+
+let searchTimeout = null;
+
+function setupSearch() {
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+
+    if (!searchInput || !searchResults) return;
+
+    searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.trim();
+
+        // Clear previous timeout
+        if (searchTimeout) clearTimeout(searchTimeout);
+
+        // Hide results if query is empty
+        if (!query) {
+            searchResults.classList.add('hidden');
+            return;
+        }
+
+        // Debounce search
+        searchTimeout = setTimeout(() => performSearch(query), 300);
+    });
+
+    // Hide results when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+            searchResults.classList.add('hidden');
+        }
+    });
+
+    // Show results when focusing on input with existing query
+    searchInput.addEventListener('focus', () => {
+        if (searchInput.value.trim() && searchResults.children.length > 0) {
+            searchResults.classList.remove('hidden');
+        }
+    });
+}
+
+async function performSearch(query) {
+    const searchResults = document.getElementById('searchResults');
+
+    // Show loading state
+    searchResults.innerHTML = '<div class="search-loading">Searching...</div>';
+    searchResults.classList.remove('hidden');
+
+    try {
+        const results = await fetchAPI(`/search?q=${encodeURIComponent(query)}&limit=8`);
+        renderSearchResults(results);
+    } catch (error) {
+        console.error('Search failed:', error);
+        searchResults.innerHTML = '<div class="search-empty">Search unavailable</div>';
+    }
+}
+
+function renderSearchResults(results) {
+    const searchResults = document.getElementById('searchResults');
+
+    if (results.length === 0) {
+        searchResults.innerHTML = '<div class="search-empty">No results found</div>';
+        return;
+    }
+
+    searchResults.innerHTML = results.map(r => `
+        <a href="book.html?id=${r.book_id}&slug=${r.slug}" class="search-result-item">
+            <div class="search-result-name">${r.name}</div>
+            <div class="search-result-book">${r.book_title}</div>
+            ${r.descriptor ? `<div class="search-result-descriptor">${r.descriptor}</div>` : ''}
+        </a>
+    `).join('');
 }
 
 /* -----------------------------------------------------------------------------
@@ -276,6 +355,16 @@ function showEntryView(data) {
 
     const { entry, nav } = data;
     const totalEntries = currentEntries.length;
+
+    // Update page title and meta tags to include entry name and book title
+    const pageTitle = `${entry.name} | ${currentBook.title} | Alexandria Press`;
+    document.title = pageTitle;
+    document.querySelector('meta[property="og:title"]').setAttribute('content', pageTitle);
+
+    // Update description meta tags with entry descriptor if available
+    const entryDesc = entry.descriptor || `${entry.name} from ${currentBook.title}`;
+    document.querySelector('meta[name="description"]').setAttribute('content', entryDesc);
+    document.querySelector('meta[property="og:description"]').setAttribute('content', entryDesc);
 
     // Update position
     document.getElementById('entryPosition').textContent = `${entry.order} of ${totalEntries}`;
