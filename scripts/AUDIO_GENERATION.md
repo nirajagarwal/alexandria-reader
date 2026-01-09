@@ -5,8 +5,10 @@
 1. **Install dependencies**:
    ```bash
    source venv/bin/activate
-   pip install openai pydub
+   pip install openai pydub audioop-lts
    ```
+   
+   Note: `audioop-lts` is required for Python 3.13+ compatibility with pydub.
 
 2. **Install FFmpeg** (required by pydub):
    ```bash
