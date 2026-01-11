@@ -40,8 +40,7 @@ TURSO_DATABASE_URL = os.environ.get("TURSO_DATABASE_URL")
 TURSO_AUTH_TOKEN = os.environ.get("TURSO_AUTH_TOKEN")
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
-# Global connections
-db = None
+# Global Gemini client (safe to cache)
 gemini_client = None
 
 EMBEDDING_MODEL = "text-embedding-004"
@@ -146,23 +145,25 @@ class SearchResult(BaseModel):
 # =============================================================================
 
 def get_connection():
-    """Get database connection."""
-    global db
-    if db is None:
-        db = libsql.connect(
-            database=TURSO_DATABASE_URL,
-            auth_token=TURSO_AUTH_TOKEN
-        )
-    return db
+    """
+    Get a fresh database connection for each request.
+    
+    In serverless environments (like Vercel), connections can't be 
+    cached globally as they expire when functions are paused.
+    Each invocation needs its own connection.
+    """
+    return libsql.connect(
+        database=TURSO_DATABASE_URL,
+        auth_token=TURSO_AUTH_TOKEN
+    )
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    """Initialize database on startup."""
-    get_connection()
+    """Lifespan context for FastAPI application."""
+    # Nothing to initialize - connections are per-request
     yield
-    if db:
-        db.close()
+    # Nothing to cleanup - connections are auto-closed
 
 
 # =============================================================================
