@@ -87,10 +87,11 @@ Open with origin, cosmic or geological. Move through key properties that define 
 
 This is the backbone. The vignettes elaborate; this establishes.
 
-### Vignettes
+### The Body
 
-4-8 sections, each 80-120 words. Each vignette covers one facet:
+600-800 words of continuous prose. **No section headers.** The narrative moves through 4-8 distinct facets, each 80-120 words, but they flow together as one unified piece.
 
+Cover distinct territory across facets:
 - Discovery or early use
 - Biological role
 - Industrial application
@@ -100,12 +101,23 @@ This is the backbone. The vignettes elaborate; this establishes.
 - Scientific frontier
 - Geopolitical dimension
 
-**Vignette titles:** 2-4 words. Concrete nouns or active verbs. Specific, not generic.
+Not every element requires every facet. Choose what's substantive.
 
-Good: "Bones and Teeth" / "The Hindenburg's Gas" / "Nuclear Medicine"
-Avoid: "Biological Role" / "Industrial Uses" / "Important Applications"
+**Transitions between facets:**
 
-**No overlap between vignettes.** Each covers distinct territory.
+Do not simply jump from topic to topic. Use connective tissue:
+
+- Temporal bridges: "By the twentieth century..." / "Three decades later..." / "Before this application emerged..."
+- Logical connections: "This same property that makes it essential also..." / "The compound that purifies water also..." / "Where industrial use concentrated..."
+- Contrast or elaboration: "While Earth's crust holds most..." / "Beyond its terrestrial abundance..." / "The chemistry that enables this also restricts..."
+
+**Paragraph rhythm:**
+
+Vary paragraph length deliberately. Short paragraphs (2-3 sentences) for impact. Longer paragraphs (4-6 sentences) for exposition. A well-placed one-sentence paragraph refocuses attention. Use white space to control breathing.
+
+**Flow, not sections:**
+
+The reader should move through the piece sensing different dimensions of the element without encountering hard breaks. Each paragraph leads naturally to the next. The whole reads as one continuous account, not a series of separate notes.
 
 ### Closing Line
 

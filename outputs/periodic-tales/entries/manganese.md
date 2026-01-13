@@ -1,81 +1,24 @@
 # Manganese
 
-***The Metal That Makes Steel Strong***
+***Steel's Hidden Strengthener***
 
 > **Atomic Number:** 25 | **Symbol:** Mn | **Category:** Transition Metal
 
-Manganese forms in the collapse of massive stars, forged when silicon fuses under the pressure of stellar death. The universe contains it in modest abundance. Earth's crust holds significant deposits, concentrated in nodules on the ocean floor and in terrestrial oxide ores. The element is hard and brittle in pure form, too reactive to exist unbound in nature. It appears instead as pyrolusite, rhodochrosite, and other oxide minerals, black or pink depending on oxidation state.
+Manganese forms in the death throes of massive stars, forged when silicon nuclei fuse under extreme heat and pressure. The twelfth most abundant element in Earth's crust, it concentrates in nodules scattered across the ocean floor and in South Africa's Kalahari Basin, where 80 percent of known land reserves lie. This hard, brittle metal oxidizes in air and reacts with water, never appearing pure in nature. Instead it mingles with iron in ores, the two elements intertwined since the planet's formation. Ancient glassmakers and potters used manganese compounds without knowing the element itself, darkening glass or bleaching it clear depending on oxidation state. Steel defines manganese's modern existence. Every ton of steel contains 6 to 9 kilograms of this metal, which removes oxygen and sulfur during production while adding strength and workability to the final alloy. The human body requires trace amounts—2 to 5 milligrams daily—for bone formation, blood clotting, and the enzymes that protect cells from oxidative damage. Without manganese, photosynthesis fails; the element splits water molecules in plant chloroplasts, liberating oxygen that animals breathe.
 
-Humans first isolated it in 1774, though its compounds had been used for millennia. Ancient glassmakers added manganese to remove color from glass, calling it "glassmaker's soap" without understanding the chemistry. Modern civilization depends on it. Ninety percent of manganese goes into steel, where small additions transform brittle iron into resilient alloy. Without manganese, there would be no railroads, no skyscrapers, no ships. The element also serves biology, appearing in enzymes that split water and generate oxygen in photosynthesis.
+The Swedish chemist Johan Gottlieb Gahn isolated manganese in 1774, though humans had worked with its ores for millennia. Cave painters in Lascaux mixed manganese dioxide into their pigments 30,000 years ago. Egyptian and Roman glassmakers added pyrolusite—manganese dioxide—to molten glass, the compound either imparting an amethyst hue or neutralizing the green tint from iron impurities. They called it magnesia nigra, black magnesia, distinguishing it from magnesia alba, the white magnesium carbonate that shares a name born of the same Greek region. For centuries, confusion reigned. Chemists suspected these black stones contained a new element, but early attempts at isolation produced only impure samples. Gahn succeeded where others had failed by heating pyrolusite with charcoal in a crucible. The gray-white metal he obtained was brittle and difficult to work, properties that initially limited interest in the discovery.
 
-## The Swedish Discovery
+Robert Forester Mushet changed everything in 1856. This Scottish metallurgist added spiegeleisen—an iron-manganese alloy—to Henry Bessemer's new steelmaking process. The Bessemer converter blasted air through molten pig iron, burning out carbon to produce steel, but the violent oxidation also eliminated beneficial manganese and left the steel brittle and unworkable. Mushet's addition restored the balance. Manganese scavenged dissolved oxygen and formed stable compounds with sulfur, impurities that otherwise weakened the metal. The resulting steel was tougher, more uniform, and easier to forge and machine. Within a decade, manganese became indispensable to steel production. No commercial steel is made without it. The global steel industry consumes 90 percent of all manganese produced, nearly 20 million tons annually.
 
-Johan Gottlieb Gahn isolated metallic manganese in 1774, working in Sweden with pyrolusite ore. He reduced the black oxide with carbon in a crucible, producing small beads of the pure element. Carl Wilhelm Scheele had identified it as a new metal earlier that same year, but Gahn completed the isolation.
+The element cycles through seven oxidation states, from +2 to +7, each conferring different properties. Permanganate, manganese in its +7 state, appears deep purple in solution. Water treatment plants use potassium permanganate to remove iron, manganese, and organic contaminants. The compound oxidizes pollutants, rendering them insoluble so they precipitate out. In laboratories, permanganate serves as a versatile oxidizing agent in chemical synthesis. Manganese dioxide, the +4 state, powers alkaline batteries, where it accepts electrons at the cathode as the battery discharges. This same compound catalyzes the decomposition of hydrogen peroxide, a reaction so vigorous that manganese dioxide was once known as "black flux" for the violent bubbling it produced.
 
-The name derives from Latin "magnes," meaning magnet, though manganese itself is only weakly magnetic. Early observers confused its ores with magnetic iron oxides. The confusion persisted until chemical analysis revealed a distinct element.
+In living cells, manganese occupies the active sites of enzymes that perform essential chemistry. Superoxide dismutase requires manganese to neutralize superoxide radicals, toxic byproducts of cellular respiration that would otherwise damage DNA and proteins. Arginase, another manganese enzyme, helps the liver convert ammonia to urea for excretion. But manganese's most profound biological role unfolds in the oxygen-evolving complex of photosystem II. Four manganese atoms, arranged in a cube with a calcium atom, orchestrate the splitting of water molecules. This cluster strips electrons from water, liberating oxygen gas and protons while providing the electrons that ultimately reduce carbon dioxide to sugars. Every breath of oxygen in Earth's atmosphere owes its existence to this manganese-centered reaction, repeated countless times per second in every photosynthetic organism.
 
-Swedish deposits at Långban provided much of Europe's early supply. The metal remained a laboratory curiosity until the 19th century revealed its industrial utility.
+Excess manganese damages the nervous system. Miners who inhale manganese dust develop a syndrome resembling Parkinson's disease: tremors, rigid muscles, difficulty walking, psychiatric disturbances. The metal accumulates in the basal ganglia, brain regions that coordinate movement. Welders face similar risks when working with manganese-containing alloys in poorly ventilated spaces. The fumes carry manganese particles into the lungs and bloodstream. Once symptoms appear, removing the source helps, but neurological damage often persists. The syndrome progresses differently from true Parkinson's—dopamine replacement therapy provides less relief—suggesting manganese disrupts additional pathways beyond those affected by dopamine deficiency.
 
-## Steel's Essential Additive
+The ocean floor holds manganese in abundance. Polymetallic nodules, potato-sized concretions rich in manganese, cobalt, nickel, and copper, carpet vast stretches of the abyssal plains. These nodules grow slowly, perhaps 10 millimeters per million years, as dissolved metals precipitate around a nucleus. The Clarion-Clipperton Zone in the Pacific contains an estimated 21 billion tons of nodules. Deep-sea mining companies have proposed harvesting them, arguing that terrestrial reserves cannot meet demand for battery metals in an electrified future. Environmental scientists counter that nodule removal would obliterate ecosystems that have developed over millions of years in one of Earth's most stable environments. The nodules themselves provide habitat; the sediment plumes from mining operations would smother organisms across hundreds of square kilometers. The manganese nodules represent both resource and refuge, and how humanity resolves this tension will reveal much about its priorities.
 
-Robert Forester Mushet demonstrated manganese's role in steelmaking in 1856. Adding manganese to molten iron removed sulfur and oxygen, impurities that made steel brittle. The addition also increased hardness and wear resistance.
-
-Modern steel contains 0.15 to 1.5 percent manganese. The element binds sulfur into stable compounds, preventing the formation of iron sulfide that causes hot-shortness, cracking during hot rolling. It also acts as a deoxidizer, improving the metal's workability.
-
-High-manganese steels, containing 11 to 14 percent, exhibit exceptional toughness. Hadfield steel, patented in 1882, work-hardens under impact. Railroad switches, rock crushers, and armor plate all employ these alloys.
-
-World production exceeds 20 million tons annually. Nearly all comes from manganese nodules and South African, Australian, and Gabonese deposits.
-
-## Photosynthesis Engine
-
-The oxygen-evolving complex in photosystem II contains a cluster of four manganese atoms. This cluster catalyzes the most important chemical reaction on Earth: splitting water molecules to release oxygen.
-
-The manganese atoms cycle through five oxidation states as they extract electrons from water. Two water molecules yield one oxygen molecule and four protons. The process releases the oxygen that fills the atmosphere and makes complex life possible.
-
-Each photosynthetic cell contains millions of these manganese clusters. They have operated continuously for over two billion years, transforming Earth from an anoxic planet to one where oxygen-breathing organisms dominate.
-
-The cluster's exact mechanism remained mysterious until X-ray crystallography revealed its structure in 2011. Understanding this natural catalyst guides efforts to develop artificial photosynthesis systems.
-
-## Ocean Floor Treasure
-
-Manganese nodules carpet vast areas of the deep ocean floor. These potato-sized lumps form around nuclei like shark teeth or shell fragments, growing outward at rates of millimeters per million years. They contain 24 to 30 percent manganese, along with iron, copper, nickel, and cobalt.
-
-The nodules concentrate in the Clarion-Clipperton Zone between Hawaii and Mexico, covering areas the size of the continental United States. Estimates suggest 21 billion tons of nodules lie in this zone alone.
-
-Mining companies have developed prototype collectors that would vacuum the nodules from depths of 4,000 to 6,000 meters. Environmental concerns focus on sediment plumes and disruption to abyssal ecosystems about which little is known.
-
-The International Seabed Authority, established under the UN Convention on the Law of the Sea, regulates exploration. Commercial extraction has not yet begun, but rising demand for battery metals makes ocean mining increasingly attractive.
-
-## Biological Necessity and Hazard
-
-Humans require 2 to 5 milligrams of manganese daily. The element appears in enzymes that metabolize amino acids, carbohydrates, and cholesterol. Manganese superoxide dismutase protects mitochondria from oxidative damage.
-
-Deficiency is rare but causes skeletal abnormalities and impaired glucose tolerance. Excess poses the greater threat. Chronic inhalation of manganese dust or fumes produces manganism, a parkinsonian syndrome. Miners and welders face elevated risk.
-
-The condition affects the basal ganglia, causing tremors, rigidity, and difficulty walking. Unlike Parkinson's disease, manganism does not respond well to levodopa treatment. Chelation therapy shows limited effectiveness.
-
-The element also concentrates in infant formula, sometimes at levels higher than breast milk. Concern exists about neurodevelopmental effects, though evidence remains inconclusive. Regulatory agencies continue to study appropriate limits.
-
-## The Purple Permanganate
-
-Potassium permanganate, with its intense purple color, serves as a powerful oxidizer. Medical applications include wound disinfection and treatment of fungal infections. Water treatment facilities use it to control taste, odor, and iron and manganese content.
-
-The compound oxidizes organic matter on contact, releasing oxygen and forming brown manganese dioxide. A few crystals in water create a distinctive purple solution that has made permanganate synonymous with antiseptic treatment.
-
-Chemical laboratories employ permanganate in analytical procedures. It serves as a titration standard for determining concentrations of reducing agents. The color change from purple to colorless signals the reaction endpoint with precision.
-
-Permanganate production begins with manganese dioxide ore, which is fused with potassium hydroxide and oxidized to manganate, then electrolyzed to permanganate. Annual production reaches tens of thousands of tons.
-
-## Battery Chemistry
-
-Manganese dioxide powers billions of alkaline batteries. The compound serves as the cathode material, accepting electrons from zinc during discharge. The system's voltage stability and energy density made it the dominant household battery chemistry for decades.
-
-Lithium-ion batteries increasingly employ manganese in their cathodes. Lithium manganese oxide offers improved safety over cobalt-based cathodes, being more stable and less prone to thermal runaway. The material costs less and avoids cobalt's problematic supply chain.
-
-Electric vehicle manufacturers blend manganese with nickel and cobalt in layered oxide cathodes. The manganese improves structural stability while reducing cost. As battery demand grows, manganese consumption for this application rises from thousands of tons to hundreds of thousands.
-
-Researchers pursue manganese-based aqueous batteries for grid storage. These systems promise lower cost and improved safety compared to lithium-ion technology, though development continues.
+South Africa's Kalahari manganese field, discovered in 1922, remains the world's largest known land deposit. The ore formed 2.2 billion years ago when oxygen from photosynthetic cyanobacteria first accumulated in Earth's oceans. Dissolved manganese, abundant in the anoxic seas, oxidized and precipitated in massive layers. Today, companies extract this ancient mineral wealth to feed steel mills in China, Japan, and Europe. As steel production shifts toward electric arc furnaces powered by renewable energy, manganese demand will persist. The element enables recycling; scrap steel melted in an arc furnace requires manganese additions to restore its properties. Whether terrestrial mines can supply this demand without turning to the seafloor nodules remains an open question, one that will be answered not by geology alone but by economics, technology, and the weight given to ecosystems invisible to most humans.
 
 ---
-
 *Part of the Periodic Tales collection at alexandria.press*
