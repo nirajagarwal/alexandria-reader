@@ -125,24 +125,37 @@ def load_book(conn, book_path: str, cover_url: str = None):
         
         # Handle embedding - convert list to vector format if present
         embedding = entry.get("embedding")
-        embedding_str = None
+        
         if embedding and isinstance(embedding, list):
             embedding_str = "[" + ",".join(str(v) for v in embedding) + "]"
-        
-        conn.execute("""
-            INSERT INTO entries (
-                book_id, sort_order, slug, name, descriptor, content, metadata, embedding
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, vector(?))
-        """, (
-            book_id,
-            entry["order"],
-            entry["slug"],
-            entry["name"],
-            entry.get("descriptor"),
-            entry.get("content"),
-            json.dumps(metadata) if metadata else None,
-            embedding_str
-        ))
+            conn.execute("""
+                INSERT INTO entries (
+                    book_id, sort_order, slug, name, descriptor, content, metadata, embedding
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, vector(?))
+            """, (
+                book_id,
+                entry["order"],
+                entry["slug"],
+                entry["name"],
+                entry.get("descriptor"),
+                entry.get("content"),
+                json.dumps(metadata) if metadata else None,
+                embedding_str
+            ))
+        else:
+            conn.execute("""
+                INSERT INTO entries (
+                    book_id, sort_order, slug, name, descriptor, content, metadata
+                ) VALUES (?, ?, ?, ?, ?, ?, ?)
+            """, (
+                book_id,
+                entry["order"],
+                entry["slug"],
+                entry["name"],
+                entry.get("descriptor"),
+                entry.get("content"),
+                json.dumps(metadata) if metadata else None
+            ))
     
     conn.commit()
     print(f"Inserted {len(entries)} entries.")

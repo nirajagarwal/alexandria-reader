@@ -658,13 +658,7 @@ a:hover {
     font-weight: 600;
 }
 
-.entry-content h1+p {
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-size: 1.4rem;
-    color: var(--text-secondary);
-    margin-bottom: var(--space-lg);
-}
+/* First paragraph after h1 - now uses standard paragraph styling */
 
 .entry-content h1+p+blockquote {
     font-size: 1rem;
