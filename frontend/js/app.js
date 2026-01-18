@@ -11,6 +11,9 @@ let currentEntries = [];
 let currentEntry = null;
 let isMenuOpen = false;
 
+// Book data cache for the reader (caches full book with entry content)
+const bookDataCache = {};
+
 /* -----------------------------------------------------------------------------
    API Calls
    ----------------------------------------------------------------------------- */
@@ -241,6 +244,9 @@ async function populateMenu(bookId) {
 
     let html = '';
 
+    // Read Book button at the top
+    html += '<button class="read-book-button" id="readBookBtn">Read Book</button>';
+
     // Entries Section
     html += '<h3 class="menu-section-title">Chapters</h3>';
     html += '<ul class="menu-list primary-entries">';
@@ -270,7 +276,7 @@ async function populateMenu(bookId) {
 
     menuLinks.innerHTML = html;
 
-    // Add click handlers
+    // Add click handlers for menu links
     menuLinks.querySelectorAll('a').forEach(link => {
         link.onclick = (e) => {
             e.preventDefault();
@@ -286,6 +292,65 @@ async function populateMenu(bookId) {
             closeMenu();
         };
     });
+
+    // Read Book button handler
+    const readBookBtn = document.getElementById('readBookBtn');
+    if (readBookBtn) {
+        readBookBtn.onclick = async () => {
+            closeMenu();
+
+            console.log('[Cache Debug] Book ID:', bookId);
+            console.log('[Cache Debug] Cache keys:', Object.keys(bookDataCache));
+            console.log('[Cache Debug] Cache has book?', !!bookDataCache[bookId]);
+
+            try {
+                // Check cache first
+                if (bookDataCache[bookId]) {
+                    console.log('[Cache Debug] HIT - Using cached data');
+                    await bookReader.init(bookDataCache[bookId]);
+                    bookReader.open();
+                    return;
+                }
+
+                console.log('[Cache Debug] MISS - Fetching from API');
+
+                // Show loading state in the reader modal
+                bookReader.open();
+                const readerContent = document.getElementById('bookReaderContent');
+                if (readerContent) {
+                    readerContent.innerHTML = `
+                        <div style="color: #f4f1e8; text-align: center;">
+                            <p style="font-size: 1.2rem; margin-bottom: 1rem;">Loading book...</p>
+                            <p style="opacity: 0.7;">Fetching ${currentEntries.length} entries</p>
+                        </div>
+                    `;
+                }
+
+                // Fetch full book data including entries with content
+                const bookData = {
+                    ...currentBook,
+                    entries: []
+                };
+
+                // Fetch each entry's full content
+                for (const entry of currentEntries) {
+                    const entryData = await fetchAPI(`/books/${bookId}/entries/${entry.slug}`);
+                    bookData.entries.push(entryData.entry);
+                }
+
+                // Cache the book data
+                console.log('[Cache Debug] Storing in cache for bookId:', bookId);
+                bookDataCache[bookId] = bookData;
+
+                // Initialize and open the book reader
+                await bookReader.init(bookData);
+            } catch (error) {
+                console.error('Failed to load book for reader:', error);
+                bookReader.close();
+                alert('Failed to load book reader');
+            }
+        };
+    }
 }
 
 /* -----------------------------------------------------------------------------
