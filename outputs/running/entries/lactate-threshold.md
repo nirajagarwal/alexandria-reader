@@ -1,0 +1,15 @@
+**Lactate Threshold**
+
+There's a pace where breathing shifts from conversational to clipped, where the legs start to burn, where the body begins to teeter on the edge of sustainability. This isn't the moment you go anaerobic—that's a common misconception. This is lactate threshold, and it's arguably the most trainable, most race-relevant physiological marker a runner has.
+
+Lactate has been villainized for decades. The story went: you run hard, produce lactate, lactate causes the burn, muscles flood with acid, you slow down. But lactate isn't the villain. It's fuel. Your muscles produce it constantly, even at rest. During exercise, as intensity climbs, production accelerates. Lactate threshold is the point where production outpaces clearance—where the body can't shuttle it away fast enough to other muscles, the heart, the liver for reconversion to energy.
+
+What you feel at threshold isn't lactate itself but hydrogen ions accumulating alongside it, lowering muscle pH. The burn is real, but lactate is trying to help, not hinder. Elite marathoners race just below their lactate threshold for 26.2 miles. That's the pace they can sustain where production and clearance remain balanced, where the system hums at its sustainable maximum.
+
+Dr. Michael Joyner at the Mayo Clinic has studied elite endurance athletes for decades. He's found that lactate threshold—expressed as a percentage of VO2 max—is often more predictive of distance running performance than VO2 max itself. Two runners with identical VO2 max values can have vastly different race times if one can sustain 85% of that max without lactate accumulating while the other falls apart at 75%.
+
+Training raises lactate threshold in two ways: muscles produce less lactate at a given pace through improved efficiency, and they clear it faster through increased mitochondrial density and capillary networks. Tempo runs—sustained efforts at or slightly below threshold—teach the body to operate comfortably in that zone. The Kenyan runners training in Iten run their long tempos at conversational pace, but that pace is 5:00 per mile. Their threshold is extraordinarily high because they've trained there, thousands of miles accumulating at the edge of discomfort.
+
+You can feel your threshold rising over months of training. The pace that once felt sharp-edged softens. Your breathing pattern stays controlled at speeds that used to scatter it. The lactate shuttle—the system of transporters moving lactate between cells—becomes more efficient. Your body learns that this intensity isn't an emergency but a familiar place.
+
+In a race, threshold is the tightrope. Run just below it and you can hold that pace for an hour or more. Drift above it and the clock starts ticking toward collapse. The best runners have an exquisite sense of where that line is. They live there in training. They race there with precision. It's not the fastest you can run. It's the fastest you can run without the bill coming due.

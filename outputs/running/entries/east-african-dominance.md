@@ -1,0 +1,17 @@
+**East African Dominance**
+
+At the 2019 World Championships in Doha, Kenyan and Ethiopian runners won twelve of the fourteen available medals in distance events from 1500 meters to the marathon. This wasn't an outlier—it was Tuesday. Since the 1968 Mexico City Olympics, East African runners have claimed roughly 70% of all Olympic distance running medals. The gap between them and the rest of the world isn't narrowing. It's widening.
+
+The most tempting explanation is altitude. Kenya's Rift Valley sits at 2,000 to 2,500 meters above sea level—thin air that forces adaptations. Eritrean physiologist Michael Tsegaye has shown that growing up at altitude increases total hemoglobin mass by 10-15%, giving runners an oxygen-carrying advantage even at sea level. But altitude alone doesn't explain it. Other high-altitude regions—the Andes, the Rockies, Tibet—don't produce distance runners at anything close to the same rate.
+
+Genetics matters, but not the way pop science suggests. There's no single "running gene." Instead, researchers like Yannis Pitsiladis have identified clusters of genetic variations common in East African populations: polymorphisms affecting oxygen metabolism, lactate clearance, muscle fiber distribution. One study found that 75% of elite Kenyan runners share a particular variation of the ACTN3 gene, which influences fast-twitch muscle fiber efficiency. But plenty of non-runners share it too.
+
+The more revealing factor is geography within geography. Kenyan dominance doesn't come from Kenya—it comes from the Kalenjin ethnic group, roughly twelve percent of Kenya's population, producing nearly all of the country's champions. Within the Kalenjin, most champions come from the Nandi sub-tribe. Ethiopia shows similar concentration: most Ethiopian champions are Oromo or Amhara, from specific regions of the highlands.
+
+British sports scientist John Bale spent years studying Nandi running culture and found something more powerful than genes: running as infrastructure. In rural Kenya and Ethiopia, children run to school—not jog, run—covering five to ten kilometers each way over hilly terrain. By age fifteen, before any formal training, they've logged more hard running miles than most American collegiate athletes. Running isn't exercise. It's transportation, economy, necessity.
+
+Then there's Kenyan coach Brother Colm O'Connell, who's guided over forty world champions from St. Patrick's High School in Iten. He doesn't use periodization charts or lactate analyzers. His runners train in groups, on dirt roads, at conversational pace until the day demands otherwise. The secret, O'Connell says, isn't complicated: they run relaxed, they run often, and they've been running their whole lives.
+
+The economic incentive closes the loop. For a talented Kenyan runner, distance running offers a pathway out of poverty more reliable than almost any other profession. A top marathoner can earn more in one race than their family might see in years. This creates what researchers call a "virtuous cycle": success breeds infrastructure breeds more success. Training camps proliferate. Knowledge accumulates. The culture deepens.
+
+What looks like genetic destiny is actually the convergence of altitude adaptation, cultural practice, economic motivation, concentrated population genetics, and decades of accumulated training wisdom. East African dominance isn't a mystery. It's what happens when all the variables align—and stay aligned long enough to compound.

@@ -1,0 +1,17 @@
+**Kathrine Switzer (261)**
+
+The race official appears in the photographs mid-lunge, his face twisted with rage. It's 1967, the Boston Marathon, four miles in. Kathrine Switzer is running in an oversized gray sweatshirt, number 261 pinned to her chest—officially registered, officially running. Jock Semple, Boston's co-director, has sprinted off the press truck to physically remove her from the course. His hands are already on her, grabbing at her shoulders, her numbers. The next frame shows her boyfriend, a hammer thrower named Tom Miller, throwing a cross-body block that sends Semple spinning into the crowd.
+
+Switzer keeps running.
+
+She'd registered as "K.V. Switzer," not hiding her gender but not announcing it either. Race officials assumed the K stood for a man's name. When they realized their mistake mid-race, they tried to erase it—literally pull her off the course, restore the men-only sanctity of Boston. But Switzer had trained for this. She was a Syracuse journalism student who'd run with the men's team because there was no women's team. Her coach, Arnie Briggs, had told her women couldn't run marathons, that their bodies weren't built for it. So she trained up to 31 miles to prove him wrong, and he became her biggest supporter.
+
+The science of the era backed the officials, not Switzer. The longest Olympic race for women was 800 meters—half a mile—because physicians believed women's uteruses might fall out under sustained exertion. The American College of Sports Medicine wouldn't officially recommend distance running for women until 1974. The Olympic marathon for women wouldn't exist until 1984, seventeen years after Switzer ran Boston.
+
+But Switzer knew what her body could do. She'd run the miles. She'd felt her aerobic system strengthen, her mitochondria multiply, her slow-twitch fibers adapt—even if the science of the day refused to acknowledge these same adaptations occurred in female muscles. The physiology was identical. The cardiovascular responses, the lactate curves, the glycogen metabolism—none of it knew gender.
+
+She finished in 4:20, cold and angry and determined. The Amateur Athletic Union suspended her from competition for running with men, for running without a chaperone, for running too far. But the photographs of Semple's attack went global. They captured something more powerful than a rule violation: the absurdity of physically attacking a woman for running.
+
+Switzer kept organizing. She founded the Avon International Running Circuit in 1978, creating women's races worldwide. She lobbied the International Olympic Committee. She wrote, spoke, ran. In 1972, the Boston Marathon officially allowed women. In 1984, Joan Benoit Samuelson won the first Olympic women's marathon. By 2017, when Switzer returned to Boston at age 70 to run the marathon's 50th anniversary, women comprised 46 percent of the field.
+
+Number 261 is now officially retired, belonging only to Switzer. She still runs. Not fast anymore, but consistent—the same body that the 1967 medical establishment deemed too fragile for distance running, still logging miles in its eighth decade. The photographs of Semple grabbing at her remain iconic not because they show violence, but because they show what came after: Switzer, surrounded by her protective crew, settling back into her pace. Running through it. Running past it. Just running.

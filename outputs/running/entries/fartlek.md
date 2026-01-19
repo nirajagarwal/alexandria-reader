@@ -1,0 +1,17 @@
+# Fartlek (Speed Play)
+
+A runner in Sweden, 1930s, moving through pine forest. He surges up a hill, eases down the other side, sprints to a distant tree, jogs, then runs hard again to the next landmark—a rock, a fence post, whatever catches his eye. No watch, no prescribed intervals, just the landscape and his lungs dictating when to push and when to float. Gösta Holmér, the Swedish coach who formalized this approach, called it *fartlek*: speed play.
+
+The term sounds silly in English, almost juvenile. But the Swedish captures something essential—*lek* means play in the truest sense. Not workout. Not structured intervals. Play. The kind where rules emerge from the game itself rather than being imposed beforehand.
+
+Traditional interval training operates on precision: 6 x 800 meters at threshold pace with 90 seconds recovery. Fartlek abandons the prescription. You run hard until the effort feels right, then you back off until your breathing steadies, then you go again. The variations are infinite—30-second surges, 5-minute tempo efforts, undulating speed for an entire run. The physiological stimulus remains, but the psychological load shifts. Instead of watching your splits decline on rep five of eight, you're hunting the next surge, scanning for terrain, riding sensation.
+
+Research on structured versus unstructured training shows similar adaptations when total work is equated—both improve VO2 max and lactate threshold. But fartlek offers something the track can't: terrain-driven intensity. Running hard uphill recruits different muscle fibers than running hard on flat ground. A surge on tired legs late in a run teaches the body to access anaerobic capacity when glycogen is depleted. The variability becomes the training.
+
+Swedish runners in the 1940s dominated middle distance not despite the lack of tracks but because of it. They built engines on forest trails, their bodies learning to change gears without the rigid structure of measured laps. When they raced, shifting pace felt natural—an extension of how they'd always trained.
+
+The real insight of fartlek is that intensity doesn't require intervals to be effective. The body responds to effort, not to the tidiness of prescribed work-to-rest ratios. Play a hard minute, recover three. Or play three, recover one. Or mix it entirely. The variation prevents the mechanical adaptation that comes from repeating identical stimuli. Your body can't settle into a rhythm because the rhythm keeps changing.
+
+Modern runners often formalize fartlek, planning their surges in advance, which defeats the original intent. True speed play is responsive—you see a hill and attack it, you feel good on a descent and let it fly, you notice fatigue and pull back. The workout reveals itself as you run it. What matters is accumulating time at high intensity while maintaining the psychological looseness that keeps running from becoming only work.
+
+Holmér understood that runners train better when they're engaged, when the run itself holds their attention rather than the stopwatch. Fartlek keeps you present—not counting down reps but hunting the next effort, not surviving but playing. The Swedish word, ridiculous as it sounds, names something true: speed practiced as exploration rather than obligation. The engine strengthens either way, but only one approach remembers why we started running in the first place.

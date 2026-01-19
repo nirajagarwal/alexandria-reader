@@ -1,0 +1,17 @@
+**Ketones**
+
+Your body is burning fat, breaking it down in the liver, and the byproduct is appearing in your bloodstream: beta-hydroxybutyrate, acetoacetate, acetone. Ketones. You're two hours into a long run, glycogen stores depleting, and your metabolism is shifting gears. The body, always opportunistic, finds another way.
+
+Ketones are what happens when fat becomes fuel. Normally, your body prefers glucose—quick, clean, efficient. But when glucose runs low—during fasting, ultra-distance efforts, or a ketogenic diet—the liver converts fatty acids into these small molecules that can cross the blood-brain barrier and power both muscles and mind. It's an ancient metabolic pathway, evolved for survival during food scarcity, now exploited by runners chasing endurance.
+
+The science is straightforward: triglycerides break down into fatty acids and glycerol. The liver processes those fatty acids through beta-oxidation, producing acetyl-CoA. When acetyl-CoA accumulates faster than the Krebs cycle can handle it—usually because glycogen is scarce—the liver shunts it into ketone production. These ketones circulate, ready to be converted back into acetyl-CoA in cells throughout the body, including neurons that normally run exclusively on glucose.
+
+Some ultrarunners have embraced this metabolic state deliberately, training their bodies to become "fat-adapted"—relying less on glucose, more on fat oxidation and ketone production. The theoretical advantage: fat stores are vast compared to glycogen. Even a lean runner carries enough fat to fuel multiple marathons. If you can access it efficiently, you might delay or avoid the wall entirely.
+
+But the body doesn't switch fuel sources seamlessly. Fat oxidation is slower than glucose metabolism—you can't sprint on ketones. Studies show that while ketone supplementation may spare glycogen and enhance endurance performance in some contexts, it doesn't improve high-intensity efforts. Zach Bitter, who holds American records in ultrarunning, trains in a state of nutritional ketosis, reporting steadier energy and fewer bonks. But he's not racing 5Ks on this system. It's a tool for specific demands.
+
+There's also the brain dimension. Ketones aren't just fuel; they appear to have neuroprotective properties. Research from the University of California, Davis, shows that beta-hydroxybutyrate reduces oxidative stress, enhances mitochondrial function, and may improve cognitive clarity. Runners report a mental sharpness during long, fasted runs—not the fog of depleted glycogen but a calm, sustained focus. Whether that's ketones directly or the absence of blood sugar spikes and crashes remains debated.
+
+Your body produces small amounts of ketones during every aerobic run lasting more than ninety minutes. You don't need a ketogenic diet to access this pathway—just time, distance, and dwindling glycogen. The longer you run, the more your metabolism diversifies its fuel portfolio. Glucose when available, fat and ketones when necessary. The body is nothing if not adaptable.
+
+What ketones represent is metabolic flexibility—the ability to run on whatever fuel is present. Not a miracle, not a shortcut, but one more way the body finds energy to keep moving.

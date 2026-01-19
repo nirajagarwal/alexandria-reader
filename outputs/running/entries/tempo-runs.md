@@ -1,0 +1,17 @@
+**Tempo Runs**
+
+The tempo run exists at the edge of conversation. Fast enough that talking requires effort, slow enough that you could manage a few words if you had to. Runners call it "comfortably hard"—a phrase that captures the run's essential contradiction. You're working, breathing with purpose, but the pace is controlled, sustainable. It's not a race. It's not easy. It's the place where your body learns to hold discomfort steady.
+
+Physiologically, tempo runs target your lactate threshold—the point where lactate accumulates in your blood faster than your body can clear it. Below this threshold, you're aerobic, burning fat and carbohydrate efficiently. Above it, you're borrowing time, accumulating metabolic debt. The threshold itself isn't fixed. Training pushes it higher, teaching your muscles to produce less lactate at a given pace and your cardiovascular system to clear it faster. The result: you can run faster before crossing into oxygen debt.
+
+The classic tempo run lasts twenty to forty minutes at threshold pace—roughly the speed you could hold for an hour in a race. For some runners, that's a seven-minute mile. For others, it's ten. The specific pace matters less than the physiological zone: about 85 to 90 percent of maximum heart rate, or the pace that feels like a seven or eight on a ten-point effort scale. You're working, but you're not redlining.
+
+What makes tempo runs effective is their specificity. Unlike easy runs, which build aerobic base, or intervals, which stress VO2 max, tempos train the body to sustain speed. They improve your ability to buffer lactate, increase capillary density in working muscles, and strengthen the aerobic enzymes that power endurance. Jack Daniels, the exercise physiologist and coach, calls threshold training the most important component of distance running. It's where you teach your body that discomfort doesn't mean disaster.
+
+The mental game of a tempo run is distinct. Intervals offer relief—hard surges followed by recovery. Easy runs let the mind wander. Tempo runs demand sustained concentration. You're monitoring effort, maintaining pace, managing the voice that says to slow down even though your breathing is still controlled, your legs still responding. It's a negotiation with discomfort that never quite resolves.
+
+Some runners do tempos on the track, clicking off laps at precise pace. Others prefer roads or trails where the terrain provides distraction and variation. The surface matters less than the effort. The key is consistency—not surging, not fading, finding the pace and holding it.
+
+After a tempo run, you're tired but not destroyed. The fatigue is specific, localized in the legs and lungs but not systemic. Recovery comes faster than from intervals or long runs. That's the beauty of threshold work: it stresses the body enough to trigger adaptation without overwhelming it.
+
+The tempo run doesn't announce itself the way a race does. There's no finish line, no crowd. Just you and the pace, held steady across miles that teach your body what sustainable speed feels like. And when race day comes, that pace—once comfortably hard—feels a little easier. The threshold has shifted. You've trained your body to hold more.

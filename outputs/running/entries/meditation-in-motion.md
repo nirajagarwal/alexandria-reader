@@ -1,0 +1,15 @@
+**Meditation in Motion**
+
+Mile three of an easy run and the mind finally stops its inventory. The morning's email thread, the argument from yesterday, the list of tasks waiting at home—all of it fades into the rhythm of footfall and breath. You're not trying to think about nothing. You're just running, and somewhere in the repetition, thinking becomes unnecessary.
+
+This is running's most consistent gift: the ability to quiet the mind without effort. Unlike seated meditation, where the goal is stillness and the monkey mind rebels, running provides just enough stimulation to occupy the brain's need for input while allowing deeper awareness to emerge. You focus on breath, on cadence, on the trail ahead, and in doing so, the anxious chatter dims.
+
+Neuroscience confirms what runners have always known. A 2016 study in *Translational Psychiatry* found that aerobic exercise, particularly running, reduces activity in the default mode network—the brain's background hum of self-referential thought. That's the network responsible for rumination, worry, the endless loop of mental rehearsal and regret. Running doesn't eliminate it, but it shifts the brain into present-tense awareness.
+
+The mechanism is partly attentional. Running demands continuous micro-adjustments: gauging terrain, maintaining pace, coordinating limbs. This low-level engagement is enough to keep the prefrontal cortex occupied without overwhelming it. You're solving problems, but they're physical and immediate—how to navigate this root, whether to push up this hill. There's no room for abstraction.
+
+Breath becomes the anchor. In seated meditation, practitioners return to the breath when the mind wanders. In running, the breath is impossible to ignore—it's loud, demanding, rhythmic. At easy paces, it settles into a pattern that mimics meditative breathing: deep, diaphragmatic, slow enough to calm the nervous system. Even at harder efforts, the focus required to manage oxygen debt keeps attention rooted in the body.
+
+Long runs amplify the effect. After an hour, the brain begins to shift. Thoughts still arise, but they pass through without sticking. You might notice a hawk, feel gratitude for legs that work, remember a friend's face—and then it's gone, replaced by the next sensation. This is what meditation teachers call non-attachment, the ability to observe without grasping. Running teaches it through exhaustion and repetition rather than discipline.
+
+Not every run delivers this. Some days the mind won't settle, the internal monologue too loud or the body too uncomfortable. But the practice remains: showing up, moving, breathing, allowing the possibility that somewhere in the miles, the noise will quiet. Running doesn't require you to sit still and wrestle with your thoughts. It just asks you to move, and in moving, to notice what remains.

@@ -1,0 +1,17 @@
+**Periodization**
+
+There's a Kenyan training camp where the year divides itself into seasons that don't match the calendar. Base phase through the long rains, sharpening when the roads dry, racing when the body peaks. Then recovery, then repeat. The runners don't call it periodization—they call it preparation—but they're executing one of training's most powerful principles: you can't be fast all the time.
+
+Periodization is structured variation. Instead of running the same workouts week after week until staleness sets in or injury strikes, you cycle through distinct training phases, each building on the last. The structure emerged from Eastern European sports science in the 1960s—Soviet weightlifters and swimmers following deliberate progressions toward peak performance. Running adopted it, refined it, made it essential.
+
+The classic model breaks the year into macrocycles (the big picture, often a full season), mesocycles (training blocks of 3-6 weeks), and microcycles (individual weeks). Within this architecture, intensity and volume rise and fall in calculated waves. You build aerobic base with high mileage and low intensity. You add speed work while reducing volume. You sharpen with race-specific efforts. You taper before competition. You recover after.
+
+The physiological logic is elegant: different stimuli trigger different adaptations, and those adaptations need time to take hold. Mitochondrial biogenesis—the multiplication of your cells' energy factories—requires weeks of consistent aerobic work. Neuromuscular coordination for speed needs high-intensity intervals. Lactate threshold improvements come from sustained tempo efforts. Try to develop everything simultaneously and you develop nothing fully.
+
+Arthur Lydiard, the New Zealand coach who trained Peter Snell to Olympic gold, built his system on this insight decades before the term periodization became standard. His runners spent months building massive aerobic engines through long, steady mileage—100 miles per week wasn't uncommon. Only after that base was solid did they add hill training for strength, then track intervals for speed. The sequence mattered. Rush the speed work and the foundation crumbled.
+
+Modern periodization has evolved beyond linear progression. Block periodization concentrates specific qualities into focused 2-4 week windows—a pure speed block, then an endurance block, then race prep. The stimulus is more concentrated, the adaptation potentially faster. Norwegian coach Marius Bakken used this approach to break through competitive plateaus: intense blocks of specific work rather than trying to maintain everything at once.
+
+The body tells you when periodization works. Energy returns. Workouts feel controlled rather than desperate. Race day arrives with freshness instead of fatigue. But the hardest part isn't the structure—it's the patience. Base building feels too slow. Easy weeks feel like lost opportunities. The urge to add an extra tempo run or skip recovery is constant. Periodization requires trusting the process more than the single session, believing that readiness matters more than daily intensity.
+
+That Kenyan camp runs on this trust. Through the base phase, runners cover serious mileage but rarely push hard. The speed will come, they know, when the body's ready for it. When race season arrives, they're not grinding toward form—they've already built it. They're simply revealing what months of structured preparation made possible.

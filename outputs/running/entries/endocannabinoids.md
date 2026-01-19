@@ -1,0 +1,17 @@
+**Endocannabinoids**
+
+The runner's high isn't what we thought it was. For decades, we credited endorphins—those opioid-like molecules too large to cross the blood-brain barrier in significant amounts during a typical run. The real architects of euphoria are smaller, quieter, and named for the cannabis plant: endocannabinoids.
+
+Anandamide is the main player, its name derived from the Sanskrit word for bliss. During sustained aerobic exercise, your body synthesizes it from fatty acids in cell membranes. Unlike endorphins, anandamide slips easily into the brain, binding to the same CB1 receptors activated by THC. The result is that familiar loosening—anxiety dissolving, pain receding, thoughts clarifying into something close to contentment.
+
+The mechanism is elegant. Running triggers stress responses: cortisol rises, inflammatory signals increase. Endocannabinoids function as the body's own anxiolytic, dampening the fight-or-flight system while you're asking your body to flee for miles. They reduce pain perception through multiple pathways, letting you sustain effort that would otherwise shut you down. They also appear to enhance neuroplasticity, facilitating the formation of new neural connections—potentially explaining why breakthrough insights arrive mid-stride.
+
+Research at the University of Heidelberg demonstrated this by comparing runners to cyclists and sedentary controls. Only the runners showed significant increases in anandamide levels, and when researchers gave mice a cannabinoid receptor blocker, they ran less, showed more anxiety, and experienced more pain. The high wasn't placebo or willpower—it was chemistry.
+
+But endocannabinoids don't flood your system after five minutes on the treadmill. They accumulate with sustained moderate-intensity effort—the kind of running that feels conversational, almost meditative. Studies suggest the threshold lies somewhere around 30 minutes of continuous exercise at 70-80% of maximum heart rate. Too easy, and you don't trigger sufficient release. Too hard, and the stress response overwhelms the calming effect.
+
+This may explain running addiction. Anandamide activates the brain's reward circuitry, the same dopamine pathways involved in other forms of dependence. Regular runners develop tolerance, needing longer or more frequent runs to achieve the same euphoric state. Miss a few days, and the irritability, restlessness, and low mood mirror mild withdrawal. The body adapts to expect its self-made cannabis.
+
+There's also evidence that endocannabinoids contribute to what trail runners describe as "flow state"—that sensation of effortless movement where fatigue fades and the trail unfolds beneath you without conscious thought. By quieting the default mode network, the brain region responsible for self-referential thinking and worry, anandamide may help produce the loss of self-consciousness that characterizes peak experiences.
+
+The irony is that we chased endorphins for so long when the molecule of bliss was named for it all along. Anandamide: the body's own answer to why we keep running, even when it hurts, even when it's cold, even when we've already gone far enough. The high is real. It's just not what we thought.

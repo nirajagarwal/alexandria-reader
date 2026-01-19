@@ -243,7 +243,7 @@ class BookReader {
         // Introduction
         if (this.bookData.introduction) {
             html += `<div class="chapter-title">Introduction</div>`;
-            html += `<div class="body-content">${this.formatContent(this.bookData.introduction)}</div>`;
+            html += `<div class="body-text">${this.formatContent(this.bookData.introduction)}</div>`;
         }
 
         // Each entry (chapter)
@@ -255,7 +255,7 @@ class BookReader {
                 if (entry.metadata?.section || entry.section) {
                     html += `<div class="section-label">${entry.metadata?.section || entry.section}</div>`;
                 }
-                html += `<div class="body-content">${this.formatContent(entry.content)}</div>`;
+                html += `<div class="body-text">${this.formatContent(entry.content)}</div>`;
             });
         }
 
@@ -276,9 +276,12 @@ class BookReader {
         // 1. Prepare Content for Paged.js
         sourceContainer.innerHTML = this.buildMasterFlowHTML();
 
-        // 2. Configure Paged.js with EXACT dimensions
-        const pageWidth = dims.pageWidth;
-        const pageHeight = dims.pageHeight;
+        // 2. Configure Paged.js with SAFE AREA dimensions
+        // We tell Paged.js the page is only as big as the "Content Box" (Total - Margins)
+        // This ensures the content it generates fits exactly into the padded .page container
+        const margin = dims.margin;
+        const safeWidth = dims.pageWidth - (margin * 2);
+        const safeHeight = dims.pageHeight - (margin * 2);
 
         // Add Paged.js styles to the document dynamically for fragmentation
         let style = document.getElementById('paged-js-styles');
@@ -288,24 +291,18 @@ class BookReader {
             document.head.appendChild(style);
         }
 
-        // Ensure margins match the CSS .page padding EXACTLY so content fits
-        // CSS .page is padding: 60px 50px;
-        // We add extra bottom margin to ensure text doesn't hit the page number
         style.innerHTML = `
             @page {
-                size: ${pageWidth}px ${pageHeight}px;
-                margin-top: 60px;
-                margin-bottom: 100px; 
-                margin-left: 50px;
-                margin-right: 50px;
+                size: ${safeWidth}px ${safeHeight}px;
+                margin: 0;
             }
             .pagedjs_pages {
-                width: ${pageWidth}px;
-                height: ${pageHeight}px;
+                width: ${safeWidth}px;
+                height: ${safeHeight}px;
             }
             .pagedjs_page {
-                width: ${pageWidth}px;
-                height: ${pageHeight}px;
+                width: ${safeWidth}px;
+                height: ${safeHeight}px;
             }
             .chapter-title {
                 break-before: page !important;
@@ -323,15 +320,11 @@ class BookReader {
         document.body.appendChild(pagedContainer);
 
         // Prepend the @page styles to the content so Paged.js definitely sees them
-        // We set side margins to 60px to match what we will add as padding in the viewer
         const dynamicStyles = `
             <style>
                 @page {
-                    size: ${pageWidth}px ${pageHeight}px;
-                    margin-top: 80px; 
-                    margin-bottom: 80px;
-                    margin-left: 60px;
-                    margin-right: 60px;
+                    size: ${safeWidth}px ${safeHeight}px;
+                    margin: 0;
                 }
                 .chapter-title {
                     break-before: page !important;
@@ -627,60 +620,72 @@ class BookReader {
         });
     }
 
-    // Calculate optimal book dimensions to fit in viewport
-    calculateDimensions(viewportW, viewportH) {
-        const toolbarHeight = 60;
-        const paddingV = 40; // Vertical padding for top/bottom
-        const paddingH = 60; // Horizontal padding for left/right safety
+    // NEW: Get layout metrics strictly from CSS Variables
+    // This ensures JS and CSS never drift apart.
+    // NEW: Calculate Layout based on Fixed vs Fluid strategy
+    calculateLayout() {
+        const viewportW = window.innerWidth;
+        const viewportH = window.innerHeight;
 
-        const availableH = viewportH - toolbarHeight - paddingV;
-        const availableW = viewportW - paddingH;
-
+        // 1. Mobile: Fluid (Fill Screen)
+        // We still want "app-like" feel on phone
         if (this.isMobile) {
             return {
-                pageWidth: availableW,
-                pageHeight: availableH,
-                spreadWidth: availableW,
-                height: availableH
+                pageWidth: viewportW,
+                pageHeight: viewportH,
+                spreadWidth: viewportW,
+                height: viewportH,
+                margin: 30, // Smaller margin for mobile
+                scale: 1.0  // No scaling on mobile, native rendering
             };
         }
 
-        // DESKTOP:
-        // Prioritize utilizing the full width while maintaining a reasonable aspect ratio.
-        // We want 2 pages side-by-side.
+        // 2. Desktop: Fixed Canonical Size (Trade Paperback)
+        // We read these from CSS "Source of Truth" to keep Paged.js happy
+        const root = document.documentElement;
+        const computed = getComputedStyle(root);
 
-        let spreadWidth = availableW;
-        let pHeight = availableH;
+        // Helper to get raw pixel value from CSS var
+        const getPixels = (prop) => {
+            const temp = document.createElement('div');
+            temp.style.width = computed.getPropertyValue(prop);
+            document.body.appendChild(temp);
+            const val = parseFloat(getComputedStyle(temp).width);
+            document.body.removeChild(temp);
+            return val || 0;
+        };
 
-        // Calculate max width per page based on height (don't get too square/wide)
-        // A minimum aspect ratio of 1.2 (Height/Width) prevents it from looking like a landscape monitor 
-        const minAspectRatio = 1.2;
-        const maxPageWidth = pHeight / minAspectRatio;
+        const canonicalH = getPixels('--page-height') || 825;
+        const canonicalW = getPixels('--page-width') || 550;
+        const canonicalMargin = getPixels('--print-margin') || 60;
 
-        // If the spread requires pages wider than maxPageWidth, constrain the width
-        if (spreadWidth / 2 > maxPageWidth) {
-            spreadWidth = maxPageWidth * 2;
-        }
+        // Calculate Scale Factor to fit window
+        // Available space (minus toolbar and padding)
+        const availableW = viewportW - 40;
+        const availableH = viewportH - 80; // Toolbar + Padding
 
-        // Calculate height based on this width, ensuring it fits
-        // But actually we prefer filling height first usually.
-        // Let's stick to: Height = Available Height (maximize vertical space)
-        // Width = Spread Width / 2 (maximize horizontal space up to limit)
+        const targetSpreadW = canonicalW * 2;
 
-        let pWidth = spreadWidth / 2;
+        // Scale = How much do we shrink/grow the book to fit the window?
+        const scaleX = availableW / targetSpreadW;
+        const scaleY = availableH / canonicalH;
+        let scale = Math.min(scaleX, scaleY);
 
-        // Round to integer
-        pWidth = Math.floor(pWidth);
-        pHeight = Math.floor(pHeight);
-        spreadWidth = pWidth * 2;
+        // Optional: Cap max zoom to prevent pixelation? 
+        // Let's cap at 1.2x (slight zoom in ok)
+        scale = Math.min(scale, 1.2);
 
         return {
-            pageWidth: pWidth,
-            pageHeight: pHeight,
-            spreadWidth: spreadWidth,
-            height: pHeight
+            pageWidth: canonicalW,
+            pageHeight: canonicalH,
+            spreadWidth: canonicalW * 2,
+            height: canonicalH,
+            margin: canonicalMargin,
+            scale: scale
         };
     }
+
+    // Calculate optimal book dimensions to fit in viewport
 
     // Main initialization
     async init(bookData) {
@@ -698,24 +703,27 @@ class BookReader {
         const viewportHeight = window.innerHeight;
         this.isMobile = viewportWidth < 768;
 
-        const dims = this.calculateDimensions(viewportWidth, viewportHeight);
+        const dims = this.calculateLayout();
 
-        console.log('STRICT Layout Calc:', {
-            viewport: { w: viewportWidth, h: viewportHeight },
-            dims: dims
-        });
+        console.log('Fixed Layout Calc:', dims);
 
         // Set explicit dimensions on the wrapper
         // The wrapper centers the book in the flex container #bookReaderContent
-        container.innerHTML = `
-            <div class="reader-book-wrapper" style="width: ${dims.spreadWidth}px; height: ${dims.height}px;">
-                <div id="readerBook" style="width: 100%; height: 100%;"></div>
-            </div>
-        `;
+        const wrapper = document.createElement('div');
+        wrapper.className = 'reader-book-wrapper';
+        wrapper.id = 'bookWrapper'; // ID for scaling
+        wrapper.style.width = `${dims.spreadWidth}px`;
+        wrapper.style.height = `${dims.height}px`;
+        // Apply Initial Scale
+        wrapper.style.transform = `scale(${dims.scale})`;
+
+        wrapper.innerHTML = `<div id="readerBook" style="width: 100%; height: 100%;"></div>`;
+        container.innerHTML = '';
+        container.appendChild(wrapper);
 
         // Build pages
         console.log('Building book pages...');
-        // Pass the calculated strict dimensions
+        // Pass the calculated fixed dimensions
         const totalPhysicalPages = await this.createPageElements(dims);
         console.log(`Built ${totalPhysicalPages} pages`);
 
@@ -727,7 +735,7 @@ class BookReader {
         // Add toolbar
         this.addToolbar(totalPhysicalPages);
 
-        // Initialize PageFlip
+        // Initialize PageFlip with Fixed Dimensions
         console.log('Initializing PageFlip...');
         this.initPageFlip(dims.pageWidth, dims.height);
 
@@ -739,14 +747,21 @@ class BookReader {
         this.updatePageInfo();
         this.updateNavButtons();
 
-        // Handle window resize
-        let resizeTimeout;
+        // Handle window resize via SCALING (No Reload)
         window.addEventListener('resize', () => {
-            clearTimeout(resizeTimeout);
-            resizeTimeout = setTimeout(() => {
-                console.log('Window resized, reloading reader...');
+            if (this.isMobile) {
+                // Mobile rotation might need reload, but let's try scaling first? 
+                // Usually mobile resize is drastic (rotation), so reload is safer.
                 window.location.reload();
-            }, 500);
+                return;
+            }
+
+            // Desktop: Just update the scale transform
+            const newDims = this.calculateLayout();
+            const wrap = document.getElementById('bookWrapper');
+            if (wrap) {
+                wrap.style.transform = `scale(${newDims.scale})`;
+            }
         });
 
         console.log('BookReader initialization complete');

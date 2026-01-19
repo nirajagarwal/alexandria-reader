@@ -1,0 +1,15 @@
+**Oxygen Debt**
+
+The finish line crosses you before you cross it. Your legs have stopped but your lungs haven't—chest heaving, heart hammering against ribs, hands on knees or the ground or nothing, just bent over in the particular posture of someone whose body is trying to pay back what it borrowed.
+
+This is oxygen debt, though the term itself is outdated. What physiologists now call excess post-exercise oxygen consumption—EPOC—is your body's accounting system, settling the metabolic tab run up when effort exceeded supply. During hard running, especially the anaerobic surges of a finishing kick or repeated intervals, your muscles burn through ATP faster than oxygen delivery can support aerobic production. They switch to less efficient pathways—phosphocreatine breakdown, glycolysis without oxygen—that produce energy quickly but incompletely, leaving metabolic residue that must be cleared.
+
+The debt comes due after you stop. Your breathing stays elevated, sometimes for minutes, sometimes longer. A 1994 study in the Journal of Applied Physiology found that after high-intensity interval training, oxygen consumption remained elevated for up to 24 hours, though most dramatically in the first hour. Your body is restoring phosphocreatine stores in muscles, clearing lactate from blood and tissue, replenishing depleted oxygen in muscle myoglobin, and managing the heat and hormonal disruption of hard effort.
+
+The size of the debt depends on the intensity and duration of the oxygen deficit. A maximal 400-meter sprint leaves you gasping for minutes. A threshold tempo run elevates breathing for less time but still requires repayment. Easy runs incur almost no debt—you never borrow beyond what aerobic metabolism can cover in real time.
+
+This is why interval workouts hurt more than continuous runs of similar average intensity. Each hard repetition creates a deficit. Recovery jogs between intervals don't fully clear it—they just prevent complete collapse. The debts accumulate. By the final interval, you're running on a stack of unpaid metabolic bills, which is exactly why the last one is always the hardest.
+
+The phenomenon has practical implications. The magnitude of EPOC correlates with caloric expenditure after exercise—one reason high-intensity training can be metabolically efficient despite shorter duration. But it also explains why recovery matters. An incompletely paid debt before the next hard session means starting already behind, which compounds into overtraining.
+
+Stand at the finish line of any race and you see the debt visualized: runners bent double, hands on hips, walking in small circles, breathing like they're trying to catch something that keeps escaping. They are. They're catching up to themselves, repaying what they had to borrow to run that fast. The body keeps perfect books. Everything comes due.

@@ -1,0 +1,15 @@
+**The Tarahumara (Born to Run)**
+
+They call themselves Rarámuri—the running people. In the Copper Canyons of northern Mexico, the Tarahumara have been running for centuries, not as sport but as life. Distances that would constitute ultramarathons elsewhere are simply how you get from one village to another, how you hunt deer by persistence until the animal collapses from exhaustion, how you play games that last two days straight.
+
+When Christopher McDougall published *Born to Run* in 2009, the Tarahumara became running's most romanticized mystery. Here were people running 50, 100, 200 miles in thin sandals made from tire rubber, fueled by corn beer and chia seeds, moving through canyon country with what seemed like supernatural endurance. No fancy shoes, no training plans, no sports drinks—just running in its most elemental form.
+
+The fascination was immediate and sometimes misguided. The barefoot running movement seized on the Tarahumara as proof that modern running shoes were the problem, that humans were meant to run with minimal footwear on their midfoot, that Western runners had forgotten how to move. Minimalist shoe sales exploded. Injury rates did too, as runners who'd spent decades in cushioned shoes tried to transition overnight to racing flats and Vibram FiveFingers.
+
+But the Tarahumara's running isn't a technique you can adopt—it's the product of altitude, terrain, culture, and genetic adaptation built over generations. They grow up at 7,000 feet, running on rocky trails that demand constant micro-adjustments. Their cardiovascular systems develop in thin air. Their feet have never known the support of modern shoes, so the muscles and connective tissue have strengthened accordingly. A runner in Denver buying huaraches isn't suddenly going to move like someone who's been running canyon trails since age four.
+
+What the Tarahumara actually reveal isn't a superior running form but the human body's remarkable adaptability. They prove that endurance running isn't just tolerable to humans—it's something we can shape our entire existence around. The same species that evolved to persistence hunt on African savannas can adapt to running through vertical terrain at altitude, can make running central to culture, celebration, and identity.
+
+The famous racer Arnulfo Quimare once ran 435 miles in 75 hours. Silvino Cubesare ran from the bottom of Batopilas Canyon to the rim—a 5,000-foot vertical climb—in 54 minutes. These aren't numbers that come from better form or minimalist footwear. They come from lifetimes spent running as transportation, as play, as what you do.
+
+The real lesson of the Tarahumara isn't about shoes or technique. It's about what happens when running isn't squeezed into the margins of a sedentary life but becomes life itself. They don't run to get fit or to prove something. They run because the next village is twenty miles away. They run because that's how the game is played. They run because in those canyons, running people is what they've always been.

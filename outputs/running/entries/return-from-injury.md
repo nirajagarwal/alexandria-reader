@@ -1,0 +1,21 @@
+# The Return from Injury
+
+Your first run back feels like learning to walk. You're hyperaware of everything—the way your foot lands, the pull in your calf, whether that slight ache in your knee is echo or warning. Three weeks ago, you could run ten miles without thinking. Now, ten minutes feels like crossing a border without papers.
+
+The physiological timeline of return is well documented. Soft tissue injuries—muscle strains, minor tendon irritation—typically heal in two to six weeks, though "healed" means the tissue has knitted back together, not that it's returned to pre-injury strength. Tendons lag behind muscles; their limited blood supply means slower collagen remodeling. Stress fractures demand eight to twelve weeks minimum—bone heals on its own schedule, indifferent to your race calendar. But the studies that map these timelines measure tissue integrity, not the psychological distance between injured and whole.
+
+The body loses fitness faster than it gains it. VO2 max drops measurably after just ten days of complete rest, declining about 1% per day in the early weeks. Capillary density decreases. Mitochondria, those cellular powerhouses that multiplied during months of training, begin to diminish. Muscles atrophy. The cardiovascular system, so painstakingly built, starts its slow dismantling. This is the cruelty of injury: what took months to build can partially unravel in weeks.
+
+But the body also remembers. Muscle memory isn't metaphor—it's neuromuscular patterning etched into motor cortex and spinal circuits. Your muscles retain myonuclei, those extra nuclei accumulated during training that make it easier to regain strength. Return is faster than initial building. Runners who've hit certain fitness peaks can return to them more quickly the second time. The pathways are still there, just dormant.
+
+The return itself requires restraint that feels unnatural. Sports medicine literature converges on conservative progression: start at 50% of pre-injury volume, increase by no more than 10% per week, take cutback weeks, respect pain signals. This is sound advice that almost no runner follows perfectly. The pull to test the limits, to see if you're *really* healed, is almost irresistible. You run a little farther, a little faster. Sometimes you get away with it. Sometimes you don't.
+
+Physical therapist Jay Dicharry, who works with elite and recreational runners, emphasizes that return protocols should address not just the injury site but the weakness or imbalance that likely contributed to breakdown. The runner with plantar fasciitis needs to return with stronger calves and better hip control, not just a healed fascia. The stress fracture demands investigation—bone density, running mechanics, nutritional factors. Return without correction is just rehearsal for re-injury.
+
+The psychological component is harder to quantify. Some runners return tentative, phantom pains haunting every stride. Others return reckless, overcompensating for lost time. The ideal is somewhere between: cautious but not fearful, patient but not passive. You have to relearn trust in your body, which means running enough to test it but not so much that you break it again.
+
+There's also the strange grief of returning to a pack that kept running while you were sidelined. Your training partners are fitter. The course you used to dominate now humbles you. Strava segments that bore your name now belong to someone else. You're starting over, but everyone else kept going.
+
+And yet: the first pain-free mile. The moment when you stop monitoring every sensation and just run. The day you realize you're not thinking about the injury anymore, that your body has become background again instead of foreground. These mark the real return, more than any timeline or percentage of previous volume.
+
+You never come back exactly the same. The injury leaves a memory in the tissue, a small hesitation in the brain. But sometimes you come back stronger—more patient, more attentive, more grateful for the simple fact of being able to run at all.

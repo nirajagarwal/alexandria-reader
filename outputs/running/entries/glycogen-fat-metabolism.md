@@ -1,0 +1,17 @@
+**Glycogen and Fat Metabolism**
+
+At mile eighteen, the legs feel different. Not tired exactly—heavy. Like someone added weight to the bones. The pace that felt conversational at mile ten now demands attention. This is the body switching fuel sources mid-stride, running low on its preferred currency and reaching for the backup account.
+
+The human body stores about 2,000 calories worth of glycogen—chains of glucose molecules packed into muscles and liver. That sounds like plenty until you do the math. Running burns roughly 100 calories per mile. A marathon is 26.2 miles. The body's glycogen stores get you about three-quarters of the way there before the account runs dry. What happens next depends entirely on how well you've trained the metabolic machinery.
+
+Glycogen is fast money. It breaks down quickly through glycolysis, delivering ATP without requiring oxygen for the initial steps. It's the fuel of choice for anything above conversational pace—tempo runs, intervals, races. The body prefers it because it's efficient: more ATP per unit of oxygen consumed than fat burning produces. But it's limited. Those 2,000 calories represent the entire store.
+
+Fat, by contrast, is essentially unlimited. Even a lean runner carries tens of thousands of calories in adipose tissue. But accessing it is slow. Fat metabolism requires oxygen at every step—lipolysis to break down triglycerides, beta-oxidation to convert fatty acids into acetyl-CoA, the Krebs cycle to extract energy. It's a longer biochemical pathway, which means it can't support high intensities. Fat burning peaks at around 60-70% of VO2 max. Push harder and the body shifts back toward glycogen.
+
+The metabolic crossover happens around lactate threshold—that pace where breathing gets noticeably harder. Below it, fat contributes significantly to the energy mix. Above it, glycogen dominates. Elite marathoners run just below this threshold for the entire race, maximizing glycogen conservation while maintaining race pace. Their crossover point is shifted rightward through years of training—they can burn fat at higher intensities than recreational runners.
+
+Training teaches the body to spare glycogen. Long runs at easy paces increase mitochondrial density in slow-twitch muscle fibers, improving fat oxidation capacity. The body gets better at shuttling fatty acids into muscle cells, at oxidizing them efficiently, at maintaining pace while relying more heavily on fat. This metabolic flexibility is what separates runners who hit the wall from those who don't.
+
+The practical implications are everywhere. Eating before a hard workout preserves glycogen for the quality work. Running long and slow builds the fat-burning engine. Racing a marathon means managing glycogen like a limited resource—starting conservative, taking in carbohydrates along the way, trusting the training to fill the gaps with fat oxidation.
+
+That heaviness at mile eighteen? It's the feeling of metabolic shift—glycogen depleting, fat metabolism ramping up but not quite keeping pace with demand. The body asking: can we sustain this with what we've got left? The answer depends on the months of Sunday long runs, the easy miles that felt pointless, the patience to build an engine that runs on more than one fuel.

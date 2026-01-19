@@ -1,0 +1,17 @@
+**Running Economy**
+
+Two runners can have the same VO2 max—the same capacity to deliver oxygen to their muscles—and one will be faster. The difference is running economy: how much oxygen you need to maintain a given pace. It's the body's fuel efficiency, measured not in miles per gallon but in milliliters of oxygen per kilogram of body weight per kilometer covered.
+
+The most economical runners glide. They waste nothing. Every motion serves forward propulsion. Paula Radcliffe, despite her distinctive head bob, was economically perfect—her peculiar form was actually her efficiency expressing itself. When researchers measured elite Kenyan runners, they found oxygen consumption 5-10% lower than equally fit runners from other populations at the same speeds. They were spending less to go the same distance.
+
+Economy isn't just about mechanics, though form matters. Ground contact time, the milliseconds your foot touches earth, correlates strongly with economy. Shorter contact time generally means better economy—the foot becomes a quick spring rather than a slow lever. Vertical oscillation matters too. Bounce costs energy. The most economical runners skim the ground, their centers of mass rising and falling minimally with each stride.
+
+But economy also lives in the muscles themselves, in the Achilles tendon's elastic recoil, in mitochondrial density, in the percentage of slow-twitch fibers. The body learns economy through thousands of miles. Tendons stiffen optimally. Muscles strengthen in exactly the configurations running demands. The nervous system refines motor patterns until they become automatic, efficient, economical.
+
+Training can improve economy. Plyometrics—explosive, bounding movements—enhance the stretch-shortening cycle, making tendons more spring-like. Strength training, particularly of the calves and hips, reduces the relative load each stride imposes. High-mileage training at easy paces teaches the body to relax at speed, to waste nothing on unnecessary tension.
+
+Weight matters brutally in the economy equation. Every kilogram you carry requires more oxygen to move. This is why elite distance runners tend toward lean, why even ounces matter in racing shoes. It's simple physics: moving mass costs energy, and running is nothing but moving your mass forward, repeatedly, for miles.
+
+Some economy is trainable, some is inherited. Researchers have found that body proportions—particularly lower leg length relative to thigh length—influence economy significantly. Longer lower legs mean a longer lever to swing, which costs energy. Elite East African runners often have proportionally longer lower legs, but lighter ones, and the reduced mass compensates for the lever disadvantage.
+
+The cruel beauty of running economy is that you can feel it but never fully control it. You know when you're running economically—the pace feels easier than it should, the breathing stays calm, the legs keep turning over without complaint. You can chase that feeling through training, through form work, through accumulated miles. But you can't force it. Economy emerges from the collaboration of a thousand bodily systems, each doing its work with minimal waste. It's efficiency as art, physics as feeling, the body learning to do more with less.

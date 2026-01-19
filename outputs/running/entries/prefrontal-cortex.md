@@ -1,0 +1,15 @@
+**The Prefrontal Cortex**
+
+Your heart rate climbs past 160 and suddenly the mental chatter quiets. The argument you were rehearsing, the work email you need to send, the grocery list—all of it fades. What remains is simpler: breath, pace, the next mile. Running doesn't just occupy the prefrontal cortex, the brain's executive center. It temporarily downregulates it.
+
+The prefrontal cortex sits behind your forehead, orchestrating higher-order thinking: planning, decision-making, self-regulation, working memory. It's what lets you delay gratification, inhibit impulses, juggle multiple thoughts simultaneously. It's also metabolically expensive, consuming disproportionate energy relative to its size. During sustained aerobic exercise, particularly at moderate to high intensities, blood flow redistributes. The motor cortex and sensory regions get priority. The prefrontal cortex gets less.
+
+Neuroscientist Arne Dietrich proposed this as the "transient hypofrontality hypothesis"—the idea that exercise temporarily reduces prefrontal activity, explaining why complex problem-solving becomes harder mid-run but rumination quiets. Brain imaging studies support this. fMRI scans during cycling show decreased activation in the prefrontal regions responsible for executive function, while areas managing movement and interoception light up. You trade analytical capacity for embodied presence.
+
+This isn't cognitive decline. It's recalibration. The prefrontal cortex, when chronically overactive, drives anxiety, obsessive thinking, the endless loop of planning and worrying. Running offers temporary relief—not by destroying those circuits but by giving them a break. After the run, when blood flow normalizes, many runners report clarity. Problems that seemed intractable before feel simpler. Solutions emerge unbidden.
+
+Chronic running may also strengthen the prefrontal cortex over time. Long-term runners show enhanced executive function in laboratory tests: better working memory, improved cognitive flexibility, faster processing speed. Studies link regular aerobic exercise to increased gray matter volume in the prefrontal regions, particularly in older adults, potentially offsetting age-related decline.
+
+The mechanism likely involves BDNF—brain-derived neurotrophic factor—which running elevates. BDNF promotes neurogenesis and synaptic plasticity, particularly in the hippocampus but also in prefrontal areas involved in learning and emotional regulation. Running doesn't just rest the executive brain; it rebuilds it.
+
+But the transient shutdown matters too. In a culture that valorizes constant productivity and cognitive performance, running offers permission to think less. The miles accumulate not despite the mental quiet but because of it. The prefrontal cortex, briefly offline, stops directing the show. What remains is older, more fundamental: a body moving through space, finding its rhythm without needing to explain why.

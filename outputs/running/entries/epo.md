@@ -1,0 +1,17 @@
+# EPO (Natural and Synthetic)
+
+Your kidneys are producing erythropoietin right now. EPO—a hormone that signals bone marrow to manufacture red blood cells. When oxygen levels drop, kidneys sense it and release more EPO. More EPO means more red blood cells. More red blood cells mean more oxygen-carrying capacity. It's your body's altitude compensation system, a feedback loop refined over millions of years.
+
+At sea level, your EPO levels hover around 10 milli-international units per milliliter. Climb to 8,000 feet and within hours, your kidneys ramp up production. Within days, your red blood cell count starts climbing. Stay three weeks and you'll have 10-15% more oxygen carriers circulating through your bloodstream. This is why athletes train at altitude—not for lung capacity, which doesn't fundamentally change, but for hematocrit, the percentage of blood volume occupied by red blood cells.
+
+The synthetic version works faster. Recombinant human EPO, developed in 1985 to treat anemia in dialysis patients, became cycling's performance-enhancing drug of choice by the early 1990s. One injection could accomplish what took weeks at altitude. Hematocrit levels that might naturally peak at 47% could be pushed to 55%, even 60%. The oxygen delivery advantage was measurable, significant, and until 1997, undetectable.
+
+Francesco Conconi, the Italian exercise physiologist, reportedly guided Ferrari's Formula One team and professional cyclists through EPO protocols. Riders died in their sleep—young men whose blood had thickened beyond the heart's capacity to pump it. The peloton started using alarm clocks through the night, waking every few hours to get on stationary bikes, thin the blood through movement.
+
+The danger isn't just ethical. Hematocrit above 50% increases blood viscosity exponentially. Stroke risk climbs. The heart works harder to push sludge through capillaries. What should flow starts to jam. But performance improved so dramatically—5-10% gains in endurance capacity—that the risk calculation shifted. In a sport where one percent separates podium from pack, ten percent was transformative.
+
+Testing evolved. The biological passport now tracks individual baseline values over time, flagging suspicious deviations. Newer EPO formulations—darbepoetin, EPO-CERA—have longer half-lives but leave markers. Micro-dosing attempts to stay under detection thresholds. Gene doping, still theoretical for most athletes, could one day upregulate natural EPO production.
+
+Meanwhile, your kidneys continue their ancient work. Sense oxygen deficit. Release hormone. Signal marrow. Manufacture cells. The natural system is elegant, self-regulating, responsive to need. It responds to the slow adaptation of altitude training, to the increased demand of consistent mileage. It doesn't produce stroke-level hematocrit. It produces what the body can safely use.
+
+The line between optimization and doping isn't always clear—altitude tents simulate elevation, blood spinning concentrates platelets, heat training increases plasma volume. But synthetic EPO crosses from enhancement into transformation, from working with physiology to overriding it. The kidney's careful calibration replaced by a syringe's blunt force. The question isn't whether it works. The question is what version of the sport survives when everyone's hematocrit maxes out, when the determinant shifts from training to dosing, when the heart has to wake itself up at 3 AM just to keep pumping.

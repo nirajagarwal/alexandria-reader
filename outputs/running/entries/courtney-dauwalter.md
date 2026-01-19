@@ -1,0 +1,15 @@
+**Courtney Dauwalter (Ultra's Mystery)**
+
+At mile 200 of the Moab 240, Courtney Dauwalter couldn't see. Her eyes had swollen nearly shut from sleep deprivation and exertion. Her crew guided her through the darkness like handlers leading a fighter between rounds. She kept running. Twenty-four hours later, she finished—not just first woman, but first overall, beating the second-place finisher by ten hours.
+
+This wasn't an outlier. At the 2018 Tahoe 200, she won by over twelve hours. At the 2019 Ultra-Trail du Mont-Blanc, she demolished the women's course record by over six hours and finished 21st overall against the world's best. At Western States 100 in 2023, she ran the third-fastest women's time in history. Her dominance spans distances from 100K to 240 miles, terrain from desert to alpine, conditions from scorching to frozen.
+
+What makes Dauwalter exceptional isn't just that she wins—it's how. She runs without a GPS watch, navigating by feel rather than data. She fuels on nachos, candy, and whatever sounds good at aid stations rather than precision nutrition plans. Her training philosophy: "Be a little bit ridiculous." She might run a five-hour long run one weekend, then follow it with a casual 10K. She'll race a 100-miler, take a week off, then run another 100-miler. Her approach seems to violate every principle of periodization and structured training.
+
+Yet her body responds. Research on ultra-endurance athletes shows exceptional mitochondrial efficiency and fat oxidation capacity—Dauwalter likely burns fat for fuel at intensities where most runners have switched to glycogen. Her ability to continue through extreme sleep deprivation suggests unusual resilience in the prefrontal cortex, the brain region responsible for decision-making and pain regulation. Her post-race interviews reveal an almost detached relationship with suffering: she describes entering "the pain cave," a mental space where discomfort exists but doesn't dictate behavior.
+
+The scientific mystery is her recovery. Most elite ultrarunners follow rigid training and recovery protocols. Dauwalter seems to heal impossibly fast, bouncing back from races that should require months of recovery. Whether this represents superior physiological adaptation, exceptional mitochondrial density, or something not yet understood remains unclear.
+
+She talks about running with joy rather than strategy, about exploring "what's possible" rather than optimizing performance. Before ultrarunning, she taught science to middle schoolers. She started running ultras simply because they seemed fun. There's no tragic backstory, no transformative moment—just a person who discovered she could run a very long way and decided to see how far that could go.
+
+In a sport increasingly dominated by data, sponsorships, and professionalization, Dauwalter represents something else: pure athletic mystery wrapped in Midwestern modesty. She wins the world's hardest races while eating gummy bears and laughing about how ridiculous the whole thing is. Her body does things science struggles to explain, and she remains genuinely unbothered by the question of how.

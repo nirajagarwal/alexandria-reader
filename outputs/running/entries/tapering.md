@@ -1,0 +1,15 @@
+**Tapering**
+
+Three weeks out from the marathon and the training plan says: run less. The volume drops, the intensity eases, the body begins the counterintuitive work of getting faster by doing less. This is tapering—the deliberate reduction of training load before a race to allow accumulated fatigue to dissipate while fitness remains. It sounds simple. It feels like madness.
+
+The standard marathon taper lasts two to three weeks, reducing weekly mileage by 40-60% while maintaining some intensity. A runner who's been logging 50 miles a week drops to 30, then 20, keeping a few faster intervals but cutting the long run in half. The principle is consistent across distances: before racing, you rest. Before the effort, you recover.
+
+The physiology is clear. During heavy training, muscle glycogen stores are chronically depleted, inflammation lingers, microtears accumulate in muscle fibers. The cardiovascular system is sharp, but the body is depleted. Tapering allows glycogen to supercompensate—muscles can store up to 50% more glycogen after a proper taper than they held during peak training. Muscle damage repairs. Blood volume increases. The runner arrives at the start line with the fitness of heavy training but the freshness of recovery.
+
+Research by David Costill in the 1980s established the framework: reduce volume significantly, maintain some intensity, keep the taper relatively short. Later studies refined it. A 2007 meta-analysis in *Medicine & Science in Sports & Exercise* found that progressive tapers—gradually decreasing volume over 7-21 days—produced better performance improvements than abrupt drops. The sweet spot: reducing training by 40-60% while keeping workout intensity at or near race pace. Do that for two weeks and performance improves by an average of 3%. For a 3:30 marathoner, that's six minutes. For an elite, it's the difference between making the podium and watching from behind the line.
+
+But knowing the science doesn't quiet the brain. The legs feel heavy at first, sluggish, wrong. Runners report feeling slower during taper, even as their bodies are actually getting faster. The mind, accustomed to the rhythm of daily miles and hard efforts, begins to spiral. Was the training enough? Is fitness disappearing? Should I just do one more long run? The phantom aches appear—a tight calf, a suspicious knee, a hip that suddenly seems to click. The taper is partly physical preparation, but it's mostly psychological warfare.
+
+Some runners handle it by trusting the plan, logging the reduced miles with the discipline they brought to the buildup. Others fill the extra time with obsessive race-day preparation: checking weather forecasts, laying out gear, running mental rehearsals of every mile. The best advice is often the hardest to follow: do less, worry less, sleep more. The work is done. The taper isn't when you get fit—it's when you let fitness reveal itself.
+
+Race morning arrives and the legs feel different—light, coiled, ready. The taper worked, not because you did more, but because you trusted yourself to do less.

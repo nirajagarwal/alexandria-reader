@@ -1,0 +1,19 @@
+# Emil Zátopek (The Czech Locomotive)
+
+Helsinki, 1952. The marathon is the third distance race in eight days for Emil Zátopek, a Czech army officer who runs like he's fighting his own body. He's already won the 5,000 and 10,000 meters. The marathon is new territory—he's never run one in competition. At the fifteen-kilometer mark, he pulls alongside Jim Peters, the world record holder, and asks: "The pace—is it fast enough?"
+
+Peters, already suffering, lies: "No, too slow." Zátopek nods and disappears ahead, accelerating into terra incognita. He wins by two and a half minutes. His wife Dana wins the javelin the same day. Three gold medals in eight days. Nobody has done it before. Nobody has since.
+
+Watch footage of Zátopek running and you see something that violates every principle of running economy. His head rolls side to side. His face contorts in apparent agony—tongue lolling, grimacing, gasping. His upper body twists with each stride. Running coaches would call it inefficient. Running physiologists would predict early fatigue. But Zátopek ran like this for eighteen years, setting eighteen world records across distances from 5,000 meters to 30 kilometers.
+
+The contradiction between his form and his results suggests something profound about running economy. The science says minimize vertical oscillation, maintain neutral posture, conserve energy through efficient movement patterns. Zátopek did none of these things. Yet his VO2 max was measured at 77.4 ml/kg/min—exceptional even by today's standards. His lactate threshold allowed him to sustain punishing pace for impossible durations. Whatever efficiency he lost in visible biomechanics, he compensated through sheer cardiovascular capacity and pain tolerance.
+
+He pioneered interval training when long, slow distance was dogma. While others logged steady miles, Zátopek ran 5x200m, 20x400m, 5x200m in a single session—in army boots, in forests, sometimes carrying Dana on his back. He understood what exercise science would later confirm: VO2 max responds to high-intensity intervals, lactate threshold improves through sustained tempo work, and the body adapts to the specific stress you provide.
+
+But the science doesn't fully explain him. Zátopek raced with visible suffering—the grimacing wasn't performance art, it was genuine. He ran at the edge of what his body could sustain, every race a negotiation with collapse. After winning the 10,000 in Helsinki, he needed assistance leaving the track. Then he came back and did it again. And again.
+
+In 1968, he spoke against the Soviet invasion of Czechoslovakia during the Prague Spring. The government stripped him of his military rank, his Communist Party membership, his coaching positions. They sent him to work in a uranium mine, then digging wells, then sorting equipment in a sports warehouse. For two decades, the country's greatest athlete was officially erased.
+
+He never stopped running. Not as training—as necessity. In the warehouse, in political exile, in obscurity, he ran. When the Berlin Wall fell in 1989, Czechoslovakia rehabilitated him. By then he was sixty-seven, his running days long finished, but his record remained: three golds in eight days, eighteen world records, a style that defied optimization yet produced unmatched results.
+
+The mechanics of running can be measured—stride length, ground contact time, vertical displacement. Zátopek proved that greatness doesn't always optimize these variables. Sometimes it operates despite them, powered by something the biomechanical models can't quite capture: the willingness to suffer efficiently.

@@ -1,0 +1,17 @@
+**Race-Day Adrenaline**
+
+The morning of a race feels different in the body. You wake before the alarm, heart already elevated. Hands shake pouring coffee. The walk to the start line sends waves of heat through the chest. This isn't nervousness exactly—it's the adrenal system flooding the body with hormones designed for fight or flight, repurposed now for 26.2 miles or a 5K time trial.
+
+Adrenaline—technically epinephrine—releases from the adrenal glands atop the kidneys the moment the brain perceives something significant is about to happen. Heart rate spikes. Blood vessels constrict in the digestive system and dilate in the muscles. The liver dumps glucose into the bloodstream. Breathing quickens. Pupils dilate. The body is preparing for maximum output, and it doesn't wait for the gun—it starts preparing hours before.
+
+This pre-race surge can feel overwhelming, wasteful even, like the body is burning energy you'll need later. But research on competitive athletes shows that moderate pre-race arousal improves performance. A 2011 study in the *Journal of Sports Sciences* found that runners with moderately elevated cortisol and adrenaline in the hour before racing performed better than those who were either too calm or too anxious. The sweet spot exists: aroused but not panicked, alert but not scattered.
+
+The challenge is managing the flood. Elite runners develop pre-race routines partly to channel this arousal—the same warm-up sequence, the same playlist, the same moment they remove their sweats. The routine doesn't eliminate the adrenaline; it gives it structure. Eliud Kipchoge sits quietly before races, hands folded, breathing controlled. He's not suppressing the physiological response—he's directing it.
+
+Then the gun fires, and everything changes. The initial surge of adrenaline can make the first mile feel absurdly easy, like you're being pulled by invisible hands. Heart rate skyrockets but perceived effort lags behind—what exercise physiologists call "dissociation" between physical strain and mental experience. This is why every race strategy includes some version of "don't go out too fast." The adrenaline lies. It makes 6:30 pace feel like 7:00, makes the first quarter-mile feel like floating.
+
+By mile three or four, adrenaline recedes and the actual cost of that early pace arrives. Heart rate stays elevated but the euphoria fades. What remains is the work. This is where races are decided—not in the adrenaline-soaked opening miles but in the metabolic reckoning that follows.
+
+Yet adrenaline returns in waves throughout a race, triggered by surges from competitors, the sight of the finish, the roar of spectators at a turn. Each wave brings a brief reprieve from fatigue, a second or third wind that feels chemical because it is. The body still has emergency reserves, still believes something urgent is happening. In the final meters, adrenaline can overcome what seemed like complete depletion—the finish-line sprint from runners who looked broken a minute earlier.
+
+Post-race, the crash. Adrenaline metabolizes quickly, leaving cortisol and fatigue in its wake. The shaking intensifies. Some runners cry, others laugh, many simply sit. The body's alarm system, after hours of maximum alert, finally stands down. What remains is the race itself, stripped of the chemical drama, just the time on the clock and the knowledge of what you did when your body was screaming that something extraordinary was required.

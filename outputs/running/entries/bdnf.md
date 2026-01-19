@@ -1,0 +1,17 @@
+# Brain-Derived Neurotrophic Factor (BDNF)
+
+**Brain-Derived Neurotrophic Factor (BDNF)**
+
+Twenty minutes into a run, something shifts in the brain. Not just mood or clarity—actual molecular change. Neurons begin producing a protein called brain-derived neurotrophic factor, BDNF, sometimes called "Miracle-Gro for the brain." The comparison is crude but accurate: BDNF promotes the growth of new neurons and strengthens existing ones. It's one reason regular runners often describe thinking more clearly, remembering better, learning faster. Their brains are literally growing.
+
+BDNF operates most powerfully in the hippocampus, the brain's memory center, and the prefrontal cortex, responsible for executive function and decision-making. In these regions, BDNF stimulates neurogenesis—the birth of new neurons—and enhances synaptic plasticity, the strengthening of connections between neurons. This isn't metaphorical improvement. MRI studies show increased hippocampal volume in runners compared to sedentary controls. The difference appears within months of consistent training.
+
+The protein works through a cascade. Aerobic exercise triggers the release of cathepsin B, an enzyme produced by muscles during contraction. Cathepsin B crosses the blood-brain barrier and signals brain cells to produce BDNF. More intense running produces more cathepsin B, which produces more BDNF. The effect peaks during sustained moderate-to-vigorous effort—the pace where you can talk but would rather not, held for twenty minutes or longer.
+
+What makes BDNF particularly significant is its role in neuroplasticity across the lifespan. Neuroscientist Henriette van Praag's research with mice showed that running increased BDNF levels and doubled the rate of neurogenesis in the hippocampus. Subsequent human studies confirmed the pattern: six months of aerobic training increased hippocampal volume by two percent and improved spatial memory. Two percent reverses about one to two years of age-related volume loss. Running doesn't just slow cognitive decline; it reverses it.
+
+Low BDNF levels correlate with depression, anxiety, and neurodegenerative diseases. Antidepressants work partly by increasing BDNF. So does running, often with comparable efficacy in mild to moderate depression. A 2016 meta-analysis found that aerobic exercise elevated BDNF levels across multiple studies, with effects lasting several hours post-exercise. Regular runners maintain chronically higher baseline BDNF than non-runners.
+
+The molecule also facilitates learning. Studies show that exercise before a learning task improves retention. Mice that run before navigating a maze learn faster and remember longer than sedentary mice. The mechanism is BDNF-mediated enhancement of long-term potentiation—the cellular process underlying memory formation. This is why morning runs before work or study sessions aren't just clearing the head. They're priming the brain's circuitry for acquisition and consolidation.
+
+It's reductive to call BDNF the single reason running changes the brain. But it's a primary mechanism, quantifiable and consistent. That clarity twenty minutes into a run isn't just psychological relief. It's molecular transformation, neurons firing with fresh protein scaffolding, synapses strengthening, the brain rebuilding itself with each footstrike.

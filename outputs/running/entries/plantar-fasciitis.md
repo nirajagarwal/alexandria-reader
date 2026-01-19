@@ -1,0 +1,19 @@
+# Plantar Fasciitis
+
+The heel hits ground and something tears—not dramatically, not all at once, but in microscopic increments that accumulate until the first step out of bed becomes an event. The plantar fascia, that thick band of tissue running from heel to toes along the arch, has been stressed past its capacity to repair itself. Now it announces its presence with every weight-bearing moment.
+
+Plantar fasciitis isn't one injury but a spectrum of tissue breakdown. The fascia acts as a tension cable, absorbing force with each foot strike—roughly 1.5 times body weight during walking, 3-4 times during running. When load exceeds the tissue's adaptive capacity, collagen fibers develop micro-tears. The body responds with inflammation, though recent research suggests the chronic form involves degenerative changes more than active inflammation—hence the shift in terminology from "fasciitis" (inflammation) to "fasciosis" (degeneration).
+
+The classic presentation: stabbing pain in the heel, worst with the first morning steps. During sleep, the fascia shortens. That initial weight-bearing forcefully stretches damaged tissue. The pain often eases after a few minutes as the tissue warms and lengthens, but returns after prolonged standing or at the start of a run. Some runners can "run through it" once warmed up, a dangerous proposition that often deepens the injury.
+
+Risk factors cluster: sudden increases in mileage, new shoes (too stiff or too flexible), hard surfaces, tight calves, high arches, flat feet, excess weight. The variety suggests plantar fasciitis isn't caused by one wrong thing but by the intersection of load, tissue capacity, and biomechanical stress. Research from the American Orthopaedic Foot & Ankle Society found that 10% of runners will experience it at some point—common enough to be familiar, specific enough to derail training.
+
+Treatment begins with load management—reducing volume, avoiding hard surfaces, cross-training in the pool or on the bike. Calf stretching addresses a key contributor: tight gastrocnemius and soleus muscles increase tension on the Achilles, which shares connective tissue with the plantar fascia. Rolling the arch over a frozen water bottle provides both ice and massage. Night splints hold the foot in dorsiflexion during sleep, maintaining length in the fascia.
+
+The most effective intervention, according to multiple studies, is eccentric strengthening—standing on a step, slowly lowering the heel below the level of the toes, creating controlled tension through the posterior chain. This isn't stretching but loading: stimulating collagen production and remodeling damaged tissue. The protocol is tedious—3 sets of 15 repetitions, twice daily, for 8-12 weeks—but research shows 70-80% improvement rates.
+
+Recovery is non-linear. Good days encourage ramping back up too quickly. Bad mornings after easy runs seed doubt. The injury tends to linger because runners don't fully stop—they reduce, modify, test, push. Complete rest heals plantar fasciitis reliably but costs fitness and patience. The calculation becomes: How much discomfort can I run through without making it worse?
+
+Most cases resolve within six months. Some persist for years, occasionally requiring more aggressive interventions—corticosteroid injections (effective short-term, questionable long-term), shockwave therapy, platelet-rich plasma, or in rare cases, surgical fascia release. But the majority heal through the same unglamorous process that works for most overuse injuries: reduce load, strengthen tissue, gradually return.
+
+What plantar fasciitis teaches: the foot is not a simple lever but a complex structure under constant negotiation with load. Every run is a conversation between tissue capacity and training demand. When the heel starts talking, listening is cheaper than ignoring.

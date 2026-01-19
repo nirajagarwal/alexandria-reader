@@ -1,0 +1,17 @@
+**The Comparison Trap**
+
+You're three miles into an easy run when another runner passes you, their stride smooth and effortless, breathing barely audible. Your own legs suddenly feel heavy. Your pace, which felt comfortable thirty seconds ago, now seems slow. The thought arrives unbidden: *I should be faster than this.* The run hasn't changed. Only your relationship to it has.
+
+Running invites comparison with a precision that few other activities match. Every run generates data—pace, distance, heart rate, elevation gain. Every route becomes a benchmark. Every runner you encounter on the trail or track becomes a reference point. The sport's measurability is part of its appeal, but it's also a cognitive trap. The same metrics that help you track improvement can become instruments of perpetual inadequacy.
+
+Social comparison theory, proposed by psychologist Leon Festinger in 1954, suggests that humans evaluate their own abilities and opinions by comparing themselves to others. In running, this comparison is constant and often automatic. You check your watch mid-run. You glance at Strava after uploading. You note who's running what pace in group workouts. Each comparison triggers a quick assessment: better than, worse than, equal to.
+
+The brain's default mode network—the neural circuitry active during rest and self-referential thought—is particularly sensitive to social comparison. When you compare yourself to others, regions including the medial prefrontal cortex and posterior cingulate cortex light up, processing information about self-worth and social standing. This happens even when the comparison is irrelevant. That runner who passed you might be doing mile repeats while you're running easy. They might be fresh while you're on your second run of the day. The context doesn't matter to the automatic assessment: they're faster right now, therefore...
+
+The "therefore" is where the trap closes. The conclusion your brain draws—*I'm slow, I'm not improving, I'm falling behind*—often has no logical foundation. But the feeling is real. Studies on athletic motivation show that upward social comparison (comparing yourself to someone better) can motivate improvement, but it more often triggers anxiety, reduced enjoyment, and diminished intrinsic motivation. The thing that drew you to running—the pure experience of movement—gets buried under the weight of relative performance.
+
+Eliud Kipchoge trains with a group in Kenya where younger, faster runners regularly drop him on workouts. He's the marathon world record holder. The comparisons he could make are endless; he chooses not to make them. "I don't compare myself with others," he's said. "I compare myself with myself." This sounds like platitude until you recognize it as a deliberate cognitive strategy—a refusal to let external reference points define internal experience.
+
+The alternative isn't to stop tracking or to pretend metrics don't matter. It's to recognize comparison as a choice, not a reflex. That runner passing you isn't a statement about your running. They're just running their run. The split time that seemed slow yesterday might be appropriate for today's effort. Progress isn't always linear, and running isn't always about progress.
+
+The trap springs open when you notice it. When comparison arises, you can observe it rather than inhabit it. *There's the thought that I should be faster.* Then return to what's actually happening: breath, stride, the ground passing beneath you. The run as it is, not as it measures up.

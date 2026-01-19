@@ -1,0 +1,15 @@
+**Base Building**
+
+There's a period in training—usually winter, maybe spring—when the runs feel easy. Too easy. You're not racing, not hitting the track, not grinding up hills until your quads burn. You're just running, mostly conversational pace, accumulating miles like a squirrel hoards acorns. It feels inefficient, almost lazy. You could go faster. Your watch keeps suggesting you *should* go faster. But you don't.
+
+This is base building, and it's where endurance is actually made.
+
+The physiological adaptations that matter most for distance running happen at low intensities. When you run easy—65 to 75 percent of maximum heart rate, a pace where you can speak in full sentences—your body undergoes structural changes that no amount of hard intervals can replicate. Mitochondria multiply within muscle cells, turning them into more efficient energy factories. Capillary density increases, creating a denser network for oxygen delivery. The heart's stroke volume expands, pumping more blood per beat. These adaptations require time and consistency, not intensity. They happen when you run enough to stress the aerobic system but not so hard that you're constantly recovering.
+
+Exercise physiologist Stephen Seiler found that elite endurance athletes across sports spend roughly 80 percent of their training time at low intensity. Not because they're soft, but because it works. The aerobic base—the foundation of mitochondrial density, capillary networks, and efficient fat metabolism—can't be rushed. It's built through volume at manageable intensity, the kind of running that feels almost meditative in its steadiness.
+
+The mistake most runners make is treating every run like a race rehearsal, pushing tempo pace when easy would do more. Base building asks for patience. Six weeks, eight weeks, sometimes twelve weeks of running that feels unremarkable. No PRs, no Strava kudos for crushing a segment. Just miles, most of them easy, some of them long, all of them deposited into the bank account you'll withdraw from when the hard training starts.
+
+The long run—often the centerpiece of base building—teaches the body to use fat as fuel, to spare glycogen, to keep running when the initial spark of motivation fades. It strengthens tendons and ligaments, adapts bones to impact, builds the durability that prevents breakdown when training intensifies. The science is straightforward: stress the aerobic system consistently but moderately, and it remodels itself into something more capable.
+
+Base building is boring until you realize what it's actually doing. It's not wasted time or junk miles. It's the foundation beneath everything else—the reason you can hold pace in the final miles of a marathon, the reason intervals feel manageable instead of murderous, the reason your body doesn't crumble under the accumulated load of serious training. You can't skip it and expect the structure to hold. The aerobic base isn't optional. It's the substrate on which speed is built.

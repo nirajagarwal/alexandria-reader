@@ -1,0 +1,15 @@
+**The Aerobic System**
+
+You're three miles into an easy run, breathing steady, conversation-pace effort, and your body has settled into its most efficient engine: aerobic metabolism. The word means "with oxygen," and that's exactly what's happening—oxygen flowing from lungs to blood to muscle cells, where it fuels a remarkably clean-burning process that could, theoretically, keep you moving for hours.
+
+Inside the muscle cells, mitochondria—those cellular powerhouses you vaguely remember from biology class—are converting fat and carbohydrate into ATP, the energy currency your muscles spend with every contraction. The process requires oxygen but produces minimal waste: just carbon dioxide and water, both easily cleared. Unlike anaerobic metabolism, which floods muscles with hydrogen ions and burns like fire, aerobic energy production hums along quietly, sustainable as long as oxygen keeps arriving and fuel remains available.
+
+The aerobic system dominates any run longer than about two minutes. Sprint 100 meters and you're almost purely anaerobic—explosive, oxygen-independent, unsustainable. Run a 5K and you're perhaps 95% aerobic, even at race pace. A marathon? Nearly 99% aerobic, despite the suffering. The system's limitation isn't its capacity to produce energy but your ability to deliver oxygen and process fuel fast enough to maintain speed.
+
+This is why VO2 max matters—it measures the maximum rate your body can consume oxygen, setting the ceiling on aerobic power. This is why lactate threshold matters—it marks the intensity where aerobic metabolism can't quite keep pace and anaerobic contributions surge. And this is why easy running works: most training miles should stay aerobic, teaching the body to burn fat efficiently, multiply mitochondria, weave new capillary networks, and strengthen the oxidative enzymes that make the whole system run.
+
+Physiologist Bengt Saltin spent decades studying what makes elite distance runners different. He found their muscles packed with mitochondria—up to 40% more than untrained individuals. Their capillary density doubled or tripled. Their oxidative enzyme activity soared. All adaptations to chronic aerobic stimulus, all making the same basic process—oxygen in, energy out—work faster and more efficiently.
+
+The aerobic system is patient infrastructure, not instant power. It responds to volume, to consistency, to months and years of accumulating easy miles. You can feel it strengthen: runs that once left you breathless become conversational. Paces that felt hard drift toward comfortable. Your body learns to sip oxygen and burn fat, to preserve precious glycogen, to keep the engine humming longer and faster.
+
+This is the foundation of distance running—not the dramatic interval session or the crushing tempo, but the quiet metabolic machinery built mile by aerobic mile.
