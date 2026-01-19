@@ -234,282 +234,159 @@ class BookReader {
             .join('\n');
     }
 
-    // Paginate content using line-count based approach
-    // This ensures complete lines without cutoff
-    paginateEntry(entry, linesPerPage) {
-        const formatted = this.formatContent(entry.content);
-        const tempDiv = document.createElement('div');
-        tempDiv.innerHTML = formatted;
+    // Generate HTML for the entire book flow
+    buildMasterFlowHTML() {
+        if (!this.bookData) return '';
 
-        const elements = Array.from(tempDiv.children);
-        if (elements.length === 0) return [];
+        let html = '';
 
-        // Calculate lines per page based on viewport if not provided
-        const targetLines = linesPerPage || this.calculateLinesPerPage();
-
-        // Convert all content to plain text lines
-        const allLines = [];
-
-        for (const el of elements) {
-            const tagName = el.tagName.toLowerCase();
-            const text = el.textContent.trim();
-
-            if (!text) continue;
-
-            // Estimate characters per line (based on ~65 chars per line at current font)
-            const charsPerLine = 55;
-
-            if (['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].includes(tagName)) {
-                // Headings take more space
-                allLines.push({ type: 'heading', tagName, text, lines: 2 });
-            } else if (tagName === 'section-title' || el.className.includes('section-title')) {
-                allLines.push({ type: 'section-title', text, lines: 2 });
-            } else {
-                // Regular paragraphs - wrap to lines
-                const words = text.split(/\s+/);
-                let currentLine = '';
-                const paraLines = [];
-
-                for (const word of words) {
-                    const testLine = currentLine ? currentLine + ' ' + word : word;
-                    if (testLine.length > charsPerLine) {
-                        if (currentLine) paraLines.push(currentLine);
-                        currentLine = word;
-                    } else {
-                        currentLine = testLine;
-                    }
-                }
-                if (currentLine) paraLines.push(currentLine);
-
-                allLines.push({
-                    type: 'paragraph',
-                    tagName,
-                    textLines: paraLines,
-                    lines: paraLines.length + 1 // +1 for paragraph spacing
-                });
-            }
-        }
-
-        // Now paginate by line count
-        const pages = [];
-        let currentPageLines = 0;
-        let currentPageContent = [];
-
-        for (const item of allLines) {
-            // Will this item fit on current page?
-            if (currentPageLines + item.lines > targetLines && currentPageContent.length > 0) {
-                // Start a new page
-                pages.push(this.buildPageHTML(currentPageContent));
-                currentPageContent = [];
-                currentPageLines = 0;
-            }
-
-            // Can we split a paragraph across pages?
-            if (item.type === 'paragraph' && item.textLines.length > 1) {
-                const availableLines = targetLines - currentPageLines - 1; // -1 for spacing
-
-                if (availableLines >= 2 && availableLines < item.textLines.length) {
-                    // Split the paragraph
-                    const firstPart = item.textLines.slice(0, availableLines);
-                    const secondPart = item.textLines.slice(availableLines);
-
-                    // Add first part to current page
-                    currentPageContent.push({
-                        type: 'paragraph',
-                        tagName: item.tagName,
-                        textLines: firstPart,
-                        lines: firstPart.length + 1
-                    });
-
-                    // Finalize current page
-                    pages.push(this.buildPageHTML(currentPageContent));
-                    currentPageContent = [];
-                    currentPageLines = 0;
-
-                    // Add second part to next page
-                    currentPageContent.push({
-                        type: 'paragraph',
-                        tagName: item.tagName,
-                        textLines: secondPart,
-                        lines: secondPart.length + 1
-                    });
-                    currentPageLines = secondPart.length + 1;
-                    continue;
-                }
-            }
-
-            // Add whole item to current page
-            currentPageContent.push(item);
-            currentPageLines += item.lines;
-        }
-
-        // Add remaining content
-        if (currentPageContent.length > 0) {
-            pages.push(this.buildPageHTML(currentPageContent));
-        }
-
-        return pages;
-    }
-
-    // Build HTML from page content items
-    buildPageHTML(items) {
-        return items.map(item => {
-            if (item.type === 'heading') {
-                return `<${item.tagName}>${item.text}</${item.tagName}>`;
-            } else if (item.type === 'section-title') {
-                return `<div class="section-title">${item.text}</div>`;
-            } else if (item.type === 'paragraph') {
-                const text = item.textLines.join(' ');
-                const tag = item.tagName || 'p';
-                return `<${tag}>${text}</${tag}>`;
-            }
-            return '';
-        }).join('\n');
-    }
-
-    // Calculate lines per page based on viewport
-    calculateLinesPerPage() {
-        const viewportHeight = window.visualViewport ? window.visualViewport.height : window.innerHeight;
-        // Page height minus toolbar, padding, and headers
-        const pageHeight = Math.max(viewportHeight - 160, 400);
-        const contentHeight = pageHeight - 120 - 80; // Subtract padding and headers
-
-        // Line height is approximately 1.7em * 1.1em font-size = ~28px per line
-        const lineHeight = 28;
-        const linesPerPage = Math.floor(contentHeight / lineHeight);
-
-        return Math.max(10, Math.min(25, linesPerPage)); // Between 10 and 25 lines
-    }
-
-    // Build all book pages from data
-    buildBookPages() {
-        if (!this.bookData) return [];
-
-        const pages = [];
-
-        // Front cover
-        pages.push({
-            type: 'cover',
-            content: `
-                <div class="cover">
-                    <div class="cover-title">${this.bookData.title}</div>
-                    <div class="cover-subtitle">${this.bookData.descriptor || ''}</div>
-                    <div class="cover-publisher">Alexandria Press</div>
-                </div>
-            `
-        });
-
-        // Introduction (paginate if needed)
+        // Introduction
         if (this.bookData.introduction) {
-            const introPages = this.paginateEntry({ content: `# Introduction\n\n${this.bookData.introduction}` });
-
-            introPages.forEach((pageContent, index) => {
-                pages.push({
-                    title: index === 0 ? 'Introduction' : null,
-                    content: pageContent,
-                    pageNum: pages.length
-                });
-            });
+            html += `<div class="chapter-title">Introduction</div>`;
+            html += `<div class="body-content">${this.formatContent(this.bookData.introduction)}</div>`;
         }
 
         // Each entry (chapter)
         if (this.bookData.entries && this.bookData.entries.length > 0) {
-            console.log(`Processing ${this.bookData.entries.length} entries...`);
-            this.bookData.entries.forEach((entry, i) => {
-                // Skip entries without content
-                if (!entry.content) {
-                    console.warn(`Entry ${i} (${entry.name}) has no content, skipping`);
-                    return;
+            this.bookData.entries.forEach((entry) => {
+                if (!entry.content) return;
+
+                html += `<div class="chapter-title">${entry.name}</div>`;
+                if (entry.metadata?.section || entry.section) {
+                    html += `<div class="section-label">${entry.metadata?.section || entry.section}</div>`;
                 }
-
-                const entryPages = this.paginateEntry(entry);
-
-                if (entryPages.length === 0) {
-                    console.warn(`Entry ${i} (${entry.name}) produced 0 pages`);
-                    return;
-                }
-
-                entryPages.forEach((pageContent, pageIndex) => {
-                    const pageData = {
-                        title: pageIndex === 0 ? entry.name : null,
-                        section: pageIndex === 0 ? (entry.metadata?.section || entry.section) : null,
-                        content: pageContent,
-                        pageNum: pages.length
-                    };
-
-                    // Track first page of each entry for TOC
-                    if (pageIndex === 0) {
-                        this.tocItems.push({
-                            title: entry.name,
-                            pageIndex: pages.length
-                        });
-                    }
-
-                    pages.push(pageData);
-                });
+                html += `<div class="body-content">${this.formatContent(entry.content)}</div>`;
             });
-            console.log(`Total pages after entries: ${pages.length}`);
         }
 
-        // Back cover
-        pages.push({
-            type: 'cover',
-            content: `
-                <div class="cover">
-                    <div class="cover-publisher" style="margin-top: 0; margin-bottom: auto;">Alexandria Press</div>
-                    <div style="text-align: center; opacity: 0.8; line-height: 1.6; font-size: 0.95em;">
-                        <p>${this.bookData.descriptor || 'A generated collection'}</p>
-                        <p style="margin-top: 20px; font-size: 0.85em;">Generated by artificial intelligence<br>in conversation with humanity's wisdom</p>
-                    </div>
-                </div>
-            `
-        });
-
-        return pages;
+        return html;
     }
 
-    // Create page DOM elements
-    createPageElements(bookPages) {
+    // Deprecated: No longer used with the column flow approach
+    calculateLinesPerPage() {
+        return 0;
+    }
+
+    // Create page elements using Paged.js for high-quality fragmentation
+    async createPageElements(availableWidth, availableHeight) {
         const container = document.getElementById('readerBook');
-        if (!container) return;
+        const sourceContainer = document.getElementById('pagedSource');
+        if (!container || !sourceContainer) return 0;
 
+        // 1. Prepare Content for Paged.js
+        sourceContainer.innerHTML = this.buildMasterFlowHTML();
+
+        // 2. Configure Paged.js
+        const pageWidth = this.isMobile ? availableWidth : availableWidth / 2;
+        const pageHeight = availableHeight - 40; // More space for content
+
+        // Add Paged.js styles to the document dynamically for fragmentation
+        let style = document.getElementById('paged-js-styles');
+        if (!style) {
+            style = document.createElement('style');
+            style.id = 'paged-js-styles';
+            document.head.appendChild(style);
+        }
+        style.innerHTML = `
+            @page {
+                size: ${pageWidth}px ${pageHeight}px;
+                margin: 0;
+            }
+            .pagedjs_pages {
+                width: ${pageWidth}px;
+                height: ${pageHeight}px;
+            }
+            .pagedjs_page {
+                width: ${pageWidth}px;
+                height: ${pageHeight}px;
+            }
+        `;
+
+        // 3. Run Paged.js Fragmentation
+        console.log('Starting Paged.js fragmentation...');
+        const paged = new Paged.Previewer();
+        const pagedContainer = document.createElement('div');
+        pagedContainer.style.visibility = 'hidden';
+        pagedContainer.style.position = 'absolute';
+        pagedContainer.style.zIndex = '-1000';
+        document.body.appendChild(pagedContainer);
+
+        await paged.preview(sourceContainer.innerHTML, [], pagedContainer);
+        console.log('Paged.js fragmentation complete');
+
+        // 4. Extract Fragmented Pages
+        const pagedPages = pagedContainer.querySelectorAll('.pagedjs_page');
+        const numContentPages = pagedPages.length;
+        console.log(`Extracted ${numContentPages} content pages`);
+
+        // 5. Build Physical Pages for PageFlip
         container.innerHTML = '';
+        this.tocItems = [];
 
-        bookPages.forEach((pageData, index) => {
-            const pageDiv = document.createElement('div');
-            pageDiv.className = 'page';
-            pageDiv.setAttribute('data-density', 'hard');
+        // Front Cover
+        this.addPhysicalPage(container, 'cover', `
+            <div class="cover">
+                <div class="cover-title">${this.bookData.title}</div>
+                <div class="cover-subtitle">${this.bookData.descriptor || ''}</div>
+                <div class="cover-publisher">Alexandria Press</div>
+            </div>
+        `, 0);
 
-            // Add canvas for texture
-            const canvas = document.createElement('canvas');
-            canvas.className = 'paper-texture';
-            pageDiv.appendChild(canvas);
+        // Content Pages
+        pagedPages.forEach((pagedPage, i) => {
+            const contentHTML = pagedPage.querySelector('.pagedjs_page_content').innerHTML;
 
-            // Add content
-            const contentDiv = document.createElement('div');
-            contentDiv.className = 'page-content';
-
-            if (pageData.type === 'cover') {
-                contentDiv.innerHTML = pageData.content;
-            } else {
-                let html = '<div class="publisher">Alexandria Press</div>';
-                if (pageData.title) {
-                    html += `<div class="chapter-title">${pageData.title}</div>`;
-                }
-                if (pageData.section) {
-                    html += `<div class="section-label">${pageData.section}</div>`;
-                }
-                html += `<div class="body-text">${pageData.content}</div>`;
-                if (pageData.pageNum) {
-                    const pageNumClass = index % 2 === 0 ? 'right' : 'left';
-                    html += `<div class="page-number ${pageNumClass}">${pageData.pageNum}</div>`;
-                }
-                contentDiv.innerHTML = html;
+            // Check for chapter titles to update TOC
+            const chapterTitle = pagedPage.querySelector('.chapter-title');
+            if (chapterTitle) {
+                this.tocItems.push({
+                    title: chapterTitle.textContent.trim(),
+                    pageIndex: i + 1 // +1 for cover
+                });
             }
 
-            pageDiv.appendChild(contentDiv);
-            container.appendChild(pageDiv);
+            const pageHTML = `
+                <div class="publisher">Alexandria Press</div>
+                <div class="body-text">${contentHTML}</div>
+                <div class="page-number ${i % 2 === 0 ? 'left' : 'right'}">${i + 1}</div>
+            `;
+            this.addPhysicalPage(container, 'content', pageHTML, i + 1);
         });
+
+        // Back Cover
+        this.addPhysicalPage(container, 'cover', `
+            <div class="cover">
+                <div class="cover-publisher" style="margin-top: 0; margin-bottom: auto;">Alexandria Press</div>
+                <div style="text-align: center; opacity: 0.8; line-height: 1.6; font-size: 0.95em;">
+                    <p>${this.bookData.descriptor || 'A generated collection'}</p>
+                    <p style="margin-top: 20px; font-size: 0.85em;">Generated by artificial intelligence<br>in conversation with humanity's wisdom</p>
+                </div>
+            </div>
+        `, numContentPages + 1);
+
+        // Cleanup
+        document.body.removeChild(pagedContainer);
+        sourceContainer.innerHTML = '';
+
+        return numContentPages + 2;
+    }
+
+    addPhysicalPage(container, type, html, index) {
+        const pageDiv = document.createElement('div');
+        pageDiv.className = 'page';
+        pageDiv.setAttribute('data-density', 'hard');
+
+        // Add canvas for texture
+        const canvas = document.createElement('canvas');
+        canvas.className = 'paper-texture';
+        pageDiv.appendChild(canvas);
+
+        const contentDiv = document.createElement('div');
+        contentDiv.className = 'page-content';
+        contentDiv.innerHTML = html;
+
+        pageDiv.appendChild(contentDiv);
+        container.appendChild(pageDiv);
     }
 
     // Initialize page flip library
@@ -528,9 +405,9 @@ class BookReader {
             height: height,
             size: 'fixed',
             minWidth: 300,
-            maxWidth: 600,
+            maxWidth: 1000,
             minHeight: 400,
-            maxHeight: 900,
+            maxHeight: 1200,
             showCover: true,
             flippingTime: 1000,
             usePortrait: this.isMobile,
@@ -727,8 +604,8 @@ class BookReader {
         const viewportHeight = window.visualViewport ? window.visualViewport.height : window.innerHeight;
         this.isMobile = viewportWidth < 768;
 
-        const availableHeight = Math.max(viewportHeight - 100, 400);
-        const availableWidth = Math.min(viewportWidth - 40, this.isMobile ? 500 : 1000);
+        const availableHeight = Math.max(viewportHeight - 160, 400); // More room for toolbar and padding
+        const availableWidth = Math.min(viewportWidth - 40, this.isMobile ? 600 : 1400);
 
         // Set up container HTML
         container.innerHTML = `
@@ -739,19 +616,16 @@ class BookReader {
 
         // Build pages
         console.log('Building book pages...');
-        const bookPages = this.buildBookPages();
-        console.log(`Built ${bookPages.length} pages`);
+        const totalPhysicalPages = await this.createPageElements(availableWidth, availableHeight);
+        console.log(`Built ${totalPhysicalPages} pages`);
 
-        if (bookPages.length === 0) {
+        if (totalPhysicalPages === 0) {
             container.innerHTML = '<div style="color:white; text-align:center; padding:40px;">No content to display</div>';
             return;
         }
 
-        // Create page elements
-        this.createPageElements(bookPages);
-
         // Add toolbar
-        this.addToolbar(bookPages.length);
+        this.addToolbar(totalPhysicalPages);
 
         // Initialize PageFlip
         console.log('Initializing PageFlip...');

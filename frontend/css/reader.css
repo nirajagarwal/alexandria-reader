@@ -32,13 +32,15 @@ body {
 
 /* Container */
 #bookReaderContent {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* Center vertically */
     position: relative;
+    overflow: hidden;
     perspective: 2000px;
 }
 
@@ -54,6 +56,10 @@ body {
 
 #readerBook {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    max-height: calc(100vh - 100px);
+    /* Leave room for toolbar */
+    margin: auto;
 }
 
 /* Page Structure */
@@ -105,6 +111,36 @@ body {
     flex-direction: column;
     font-family: var(--font-serif);
     color: var(--text-color);
+}
+
+/* Master content elements */
+.master-flow p,
+.master-flow h1,
+.master-flow h2,
+.master-flow h3,
+.master-flow .section-title,
+.master-flow .section-label {
+    break-inside: avoid;
+    margin-bottom: 1em;
+}
+
+.master-flow .chapter-title {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+    break-before: column;
+    /* Force each chapter to start on a new page/column */
+}
+
+.master-flow .section-label {
+    text-align: center;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    opacity: 0.6;
+    margin-top: -10px;
 }
 
 /* Publisher Header */
@@ -233,19 +269,23 @@ body {
 
 /* Toolbar */
 .reader-toolbar {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(10px);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    height: 60px;
+    /* Fixed height for consistency */
+    background: rgba(15, 8, 5, 0.98);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(222, 184, 135, 0.3);
     color: white;
     padding: 0;
     display: flex;
     flex-direction: column;
-    z-index: 2050;
+    z-index: 9999;
+    /* Top level */
     transition: transform 0.3s ease;
+    box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.8);
 }
 
 .reader-toolbar-progress {
@@ -305,20 +345,31 @@ body {
 
 /* Close Button */
 .reader-close-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: rgba(255, 255, 255, 0.5);
-    background: none;
-    border: none;
-    font-size: 2rem;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    color: #deb887;
+    /* Themed color */
+    background: rgba(0, 0, 0, 0.6);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(222, 184, 135, 0.3);
+    font-size: 1.8rem;
     cursor: pointer;
-    z-index: 2100;
+    z-index: 6000;
+    /* Highest z-index */
     line-height: 1;
+    transition: all 0.3s;
 }
 
 .reader-close-btn:hover {
     color: white;
+    background: rgba(0, 0, 0, 0.8);
+    transform: rotate(90deg);
 }
 
 /* Mobile Responsive */
