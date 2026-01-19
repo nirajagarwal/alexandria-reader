@@ -201,6 +201,8 @@ body {
     hyphens: auto;
     flex: 1;
     overflow: hidden;
+    padding: 0 60px;
+    /* Match Paged.js margin-left/-right */
 }
 
 .body-text p {
@@ -218,18 +220,18 @@ body {
 /* Page Number */
 .page-number {
     position: absolute;
-    bottom: 35px;
+    bottom: 25px;
     font-size: 0.85em;
     opacity: 0.6;
     color: var(--text-color);
 }
 
 .page-number.left {
-    left: 15px;
+    left: 60px;
 }
 
 .page-number.right {
-    right: 15px;
+    right: 60px;
 }
 
 /* Cover Page */

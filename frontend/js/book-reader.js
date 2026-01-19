@@ -323,14 +323,15 @@ class BookReader {
         document.body.appendChild(pagedContainer);
 
         // Prepend the @page styles to the content so Paged.js definitely sees them
+        // We set side margins to 60px to match what we will add as padding in the viewer
         const dynamicStyles = `
             <style>
                 @page {
                     size: ${pageWidth}px ${pageHeight}px;
-                    margin-top: 60px;
-                    margin-bottom: 120px;
-                    margin-left: 50px;
-                    margin-right: 50px;
+                    margin-top: 80px; 
+                    margin-bottom: 80px;
+                    margin-left: 60px;
+                    margin-right: 60px;
                 }
                 .chapter-title {
                     break-before: page !important;
@@ -375,7 +376,6 @@ class BookReader {
             }
 
             const pageHTML = `
-                <div class="publisher">Alexandria Press</div>
                 <div class="body-text">${contentHTML}</div>
                 <div class="page-number ${i % 2 === 0 ? 'left' : 'right'}">${i + 1}</div>
             `;
@@ -630,51 +630,55 @@ class BookReader {
     // Calculate optimal book dimensions to fit in viewport
     calculateDimensions(viewportW, viewportH) {
         const toolbarHeight = 60;
-        const paddingV = 40; // Vertical padding
-        const paddingH = 0;  // Horizontal padding (wrapper is centered by flex)
+        const paddingV = 40; // Vertical padding for top/bottom
+        const paddingH = 60; // Horizontal padding for left/right safety
 
         const availableH = viewportH - toolbarHeight - paddingV;
         const availableW = viewportW - paddingH;
 
         if (this.isMobile) {
             return {
-                pageWidth: availableW - 20, // Margin
+                pageWidth: availableW,
                 pageHeight: availableH,
-                spreadWidth: availableW - 20,
+                spreadWidth: availableW,
                 height: availableH
             };
         }
 
         // DESKTOP:
-        // We want a spread of 2 pages that fits within availableW and availableH
-        // Initial target: book ratio ~ 1.4 (height/width) per page
+        // Prioritize utilizing the full width while maintaining a reasonable aspect ratio.
+        // We want 2 pages side-by-side.
 
-        const targetRatio = 1.414; // A-series like ratio (Height / Width)
+        let spreadWidth = availableW;
+        let pHeight = availableH;
 
-        // 1. Try fitting by height first
-        let pageHeight = availableH;
-        let pageWidth = pageHeight / targetRatio;
+        // Calculate max width per page based on height (don't get too square/wide)
+        // A minimum aspect ratio of 1.2 (Height/Width) prevents it from looking like a landscape monitor 
+        const minAspectRatio = 1.2;
+        const maxPageWidth = pHeight / minAspectRatio;
 
-        // Check if spread (2 * pageWidth) exceeds available width
-        let spreadWidth = pageWidth * 2;
-
-        if (spreadWidth > availableW) {
-            // Too wide, constrain by width
-            spreadWidth = availableW - 40; // Small safety margin
-            pageWidth = spreadWidth / 2;
-            pageHeight = pageWidth * targetRatio;
+        // If the spread requires pages wider than maxPageWidth, constrain the width
+        if (spreadWidth / 2 > maxPageWidth) {
+            spreadWidth = maxPageWidth * 2;
         }
 
-        // Round to integer for clean rendering
-        pageWidth = Math.floor(pageWidth);
-        pageHeight = Math.floor(pageHeight);
-        spreadWidth = pageWidth * 2;
+        // Calculate height based on this width, ensuring it fits
+        // But actually we prefer filling height first usually.
+        // Let's stick to: Height = Available Height (maximize vertical space)
+        // Width = Spread Width / 2 (maximize horizontal space up to limit)
+
+        let pWidth = spreadWidth / 2;
+
+        // Round to integer
+        pWidth = Math.floor(pWidth);
+        pHeight = Math.floor(pHeight);
+        spreadWidth = pWidth * 2;
 
         return {
-            pageWidth,
-            pageHeight,
-            spreadWidth,
-            height: pageHeight
+            pageWidth: pWidth,
+            pageHeight: pHeight,
+            spreadWidth: spreadWidth,
+            height: pHeight
         };
     }
 
