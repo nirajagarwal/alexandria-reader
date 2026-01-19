@@ -171,17 +171,18 @@ body {
 /* Page Number */
 .page-number {
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
     font-size: 0.85em;
     opacity: 0.6;
+    color: var(--text-color);
 }
 
 .page-number.left {
-    left: 50px;
+    left: 15px;
 }
 
 .page-number.right {
-    right: 50px;
+    right: 15px;
 }
 
 /* Cover Page */
@@ -355,10 +356,113 @@ body {
     }
 
     .page-number.left {
-        left: 25px;
+        left: 12px;
     }
 
     .page-number.right {
-        right: 25px;
+        right: 12px;
     }
+}
+
+/* Table of Contents Menu */
+.toc-menu {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(20, 12, 8, 0.95);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(222, 184, 135, 0.2);
+    border-radius: 12px;
+    padding: 0;
+    max-height: 60vh;
+    min-width: 280px;
+    max-width: 400px;
+    overflow: hidden;
+    z-index: 2100;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.toc-menu.open {
+    display: block;
+    animation: toc-slide-up 0.25s ease-out;
+}
+
+@keyframes toc-slide-up {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+.toc-header {
+    padding: 14px 18px;
+    border-bottom: 1px solid rgba(222, 184, 135, 0.15);
+    font-family: var(--font-sans);
+    font-size: 0.75em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: rgba(222, 184, 135, 0.8);
+}
+
+.toc-content {
+    max-height: calc(60vh - 50px);
+    overflow-y: auto;
+    padding: 8px 0;
+}
+
+.toc-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.toc-content::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.toc-content::-webkit-scrollbar-thumb {
+    background: rgba(222, 184, 135, 0.3);
+    border-radius: 3px;
+}
+
+.toc-item {
+    display: block;
+    padding: 12px 18px;
+    font-family: var(--font-serif);
+    font-size: 0.95em;
+    color: rgba(255, 255, 255, 0.85);
+    cursor: pointer;
+    transition: all 0.15s ease;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+}
+
+.toc-item:hover {
+    background: rgba(222, 184, 135, 0.1);
+    color: #deb887;
+}
+
+.toc-item.active {
+    background: rgba(222, 184, 135, 0.15);
+    color: #deb887;
+}
+
+.toc-item-page {
+    float: right;
+    font-size: 0.85em;
+    opacity: 0.5;
+    font-family: var(--font-sans);
+}
+
+/* Menu Button in Toolbar */
+.reader-menu-btn {
+    position: relative;
 }

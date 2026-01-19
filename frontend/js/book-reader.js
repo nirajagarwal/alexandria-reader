@@ -208,6 +208,7 @@ class BookReader {
         };
         this.pagesWithTexture = new Set();
         this.isMobile = window.innerWidth < 768;
+        this.tocItems = []; // Track chapter/section pages for TOC
     }
 
     // Convert markdown content to HTML paragraphs (simple approach)
@@ -233,9 +234,9 @@ class BookReader {
             .join('\n');
     }
 
-    // Paginate content using DOM-based height measurement
-    // This properly splits paragraphs across pages for accurate reflow
-    paginateEntry(entry, pageHeight) {
+    // Paginate content using line-count based approach
+    // This ensures complete lines without cutoff
+    paginateEntry(entry, linesPerPage) {
         const formatted = this.formatContent(entry.content);
         const tempDiv = document.createElement('div');
         tempDiv.innerHTML = formatted;
@@ -243,152 +244,141 @@ class BookReader {
         const elements = Array.from(tempDiv.children);
         if (elements.length === 0) return [];
 
-        // Use provided height or calculate based on viewport
-        const targetHeight = pageHeight || this.calculatePageContentHeight();
+        // Calculate lines per page based on viewport if not provided
+        const targetLines = linesPerPage || this.calculateLinesPerPage();
 
-        // Create hidden measurement container matching page styling
-        const measureContainer = document.createElement('div');
-        measureContainer.className = 'body-text';
-        measureContainer.style.cssText = `
-            position: absolute;
-            visibility: hidden;
-            width: 380px;
-            font-family: 'Crimson Pro', Georgia, serif;
-            font-size: 1.1em;
-            line-height: 1.7;
-            text-align: justify;
-            padding: 0;
-            top: 0; left: 0;
-        `;
-        document.body.appendChild(measureContainer);
-
-        const pages = [];
-        let currentPageElements = [];
-
-        // Helper to measure current page height
-        const measureHeight = () => {
-            measureContainer.innerHTML = '';
-            currentPageElements.forEach(el => {
-                measureContainer.appendChild(el.cloneNode(true));
-            });
-            return measureContainer.offsetHeight;
-        };
+        // Convert all content to plain text lines
+        const allLines = [];
 
         for (const el of elements) {
-            // Try adding the whole element
-            currentPageElements.push(el.cloneNode(true));
+            const tagName = el.tagName.toLowerCase();
+            const text = el.textContent.trim();
 
-            if (measureHeight() <= targetHeight) {
-                // Fits! Continue to next element
-                continue;
-            }
+            if (!text) continue;
 
-            // Doesn't fit - remove it and handle
-            currentPageElements.pop();
+            // Estimate characters per line (based on ~65 chars per line at current font)
+            const charsPerLine = 55;
 
-            // Can we split this element? (Only split paragraph-like elements)
-            if (el.nodeType === Node.ELEMENT_NODE &&
-                ['P', 'DIV', 'LI', 'BLOCKQUOTE'].includes(el.tagName)) {
-
-                // Split the paragraph across pages
-                const [firstPart, secondPart] = this.splitElement(
-                    el, currentPageElements, measureContainer, targetHeight
-                );
-
-                if (firstPart) {
-                    currentPageElements.push(firstPart);
-                }
-
-                // Finalize current page
-                if (currentPageElements.length > 0) {
-                    pages.push(currentPageElements.map(e => e.outerHTML).join(''));
-                    currentPageElements = [];
-                }
-
-                // Add remaining part to next page
-                if (secondPart) {
-                    currentPageElements.push(secondPart);
-                }
+            if (['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].includes(tagName)) {
+                // Headings take more space
+                allLines.push({ type: 'heading', tagName, text, lines: 2 });
+            } else if (tagName === 'section-title' || el.className.includes('section-title')) {
+                allLines.push({ type: 'section-title', text, lines: 2 });
             } else {
-                // Can't split (heading, image, etc.) - finalize page and move element to next
-                if (currentPageElements.length > 0) {
-                    pages.push(currentPageElements.map(e => e.outerHTML).join(''));
-                    currentPageElements = [];
+                // Regular paragraphs - wrap to lines
+                const words = text.split(/\s+/);
+                let currentLine = '';
+                const paraLines = [];
+
+                for (const word of words) {
+                    const testLine = currentLine ? currentLine + ' ' + word : word;
+                    if (testLine.length > charsPerLine) {
+                        if (currentLine) paraLines.push(currentLine);
+                        currentLine = word;
+                    } else {
+                        currentLine = testLine;
+                    }
                 }
-                currentPageElements.push(el.cloneNode(true));
+                if (currentLine) paraLines.push(currentLine);
+
+                allLines.push({
+                    type: 'paragraph',
+                    tagName,
+                    textLines: paraLines,
+                    lines: paraLines.length + 1 // +1 for paragraph spacing
+                });
             }
+        }
+
+        // Now paginate by line count
+        const pages = [];
+        let currentPageLines = 0;
+        let currentPageContent = [];
+
+        for (const item of allLines) {
+            // Will this item fit on current page?
+            if (currentPageLines + item.lines > targetLines && currentPageContent.length > 0) {
+                // Start a new page
+                pages.push(this.buildPageHTML(currentPageContent));
+                currentPageContent = [];
+                currentPageLines = 0;
+            }
+
+            // Can we split a paragraph across pages?
+            if (item.type === 'paragraph' && item.textLines.length > 1) {
+                const availableLines = targetLines - currentPageLines - 1; // -1 for spacing
+
+                if (availableLines >= 2 && availableLines < item.textLines.length) {
+                    // Split the paragraph
+                    const firstPart = item.textLines.slice(0, availableLines);
+                    const secondPart = item.textLines.slice(availableLines);
+
+                    // Add first part to current page
+                    currentPageContent.push({
+                        type: 'paragraph',
+                        tagName: item.tagName,
+                        textLines: firstPart,
+                        lines: firstPart.length + 1
+                    });
+
+                    // Finalize current page
+                    pages.push(this.buildPageHTML(currentPageContent));
+                    currentPageContent = [];
+                    currentPageLines = 0;
+
+                    // Add second part to next page
+                    currentPageContent.push({
+                        type: 'paragraph',
+                        tagName: item.tagName,
+                        textLines: secondPart,
+                        lines: secondPart.length + 1
+                    });
+                    currentPageLines = secondPart.length + 1;
+                    continue;
+                }
+            }
+
+            // Add whole item to current page
+            currentPageContent.push(item);
+            currentPageLines += item.lines;
         }
 
         // Add remaining content
-        if (currentPageElements.length > 0) {
-            pages.push(currentPageElements.map(e => e.outerHTML).join(''));
+        if (currentPageContent.length > 0) {
+            pages.push(this.buildPageHTML(currentPageContent));
         }
 
-        document.body.removeChild(measureContainer);
         return pages;
     }
 
-    // Split an element (paragraph) into two parts that fit the page
-    splitElement(originalEl, currentPageElements, measureContainer, targetHeight) {
-        const text = originalEl.textContent;
-        const words = text.split(/\s+/);
-
-        if (words.length <= 1) {
-            // Can't split single word - return whole element for next page
-            return [null, originalEl.cloneNode(true)];
-        }
-
-        // Create clone for first part
-        const part1 = originalEl.cloneNode(false);
-
-        // Binary search for optimal split point
-        let low = 0;
-        let high = words.length;
-        let bestFit = 0;
-
-        while (low < high) {
-            const mid = Math.floor((low + high + 1) / 2);
-            part1.textContent = words.slice(0, mid).join(' ');
-
-            // Measure with this split
-            measureContainer.innerHTML = '';
-            currentPageElements.forEach(e => measureContainer.appendChild(e.cloneNode(true)));
-            measureContainer.appendChild(part1);
-
-            if (measureContainer.offsetHeight <= targetHeight) {
-                bestFit = mid;
-                low = mid;
-            } else {
-                high = mid - 1;
+    // Build HTML from page content items
+    buildPageHTML(items) {
+        return items.map(item => {
+            if (item.type === 'heading') {
+                return `<${item.tagName}>${item.text}</${item.tagName}>`;
+            } else if (item.type === 'section-title') {
+                return `<div class="section-title">${item.text}</div>`;
+            } else if (item.type === 'paragraph') {
+                const text = item.textLines.join(' ');
+                const tag = item.tagName || 'p';
+                return `<${tag}>${text}</${tag}>`;
             }
-        }
-
-        if (bestFit === 0) {
-            // Not even one word fits with current page content
-            return [null, originalEl.cloneNode(true)];
-        }
-
-        if (bestFit >= words.length) {
-            // Everything fits
-            part1.textContent = text;
-            return [part1, null];
-        }
-
-        // Create both parts
-        part1.textContent = words.slice(0, bestFit).join(' ');
-        const part2 = originalEl.cloneNode(false);
-        part2.textContent = words.slice(bestFit).join(' ');
-
-        return [part1, part2];
+            return '';
+        }).join('\n');
     }
 
-    // Calculate available height for page content
-    calculatePageContentHeight() {
-        // Page has 60px padding top/bottom and ~80px for publisher/chapter headers
+    // Calculate lines per page based on viewport
+    calculateLinesPerPage() {
         const viewportHeight = window.visualViewport ? window.visualViewport.height : window.innerHeight;
-        const pageHeight = Math.max(viewportHeight - 160, 400); // Subtract toolbar/margins
+        // Page height minus toolbar, padding, and headers
+        const pageHeight = Math.max(viewportHeight - 160, 400);
         const contentHeight = pageHeight - 120 - 80; // Subtract padding and headers
-        return Math.max(200, contentHeight);
+
+        // Line height is approximately 1.7em * 1.1em font-size = ~28px per line
+        const lineHeight = 28;
+        const linesPerPage = Math.floor(contentHeight / lineHeight);
+
+        return Math.max(10, Math.min(25, linesPerPage)); // Between 10 and 25 lines
     }
 
     // Build all book pages from data
@@ -440,12 +430,22 @@ class BookReader {
                 }
 
                 entryPages.forEach((pageContent, pageIndex) => {
-                    pages.push({
+                    const pageData = {
                         title: pageIndex === 0 ? entry.name : null,
                         section: pageIndex === 0 ? (entry.metadata?.section || entry.section) : null,
                         content: pageContent,
                         pageNum: pages.length
-                    });
+                    };
+
+                    // Track first page of each entry for TOC
+                    if (pageIndex === 0) {
+                        this.tocItems.push({
+                            title: entry.name,
+                            pageIndex: pages.length
+                        });
+                    }
+
+                    pages.push(pageData);
                 });
             });
             console.log(`Total pages after entries: ${pages.length}`);
@@ -635,6 +635,13 @@ class BookReader {
                 <button class="reader-tool-btn" id="readerPrevBtn" title="Previous Page">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
                 </button>
+                <button class="reader-tool-btn reader-menu-btn" id="readerMenuBtn" title="Table of Contents">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                </button>
                 <span class="reader-page-info" id="readerPageInfo">1 / ${totalPages}</span>
                 <button class="reader-tool-btn" id="readerNextBtn" title="Next Page">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
@@ -642,6 +649,66 @@ class BookReader {
             </div>
         `;
         container.appendChild(toolbar);
+
+        // Add TOC Menu
+        this.addTocMenu(container);
+    }
+
+    // Add Table of Contents Menu
+    addTocMenu(container) {
+        const tocMenu = document.createElement('div');
+        tocMenu.className = 'toc-menu';
+        tocMenu.id = 'readerTocMenu';
+
+        let tocHtml = `<div class="toc-header">Contents</div><div class="toc-content">`;
+
+        for (const item of this.tocItems) {
+            tocHtml += `
+                <button class="toc-item" data-page="${item.pageIndex}">
+                    ${item.title}
+                    <span class="toc-item-page">${item.pageIndex + 1}</span>
+                </button>
+            `;
+        }
+
+        tocHtml += `</div>`;
+        tocMenu.innerHTML = tocHtml;
+        container.appendChild(tocMenu);
+
+        // Setup TOC event listeners
+        this.setupTocMenu();
+    }
+
+    // Setup TOC Menu interactions
+    setupTocMenu() {
+        const menuBtn = document.getElementById('readerMenuBtn');
+        const tocMenu = document.getElementById('readerTocMenu');
+
+        if (!menuBtn || !tocMenu) return;
+
+        // Toggle menu on button click
+        menuBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            tocMenu.classList.toggle('open');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!tocMenu.contains(e.target) && e.target !== menuBtn) {
+                tocMenu.classList.remove('open');
+            }
+        });
+
+        // Navigate to chapter on item click
+        tocMenu.querySelectorAll('.toc-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const pageIndex = parseInt(item.dataset.page, 10);
+                if (this.pageFlip && !isNaN(pageIndex)) {
+                    this.pageFlip.turnToPage(pageIndex);
+                    tocMenu.classList.remove('open');
+                }
+            });
+        });
     }
 
     // Main initialization
