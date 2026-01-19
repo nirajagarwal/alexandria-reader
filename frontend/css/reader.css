@@ -16,8 +16,23 @@
     /* This does NOT change with window size. We scale the VIEW, not the BOOK. */
     --page-height: 825px;
     --page-width: 550px;
-    --print-margin: 60px;
-    /* Safe print area for text */
+
+    /* Margins */
+    --margin-top: 40px;
+    --margin-bottom: 100px;
+    /* Larger to clear page numbers */
+    --margin-side: 40px;
+}
+
+/* PAGED.JS CONFIGURATION */
+/* This is the master control for the fragmentation engine */
+@page {
+    size: 550px 825px;
+    margin-top: 60px;
+    margin-bottom: 150px;
+    /* Increased to 150px for safety */
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 *,
@@ -37,7 +52,22 @@ body {
     overflow: hidden;
     background: var(--reader-bg);
     font-family: var(--font-serif);
-    color: white;
+    /* CRITICAL FIX: Use the variable. Do NOT default to white. */
+    color: var(--text-color);
+}
+
+/* Force dark color on headers to override any inherited white from cover styles */
+h1,
+h2,
+h3,
+h4,
+.chapter-title,
+.section-title {
+    color: var(--text-color) !important;
+    overflow-wrap: break-word;
+    /* Fix clipping */
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
 /* Container */
@@ -86,7 +116,7 @@ body {
     /* ENFORCED DIMENSIONS from CSS Variables */
     width: var(--page-width) !important;
     height: var(--page-height) !important;
-    padding: var(--print-margin) !important;
+    padding: var(--margin-top) var(--margin-side) var(--margin-bottom) var(--margin-side) !important;
     /* Paged.js handles the margins internally now */
 
     background: var(--paper-color);
@@ -128,45 +158,50 @@ body {
 
 /* Page Content Container */
 .page-content {
+    display: block;
     position: relative;
     z-index: 1;
-    height: 100%;
-    /* display: flex;  <-- REMOVED: Blocks Paged.js flow */
-    /* flex-direction: column; <-- REMOVED */
-    display: block;
-    /* Enforce block for Paged.js */
-    font-family: var(--font-serif);
-    color: var(--text-color);
+    /* Bare bones: Just hold the text. No heights, no flex. */
 }
 
-/* Master content elements */
-.master-flow p,
-.master-flow h1,
-.master-flow h2,
-.master-flow h3,
-.master-flow .section-title,
-.master-flow .section-label {
-    break-inside: avoid;
+/* Typography Basics */
+.body-text {
+    font-family: var(--font-serif);
+    font-size: 1.1em;
+    line-height: 1.6;
+    /* Standard comfortable reading */
+    color: var(--text-color);
+    text-align: left;
+    /* Ragged right */
+    hyphens: auto;
+}
+
+.body-text p {
     margin-bottom: 1em;
 }
 
-.master-flow .chapter-title {
-    font-size: 1.8em;
-    margin-bottom: 30px;
+/* Headers */
+.master-flow h1,
+.master-flow h2,
+.master-flow h3 {
     font-weight: 700;
     line-height: 1.3;
+    margin-bottom: 0.8em;
     text-align: center;
-    break-before: column;
-    /* Force each chapter to start on a new page/column */
 }
 
-.master-flow .section-label {
+/* Chapter Title - Special Case (Needs to start new page) */
+.chapter-title {
+    font-size: 1.8em;
+    margin-top: 10%;
+    /* Visual drop */
+    margin-bottom: 2em;
     text-align: center;
-    font-size: 0.9em;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    opacity: 0.6;
-    margin-top: -10px;
+    font-weight: 700;
+}
+
+.body-text em {
+    font-style: italic;
 }
 
 /* Publisher Header */
@@ -178,18 +213,6 @@ body {
     margin-bottom: 30px;
     opacity: 0.6;
     font-weight: 600;
-}
-
-/* Chapter Title */
-.chapter-title {
-    font-size: 1.6em;
-    margin-bottom: 25px;
-    font-weight: 700;
-    line-height: 1.3;
-    text-align: center;
-
-    break-before: page;
-    page-break-before: always;
 }
 
 /* Section Label */
@@ -211,45 +234,21 @@ body {
     font-weight: 600;
 }
 
-.body-text {
-    font-size: 1.1em;
-    line-height: 1.7;
-    text-align: justify;
-    hyphens: auto;
-    flex: 1;
-    overflow: hidden;
-    padding: 0;
-    /* Handled by .page padding now */
-}
-
-.body-text p {
-    margin-bottom: 1em;
-}
-
 .body-text strong {
     font-weight: 600;
 }
 
-.body-text em {
-    font-style: italic;
-}
 
-/* Page Number */
+/* Page Number - DEPRECATED (Handled by Paged.js Native Footer) */
+/*
 .page-number {
     position: absolute;
-    bottom: 25px;
+    bottom: 35px;
     font-size: 0.85em;
     opacity: 0.6;
     color: var(--text-color);
 }
-
-.page-number.left {
-    left: 60px;
-}
-
-.page-number.right {
-    right: 60px;
-}
+*/
 
 /* Cover Page */
 .cover {

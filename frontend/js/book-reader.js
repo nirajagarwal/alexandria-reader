@@ -276,12 +276,8 @@ class BookReader {
         // 1. Prepare Content for Paged.js
         sourceContainer.innerHTML = this.buildMasterFlowHTML();
 
-        // 2. Configure Paged.js with SAFE AREA dimensions
-        // We tell Paged.js the page is only as big as the "Content Box" (Total - Margins)
-        // This ensures the content it generates fits exactly into the padded .page container
-        const margin = dims.margin;
-        const safeWidth = dims.pageWidth - (margin * 2);
-        const safeHeight = dims.pageHeight - (margin * 2);
+        // 2. Configure Paged.js with NATIVE DIMENSIONS
+        // We ensure a 1:1 match between Paged.js layout and our visual container
 
         // Add Paged.js styles to the document dynamically for fragmentation
         let style = document.getElementById('paged-js-styles');
@@ -291,19 +287,9 @@ class BookReader {
             document.head.appendChild(style);
         }
 
+        // We now rely on reader.css for the @page definition (size & margins)
+        // But we inject the chapter break rule just in case
         style.innerHTML = `
-            @page {
-                size: ${safeWidth}px ${safeHeight}px;
-                margin: 0;
-            }
-            .pagedjs_pages {
-                width: ${safeWidth}px;
-                height: ${safeHeight}px;
-            }
-            .pagedjs_page {
-                width: ${safeWidth}px;
-                height: ${safeHeight}px;
-            }
             .chapter-title {
                 break-before: page !important;
                 page-break-before: always !important;
@@ -319,74 +305,150 @@ class BookReader {
         pagedContainer.style.zIndex = '-1000';
         document.body.appendChild(pagedContainer);
 
-        // Prepend the @page styles to the content so Paged.js definitely sees them
+        // Prepend pure CSS configuration directly to guarantee Paged.js sees it
+        // (Bypasses potential file loading issues with reader.css)
         const dynamicStyles = `
             <style>
+                /* 1. Global Page Setup (Base) */
                 @page {
-                    size: ${safeWidth}px ${safeHeight}px;
-                    margin: 0;
+                    size: 550px 825px;
+                    margin-top: 40px;  /* Reduced from 60px */
+                    margin-bottom: 100px; /* Reduced from 190px (100px + Buffer handling) */
+                    margin-left: 40px;
+                    margin-right: 40px;
                 }
-                .chapter-title {
+
+                /* 1b. Gutter / Spine Management - Tighter */
+                /* Left Page: Spine is on the RIGHT */
+                @page :left {
+                    margin-right: 50px; /* Spine (Gutter) */
+                    margin-left: 30px;  /* Outer Edge */
+                    
+                    @top-center {
+                        content: "The Running Book";
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        font-size: 0.7em;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        opacity: 0.5;
+                        vertical-align: bottom;
+                        padding-bottom: 10px;
+                    }
+                }
+
+                /* Right Page: Spine is on the LEFT */
+                @page :right {
+                    margin-left: 50px; /* Spine (Gutter) */
+                    margin-right: 30px; /* Outer Edge */
+
+                    @top-center {
+                        content: string(chapterTitle);
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        font-size: 0.7em;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        opacity: 0.5;
+                        vertical-align: bottom;
+                        padding-bottom: 10px;
+                    }
+                }
+
+                /* 2. Define Variable for Running Header */
+                .chapter-title, h1, h2 {
+                    string-set: chapterTitle content(text);
                     break-before: page !important;
                     page-break-before: always !important;
+                    -webkit-column-break-before: always;
                 }
+
+                /* 3. Page Numbers (Bottom Center) */
+                @page {
+                    @bottom-center {
+                        content: counter(page);
+                        font-family: 'IBM Plex Sans', sans-serif;
+                        font-size: 0.85em;
+                        color: #2d1810;
+                        opacity: 0.6;
+                        vertical-align: top; /* Align to top of footer box */
+                        padding-top: 20px;   /* Push down away from text */
+                    }
+                }
+
+                /* 6. Suppress Header/Footer on Chapter Start Pages */
+                /* Note: Paged.js doesn't natively support easy 'chapter first page' selection 
+                   without named pages, so we'll keep it simple for now and let them show. */
             </style>
         `;
 
-        // Pass reader.css explicitly + inject dynamic styles into the content flow
+        // Pass reader.css explicitly - THIS IS THE AUTHORITATIVE SOURCE
         await paged.preview(dynamicStyles + sourceContainer.innerHTML, ['css/reader.css'], pagedContainer);
         console.log('Paged.js fragmentation complete');
 
-        // 4. Extract Fragmented Pages
+        // 4. Rasterization Pipeline (html2canvas to PageFlip)
         const pagedPages = pagedContainer.querySelectorAll('.pagedjs_page');
         const numContentPages = pagedPages.length;
-        console.log(`Extracted ${numContentPages} content pages`);
+        console.log(`Extracted ${numContentPages} content pages. Starting Rasterization...`);
 
-        // 5. Build Physical Pages for PageFlip
+        // Wait for fonts one last time to be paranoid
+        await document.fonts.ready;
+
+        // Reset Container
         container.innerHTML = '';
         this.tocItems = [];
 
-        // Front Cover
-        this.addPhysicalPage(container, 'cover', `
-            <div class="cover">
-                <div class="cover-title">${this.bookData.title}</div>
-                <div class="cover-subtitle">${this.bookData.descriptor || ''}</div>
-                <div class="cover-publisher">Alexandria Press</div>
-            </div>
-        `, 0);
-
-        // Content Pages
-        pagedPages.forEach((pagedPage, i) => {
-            const contentHTML = pagedPage.querySelector('.pagedjs_page_content').innerHTML;
-
-            // Check for chapter titles to update TOC
+        // 5. Generate Images from Pages
+        // We do this sequentially or partially parallel to manage memory/CPU
+        const imagePromises = Array.from(pagedPages).map(async (pagedPage, i) => {
+            // Check for TOC markers first
             const chapterTitle = pagedPage.querySelector('.chapter-title');
             if (chapterTitle) {
                 this.tocItems.push({
                     title: chapterTitle.textContent.trim(),
-                    pageIndex: i + 1 // +1 for cover
+                    pageIndex: i
                 });
             }
 
-            const pageHTML = `
-                <div class="body-text">${contentHTML}</div>
-                <div class="page-number ${i % 2 === 0 ? 'left' : 'right'}">${i + 1}</div>
-            `;
-            this.addPhysicalPage(container, 'content', pageHTML, i + 1);
+            // Render Page to Canvas
+            // scale: 2 for Retina-like sharpness
+            try {
+                const canvas = await html2canvas(pagedPage, {
+                    scale: 2,
+                    useCORS: true,
+                    logging: false,
+                    backgroundColor: null // Transparent background (keeps paper texture if any)
+                    // If paper texture is on body, we might need backgroundColor: '#f4f1e8'
+                });
+
+                // Return structured object to keep order correct after async
+                return {
+                    index: i,
+                    dataUrl: canvas.toDataURL('image/png')
+                };
+            } catch (err) {
+                console.error(`Error rasterizing page ${i}:`, err);
+                return null;
+            }
         });
 
-        // Back Cover
-        this.addPhysicalPage(container, 'cover', `
-            <div class="cover">
-                <div class="cover-publisher" style="margin-top: 0; margin-bottom: auto;">Alexandria Press</div>
-                <div style="text-align: center; opacity: 0.8; line-height: 1.6; font-size: 0.95em;">
-                    <p>${this.bookData.descriptor || 'A generated collection'}</p>
-                    <p style="margin-top: 20px; font-size: 0.85em;">Generated by artificial intelligence<br>in conversation with humanity's wisdom</p>
-                </div>
-            </div>
-        `, numContentPages + 1);
+        // Wait for all screenshots
+        const pageImages = (await Promise.all(imagePromises))
+            .filter(p => p !== null)
+            .sort((a, b) => a.index - b.index);
 
-        // Cleanup
+        console.log('Rasterization complete. Loading into PageFlip...');
+
+        // 6. Build Physical Pages via Images
+        pageImages.forEach(page => {
+            const pageHTML = `
+                <div class="page-image-wrapper" style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; overflow: hidden;">
+                    <img src="${page.dataUrl}" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+            `;
+            // We use 'content' type but pass the Image Wrapper
+            this.addPhysicalPage(container, 'content', pageHTML, page.index);
+        });
+
+        // Cleanup invisible container
         document.body.removeChild(pagedContainer);
         sourceContainer.innerHTML = '';
 
@@ -657,7 +719,11 @@ class BookReader {
 
         const canonicalH = getPixels('--page-height') || 825;
         const canonicalW = getPixels('--page-width') || 550;
-        const canonicalMargin = getPixels('--print-margin') || 60;
+
+        // FORCE SAFE MARGINS to guarantee text fits (Bypassing CSS var reading risk)
+        const marginTop = 60;
+        const marginBottom = 120; // Explicit large bottom margin
+        const marginSide = 60;
 
         // Calculate Scale Factor to fit window
         // Available space (minus toolbar and padding)
@@ -680,7 +746,9 @@ class BookReader {
             pageHeight: canonicalH,
             spreadWidth: canonicalW * 2,
             height: canonicalH,
-            margin: canonicalMargin,
+            marginTop,
+            marginBottom,
+            marginSide,
             scale: scale
         };
     }
@@ -697,6 +765,14 @@ class BookReader {
             console.error('Container #bookReaderContent not found');
             return;
         }
+
+        // CRITICAL FIX: Wait for fonts to load before calculating layout
+        // Paged.js needs to measure exact text dimensions. If fonts aren't ready,
+        // it measures using fallbacks (Times New Roman), then the real font loads,
+        // causing reflows and "partial line" clipping.
+        console.log('Waiting for fonts to load...');
+        await document.fonts.ready;
+        console.log('Fonts loaded. Starting layout engine.');
 
         // Calculate dimensions
         const viewportWidth = window.innerWidth;
