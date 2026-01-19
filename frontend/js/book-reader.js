@@ -268,7 +268,7 @@ class BookReader {
     }
 
     // Create page elements using Paged.js for high-quality fragmentation
-    async createPageElements(availableWidth, availableHeight) {
+    async createPageElements(dims) {
         const container = document.getElementById('readerBook');
         const sourceContainer = document.getElementById('pagedSource');
         if (!container || !sourceContainer) return 0;
@@ -276,9 +276,9 @@ class BookReader {
         // 1. Prepare Content for Paged.js
         sourceContainer.innerHTML = this.buildMasterFlowHTML();
 
-        // 2. Configure Paged.js
-        const pageWidth = this.isMobile ? availableWidth : availableWidth / 2;
-        const pageHeight = availableHeight - 40; // More space for content
+        // 2. Configure Paged.js with EXACT dimensions
+        const pageWidth = dims.pageWidth;
+        const pageHeight = dims.pageHeight;
 
         // Add Paged.js styles to the document dynamically for fragmentation
         let style = document.getElementById('paged-js-styles');
@@ -287,10 +287,17 @@ class BookReader {
             style.id = 'paged-js-styles';
             document.head.appendChild(style);
         }
+
+        // Ensure margins match the CSS .page padding EXACTLY so content fits
+        // CSS .page is padding: 60px 50px;
+        // We add extra bottom margin to ensure text doesn't hit the page number
         style.innerHTML = `
             @page {
                 size: ${pageWidth}px ${pageHeight}px;
-                margin: 0;
+                margin-top: 60px;
+                margin-bottom: 100px; 
+                margin-left: 50px;
+                margin-right: 50px;
             }
             .pagedjs_pages {
                 width: ${pageWidth}px;
@@ -299,6 +306,10 @@ class BookReader {
             .pagedjs_page {
                 width: ${pageWidth}px;
                 height: ${pageHeight}px;
+            }
+            .chapter-title {
+                break-before: page !important;
+                page-break-before: always !important;
             }
         `;
 
@@ -311,7 +322,25 @@ class BookReader {
         pagedContainer.style.zIndex = '-1000';
         document.body.appendChild(pagedContainer);
 
-        await paged.preview(sourceContainer.innerHTML, [], pagedContainer);
+        // Prepend the @page styles to the content so Paged.js definitely sees them
+        const dynamicStyles = `
+            <style>
+                @page {
+                    size: ${pageWidth}px ${pageHeight}px;
+                    margin-top: 60px;
+                    margin-bottom: 120px;
+                    margin-left: 50px;
+                    margin-right: 50px;
+                }
+                .chapter-title {
+                    break-before: page !important;
+                    page-break-before: always !important;
+                }
+            </style>
+        `;
+
+        // Pass reader.css explicitly + inject dynamic styles into the content flow
+        await paged.preview(dynamicStyles + sourceContainer.innerHTML, ['css/reader.css'], pagedContainer);
         console.log('Paged.js fragmentation complete');
 
         // 4. Extract Fragmented Pages
@@ -390,7 +419,7 @@ class BookReader {
     }
 
     // Initialize page flip library
-    initPageFlip(width, height) {
+    initPageFlip(pageWidth, pageHeight) {
         const bookContainer = document.getElementById('readerBook');
         if (!bookContainer) return;
 
@@ -400,17 +429,17 @@ class BookReader {
             return;
         }
 
-        this.pageFlip = new St.PageFlip(bookContainer, {
-            width: this.isMobile ? width : width / 2,
-            height: height,
+        const flipConfig = {
+            width: pageWidth,  // Use calculated page width directly
+            height: pageHeight,
             size: 'fixed',
             minWidth: 300,
-            maxWidth: 1000,
+            maxWidth: 3000,
             minHeight: 400,
-            maxHeight: 1200,
+            maxHeight: 3000,
             showCover: true,
             flippingTime: 1000,
-            usePortrait: this.isMobile,
+            usePortrait: this.isMobile, // Single page on mobile, Spread on desktop
             startPage: 0,
             drawShadow: true,
             maxShadowOpacity: 0.5,
@@ -419,7 +448,11 @@ class BookReader {
             clickEventForward: true,
             startZIndex: 100,
             disableFlipByClick: false
-        });
+        };
+
+        console.log('Initializing PageFlip with config:', flipConfig);
+
+        this.pageFlip = new St.PageFlip(bookContainer, flipConfig);
 
         this.pageFlip.loadFromHTML(document.querySelectorAll('.page'));
 
@@ -499,19 +532,14 @@ class BookReader {
 
     // Add toolbar HTML
     addToolbar(totalPages) {
-        const container = document.getElementById('bookReaderContent');
-        if (!container) return;
-
         const toolbar = document.createElement('div');
         toolbar.className = 'reader-toolbar';
+        // Force top positioning to override any cached CSS issues
+        toolbar.style.top = '0';
+        toolbar.style.bottom = 'auto';
+        toolbar.style.position = 'fixed';
         toolbar.innerHTML = `
-            <div class="reader-toolbar-progress">
-                <div class="reader-progress-bar" id="readerProgressBar" style="width: 0%"></div>
-            </div>
             <div class="reader-toolbar-controls">
-                <button class="reader-tool-btn" id="readerPrevBtn" title="Previous Page">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
-                </button>
                 <button class="reader-tool-btn reader-menu-btn" id="readerMenuBtn" title="Table of Contents">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <line x1="3" y1="6" x2="21" y2="6"/>
@@ -519,16 +547,27 @@ class BookReader {
                         <line x1="3" y1="18" x2="21" y2="18"/>
                     </svg>
                 </button>
-                <span class="reader-page-info" id="readerPageInfo">1 / ${totalPages}</span>
-                <button class="reader-tool-btn" id="readerNextBtn" title="Next Page">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                <div class="reader-pagination">
+                    <button class="reader-tool-btn" id="readerPrevBtn" title="Previous Page">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <span class="reader-page-info" id="readerPageInfo">1 / ${totalPages}</span>
+                    <button class="reader-tool-btn" id="readerNextBtn" title="Next Page">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                </div>
+                <button class="reader-tool-btn reader-close-btn-toolbar" onclick="window.close(); window.location.href='/'" title="Close Reader">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
                 </button>
             </div>
         `;
-        container.appendChild(toolbar);
+        document.body.appendChild(toolbar);
 
-        // Add TOC Menu
-        this.addTocMenu(container);
+        // Add TOC Menu to body as well
+        this.addTocMenu(document.body);
     }
 
     // Add Table of Contents Menu
@@ -588,6 +627,57 @@ class BookReader {
         });
     }
 
+    // Calculate optimal book dimensions to fit in viewport
+    calculateDimensions(viewportW, viewportH) {
+        const toolbarHeight = 60;
+        const paddingV = 40; // Vertical padding
+        const paddingH = 0;  // Horizontal padding (wrapper is centered by flex)
+
+        const availableH = viewportH - toolbarHeight - paddingV;
+        const availableW = viewportW - paddingH;
+
+        if (this.isMobile) {
+            return {
+                pageWidth: availableW - 20, // Margin
+                pageHeight: availableH,
+                spreadWidth: availableW - 20,
+                height: availableH
+            };
+        }
+
+        // DESKTOP:
+        // We want a spread of 2 pages that fits within availableW and availableH
+        // Initial target: book ratio ~ 1.4 (height/width) per page
+
+        const targetRatio = 1.414; // A-series like ratio (Height / Width)
+
+        // 1. Try fitting by height first
+        let pageHeight = availableH;
+        let pageWidth = pageHeight / targetRatio;
+
+        // Check if spread (2 * pageWidth) exceeds available width
+        let spreadWidth = pageWidth * 2;
+
+        if (spreadWidth > availableW) {
+            // Too wide, constrain by width
+            spreadWidth = availableW - 40; // Small safety margin
+            pageWidth = spreadWidth / 2;
+            pageHeight = pageWidth * targetRatio;
+        }
+
+        // Round to integer for clean rendering
+        pageWidth = Math.floor(pageWidth);
+        pageHeight = Math.floor(pageHeight);
+        spreadWidth = pageWidth * 2;
+
+        return {
+            pageWidth,
+            pageHeight,
+            spreadWidth,
+            height: pageHeight
+        };
+    }
+
     // Main initialization
     async init(bookData) {
         console.log('BookReader.init() called with:', bookData?.title);
@@ -601,22 +691,28 @@ class BookReader {
 
         // Calculate dimensions
         const viewportWidth = window.innerWidth;
-        const viewportHeight = window.visualViewport ? window.visualViewport.height : window.innerHeight;
+        const viewportHeight = window.innerHeight;
         this.isMobile = viewportWidth < 768;
 
-        const availableHeight = Math.max(viewportHeight - 160, 400); // More room for toolbar and padding
-        const availableWidth = Math.min(viewportWidth - 40, this.isMobile ? 600 : 1400);
+        const dims = this.calculateDimensions(viewportWidth, viewportHeight);
 
-        // Set up container HTML
+        console.log('STRICT Layout Calc:', {
+            viewport: { w: viewportWidth, h: viewportHeight },
+            dims: dims
+        });
+
+        // Set explicit dimensions on the wrapper
+        // The wrapper centers the book in the flex container #bookReaderContent
         container.innerHTML = `
-            <div class="reader-book-wrapper">
-                <div id="readerBook" style="height:${availableHeight}px; width:${availableWidth}px; margin:auto;"></div>
+            <div class="reader-book-wrapper" style="width: ${dims.spreadWidth}px; height: ${dims.height}px;">
+                <div id="readerBook" style="width: 100%; height: 100%;"></div>
             </div>
         `;
 
         // Build pages
         console.log('Building book pages...');
-        const totalPhysicalPages = await this.createPageElements(availableWidth, availableHeight);
+        // Pass the calculated strict dimensions
+        const totalPhysicalPages = await this.createPageElements(dims);
         console.log(`Built ${totalPhysicalPages} pages`);
 
         if (totalPhysicalPages === 0) {
@@ -629,7 +725,7 @@ class BookReader {
 
         // Initialize PageFlip
         console.log('Initializing PageFlip...');
-        this.initPageFlip(availableWidth, availableHeight);
+        this.initPageFlip(dims.pageWidth, dims.height);
 
         // Initialize textures
         this.initTextures();
@@ -638,6 +734,16 @@ class BookReader {
         this.setupNavigation();
         this.updatePageInfo();
         this.updateNavButtons();
+
+        // Handle window resize
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                console.log('Window resized, reloading reader...');
+                window.location.reload();
+            }, 500);
+        });
 
         console.log('BookReader initialization complete');
     }

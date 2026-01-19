@@ -14,7 +14,7 @@
         rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/reader.css">
+    <link rel="stylesheet" href="css/reader.css?v=2">
 
     <!-- Markdown Parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -23,6 +23,15 @@
     <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
 
     <!-- Paged.js for Fragmentation -->
+    <!-- Paged.js for Fragmentation -->
+    <script>
+        // Prevent Paged.js from auto-running on the whole page
+        var PagedConfig = {
+            auto: false,
+            after: function () { console.warn("WARNING: Paged.js auto-run triggered unexpectedly"); }
+        };
+        window.PagedConfig = PagedConfig;
+    </script>
     <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
 </head>
 
@@ -35,9 +44,6 @@
         <div class="reader-loader">Loading Book...</div>
     </div>
 
-    <!-- Close Button -->
-    <button class="reader-close-btn" onclick="window.close(); window.location.href='/'">×</button>
-
     <!-- Book Reader Script -->
     <script src="js/book-reader.js"></script>
 
@@ -45,6 +51,13 @@
         // Entry point
         document.addEventListener('DOMContentLoaded', async () => {
             console.log("Reader DOM Loaded");
+
+            // SAFEGUARD: Ensure reader container wasn't captured by Paged.js or other scripts
+            const container = document.getElementById('bookReaderContent');
+            if (container && container.parentElement !== document.body) {
+                console.warn('Reader container was nested unexpectedly. Restoring to body.');
+                document.body.appendChild(container);
+            }
 
             // Verify BookReader class exists
             if (typeof BookReader === 'undefined') {
@@ -106,12 +119,12 @@
             } catch (err) {
                 console.error('Reader error:', err);
                 document.getElementById('bookReaderContent').innerHTML = `
-                    <div style="color: #ff6b6b; text-align: center; padding: 40px; font-family: sans-serif;">
-                        <h2 style="margin-bottom: 20px;">Unable to Load Book</h2>
-                        <p style="opacity: 0.8;">${err.message}</p>
-                        <a href="/" style="color: #deb887; margin-top: 20px; display: inline-block;">← Return to Library</a>
-                    </div>
-                `;
+    <div style="color: #ff6b6b; text-align: center; padding: 40px; font-family: sans-serif;">
+        <h2 style="margin-bottom: 20px;">Unable to Load Book</h2>
+        <p style="opacity: 0.8;">${err.message}</p>
+        <a href="/" style="color: #deb887; margin-top: 20px; display: inline-block;">← Return to Library</a>
+    </div>
+    `;
             }
         });
     </script>
