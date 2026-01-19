@@ -259,8 +259,8 @@ class BookReader {
             measureContainer.innerHTML = '';
             currentPageElements.forEach(e => measureContainer.appendChild(e.cloneNode(true)));
 
-            // Check if we've exceeded the target height
-            if (measureContainer.scrollHeight > targetHeight && currentPageElements.length > 1) {
+            // Check if we've exceeded the target height (use 95% threshold for tighter packing)
+            if (measureContainer.scrollHeight > targetHeight * 0.95 && currentPageElements.length > 1) {
                 // Remove last element (it caused overflow)
                 currentPageElements.pop();
 
@@ -287,35 +287,46 @@ class BookReader {
 
     // Get available height for page content (excluding chrome like headers/page numbers)
     getPageContentHeight() {
-        // Try to get from existing page element
-        const pageEl = document.querySelector('.reader-page .reader-page-content');
-        if (pageEl) {
-            const style = getComputedStyle(pageEl);
-            const padding = parseFloat(style.paddingTop) + parseFloat(style.paddingBottom);
-            // Account for publisher (40px), chapter title (60px estimate), page number (30px)
-            const chromeHeight = 130;
-            return pageEl.clientHeight - padding - chromeHeight;
-        }
-
-        // Calculate based on viewport and expected container layout
-        // Container fills viewport, minus header (~60px), navigation (~50px), padding (~32px)
+        // Calculate based on viewport and expected container layout to ensure we fit
         const viewportHeight = window.innerHeight;
+
+        // Vertical space consumers:
+        // Header: Book title + close button (~58px)
+        // Nav: Bottom navigation (~60px)
+        // Padding: Modal padding (~0), Container padding (~32px)
+        // Page Chrome: Publisher (top) + Chapter (top) + Page Number (bottom) + margins
+
+        // We need to be careful. The Reader Page has padding: 60px 50px;
+        // The content consumes the space INSIDE that padding.
+
         const headerHeight = 60;
-        const navigationHeight = 50;
-        const containerPadding = 32;
-        const pagePadding = 120; // 60px top + 60px bottom padding on .reader-page
-        const pageChrome = 130; // publisher + chapter title + page number
+        const navHeight = 60;
+        const verticalPadding = 20; // safe buffer
 
-        const availableHeight = viewportHeight - headerHeight - navigationHeight - containerPadding - pagePadding - pageChrome;
+        // Total height available for the page DIV (including its padding)
+        const availablePageHeight = viewportHeight - headerHeight - navHeight - verticalPadding;
 
-        return Math.max(300, availableHeight);
+        // Now subtract internal page padding (60px top + 60px bottom = 120px)
+        // And internal chrome (Publisher ~20px, Chapter ~40px, PageNum ~20px + margins)
+        // Let's approximate internal chrome + margins to ~100px
+        const internalPadding = 120;
+        const internalChrome = 100;
+
+        const contentHeight = availablePageHeight - internalPadding - internalChrome;
+
+        return Math.max(200, contentHeight);
     }
 
     // Build book pages from JSON data
-    buildBookPages() {
+    buildBookPages(targetPageHeight = null) {
         if (!this.bookData) return [];
 
         const pages = [];
+        // If targetPageHeight provides the full PAGE height (including padding), 
+        // we need to subtract the internal padding/chrome to get the CONTENT area height.
+        // reader-page padding: 60px top + 60px bottom = 120px
+        // chrome: ~100px
+        const contentHeight = targetPageHeight ? targetPageHeight - 120 - 100 : null;
 
         // Front cover
         pages.push({
@@ -331,7 +342,7 @@ class BookReader {
 
         // Introduction (paginate if needed)
         if (this.bookData.introduction) {
-            const introPages = this.paginateEntry({ content: `# Introduction\n\n${this.bookData.introduction}` });
+            const introPages = this.paginateEntry({ content: `# Introduction\n\n${this.bookData.introduction}` }, contentHeight);
 
             introPages.forEach((pageContent, index) => {
                 pages.push({
@@ -345,7 +356,7 @@ class BookReader {
         // Each entry
         if (this.bookData.entries && this.bookData.entries.length > 0) {
             this.bookData.entries.forEach((entry) => {
-                const entryPages = this.paginateEntry(entry);
+                const entryPages = this.paginateEntry(entry, contentHeight);
 
                 entryPages.forEach((pageContent, pageIndex) => {
                     pages.push({
@@ -395,8 +406,23 @@ class BookReader {
             return;
         }
 
-        // Build pages
-        const bookPages = this.buildBookPages();
+        // Dynamic sizing based on viewport
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+
+        // Available area for the book
+        // Head (60) + Nav (60) = 120 buffer vertically
+        // Add 20px safety buffer
+        const availableHeight = viewportHeight - 140;
+
+        // Width: leave some space for side margins if possible
+        const availableWidth = Math.min(viewportWidth - 40, 1000);
+
+        // Single page view on mobile/portrait
+        const isMobile = viewportWidth < 768;
+
+        // Build pages with the CALCULATED available height
+        const bookPages = this.buildBookPages(availableHeight);
         console.log(`Building book with ${bookPages.length} pages`);
 
         // Create book element
@@ -453,16 +479,16 @@ class BookReader {
         // Initialize PageFlip
         if (typeof St !== 'undefined' && typeof St.PageFlip !== 'undefined') {
             this.pageFlip = new St.PageFlip(bookEl, {
-                width: 550,
-                height: 750,
-                size: 'stretch',
-                minWidth: 400,
-                maxWidth: 800,
-                minHeight: 500,
-                maxHeight: 1000,
+                width: isMobile ? availableWidth : availableWidth / 2, // Width of a SINGLE page
+                height: availableHeight,
+                size: 'fixed', // Use fixed to respect our calculated dimensions exactly
+                // minWidth: 200,
+                // maxWidth: 1000,
+                // minHeight: 300,
+                // maxHeight: 1200,
                 showCover: true,
                 flippingTime: 800,
-                usePortrait: false,
+                usePortrait: isMobile,
                 startPage: 0,
                 drawShadow: true,
                 maxShadowOpacity: 0.4,
