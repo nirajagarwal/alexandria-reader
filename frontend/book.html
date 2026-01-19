@@ -91,18 +91,7 @@
         </footer>
     </div>
 
-    <!-- Book Reader Modal -->
-    <div class="book-reader-modal hidden" id="bookReaderModal">
-        <div class="book-reader-container">
-            <header class="book-reader-header">
-                <h2 id="readerBookTitle">Book Title</h2>
-                <button class="book-reader-close" id="closeBookReader">×</button>
-            </header>
-            <div class="book-reader-content" id="bookReaderContent">
-                <!-- Reader will be initialized here -->
-            </div>
-        </div>
-    </div>
+    <!-- Reader logic moved to reader.html -->
 
     <!-- SVG filters for ink rendering -->
     <svg style="position: absolute; width: 0; height: 0;">
@@ -124,8 +113,12 @@
         </defs>
     </svg>
 
+    <!-- Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
+    <script>window.PagedConfig = { auto: false };</script>
+    <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
+
     <script src="js/book-reader.js"></script>
     <script src="js/app.js"></script>
     <script>

@@ -17,7 +17,7 @@ from pathlib import Path
 from contextlib import asynccontextmanager
 
 from dotenv import load_dotenv
-from fastapi import FastAPI, HTTPException, Request, Query
+from fastapi import FastAPI, HTTPException, Request, Response, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
@@ -164,6 +164,22 @@ async def lifespan(app: FastAPI):
     # Nothing to initialize - connections are per-request
     yield
     # Nothing to cleanup - connections are auto-closed
+
+
+# =============================================================================
+# Helpers
+# =============================================================================
+
+def add_cache_control(response: Response, max_age: int = 3600, s_maxage: int = 86400):
+    """
+    Add Cache-Control headers for Vercel Edge caching.
+    
+    Args:
+        response: FastAPI Response object
+        max_age: Browser cache duration (seconds). Default 1h.
+        s_maxage: CDN/Proxy cache duration (seconds). Default 24h.
+    """
+    response.headers["Cache-Control"] = f"public, max-age={max_age}, s-maxage={s_maxage}"
 
 
 # =============================================================================
@@ -330,8 +346,9 @@ async def list_books():
 # =============================================================================
 
 @app.get("/books/{book_id}", response_model=Book, tags=["book"])
-async def get_book(book_id: str):
+async def get_book(book_id: str, response: Response):
     """Get book metadata."""
+    add_cache_control(response)  # Cache book metadata for 24h
     conn = get_connection()
     row = conn.execute("""
         SELECT book_id, title, descriptor, cover_url, model, 
@@ -356,9 +373,10 @@ async def get_book(book_id: str):
     )
 
 
-@app.get("/books/{book_id}/entries", response_model=list[EntryCard], tags=["book"])
-async def list_entries(book_id: str):
-    """Get all entries for card grid (without content)."""
+@app.get("/books/{book_id}/entries", response_model=list[Entry], tags=["book"])
+async def list_entries(book_id: str, response: Response):
+    """Get all entries with full content for reader."""
+    add_cache_control(response)  # Cache list for 24h
     conn = get_connection()
     
     # Verify book exists
@@ -371,19 +389,20 @@ async def list_entries(book_id: str):
         raise HTTPException(status_code=404, detail="Book not found")
     
     rows = conn.execute("""
-        SELECT sort_order, slug, name, descriptor, metadata
+        SELECT sort_order, slug, name, descriptor, content, metadata
         FROM entries
         WHERE book_id = ?
         ORDER BY sort_order
     """, (book_id,)).fetchall()
     
     return [
-        EntryCard(
+        Entry(
             order=r[0],
             slug=r[1],
             name=r[2],
             descriptor=r[3],
-            metadata=json.loads(r[4]) if r[4] else {}
+            content=r[4],
+            metadata=json.loads(r[5]) if r[5] else {}
         )
         for r in rows
     ]
@@ -394,8 +413,9 @@ async def list_entries(book_id: str):
 # =============================================================================
 
 @app.get("/books/{book_id}/entries/{slug}", response_model=EntryWithNav, tags=["entry"])
-async def get_entry(book_id: str, slug: str):
+async def get_entry(book_id: str, slug: str, response: Response):
     """Get a single entry with full content and navigation."""
+    add_cache_control(response)  # Cache content for 24h
     conn = get_connection()
     
     # Get entry
@@ -525,6 +545,14 @@ async def serve_robots():
 @app.get("/manifest.json", include_in_schema=False)
 async def serve_manifest():
     return FileResponse(BASE_DIR / "frontend" / "manifest.json")
+
+@app.get("/reader.html", include_in_schema=False)
+async def serve_reader():
+    return FileResponse(BASE_DIR / "frontend" / "reader.html")
+
+@app.get("/sw.js", include_in_schema=False)
+async def serve_sw():
+    return FileResponse(BASE_DIR / "frontend" / "sw.js")
 
 
 @app.get("/sitemap.xml", include_in_schema=False)

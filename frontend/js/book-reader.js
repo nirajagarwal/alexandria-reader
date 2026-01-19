@@ -1,5 +1,6 @@
 /* =============================================================================
    Alexandria Press - Book Reader Component
+   Clean reimplementation based on working prototype
    ============================================================================= */
 
 // Paper texture generator for realistic book appearance
@@ -11,6 +12,8 @@ class PaperTextureGenerator {
 
     generate(type, intensity, flocculation) {
         const rect = this.canvas.parentElement.getBoundingClientRect();
+        if (rect.width === 0 || rect.height === 0) return;
+
         this.canvas.width = rect.width;
         this.canvas.height = rect.height;
 
@@ -204,145 +207,211 @@ class BookReader {
             flocculation: 0.50
         };
         this.pagesWithTexture = new Set();
+        this.isMobile = window.innerWidth < 768;
     }
 
-    // Convert markdown content to HTML using marked.js (same as main app)
+    // Convert markdown content to HTML paragraphs (simple approach)
     formatContent(markdown) {
-        // Remove the title line (already displayed separately as chapter title)
-        let content = markdown.replace(/^# .+\n\n?/, '');
+        if (!markdown) return '';
 
-        // Use marked.js for proper markdown to HTML conversion
+        // Use marked.js if available
         if (typeof marked !== 'undefined') {
+            // Remove title line if present (already shown as chapter title)
+            let content = markdown.replace(/^# .+\n\n?/, '');
             return marked.parse(content);
         }
 
-        // Fallback if marked is not available
-        return content.split('\n\n').map(p => `<p>${p.trim()}</p>`).join('\n');
+        // Simple fallback
+        return markdown
+            .replace(/^# .+\n\n?/, '')
+            .replace(/## (.+)/g, '<div class="section-title">$1</div>')
+            .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+            .replace(/\*(.+?)\*/g, '<em>$1</em>')
+            .split('\n\n')
+            .filter(p => p.trim())
+            .map(p => `<p>${p.trim()}</p>`)
+            .join('\n');
     }
 
-    // Paginate content based on available height (dynamic pagination)
-    paginateEntry(entry, pageHeight = null) {
+    // Paginate content using DOM-based height measurement
+    // This properly splits paragraphs across pages for accurate reflow
+    paginateEntry(entry, pageHeight) {
         const formatted = this.formatContent(entry.content);
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = formatted;
 
-        // Get page height from actual container or use reasonable default
-        const targetHeight = pageHeight || this.getPageContentHeight() || 500;
+        const elements = Array.from(tempDiv.children);
+        if (elements.length === 0) return [];
 
-        // Create hidden measurement container matching page styles
+        // Use provided height or calculate based on viewport
+        const targetHeight = pageHeight || this.calculatePageContentHeight();
+
+        // Create hidden measurement container matching page styling
         const measureContainer = document.createElement('div');
-        measureContainer.className = 'reader-body-text';
+        measureContainer.className = 'body-text';
         measureContainer.style.cssText = `
             position: absolute;
             visibility: hidden;
-            width: 100%;
-            max-width: 450px;
+            width: 380px;
             font-family: 'Crimson Pro', Georgia, serif;
             font-size: 1.1em;
             line-height: 1.7;
+            text-align: justify;
             padding: 0;
+            top: 0; left: 0;
         `;
         document.body.appendChild(measureContainer);
-
-        // Parse HTML to get individual elements
-        const tempDiv = document.createElement('div');
-        tempDiv.innerHTML = formatted;
-        const elements = Array.from(tempDiv.children);
 
         const pages = [];
         let currentPageElements = [];
 
-        for (const el of elements) {
-            // Add element to measurement container
-            const clone = el.cloneNode(true);
-            currentPageElements.push(clone);
-
-            // Rebuild measurement container with current page elements
+        // Helper to measure current page height
+        const measureHeight = () => {
             measureContainer.innerHTML = '';
-            currentPageElements.forEach(e => measureContainer.appendChild(e.cloneNode(true)));
+            currentPageElements.forEach(el => {
+                measureContainer.appendChild(el.cloneNode(true));
+            });
+            return measureContainer.offsetHeight;
+        };
 
-            // Check if we've exceeded the target height (use 95% threshold for tighter packing)
-            if (measureContainer.scrollHeight > targetHeight * 0.95 && currentPageElements.length > 1) {
-                // Remove last element (it caused overflow)
-                currentPageElements.pop();
+        for (const el of elements) {
+            // Try adding the whole element
+            currentPageElements.push(el.cloneNode(true));
 
-                // Save current page without the overflowing element
-                const pageHtml = currentPageElements.map(e => e.outerHTML).join('\n');
-                pages.push(pageHtml);
+            if (measureHeight() <= targetHeight) {
+                // Fits! Continue to next element
+                continue;
+            }
 
-                // Start new page with the overflowing element
-                currentPageElements = [clone];
+            // Doesn't fit - remove it and handle
+            currentPageElements.pop();
+
+            // Can we split this element? (Only split paragraph-like elements)
+            if (el.nodeType === Node.ELEMENT_NODE &&
+                ['P', 'DIV', 'LI', 'BLOCKQUOTE'].includes(el.tagName)) {
+
+                // Split the paragraph across pages
+                const [firstPart, secondPart] = this.splitElement(
+                    el, currentPageElements, measureContainer, targetHeight
+                );
+
+                if (firstPart) {
+                    currentPageElements.push(firstPart);
+                }
+
+                // Finalize current page
+                if (currentPageElements.length > 0) {
+                    pages.push(currentPageElements.map(e => e.outerHTML).join(''));
+                    currentPageElements = [];
+                }
+
+                // Add remaining part to next page
+                if (secondPart) {
+                    currentPageElements.push(secondPart);
+                }
+            } else {
+                // Can't split (heading, image, etc.) - finalize page and move element to next
+                if (currentPageElements.length > 0) {
+                    pages.push(currentPageElements.map(e => e.outerHTML).join(''));
+                    currentPageElements = [];
+                }
+                currentPageElements.push(el.cloneNode(true));
             }
         }
 
-        // Add remaining content as final page
+        // Add remaining content
         if (currentPageElements.length > 0) {
-            const pageHtml = currentPageElements.map(e => e.outerHTML).join('\n');
-            pages.push(pageHtml);
+            pages.push(currentPageElements.map(e => e.outerHTML).join(''));
         }
 
-        // Cleanup
         document.body.removeChild(measureContainer);
-
         return pages;
     }
 
-    // Get available height for page content (excluding chrome like headers/page numbers)
-    getPageContentHeight() {
-        // Calculate based on viewport and expected container layout to ensure we fit
-        const viewportHeight = window.innerHeight;
+    // Split an element (paragraph) into two parts that fit the page
+    splitElement(originalEl, currentPageElements, measureContainer, targetHeight) {
+        const text = originalEl.textContent;
+        const words = text.split(/\s+/);
 
-        // Vertical space consumers:
-        // Header: Book title + close button (~58px)
-        // Nav: Bottom navigation (~60px)
-        // Padding: Modal padding (~0), Container padding (~32px)
-        // Page Chrome: Publisher (top) + Chapter (top) + Page Number (bottom) + margins
+        if (words.length <= 1) {
+            // Can't split single word - return whole element for next page
+            return [null, originalEl.cloneNode(true)];
+        }
 
-        // We need to be careful. The Reader Page has padding: 60px 50px;
-        // The content consumes the space INSIDE that padding.
+        // Create clone for first part
+        const part1 = originalEl.cloneNode(false);
 
-        const headerHeight = 60;
-        const navHeight = 60;
-        const verticalPadding = 20; // safe buffer
+        // Binary search for optimal split point
+        let low = 0;
+        let high = words.length;
+        let bestFit = 0;
 
-        // Total height available for the page DIV (including its padding)
-        const availablePageHeight = viewportHeight - headerHeight - navHeight - verticalPadding;
+        while (low < high) {
+            const mid = Math.floor((low + high + 1) / 2);
+            part1.textContent = words.slice(0, mid).join(' ');
 
-        // Now subtract internal page padding (60px top + 60px bottom = 120px)
-        // And internal chrome (Publisher ~20px, Chapter ~40px, PageNum ~20px + margins)
-        // Let's approximate internal chrome + margins to ~100px
-        const internalPadding = 120;
-        const internalChrome = 100;
+            // Measure with this split
+            measureContainer.innerHTML = '';
+            currentPageElements.forEach(e => measureContainer.appendChild(e.cloneNode(true)));
+            measureContainer.appendChild(part1);
 
-        const contentHeight = availablePageHeight - internalPadding - internalChrome;
+            if (measureContainer.offsetHeight <= targetHeight) {
+                bestFit = mid;
+                low = mid;
+            } else {
+                high = mid - 1;
+            }
+        }
 
+        if (bestFit === 0) {
+            // Not even one word fits with current page content
+            return [null, originalEl.cloneNode(true)];
+        }
+
+        if (bestFit >= words.length) {
+            // Everything fits
+            part1.textContent = text;
+            return [part1, null];
+        }
+
+        // Create both parts
+        part1.textContent = words.slice(0, bestFit).join(' ');
+        const part2 = originalEl.cloneNode(false);
+        part2.textContent = words.slice(bestFit).join(' ');
+
+        return [part1, part2];
+    }
+
+    // Calculate available height for page content
+    calculatePageContentHeight() {
+        // Page has 60px padding top/bottom and ~80px for publisher/chapter headers
+        const viewportHeight = window.visualViewport ? window.visualViewport.height : window.innerHeight;
+        const pageHeight = Math.max(viewportHeight - 160, 400); // Subtract toolbar/margins
+        const contentHeight = pageHeight - 120 - 80; // Subtract padding and headers
         return Math.max(200, contentHeight);
     }
 
-    // Build book pages from JSON data
-    buildBookPages(targetPageHeight = null) {
+    // Build all book pages from data
+    buildBookPages() {
         if (!this.bookData) return [];
 
         const pages = [];
-        // If targetPageHeight provides the full PAGE height (including padding), 
-        // we need to subtract the internal padding/chrome to get the CONTENT area height.
-        // reader-page padding: 60px top + 60px bottom = 120px
-        // chrome: ~100px
-        const contentHeight = targetPageHeight ? targetPageHeight - 120 - 100 : null;
 
         // Front cover
         pages.push({
             type: 'cover',
             content: `
-                <div class="reader-cover">
-                    <div class="reader-cover-title">${this.bookData.title}</div>
-                    <div class="reader-cover-subtitle">${this.bookData.descriptor || ''}</div>
-                    <div class="reader-cover-publisher">Alexandria Press</div>
+                <div class="cover">
+                    <div class="cover-title">${this.bookData.title}</div>
+                    <div class="cover-subtitle">${this.bookData.descriptor || ''}</div>
+                    <div class="cover-publisher">Alexandria Press</div>
                 </div>
             `
         });
 
         // Introduction (paginate if needed)
         if (this.bookData.introduction) {
-            const introPages = this.paginateEntry({ content: `# Introduction\n\n${this.bookData.introduction}` }, contentHeight);
+            const introPages = this.paginateEntry({ content: `# Introduction\n\n${this.bookData.introduction}` });
 
             introPages.forEach((pageContent, index) => {
                 pages.push({
@@ -353,30 +422,41 @@ class BookReader {
             });
         }
 
-        // Each entry
+        // Each entry (chapter)
         if (this.bookData.entries && this.bookData.entries.length > 0) {
-            this.bookData.entries.forEach((entry) => {
-                const entryPages = this.paginateEntry(entry, contentHeight);
+            console.log(`Processing ${this.bookData.entries.length} entries...`);
+            this.bookData.entries.forEach((entry, i) => {
+                // Skip entries without content
+                if (!entry.content) {
+                    console.warn(`Entry ${i} (${entry.name}) has no content, skipping`);
+                    return;
+                }
+
+                const entryPages = this.paginateEntry(entry);
+
+                if (entryPages.length === 0) {
+                    console.warn(`Entry ${i} (${entry.name}) produced 0 pages`);
+                    return;
+                }
 
                 entryPages.forEach((pageContent, pageIndex) => {
                     pages.push({
                         title: pageIndex === 0 ? entry.name : null,
-                        section: pageIndex === 0 ? entry.section : null,
+                        section: pageIndex === 0 ? (entry.metadata?.section || entry.section) : null,
                         content: pageContent,
                         pageNum: pages.length
                     });
                 });
             });
-        } else {
-            console.warn('No entries found in bookData');
+            console.log(`Total pages after entries: ${pages.length}`);
         }
 
         // Back cover
         pages.push({
             type: 'cover',
             content: `
-                <div class="reader-cover">
-                    <div class="reader-cover-publisher" style="margin-top: 0; margin-bottom: auto;">Alexandria Press</div>
+                <div class="cover">
+                    <div class="cover-publisher" style="margin-top: 0; margin-bottom: auto;">Alexandria Press</div>
                     <div style="text-align: center; opacity: 0.8; line-height: 1.6; font-size: 0.95em;">
                         <p>${this.bookData.descriptor || 'A generated collection'}</p>
                         <p style="margin-top: 20px; font-size: 0.85em;">Generated by artificial intelligence<br>in conversation with humanity's wisdom</p>
@@ -388,188 +468,99 @@ class BookReader {
         return pages;
     }
 
-    // Initialize the book reader with data
-    async init(bookData) {
-        this.bookData = bookData;
-        this.pagesWithTexture = new Set();
+    // Create page DOM elements
+    createPageElements(bookPages) {
+        const container = document.getElementById('readerBook');
+        if (!container) return;
 
-        // Update modal title
-        const titleEl = document.getElementById('readerBookTitle');
-        if (titleEl) {
-            titleEl.textContent = bookData.title;
-        }
+        container.innerHTML = '';
 
-        // Get container
-        const container = document.getElementById('bookReaderContent');
-        if (!container) {
-            console.error('Book reader container not found');
-            return;
-        }
-
-        // Dynamic sizing based on viewport
-        const viewportWidth = window.innerWidth;
-        const viewportHeight = window.innerHeight;
-
-        // Available area for the book
-        // Head (60) + Nav (60) = 120 buffer vertically
-        // Add 20px safety buffer
-        const availableHeight = viewportHeight - 140;
-
-        // Width: leave some space for side margins if possible
-        const availableWidth = Math.min(viewportWidth - 40, 1000);
-
-        // Single page view on mobile/portrait
-        const isMobile = viewportWidth < 768;
-
-        // Build pages with the CALCULATED available height
-        const bookPages = this.buildBookPages(availableHeight);
-        console.log(`Building book with ${bookPages.length} pages`);
-
-        // Create book element
-        container.innerHTML = `
-            <div class="reader-book-wrapper">
-                <div id="readerBook"></div>
-            </div>
-            <div class="reader-navigation">
-                <button class="reader-nav-button" id="readerPrevBtn">← Previous</button>
-                <span class="reader-page-info" id="readerPageInfo">Page 1 of ${bookPages.length}</span>
-                <button class="reader-nav-button" id="readerNextBtn">Next →</button>
-            </div>
-        `;
-
-        const bookEl = document.getElementById('readerBook');
-
-        // Create page elements
         bookPages.forEach((pageData, index) => {
             const pageDiv = document.createElement('div');
-            pageDiv.className = 'reader-page';
+            pageDiv.className = 'page';
             pageDiv.setAttribute('data-density', 'hard');
 
             // Add canvas for texture
             const canvas = document.createElement('canvas');
-            canvas.className = 'reader-paper-texture';
+            canvas.className = 'paper-texture';
             pageDiv.appendChild(canvas);
 
             // Add content
             const contentDiv = document.createElement('div');
-            contentDiv.className = 'reader-page-content';
+            contentDiv.className = 'page-content';
 
             if (pageData.type === 'cover') {
                 contentDiv.innerHTML = pageData.content;
             } else {
-                let html = '<div class="reader-publisher">Alexandria Press</div>';
+                let html = '<div class="publisher">Alexandria Press</div>';
                 if (pageData.title) {
-                    html += `<div class="reader-chapter-title">${pageData.title}</div>`;
+                    html += `<div class="chapter-title">${pageData.title}</div>`;
                 }
-                html += `<div class="reader-body-text">${pageData.content}</div>`;
+                if (pageData.section) {
+                    html += `<div class="section-label">${pageData.section}</div>`;
+                }
+                html += `<div class="body-text">${pageData.content}</div>`;
                 if (pageData.pageNum) {
                     const pageNumClass = index % 2 === 0 ? 'right' : 'left';
-                    html += `<div class="reader-page-number ${pageNumClass}">${pageData.pageNum}</div>`;
+                    html += `<div class="page-number ${pageNumClass}">${pageData.pageNum}</div>`;
                 }
                 contentDiv.innerHTML = html;
             }
 
             pageDiv.appendChild(contentDiv);
-            bookEl.appendChild(pageDiv);
+            container.appendChild(pageDiv);
+        });
+    }
+
+    // Initialize page flip library
+    initPageFlip(width, height) {
+        const bookContainer = document.getElementById('readerBook');
+        if (!bookContainer) return;
+
+        // Check if StPageFlip library loaded
+        if (typeof St === 'undefined' || typeof St.PageFlip === 'undefined') {
+            console.error('StPageFlip library not loaded');
+            return;
+        }
+
+        this.pageFlip = new St.PageFlip(bookContainer, {
+            width: this.isMobile ? width : width / 2,
+            height: height,
+            size: 'fixed',
+            minWidth: 300,
+            maxWidth: 600,
+            minHeight: 400,
+            maxHeight: 900,
+            showCover: true,
+            flippingTime: 1000,
+            usePortrait: this.isMobile,
+            startPage: 0,
+            drawShadow: true,
+            maxShadowOpacity: 0.5,
+            mobileScrollSupport: false,
+            swipeDistance: 30,
+            clickEventForward: true,
+            startZIndex: 100,
+            disableFlipByClick: false
         });
 
-        // Wait for DOM to update
-        await new Promise(resolve => setTimeout(resolve, 100));
+        this.pageFlip.loadFromHTML(document.querySelectorAll('.page'));
 
-        // Initialize PageFlip
-        if (typeof St !== 'undefined' && typeof St.PageFlip !== 'undefined') {
-            this.pageFlip = new St.PageFlip(bookEl, {
-                width: isMobile ? availableWidth : availableWidth / 2, // Width of a SINGLE page
-                height: availableHeight,
-                size: 'fixed', // Use fixed to respect our calculated dimensions exactly
-                // minWidth: 200,
-                // maxWidth: 1000,
-                // minHeight: 300,
-                // maxHeight: 1200,
-                showCover: true,
-                flippingTime: 800,
-                usePortrait: isMobile,
-                startPage: 0,
-                drawShadow: true,
-                maxShadowOpacity: 0.4,
-                mobileScrollSupport: false,
-                swipeDistance: 30,
-                clickEventForward: true,
-                startZIndex: 100,
-                disableFlipByClick: false
-            });
-
-            this.pageFlip.loadFromHTML(document.querySelectorAll('.reader-page'));
-
-            // Event listeners for page flip
-            this.pageFlip.on('flip', () => {
-                this.updatePageInfo();
-                this.updateNavButtons();
-            });
-
-            // Generate textures for visible pages
-            this.generateInitialTextures();
-
+        // Page flip events
+        this.pageFlip.on('flip', () => {
             this.updatePageInfo();
             this.updateNavButtons();
-            this.setupNavigation();
-
-            // Setup debounced resize handler for repagination
-            this.setupResizeHandler();
-        } else {
-            console.error('StPageFlip library not loaded');
-            container.innerHTML = '<p style="padding: 40px; text-align: center;">Error loading page flip library.</p>';
-        }
-    }
-
-    // Setup resize handler with debouncing
-    setupResizeHandler() {
-        let resizeTimeout;
-        let lastHeight = window.innerHeight;
-
-        window.addEventListener('resize', () => {
-            // Only repaginate if height changed significantly (more than 50px)
-            const heightDiff = Math.abs(window.innerHeight - lastHeight);
-            if (heightDiff < 50) return;
-
-            clearTimeout(resizeTimeout);
-            resizeTimeout = setTimeout(() => {
-                lastHeight = window.innerHeight;
-                this.repaginate();
-            }, 500); // 500ms debounce
         });
     }
 
-    // Repaginate the book (called on resize)
-    async repaginate() {
-        if (!this.bookData) return;
-
-        // Store current page position
-        const currentPage = this.pageFlip ? this.pageFlip.getCurrentPageIndex() : 0;
-        const totalPages = this.pageFlip ? this.pageFlip.getPageCount() : 1;
-        const progress = currentPage / Math.max(totalPages - 1, 1);
-
-        // Clear textures to regenerate
-        this.pagesWithTexture = new Set();
-
-        // Rebuild the book
-        await this.init(this.bookData);
-
-        // Try to restore approximate position
-        if (this.pageFlip) {
-            const newTotalPages = this.pageFlip.getPageCount();
-            const targetPage = Math.floor(progress * (newTotalPages - 1));
-            this.pageFlip.flip(targetPage);
-        }
-    }
-
-    generateInitialTextures() {
-        const pages = document.querySelectorAll('.reader-page');
+    // Generate textures for visible pages using ResizeObserver
+    initTextures() {
+        const pages = document.querySelectorAll('.page');
 
         const observer = new ResizeObserver((entries) => {
             entries.forEach(entry => {
                 const page = entry.target;
-                const canvas = page.querySelector('.reader-paper-texture');
+                const canvas = page.querySelector('.paper-texture');
 
                 if (canvas && entry.contentRect.width > 0 && entry.contentRect.height > 0) {
                     const pageIndex = Array.from(pages).indexOf(page);
@@ -590,16 +581,23 @@ class BookReader {
         pages.forEach(page => observer.observe(page));
     }
 
+    // Update page info display
     updatePageInfo() {
         if (!this.pageFlip) return;
-        const current = this.pageFlip.getCurrentPageIndex();
+        const current = this.pageFlip.getCurrentPageIndex() + 1;
         const total = this.pageFlip.getPageCount();
-        const pageInfo = document.getElementById('readerPageInfo');
-        if (pageInfo) {
-            pageInfo.textContent = `Page ${current + 1} of ${total}`;
+
+        const info = document.getElementById('readerPageInfo');
+        if (info) info.textContent = `${current} / ${total}`;
+
+        const progressBar = document.getElementById('readerProgressBar');
+        if (progressBar) {
+            const percent = ((current - 1) / Math.max(total - 1, 1)) * 100;
+            progressBar.style.width = `${percent}%`;
         }
     }
 
+    // Update navigation button states
     updateNavButtons() {
         if (!this.pageFlip) return;
         const prevBtn = document.getElementById('readerPrevBtn');
@@ -609,6 +607,7 @@ class BookReader {
         if (nextBtn) nextBtn.disabled = this.pageFlip.getCurrentPageIndex() >= this.pageFlip.getPageCount() - 1;
     }
 
+    // Setup navigation button handlers
     setupNavigation() {
         const prevBtn = document.getElementById('readerPrevBtn');
         const nextBtn = document.getElementById('readerNextBtn');
@@ -621,58 +620,89 @@ class BookReader {
         }
     }
 
-    open() {
-        const modal = document.getElementById('bookReaderModal');
-        if (modal) {
-            modal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-        }
+    // Add toolbar HTML
+    addToolbar(totalPages) {
+        const container = document.getElementById('bookReaderContent');
+        if (!container) return;
+
+        const toolbar = document.createElement('div');
+        toolbar.className = 'reader-toolbar';
+        toolbar.innerHTML = `
+            <div class="reader-toolbar-progress">
+                <div class="reader-progress-bar" id="readerProgressBar" style="width: 0%"></div>
+            </div>
+            <div class="reader-toolbar-controls">
+                <button class="reader-tool-btn" id="readerPrevBtn" title="Previous Page">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                <span class="reader-page-info" id="readerPageInfo">1 / ${totalPages}</span>
+                <button class="reader-tool-btn" id="readerNextBtn" title="Next Page">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
+            </div>
+        `;
+        container.appendChild(toolbar);
     }
 
-    close() {
-        const modal = document.getElementById('bookReaderModal');
-        if (modal) {
-            modal.classList.add('hidden');
-            document.body.style.overflow = '';
+    // Main initialization
+    async init(bookData) {
+        console.log('BookReader.init() called with:', bookData?.title);
+        this.bookData = bookData;
+
+        const container = document.getElementById('bookReaderContent');
+        if (!container) {
+            console.error('Container #bookReaderContent not found');
+            return;
         }
 
-        // Cleanup
-        if (this.pageFlip) {
-            this.pageFlip.destroy();
-            this.pageFlip = null;
+        // Calculate dimensions
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.visualViewport ? window.visualViewport.height : window.innerHeight;
+        this.isMobile = viewportWidth < 768;
+
+        const availableHeight = Math.max(viewportHeight - 100, 400);
+        const availableWidth = Math.min(viewportWidth - 40, this.isMobile ? 500 : 1000);
+
+        // Set up container HTML
+        container.innerHTML = `
+            <div class="reader-book-wrapper">
+                <div id="readerBook" style="height:${availableHeight}px; width:${availableWidth}px; margin:auto;"></div>
+            </div>
+        `;
+
+        // Build pages
+        console.log('Building book pages...');
+        const bookPages = this.buildBookPages();
+        console.log(`Built ${bookPages.length} pages`);
+
+        if (bookPages.length === 0) {
+            container.innerHTML = '<div style="color:white; text-align:center; padding:40px;">No content to display</div>';
+            return;
         }
-        this.pagesWithTexture = new Set();
+
+        // Create page elements
+        this.createPageElements(bookPages);
+
+        // Add toolbar
+        this.addToolbar(bookPages.length);
+
+        // Initialize PageFlip
+        console.log('Initializing PageFlip...');
+        this.initPageFlip(availableWidth, availableHeight);
+
+        // Initialize textures
+        this.initTextures();
+
+        // Setup navigation
+        this.setupNavigation();
+        this.updatePageInfo();
+        this.updateNavButtons();
+
+        console.log('BookReader initialization complete');
     }
 }
 
-// Global instance
-const bookReader = new BookReader();
-
-// Setup modal close handlers
-document.addEventListener('DOMContentLoaded', () => {
-    // Close button
-    const closeBtn = document.getElementById('closeBookReader');
-    if (closeBtn) {
-        closeBtn.addEventListener('click', () => bookReader.close());
-    }
-
-    // Escape key
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-            const modal = document.getElementById('bookReaderModal');
-            if (modal && !modal.classList.contains('hidden')) {
-                bookReader.close();
-            }
-        }
-    });
-
-    // Click outside modal
-    const modal = document.getElementById('bookReaderModal');
-    if (modal) {
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                bookReader.close();
-            }
-        });
-    }
-});
+// Export for use
+if (typeof window !== 'undefined') {
+    window.BookReader = BookReader;
+}
