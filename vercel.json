@@ -4,5 +4,25 @@
             "source": "/(.*)",
             "destination": "/api/main.py"
         }
+    ],
+    "headers": [
+        {
+            "source": "/books/:path*",
+            "headers": [
+                {
+                    "key": "Cache-Control",
+                    "value": "public, s-maxage=31536000, stale-while-revalidate=86400"
+                }
+            ]
+        },
+        {
+            "source": "/search",
+            "headers": [
+                {
+                    "key": "Cache-Control",
+                    "value": "public, s-maxage=3600"
+                }
+            ]
+        }
     ]
 }

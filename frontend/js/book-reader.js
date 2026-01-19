@@ -287,14 +287,28 @@ class BookReader {
 
     // Get available height for page content (excluding chrome like headers/page numbers)
     getPageContentHeight() {
+        // Try to get from existing page element
         const pageEl = document.querySelector('.reader-page .reader-page-content');
         if (pageEl) {
-            // Account for padding and decorative elements
             const style = getComputedStyle(pageEl);
             const padding = parseFloat(style.paddingTop) + parseFloat(style.paddingBottom);
-            return pageEl.clientHeight - padding - 80; // 80px for chapter title/page number
+            // Account for publisher (40px), chapter title (60px estimate), page number (30px)
+            const chromeHeight = 130;
+            return pageEl.clientHeight - padding - chromeHeight;
         }
-        return 500; // Default fallback
+
+        // Calculate based on viewport and expected container layout
+        // Container fills viewport, minus header (~60px), navigation (~50px), padding (~32px)
+        const viewportHeight = window.innerHeight;
+        const headerHeight = 60;
+        const navigationHeight = 50;
+        const containerPadding = 32;
+        const pagePadding = 120; // 60px top + 60px bottom padding on .reader-page
+        const pageChrome = 130; // publisher + chapter title + page number
+
+        const availableHeight = viewportHeight - headerHeight - navigationHeight - containerPadding - pagePadding - pageChrome;
+
+        return Math.max(300, availableHeight);
     }
 
     // Build book pages from JSON data
