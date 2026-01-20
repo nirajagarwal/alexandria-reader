@@ -1,0 +1,34 @@
+# Why does anything persist?
+
+Things change. Rivers flow, bodies age, cities crumble. Yet we speak of "the same river," "the same person," "the same city" across time. What makes something persist—remain identical to itself—through change? This isn't just metaphysics for its own sake: whether you're the same person who committed a crime twenty years ago, whether a Ship of Theseus rebuilt plank by plank is still the same ship, whether anything genuinely endures or just appears to—these questions shape law, memory, identity, and what it means to be anything at all.
+
+## Why It Matters
+
+Persistence grounds identity across time, and identity grounds everything: responsibility (you answer for your past actions), relationships (you love *this* person, not just someone qualitatively similar), survival (you care about *your* future, not just someone who resembles you). If nothing truly persists—if objects and selves are just snapshots in temporal succession—then moral responsibility collapses, personal relationships become absurd, and even prudential concern for your future self needs justification. What makes persistence possible determines what kind of universe we inhabit: one of enduring substances or fleeting processes, genuine continuity or conventional fiction.
+
+## Three Approaches
+
+**Aristotle's substrata**: Things persist because they have an underlying substance—a *hypokeimon*—that remains through change. When wood becomes a table, the matter persists while gaining a new form. Change is real, but it happens *to* something that endures. Properties change; the substance bearing them does not. This solves persistence for ordinary objects but creates problems: what is this bare substance apart from its properties? And when *does* persistence fail—how many parts can the ship lose before it's a different ship? Aristotle's answer: substances persist through accidental changes (color, location) but not substantial ones (human to corpse). But where exactly is that line?
+
+**Hume's skeptical dissolution**: There is no persistence—just resemblance and causation creating the *idea* of identity. "I never can catch myself without a perception," Hume writes in the *Treatise*. No enduring self beneath the stream of experiences, no substance underlying qualities. The mind confuses similarity across time with numerical identity. We see ship parts replaced gradually, the changes nearly imperceptible, and our imagination smoothly connects the stages—calling it "the same ship" is a convenient fiction, not metaphysical fact. What we call persistence is just tight causal connection plus qualitative similarity, mistaken for something deeper. Brutal honesty, but it leaves us without ground for saying *anything* persists, which contradicts our deepest intuitions about survival and identity.
+
+**The endurantist-perdurantist debate**: Contemporary metaphysics splits on temporal ontology. Endurantists say objects are wholly present at each moment—you exist *now*, entirely, and also existed entirely yesterday. Persistence is primitive: the same thing, wholly present, at different times. Perdurantists say objects are four-dimensional worms with temporal parts—the you-now is one temporal slice, the you-yesterday another, connected like frames in a film. Persistence is having temporal parts at different times. Each solves different puzzles: endurantism handles change better (how can something be *both* bent and straight? Different temporal parts), perdurantism handles identity over time better (what unifies your stages? Spatiotemporal continuity of the worm). But perdurantism seems to eliminate what we care about—the *you* who persists becomes a scattered series of person-stages, and your survival becomes less like genuine continuity and more like having descendants.
+
+## The Method
+
+Aristotle employs conceptual analysis of change—what must be the case for change to be intelligible? Hume uses empirical psychology—what do we actually observe when we look for persistence? Contemporary analytic metaphysics uses formal ontology and possible worlds: under what conditions is x at t₁ identical to y at t₂? All three methods reveal different aspects: Aristotle shows what persistence requires conceptually, Hume what it lacks empirically, contemporary debate what it could be metaphysically. The question resists resolution partly because these methods pull in different directions—formal consistency, empirical adequacy, and conceptual necessity don't obviously converge.
+
+## Where It Breaks
+
+Every answer faces puzzle cases. Aristotle's substance: what about gradual replacement (Ship of Theseus) or fission (amoebas)? Hume's conventionalism: if persistence is just fiction, what grounds our certainty that we survive sleep, or our responsibility for past actions? The temporal parts view: if I'm a four-dimensional worm, which part is punished for crimes—the one who committed them, or the current slice who may be reformed? And all approaches struggle with quantum mechanics, where particles lack determinate trajectories, and vagueness, where there's no fact about exactly when a ship becomes a different ship. Sorites problems multiply: one cell different, same organism? One plank different, same ship? One memory different, same person?
+
+## Living Consequences
+
+If nothing truly persists, prudential rationality—saving for retirement, avoiding harm to your future self—needs justification: why care about a qualitatively similar but numerically distinct person? Relationships too: is your spouse "the same person" you married, or a qualitatively similar replacement? If persistence requires strict identity, divorce might be metaphysically accurate. If temporal parts are real, your childhood self still exists in the past—forever—raising strange questions about time, regret, and what changes mean. Believing in enduring substances makes the world stable, graspable, populated by things that genuinely last. Denying it makes everything processual, flowing, less solid than it appears—which might be more honest to experience but harder to live with.
+
+## The Question Now
+
+Active in metaphysics, personal identity, and philosophy of physics. Four-dimensionalism dominates among philosophers, but intuitions resist: we *feel* wholly present now, not time-extended. Recent work explores *temporary* persistence—maybe nothing persists permanently, but things do persist for stretches, which is enough for practical purposes. Quantum ontology complicates everything: if particles don't have determinate trajectories, what persists? And attention turns to *what matters* in persistence—perhaps survival doesn't require strict identity, just psychological continuity or biological life. The question hasn't been answered so much as refined: we're clearer about the options, their costs, and what's actually at stake when we ask whether anything truly lasts.
+
+---
+*Part of Questions at alexandria.press*

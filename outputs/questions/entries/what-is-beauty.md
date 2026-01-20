@@ -1,0 +1,34 @@
+# What is beauty?
+
+Is beauty in the object or in the eye beholding it? In perfect proportion or emotional response? The question seems simple until you try to answer it—then it fractures into aesthetics, metaphysics, and the problem of how subjective experience relates to objective reality. Every attempt to pin beauty down either makes it too rigid (beauty becomes mere mathematics) or too loose (beauty becomes meaningless). Yet we keep trying, because how we answer shapes what art is for, whether taste can be educated, and if beauty reveals truth or merely triggers pleasure.
+
+## Why It Matters
+
+If beauty is objective—built into the structure of things—then aesthetic judgments can be right or wrong, taste can be cultivated, and beautiful objects carry authority. If beauty is subjective—projected by the observer—then "de gustibus non est disputandum" (there's no disputing taste), and aesthetic claims are just preferences dressed up as judgments. The stakes extend beyond art galleries: if beauty is objective, it might point toward truth, ground ethics (the good is beautiful), or reveal something about reality's deep structure. If subjective, then aesthetics detaches from truth and morality—beauty becomes decoration, not discovery. The question determines whether we can meaningfully argue about art, whether some works truly are better than others, and whether beauty matters beyond personal pleasure.
+
+## Three Approaches
+
+**Plato** placed beauty in the Forms—eternal, unchanging, perfect. Beautiful things in the physical world are beautiful because they participate in the Form of Beauty itself. A beautiful face or sunset is a pale reflection of absolute Beauty, which the soul recognizes through recollection (*Symposium*, *Phaedrus*). This makes beauty objective and hierarchical: some things are more beautiful because they participate more fully in the Form. Physical beauty is the lowest rung; the beauty of souls, laws, and knowledge ascends toward the Form itself. The lover of beauty climbs this ladder, moving from attraction to beautiful bodies to contemplation of Beauty as such—pure, eternal, beyond change or corruption.
+
+**Hume** collapsed the distinction. Beauty is not in objects but in the mind perceiving them: "Beauty is no quality in things themselves: It exists merely in the mind which contemplates them" (*Of the Standard of Taste*). The rose isn't beautiful—the rose causes a sentiment of beauty in observers. This seems to make beauty purely subjective, but Hume resisted full relativism. He proposed that cultivated judges—those with delicate taste, extensive practice, freedom from prejudice—would converge in their judgments. Beauty remains a response, not a property, but some responses are better calibrated than others. The standard of taste isn't in objects but in ideal observers.
+
+**Kant** (*Critique of Judgment*) tried to split the difference: aesthetic judgments are subjective but make universal claims. When you call something beautiful, you're reporting your pleasure, yet you speak as if others should agree. Beauty involves "purposiveness without purpose"—objects that seem designed without having a specific function. The beautiful satisfies without engaging concepts or desires; it's pleasure without interest. Crucially, aesthetic judgments are both singular (this particular sunset) and universal (everyone should find it beautiful). Kant preserved aesthetic objectivity without Platonic Forms—beauty isn't in the object or merely in the subject but in a distinctive kind of experience that claims universal validity.
+
+## The Method
+
+Plato used dialectic and metaphysics, arguing from the experience of beauty to the necessity of Forms. Hume employed empirical observation—what do we actually find when we examine aesthetic experience? Kant performed transcendental analysis—what conditions must hold for aesthetic judgment to be possible? These different methods generated incompatible answers: Plato's rationalist ascent finds beauty in eternal Forms; Hume's empiricism locates it in sentiment; Kant's critical philosophy places it in a special kind of judgment. The method determines what counts as evidence: for Plato, the soul's recognition; for Hume, patterns in human response; for Kant, the structure of judgment itself.
+
+## Where It Breaks
+
+Plato's Form of Beauty becomes mysterious—what makes it beautiful? If Beauty itself participates in nothing higher, the regress stops arbitrarily. Hume's cultivated judges raise the question: why trust their convergence? Different cultures with different practices might produce different standards—whose judges judge the judges? Kant's "universal validity without concepts" sounds contradictory—how can a judgment be both subjective (based on feeling) and universally binding? His theory also struggles with ugly art and sublimity (which he handles separately). All three approaches face the challenge of cross-cultural variation: if beauty is objective or universal, why do aesthetic standards differ so radically across times and places?
+
+## Living Consequences
+
+If Plato is right, aesthetic education is moral education—training the soul to recognize higher beauty. Appreciating art becomes a spiritual practice, beauty in daily life matters deeply, and ugliness represents falling away from the Forms. If Hume is right, we cultivate taste through experience but remain modest about our judgments—your pleasure counts even without training, though educated perception sees more. Democracy in aesthetics, but not relativism. If Kant is right, beauty offers a unique kind of experience—disinterested pleasure that feels universally shareable. Aesthetic judgment becomes a practice of community: claiming others should share your response while knowing they might not. Each view shapes how you engage art, nature, even other people—whether you seek objective standards, trust your responses, or navigate between subjective experience and universal claims.
+
+## The Question Now
+
+Contemporary aesthetics fragments the question. Neuroscience explores beauty as evolutionary adaptation—symmetry signals health, certain proportions trigger reward circuits. But this explains the cause of beauty-responses, not what beauty *is*. Institutional theories argue that art worlds determine what counts as art, sidestepping beauty entirely—much contemporary art deliberately rejects it. Feminist aesthetics questions whether traditional beauty standards encode oppression. Yet beauty persists: we still argue about it, feel its pull, disagree about what possesses it. The question remains open because attempts to reduce beauty to biology, culture, or social construction can't capture why beauty moves us—why it feels like discovery, not just reaction. We still don't know if beauty is found or created, recognized or projected.
+
+---
+*Part of Questions at alexandria.press*

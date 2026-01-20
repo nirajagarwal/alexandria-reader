@@ -1,0 +1,44 @@
+# What is religious experience?
+
+Religious experience—the direct encounter with what believers call the divine, the sacred, the transcendent—poses a peculiar problem for philosophy. It claims authority outside ordinary experience, yet demands to be taken seriously as a way of knowing. Whether it's Moses at the burning bush, Teresa of Avila's ecstasies, or a Buddhist monk's experience of emptiness, these encounters shape beliefs, ethics, entire civilizations. But what are we to make of claims that rest on experiences most people never have, that resist public verification, that seem incommunicable? Can religious experience justify belief in God? Or is it merely psychological, explicable without reference to anything transcendent?
+
+## Why It Matters
+
+What hangs on religious experience is nothing less than whether there exists a way of knowing that bypasses reason and evidence. If religious experiences are genuine encounters with the divine, they constitute evidence that demands philosophical attention—possibly the most important evidence available. If they're not, then billions of believers base their worldviews on illusion. The question cuts to epistemology's core: what counts as knowledge, what makes belief justified, whether experience alone can ground truth claims. It also determines whether religious diversity reflects different paths to one reality or incompatible delusions.
+
+## Three Approaches
+
+**William James** approached religious experience as a psychologist-philosopher, examining it phenomenologically without prejudging its source. In *The Varieties of Religious Experience* (1902), he identified four marks of mystical experience: ineffability (it resists description), noetic quality (it feels like knowledge, not mere feeling), transiency (it's temporary), and passivity (it happens to you—you don't control it). James argued for what he called the "pragmatic" test: religious experiences are real in their effects. They transform lives, produce moral fruits, generate conviction that persists. Whether or not God exists metaphysically, religious experiences constitute genuine psychological events with phenomenological content that demands explanation. His radical empiricism insisted that if something appears in experience—including the sense of encountering the divine—philosophy must account for it, not dismiss it. The verification lies not in the experience matching external reality but in its practical consequences for living.
+
+**Bertrand Russell** and the logical positivists rejected religious experience as evidence for anything beyond brain states. Russell argued that the vividness of an experience provides no guarantee of its veridicality. People experience all manner of things—hallucinations, dreams, delusions—with complete conviction. The drunk sees pink elephants with absolute certainty. What makes religious experience different? Without independent verification, without public accessibility, without predictive power, religious experiences prove nothing about external reality. They're explicable as psychological phenomena: wish fulfillment, culturally conditioned interpretation of ordinary mental states, perhaps neurological events. The fact that mystics across traditions report contradictory content—Christians encounter Christ, Hindus meet Krishna, Buddhists experience no-self—suggests we're dealing with interpretation of private mental states, not perception of objective transcendent reality. Russell's demolition was epistemological: private, unverifiable experiences cannot ground public knowledge claims.
+
+**Rudolf Otto** argued in *The Idea of the Holy* (1917) that religious experience has sui generis content—it's not reducible to emotion, psychology, or cultural conditioning. He identified the core as the experience of the "numinous": the sense of encountering the mysterium tremendum et fascinans (the tremendous and fascinating mystery). This experience involves both terror (the creature feeling before the overwhelming) and fascination (irresistible attraction). Otto insisted this is a unique form of awareness, distinct from moral feelings or aesthetic pleasure. It's not God-as-concept but God-as-encountered. Different traditions may interpret the numinous differently, but they're responding to the same basic experience—the uncanny sense of something wholly other, something sacred breaking through the ordinary. For Otto, religious experience is primary; theology comes later, attempting to articulate what was encountered.
+
+## The Method
+
+These approaches employ radically different methods, revealing how methodology shapes conclusions. James used empirical psychology—collecting cases, identifying patterns, suspending metaphysical judgment while taking phenomenological reports seriously. His method was descriptive, cataloguing what people actually experience without reducing it prematurely. Russell deployed logical analysis and epistemological rigor: what criteria must evidence meet? Do religious experiences meet them? If not, rational inquiry cannot proceed from them. His method was critical, testing religious claims against standards of evidence from science and logic. Otto used phenomenology of religion—attempting to identify the essential structure of religious consciousness across traditions, finding common elements beneath cultural variations. His method was interpretive, seeking to understand religious experience from inside, on its own terms.
+
+## Where It Breaks
+
+James's pragmatism risks making truth whatever works psychologically. But delusions can also transform lives—the question is whether religious experiences tell us something about reality beyond the experiencer's psyche. His refusal to judge metaphysical truth claims sidesteps the central issue believers care about: is there actually a God?
+
+Russell's skepticism proves too much. By his standards, all experience becomes suspect—we can't prove the external world exists either. His demand for public verifiability excludes entire domains of human experience (aesthetic, ethical, phenomenological) that seem legitimate. The mystic can reply: you demand verification you've excluded by definition. Absence of shared experience doesn't prove absence of object experienced.
+
+Otto's sui generis claim seems question-begging. Why can't the numinous be complex emotion plus cultural interpretation? His assumption that similar experiences across cultures point to one object doesn't follow—similar brain chemistry could produce similar phenomenology without any transcendent cause. And the diversity of mystical reports—personal God vs. impersonal Brahman vs. Buddhist emptiness—suggests interpretation matters more than Otto admits.
+
+## Living Consequences
+
+If religious experiences are genuine encounters with the divine, then rationality has limits—there exist truths accessible only through transformative experience. This validates contemplative practice, mystical tradition, the authority of revelation. It means some knowledge requires preparation, purity, grace—not just argument. Living this means prioritizing practices that cultivate openness to the sacred: prayer, meditation, ritual, moral purification.
+
+If religious experiences are psychological phenomena, then sincerity and conviction prove nothing about reality. This demands critical distance from our strongest intuitions, humility about certainty, recognition that experience requires interpretation. Living this means treating religious claims like any other claims—subject to evidence, reason, revision. It means compassion for believers without granting automatic authority to private experience.
+
+If religious experience has unique phenomenological content but ambiguous metaphysical status, we live with irreducible uncertainty about ultimate reality while respecting the experiences that shape billions of lives. This requires philosophical modesty without dismissive reduction.
+
+## The Question Now
+
+Contemporary neuroscience has complicated the debate. We can now correlate religious experiences with brain activity—stimulating the temporal lobe can produce mystical states. But does this explain away religious experience or merely identify its neurological substrate? Believers note: we also correlate perception of trees with brain states, yet trees exist. Skeptics counter: when brain damage or drugs reliably produce "divine" encounters, we have evidence for natural explanation. 
+
+The question remains open because it's fundamentally about what we allow as evidence. No consensus exists on whether private, unrepeatable, transformative experiences can ground justified belief—or whether demanding they meet standards designed for public, repeatable phenomena begs the question against them. Religious experience persists as both phenomenon and philosophical problem, as mysterious now as when James catalogued it.
+
+---
+*Part of Questions at alexandria.press*
