@@ -1,0 +1,21 @@
+# Prions
+
+For decades, the central dogma of biology held firm: genetic information flows from DNA to RNA to protein. Proteins were the workers, not the blueprints. They couldn't carry information, couldn't reproduce, couldn't cause infection. Then came the prions—infectious proteins that violated everything we thought we knew about how disease spreads.
+
+The first hints emerged in the 1950s with kuru, a fatal brain disease afflicting the Fore people of Papua New Guinea. Victims developed tremors, lost coordination, eventually died. The transmission route: mortuary cannibalism, a funeral practice of consuming deceased relatives. When the practice ended, kuru vanished. But how did eating infected tissue cause disease? No virus or bacterium could be found.
+
+Similar mysteries accumulated. Scrapie in sheep, known since the 1700s. Creutzfeldt-Jakob disease in humans. Mad cow disease in the 1980s, which leapt to humans as variant CJD, killing 178 people in Britain. All shared a pattern: long incubation periods, brain tissue riddled with holes like sponges, no immune response, no genetic material in the infectious agent. 
+
+Stanley Prusiner proposed the impossible in 1982: the infectious agent was a misfolded protein. Not a virus using proteins as a shell, but the protein itself. He called them prions—proteinaceous infectious particles. The response was hostile. Critics called it heresy, impossible, a violation of biological law. How could a protein reproduce without DNA? How could it carry information?
+
+The answer was darker and stranger than anyone expected. Prions are native proteins gone wrong. The normal prion protein, PrP^C^, exists in all mammalian brains. But it can misfold into PrP^Sc^—same amino acid sequence, different shape. And that shape is infectious. When a misfolded prion contacts a normal protein, it acts as a template, forcing the healthy protein into the pathological configuration. One corrupts two, two corrupt four, four corrupt eight. An exponential cascade of misfolding.
+
+The misfolded proteins clump into insoluble aggregates that the cell can't clear. They accumulate, killing neurons, leaving the brain full of holes. Worse: prions resist nearly everything. They survive cooking, freezing, formaldehyde, radiation doses that would destroy DNA. Standard sterilization doesn't eliminate them. Surgical instruments can remain infectious. The soil itself can harbor prions for years.
+
+Prusiner won the Nobel Prize in 1997, but skepticism lingered until prion mechanisms were demonstrated in real time using cellular models and structural biology. We now know several human prion diseases: inherited forms from mutations in the prion gene, sporadic forms arising spontaneously from random misfolding, and acquired forms from exposure. Variant CJD came from eating beef from mad cow-infected cattle. Medical instruments have transmitted classical CJD. Kuru spread through funeral feasts.
+
+The implications reach beyond these rare diseases. Alzheimer's involves beta-amyloid plaques that spread through prion-like mechanisms. Parkinson's features alpha-synuclein that propagates cell-to-cell. Tau protein in frontotemporal dementia behaves similarly. The misfolding cascade—template-based corruption of native proteins—may underlie multiple neurodegenerative diseases.
+
+What unsettles most: prion diseases can arise from nothing. No infection needed. The protein simply misfolds spontaneously, corrupts its neighbors, and the cascade begins. Your own proteins, encoded in your own genes, can turn against you through nothing but chance. Classical CJD strikes roughly one in a million people per year, worldwide, with no known exposure. The protein just folds wrong.
+
+Prions shattered biological dogma and forced a conceptual revolution. Information can be stored in shape, not just sequence. Infection can occur without genetic material. A protein can be both the pathogen and the disease. We were wrong about what was possible, and reality was stranger than we imagined. The prion that wasn't supposed to exist turned out to be devastatingly real.

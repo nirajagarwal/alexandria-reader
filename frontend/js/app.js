@@ -190,7 +190,8 @@ async function loadBook(bookId) {
         if (slug) {
             loadEntry(bookId, slug, false); // false = don't push state again
         } else if (currentBook.introduction) {
-            loadContentPage(bookId, 'introduction', 'Introduction');
+            // content is already in currentBook, no need to fetch again
+            showContentPage('Introduction', currentBook.introduction, bookId, 'introduction');
         } else if (currentEntries.length > 0) {
             loadEntry(bookId, currentEntries[0].slug, true);
         } else {

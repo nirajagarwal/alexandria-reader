@@ -14,11 +14,13 @@ import re
 import argparse
 from datetime import datetime, timezone
 from pathlib import Path
+from io import BytesIO
 
 import anthropic
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
+from PIL import Image
 
 load_dotenv()
 
@@ -268,12 +270,12 @@ def generate_cover_image(
     client = get_gemini_client()
     
     # Default style for alexandria.press covers
+    # Default style for alexandria.press covers
     if style_prompt is None:
-        style_prompt = """Modern abstract style. Not too busy. Suitable for dark text overlay.
-IMPORTANT: No text, letters, numbers, or symbols anywhere on the image."""
+        style_prompt = """Modern abstract style. High quality. Full bleed, edge to edge.
+IMPORTANT: Do NOT include any text, letters, numbers, symbols, borders, or frames. Pure artwork only."""
     
-    prompt = f"""Create a book cover image (3:4 aspect ratio, portrait orientation).
-The book title and subtitle is: {title} - {descriptor}
+    prompt = f"""Create an abstract artistic interpretation of the concept: "{title} - {descriptor}".
 {style_prompt}"""
     
     response = client.models.generate_images(
@@ -295,8 +297,23 @@ def save_cover_image(collection_id: str, image_bytes: bytes) -> Path:
     output_path.mkdir(parents=True, exist_ok=True)
     
     filepath = output_path / "cover.png"
-    with open(filepath, "wb") as f:
-        f.write(image_bytes)
+    
+    # Resize before saving
+    try:
+        with Image.open(BytesIO(image_bytes)) as img:
+            # Resize logic: 400px width, aspect ratio preserved
+            base_width = 400
+            w_percent = (base_width / float(img.size[0]))
+            h_size = int((float(img.size[1]) * float(w_percent)))
+            
+            # Use Resampling.LANCZOS for quality
+            img = img.resize((base_width, h_size), Image.Resampling.LANCZOS)
+            img.save(filepath, format="PNG", optimize=True)
+            
+    except Exception as e:
+        print(f"    Resizing failed ({e}), saving original...")
+        with open(filepath, "wb") as f:
+            f.write(image_bytes)
     
     return filepath
 

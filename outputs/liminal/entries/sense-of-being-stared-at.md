@@ -1,0 +1,19 @@
+# The Sense of Being Stared At
+
+You're reading on a train when the prickling certainty hits: someone is watching you. You look up. Across the aisle, a stranger quickly averts their eyes. Coincidence? Or did you actually detect their gaze?
+
+The phenomenon is nearly universal. Surveys across cultures find that 70-97% of people report experiencing it—the uncanny sense that unseen eyes are upon you, confirmed when you turn to find someone staring. It feels like detection, not inference. No reflected movement, no sound, no logical cue. Just direct awareness of being observed.
+
+Biologist Rupert Sheldrake has spent decades investigating what he calls "the sense of being stared at from behind." His experiments are straightforward: one person stares at another's back during random intervals while the subject indicates when they feel watched. Across thousands of trials involving adults, children, and even animals, Sheldrake reports hit rates significantly above chance—around 55-60% when subjects should guess correctly 50% of the time. Small effect, but persistent. He proposes this reflects "extended mind"—that attention reaches out beyond the skull, creating what he calls a "perceptual field" that others can detect.
+
+Mainstream psychology offers less exotic explanations. We constantly monitor our environment through peripheral vision and unconscious auditory cues. A slight shift in breathing, the creak of a turned head, a shadow's movement—processed below awareness but sufficient to trigger the sensation of being watched. When you turn and catch someone staring, you remember. When you turn and find nothing, you forget. Confirmation bias inflates the hit rate in memory.
+
+Attempts to replicate Sheldrake's findings in controlled conditions have produced mixed results. Psychologist Richard Wiseman conducted trials using one-way mirrors and CCTV to eliminate all sensory cues. He found no significant effect. Sheldrake counters that sterile lab conditions may inhibit the very sensitivity being tested—that perceptual fields require natural contexts to manifest.
+
+The evolutionary argument cuts both ways. Predator detection would favor any mechanism for sensing unseen threats. But would natural selection build sensitivity to attention itself, or merely enhanced vigilance for actual environmental cues—sounds, shadows, movements? The latter requires no mysterious fields, only acute peripheral awareness.
+
+What complicates simple dismissal: directed attention does change physiology. Studies measuring galvanic skin response—subtle changes in skin conductivity—show that some subjects exhibit measurable reactions when stared at from behind, even with sensory cues eliminated. The effects are small and replication has been inconsistent, but they exist in peer-reviewed literature. Dean Radin at the Institute of Noetic Sciences has found similar patterns using random number generators to determine stare timing, removing human bias from the experimental design.
+
+Perhaps what we call "the sense of being stared at" is actually several different phenomena bundled under one label. Genuine peripheral cue detection accounts for many cases. Confirmation bias and selective memory account for others. But a small residue—measurable physiological responses to attention under controlled conditions—remains harder to explain away.
+
+The phenomenon sits in uncomfortable territory. Too common and cross-cultural to dismiss as pure superstition, too subtle and inconsistent to establish definitively, too threatening to materialist assumptions about consciousness to receive serious mainstream funding. Whether it reflects unknown sensory capacities, quantum entanglement of observer and observed, or simply the exquisite sensitivity of peripheral vision remains genuinely open. What's certain is that we notice being watched, and we don't fully know why.

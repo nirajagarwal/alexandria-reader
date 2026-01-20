@@ -1,0 +1,21 @@
+# Sleep Paralysis
+
+You wake—or think you wake—unable to move. The darkness presses down. Something is in the room with you. A presence. A shadow figure at the foot of the bed, or sitting on your chest, crushing the breath from your lungs. You try to scream but cannot. The terror is absolute and utterly real.
+
+This is sleep paralysis, reported across every culture and historical period. The Old Hag in Newfoundland folklore. The Japanese *kanashibari*. The incubus and succubus of medieval Europe. The "shadow people" of contemporary reports. Descriptions vary in detail but converge on essentials: waking immobility, crushing pressure, malevolent presence, overwhelming dread.
+
+Neuroscience offers a clean explanation. During REM sleep, the brain paralyzes the body to prevent us from acting out dreams—a mechanism called REM atonia. Sleep paralysis occurs when this system misfires: consciousness returns before the paralysis lifts. You're awake but cannot move. The brain, finding itself in this contradictory state, generates explanatory hallucinations. The sense of presence, the shadow figures, the feeling of being held down—all products of a confused mind trying to make sense of paralysis.
+
+The hypnagogic and hypnopompic hallucinations that accompany sleep paralysis are well-documented. The brain's threat-detection systems, hyperactive in this liminal state between sleep and waking, populate the darkness with dangers. The feeling of chest pressure comes from breathing against paralyzed muscles. The supernatural terror? A predictable response to finding yourself immobile and vulnerable.
+
+This explanation accounts for much. Sleep paralysis occurs more frequently under stress, sleep deprivation, irregular sleep schedules, sleeping on your back—all conditions that disrupt normal sleep architecture. It's more common in narcolepsy, where the boundaries between sleep states are already unstable. The experience is universal because the neurobiology is universal.
+
+And yet. The consistency of reports across unconnected cultures troubles the materialist account slightly. Why do so many describe the same entity—a dark, malevolent presence, often sitting on the chest? Why not spiders, or childhood fears, or random dream imagery? The brain's threat-detection system should generate diverse terrors, not this recurring archetype.
+
+Some researchers suggest the brain has a specific module for detecting social threats—other intentional agents. In the vulnerable state of sleep paralysis, this module misfires, generating the sensation of a hostile presence from minimal sensory data. The "sensed presence" phenomenon appears in other contexts: extreme isolation, high altitude, temporal lobe stimulation. Perhaps sleep paralysis reliably triggers this particular form of hallucination.
+
+Or perhaps—and this is where materialism and phenomenology diverge—the experience points to something about consciousness itself. Not that demons are real, but that certain brain states open awareness to aspects of reality normally filtered out. The terror feels so absolute, so *other*, that experiencers often resist the neurological explanation even after learning it. "I know what a dream feels like," they say. "This was different."
+
+What matters most may not be whether shadow people are real but what the experience reveals about the constructed nature of consciousness. Every night, your brain paralyzes your body without asking permission, then releases you into movement without your awareness. The boundary between sleep and waking is not the clean division we assume. We are always, to some degree, at the mercy of neurological systems operating beyond conscious control.
+
+Sleep paralysis is almost certainly a neurological phenomenon with a clear mechanism. The hallucinations are probably generated internally. But the universality of the experience, the archetypal consistency of the entities, and the absolute conviction of their reality—these remain worth pondering. The brain's explanation for its own paralysis takes the form of an intruder. Why this narrative, always this narrative, across centuries and continents? The answer may lie entirely in neuroscience. Or in something about the nature of fear itself, ancestral and irreducible, that the sleeping brain cannot help but manifest when it finds itself trapped between worlds.

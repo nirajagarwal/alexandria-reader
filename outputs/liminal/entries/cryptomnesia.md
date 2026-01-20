@@ -1,0 +1,23 @@
+# Cryptomnesia
+
+You wake with a brilliant idea—a melody, a turn of phrase, a solution to a problem that's plagued you for weeks. It feels like creation ex nihilo, pulled from some mysterious creative wellspring. Months later, you discover you didn't create it at all. You remembered it. The melody was from a song you heard once at a party. The phrase appeared in a book you skimmed years ago. The solution was suggested by a colleague in a meeting you barely attended. You didn't plagiarize consciously. You genuinely believed the idea was yours. This is cryptomnesia: hidden memory masquerading as originality.
+
+The phenomenon was first named by psychiatrist Théodore Flournoy in 1900 while investigating a medium who claimed to channel a Martian language. The language, it turned out, bore suspicious resemblance to Sanskrit texts the medium had encountered as a child. She wasn't lying—she'd genuinely forgotten the source. The memory had gone underground, only to resurface as apparent revelation.
+
+George Harrison learned this the expensive way. His 1970 hit "My Sweet Lord" was found to have "subconsciously copied" the melody of "He's So Fine," a 1963 song by The Chiffons. The judge ruled that Harrison had unconsciously plagiarized—he'd absorbed the earlier song, forgotten it, and later reproduced it believing it was his own creation. Harrison paid $1.6 million for his cryptomnesia.
+
+Laboratory studies confirm how easily this happens. In classic experiments, subjects brainstorm ideas in groups, then later try to recall which ideas were theirs and which came from others. Consistently, people claim ownership of others' contributions, genuinely believing they generated them. The more time passes, the worse the confusion becomes. Source memory—the context in which we acquired information—decays faster than the information itself. We remember the what but forget the where and when.
+
+This has implications beyond copyright law. Consider scientific discovery, where priority disputes are common. How many "independent" discoveries were actually cryptomnesia? Darwin and Wallace both arrived at natural selection, but both had read Malthus on population. Did they independently synthesize, or did one's reading of the other's earlier work—encountered and forgotten—plant seeds that sprouted as apparent insight?
+
+The phenomenon reveals something fundamental about creativity and memory. We like to think of creation as something genuinely new, springing from individual genius. Cryptomnesia suggests instead that creation is almost always recombination—taking fragments absorbed from the world and arranging them in patterns that feel novel. The experience of newness is real even when the components aren't.
+
+Neuroscience offers partial explanation. Memory formation and retrieval involve different neural pathways. The hippocampus tags memories with context—where and when they were acquired. The neocortex stores the content itself. When hippocampal context tags fade but neocortical content remains, we're left with decontextualized information that feels like it emerged from within rather than without. The idea arrives without a return address.
+
+This challenges our notion of intellectual property and originality. If we can't reliably distinguish our own ideas from absorbed ones, what does "original thought" even mean? The Romantic notion of the solitary genius creating from pure imagination looks increasingly untenable. We're all cryptomnesic to some degree, channeling influences we've internalized and forgotten.
+
+Yet there's something almost beautiful in this. Cryptomnesia means we're more porous than we think, more influenced by what we've encountered than we realize. Ideas circulate through culture, entering minds where they lie dormant until conditions align for their resurrection. Creation becomes less about conjuring the new and more about providing space for the absorbed to re-emerge, recombined in unexpected ways.
+
+Helen Keller experienced this memorably. At eleven, she wrote a story called "The Frost King." It was later discovered to closely resemble "The Frost Fairies," a story someone had signed to her years earlier. Keller was devastated, accused of plagiarism, hauled before a tribunal. She never fully recovered from the accusation, writing later: "It is certain that I cannot always distinguish my own thoughts from those I read, because what I read becomes the very substance and texture of my mind."
+
+She was describing the human condition. We are what we've absorbed, rearranged, forgotten, and rediscovered. The boundary between memory and creation is far more permeable than we pretend.

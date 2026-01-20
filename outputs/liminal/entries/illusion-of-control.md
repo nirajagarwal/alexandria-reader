@@ -1,0 +1,21 @@
+# The Illusion of Control
+
+In 1975, psychologist Ellen Langer asked subjects to buy lottery tickets. Half could choose their own numbers; the other half received pre-assigned tickets. When offered the chance to sell their tickets back, those who had chosen their own numbers demanded four times more money than those given random assignments. The tickets had identical odds. The only difference was the illusion that choice conferred control.
+
+This wasn't irrationality—it was human cognition revealing its architecture. We are pattern-seeking creatures who evolved to detect agency and causation in a world where distinguishing signal from noise meant survival. The problem is that this machinery doesn't turn off when we move from hunting prey to playing slot machines. We see control where none exists, and the feeling is so convincing that knowing better barely helps.
+
+Laboratory studies confirm the effect across domains. People throw dice harder when they want high numbers. Traders believe they can predict random stock fluctuations. Gamblers develop elaborate systems for games of pure chance. The more someone needs control—during stress, uncertainty, or powerlessness—the more likely they are to perceive it where it doesn't exist. Depression and anxiety disorders show the inverse: learned helplessness comes from accurately perceiving lack of control. Sometimes the illusion is protective.
+
+The phenomenon extends beyond gambling and games. Superstitions persist among highly educated people because they occasionally work—not through causation but through the randomness they're meant to control. A ritual performed before ten presentations will, purely by chance, precede success five times. Those five reinforce the belief. The failures get explained away. Confirmation bias completes the circle.
+
+This matters because the illusion of control shapes consequential decisions. Investors believe they can beat the market through skill when index funds outperform most active management. Patients choose aggressive treatments offering the feeling of agency over palliative care that might provide better outcomes. We prefer action to inaction even when action reduces our odds—doing something feels like control.
+
+Medical research has documented what's called "the action bias." Physicians order unnecessary tests and treatments partly because passivity feels like abdication. Patients demand antibiotics for viral infections. The intervention provides psychological relief regardless of medical efficacy. We are so averse to helplessness that we'll take useless action over optimal inaction.
+
+The implications cut both ways. The illusion of control can be adaptive—it motivates effort, reduces anxiety, and sometimes creates self-fulfilling prophecies. Studies show that believing you can influence outcomes leads to greater persistence and occasionally genuine success. The line between illusion and agency is blurrier than pure rationalism suggests. Confidence affects performance; perceived control reduces stress; belief shapes reality through behavior change.
+
+But the cost is real. We waste resources on ineffective interventions. We blame ourselves for outcomes we couldn't control. We see patterns in randomness and make decisions based on phantom correlations. The gambler keeps playing because the next spin might be the one. The day trader keeps trading because this time they've cracked the pattern.
+
+What we face isn't a simple error to be corrected through education. This is a feature of cognition, not a bug—though it fires in contexts evolution didn't anticipate. The same mechanisms that let us recognize genuine patterns and exert genuine agency also generate false positives. We can't simply turn off the pattern detection without losing the benefits.
+
+The uncomfortable truth is that we are less in control than we feel and more in control than we think. The illusion comforts and misleads us. Knowing about it changes surprisingly little. You can understand the lottery ticket study and still demand more for the numbers you chose yourself.

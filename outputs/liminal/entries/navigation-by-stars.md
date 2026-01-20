@@ -1,0 +1,19 @@
+# Polynesian Navigation
+
+For centuries, European explorers dismissed Pacific islanders as primitive, incapable of intentional ocean voyaging. The prevailing theory held that Polynesians had stumbled across islands by accident—castaways blown off course, not navigators with purpose and skill. Thor Heyerdahl's Kon-Tiki expedition in 1947 seemed to confirm this: if a balsa raft could drift from South America to Polynesia, surely the islands were settled by chance, not design.
+
+The problem was that Polynesians had accomplished something Europeans considered impossible. They had settled a vast triangle of ocean spanning from Hawaii to New Zealand to Easter Island—millions of square miles—without metal tools, without compasses, without writing. They had done this against prevailing winds and currents. And they had done it reliably enough to establish trade routes, maintain cultural connections, and return home.
+
+When anthropologists finally began listening to indigenous knowledge keepers in the 1960s and 70s, they discovered a navigation system of breathtaking sophistication. Polynesian wayfinders read the ocean the way Europeans read maps. They tracked star paths—not just positions, but the rising and setting points of specific stars throughout the year. They read wave patterns, detecting the subtle rebound swells that indicate land beyond the horizon. They observed birds, knowing which species travel how far from shore and at what times of day. They felt water temperature changes with their testicles hung over the side of the canoe. They carried mental maps of currents, winds, and islands that spanned thousands of miles.
+
+In 1976, the Polynesian Voyaging Society launched Hōkūleʻa, a traditional double-hulled canoe, and navigator Mau Piailug guided it from Hawaii to Tahiti using only traditional wayfinding—no instruments, no charts, no compass. The 2,500-mile journey succeeded. It wasn't luck. It was science, passed down through generations of careful observation and oral tradition.
+
+What Europeans had dismissed as impossible folklore turned out to be more accurate than their own charts. Polynesian navigators had mapped the Pacific in their minds with precision that rivaled or exceeded Western cartography. They had developed a system for reading environmental cues that modern science is only beginning to understand. Studies have confirmed that experienced navigators can detect land-reflected swells from forty miles away, that they can identify individual islands by the shape of clouds, that their star knowledge rivals astronomical software.
+
+The dismissal of Polynesian navigation wasn't neutral ignorance—it was convenient. If Pacific islanders were primitive castaways, colonialism looked like rescue. If they were master navigators who had explored and settled the world's largest ocean through intentional, systematic voyaging, then the narrative changed. European "discovery" of the Pacific became intrusion into a maritime civilization that had been navigating these waters for over three thousand years.
+
+The validation of Polynesian wayfinding reveals something about how knowledge is constructed and who gets to claim expertise. Indigenous peoples weren't believed because their knowledge wasn't written, wasn't mechanized, wasn't produced by institutions Europeans recognized as legitimate. The fact that it worked—demonstrably, reliably, for millennia—mattered less than the fact that it didn't look like European science.
+
+Today, traditional navigation is experiencing a renaissance. Polynesian communities are reviving wayfinding practices, training new generations in methods their grandparents were told to forget. Scientists study navigators to understand human spatial cognition and environmental perception. The Pacific is being re-mapped, not with satellites, but with the knowledge that was there all along.
+
+What we called impossible was simply knowledge we hadn't bothered to learn.

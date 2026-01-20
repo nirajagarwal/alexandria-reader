@@ -1,0 +1,19 @@
+# Continental Drift
+
+In 1912, Alfred Wegener proposed something absurd: the continents move. Not over millennia in some poetic sense, but actually drift across the Earth's surface like rafts on water. South America and Africa fit together like puzzle pieces because they were once joined. India crashed into Asia and pushed up the Himalayas. Antarctica once sat near the equator, lush with forests.
+
+The scientific establishment dismissed him immediately. How could continents plow through solid ocean floor? What force could possibly move landmasses the size of Africa? Wegener was a meteorologist, not a geologist—what did he know about rocks? His evidence was circumstantial: matching coastlines, similar fossils on opposite shores, geological formations that aligned across oceans. Suggestive, perhaps, but hardly proof. One prominent geologist called it "utter, damned rot."
+
+The rejection wasn't irrational. Wegener couldn't explain the mechanism. He proposed that continents floated on denser rock and were pushed by tidal forces or the Earth's rotation. Physics calculations showed these forces were nowhere near strong enough. Without a plausible mechanism, the whole theory seemed like fantasy. The fact that the continents *appeared* to fit didn't mean they had actually been connected. You can find patterns anywhere if you look hard enough.
+
+But Wegener kept finding patterns. Fossils of *Mesosaurus*, a freshwater reptile, appeared in Brazil and South Africa—on opposite sides of an ocean it couldn't have crossed. The Appalachian Mountains aligned perfectly with Scotland's Caledonian range. Glacial deposits in tropical Africa matched those in South America. Coal deposits in Antarctica proved it had once supported forests. The evidence mounted, but without a mechanism, it remained unconvincing.
+
+Wegener died in 1930 on a Greenland expedition, his theory still ridiculed. For decades after, continental drift was the domain of cranks. Geology textbooks didn't mention it, or dismissed it in footnotes. Serious scientists didn't pursue it. The lack of a mechanism made it unscientific—closer to folklore than physics.
+
+Then, in the 1950s and 60s, everything changed. Mapping of the ocean floor revealed mid-ocean ridges where new crust was forming. Paleomagnetic studies showed that rocks on either side of these ridges were mirror images, recording Earth's magnetic field reversals as the seafloor spread. Earthquakes clustered along specific zones. The mechanism Wegener couldn't provide emerged: plate tectonics. The continents weren't plowing through ocean floor—they were riding on massive plates of lithosphere, driven by convection currents in the mantle below.
+
+By 1970, plate tectonics was accepted science. Continental drift—once dismissed as impossible—became the foundation of modern geology. Wegener had been right about the phenomenon even when wrong about the mechanism. The impossible turned out to be exactly what was happening.
+
+The story matters because it reveals science's blind spots. Wegener's evidence was always there—the matching coastlines, the fossil distributions, the geological alignments. What changed wasn't the evidence but the theoretical framework that could make sense of it. Without a mechanism that fit existing physics, the observations were dismissed as coincidence. The establishment wasn't being obstinate; it was being appropriately skeptical. But that appropriate skepticism also kept the truth unrecognized for half a century.
+
+How many current impossibilities are actually unrecognized realities? What observations are we dismissing because we lack the framework to explain them? The answer isn't to accept every fringe claim—most impossible things are genuinely impossible. But Wegener's vindication suggests epistemic humility. The boundaries of the possible are less fixed than we think. Sometimes the evidence arrives before the explanation. Sometimes the cranks are right.
