@@ -4,758 +4,115 @@
   "descriptor": "The Science and Soul of Human Movement",
   "card_display": {
     "primary": "name",
-    "secondary": "chapter",
+    "secondary": "section",
     "tertiary": null
   },
   "entries": [
-    {
-      "order": 1,
-      "slug": "chapter-1-the-mechanics",
-      "name": "The Mechanics",
-      "chapter": "Chapter 1",
-      "descriptor": "How the body actually runs"
-    },
-    {
-      "order": 2,
-      "slug": "the-running-gait",
-      "name": "The Running Gait",
-      "chapter": "Chapter 1",
-      "descriptor": null
-    },
-    {
-      "order": 3,
-      "slug": "foot-strike",
-      "name": "Foot Strike",
-      "chapter": "Chapter 1",
-      "descriptor": null
-    },
-    {
-      "order": 4,
-      "slug": "cadence",
-      "name": "Cadence",
-      "chapter": "Chapter 1",
-      "descriptor": null
-    },
-    {
-      "order": 5,
-      "slug": "ground-contact-time",
-      "name": "Ground Contact Time",
-      "chapter": "Chapter 1",
-      "descriptor": null
-    },
-    {
-      "order": 6,
-      "slug": "stretch-shortening-cycle",
-      "name": "The Stretch-Shortening Cycle",
-      "chapter": "Chapter 1",
-      "descriptor": null
-    },
-    {
-      "order": 7,
-      "slug": "running-economy",
-      "name": "Running Economy",
-      "chapter": "Chapter 1",
-      "descriptor": null
-    },
-    {
-      "order": 8,
-      "slug": "pronation-supination",
-      "name": "Pronation and Supination",
-      "chapter": "Chapter 1",
-      "descriptor": null
-    },
-    {
-      "order": 9,
-      "slug": "kinetic-chain",
-      "name": "The Kinetic Chain",
-      "chapter": "Chapter 1",
-      "descriptor": null
-    },
-    {
-      "order": 10,
-      "slug": "vertical-oscillation",
-      "name": "Vertical Oscillation",
-      "chapter": "Chapter 1",
-      "descriptor": null
-    },
-    {
-      "order": 11,
-      "slug": "arm-swing",
-      "name": "Arm Swing",
-      "chapter": "Chapter 1",
-      "descriptor": null
-    },
-    {
-      "order": 12,
-      "slug": "chapter-2-the-engine",
-      "name": "The Engine",
-      "chapter": "Chapter 2",
-      "descriptor": "Physiology of endurance and speed"
-    },
-    {
-      "order": 13,
-      "slug": "vo2-max",
-      "name": "VO2 Max",
-      "chapter": "Chapter 2",
-      "descriptor": null
-    },
-    {
-      "order": 14,
-      "slug": "lactate-threshold",
-      "name": "Lactate Threshold",
-      "chapter": "Chapter 2",
-      "descriptor": null
-    },
-    {
-      "order": 15,
-      "slug": "aerobic-system",
-      "name": "The Aerobic System",
-      "chapter": "Chapter 2",
-      "descriptor": null
-    },
-    {
-      "order": 16,
-      "slug": "anaerobic-system",
-      "name": "The Anaerobic System",
-      "chapter": "Chapter 2",
-      "descriptor": null
-    },
-    {
-      "order": 17,
-      "slug": "mitochondrial-adaptation",
-      "name": "Mitochondrial Adaptation",
-      "chapter": "Chapter 2",
-      "descriptor": null
-    },
-    {
-      "order": 18,
-      "slug": "capillary-density",
-      "name": "Capillary Density",
-      "chapter": "Chapter 2",
-      "descriptor": null
-    },
-    {
-      "order": 19,
-      "slug": "slow-twitch-fibers",
-      "name": "Slow-Twitch Fibers",
-      "chapter": "Chapter 2",
-      "descriptor": null
-    },
-    {
-      "order": 20,
-      "slug": "fast-twitch-fibers",
-      "name": "Fast-Twitch Fibers",
-      "chapter": "Chapter 2",
-      "descriptor": null
-    },
-    {
-      "order": 21,
-      "slug": "heart-adaptation",
-      "name": "The Heart's Adaptation",
-      "chapter": "Chapter 2",
-      "descriptor": null
-    },
-    {
-      "order": 22,
-      "slug": "oxygen-debt",
-      "name": "Oxygen Debt",
-      "chapter": "Chapter 2",
-      "descriptor": null
-    },
-    {
-      "order": 23,
-      "slug": "chapter-3-the-chemistry",
-      "name": "The Chemistry",
-      "chapter": "Chapter 3",
-      "descriptor": "Hormones, neurotransmitters, and metabolic fuel"
-    },
-    {
-      "order": 24,
-      "slug": "runners-high",
-      "name": "The Runner's High",
-      "chapter": "Chapter 3",
-      "descriptor": null
-    },
-    {
-      "order": 25,
-      "slug": "endorphins",
-      "name": "Endorphins",
-      "chapter": "Chapter 3",
-      "descriptor": null
-    },
-    {
-      "order": 26,
-      "slug": "endocannabinoids",
-      "name": "Endocannabinoids",
-      "chapter": "Chapter 3",
-      "descriptor": null
-    },
-    {
-      "order": 27,
-      "slug": "glycogen-fat-metabolism",
-      "name": "Glycogen and Fat Metabolism",
-      "chapter": "Chapter 3",
-      "descriptor": null
-    },
-    {
-      "order": 28,
-      "slug": "the-wall",
-      "name": "The Wall (Glycogen Depletion)",
-      "chapter": "Chapter 3",
-      "descriptor": null
-    },
-    {
-      "order": 29,
-      "slug": "lactate",
-      "name": "Lactate (Not the Enemy)",
-      "chapter": "Chapter 3",
-      "descriptor": null
-    },
-    {
-      "order": 30,
-      "slug": "cortisol",
-      "name": "Cortisol (The Stress Hormone)",
-      "chapter": "Chapter 3",
-      "descriptor": null
-    },
-    {
-      "order": 31,
-      "slug": "adrenaline",
-      "name": "Adrenaline",
-      "chapter": "Chapter 3",
-      "descriptor": null
-    },
-    {
-      "order": 32,
-      "slug": "epo",
-      "name": "EPO (Natural and Synthetic)",
-      "chapter": "Chapter 3",
-      "descriptor": null
-    },
-    {
-      "order": 33,
-      "slug": "ketones",
-      "name": "Ketones",
-      "chapter": "Chapter 3",
-      "descriptor": null
-    },
-    {
-      "order": 34,
-      "slug": "chapter-4-the-training",
-      "name": "The Training",
-      "chapter": "Chapter 4",
-      "descriptor": "Methods that make runners faster, stronger"
-    },
-    {
-      "order": 35,
-      "slug": "base-building",
-      "name": "Base Building",
-      "chapter": "Chapter 4",
-      "descriptor": null
-    },
-    {
-      "order": 36,
-      "slug": "long-run",
-      "name": "The Long Run",
-      "chapter": "Chapter 4",
-      "descriptor": null
-    },
-    {
-      "order": 37,
-      "slug": "tempo-runs",
-      "name": "Tempo Runs",
-      "chapter": "Chapter 4",
-      "descriptor": null
-    },
-    {
-      "order": 38,
-      "slug": "interval-training",
-      "name": "Interval Training",
-      "chapter": "Chapter 4",
-      "descriptor": null
-    },
-    {
-      "order": 39,
-      "slug": "hill-repeats",
-      "name": "Hill Repeats",
-      "chapter": "Chapter 4",
-      "descriptor": null
-    },
-    {
-      "order": 40,
-      "slug": "recovery-runs",
-      "name": "Recovery Runs",
-      "chapter": "Chapter 4",
-      "descriptor": null
-    },
-    {
-      "order": 41,
-      "slug": "fartlek",
-      "name": "Fartlek (Speed Play)",
-      "chapter": "Chapter 4",
-      "descriptor": null
-    },
-    {
-      "order": 42,
-      "slug": "negative-splits",
-      "name": "Negative Splits",
-      "chapter": "Chapter 4",
-      "descriptor": null
-    },
-    {
-      "order": 43,
-      "slug": "tapering",
-      "name": "Tapering",
-      "chapter": "Chapter 4",
-      "descriptor": null
-    },
-    {
-      "order": 44,
-      "slug": "80-20-rule",
-      "name": "The 80/20 Rule",
-      "chapter": "Chapter 4",
-      "descriptor": null
-    },
-    {
-      "order": 45,
-      "slug": "periodization",
-      "name": "Periodization",
-      "chapter": "Chapter 4",
-      "descriptor": null
-    },
-    {
-      "order": 46,
-      "slug": "overtraining",
-      "name": "Overtraining Syndrome",
-      "chapter": "Chapter 4",
-      "descriptor": null
-    },
-    {
-      "order": 47,
-      "slug": "chapter-5-the-brain",
-      "name": "The Brain",
-      "chapter": "Chapter 5",
-      "descriptor": "Neuroscience of running"
-    },
-    {
-      "order": 48,
-      "slug": "running-brain",
-      "name": "The Running Brain",
-      "chapter": "Chapter 5",
-      "descriptor": null
-    },
-    {
-      "order": 49,
-      "slug": "motor-cortex-cerebellum",
-      "name": "Motor Cortex and Cerebellum",
-      "chapter": "Chapter 5",
-      "descriptor": null
-    },
-    {
-      "order": 50,
-      "slug": "neuroplasticity-motor-learning",
-      "name": "Neuroplasticity and Motor Learning",
-      "chapter": "Chapter 5",
-      "descriptor": null
-    },
-    {
-      "order": 51,
-      "slug": "prefrontal-cortex",
-      "name": "The Prefrontal Cortex",
-      "chapter": "Chapter 5",
-      "descriptor": null
-    },
-    {
-      "order": 52,
-      "slug": "insula",
-      "name": "The Insula",
-      "chapter": "Chapter 5",
-      "descriptor": null
-    },
-    {
-      "order": 53,
-      "slug": "anterior-cingulate-cortex",
-      "name": "The Anterior Cingulate Cortex",
-      "chapter": "Chapter 5",
-      "descriptor": null
-    },
-    {
-      "order": 54,
-      "slug": "default-mode-network",
-      "name": "Default Mode Network",
-      "chapter": "Chapter 5",
-      "descriptor": null
-    },
-    {
-      "order": 55,
-      "slug": "bdnf",
-      "name": "Brain-Derived Neurotrophic Factor (BDNF)",
-      "chapter": "Chapter 5",
-      "descriptor": null
-    },
-    {
-      "order": 56,
-      "slug": "mirror-neurons",
-      "name": "Mirror Neurons",
-      "chapter": "Chapter 5",
-      "descriptor": null
-    },
-    {
-      "order": 57,
-      "slug": "white-matter-integrity",
-      "name": "White Matter Integrity",
-      "chapter": "Chapter 5",
-      "descriptor": null
-    },
-    {
-      "order": 58,
-      "slug": "aging-brain",
-      "name": "The Aging Brain",
-      "chapter": "Chapter 5",
-      "descriptor": null
-    },
-    {
-      "order": 59,
-      "slug": "chapter-6-the-mind",
-      "name": "The Mind",
-      "chapter": "Chapter 6",
-      "descriptor": "Psychology and the mental game"
-    },
-    {
-      "order": 60,
-      "slug": "flow-state",
-      "name": "Flow State",
-      "chapter": "Chapter 6",
-      "descriptor": null
-    },
-    {
-      "order": 61,
-      "slug": "central-governor-theory",
-      "name": "The Central Governor Theory",
-      "chapter": "Chapter 6",
-      "descriptor": null
-    },
-    {
-      "order": 62,
-      "slug": "pain-perception",
-      "name": "Pain Perception",
-      "chapter": "Chapter 6",
-      "descriptor": null
-    },
-    {
-      "order": 63,
-      "slug": "race-day-adrenaline",
-      "name": "Race-Day Adrenaline",
-      "chapter": "Chapter 6",
-      "descriptor": null
-    },
-    {
-      "order": 64,
-      "slug": "meditation-in-motion",
-      "name": "Meditation in Motion",
-      "chapter": "Chapter 6",
-      "descriptor": null
-    },
-    {
-      "order": 65,
-      "slug": "comparison-trap",
-      "name": "The Comparison Trap",
-      "chapter": "Chapter 6",
-      "descriptor": null
-    },
-    {
-      "order": 66,
-      "slug": "motivation",
-      "name": "Motivation",
-      "chapter": "Chapter 6",
-      "descriptor": null
-    },
-    {
-      "order": 67,
-      "slug": "running-addiction",
-      "name": "Running Addiction",
-      "chapter": "Chapter 6",
-      "descriptor": null
-    },
-    {
-      "order": 68,
-      "slug": "boredom-long-run",
-      "name": "Boredom and the Long Run",
-      "chapter": "Chapter 6",
-      "descriptor": null
-    },
-    {
-      "order": 69,
-      "slug": "solitude-community",
-      "name": "Solitude vs Community",
-      "chapter": "Chapter 6",
-      "descriptor": null
-    },
-    {
-      "order": 70,
-      "slug": "chapter-7-the-breakdown",
-      "name": "The Breakdown",
-      "chapter": "Chapter 7",
-      "descriptor": "Injury, recovery, and resilience"
-    },
-    {
-      "order": 71,
-      "slug": "runners-knee",
-      "name": "Runner's Knee",
-      "chapter": "Chapter 7",
-      "descriptor": null
-    },
-    {
-      "order": 72,
-      "slug": "shin-splints",
-      "name": "Shin Splints",
-      "chapter": "Chapter 7",
-      "descriptor": null
-    },
-    {
-      "order": 73,
-      "slug": "plantar-fasciitis",
-      "name": "Plantar Fasciitis",
-      "chapter": "Chapter 7",
-      "descriptor": null
-    },
-    {
-      "order": 74,
-      "slug": "achilles-tendinopathy",
-      "name": "Achilles Tendinopathy",
-      "chapter": "Chapter 7",
-      "descriptor": null
-    },
-    {
-      "order": 75,
-      "slug": "stress-fractures",
-      "name": "Stress Fractures",
-      "chapter": "Chapter 7",
-      "descriptor": null
-    },
-    {
-      "order": 76,
-      "slug": "it-band-syndrome",
-      "name": "IT Band Syndrome",
-      "chapter": "Chapter 7",
-      "descriptor": null
-    },
-    {
-      "order": 77,
-      "slug": "muscle-strains",
-      "name": "Muscle Strains",
-      "chapter": "Chapter 7",
-      "descriptor": null
-    },
-    {
-      "order": 78,
-      "slug": "doms",
-      "name": "DOMS",
-      "chapter": "Chapter 7",
-      "descriptor": null
-    },
-    {
-      "order": 79,
-      "slug": "inflammation",
-      "name": "Inflammation (Necessary Fire)",
-      "chapter": "Chapter 7",
-      "descriptor": null
-    },
-    {
-      "order": 80,
-      "slug": "return-from-injury",
-      "name": "The Return from Injury",
-      "chapter": "Chapter 7",
-      "descriptor": null
-    },
-    {
-      "order": 81,
-      "slug": "cross-training",
-      "name": "Cross-Training",
-      "chapter": "Chapter 7",
-      "descriptor": null
-    },
-    {
-      "order": 82,
-      "slug": "chapter-8-the-distances",
-      "name": "The Distances",
-      "chapter": "Chapter 8",
-      "descriptor": "From 100 meters to 100 miles"
-    },
-    {
-      "order": 83,
-      "slug": "100-meters",
-      "name": "The 100 Meters",
-      "chapter": "Chapter 8",
-      "descriptor": null
-    },
-    {
-      "order": 84,
-      "slug": "the-mile",
-      "name": "The Mile",
-      "chapter": "Chapter 8",
-      "descriptor": null
-    },
-    {
-      "order": 85,
-      "slug": "5k",
-      "name": "The 5K",
-      "chapter": "Chapter 8",
-      "descriptor": null
-    },
-    {
-      "order": 86,
-      "slug": "10k",
-      "name": "The 10K",
-      "chapter": "Chapter 8",
-      "descriptor": null
-    },
-    {
-      "order": 87,
-      "slug": "half-marathon",
-      "name": "The Half Marathon",
-      "chapter": "Chapter 8",
-      "descriptor": null
-    },
-    {
-      "order": 88,
-      "slug": "marathon",
-      "name": "The Marathon",
-      "chapter": "Chapter 8",
-      "descriptor": null
-    },
-    {
-      "order": 89,
-      "slug": "ultramarathon",
-      "name": "The Ultramarathon",
-      "chapter": "Chapter 8",
-      "descriptor": null
-    },
-    {
-      "order": 90,
-      "slug": "trail-running",
-      "name": "Trail Running",
-      "chapter": "Chapter 8",
-      "descriptor": null
-    },
-    {
-      "order": 91,
-      "slug": "track-running",
-      "name": "Track Running",
-      "chapter": "Chapter 8",
-      "descriptor": null
-    },
-    {
-      "order": 92,
-      "slug": "vertical-kilometer",
-      "name": "Vertical Kilometer",
-      "chapter": "Chapter 8",
-      "descriptor": null
-    },
-    {
-      "order": 93,
-      "slug": "chapter-9-the-legends",
-      "name": "The Legends",
-      "chapter": "Chapter 9",
-      "descriptor": "Stories that define running"
-    },
-    {
-      "order": 94,
-      "slug": "pheidippides",
-      "name": "Pheidippides",
-      "chapter": "Chapter 9",
-      "descriptor": null
-    },
-    {
-      "order": 95,
-      "slug": "roger-bannister",
-      "name": "Roger Bannister",
-      "chapter": "Chapter 9",
-      "descriptor": null
-    },
-    {
-      "order": 96,
-      "slug": "emil-zatopek",
-      "name": "Emil Zátopek",
-      "chapter": "Chapter 9",
-      "descriptor": null
-    },
-    {
-      "order": 97,
-      "slug": "abebe-bikila",
-      "name": "Abebe Bikila",
-      "chapter": "Chapter 9",
-      "descriptor": null
-    },
-    {
-      "order": 98,
-      "slug": "steve-prefontaine",
-      "name": "Steve Prefontaine",
-      "chapter": "Chapter 9",
-      "descriptor": null
-    },
-    {
-      "order": 99,
-      "slug": "joan-benoit-samuelson",
-      "name": "Joan Benoit Samuelson",
-      "chapter": "Chapter 9",
-      "descriptor": null
-    },
-    {
-      "order": 100,
-      "slug": "haile-gebrselassie",
-      "name": "Haile Gebrselassie",
-      "chapter": "Chapter 9",
-      "descriptor": null
-    },
-    {
-      "order": 101,
-      "slug": "eliud-kipchoge",
-      "name": "Eliud Kipchoge",
-      "chapter": "Chapter 9",
-      "descriptor": null
-    },
-    {
-      "order": 102,
-      "slug": "courtney-dauwalter",
-      "name": "Courtney Dauwalter",
-      "chapter": "Chapter 9",
-      "descriptor": null
-    },
-    {
-      "order": 103,
-      "slug": "killian-jornet",
-      "name": "Killian Jornet",
-      "chapter": "Chapter 9",
-      "descriptor": null
-    },
-    {
-      "order": 104,
-      "slug": "usain-bolt",
-      "name": "Usain Bolt",
-      "chapter": "Chapter 9",
-      "descriptor": null
-    },
-    {
-      "order": 105,
-      "slug": "kathrine-switzer",
-      "name": "Kathrine Switzer",
-      "chapter": "Chapter 9",
-      "descriptor": null
-    },
-    {
-      "order": 106,
-      "slug": "tarahumara",
-      "name": "The Tarahumara",
-      "chapter": "Chapter 9",
-      "descriptor": null
-    },
-    {
-      "order": 107,
-      "slug": "east-african-dominance",
-      "name": "East African Dominance",
-      "chapter": "Chapter 9",
-      "descriptor": null
-    }
+    {"order": 1, "slug": "the-running-gait", "name": "The Running Gait", "section": "The Mechanics", "descriptor": null},
+    {"order": 2, "slug": "foot-strike", "name": "Foot Strike", "section": "The Mechanics", "descriptor": null},
+    {"order": 3, "slug": "cadence", "name": "Cadence", "section": "The Mechanics", "descriptor": null},
+    {"order": 4, "slug": "ground-contact-time", "name": "Ground Contact Time", "section": "The Mechanics", "descriptor": null},
+    {"order": 5, "slug": "stretch-shortening-cycle", "name": "The Stretch-Shortening Cycle", "section": "The Mechanics", "descriptor": null},
+    {"order": 6, "slug": "running-economy", "name": "Running Economy", "section": "The Mechanics", "descriptor": null},
+    {"order": 7, "slug": "pronation-supination", "name": "Pronation and Supination", "section": "The Mechanics", "descriptor": null},
+    {"order": 8, "slug": "kinetic-chain", "name": "The Kinetic Chain", "section": "The Mechanics", "descriptor": null},
+    {"order": 9, "slug": "vertical-oscillation", "name": "Vertical Oscillation", "section": "The Mechanics", "descriptor": null},
+    {"order": 10, "slug": "arm-swing", "name": "Arm Swing", "section": "The Mechanics", "descriptor": null},
+    
+    {"order": 11, "slug": "vo2-max", "name": "VO2 Max", "section": "The Engine", "descriptor": null},
+    {"order": 12, "slug": "lactate-threshold", "name": "Lactate Threshold", "section": "The Engine", "descriptor": null},
+    {"order": 13, "slug": "aerobic-system", "name": "The Aerobic System", "section": "The Engine", "descriptor": null},
+    {"order": 14, "slug": "anaerobic-system", "name": "The Anaerobic System", "section": "The Engine", "descriptor": null},
+    {"order": 15, "slug": "mitochondrial-adaptation", "name": "Mitochondrial Adaptation", "section": "The Engine", "descriptor": null},
+    {"order": 16, "slug": "capillary-density", "name": "Capillary Density", "section": "The Engine", "descriptor": null},
+    {"order": 17, "slug": "slow-twitch-fibers", "name": "Slow-Twitch Fibers", "section": "The Engine", "descriptor": null},
+    {"order": 18, "slug": "fast-twitch-fibers", "name": "Fast-Twitch Fibers", "section": "The Engine", "descriptor": null},
+    {"order": 19, "slug": "heart-adaptation", "name": "The Heart's Adaptation", "section": "The Engine", "descriptor": null},
+    {"order": 20, "slug": "oxygen-debt", "name": "Oxygen Debt", "section": "The Engine", "descriptor": null},
+    
+    {"order": 21, "slug": "runners-high", "name": "The Runner's High", "section": "The Chemistry", "descriptor": null},
+    {"order": 22, "slug": "endorphins", "name": "Endorphins", "section": "The Chemistry", "descriptor": null},
+    {"order": 23, "slug": "endocannabinoids", "name": "Endocannabinoids", "section": "The Chemistry", "descriptor": null},
+    {"order": 24, "slug": "glycogen-fat-metabolism", "name": "Glycogen and Fat Metabolism", "section": "The Chemistry", "descriptor": null},
+    {"order": 25, "slug": "the-wall", "name": "The Wall", "section": "The Chemistry", "descriptor": null},
+    {"order": 26, "slug": "lactate", "name": "Lactate", "section": "The Chemistry", "descriptor": null},
+    {"order": 27, "slug": "cortisol", "name": "Cortisol", "section": "The Chemistry", "descriptor": null},
+    {"order": 28, "slug": "adrenaline", "name": "Adrenaline", "section": "The Chemistry", "descriptor": null},
+    {"order": 29, "slug": "epo", "name": "EPO", "section": "The Chemistry", "descriptor": null},
+    {"order": 30, "slug": "ketones", "name": "Ketones", "section": "The Chemistry", "descriptor": null},
+    
+    {"order": 31, "slug": "base-building", "name": "Base Building", "section": "The Training", "descriptor": null},
+    {"order": 32, "slug": "long-run", "name": "The Long Run", "section": "The Training", "descriptor": null},
+    {"order": 33, "slug": "tempo-runs", "name": "Tempo Runs", "section": "The Training", "descriptor": null},
+    {"order": 34, "slug": "interval-training", "name": "Interval Training", "section": "The Training", "descriptor": null},
+    {"order": 35, "slug": "hill-repeats", "name": "Hill Repeats", "section": "The Training", "descriptor": null},
+    {"order": 36, "slug": "recovery-runs", "name": "Recovery Runs", "section": "The Training", "descriptor": null},
+    {"order": 37, "slug": "fartlek", "name": "Fartlek", "section": "The Training", "descriptor": null},
+    {"order": 38, "slug": "negative-splits", "name": "Negative Splits", "section": "The Training", "descriptor": null},
+    {"order": 39, "slug": "tapering", "name": "Tapering", "section": "The Training", "descriptor": null},
+    {"order": 40, "slug": "80-20-rule", "name": "The 80/20 Rule", "section": "The Training", "descriptor": null},
+    {"order": 41, "slug": "periodization", "name": "Periodization", "section": "The Training", "descriptor": null},
+    {"order": 42, "slug": "overtraining", "name": "Overtraining Syndrome", "section": "The Training", "descriptor": null},
+    
+    {"order": 43, "slug": "running-brain", "name": "The Running Brain", "section": "The Brain", "descriptor": null},
+    {"order": 44, "slug": "motor-cortex-cerebellum", "name": "Motor Cortex and Cerebellum", "section": "The Brain", "descriptor": null},
+    {"order": 45, "slug": "neuroplasticity-motor-learning", "name": "Neuroplasticity and Motor Learning", "section": "The Brain", "descriptor": null},
+    {"order": 46, "slug": "prefrontal-cortex", "name": "The Prefrontal Cortex", "section": "The Brain", "descriptor": null},
+    {"order": 47, "slug": "insula", "name": "The Insula", "section": "The Brain", "descriptor": null},
+    {"order": 48, "slug": "anterior-cingulate-cortex", "name": "The Anterior Cingulate Cortex", "section": "The Brain", "descriptor": null},
+    {"order": 49, "slug": "default-mode-network", "name": "Default Mode Network", "section": "The Brain", "descriptor": null},
+    {"order": 50, "slug": "bdnf", "name": "Brain-Derived Neurotrophic Factor", "section": "The Brain", "descriptor": null},
+    {"order": 51, "slug": "mirror-neurons", "name": "Mirror Neurons", "section": "The Brain", "descriptor": null},
+    {"order": 52, "slug": "white-matter-integrity", "name": "White Matter Integrity", "section": "The Brain", "descriptor": null},
+    {"order": 53, "slug": "aging-brain", "name": "The Aging Brain", "section": "The Brain", "descriptor": null},
+    
+    {"order": 54, "slug": "flow-state", "name": "Flow State", "section": "The Mind", "descriptor": null},
+    {"order": 55, "slug": "central-governor-theory", "name": "The Central Governor Theory", "section": "The Mind", "descriptor": null},
+    {"order": 56, "slug": "pain-perception", "name": "Pain Perception", "section": "The Mind", "descriptor": null},
+    {"order": 57, "slug": "race-day-adrenaline", "name": "Race-Day Adrenaline", "section": "The Mind", "descriptor": null},
+    {"order": 58, "slug": "meditation-in-motion", "name": "Meditation in Motion", "section": "The Mind", "descriptor": null},
+    {"order": 59, "slug": "comparison-trap", "name": "The Comparison Trap", "section": "The Mind", "descriptor": null},
+    {"order": 60, "slug": "motivation", "name": "Motivation", "section": "The Mind", "descriptor": null},
+    {"order": 61, "slug": "running-addiction", "name": "Running Addiction", "section": "The Mind", "descriptor": null},
+    {"order": 62, "slug": "boredom-long-run", "name": "Boredom and the Long Run", "section": "The Mind", "descriptor": null},
+    {"order": 63, "slug": "solitude-community", "name": "Solitude vs Community", "section": "The Mind", "descriptor": null},
+    
+    {"order": 64, "slug": "runners-knee", "name": "Runner's Knee", "section": "The Breakdown", "descriptor": null},
+    {"order": 65, "slug": "shin-splints", "name": "Shin Splints", "section": "The Breakdown", "descriptor": null},
+    {"order": 66, "slug": "plantar-fasciitis", "name": "Plantar Fasciitis", "section": "The Breakdown", "descriptor": null},
+    {"order": 67, "slug": "achilles-tendinopathy", "name": "Achilles Tendinopathy", "section": "The Breakdown", "descriptor": null},
+    {"order": 68, "slug": "stress-fractures", "name": "Stress Fractures", "section": "The Breakdown", "descriptor": null},
+    {"order": 69, "slug": "it-band-syndrome", "name": "IT Band Syndrome", "section": "The Breakdown", "descriptor": null},
+    {"order": 70, "slug": "muscle-strains", "name": "Muscle Strains", "section": "The Breakdown", "descriptor": null},
+    {"order": 71, "slug": "doms", "name": "DOMS", "section": "The Breakdown", "descriptor": null},
+    {"order": 72, "slug": "inflammation", "name": "Inflammation", "section": "The Breakdown", "descriptor": null},
+    {"order": 73, "slug": "return-from-injury", "name": "The Return from Injury", "section": "The Breakdown", "descriptor": null},
+    {"order": 74, "slug": "cross-training", "name": "Cross-Training", "section": "The Breakdown", "descriptor": null},
+    
+    {"order": 75, "slug": "100-meters", "name": "The 100 Meters", "section": "The Distances", "descriptor": null},
+    {"order": 76, "slug": "the-mile", "name": "The Mile", "section": "The Distances", "descriptor": null},
+    {"order": 77, "slug": "5k", "name": "The 5K", "section": "The Distances", "descriptor": null},
+    {"order": 78, "slug": "10k", "name": "The 10K", "section": "The Distances", "descriptor": null},
+    {"order": 79, "slug": "half-marathon", "name": "The Half Marathon", "section": "The Distances", "descriptor": null},
+    {"order": 80, "slug": "marathon", "name": "The Marathon", "section": "The Distances", "descriptor": null},
+    {"order": 81, "slug": "ultramarathon", "name": "The Ultramarathon", "section": "The Distances", "descriptor": null},
+    {"order": 82, "slug": "trail-running", "name": "Trail Running", "section": "The Distances", "descriptor": null},
+    {"order": 83, "slug": "track-running", "name": "Track Running", "section": "The Distances", "descriptor": null},
+    {"order": 84, "slug": "vertical-kilometer", "name": "Vertical Kilometer", "section": "The Distances", "descriptor": null},
+    
+    {"order": 85, "slug": "pheidippides", "name": "Pheidippides", "section": "The Legends", "descriptor": null},
+    {"order": 86, "slug": "roger-bannister", "name": "Roger Bannister", "section": "The Legends", "descriptor": null},
+    {"order": 87, "slug": "emil-zatopek", "name": "Emil Zátopek", "section": "The Legends", "descriptor": null},
+    {"order": 88, "slug": "abebe-bikila", "name": "Abebe Bikila", "section": "The Legends", "descriptor": null},
+    {"order": 89, "slug": "steve-prefontaine", "name": "Steve Prefontaine", "section": "The Legends", "descriptor": null},
+    {"order": 90, "slug": "joan-benoit-samuelson", "name": "Joan Benoit Samuelson", "section": "The Legends", "descriptor": null},
+    {"order": 91, "slug": "haile-gebrselassie", "name": "Haile Gebrselassie", "section": "The Legends", "descriptor": null},
+    {"order": 92, "slug": "eliud-kipchoge", "name": "Eliud Kipchoge", "section": "The Legends", "descriptor": null},
+    {"order": 93, "slug": "courtney-dauwalter", "name": "Courtney Dauwalter", "section": "The Legends", "descriptor": null},
+    {"order": 94, "slug": "killian-jornet", "name": "Killian Jornet", "section": "The Legends", "descriptor": null},
+    {"order": 95, "slug": "usain-bolt", "name": "Usain Bolt", "section": "The Legends", "descriptor": null},
+    {"order": 96, "slug": "kathrine-switzer", "name": "Kathrine Switzer", "section": "The Legends", "descriptor": null},
+    {"order": 97, "slug": "tarahumara", "name": "The Tarahumara", "section": "The Legends", "descriptor": null},
+    {"order": 98, "slug": "east-african-dominance", "name": "East African Dominance", "section": "The Legends", "descriptor": null}
   ]
 }

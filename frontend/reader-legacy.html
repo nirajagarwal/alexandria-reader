@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Alexandria Reader</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/reader.css?v=2">
+
+    <!-- Markdown Parser -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- Page Flip Library -->
+    <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
+
+    <!-- html2canvas for Rasterization -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <!-- Paged.js for Fragmentation -->
+    <!-- Paged.js for Fragmentation -->
+    <script>
+        // Prevent Paged.js from auto-running on the whole page
+        var PagedConfig = {
+            auto: false,
+            after: function () { console.warn("WARNING: Paged.js auto-run triggered unexpectedly"); }
+        };
+        window.PagedConfig = PagedConfig;
+    </script>
+    <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
+</head>
+
+<body>
+    <!-- Hidden source for Paged.js -->
+    <div id="pagedSource" style="display: none;"></div>
+
+    <!-- Main Reader Container -->
+    <div id="bookReaderContent">
+        <div class="reader-loader">Loading Book...</div>
+    </div>
+
+    <!-- Book Reader Script -->
+    <script src="js/book-reader.js"></script>
+
+    <script>
+        // Entry point
+        document.addEventListener('DOMContentLoaded', async () => {
+            console.log("Reader DOM Loaded");
+
+            // SAFEGUARD: Ensure reader container wasn't captured by Paged.js or other scripts
+            const container = document.getElementById('bookReaderContent');
+            if (container && container.parentElement !== document.body) {
+                console.warn('Reader container was nested unexpectedly. Restoring to body.');
+                document.body.appendChild(container);
+            }
+
+            // Verify BookReader class exists
+            if (typeof BookReader === 'undefined') {
+                console.error("BookReader class not defined");
+                document.getElementById('bookReaderContent').innerHTML =
+                    '<div style="color:red; text-align:center; padding:40px;">Error: BookReader class not loaded</div>';
+                return;
+            }
+
+            // Get book ID from URL
+            const params = new URLSearchParams(window.location.search);
+            const bookId = params.get('bookId');
+
+            if (!bookId) {
+                alert("No book specified.");
+                window.location.href = '/';
+                return;
+            }
+
+            console.log(`Loading book: ${bookId}`);
+
+            try {
+                // Update loader
+                const loader = document.querySelector('.reader-loader');
+                if (loader) loader.textContent = 'Fetching book data...';
+
+                // Fetch book metadata (bypass cache to ensure fresh data)
+                const metaResponse = await fetch(`/books/${bookId}`, { cache: 'no-store' });
+                if (!metaResponse.ok) {
+                    throw new Error(`Book not found: ${metaResponse.status}`);
+                }
+                const bookData = await metaResponse.json();
+                console.log('Book metadata loaded:', bookData.title);
+
+                // Update loader
+                if (loader) loader.textContent = 'Loading chapters...';
+
+                // Fetch full entries (bypass cache)
+                const entriesResponse = await fetch(`/books/${bookId}/entries`, { cache: 'no-store' });
+                if (entriesResponse.ok) {
+                    bookData.entries = await entriesResponse.json();
+                    console.log(`Loaded ${bookData.entries.length} entries`);
+                } else {
+                    console.warn('Could not load entries');
+                    bookData.entries = [];
+                }
+
+                // Update page title
+                document.title = `${bookData.title} - Alexandria Reader`;
+
+                // Initialize reader
+                if (loader) loader.textContent = 'Building book pages...';
+
+                const reader = new BookReader();
+                await reader.init(bookData);
+
+                console.log("Reader initialization complete");
+
+            } catch (err) {
+                console.error('Reader error:', err);
+                document.getElementById('bookReaderContent').innerHTML = `
+    <div style="color: #ff6b6b; text-align: center; padding: 40px; font-family: sans-serif;">
+        <h2 style="margin-bottom: 20px;">Unable to Load Book</h2>
+        <p style="opacity: 0.8;">${err.message}</p>
+        <a href="/" style="color: #deb887; margin-top: 20px; display: inline-block;">← Return to Library</a>
+    </div>
+    `;
+            }
+        });
+    </script>
+</body>
+
+</html>
