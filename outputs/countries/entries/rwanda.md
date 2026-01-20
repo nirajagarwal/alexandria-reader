@@ -1,0 +1,31 @@
+# Rwanda
+*The Reconciliation Experiment*
+
+A small, mountainous country in East Africa's Great Lakes region, Rwanda is known for two things: the 1994 genocide that killed 800,000 people in 100 days, and the disciplined recovery that followed. The question isn't whether Rwanda has rebuilt—it demonstrably has—but whether its model of enforced unity and controlled development can sustain a genuine peace or merely postpones reckoning. This is a nation trying to engineer social harmony after unfathomable violence, and the results are both impressive and unnerving.
+
+## The Land
+
+Rwanda is intensely green, intensely hilly, and intensely crowded. The "land of a thousand hills" packs thirteen million people into 10,000 square miles—one of Africa's highest population densities. Most live on terraced hillsides growing coffee, tea, bananas, and subsistence crops. The volcanic Virunga Mountains in the northwest shelter mountain gorillas in mist forests. Lake Kivu forms the western border with the Democratic Republic of Congo. There are no large wildlife reserves like neighboring Tanzania—the land has been cultivated too thoroughly for too long. The altitude moderates what would otherwise be equatorial heat. Kigali, the capital, spreads across multiple ridges, remarkably clean by regional standards, a testament to national discipline and government control.
+
+## The History
+
+Pre-colonial Rwanda was a centralized kingdom with a complex social hierarchy. The Tutsi minority dominated politically and economically, though the distinction between Tutsi, Hutu, and Twa was fluid—more class than ethnicity. Belgian colonizers hardened these categories, favoring Tutsis and issuing identity cards that made ethnic identity fixed and inherited. After independence in 1962, the Hutu majority seized power. Periodic massacres of Tutsis culminated in the 1994 genocide, triggered by the assassination of President Habyarimana. For 100 days, Hutu extremists systematically murdered Tutsis and moderate Hutus—neighbors killing neighbors, militias operating with chilling efficiency. The Tutsi-led Rwandan Patriotic Front (RPF), led by Paul Kagame, ended the genocide by seizing control. Two million Hutus fled to Congo, fearing reprisal. The RPF has governed ever since, with Kagame as president since 2000, winning elections with Soviet-style margins.
+
+## The Culture
+
+Rwanda functions with a level of order unusual in the region. Plastic bags are banned. Community service days are mandatory. Gacaca courts—traditional community justice sessions—processed genocide cases to avoid overwhelming the formal system and promote reconciliation. The government mandates ethnic unity—you are Rwandan, not Hutu or Tutsi. Public discussion of ethnicity is discouraged, sometimes prohibited. This enforced amnesia is both the country's strategy and its wound. Kinyarwanda unifies the population linguistically, along with French and English (the latter adopted after breaking with Francophone allies). Christianity predominates. Gender equity has advanced remarkably—women hold nearly two-thirds of parliamentary seats, the highest proportion globally. Whether this represents genuine empowerment or controlled representation remains debated. Social cohesion is valued above individual expression. The culture rewards discipline, order, compliance.
+
+## The Challenge
+
+Rwanda's central tension is between stability and freedom. The government has delivered security, economic growth, reduced corruption, and impressive infrastructure. It has also consolidated power, restricted press freedom, imprisoned opposition politicians, and allegedly assassinated dissidents abroad. Kagame's Rwanda works—GDP growth averages seven percent, poverty has fallen dramatically, health care has improved—but it works through tight control. Elections are theater. Criticism is risky. The ethnic reconciliation remains surface-level in many communities—silence rather than healing. The RPF is predominantly Tutsi, governing a majority-Hutu population. The question is whether imposed unity can become genuine, or whether suppressed grievances will resurface when the strongman governance eventually weakens. Population pressure intensifies everything—land scarcity drives conflict, and climate change threatens agricultural productivity.
+
+## The Contribution
+
+Rwanda has pioneered community-based health care models that other developing nations study. Its gacaca courts offered an alternative to international tribunals for mass atrocity—imperfect but pragmatic. The country's gender equity legislation has pushed African norms forward. Rwanda's gorilla conservation, combining tourism revenue with community benefit, has helped stabilize mountain gorilla populations when they might have gone extinct. The country has also contributed a model—debated, contested, but real—of post-conflict recovery without international trusteeship. Whether one admires or fears the Rwandan approach, it demonstrates that a society can rebuild from genocide within a single generation. That matters, even if the durability remains uncertain.
+
+## A Moment
+
+In Kigali, the Genocide Memorial contains rooms of photographs—victims smiling, living, ordinary people. Children especially. The displays explain how radio broadcasts incited murder, how neighbors killed neighbors with machetes, how churches became massacre sites. Schoolchildren visit in groups, required learning. Outside, mass graves hold 250,000 people. The memorial doesn't blame abstractly—it names perpetrators, describes methods, refuses euphemism. Yet it also calls for unity, reconciliation, moving forward. An elderly woman, a survivor, sits in the garden. She lost her entire family. She speaks to visitors about forgiveness, about rebuilding, about Rwanda's future. Her calm is unnerving. The government has given her a script—ethnic harmony, national unity, progress. But her eyes suggest something more complicated. The memorial captures Rwanda's paradox: genuine acknowledgment of horror alongside enforced optimism, real grief beneath mandated reconciliation. The country remembers everything and demands everyone forget.
+
+---
+*Part of Countries at alexandria.press*

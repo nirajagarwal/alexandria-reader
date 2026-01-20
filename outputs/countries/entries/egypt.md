@@ -1,0 +1,31 @@
+# Egypt
+*The Gift of the Nile, Exhausted*
+
+Egypt is where civilization learned to write, build, and organize. For five thousand years, the Nile's predictable flood sustained a culture of monumental ambition—pyramids, temples, bureaucracies, empires. Modern Egypt inherits that legacy as burden and resource: a society of 110 million people packed into the world's longest oasis, trapped between reverence for past greatness and the grinding realities of present dysfunction. It is the Arab world's most populous nation, its cultural trendsetter, its revolutionary disappointment. What once fed empires now barely feeds itself.
+
+## The Land
+
+Egypt is the Nile and the deserts that frame it. Ninety-five percent of the country is uninhabitable sand—the Western Desert extending toward Libya, the Eastern Desert climbing toward the Red Sea, the Sinai Peninsula bridging Africa and Asia. Between them runs the river, flowing north from Sudan through a narrow valley that widens into the fertile Delta before emptying into the Mediterranean. This ribbon of green, barely three percent of Egypt's territory, holds nearly all its people. Cairo sprawls along the Nile's banks, a megacity of twenty-two million. Alexandria faces the sea. The Suez Canal, dug in the 1860s, remains the shortest maritime route between Europe and Asia. The land is generous only along the river; everywhere else it withholds.
+
+## The History
+
+Ancient Egypt lasted three millennia—Old Kingdom pyramids at Giza (2550 BCE), Middle Kingdom literature, New Kingdom expansion under Ramses II. Then came waves of conquest: Persians, Greeks under Alexander (332 BCE), Romans, Arabs bringing Islam (641 CE). The Fatimids founded Cairo in 969. Mamluks ruled from 1250 until Ottoman conquest in 1517. Napoleon invaded briefly in 1798, sparking Egyptian modernization under Muhammad Ali, who built a dynasty and reformed the state. Britain occupied in 1882, making Egypt a protectorate. Independence came in 1922, but British influence persisted until Gamal Abdel Nasser's Free Officers coup in 1952. Nasser nationalized the Suez Canal in 1956, survived the 1967 Six-Day War defeat, died in 1970. Anwar Sadat made peace with Israel in 1979 and was assassinated for it in 1981. Hosni Mubarak ruled for thirty years until the 2011 revolution. The Muslim Brotherhood's Mohamed Morsi won democratic elections, then lost power to General Abdel Fattah el-Sisi's 2013 coup. Authoritarianism, never absent, returned with a vengeance.
+
+## The Culture
+
+Egyptian identity runs deep—older than Arab, older than Islam, continuous with pharaonic antiquity despite religious transformation. Arabic is the language, Islam the faith of ninety percent, Coptic Christianity the ancient minority. Cairo has long been the Arab world's cultural capital: Al-Azhar University teaching Islamic theology for a millennium, Egyptian cinema and music dominating the region from the 1940s through the 1970s, Naguib Mahfouz winning the Arab world's only Nobel Prize in Literature in 1988. Egyptian Arabic is the dialect other Arabs recognize from movies. Family remains central—arranged marriages common, gender roles traditional but contested, urban middle-class women increasingly educated and employed. Tea is ubiquitous, hospitality elaborate, bureaucracy maddening. The culture navigates between secular nationalism and Islamic revival, between Westernization and authenticity. Humor and resilience coexist with fatalism.
+
+## The Challenge
+
+Egypt cannot feed itself. Population growth has outstripped the Nile's capacity—110 million people, adding a million every six months, projected to reach 160 million by 2050. Half live near or below poverty. Unemployment festers, especially among educated youth. Sisi's military-backed government has crushed dissent since 2013—tens of thousands imprisoned, press muzzled, civil society strangled. The 2011 revolution's hope turned to ashes. Economic crisis deepens: inflation, currency devaluation, debt to the IMF. The Grand Ethiopian Renaissance Dam on the Blue Nile threatens Egypt's water supply, potentially reducing the river's flow by a quarter. Climate change promises worse—hotter, drier, rising seas flooding the Delta where half the crops grow. Authoritarian stability offers no solution to demographic catastrophe and ecological decline.
+
+## The Contribution
+
+Egypt gave the world writing—hieroglyphics appearing around 3200 BCE, evolving alongside cuneiform. It pioneered monumental architecture, bureaucratic administration, calendars, mathematics, medicine. The Library of Alexandria, destroyed in antiquity, symbolized the ambition to gather all human knowledge. Islamic Cairo preserved and advanced Greek philosophy during Europe's Middle Ages. Modern Egypt exported pan-Arab nationalism under Nasser, cultural production across the Arab world, and a template for secular military authoritarianism. Egyptian feminism emerged early—Huda Sha'arawi removing her veil in 1923. The country has navigated between revolutionary politics and Cold War pragmatism, between Arab solidarity and self-interest. Its peace with Israel, however unpopular, held. Its culture shaped the region's imagination.
+
+## A Moment
+
+The 2011 Tahrir Square protests: eighteen days in January and February when hundreds of thousands occupied Cairo's central plaza, demanding Mubarak's fall. "Bread, Freedom, Social Justice" echoed across the square. Muslims and Christians protected each other during prayers. Women marched beside men. The military, reading the crowd, withdrew support from Mubarak, who resigned on February 11. Tahrir became the Arab Spring's symbol—proof that mass nonviolent resistance could topple dictators. Then the revolution devoured itself: power struggles between military, Brotherhood, and liberals; brief democratic experiment ending in military coup; Sisi's crackdown harsher than Mubarak's. Tahrir Square is quiet now, ringed by checkpoints. But for eighteen days, Egyptians believed their country could change, could become something more than the Nile's exhausted gift, could author a future as remarkable as its past. That hope, crushed but not forgotten, remains Egypt's most recent contribution—and its deepest wound.
+
+---
+*Part of Countries at alexandria.press*

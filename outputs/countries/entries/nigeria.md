@@ -1,0 +1,31 @@
+# Nigeria
+*Africa's Giant*
+
+Nigeria contains multitudes—over 200 million people, 250 ethnic groups, three major religions, a film industry that rivals Hollywood in output, and an oil wealth that has enriched almost no one. It is the most populous nation in Africa, the continent's largest economy, and arguably its most chaotic democracy. What holds it together is less consensus than exhaustion with alternatives. What drives it forward is not government but the relentless hustle of ordinary Niggerians who have learned to build lives in the spaces the state abandons.
+
+## The Land
+
+Nigeria sprawls across West Africa's shoulder where the continent bulges into the Atlantic. The Niger River gives it its name and, with the Benue, divides the country into rough thirds. The south is tropical rainforest and coastal swamp, humid and oil-rich—the delta where petroleum wealth pools beneath fishing villages. The middle belt is savanna, where Christianity and Islam meet and sometimes clash. The north is semi-arid Sahel, dust and heat and ancient trading cities like Kano that once grew wealthy on trans-Saharan commerce. Lagos—sprawling, cacophonous, impossibly energetic—is the economic heart, though Abuja, purpose-built in the geographic center, serves as capital. Over half the population is under twenty-five. The land could feed everyone; it does not.
+
+## The History
+
+Britain cobbled Nigeria together from disparate kingdoms and sultanates, drawing borders that served imperial administration rather than human geography. The Hausa-Fulani Emirates of the north, the Yoruba kingdoms of the southwest, the Igbo territories of the southeast—distinct civilizations forced into uneasy union in 1914. Independence came in 1960 to a federation already fracturing along ethnic and religious lines. Six years later, the Igbo attempt at secession sparked the Biafran War (1967-70), a catastrophe of starvation and slaughter that killed perhaps two million. The military ruled for most of the next three decades, generals growing rich on oil revenues while infrastructure collapsed. Democracy returned in 1999, messy and corrupt but durable. Elections happen; power sometimes changes hands. The question is always whether the center can hold.
+
+## The Culture
+
+Nigeria is not one culture but several coexisting, sometimes colliding. The Hausa-Fulani north is predominantly Muslim, conservative, organized around emirates that predate the nation. The Yoruba southwest blends Islam, Christianity, and indigenous Orisha traditions in ways that baffle outsiders but make perfect sense locally. The Igbo southeast is largely Christian, entrepreneurial, scattered across the country and the diaspora. Yet shared patterns emerge: respect for age, complex social hierarchies, the primacy of family networks, a talent for navigating disorder. Nigerians are among the world's most religious people and among its most pragmatic. Nollywood—the Lagos-based film industry—churns out hundreds of movies yearly, melodramas and comedies that have conquered African screens. Music flows constantly: Fela Kuti invented Afrobeat; Wizkid and Burna Boy dominate global pop. Language itself is creative weapon—Nigerian English is its own literature, pidgin its lingua franca. Church attendance is mandatory; hustle is religion.
+
+## The Challenge
+
+Oil is the curse pretending to be a blessing. Since the 1970s, petroleum has generated hundreds of billions in revenue while most Niggerians remain desperately poor. The elite steals systematically; infrastructure decays; unemployment crushes the young. The Niger Delta, where the oil comes from, is an ecological disaster of spills and gas flares, its people neither consulted nor compensated. Security has collapsed across large regions: Boko Haram's Islamist insurgency devastates the northeast; bandit gangs terrorize the northwest; herder-farmer conflicts kill thousands yearly. The state cannot protect its citizens and sometimes will not. Electricity is erratic; roads are death traps; hospitals lack supplies. University graduates drive motorcycle taxis. The talented flee—Nigerian doctors staff British hospitals, Nigerian engineers work Silicon Valley. Those who remain build parallel systems: private generators, private schools, private security. The social contract is void. Yet somehow the country functions, animated by the ingenuity of people who refuse to surrender.
+
+## The Contribution
+
+Nigeria has given the world Afrobeat and Nollywood, yes, but also Chinua Achebe, whose *Things Fall Apart* remains the most widely read African novel, and Wole Soyinka, the first African Nobel laureate in literature. Chimamanda Ngozi Adichie has redefined contemporary fiction; Fela Kuti made music into political resistance. Nigerian mathematicians and engineers scatter across global universities; Nigerian entrepreneurs are founding tech startups in Lagos that serve the continent. The Nigerian diaspora sends home $25 billion yearly—more than the government spends on health and education combined. Nigerian music now dominates African airwaves and increasingly global ones. Nigerian Twitter is its own literary form, savage and hilarious. The contribution is resilience itself: the capacity to thrive in impossible circumstances, to create culture from chaos, to maintain hope when hope should have died.
+
+## A Moment
+
+October 2020, Lagos: young Nigerians gather at the Lekki toll gate to protest police brutality under the banner #EndSARS. For weeks, they camp peacefully, organize crowdfunding, clean up after themselves—a glimpse of the country that might be. The government responds with typical incompetence until the evening of October 20, when soldiers arrive and open fire on unarmed protesters. How many died remains disputed; the government denies responsibility despite video evidence. The protests collapse, but something shifted. A generation announced it would not accept the old arrangements. The elite noticed. Whether they will change is another question. But at Lekki, for a few weeks, Nigerians showed what they could build if the state would only stop stealing and start governing. The toll gate remains. So does the memory.
+
+---
+*Part of Countries at alexandria.press*

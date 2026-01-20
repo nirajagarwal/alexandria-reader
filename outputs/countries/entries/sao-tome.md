@@ -1,0 +1,31 @@
+# São Tomé and Príncipe
+*Chocolate Islands*
+
+Two volcanic islands in the Gulf of Guinea, 140 miles apart, rising from deep ocean waters where the equator crosses. A Portuguese colony built on cocoa and slavery that became Africa's second-smallest nation. Population 220,000, most on São Tomé. Stable democracy, crushing poverty, and some of the world's finest chocolate growing on land that was once a plantation hell.
+
+### The Land
+
+São Tomé and Príncipe are the visible peaks of the Cameroon volcanic line, lush mountains draped in rainforest where mist and rain are near-constant. The larger island, São Tomé, rises to 6,640 feet at Pico de São Tomé. Príncipe, smaller and wilder, reaches 3,110 feet. Both islands are wrapped in black sand beaches and coral reefs. The soil is volcanic, rich, perfect for cocoa. The climate is equatorial—hot, humid, perpetually green. Between the islands, ocean depths plunge to 10,000 feet. Isolation shaped everything: unique bird species, endemic plants, and a small population concentrated in coastal towns and old plantation estates called *roças* that sprawl across the interior like colonial ghosts.
+
+### The History
+
+Uninhabited when the Portuguese arrived in 1470. Named for saints—São Tomé discovered on St. Thomas's feast day, Príncipe for the Portuguese prince who received its sugar revenues. By 1500, the islands became a sugar plantation colony worked by enslaved Africans, then shifted to cocoa in the 19th century. "Chocolate Islands" supplied a third of the world's cocoa by 1900, but the plantations ran on forced labor so brutal that international scandal erupted in 1909. Portugal maintained control until independence in 1975 after the Carnation Revolution. The new Marxist government nationalized the plantations, sent Portuguese managers fleeing, and watched cocoa production collapse. Democracy arrived in 1991—the first Portuguese colony in Africa to hold multiparty elections. Since then: political stability, peaceful power transfers, zero civil conflict, persistent poverty, and cocoa struggling to recover.
+
+### The Culture
+
+Portuguese is the official language, but most speak Forro, a Portuguese-based creole that evolved among enslaved populations and absorbed African grammatical structures. Nearly everyone is Catholic, though African traditions persist beneath Christian surfaces. The population descends from African slaves, Portuguese colonizers, contract laborers from Angola and Mozambique, and Cape Verdean traders—layers of migration compressed onto small islands. Culture centers on music: *ússua* and *socopé* rhythms played on drums and stringed instruments, inherited from plantation dances where enslaved people found brief freedom. Food is fish, cassava, calulu stew. Life is coastal and communal. The old *roças*—massive plantation complexes with churches, hospitals, and workers' quarters—stand empty or half-occupied, monuments to a system that extracted wealth while imprisoning bodies. Society is egalitarian by necessity; everyone is poor.
+
+### The Challenge
+
+Economic survival. São Tomé and Príncipe depends on foreign aid for half its budget. Cocoa production, once the world's pride, struggles with aging trees, lack of investment, and competition from West African industrial farms. Tourism remains minimal—the islands are too remote, too expensive to reach, infrastructure too limited. Fishing waters are exploited by foreign vessels under licensing deals that bring little revenue. Youth unemployment approaches 70%. Those with education leave for Portugal or Angola. Oil reserves discovered offshore in the 1990s promised transformation but produced almost nothing—exploration stalled, companies withdrew, the dream faded. Climate change threatens the islands directly: rising seas, intensifying storms, changing rainfall patterns. The country is beautiful, stable, democratic, and economically stranded—too small to industrialize, too far to attract investment, too dependent on a single crop that no longer pays.
+
+### The Contribution
+
+Some of the world's finest cocoa. Organic, shade-grown beneath rainforest canopy, low-yield but extraordinary in flavor—connoisseur chocolate makers prize São Toméan beans for their fruity, floral complexity. The cocoa cooperative Kakaocru has revived old plantations using sustainable methods, producing chocolate that commands premium prices in Europe and America. This is not mass production but craft—small batches, direct trade, farmers as partners. The islands also gave the world *tchiloli*, a theatrical tradition dating to the 16th century: a Portuguese mystery play adapted by enslaved Africans, performed in Forro with drums and dance, transforming a colonial import into something wholly new. Príncipe became a UNESCO Biosphere Reserve in 2012—the entire island protected for its endemic species and intact forests. And in 1919, a solar eclipse observed from Príncipe provided evidence for Einstein's theory of general relativity—the island where light bent around the sun and physics changed.
+
+### A Moment
+
+Walk through Roça Agostinho Neto on São Tomé, one of dozens of abandoned plantation estates slowly being reclaimed by forest. The colonial manager's mansion stands three stories tall, grand and crumbling, windows empty, walls stained with rain. Nearby, the workers' quarters—long barracks where laborers slept after 14-hour days cutting cocoa. A rusted church bell. Cocoa pods still grow on trees gone wild, splitting open to reveal purple beans that no one harvests. Children play in courtyards where their great-grandparents were born as property. The *roça* is museum, housing complex, and ruin simultaneously—families live in former overseers' quarters while the plantation infrastructure collapses around them. You can trace the whole brutal machinery: where beans were fermented, dried, stored, shipped to Europe to become Swiss chocolate while workers ate fish and cassava. Now only ghosts and cocoa trees remain, and the question of what comes after empire when the empire leaves nothing but empty buildings and exhausted soil.
+
+---
+*Part of Countries at alexandria.press*

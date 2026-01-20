@@ -1,0 +1,43 @@
+# Zimbabwe
+*The Ruins of Revolution*
+
+Here is a nation that overthrew white minority rule with disciplined guerrilla warfare, achieved genuine independence, and then descended into authoritarian kleptocracy so complete it destroyed one of Africa's most promising economies. The name itself speaks to both achievement and loss—from Great Zimbabwe, the medieval stone city that proved African civilizations built monuments too, to a modern state where hyperinflation once made trillion-dollar notes worthless. Between the Zambezi and Limpopo rivers lies a country that has known ancient kingdoms, colonial exploitation, liberation struggle, and catastrophic misrule. What went wrong remains one of Africa's most painful questions.
+
+**The Land**
+
+The high plateau country between the Zambezi and Limpopo—mostly 1,200 meters above sea level, with a climate cooler and more temperate than the latitude suggests. The eastern mountains catch rain; the lowveld to the south bakes dry. Victoria Falls thunders on the northern border, where the Zambezi drops 108 meters in a single plunge. Granite hills rise from the plateau like natural fortresses. The land is fertile when there's water—tobacco, maize, cotton—and holds gold, platinum, diamonds beneath the surface. Most people cluster on the central plateau around Harare and Bulawayo. This is southern Africa's breadbasket potential, periodically realized and then squandered.
+
+**The History**
+
+Great Zimbabwe was built between the 11th and 15th centuries—massive stone walls raised without mortar, the capital of a trading empire that stretched to the Indian Ocean. When white archaeologists found it in 1871, they couldn't believe Africans had built it. The British South Africa Company seized the land in 1890, named it Rhodesia after Cecil Rhodes, and established a settler colony where white farmers took the best land and black Africans provided labor. In 1965, Ian Smith's white minority government declared unilateral independence rather than accept majority rule—the last open stand for white supremacy in Africa.
+
+The bush war lasted fifteen years. ZANU and ZAPU guerrillas, backed by China and the Soviet Union, fought the Rhodesian security forces. Perhaps 30,000 died. Robert Mugabe, a Marxist intellectual who had spent a decade in Rhodesian prisons, led ZANU to victory in the 1980 independence elections. The first decade looked promising—Mugabe preached reconciliation, the economy grew, literacy rates soared. Then came the Gukurahundi: between 1983 and 1987, the Fifth Brigade massacred perhaps 20,000 Ndebele civilians in Matabeleland, crushing ZAPU's regional power base. It was the first warning.
+
+By 2000, Mugabe faced a genuine opposition for the first time. His response was land invasions—armed "war veterans" seized white-owned farms, often violently, redistributing them to cronies and supporters. Agricultural production collapsed. Inflation spiraled into the millions, then billions, then trillions percent. By 2008, people needed wheelbarrows of cash to buy bread. The opposition won elections; Mugabe stole them. He ruled until a coup in 2017, dying in 2019 at 95. His successor, Emmerson Mnangagwa, another liberation fighter, continues the repression in less flamboyant style.
+
+**The Culture**
+
+Shona and Ndebele are the two main groups, roughly 80% and 15% of the population, with a history of tension ZANU has exploited for political gain. English remains official, a reminder of colonial infrastructure still in use—the legal system, the universities, the bureaucratic forms. Christianity dominates now, often Pentecostal churches offering miraculous deliverance that politics has failed to provide. Extended families remain the social foundation, supporting members through economic collapse that destroyed formal employment.
+
+The Shona stone sculpture tradition—abstract forms in soapstone and harder rock—has gained international recognition, though artists struggle to sell work domestically. Music ranges from traditional mbira (thumb piano) to contemporary gospel and hip-hop protesting conditions. Thomas Mapfumo pioneered chimurenga music during the liberation struggle, adapting traditional sounds to political message. Women bear the brunt of economic collapse—queuing for scarce goods, making ends meet as formal jobs vanished, often facing violence. There's a culture of endurance, of making do, of maintaining dignity against systematic degradation. Also a culture of fear: the Central Intelligence Organization doesn't tolerate dissent.
+
+**The Challenge**
+
+How do you rebuild a country when those who destroyed it still hold power? The liberation generation—ZANU-PF's aging guerrillas—monopolize politics and resources while the economy they gutted offers nothing to the young. GDP per capita has halved since 1980. Unemployment exceeds 80% by some measures. Millions have fled—to South Africa, Botswana, the UK, anywhere offering wages. Those remaining survive through informal trade, subsistence farming, remittances. Currency has collapsed repeatedly; now Zimbabwe uses US dollars and other foreign currencies, having abandoned its own money as worthless.
+
+The military and security services prop up the regime in exchange for control of diamond mines, smuggling networks, state contracts. Corruption is comprehensive—from traffic police demanding bribes to ministers awarding themselves farms and companies. Democratic opposition faces arrests, beatings, rigged elections. The courts occasionally show independence; then judges are replaced. The potential remains—good infrastructure, educated population, natural resources—but political predation prevents recovery. The gerontocracy clings to power while the country bleeds talent and hope.
+
+**The Contribution**
+
+The stone birds carved at Great Zimbabwe became the national symbol—proof that African civilizations built monuments that endured. The liberation struggle showed that determined guerrillas could defeat a modern military when fighting for justice, inspiring anti-apartheid movements across the region. The first post-independence decade demonstrated that reconciliation between former enemies was possible, that rapid expansion of education and healthcare could work even in poor countries.
+
+The writers have chronicled both achievement and collapse with unsparing clarity: Tsitsi Dangarembga's *Nervous Conditions* on colonial education and female resistance; Dambudzo Marechera's hallucinatory prose capturing psychic dislocation; NoViolet Bulawayo's *We Need New Names* on childhood in the ruins and exile beyond. The music—both traditional mbira and contemporary protest songs—carries old forms into new contexts. And perhaps most painfully, Zimbabwe serves as warning: how liberators become oppressors, how revolutionary legitimacy curdles into excuse for plunder, how quickly promise can unravel when institutions fail and personality cults replace democracy.
+
+**A Moment**
+
+On June 1, 2008, Morgan Tsvangirai, leader of the Movement for Democratic Change, stood before journalists in Harare and withdrew from the presidential runoff election scheduled for later that month. He had won the first round in March but not by enough to avoid a runoff. In the weeks since, Mugabe's militias had launched Operation Makavhoterapapi—"Where did you put your vote?" They beat opposition supporters with hoses and clubs, burned homes, murdered local organizers. At least 200 had died. Thousands more had been tortured. Tsvangirai himself had been arrested repeatedly, beaten, charged with treason multiple times over the years.
+
+"We cannot ask the people to cast their vote when that vote could cost them their lives," he said. His face was steady but the words came hard. The international observers were there, the cameras rolling, everyone understanding what it meant: the regime would hold the election anyway, claim victory, declare legitimacy. Mugabe won with 85% of the vote in an election where only one name appeared on the ballot. Later, through regional pressure, a power-sharing government formed, with Tsvangirai as Prime Minister—a position with responsibility but no power. The machine ground on. In that moment of withdrawal, you could see both the courage of Zimbabwe's opposition and the futility it faced: willing to die for democracy, forced instead to watch it die while they lived.
+
+---
+*Part of Countries at alexandria.press*

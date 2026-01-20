@@ -1,0 +1,37 @@
+# Central African Republic
+*The Forgotten State*
+
+The Central African Republic exists at the intersection of abandonment and extraction. Landlocked at the geographic heart of Africa, rich in diamonds and gold, cursed by every government it has known, it persists as what happens when the international system creates a state but provides nothing resembling governance. Since independence, CAR has cycled through coups, rebellions, and interventions—never quite collapsing completely, never achieving anything like functional statehood. Four million people live here, most in poverty that predates the current crisis, in a place the world remembers only when the violence becomes too spectacular to ignore.
+
+**The Land**
+
+CAR occupies the transition zone between the Sahel's dry grasslands and the Congo Basin's rainforest—a plateau of rolling hills, dense woodland, and rivers flowing north to Lake Chad and south to the Congo. The climate is tropical, hot and humid, with a rainy season that turns dirt roads into impassable mud. The south is forested; the north opens into savanna. Diamonds lie in the eastern riverbeds. Gold deposits scatter across the territory. Uranium, too. The land is not barren—it's simply that wealth here has always been extracted rather than developed, shipped out rather than invested in the people who live above it. Most of the population clusters in the southwest, near Bangui, the capital on the Ubangi River. The interior remains thinly populated, poorly connected, essentially ungoverned.
+
+**The History**
+
+France drew these borders in 1903, naming the territory Ubangi-Shari, ruling it as one of the most brutally exploited corners of French Equatorial Africa. Colonial companies forced local populations to harvest rubber and build infrastructure under conditions that amounted to slavery. Independence came in 1960 under David Dacko, who lasted four years before his cousin Jean-Bédel Bokassa seized power in a coup. Bokassa's reign—culminating in his 1977 coronation as emperor in a ceremony that cost the annual national budget—ended when French paratroopers removed him in 1979 after he massacred schoolchildren protesting mandatory uniform purchases from his wife's factory.
+
+The pattern was set: coups, instability, French intervention. André Kolingba's military dictatorship lasted until 1993, when multiparty elections brought Ange-Félix Patassé to power. He was overthrown in 2003 by François Bozizé, whose government collapsed in 2013 when the Séléka rebel coalition seized Bangui. What followed was sectarian slaughter—Muslim Séléka fighters against Christian anti-Balaka militias—that killed thousands and displaced a million people. The violence continues, controlled neither by the weak central government nor by the UN peacekeepers who arrived in 2014. Today, armed groups control perhaps two-thirds of the territory. The state, such as it is, governs little beyond the capital.
+
+**The Culture**
+
+CAR is home to over eighty ethnic groups, including the Gbaya, Banda, and Mandjia peoples, speaking Sango as a common language alongside French. Traditional social structures—clan-based, agriculturally grounded—have been warped by decades of predatory governance and conflict. In rural areas, people maintain subsistence farming, hunting, and gathering. Traditional music features the balafon and drums; storytelling preserves history in the absence of written records. Christianity dominates in the south and center; Islam in the north and east—a division that recent violence has hardened into sectarian hatred despite centuries of relatively peaceful coexistence.
+
+The conflict has fractured social trust. Communities that once traded and intermarried now fear each other. Armed groups recruit along ethnic and religious lines, though the violence is fundamentally about control of resources and territory rather than genuine sectarian grievance. Women bear the particular burden—mass rape has been weaponized by all armed groups. Education has collapsed outside Bangui; most children grow up without schooling. What cultural continuity exists survives in village life and refugee camps, maintained by people who remember what came before the current catastrophe.
+
+**The Challenge**
+
+CAR faces the fundamental challenge of state absence. The government controls perhaps one-third of its territory; armed groups dominate the rest, fighting each other for control of diamond mines, trade routes, and taxation points. The national army is weak and often unpaid; UN peacekeepers lack the mandate or capacity to establish order. Corruption is structural—officials steal what little revenue exists. Infrastructure is nearly nonexistent: few paved roads, unreliable electricity in Bangui, no power elsewhere. The economy barely functions. Most people survive through subsistence agriculture or informal trade. Health care is catastrophic; life expectancy is fifty-four years.
+
+The international community has largely abandoned CAR to managed crisis. Peacekeepers prevent the worst massacres but enable no path forward. France, the former colonial power, intervenes periodically but invests nothing in development. The violence is self-perpetuating: armed groups profit from instability, civilians have no stake in a state that provides nothing, and neighboring countries allow weapons and resources to flow across porous borders. Without genuine investment in governance, infrastructure, and reconciliation—none of which appears forthcoming—CAR will remain locked in its current state of functional statelessness.
+
+**The Contribution**
+
+CAR's contribution is largely a negative lesson about what happens when the international system creates states without providing the resources for statehood—and when extraction defines a territory's relationship to the wider world from the beginning. It stands as evidence that borders and sovereignty mean nothing without capacity, that colonial legacies of brutality and neglect have consequences that persist for generations, that the world will tolerate extraordinary suffering in places it considers peripheral. The Sango language, which evolved as a trading lingua franca along the Ubangi River and became a symbol of national identity despite the country's fragmentation, represents the possibility of common ground—though that possibility remains largely unrealized.
+
+**A Moment**
+
+In December 2013, French soldiers arrived in Bangui to find the city descending into sectarian massacre. At the airport, thousands of terrified civilians sought shelter, fleeing both Séléka militias and anti-Balaka revenge killings. A French journalist described watching a child, perhaps eight years old, standing alone near the runway, covered in blood that wasn't his own, holding a machete he could barely lift, staring at nothing. When soldiers approached, he dropped the weapon and ran. No one knew where he ran to, or what had happened to his family, or what he had seen or done in the days before. He was one child among millions caught in a conflict that had nothing to do with genuine grievance and everything to do with the complete collapse of any structure that might have protected him—a collapse decades in the making, largely ignored by a world that had never invested in building anything worth protecting.
+
+---
+*Part of Countries at alexandria.press*

@@ -1,0 +1,31 @@
+# Brunei
+*Oil-Rich Sultanate*
+
+A tiny absolute monarchy on the north coast of Borneo, Brunei is what happens when extraordinary natural resource wealth meets traditional Islamic governance and a single family's unbroken rule. For six centuries the same dynasty has commanded this sliver of rainforest and coast. Today its 450,000 citizens enjoy tax-free incomes and subsidized lives while living under sharia law and one man's absolute authority. It is both welfare state and theocracy, both prosperous and brittle, entirely dependent on reserves that will not last forever.
+
+## The Land
+
+Brunei occupies two disconnected enclaves on Borneo's northern coast, separated by the Malaysian state of Sarawak. Dense tropical rainforest covers most of the interior—mountains, rivers, and jungle that remains largely untouched. The population clusters along the coast and in the capital, Bandar Seri Begawan, much of it built on stilts over water in traditional kampong villages that now have air conditioning and satellite dishes. Beneath the jungle and offshore lie the oil and gas fields that transformed everything. The climate is equatorial: hot, humid, and wet year-round, with monsoons that used to dictate life before petroleum made climate almost irrelevant to the economy.
+
+## The History
+
+The Brunei Sultanate once controlled much of Borneo and parts of the Philippines, a maritime power built on trade and tribute. By the nineteenth century it had shrunk dramatically under pressure from European colonialism and local rebellions. In 1888 Brunei became a British protectorate, a status that preserved the sultanate while stripping it of real power. Oil was discovered in 1929. Everything changed. When independence came in 1984, Sultan Hassanal Bolkiah inherited both absolute power and immense wealth. He built a welfare state that kept citizens comfortable and politically quiescent. In 2014 he imposed strict sharia law including stoning for adultery and amputation for theft, though enforcement has been selective and international pressure intense. The sultanate endures not through democratic legitimacy but through prosperity and tradition.
+
+## The Culture
+
+Bruneian society revolves around the Malay Islamic Monarchy philosophy—a trinity of Malay ethnicity, Islam, and loyalty to the sultan. Islam is not merely personal faith but state ideology; Islamic values permeate law, education, and public life. Alcohol is banned, apostasy is criminal, and Friday prayers are a national obligation. Yet this is also a society of startling material comfort. Education and healthcare are free. Housing is subsidized. There is no income tax. The sultan's wealth—he was once the world's richest man—manifests in palaces of almost comic extravagance. Social hierarchy is rigid. The royal family occupies the apex. Beneath them, ethnic Malays enjoy full citizenship while Chinese and indigenous populations face restrictions. Women wear tudong head coverings but also attend university. It is conservative Islam married to consumer prosperity, tradition funded by modernity's energy needs.
+
+## The Challenge
+
+The oil will run out. Brunei's entire model—the generous subsidies, the political legitimacy, the absence of taxation—depends on hydrocarbon revenues that now account for over half of GDP. Reserves are declining. Diversification efforts have been halting and largely unsuccessful. When the oil money dries up, what then? The population has no tradition of taxation, no developed private sector, no democratic institutions to negotiate new social contracts. The sultan's authority rests on his ability to provide. The sharia law implementation alienated Western allies and investors just when Brunei needs them most. The country has built a pleasant gilded cage for its citizens, but the bars are visible now. The next generation will inherit a harder country than their parents knew, and no one seems to know how to prepare them.
+
+## The Contribution
+
+Brunei has preserved something rare: a functioning sultanate in the twenty-first century, an Islamic monarchy that has avoided the violence and chaos afflicting other resource-rich Muslim nations. It has protected vast tracts of rainforest—over 70% forest cover—and maintains some of the world's oldest and most biodiverse jungles. The Ulu Temburong National Park is pristine primary rainforest, untouched in ways almost nowhere else in Southeast Asia can claim. Bruneian architects and craftsmen have kept alive traditional Malay building techniques, the stilted water villages that were once common across the region but have largely vanished. It is a small contribution, but in a region of breakneck development and environmental destruction, preservation matters. And Brunei has shown that oil wealth need not inevitably produce the violence and corruption of so many petrostates—though it has paid for this stability with freedom.
+
+## A Moment
+
+The Sultan Omar Ali Saifuddien Mosque stands in central Bandar Seri Begawan, its golden dome visible for miles, built in 1958 when oil money first allowed such grandeur. It sits beside an artificial lagoon where a replica of a sixteenth-century royal barge floats, used once a year for Quran reading competitions. Inside, Italian marble, Saudi Arabian carpets, and English chandeliers blend in a style that is somehow both Islamic and imperial. On Friday afternoons the surrounding streets fill with luxury cars—Mercedes, Bentleys, the occasional Rolls-Royce—as worshippers arrive for prayers. Old men in traditional songkok caps park next to young men in designer sunglasses. Everyone removes their shoes and enters. The call to prayer echoes across the lagoon. For those twenty minutes, oil executives and fishermen, royalty and commoners, kneel in the same direction, equal before God if nowhere else. Then the prayer ends, the cars disperse, and the hierarchy resumes. The mosque remains, golden and serene, built on petroleum and faith, beautiful and precarious.
+
+---
+*Part of Countries at alexandria.press*

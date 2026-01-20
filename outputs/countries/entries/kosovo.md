@@ -1,0 +1,31 @@
+# Kosovo
+*Europe's Newest Nation*
+
+The youngest country in Europe emerged from Yugoslavia's violent collapse, declared independence in 2008, and remains unrecognized by Serbia and nearly half the UN's members. Ninety percent Albanian, ten percent Serbian, Kosovo embodies the question of what makes a legitimate state: democratic will, international recognition, ethnic majority, or simply the fact of existing. It is poor, politically fragile, heavily dependent on remittances from its vast diaspora—and fiercely insistent on its right to exist.
+
+## The Land
+
+Landlocked in the central Balkans, Kosovo is small—roughly the size of Connecticut—and mountainous. The Šar Mountains form its southern border with North Macedonia; the Accursed Mountains rise to the west toward Albania. Between them lies the fertile Kosovo Plain, where most people live, centered on Pristina, the capital. The Ibar River divides north from south, Serbian-majority municipalities from Albanian ones, the line where the country's unresolved tensions become geography. Coal deposits fueled Yugoslav-era industry; now they fuel pollution. The land is beautiful in the way of the Balkans—rugged, dramatic, green—but its meaning comes from who claims it.
+
+## The History
+
+Medieval Serbia considered Kosovo its spiritual heartland; the Battle of Kosovo in 1389 against the Ottomans became foundational to Serbian national mythology, even though Serbia lost. Under Ottoman rule for five centuries, the population gradually became majority Albanian and Muslim. When Yugoslavia formed after World War I, Kosovo was incorporated into Serbia. Tito's Yugoslavia granted it autonomy in 1974; Milošević revoked that autonomy in 1989, triggering Albanian resistance. The Kosovo War (1998-1999) killed approximately 10,000 people, mostly Albanian civilians, and ended with NATO bombing Serbia into withdrawal. The UN administered Kosovo until its declaration of independence on February 17, 2008. Serbia still considers it a breakaway province. The International Court of Justice ruled the declaration didn't violate international law, but that hasn't resolved the question of statehood.
+
+## The Culture
+
+Kosovo is overwhelmingly Albanian-speaking and culturally aligned with Albania proper, though decades of Yugoslav rule left their mark. The culture is conservative, family-centered, and patriarchal—domestic violence rates are high, women's participation in public life limited despite legal equality. Islam is the majority religion, though practiced more as cultural identity than strict observance; Kosovo's Albanians are among Europe's most secular Muslims. Serbian Orthodox monasteries—some UNESCO World Heritage sites—stand as reminders of Serbian historical claims and sources of ongoing tension. The north remains Serbian-majority, uses the dinar instead of the euro, and functions in practice as part of Serbia. A small diaspora culture exists everywhere: remittances account for nearly twenty percent of GDP. Young people are leaving in enormous numbers. This is a country defined by migration—people fled the war, fled poverty, fled limited horizons.
+
+## The Challenge
+
+Recognition. Over half the UN's members don't recognize Kosovo's independence—including Serbia, Russia, China, Spain (fearful of Catalonia), and five EU members. Without full recognition, Kosovo can't join the UN, can't participate fully in international institutions, exists in diplomatic limbo. Domestically: massive unemployment (especially among youth), political corruption, weak rule of law, organized crime, ongoing tensions with Serbia over northern Kosovo's status. The EU-mediated dialogue between Belgrade and Pristina produces agreements that neither side fully implements. Meanwhile, the country bleeds talent; approximately one-third of Kosovo's population lives abroad. Brain drain is existential. The economy depends on remittances, foreign aid, and a large informal sector. State capacity is weak; trust in institutions weaker. Kosovo needs jobs, infrastructure, investment, hope—and keeps not getting them.
+
+## The Contribution
+
+Kosovo has given the world a test case for remedial secession—the idea that systematic human rights violations can justify unilateral independence. The International Court of Justice ruling, while narrow, established precedent. More broadly: Kosovo's declaration represented self-determination for a population that had endured ethnic cleansing, asserting that democratic will matters even when powerful neighbors object. Rita Ora, Dua Lipa, and other diaspora Albanians wave the Kosovo flag on global stages, giving the country visibility money can't buy. Mother Teresa, though born in what is now North Macedonia to Albanian parents, is claimed by Kosovo as part of its cultural heritage. The country's fierce insistence on existing—against Serbian opposition, against non-recognition, against poverty and political dysfunction—represents something stubborn and admirable: a refusal to disappear.
+
+## A Moment
+
+February 17, 2008, late afternoon. The Kosovo Assembly in Pristina votes unanimously to declare independence. Outside, tens of thousands gather in celebration—Albanian flags, Kosovo flags, American flags in gratitude for NATO intervention. People weep, embrace, set off fireworks. "Kosovo is born!" they shout. In northern Mitrovica, Serbian residents barricade streets and burn the new country's flag. In Belgrade, protesters attack the American embassy, setting part of it on fire; one person dies in the blaze. The European Union issues a carefully worded statement acknowledging the declaration without quite endorsing it. Russia denounces it as illegal precedent. Within days, the United States, United Kingdom, France, and Germany recognize the new state. Serbia never will. In that single day—simultaneous celebration and repudiation, recognition and rejection—Kosovo's fundamental condition became clear: it exists, but its existence remains contested. Fifteen years later, that hasn't changed.
+
+---
+*Part of Countries at alexandria.press*

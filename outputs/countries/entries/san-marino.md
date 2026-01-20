@@ -1,0 +1,31 @@
+# San Marino
+*The Oldest Republic*
+
+On a limestone ridge in the Apennines, the world's oldest surviving republic has endured for seventeen centuries—not through conquest or cunning, but through something harder to explain. San Marino exists because bigger powers let it exist, because its mountain perch offered little worth taking, because neutrality became a kind of genius. Sixty-one square kilometers, 33,000 citizens, entirely surrounded by Italy—yet unmistakably itself. The question is not why it survived, but what survival without expansion teaches.
+
+**The Land**
+
+Monte Titano rises 739 meters above the Emilia-Romagna plain, visible from the Adriatic on clear days. The entire country sits on this mountain and its immediate slopes—three medieval towers crown the summit, stone fortifications descend the ridges. No natural resources beyond the stone itself, no port, no river, no strategic value after gunpowder made mountain fortresses obsolete. The land forced self-sufficiency: terraced gardens, careful water management, building upward where expansion outward was impossible. Summer heat rises from the Italian plains; winter fog settles in valleys the republic doesn't control. The mountain is the nation—leave it and you've left San Marino.
+
+**The History**
+
+Legend places the founding in 301 CE: Marinus, a stonemason fleeing persecution, establishes a Christian community on Monte Titano. Plausible enough—the mountain attracted hermits and refugees for centuries. By the Middle Ages, the community had formalized itself as a commune, a republic governed by two Captains Regent serving six-month terms. Napoleon respected its independence in 1797, finding the tiny republic charming rather than threatening. Garibaldi took refuge here during the Risorgimento; San Marino granted him safe passage and aided Italian unification without being absorbed by it. Remained neutral in both World Wars—the mountain offered refuge again, sheltering 100,000 Italians during the Second War. Never conquered because never worth the trouble, never absorbed because its symbolic value as "the oldest republic" exceeded its territory's worth. The 1600 Statutes still govern; the Captains Regent still serve six months; continuity achieved through irrelevance to larger powers.
+
+**The Culture**
+
+A village dressed as a nation. Most Sammarinese have Italian surnames, speak Italian with the local Romagnolo dialect, eat Italian food, watch Italian television. Yet citizenship is fiercely guarded—by blood, not residence. You cannot easily become Sammarinese; you're born into it. The culture is one of custodianship: maintaining the towers, preserving the rituals, operating the government more as civic theater than as real sovereignty. Tourism dominates—five million visitors yearly to see medieval walls and buy tax-free goods. Citizens navigate this with pragmatic pride: yes, we sell stamps and coins to collectors; yes, we're essentially Italian; but we're also not Italy, and that difference matters. Strong Catholic identity, village-level social networks, a rotating leadership that prevents anyone from accumulating real power. The republic functions because everyone shares the understanding that it's precious exactly because it's improbable.
+
+**The Challenge**
+
+Irrelevance masquerading as independence. The country depends entirely on Italian goodwill—Italy provides water, allows customs union, doesn't enforce its obvious right to absorb its tiny neighbor. Economic survival requires either tourism or banking secrecy, both morally ambiguous: tourism reduces the republic to a medieval theme park; banking secrecy attracts money laundering. The EU has pressured San Marino to end financial opacity, undermining one of its few competitive advantages. The population is aging, young people leave for opportunities in Bologna or Milan, and citizenship laws prevent immigration from refreshing the nation. The government operates at a deficit, subsidized by stamp sales and shrinking bank revenues. The central question: what is a country for, if it controls nothing, produces little, and exists mainly as a curiosity? San Marino has survived by being harmless—but can dignity survive perpetual harmlessness?
+
+**The Contribution**
+
+The stubborn fact of endurance. When every other medieval city-republic fell to larger kingdoms—Florence to Tuscany, Venice to Austria, Genoa to Piedmont—this mountain commune remained free. Not through military power or economic necessity, but through sheer refusal to disappear. San Marino proved that sovereignty is partly consensual hallucination: if enough powers agree to recognize you, and you perform the rituals of statehood convincingly enough, you continue. The rotating two-person executive offers an alternative to strongman rule—no one governs long enough to become indispensable. The very improbability inspires: small places can survive if they're careful, useful, and lucky. And the republic remains what it's always been—proof that not everything must be absorbed into something larger, that the medieval commune's ideal of self-government among equals can persist, even as museum piece.
+
+**A Moment**
+
+September 1944: German forces retreat through Italy, and 100,000 Italian refugees crowd into San Marino's 61 square kilometers—triple the republic's population. The government declares neutrality, opens doors, stretches food supplies to breaking. British aircraft, mistaking military movement for German occupation, bomb the country anyway—63 dead. The Captains Regent protest to London, receive apologies and reparations. Then, as quickly as they came, the refugees depart. The republic returns to itself, its towers intact, its government still rotating every six months. This is what San Marino has always done: opened itself during crisis, sheltered the desperate, then closed again into its careful irrelevance. The bombs fell and the mountain endured because the mountain was never the target—just in the way, as it's been in the way of history for seventeen centuries. The resilience was not in fighting back but in being small enough that even destruction couldn't find much to destroy.
+
+---
+*Part of Countries at alexandria.press*

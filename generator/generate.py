@@ -111,17 +111,23 @@ def extract_descriptor(content: str) -> str | None:
     return None
 
 
-def generate_entry(client: anthropic.Anthropic, system_prompt: str, entity_name: str) -> str:
-    """Generate a single entry using the Anthropic API."""
+def generate_entry(client: anthropic.Anthropic, system_prompt: str, entity_name: str) -> tuple[str, any]:
+    """Generate a single entry using the Anthropic API with caching."""
     message = client.messages.create(
         model=ANTHROPIC_MODEL,
         max_tokens=4096,
-        system=system_prompt,
+        system=[
+            {
+                "type": "text",
+                "text": system_prompt,
+                "cache_control": {"type": "ephemeral"}
+            }
+        ],
         messages=[
             {"role": "user", "content": entity_name}
         ]
     )
-    return message.content[0].text
+    return message.content[0].text, message.usage
 
 
 def generate_all_entries(collection_id: str, resume_from: int = 0, skip_existing: bool = False, max_workers: int = 10) -> list[dict]:
@@ -153,6 +159,12 @@ def generate_all_entries(collection_id: str, resume_from: int = 0, skip_existing
     
     entries = []
     completed = 0
+    stats = {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cache_creation": 0,
+        "cache_read": 0
+    }
     lock = threading.Lock()
     
     def process_entity(args):
@@ -160,7 +172,7 @@ def generate_all_entries(collection_id: str, resume_from: int = 0, skip_existing
         i, entity = args
         
         try:
-            content = generate_entry(client, system_prompt, entity["name"])
+            content, usage = generate_entry(client, system_prompt, entity["name"])
             descriptor = extract_descriptor(content)
             
             entry = {
@@ -182,7 +194,23 @@ def generate_all_entries(collection_id: str, resume_from: int = 0, skip_existing
             
             with lock:
                 completed += 1
-                print(f"[{completed}/{len(entities_to_process)}] ✓ {entity['name']}")
+                stats["input_tokens"] += usage.input_tokens
+                stats["output_tokens"] += usage.output_tokens
+                
+                # Handling prompt caching stats
+                cache_creation = getattr(usage, "cache_creation_input_tokens", 0) or 0
+                cache_read = getattr(usage, "cache_read_input_tokens", 0) or 0
+                
+                stats["cache_creation"] += cache_creation
+                stats["cache_read"] += cache_read
+                
+                cache_status = ""
+                if cache_read > 0:
+                    cache_status = f" (Cache HIT: {cache_read} tokens)"
+                elif cache_creation > 0:
+                    cache_status = f" (Cache MISS: Created {cache_creation} tokens)"
+                
+                print(f"[{completed}/{len(entities_to_process)}] ✓ {entity['name']}{cache_status}")
             
             return entry
             
@@ -201,6 +229,15 @@ def generate_all_entries(collection_id: str, resume_from: int = 0, skip_existing
                 entries.append(result)
     
     print(f"\nCompleted: {len(entries)} successful, {len(entities_to_process) - len(entries)} failed")
+    
+    if stats["input_tokens"] + stats["cache_read"] > 0:
+        print("\nCaching Statistics:")
+        print(f"  New Input Tokens:    {stats['input_tokens']}")
+        print(f"  Cache Read Tokens:   {stats['cache_read']} (saved)")
+        print(f"  Cache Creation:      {stats['cache_creation']}")
+        hit_rate = (stats['cache_read'] / (stats['input_tokens'] + stats['cache_read'])) * 100
+        print(f"  Efficiency:          {hit_rate:.1f}%")
+
     return entries
 
 
