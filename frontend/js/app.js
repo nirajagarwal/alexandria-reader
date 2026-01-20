@@ -584,11 +584,22 @@ function showContentPage(title, content, bookId, type) {
         document.getElementById('entryPosition').textContent = '';
     }
 
-    // Disable prev/next entry buttons since this is a standalone page
+    // Disable prev button (start of book)
     const prevBtn = document.getElementById('prevEntry');
-    const nextBtn = document.getElementById('nextEntry');
     if (prevBtn) prevBtn.disabled = true;
-    if (nextBtn) nextBtn.disabled = true;
+
+    // Handle Next button logic
+    const nextBtn = document.getElementById('nextEntry');
+    if (nextBtn) {
+        if (type === 'introduction' && currentEntries.length > 0) {
+            nextBtn.disabled = false;
+            nextBtn.onclick = () => {
+                loadEntry(bookId, currentEntries[0].slug);
+            };
+        } else {
+            nextBtn.disabled = true;
+        }
+    }
 
     // Ensure global back button goes to library
     const backBtn = document.getElementById('backToGrid');

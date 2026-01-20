@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>Alexandria Reader</title>
 
     <!-- Fonts (Synced with book.html) -->
@@ -19,6 +20,8 @@
     <!-- epub.js Dependencies -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/epubjs/dist/epub.min.js"></script>
+    <!-- Paper Texture Generator -->
+    <script src="js/texture.js"></script>
 
     <style>
         /* Responsive Viewer sizing */
@@ -29,10 +32,9 @@
         }
 
         /* Ensure toolbar syncs with system preference if reader.css doesn't cover it */
+        /* Ensure toolbar syncs with system preference if reader.css doesn't cover it */
         .reader-toolbar {
-            background-color: var(--bg-primary);
-            color: var(--text-primary);
-            border-bottom: 1px solid var(--border-subtle);
+            /* Styles moved to reader.css for transparency */
         }
     </style>
 </head>
@@ -41,34 +43,43 @@
     <!-- Toolbar (Synced with book.html header) -->
     <nav class="reader-toolbar">
         <div class="reader-toolbar-controls">
-            <div style="display: flex; align-items: center; gap: 15px;">
-                <a href="/" class="reader-tool-btn icon-only" title="Back to Library">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M19 12H5M12 19l-7-7 7-7" />
-                    </svg>
-                </a>
-                <span id="bookTitle" class="reader-page-info"
-                    style="font-weight: 600; font-size: 0.9rem; text-align: left; min-width: auto; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 300px;">Loading...</span>
-            </div>
+            <!-- Left: Back to Library -->
+            <a href="/" class="reader-tool-btn icon-only" id="backToLibrary" title="Back to Library">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+            </a>
 
-            <div class="reader-pagination">
-                <button id="prevBtn" class="reader-tool-btn icon-only" title="Previous Page">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            <!-- Right: Pagination & Contents -->
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <div class="reader-pagination">
+                    <button id="prevBtn" class="reader-tool-btn icon-only" title="Previous Page">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <span id="pageProgress" class="reader-page-info">...</span>
+                    <button id="nextBtn" class="reader-tool-btn icon-only" title="Next Page">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+
+                <button id="contentsTrigger" class="reader-tool-btn icon-only" title="Table of Contents">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="15 18 9 12 15 6"></polyline>
+                        <line x1="8" y1="6" x2="21" y2="6"></line>
+                        <line x1="8" y1="12" x2="21" y2="12"></line>
+                        <line x1="8" y1="18" x2="21" y2="18"></line>
+                        <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                        <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                        <line x1="3" y1="18" x2="3.01" y2="18"></line>
                     </svg>
                 </button>
-                <span id="pageProgress" class="reader-page-info">...</span>
-                <button id="nextBtn" class="reader-tool-btn icon-only" title="Next Page">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="9 18 15 12 9 6"></polyline>
-                    </svg>
-                </button>
             </div>
-
-            <!-- Theme toggle removed as per request -->
-            <div style="width: 44px;"></div>
         </div>
     </nav>
 
@@ -80,6 +91,19 @@
 
     <!-- Loader -->
     <div id="loader" class="reader-loader">Initialising...</div>
+
+    <!-- Contents Menu Overlay (Synced styles with book.html via style.css/reader specific css) -->
+    <div class="contents-overlay hidden" id="contentsOverlay">
+        <div class="contents-menu">
+            <header class="contents-menu-header">
+                <h2>Contents</h2>
+                <button class="contents-close" id="contentsClose">×</button>
+            </header>
+            <nav class="contents-menu-links" id="contentsMenuLinks">
+                <!-- Populated dynamically -->
+            </nav>
+        </div>
+    </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', async () => {
@@ -187,14 +211,33 @@
                 if (e.key === 'ArrowRight') rendition.next();
             });
 
-            // 5. Progress Tracking
             rendition.on('relocated', (location) => {
+                console.log('Relocated:', location);
+                console.log('atStart:', location.atStart, 'atEnd:', location.atEnd);
+
+                // Update Progress
                 if (book.locations && book.locations.percentageFromCfi) {
                     const percent = book.locations.percentageFromCfi(location.start.cfi);
                     const percentage = Math.floor(percent * 100);
                     pageProgress.textContent = (percentage > 0) ? `${percentage}%` : 'Reading';
                 } else {
                     pageProgress.textContent = 'Reading';
+                }
+
+                // Update Buttons
+                const prevBtn = document.getElementById('prevBtn');
+                const nextBtn = document.getElementById('nextBtn');
+
+                if (location.atStart) {
+                    prevBtn.disabled = true;
+                } else {
+                    prevBtn.disabled = false;
+                }
+
+                if (location.atEnd) {
+                    nextBtn.disabled = true;
+                } else {
+                    nextBtn.disabled = false;
                 }
             });
 
@@ -211,11 +254,38 @@
                 loader.style.display = 'none';
 
                 book.loaded.metadata.then(meta => {
-                    bookTitle.textContent = meta.title;
+                    // bookTitle.textContent = meta.title; // Removed as per layout change
                     document.title = `${meta.title} - Alexandria Reader`;
+
+                    // Update Back button to go to book detail
+                    const backBtn = document.getElementById('backToLibrary');
+                    backBtn.href = `/book.html?id=${bookId}`;
+                });
+
+                // Load Navigation
+                book.loaded.navigation.then(nav => {
+                    const menuLinks = document.getElementById('contentsMenuLinks');
+                    let html = '<ul class="menu-list">';
+
+                    nav.toc.forEach(chapter => {
+                        html += `<li><a href="#" data-href="${chapter.href}">${chapter.label}</a></li>`;
+                    });
+
+                    html += '</ul>';
+                    menuLinks.innerHTML = html;
+
+                    // Bind clicks
+                    menuLinks.querySelectorAll('a').forEach(link => {
+                        link.onclick = (e) => {
+                            e.preventDefault();
+                            rendition.display(link.dataset.href);
+                            closeMenu();
+                        };
+                    });
                 });
 
                 initTexture();
+                initMenu();
 
             } catch (err) {
                 console.error("Reader Error:", err);
@@ -228,49 +298,55 @@
 
         function initTexture() {
             const canvas = document.getElementById('paperTexture');
-            const ctx = canvas.getContext('2d');
-            const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const generator = new PaperTextureGenerator(canvas);
 
-            function resize() {
-                canvas.width = window.innerWidth;
-                canvas.height = window.innerHeight;
-                generateTexture();
+            function updateTexture() {
+                const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+                // Settings based on mode
+                const settings = isDark ? {
+                    type: 'dark',
+                    intensity: 0.15,
+                    flocculation: 0.4
+                } : {
+                    type: 'cream',
+                    intensity: 0.1,
+                    flocculation: 0.8
+                };
+
+                // Debounce slightly to prevent blocking resize
+                requestAnimationFrame(() => {
+                    generator.generate(settings.type, settings.intensity, settings.flocculation);
+                });
             }
 
-            function generateTexture() {
-                const imageData = ctx.createImageData(canvas.width, canvas.height);
-                const data = imageData.data;
-
-                for (let i = 0; i < data.length; i += 4) {
-                    const noise = Math.random() * 8;
-                    if (isDark) {
-                        data[i] = 10 + noise;
-                        data[i + 1] = 10 + noise;
-                        data[i + 2] = 12 + noise;
-                        data[i + 3] = 40;
-                    } else {
-                        data[i] = 235 + noise;
-                        data[i + 1] = 230 + noise;
-                        data[i + 2] = 220 + noise;
-                        data[i + 3] = 25;
-                    }
-                }
-                ctx.putImageData(imageData, 0, 0);
-
-                const gradWidth = 100;
-                const centerX = canvas.width / 2;
-                const gradient = ctx.createLinearGradient(centerX - gradWidth / 2, 0, centerX + gradWidth / 2, 0);
-                const shadowOpacity = isDark ? 0.3 : 0.1;
-                gradient.addColorStop(0, 'rgba(0,0,0,0)');
-                gradient.addColorStop(0.5, `rgba(0,0,0,${shadowOpacity})`);
-                gradient.addColorStop(1, 'rgba(0,0,0,0)');
-                ctx.fillStyle = gradient;
-                ctx.fillRect(centerX - gradWidth / 2, 0, gradWidth, canvas.height);
-            }
-
-            window.addEventListener('resize', resize);
-            resize();
+            window.addEventListener('resize', updateTexture);
+            updateTexture();
         }
+
+        function initMenu() {
+            const trigger = document.getElementById('contentsTrigger');
+            const overlay = document.getElementById('contentsOverlay');
+            const closeBtn = document.getElementById('contentsClose');
+
+            function openMenu() {
+                overlay.classList.remove('hidden');
+            }
+
+            function closeMenu() {
+                overlay.classList.add('hidden');
+            }
+
+            trigger.onclick = openMenu;
+            closeBtn.onclick = closeMenu;
+            overlay.onclick = (e) => {
+                if (e.target === overlay) closeMenu();
+            };
+
+            // Expose for global usage
+            window.closeMenu = closeMenu;
+        }
+
     </script>
 </body>
 

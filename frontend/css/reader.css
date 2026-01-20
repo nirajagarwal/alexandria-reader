@@ -16,15 +16,27 @@
     --accent: #4A4A4A;
 
     /* Reader Specifics */
-    --reader-bg: #F7F4ED; /* Surroundings match bg-primary */
-    
+    --reader-bg: #F7F4ED;
+    /* Surroundings match bg-primary */
+
     /* Typography */
     --font-serif: 'Lora', serif;
     --font-display: 'Lato', sans-serif;
     --font-sans: 'IBM Plex Sans', -apple-system, sans-serif;
 
     /* Spacing */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
     --space-xl: 2rem;
+    --space-2xl: 3rem;
+    --space-3xl: 4rem;
+
+    /* Transitions */
+    --transition-fast: 150ms ease;
+    --transition-medium: 300ms ease;
+    --transition-slow: 500ms ease;
 }
 
 /* Dark mode (Vault) */
@@ -69,8 +81,9 @@ body {
     left: 0;
     width: 100vw;
     height: 72px;
-    background: var(--bg-primary);
-    border-bottom: 1px solid var(--border-subtle);
+    background: transparent;
+    /* Transparent to show texture */
+    /* border-bottom: 1px solid var(--border-subtle); Remove border for seamless look */
     display: flex;
     align-items: center;
     z-index: 10000;
@@ -81,9 +94,10 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 0 var(--space-xl);
-    max-width: 1400px;
-    margin: 0 auto;
+    width: 100%;
+    padding: var(--space-md) var(--space-xl);
+    /* max-width: 1400px;  Removed max-width to allow full left-right spread like book.html */
+    margin: 0;
 }
 
 /* Nav Button Styles */
@@ -95,9 +109,11 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.08em;
     height: 44px;
-    padding: 0 1.5rem;
-    background: var(--bg-secondary);
-    border: 1px solid var(--border);
+    padding: 0 1rem;
+    background: transparent;
+    /* Minimal: Transparent */
+    border: none;
+    /* Minimal: No border */
     color: var(--text-secondary);
     cursor: pointer;
     display: inline-flex;
@@ -105,14 +121,15 @@ body {
     justify-content: center;
     transition: all 150ms ease;
     text-decoration: none;
-    border-radius: 0;
+    border-radius: 4px;
+    /* Slight rounding for hover state */
 }
 
 .reader-tool-btn:hover:not(:disabled),
 .nav-btn-back:hover {
-    border-color: var(--text-primary);
     color: var(--text-primary);
-    background: var(--bg-elevated);
+    background: rgba(0, 0, 0, 0.05);
+    /* Subtle hover background */
 }
 
 .reader-tool-btn.icon-only {
@@ -159,12 +176,14 @@ body {
 /* Paper Texture */
 .texture-overlay {
     position: fixed;
-    top: 72px;
+    top: 0;
+    /* Cover entire screen including toolbar */
     left: 0;
     width: 100%;
-    height: calc(100% - 72px);
+    height: 100%;
     pointer-events: none;
-    z-index: 500;
+    z-index: 20000;
+    /* Highest z-index to overlay EVERYTHING including toolbar */
     opacity: 0.3;
     mix-blend-mode: multiply;
 }
@@ -215,7 +234,7 @@ body {
 }
 
 .epubjs-content p:first-of-type,
-.epubjs-content h1 + p {
+.epubjs-content h1+p {
     text-indent: 0;
 }
 
@@ -235,4 +254,114 @@ body {
     height: auto;
     display: block;
     margin: 2rem auto;
+}
+
+/* -----------------------------------------------------------------------------
+   Utilities
+   ----------------------------------------------------------------------------- */
+.hidden {
+    display: none !important;
+}
+
+/* -----------------------------------------------------------------------------
+   Contents Menu (Ported from style.css)
+   ----------------------------------------------------------------------------- */
+.contents-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+    z-index: 20000;
+    /* Higher than toolbar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-xl);
+    animation: fadeIn 0.2s ease;
+}
+
+.contents-menu {
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    width: 100%;
+    max-width: 500px;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.contents-menu-header {
+    padding: var(--space-xl);
+    border-bottom: 1px solid var(--border-subtle);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contents-menu-header h2 {
+    font-size: 1.25rem;
+    font-family: var(--font-display, 'Lato', sans-serif);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.contents-close {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--text-tertiary);
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+}
+
+.contents-close:hover {
+    color: var(--text-primary);
+}
+
+.contents-menu-links {
+    flex: 1;
+    overflow-y: auto;
+    padding: var(--space-xl);
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    margin-bottom: 0.5rem;
+}
+
+.menu-list a {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    font-family: var(--font-serif);
+    font-size: 1.125rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border-radius: 4px;
+}
+
+.menu-list a:hover {
+    background: var(--bg-secondary);
+    padding-left: 1.25rem;
+    color: var(--text-primary);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
