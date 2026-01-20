@@ -163,8 +163,10 @@ function renderSearchResults(results) {
 
 async function loadBook(bookId) {
     try {
+        console.log('loadBook starting for:', bookId);
         // Load book metadata
         currentBook = await fetchAPI(`/books/${bookId}`);
+        console.log('Metadata loaded:', currentBook);
         document.title = `${currentBook.title} | Alexandria Press`;
 
         // Update Meta Tags
@@ -178,7 +180,9 @@ async function loadBook(bookId) {
         }
 
         // Load entries for navigation
+        console.log('Fetching entries...');
         currentEntries = await fetchAPI(`/books/${bookId}/entries`);
+        console.log('Entries loaded:', currentEntries.length);
 
         // Populate the contents menu
         populateMenu(bookId);
@@ -200,14 +204,18 @@ async function loadBook(bookId) {
         }
 
         // Setup navigation links (for Intro, Appendix, etc if visible)
+        console.log('Setting up nav...');
         setupBookNav(bookId);
 
         // Update Schema
+        console.log('Updating schema...');
         updateSchema();
+        console.log('loadBook complete.');
 
     } catch (error) {
         console.error('Failed to load book:', error);
-        alert('Failed to load book');
+        console.error('Stack trace:', error.stack);
+        alert('Failed to load book: ' + error.message);
         window.location.href = '/';
     }
 }
@@ -507,7 +515,9 @@ function showContentPage(title, content, bookId, type) {
     document.getElementById('entryView').classList.add('hidden');
     document.getElementById('contentPageView').classList.remove('hidden');
 
-    document.getElementById('contentPageTitle').textContent = title;
+    document.getElementById('contentPageView').classList.remove('hidden');
+
+    // Title is now injected into contentEl (see below), so we don't set a header title
 
     const contentEl = document.getElementById('contentPageContent');
     const footer = document.getElementById('contentPageFooter');
