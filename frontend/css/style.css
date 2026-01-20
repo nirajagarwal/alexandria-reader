@@ -470,6 +470,11 @@ a:hover {
     cursor: not-allowed;
 }
 
+.icon-only {
+    width: 44px;
+    padding: 0 !important;
+}
+
 /* Specific button tweaks */
 .nav-btn-back {
     font-size: 1.25rem;
@@ -480,7 +485,7 @@ a:hover {
 .entry-header-right {
     display: flex;
     align-items: center;
-    gap: var(--space-sm);
+    gap: var(--space-md);
 }
 
 .entry-position {
@@ -766,6 +771,16 @@ a:hover {
 
 .content-page-header h1 {
     font-size: 1.25rem;
+    display: none;
+    /* Hidden as we now show it in the content body */
+}
+
+.page-title {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: var(--space-xl);
+    line-height: 1.2;
 }
 
 .content-page-content {

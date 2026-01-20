@@ -189,6 +189,8 @@ async function loadBook(bookId) {
 
         if (slug) {
             loadEntry(bookId, slug, false); // false = don't push state again
+        } else if (currentBook.introduction) {
+            loadContentPage(bookId, 'introduction', 'Introduction');
         } else if (currentEntries.length > 0) {
             loadEntry(bookId, currentEntries[0].slug, true);
         } else {
@@ -231,6 +233,32 @@ function setupBookNav(bookId) {
             if (e.target === overlay) closeMenu();
         };
     }
+
+    // Read Book Icon (Header)
+    const readBookIcon = document.getElementById('readBookIcon');
+    if (readBookIcon) {
+        readBookIcon.onclick = (e) => {
+            e.preventDefault();
+
+            if (!currentBook) {
+                console.warn('Book data missing');
+                return;
+            }
+
+            let href = '';
+            if (currentEntry) {
+                const idx = currentEntries.findIndex(e => e.slug === currentEntry.slug);
+                if (idx !== -1) {
+                    // Match Chapter index in EPUB (1-based, padded)
+                    // Note: display() expects path relative to OPF (manifest href)
+                    const chapterNum = (idx + 1).toString().padStart(3, '0');
+                    href = `href=chapter-${chapterNum}.xhtml`;
+                }
+            }
+
+            window.location.href = `/reader.html?bookId=${currentBook.book_id}&${href}`;
+        };
+    }
 }
 
 function toggleMenu() {
@@ -257,8 +285,14 @@ async function populateMenu(bookId) {
 
     let html = '';
 
-    // Read Book button at the top
-    html += '<button class="read-book-button" id="readBookBtn">Read Book</button>';
+    // Introduction (if exists)
+    if (currentBook.introduction) {
+        // html += '<h3>Front Matter</h3>'; // Optional header
+        html += '<ul class="menu-list front-matter">';
+        html += '<li><a href="#" data-type="introduction" class="is-intro">Introduction</a></li>';
+        html += '</ul>';
+        html += '<hr class="menu-divider">';
+    }
 
     // Entries Section
     html += '<h3 class="menu-section-title">Chapters</h3>';
@@ -276,7 +310,7 @@ async function populateMenu(bookId) {
 
     // Standard pages (now at the bottom)
     const pages = [
-        { id: 'introLink', type: 'introduction', label: 'About' },
+        // 'About' / Introduction moved to top
         { id: 'appendixLink', type: 'appendix', label: 'Prompt' },
         { id: 'colophonLink', type: 'colophon', label: 'Colophon' }
     ];
@@ -299,21 +333,23 @@ async function populateMenu(bookId) {
             if (slug) {
                 loadEntry(bookId, slug);
             } else if (type) {
-                const label = pages.find(p => p.type === type).label;
-                loadContentPage(bookId, type, label);
+                let label = '';
+                if (type === 'introduction') {
+                    label = 'Introduction';
+                } else {
+                    const page = pages.find(p => p.type === type);
+                    if (page) label = page.label;
+                }
+
+                if (label) {
+                    loadContentPage(bookId, type, label);
+                }
             }
             closeMenu();
         };
     });
 
-    // Read Book button handler
-    const readBookBtn = document.getElementById('readBookBtn');
-    if (readBookBtn) {
-        readBookBtn.onclick = () => {
-            // Navigate to isolated reader
-            window.location.href = `/reader.html?bookId=${bookId}`;
-        };
-    }
+    closeMenu();
 }
 
 /* -----------------------------------------------------------------------------
@@ -504,32 +540,52 @@ function showContentPage(title, content, bookId, type) {
         };
     } else {
         // Standard rendering for About, Colophon, etc.
+        let htmlContent = '';
+
+        // Add Title right above content (User Request)
+        htmlContent += `<h1 class="page-title">${title}</h1>`;
+
         if (content && (content.includes('#') || content.includes('**'))) {
-            contentEl.innerHTML = marked.parse(content);
+            htmlContent += marked.parse(content);
         } else {
             // Wrap plain text in paragraphs
-            contentEl.innerHTML = content
+            htmlContent += content
                 ? content.split('\n\n').map(p => `<p>${p}</p>`).join('')
                 : '<p>No content available.</p>';
         }
-
-        // About page logic
-        if (type === 'introduction' && currentEntries.length > 0) {
-            footer.innerHTML = `<button class="start-reading-btn" id="startReadingBtn">Start Reading</button>`;
-            footer.classList.remove('hidden');
-            document.getElementById('startReadingBtn').onclick = () => {
-                loadEntry(bookId, currentEntries[0].slug);
-            };
-        } else {
-            footer.innerHTML = '';
-            footer.classList.add('hidden');
-        }
+        contentEl.innerHTML = htmlContent;
     }
 
-    // Setup back button to go to library
-    document.getElementById('backFromContentPage').onclick = () => {
-        window.location.href = '/';
-    };
+    // About page logic
+    if (type === 'introduction' && currentEntries.length > 0) {
+        footer.innerHTML = `<button class="start-reading-btn" id="startReadingBtn">Start Reading</button>`;
+        footer.classList.remove('hidden');
+        document.getElementById('startReadingBtn').onclick = () => {
+            loadEntry(bookId, currentEntries[0].slug);
+        };
+    } else {
+        footer.innerHTML = '';
+        footer.classList.add('hidden');
+    }
+
+    // Customize Global Header for Content Page
+    if (document.getElementById('entryPosition')) {
+        document.getElementById('entryPosition').textContent = '';
+    }
+
+    // Disable prev/next entry buttons since this is a standalone page
+    const prevBtn = document.getElementById('prevEntry');
+    const nextBtn = document.getElementById('nextEntry');
+    if (prevBtn) prevBtn.disabled = true;
+    if (nextBtn) nextBtn.disabled = true;
+
+    // Ensure global back button goes to library
+    const backBtn = document.getElementById('backToGrid');
+    if (backBtn) {
+        backBtn.onclick = () => {
+            window.location.href = '/';
+        };
+    }
 
     window.scrollTo(0, 0);
 }

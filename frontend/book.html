@@ -29,17 +29,46 @@
 
 <body>
 
+    <!-- Global Header -->
+    <header class="entry-header" id="globalHeader">
+        <button class="nav-btn-back" id="backToGrid" title="Back to Library">←</button>
+        <div class="entry-header-right">
+            <span class="entry-position" id="entryPosition"></span>
+            <button class="nav-btn-contents icon-only" id="readBookIcon" title="Read Full Book">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+            </button>
+            <button class="nav-btn-contents icon-only" id="contentsTrigger" title="Table of Contents">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="8" y1="6" x2="21" y2="6"></line>
+                    <line x1="8" y1="12" x2="21" y2="12"></line>
+                    <line x1="8" y1="18" x2="21" y2="18"></line>
+                    <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                    <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                    <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                </svg>
+            </button>
+            <button class="nav-btn icon-only" id="prevEntry" disabled title="Previous Chapter">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <button class="nav-btn icon-only" id="nextEntry" disabled title="Next Chapter">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </div>
+    </header>
+
     <!-- Entry View -->
     <div class="entry-view hidden" id="entryView">
-        <header class="entry-header">
-            <button class="nav-btn-back" id="backToGrid" title="Back to Library">←</button>
-            <div class="entry-header-right">
-                <span class="entry-position" id="entryPosition"></span>
-                <button class="nav-btn-contents" id="contentsTrigger">Contents</button>
-                <button class="nav-btn" id="prevEntry" disabled>Back</button>
-                <button class="nav-btn" id="nextEntry" disabled>Next</button>
-            </div>
-        </header>
 
         <article class="entry-content" id="entryContent">
             <!-- Loading Skeleton -->
@@ -77,9 +106,8 @@
 
     <!-- Content Page View (Introduction, Appendix, Colophon) -->
     <div class="content-page-view hidden" id="contentPageView">
-        <header class="content-page-header">
-            <button class="back-to-grid" id="backFromContentPage">←</button>
-            <h1 id="contentPageTitle"></h1>
+        <header class="content-page-header" style="display: none;">
+            <!-- Hidden: using global header -->
         </header>
 
         <article class="content-page-content" id="contentPageContent">
@@ -119,7 +147,6 @@
     <script>window.PagedConfig = { auto: false };</script>
     <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
 
-    <script src="js/book-reader.js"></script>
     <script src="js/app.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {

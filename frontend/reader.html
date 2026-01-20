@@ -13,17 +13,26 @@
         href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Lora:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
         rel="stylesheet">
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/reader.css?v=5">
+    <!-- Styles (reader.css inherits vars from style.css typically, but we use a dedicated one) -->
+    <link rel="stylesheet" href="css/reader.css?v=8">
 
     <!-- epub.js Dependencies -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/epubjs/dist/epub.min.js"></script>
 
     <style>
-        /* Viewer sizing overrides */
+        /* Responsive Viewer sizing */
         #viewer {
-            background-color: var(--reader-bg);
+            background-color: var(--bg-primary);
+            transition: none;
+            /* No transition for layout stability */
+        }
+
+        /* Ensure toolbar syncs with system preference if reader.css doesn't cover it */
+        .reader-toolbar {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--border-subtle);
         }
     </style>
 </head>
@@ -43,20 +52,23 @@
             </div>
 
             <div class="reader-pagination">
-                <button id="prevBtn" class="reader-tool-btn">Back</button>
+                <button id="prevBtn" class="reader-tool-btn icon-only" title="Previous Page">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
                 <span id="pageProgress" class="reader-page-info">...</span>
-                <button id="nextBtn" class="reader-tool-btn">Next</button>
-            </div>
-
-            <div style="display: flex; gap: 10px;">
-                <button id="themeToggle" class="reader-tool-btn icon-only" title="Toggle Theme">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="5" />
-                        <path
-                            d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                <button id="nextBtn" class="reader-tool-btn icon-only" title="Next Page">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
                     </svg>
                 </button>
             </div>
+
+            <!-- Theme toggle removed as per request -->
+            <div style="width: 44px;"></div>
         </div>
     </nav>
 
@@ -73,6 +85,7 @@
         document.addEventListener('DOMContentLoaded', async () => {
             const params = new URLSearchParams(window.location.search);
             const bookId = params.get('bookId');
+            const href = params.get('href');
 
             if (!bookId) {
                 window.location.href = '/';
@@ -83,62 +96,89 @@
             const bookTitle = document.getElementById('bookTitle');
             const pageProgress = document.getElementById('pageProgress');
 
-            // 1. Initialize Book and Rendition (Advanced Control)
+            const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            // 1. Initialize Book and Rendition
             const book = ePub(`/outputs/${bookId}/book.epub`);
 
+            // Determine spread behavior: Always spread unless small screen
             const rendition = book.renderTo("viewer", {
                 width: "100%",
                 height: "100%",
                 flow: "paginated",
                 manager: "default",
                 spread: "auto",
-                minSpreadWidth: 800,
+                minSpreadWidth: 700, // Widened threshold slightly to keep 2-page view longer
                 allowScriptedContent: false
             });
 
-            // 2. Theme Registration (Synced with style.css)
-            rendition.themes.register("parchment", {
-                "body": { "background": "transparent", "color": "#1A1A1A", "font-family": "'Lora', serif", "font-size": "18px" },
-                "h1": { "font-family": "'Lora', serif", "font-weight": "600" },
-                "p": { "line-height": "1.65", "text-align": "justify", "margin-bottom": "1.5rem" },
-                "img": { "max-width": "100%", "height": "auto", "display": "block", "margin": "2rem auto" },
-                ".section-label": { "font-family": "'IBM Plex Sans', sans-serif", "font-weight": "600", "font-size": "0.75rem", "text-transform": "uppercase", "color": "#757575" }
+            // 2. Theme Registration (Aligned with style.css)
+            const lightColors = {
+                bg: "transparent",
+                text: "#1A1A1A",
+                accent: "#D4AF37",
+                mute: "#757575"
+            };
+
+            const darkColors = {
+                bg: "transparent",
+                text: "#F2F2F2",
+                accent: "#D4AF37",
+                mute: "#999999"
+            };
+
+            const colors = isDark ? darkColors : lightColors;
+
+            rendition.themes.register("default", {
+                "body": {
+                    "background": colors.bg,
+                    "color": colors.text,
+                    "font-family": "'Lora', serif",
+                    "font-size": "18px"
+                },
+                "h1": {
+                    "font-family": "'Lora', serif",
+                    "font-weight": "600",
+                    "color": isDark ? colors.accent : colors.text
+                },
+                "p": {
+                    "line-height": "1.65",
+                    "text-align": "justify",
+                    "margin-bottom": "1.5rem"
+                },
+                "img": {
+                    "max-width": "100%",
+                    "filter": isDark ? "sepia(0.5) contrast(0.8) brightness(0.8)" : "none"
+                },
+                ".section-label": {
+                    "font-family": "'IBM Plex Sans', sans-serif",
+                    "font-weight": "600",
+                    "font-size": "0.75rem",
+                    "text-transform": "uppercase",
+                    "color": colors.mute,
+                    "letter-spacing": "0.15em"
+                }
             });
 
-            rendition.themes.register("vault", {
-                "body": { "background": "transparent", "color": "#F0EDE8", "font-family": "'Lora', serif", "font-size": "18px" },
-                "h1": { "font-family": "'Lora', serif", "font-weight": "600" },
-                "p": { "line-height": "1.65", "text-align": "justify", "margin-bottom": "1.5rem" },
-                "img": { "max-width": "100%", "height": "auto", "display": "block", "margin": "2rem auto", "filter": "sepia(0.5) contrast(0.8)" },
-                ".section-label": { "font-family": "'IBM Plex Sans', sans-serif", "font-weight": "600", "font-size": "0.75rem", "text-transform": "uppercase", "color": "#808080" }
-            });
+            rendition.themes.select("default");
 
-            // Default theme based on current state or preference
-            let currentTheme = "parchment";
-            rendition.themes.select(currentTheme);
-
-            // 3. Hooks (Content Control & Sanitization)
+            // 3. Hooks
             rendition.hooks.content.register((contents) => {
                 const doc = contents.document;
-                const head = doc.head;
-
-                // Add Fonts to iframe
                 contents.addStylesheet("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Sans:wght@400;600&display=swap");
 
-                // Manual overrides for stubborn CSS
-                contents.addRules(`
-                    body { -webkit-font-smoothing: antialiased; }
-                    p { text-indent: 1.5rem; orphans: 2; widows: 2; }
-                    p:first-of-type, h1 + p { text-indent: 0; }
-                    .epubjs-content body { padding: 40px 80px !important; }
-                `);
+                contents.addStylesheetRules({
+                    "body": { "-webkit-font-smoothing": "antialiased" },
+                    "p": { "text-indent": "0", "orphans": "2", "widows": "2" },
+                    "p:first-of-type": { "text-indent": "0" },
+                    "h1 + p": { "text-indent": "0" },
+                    ".epubjs-content body": { "padding": "60px 80px !important" }
+                });
 
-                // Spine Shadow Simulation (Center Gutter)
-                const body = doc.body;
-                body.classList.add('epubjs-content');
+                doc.body.classList.add('epubjs-content');
             });
 
-            // 4. Navigation & Keyboard Controls
+            // 4. Navigation
             document.getElementById('prevBtn').onclick = () => rendition.prev();
             document.getElementById('nextBtn').onclick = () => rendition.next();
 
@@ -147,30 +187,15 @@
                 if (e.key === 'ArrowRight') rendition.next();
             });
 
-            // 5. Theme Toggle
-            document.getElementById('themeToggle').onclick = () => {
-                currentTheme = currentTheme === "parchment" ? "vault" : "parchment";
-                rendition.themes.select(currentTheme);
-                document.body.style.backgroundColor = currentTheme === "parchment" ? "#1A1A1A" : "#0A0A0A";
-                document.body.classList.toggle('dark-theme', currentTheme === "vault");
-                // Update specific elements if needed
-                const toolbar = document.querySelector('.reader-toolbar');
-                toolbar.style.background = currentTheme === "parchment" ? "#F7F4ED" : "#141414";
-                toolbar.style.color = currentTheme === "parchment" ? "#1A1A1A" : "#F0EDE8";
-                toolbar.style.borderColor = currentTheme === "parchment" ? "#E0DCD3" : "#2A2A2A";
-            };
-
-            // 6. Progress Tracking & Locations
+            // 5. Progress Tracking
             rendition.on('relocated', (location) => {
                 if (book.locations && book.locations.percentageFromCfi) {
                     const percent = book.locations.percentageFromCfi(location.start.cfi);
                     const percentage = Math.floor(percent * 100);
-                    pageProgress.textContent = `${percentage}%`;
+                    pageProgress.textContent = (percentage > 0) ? `${percentage}%` : 'Reading';
                 } else {
                     pageProgress.textContent = 'Reading';
                 }
-
-                // Save place if needed (future: localStorage.setItem('alexandria-place-' + bookId, location.start.cfi))
             });
 
             book.ready.then(() => {
@@ -179,30 +204,32 @@
                 console.log("Locations generated");
             });
 
-            // 7. Display initialization
+            // 7. Initialization
             try {
-                // Try load saved place if any (future: const savedPlace = localStorage.getItem(...))
-                await rendition.display();
+                // Display at specific href if provided, else beginning
+                await rendition.display(href || undefined);
                 loader.style.display = 'none';
 
-                // Metadata load
                 book.loaded.metadata.then(meta => {
                     bookTitle.textContent = meta.title;
                     document.title = `${meta.title} - Alexandria Reader`;
                 });
 
-                // Paper Texture
                 initTexture();
 
             } catch (err) {
                 console.error("Reader Error:", err);
                 loader.textContent = "Error loading book: " + err.message;
             }
+
+            // Listen for system theme changes and reload? 
+            // Simple approach: user usually stays in one mode or reloads.
         });
 
         function initTexture() {
             const canvas = document.getElementById('paperTexture');
             const ctx = canvas.getContext('2d');
+            const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
             function resize() {
                 canvas.width = window.innerWidth;
@@ -213,21 +240,29 @@
             function generateTexture() {
                 const imageData = ctx.createImageData(canvas.width, canvas.height);
                 const data = imageData.data;
+
                 for (let i = 0; i < data.length; i += 4) {
                     const noise = Math.random() * 8;
-                    data[i] = 235 + noise;
-                    data[i + 1] = 230 + noise;
-                    data[i + 2] = 220 + noise;
-                    data[i + 3] = 25;
+                    if (isDark) {
+                        data[i] = 10 + noise;
+                        data[i + 1] = 10 + noise;
+                        data[i + 2] = 12 + noise;
+                        data[i + 3] = 40;
+                    } else {
+                        data[i] = 235 + noise;
+                        data[i + 1] = 230 + noise;
+                        data[i + 2] = 220 + noise;
+                        data[i + 3] = 25;
+                    }
                 }
                 ctx.putImageData(imageData, 0, 0);
 
-                // Gutter spine shadow
                 const gradWidth = 100;
                 const centerX = canvas.width / 2;
                 const gradient = ctx.createLinearGradient(centerX - gradWidth / 2, 0, centerX + gradWidth / 2, 0);
+                const shadowOpacity = isDark ? 0.3 : 0.1;
                 gradient.addColorStop(0, 'rgba(0,0,0,0)');
-                gradient.addColorStop(0.5, 'rgba(0,0,0,0.1)');
+                gradient.addColorStop(0.5, `rgba(0,0,0,${shadowOpacity})`);
                 gradient.addColorStop(1, 'rgba(0,0,0,0)');
                 ctx.fillStyle = gradient;
                 ctx.fillRect(centerX - gradWidth / 2, 0, gradWidth, canvas.height);

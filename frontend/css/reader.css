@@ -4,7 +4,7 @@
    ============================================================================= */
 
 :root {
-    /* Color Palette (Synced with style.css) */
+    /* Light mode (Parchment) */
     --bg-primary: #F7F4ED;
     --bg-secondary: #FFFDF7;
     --bg-elevated: #FFFFFF;
@@ -16,23 +16,28 @@
     --accent: #4A4A4A;
 
     /* Reader Specifics */
-    --reader-bg: #1A1A1A;
-    /* Dark surroundings for focus */
-    --paper-color: var(--bg-primary);
-
+    --reader-bg: #F7F4ED; /* Surroundings match bg-primary */
+    
     /* Typography */
     --font-serif: 'Lora', serif;
     --font-display: 'Lato', sans-serif;
     --font-sans: 'IBM Plex Sans', -apple-system, sans-serif;
 
-    /* LAYOUT CANONICALS */
-    --page-height: 825px;
-    --page-width: 550px;
+    /* Spacing */
+    --space-xl: 2rem;
 }
 
-/* Dark mode overrides (optional, but good for surroundings) */
+/* Dark mode (Vault) */
 @media (prefers-color-scheme: dark) {
     :root {
+        --bg-primary: #121212;
+        --bg-secondary: #181818;
+        --bg-elevated: #202020;
+        --text-primary: #F2F2F2;
+        --text-secondary: #A0A0A0;
+        --text-tertiary: #707070;
+        --border: #2A2A2A;
+        --border-subtle: #1F1F1F;
         --reader-bg: #0A0A0A;
     }
 }
@@ -64,7 +69,6 @@ body {
     left: 0;
     width: 100vw;
     height: 72px;
-    /* Synced height */
     background: var(--bg-primary);
     border-bottom: 1px solid var(--border-subtle);
     display: flex;
@@ -82,7 +86,7 @@ body {
     margin: 0 auto;
 }
 
-/* Nav Button Styles (Synced with style.css) */
+/* Nav Button Styles */
 .reader-tool-btn,
 .nav-btn-back {
     font-family: var(--font-sans);
@@ -102,7 +106,6 @@ body {
     transition: all 150ms ease;
     text-decoration: none;
     border-radius: 0;
-    /* Traditional square look */
 }
 
 .reader-tool-btn:hover:not(:disabled),
@@ -110,8 +113,6 @@ body {
     border-color: var(--text-primary);
     color: var(--text-primary);
     background: var(--bg-elevated);
-    border-bottom: 1px solid var(--text-primary);
-    /* Sync with links style */
 }
 
 .reader-tool-btn.icon-only {
@@ -155,7 +156,7 @@ body {
     overflow: hidden;
 }
 
-/* Paper Texture (Polished) */
+/* Paper Texture */
 .texture-overlay {
     position: fixed;
     top: 72px;
@@ -166,6 +167,13 @@ body {
     z-index: 500;
     opacity: 0.3;
     mix-blend-mode: multiply;
+}
+
+@media (prefers-color-scheme: dark) {
+    .texture-overlay {
+        mix-blend-mode: soft-light;
+        opacity: 0.15;
+    }
 }
 
 /* Loader */
@@ -181,17 +189,13 @@ body {
     letter-spacing: 0.2em;
 }
 
-/* =============================================================================
-   EPUB Content Styles (Injected via hooks)
-   ============================================================================= */
-
-/* These are used as defaults in theme registration */
+/* EPUB Content Styles (Injected via hooks) */
 .epubjs-content body {
     background: transparent !important;
     color: var(--text-primary) !important;
     font-family: var(--font-serif) !important;
     line-height: 1.6;
-    padding: 80px 60px !important;
+    padding: 60px 80px !important;
 }
 
 .epubjs-content h1 {
@@ -211,7 +215,7 @@ body {
 }
 
 .epubjs-content p:first-of-type,
-.epubjs-content h1+p {
+.epubjs-content h1 + p {
     text-indent: 0;
 }
 
