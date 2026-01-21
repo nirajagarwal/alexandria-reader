@@ -5,3 +5,4 @@ fastapi
 uvicorn
 libsql-experimental
 markdown
+python-docx

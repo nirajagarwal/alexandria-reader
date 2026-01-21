@@ -58,6 +58,24 @@ class Publisher(Stage):
         except Exception as e:
             print(f"EPUB generation failed: {e}")
             
+        # Generate DOCX
+        print(f"Generating DOCX for {book.book_id}...")
+        try:
+            import subprocess
+            import sys
+            
+            # Rely on config BASE_DIR
+            from ..config import BASE_DIR
+            docx_script = BASE_DIR / "generator" / "generate_docx.py"
+            
+            if docx_script.exists():
+                subprocess.run([sys.executable, str(docx_script), book.book_id], check=True)
+            else:
+                print(f"Warning: DOCX generator script not found at {docx_script}")
+                
+        except Exception as e:
+            print(f"DOCX generation failed: {e}")
+            
         # Update Database
         print(f"Updating Turso database for {book.book_id}...")
         try:
