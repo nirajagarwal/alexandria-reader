@@ -155,18 +155,7 @@
     <script>window.PagedConfig = { auto: false };</script>
     <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
 
-    <script src="js/app.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const params = new URLSearchParams(window.location.search);
-            const bookId = params.get('id');
-            if (bookId) {
-                loadBook(bookId);
-            } else {
-                window.location.href = '/';
-            }
-        });
-    </script>
+    <script type="module" src="js/app.js"></script>
 </body>
 
 </html>

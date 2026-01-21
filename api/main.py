@@ -12,18 +12,17 @@ Environment:
 """
 
 import os
-import json
 from pathlib import Path
 from contextlib import asynccontextmanager
 
 from dotenv import load_dotenv
-from fastapi import FastAPI, HTTPException, Request, Response, Query
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
-from pydantic import BaseModel
+from fastapi.responses import FileResponse
 
-import libsql_experimental as libsql
-from google import genai
+# Import routers
+from api.routers import library, books, search, system
 
 # Load environment variables
 load_dotenv()
@@ -33,130 +32,8 @@ BASE_DIR = Path(__file__).parent.parent
 
 
 # =============================================================================
-# Configuration
+# Lifecycle
 # =============================================================================
-
-TURSO_DATABASE_URL = os.environ.get("TURSO_DATABASE_URL")
-TURSO_AUTH_TOKEN = os.environ.get("TURSO_AUTH_TOKEN")
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
-
-# Global Gemini client (safe to cache)
-gemini_client = None
-
-EMBEDDING_MODEL = "text-embedding-004"
-EMBEDDING_DIMS = 768
-
-
-def get_gemini_client():
-    """Get Gemini client for embeddings."""
-    global gemini_client
-    if gemini_client is None and GEMINI_API_KEY:
-        gemini_client = genai.Client(api_key=GEMINI_API_KEY)
-    return gemini_client
-
-
-def generate_embedding(text: str) -> list[float] | None:
-    """Generate embedding for text using Gemini."""
-    client = get_gemini_client()
-    if not client:
-        return None
-    
-    try:
-        # Truncate very long text to avoid token limits
-        truncated = text[:8000] if len(text) > 8000 else text
-        result = client.models.embed_content(
-            model=EMBEDDING_MODEL,
-            contents=truncated
-        )
-        return result.embeddings[0].values
-    except Exception as e:
-        print(f"Embedding generation failed: {e}")
-        return None
-
-
-# =============================================================================
-# Models
-# =============================================================================
-
-class BookSummary(BaseModel):
-    book_id: str
-    title: str
-    descriptor: str | None
-    cover_url: str | None
-
-
-class Book(BaseModel):
-    book_id: str
-    title: str
-    descriptor: str | None
-    cover_url: str | None
-    model: str | None
-    created_at: str
-    introduction: str | None
-    appendix_prompt: str | None
-    colophon: str | None
-    card_display: dict
-
-
-class EntryCard(BaseModel):
-    order: int
-    slug: str
-    name: str
-    descriptor: str | None
-    metadata: dict
-
-
-class Entry(BaseModel):
-    order: int
-    slug: str
-    name: str
-    descriptor: str | None
-    content: str | None
-    metadata: dict
-
-
-class AdjacentEntry(BaseModel):
-    slug: str
-    name: str
-
-
-class Navigation(BaseModel):
-    prev: AdjacentEntry | None
-    next: AdjacentEntry | None
-
-
-class EntryWithNav(BaseModel):
-    entry: Entry
-    nav: Navigation
-
-
-class SearchResult(BaseModel):
-    """Search result with book context."""
-    book_id: str
-    book_title: str
-    slug: str
-    name: str
-    descriptor: str | None
-    score: float
-
-
-# =============================================================================
-# Database
-# =============================================================================
-
-def get_connection():
-    """
-    Get a fresh database connection for each request.
-    
-    In serverless environments (like Vercel), connections can't be 
-    cached globally as they expire when functions are paused.
-    Each invocation needs its own connection.
-    """
-    return libsql.connect(
-        database=TURSO_DATABASE_URL,
-        auth_token=TURSO_AUTH_TOKEN
-    )
-
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -164,22 +41,6 @@ async def lifespan(app: FastAPI):
     # Nothing to initialize - connections are per-request
     yield
     # Nothing to cleanup - connections are auto-closed
-
-
-# =============================================================================
-# Helpers
-# =============================================================================
-
-def add_cache_control(response: Response, max_age: int = 3600, s_maxage: int = 86400):
-    """
-    Add Cache-Control headers for Vercel Edge caching.
-    
-    Args:
-        response: FastAPI Response object
-        max_age: Browser cache duration (seconds). Default 1h.
-        s_maxage: CDN/Proxy cache duration (seconds). Default 24h.
-    """
-    response.headers["Cache-Control"] = f"public, max-age={max_age}, s-maxage={s_maxage}"
 
 
 # =============================================================================
@@ -202,6 +63,16 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Include Routers
+app.include_router(library.router)
+app.include_router(books.router)
+app.include_router(search.router)
+app.include_router(system.router)
+
+
+# =============================================================================
+# Error Handling
+# =============================================================================
 
 @app.exception_handler(404)
 async def custom_404_handler(request, __):
@@ -213,303 +84,6 @@ async def custom_404_handler(request, __):
         return FileResponse(html_404, status_code=404)
     return {"error": "Not Found", "detail": f"Path '{path}' not found in API"}
 
-
-
-@app.get("/debug", tags=["system"])
-async def debug_request(request: Request):
-    """Debug endpoint to inspect request scope."""
-    return {
-        "url": str(request.url),
-        "base_url": str(request.base_url),
-        "path": request.url.path,
-        "root_path": request.scope.get("root_path"),
-        "headers": dict(request.headers),
-        "env_vercel": os.environ.get("VERCEL", "false"),
-    }
-
-
-
-@app.get("/health", tags=["system"])
-async def health_check():
-    """Health check endpoint."""
-    return {"status": "ok", "env": "production" if not os.environ.get("VERCEL_DEV") else "dev"}
-
-
-# =============================================================================
-# Routes: Search
-# =============================================================================
-
-@app.get("/search", response_model=list[SearchResult], tags=["search"])
-async def search_entries(
-    q: str = Query(..., min_length=1, description="Search query"),
-    limit: int = Query(10, ge=1, le=50, description="Max results")
-):
-    """Semantic search across all book entries."""
-    # Generate embedding for query
-    query_embedding = generate_embedding(q)
-    
-    if not query_embedding:
-        raise HTTPException(status_code=503, detail="Embedding service unavailable")
-    
-    conn = get_connection()
-    
-    # Convert embedding to vector format for Turso
-    vector_str = "[" + ",".join(str(v) for v in query_embedding) + "]"
-    
-    try:
-        # Use vector_top_k for efficient similarity search
-        rows = conn.execute("""
-            SELECT 
-                e.book_id,
-                b.title as book_title,
-                e.slug,
-                e.name,
-                e.descriptor,
-                vector_distance_cos(e.embedding, vector(?)) as distance
-            FROM entries e
-            JOIN books b ON e.book_id = b.book_id
-            WHERE e.embedding IS NOT NULL
-            ORDER BY distance ASC
-            LIMIT ?
-        """, (vector_str, limit)).fetchall()
-        
-        # Convert distance to similarity score (1 - distance for cosine)
-        return [
-            SearchResult(
-                book_id=r[0],
-                book_title=r[1],
-                slug=r[2],
-                name=r[3],
-                descriptor=r[4],
-                score=round(1 - (r[5] or 0), 4)
-            )
-            for r in rows
-        ]
-    except Exception as e:
-        # Fallback if vector search not supported (e.g., local dev without vec)
-        print(f"Vector search failed: {e}")
-        # Simple text search fallback
-        rows = conn.execute("""
-            SELECT 
-                e.book_id,
-                b.title as book_title,
-                e.slug,
-                e.name,
-                e.descriptor
-            FROM entries e
-            JOIN books b ON e.book_id = b.book_id
-            WHERE e.name LIKE ? OR e.descriptor LIKE ? OR e.content LIKE ?
-            LIMIT ?
-        """, (f"%{q}%", f"%{q}%", f"%{q}%", limit)).fetchall()
-        
-        return [
-            SearchResult(
-                book_id=r[0],
-                book_title=r[1],
-                slug=r[2],
-                name=r[3],
-                descriptor=r[4],
-                score=0.5  # Default score for text matches
-            )
-            for r in rows
-        ]
-
-
-# =============================================================================
-# Routes: Library
-# =============================================================================
-
-
-@app.get("/books", response_model=list[BookSummary], tags=["library"])
-async def list_books():
-    """Get all books for library view."""
-    conn = get_connection()
-    rows = conn.execute("""
-        SELECT book_id, title, descriptor, cover_url 
-        FROM books
-        ORDER BY created_at DESC
-    """).fetchall()
-    
-    return [
-        BookSummary(
-            book_id=r[0],
-            title=r[1],
-            descriptor=r[2],
-            cover_url=r[3]
-        )
-        for r in rows
-    ]
-
-
-# =============================================================================
-# Routes: Book
-# =============================================================================
-
-@app.get("/books/{book_id}", response_model=Book, tags=["book"])
-async def get_book(book_id: str, response: Response):
-    """Get book metadata."""
-    add_cache_control(response)  # Cache book metadata for 24h
-    conn = get_connection()
-    row = conn.execute("""
-        SELECT book_id, title, descriptor, cover_url, model, 
-               created_at, introduction, appendix_prompt, colophon, card_display
-        FROM books WHERE book_id = ?
-    """, (book_id,)).fetchone()
-    
-    if not row:
-        raise HTTPException(status_code=404, detail="Book not found")
-    
-    return Book(
-        book_id=row[0],
-        title=row[1],
-        descriptor=row[2],
-        cover_url=row[3],
-        model=row[4],
-        created_at=row[5],
-        introduction=row[6],
-        appendix_prompt=row[7],
-        colophon=row[8],
-        card_display=json.loads(row[9]) if row[9] else {}
-    )
-
-
-@app.get("/books/{book_id}/entries", response_model=list[Entry], tags=["book"])
-async def list_entries(book_id: str, response: Response):
-    """Get all entries with full content for reader."""
-    add_cache_control(response)  # Cache list for 24h
-    conn = get_connection()
-    
-    # Verify book exists
-    book = conn.execute(
-        "SELECT book_id FROM books WHERE book_id = ?", 
-        (book_id,)
-    ).fetchone()
-    
-    if not book:
-        raise HTTPException(status_code=404, detail="Book not found")
-    
-    rows = conn.execute("""
-        SELECT sort_order, slug, name, descriptor, content, metadata
-        FROM entries
-        WHERE book_id = ?
-        ORDER BY sort_order
-    """, (book_id,)).fetchall()
-    
-    return [
-        Entry(
-            order=r[0],
-            slug=r[1],
-            name=r[2],
-            descriptor=r[3],
-            content=r[4],
-            metadata=json.loads(r[5]) if r[5] else {}
-        )
-        for r in rows
-    ]
-
-
-# =============================================================================
-# Routes: Entry
-# =============================================================================
-
-@app.get("/books/{book_id}/entries/{slug}", response_model=EntryWithNav, tags=["entry"])
-async def get_entry(book_id: str, slug: str, response: Response):
-    """Get a single entry with full content and navigation."""
-    add_cache_control(response)  # Cache content for 24h
-    conn = get_connection()
-    
-    # Get entry
-    row = conn.execute("""
-        SELECT sort_order, slug, name, descriptor, content, metadata
-        FROM entries
-        WHERE book_id = ? AND slug = ?
-    """, (book_id, slug)).fetchone()
-    
-    if not row:
-        raise HTTPException(status_code=404, detail="Entry not found")
-    
-    entry = Entry(
-        order=row[0],
-        slug=row[1],
-        name=row[2],
-        descriptor=row[3],
-        content=row[4],
-        metadata=json.loads(row[5]) if row[5] else {}
-    )
-    
-    # Get navigation
-    current_order = row[0]
-    
-    prev_row = conn.execute("""
-        SELECT slug, name FROM entries
-        WHERE book_id = ? AND sort_order < ?
-        ORDER BY sort_order DESC LIMIT 1
-    """, (book_id, current_order)).fetchone()
-    
-    next_row = conn.execute("""
-        SELECT slug, name FROM entries
-        WHERE book_id = ? AND sort_order > ?
-        ORDER BY sort_order ASC LIMIT 1
-    """, (book_id, current_order)).fetchone()
-    
-    nav = Navigation(
-        prev=AdjacentEntry(slug=prev_row[0], name=prev_row[1]) if prev_row else None,
-        next=AdjacentEntry(slug=next_row[0], name=next_row[1]) if next_row else None
-    )
-    
-    return EntryWithNav(entry=entry, nav=nav)
-
-
-# =============================================================================
-# Routes: Book Content Pages
-# =============================================================================
-
-@app.get("/books/{book_id}/introduction", tags=["book"])
-async def get_introduction(book_id: str):
-    """Get book introduction."""
-    conn = get_connection()
-    row = conn.execute(
-        "SELECT introduction FROM books WHERE book_id = ?",
-        (book_id,)
-    ).fetchone()
-    
-    if not row:
-        raise HTTPException(status_code=404, detail="Book not found")
-    
-    return {"content": row[0]}
-
-
-@app.get("/books/{book_id}/appendix", tags=["book"])
-async def get_appendix(book_id: str):
-    """Get book appendix (the prompt)."""
-    conn = get_connection()
-    row = conn.execute(
-        "SELECT appendix_prompt FROM books WHERE book_id = ?",
-        (book_id,)
-    ).fetchone()
-    
-    if not row:
-        raise HTTPException(status_code=404, detail="Book not found")
-    
-    return {"content": row[0]}
-
-
-@app.get("/books/{book_id}/colophon", tags=["book"])
-async def get_colophon(book_id: str):
-    """Get book colophon."""
-    conn = get_connection()
-    row = conn.execute(
-        "SELECT colophon FROM books WHERE book_id = ?",
-        (book_id,)
-    ).fetchone()
-    
-    if not row:
-        raise HTTPException(status_code=404, detail="Book not found")
-    
-    return {"content": row[0]}
-
-
-from fastapi.responses import FileResponse
 
 # =============================================================================
 # Static Files & Frontend
@@ -554,9 +128,6 @@ async def serve_reader():
 async def serve_sw():
     return FileResponse(BASE_DIR / "frontend" / "sw.js")
 
-
 @app.get("/sitemap.xml", include_in_schema=False)
 async def serve_sitemap():
     return FileResponse(BASE_DIR / "frontend" / "sitemap.xml")
-
-
