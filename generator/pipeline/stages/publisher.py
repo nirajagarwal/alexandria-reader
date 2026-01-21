@@ -33,4 +33,48 @@ class Publisher(Stage):
             json.dump(book_dict, f, indent=2)
             
         print(f"Book saved to: {json_path}")
+        
+        # Generate EPUB
+        print(f"Generating EPUB for {book.book_id}...")
+        try:
+            import subprocess
+            import sys
+            
+            # Resolve path to generate_epub.py relative to this file
+            # This file is in generator/pipeline/stages/publisher.py
+            # generate_epub.py is in generator/generate_epub.py
+            # So we go up 3 levels to generator/
+            
+            # Actually, config.py defines BASE_DIR as project root
+            # Let's rely on finding it relative to project root
+            from ..config import BASE_DIR
+            script_path = BASE_DIR / "generator" / "generate_epub.py"
+            
+            if script_path.exists():
+                subprocess.run([sys.executable, str(script_path), book.book_id], check=True)
+            else:
+                print(f"Warning: EPUB generator script not found at {script_path}")
+                
+        except Exception as e:
+            print(f"EPUB generation failed: {e}")
+            
+        # Update Database
+        print(f"Updating Turso database for {book.book_id}...")
+        try:
+            # Add project root to path to import db
+            import sys
+            from ..config import BASE_DIR
+            if str(BASE_DIR) not in sys.path:
+                sys.path.append(str(BASE_DIR))
+                
+            from db.load_db import get_connection, load_book as db_load_book
+            
+            conn = get_connection()
+            db_load_book(conn, str(json_path), book.cover_path)
+            conn.close()
+            print(f"✓ Database updated for {book.book_id}")
+            
+        except Exception as e:
+            print(f"Database update failed: {e}")
+            
         return book

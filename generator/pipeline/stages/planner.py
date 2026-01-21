@@ -35,11 +35,14 @@ class Planner(Stage):
             )
             entries.append(entry)
             
+        from datetime import datetime
+        
         return Book(
             book_id=collection_id,
             title=data.get("title", collection_id),
             descriptor=data.get("descriptor", ""),
             entries=entries,
             system_prompt=system_prompt,
-            card_display=data.get("card_display", {})
+            card_display=data.get("card_display", {}),
+            created_at=datetime.now().isoformat()
         )

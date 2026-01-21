@@ -26,6 +26,7 @@ class Book:
     cover_path: Optional[str] = None
     card_display: Dict = field(default_factory=dict)
     model: str = ""
+    created_at: Optional[str] = None
 
 @dataclass
 class PipelineContext:
