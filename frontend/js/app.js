@@ -171,12 +171,22 @@ async function loadBook(bookId) {
 
         // Update Meta Tags
         const desc = currentBook.descriptor || `A generated book: ${currentBook.title}`;
+        const title = `${currentBook.title} | Alexandria Press`;
+        const url = window.location.href;
+
         document.querySelector('meta[name="description"]').setAttribute('content', desc);
-        document.querySelector('meta[property="og:title"]').setAttribute('content', `${currentBook.title} | Alexandria Press`);
+        document.querySelector('meta[property="og:title"]').setAttribute('content', title);
         document.querySelector('meta[property="og:description"]').setAttribute('content', desc);
+        document.querySelector('meta[property="og:url"]').setAttribute('content', url);
+
+        document.querySelector('meta[name="twitter:title"]').setAttribute('content', title);
+        document.querySelector('meta[name="twitter:description"]').setAttribute('content', desc);
+        document.querySelector('meta[name="twitter:url"]').setAttribute('content', url);
+
         if (currentBook.cover_url) {
             const fullCoverUrl = new URL(currentBook.cover_url, window.location.origin).href;
             document.querySelector('meta[property="og:image"]').setAttribute('content', fullCoverUrl);
+            document.querySelector('meta[name="twitter:image"]').setAttribute('content', fullCoverUrl);
         }
 
         // Load entries for navigation
@@ -431,13 +441,19 @@ function showEntryView(data) {
 
     // Update page title and meta tags to include entry name and book title
     const pageTitle = `${entry.name} | ${currentBook.title} | Alexandria Press`;
+    const url = window.location.href;
     document.title = pageTitle;
+
     document.querySelector('meta[property="og:title"]').setAttribute('content', pageTitle);
+    document.querySelector('meta[property="og:url"]').setAttribute('content', url);
+    document.querySelector('meta[name="twitter:title"]').setAttribute('content', pageTitle);
+    document.querySelector('meta[name="twitter:url"]').setAttribute('content', url);
 
     // Update description meta tags with entry descriptor if available
     const entryDesc = entry.descriptor || `${entry.name} from ${currentBook.title}`;
     document.querySelector('meta[name="description"]').setAttribute('content', entryDesc);
     document.querySelector('meta[property="og:description"]').setAttribute('content', entryDesc);
+    document.querySelector('meta[name="twitter:description"]').setAttribute('content', entryDesc);
 
     // Update position
     document.getElementById('entryPosition').textContent = `${entry.order} of ${totalEntries}`;
@@ -553,8 +569,17 @@ function showContentPage(title, content, bookId, type) {
         // Standard rendering for About, Colophon, etc.
         let htmlContent = '';
 
-        // Add Title right above content (User Request)
-        htmlContent += `<h1 class="page-title">${title}</h1>`;
+        // Add Title and optional Start Reading button in header container
+        if (type === 'introduction' && currentEntries.length > 0) {
+            htmlContent += `
+                <div class="page-header-container">
+                    <h1 class="page-title">${title}</h1>
+                    <button class="start-reading-btn header-btn" id="startReadingBtn">Read</button>
+                </div>
+            `;
+        } else {
+            htmlContent += `<h1 class="page-title">${title}</h1>`;
+        }
 
         if (content && (content.includes('#') || content.includes('**'))) {
             htmlContent += marked.parse(content);
@@ -565,16 +590,19 @@ function showContentPage(title, content, bookId, type) {
                 : '<p>No content available.</p>';
         }
         contentEl.innerHTML = htmlContent;
+
+        // Bind Start Reading button if it exists
+        const startBtn = document.getElementById('startReadingBtn');
+        if (startBtn) {
+            startBtn.onclick = () => {
+                loadEntry(bookId, currentEntries[0].slug);
+            };
+        }
     }
 
-    // About page logic
-    if (type === 'introduction' && currentEntries.length > 0) {
-        footer.innerHTML = `<button class="start-reading-btn" id="startReadingBtn">Start Reading</button>`;
-        footer.classList.remove('hidden');
-        document.getElementById('startReadingBtn').onclick = () => {
-            loadEntry(bookId, currentEntries[0].slug);
-        };
-    } else {
+    // Hide footer for all content pages unless it's appendix (which has its own logic above)
+    // Introduction footer is now empty as the button moved to header
+    if (type !== 'appendix') {
         footer.innerHTML = '';
         footer.classList.add('hidden');
     }

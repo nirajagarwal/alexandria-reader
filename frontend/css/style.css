@@ -787,12 +787,30 @@ a:hover {
     /* Hidden as we now show it in the content body */
 }
 
+.page-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-xl);
+    gap: var(--space-md);
+}
+
 .page-title {
     font-family: var(--font-display);
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: var(--space-xl);
     line-height: 1.2;
+    margin-bottom: var(--space-xl);
+}
+
+.page-header-container .page-title {
+    margin-bottom: 0;
+}
+
+.header-btn {
+    padding: var(--space-sm) var(--space-lg) !important;
+    font-size: 0.75rem !important;
+    white-space: nowrap;
 }
 
 .content-page-content {

@@ -60,11 +60,7 @@ def generate_sitemap():
     # Book pages
     for row in rows:
         book_id = row[0]
-        # Parse created_at if possible, otherwise use current date or specific default
-        # created_at is likely a string based on main.py model
         try:
-            # Attempt to clean specific timestamp format if necessary or use as is if ISO
-            # Assuming row[1] is a string like "2024-01-01T..."
             book_date = row[1].split('T')[0] if row[1] else current_date
         except:
             book_date = current_date
@@ -75,6 +71,21 @@ def generate_sitemap():
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>""")
+
+    # Entry pages
+    print("Fetching entries from database...")
+    try:
+        entries = conn.execute("SELECT book_id, slug FROM entries").fetchall()
+        for row in entries:
+            book_id, slug = row
+            xml_content.append(f"""  <url>
+    <loc>{BASE_URL}/book.html?id={book_id}&amp;slug={slug}</loc>
+    <lastmod>{current_date}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>""")
+    except Exception as e:
+        print(f"Error fetching entries: {e}")
         
     # Footer
     xml_content.append('</urlset>')

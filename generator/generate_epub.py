@@ -223,6 +223,7 @@ h3 + p {
     text-transform: uppercase;
     letter-spacing: 0.15em;
     color: #8b7355;
+    margin-top: 0;
     margin-bottom: 0.5em;
     text-indent: 0;
 }

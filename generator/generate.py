@@ -12,6 +12,8 @@ import os
 import json
 import re
 import argparse
+import subprocess
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from io import BytesIO
@@ -439,6 +441,15 @@ def assemble_book(collection_id: str) -> dict:
         json.dump(book, f, indent=2)
     
     print(f"Book assembled: {book_path}")
+    
+    # Generate EPUB
+    print(f"Generating EPUB for {collection_id}...")
+    try:
+        epub_script = Path(__file__).parent / "generate_epub.py"
+        subprocess.run([sys.executable, str(epub_script), collection_id], check=True)
+    except Exception as e:
+        print(f"EPUB generation failed: {e}")
+        
     return book
 
 
