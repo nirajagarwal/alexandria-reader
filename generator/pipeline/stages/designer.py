@@ -35,9 +35,11 @@ class Designer(Stage):
         try:
             client = genai.Client(api_key=GEMINI_API_KEY)
             
-            prompt = f"""Create a book cover design for '{book.title}: {book.descriptor}'.
-Style: Modern, minimalist, abstract, high-quality art.
-Colors: Light background, subtle gradient or texture.
+            # Updated Prompt for Full Bleed
+            prompt = f"""Abstract art representing '{book.title}: {book.descriptor}'.
+Style: Modern, minimalist, abstract, high-quality texture.
+Composition: Full bleed, edge-to-edge art. EXTEND TO ALL EDGES. No borders, no frames, no white margins, no book mockup.
+Colors: Subtle gradient or texture.
 IMPORTANT: The image must NOT contain any text, letters, numbers, or characters. Purely visual art."""
             
             print(f"  Generating image with {IMAGEN_MODEL}...")
@@ -45,6 +47,9 @@ IMPORTANT: The image must NOT contain any text, letters, numbers, or characters.
                 model=IMAGEN_MODEL,
                 contents=[prompt],
                 config=types.GenerateContentConfig(
+                    image_config=types.ImageConfig(
+                        aspect_ratio="3:4"
+                    ),
                     safety_settings=[types.SafetySetting(
                         category="HARM_CATEGORY_SEXUALLY_EXPLICIT",
                         threshold="BLOCK_ONLY_HIGH"
