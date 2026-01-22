@@ -8,6 +8,7 @@ from .models import PipelineContext, Book
 from .stages.planner import Planner
 from .stages.drafter import Drafter
 from .stages.enricher import Enricher
+from .stages.designer import Designer
 from .stages.publisher import Publisher
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -25,6 +26,7 @@ class Pipeline:
             Planner(self.context),
             Drafter(self.context),
             Enricher(self.context),
+            Designer(self.context),
             Publisher(self.context)
         ]
 

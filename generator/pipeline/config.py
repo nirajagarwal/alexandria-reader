@@ -11,7 +11,7 @@ GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
 # Models
 ANTHROPIC_MODEL = "claude-sonnet-4-5"
-IMAGEN_MODEL = "imagen-4.0-generate-001"
+IMAGEN_MODEL = "gemini-2.5-flash-image"
 EMBEDDING_MODEL = "text-embedding-004"
 
 # Paths
