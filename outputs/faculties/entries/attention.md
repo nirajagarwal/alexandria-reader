@@ -1,0 +1,28 @@
+# Attention
+
+You have a faculty that determines what becomes real for you, and most of the time you're not directing it.
+
+The common view treats attention as a spotlight: you shine it where you choose, and that's what you see. But attention is more like a resource that gets allocated, and much of the allocation happens without your consent. Matthew Botvinick's research on cognitive control showed that attention shifts based on what the environment demands, what your goals require, and what your dopamine system rewards—often in that order. The spotlight metaphor makes you think you're in charge. The resource metaphor makes you realize you're managing scarcity under constraints.
+
+The scarcity is real. George Miller established that working memory holds about seven items, later revised down to four chunks by Nelson Cowan. Attention is the gatekeeper to that bottleneck. What you attend to gets processed; everything else is discarded or barely registered. In Simons and Chabris's invisible gorilla experiment, half the subjects watching a video of people passing a basketball don't see a person in a gorilla suit walk through the frame. Not that they forget it—they never see it. The information doesn't make it past the gate. Inattentional blindness isn't failure; it's the system working as designed. You can't process everything, so you process what you attend to.
+
+The clinical cases reveal what attention does by showing what happens without it. Patients with hemispatial neglect following right parietal damage don't just ignore the left side of space—they can't attend to it at all. They eat food on the right side of the plate, draw half a clock, deny that their left arm belongs to them. The left side doesn't exist for them. Attention isn't passive reception. It constructs the field of experience. Without it, parts of reality go dark.
+
+Attention is also vulnerable to hijacking. The advertising industry, social media platforms, and game designers have spent decades figuring out how to capture it. Variable reward schedules—Skinner's most powerful discovery—make attention sticky. Intermittent reinforcement, autoplay, infinite scroll, notifications—these aren't accidental features. They're engineered based on what Nir Eyal calls "the hook model." The faculty that should serve your goals gets rerouted to serve someone else's.
+
+Distraction has a cost beyond the moment. Gloria Mark's research showed that after an interruption, it takes an average of 23 minutes to return to the original task. But the deeper cost is fragmentation. Sustained attention allows deep processing, pattern recognition, insight. Fragmented attention produces shallow processing and thin encoding. You can't think about something you can't hold in mind. The feeling of being busy without accomplishment, of reading without comprehension, of being present without experiencing—that's attention split past the point of effectiveness.
+
+The people who use this faculty well understand several things. First, that attention follows intention but needs structure. Cal Newport's "deep work" isn't motivational; it's architectural. Defined blocks, protected time, environmental control. Attention depletes—Roy Baumeister's work on ego depletion is contested in its specifics but directionally right. The faculty tires. Morning hours matter. Second, that attention is trainable. Meditation research by Richard Davidson and others shows that sustained practice increases attentional control and reduces mind-wandering. The faculty strengthens with use, atrophies with neglect.
+
+Third, that multitasking is a lie. What feels like parallel processing is rapid switching, and each switch has a cost—what Sophie Leroy calls "attention residue." Part of your attention stays with the previous task. You're never fully where you think you are. The people who seem most productive aren't doing more things simultaneously; they're doing fewer things sequentially with full attention.
+
+Fourth, that attention and memory are linked. You don't remember what you don't attend to. If your attention is fragmented, your experience is fragmented, and your life becomes a blur. The feeling of time accelerating, of years disappearing—part of that is attention running on autopilot. Novel experiences slow subjective time because they require attention. Routine experiences compress because they don't.
+
+The faculty exists to solve the bottleneck problem. You're embedded in an environment with far more information than you can process. Attention selects what gets through. But it's bidirectional: what you attend to shapes what you become. Your attention is how you vote on what matters. Spend it on outrage and you become outraged. Spend it on craftsmanship and you become skilled. Spend it on other people and relationships deepen. The faculty isn't just about perception—it's about formation.
+
+The modern environment is an attentional arms race. Every platform, every device, every notification is competing for a finite resource. The default is fragmentation. Reclaiming the faculty requires recognizing that it's being managed by someone—either you or whoever designed the last thing you looked at. The people who use this faculty well don't fight every battle. They remove themselves from the battlefield. They build environments where attention can settle. They treat the faculty as finite and allocate it accordingly.
+
+You have equipment that constructs your reality, and it's under siege. Understanding this changes what you protect.
+
+---
+*Part of Faculties at alexandria.press*

@@ -1,0 +1,28 @@
+# Perception
+
+You do not see what is there. You construct what seems useful from fragments of information, filling gaps with prediction, and most of what feels like direct contact with reality is inference your brain performs before you're aware anything happened.
+
+The retina transmits a million bits per second, but the optic nerve can only carry about ten million bits total. The brain compensates by predicting what should be there and sampling just enough to confirm or correct. Vision feels continuous and complete, but you're looking at a heavily edited stream. The fovea—the only part of your retina with high resolution—covers about two degrees of visual angle, roughly the size of your thumbnail at arm's length. Everything else is peripheral blur that your brain renders as if it were sharp. Move your eyes and you'll find the detail, which reinforces the illusion that it was there all along.
+
+The blind spot proves the point. Where the optic nerve exits, there are no photoreceptors—a hole in your visual field about six degrees wide. You don't see it as a hole because your brain fills it with whatever pattern surrounds it. Hold your thumb over a line and the line continues through where your thumb is. This isn't seeing through your thumb; it's your brain guessing plausibly. The machinery does this constantly, everywhere, and you don't notice because the guesses are usually good enough.
+
+Perception is also shockingly selective. Daniel Simons and Christopher Chabris showed people a video of students passing basketballs and asked them to count passes. Half the viewers missed a person in a gorilla suit walking through the middle of the scene. Inattentional blindness: you don't perceive what you don't attend to, even when it's right in front of you. The feeling of taking in everything is false. You sample a small fraction and your brain tells you a story about the whole.
+
+Context changes what you perceive. The same gray square looks darker against a white background, lighter against black—and you can know this intellectually while still seeing the difference. The McGurk effect: when you watch someone saying "ga" while the audio is "ba," you hear "da." Your brain fuses visual and auditory input into a single percept, and you can't un-fuse it even when you know what's happening. Perception is interpretation, and interpretation uses all available cues.
+
+Clinical cases reveal what normal perception hides. Visual agnosia: you can see perfectly but can't recognize what you're looking at. One patient could describe a glove in detail—"a continuous surface with five outpouchings"—but couldn't identify it until he put it on. Prosopagnosia: faces become meaningless arrangements of features. Akinetopsia: motion disappears, the world becomes a series of still frames. These aren't deficits in the eyes but in the brain's construction process. Perception is built, and the builders can fail independently.
+
+The predictive nature of perception means you see what you expect, not always what's there. Radiologists miss gorillas inserted into lung scans because they're looking for nodules. Eyewitnesses confidently misidentify suspects because expectation shapes perception at the moment of encoding, not just at recall. The magician's craft depends on this: misdirect attention, violate expectations at the right moment, and the audience perceives what can't be there. Your perceptual system prioritizes speed and coherence over accuracy, because in evolutionary terms a fast approximate answer beats a slow perfect one.
+
+You can work with this. Attention is the lever. You perceive what you attend to, and you can train attention. Practitioners—radiologists, birdwatchers, sommeliers—expand their perceptual vocabulary by learning what to look for. They don't see better in a sensory sense; they've taught their brains better prediction models, richer categories, finer discriminations. This is learnable, but it takes time because perception is not just bottom-up data but top-down knowledge.
+
+The flip side: beware your predictions. When you're certain you saw something, remember you might be seeing a good guess. In high-stakes situations—diagnosing, judging, deciding—the subjective experience of clarity is not evidence of accuracy. Check against external signals. Get a second look. Build in redundancy. The faculty is powerful but fallible, and knowing where it fails is part of using it well.
+
+Perception also extends beyond the moment. Sensory deprivation studies show that without input, perception doesn't stop—it hallucinates. The brain is always constructing, and when there's no data to constrain the construction, it improvises. Chronic pain can persist after the injury heals because the brain has learned to generate the signal. The construction process can go rogue.
+
+The deeper function: perception connects you to the world and tells you what matters. It's not passive reception but active interpretation, tuned by evolution and experience to highlight threat, opportunity, and relevance. It's fast, automatic, predictive, and mostly accurate—but it's always a model, never the territory. The feeling of direct contact is the brain's final edit, a user interface polished smooth so you can act quickly. 
+
+Your experience of reality is a controlled hallucination, constrained by sensory data and shaped by what you've learned to expect. The faculty is more constructed than it feels, and understanding this should make you hold your perceptions more lightly, check them more carefully, and realize that learning to perceive better is possible but not automatic. You see what you're ready to see. Get ready for more.
+
+---
+*Part of Faculties at alexandria.press*

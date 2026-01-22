@@ -1,0 +1,30 @@
+# Learning
+
+You are doing it constantly, and most of what you believe about how it works is wrong.
+
+The standard model is absorption: information goes in, gets processed, is retained. Study hard, test well. But the research shows something different. Robert Bjork distinguished between performance and learning—what you can do right now versus what sticks. These often move in opposite directions. The study method that makes you feel most confident during practice frequently produces the worst retention. You mistake fluency for mastery, rereading your notes until they feel familiar, which is not the same as being able to reconstruct them without the notes.
+
+Desirable difficulties work because they force reconstruction. Testing yourself is more effective than reviewing material, even when you get answers wrong. Elizabeth Bjork's work showed that retrieval practice—pulling information from memory rather than re-exposing yourself to it—creates stronger encoding. You learn by trying to remember, by making mistakes, by generating answers rather than recognizing them. The struggle is the mechanism, not an obstacle to it.
+
+Spacing matters more than duration. Cramming produces good performance tomorrow and poor retention next month. Hermann Ebbinghaus documented the forgetting curve in the 1880s, and the finding holds: memories decay predictably without reinforcement. But spaced repetition—returning to material at increasing intervals—exploits the decay. Each time you retrieve something just before forgetting it, the memory strengthens and lasts longer. The difficulty of retrieval is what makes it stick. Piotr Woźniak built an algorithm around this principle, and millions use it to learn languages, medical knowledge, anything that requires retention.
+
+Interleaving beats blocking. Practicing one skill until mastery before moving to the next feels efficient but produces brittle learning. Studies with motor skills, math problems, and category learning show the same pattern: mixing problems or skills during practice creates temporary confusion but better transfer. You learn to discriminate, to choose the right tool for the situation. Blocked practice makes you good at repeating a known solution; interleaved practice makes you good at solving problems.
+
+Transfer is the puzzle the research keeps returning to. You can get very good at something narrow—memorizing chess positions, solving algebra problems—without that skill generalizing. Chase and Simon found that chess experts could reconstruct game positions from memory far better than novices, but only when the pieces were in legal configurations. Randomize the board and the advantage vanished. Expertise is often domain-specific, built on thousands of hours of pattern recognition within that domain. Ericsson's deliberate practice research shows that becoming expert requires focused, effortful practice with feedback, but what you gain is expertise in that domain, not a general learning ability.
+
+Yet some transfer happens. Mathematical thinking helps with logic problems. Learning one language makes learning the next easier. The question is what transfers. Concrete knowledge often doesn't; abstract principles sometimes do, but only if you learned them abstractly—by seeing multiple examples, solving varied problems, being forced to identify the underlying structure. You have to practice transfer to get transfer.
+
+Sleep is non-negotiable. Memory consolidation happens during sleep—particularly REM sleep for procedural skills and slow-wave sleep for declarative knowledge. Walker's research shows that a full night of sleep after learning can double retention. All-nighters before exams are neuroscience malpractice. The brain doesn't just rest during sleep; it processes, prunes, strengthens, reorganizes what you learned while awake.
+
+Metacognition—thinking about your thinking—is where most people fail. Dunning and Kruger documented that incompetence often includes incompetence at recognizing incompetence. You can't judge what you don't understand. The solution is external feedback and testing yourself on your actual performance, not your feeling of fluency. Predict your test score before seeing it. Check your answer before looking at the solution. The gap between your prediction and your performance tells you something your subjective feeling of learning cannot.
+
+Emotion affects encoding. Memories formed during high emotion are stronger—this is why you remember exactly where you were during major events. But chronic stress degrades learning. The hippocampus, crucial for forming new memories, is sensitive to cortisol. Prolonged stress physically shrinks it. The relationship is U-shaped: too little arousal and you don't attend, too much and the system shuts down.
+
+The people who learn well have figured out several things. They test themselves constantly and don't confuse recognition with recall. They space practice and tolerate the feeling of having forgotten. They seek feedback and update their models when reality contradicts them. They sleep. They notice when they're fooling themselves—when rereading feels like progress but retrieval fails.
+
+Learning is not absorbing information. It's building models that predict reality, then testing those models and revising them. The faculty works through active reconstruction, through struggle, through time. You cannot optimize it away; you can only work with it or against it. Most people work against it, mistaking performance for learning, fluency for mastery, effort for effectiveness.
+
+The faculty exists so you can adapt. Everything you know how to do, you learned. Every skill, every concept, every piece of knowledge that shapes your perception—you built it. The equipment is powerful, but it has constraints. Understand the constraints, work with them, and you can keep building for as long as you live.
+
+---
+*Part of Faculties at alexandria.press*

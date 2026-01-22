@@ -1,0 +1,30 @@
+# Firgun (Hebrew)
+
+English doesn't have it, and mostly doesn't miss it. The gap reveals something about what Anglo-American culture decided emotions were for.
+
+*Firgun* is Hebrew, untranslatable, and describes a specific pleasure: joy in someone else's success without envy, without calculation, without the feeling costing you anything. Pure positive response to another person's good fortune. Not schadenfreude's opposite—that would be sympathy for failure. *Firgun* is what happens when someone you know gets the promotion, the publication, the relationship, and you're *actually glad*, uncomplicated, no shadow.
+
+The word comes from Yiddish *farginen*, which means to grant or to allow someone their happiness. The etymology matters: it's active. *Firgun* isn't passive observation of joy; it's granting permission for it, an almost volitional choice to let yourself be pleased. Modern Hebrew picked it up, and it became Israeli slang in the 1970s, often used ironically—"*firgun* to you for showing up on time"—before settling into earnest usage. Now it's both the feeling and a social value, something Israelis explicitly encourage in each other.
+
+What strikes researchers about *firgun* is that it names something other languages treat as the absence of something else. English says "not jealous," "not resentful," "genuinely happy for them"—all negations or qualifications. Hebrew gives it positive existence. This isn't just vocabulary. Lisa Feldman Barrett's construction theory of emotion argues that the words a language provides shape which feelings get noticed, elaborated, and practiced. Emotions aren't found; they're made from concepts plus physical sensations. If your language doesn't give you *firgun*, you might feel it occasionally but not recognize it as a distinct, cultivatable thing.
+
+The closest research comes from studies of *mudita*, the Buddhist concept of sympathetic joy. Barbara Fredrickson at UNC found that meditation practices specifically targeting *mudita* increased positive affect and social connection more than general loving-kindness meditation. The mechanism seems to be attentional: when you practice noticing and amplifying joy-at-others'-joy, you catch it more often. The feeling was always available; the practice makes it salient.
+
+But *mudita* is spiritual technology, a formal practice. *Firgun* is vernacular, social, everyday. Israelis use it constantly: "*Kol ha'kavod*, big *firgun*" (roughly: "respect, genuine happiness for you"). It's something you owe each other, not something you achieve through meditation. The cultural difference is structural: Buddhism treats sympathetic joy as an antidote to envy, something you cultivate because envy is the default. Hebrew treats *firgun* as socially expected, and its absence as a character flaw.
+
+This expectation might explain why Israel scores high on social cohesion indexes despite being fractious politically. A 2018 study by the Israeli Democracy Institute found that Israelis report giving and receiving emotional support from friends at higher rates than Americans or Western Europeans. *Firgun* may function as social glue—when everyone knows they're supposed to experience and express joy at your success, competition becomes less zero-sum. Your win doesn't threaten me if I've practiced being glad about it.
+
+The evolutionary psychology here is murky. Robert Trivers's reciprocal altruism theory would predict that we should feel good about allies' successes—their gains benefit the coalition. But that's strategic, not pure. *Firgun* specifically denotes the absence of calculation. You're glad even when it doesn't help you. Even when it maybe hurts a little, and you're glad anyway.
+
+The paradox: you can't fake *firgun*, and you can't force it, but you can practice it. Psychologist Sonja Lyubomirsky's work on gratitude practices suggests a mechanism: repeatedly directing attention toward others' good fortune and your positive response to it seems to increase genuine positive affect over time. The feeling follows the practice follows the attention. This only works if you're not monitoring whether you're succeeding at feeling *firgun*—the self-consciousness kills it. It's a back-door emotion; you have to sneak up on it.
+
+What *firgun* reveals about English is an assumption about emotional economy: that joy is finite, that someone else's gain implies your relative loss. American culture is soaked in this. We have "keeping up with the Joneses," "FOMO," "comparisonitis"—a whole vocabulary for the distress of others' success. We treat envy as natural and its absence as saintly. The linguistic gap suggests we haven't imagined that genuine, uncomplicated gladness for others might be normal, available, worth naming.
+
+Hebrew did imagine it, made a word for it, and built social expectation around it. Whether that causes more *firgun* or just makes existing *firgun* more legible is the construction-theory question Barrett keeps pressing. The research isn't settled. But Israeli respondents in emotion-vocabulary studies consistently identify *firgun* as something they feel regularly, something important. English speakers identify the feeling only when prompted, and often with surprise: "Oh, I guess I do feel that sometimes."
+
+One thing is clear from the cross-linguistic data: having a word for an emotion makes it easier to encourage that emotion in others and in yourself. You can say "*Firgun* to you" and mean it specifically, where English has to fumble with "I'm really happy for you, genuinely." The extra word does work. It names the thing clearly enough to practice it.
+
+Whether English will borrow *firgun* the way it borrowed *schadenfreude* depends on whether English speakers decide they want to. So far, the answer seems to be: not really. The gap remains.
+
+---
+*Part of Emotions at alexandria.press*

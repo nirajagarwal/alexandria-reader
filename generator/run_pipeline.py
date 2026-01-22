@@ -14,7 +14,7 @@ def main():
     parser.add_argument("--collection", required=True, help="Collection ID (e.g., periodic-tales)")
     parser.add_argument("--resume-from", type=int, default=0, help="Resume from entry index")
     parser.add_argument("--skip-existing", action="store_true", help="Skip entries that already have content")
-    parser.add_argument("--workers", type=int, default=5, help="Number of parallel workers")
+    parser.add_argument("--workers", type=int, default=10, help="Number of parallel workers")
     
     args = parser.parse_args()
     

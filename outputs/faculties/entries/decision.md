@@ -1,0 +1,28 @@
+# Decision
+
+You have a faculty that operates faster than you can track, often before you know you've used it. The question is whether you're using it or it's using you.
+
+Decision feels like choosing from a menu of options. But Benjamin Libet's experiments showed that the brain initiates action before conscious awareness of the decision to act—by about half a second. This doesn't mean free will is an illusion, but it does mean the conscious experience of deciding comes late in the process. Most of what drives choice happens below awareness. You're ratifying, not originating.
+
+The implication: if you want to make better decisions, you can't rely on willpower at the moment of choice. The work happens earlier—in what you've exposed yourself to, what habits you've built, what options you've made available. You're programming the system that will decide when the moment comes.
+
+The research on choice overload is clear. Barry Schwartz documented how too many options produces paralysis, dissatisfaction, and regret. Sheena Iyengar's experiments showed that people presented with 24 jam varieties were less likely to buy than those presented with six. More choice should mean better outcomes, but it doesn't. The faculty degrades under cognitive load. Judges grant parole more frequently early in the day and right after breaks—not because they're being thoughtful but because deciding drains a resource, and a depleted system defaults to the safest option: no.
+
+This matters practically. If you're making major decisions at the end of a long day after dozens of minor ones, you're not operating at capacity. The faculty is sequential, not parallel. Every trivial decision—what to wear, what to eat, whether to reply to that email now or later—draws from the same pool. This is why people who decide well protect the resource. They automate the trivial. They batch decisions when energy is high. They know that deciding well means deciding less.
+
+The clinical cases are instructive. Phineas Gage, after his frontal lobe injury, retained intelligence and memory but lost the ability to make good decisions—he chose impulsively, couldn't plan, ruined relationships. Antonio Damasio's patient Elliot had similar damage and could analyze options endlessly but couldn't commit to a choice. Without emotional input, decision-making collapses into infinite deliberation. The feeling that one option is better than another isn't a bias to overcome—it's essential equipment. Pure reason doesn't decide. Emotion and reason work together, and when the connection is severed, the faculty breaks.
+
+The standard advice is to list pros and cons, weigh evidence, think it through. But Gerd Gigerenzer's research on fast-and-frugal heuristics shows that expert decision-makers often rely on simple rules and pattern recognition, not exhaustive analysis. A doctor diagnosing chest pain doesn't weigh every factor equally—they use shortcuts built from experience. An experienced firefighter sizes up a burning building in seconds, not by running calculations but by recognizing patterns. These aren't inferior decisions. They're often better, because the system recognizes relevant cues that formal analysis misses.
+
+The difference is calibration. A heuristic works when it's been trained on real feedback. If you've made a thousand decisions in a domain and seen the results, your intuition is worth trusting. If you're deciding in a novel domain, intuition is just noise. The faculty improves with relevant experience and degrades when you try to transfer patterns across contexts. Your gut feeling about hiring someone may be valid if you've hired a hundred people. Your gut feeling about which stock to buy is probably worthless.
+
+Reversibility matters. Jeff Bezos distinguishes between one-way doors and two-way doors—decisions that can't be undone versus decisions that can be revisited. People agonize over two-way-door decisions as if they're permanent, which wastes time and energy. The faculty works better when you match the deliberation to the stakes. Decide quickly on reversible choices. Slow down only for true one-way doors.
+
+The obstacles are environmental. Modern life is engineered to drain the resource—endless micro-choices, notification streams, artificial urgency, option proliferation. The people making these systems understand the faculty and exploit it. Your job is to defend it: reduce trivial decisions, batch the important ones, avoid deciding under depletion, build better defaults.
+
+The deeper point is that deciding is not separate from living—it's how you navigate time. Every decision is a small bet about the future, and the sum of these bets is a life. The faculty works best when it's clear about what it's optimizing for. If you don't know what you're aiming at, every choice is equally weighted, and the system overloads. Clarity about purpose doesn't eliminate difficulty, but it makes the faculty functional. You know what you're deciding *for*.
+
+The equipment is fast, intuitive, depletable, and improvable. It works with emotion and reason together. It needs feedback to calibrate. It needs protection from overload. It needs direction from purpose. You can't make decisions by pure conscious effort at the moment of choice—that comes too late. But you can shape the system that decides. The faculty is more trainable and more vulnerable than you thought.
+
+---
+*Part of Faculties at alexandria.press*

@@ -1,0 +1,28 @@
+# Communication
+
+You have a faculty that fails more reliably than you think, and the research shows why: communication is not transmission.
+
+The transmission model—I encode a thought, send it across, you decode it—feels intuitive but collapses under examination. Herbert Clark's research demonstrated that successful communication requires "grounding": constant checking that the other person is following, adjusting based on feedback, building common ground incrementally. Every conversation is collaborative construction, not information transfer. When communication fails, it's usually not because the signal was garbled but because the speakers weren't doing the collaborative work.
+
+The gap between what you mean and what gets heard is structural. Your words activate different networks in someone else's brain than they do in yours. When you say "freedom," you're pulling from your history, your associations, your context. The listener is pulling from theirs. The word is the same; the activation pattern is different. This isn't confusion—it's how meaning works. Shared language gives an illusion of shared understanding that masks enormous variation underneath.
+
+Clinical cases reveal what normal function obscures. People with Wernicke's aphasia produce fluent, grammatical speech that means nothing—syntax intact, semantics destroyed. Broca's aphasia does the opposite: meaning preserved, production demolished. Communication requires both, but they can fail independently. The faculty isn't one thing but a stack of capabilities that usually work together but don't have to.
+
+Children acquire language without explicit instruction, which tells you something important. Chomsky argued for innate grammatical structures; Tomasello countered with evidence that children learn through social cognition—tracking intention, reading context, participating in shared routines. The debate continues, but what's clear is that language learning is inseparable from social learning. Communication develops in interaction, not isolation. The faculty is inherently relational.
+
+What stands against good use is autopilot. You think you're communicating because you're talking, but you're not tracking whether the other person is following. Couples therapists see this constantly: people having parallel monologues, not conversations. The Gottman research identified "bid and turn" patterns—small moments where one person makes a bid for connection and the other either turns toward or away. Communication quality predicts relationship survival better than conflict frequency. It's not whether you fight; it's whether you maintain the collaborative process.
+
+Written communication removes the feedback loop that makes grounding possible. Emails fail catastrophically because you can't adjust in real time. The tone you intended isn't the tone received. The context you assumed isn't shared. What felt clear to you is ambiguous to them. Good writers compensate by modeling the reader's confusion—anticipating misunderstanding, over-explaining slightly, checking assumptions explicitly. They're doing the grounding work solo.
+
+Conversational turn-taking happens with millisecond precision across cultures. Stephen Levinson's research showed that people start planning their response before the other person finishes, using prosody and syntax to predict the end point. This is collaborative timing, not just waiting. When it breaks down—interrupting, long gaps, talking over—it signals something wrong with the coordination, which usually signals something wrong with the relationship.
+
+The people who communicate well understand that clarity is a cooperative achievement. Lawyers, doctors, therapists—professionals whose work depends on communication—develop explicit practices. They summarize and check ("What I'm hearing is..."). They distinguish observation from inference. They make their reasoning transparent. They attend to what's not being said. They adjust their vocabulary to the listener's. They treat misunderstanding as inevitable and build in repair mechanisms. This isn't natural talent; it's learned technique applied consistently.
+
+Emotional content interferes with everything. Daniel Goleman's work on emotional intelligence emphasized that people can't process information well when they're activated. The amygdala hijacks the prefrontal cortex. You're trying to transmit complex information while the other person is in threat mode, or you're in threat mode trying to listen. It doesn't work. De-escalation comes first, then communication. This is why "timing" matters more than people realize—not manipulation but recognition that state affects capacity.
+
+The faculty exists because humans need coordination. We're obligate cooperators. Communication evolved not primarily for information transfer but for joint action, shared attention, collective problem-solving. Chimpanzees have sophisticated cognition but limited communication because they don't have the same need for collaboration. Human communication is social technology for getting several minds to work as one temporarily.
+
+Your communication fails more than you notice because most failures are invisible to you. You think you were clear; they think you weren't. You think they understood; they didn't. The only fix is building feedback into the process—checking, summarizing, adjusting, repairing. Communication isn't fire-and-forget. It's constant calibration between minds that don't share an operating system but need to coordinate anyway. The faculty works when you treat it as collaboration, not transmission.
+
+---
+*Part of Faculties at alexandria.press*

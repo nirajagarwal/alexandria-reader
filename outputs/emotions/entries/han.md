@@ -1,0 +1,28 @@
+# Han (Korean)
+
+The word sits at the intersection of grief, resentment, and endurance—but that translation already fails. Korean speakers will tell you *han* isn't quite any of those things, and definitely not their sum. It's the feeling that settles in when injustice becomes chronic, when suffering becomes structural, when there's no resolution coming and you know it. The closest English gets might be "a wound that won't close," but even that's too medical. *Han* is both personal and collective, a grief that accumulates across generations.
+
+Western psychology didn't have tools for this until recently. The DSM assumes emotions are individual responses to individual events—you get depressed because something bad happened to you; you get angry at someone who wronged you. But *han* operates at a different scale. It's the emotional residue of historical trauma, the feeling-state of a people who spent five centuries under one dynasty, then got colonized by Japan, then got split in half by Cold War powers. Korean scholars describe it as "the sorrow of the minjung"—the common people—but the word predates modern nationalism. It's older and less specific than political grievance.
+
+The anthropologist Hyun Kyung Chung traced *han* to the *yangban* class system of the Joseon Dynasty, when status was fixed at birth and mobility was impossible. If you were born a peasant, you died a peasant, your children died peasants, and everyone knew it. That's different from temporary hardship. Temporary hardship you can fight or flee. Structural injustice you can only endure. *Han* is what endurance feels like when it stretches across lifetimes.
+
+But here's where it gets interesting. *Han* isn't passive. Korean cultural production—*pansori* singing, *talchum* mask dance, contemporary cinema—channels *han* as a kind of fuel. The emotional state becomes aesthetic material. Bong Joon-ho has said his films run on *han*: the class resentment in *Parasite*, the ecological guilt in *Okja*, the historical trauma in *Memories of Murder*. These aren't cathartic in the Aristotelian sense—you don't purge the feeling by expressing it. You transform it into art, which makes the feeling transmissible, shareable, but doesn't resolve it.
+
+Lisa Feldman Barrett's constructed emotion theory helps here. Barrett argues that emotions aren't universal biological programs but culturally learned responses—your brain learns what pattern of sensations counts as what emotion based on your culture's emotional concepts. If that's right, *han* isn't just a Korean word for a universal feeling; it's a feeling English speakers can't quite have because English doesn't construct it. The absence of the concept means the absence of the emotional category.
+
+But Paul Ekman's camp would push back. If basic emotions are universal and evolved, maybe *han* is just a culturally specific elaboration of sadness or anger, not a distinct emotion. The neuroscience leans toward Barrett here: fMRI studies find no consistent neural signatures for specific emotions across cultures. The brain activity that accompanies what Koreans label *han* might look like what Americans label grief plus resentment, but the phenomenology—what it's like from inside—differs enough that the category does real work.
+
+The clinical literature on Korean and Korean-American populations documents *hwa-byung*, or "anger illness"—a folk syndrome recognized in the DSM-5's cultural concepts of distress. Patients report a mass in the chest, heat rising, difficulty breathing. Doctors find no physical cause. One interpretation: *hwa-byung* is what happens when *han* becomes unbearable, when the chronic grief-resentment-endurance compound finally expresses somatically. The body stages a protest the person can't consciously articulate.
+
+Here's the paradox: *han* is supposed to be shared, collective, but it can isolate. Young Korean-Americans report feeling *han* about Korean history they didn't personally experience—inherited trauma, what's now called intergenerational transmission. But their American peers don't have the concept, so the feeling goes unrecognized. You can feel something deeply that your language community doesn't validate as real. The emotion exists but has nowhere to go.
+
+Korean psychologists have tried mapping *han* onto existing frameworks. Is it prolonged grief disorder? Complicated bereavement? Persistent complex bereavement? None quite fit. Those diagnoses assume individual loss and eventual resolution. *han* assumes collective injustice and no resolution. The structure of the emotion matches the structure of history.
+
+The question Western researchers keep asking is: Is *han* adaptive or maladaptive? Does nursing historical grievance help communities maintain identity and solidarity, or does it perpetuate suffering? The Korean answer seems to be: both, and that's the point. *Han* is the emotional registration of historical truth. If you could let it go, you'd be lying about what happened. The feeling is the record.
+
+But there's a twist in contemporary Korean discourse. Younger generations are starting to question whether *han* is essential to Korean identity or a burden they inherited without consent. Some argue that *han* functions as emotional nationalism—a way to bind people to the past that forecloses other futures. Others say that dismissing *han* is itself a form of forgetting, a capitulation to the same forces that caused it in the first place.
+
+The emotion remains, unresolved. Which might be exactly the point. Not every feeling promises closure. Some feelings are ongoing testimonies.
+
+---
+*Part of Emotions at alexandria.press*

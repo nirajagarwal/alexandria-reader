@@ -1,0 +1,32 @@
+# L'appel du vide (French)
+
+The French named something English never bothered to: that impulse, standing at a height, to jump. Not suicidal ideation—you don't want to die. Not intrusive thoughts exactly—it's not distressing in the clinical sense. Just the sudden, vivid awareness that you *could* step off, and the brief, strange pull to do it. The call of the void.
+
+English-speakers recognize it immediately when it's named, but the language never carved out space for it. French did, which raises the question researchers keep circling: did the French notice something universal that English missed, or did naming it make it real?
+
+The distinction matters. Lisa Feldman Barrett's constructed emotion theory argues that emotions are predictions the brain makes based on concepts it has, and language provides those concepts. If you don't have a word for an experience, you might have the experience but categorize it differently—as vertigo, as anxiety, as nothing in particular. The word creates a boundary, and boundaries change what's inside them.
+
+But the opposing camp—Paul Ekman's universalist position, updated by evolutionary psychologists—would predict exactly what we find: people across cultures report this experience, whether they have a word for it or not. Jennifer Hames at Florida State studied it systematically in 2012, calling it "high place phenomenon" since English lacked a term. Fifty percent of her sample reported experiencing it. These weren't suicidal people; they were ordinary undergraduates who'd felt the pull at a cliff's edge or a balcony railing and wondered what was wrong with them.
+
+Turns out, probably nothing. The leading explanation, proposed by Hames and her co-authors, is that *l'appel du vide* is a misfiring of the balance and survival systems. You're at a height. The brain detects danger, triggers a fear response, pulls you back from the edge—standard survival reflex. But the conscious mind, noticing the fear response without understanding why (you weren't actually falling), generates an explanation: "I must have been thinking about jumping." The thought follows the feeling, not the other way around.
+
+This interpretation fits the broader research on intrusive thoughts. Stanley Rachman's work in the 1970s established that almost everyone has bizarre, violent, or taboo thoughts that pop up unbidden—"what if I pushed that person into traffic," "what if I swerved into oncoming traffic." The difference between most people and people with OCD isn't the presence of the thoughts but the interpretation. Most people dismiss them as mental noise; OCD sufferers interpret them as meaningful and dangerous.
+
+*L'appel du vide* sits in an interesting middle ground. It's intrusive in structure—unbidden, ego-dystonic—but it's not distressing enough to qualify as pathological for most people. Adam Anderson's lab at Cornell found that high place phenomenon correlates with life satisfaction, not depression. People who experience it aren't more suicidal; if anything, they're more engaged with being alive. The interpretation: the pull of the void is the brain confirming that you do, in fact, want to stay out of it.
+
+But the French term suggests something the clinical framing doesn't capture: the *call* part. Not just the thought of jumping, but the appeal of it—the aesthetic or existential fascination. Camus wrote about this in *The Myth of Sisyphus*: "There is but one truly serious philosophical problem and that is suicide." He wasn't advocating it; he was acknowledging that standing at the edge and choosing to step back is how you confirm meaning. The void calls, and the answer matters.
+
+Existentialist philosophy took this seriously in ways psychology mostly hasn't. Sartre's concept of *vertigo* isn't fear of falling but fear of the freedom to fall—the nauseating awareness that nothing stops you but your own choice. *L'appel du vide* in this reading isn't a survival reflex misfiring; it's consciousness confronting its own agency. You could jump. You won't, but you could. The gap between those two facts is the shape of freedom, and it's dizzying.
+
+The neurological evidence doesn't resolve this. fMRI studies of people imagining heights show activation in the fear circuitry (amygdala, insula) but also in the prefrontal regions associated with decision-making and inhibition. Something's being decided, not just prevented. But whether that something is "am I going to jump?" or "do I want to be alive?" is harder to distinguish in the scanner.
+
+Cross-cultural studies are thin. The phenomenon clearly exists outside France—Hames's American sample proves that—but whether it's experienced identically without the linguistic frame is unclear. Japanese has *tōshi no ma* (透視の魔), "the demon of seeing through," which captures the perceptual vividness but loses the call-versus-choice dynamic. Mandarin doesn't have a direct equivalent, which raises the Barrett question again: does not having the term mean not having the experience, or just not *noticing* you're having it?
+
+What's consistent across descriptions is the *afterward*—the moment after the pull, when you step back. Relief, but also something stranger. A sense of having touched something and returned. The French term preserves this: *l'appel du vide* isn't the jump; it's the call and the not-answering. The void called, you heard it, you declined. That refusal, enacted at the edge, is information about what you value. The brain doesn't just process danger at heights; it processes meaning.
+
+One last finding: people who experience high place phenomenon tend to avoid edges less than people who don't. Hames's data shows they're more likely to seek out overlooks, tall buildings, cliffs. The call doesn't scare them away; it draws them back. Not to jump—nothing in the data suggests that—but to hear it again. The void keeps calling, and they keep answering no, and something about that transaction matters enough to repeat.
+
+The French gave it a name. English still hasn't. Maybe that's because English prefers its intrusive thoughts clinically contained, pathologized or dismissed. *L'appel du vide* suggests a third option: the thought is real, the pull is real, and standing at the edge choosing not to jump is its own kind of clarity. The void calls. You're supposed to hear it.
+
+---
+*Part of Emotions at alexandria.press*
