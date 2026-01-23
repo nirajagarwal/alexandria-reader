@@ -675,6 +675,17 @@ a:hover {
     font-weight: 600;
 }
 
+.chapter-descriptor {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-top: -0.5rem;
+    margin-bottom: var(--space-xl);
+    line-height: 1.4;
+    font-weight: 400;
+}
+
 /* First paragraph after h1 - now uses standard paragraph styling */
 
 .entry-content h1+p+blockquote {

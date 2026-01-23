@@ -14,7 +14,7 @@ def main():
     cursor = conn.cursor()
     
     # Query for the book
-    cursor.execute("SELECT book_id, title, descriptor, cover_url FROM books WHERE book_id = 'prayers'")
+    cursor.execute("SELECT book_id, title, descriptor, cover_url FROM books WHERE book_id = 'countries'")
     row = cursor.fetchone()
     
     if row:

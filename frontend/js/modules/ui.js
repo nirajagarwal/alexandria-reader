@@ -133,6 +133,17 @@ export function showEntryView(data, onNavigate) {
     // Using global marked
     contentEl.innerHTML = marked.parse(entry.content || '');
 
+    // Inject descriptor
+    if (entry.descriptor) {
+        const h1 = contentEl.querySelector('h1');
+        if (h1) {
+            const subtitle = document.createElement('div');
+            subtitle.className = 'chapter-descriptor';
+            subtitle.textContent = entry.descriptor;
+            h1.after(subtitle);
+        }
+    }
+
     // Setup navigation
     setupEntryNav(nav, onNavigate);
 
