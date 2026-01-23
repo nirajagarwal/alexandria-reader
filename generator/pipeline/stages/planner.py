@@ -31,7 +31,8 @@ class Planner(Stage):
                 order=item["order"],
                 slug=item["slug"],
                 name=item["name"],
-                metadata={k:v for k,v in item.items() if k not in ["order", "slug", "name"]}
+                descriptor=item.get("descriptor"),
+                metadata={k:v for k,v in item.items() if k not in ["order", "slug", "name", "descriptor"]}
             )
             entries.append(entry)
             
