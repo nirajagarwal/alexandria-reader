@@ -1,0 +1,30 @@
+# Muscle
+
+Muscle is lazy tissue. It will do exactly as much work as you demand and no more. The strength you have is not what your muscles are capable of producing—it's what your nervous system has learned to trust them with. This is why untrained people can lift more in an emergency than in a gym, and why strength training is as much about neural adaptation as tissue growth. Your muscles could be stronger right now, today, without adding a single fiber. Your brain just won't let them.
+
+The mechanism is protective. A muscle fiber can generate tremendous force, but tendons and connective tissue tear if loaded beyond their capacity. The nervous system governs recruitment—how many motor units fire and how synchronously. In untrained people, this governor is conservative. Strength training teaches the nervous system to recruit more fibers simultaneously and to stop inhibiting maximal contractions. The first month of strength gains in beginners comes almost entirely from neural adaptation. The muscle tissue hasn't changed; the permission structure has.
+
+This explains the hysterical strength phenomenon. Cases exist of people lifting cars off trapped victims, feats impossible to replicate deliberately. The mechanism isn't mysterious—it's the inhibition lifting. Adrenaline overrides the normal safety margins. The strength was always there; the brake was released. The aftermath often includes torn muscles and damaged joints, which is why the brake exists.
+
+Muscle grows through damage and repair. Mechanical tension and metabolic stress trigger an inflammatory response that breaks down damaged proteins and synthesizes new ones. This is why soreness peaks 24-48 hours after exercise—delayed onset muscle soreness, or DOMS, correlates with the repair process, not the workout itself. The old "no pain, no gain" was directionally right but confused cause and effect. Pain doesn't produce growth; both are responses to the same stimulus.
+
+The protein synthesis window matters less than people think. The "anabolic window" of 30 minutes post-workout was a myth created by supplement marketing and misread research. Protein synthesis stays elevated for 24-48 hours after resistance training. What matters is total protein intake over the day, not timing. The body is patient; it will use what you give it when it needs it. Obsessive post-workout shakes are theater.
+
+Muscle is metabolically expensive. A pound of muscle burns 6-10 calories per day at rest, which sounds trivial but compounds. Adding ten pounds of muscle increases resting metabolism by 60-100 calories daily—a small meal's worth. This is why resistance training affects body composition more than cardio of equivalent caloric expenditure. You build tissue that continues working when you're not.
+
+But muscle is also use-it-or-lose-it tissue at a brutal rate. Bed rest causes measurable atrophy within days. Studies of immobilized limbs show 0.5% muscle loss per day in the first week. Astronauts in zero gravity lose 20% of muscle mass in 5-11 days without resistance training. The body treats unused muscle as expensive overhead and cannibalizes it for amino acids. Evolution built you to be efficient, not strong. Strength is only maintained by continued demand.
+
+The research on aging and muscle is clarifying. Sarcopenia—age-related muscle loss—was long considered inevitable. The current data suggests it's mostly disuse atrophy that happens to correlate with age. Studies of masters athletes show that people who continue resistance training into their 70s and 80s maintain muscle mass close to young sedentary adults. The tissue itself ages, but the loss rate is far lower than previously assumed when mechanical load continues. You don't stop moving because you get old; you get old because you stop moving.
+
+Muscle memory is real and stranger than the name implies. When you train, muscle fibers add nuclei—the control centers for protein synthesis. When you stop training, you lose size, but the nuclei remain for months or years. This means regaining lost muscle is faster than building it initially. Cyclist Eddy Merckx, after a three-year retirement, returned to competitive form in months. The tissue remembers what it was asked to do.
+
+Type I and Type II fibers—slow-twitch and fast-twitch—are not fixed. Training determines fiber-type distribution more than genetics. Endurance training increases oxidative capacity in fast-twitch fibers; they start behaving more like slow-twitch. Power training maintains fast-twitch characteristics. You become what you practice. This is why sprinters and marathoners have visibly different physiques—not different starting material, but different training exposures over years.
+
+The practical implication is that muscle is the most controllable aspect of your body. Bone density, tendon strength, cardiovascular capacity all matter, but muscle responds to load faster and more predictably than any other tissue. If you want to change your body composition, your metabolic rate, your injury resilience, your functional capacity in old age, you apply mechanical stress to muscle. It's the lever that moves everything else.
+
+The problem is that muscle requires what most people are trying to avoid: discomfort and progressive overload. The tissue adapts only when pushed past current capacity. Maintenance-level effort maintains. Comfort-level effort atrophies. There's no hack. The muscle doesn't care about your intentions. It responds to the mechanical tension you actually apply, not the tension you wish you applied.
+
+You are carrying around tissue that could be stronger, more resilient, and metabolically active—but only if you regularly damage it in controlled ways. The flesh you inhabit is lazy, adaptive, and honest. It will become exactly what you ask it to become, no more and no less.
+
+---
+*Part of Flesh at alexandria.press*
