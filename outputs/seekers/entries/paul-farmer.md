@@ -1,0 +1,41 @@
+# Paul Farmer
+
+The man who would redesign global health delivery was vomiting in a Haitian slum, teaching himself Creole between bouts of dysentery. It was 1983. Paul Farmer was twenty-three, a Duke undergraduate who'd spent his summer break in Cange, a squatter settlement in Haiti's Central Plateau. Most medical students who encountered such poverty returned home shaken, then settled into practices in places with CT scanners and malpractice insurance. Farmer looked at Cange and saw his life's work.
+
+He was already strange. His family had lived in a bus parked in a Florida swamp, then a boat where they raised vegetables and sold them to tourists. He'd read philosophy and anthropology alongside premed requirements, writing an undergraduate thesis on Haitian cultural responses to disease that many graduate students couldn't have produced. But the strangeness that mattered was simpler: he couldn't accept that geography determined who lived and who died. If TB was curable, why were Haitians dying of it? If the knowledge existed, why wasn't it reaching them?
+
+The question consumed him. Not theoretically—consumed him the way hunger does. He began spending every break in Cange, eventually helping found a clinic called Zanmi Lasante, "Partners in Health." Then he went to Harvard Medical School and, simultaneously, pursued a PhD in anthropology. The anthropology was the key. Most doctors saw Haiti's health crisis as a problem of resources or infrastructure. Farmer saw it as structured violence—the way history, politics, and economics arranged themselves to kill poor people with the same efficiency that kept rich people alive.
+
+He finished both degrees, somehow, while flying back and forth to Haiti. His friends worried he'd break. His schedule was inhuman: overnight flights, clinic days that started before dawn, evening seminars, research, writing. He slept four hours a night, if that. His first book, *AIDS and Accusation*, showed how the Haitian AIDS epidemic was shaped not by culture or behavior but by the political economy that destroyed rural livelihoods and pushed people into Port-au-Prince slums and survival sex. It was anthropology that read like prophecy.
+
+But Farmer wasn't interested in elegant analysis. He wanted results. The clinic in Cange grew into a hospital that treated MDR-TB—multidrug-resistant tuberculosis, the kind experts said couldn't be treated in poor countries. Too complex, they said. Too expensive. Patients won't complete treatment. Farmer heard these pronouncements from international health officials and considered them obscene. The claim that poor people couldn't be trusted with their own health care was itself a pathology.
+
+He proved the experts wrong by doing what they said was impossible. Partners in Health developed a model: accompagnateurs, community health workers who walked to patients' homes daily, watched them take medications, brought food, paid for children's school fees—whatever it took. They treated the whole person, the whole situation. And it worked. Cure rates in Cange exceeded those in wealthy countries.
+
+This should have made him beloved. Instead it made him difficult. Farmer had contempt for what he called "cost-effectiveness analysis"—the utilitarian calculus that accepted some deaths as too expensive to prevent. When public health officials spoke about "limited resources" and "sustainability," he heard people deciding that Haitian lives weren't worth American dollars. He said so, loudly, in rooms full of people who controlled funding.
+
+His colleague and friend Jim Yong Kim once watched Farmer argue with a WHO official about AIDS treatment. The official kept returning to sustainability, feasibility, the need to be realistic. Farmer finally said: "We're talking about whether we're going to let these people die. That's what we're talking about. And you're talking about sustainability."
+
+The argument wasn't just moral. Farmer insisted the experts had the causation backward. They thought poverty caused disease. He showed that disease *created* poverty—that tuberculosis destroyed families, AIDS killed breadwinners, and the medical system's failure to treat poor people trapped them in cycles of immiseration. Effective treatment wasn't just humanitarian; it was economic development.
+
+By the late 1990s, Partners in Health was working in Peru, Russia, Rwanda, Lesotho. The model was the same: go to the hardest places, treat the sickest people, prove it could be done. When antiretroviral therapy for AIDS became available, the global health establishment said it couldn't be delivered in Africa. Too complicated, too expensive, infrastructure inadequate. Farmer and Kim bet their reputations that it could work. Rwanda became their proof—one of the world's most successful AIDS programs, built in a country that had been written off as too poor, too traumatized, too broken.
+
+The vindication didn't soften him. He remained furious at a world that accepted preventable deaths. His anger wasn't theoretical. Tracy Kidder's biography *Mountains Beyond Mountains* captured Farmer on a house call, hiking two hours into the Haitian mountains to see a woman with AIDS. Someone asked why he'd spent four hours walking to deliver care that took fifteen minutes. "Because that's what it takes," Farmer said. "You think she's going to walk out of these mountains to a hospital? You think she has the bus fare?"
+
+He married, had a daughter, but lived most of the time in Haiti or Rwanda or wherever Partners in Health was working. His family understood, or tried to. His wife was French, an ethnomusicologist; they'd met in Haiti. Their relationship existed in airports and in the spaces between his work. He acknowledged the cost but wouldn't—couldn't—stop. Later, when Tracy Kidder asked why he pushed so hard, Farmer said: "The world is full of miserable places. One way of living comfortably is not to think about them or, when you do, to send money."
+
+That wasn't good enough for him. It had never been good enough.
+
+The theoretical payoff came slowly, then all at once. By 2010, many of Farmer's once-heretical ideas had become mainstream. The WHO changed its treatment guidelines based on Partners in Health's work. AIDS treatment became standard in sub-Saharan Africa. MDR-TB was treated aggressively instead of being written off. Jim Yong Kim became president of the World Bank, taking Farmer's insistence on health as a human right into an institution that had historically treated health as a cost.
+
+Farmer himself became a global figure, teaching at Harvard, advising governments, testifying before Congress. The kid who'd lived on a boat was now reshaping international health policy. But he still flew to Haiti, still saw patients, still hiked into mountains to make house calls.
+
+In 2020, COVID exposed every inequality Farmer had spent his life documenting. Vaccines went to rich countries while poor ones waited. "Cost-effectiveness" returned as a justification for accepting preventable deaths. Farmer was sixty, still teaching, still running Partners in Health, still arguing that geography shouldn't determine who lived.
+
+He died in February 2022, in Rwanda, preparing for a university lecture. Heart failure, sudden. He was sixty-two.
+
+The tributes were vast—heads of state, public health luminaries, the people whose lives or families' lives he'd saved. But the measure of what he'd done wasn't in the eulogies. It was in the fact that millions of people were alive who would have died under the old system, the one that said treating poor people wasn't "feasible" or "sustainable" or "cost-effective."
+
+He'd made it feasible by doing it. He'd made it sustainable by proving it worked. As for cost-effective: he'd forced the world to ask whose costs, and whose life was being effected.
+
+The question he couldn't answer—wouldn't answer—was what he'd sacrificed. His health, certainly. His family life, mostly. Any conventional rest or ease. People who loved him saw the cost and worried. Farmer saw the alternative—people dying because no one would hike into the mountains—and kept walking.

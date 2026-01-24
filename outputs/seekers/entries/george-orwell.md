@@ -1,0 +1,35 @@
+# George Orwell
+
+He shot an elephant in Burma because a crowd expected it. The animal took half an hour to die. Twenty years later, he was still writing about that morning—the way empire worked not through conviction but through performance, how the white man in the pith helmet became "a sort of hollow, posing dummy," compelled to act against his conscience by the weight of two thousand eyes.
+
+Eric Blair went to Burma at nineteen as an Imperial Police officer because it was what you did when you were Etonian but poor, when your father had administered opium for the Raj and there was no money for university. He spent five years enforcing a system he came to hate—watching hangings, supervising beatings, seeing how power destroyed both the powerful and the powerless. The work hollowed him out. He resigned at twenty-four and declared he would become a writer.
+
+The declaration meant poverty. He chose it deliberately, methodically. Down and out in Paris and London wasn't research—it was an attempt at transformation. He became a dishwasher, a tramp, a resident of doss-houses. He tried to erase Eric Blair, the old Etonian, and make himself into something else. "I wanted to submerge myself," he wrote later, "to get right down among the oppressed." The attempt was half-successful. He learned what it meant to be cold, hungry, reduced to an animal scrambling for survival. He learned it wasn't noble. He also learned he couldn't actually stop being Eric Blair, the educated observer who would turn the experience into prose.
+
+The name George Orwell appeared in 1933 on the title page of *Down and Out*. He'd proposed four names to his publisher; she picked that one. It stuck. He never legally changed it. For the rest of his life he was Eric Blair to his family and old friends, George Orwell to everyone else. The split was permanent.
+
+He kept crossing lines. He fought in Spain with the POUM militia, a small Trotskyist group that put him on the Aragón front with a defective rifle and no training. The war taught him about cold again—a different cold than tramping, the cold of winter trenches in the mountains. It also taught him about lies. The Communists, backed by Stalin, began hunting down the POUM as "Fascist spies." Orwell, recovering in Barcelona from a bullet through the throat, found himself hunted by the people who were supposed to be his comrades. The bullet had missed his carotid artery by millimeters. The political education went deeper than the wound.
+
+*Homage to Catalonia* told what he'd seen. Almost nobody bought it. The left didn't want to hear about Communist betrayal. The right didn't care about a socialist's disillusionment. The book sold nine hundred copies in his lifetime.
+
+He kept writing. Novels, essays, reviews—anything that paid. He was always broke. He married Eileen O'Shaughnessy in 1936 with borrowed money; they lived in a primitive cottage in Hertfordshire, raising chickens and goats, Orwell trying to make himself into a country yeoman. It was another performance, though he half-believed it. Eileen, brilliant and sardonic, watched him play peasant while she typed his manuscripts and managed their actual poverty.
+
+The war came. Orwell was desperate to fight; the army rejected him—lungs destroyed by a pneumonia he'd caught while tramping, the throat wound, general physical wreckage. He joined the Home Guard and wrote. *The Lion and the Unicorn*, published in 1941, tried to articulate a patriotism that wasn't imperialism, a socialism that wasn't Stalin. "England is not the jewelled isle of Shakespeare's much-quoted message," he wrote, "but a family with the wrong members in control."
+
+He worked for the BBC producing radio propaganda to India—hating it, doing it anyway because it was war work. He'd write *Nineteen Eighty-Four*'s Ministry of Truth from that experience, the endless production of content nobody listened to, the slow suffocation of saying things you didn't mean.
+
+Eileen died in 1945 during routine surgery. Orwell was at the BBC when it happened, editing a script. They'd adopted a son three weeks earlier. He came home to a baby and no wife. Something broke. He'd been writing *Animal Fable*—that's what he called it at first—a slim allegory about revolution betrayed. After Eileen died, he drove himself to finish it. *Animal Farm* came out that August, three months after her death. This time people bought it. He was forty-two and finally successful.
+
+He spent the success badly. He moved to Jura, a Scottish island reachable only by boat, living in a farmhouse with no electricity or phone, trying again to be a yeoman, this time with a small child and a housekeeping sister-in-law. His lungs were collapsing. Tuberculosis, the disease of poverty and cold rooms and years of damage. He knew it was killing him. He wrote anyway.
+
+*Nineteen Eighty-Four* came out of Jura—out of Spain, out of the BBC, out of everything he'd learned about how power works and how language dies. He finished it in 1948, coughing blood into handkerchiefs, typing in bed. The book was a warning, not a prophecy. It was also a map of his own education: how he'd learned that the enemy wasn't just capitalism or fascism but something deeper—the human appetite for power, the way ideology becomes a boot stamping on a face forever.
+
+The book made him famous. He was dying. In the London hospital, he wrote a last essay about the pleasure of owning a toad. He married again from the hospital bed—Sonia Brownell, twenty-seven years old, who'd loved him from a distance. The marriage lasted three months before the lungs gave out. He was forty-six.
+
+What remains is prose. Orwell wrote the English essay for the twentieth century—clear, direct, accountable to fact, suspicious of abstraction. "Good prose is like a windowpane," he wrote, and then spent his life making windows. The clarity wasn't simplicity; it was discipline. Every sentence fought against the natural tendency of language to obscure, to inflate, to lie.
+
+He got things wrong. His attacks on homosexuality were ugly. His attitudes toward women were conventional and sometimes worse. His list of "crypto-Communists" that he gave to a government office in 1949 included people whose real crime was annoying him. His attempt to live as a worker was performance; he could always go back to being Eric Blair when he needed to.
+
+But he kept faith with the thing that made him a writer: the belief that seeing clearly mattered, that telling the truth about what you'd seen was worth poverty, danger, the destruction of your lungs. "In a time of universal deceit," goes the line attributed to him—though he never exactly said it—"telling the truth is a revolutionary act." He lived that way. It killed him young.
+
+The last thing he wrote by hand was about the pleasure of watching spring arrive. Even dying, he was watching, trying to see clearly, trying to get the words right. That was what it meant to be George Orwell: staying at the window, looking through, recording what was there, refusing to turn away until the looking was done.

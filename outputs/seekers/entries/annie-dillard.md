@@ -1,0 +1,37 @@
+# Annie Dillard
+
+She spent a winter watching muskrats in a creek near her house in Virginia, and this ordinary attention became *Pilgrim at Tinker Creek*, which won the Pulitzer Prize when she was twenty-nine. The book disturbed people. It still does. This was supposed to be nature writing—Thoreau for a new generation—but it kept swerving into violence and theological vertigo. A frog sucked empty by a giant water bug. Parasitic wasps laying eggs in living caterpillars. "I am a frayed and nibbled survivor in a fallen world," she wrote, "and I am getting along. I am aging and eaten and have done my share of eating too."
+
+The book made her famous in 1974, and she spent the next fifty years trying to make clear that she was not a nature writer. She was a writer who had once paid very close attention to a creek. The distinction mattered to her. Nature writers knew things—about birds, about ecosystems, about conservation. She knew about looking until looking hurt.
+
+What drove her was the problem of attention itself. How to be fully present in a world that contains both beauty and horror, where a goldfinch is miraculous and a parasite is eating a caterpillar from the inside out. She wasn't interested in resolving the tension. She was interested in staying inside it without blinking.
+
+She grew up in Pittsburgh, the daughter of inventive, cultured parents who gave their children the run of things. Her father quit his business job to travel the rivers and write a book. Her mother once stopped the car to chase down a stranger and force him to repeat the joke he'd just told in a grocery store, because she wanted to tell it to her husband. Annie absorbed the lesson: life was meant to be pursued, not endured.
+
+She married at eighteen, moved to the Roanoke Valley, and began watching Tinker Creek. She read theology, natural history, physics, mysticism—whatever bore on the problem of what it means to be here, conscious, witnessing. She took notes on notecards. She filled boxes. Then she wrote the book in fifteen months of total immersion, living on coffee and chocolate, writing twelve to sixteen hours a day.
+
+The book is ecstatic and disturbing in equal measure. She described a sunset: "The sun suddenly exploded like a jar of jam." She described a spider: "A spider's silk is the strongest material for its weight on earth." Then she described watching that spider wrap a struggling moth, and the description was beautiful and awful at once. She refused comfort. "I am sorry I ran from you, frog," she wrote about the frog sucked empty by the water bug. "It doesn't matter now. I know I'm a shutter and a shield."
+
+After *Pilgrim*, she could have written more books about creeks, become the woman who wrote beautifully about nature. Instead she crossed into harder territory. *Holy the Firm* was a prose poem about a plane crash that burned a seven-year-old girl. It circled the problem of theodicy—God's goodness in the face of suffering—without resolving it. The book was sixty-eight pages. Every sentence had been worked and reworked. "I am a sacrifice bound with cords to the horns of the world's rock altar," she wrote. "I take on the mystery from the wharves."
+
+Then she wrote *Living by Fiction*, which was literary criticism and metaphysics braided together. Then *Teaching a Stone to Talk*, essays about expeditions—to the Arctic, to the Galápagos, into silence. Then *An American Childhood*, which was supposed to be memoir but was really a phenomenology of awakening consciousness, what it felt like to be ten years old and realize that other people had interior lives as real as your own.
+
+She kept crossing boundaries. *The Writing Life* was part manual, part prayer, one hundred pages on what it costs to pay attention and make sentences. She described writing as mining: "One of the few things I know about writing is this: spend it all, shoot it, play it, lose it, all, right away, every time. Do not hoard what seems good for a later place in the book, or for another book; give it, give it all, give it now."
+
+In 1979 she moved to a small island in Puget Sound and married Gary Clevidence, an anthropologist. She wrote in a tool shed. She had a daughter. She taught at Wesleyan University for twenty-one years, though she was ambivalent about academia. She believed writing could be taught but only by someone willing to be ruthless about sentences.
+
+What made her difficult—for readers, for students, for herself—was the refusal of consolation. She would not say that nature was good or that God was love or that consciousness was a gift. She would only say that we are here, awake, witnessing, and that this demands something of us. The demand was attention. Not the pleasant kind, not the Instagram-sunlight kind. The kind that requires you to watch the frog get emptied by the water bug and not turn away.
+
+She wrote about this in an essay called "Seeing," where she described learning to see—not just look, but see. After cataract surgery, she read, people who had been blind from birth were asked what they saw. They said things like "a tree with lights in it." They hadn't learned to distinguish figure from ground, object from space. They were seeing everything at once. "The secret of seeing is to sail on solar wind," she wrote. "Hone and spread your spirit till you yourself are a sail, whetted, translucent, broadside to the merest puff."
+
+This was the work: to become translucent, to let the world pass through you without flinching. She pursued it in sentences that were themselves acts of attention—dense, sudden, full of swerves and reversals. "There is always an enormous temptation in all of life to diddle around making itsy-bitsy friends and meals and journeys for itsy-bitsy years on end," she wrote. "It is so self-conscious, so apparently moral, simply to step aside from the gaps where the creeks and winds pour down, saying, I never merited this grace, quite rightly, and then to sulk along the rest of your days on the edge of rage."
+
+She didn't sulk. She stood in the gaps.
+
+Some people loved her for this. Others found her cold, too mystical, too willing to aestheticize suffering. She wrote about a moth that flew into her candle and burned, its body a wick, lighting the page where she wrote. The image was stunning and troubling. Was she moved by the moth's death or only by its usefulness as metaphor?
+
+She would not have apologized. The world was both terrible and beautiful, and pretending otherwise was a failure of attention. The moth burned. The frog was emptied. The girl's face was destroyed. And the goldfinch at the feeder was still miraculous. All of it was true at once.
+
+She kept writing into her seventies, though more slowly. Her last major book was *The Maytrees*, a novel about love and loss on Cape Cod. It was spare and strange, with almost no plot, just two people learning and relearning how to attend to each other. Critics didn't know what to make of it. Some said it was her best work. Others said she'd lost the thread.
+
+What she left behind was a method: radical attention as spiritual practice, sentences as a form of prayer, the refusal to look away. She showed what it costs to stay awake in a world that is both broken and shot through with light. "How you spend your days is how you spend your life," she wrote, and then she spent hers looking hard at everything until it cracked open.

@@ -1,0 +1,33 @@
+# Walker Percy: The Diagnostician
+
+The tuberculosis saved him, or so he came to believe. It arrived in 1942 when Percy was twenty-six, a pathology resident at Bellevue Hospital in New York, performing autopsies on derelicts who'd died in the streets. He'd caught it from the lungs of corpses. The infection sent him to Saranac Lake in the Adirondacks for two years of bed rest—the standard treatment before antibiotics.
+
+He read. Not medical journals but Dostoevsky, Kierkegaard, Camus. Lying flat in the sanatorium, forbidden even to sit up, he discovered that the questions that interested him weren't answerable by dissection. Why do people who have everything feel like nothing? Why does prosperity so often produce despair? Why does knowledge of how things work tell us so little about how to live?
+
+When he recovered, he didn't return to medicine. He never practiced again. His family—wealthy Louisiana Delta planters—thought he'd lost his mind. His adopted father, William Alexander Percy, had been a poet and a stoic, a man who believed in honor and expected Walker to carry on the family tradition of educated, melancholic leadership. Instead, Walker moved to New Orleans, converted to Catholicism, married, and started writing novels no one wanted to publish.
+
+The conversion was the scandal. In 1947, for a white Southern intellectual to become Catholic was social suicide—too ethnic, too immigrant, too un-Episcopal. Percy didn't care. He'd diagnosed his own condition and found it shared: educated modern people suffered from a peculiar malaise. They knew more than any humans in history. They lived longer, healthier, wealthier. And they were dying of boredom and meaninglessness.
+
+His first published novel, *The Moviegoer* (1961), won the National Book Award. Its protagonist, Binx Bolling, is a stockbroker in New Orleans who goes to movies constantly, not for entertainment but for relief from what he calls "the malaise"—the sense of unreality that infects everyday life. Binx narrates: "The search is what anyone would undertake if he were not sunk in the everydayness of his own life... To become aware of the possibility of the search is to be onto something. Not to be onto something is to be in despair."
+
+Percy had found his subject: people who know something is wrong but can't say what. People who succeed according to every measure and feel like failures. People who use irony as anesthetic.
+
+He wrote like a physician, but his instruments were philosophical. From Kierkegaard he took the analysis of despair—that most people are in despair without knowing it, mistaking comfort for health. From Marcel he took the distinction between problem and mystery: problems can be solved; mysteries can only be entered. From Peirce he took semiotics, the theory that humans are the animals who live by signs, by meanings, and that our sickness is often a sickness of signs that no longer signify.
+
+His novels are diagnostics. *The Last Gentleman* (1966): Williston Barrett, an engineer with fugue states and amnesia, drifts through the South looking for something real. *Love in the Ruins* (1971): Dr. Tom More invents a machine to diagnose the modern soul and discovers that everyone is split between angelic aspiration and bestial appetite, unable to be ordinarily human. *The Second Coming* (1980): Will Barrett again, older now, trying to determine if God exists by putting himself in a position where only God can save him.
+
+Percy's Catholicism was never pious. It was diagnostic. He believed Christianity named the human condition accurately: we are damaged, prone to self-deception, capable of good and evil, and made for something we can't achieve by ourselves. The novels don't preach. They show people trying to live without the resources Christianity offers, and they show what that costs.
+
+He lived in Covington, Louisiana, across Lake Pontchartrain from New Orleans, a deliberate distance from literary centers. He was a small, courteous man with a wry smile, a good listener. He didn't perform the role of Southern novelist—didn't drink dramatically or hold court. He saw patients in a sense: people wrote him letters describing their malaise, and he answered them seriously, offering diagnosis rather than cure.
+
+The essays he wrote alongside the novels are sharper, more willing to name names. "The Loss of the Creature" argues that experiences are packaged for consumers so thoroughly that we can no longer encounter reality directly—the Grand Canyon exists for us primarily as a photo opportunity, its actual presence obscured by our expectations. "The Delta Factor" asks why humans can understand that two plus two equals four but can't understand themselves. "Notes for a Novel About the End of the World" proposes that only catastrophe makes people pay attention: "In the old Christendom, everyone was a Christian and hardly anyone thought twice about it. But in the present age the survivor of theory and consumption becomes a wayfarer in the desert, like St. Anthony; which is to say, open to signs."
+
+He was not easy. His analysis of modern life could sound reactionary—too quick to dismiss progress, too nostalgic for older certainties. His gender politics were conventional. His solutions, when he offered them, felt thin: go to church, pay attention, love your neighbor. After diagnosing the malaise with such precision, the prescription seemed small.
+
+But Percy didn't claim to solve anything. He claimed only to name what others ignored: that people who have won by every worldly measure often feel they've lost something essential, and that loss is real, not neurotic. That irony and consumerism are ways of not-living. That boredom is not a minor irritation but a spiritual emergency.
+
+He died in 1990, having written six novels and two books of essays. The culture he diagnosed has intensified. The malaise is now mass-produced, algorithmically optimized, available on every screen. His work remains because the diagnosis still fits: we know everything and understand nothing; we are anywhere and nowhere; we communicate constantly and connect rarely.
+
+In *The Moviegoer*, Binx Bolling says, "What is the nature of the search? you ask. Really it is very simple, at least for a fellow like me; so simple that it is easily overlooked. The search is what anyone would undertake if he were not sunk in the everydayness of his own life."
+
+Percy spent his life searching in plain sight, writing novels about people who sensed something was wrong but couldn't say what. He said what. Whether anyone listened was not his concern. The diagnostician names the disease. The cure, if there is one, comes from elsewhere.
