@@ -1,0 +1,28 @@
+# Sea Slug
+
+The sea slug keeps its stolen sunlight in translucent folds along its back, rows of delicate cerata that ripple like fingers in the current. *Elysia chlorotica*, found along the Atlantic coast from Nova Scotia to Florida, accomplishes something no other animal can: it photosynthesizes. Not through symbiosis, not by hosting algae in its tissues, but by theft and integration—by consuming algae, extracting their chloroplasts, and incorporating them into its own cells where they continue producing energy from light for months. The slug becomes, in part, a plant.
+
+This is kleptoplasty, from the Greek for "stolen plastid," and it shouldn't work. Chloroplasts are complex organelles with thousands of proteins, most encoded not in their own small genomes but in the algal nucleus. Remove them from the alga and they should die within days. Yet inside the slug's cells they persist, functional, manufacturing sugar from sunlight while the slug—now green, now solar-powered—can survive for months without eating.
+
+We discovered this in the 1970s but didn't believe it. Mary Rumpho at the University of Maine confirmed it definitively in 2008: the slugs weren't just storing chloroplasts but had integrated algal genes into their own DNA, allowing them to produce some of the proteins needed to keep the chloroplasts alive. Horizontal gene transfer between kingdoms, something bacteria do routinely but animals were thought incapable of. The sea slug revealed we were wrong.
+
+But *Elysia chlorotica* is one of about 3,000 species we call sea slugs, a term that groups together creatures more diverse than the distance between a hummingbird and a whale. What unites them is what they've lost. Sea slugs are gastropods, mollusks like snails and abalone, but they've abandoned the shell their ancestors wore. Nudibranchs—"naked gills"—display their respiratory organs openly, in feathered plumes or branching trees along their backs. They are soft bodies in an ocean of mouths and they've survived by becoming chemical weapons factories.
+
+The Spanish dancer, *Hexabranchus sanguineus*, undulates through Indo-Pacific waters like living flame, blood-red and the size of a dinner plate. It feeds on sponges laden with toxins that would kill most predators. The slug stores these compounds in its skin, becoming poisonous through consumption. This is sequestration, the strategy of many sea slugs: eat the dangerous, keep the poison, wear it as armor. The blue dragon, *Glaucus atlanticus*, feeds on Portuguese man o' wars, storing their nematocysts—the stinging cells—in the tips of its cerata. Touch the slug and you're stung by a jellyfish's borrowed weapon.
+
+The chromodorid nudibranchs took a different path. Unable to sequester toxins from the sponges they eat, they manufacture their own. *Chromodoris willani* produces polyketides, complex organic compounds that deter predators through taste rather than trauma. And where the blue dragon and Spanish dancer wear warning colors honestly—red and blue announcing real danger—many chromodorids have become liars. They display the same bold patterns, the same vivid yellows and purples, but produce no toxins. They survive through Batesian mimicry, through the evolutionary benefits of looking dangerous while remaining soft and edible.
+
+In 1888, Charles Darwin's son Horace, studying the chromodorid *Chromodoris quadricolor*, noted that these slugs seemed to see better than expected for animals without eyes. He was mistaken about the vision but right about the perception. Sea slugs navigate worlds of chemical signals we can barely conceive. Rhinophores—the paired sensory organs protruding from many species' heads—detect dissolved molecules with precision that makes human olfaction look crude. A nudibranch can follow a chemical trail one molecule wide across yards of ocean floor, hunting prey it has never seen but knows by scent.
+
+Some hunt other slugs. *Roboastra luteolineata*, the tiger nudibranch, tracks down other nudibranchs by their chemical signatures and consumes them, toxins and all. It eats the poisonous to become more poisonous. The prey, meanwhile, can sometimes detect their predator approaching and will thrash violently or drop from the substrate—swimming, falling through water, anything to escape.
+
+Others never hunt at all. The lettuce sea slug, *Elysia crispata*, after establishing its chloroplast farms, may feed only on sunlight. It spreads itself in shallow Caribbean waters, a living solar panel the size of your hand, green as young salad, photosynthesizing.
+
+This diversity emerged from constraint. Lose the shell and you must solve the problem of vulnerability. The solutions are chemical warfare, camouflage, speed, toxin sequestration, or—most radically—become something other than animal. Become partly plant.
+
+We've documented perhaps a third of sea slug species. Every research dive brings new ones: a black and yellow nudibranch in Antarctic waters, a translucent slug the size of a grain of rice in Philippine coral rubble. Each reveals a different strategy for existing as soft flesh in hard water. No armor, no speed, no size—just chemistry, color, and stolen machinery from other kingdoms.
+
+They've taught us that the boundaries between species, between kingdoms, are more porous than we assumed. That an animal can become a plant, that genes can leap between branches of life separated by billions of years of evolution. That the vulnerable can survive not by hardening but by transforming—by taking what they need from what they consume and becoming, temporarily, something else.
+
+---
+*Part of Animals at alexandria.press*

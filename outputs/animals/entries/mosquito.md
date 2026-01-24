@@ -1,0 +1,28 @@
+# Mosquito
+
+Three thousand five hundred species, and only a few hundred feed on human blood. The rest—the vast majority—pollinate flowers, nourish fish and birds, decompose organic matter in waterways. But those few hundred have killed more humans than any other animal in history. Fifty billion people, by some estimates. Half of everyone who has ever lived.
+
+The female needs blood to reproduce. Not for herself—mosquitoes subsist on nectar and plant juices—but for the protein required to develop her eggs. She tracks you by the carbon dioxide plume of your breath, detectable from a hundred feet away. Closer in, she reads your heat signature, the lactic acid and ammonia in your sweat, the specific cocktail of volatiles your skin bacteria produce. You are, to her, a cloud of chemical signals that resolves into a landing site.
+
+Her mouthparts are not a single needle but a sophisticated set of tools. Two maxillae with serrated edges saw through skin. Two mandibles hold the tissue apart. A hypopharynx pumps saliva into the wound—the saliva that carries malaria, dengue, yellow fever, Zika, West Nile, chikungunya. A labrum draws blood up. The whole apparatus is so fine, so precisely engineered, that you often don't feel the puncture. The itch comes later, when your immune system responds to proteins in her spit.
+
+Malaria alone kills over half a million people annually, most of them children under five in sub-Saharan Africa. The *Plasmodium* parasite that causes it requires the mosquito—specifically *Anopheles* mosquitoes—to complete its lifecycle. Inside the mosquito's gut, the parasite reproduces sexually, then migrates to the salivary glands, ready to enter the next human host. The mosquito is not merely a vector but an essential partner in the parasite's survival. Without *Anopheles*, malaria would not exist in its current form.
+
+For most of human history, we had no idea mosquitoes transmitted disease. Malaria's name comes from the Italian *mal'aria*—bad air—because people believed the illness arose from swamp vapors. It was Ronald Ross, a British physician working in India, who proved in 1897 that mosquitoes carried the parasite. He found it in the stomach tissue of an *Anopheles* that had fed on a malaria patient. He won the Nobel Prize. The mosquito, of course, received no acknowledgment for revealing its secrets.
+
+We have tried to eradicate them. DDT nearly succeeded in the mid-twentieth century, eliminating malaria from Europe and North America, drastically reducing it in Asia and South America. But DDT accumulated in food chains, thinned the eggshells of raptors, poisoned ecosystems. Rachel Carson's *Silent Spring* chronicled the damage. We banned DDT in many countries, and mosquito populations rebounded. Malaria returned to places it had been eliminated. The choice was ecosystem collapse or human death—a false binary, perhaps, but one that still structures global health policy.
+
+Genetic engineering offers new approaches. Scientists have developed mosquitoes whose offspring die before reaching maturity, suppressing local populations. Others carry genes that make them resistant to malaria parasites, so even if they bite an infected person, they cannot transmit the disease. These modified mosquitoes have been released in Brazil, the Cayman Islands, Burkina Faso. Early results suggest dramatic reductions in mosquito-borne disease. But the long-term consequences remain unknown. What happens when you remove a species that feeds thousands of others? Dragonfly larvae, fish, bats, birds—all eat mosquitoes. The ecosystem is a web; pull one strand and others shift.
+
+Some researchers argue mosquitoes are redundant, that their ecological roles could be filled by midges, mayflies, other small insects. Others note that certain species pollinate rare orchids in the Arctic, that mosquito larvae filter organic matter in ways that structure aquatic food webs. The truth is we don't know what would happen if we eliminated them. The history of ecology is a history of unintended consequences.
+
+Mosquitoes perceive a world incomprehensible to us. Their vision is coarse—compound eyes that detect movement and contrast but not fine detail. Yet they navigate unerringly toward targets we can barely imagine sensing. The infrared signature of warm skin. The carbon dioxide gradient in still air. The specific frequency of sound made by a human heartbeat transmitted through flesh. They are small—most weigh less than a milligram—but their sensory world is vast.
+
+They have existed for a hundred million years, feeding on dinosaurs before they fed on us. Fossilized mosquitoes have been found with blood preserved in their abdomens, though not, despite *Jurassic Park*, with intact DNA. They have outlasted most species that have ever lived. They will likely outlast us.
+
+There is no moral to the mosquito. It is not evil; it has no concept of the suffering it causes. It is simply doing what evolution designed it to do: reproduce. The fact that this requires our blood, and sometimes our death, is incidental to its existence. It teaches us that the world operates on principles indifferent to human welfare. That the most dangerous animals are often the smallest. That every attempt to control nature reveals new layers of complexity we hadn't anticipated.
+
+Fifty billion dead. Half of humanity. One of the planet's most successful organisms, measured by its ability to survive and reproduce across nearly every terrestrial ecosystem. When you slap a mosquito on your arm, you are participating in a war that has no victors, only temporary truces and shifting battlegrounds. The mosquito will return. It always does.
+
+---
+*Part of Animals at alexandria.press*

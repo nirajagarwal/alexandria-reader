@@ -1,0 +1,26 @@
+# Blobfish
+
+The blobfish became famous for looking miserable. In 2013, it won the Ugly Animal Preservation Society's competition for official mascot, beating out the kakapo and the proboscis monkey. The image that circulated—still circulates—shows what appears to be a lumpy, gelatinous mass with a drooping face, something between a sad old man and melted wax. The internet loved it. Memes proliferated. The blobfish became shorthand for Monday mornings, existential despair, the feeling of being photographed at an unflattering angle.
+
+Here is what actually happened: humans dragged a deep-sea fish up through half a mile of ocean, killing it in the process, and then photographed its decompressed corpse.
+
+*Psychrolutes marcidus* lives at depths between 600 and 1,200 meters off the coasts of Australia and Tasmania, where the pressure reaches 60 to 120 times that at sea level. At those depths, gas bladders—the buoyancy organs that most fish use—would collapse or require so much energy to maintain that they become useless. The blobfish solved this problem by abandoning density. Its body is mostly gelatinous tissue slightly less dense than water, allowing it to float just above the seafloor without expending energy to stay aloft. It doesn't swim much. It doesn't need to. It sits and waits for small crustaceans and organic matter to drift within reach of its mouth.
+
+In its actual habitat, the blobfish looks like a fish. Not a beautiful fish, perhaps, but recognizable: bulbous head, tapered body, small eyes adapted to near-darkness. The gelatinous tissue that makes it buoyant at depth also makes it extremely vulnerable to pressure changes. Bring it up quickly—as bottom trawlers do when their nets scrape the ocean floor—and the tissue expands, the structure fails, the fish becomes what the photographs show: a blob. The famous face is trauma, not nature.
+
+The deep sea is the largest habitat on Earth, comprising roughly 65 percent of the planet's surface. It is also the least understood. We have better maps of Mars than of our own ocean floor. What we do know suggests that life down there operates according to different principles. Pressure shapes everything. Darkness is absolute below about 1,000 meters—no sunlight penetrates. Temperature hovers just above freezing. Food is scarce. The creatures that have adapted to these conditions often seem alien to us, but they're not alien. They're just solving the problem of survival under constraints we don't face.
+
+The blobfish is an extreme specialist. It cannot survive outside its pressure zone. This makes it almost impossible to study alive. No aquarium has successfully kept one. The few observations we have come from remotely operated vehicles equipped with cameras, and even then, the blobfish is rare enough that sightings are infrequent. What we know about its behavior, reproduction, and lifespan comes largely from inference and from examining specimens caught and killed by trawl nets targeting other species—orange roughy, oreos, grenadiers—that live at similar depths.
+
+Bottom trawling is strip-mining for fish. Heavy nets fitted with metal or rubber rollers are dragged across the seafloor, scooping up everything: target species, bycatch, coral formations that took millennia to grow. The blobfish, already rare, is caught incidentally. It has no commercial value. Its gelatinous flesh is inedible to humans. It simply dies for being in the way. The Australian government has listed it as a species of concern. Exact population numbers are unknown—difficult to count what you can barely find—but the trend is almost certainly downward.
+
+There's an irony in the blobfish becoming a mascot for ugly animals. The campaign was meant to draw attention to conservation issues, to argue that species don't need to be charismatic megafauna to deserve protection. But the image that made the blobfish famous is a lie. We're not looking at an ugly fish; we're looking at what we did to it.
+
+The deep sea asks a question the blobfish answers elegantly: how do you exist where almost nothing else can? You become less dense than water. You stop fighting. You let the environment hold you up. Energy is too precious to waste on swimming, on maintaining structural integrity beyond what's necessary. The blobfish is a lesson in doing the minimum required to survive—not out of laziness but out of perfect adaptation to scarcity.
+
+When humans imagine deep-sea creatures, we tend toward the monstrous: giant squid, anglerfish with their bioluminescent lures, gulper eels with jaws that unhinge. The blobfish fails even this expectation. It's not terrifying. It's boring, inert, pathetic—at least in the form we've chosen to remember it. The real blobfish, alive in the dark and cold and pressure, floating millimeters above the mud, waiting for food to arrive, is doing exactly what it evolved to do. It is competent in a way we will never be at those depths.
+
+We turned it into a joke because we killed it and photographed the evidence. The blobfish didn't evolve to be ugly. It evolved to be neutrally buoyant at 900 meters. That we find its corpse unappealing says more about us than about the fish.
+
+---
+*Part of Animals at alexandria.press*

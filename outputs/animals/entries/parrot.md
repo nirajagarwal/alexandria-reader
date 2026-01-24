@@ -1,0 +1,26 @@
+# Parrot
+
+A grey parrot named Alex, working with psychologist Irene Pepperberg at Brandeis University, once interrupted an experiment to ask what color he was. "What color?" he said, looking at himself. When told "grey," he repeated it until satisfied, then returned to the task at hand. He wasn't trained to ask this. The question emerged from a mind that had somehow grasped it possessed a property that could be named.
+
+This happened in a bird whose brain weighs fourteen grams.
+
+Parrots have been talking back to humans for at least three thousand years. Ancient Egyptians kept African greys. Roman senators paid more for rare parrots than for enslaved humans. Alexander the Great brought ring-necked parakeets from India to Europe. What humans heard in parrot speech wasn't communication but mimicry—clever, sometimes uncanny, but fundamentally empty. The parrot was a living tape recorder, a party trick, proof that animals could be trained to perform human sounds without understanding them.
+
+Then came Alex. Over three decades, Pepperberg demonstrated that Alex could identify fifty objects, seven colors, five shapes, and quantities up to six. He could answer questions about categories and properties. If shown a green key and a green block and asked "What's same?" he would say "color." If asked "What's different?" he would say "shape." His error rate was roughly equal to that of human test subjects. When he died in 2007, his last words to Pepperberg were "You be good. I love you."
+
+The dismissal of parrot intelligence as mere mimicry was always suspicious. Parrots are cavity nesters—species that evolved to survive by navigating complex social hierarchies, remembering food locations across seasons, and solving three-dimensional spatial puzzles in forest canopies. Their brains are structured differently from mammalian brains, lacking a neocortex, but they've independently evolved dense clusters of neurons that perform analogous functions. A macaw's brain has roughly twice the neuronal density of a primate brain of similar size. What looks like a seed-cracking beak houses a mind.
+
+In the wild, parrots live in flocks with vocabularies. Each bird has an individual call—a signature sound—that it learns from its parents and maintains throughout life. Mates learn each other's calls. Flock members coordinate movement, feeding, and alarm responses through repertoires of thirty to forty distinct vocalizations. When a chick is raised by foster parents of a different species, it learns that species' calls, not its own. This is vocal learning—a rare capacity shared by humans, some cetaceans, and a few other bird lineages. Most animals are born with their calls fixed. Parrots learn to speak.
+
+They also learn to lie. In one study, African greys deliberately gave false information to competitors about food locations. They used tactical deception—not instinctive misdirection but calculated dishonesty based on what another bird knew or didn't know. This requires theory of mind: modeling another creature's mental state and manipulating it.
+
+Humans have rarely returned the favor of understanding. The global parrot trade captures an estimated two million birds annually. Seventy-five percent die in transit. Of the three hundred and seventy-eight parrot species, one hundred and eleven are threatened with extinction. The Spix's macaw, made famous by a children's film, is extinct in the wild. The glaucous macaw hasn't been reliably sighted since 1960. The Carolina parakeet—the only parrot native to the eastern United States—was exterminated by 1918, shot as an agricultural pest and for its feathers. The last captive individual, named Incas, died in the Cincinnati Zoo in 1918, in the same cage where Martha, the last passenger pigeon, had died four years earlier.
+
+Parrots in captivity often go mad. They pluck their own feathers, sometimes down to bare skin. They scream. They bite. They develop repetitive behaviors—swaying, pacing, head-bobbing. These are symptoms of profound psychological distress in a creature built for flight, forest canopy, flock dynamics, and problems to solve. A parrot in a cage is a mind in solitary confinement. Some captive parrots live eighty years.
+
+What parrots teach is that intelligence is not a ladder with humans at the top. It's a forest with many canopies. The parrot's way of being intelligent—intensely social, vocally creative, spatially sophisticated—evolved independently from mammalian cognition. Their brains prove that consciousness and complex thought don't require mammalian architecture. The question Alex asked about his own color wasn't a trick or training artifact. It was self-awareness manifesting in an animal that diverged from the mammalian line three hundred and twenty million years ago.
+
+When a parrot speaks, it's easy to hear only our own words reflected back. What's harder—what we're only beginning to attempt—is to hear what the parrot is actually saying. Not just the words we taught it, but the question underneath: What color am I? Do you see me? Am I here?
+
+---
+*Part of Animals at alexandria.press*

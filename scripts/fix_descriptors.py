@@ -7,9 +7,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 ENTITIES_DIR = BASE_DIR / "entities"
 OUTPUTS_DIR = BASE_DIR / "outputs"
 
-def fix_descriptors():
+def fix_descriptors(collection_name=None):
     # Iterate over all files in the entities directory
-    for entity_file in ENTITIES_DIR.glob("*.json"):
+    files = list(ENTITIES_DIR.glob("*.json"))
+    
+    if collection_name:
+        # Filter for specific collection if provided
+        files = [f for f in files if f.stem == collection_name]
+        if not files:
+            print(f"Collection {collection_name} not found in entities.")
+            return
+
+    for entity_file in files:
         collection_id = entity_file.stem
         book_path = OUTPUTS_DIR / collection_id / "book.json"
 

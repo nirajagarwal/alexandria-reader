@@ -349,18 +349,7 @@ export function populateMenu(onNavigate, onLoadPage) {
     `).join('');
     html += '</ul>';
 
-    html += '<hr class="menu-divider">';
 
-    const pages = [
-        { type: 'appendix', label: 'Prompt' },
-        { type: 'colophon', label: 'Colophon' }
-    ];
-
-    html += '<ul class="menu-list secondary-pages">';
-    pages.forEach(page => {
-        html += `<li><a href="#" data-type="${page.type}">${page.label}</a></li>`;
-    });
-    html += '</ul>';
 
     menuLinks.innerHTML = html;
 
@@ -376,9 +365,6 @@ export function populateMenu(onNavigate, onLoadPage) {
                 let label = '';
                 if (type === 'introduction') {
                     label = 'Introduction';
-                } else {
-                    const page = pages.find(p => p.type === type);
-                    if (page) label = page.label;
                 }
                 if (label) onLoadPage(type, label);
             }

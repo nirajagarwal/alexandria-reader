@@ -8,6 +8,7 @@ BASE_DIR = Path(__file__).parent.parent
 sys.path.append(str(BASE_DIR))
 
 from generator.pipeline.pipeline import Pipeline
+from scripts.fix_descriptors import fix_descriptors
 
 def main():
     parser = argparse.ArgumentParser(description="Alexandria Press - Book Generator Pipeline")
@@ -26,6 +27,11 @@ def main():
             workers=args.workers
         )
         pipeline.run()
+        
+        # Run fix_descriptors after pipeline completion
+        print("\n\n=== Running Post-Pipeline Steps ===")
+        fix_descriptors(collection_name=args.collection)
+        
     except Exception as e:
         print(f"Error: {e}")
         sys.exit(1)
