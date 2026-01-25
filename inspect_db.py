@@ -14,7 +14,7 @@ def main():
     cursor = conn.cursor()
     
     # Query for the book
-    cursor.execute("SELECT book_id, title, descriptor, cover_url FROM books WHERE book_id = 'countries'")
+    cursor.execute("SELECT book_id, title, descriptor, cover_url FROM books WHERE book_id = 'failures'")
     row = cursor.fetchone()
     
     if row:
@@ -23,7 +23,7 @@ def main():
         print(f"Descriptor: {row[2]}")
         print(f"Cover URL: {row[3]}")
     else:
-        print("Book 'prayers' not found.")
+        print("Book 'failures' not found.")
 
 if __name__ == "__main__":
     main()

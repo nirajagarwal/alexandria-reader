@@ -53,6 +53,10 @@ class Drafter(Stage):
                     content, usage = future.result()
                     
                     with self.lock:
+                        # Ensure content starts with a header
+                        if not content.strip().startswith("#"):
+                            content = f"# {entry.name}\n\n{content}"
+                            
                         entry.content = content
                         entry.generated_at = datetime.now(timezone.utc).isoformat()
                         entry.descriptor = self._extract_descriptor(content)
