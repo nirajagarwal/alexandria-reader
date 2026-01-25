@@ -130,4 +130,4 @@ async def serve_sw():
 
 @app.get("/sitemap.xml", include_in_schema=False)
 async def serve_sitemap():
-    return FileResponse(BASE_DIR / "frontend" / "sitemap.xml")
+    return FileResponse(BASE_DIR / "sitemap.xml")

@@ -41,7 +41,7 @@ export async function loadBook(bookId) {
 
         // Routing logic
         const params = new URLSearchParams(window.location.search);
-        const slug = params.get('slug');
+        const slug = params.get('slug') || params.get('amp;slug');
 
         if (slug) {
             navigate(slug, false);
@@ -153,7 +153,7 @@ export function init() {
             // Fallback for popstate without state obj (e.g. reload or external nav)
             const params = new URLSearchParams(window.location.search);
             const bookId = params.get('id');
-            const slug = params.get('slug');
+            const slug = params.get('slug') || params.get('amp;slug');
             if (bookId && slug && state.currentBook) {
                 navigate(slug, false);
             }
