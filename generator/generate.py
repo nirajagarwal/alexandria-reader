@@ -25,7 +25,7 @@ GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
 # Models
 ANTHROPIC_MODEL = "claude-sonnet-4-5"
-IMAGEN_MODEL = "imagen-4.0-generate-001"
+IMAGEN_MODEL = "gemini-3-pro-image-preview"
 
 # Paths
 BASE_DIR = Path(__file__).parent.parent
@@ -243,13 +243,34 @@ def generate_cover_image(
     
     # Default style for alexandria.press covers
     if style_prompt is None:
-        style_prompt = """Modern look with light background. Not too busy. Suitable for dark text overlay.
-IMPORTANT: No text, letters, numbers, or symbols anywhere on the image."""
+        style_prompt = """Modern look. Not too busy. IMPORTANT: No text, letters, numbers, or symbols anywhere on the image."""
     
-    prompt = f"""Create a book cover image (3:4 aspect ratio, portrait orientation).
-The book title and subtitle is: {title} - {descriptor}
+    prompt = f"""Create a book cover image (3:4 aspect ratio, portrait orientation, edge to edge image, no borders).
+The book is about {title} - {descriptor}. 
 {style_prompt}"""
     
+    # Handle Gemini Image models (e.g. gemini-2.5-flash-image)
+    if "gemini" in IMAGEN_MODEL.lower():
+        response = client.models.generate_content(
+            model=IMAGEN_MODEL,
+            contents=prompt
+        )
+        
+        # Extract image bytes from response parts
+        # Note: response structure can vary by SDK version, checking logic order
+        parts = []
+        if hasattr(response, 'parts'):
+            parts = response.parts
+        elif hasattr(response, 'candidates') and response.candidates:
+            parts = response.candidates[0].content.parts
+            
+        for part in parts:
+            if part.inline_data:
+                return part.inline_data.data
+        
+        raise ValueError("No image found in Gemini response")
+
+    # Handle Imagen models
     response = client.models.generate_images(
         model=IMAGEN_MODEL,
         prompt=prompt,

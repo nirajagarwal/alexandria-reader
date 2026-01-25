@@ -9,14 +9,17 @@ sys.path.append(str(BASE_DIR))
 
 from generator.generate import load_entities, generate_cover_image, save_cover_image
 
-def regenerate_all_covers():
-    """Regenerate covers for all collections in entities directory."""
+def regenerate_covers(target_collection=None, fast_mode=False):
+    """Regenerate covers for collections."""
     entities_dir = BASE_DIR / "entities"
     
-    # Find all collection JSON files
-    collections = [f.stem for f in entities_dir.glob("*.json")]
+    if target_collection:
+        collections = [target_collection]
+    else:
+        # Find all collection JSON files
+        collections = [f.stem for f in entities_dir.glob("*.json")]
     
-    print(f"Found {len(collections)} collections: {', '.join(collections)}")
+    print(f"Found {len(collections)} collections to process: {', '.join(collections)}")
     
     for collection_id in collections:
         print(f"\nProcessing: {collection_id}")
@@ -32,7 +35,7 @@ def regenerate_all_covers():
                 
             print(f"  Generating cover for '{title}'...")
             
-            # Generate new cover (uses updated prompt in generate.py)
+            # Generate new cover
             image_bytes = generate_cover_image(collection_id, title, descriptor)
             
             # Save overwrite
@@ -43,8 +46,16 @@ def regenerate_all_covers():
             print(f"  ✗ Failed: {e}")
 
 if __name__ == "__main__":
-    confirm = input("This will overwrite all existing covers. Continue? [y/N] ")
-    if confirm.lower() == 'y':
-        regenerate_all_covers()
-    else:
-        print("Aborted.")
+    parser = argparse.ArgumentParser(description="Regenerate book covers")
+    parser.add_argument("--collection", help="Specific collection ID to regenerate")
+    parser.add_argument("-y", "--yes", action="store_true", help="Skip confirmation")
+    
+    args = parser.parse_args()
+    
+    if not args.yes and not args.collection:
+        confirm = input("This will overwrite all existing covers. Continue? [y/N] ")
+        if confirm.lower() != 'y':
+            print("Aborted.")
+            sys.exit(0)
+            
+    regenerate_covers(args.collection)
