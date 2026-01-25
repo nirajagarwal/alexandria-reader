@@ -18,3 +18,4 @@ venv/
 # Database (if local sqlite)
 *.db
 *.sqlite3
+.vercel
