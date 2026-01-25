@@ -1,0 +1,26 @@
+# Mob Behavior
+
+When individuals gather into crowds, something shifts in human psychology. Alone, most people maintain boundaries, hesitate before acting, consider consequences. In groups, those same people can become participants in violence they would never commit individually. This is mob behavior — the temporary suspension of individual judgment and moral restraint that occurs when people are subsumed into crowd psychology.
+
+French physician Gustave Le Bon documented this in 1895, but the phenomenon is ancient. A crowd forms. Energy builds. Someone throws the first stone, breaks the first window, shouts the first slur. Then others join. Not because they've carefully considered the action, but because the action is happening and they're part of the group doing it. Individual responsibility diffuses into collective momentum. The crowd becomes its own entity, operating by different rules than any member would follow alone.
+
+Researchers have identified the mechanisms. In crowds, people experience deindividuation — a psychological state where individual identity blurs into group identity. You're no longer John Smith with a job and family and reputation to protect. You're part of the crowd, anonymous within it. This anonymity reduces normal inhibitions. The costs of transgression — social judgment, legal consequences, moral shame — feel abstract or deferred. Meanwhile, the rewards of group belonging feel immediate and visceral. The crowd approves. The crowd is powerful. The crowd protects.
+
+Social proof amplifies this. When everyone around you is doing something, that action becomes normalized. If dozens of people are looting stores, looting becomes what people do in this situation. If the crowd is chanting, you chant. If they're throwing rocks, throwing rocks becomes the reasonable response to whatever provoked the crowd. The sheer number of participants creates a kind of moral permission. This many people can't all be wrong. This many people can't all get punished.
+
+Philip Zimbardo's Stanford Prison Experiment demonstrated how quickly normal people can commit abuses when placed in deindividuating situations with group dynamics and authority. Guards became cruel not because they were individually sadistic, but because the role and the group created conditions where cruelty became standard behavior. The Abu Ghraib prison abuses followed similar patterns — soldiers who would never torture individuals on their own became participants in systematic abuse within group contexts that normalized it.
+
+The damage cascades. Property destruction and violence are the obvious harms. But mob behavior also corrupts individual moral development. After participating in mob actions, people often feel cognitive dissonance — their self-concept as decent doesn't match what they did. Some resolve this through rationalization (the target deserved it, everyone else was doing it, I wasn't really responsible). Others resolve it through moral numbing, becoming slightly more willing to transgress next time. Each incident of mob behavior makes subsequent incidents more likely.
+
+Communities suffer lasting harm. Trust breaks down. The minority shopkeeper who saw neighbors loot his store can't forget. The protester who got beaten by crowd members who seemed friendly hours earlier can't return to those streets. Mob behavior doesn't disappear when crowds disperse — it leaves trauma, grudges, fractured social bonds. And it creates justification for authoritarian responses. Fearful authorities crack down. Civil liberties contract. The mob's violence begets the state's violence in turn.
+
+You recognize mob behavior by emotional contagion spreading through groups — excitement, anger, or fear amplifying as more people join. By the emergence of crude slogans or targets that simplify complex situations. By dehumanizing language about whoever the mob opposes. By the presence of anonymity — masks, darkness, sheer numbers. And most tellingly, by the gap between what individuals would do alone and what the group is doing together.
+
+It manifests in contexts from sports riots to political violence to online harassment campaigns. The specific trigger varies — a contested game, a police shooting, an inflammatory speech. But the pattern holds: individual judgment suspended, moral restraints lowered, actions taken that participants would condemn in other contexts. The mob doesn't require formal organization or explicit coordination. It requires only the conditions for deindividuation, the presence of others engaged in transgression, and sufficient emotional arousal to override normal inhibitions.
+
+In 2021, researchers analyzing the January 6th Capitol riot found patterns consistent with mob behavior — individuals who were not organized extremists, who had no criminal history, who traveled to Washington as families, became participants in violence once swept into crowd dynamics. Many later expressed surprise at their own actions. They weren't lying. They genuinely became different people temporarily, shaped by forces they didn't understand and couldn't resist from within the experience.
+
+The crowd makes you forget who you are. And once you've forgotten, anything becomes possible.
+
+---
+*Part of Failures at alexandria.press*

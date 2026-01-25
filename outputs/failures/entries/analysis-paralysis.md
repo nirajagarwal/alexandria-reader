@@ -1,0 +1,32 @@
+# Analysis Paralysis
+
+In 1956, psychologist George Miller published a paper suggesting humans can hold about seven items in working memory at once. By 2000, researcher Barry Schwartz was documenting what happens when we're forced to evaluate far more than that: we freeze. His studies showed that shoppers presented with twenty-four varieties of jam were less likely to purchase than those presented with six. The abundance of options didn't empower decision-making. It disabled it.
+
+This is analysis paralysis — the state in which gathering information and evaluating options becomes a substitute for deciding. The mind continues processing long past the point of diminishing returns, cycling through possibilities, weighing variables, seeking certainty that won't arrive. Action gets deferred indefinitely, not because any option is clearly wrong, but because none can be proven definitively right.
+
+The failure manifests distinctly from simple indecision. Someone experiencing analysis paralysis is actively working — researching, comparing, modeling scenarios. They're generating spreadsheets, reading reviews, consulting experts, running mental simulations. The problem isn't laziness or avoidance. It's that the analytical process has become self-perpetuating. Each new piece of information reveals another consideration. Each comparison suggests another factor to weigh. The decision space expands faster than analysis can contract it.
+
+You see this in career transitions where someone spends months evaluating options but never makes a move, in product purchases that require weeks of research for items others buy in minutes, in strategic planning sessions that produce endless frameworks but no commitments. The common thread: abundance of choice combined with uncertainty about consequences.
+
+We're vulnerable because analysis feels productive. Unlike procrastination, which carries guilt, analysis provides the psychological comfort of progress. You're not avoiding the decision — you're being thorough, responsible, careful. The mind treats information-gathering as a form of action. It isn't. Decision researcher Sheena Iyengar has documented how increased options correlate with decreased satisfaction and increased regret. When we face too many choices, we don't just struggle to decide — we lose confidence in our capacity to decide well.
+
+The underlying mechanism is cognitive overload. Daniel Kahneman's research on decision fatigue shows the mind has limited processing capacity. Complex decisions deplete it. When options multiply and stakes feel high, the analytical system (what Kahneman calls System 2) gets overwhelmed. It can't hold all variables simultaneously. So it keeps cycling — reviewing the same factors, seeking the pattern that will make the choice obvious. That pattern rarely appears. Most significant decisions involve multiple incommensurable values, uncertain outcomes, and imperfect information. No amount of analysis resolves these fundamentally.
+
+The damage accumulates in ways both obvious and subtle. Most directly, opportunities close. The job gets filled. The house sells. The market shifts. While you're analyzing, others are deciding. But the deeper cost is the erosion of decisional confidence. Each deferred choice reinforces the belief that you can't trust your judgment without exhaustive analysis. This becomes self-fulfilling: the less you practice deciding under uncertainty, the less capable you become of it.
+
+Organizationally, analysis paralysis manifests as endless committee meetings, consultant reports that lead to more consultant reports, strategic initiatives that never reach implementation. Frederick Brooks documented this in software development: teams that spend so long in the planning phase that by implementation, the requirements have changed. The analysis was thorough. It was also obsolete by the time it completed.
+
+In relationships, it appears as the inability to commit while perpetually evaluating whether this person is "right," whether timing is optimal, whether better options might exist. The evaluation never completes because the variables keep changing — both people evolve, contexts shift, the comparison set expands.
+
+Recognition requires distinguishing between necessary due diligence and recursive analysis. Necessary analysis has a defined scope, a decision timeline, and stopping criteria — you're gathering specific information to resolve specific uncertainties. Paralysis has none of these. The scope keeps expanding. The timeline keeps extending. The criteria for "enough information" remain perpetually out of reach.
+
+Warning signs include: revisiting the same decision variables repeatedly without new information, setting decision deadlines then extending them, feeling exhausted by analysis rather than clarified, experiencing relief when external events eliminate options (because it removes the burden of choosing), spending more time analyzing than the decision's stakes warrant.
+
+The pattern is especially visible in how questions evolve. Productive analysis moves from "What are my options?" to "What matters most here?" to "Given what I know, which choice aligns with my priorities?" Analysis paralysis cycles endlessly at the first stage, treating option-generation as if it were decision-making.
+
+Philosopher Ruth Chang's research on hard choices illuminates why some decisions resist analysis. When options are "on a par" — roughly equal in value but incomparable in kind — no amount of analysis will reveal one as objectively superior. Choosing a career in medicine versus law, moving to a new city versus staying, having children versus remaining childless — these involve values that can't be reduced to a common metric. Analysis can clarify what each choice entails. It can't tell you which to choose. That requires not more information but a different faculty: commitment.
+
+The failure is particularly insidious because it masquerades as its opposite. The person stuck in analysis paralysis typically sees themselves as thorough, careful, rational — all true. What they miss is that past a certain point, continued analysis isn't rational at all. It's a form of avoidance that depletes the very decisional capacity it claims to be perfecting.
+
+---
+*Part of Failures at alexandria.press*

@@ -1,0 +1,35 @@
+# Goodhart's Law
+
+When British economist Charles Goodhart served as an advisor to the Bank of England in the 1970s, he observed something peculiar about monetary policy. The central bank would identify a statistical measure — money supply, interest rates, some reliable indicator of economic health — and then attempt to control the economy by targeting that measure. And every time, the measure stopped working. Not because the underlying economics had changed, but because once the measure became a target, people changed their behavior in response to it. Banks found workarounds. Markets adapted. The relationship between the measure and the thing it was supposed to measure dissolved.
+
+Goodhart formulated this into a principle: "When a measure becomes a target, it ceases to be a good measure." What he identified wasn't just an economic phenomenon. It's a pattern that repeats across every domain where humans attempt to optimize systems through metrics.
+
+The mechanism is straightforward. A measure works because it correlates with some outcome you care about. Teacher evaluations correlate with teaching quality. Lines of code correlate with programmer productivity. Test scores correlate with student learning. These correlations exist because the measure captures something real. But the moment you make the measure itself the goal — the moment you tie teacher pay to evaluations, programmer performance to code volume, school funding to test scores — the correlation breaks. People optimize for the measure rather than the underlying reality.
+
+This isn't necessarily conscious gaming, though that happens. Often it's rational adaptation. Teachers focus on evaluation-boosting behaviors rather than deep learning. Programmers write verbose code rather than elegant solutions. Schools teach to the test. The measure still moves. It might move dramatically. But it no longer tells you what you wanted to know.
+
+The damage compounds because metrics create their own momentum. A hospital reduces wait times by turning away difficult cases. A police department improves crime statistics by reclassifying offenses. A sales team hits revenue targets by offering unsustainable discounts. Each individual actor is responding rationally to incentives. The system appears to improve by every measured standard. But the actual outcomes — patient care, public safety, business sustainability — deteriorate.
+
+The insidious part is that Goodhart's Law makes measurement itself suspect. Once you know that metrics degrade under optimization pressure, you start questioning all metrics. Are these numbers real? Or are they artifacts of optimization? The Wells Fargo fake accounts scandal revealed employees opening millions of unauthorized accounts to hit sales targets. The accounts were counted. The metrics looked excellent. The measure had become completely detached from the reality it was supposed to represent.
+
+You recognize Goodhart's Law when measurement and mission diverge. When people can articulate exactly what behaviors will improve their metrics while admitting those behaviors don't serve the actual goal. When hitting targets feels increasingly disconnected from actual success. When the conversation shifts from "Are we accomplishing our mission?" to "Are we meeting our numbers?"
+
+The warning signs appear in language. People start distinguishing between "the real work" and "what we're measured on." Metrics become things to manage rather than information to learn from. Success stories focus on measurement achievements rather than mission outcomes. Someone says "Well, technically we hit the target" with a tone suggesting they know something went wrong.
+
+Or you see it in organizational behavior. Teams spend more time figuring out how to move metrics than discussing whether moving those metrics matters. Reports showcase impressive numbers alongside disappointing results. Gaming becomes normalized — not as cheating, but as skillful navigation of the measurement system. The best performers aren't those who excel at the mission but those who excel at optimizing the measures.
+
+Consider the Soviet nail factory, a classic case study in how metrics distort production. When the factory's success was measured by number of nails produced, it made thousands of tiny, useless nails. When the measure changed to weight of nails produced, it made giant, equally useless nails. The metric kept moving. The factory kept "succeeding." But no one got the nails they actually needed.
+
+Or consider college rankings, which now shape institutional behavior across higher education. Universities know that rankings depend heavily on factors like admissions selectivity, alumni giving rates, and faculty resources. So they optimize those specific measures. They encourage marginal students to apply (to reject them and improve selectivity). They pressure young alumni for token donations (to improve participation rates). They hire more administrators (to improve resource ratios). The rankings improve. The institutions might or might not improve. The measures and the mission have separated.
+
+The pattern appears wherever complex goals get reduced to simple metrics. Healthcare quality becomes wait times and patient satisfaction scores. Scientific productivity becomes publication counts and citation metrics. Classroom learning becomes standardized test results. Each metric captures something real initially. Each becomes systematically gamed once it becomes a target. Each creates perverse incentives that eventually undermine the original goal.
+
+What makes Goodhart's Law particularly difficult is that the alternative — managing without metrics — seems impossible at scale. You cannot manage what you cannot measure. But you also cannot measure without creating the conditions for measurement to distort behavior. The metrics you need to coordinate large organizations are the same metrics that invite gaming.
+
+This creates a fundamental tension in institutional design. The tighter you tie consequences to measures, the more pressure people have to optimize for the measures themselves. The looser the connection, the less the measures actually drive behavior. You want metrics to inform decisions without becoming the decision. You want measurement without measurement fixation. But finding that balance requires constant attention, because Goodhart's Law isn't a one-time problem. It's an ongoing process. Measures degrade. You need new measures. Which will also degrade.
+
+The deepest cost might be the way Goodhart's Law erodes trust in institutions. When people know the numbers can be gamed, they stop believing the numbers. When metrics diverge from reality often enough, measurement itself becomes suspect. We end up in a strange epistemic situation where we know we need data to make decisions, but we also know the data has been optimized for purposes other than truth. The measures still exist. They just don't mean what they claim to mean.
+
+---
+
+*Part of Failures at alexandria.press*

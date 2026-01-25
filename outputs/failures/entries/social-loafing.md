@@ -1,0 +1,26 @@
+# Social Loafing
+
+In 1913, a French agricultural engineer named Max Ringelmann asked workers to pull on a rope, alone and in groups. When pulling solo, each person averaged about 85 kilograms of force. But when eight people pulled together, they didn't produce eight times that force. They produced less than half. Each person, when surrounded by others doing the same task, pulled with about 50% of their individual effort. No one was deliberately shirking. They simply exerted less when their individual contribution became harder to distinguish.
+
+This is social loafing — the tendency to reduce effort when working in groups, particularly when individual contributions are difficult to identify or measure. It's not laziness. It's a predictable response to the structure of collective work. When your effort dissolves into a group product, you unconsciously dial it down.
+
+The phenomenon appears across cultures and contexts. Students working on group projects do less than they would alone. Brainstorming sessions produce fewer ideas per person than individual ideation. Committee members prepare less thoroughly than they would for solo presentations. The larger the group, the more pronounced the effect. Add one person to a two-person team and productivity per person drops slightly. Add one person to a ten-person team and the drop becomes more severe.
+
+The mechanism is partly motivational diffusion. When outcomes are collective, the link between your effort and the result weakens. Work harder and the group does slightly better — but so does the person who didn't work harder. Slack off and the group does slightly worse — but so does the person who gave maximum effort. Your individual contribution becomes statistically invisible. The rational response, unconsciously calculated, is to conserve effort.
+
+But it's also accountability erosion. In individual work, performance is observable. In group work, unless roles are clearly defined and outputs individually measurable, performance becomes opaque. You can't identify who contributed what. Social loafing thrives in this opacity. Studies show that when individual contributions are made identifiable — when researchers told subjects their rope-pulling would be measured separately — the effect disappeared. People pulled at full strength even in groups.
+
+The damage compounds in ways that aren't immediately visible. Group projects take longer because everyone assumes someone else will carry more weight. Meetings produce weaker decisions because participants prepare less thoroughly, assuming others will compensate. Organizational initiatives stall because team members contribute at 60% capacity, each believing they're doing their share while everyone else seems to be as well. The collective output is mediocre, but no individual feels responsible.
+
+It also creates perverse justice problems. In any group effort with social loafing, some people compensate. They work harder to make up for others' reduced effort — often without realizing others are reducing effort, just sensing the work isn't getting done. These compensators burn out while social loafers continue at reduced capacity, and because contributions are opaque, the distribution of effort remains invisible. Organizations reward the group, not the compensators.
+
+You recognize social loafing not by catching people being lazy, but by noticing patterns in group dynamics. Meetings where nobody's done the pre-reading. Projects where everyone seems busy but milestones keep slipping. Teams where a few people consistently stay late while others leave on time, yet everyone reports working hard. The work feels harder than it should be, and when you examine individual contributions, they're all somehow less than what those same people produce when working alone.
+
+The clearest sign is the gap between individual capability and group output. You have five talented people on a team. Each has demonstrated strong individual work. But their collaborative product is worse than what two of them could have produced independently. That's social loafing — not because anyone is deliberately underperforming, but because the structure of collective work has made everyone's effort slightly less visible, and therefore slightly less.
+
+In the 1970s, researchers replicated Ringelmann's rope-pulling experiment with a clever modification. They had people pull on ropes while blindfolded and wearing headphones that played noise. Some subjects were told others were pulling with them. Others were told they were pulling alone — but in both cases, they were actually alone. The subjects who believed others were pulling exerted less force. The mere belief in collective effort was enough to reduce individual contribution, even when that belief was false.
+
+This reveals social loafing's uncomfortable truth: it's not about bad actors or weak character. It's about how collective structures shape individual behavior. When effort is shared and contributions are opaque, everyone — unconsciously, automatically — contributes less. The sum of the parts becomes less than the whole, not through malice but through the mathematics of diffused responsibility.
+
+---
+*Part of Failures at alexandria.press*

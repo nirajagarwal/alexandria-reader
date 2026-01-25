@@ -1,0 +1,28 @@
+# Anchoring
+
+In 1974, psychologists Amos Tversky and Daniel Kahneman asked people to estimate what percentage of African nations belonged to the United Nations. Before they answered, subjects watched a wheel of fortune spin and land on a number — either 10 or 65. Then they made their estimates. The wheel was random. Everyone knew it was random. Yet those who saw 10 guessed an average of 25%. Those who saw 65 guessed 45%. A meaningless number, transparently irrelevant, pulled their judgments toward it like gravity.
+
+This is anchoring: the mind's tendency to rely too heavily on the first piece of information it encounters when making decisions. That initial number, value, or impression becomes a reference point — an anchor — and subsequent judgments adjust insufficiently away from it. You don't notice it happening. The anchor works beneath conscious awareness, warping estimates, valuations, and choices while feeling like independent reasoning.
+
+Anchoring operates everywhere numbers appear. Real estate agents know this. The listing price of a house, even if absurdly high, pulls offers upward. Buyers adjust down from the anchor, but not enough — they end up paying more than they would have if the initial price had been lower. Salary negotiations follow the same pattern. Whoever names a number first establishes the anchor. The other party adjusts, but their counter-offer stays tethered to that initial figure. Studies show that arbitrary numbers — the last two digits of your social security number, a random value written on a whiteboard — can influence how much people will pay for wine, chocolate, or computer equipment.
+
+The mechanism appears to be a feature of how human judgment works, not a bug. When estimating an unknown quantity, the mind needs somewhere to start. It seizes on available information, even irrelevant information, as a starting point. Then it adjusts. But adjustment is effortful. It requires active correction. And the mind, optimizing for efficiency, stops adjusting too soon. The result: systematic bias toward the anchor.
+
+What makes anchoring particularly insidious is its imperviousness to awareness. Tversky and Kahneman found that warning people about anchoring, even explaining the effect in detail, doesn't neutralize it. Real estate professionals anchor just as strongly as novices. Judges, setting bail or determining sentences, anchor on prosecutors' recommendations even when those recommendations are randomly generated. Experts anchor. Intelligent people anchor. You anchor.
+
+The damage compounds when anchors are strategic. Car salesmen anchor high with the sticker price. Retailers anchor with "original price" before the discount. Advertisers anchor expectations with "up to 50% off." Each anchor shapes the reference point against which value is measured. A $60 shirt marked down from $100 feels like a bargain. The same $60 shirt with no reference price feels expensive. The objective value — the shirt, the cost — hasn't changed. But the anchor has reframed the judgment.
+
+In negotiation, anchoring becomes a weapon. Labor disputes, diplomatic negotiations, and business deals all hinge on who sets the first number. Research by Adam Galinsky at Columbia shows that first offers, even extreme ones, predict final settlements better than any other variable. The initial demand establishes the range of plausible outcomes. Both parties adjust from there, but never escape its gravitational field entirely.
+
+Organizations anchor collectively. A company's first-year revenue becomes the baseline against which all future performance is measured. Early projections, however speculative, anchor expectations for projects. Strategic plans anchor on last year's numbers, adjusting incrementally rather than questioning fundamentals. The consulting firm that bills $500 per hour can charge more for the same work than one that started at $200, not because the work differs but because the anchor differs.
+
+The warning signs appear as suspiciously round numbers, convenient reference points, and the feeling of adjusting from somewhere. When you think "that seems high, but maybe $X would be fair," notice where $X came from. When you're considering an offer and calculating what seems reasonable, ask what number you started from. When an initial price feels absurdly high but your counter-offer stays within shouting distance of it, you're anchored.
+
+The broader recognition: almost every judgment involving quantities happens relative to something. Home prices anchor on neighborhood comparables. Salaries anchor on previous salaries. Expected returns anchor on historical averages. Timelines anchor on initial estimates. These anchors aren't always wrong — sometimes they contain real information. But anchoring works even when they're wrong, even when you know they're wrong, even when they're explicitly random.
+
+In 1997, researchers asked German judges — experienced jurists familiar with sentencing guidelines — to determine appropriate sentences for hypothetical cases. Before deciding, each judge rolled dice. The dice were loaded to show either 3 or 9. Judges who rolled 3 gave an average sentence of 5 months. Judges who rolled 9 gave an average sentence of 8 months. The dice were transparent props. The judges knew it. Their sentences anchored anyway.
+
+This is how anchoring works. Not through deception but through the basic architecture of judgment. The mind reaches for reference points. It adjusts from them. But adjustment is incomplete, and the first number lodges deeper than it should. You think you're reasoning independently. You're calculating relative to an anchor you didn't choose and can't fully escape.
+
+---
+*Part of Failures at alexandria.press*

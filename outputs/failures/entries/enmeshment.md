@@ -1,0 +1,30 @@
+# Enmeshment
+
+In some families, you can't tell where one person ends and another begins. A mother feels anxious, so her teenage daughter becomes responsible for managing that anxiety. A father's disappointment becomes his son's shame. A wife's success threatens her husband's identity. Boundaries dissolve. Individual feelings, thoughts, and identities blur together. This is enmeshment — the collapse of psychological separation within relationships.
+
+The term comes from family systems theory, pioneered by Salvador Minuchin in the 1970s. Minuchin observed that healthy families maintain clear boundaries: members can be close while remaining distinct individuals. But in enmeshed families, closeness becomes fusion. Love becomes possession. Support becomes control. The family operates as a single emotional unit, with each member's internal state immediately transmitted to and processed by the others.
+
+What makes enmeshment difficult to recognize is that it often masquerades as devotion. The enmeshed mother isn't neglecting her child — she's hyper-involved. The enmeshed spouse isn't distant — they're intensely focused on their partner's every mood. It looks like care. It feels like love. But underneath the apparent closeness is something more troubling: the inability to tolerate separateness.
+
+Murray Bowen, another family systems theorist, described this phenomenon as "undifferentiated ego mass." In severely enmeshed families, individual identity barely exists. Members can't distinguish their own feelings from others'. They don't know what they want apart from what the family wants. They experience another person's anger as their own failure, another's sadness as their own responsibility. The boundary between self and other becomes permeable to the point of invisibility.
+
+This shows up in daily life as intrusive involvement. The enmeshed parent reads their adult child's diary, monitors their texts, makes decisions about their career, relationships, and finances. Not occasionally — continuously. The enmeshed spouse needs to know where their partner is at all times, becomes anxious when separated, interprets any independent activity as rejection. The enmeshed adult child can't make a decision without consulting their parent, feels guilty for having private thoughts, structures their entire life around family expectations.
+
+Research by Kenneth Barber and colleagues has documented the psychological cost. Enmeshed relationships are associated with higher rates of anxiety disorders, depression, and difficulty forming healthy relationships outside the family. Adults raised in enmeshed families often struggle with basic autonomy — choosing a career, setting boundaries, knowing their own preferences. They've been trained to prioritize others' emotional states over their own needs, to interpret independence as betrayal.
+
+The damage compounds across generations. Enmeshed parents raise children who never learn to regulate their own emotions, because the parent has always done that regulation for them. These children become adults who seek out enmeshed relationships — they don't know how else to connect. The pattern replicates. The boundaries remain collapsed.
+
+What enables enmeshment is often anxiety. In Bowen's framework, enmeshment is an anxiety management strategy. When one family member becomes anxious, rather than dealing with their own discomfort, they attempt to control or fuse with another member. This temporarily reduces anxiety for the anxious person but trains everyone in the system to avoid differentiation. Separateness becomes equated with abandonment. Independence becomes a threat to family cohesion.
+
+You can recognize enmeshment in yourself if you feel responsible for others' emotions, if their moods immediately alter your internal state, if you can't tolerate their disapproval or disappointment. You can recognize it in your family if disagreement feels like rejection, if privacy is treated as secrecy, if individual choices require family consensus. You can recognize it in your relationships if your partner's bad day becomes your catastrophe, if you need constant reassurance of connection, if time apart generates intense anxiety.
+
+The classic case is what therapists call the "parentified child" — the daughter who becomes her mother's confidante and emotional regulator, taking on responsibilities no child should carry. She learns that her value lies in managing her parent's distress. She absorbs the message that her own needs are secondary, even illegitimate. By adolescence, she can't name what she wants. By adulthood, she's drawn to relationships where she can repeat the pattern — partners who need caretaking, who require constant emotional labor, who can't function independently.
+
+This is different from healthy interdependence. Interdependent people rely on each other while maintaining separate identities. They support without absorbing. They care without controlling. Enmeshed people can't distinguish support from fusion. They experience their partner's problems as their own, not out of empathy but because the boundary between self and other has dissolved.
+
+The recognition is painful because enmeshment is often the deepest form of connection people have known. To acknowledge it is to question whether what felt like love was actually a failure to separate. To recognize enmeshment in yourself is to see how you've made others responsible for your emotional life — or sacrificed your own identity to manage theirs. To recognize it in your family of origin is to understand that what you experienced as closeness was actually a kind of captivity.
+
+Enmeshment persists because it serves a function. It keeps anxiety at bay. It creates the illusion of perfect understanding. It protects against the terror of separateness. But what it costs is autonomy itself — the capacity to be a distinct person, to have private experiences, to make choices that aren't shaped entirely by others' needs. The enmeshed person is never alone, but they're also never quite themselves.
+
+---
+*Part of Failures at alexandria.press*

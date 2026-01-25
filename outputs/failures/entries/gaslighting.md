@@ -1,0 +1,24 @@
+Gaslighting is the systematic manipulation of someone's perception of reality to make them doubt their own sanity, memory, or judgment. The term comes from a 1944 film in which a husband dims the gaslights in their home while insisting to his wife that the lights haven't changed — a small lie, repeated, designed to make her question what she clearly sees.
+
+What distinguishes gaslighting from ordinary lying is its target: not just truth, but the victim's capacity to know truth. A liar deceives about facts. A gaslighter undermines the mental faculties needed to distinguish fact from fiction. The goal is cognitive destabilization — creating enough doubt that the victim becomes dependent on the manipulator's version of events.
+
+Psychologist Robin Stern, who has studied gaslighting extensively, identifies three stages. First, disbelief: the victim notices contradictions but assumes good faith. "Did I misremember? Maybe I'm being too sensitive." Second, defense: the victim tries to prove their perception is correct, collecting evidence, rehearsing conversations. The gaslighter escalates — denying, reframing, accusing the victim of being "crazy" or "too emotional." Third, depression: the victim's confidence collapses. They stop trusting their own mind. They accept the gaslighter's reality as authoritative.
+
+The manipulation works because it exploits normal cognitive vulnerabilities. Memory is reconstructive, not photographic. We sometimes misremember. We sometimes overreact. The gaslighter weaponizes this uncertainty. "You're imagining things." "That never happened." "You're being paranoid." Each denial plants doubt. Over time, the victim learns: my perception cannot be trusted, but theirs can.
+
+The damage is profound. Victims describe feeling unmoored, unable to trust their own experience. They develop what researchers call "epistemic learned helplessness" — a persistent inability to know what's real. Even after escaping the relationship, they second-guess themselves constantly. Did that conversation happen the way I remember? Am I overreacting to this? The gaslighter's voice becomes internalized.
+
+Clinician Stephanie Sarkis notes that gaslighting appears across contexts: intimate relationships, workplaces, political movements. In romantic relationships, it often accompanies other forms of abuse — controlling behavior, isolation, financial manipulation. In workplaces, it might involve rewriting agreements, denying commitments, making someone doubt their professional competence. In political contexts, it manifests as institutional denial: documented events that officials insist never occurred, creating mass confusion about basic facts.
+
+The pattern often starts small. A partner dismisses your concern: "You're being oversensitive." A manager denies a conversation: "I never said that." A friend rewrites history: "You always exaggerate." These might be innocent mismatches in memory. But if they escalate — if denial becomes systematic, if your reality is consistently invalidated — you're likely witnessing something more deliberate.
+
+The key warning sign is the pattern of denial paired with counter-accusation. The gaslighter doesn't just contradict your memory; they pathologize your attempt to hold onto it. "Why are you so obsessed with being right?" "You're always starting drama." The message: the problem isn't what happened, it's your insistence on your version of what happened.
+
+In her 1981 study of battering relationships, sociologist Evan Stark documented what he called "coercive control" — the use of psychological tactics to dominate a partner. He found that abusers regularly denied observable reality: injuries didn't happen, threats were never made, conversations never occurred. One woman kept a detailed journal to prove her memory was accurate. When her partner found it, he didn't dispute the entries. He told her keeping such records proved she was mentally unstable. This is gaslighting's perfect expression: even evidence of reality becomes proof of unreality.
+
+What makes gaslighting particularly insidious is that checking your perception — "Did this really happen?" — is usually rational. Healthy people question themselves. Healthy people consider they might be wrong. The gaslighter exploits this rationality, turning reasonable self-doubt into paralytic self-distrust. Eventually, the victim stops believing they can know anything with certainty.
+
+Recovery requires what therapist Christine Louis de Canonville calls "reality anchoring" — finding external validation that your perception is sound. Trusted friends who witnessed events. Written records. Your own contemporaneous notes. Not to "win" an argument with the gaslighter, but to rebuild confidence in your own cognition. The goal isn't proving them wrong. It's proving yourself capable of perceiving reality accurately.
+
+---
+*Part of Failures at alexandria.press*

@@ -1,0 +1,28 @@
+# Dunning-Kruger Effect
+
+In 1996, a man named McArthur Wheeler robbed two Pittsburgh banks in broad daylight without wearing a mask. When police arrested him that evening, he was genuinely shocked. He had covered his face with lemon juice, believing it would make him invisible to security cameras — the same principle, he thought, that makes lemon juice useful as invisible ink. Wheeler wasn't mentally ill or on drugs. He was simply so incompetent at assessing his own understanding that he couldn't recognize his incompetence. His confidence was perfect. His judgment was catastrophic.
+
+This case inspired psychologists David Dunning and Justin Kruger to investigate a specific failure mode: people who lack skill in a domain also lack the metacognitive ability to recognize their lack of skill. The less you know, the less capable you are of knowing how little you know. Incompetence produces confidence by destroying the very capacity needed for self-assessment.
+
+Their research, published in 1999, showed this pattern across multiple domains. They tested Cornell undergraduates on logical reasoning, grammar, and humor. Then they asked students to estimate their performance. Those who scored in the bottom quartile estimated they performed above average. The worst performers showed the largest gaps between actual and perceived ability. Participants scoring in the 12th percentile estimated they were in the 62nd percentile. This wasn't modesty failing — it was judgment itself breaking down.
+
+The mechanism is straightforward. Competence requires two things: the ability to perform a task and the ability to evaluate performance. These skills are not separate. The knowledge needed to produce correct answers is the same knowledge needed to recognize correct answers. If you lack the former, you necessarily lack the latter. You can't evaluate what you can't understand. The incompetent are doubly cursed — they fail, and they can't see their failure.
+
+This creates a particular vulnerability in modern life. Expertise has become both more necessary and more difficult to verify. Medical information online. Financial advice from influencers. Political analysis from confident voices with no training. The incompetent don't just fail quietly — they speak confidently, post publicly, and believe genuinely. Their certainty is real. It's their judgment that's broken.
+
+The effect appears everywhere. The entrepreneur who has never run a company but is certain about what works. The parent convinced their instincts override pediatric medicine. The driver who believes they're above average despite their third accident. The manager who mistakes authority for expertise. The problem isn't dishonesty — Wheeler genuinely believed lemon juice would work. The problem is that incompetence feels identical to competence from the inside.
+
+The damage compounds in several ways. First, the incompetent don't seek help or training because they don't recognize they need it. Why would you study if you think you already know? Second, they're resistant to feedback. Criticism seems like bias, evidence seems like noise, correction seems like hostility. Third, in groups, their confidence attracts followers. Certainty is persuasive. Nuance sounds like weakness. The person who says "I'm absolutely sure" often wins over the person who says "it's complicated."
+
+Organizations suffer particularly. Hiring managers confident in their ability to read people despite research showing interviews predict performance poorly. Leaders certain about strategy despite no training in strategic thinking. Teams that confuse consensus with correctness. The effect is not that people are stupid — Wheeler was of average intelligence. It's that assessment breaks down. You think you're thinking clearly when the mechanism for clarity has failed.
+
+Recognition requires looking for specific patterns. Certainty without expertise. Confidence that doesn't correlate with performance. Resistance to feedback that seems disproportionate. Inability to recognize superior performance in others. Most tellingly: the absence of doubt. Experts are marked by their calibrated uncertainty. They know where their knowledge ends. The incompetent are marked by unbroken confidence. They don't know what they don't know, so doubt has nowhere to start.
+
+The effect diminishes with genuine skill acquisition. As people gain competence, they also gain the ability to recognize their previous incompetence. This is why learning often feels like getting worse — you're finally developing the judgment to see how much you were missing. The expert knows what they don't know. The novice knows nothing, including their ignorance.
+
+Dunning himself noted that the effect isn't about intelligence or education level. It's about the relationship between skill and self-assessment in specific domains. You can be expert in one area and incompetent in another. The successful surgeon might be subject to the Dunning-Kruger effect about investing. The accomplished writer might fall prey to it in home repair. Domain matters. The vulnerability is universal.
+
+The research has been replicated across cultures, domains, and populations. The pattern holds: bottom performers overestimate most dramatically, middle performers assess roughly accurately, top performers slightly underestimate. The shape is consistent. The human mind, when it lacks skill, also lacks the tool to measure that lack. This is not a character flaw. It's an architectural feature of cognition itself.
+
+---
+*Part of Failures at alexandria.press*

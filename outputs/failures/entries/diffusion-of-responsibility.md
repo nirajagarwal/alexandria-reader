@@ -1,0 +1,31 @@
+# Diffusion of Responsibility
+
+In 1964, Kitty Genovese was murdered outside her apartment in Queens while thirty-eight witnesses allegedly watched from their windows. For decades, this became the defining case of urban apathy — proof that bystanders simply don't care. But the story was more complicated. Many witnesses didn't understand what they were seeing. Some called the police. Others assumed someone else had. The real problem wasn't indifference. It was the mathematics of presence: when everyone could help, no one felt they had to.
+
+This is diffusion of responsibility — the inverse relationship between group size and individual action. The more people present when something needs doing, the less responsible any single person feels. It's not a character flaw. It's a predictable calculation the mind performs: the burden of action divided by the number of potential actors. As the denominator increases, individual obligation approaches zero.
+
+Psychologists John Darley and Bibb Latané tested this systematically after the Genovese case. They staged emergencies with varying numbers of bystanders. A woman falls off a ladder. Smoke fills a room. Someone has a seizure. The pattern held: the more witnesses present, the slower the response. In one experiment, 85% of lone participants helped someone in distress. When four others were present, only 31% responded. The effect isn't marginal. It's dramatic.
+
+The mechanism works through several channels simultaneously. First, there's the literal division of responsibility — with ten people present, you feel one-tenth as obligated as you would alone. Second, there's pluralistic ignorance: everyone looks to everyone else for cues about whether this is actually an emergency, and everyone's hesitation signals that maybe it isn't. Third, there's evaluation apprehension — the fear of looking foolish if you've misread the situation. These three forces combine to produce paralysis disguised as delegation.
+
+You see it everywhere once you recognize the pattern. In corporate meetings where everyone assumes someone else will implement the good idea. In neighborhoods where trash accumulates because everyone thinks someone else will report it. In families where the difficult conversation never happens because everyone hopes someone else will initiate it. The problem scales from the personal to the institutional. The more distributed the potential response, the less likely any response becomes.
+
+The damage compounds in layers. There's the immediate harm — the emergency that goes unaddressed, the problem that festers. But there's also the secondary corruption of moral intuition. People who would intervene alone become passive in groups, then construct post-hoc rationalizations for their inaction. "It wasn't my place." "They probably had it handled." "I didn't want to interfere." The failure creates its own justification, and soon the capacity for direct response atrophies.
+
+Organizations are particularly vulnerable. When everyone is responsible for customer service, no one is. When a project has fifteen stakeholders, critical tasks slip through gaps. The paradox is that adding people can decrease effectiveness. More surveillance cameras mean more footage of crimes in progress — and more incidents where security personnel assume someone else is monitoring that screen. NASA's organizational structure before the Columbia disaster diffused responsibility for safety concerns across so many departments that critical warnings never became anyone's urgent problem.
+
+You can recognize diffusion of responsibility by its distinctive cognitive signature: the assumption that action is happening elsewhere. Someone else will call. Someone else will fix it. Someone else will speak up. This assumption feels reasonable — there are other people, after all — but it's the same assumption everyone else is making. The result is a room full of people, each one certain that the situation is being handled by the collective, while the collective takes no action.
+
+The warning signs appear in language. "They should do something about that." Not "I should" — they. The passive voice: "Something should be done." Not who should do it. The rhetorical question: "Isn't someone going to...?" These phrasings reveal the underlying computation: responsibility has been successfully distributed to the point of evaporation.
+
+In smaller groups, you might notice the eyes. In a meeting when a difficult question is asked, watch how quickly people look away from the questioner, breaking eye contact, studying their notes. Each person is creating plausible deniability — I didn't see, I wasn't sure if they were addressing me. This is diffusion in real time: the collective manufacture of ambiguity to avoid individual obligation.
+
+The irony is that diffusion of responsibility is strongest precisely when it's most dangerous — in genuine emergencies. A person collapses in a crowded station, and the crowd flows around them because everyone assumes someone closer will help. The more urgent the situation, the more witnesses it attracts, and the more witnesses, the less any individual feels compelled to act. The mechanism that should trigger collective response produces collective inertia.
+
+Research on helping behavior shows you can interrupt the pattern with a single intervention: direct assignment. Point to a specific person and say, "You — call 911." The spell breaks. Suddenly there's no ambiguity, no distributed burden. One person has been selected. Studies show this dramatically increases response rates. The diffusion collapses back into responsibility.
+
+But most situations don't come with someone to point and assign. Most failures of collective action happen in the absence of clear designation, when everyone is equally positioned and no one wants to presume authority. The work falls through the gap between us — not because we don't care, but because we've successfully convinced ourselves that caring is someone else's job.
+
+---
+
+*Part of Failures at alexandria.press*

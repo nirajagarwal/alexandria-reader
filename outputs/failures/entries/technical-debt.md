@@ -1,0 +1,32 @@
+# Technical Debt
+
+Ward Cunningham coined the term in 1992 to describe a pattern he kept seeing in software development. Teams would make quick design choices to ship features faster, knowing the code wasn't quite right. Like financial debt, these shortcuts accumulated interest — every future change became harder, slower, more expensive. The metaphor caught on because it named something everyone had experienced: the growing weight of decisions that seemed small at the time.
+
+Technical debt is the cumulative cost of choosing expedient solutions over sound ones. It's not just bad code. It's every shortcut, workaround, and "we'll fix it later" that gets embedded in systems. Every time you patch instead of repair, every time you add a special case instead of addressing the underlying design, you're taking on debt. The code works today. But tomorrow's changes will cost more. And the day after that, more still.
+
+What makes technical debt insidious is that it starts rationally. You're facing a deadline. A customer needs this feature. A competitor just launched something similar. The choice to ship imperfect code isn't necessarily wrong — sometimes speed matters more than elegance. The failure isn't the initial shortcut. It's what happens next: the shortcut becomes permanent, the patch becomes load-bearing, the workaround gets forgotten.
+
+Engineers at Netscape understood this too late. In 1998, facing competition from Internet Explorer, they made a decision that would become legend in software circles: they would rewrite their browser from scratch. The existing codebase was a mess — years of quick fixes, patches on patches, features bolted onto architecture that was never designed for them. Starting over seemed logical. Three years later, they released Netscape 6. It was late, buggy, and missing features that competitors had added while they were rewriting. Microsoft owned the browser market. Mozilla's Joe Hewitt later called the rewrite decision "the single worst strategic mistake that any software company has ever made."
+
+The technical debt had become so expensive that paying it down seemed impossible. But the alternative — abandoning everything and starting over — was worse. This is the trap: you can't afford to fix it, but you can't afford not to.
+
+The psychological vulnerability is temporal. Humans are notoriously bad at weighing present costs against future ones. The deadline is today. The pain of technical debt is tomorrow, or next quarter, or next year. By the time that pain arrives, the person who made the shortcut may have moved to a different team or company. The code they left behind becomes someone else's problem. Economists call this time inconsistency — we consistently prefer immediate rewards over larger future ones.
+
+Organizations compound this through incentive structures. Teams are rewarded for shipping features, not for code quality. Managers measure velocity, not maintainability. Technical debt is invisible on roadmaps, silent in sprint planning, absent from quarterly reviews. Until suddenly it isn't. The system becomes so brittle that simple changes take weeks. New features require rewrites of old ones. Engineers spend more time debugging than building.
+
+The damage accumulates in layers. First, development slows. Changes that should take hours take days. Second, quality deteriorates. Each new feature introduces bugs in unexpected places because no one fully understands how the system works anymore. Third, morale collapses. Engineers get demoralized working in a codebase they know is broken but lack permission to fix. Fourth, the best people leave. They don't want to spend their careers maintaining other people's shortcuts.
+
+The financial cost is harder to measure but enormous. A study by the Consortium for IT Software Quality estimated technical debt costs the US economy $2.84 trillion annually. That's not the cost of bad code — it's the cost of maintaining it, working around it, and the opportunities lost because systems are too rigid to adapt.
+
+You recognize technical debt by what's hard. Changes that should be simple aren't. New features require touching dozens of files. Tests fail mysteriously. No one can explain why certain code works, just that it does. Documentation doesn't match reality. The phrase "don't touch that" comes up in code reviews. Engineers start sentences with "historically..." and end them with "so we can't change it." Release cycles stretch because integration always surfaces new problems.
+
+In organizations, you see it in planning. Estimates keep being wrong because work keeps being harder than expected. Teams ask for "refactoring sprints" that never get approved. The answer to "can we do this?" becomes "technically yes, but..." The gap between what the system is and what it needs to be widens until bridging it seems impossible.
+
+The cruelty of technical debt is that it's often invisible to the people making the decisions about it. Product managers see features shipping. Executives see roadmaps being met. Customers see new functionality. The engineers who understand the cost struggle to articulate it to people who don't live in the code. "The architecture is wrong" doesn't translate into business metrics. By the time the debt becomes visible — when development grinds to a halt, when the system can't scale, when a competitor ships faster — it's often too late to pay it down incrementally. The Netscape choice becomes the only choice: rewrite or die.
+
+But rewriting rarely works. Joel Spolsky, co-founder of Stack Overflow, wrote that old code is used code. It's been tested by reality. It contains fixes for bugs you've forgotten about, edge cases you never documented, customer workflows you didn't know existed. When you throw it away, you throw away years of learning. The new system will be cleaner, but it will also be naïve. It will have to relearn everything the old system knew.
+
+The real failure isn't taking on technical debt. Debt is sometimes necessary, sometimes wise. The failure is not treating it like debt — not tracking it, not budgeting to pay it down, letting it compound until it becomes unpayable. The failure is organizational: building incentive systems that encourage shortcuts but don't account for their cost. The failure is temporal: optimizing for today's deadline at tomorrow's expense, again and again, until tomorrow arrives and the bill comes due.
+
+---
+*Part of Failures at alexandria.press*
