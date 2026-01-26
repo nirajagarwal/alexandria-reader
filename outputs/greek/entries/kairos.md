@@ -1,0 +1,19 @@
+# Kairos (Καιρός)
+*The Appointed Time*
+
+The ancient Greeks distinguished between two kinds of time. *Chronos* measured duration — the steady march of seconds, minutes, hours. But *kairos* signified something different: the critical moment, the opportune time, the season pregnant with possibility. In classical rhetoric, *kairos* meant the perfect moment to deliver a speech or make an argument. In archery, it was the instant when conditions aligned for the perfect shot. The word carried weight and urgency — miss the *kairos*, and the opportunity vanishes forever.
+
+When New Testament writers adopted *kairos*, they infused it with divine purpose. The appointed time became God's appointed time. Mark opens his Gospel with Jesus proclaiming that the *kairos* has been fulfilled — the kingdom of God has arrived. This isn't merely a point on the calendar; it's the convergence of prophecy, preparation, and divine timing. Paul writes to the Galatians that when the fullness of time came, God sent his Son. The *kairos* marks moments when heaven intersects history, when the eternal breaks into the temporal with decisive action.
+
+Throughout the New Testament, *kairos* appears in contexts demanding recognition and response. Jesus rebukes the Pharisees for reading weather patterns but missing the signs of their *kairos* — they could predict rain but couldn't discern they were standing in the presence of the Messiah. Paul urges the Ephesians to make the most of the time, literally to "buy up the *kairos*," because the days are evil. Peter declares that the *kairos* for judgment has come, beginning with the household of God. These are moments of crisis in the original Greek sense: decision points that separate one reality from another.
+
+The apostles understood *kairos* as both gift and demand. Paul writes to the Corinthians that now is the acceptable time, now is the day of salvation — not someday, not eventually, but in this present *kairos*. The author of Hebrews warns against hardening hearts "today" while it is still called today, pressing the urgency of the moment. Luke records Jesus weeping over Jerusalem because the city did not recognize the *kairos* of its visitation. These aren't gentle reminders but urgent calls to attention. The appointed time arrives, full of grace and possibility, but it doesn't wait indefinitely.
+
+The theology of *kairos* carries profound implications for how believers engage both God and the world. It demands a posture of attentiveness — eyes open to recognize divine opportunity in ordinary moments. The woman who touched Jesus's garment, Zacchaeus climbing his sycamore tree, the thief on the cross — all seized their *kairos*, that narrow window when heaven came within reach. The concept also shapes Christian ethics and mission. Paul's instruction to do good to all people, "especially as we have *kairos*" toward those of the household of faith, frames generosity not as random kindness but strategic response to providential opportunity.
+
+Modern psychology has rediscovered what ancient wisdom knew: timing shapes transformation. Research on "windows of tolerance" shows that humans learn best in moments of optimal arousal — not too calm, not too stressed. Developmental psychologists identify "critical periods" when neural pathways must form or forever remain diminished. Even physics acknowledges time as more than uniform duration — relativity reveals how time bends, slows, accelerates depending on velocity and gravity. The universe itself seems calibrated for *kairos*, those moments when systems reach tipping points and small inputs trigger massive changes. The biblical writers intuited what science now confirms: some moments matter more than others. Miss your *kairos*, and you may miss your destiny.
+
+**Key Scriptures:** Mark 1:15, Galatians 4:4, Luke 19:44, 2 Corinthians 6:2, Ephesians 5:16, 1 Peter 4:17, Hebrews 3:7-8
+
+---
+*Part of Greek Concepts at alexandria.press*
