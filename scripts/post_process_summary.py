@@ -2,6 +2,7 @@
 import os
 import sys
 import glob
+import json
 import concurrent.futures
 from dotenv import load_dotenv
 from google import genai
@@ -41,37 +42,107 @@ def generate_summary(collection_name):
     # validate collection path
     base_path = "outputs"
     entries_path = os.path.join(base_path, collection_name, "entries")
+    book_json_path = os.path.join(base_path, collection_name, "book.json")
     output_file = os.path.join(base_path, collection_name, "summary.md")
 
     if not os.path.exists(entries_path):
         print(f"Error: Collection '{collection_name}' not found at {entries_path}")
         return
 
-    # Read all markdown files
-    md_files = sorted(glob.glob(os.path.join(entries_path, "*.md")))
-    if not md_files:
-        print(f"No markdown files found in {entries_path}")
+    if not os.path.exists(book_json_path):
+        print(f"Error: book.json not found at {book_json_path}")
         return
 
-    print(f"Found {len(md_files)} files in {collection_name}. Processing in parallel...")
+    # Load book.json
+    try:
+        with open(book_json_path, "r", encoding="utf-8") as f:
+            book_data = json.load(f)
+    except Exception as e:
+        print(f"Error reading {book_json_path}: {e}")
+        return
 
-    summaries = []
+    book_entries = book_data.get("entries", [])
+    if not book_entries:
+        print("No entries found in book.json")
+        return
+
+    # Map slug to file path and preserve order locally
+    # We want to process only existing files that match the book.json entries
+    ordered_files = []
+    entry_metadata_map = {} # Map file_path -> entry_data
+
+    for entry in book_entries:
+        slug = entry.get("slug")
+        if not slug:
+            continue
+        
+        file_path = os.path.join(entries_path, f"{slug}.md")
+        if os.path.exists(file_path):
+            ordered_files.append(file_path)
+            entry_metadata_map[file_path] = entry
+        else:
+            print(f"Warning: File not found for slug '{slug}' at {file_path}")
+
+    if not ordered_files:
+        print(f"No matching markdown files found in {entries_path}")
+        return
+
+    print(f"Found {len(ordered_files)} files in {collection_name}. Processing in parallel...")
+
     # Process in parallel with 10 workers
+    summaries_map = {}
     with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
-        # Submit all tasks matches the order of md_files?
-        # executor.map returns results in order
-        results = list(executor.map(process_entry, md_files))
-    
-    # Filter out None results
-    valid_summaries = [r for r in results if r is not None]
+        # Submit all tasks
+        future_to_file = {executor.submit(process_entry, fp): fp for fp in ordered_files}
+        
+        for future in concurrent.futures.as_completed(future_to_file):
+            file_path = future_to_file[future]
+            try:
+                result = future.result()
+                if result:
+                    summaries_map[file_path] = result
+            except Exception as e:
+                print(f"Exception for {file_path}: {e}")
 
-    if not valid_summaries:
+    # Assemble content in correct order
+    final_parts = []
+    
+    # Add Book Title and Header
+    book_title = book_data.get("title", collection_name)
+    book_descriptor = book_data.get("descriptor", "")
+    
+    header = f"# {book_title}\n"
+    if book_descriptor:
+        header += f"*{book_descriptor}*\n"
+    final_parts.append(header)
+
+    generated_count = 0
+    for file_path in ordered_files:
+        summary_text = summaries_map.get(file_path)
+        if not summary_text:
+            continue
+            
+        entry_data = entry_metadata_map.get(file_path)
+        name = entry_data.get("name", "Unknown")
+        descriptor = entry_data.get("descriptor", "")
+        
+        entry_section = f"## {name}\n"
+        if descriptor:
+            entry_section += f"*{descriptor}*\n\n"
+        else:
+            entry_section += "\n"
+            
+        entry_section += summary_text
+        final_parts.append(entry_section)
+        generated_count += 1
+
+    if generated_count == 0:
         print("No summaries generated.")
         return
 
-    print(f"Generated {len(valid_summaries)} summaries. concatenating...")
+    print(f"Generated {generated_count} summaries. Concatenating...")
     
-    combined_content = "\n\n---\n\n".join(valid_summaries)
+    combined_content = "\n\n---\n\n".join(final_parts)
     
     with open(output_file, "w", encoding="utf-8") as f:
         f.write(combined_content)
@@ -84,7 +155,4 @@ if __name__ == "__main__":
         sys.exit(1)
     
     collection = sys.argv[1]
-    # Allow user to specify model via env var or just modify script? 
-    # User said "changed model to: gemini-3-flash-preview".
-    # I'll hardcode it in process_entry as requested.
     generate_summary(collection)
