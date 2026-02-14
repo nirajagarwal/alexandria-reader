@@ -1,0 +1,826 @@
+{
+  "book_id": "thinkers",
+  "title": "Thinkers",
+  "descriptor": "Ideas and Their Legacy",
+  "config": {
+    "quality_model": "anthropic/claude-sonnet-4.5",
+    "embedding_model": "google/text-embedding-005",
+    "similarity_threshold": 0.85
+  },
+  "stats": {
+    "total_entries": 80,
+    "mean_score": 8.34,
+    "median_score": 8.0,
+    "min_score": 8,
+    "max_score": 9,
+    "similar_pairs_found": 0,
+    "entries_in_clusters": 0,
+    "total_tokens": 113750,
+    "avg_tokens_per_entry": 1422,
+    "total_time_seconds": 30.58,
+    "avg_time_per_entry": 0.38
+  },
+  "ranked_entries": [
+    {
+      "order": 7,
+      "slug": "spinoza",
+      "name": "Baruch Spinoza",
+      "section": "Metaphysics",
+      "score": 9,
+      "rationale": "Exceptional clarity in rendering a notoriously difficult philosopher, with the lens-grinding metaphor and biographical details creating genuine insight into how Spinoza's life and method intertwined, while the Limits section honestly confronts rather than glosses over the system's costs.",
+      "tokens": 1329,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 10,
+      "slug": "whitehead",
+      "name": "Alfred North Whitehead",
+      "section": "Metaphysics",
+      "score": 9,
+      "rationale": "Exceptional clarity in rendering an infamously difficult philosopher—the entry transforms Whitehead's opacity into vivid, concrete understanding while the 'Moment' section beautifully embodies the philosophy it describes, making this far more than a Wikipedia summary.",
+      "tokens": 1333,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 6,
+      "slug": "plotinus",
+      "name": "Plotinus",
+      "section": "Metaphysics",
+      "score": 9,
+      "rationale": "This entry transforms a potentially abstract metaphysical system into something urgent and human, with the portrait anecdote and deathbed scene providing haunting embodiment of the philosophy's central tension, while the writing clarifies complex ideas without simplification and reveals why Plotinus matters beyond historical influence.",
+      "tokens": 1462,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 2,
+      "slug": "heraclitus",
+      "name": "Heraclitus",
+      "section": "Metaphysics",
+      "score": 9,
+      "rationale": "This entry transforms a potentially abstract ancient philosopher into a vivid, intellectually substantial piece that reveals why Heraclitus matters beyond Wikipedia facts—the 'Problem/Idea/Limits' structure gives genuine philosophical insight, the cow dung anecdote is memorable without being gratuitous, and the writing makes 2,500-year-old ideas feel urgent and relevant to understanding process over substance.",
+      "tokens": 1316,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 19,
+      "slug": "kuhn",
+      "name": "Thomas Kuhn",
+      "section": "Epistemology",
+      "score": 9,
+      "rationale": "Exceptional clarity and structure that transforms a complex philosophical argument into vivid narrative, with the 1947 Aristotle anecdote providing exactly the kind of experiential insight that makes abstract ideas click—this goes well beyond Wikipedia to show *why* Kuhn matters.",
+      "tokens": 1497,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 26,
+      "slug": "marcus-aurelius",
+      "name": "Marcus Aurelius",
+      "section": "Ethics",
+      "score": 9,
+      "rationale": "Exceptional entry that transcends Wikipedia summary through its unflinching examination of Stoicism's coldness, the tension between Marcus's philosophy and his failures (Commodus), and prose that enacts the very clarity it describes—this is both intellectual history and a meditation on power's loneliness.",
+      "tokens": 1328,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 25,
+      "slug": "epictetus",
+      "name": "Epictetus",
+      "section": "Ethics",
+      "score": 9,
+      "rationale": "Exceptional entry that transforms a potentially dry Stoic summary into something visceral and honest—the broken leg anecdote, the unflinching examination of limits (victim-blaming, incomplete psychology), and the precise articulation of the dichotomy's practical power make this both philosophically substantive and deeply readable.",
+      "tokens": 1491,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 30,
+      "slug": "nietzsche",
+      "name": "Friedrich Nietzsche",
+      "section": "Ethics",
+      "score": 9,
+      "rationale": "Exceptional entry that goes far beyond Wikipedia by weaving biographical tragedy with philosophical substance, offering genuinely illuminating framings (Christianity as 'slave revolt,' the Enlightenment keeping God's morality), and earning its dramatic moments through intellectual rigor rather than mere storytelling.",
+      "tokens": 1485,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 28,
+      "slug": "bentham",
+      "name": "Jeremy Bentham",
+      "section": "Ethics",
+      "score": 9,
+      "rationale": "Exceptional entry that transforms Bentham from a dry philosophical concept into a vivid, complex figure through concrete details (the auto-icon, the Panopticon's dark irony), sharp prose that captures both his radical clarity and his dangerous reductionism, and quotes that land with genuine force—this earns its place by making utilitarianism feel urgent and strange rather than merely familiar.",
+      "tokens": 1467,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 29,
+      "slug": "mill",
+      "name": "John Stuart Mill",
+      "section": "Ethics",
+      "score": 9,
+      "rationale": "Exceptional entry that transforms Mill from a Wikipedia summary into a living tension—the childhood breakdown that reshaped his philosophy becomes the interpretive key that makes his distinction between higher and lower pleasures feel earned rather than elitist, while the honest reckoning with his imperialism prevents hagiography.",
+      "tokens": 1391,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 32,
+      "slug": "murdoch",
+      "name": "Iris Murdoch",
+      "section": "Ethics",
+      "score": 9,
+      "rationale": "This entry transforms a philosopher often reduced to 'attention matters' into a vivid intellectual portrait that connects her ideas to mid-century philosophical debates and culminates in a devastating biographical moment that illuminates rather than merely decorates her thought.",
+      "tokens": 1429,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 31,
+      "slug": "levinas",
+      "name": "Emmanuel Levinas",
+      "section": "Ethics",
+      "score": 9,
+      "rationale": "This entry transforms a notoriously difficult philosopher into something gripping and clear, using the Bobby anecdote as an emotional anchor while honestly confronting both the radical power and practical impossibility of Levinas's ethics — it earns its place by making you feel the stakes rather than just explaining the system.",
+      "tokens": 1532,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 33,
+      "slug": "thucydides",
+      "name": "Thucydides",
+      "section": "Politics",
+      "score": 9,
+      "rationale": "Exceptional entry that transcends Wikipedia summary through its penetrating analysis of Thucydides's blind spots alongside his insights, the poignant biographical detail of exile-as-methodology, and the devastating observation that 'he chronicled Athens's self-destruction with such cold precision that he missed what made Athens worth saving.'",
+      "tokens": 1397,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 34,
+      "slug": "han-fei",
+      "name": "Han Fei",
+      "section": "Politics",
+      "score": 9,
+      "rationale": "Exceptional synthesis that transforms a potentially dry administrative theorist into a tragic figure whose life embodied his philosophy's central paradox, with prose that makes 2,300-year-old statecraft feel urgently relevant to understanding institutional design versus human nature.",
+      "tokens": 1512,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 39,
+      "slug": "wollstonecraft",
+      "name": "Mary Wollstonecraft",
+      "section": "Politics",
+      "score": 9,
+      "rationale": "Exceptional entry that transcends biographical summary through its structural clarity, devastating biographical irony (her husband's tribute destroying her reputation, her daughter writing Frankenstein), and the sharp insight that she was condemned for being what she was deliberately made to be—moving beyond Wikipedia to reveal how power manufactures its own justifications.",
+      "tokens": 1342,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 36,
+      "slug": "hobbes",
+      "name": "Thomas Hobbes",
+      "section": "Politics",
+      "score": 9,
+      "rationale": "Exceptional clarity and structure that goes beyond summary to reveal why Hobbes matters—the entry captures both the radical innovation (grounding legitimacy in fear rather than divine right) and the tragic irony (his theory legitimizes what it meant to constrain), with the biographical moment perfectly illustrating his own theory in action.",
+      "tokens": 1430,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 43,
+      "slug": "fanon",
+      "name": "Frantz Fanon",
+      "section": "Politics",
+      "score": 9,
+      "rationale": "Exceptional entry that moves beyond biographical summary to reveal the structural logic of Fanon's thought—the psychiatric precision applied to colonial violence, the psychological necessity of decolonization—with the resignation moment providing devastating concrete illustration of theory meeting practice.",
+      "tokens": 1455,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 41,
+      "slug": "marx",
+      "name": "Karl Marx",
+      "section": "Politics",
+      "score": 9,
+      "rationale": "Exceptional entry that goes far beyond Wikipedia by weaving biographical tragedy with conceptual clarity, using vivid language ('vampire-like,' 'grinding poverty') to make abstract economic theory visceral, and honestly confronting the gulags-versus-theory problem that lesser treatments avoid.",
+      "tokens": 1311,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 50,
+      "slug": "rachel-carson",
+      "name": "Rachel Carson",
+      "section": "Nature",
+      "score": 9,
+      "rationale": "Exceptional entry that transcends biography to reveal Carson's intellectual achievement—reframing environmental damage as systemic rather than incidental—while honestly examining her blind spots regarding economic structures and trade-offs, all rendered with precision and narrative force.",
+      "tokens": 1547,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 55,
+      "slug": "al-ghazali",
+      "name": "Al-Ghazālī",
+      "section": "Meaning",
+      "score": 9,
+      "rationale": "This entry brilliantly captures Al-Ghazālī's intellectual drama—the crisis of certainty, the delimitation of reason's authority, and the integration of law with mysticism—through vivid narrative and philosophical precision that goes far beyond summary to reveal why his thought still matters.",
+      "tokens": 1582,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 57,
+      "slug": "meister-eckhart",
+      "name": "Meister Eckhart",
+      "section": "Meaning",
+      "score": 9,
+      "rationale": "This entry transforms a potentially obscure medieval mystic into a living philosophical problem through precise theological framing, vivid paradoxes, and a courageous 'Moment' that dramatizes the stakes of his thought—it earns its place by making Eckhart's radical ideas feel urgent rather than historical.",
+      "tokens": 1612,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 60,
+      "slug": "dostoevsky",
+      "name": "Fyodor Dostoevsky",
+      "section": "Meaning",
+      "score": 9,
+      "rationale": "This entry transforms Dostoevsky from a literary figure into a living philosophical problem, with the mock execution detail and 'ideas have consequences in blood' framing creating visceral urgency that makes 19th-century Russian metaphysics feel immediately relevant to anyone wrestling with meaning in a post-religious age.",
+      "tokens": 1522,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 61,
+      "slug": "simone-weil",
+      "name": "Simone Weil",
+      "section": "Meaning",
+      "score": 9,
+      "rationale": "This entry transforms a potentially hagiographic subject into something genuinely illuminating by holding in tension Weil's radical insights about attention with unflinching examination of her self-destructive contradictions, particularly in 'The Limits' and 'A Moment' sections that reveal how her philosophy both emerged from and was compromised by her pathology.",
+      "tokens": 1465,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 68,
+      "slug": "walter-benjamin",
+      "name": "Walter Benjamin",
+      "section": "Aesthetics",
+      "score": 9,
+      "rationale": "Exceptional entry that moves beyond summary to capture Benjamin's paradoxical method through structure itself—fragmentary yet coherent, mixing high theory with the visceral tragedy of Portbou, making his ideas feel urgent rather than archival.",
+      "tokens": 1305,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 64,
+      "slug": "buber",
+      "name": "Martin Buber",
+      "section": "Meaning",
+      "score": 9,
+      "rationale": "Exceptional entry that transforms a potentially abstract philosophical concept into vivid, necessary reading through the devastating 1914 anecdote, precise distinctions between I-It and I-Thou that go far beyond Wikipedia, and honest engagement with Buber's limits that actually strengthens rather than undermines the case for his importance.",
+      "tokens": 1510,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 71,
+      "slug": "zeami",
+      "name": "Zeami Motokiyo",
+      "section": "Aesthetics",
+      "score": 9,
+      "rationale": "Exceptional entry that transforms a potentially obscure figure into a profound meditation on presence, impermanence, and aesthetic philosophy while maintaining narrative momentum and avoiding hagiography through honest engagement with his elitism and misogyny.",
+      "tokens": 1439,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 79,
+      "slug": "polanyi",
+      "name": "Karl Polanyi",
+      "section": "Economics",
+      "score": 9,
+      "rationale": "Exceptional synthesis that goes far beyond Wikipedia by connecting Polanyi's biography to his ideas' emotional urgency, explaining *why* his critique differs from Marx's, and honestly confronting his limitations while showing why his warning about fictitious commodities remains urgent—the 'double movement' concept is rendered clearly enough to be immediately useful.",
+      "tokens": 1484,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 5,
+      "slug": "nagarjuna",
+      "name": "Nāgārjuna",
+      "section": "Metaphysics",
+      "score": 8,
+      "rationale": "Exceptional clarity in explaining a notoriously difficult philosopher, with the biographical moment providing memorable illustration and the Limits section honestly engaging with real philosophical problems rather than offering hagiography.",
+      "tokens": 1461,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 4,
+      "slug": "aristotle",
+      "name": "Aristotle",
+      "section": "Metaphysics",
+      "score": 8,
+      "rationale": "Substantive and well-structured, with the form/matter insight clearly explained and 'The Limits' section providing necessary critical distance, though the biographical framing is competent rather than revelatory.",
+      "tokens": 1314,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 1,
+      "slug": "parmenides",
+      "name": "Parmenides",
+      "section": "Metaphysics",
+      "score": 8,
+      "rationale": "This entry transforms a notoriously abstract philosopher into a compelling intellectual drama—the man who trusted logic over his own eyes—with sharp writing, genuine philosophical substance beyond Wikipedia, and a structure that makes Parmenides feel both alien and essential to understanding Western thought.",
+      "tokens": 1316,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 3,
+      "slug": "plato",
+      "name": "Plato",
+      "section": "Metaphysics",
+      "score": 8,
+      "rationale": "Distinctive structure that moves beyond Wikipedia by centering on the Socrates execution as catalyst, connecting abstract theory to political failure through the Sicily episode, and acknowledging the authoritarian darkness in Plato's vision without dismissing his influence—substantive, engaging, and earns its place.",
+      "tokens": 1396,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 9,
+      "slug": "heidegger",
+      "name": "Martin Heidegger",
+      "section": "Metaphysics",
+      "score": 8,
+      "rationale": "Substantive and unflinching in confronting both Heidegger's philosophical depth and his moral catastrophe, with the 'Moment' section and final quote providing genuinely arresting content that transcends Wikipedia-level summary, though the prose occasionally defaults to textbook clarity over memorable insight.",
+      "tokens": 1531,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 8,
+      "slug": "leibniz",
+      "name": "Gottfried Wilhelm Leibniz",
+      "section": "Metaphysics",
+      "score": 8,
+      "rationale": "Distinctive and substantive entry that goes beyond Wikipedia by connecting Leibniz's metaphysics to his historical moment, using the funeral scene to humanize the thinker, and explaining monadology's purpose rather than just describing it—though the 'best possible worlds' treatment could probe deeper into why the idea had philosophical force before becoming a punchline.",
+      "tokens": 1459,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 12,
+      "slug": "locke",
+      "name": "John Locke",
+      "section": "Epistemology",
+      "score": 8,
+      "rationale": "Substantive and well-structured, with the 'Moment' section providing distinctive narrative flair and 'The Limits' offering critical depth that transcends Wikipedia-level summary, though it doesn't quite reach the revelatory insight of a 9-10.",
+      "tokens": 1441,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 14,
+      "slug": "kant",
+      "name": "Immanuel Kant",
+      "section": "Epistemology",
+      "score": 8,
+      "rationale": "Substantive and distinctive, with the 'Copernican revolution' clearly explained, meaningful engagement with limits including his racism, and the Rousseau anecdote providing memorable texture that elevates this beyond a competent summary into something worth reading.",
+      "tokens": 1411,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 11,
+      "slug": "descartes",
+      "name": "René Descartes",
+      "section": "Epistemology",
+      "score": 8,
+      "rationale": "Goes beyond Wikipedia with vivid framing ('both the promise and the prison'), sharp critical analysis of the cogito's circularity, and the striking detail about dying while working on a ballet—though the structure occasionally feels like a template applied competently rather than transcended.",
+      "tokens": 1200,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 15,
+      "slug": "wittgenstein",
+      "name": "Ludwig Wittgenstein",
+      "section": "Epistemology",
+      "score": 8,
+      "rationale": "Distinctive structure that captures both philosophical revolutions and the man's tortured relationship with thinking itself, though the 'Limits' section could push harder against the therapeutic turn rather than listing standard objections.",
+      "tokens": 1244,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 18,
+      "slug": "popper",
+      "name": "Karl Popper",
+      "section": "Epistemology",
+      "score": 8,
+      "rationale": "Distinctive and substantive, connecting falsification to political philosophy through vivid historical context and honest critique, though the core ideas risk familiarity to philosophy readers.",
+      "tokens": 1359,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 13,
+      "slug": "hume",
+      "name": "David Hume",
+      "section": "Epistemology",
+      "score": 8,
+      "rationale": "Distinctive voice and structure that makes Hume's radical skepticism visceral rather than academic, with the 'Moment' section providing humanizing texture that elevates it beyond a philosophy summary, though the 'Limits' section could push harder on the genuine philosophical problems rather than somewhat standard objections.",
+      "tokens": 1466,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 16,
+      "slug": "william-james",
+      "name": "William James",
+      "section": "Epistemology",
+      "score": 8,
+      "rationale": "Distinctive voice and structure that makes pragmatism visceral through the earthquake moment, though the 'Limits' section feels slightly obligatory rather than deeply probing the contradictions in James's thought.",
+      "tokens": 1331,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 17,
+      "slug": "husserl",
+      "name": "Edmund Husserl",
+      "section": "Epistemology",
+      "score": 8,
+      "rationale": "Substantive and distinctive, moving beyond Wikipedia through its careful unpacking of intentionality and synthesis, the poignant biographical moment that contextualizes Husserl's crisis writings, and honest engagement with phenomenology's limits—though the writing occasionally slips into philosophical jargon that could alienate general readers.",
+      "tokens": 1445,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 20,
+      "slug": "zhuangzi",
+      "name": "Zhuangzi",
+      "section": "Epistemology",
+      "score": 8,
+      "rationale": "Distinctive voice and structure that goes beyond summary—the 'tyranny of usefulness' framing is sharp, the tortoise anecdote perfectly chosen, and the Limits section genuinely wrestles with problems rather than gesturing at them—though the final quoted passages feel slightly generic compared to the stronger analytical sections.",
+      "tokens": 1438,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 27,
+      "slug": "thomas-aquinas",
+      "name": "Thomas Aquinas",
+      "section": "Ethics",
+      "score": 8,
+      "rationale": "Substantive and distinctive, particularly the 'Moment' section which transforms a standard intellectual biography into something memorable, though the philosophical exposition occasionally slips into textbook clarity at the expense of deeper surprise.",
+      "tokens": 1340,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 23,
+      "slug": "mencius",
+      "name": "Mencius",
+      "section": "Ethics",
+      "score": 8,
+      "rationale": "This entry earns its place with distinctive substance—particularly the insight that Mencius transformed Confucianism from prescriptive ritual into a theory of human nature, and the sharp observation that his optimism about moral cultivation left Confucian thought vulnerable to authoritarianism disguised as benevolence—though it occasionally veers toward textbook clarity rather than revelatory prose.",
+      "tokens": 1731,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 22,
+      "slug": "confucius",
+      "name": "Confucius",
+      "section": "Ethics",
+      "score": 8,
+      "rationale": "Distinctive structure that moves beyond Wikipedia summary with the 'Problem-Idea-Limits' framework, concrete historical grounding, and the poignant 'dispossessed dog' moment that humanizes the philosophy, though the Limits section could push harder against the reverent tone established earlier.",
+      "tokens": 1396,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 24,
+      "slug": "epicurus",
+      "name": "Epicurus",
+      "section": "Ethics",
+      "score": 8,
+      "rationale": "Distinctive structure that moves beyond Wikipedia summary with the deathbed moment providing genuine insight into the gap between doctrine and lived experience, though the Limits section occasionally veers toward standard philosophical criticism rather than revealing deeper tensions.",
+      "tokens": 1463,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 21,
+      "slug": "dignaga",
+      "name": "Dignāga",
+      "section": "Epistemology",
+      "score": 8,
+      "rationale": "This entry goes well beyond Wikipedia-level summary by clearly articulating Dignāga's epistemological gap (what we know we can't say, what we say we don't know), presenting his ideas as a living philosophical problem rather than historical artifact, and using the debate anecdote to dramatize the radical implications of his position—though it occasionally veers toward textbook clarity at the expense of deeper surprise.",
+      "tokens": 1464,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 35,
+      "slug": "machiavelli",
+      "name": "Niccolò Machiavelli",
+      "section": "Politics",
+      "score": 8,
+      "rationale": "Distinctive voice and structure that goes beyond Wikipedia by framing Machiavelli's realism as a response to specific historical collapse, offering genuine critique of his limits, and landing a perfect ironic biographical moment—publishable and engaging throughout.",
+      "tokens": 1393,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 37,
+      "slug": "rousseau",
+      "name": "Jean-Jacques Rousseau",
+      "section": "Politics",
+      "score": 8,
+      "rationale": "Distinctive voice and structure that goes beyond Wikipedia by foregrounding the central paradox, acknowledging dangerous implications without dismissing influence, and using the biographical moment to illuminate rather than merely decorate the ideas.",
+      "tokens": 1462,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 38,
+      "slug": "burke",
+      "name": "Edmund Burke",
+      "section": "Politics",
+      "score": 8,
+      "rationale": "Substantive and distinctive, with the Hastings moment providing genuine insight into Burke's contradictions and the 'Problem' section framing his thought as a living tension rather than settled doctrine, though the writing occasionally slips into familiar conservative-thought summary.",
+      "tokens": 1546,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 40,
+      "slug": "tocqueville",
+      "name": "Alexis de Tocqueville",
+      "section": "Politics",
+      "score": 8,
+      "rationale": "Distinctive framing of democracy as social condition rather than political system, with concrete insights (soft despotism, tyranny of majority) that transcend Wikipedia summary, though the steamboat anecdote feels slightly constructed and the limits section, while honest, doesn't fully integrate into the argument's momentum.",
+      "tokens": 1280,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 44,
+      "slug": "rawls",
+      "name": "John Rawls",
+      "section": "Politics",
+      "score": 8,
+      "rationale": "Substantive and distinctive entry that goes beyond Wikipedia by framing Rawls's contribution as solving a specific post-totalitarian legitimacy crisis, with the seminar anecdote and 'unfinished manuscript' detail adding human texture that makes abstract philosophy concrete and engaging.",
+      "tokens": 1453,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 42,
+      "slug": "arendt",
+      "name": "Hannah Arendt",
+      "section": "Politics",
+      "score": 8,
+      "rationale": "Substantive and distinctive, capturing Arendt's core insights with vivid specificity (the Eichmann courtroom scene, the three-part distinction of human activity) while honestly confronting her limitations—this transcends Wikipedia summary through interpretive clarity and earns its place, though it occasionally edges toward explaining rather than revealing.",
+      "tokens": 1464,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 46,
+      "slug": "newton",
+      "name": "Isaac Newton",
+      "section": "Nature",
+      "score": 8,
+      "rationale": "Solid and distinctive entry that goes beyond Wikipedia by emphasizing Newton's methodological revolution and metaphysical implications, with the plague year anecdote providing memorable engagement, though it doesn't quite reach the surprise or beauty of a 9-10.",
+      "tokens": 1492,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 48,
+      "slug": "einstein",
+      "name": "Albert Einstein",
+      "section": "Nature",
+      "score": 8,
+      "rationale": "Substantive and distinctive, with the 'Limits' section providing genuine insight into Einstein's tragic rigidity and the poignant Princeton scene elevating it beyond standard biography, though the technical explanations in 'The Idea' occasionally drift toward textbook territory.",
+      "tokens": 1353,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 49,
+      "slug": "heisenberg",
+      "name": "Werner Heisenberg",
+      "section": "Nature",
+      "score": 8,
+      "rationale": "Substantive and distinctive entry that goes beyond Wikipedia by connecting the mathematical peculiarity of non-commuting observables to epistemological limits, with the Faelled Park moment providing memorable narrative anchor, though the Nazi program discussion feels somewhat obligatory rather than integrated.",
+      "tokens": 1367,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 47,
+      "slug": "darwin",
+      "name": "Charles Darwin",
+      "section": "Nature",
+      "score": 8,
+      "rationale": "Solid and distinctive entry that goes beyond Wikipedia by framing Darwin's achievement as solving the 'purpose without a purposer' problem and including the compelling Wallace moment, though it occasionally slips into textbook summary mode rather than maintaining consistent insight throughout.",
+      "tokens": 1306,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 45,
+      "slug": "galileo",
+      "name": "Galileo Galilei",
+      "section": "Nature",
+      "score": 8,
+      "rationale": "Distinctive and substantive—it goes beyond biographical summary to illuminate Galileo's methodological revolution and its limits, with the Inquisition scene providing memorable human texture, though it occasionally veers toward familiar 'science vs. authority' framing.",
+      "tokens": 1416,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 51,
+      "slug": "gould",
+      "name": "Stephen Jay Gould",
+      "section": "Nature",
+      "score": 8,
+      "rationale": "Substantive and distinctive entry that goes beyond Wikipedia by framing Gould's ideas as responses to specific intellectual problems, connecting his personal confrontation with mortality to his philosophical commitments, and honestly engaging with the limits of his arguments rather than hagiography.",
+      "tokens": 1469,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 52,
+      "slug": "bacon",
+      "name": "Francis Bacon",
+      "section": "Nature",
+      "score": 8,
+      "rationale": "Distinctive voice and structure with the memorable death anecdote and 'idols' framework elevating it above Wikipedia, though the critique of Baconian mastery, while important, treads somewhat familiar ground in contemporary discourse.",
+      "tokens": 1329,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 53,
+      "slug": "augustine",
+      "name": "Augustine of Hippo",
+      "section": "Meaning",
+      "score": 8,
+      "rationale": "Distinctive structure that moves from personal crisis to theological innovation with vivid specificity (the garden scene, Monica's prayers, the 'not yet' prayer), though the Limits section could push harder on how these flaws shaped Western thought's blind spots for centuries.",
+      "tokens": 1181,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 58,
+      "slug": "pascal",
+      "name": "Blaise Pascal",
+      "section": "Meaning",
+      "score": 8,
+      "rationale": "Distinctive and substantive entry that goes beyond summary to capture Pascal's genuine intellectual tension—the mathematician who couldn't abandon reason even while defending faith—with the 'Memorial' moment providing memorable biographical grounding, though the Limits section occasionally feels like obligatory criticism rather than organic insight.",
+      "tokens": 1470,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 59,
+      "slug": "kierkegaard",
+      "name": "Søren Kierkegaard",
+      "section": "Meaning",
+      "score": 8,
+      "rationale": "This entry earns its place with vivid biographical details (the park moment, the deathbed refusal), clear explanation of difficult ideas (the three stages, subjective truth), and honest engagement with limitations, though it occasionally risks romanticizing Kierkegaard's isolation rather than fully interrogating it.",
+      "tokens": 1434,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 54,
+      "slug": "shankara",
+      "name": "Ādi Śaṅkara",
+      "section": "Meaning",
+      "score": 8,
+      "rationale": "Substantive and distinctive entry that goes well beyond Wikipedia by clearly articulating the philosophical problem Śaṅkara addressed, honestly engaging with the unresolved paradox of māyā's ontological status, and using the untouchable encounter to illuminate the tension between metaphysical radicalism and social conservatism—though it occasionally slips into explaining rather than revealing.",
+      "tokens": 1584,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 56,
+      "slug": "maimonides",
+      "name": "Moses Maimonides",
+      "section": "Meaning",
+      "score": 8,
+      "rationale": "Substantive and distinctive, with the 'Problem-Idea-Limits' structure effectively capturing Maimonides' intellectual tension between reason and revelation, though the 'teach a man to fish' quote is likely misattributed and the Cairo moment, while evocative, feels slightly decorative rather than essential.",
+      "tokens": 1477,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 63,
+      "slug": "frankl",
+      "name": "Viktor Frankl",
+      "section": "Meaning",
+      "score": 8,
+      "rationale": "Substantive and distinctive, moving beyond Wikipedia to explore the therapeutic framework's tensions and risks while grounding abstract ideas in the concrete moment of Frankl's dream—though the 'space between stimulus and response' quote (likely misattributed) slightly undermines credibility.",
+      "tokens": 1333,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 62,
+      "slug": "camus",
+      "name": "Albert Camus",
+      "section": "Meaning",
+      "score": 8,
+      "rationale": "Distinctive structure that moves beyond Wikipedia summary with the 'revolt without resolution' tension clearly articulated, the Algerian blindness adding necessary complexity, and the death scene earning its inclusion by embodying rather than explaining the philosophy—though the ethical limits section could push harder into why this matters for readers today.",
+      "tokens": 1274,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 69,
+      "slug": "sontag",
+      "name": "Susan Sontag",
+      "section": "Aesthetics",
+      "score": 8,
+      "rationale": "Substantive and distinctive, capturing Sontag's contradictions and intellectual texture with specific examples (the Hanoi moment is excellent), though occasionally the prose strains for effect where plainer language would serve better.",
+      "tokens": 1451,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 65,
+      "slug": "baumgarten",
+      "name": "Alexander Baumgarten",
+      "section": "Aesthetics",
+      "score": 8,
+      "rationale": "This entry earns its place by revealing the surprising origin of aesthetics as a philosophical discipline and making vivid both Baumgarten's achievement and its inherent tensions, with the unfinished *Aesthetica* serving as a memorable emblem of the project's ambition and limits—though it occasionally edges toward explaining rather than showing its insights.",
+      "tokens": 1409,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 66,
+      "slug": "schopenhauer",
+      "name": "Arthur Schopenhauer",
+      "section": "Aesthetics",
+      "score": 8,
+      "rationale": "Substantive and distinctive, with the biographical moment providing memorable texture and the limits section offering genuine critical engagement rather than hagiography, though the core metaphysical exposition occasionally risks textbook clarity over revelation.",
+      "tokens": 1418,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 67,
+      "slug": "tolstoy",
+      "name": "Leo Tolstoy",
+      "section": "Aesthetics",
+      "score": 8,
+      "rationale": "Distinctive and substantive, capturing Tolstoy's radical moral transformation with psychological depth and memorable specificity (the flight scene, the boot-making detail), though the 'Problem-Idea-Limits' structure occasionally feels formulaic rather than organic to his particular contradictions.",
+      "tokens": 1337,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 70,
+      "slug": "dewey",
+      "name": "John Dewey",
+      "section": "Aesthetics",
+      "score": 8,
+      "rationale": "Distinctive structure that moves beyond Wikipedia summary with the China moment and specific critiques about suffering/tragedy, though the prose occasionally slips into textbook mode rather than maintaining the sharp editorial voice throughout.",
+      "tokens": 1236,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 73,
+      "slug": "malthus",
+      "name": "Thomas Malthus",
+      "section": "Economics",
+      "score": 8,
+      "rationale": "Distinctive framing ('gave poverty a formula'), excellent concrete example (Irish Famine showing theory-to-policy consequences), and substantive engagement with both the idea's power and its catastrophic misapplications that goes well beyond Wikipedia summary.",
+      "tokens": 1378,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 77,
+      "slug": "schumpeter",
+      "name": "Joseph Schumpeter",
+      "section": "Economics",
+      "score": 8,
+      "rationale": "Distinctive framing of Schumpeter's core insight with vivid examples and honest engagement with his limits, though the 'Moment' section adds atmospheric detail without deepening understanding substantially.",
+      "tokens": 1353,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 72,
+      "slug": "adam-smith",
+      "name": "Adam Smith",
+      "section": "Economics",
+      "score": 8,
+      "rationale": "Publishable and distinctive—it successfully integrates Smith's two major works into a coherent vision, includes the surprising biographical detail about his mother that reframes the theorist of self-interest, and avoids hagiography by addressing real limitations, though it occasionally slips into familiar formulations about the invisible hand.",
+      "tokens": 1517,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 74,
+      "slug": "keynes",
+      "name": "John Maynard Keynes",
+      "section": "Economics",
+      "score": 8,
+      "rationale": "Substantive and well-structured with vivid historical detail (the Bretton Woods moment particularly strong) and honest engagement with limitations, though the core idea—government countercyclical spending—is familiar enough that it stops just short of exceptional revelation.",
+      "tokens": 1408,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 76,
+      "slug": "veblen",
+      "name": "Thorstein Veblen",
+      "section": "Economics",
+      "score": 8,
+      "rationale": "Distinctive voice and structure that goes beyond Wikipedia summary, with the 'Moment' section particularly vivid and the industry/business distinction clearly explained, though the analysis occasionally prioritizes style over deeper excavation of why Veblen's framework remains essential for understanding contemporary platform capitalism or financialization.",
+      "tokens": 1553,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 78,
+      "slug": "ibn-khaldun",
+      "name": "Ibn Khaldun",
+      "section": "Economics",
+      "score": 8,
+      "rationale": "Distinctive structure that moves beyond Wikipedia summary with vivid historical context, clear explanation of asabiyyah as a predictive framework, honest engagement with limitations, and a haunting biographical moment that connects theory to lived tragedy—publishable and memorable.",
+      "tokens": 1460,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 75,
+      "slug": "hayek",
+      "name": "Friedrich Hayek",
+      "section": "Economics",
+      "score": 8,
+      "rationale": "Distinctive and substantive—it goes beyond Wikipedia by centering Hayek's epistemology as the unifying thread, offers genuine critical engagement rather than hagiography, and the Nobel moment crystallizes the permanent tension in his thought rather than treating it as settled victory.",
+      "tokens": 1564,
+      "in_similarity_cluster": false
+    },
+    {
+      "order": 80,
+      "slug": "sen",
+      "name": "Amartya Sen",
+      "section": "Economics",
+      "score": 8,
+      "rationale": "Substantive and distinctive, with the bicycle/meal-skipping examples making abstract concepts visceral and the famine opening providing biographical weight that illuminates the work, though the Limits section could push harder on the framework's tensions.",
+      "tokens": 1404,
+      "in_similarity_cluster": false
+    }
+  ],
+  "similarity_clusters": []
+}

@@ -6,3 +6,9 @@ uvicorn
 libsql-experimental
 markdown
 python-docx
+openai
+numpy
+rich
+tqdm
+
+Pillow
