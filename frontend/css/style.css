@@ -332,8 +332,8 @@ a:hover {
 }
 
 .book-card-cover {
-    aspect-ratio: 1 / 1.5;
-    /* More classic book ratio */
+    aspect-ratio: 2 / 1;
+    /* Cropped to middle third */
     background: var(--bg-secondary);
     border: 1px solid var(--border);
     display: flex;
@@ -387,7 +387,7 @@ a:hover {
     font-size: 1.75rem;
     font-weight: 700;
     color: white;
-    margin-bottom: var(--space-xs);
+    margin-bottom: 0;
     line-height: 1.1;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     /* Improve contrast */
@@ -396,13 +396,13 @@ a:hover {
 .book-card-descriptor {
     font-size: 0.875rem;
     color: rgba(255, 255, 255, 0.9);
-    margin-bottom: var(--space-md);
+    margin-bottom: 0;
     font-family: var(--font-serif);
     font-style: italic;
 }
 
 .book-card-button {
-    display: inline-block;
+    display: none;
     font-family: var(--font-sans);
     font-size: 0.75rem;
     font-weight: 600;
@@ -411,12 +411,12 @@ a:hover {
     color: white;
     padding: var(--space-xs) var(--space-sm);
     border: 1px solid rgba(255, 255, 255, 0.5);
-    opacity: 0;
+    margin-top: var(--space-md);
     transition: all var(--transition-fast);
 }
 
 .book-card:hover .book-card-button {
-    opacity: 1;
+    display: inline-block;
     border-color: white;
 }
 
