@@ -404,12 +404,12 @@ a:hover {
 .book-card-button {
     display: none;
     font-family: var(--font-sans);
-    font-size: 0.75rem;
+    font-size: 0.625rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: white;
-    padding: var(--space-xs) var(--space-sm);
+    padding: 2px var(--space-sm);
     border: 1px solid rgba(255, 255, 255, 0.5);
     margin-top: var(--space-md);
     transition: all var(--transition-fast);
