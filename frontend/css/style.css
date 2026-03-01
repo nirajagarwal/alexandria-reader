@@ -981,6 +981,24 @@ a:hover {
     margin-bottom: var(--space-xl);
 }
 
+.book-card-skeleton {
+    aspect-ratio: 2 / 1;
+    border-radius: 0;
+}
+
+.skeleton-shelf {
+    display: contents;
+}
+
+/* Error state */
+.error-state {
+    color: var(--text-tertiary);
+    font-family: var(--font-sans);
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: var(--space-2xl);
+}
+
 @media (max-width: 768px) {
     .library {
         padding: var(--space-lg);

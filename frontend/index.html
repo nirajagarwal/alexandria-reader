@@ -4,33 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexandria Press</title>
-    <meta name="description" content="Books only AI can write. Explore a collection of generated works.">
+    <title>Alexandria — A Digital Library</title>
+    <meta name="description" content="Alexandria is a curated digital library. Explore books on philosophy, science, spirituality, and human experience. Read beautifully formatted ebooks in your browser.">
 
-    <!-- Open Graph / Facebook -->
+    <!-- Canonical -->
+    <link rel="canonical" href="https://alexandria.press/">
+
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://alexandria.press/">
-    <meta property="og:title" content="Alexandria Press">
-    <meta property="og:description" content="Books only AI can write. Explore a collection of generated works.">
+    <meta property="og:title" content="Alexandria — A Digital Library">
+    <meta property="og:description" content="A curated digital library. Explore books on philosophy, science, spirituality, and human experience.">
     <meta property="og:image" content="https://alexandria.press/assets/og-image.png">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://alexandria.press/">
-    <meta name="twitter:title" content="Alexandria Press">
-    <meta name="twitter:description" content="Books only AI can write. Explore a collection of generated works.">
+    <meta name="twitter:title" content="Alexandria — A Digital Library">
+    <meta name="twitter:description" content="A curated digital library. Explore books on philosophy, science, spirituality, and human experience.">
     <meta name="twitter:image" content="https://alexandria.press/assets/og-image.png">
 
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Alexandria",
+      "url": "https://alexandria.press/",
+      "description": "A curated digital library with beautifully formatted ebooks.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://alexandria.press/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
     <link rel="icon" href="assets/favicon.png">
+    <link rel="manifest" href="/manifest.json">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400..700;1,400..700&family=Lato:wght@400;700;900&family=Lora:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Sans:wght@400;600&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=4">
-    <link rel="canonical" href="https://alexandria.press/">
-    <link rel="manifest" href="/manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400..700;1,400..700&family=Lato:wght@400;700;900&family=Lora:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=5">
 </head>
 
 <body>
@@ -42,12 +58,11 @@
         </header>
 
         <div class="search-container">
-            <input type="text" id="searchInput" class="search-input" placeholder="Search across all books..."
-                autocomplete="off">
-            <div id="searchResults" class="search-results hidden"></div>
+            <input type="text" id="searchInput" class="search-input" placeholder="Search books and chapters…" autocomplete="off" aria-label="Search books and chapters">
+            <div id="searchResults" class="search-results hidden" role="listbox" aria-label="Search results"></div>
         </div>
 
-        <main class="library-shelf" id="bookShelf">
+        <main class="library-shelf" id="bookShelf" aria-label="Book collection">
             <!-- Books loaded dynamically -->
         </main>
 
@@ -56,7 +71,7 @@
         </footer>
     </div>
 
-    <script type="module" src="js/app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

@@ -1,59 +1,86 @@
 /* =============================================================================
    Alexandria Press - Reader Stylesheet
-   Aligned with main application style.css
    ============================================================================= */
 
+/* ── CSS Variables ── Light (default) ─────────────────────────────────────── */
 :root {
-    /* Light mode (Parchment) */
-    --bg-primary: #F7F4ED;
-    --bg-secondary: #FFFDF7;
-    --bg-elevated: #FFFFFF;
-    --text-primary: #1A1A1A;
-    --text-secondary: #4A4A4A;
+    --bg-primary:    #F7F4ED;
+    --bg-secondary:  #FFFDF7;
+    --bg-elevated:   #FFFFFF;
+    --text-primary:  #1A1A1A;
+    --text-secondary:#4A4A4A;
     --text-tertiary: #757575;
-    --border: #E0DCD3;
+    --border:        #E0DCD3;
     --border-subtle: #EBE8E1;
-    --accent: #4A4A4A;
+    --reader-bg:     #F7F4ED;
 
-    /* Reader Specifics */
-    --reader-bg: #F7F4ED;
-    /* Surroundings match bg-primary */
+    --font-serif:    'Lora', serif;
+    --font-display:  'Lato', sans-serif;
+    --font-sans:     'IBM Plex Sans', -apple-system, sans-serif;
 
-    /* Typography */
-    --font-serif: 'Lora', serif;
-    --font-display: 'Lato', sans-serif;
-    --font-sans: 'IBM Plex Sans', -apple-system, sans-serif;
+    --space-xs:  0.25rem;
+    --space-sm:  0.5rem;
+    --space-md:  1rem;
+    --space-lg:  1.5rem;
+    --space-xl:  2rem;
 
-    /* Spacing */
-    --space-xs: 0.25rem;
-    --space-sm: 0.5rem;
-    --space-md: 1rem;
-    --space-lg: 1.5rem;
-    --space-xl: 2rem;
-    --space-2xl: 3rem;
-    --space-3xl: 4rem;
-
-    /* Transitions */
-    --transition-fast: 150ms ease;
+    --transition-fast:   150ms ease;
     --transition-medium: 300ms ease;
-    --transition-slow: 500ms ease;
 }
 
-/* Dark mode (Vault) */
+/* ── Dark (system) ─────────────────────────────────────────────────────────── */
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg-primary: #121212;
-        --bg-secondary: #181818;
-        --bg-elevated: #202020;
-        --text-primary: #F2F2F2;
-        --text-secondary: #A0A0A0;
+        --bg-primary:    #121212;
+        --bg-secondary:  #181818;
+        --bg-elevated:   #202020;
+        --text-primary:  #F2F2F2;
+        --text-secondary:#A0A0A0;
         --text-tertiary: #707070;
-        --border: #2A2A2A;
+        --border:        #2A2A2A;
         --border-subtle: #1F1F1F;
-        --reader-bg: #0A0A0A;
+        --reader-bg:     #0A0A0A;
     }
 }
 
+/* ── Explicit theme overrides (override system dark) ──────────────────────── */
+[data-theme="light"] {
+    --bg-primary:    #F7F4ED;
+    --bg-secondary:  #FFFDF7;
+    --bg-elevated:   #FFFFFF;
+    --text-primary:  #1A1A1A;
+    --text-secondary:#4A4A4A;
+    --text-tertiary: #757575;
+    --border:        #E0DCD3;
+    --border-subtle: #EBE8E1;
+    --reader-bg:     #F7F4ED;
+}
+
+[data-theme="sepia"] {
+    --bg-primary:    #f5e6c8;
+    --bg-secondary:  #ede0c4;
+    --bg-elevated:   #f8efd8;
+    --text-primary:  #3b2a1a;
+    --text-secondary:#5a3e28;
+    --text-tertiary: #7a6040;
+    --border:        #c8a87a;
+    --border-subtle: #d4b88a;
+    --reader-bg:     #ede0c4;
+}
+
+[data-theme="dark"] {
+    --bg-primary:    #121212;
+    --bg-secondary:  #181818;
+    --bg-elevated:   #202020;
+    --text-primary:  #F2F2F2;
+    --text-secondary:#A0A0A0;
+    --text-tertiary: #707070;
+    --border:        #2A2A2A;
+    --border-subtle: #1F1F1F;
+    --reader-bg:     #0A0A0A;
+}
+
+/* ── Reset ─────────────────────────────────────────────────────────────────── */
 *,
 *::before,
 *::after {
@@ -66,15 +93,13 @@ html,
 body {
     width: 100%;
     height: 100%;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     background: var(--reader-bg);
     font-family: var(--font-sans);
     color: var(--text-primary);
 }
 
-/* Toolbar (Synced with entry-header in style.css) */
+/* ── Toolbar ───────────────────────────────────────────────────────────────── */
 .reader-toolbar {
     position: fixed;
     top: 0;
@@ -82,11 +107,10 @@ body {
     width: 100vw;
     height: 72px;
     background: transparent;
-    /* Transparent to show texture */
-    /* border-bottom: 1px solid var(--border-subtle); Remove border for seamless look */
     display: flex;
     align-items: center;
     z-index: 10000;
+    transition: transform 0.3s ease;
 }
 
 .reader-toolbar-controls {
@@ -94,10 +118,23 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    width: 100%;
     padding: var(--space-md) var(--space-xl);
-    /* max-width: 1400px;  Removed max-width to allow full left-right spread like book.html */
-    margin: 0;
+}
+
+/* ── Toolbar left / right ──────────────────────────────────────────────────── */
+.toolbar-left {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    flex: 1;
+    overflow: hidden;
+}
+
+.toolbar-right {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
 }
 
 .nav-book-title {
@@ -110,29 +147,55 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     opacity: 0.8;
+    max-width: 200px;
+}
+
+.toolbar-sep {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    margin: 0 8px;
+    flex-shrink: 0;
+    visibility: hidden;
+}
+
+.nav-chapter-name {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 260px;
 }
 
 @media (max-width: 768px) {
+    .toolbar-sep,
+    .nav-chapter-name {
+        display: none;
+    }
     .nav-book-title {
-        max-width: 150px;
+        max-width: 140px;
         font-size: 0.875rem;
+    }
+    .reader-page-info {
+        display: none;
+    }
+    .reader-toolbar-controls {
+        padding: var(--space-md);
     }
 }
 
-/* Nav Button Styles */
+/* ── Toolbar buttons ───────────────────────────────────────────────────────── */
 .reader-tool-btn,
 .nav-btn-back {
     font-family: var(--font-sans);
     font-size: 0.8125rem;
     font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
     height: 44px;
     padding: 0 1rem;
     background: transparent;
-    /* Minimal: Transparent */
     border: none;
-    /* Minimal: No border */
     color: var(--text-secondary);
     cursor: pointer;
     display: inline-flex;
@@ -140,15 +203,13 @@ body {
     justify-content: center;
     transition: all 150ms ease;
     text-decoration: none;
-    border-radius: 4px;
-    /* Slight rounding for hover state */
+    border-radius: 6px;
 }
 
 .reader-tool-btn:hover:not(:disabled),
 .nav-btn-back:hover {
     color: var(--text-primary);
-    background: rgba(0, 0, 0, 0.05);
-    /* Subtle hover background */
+    background: rgba(128,128,128,0.1);
 }
 
 .reader-tool-btn.icon-only {
@@ -161,6 +222,27 @@ body {
     cursor: not-allowed;
 }
 
+.reader-settings-btn {
+    font-family: var(--font-serif);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    width: auto;
+    padding: 0 12px;
+}
+
+.reader-settings-btn[aria-expanded="true"] {
+    background: rgba(128,128,128,0.15);
+    color: var(--text-primary);
+}
+
+/* ── Pagination ────────────────────────────────────────────────────────────── */
+.reader-pagination {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
 .reader-page-info {
     font-family: var(--font-sans);
     font-size: 0.75rem;
@@ -168,17 +250,11 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.12em;
     color: var(--text-tertiary);
-    min-width: 80px;
+    min-width: 48px;
     text-align: center;
 }
 
-.reader-pagination {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-/* Main Viewer Container */
+/* ── Viewer ────────────────────────────────────────────────────────────────── */
 #viewer {
     position: absolute;
     top: 72px;
@@ -186,35 +262,75 @@ body {
     width: 100vw;
     height: calc(100vh - 72px);
     background: var(--reader-bg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
+    transition: top 0.3s ease, height 0.3s ease;
 }
 
-/* Paper Texture */
+/* ── Fullscreen ────────────────────────────────────────────────────────────── */
+body.reader-fullscreen .reader-toolbar {
+    transform: translateY(-100%);
+}
+
+body.reader-fullscreen #viewer {
+    top: 0;
+    height: 100vh;
+}
+
+.fullscreen-hint {
+    position: fixed;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    padding: 8px 18px;
+    border-radius: 20px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 30000;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.fullscreen-hint.visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+}
+
+/* Keep hint permanently visible (dimmed) while in fullscreen */
+body.reader-fullscreen .fullscreen-hint {
+    opacity: 0.35;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+}
+
+body.reader-fullscreen .fullscreen-hint:hover {
+    opacity: 0.85;
+}
+
+/* ── Paper Texture ─────────────────────────────────────────────────────────── */
 .texture-overlay {
     position: fixed;
     top: 0;
-    /* Cover entire screen including toolbar */
     left: 0;
     width: 100%;
     height: 100%;
     pointer-events: none;
     z-index: 20000;
-    /* Highest z-index to overlay EVERYTHING including toolbar */
     opacity: 0.3;
     mix-blend-mode: multiply;
 }
 
-@media (prefers-color-scheme: dark) {
-    .texture-overlay {
-        mix-blend-mode: soft-light;
-        opacity: 0.15;
-    }
+[data-theme="dark"] .texture-overlay {
+    mix-blend-mode: soft-light;
+    opacity: 0.15;
 }
 
-/* Loader */
+/* ── Loader ────────────────────────────────────────────────────────────────── */
 .reader-loader {
     position: absolute;
     top: 50%;
@@ -225,75 +341,394 @@ body {
     font-size: 0.875rem;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+    z-index: 5000;
 }
 
-/* EPUB Content Styles (Injected via hooks) */
-.epubjs-content body {
-    background: transparent !important;
-    color: var(--text-primary) !important;
-    font-family: var(--font-serif) !important;
-    line-height: 1.6;
-    padding: 60px 80px !important;
+/* ── Settings Panel ────────────────────────────────────────────────────────── */
+.settings-panel {
+    position: fixed;
+    top: 72px;
+    right: 16px;
+    width: 300px;
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+    z-index: 12000;
+    opacity: 0;
+    transform: translateY(-8px) scale(0.98);
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    max-height: calc(100vh - 96px);
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
-.epubjs-content h1 {
-    font-family: var(--font-serif) !important;
-    font-weight: 600;
-    text-align: left;
-    margin-top: 2rem;
-    margin-bottom: 2em;
-    font-size: 2.8rem;
+.settings-panel.panel-open {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
 }
 
+/* Mobile: bottom sheet */
+@media (max-width: 768px) {
+    .settings-panel {
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        border-radius: 16px 16px 0 0;
+        border-bottom: none;
+        transform: translateY(100%);
+        max-height: 75vh;
+        transition: transform 0.3s cubic-bezier(0.32, 0.72, 0, 1);
+        box-shadow: 0 -8px 40px rgba(0, 0, 0, 0.2);
+    }
 
+    .settings-panel.panel-open {
+        transform: translateY(0);
+        opacity: 1;
+    }
 
-.epubjs-content p {
-    margin-bottom: 1.5rem;
-    text-indent: 1.5rem;
-    text-align: justify;
-    font-size: 1.15rem;
+    /* Drag handle */
+    .settings-panel::before {
+        content: '';
+        display: block;
+        width: 36px;
+        height: 4px;
+        background: var(--border);
+        border-radius: 2px;
+        margin: 12px auto 4px;
+    }
 }
 
-.epubjs-content p:first-of-type,
-.epubjs-content h1+p {
-    text-indent: 0;
+/* Panel backdrop */
+.panel-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 11999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
 }
 
-.epubjs-content .section-label {
-    text-align: center;
-    font-family: var(--font-sans) !important;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    font-weight: 600;
+@media (max-width: 768px) {
+    .panel-backdrop {
+        display: block;
+    }
+    .panel-backdrop.panel-open {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+/* Panel sections */
+.panel-section {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.panel-section:last-child {
+    border-bottom: none;
+}
+
+/* Chapter name row (mobile only) */
+.panel-chapter-row {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border-subtle);
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+}
+
+.panel-chapter-name {
+    font-family: var(--font-serif);
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    line-height: 1.3;
+}
+
+@media (min-width: 769px) {
+    .panel-chapter-row {
+        display: none;
+    }
+}
+
+/* ── Panel search ──────────────────────────────────────────────────────────── */
+.panel-search-bar {
+    display: flex;
+    align-items: center;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0 10px;
+    gap: 8px;
+}
+
+.panel-search-icon {
+    flex-shrink: 0;
     color: var(--text-tertiary);
-    margin-bottom: 1rem;
 }
 
-.epubjs-content img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 2rem auto;
+.panel-search-input {
+    flex: 1;
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    font-size: 0.875rem;
+    padding: 9px 0;
+    min-width: 0;
 }
 
-/* -----------------------------------------------------------------------------
-   Utilities
-   ----------------------------------------------------------------------------- */
+.panel-search-input::placeholder {
+    color: var(--text-tertiary);
+}
+
+.panel-search-input::-webkit-search-cancel-button {
+    display: none;
+}
+
+.panel-search-clear {
+    background: none;
+    border: none;
+    color: var(--text-tertiary);
+    cursor: pointer;
+    font-size: 1.25rem;
+    line-height: 1;
+    padding: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.panel-search-clear:hover {
+    color: var(--text-primary);
+}
+
+/* Search results */
+.book-search-results {
+    max-height: 220px;
+    overflow-y: auto;
+    margin-top: 6px;
+}
+
+.search-results-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.search-result-item {
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    transition: background 0.1s ease;
+}
+
+.search-result-item:hover {
+    background: var(--bg-secondary);
+}
+
+.srch-chapter {
+    font-family: var(--font-sans);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--text-tertiary);
+}
+
+.srch-excerpt {
+    font-family: var(--font-serif);
+    font-size: 0.8375rem;
+    color: var(--text-secondary);
+    line-height: 1.45;
+}
+
+.srch-excerpt mark {
+    background: rgba(212, 175, 55, 0.35);
+    color: inherit;
+    border-radius: 2px;
+    padding: 0 1px;
+}
+
+.search-status {
+    padding: 12px 10px;
+    text-align: center;
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+}
+
+/* ── Font size row ─────────────────────────────────────────────────────────── */
+.panel-font-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.font-adj-btn {
+    font-family: var(--font-serif);
+    font-size: 0.875rem;
+    font-weight: 600;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 7px 14px;
+    line-height: 1;
+    transition: all 0.15s ease;
+    flex: 1;
+}
+
+.font-adj-btn--large {
+    font-size: 1.0625rem;
+}
+
+.font-adj-btn:hover:not(:disabled) {
+    background: var(--bg-elevated);
+    border-color: var(--text-tertiary);
+}
+
+.font-adj-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.font-size-label {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    min-width: 40px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* ── Theme row ─────────────────────────────────────────────────────────────── */
+.panel-theme-row {
+    display: flex;
+    gap: 8px;
+}
+
+.theme-btn {
+    flex: 1;
+    padding: 8px 4px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    white-space: nowrap;
+}
+
+.theme-btn:hover {
+    background: var(--bg-elevated);
+    color: var(--text-primary);
+}
+
+.theme-btn.active {
+    background: var(--text-primary);
+    color: var(--bg-primary);
+    border-color: var(--text-primary);
+}
+
+/* ── Fullscreen button ─────────────────────────────────────────────────────── */
+.panel-action-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text-secondary);
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.panel-action-btn:hover {
+    background: var(--bg-elevated);
+    color: var(--text-primary);
+}
+
+/* ── Copy popover ──────────────────────────────────────────────────────────── */
+.copy-popover {
+    position: fixed;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    z-index: 25000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.copy-popover.visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+}
+
+.copy-btn {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 10px 18px;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    border-radius: 10px;
+    transition: background 0.15s ease;
+}
+
+.copy-btn:hover {
+    background: var(--bg-secondary);
+}
+
+/* ── Utilities ─────────────────────────────────────────────────────────────── */
 .hidden {
     display: none !important;
 }
 
-/* -----------------------------------------------------------------------------
-   Contents Menu (Ported from style.css)
-   ----------------------------------------------------------------------------- */
+/* ── TOC Overlay ───────────────────────────────────────────────────────────── */
 .contents-overlay {
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(4px);
-    z-index: 20000;
-    /* Higher than toolbar */
+    z-index: 13000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -310,6 +745,7 @@ body {
     display: flex;
     flex-direction: column;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 }
 
 .contents-menu-header {
@@ -323,8 +759,6 @@ body {
 .contents-menu-header h2 {
     font-size: 1.25rem;
     font-family: var(--font-serif);
-    text-transform: none;
-    letter-spacing: normal;
     font-weight: 700;
     color: var(--text-primary);
     margin: 0;
@@ -374,15 +808,9 @@ body {
 .menu-list a:hover {
     background: var(--bg-secondary);
     padding-left: 1.25rem;
-    color: var(--text-primary);
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }

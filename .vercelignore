@@ -8,20 +8,19 @@ __pycache__
 *.pyc
 .DS_Store
 
-# Large generated files not needed for production
+# Generation / dev tools not needed in production
+generator/
+scripts/
+bookgen/
+entities/
+prompts/
+db/
+images/
+inspect_db.py
+
+# Large output files not needed (epub files are served from outputs/)
 outputs/**/*.vellum
 outputs/**/*.mp3
 outputs/**/*.docx
 outputs/**/*.json
 outputs/**/*.png
-
-# Keep cover_third.jpg which we use
-# Note: Vercel ignore syntax is standard gitignore
-# If we ignore outputs/**/*.png, we are fine.
-# We keep outputs/**/*.jpg by default.
-
-# Optional: Ignore source code not needed for runtime if applicable?
-# But this is a python app, so source is needed.
-# Ignore scripts that are for generation only?
-generator/
-scripts/

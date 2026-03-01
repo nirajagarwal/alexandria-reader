@@ -1,0 +1,8510 @@
+[
+  {
+    "id": "animals",
+    "title": "Animals",
+    "subtitle": "Lives Unlike Ours",
+    "cover": "/data/animals/cover.png",
+    "epub": "/outputs/animals/book.epub",
+    "chapters": [
+      {
+        "title": "Dog",
+        "href": "chapter-001.xhtml"
+      },
+      {
+        "title": "Cat",
+        "href": "chapter-002.xhtml"
+      },
+      {
+        "title": "Horse",
+        "href": "chapter-003.xhtml"
+      },
+      {
+        "title": "Donkey",
+        "href": "chapter-004.xhtml"
+      },
+      {
+        "title": "Goldfish",
+        "href": "chapter-005.xhtml"
+      },
+      {
+        "title": "Parrot",
+        "href": "chapter-006.xhtml"
+      },
+      {
+        "title": "Rabbit",
+        "href": "chapter-007.xhtml"
+      },
+      {
+        "title": "Hamster",
+        "href": "chapter-008.xhtml"
+      },
+      {
+        "title": "Ferret",
+        "href": "chapter-009.xhtml"
+      },
+      {
+        "title": "Canary",
+        "href": "chapter-010.xhtml"
+      },
+      {
+        "title": "Cow",
+        "href": "chapter-011.xhtml"
+      },
+      {
+        "title": "Pig",
+        "href": "chapter-012.xhtml"
+      },
+      {
+        "title": "Chicken",
+        "href": "chapter-013.xhtml"
+      },
+      {
+        "title": "Sheep",
+        "href": "chapter-014.xhtml"
+      },
+      {
+        "title": "Goat",
+        "href": "chapter-015.xhtml"
+      },
+      {
+        "title": "Turkey",
+        "href": "chapter-016.xhtml"
+      },
+      {
+        "title": "Duck",
+        "href": "chapter-017.xhtml"
+      },
+      {
+        "title": "Water Buffalo",
+        "href": "chapter-018.xhtml"
+      },
+      {
+        "title": "Llama",
+        "href": "chapter-019.xhtml"
+      },
+      {
+        "title": "Reindeer",
+        "href": "chapter-020.xhtml"
+      },
+      {
+        "title": "Elephant",
+        "href": "chapter-021.xhtml"
+      },
+      {
+        "title": "Blue Whale",
+        "href": "chapter-022.xhtml"
+      },
+      {
+        "title": "Lion",
+        "href": "chapter-023.xhtml"
+      },
+      {
+        "title": "Tiger",
+        "href": "chapter-024.xhtml"
+      },
+      {
+        "title": "Gorilla",
+        "href": "chapter-025.xhtml"
+      },
+      {
+        "title": "Chimpanzee",
+        "href": "chapter-026.xhtml"
+      },
+      {
+        "title": "Polar Bear",
+        "href": "chapter-027.xhtml"
+      },
+      {
+        "title": "Grizzly Bear",
+        "href": "chapter-028.xhtml"
+      },
+      {
+        "title": "Giraffe",
+        "href": "chapter-029.xhtml"
+      },
+      {
+        "title": "Hippopotamus",
+        "href": "chapter-030.xhtml"
+      },
+      {
+        "title": "Rhinoceros",
+        "href": "chapter-031.xhtml"
+      },
+      {
+        "title": "Wolf",
+        "href": "chapter-032.xhtml"
+      },
+      {
+        "title": "Orangutan",
+        "href": "chapter-033.xhtml"
+      },
+      {
+        "title": "Giant Panda",
+        "href": "chapter-034.xhtml"
+      },
+      {
+        "title": "Fruit Fly",
+        "href": "chapter-035.xhtml"
+      },
+      {
+        "title": "Lab Mouse",
+        "href": "chapter-036.xhtml"
+      },
+      {
+        "title": "Honeybee",
+        "href": "chapter-037.xhtml"
+      },
+      {
+        "title": "Roundworm",
+        "href": "chapter-038.xhtml"
+      },
+      {
+        "title": "Zebrafish",
+        "href": "chapter-039.xhtml"
+      },
+      {
+        "title": "Rhesus Macaque",
+        "href": "chapter-040.xhtml"
+      },
+      {
+        "title": "Pigeon",
+        "href": "chapter-041.xhtml"
+      },
+      {
+        "title": "Squid",
+        "href": "chapter-042.xhtml"
+      },
+      {
+        "title": "Sea Slug",
+        "href": "chapter-043.xhtml"
+      },
+      {
+        "title": "Chick Embryo",
+        "href": "chapter-044.xhtml"
+      },
+      {
+        "title": "Horseshoe Crab",
+        "href": "chapter-045.xhtml"
+      },
+      {
+        "title": "Axolotl",
+        "href": "chapter-046.xhtml"
+      },
+      {
+        "title": "Great White Shark",
+        "href": "chapter-047.xhtml"
+      },
+      {
+        "title": "Cobra",
+        "href": "chapter-048.xhtml"
+      },
+      {
+        "title": "Black Widow",
+        "href": "chapter-049.xhtml"
+      },
+      {
+        "title": "Crocodile",
+        "href": "chapter-050.xhtml"
+      },
+      {
+        "title": "Scorpion",
+        "href": "chapter-051.xhtml"
+      },
+      {
+        "title": "Mosquito",
+        "href": "chapter-052.xhtml"
+      },
+      {
+        "title": "Piranha",
+        "href": "chapter-053.xhtml"
+      },
+      {
+        "title": "Box Jellyfish",
+        "href": "chapter-054.xhtml"
+      },
+      {
+        "title": "Komodo Dragon",
+        "href": "chapter-055.xhtml"
+      },
+      {
+        "title": "Hyena",
+        "href": "chapter-056.xhtml"
+      },
+      {
+        "title": "Vampire Bat",
+        "href": "chapter-057.xhtml"
+      },
+      {
+        "title": "Wasp",
+        "href": "chapter-058.xhtml"
+      },
+      {
+        "title": "Dove",
+        "href": "chapter-059.xhtml"
+      },
+      {
+        "title": "Eagle",
+        "href": "chapter-060.xhtml"
+      },
+      {
+        "title": "Raven",
+        "href": "chapter-061.xhtml"
+      },
+      {
+        "title": "Owl",
+        "href": "chapter-062.xhtml"
+      },
+      {
+        "title": "Swan",
+        "href": "chapter-063.xhtml"
+      },
+      {
+        "title": "Peacock",
+        "href": "chapter-064.xhtml"
+      },
+      {
+        "title": "Crane",
+        "href": "chapter-065.xhtml"
+      },
+      {
+        "title": "Scarab Beetle",
+        "href": "chapter-066.xhtml"
+      },
+      {
+        "title": "Salmon",
+        "href": "chapter-067.xhtml"
+      },
+      {
+        "title": "Monarch Butterfly",
+        "href": "chapter-068.xhtml"
+      },
+      {
+        "title": "Lamb",
+        "href": "chapter-069.xhtml"
+      },
+      {
+        "title": "Stag",
+        "href": "chapter-070.xhtml"
+      },
+      {
+        "title": "Octopus",
+        "href": "chapter-071.xhtml"
+      },
+      {
+        "title": "Tardigrade",
+        "href": "chapter-072.xhtml"
+      },
+      {
+        "title": "Platypus",
+        "href": "chapter-073.xhtml"
+      },
+      {
+        "title": "Naked Mole Rat",
+        "href": "chapter-074.xhtml"
+      },
+      {
+        "title": "Mantis Shrimp",
+        "href": "chapter-075.xhtml"
+      },
+      {
+        "title": "Anglerfish",
+        "href": "chapter-076.xhtml"
+      },
+      {
+        "title": "Sloth",
+        "href": "chapter-077.xhtml"
+      },
+      {
+        "title": "Pangolin",
+        "href": "chapter-078.xhtml"
+      },
+      {
+        "title": "Echidna",
+        "href": "chapter-079.xhtml"
+      },
+      {
+        "title": "Blobfish",
+        "href": "chapter-080.xhtml"
+      },
+      {
+        "title": "Cuttlefish",
+        "href": "chapter-081.xhtml"
+      },
+      {
+        "title": "Seahorse",
+        "href": "chapter-082.xhtml"
+      },
+      {
+        "title": "Electric Eel",
+        "href": "chapter-083.xhtml"
+      },
+      {
+        "title": "Bombardier Beetle",
+        "href": "chapter-084.xhtml"
+      },
+      {
+        "title": "Earthworm",
+        "href": "chapter-085.xhtml"
+      },
+      {
+        "title": "Ant",
+        "href": "chapter-086.xhtml"
+      },
+      {
+        "title": "Vulture",
+        "href": "chapter-087.xhtml"
+      },
+      {
+        "title": "Crow",
+        "href": "chapter-088.xhtml"
+      },
+      {
+        "title": "Rat",
+        "href": "chapter-089.xhtml"
+      },
+      {
+        "title": "Cockroach",
+        "href": "chapter-090.xhtml"
+      },
+      {
+        "title": "Termite",
+        "href": "chapter-091.xhtml"
+      },
+      {
+        "title": "Dung Beetle",
+        "href": "chapter-092.xhtml"
+      },
+      {
+        "title": "Leech",
+        "href": "chapter-093.xhtml"
+      },
+      {
+        "title": "Maggot",
+        "href": "chapter-094.xhtml"
+      },
+      {
+        "title": "Opossum",
+        "href": "chapter-095.xhtml"
+      },
+      {
+        "title": "Mole",
+        "href": "chapter-096.xhtml"
+      },
+      {
+        "title": "Starfish",
+        "href": "chapter-097.xhtml"
+      },
+      {
+        "title": "Coral",
+        "href": "chapter-098.xhtml"
+      },
+      {
+        "title": "Sparrow",
+        "href": "chapter-099.xhtml"
+      },
+      {
+        "title": "Frog",
+        "href": "chapter-100.xhtml"
+      }
+    ]
+  },
+  {
+    "id": "countries",
+    "title": "Countries",
+    "subtitle": "The World as It Is",
+    "cover": "/data/countries/cover.png",
+    "epub": "/outputs/countries/book.epub",
+    "chapters": [
+      {
+        "title": "Iceland",
+        "href": "chapter-001.xhtml"
+      },
+      {
+        "title": "Norway",
+        "href": "chapter-002.xhtml"
+      },
+      {
+        "title": "Sweden",
+        "href": "chapter-003.xhtml"
+      },
+      {
+        "title": "Finland",
+        "href": "chapter-004.xhtml"
+      },
+      {
+        "title": "Denmark",
+        "href": "chapter-005.xhtml"
+      },
+      {
+        "title": "Estonia",
+        "href": "chapter-006.xhtml"
+      },
+      {
+        "title": "Latvia",
+        "href": "chapter-007.xhtml"
+      },
+      {
+        "title": "Lithuania",
+        "href": "chapter-008.xhtml"
+      },
+      {
+        "title": "Ireland",
+        "href": "chapter-009.xhtml"
+      },
+      {
+        "title": "United Kingdom",
+        "href": "chapter-010.xhtml"
+      },
+      {
+        "title": "France",
+        "href": "chapter-011.xhtml"
+      },
+      {
+        "title": "Belgium",
+        "href": "chapter-012.xhtml"
+      },
+      {
+        "title": "Netherlands",
+        "href": "chapter-013.xhtml"
+      },
+      {
+        "title": "Luxembourg",
+        "href": "chapter-014.xhtml"
+      },
+      {
+        "title": "Germany",
+        "href": "chapter-015.xhtml"
+      },
+      {
+        "title": "Switzerland",
+        "href": "chapter-016.xhtml"
+      },
+      {
+        "title": "Austria",
+        "href": "chapter-017.xhtml"
+      },
+      {
+        "title": "Liechtenstein",
+        "href": "chapter-018.xhtml"
+      },
+      {
+        "title": "Monaco",
+        "href": "chapter-019.xhtml"
+      },
+      {
+        "title": "Spain",
+        "href": "chapter-020.xhtml"
+      },
+      {
+        "title": "Portugal",
+        "href": "chapter-021.xhtml"
+      },
+      {
+        "title": "Andorra",
+        "href": "chapter-022.xhtml"
+      },
+      {
+        "title": "Italy",
+        "href": "chapter-023.xhtml"
+      },
+      {
+        "title": "San Marino",
+        "href": "chapter-024.xhtml"
+      },
+      {
+        "title": "Vatican City",
+        "href": "chapter-025.xhtml"
+      },
+      {
+        "title": "Malta",
+        "href": "chapter-026.xhtml"
+      },
+      {
+        "title": "Greece",
+        "href": "chapter-027.xhtml"
+      },
+      {
+        "title": "Cyprus",
+        "href": "chapter-028.xhtml"
+      },
+      {
+        "title": "Poland",
+        "href": "chapter-029.xhtml"
+      },
+      {
+        "title": "Czech Republic",
+        "href": "chapter-030.xhtml"
+      },
+      {
+        "title": "Slovakia",
+        "href": "chapter-031.xhtml"
+      },
+      {
+        "title": "Hungary",
+        "href": "chapter-032.xhtml"
+      },
+      {
+        "title": "Romania",
+        "href": "chapter-033.xhtml"
+      },
+      {
+        "title": "Bulgaria",
+        "href": "chapter-034.xhtml"
+      },
+      {
+        "title": "Slovenia",
+        "href": "chapter-035.xhtml"
+      },
+      {
+        "title": "Croatia",
+        "href": "chapter-036.xhtml"
+      },
+      {
+        "title": "Bosnia and Herzegovina",
+        "href": "chapter-037.xhtml"
+      },
+      {
+        "title": "Serbia",
+        "href": "chapter-038.xhtml"
+      },
+      {
+        "title": "Montenegro",
+        "href": "chapter-039.xhtml"
+      },
+      {
+        "title": "North Macedonia",
+        "href": "chapter-040.xhtml"
+      },
+      {
+        "title": "Albania",
+        "href": "chapter-041.xhtml"
+      },
+      {
+        "title": "Kosovo",
+        "href": "chapter-042.xhtml"
+      },
+      {
+        "title": "Moldova",
+        "href": "chapter-043.xhtml"
+      },
+      {
+        "title": "Ukraine",
+        "href": "chapter-044.xhtml"
+      },
+      {
+        "title": "Belarus",
+        "href": "chapter-045.xhtml"
+      },
+      {
+        "title": "Russia",
+        "href": "chapter-046.xhtml"
+      },
+      {
+        "title": "Georgia",
+        "href": "chapter-047.xhtml"
+      },
+      {
+        "title": "Armenia",
+        "href": "chapter-048.xhtml"
+      },
+      {
+        "title": "Azerbaijan",
+        "href": "chapter-049.xhtml"
+      },
+      {
+        "title": "Turkey",
+        "href": "chapter-050.xhtml"
+      },
+      {
+        "title": "Kazakhstan",
+        "href": "chapter-051.xhtml"
+      },
+      {
+        "title": "Uzbekistan",
+        "href": "chapter-052.xhtml"
+      },
+      {
+        "title": "Turkmenistan",
+        "href": "chapter-053.xhtml"
+      },
+      {
+        "title": "Kyrgyzstan",
+        "href": "chapter-054.xhtml"
+      },
+      {
+        "title": "Tajikistan",
+        "href": "chapter-055.xhtml"
+      },
+      {
+        "title": "Mongolia",
+        "href": "chapter-056.xhtml"
+      },
+      {
+        "title": "China",
+        "href": "chapter-057.xhtml"
+      },
+      {
+        "title": "North Korea",
+        "href": "chapter-058.xhtml"
+      },
+      {
+        "title": "South Korea",
+        "href": "chapter-059.xhtml"
+      },
+      {
+        "title": "Japan",
+        "href": "chapter-060.xhtml"
+      },
+      {
+        "title": "Taiwan",
+        "href": "chapter-061.xhtml"
+      },
+      {
+        "title": "Myanmar",
+        "href": "chapter-062.xhtml"
+      },
+      {
+        "title": "Thailand",
+        "href": "chapter-063.xhtml"
+      },
+      {
+        "title": "Laos",
+        "href": "chapter-064.xhtml"
+      },
+      {
+        "title": "Vietnam",
+        "href": "chapter-065.xhtml"
+      },
+      {
+        "title": "Cambodia",
+        "href": "chapter-066.xhtml"
+      },
+      {
+        "title": "Malaysia",
+        "href": "chapter-067.xhtml"
+      },
+      {
+        "title": "Singapore",
+        "href": "chapter-068.xhtml"
+      },
+      {
+        "title": "Brunei",
+        "href": "chapter-069.xhtml"
+      },
+      {
+        "title": "Philippines",
+        "href": "chapter-070.xhtml"
+      },
+      {
+        "title": "Indonesia",
+        "href": "chapter-071.xhtml"
+      },
+      {
+        "title": "Timor-Leste",
+        "href": "chapter-072.xhtml"
+      },
+      {
+        "title": "India",
+        "href": "chapter-073.xhtml"
+      },
+      {
+        "title": "Pakistan",
+        "href": "chapter-074.xhtml"
+      },
+      {
+        "title": "Bangladesh",
+        "href": "chapter-075.xhtml"
+      },
+      {
+        "title": "Nepal",
+        "href": "chapter-076.xhtml"
+      },
+      {
+        "title": "Bhutan",
+        "href": "chapter-077.xhtml"
+      },
+      {
+        "title": "Sri Lanka",
+        "href": "chapter-078.xhtml"
+      },
+      {
+        "title": "Maldives",
+        "href": "chapter-079.xhtml"
+      },
+      {
+        "title": "Afghanistan",
+        "href": "chapter-080.xhtml"
+      },
+      {
+        "title": "Iran",
+        "href": "chapter-081.xhtml"
+      },
+      {
+        "title": "Iraq",
+        "href": "chapter-082.xhtml"
+      },
+      {
+        "title": "Syria",
+        "href": "chapter-083.xhtml"
+      },
+      {
+        "title": "Lebanon",
+        "href": "chapter-084.xhtml"
+      },
+      {
+        "title": "Jordan",
+        "href": "chapter-085.xhtml"
+      },
+      {
+        "title": "Israel",
+        "href": "chapter-086.xhtml"
+      },
+      {
+        "title": "Palestine",
+        "href": "chapter-087.xhtml"
+      },
+      {
+        "title": "Saudi Arabia",
+        "href": "chapter-088.xhtml"
+      },
+      {
+        "title": "Yemen",
+        "href": "chapter-089.xhtml"
+      },
+      {
+        "title": "Oman",
+        "href": "chapter-090.xhtml"
+      },
+      {
+        "title": "United Arab Emirates",
+        "href": "chapter-091.xhtml"
+      },
+      {
+        "title": "Qatar",
+        "href": "chapter-092.xhtml"
+      },
+      {
+        "title": "Bahrain",
+        "href": "chapter-093.xhtml"
+      },
+      {
+        "title": "Kuwait",
+        "href": "chapter-094.xhtml"
+      },
+      {
+        "title": "Egypt",
+        "href": "chapter-095.xhtml"
+      },
+      {
+        "title": "Libya",
+        "href": "chapter-096.xhtml"
+      },
+      {
+        "title": "Tunisia",
+        "href": "chapter-097.xhtml"
+      },
+      {
+        "title": "Algeria",
+        "href": "chapter-098.xhtml"
+      },
+      {
+        "title": "Morocco",
+        "href": "chapter-099.xhtml"
+      },
+      {
+        "title": "Mauritania",
+        "href": "chapter-100.xhtml"
+      },
+      {
+        "title": "Sudan",
+        "href": "chapter-101.xhtml"
+      },
+      {
+        "title": "South Sudan",
+        "href": "chapter-102.xhtml"
+      },
+      {
+        "title": "Ethiopia",
+        "href": "chapter-103.xhtml"
+      },
+      {
+        "title": "Eritrea",
+        "href": "chapter-104.xhtml"
+      },
+      {
+        "title": "Djibouti",
+        "href": "chapter-105.xhtml"
+      },
+      {
+        "title": "Somalia",
+        "href": "chapter-106.xhtml"
+      },
+      {
+        "title": "Kenya",
+        "href": "chapter-107.xhtml"
+      },
+      {
+        "title": "Uganda",
+        "href": "chapter-108.xhtml"
+      },
+      {
+        "title": "Rwanda",
+        "href": "chapter-109.xhtml"
+      },
+      {
+        "title": "Burundi",
+        "href": "chapter-110.xhtml"
+      },
+      {
+        "title": "Tanzania",
+        "href": "chapter-111.xhtml"
+      },
+      {
+        "title": "Malawi",
+        "href": "chapter-112.xhtml"
+      },
+      {
+        "title": "Mozambique",
+        "href": "chapter-113.xhtml"
+      },
+      {
+        "title": "Zambia",
+        "href": "chapter-114.xhtml"
+      },
+      {
+        "title": "Zimbabwe",
+        "href": "chapter-115.xhtml"
+      },
+      {
+        "title": "Madagascar",
+        "href": "chapter-116.xhtml"
+      },
+      {
+        "title": "Comoros",
+        "href": "chapter-117.xhtml"
+      },
+      {
+        "title": "Mauritius",
+        "href": "chapter-118.xhtml"
+      },
+      {
+        "title": "Seychelles",
+        "href": "chapter-119.xhtml"
+      },
+      {
+        "title": "Nigeria",
+        "href": "chapter-120.xhtml"
+      },
+      {
+        "title": "Niger",
+        "href": "chapter-121.xhtml"
+      },
+      {
+        "title": "Chad",
+        "href": "chapter-122.xhtml"
+      },
+      {
+        "title": "Mali",
+        "href": "chapter-123.xhtml"
+      },
+      {
+        "title": "Burkina Faso",
+        "href": "chapter-124.xhtml"
+      },
+      {
+        "title": "Senegal",
+        "href": "chapter-125.xhtml"
+      },
+      {
+        "title": "Gambia",
+        "href": "chapter-126.xhtml"
+      },
+      {
+        "title": "Guinea-Bissau",
+        "href": "chapter-127.xhtml"
+      },
+      {
+        "title": "Guinea",
+        "href": "chapter-128.xhtml"
+      },
+      {
+        "title": "Sierra Leone",
+        "href": "chapter-129.xhtml"
+      },
+      {
+        "title": "Liberia",
+        "href": "chapter-130.xhtml"
+      },
+      {
+        "title": "C\u00f4te d'Ivoire",
+        "href": "chapter-131.xhtml"
+      },
+      {
+        "title": "Ghana",
+        "href": "chapter-132.xhtml"
+      },
+      {
+        "title": "Togo",
+        "href": "chapter-133.xhtml"
+      },
+      {
+        "title": "Benin",
+        "href": "chapter-134.xhtml"
+      },
+      {
+        "title": "Cabo Verde",
+        "href": "chapter-135.xhtml"
+      },
+      {
+        "title": "Cameroon",
+        "href": "chapter-136.xhtml"
+      },
+      {
+        "title": "Central African Republic",
+        "href": "chapter-137.xhtml"
+      },
+      {
+        "title": "Equatorial Guinea",
+        "href": "chapter-138.xhtml"
+      },
+      {
+        "title": "Gabon",
+        "href": "chapter-139.xhtml"
+      },
+      {
+        "title": "Republic of the Congo",
+        "href": "chapter-140.xhtml"
+      },
+      {
+        "title": "Democratic Republic of the Congo",
+        "href": "chapter-141.xhtml"
+      },
+      {
+        "title": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+        "href": "chapter-142.xhtml"
+      },
+      {
+        "title": "Angola",
+        "href": "chapter-143.xhtml"
+      },
+      {
+        "title": "Namibia",
+        "href": "chapter-144.xhtml"
+      },
+      {
+        "title": "Botswana",
+        "href": "chapter-145.xhtml"
+      },
+      {
+        "title": "South Africa",
+        "href": "chapter-146.xhtml"
+      },
+      {
+        "title": "Lesotho",
+        "href": "chapter-147.xhtml"
+      },
+      {
+        "title": "Eswatini",
+        "href": "chapter-148.xhtml"
+      },
+      {
+        "title": "United States",
+        "href": "chapter-149.xhtml"
+      },
+      {
+        "title": "Canada",
+        "href": "chapter-150.xhtml"
+      },
+      {
+        "title": "Mexico",
+        "href": "chapter-151.xhtml"
+      },
+      {
+        "title": "Guatemala",
+        "href": "chapter-152.xhtml"
+      },
+      {
+        "title": "Belize",
+        "href": "chapter-153.xhtml"
+      },
+      {
+        "title": "El Salvador",
+        "href": "chapter-154.xhtml"
+      },
+      {
+        "title": "Honduras",
+        "href": "chapter-155.xhtml"
+      },
+      {
+        "title": "Nicaragua",
+        "href": "chapter-156.xhtml"
+      },
+      {
+        "title": "Costa Rica",
+        "href": "chapter-157.xhtml"
+      },
+      {
+        "title": "Panama",
+        "href": "chapter-158.xhtml"
+      },
+      {
+        "title": "Cuba",
+        "href": "chapter-159.xhtml"
+      },
+      {
+        "title": "Jamaica",
+        "href": "chapter-160.xhtml"
+      },
+      {
+        "title": "Haiti",
+        "href": "chapter-161.xhtml"
+      },
+      {
+        "title": "Dominican Republic",
+        "href": "chapter-162.xhtml"
+      },
+      {
+        "title": "Bahamas",
+        "href": "chapter-163.xhtml"
+      },
+      {
+        "title": "Barbados",
+        "href": "chapter-164.xhtml"
+      },
+      {
+        "title": "Trinidad and Tobago",
+        "href": "chapter-165.xhtml"
+      },
+      {
+        "title": "Grenada",
+        "href": "chapter-166.xhtml"
+      },
+      {
+        "title": "Saint Lucia",
+        "href": "chapter-167.xhtml"
+      },
+      {
+        "title": "Saint Vincent and the Grenadines",
+        "href": "chapter-168.xhtml"
+      },
+      {
+        "title": "Antigua and Barbuda",
+        "href": "chapter-169.xhtml"
+      },
+      {
+        "title": "Dominica",
+        "href": "chapter-170.xhtml"
+      },
+      {
+        "title": "Saint Kitts and Nevis",
+        "href": "chapter-171.xhtml"
+      },
+      {
+        "title": "Colombia",
+        "href": "chapter-172.xhtml"
+      },
+      {
+        "title": "Venezuela",
+        "href": "chapter-173.xhtml"
+      },
+      {
+        "title": "Guyana",
+        "href": "chapter-174.xhtml"
+      },
+      {
+        "title": "Suriname",
+        "href": "chapter-175.xhtml"
+      },
+      {
+        "title": "Brazil",
+        "href": "chapter-176.xhtml"
+      },
+      {
+        "title": "Ecuador",
+        "href": "chapter-177.xhtml"
+      },
+      {
+        "title": "Peru",
+        "href": "chapter-178.xhtml"
+      },
+      {
+        "title": "Bolivia",
+        "href": "chapter-179.xhtml"
+      },
+      {
+        "title": "Paraguay",
+        "href": "chapter-180.xhtml"
+      },
+      {
+        "title": "Chile",
+        "href": "chapter-181.xhtml"
+      },
+      {
+        "title": "Argentina",
+        "href": "chapter-182.xhtml"
+      },
+      {
+        "title": "Uruguay",
+        "href": "chapter-183.xhtml"
+      },
+      {
+        "title": "Australia",
+        "href": "chapter-184.xhtml"
+      },
+      {
+        "title": "New Zealand",
+        "href": "chapter-185.xhtml"
+      },
+      {
+        "title": "Papua New Guinea",
+        "href": "chapter-186.xhtml"
+      },
+      {
+        "title": "Fiji",
+        "href": "chapter-187.xhtml"
+      },
+      {
+        "title": "Solomon Islands",
+        "href": "chapter-188.xhtml"
+      },
+      {
+        "title": "Vanuatu",
+        "href": "chapter-189.xhtml"
+      },
+      {
+        "title": "Samoa",
+        "href": "chapter-190.xhtml"
+      },
+      {
+        "title": "Tonga",
+        "href": "chapter-191.xhtml"
+      },
+      {
+        "title": "Kiribati",
+        "href": "chapter-192.xhtml"
+      },
+      {
+        "title": "Micronesia",
+        "href": "chapter-193.xhtml"
+      },
+      {
+        "title": "Palau",
+        "href": "chapter-194.xhtml"
+      },
+      {
+        "title": "Marshall Islands",
+        "href": "chapter-195.xhtml"
+      },
+      {
+        "title": "Nauru",
+        "href": "chapter-196.xhtml"
+      },
+      {
+        "title": "Tuvalu",
+        "href": "chapter-197.xhtml"
+      }
+    ]
+  },
+  {
+    "id": "decision-making",
+    "title": "Decision-Making",
+    "subtitle": "Tools, Traps and Stories",
+    "cover": "/data/decision-making/cover.png",
+    "epub": "/outputs/decision-making/book.epub",
+    "chapters": [
+      {
+        "title": "Decision-Making",
+        "href": "chapter-001.xhtml"
+      },
+      {
+        "title": "Weighted Pros and Cons",
+        "href": "chapter-002.xhtml"
+      },
+      {
+        "title": "The Pre-Mortem",
+        "href": "chapter-003.xhtml"
+      },
+      {
+        "title": "The 10/10/10 Rule",
+        "href": "chapter-004.xhtml"
+      },
+      {
+        "title": "The Two-Way Door Test",
+        "href": "chapter-005.xhtml"
+      },
+      {
+        "title": "Regret Minimization",
+        "href": "chapter-006.xhtml"
+      },
+      {
+        "title": "Expected Value Calculation",
+        "href": "chapter-007.xhtml"
+      },
+      {
+        "title": "Second-Order Thinking",
+        "href": "chapter-008.xhtml"
+      },
+      {
+        "title": "Red Teaming",
+        "href": "chapter-009.xhtml"
+      },
+      {
+        "title": "The Coin Flip Test",
+        "href": "chapter-010.xhtml"
+      },
+      {
+        "title": "Opportunity Cost Framing",
+        "href": "chapter-011.xhtml"
+      },
+      {
+        "title": "The 5 Whys",
+        "href": "chapter-012.xhtml"
+      },
+      {
+        "title": "Decision Journals",
+        "href": "chapter-013.xhtml"
+      },
+      {
+        "title": "Scenario Planning",
+        "href": "chapter-014.xhtml"
+      },
+      {
+        "title": "Kill Criteria",
+        "href": "chapter-015.xhtml"
+      },
+      {
+        "title": "Time Boxing",
+        "href": "chapter-016.xhtml"
+      },
+      {
+        "title": "The Outsider Test",
+        "href": "chapter-017.xhtml"
+      },
+      {
+        "title": "Inversion",
+        "href": "chapter-018.xhtml"
+      },
+      {
+        "title": "The Reversibility Check",
+        "href": "chapter-019.xhtml"
+      },
+      {
+        "title": "Satisficing",
+        "href": "chapter-020.xhtml"
+      },
+      {
+        "title": "The Precommitment",
+        "href": "chapter-021.xhtml"
+      },
+      {
+        "title": "Analysis Paralysis",
+        "href": "chapter-022.xhtml"
+      },
+      {
+        "title": "The Sunk Cost Trap",
+        "href": "chapter-023.xhtml"
+      },
+      {
+        "title": "Confirmation Bias",
+        "href": "chapter-024.xhtml"
+      },
+      {
+        "title": "Overconfidence",
+        "href": "chapter-025.xhtml"
+      },
+      {
+        "title": "The Planning Fallacy",
+        "href": "chapter-026.xhtml"
+      },
+      {
+        "title": "Groupthink",
+        "href": "chapter-027.xhtml"
+      },
+      {
+        "title": "Anchoring",
+        "href": "chapter-028.xhtml"
+      },
+      {
+        "title": "Status Quo Bias",
+        "href": "chapter-029.xhtml"
+      },
+      {
+        "title": "The Availability Trap",
+        "href": "chapter-030.xhtml"
+      },
+      {
+        "title": "Loss Aversion",
+        "href": "chapter-031.xhtml"
+      },
+      {
+        "title": "The Halo Effect",
+        "href": "chapter-032.xhtml"
+      },
+      {
+        "title": "Hindsight Bias",
+        "href": "chapter-033.xhtml"
+      },
+      {
+        "title": "The Focusing Illusion",
+        "href": "chapter-034.xhtml"
+      },
+      {
+        "title": "Decision Fatigue",
+        "href": "chapter-035.xhtml"
+      },
+      {
+        "title": "The False Dichotomy",
+        "href": "chapter-036.xhtml"
+      },
+      {
+        "title": "Outcome Bias",
+        "href": "chapter-037.xhtml"
+      },
+      {
+        "title": "Escalation of Commitment",
+        "href": "chapter-038.xhtml"
+      },
+      {
+        "title": "Social Proof Trap",
+        "href": "chapter-039.xhtml"
+      },
+      {
+        "title": "Narrow Framing",
+        "href": "chapter-040.xhtml"
+      },
+      {
+        "title": "Motivated Reasoning",
+        "href": "chapter-041.xhtml"
+      },
+      {
+        "title": "Kennedy and the Cuban Missile Crisis",
+        "href": "chapter-042.xhtml"
+      },
+      {
+        "title": "Bezos Leaves Wall Street",
+        "href": "chapter-043.xhtml"
+      },
+      {
+        "title": "Intel Exits Memory Chips",
+        "href": "chapter-044.xhtml"
+      },
+      {
+        "title": "The Challenger Disaster",
+        "href": "chapter-045.xhtml"
+      },
+      {
+        "title": "Johnson & Johnson and Tylenol",
+        "href": "chapter-046.xhtml"
+      },
+      {
+        "title": "Kodak and Digital Photography",
+        "href": "chapter-047.xhtml"
+      },
+      {
+        "title": "Lincoln's Cabinet of Rivals",
+        "href": "chapter-048.xhtml"
+      },
+      {
+        "title": "Netflix Reverses Qwikster",
+        "href": "chapter-049.xhtml"
+      },
+      {
+        "title": "The Bay of Pigs",
+        "href": "chapter-050.xhtml"
+      },
+      {
+        "title": "Buffett's Bet on Coca-Cola",
+        "href": "chapter-051.xhtml"
+      },
+      {
+        "title": "NASA's Go/No-Go",
+        "href": "chapter-052.xhtml"
+      },
+      {
+        "title": "The Marshall Plan",
+        "href": "chapter-053.xhtml"
+      },
+      {
+        "title": "Apple Kills the Newton",
+        "href": "chapter-054.xhtml"
+      },
+      {
+        "title": "Enron and the Silence of the Board",
+        "href": "chapter-055.xhtml"
+      },
+      {
+        "title": "Truman and the Atomic Bomb",
+        "href": "chapter-056.xhtml"
+      },
+      {
+        "title": "Toyota's Andon Cord",
+        "href": "chapter-057.xhtml"
+      },
+      {
+        "title": "The Tenerife Disaster",
+        "href": "chapter-058.xhtml"
+      },
+      {
+        "title": "Polaroid's Refusal to Pivot",
+        "href": "chapter-059.xhtml"
+      },
+      {
+        "title": "FDR's First 100 Days",
+        "href": "chapter-060.xhtml"
+      },
+      {
+        "title": "Apollo 13",
+        "href": "chapter-061.xhtml"
+      },
+      {
+        "title": "Eisenhower's D-Day Call",
+        "href": "chapter-062.xhtml"
+      },
+      {
+        "title": "Long-Term Capital Management",
+        "href": "chapter-063.xhtml"
+      },
+      {
+        "title": "Theranos and the Captive Board",
+        "href": "chapter-064.xhtml"
+      },
+      {
+        "title": "Mandela's Negotiation",
+        "href": "chapter-065.xhtml"
+      }
+    ]
+  },
+  {
+    "id": "emotions",
+    "title": "Emotions",
+    "subtitle": "What Feeling Feels Like",
+    "cover": "/data/emotions/cover.png",
+    "epub": "/outputs/emotions/book.epub",
+    "chapters": [
+      {
+        "title": "Joy",
+        "href": "chapter-001.xhtml"
+      },
+      {
+        "title": "Sadness",
+        "href": "chapter-002.xhtml"
+      },
+      {
+        "title": "Anger",
+        "href": "chapter-003.xhtml"
+      },
+      {
+        "title": "Fear",
+        "href": "chapter-004.xhtml"
+      },
+      {
+        "title": "Disgust",
+        "href": "chapter-005.xhtml"
+      },
+      {
+        "title": "Surprise",
+        "href": "chapter-006.xhtml"
+      },
+      {
+        "title": "Shame",
+        "href": "chapter-007.xhtml"
+      },
+      {
+        "title": "Guilt",
+        "href": "chapter-008.xhtml"
+      },
+      {
+        "title": "Embarrassment",
+        "href": "chapter-009.xhtml"
+      },
+      {
+        "title": "Pride",
+        "href": "chapter-010.xhtml"
+      },
+      {
+        "title": "Envy",
+        "href": "chapter-011.xhtml"
+      },
+      {
+        "title": "Jealousy",
+        "href": "chapter-012.xhtml"
+      },
+      {
+        "title": "Contempt",
+        "href": "chapter-013.xhtml"
+      },
+      {
+        "title": "Humiliation",
+        "href": "chapter-014.xhtml"
+      },
+      {
+        "title": "Love",
+        "href": "chapter-015.xhtml"
+      },
+      {
+        "title": "Grief",
+        "href": "chapter-016.xhtml"
+      },
+      {
+        "title": "Loneliness",
+        "href": "chapter-017.xhtml"
+      },
+      {
+        "title": "Belonging",
+        "href": "chapter-018.xhtml"
+      },
+      {
+        "title": "Hope",
+        "href": "chapter-019.xhtml"
+      },
+      {
+        "title": "Regret",
+        "href": "chapter-020.xhtml"
+      },
+      {
+        "title": "Anticipation",
+        "href": "chapter-021.xhtml"
+      },
+      {
+        "title": "Dread",
+        "href": "chapter-022.xhtml"
+      },
+      {
+        "title": "Awe",
+        "href": "chapter-023.xhtml"
+      },
+      {
+        "title": "Wonder",
+        "href": "chapter-024.xhtml"
+      },
+      {
+        "title": "Gratitude",
+        "href": "chapter-025.xhtml"
+      },
+      {
+        "title": "Contentment",
+        "href": "chapter-026.xhtml"
+      },
+      {
+        "title": "Delight",
+        "href": "chapter-027.xhtml"
+      },
+      {
+        "title": "Relief",
+        "href": "chapter-028.xhtml"
+      },
+      {
+        "title": "Anxiety",
+        "href": "chapter-029.xhtml"
+      },
+      {
+        "title": "Despair",
+        "href": "chapter-030.xhtml"
+      },
+      {
+        "title": "Resentment",
+        "href": "chapter-031.xhtml"
+      },
+      {
+        "title": "Boredom",
+        "href": "chapter-032.xhtml"
+      },
+      {
+        "title": "Frustration",
+        "href": "chapter-033.xhtml"
+      },
+      {
+        "title": "Overwhelm",
+        "href": "chapter-034.xhtml"
+      },
+      {
+        "title": "Melancholy",
+        "href": "chapter-035.xhtml"
+      },
+      {
+        "title": "Ambivalence",
+        "href": "chapter-036.xhtml"
+      },
+      {
+        "title": "Restlessness",
+        "href": "chapter-037.xhtml"
+      },
+      {
+        "title": "Yearning",
+        "href": "chapter-038.xhtml"
+      },
+      {
+        "title": "Saudade",
+        "href": "chapter-039.xhtml"
+      },
+      {
+        "title": "Hiraeth",
+        "href": "chapter-040.xhtml"
+      },
+      {
+        "title": "Sehnsucht",
+        "href": "chapter-041.xhtml"
+      },
+      {
+        "title": "Toska",
+        "href": "chapter-042.xhtml"
+      },
+      {
+        "title": "Han",
+        "href": "chapter-043.xhtml"
+      },
+      {
+        "title": "Fernweh",
+        "href": "chapter-044.xhtml"
+      },
+      {
+        "title": "Mono no aware",
+        "href": "chapter-045.xhtml"
+      },
+      {
+        "title": "Natsukashii",
+        "href": "chapter-046.xhtml"
+      },
+      {
+        "title": "Weltschmerz",
+        "href": "chapter-047.xhtml"
+      },
+      {
+        "title": "Litost",
+        "href": "chapter-048.xhtml"
+      },
+      {
+        "title": "Mudita",
+        "href": "chapter-049.xhtml"
+      },
+      {
+        "title": "Kvell",
+        "href": "chapter-050.xhtml"
+      },
+      {
+        "title": "Firgun",
+        "href": "chapter-051.xhtml"
+      },
+      {
+        "title": "Schadenfreude",
+        "href": "chapter-052.xhtml"
+      },
+      {
+        "title": "L'appel du vide",
+        "href": "chapter-053.xhtml"
+      },
+      {
+        "title": "Gigil",
+        "href": "chapter-054.xhtml"
+      },
+      {
+        "title": "Fremdsch\u00c3\u00a4men",
+        "href": "chapter-055.xhtml"
+      },
+      {
+        "title": "Forelsket",
+        "href": "chapter-056.xhtml"
+      },
+      {
+        "title": "Koi no yokan",
+        "href": "chapter-057.xhtml"
+      },
+      {
+        "title": "Kilig",
+        "href": "chapter-058.xhtml"
+      },
+      {
+        "title": "Amae",
+        "href": "chapter-059.xhtml"
+      },
+      {
+        "title": "Mamihlapinatapai",
+        "href": "chapter-060.xhtml"
+      },
+      {
+        "title": "Duende",
+        "href": "chapter-061.xhtml"
+      },
+      {
+        "title": "Tarab",
+        "href": "chapter-062.xhtml"
+      },
+      {
+        "title": "Dolce far niente",
+        "href": "chapter-063.xhtml"
+      },
+      {
+        "title": "Iktsuarpok",
+        "href": "chapter-064.xhtml"
+      },
+      {
+        "title": "Torschlusspanik",
+        "href": "chapter-065.xhtml"
+      }
+    ]
+  },
+  {
+    "id": "faculties",
+    "title": "Faculties",
+    "subtitle": "The Equipment You Arrived With",
+    "cover": "/data/faculties/cover.png",
+    "epub": "/outputs/faculties/book.epub",
+    "chapters": [
+      {
+        "title": "Memory",
+        "href": "chapter-001.xhtml"
+      },
+      {
+        "title": "Attention",
+        "href": "chapter-002.xhtml"
+      },
+      {
+        "title": "Reason",
+        "href": "chapter-003.xhtml"
+      },
+      {
+        "title": "Imagination",
+        "href": "chapter-004.xhtml"
+      },
+      {
+        "title": "Language",
+        "href": "chapter-005.xhtml"
+      },
+      {
+        "title": "Learning",
+        "href": "chapter-006.xhtml"
+      },
+      {
+        "title": "Intelligence",
+        "href": "chapter-007.xhtml"
+      },
+      {
+        "title": "Abstraction",
+        "href": "chapter-008.xhtml"
+      },
+      {
+        "title": "Perception",
+        "href": "chapter-009.xhtml"
+      },
+      {
+        "title": "Proprioception",
+        "href": "chapter-010.xhtml"
+      },
+      {
+        "title": "Interoception",
+        "href": "chapter-011.xhtml"
+      },
+      {
+        "title": "Time Sense",
+        "href": "chapter-012.xhtml"
+      },
+      {
+        "title": "Spatial Awareness",
+        "href": "chapter-013.xhtml"
+      },
+      {
+        "title": "Will",
+        "href": "chapter-014.xhtml"
+      },
+      {
+        "title": "Agency",
+        "href": "chapter-015.xhtml"
+      },
+      {
+        "title": "Self-Control",
+        "href": "chapter-016.xhtml"
+      },
+      {
+        "title": "Effort",
+        "href": "chapter-017.xhtml"
+      },
+      {
+        "title": "Decision",
+        "href": "chapter-018.xhtml"
+      },
+      {
+        "title": "Intention",
+        "href": "chapter-019.xhtml"
+      },
+      {
+        "title": "Empathy",
+        "href": "chapter-020.xhtml"
+      },
+      {
+        "title": "Theory of Mind",
+        "href": "chapter-021.xhtml"
+      },
+      {
+        "title": "Attachment",
+        "href": "chapter-022.xhtml"
+      },
+      {
+        "title": "Communication",
+        "href": "chapter-023.xhtml"
+      },
+      {
+        "title": "Trust",
+        "href": "chapter-024.xhtml"
+      },
+      {
+        "title": "Reciprocity",
+        "href": "chapter-025.xhtml"
+      },
+      {
+        "title": "Imitation",
+        "href": "chapter-026.xhtml"
+      },
+      {
+        "title": "Creativity",
+        "href": "chapter-027.xhtml"
+      },
+      {
+        "title": "Play",
+        "href": "chapter-028.xhtml"
+      },
+      {
+        "title": "Improvisation",
+        "href": "chapter-029.xhtml"
+      },
+      {
+        "title": "Problem-Solving",
+        "href": "chapter-030.xhtml"
+      },
+      {
+        "title": "Curiosity",
+        "href": "chapter-031.xhtml"
+      },
+      {
+        "title": "Self-Awareness",
+        "href": "chapter-032.xhtml"
+      },
+      {
+        "title": "Introspection",
+        "href": "chapter-033.xhtml"
+      },
+      {
+        "title": "Metacognition",
+        "href": "chapter-034.xhtml"
+      },
+      {
+        "title": "Conscience",
+        "href": "chapter-035.xhtml"
+      },
+      {
+        "title": "Identity",
+        "href": "chapter-036.xhtml"
+      },
+      {
+        "title": "Meaning-Making",
+        "href": "chapter-037.xhtml"
+      },
+      {
+        "title": "Hope",
+        "href": "chapter-038.xhtml"
+      },
+      {
+        "title": "Faith",
+        "href": "chapter-039.xhtml"
+      },
+      {
+        "title": "Wonder",
+        "href": "chapter-040.xhtml"
+      },
+      {
+        "title": "Transcendence",
+        "href": "chapter-041.xhtml"
+      },
+      {
+        "title": "Mortality Awareness",
+        "href": "chapter-042.xhtml"
+      }
+    ]
+  },
+  {
+    "id": "failures",
+    "title": "Failures",
+    "subtitle": "What Goes Wrong",
+    "cover": "/data/failures/cover.png",
+    "epub": "/outputs/failures/book.epub",
+    "chapters": [
+      {
+        "title": "Confirmation Bias",
+        "href": "chapter-001.xhtml"
+      },
+      {
+        "title": "Dunning-Kruger Effect",
+        "href": "chapter-002.xhtml"
+      },
+      {
+        "title": "Availability Heuristic",
+        "href": "chapter-003.xhtml"
+      },
+      {
+        "title": "Sunk Cost Fallacy",
+        "href": "chapter-004.xhtml"
+      },
+      {
+        "title": "Anchoring",
+        "href": "chapter-005.xhtml"
+      },
+      {
+        "title": "Hindsight Bias",
+        "href": "chapter-006.xhtml"
+      },
+      {
+        "title": "Fundamental Attribution Error",
+        "href": "chapter-007.xhtml"
+      },
+      {
+        "title": "Planning Fallacy",
+        "href": "chapter-008.xhtml"
+      },
+      {
+        "title": "Overconfidence",
+        "href": "chapter-009.xhtml"
+      },
+      {
+        "title": "Motivated Reasoning",
+        "href": "chapter-010.xhtml"
+      },
+      {
+        "title": "Naive Realism",
+        "href": "chapter-011.xhtml"
+      },
+      {
+        "title": "Self-Deception",
+        "href": "chapter-012.xhtml"
+      },
+      {
+        "title": "Rationalization",
+        "href": "chapter-013.xhtml"
+      },
+      {
+        "title": "Moral Injury",
+        "href": "chapter-014.xhtml"
+      },
+      {
+        "title": "Bad Faith",
+        "href": "chapter-015.xhtml"
+      },
+      {
+        "title": "Willful Ignorance",
+        "href": "chapter-016.xhtml"
+      },
+      {
+        "title": "Hypocrisy",
+        "href": "chapter-017.xhtml"
+      },
+      {
+        "title": "Corruption",
+        "href": "chapter-018.xhtml"
+      },
+      {
+        "title": "Betrayal",
+        "href": "chapter-019.xhtml"
+      },
+      {
+        "title": "Complicity",
+        "href": "chapter-020.xhtml"
+      },
+      {
+        "title": "Moral Licensing",
+        "href": "chapter-021.xhtml"
+      },
+      {
+        "title": "Groupthink",
+        "href": "chapter-022.xhtml"
+      },
+      {
+        "title": "Mob Behavior",
+        "href": "chapter-023.xhtml"
+      },
+      {
+        "title": "Scapegoating",
+        "href": "chapter-024.xhtml"
+      },
+      {
+        "title": "Dehumanization",
+        "href": "chapter-025.xhtml"
+      },
+      {
+        "title": "Polarization",
+        "href": "chapter-026.xhtml"
+      },
+      {
+        "title": "Status Games",
+        "href": "chapter-027.xhtml"
+      },
+      {
+        "title": "Virtue Signaling",
+        "href": "chapter-028.xhtml"
+      },
+      {
+        "title": "Purity Spirals",
+        "href": "chapter-029.xhtml"
+      },
+      {
+        "title": "Bystander Effect",
+        "href": "chapter-030.xhtml"
+      },
+      {
+        "title": "Diffusion of Responsibility",
+        "href": "chapter-031.xhtml"
+      },
+      {
+        "title": "Social Loafing",
+        "href": "chapter-032.xhtml"
+      },
+      {
+        "title": "Codependency",
+        "href": "chapter-033.xhtml"
+      },
+      {
+        "title": "Enmeshment",
+        "href": "chapter-034.xhtml"
+      },
+      {
+        "title": "Emotional Neglect",
+        "href": "chapter-035.xhtml"
+      },
+      {
+        "title": "Stonewalling",
+        "href": "chapter-036.xhtml"
+      },
+      {
+        "title": "Contempt",
+        "href": "chapter-037.xhtml"
+      },
+      {
+        "title": "Triangulation",
+        "href": "chapter-038.xhtml"
+      },
+      {
+        "title": "Gaslighting",
+        "href": "chapter-039.xhtml"
+      },
+      {
+        "title": "Abandonment",
+        "href": "chapter-040.xhtml"
+      },
+      {
+        "title": "Boundary Violations",
+        "href": "chapter-041.xhtml"
+      },
+      {
+        "title": "Enabling",
+        "href": "chapter-042.xhtml"
+      },
+      {
+        "title": "Scope Creep",
+        "href": "chapter-043.xhtml"
+      },
+      {
+        "title": "Mission Drift",
+        "href": "chapter-044.xhtml"
+      },
+      {
+        "title": "Analysis Paralysis",
+        "href": "chapter-045.xhtml"
+      },
+      {
+        "title": "Premature Optimization",
+        "href": "chapter-046.xhtml"
+      },
+      {
+        "title": "Boiling Frog Syndrome",
+        "href": "chapter-047.xhtml"
+      },
+      {
+        "title": "Over-Optimization",
+        "href": "chapter-048.xhtml"
+      },
+      {
+        "title": "Goodhart's Law",
+        "href": "chapter-049.xhtml"
+      },
+      {
+        "title": "Technical Debt",
+        "href": "chapter-050.xhtml"
+      },
+      {
+        "title": "Feature Creep",
+        "href": "chapter-051.xhtml"
+      },
+      {
+        "title": "The Second System Effect",
+        "href": "chapter-052.xhtml"
+      },
+      {
+        "title": "Perverse Incentives",
+        "href": "chapter-053.xhtml"
+      },
+      {
+        "title": "Tragedy of the Commons",
+        "href": "chapter-054.xhtml"
+      },
+      {
+        "title": "Coordination Failures",
+        "href": "chapter-055.xhtml"
+      },
+      {
+        "title": "Race to the Bottom",
+        "href": "chapter-056.xhtml"
+      },
+      {
+        "title": "Regulatory Capture",
+        "href": "chapter-057.xhtml"
+      },
+      {
+        "title": "Moral Hazard",
+        "href": "chapter-058.xhtml"
+      },
+      {
+        "title": "Principal-Agent Problem",
+        "href": "chapter-059.xhtml"
+      },
+      {
+        "title": "Negative Network Effects",
+        "href": "chapter-060.xhtml"
+      },
+      {
+        "title": "Lock-In Effects",
+        "href": "chapter-061.xhtml"
+      },
+      {
+        "title": "Externalities",
+        "href": "chapter-062.xhtml"
+      },
+      {
+        "title": "Acedia",
+        "href": "chapter-063.xhtml"
+      },
+      {
+        "title": "Despair",
+        "href": "chapter-064.xhtml"
+      },
+      {
+        "title": "Spiritual Bypassing",
+        "href": "chapter-065.xhtml"
+      },
+      {
+        "title": "Quietism",
+        "href": "chapter-066.xhtml"
+      },
+      {
+        "title": "Fanaticism",
+        "href": "chapter-067.xhtml"
+      },
+      {
+        "title": "Idolatry",
+        "href": "chapter-068.xhtml"
+      },
+      {
+        "title": "Spiritual Materialism",
+        "href": "chapter-069.xhtml"
+      },
+      {
+        "title": "Nihilism",
+        "href": "chapter-070.xhtml"
+      }
+    ]
+  },
+  {
+    "id": "flesh",
+    "title": "Flesh",
+    "subtitle": "The Body You Inhabit",
+    "cover": "/data/flesh/cover.png",
+    "epub": "/outputs/flesh/book.epub",
+    "chapters": [
+      {
+        "title": "The Heart",
+        "href": "chapter-001.xhtml"
+      },
+      {
+        "title": "The Brain",
+        "href": "chapter-002.xhtml"
+      },
+      {
+        "title": "The Eye",
+        "href": "chapter-003.xhtml"
+      },
+      {
+        "title": "The Ear",
+        "href": "chapter-004.xhtml"
+      },
+      {
+        "title": "The Tongue",
+        "href": "chapter-005.xhtml"
+      },
+      {
+        "title": "The Nose",
+        "href": "chapter-006.xhtml"
+      },
+      {
+        "title": "The Hand",
+        "href": "chapter-007.xhtml"
+      },
+      {
+        "title": "The Foot",
+        "href": "chapter-008.xhtml"
+      },
+      {
+        "title": "The Face",
+        "href": "chapter-009.xhtml"
+      },
+      {
+        "title": "The Skin",
+        "href": "chapter-010.xhtml"
+      },
+      {
+        "title": "The Spine",
+        "href": "chapter-011.xhtml"
+      },
+      {
+        "title": "The Stomach",
+        "href": "chapter-012.xhtml"
+      },
+      {
+        "title": "The Liver",
+        "href": "chapter-013.xhtml"
+      },
+      {
+        "title": "The Lungs",
+        "href": "chapter-014.xhtml"
+      },
+      {
+        "title": "The Kidneys",
+        "href": "chapter-015.xhtml"
+      },
+      {
+        "title": "The Gut",
+        "href": "chapter-016.xhtml"
+      },
+      {
+        "title": "The Teeth",
+        "href": "chapter-017.xhtml"
+      },
+      {
+        "title": "The Genitals",
+        "href": "chapter-018.xhtml"
+      },
+      {
+        "title": "The Womb",
+        "href": "chapter-019.xhtml"
+      },
+      {
+        "title": "The Breast",
+        "href": "chapter-020.xhtml"
+      },
+      {
+        "title": "Blood",
+        "href": "chapter-021.xhtml"
+      },
+      {
+        "title": "Bone",
+        "href": "chapter-022.xhtml"
+      },
+      {
+        "title": "Fat",
+        "href": "chapter-023.xhtml"
+      },
+      {
+        "title": "Muscle",
+        "href": "chapter-024.xhtml"
+      },
+      {
+        "title": "Hair",
+        "href": "chapter-025.xhtml"
+      },
+      {
+        "title": "Tears",
+        "href": "chapter-026.xhtml"
+      },
+      {
+        "title": "Sweat",
+        "href": "chapter-027.xhtml"
+      },
+      {
+        "title": "Saliva",
+        "href": "chapter-028.xhtml"
+      },
+      {
+        "title": "Milk",
+        "href": "chapter-029.xhtml"
+      },
+      {
+        "title": "Semen",
+        "href": "chapter-030.xhtml"
+      },
+      {
+        "title": "Urine",
+        "href": "chapter-031.xhtml"
+      },
+      {
+        "title": "Mucus",
+        "href": "chapter-032.xhtml"
+      },
+      {
+        "title": "Sleep",
+        "href": "chapter-033.xhtml"
+      },
+      {
+        "title": "Pain",
+        "href": "chapter-034.xhtml"
+      },
+      {
+        "title": "Hunger",
+        "href": "chapter-035.xhtml"
+      },
+      {
+        "title": "Thirst",
+        "href": "chapter-036.xhtml"
+      },
+      {
+        "title": "Fatigue",
+        "href": "chapter-037.xhtml"
+      },
+      {
+        "title": "Fever",
+        "href": "chapter-038.xhtml"
+      },
+      {
+        "title": "Arousal",
+        "href": "chapter-039.xhtml"
+      },
+      {
+        "title": "Intoxication",
+        "href": "chapter-040.xhtml"
+      },
+      {
+        "title": "Nausea",
+        "href": "chapter-041.xhtml"
+      },
+      {
+        "title": "Itch",
+        "href": "chapter-042.xhtml"
+      },
+      {
+        "title": "The Blush",
+        "href": "chapter-043.xhtml"
+      },
+      {
+        "title": "The Shiver",
+        "href": "chapter-044.xhtml"
+      },
+      {
+        "title": "The Yawn",
+        "href": "chapter-045.xhtml"
+      },
+      {
+        "title": "The Sneeze",
+        "href": "chapter-046.xhtml"
+      },
+      {
+        "title": "The Cough",
+        "href": "chapter-047.xhtml"
+      },
+      {
+        "title": "The Hiccup",
+        "href": "chapter-048.xhtml"
+      },
+      {
+        "title": "Goosebumps",
+        "href": "chapter-049.xhtml"
+      },
+      {
+        "title": "The Flinch",
+        "href": "chapter-050.xhtml"
+      },
+      {
+        "title": "The Orgasm",
+        "href": "chapter-051.xhtml"
+      },
+      {
+        "title": "The Scream",
+        "href": "chapter-052.xhtml"
+      },
+      {
+        "title": "Conception",
+        "href": "chapter-053.xhtml"
+      },
+      {
+        "title": "Birth",
+        "href": "chapter-054.xhtml"
+      },
+      {
+        "title": "The First Breath",
+        "href": "chapter-055.xhtml"
+      },
+      {
+        "title": "The First Step",
+        "href": "chapter-056.xhtml"
+      },
+      {
+        "title": "Puberty",
+        "href": "chapter-057.xhtml"
+      },
+      {
+        "title": "Pregnancy",
+        "href": "chapter-058.xhtml"
+      },
+      {
+        "title": "Menopause",
+        "href": "chapter-059.xhtml"
+      },
+      {
+        "title": "Aging",
+        "href": "chapter-060.xhtml"
+      },
+      {
+        "title": "Dying",
+        "href": "chapter-061.xhtml"
+      },
+      {
+        "title": "Death",
+        "href": "chapter-062.xhtml"
+      },
+      {
+        "title": "The Scar",
+        "href": "chapter-063.xhtml"
+      },
+      {
+        "title": "The Bruise",
+        "href": "chapter-064.xhtml"
+      },
+      {
+        "title": "The Wrinkle",
+        "href": "chapter-065.xhtml"
+      },
+      {
+        "title": "The Birthmark",
+        "href": "chapter-066.xhtml"
+      },
+      {
+        "title": "The Tattoo",
+        "href": "chapter-067.xhtml"
+      },
+      {
+        "title": "Blindness",
+        "href": "chapter-068.xhtml"
+      },
+      {
+        "title": "Deafness",
+        "href": "chapter-069.xhtml"
+      },
+      {
+        "title": "Paralysis",
+        "href": "chapter-070.xhtml"
+      },
+      {
+        "title": "The Tumor",
+        "href": "chapter-071.xhtml"
+      },
+      {
+        "title": "The Seizure",
+        "href": "chapter-072.xhtml"
+      },
+      {
+        "title": "The Stroke",
+        "href": "chapter-073.xhtml"
+      },
+      {
+        "title": "The Heart Attack",
+        "href": "chapter-074.xhtml"
+      },
+      {
+        "title": "Infection",
+        "href": "chapter-075.xhtml"
+      },
+      {
+        "title": "Allergy",
+        "href": "chapter-076.xhtml"
+      },
+      {
+        "title": "Addiction",
+        "href": "chapter-077.xhtml"
+      },
+      {
+        "title": "The Fastest Human",
+        "href": "chapter-078.xhtml"
+      },
+      {
+        "title": "The Strongest Human",
+        "href": "chapter-079.xhtml"
+      },
+      {
+        "title": "The Oldest Human",
+        "href": "chapter-080.xhtml"
+      },
+      {
+        "title": "The Tallest Human",
+        "href": "chapter-081.xhtml"
+      },
+      {
+        "title": "The Smallest Human",
+        "href": "chapter-082.xhtml"
+      },
+      {
+        "title": "Twins",
+        "href": "chapter-083.xhtml"
+      },
+      {
+        "title": "The Corpse",
+        "href": "chapter-084.xhtml"
+      }
+    ]
+  },
+  {
+    "id": "greek",
+    "title": "Greek Concepts",
+    "subtitle": "The Language of Scripture",
+    "cover": "/data/greek/cover.png",
+    "epub": "/outputs/greek/book.epub",
+    "chapters": [
+      {
+        "title": "Logos",
+        "href": "chapter-001.xhtml"
+      },
+      {
+        "title": "Pneuma",
+        "href": "chapter-002.xhtml"
+      },
+      {
+        "title": "Sarx",
+        "href": "chapter-003.xhtml"
+      },
+      {
+        "title": "Psych\u0113",
+        "href": "chapter-004.xhtml"
+      },
+      {
+        "title": "Kardia",
+        "href": "chapter-005.xhtml"
+      },
+      {
+        "title": "Nous",
+        "href": "chapter-006.xhtml"
+      },
+      {
+        "title": "Agap\u0113",
+        "href": "chapter-007.xhtml"
+      },
+      {
+        "title": "Philadelphia",
+        "href": "chapter-008.xhtml"
+      },
+      {
+        "title": "Koin\u014dnia",
+        "href": "chapter-009.xhtml"
+      },
+      {
+        "title": "Charis",
+        "href": "chapter-010.xhtml"
+      },
+      {
+        "title": "Charisma",
+        "href": "chapter-011.xhtml"
+      },
+      {
+        "title": "D\u014drea",
+        "href": "chapter-012.xhtml"
+      },
+      {
+        "title": "Eucharistia",
+        "href": "chapter-013.xhtml"
+      },
+      {
+        "title": "Pistis",
+        "href": "chapter-014.xhtml"
+      },
+      {
+        "title": "Elpis",
+        "href": "chapter-015.xhtml"
+      },
+      {
+        "title": "Hypomon\u0113",
+        "href": "chapter-016.xhtml"
+      },
+      {
+        "title": "Metanoia",
+        "href": "chapter-017.xhtml"
+      },
+      {
+        "title": "Ken\u014dsis",
+        "href": "chapter-018.xhtml"
+      },
+      {
+        "title": "Metamorpho\u014d",
+        "href": "chapter-019.xhtml"
+      },
+      {
+        "title": "Apokatastasis",
+        "href": "chapter-020.xhtml"
+      },
+      {
+        "title": "Hamartia",
+        "href": "chapter-021.xhtml"
+      },
+      {
+        "title": "Hilasmos",
+        "href": "chapter-022.xhtml"
+      },
+      {
+        "title": "Katallag\u0113",
+        "href": "chapter-023.xhtml"
+      },
+      {
+        "title": "S\u014dt\u0113ria",
+        "href": "chapter-024.xhtml"
+      },
+      {
+        "title": "Apolytr\u014dsis",
+        "href": "chapter-025.xhtml"
+      },
+      {
+        "title": "Dikaiosyn\u0113",
+        "href": "chapter-026.xhtml"
+      },
+      {
+        "title": "Krisis",
+        "href": "chapter-027.xhtml"
+      },
+      {
+        "title": "Eleos",
+        "href": "chapter-028.xhtml"
+      },
+      {
+        "title": "Al\u0113theia",
+        "href": "chapter-029.xhtml"
+      },
+      {
+        "title": "Sophia",
+        "href": "chapter-030.xhtml"
+      },
+      {
+        "title": "Gn\u014dsis",
+        "href": "chapter-031.xhtml"
+      },
+      {
+        "title": "Epign\u014dsis",
+        "href": "chapter-032.xhtml"
+      },
+      {
+        "title": "Doxa",
+        "href": "chapter-033.xhtml"
+      },
+      {
+        "title": "Parousia",
+        "href": "chapter-034.xhtml"
+      },
+      {
+        "title": "Epiphaneia",
+        "href": "chapter-035.xhtml"
+      },
+      {
+        "title": "Kairos",
+        "href": "chapter-036.xhtml"
+      },
+      {
+        "title": "Chronos",
+        "href": "chapter-037.xhtml"
+      },
+      {
+        "title": "Teleios",
+        "href": "chapter-038.xhtml"
+      },
+      {
+        "title": "Basileia",
+        "href": "chapter-039.xhtml"
+      },
+      {
+        "title": "Exousia",
+        "href": "chapter-040.xhtml"
+      },
+      {
+        "title": "Dynamis",
+        "href": "chapter-041.xhtml"
+      },
+      {
+        "title": "Ekkl\u0113sia",
+        "href": "chapter-042.xhtml"
+      },
+      {
+        "title": "Kl\u0113sis",
+        "href": "chapter-043.xhtml"
+      },
+      {
+        "title": "Leitourgia",
+        "href": "chapter-044.xhtml"
+      },
+      {
+        "title": "Diakonia",
+        "href": "chapter-045.xhtml"
+      },
+      {
+        "title": "Tapeinophrosyn\u0113",
+        "href": "chapter-046.xhtml"
+      },
+      {
+        "title": "Makrothymia",
+        "href": "chapter-047.xhtml"
+      },
+      {
+        "title": "Eir\u0113n\u0113",
+        "href": "chapter-048.xhtml"
+      },
+      {
+        "title": "Chara",
+        "href": "chapter-049.xhtml"
+      },
+      {
+        "title": "Thanatos",
+        "href": "chapter-050.xhtml"
+      },
+      {
+        "title": "Z\u014d\u0113",
+        "href": "chapter-051.xhtml"
+      },
+      {
+        "title": "Anastasis",
+        "href": "chapter-052.xhtml"
+      },
+      {
+        "title": "Myst\u0113rion",
+        "href": "chapter-053.xhtml"
+      },
+      {
+        "title": "Apokalypsis",
+        "href": "chapter-054.xhtml"
+      },
+      {
+        "title": "Proph\u0113teia",
+        "href": "chapter-055.xhtml"
+      }
+    ]
+  },
+  {
+    "id": "hidden-depths",
+    "title": "Hidden Depths",
+    "subtitle": "The Ordinary Examined",
+    "cover": "/data/hidden-depths/cover.png",
+    "epub": "/outputs/hidden-depths/book.epub",
+    "chapters": [
+      {
+        "title": "Hot Water Freezes First",
+        "href": "chapter-001.xhtml"
+      },
+      {
+        "title": "Why Glass Is Clear",
+        "href": "chapter-002.xhtml"
+      },
+      {
+        "title": "Same Atoms, Opposite Materials",
+        "href": "chapter-003.xhtml"
+      },
+      {
+        "title": "Electricity from Pressure",
+        "href": "chapter-004.xhtml"
+      },
+      {
+        "title": "When Bubbles Make Light",
+        "href": "chapter-005.xhtml"
+      },
+      {
+        "title": "The Catalyst Paradox",
+        "href": "chapter-006.xhtml"
+      },
+      {
+        "title": "Mirror Molecules",
+        "href": "chapter-007.xhtml"
+      },
+      {
+        "title": "Why Paper Cuts Hurt",
+        "href": "chapter-008.xhtml"
+      },
+      {
+        "title": "How Immunity Remembers",
+        "href": "chapter-009.xhtml"
+      },
+      {
+        "title": "Twin Fingerprints Diverge",
+        "href": "chapter-010.xhtml"
+      },
+      {
+        "title": "One Cell, Many Fates",
+        "href": "chapter-011.xhtml"
+      },
+      {
+        "title": "Brain Freeze",
+        "href": "chapter-012.xhtml"
+      },
+      {
+        "title": "The Electric Eel's Secret",
+        "href": "chapter-013.xhtml"
+      },
+      {
+        "title": "Salt Sea, Fresh Lake",
+        "href": "chapter-014.xhtml"
+      },
+      {
+        "title": "How Caves Form",
+        "href": "chapter-015.xhtml"
+      },
+      {
+        "title": "Six-Sided Snow",
+        "href": "chapter-016.xhtml"
+      },
+      {
+        "title": "Canceling Sound with Sound",
+        "href": "chapter-017.xhtml"
+      },
+      {
+        "title": "Synchronized Satellites",
+        "href": "chapter-018.xhtml"
+      },
+      {
+        "title": "Light Through Glass",
+        "href": "chapter-019.xhtml"
+      },
+      {
+        "title": "Scars and Their Absence",
+        "href": "chapter-020.xhtml"
+      },
+      {
+        "title": "Surviving Without Food",
+        "href": "chapter-021.xhtml"
+      },
+      {
+        "title": "The Healing Purr",
+        "href": "chapter-022.xhtml"
+      },
+      {
+        "title": "The Indestructible Tardigrade",
+        "href": "chapter-023.xhtml"
+      },
+      {
+        "title": "Birds and Magnetic Fields",
+        "href": "chapter-024.xhtml"
+      },
+      {
+        "title": "The Sinking Balloon",
+        "href": "chapter-025.xhtml"
+      },
+      {
+        "title": "When Magnets Die",
+        "href": "chapter-026.xhtml"
+      },
+      {
+        "title": "Colors in Soap Bubbles",
+        "href": "chapter-027.xhtml"
+      },
+      {
+        "title": "Onion Tears",
+        "href": "chapter-028.xhtml"
+      },
+      {
+        "title": "Garlic's Transformation",
+        "href": "chapter-029.xhtml"
+      },
+      {
+        "title": "The Alchemy of Fermentation",
+        "href": "chapter-030.xhtml"
+      },
+      {
+        "title": "Rivers in Your Veins",
+        "href": "chapter-031.xhtml"
+      },
+      {
+        "title": "Cities Think Like Brains",
+        "href": "chapter-032.xhtml"
+      },
+      {
+        "title": "Heartbeats and Stock Prices",
+        "href": "chapter-033.xhtml"
+      },
+      {
+        "title": "The Hexagon Solution",
+        "href": "chapter-034.xhtml"
+      },
+      {
+        "title": "Fibonacci Everywhere",
+        "href": "chapter-035.xhtml"
+      },
+      {
+        "title": "Slime Mold Intelligence",
+        "href": "chapter-036.xhtml"
+      },
+      {
+        "title": "Phantom Traffic Jams",
+        "href": "chapter-037.xhtml"
+      },
+      {
+        "title": "Crowds as Fluids",
+        "href": "chapter-038.xhtml"
+      },
+      {
+        "title": "Universal Symbols",
+        "href": "chapter-039.xhtml"
+      },
+      {
+        "title": "Flood Myths Everywhere",
+        "href": "chapter-040.xhtml"
+      },
+      {
+        "title": "Moral Convergence",
+        "href": "chapter-041.xhtml"
+      },
+      {
+        "title": "Rituals Repeated",
+        "href": "chapter-042.xhtml"
+      },
+      {
+        "title": "Fractals and Chaos",
+        "href": "chapter-043.xhtml"
+      },
+      {
+        "title": "Small Changes, Massive Shifts",
+        "href": "chapter-044.xhtml"
+      },
+      {
+        "title": "The Flock's Mind",
+        "href": "chapter-045.xhtml"
+      },
+      {
+        "title": "Fire Builds Forests",
+        "href": "chapter-046.xhtml"
+      },
+      {
+        "title": "Invaders as Saviors",
+        "href": "chapter-047.xhtml"
+      },
+      {
+        "title": "Poison into Medicine",
+        "href": "chapter-048.xhtml"
+      },
+      {
+        "title": "Fasting for Longevity",
+        "href": "chapter-049.xhtml"
+      },
+      {
+        "title": "Stress Strengthens Neurons",
+        "href": "chapter-050.xhtml"
+      },
+      {
+        "title": "Coal's Hidden Radiation",
+        "href": "chapter-051.xhtml"
+      },
+      {
+        "title": "Faster When Cold",
+        "href": "chapter-052.xhtml"
+      },
+      {
+        "title": "Detox Creates Toxins",
+        "href": "chapter-053.xhtml"
+      },
+      {
+        "title": "Leftovers Taste Better",
+        "href": "chapter-054.xhtml"
+      },
+      {
+        "title": "Natural Immunity to Poison",
+        "href": "chapter-055.xhtml"
+      },
+      {
+        "title": "Polyculture's Abundance",
+        "href": "chapter-056.xhtml"
+      },
+      {
+        "title": "Ancient Methods Win",
+        "href": "chapter-057.xhtml"
+      },
+      {
+        "title": "Faith and Longevity",
+        "href": "chapter-058.xhtml"
+      },
+      {
+        "title": "Experience Changes Genes",
+        "href": "chapter-059.xhtml"
+      },
+      {
+        "title": "The Cost of Sex",
+        "href": "chapter-060.xhtml"
+      },
+      {
+        "title": "Perception as Hallucination",
+        "href": "chapter-061.xhtml"
+      },
+      {
+        "title": "Memories That Never Were",
+        "href": "chapter-062.xhtml"
+      },
+      {
+        "title": "Elastic Time",
+        "href": "chapter-063.xhtml"
+      },
+      {
+        "title": "The Phantom Limb",
+        "href": "chapter-064.xhtml"
+      },
+      {
+        "title": "Realer Than Real",
+        "href": "chapter-065.xhtml"
+      },
+      {
+        "title": "Knowing It's False, Seeing It Anyway",
+        "href": "chapter-066.xhtml"
+      },
+      {
+        "title": "Vivid and Wrong",
+        "href": "chapter-067.xhtml"
+      },
+      {
+        "title": "Forgotten Dreams",
+        "href": "chapter-068.xhtml"
+      },
+      {
+        "title": "The Dissolving Self",
+        "href": "chapter-069.xhtml"
+      },
+      {
+        "title": "Smell and Memory",
+        "href": "chapter-070.xhtml"
+      },
+      {
+        "title": "Music's Memory Key",
+        "href": "chapter-071.xhtml"
+      },
+      {
+        "title": "The Flow State",
+        "href": "chapter-072.xhtml"
+      },
+      {
+        "title": "Crossed Senses",
+        "href": "chapter-073.xhtml"
+      },
+      {
+        "title": "Contagious Yawning",
+        "href": "chapter-074.xhtml"
+      },
+      {
+        "title": "You Can't Tickle Yourself",
+        "href": "chapter-075.xhtml"
+      },
+      {
+        "title": "Can Logic Prove Itself?",
+        "href": "chapter-076.xhtml"
+      },
+      {
+        "title": "Achilles and the Tortoise",
+        "href": "chapter-077.xhtml"
+      },
+      {
+        "title": "The Cat's Two States",
+        "href": "chapter-078.xhtml"
+      },
+      {
+        "title": "Infinite Rooms, No Vacancy",
+        "href": "chapter-079.xhtml"
+      },
+      {
+        "title": "The Ship Rebuilt",
+        "href": "chapter-080.xhtml"
+      },
+      {
+        "title": "Free Will's Impossibility",
+        "href": "chapter-081.xhtml"
+      },
+      {
+        "title": "Determined but Responsible",
+        "href": "chapter-082.xhtml"
+      },
+      {
+        "title": "The Helper's Paradox",
+        "href": "chapter-083.xhtml"
+      },
+      {
+        "title": "The Prediction That Fails Itself",
+        "href": "chapter-084.xhtml"
+      },
+      {
+        "title": "Finding by Giving Up",
+        "href": "chapter-085.xhtml"
+      },
+      {
+        "title": "Watching Changes Things",
+        "href": "chapter-086.xhtml"
+      },
+      {
+        "title": "One Grain at a Time",
+        "href": "chapter-087.xhtml"
+      },
+      {
+        "title": "The Liar's Truth",
+        "href": "chapter-088.xhtml"
+      },
+      {
+        "title": "Doing Nothing Changes Everything",
+        "href": "chapter-089.xhtml"
+      },
+      {
+        "title": "Simple to State, Impossible to Solve",
+        "href": "chapter-090.xhtml"
+      },
+      {
+        "title": "A Teaspoon of Neutron Star",
+        "href": "chapter-091.xhtml"
+      },
+      {
+        "title": "The Missing Mass",
+        "href": "chapter-092.xhtml"
+      },
+      {
+        "title": "Trillions Pass Through You",
+        "href": "chapter-093.xhtml"
+      },
+      {
+        "title": "Evaporating Black Holes",
+        "href": "chapter-094.xhtml"
+      },
+      {
+        "title": "Faster Than Light Expansion",
+        "href": "chapter-095.xhtml"
+      },
+      {
+        "title": "The Price of Antimatter",
+        "href": "chapter-096.xhtml"
+      },
+      {
+        "title": "Particles That Barely Exist",
+        "href": "chapter-097.xhtml"
+      },
+      {
+        "title": "Brighter Than Galaxies",
+        "href": "chapter-098.xhtml"
+      },
+      {
+        "title": "The Hungry Brain",
+        "href": "chapter-099.xhtml"
+      },
+      {
+        "title": "Resistance in Real Time",
+        "href": "chapter-100.xhtml"
+      },
+      {
+        "title": "Pilgrim Time",
+        "href": "chapter-101.xhtml"
+      },
+      {
+        "title": "Ego Death",
+        "href": "chapter-102.xhtml"
+      },
+      {
+        "title": "The Oneness Experience",
+        "href": "chapter-103.xhtml"
+      },
+      {
+        "title": "Chanting and the Vagus Nerve",
+        "href": "chapter-104.xhtml"
+      },
+      {
+        "title": "Silence as Teacher",
+        "href": "chapter-105.xhtml"
+      },
+      {
+        "title": "The Moon's Pull",
+        "href": "chapter-106.xhtml"
+      },
+      {
+        "title": "Unlucky Numbers",
+        "href": "chapter-107.xhtml"
+      },
+      {
+        "title": "Sacred Geometry",
+        "href": "chapter-108.xhtml"
+      },
+      {
+        "title": "Measuring Wonder",
+        "href": "chapter-109.xhtml"
+      },
+      {
+        "title": "Nature and the Sacred",
+        "href": "chapter-110.xhtml"
+      },
+      {
+        "title": "X-Rays to Quantum Mechanics",
+        "href": "chapter-111.xhtml"
+      },
+      {
+        "title": "Flight Principles Everywhere",
+        "href": "chapter-112.xhtml"
+      },
+      {
+        "title": "Paper and War",
+        "href": "chapter-113.xhtml"
+      },
+      {
+        "title": "Pilgrims Follow Traders",
+        "href": "chapter-114.xhtml"
+      },
+      {
+        "title": "Dietary Laws and Health",
+        "href": "chapter-115.xhtml"
+      },
+      {
+        "title": "Forest Fires and Aging Cells",
+        "href": "chapter-116.xhtml"
+      },
+      {
+        "title": "Gut Feelings Are Real",
+        "href": "chapter-117.xhtml"
+      },
+      {
+        "title": "Inherited Trauma",
+        "href": "chapter-118.xhtml"
+      },
+      {
+        "title": "Viral Fossils in Your DNA",
+        "href": "chapter-119.xhtml"
+      },
+      {
+        "title": "The Wood Wide Web",
+        "href": "chapter-120.xhtml"
+      }
+    ]
+  },
+  {
+    "id": "liminal",
+    "title": "Liminal",
+    "subtitle": "At the Edge of the Known",
+    "cover": "/data/liminal/cover.png",
+    "epub": "/outputs/liminal/book.epub",
+    "chapters": [
+      {
+        "title": "Meteorites",
+        "href": "chapter-001.xhtml"
+      },
+      {
+        "title": "Ball Lightning",
+        "href": "chapter-002.xhtml"
+      },
+      {
+        "title": "Giant Squid",
+        "href": "chapter-003.xhtml"
+      },
+      {
+        "title": "Continental Drift",
+        "href": "chapter-004.xhtml"
+      },
+      {
+        "title": "Gorillas",
+        "href": "chapter-005.xhtml"
+      },
+      {
+        "title": "Rogue Waves",
+        "href": "chapter-006.xhtml"
+      },
+      {
+        "title": "Prions",
+        "href": "chapter-007.xhtml"
+      },
+      {
+        "title": "Helicobacter Pylori",
+        "href": "chapter-008.xhtml"
+      },
+      {
+        "title": "Fast Radio Bursts",
+        "href": "chapter-009.xhtml"
+      },
+      {
+        "title": "The Wow! Signal",
+        "href": "chapter-010.xhtml"
+      },
+      {
+        "title": "Hessdalen Lights",
+        "href": "chapter-011.xhtml"
+      },
+      {
+        "title": "The Tunguska Event",
+        "href": "chapter-012.xhtml"
+      },
+      {
+        "title": "The Hum",
+        "href": "chapter-013.xhtml"
+      },
+      {
+        "title": "The Oakville Blobs",
+        "href": "chapter-014.xhtml"
+      },
+      {
+        "title": "UAP Encounters",
+        "href": "chapter-015.xhtml"
+      },
+      {
+        "title": "Dark Matter",
+        "href": "chapter-016.xhtml"
+      },
+      {
+        "title": "Near-Death Experiences",
+        "href": "chapter-017.xhtml"
+      },
+      {
+        "title": "Sleep Paralysis",
+        "href": "chapter-018.xhtml"
+      },
+      {
+        "title": "Hypnagogia",
+        "href": "chapter-019.xhtml"
+      },
+      {
+        "title": "Shared Hallucinations",
+        "href": "chapter-020.xhtml"
+      },
+      {
+        "title": "Terminal Lucidity",
+        "href": "chapter-021.xhtml"
+      },
+      {
+        "title": "D\u00e9j\u00e0 Vu",
+        "href": "chapter-022.xhtml"
+      },
+      {
+        "title": "Out-of-Body Experiences",
+        "href": "chapter-023.xhtml"
+      },
+      {
+        "title": "Phantom Limb Pain",
+        "href": "chapter-024.xhtml"
+      },
+      {
+        "title": "Synesthesia",
+        "href": "chapter-025.xhtml"
+      },
+      {
+        "title": "The Measurement Problem",
+        "href": "chapter-026.xhtml"
+      },
+      {
+        "title": "The Placebo Effect",
+        "href": "chapter-027.xhtml"
+      },
+      {
+        "title": "The Hawthorne Effect",
+        "href": "chapter-028.xhtml"
+      },
+      {
+        "title": "The Double-Slit Experiment",
+        "href": "chapter-029.xhtml"
+      },
+      {
+        "title": "Schr\u00f6dinger's Cat",
+        "href": "chapter-030.xhtml"
+      },
+      {
+        "title": "The Hard Problem of Consciousness",
+        "href": "chapter-031.xhtml"
+      },
+      {
+        "title": "Willow Bark to Aspirin",
+        "href": "chapter-032.xhtml"
+      },
+      {
+        "title": "Animal Earthquake Prediction",
+        "href": "chapter-033.xhtml"
+      },
+      {
+        "title": "Weather Prediction Rhymes",
+        "href": "chapter-034.xhtml"
+      },
+      {
+        "title": "Traditional Medicinal Plants",
+        "href": "chapter-035.xhtml"
+      },
+      {
+        "title": "Polynesian Navigation",
+        "href": "chapter-036.xhtml"
+      },
+      {
+        "title": "Fermentation Traditions",
+        "href": "chapter-037.xhtml"
+      },
+      {
+        "title": "Lunar Cycles and Behavior",
+        "href": "chapter-038.xhtml"
+      },
+      {
+        "title": "Ganzfeld Experiments",
+        "href": "chapter-039.xhtml"
+      },
+      {
+        "title": "The Global Consciousness Project",
+        "href": "chapter-040.xhtml"
+      },
+      {
+        "title": "Presentiment Studies",
+        "href": "chapter-041.xhtml"
+      },
+      {
+        "title": "Remote Viewing",
+        "href": "chapter-042.xhtml"
+      },
+      {
+        "title": "The Sense of Being Stared At",
+        "href": "chapter-043.xhtml"
+      },
+      {
+        "title": "Precognition Studies",
+        "href": "chapter-044.xhtml"
+      },
+      {
+        "title": "The File Drawer Problem",
+        "href": "chapter-045.xhtml"
+      },
+      {
+        "title": "Quantum Entanglement",
+        "href": "chapter-046.xhtml"
+      },
+      {
+        "title": "Wave-Particle Duality",
+        "href": "chapter-047.xhtml"
+      },
+      {
+        "title": "Time's Arrow",
+        "href": "chapter-048.xhtml"
+      },
+      {
+        "title": "The Fine-Tuning Problem",
+        "href": "chapter-049.xhtml"
+      },
+      {
+        "title": "The Simulation Hypothesis",
+        "href": "chapter-050.xhtml"
+      },
+      {
+        "title": "The Fermi Paradox",
+        "href": "chapter-051.xhtml"
+      },
+      {
+        "title": "The Anthropic Principle",
+        "href": "chapter-052.xhtml"
+      },
+      {
+        "title": "The Delayed-Choice Experiment",
+        "href": "chapter-053.xhtml"
+      },
+      {
+        "title": "The Dancing Plague of 1518",
+        "href": "chapter-054.xhtml"
+      },
+      {
+        "title": "Dyatlov Pass Incident",
+        "href": "chapter-055.xhtml"
+      },
+      {
+        "title": "The Mary Celeste",
+        "href": "chapter-056.xhtml"
+      },
+      {
+        "title": "The Kentucky Meat Shower",
+        "href": "chapter-057.xhtml"
+      },
+      {
+        "title": "The Voynich Manuscript",
+        "href": "chapter-058.xhtml"
+      },
+      {
+        "title": "The Green Children of Woolpit",
+        "href": "chapter-059.xhtml"
+      },
+      {
+        "title": "The Ninth Legion",
+        "href": "chapter-060.xhtml"
+      },
+      {
+        "title": "The Shroud of Turin",
+        "href": "chapter-061.xhtml"
+      },
+      {
+        "title": "Apophenia",
+        "href": "chapter-062.xhtml"
+      },
+      {
+        "title": "Pareidolia",
+        "href": "chapter-063.xhtml"
+      },
+      {
+        "title": "Confirmation Bias",
+        "href": "chapter-064.xhtml"
+      },
+      {
+        "title": "The Illusion of Control",
+        "href": "chapter-065.xhtml"
+      },
+      {
+        "title": "Hyperactive Agency Detection",
+        "href": "chapter-066.xhtml"
+      },
+      {
+        "title": "The God Helmet",
+        "href": "chapter-067.xhtml"
+      },
+      {
+        "title": "Mass Psychogenic Illness",
+        "href": "chapter-068.xhtml"
+      },
+      {
+        "title": "False Memories",
+        "href": "chapter-069.xhtml"
+      },
+      {
+        "title": "Cryptomnesia",
+        "href": "chapter-070.xhtml"
+      },
+      {
+        "title": "J. Allen Hynek",
+        "href": "chapter-071.xhtml"
+      },
+      {
+        "title": "J.B. Rhine",
+        "href": "chapter-072.xhtml"
+      },
+      {
+        "title": "Rupert Sheldrake",
+        "href": "chapter-073.xhtml"
+      },
+      {
+        "title": "Jacques Vall\u00e9e",
+        "href": "chapter-074.xhtml"
+      },
+      {
+        "title": "Ian Stevenson",
+        "href": "chapter-075.xhtml"
+      },
+      {
+        "title": "Dean Radin",
+        "href": "chapter-076.xhtml"
+      },
+      {
+        "title": "Gary Schwartz",
+        "href": "chapter-077.xhtml"
+      },
+      {
+        "title": "The Cost of Studying the Fringe",
+        "href": "chapter-078.xhtml"
+      }
+    ]
+  },
+  {
+    "id": "mental-models",
+    "title": "Mental Models",
+    "subtitle": "A book of better thinking",
+    "cover": "/data/mental-models/cover.png",
+    "epub": "/outputs/mental-models/book.epub",
+    "chapters": [
+      {
+        "title": "Expected Value",
+        "href": "chapter-001.xhtml"
+      },
+      {
+        "title": "Base Rates",
+        "href": "chapter-002.xhtml"
+      },
+      {
+        "title": "Bayesian Updating",
+        "href": "chapter-003.xhtml"
+      },
+      {
+        "title": "Law of Large Numbers",
+        "href": "chapter-004.xhtml"
+      },
+      {
+        "title": "Regression to the Mean",
+        "href": "chapter-005.xhtml"
+      },
+      {
+        "title": "Fat Tails",
+        "href": "chapter-006.xhtml"
+      },
+      {
+        "title": "Risk vs. Uncertainty",
+        "href": "chapter-007.xhtml"
+      },
+      {
+        "title": "Confidence Intervals",
+        "href": "chapter-008.xhtml"
+      },
+      {
+        "title": "The Black Swan",
+        "href": "chapter-009.xhtml"
+      },
+      {
+        "title": "The Ludic Fallacy",
+        "href": "chapter-010.xhtml"
+      },
+      {
+        "title": "The Precautionary Principle",
+        "href": "chapter-011.xhtml"
+      },
+      {
+        "title": "Monte Carlo Thinking",
+        "href": "chapter-012.xhtml"
+      },
+      {
+        "title": "Compounding",
+        "href": "chapter-013.xhtml"
+      },
+      {
+        "title": "Discounting",
+        "href": "chapter-014.xhtml"
+      },
+      {
+        "title": "Opportunity Cost",
+        "href": "chapter-015.xhtml"
+      },
+      {
+        "title": "Sunk Costs",
+        "href": "chapter-016.xhtml"
+      },
+      {
+        "title": "Half-Life",
+        "href": "chapter-017.xhtml"
+      },
+      {
+        "title": "Lindy Effect",
+        "href": "chapter-018.xhtml"
+      },
+      {
+        "title": "Path Dependence",
+        "href": "chapter-019.xhtml"
+      },
+      {
+        "title": "Technical Debt",
+        "href": "chapter-020.xhtml"
+      },
+      {
+        "title": "Accumulation vs. Threshold",
+        "href": "chapter-021.xhtml"
+      },
+      {
+        "title": "Mean Reversion",
+        "href": "chapter-022.xhtml"
+      },
+      {
+        "title": "Deferred Costs",
+        "href": "chapter-023.xhtml"
+      },
+      {
+        "title": "Incentives",
+        "href": "chapter-024.xhtml"
+      },
+      {
+        "title": "Principal-Agent Problem",
+        "href": "chapter-025.xhtml"
+      },
+      {
+        "title": "Moral Hazard",
+        "href": "chapter-026.xhtml"
+      },
+      {
+        "title": "Adverse Selection",
+        "href": "chapter-027.xhtml"
+      },
+      {
+        "title": "Goodhart's Law",
+        "href": "chapter-028.xhtml"
+      },
+      {
+        "title": "Cobra Effect",
+        "href": "chapter-029.xhtml"
+      },
+      {
+        "title": "Revealed Preferences",
+        "href": "chapter-030.xhtml"
+      },
+      {
+        "title": "Skin in the Game",
+        "href": "chapter-031.xhtml"
+      },
+      {
+        "title": "Nash Equilibrium",
+        "href": "chapter-032.xhtml"
+      },
+      {
+        "title": "Prisoner's Dilemma",
+        "href": "chapter-033.xhtml"
+      },
+      {
+        "title": "Tragedy of the Commons",
+        "href": "chapter-034.xhtml"
+      },
+      {
+        "title": "Free Rider Problem",
+        "href": "chapter-035.xhtml"
+      },
+      {
+        "title": "Mechanism Design",
+        "href": "chapter-036.xhtml"
+      },
+      {
+        "title": "Feedback Loops",
+        "href": "chapter-037.xhtml"
+      },
+      {
+        "title": "Homeostasis",
+        "href": "chapter-038.xhtml"
+      },
+      {
+        "title": "Emergence",
+        "href": "chapter-039.xhtml"
+      },
+      {
+        "title": "Stock and Flow",
+        "href": "chapter-040.xhtml"
+      },
+      {
+        "title": "Bottlenecks",
+        "href": "chapter-041.xhtml"
+      },
+      {
+        "title": "Leverage Points",
+        "href": "chapter-042.xhtml"
+      },
+      {
+        "title": "Unintended Consequences",
+        "href": "chapter-043.xhtml"
+      },
+      {
+        "title": "Cascading Failures",
+        "href": "chapter-044.xhtml"
+      },
+      {
+        "title": "Tight Coupling",
+        "href": "chapter-045.xhtml"
+      },
+      {
+        "title": "Redundancy",
+        "href": "chapter-046.xhtml"
+      },
+      {
+        "title": "Hysteresis",
+        "href": "chapter-047.xhtml"
+      },
+      {
+        "title": "Second-Order Effects",
+        "href": "chapter-048.xhtml"
+      },
+      {
+        "title": "Confirmation Bias",
+        "href": "chapter-049.xhtml"
+      },
+      {
+        "title": "Availability Heuristic",
+        "href": "chapter-050.xhtml"
+      },
+      {
+        "title": "Anchoring",
+        "href": "chapter-051.xhtml"
+      },
+      {
+        "title": "Loss Aversion",
+        "href": "chapter-052.xhtml"
+      },
+      {
+        "title": "Status Quo Bias",
+        "href": "chapter-053.xhtml"
+      },
+      {
+        "title": "Hindsight Bias",
+        "href": "chapter-054.xhtml"
+      },
+      {
+        "title": "Survivorship Bias",
+        "href": "chapter-055.xhtml"
+      },
+      {
+        "title": "Fundamental Attribution Error",
+        "href": "chapter-056.xhtml"
+      },
+      {
+        "title": "Halo Effect",
+        "href": "chapter-057.xhtml"
+      },
+      {
+        "title": "Framing Effect",
+        "href": "chapter-058.xhtml"
+      },
+      {
+        "title": "Dunning-Kruger Effect",
+        "href": "chapter-059.xhtml"
+      },
+      {
+        "title": "Overconfidence",
+        "href": "chapter-060.xhtml"
+      },
+      {
+        "title": "Hyperbolic Discounting",
+        "href": "chapter-061.xhtml"
+      },
+      {
+        "title": "Normalcy Bias",
+        "href": "chapter-062.xhtml"
+      },
+      {
+        "title": "Scope Insensitivity",
+        "href": "chapter-063.xhtml"
+      },
+      {
+        "title": "Asymmetric Information",
+        "href": "chapter-064.xhtml"
+      },
+      {
+        "title": "Signaling",
+        "href": "chapter-065.xhtml"
+      },
+      {
+        "title": "Costly Signaling",
+        "href": "chapter-066.xhtml"
+      },
+      {
+        "title": "Countersignaling",
+        "href": "chapter-067.xhtml"
+      },
+      {
+        "title": "Cheap Talk",
+        "href": "chapter-068.xhtml"
+      },
+      {
+        "title": "Information Cascades",
+        "href": "chapter-069.xhtml"
+      },
+      {
+        "title": "Herding",
+        "href": "chapter-070.xhtml"
+      },
+      {
+        "title": "The Market for Lemons",
+        "href": "chapter-071.xhtml"
+      },
+      {
+        "title": "Signal vs. Noise",
+        "href": "chapter-072.xhtml"
+      },
+      {
+        "title": "Legibility",
+        "href": "chapter-073.xhtml"
+      },
+      {
+        "title": "Preference Falsification",
+        "href": "chapter-074.xhtml"
+      },
+      {
+        "title": "Common Knowledge",
+        "href": "chapter-075.xhtml"
+      },
+      {
+        "title": "Tradeoffs",
+        "href": "chapter-076.xhtml"
+      },
+      {
+        "title": "Opportunity Cost",
+        "href": "chapter-077.xhtml"
+      },
+      {
+        "title": "The Iron Triangle",
+        "href": "chapter-078.xhtml"
+      },
+      {
+        "title": "Satisficing vs. Maximizing",
+        "href": "chapter-079.xhtml"
+      },
+      {
+        "title": "Pareto Efficiency",
+        "href": "chapter-080.xhtml"
+      },
+      {
+        "title": "Binding Constraints",
+        "href": "chapter-081.xhtml"
+      },
+      {
+        "title": "Liebig's Law",
+        "href": "chapter-082.xhtml"
+      },
+      {
+        "title": "Jevons Paradox",
+        "href": "chapter-083.xhtml"
+      },
+      {
+        "title": "Conservation Laws",
+        "href": "chapter-084.xhtml"
+      },
+      {
+        "title": "Theory of Constraints",
+        "href": "chapter-085.xhtml"
+      },
+      {
+        "title": "Power Laws",
+        "href": "chapter-086.xhtml"
+      },
+      {
+        "title": "The Pareto Principle",
+        "href": "chapter-087.xhtml"
+      },
+      {
+        "title": "Winner-Take-All",
+        "href": "chapter-088.xhtml"
+      },
+      {
+        "title": "Network Effects",
+        "href": "chapter-089.xhtml"
+      },
+      {
+        "title": "Preferential Attachment",
+        "href": "chapter-090.xhtml"
+      },
+      {
+        "title": "The Long Tail",
+        "href": "chapter-091.xhtml"
+      },
+      {
+        "title": "Zipf's Law",
+        "href": "chapter-092.xhtml"
+      },
+      {
+        "title": "Matthew Effect",
+        "href": "chapter-093.xhtml"
+      },
+      {
+        "title": "Multiplicative Processes",
+        "href": "chapter-094.xhtml"
+      },
+      {
+        "title": "The Vital Few",
+        "href": "chapter-095.xhtml"
+      },
+      {
+        "title": "Reversible vs. Irreversible",
+        "href": "chapter-096.xhtml"
+      },
+      {
+        "title": "One-Way and Two-Way Doors",
+        "href": "chapter-097.xhtml"
+      },
+      {
+        "title": "Optionality",
+        "href": "chapter-098.xhtml"
+      },
+      {
+        "title": "Real Options",
+        "href": "chapter-099.xhtml"
+      },
+      {
+        "title": "Convexity",
+        "href": "chapter-100.xhtml"
+      },
+      {
+        "title": "Barbell Strategy",
+        "href": "chapter-101.xhtml"
+      },
+      {
+        "title": "Asymmetric Upside",
+        "href": "chapter-102.xhtml"
+      },
+      {
+        "title": "Commitment Devices",
+        "href": "chapter-103.xhtml"
+      },
+      {
+        "title": "Regret Minimization",
+        "href": "chapter-104.xhtml"
+      },
+      {
+        "title": "The Value of Information",
+        "href": "chapter-105.xhtml"
+      },
+      {
+        "title": "When to Decide",
+        "href": "chapter-106.xhtml"
+      },
+      {
+        "title": "When Not to Decide",
+        "href": "chapter-107.xhtml"
+      },
+      {
+        "title": "Single Points of Failure",
+        "href": "chapter-108.xhtml"
+      },
+      {
+        "title": "Margin of Safety",
+        "href": "chapter-109.xhtml"
+      },
+      {
+        "title": "Defense in Depth",
+        "href": "chapter-110.xhtml"
+      },
+      {
+        "title": "Fail-Safe vs. Safe-Fail",
+        "href": "chapter-111.xhtml"
+      },
+      {
+        "title": "Graceful Degradation",
+        "href": "chapter-112.xhtml"
+      },
+      {
+        "title": "Brittleness",
+        "href": "chapter-113.xhtml"
+      },
+      {
+        "title": "Antifragility",
+        "href": "chapter-114.xhtml"
+      },
+      {
+        "title": "Swiss Cheese Model",
+        "href": "chapter-115.xhtml"
+      },
+      {
+        "title": "Normalizing Deviance",
+        "href": "chapter-116.xhtml"
+      },
+      {
+        "title": "Pre-Mortem",
+        "href": "chapter-117.xhtml"
+      },
+      {
+        "title": "Near Misses",
+        "href": "chapter-118.xhtml"
+      },
+      {
+        "title": "Black Box Thinking",
+        "href": "chapter-119.xhtml"
+      },
+      {
+        "title": "Coordination Problems",
+        "href": "chapter-120.xhtml"
+      },
+      {
+        "title": "Collective Action",
+        "href": "chapter-121.xhtml"
+      },
+      {
+        "title": "Schelling Points",
+        "href": "chapter-122.xhtml"
+      },
+      {
+        "title": "Social Norms",
+        "href": "chapter-123.xhtml"
+      },
+      {
+        "title": "Institutions",
+        "href": "chapter-124.xhtml"
+      },
+      {
+        "title": "Property Rights",
+        "href": "chapter-125.xhtml"
+      },
+      {
+        "title": "Transaction Costs",
+        "href": "chapter-126.xhtml"
+      },
+      {
+        "title": "Coase Theorem",
+        "href": "chapter-127.xhtml"
+      },
+      {
+        "title": "Trust",
+        "href": "chapter-128.xhtml"
+      },
+      {
+        "title": "Reputation",
+        "href": "chapter-129.xhtml"
+      },
+      {
+        "title": "Credible Commitment",
+        "href": "chapter-130.xhtml"
+      },
+      {
+        "title": "Common Knowledge",
+        "href": "chapter-131.xhtml"
+      },
+      {
+        "title": "In-Group/Out-Group",
+        "href": "chapter-132.xhtml"
+      },
+      {
+        "title": "Circle of Competence",
+        "href": "chapter-133.xhtml"
+      },
+      {
+        "title": "Knowing What You Don't Know",
+        "href": "chapter-134.xhtml"
+      },
+      {
+        "title": "Intellectual Humility",
+        "href": "chapter-135.xhtml"
+      },
+      {
+        "title": "First Principles Thinking",
+        "href": "chapter-136.xhtml"
+      },
+      {
+        "title": "Inversion",
+        "href": "chapter-137.xhtml"
+      },
+      {
+        "title": "The Map and the Territory",
+        "href": "chapter-138.xhtml"
+      },
+      {
+        "title": "Via Negativa",
+        "href": "chapter-139.xhtml"
+      },
+      {
+        "title": "Falsification",
+        "href": "chapter-140.xhtml"
+      },
+      {
+        "title": "Red Teaming",
+        "href": "chapter-141.xhtml"
+      },
+      {
+        "title": "Calibration",
+        "href": "chapter-142.xhtml"
+      },
+      {
+        "title": "The Fox and the Hedgehog",
+        "href": "chapter-143.xhtml"
+      },
+      {
+        "title": "Chesterton's Fence",
+        "href": "chapter-144.xhtml"
+      },
+      {
+        "title": "The Seen and the Unseen",
+        "href": "chapter-145.xhtml"
+      },
+      {
+        "title": "Practical Wisdom",
+        "href": "chapter-146.xhtml"
+      }
+    ]
+  },
+  {
+    "id": "mystics",
+    "title": "Christian Mystics",
+    "subtitle": "Encounters with the Infinite",
+    "cover": "/data/mystics/cover.png",
+    "epub": "/outputs/mystics/book.epub",
+    "chapters": [
+      {
+        "title": "Antony of Egypt",
+        "href": "chapter-001.xhtml"
+      },
+      {
+        "title": "Evagrius Ponticus",
+        "href": "chapter-002.xhtml"
+      },
+      {
+        "title": "John Cassian",
+        "href": "chapter-003.xhtml"
+      },
+      {
+        "title": "Amma Syncletica",
+        "href": "chapter-004.xhtml"
+      },
+      {
+        "title": "Gregory of Nyssa",
+        "href": "chapter-005.xhtml"
+      },
+      {
+        "title": "Pseudo-Dionysius",
+        "href": "chapter-006.xhtml"
+      },
+      {
+        "title": "Maximus the Confessor",
+        "href": "chapter-007.xhtml"
+      },
+      {
+        "title": "Symeon the New Theologian",
+        "href": "chapter-008.xhtml"
+      },
+      {
+        "title": "Gregory Palamas",
+        "href": "chapter-009.xhtml"
+      },
+      {
+        "title": "Benedict of Nursia",
+        "href": "chapter-010.xhtml"
+      },
+      {
+        "title": "Bernard of Clairvaux",
+        "href": "chapter-011.xhtml"
+      },
+      {
+        "title": "Hildegard of Bingen",
+        "href": "chapter-012.xhtml"
+      },
+      {
+        "title": "Francis of Assisi",
+        "href": "chapter-013.xhtml"
+      },
+      {
+        "title": "Clare of Assisi",
+        "href": "chapter-014.xhtml"
+      },
+      {
+        "title": "Bonaventure",
+        "href": "chapter-015.xhtml"
+      },
+      {
+        "title": "Meister Eckhart",
+        "href": "chapter-016.xhtml"
+      },
+      {
+        "title": "Jan van Ruusbroec",
+        "href": "chapter-017.xhtml"
+      },
+      {
+        "title": "Julian of Norwich",
+        "href": "chapter-018.xhtml"
+      },
+      {
+        "title": "Walter Hilton",
+        "href": "chapter-019.xhtml"
+      },
+      {
+        "title": "The Cloud Author",
+        "href": "chapter-020.xhtml"
+      },
+      {
+        "title": "Margery Kempe",
+        "href": "chapter-021.xhtml"
+      },
+      {
+        "title": "Catherine of Siena",
+        "href": "chapter-022.xhtml"
+      },
+      {
+        "title": "Catherine of Genoa",
+        "href": "chapter-023.xhtml"
+      },
+      {
+        "title": "Angela of Foligno",
+        "href": "chapter-024.xhtml"
+      },
+      {
+        "title": "Ignatius of Loyola",
+        "href": "chapter-025.xhtml"
+      },
+      {
+        "title": "Teresa of \u00c1vila",
+        "href": "chapter-026.xhtml"
+      },
+      {
+        "title": "John of the Cross",
+        "href": "chapter-027.xhtml"
+      },
+      {
+        "title": "Jacob Boehme",
+        "href": "chapter-028.xhtml"
+      },
+      {
+        "title": "Brother Lawrence",
+        "href": "chapter-029.xhtml"
+      },
+      {
+        "title": "Madame Guyon",
+        "href": "chapter-030.xhtml"
+      },
+      {
+        "title": "Jean-Pierre de Caussade",
+        "href": "chapter-031.xhtml"
+      },
+      {
+        "title": "Seraphim of Sarov",
+        "href": "chapter-032.xhtml"
+      },
+      {
+        "title": "Theophan the Recluse",
+        "href": "chapter-033.xhtml"
+      },
+      {
+        "title": "Th\u00e9r\u00e8se of Lisieux",
+        "href": "chapter-034.xhtml"
+      },
+      {
+        "title": "Charles de Foucauld",
+        "href": "chapter-035.xhtml"
+      },
+      {
+        "title": "Edith Stein",
+        "href": "chapter-036.xhtml"
+      },
+      {
+        "title": "Thomas Merton",
+        "href": "chapter-037.xhtml"
+      },
+      {
+        "title": "Henri Nouwen",
+        "href": "chapter-038.xhtml"
+      },
+      {
+        "title": "Thomas Keating",
+        "href": "chapter-039.xhtml"
+      },
+      {
+        "title": "Basil Pennington",
+        "href": "chapter-040.xhtml"
+      },
+      {
+        "title": "Cynthia Bourgeault",
+        "href": "chapter-041.xhtml"
+      },
+      {
+        "title": "Evelyn Underhill",
+        "href": "chapter-042.xhtml"
+      },
+      {
+        "title": "Howard Thurman",
+        "href": "chapter-043.xhtml"
+      },
+      {
+        "title": "Dag Hammarskj\u00f6ld",
+        "href": "chapter-044.xhtml"
+      },
+      {
+        "title": "Simone Weil",
+        "href": "chapter-045.xhtml"
+      },
+      {
+        "title": "Pierre Teilhard de Chardin",
+        "href": "chapter-046.xhtml"
+      },
+      {
+        "title": "Bede Griffiths",
+        "href": "chapter-047.xhtml"
+      },
+      {
+        "title": "Abhishiktananda",
+        "href": "chapter-048.xhtml"
+      }
+    ]
+  },
+  {
+    "id": "nobel-physics",
+    "title": "Nobel Prizes",
+    "subtitle": "Pioneers of Physics",
+    "cover": "/data/nobel-physics/cover.png",
+    "epub": "/outputs/nobel-physics/book.epub",
+    "chapters": [
+      {
+        "title": "1901 \u2014 The Discovery of X-Rays",
+        "href": "chapter-001.xhtml"
+      },
+      {
+        "title": "1902 \u2014 The Zeeman Effect",
+        "href": "chapter-002.xhtml"
+      },
+      {
+        "title": "1903 \u2014 Radioactivity",
+        "href": "chapter-003.xhtml"
+      },
+      {
+        "title": "1904 \u2014 The Discovery of Argon",
+        "href": "chapter-004.xhtml"
+      },
+      {
+        "title": "1905 \u2014 Cathode Rays",
+        "href": "chapter-005.xhtml"
+      },
+      {
+        "title": "1906 \u2014 The Electron",
+        "href": "chapter-006.xhtml"
+      },
+      {
+        "title": "1907 \u2014 Optical Precision Instruments",
+        "href": "chapter-007.xhtml"
+      },
+      {
+        "title": "1908 \u2014 Color Photography",
+        "href": "chapter-008.xhtml"
+      },
+      {
+        "title": "1909 \u2014 Wireless Telegraphy",
+        "href": "chapter-009.xhtml"
+      },
+      {
+        "title": "1910 \u2014 Equations of State for Gases and Liquids",
+        "href": "chapter-010.xhtml"
+      },
+      {
+        "title": "1911 \u2014 Black-Body Radiation",
+        "href": "chapter-011.xhtml"
+      },
+      {
+        "title": "1912 \u2014 The Automatic Regulator for Lighthouses",
+        "href": "chapter-012.xhtml"
+      },
+      {
+        "title": "1913 \u2014 Low-Temperature Physics",
+        "href": "chapter-013.xhtml"
+      },
+      {
+        "title": "1914 \u2014 X-Ray Crystallography",
+        "href": "chapter-014.xhtml"
+      },
+      {
+        "title": "1915 \u2014 X-Ray Analysis of Crystal Structure",
+        "href": "chapter-015.xhtml"
+      },
+      {
+        "title": "1917 \u2014 Characteristic X-Radiation",
+        "href": "chapter-016.xhtml"
+      },
+      {
+        "title": "1918 \u2014 Energy Quanta",
+        "href": "chapter-017.xhtml"
+      },
+      {
+        "title": "1919 \u2014 The Stark Effect",
+        "href": "chapter-018.xhtml"
+      },
+      {
+        "title": "1920 \u2014 Anomalies in Nickel Steel Alloys",
+        "href": "chapter-019.xhtml"
+      },
+      {
+        "title": "1921 \u2014 The Photoelectric Effect",
+        "href": "chapter-020.xhtml"
+      },
+      {
+        "title": "1922 \u2014 Atomic Structure and Radiation",
+        "href": "chapter-021.xhtml"
+      },
+      {
+        "title": "1923 \u2014 The Elementary Charge of Electricity",
+        "href": "chapter-022.xhtml"
+      },
+      {
+        "title": "1924 \u2014 X-Ray Spectroscopy",
+        "href": "chapter-023.xhtml"
+      },
+      {
+        "title": "1925 \u2014 The Franck-Hertz Experiment",
+        "href": "chapter-024.xhtml"
+      },
+      {
+        "title": "1926 \u2014 The Discontinuous Structure of Matter",
+        "href": "chapter-025.xhtml"
+      },
+      {
+        "title": "1927 \u2014 The Compton Effect",
+        "href": "chapter-026.xhtml"
+      },
+      {
+        "title": "1928 \u2014 Thermionic Emission",
+        "href": "chapter-027.xhtml"
+      },
+      {
+        "title": "1929 \u2014 The Wave Nature of the Electron",
+        "href": "chapter-028.xhtml"
+      },
+      {
+        "title": "1930 \u2014 The Raman Effect",
+        "href": "chapter-029.xhtml"
+      },
+      {
+        "title": "1932 \u2014 Quantum Mechanics",
+        "href": "chapter-030.xhtml"
+      },
+      {
+        "title": "1933 \u2014 Wave Mechanics",
+        "href": "chapter-031.xhtml"
+      },
+      {
+        "title": "1935 \u2014 The Neutron",
+        "href": "chapter-032.xhtml"
+      },
+      {
+        "title": "1936 \u2014 Cosmic Radiation and the Positron",
+        "href": "chapter-033.xhtml"
+      },
+      {
+        "title": "1937 \u2014 Electron Diffraction",
+        "href": "chapter-034.xhtml"
+      },
+      {
+        "title": "1938 \u2014 Slow Neutrons",
+        "href": "chapter-035.xhtml"
+      },
+      {
+        "title": "1939 \u2014 The Cyclotron",
+        "href": "chapter-036.xhtml"
+      },
+      {
+        "title": "1943 \u2014 The Molecular Beam Method",
+        "href": "chapter-037.xhtml"
+      },
+      {
+        "title": "1944 \u2014 Nuclear Magnetic Resonance",
+        "href": "chapter-038.xhtml"
+      },
+      {
+        "title": "1945 \u2014 The Exclusion Principle",
+        "href": "chapter-039.xhtml"
+      },
+      {
+        "title": "1946 \u2014 High-Pressure Physics",
+        "href": "chapter-040.xhtml"
+      },
+      {
+        "title": "1947 \u2014 The Ionosphere",
+        "href": "chapter-041.xhtml"
+      },
+      {
+        "title": "1948 \u2014 The Cloud Chamber",
+        "href": "chapter-042.xhtml"
+      },
+      {
+        "title": "1949 \u2014 The Prediction of Mesons",
+        "href": "chapter-043.xhtml"
+      },
+      {
+        "title": "1950 \u2014 The Nuclear Emulsion Method",
+        "href": "chapter-044.xhtml"
+      },
+      {
+        "title": "1951 \u2014 Transmutation of Atomic Nuclei",
+        "href": "chapter-045.xhtml"
+      },
+      {
+        "title": "1952 \u2014 Nuclear Magnetic Resonance in Solids",
+        "href": "chapter-046.xhtml"
+      },
+      {
+        "title": "1953 \u2014 Phase Contrast Microscopy",
+        "href": "chapter-047.xhtml"
+      },
+      {
+        "title": "1954 \u2014 Quantum Mechanics of the Hydrogen Spectrum",
+        "href": "chapter-048.xhtml"
+      },
+      {
+        "title": "1955 \u2014 The Lamb Shift and the Electron Magnetic Moment",
+        "href": "chapter-049.xhtml"
+      },
+      {
+        "title": "1956 \u2014 The Transistor",
+        "href": "chapter-050.xhtml"
+      },
+      {
+        "title": "1957 \u2014 Parity Violation",
+        "href": "chapter-051.xhtml"
+      },
+      {
+        "title": "1958 \u2014 Cherenkov Radiation",
+        "href": "chapter-052.xhtml"
+      },
+      {
+        "title": "1959 \u2014 The Antiproton",
+        "href": "chapter-053.xhtml"
+      },
+      {
+        "title": "1960 \u2014 The Bubble Chamber",
+        "href": "chapter-054.xhtml"
+      },
+      {
+        "title": "1961 \u2014 Nuclear Structure and the M\u00f6ssbauer Effect",
+        "href": "chapter-055.xhtml"
+      },
+      {
+        "title": "1962 \u2014 Condensed Matter Theory",
+        "href": "chapter-056.xhtml"
+      },
+      {
+        "title": "1963 \u2014 Nuclear Shell Structure",
+        "href": "chapter-057.xhtml"
+      },
+      {
+        "title": "1964 \u2014 The Maser and Laser",
+        "href": "chapter-058.xhtml"
+      },
+      {
+        "title": "1965 \u2014 Quantum Electrodynamics",
+        "href": "chapter-059.xhtml"
+      },
+      {
+        "title": "1966 \u2014 Optical Pumping",
+        "href": "chapter-060.xhtml"
+      },
+      {
+        "title": "1967 \u2014 Stellar Energy Production",
+        "href": "chapter-061.xhtml"
+      },
+      {
+        "title": "1968 \u2014 Resonance Particles",
+        "href": "chapter-062.xhtml"
+      },
+      {
+        "title": "1969 \u2014 The Quark Model",
+        "href": "chapter-063.xhtml"
+      },
+      {
+        "title": "1970 \u2014 Magnetohydrodynamics and Antiferromagnetism",
+        "href": "chapter-064.xhtml"
+      },
+      {
+        "title": "1971 \u2014 Holography",
+        "href": "chapter-065.xhtml"
+      },
+      {
+        "title": "1972 \u2014 Superconductivity",
+        "href": "chapter-066.xhtml"
+      },
+      {
+        "title": "1973 \u2014 Tunneling in Semiconductors and Superconductors",
+        "href": "chapter-067.xhtml"
+      },
+      {
+        "title": "1974 \u2014 Radio Astrophysics",
+        "href": "chapter-068.xhtml"
+      },
+      {
+        "title": "1975 \u2014 The Collective Model of the Nucleus",
+        "href": "chapter-069.xhtml"
+      },
+      {
+        "title": "1976 \u2014 The J/Psi Particle",
+        "href": "chapter-070.xhtml"
+      },
+      {
+        "title": "1977 \u2014 Electronic Structure of Magnetic and Disordered Systems",
+        "href": "chapter-071.xhtml"
+      },
+      {
+        "title": "1978 \u2014 Cosmic Microwave Background Radiation",
+        "href": "chapter-072.xhtml"
+      },
+      {
+        "title": "1979 \u2014 Electroweak Unification",
+        "href": "chapter-073.xhtml"
+      },
+      {
+        "title": "1980 \u2014 CP Violation",
+        "href": "chapter-074.xhtml"
+      },
+      {
+        "title": "1981 \u2014 Laser Spectroscopy and Electron Spectroscopy",
+        "href": "chapter-075.xhtml"
+      },
+      {
+        "title": "1982 \u2014 Critical Phenomena in Phase Transitions",
+        "href": "chapter-076.xhtml"
+      },
+      {
+        "title": "1983 \u2014 Stellar Evolution and Nucleosynthesis",
+        "href": "chapter-077.xhtml"
+      },
+      {
+        "title": "1984 \u2014 The W and Z Bosons",
+        "href": "chapter-078.xhtml"
+      },
+      {
+        "title": "1985 \u2014 The Quantum Hall Effect",
+        "href": "chapter-079.xhtml"
+      },
+      {
+        "title": "1986 \u2014 The Electron Microscope and Scanning Tunneling Microscope",
+        "href": "chapter-080.xhtml"
+      },
+      {
+        "title": "1987 \u2014 High-Temperature Superconductivity",
+        "href": "chapter-081.xhtml"
+      },
+      {
+        "title": "1988 \u2014 The Neutrino Beam Method",
+        "href": "chapter-082.xhtml"
+      },
+      {
+        "title": "1989 \u2014 The Atomic Clock",
+        "href": "chapter-083.xhtml"
+      },
+      {
+        "title": "1990 \u2014 Deep Inelastic Scattering",
+        "href": "chapter-084.xhtml"
+      },
+      {
+        "title": "1991 \u2014 Liquid Crystals and Polymers",
+        "href": "chapter-085.xhtml"
+      },
+      {
+        "title": "1992 \u2014 The Multiwire Proportional Chamber",
+        "href": "chapter-086.xhtml"
+      },
+      {
+        "title": "1993 \u2014 The Binary Pulsar",
+        "href": "chapter-087.xhtml"
+      },
+      {
+        "title": "1994 \u2014 Neutron Scattering",
+        "href": "chapter-088.xhtml"
+      },
+      {
+        "title": "1995 \u2014 The Tau Lepton and Neutrino Detection",
+        "href": "chapter-089.xhtml"
+      },
+      {
+        "title": "1996 \u2014 Superfluid Helium-3",
+        "href": "chapter-090.xhtml"
+      },
+      {
+        "title": "1997 \u2014 Laser Cooling of Atoms",
+        "href": "chapter-091.xhtml"
+      },
+      {
+        "title": "1998 \u2014 The Fractional Quantum Hall Effect",
+        "href": "chapter-092.xhtml"
+      },
+      {
+        "title": "1999 \u2014 Electroweak Interactions",
+        "href": "chapter-093.xhtml"
+      },
+      {
+        "title": "2000 \u2014 The Integrated Circuit and Heterostructures",
+        "href": "chapter-094.xhtml"
+      },
+      {
+        "title": "2001 \u2014 Bose-Einstein Condensation",
+        "href": "chapter-095.xhtml"
+      },
+      {
+        "title": "2002 \u2014 Cosmic Neutrinos and X-Ray Sources",
+        "href": "chapter-096.xhtml"
+      },
+      {
+        "title": "2003 \u2014 Superconductivity and Superfluidity",
+        "href": "chapter-097.xhtml"
+      },
+      {
+        "title": "2004 \u2014 Asymptotic Freedom",
+        "href": "chapter-098.xhtml"
+      },
+      {
+        "title": "2005 \u2014 Optical Coherence and the Laser Frequency Comb",
+        "href": "chapter-099.xhtml"
+      },
+      {
+        "title": "2006 \u2014 Cosmic Microwave Background Anisotropy",
+        "href": "chapter-100.xhtml"
+      },
+      {
+        "title": "2007 \u2014 Giant Magnetoresistance",
+        "href": "chapter-101.xhtml"
+      },
+      {
+        "title": "2008 \u2014 Spontaneous Symmetry Breaking",
+        "href": "chapter-102.xhtml"
+      },
+      {
+        "title": "2009 \u2014 Fiber Optics and the CCD",
+        "href": "chapter-103.xhtml"
+      },
+      {
+        "title": "2010 \u2014 Graphene",
+        "href": "chapter-104.xhtml"
+      },
+      {
+        "title": "2011 \u2014 The Accelerating Universe",
+        "href": "chapter-105.xhtml"
+      },
+      {
+        "title": "2012 \u2014 Manipulating Individual Quantum Systems",
+        "href": "chapter-106.xhtml"
+      },
+      {
+        "title": "2013 \u2014 The Higgs Mechanism",
+        "href": "chapter-107.xhtml"
+      },
+      {
+        "title": "2014 \u2014 The Blue LED",
+        "href": "chapter-108.xhtml"
+      },
+      {
+        "title": "2015 \u2014 Neutrino Oscillations",
+        "href": "chapter-109.xhtml"
+      },
+      {
+        "title": "2016 \u2014 Topological Phase Transitions",
+        "href": "chapter-110.xhtml"
+      },
+      {
+        "title": "2017 \u2014 Gravitational Waves",
+        "href": "chapter-111.xhtml"
+      },
+      {
+        "title": "2018 \u2014 Optical Tweezers and Chirped Pulse Amplification",
+        "href": "chapter-112.xhtml"
+      },
+      {
+        "title": "2019 \u2014 Cosmology and Exoplanets",
+        "href": "chapter-113.xhtml"
+      },
+      {
+        "title": "2020 \u2014 Black Holes",
+        "href": "chapter-114.xhtml"
+      },
+      {
+        "title": "2021 \u2014 Complex Physical Systems",
+        "href": "chapter-115.xhtml"
+      },
+      {
+        "title": "2022 \u2014 Quantum Entanglement",
+        "href": "chapter-116.xhtml"
+      },
+      {
+        "title": "2023 \u2014 Attosecond Physics",
+        "href": "chapter-117.xhtml"
+      },
+      {
+        "title": "2024 \u2014 Artificial Neural Networks",
+        "href": "chapter-118.xhtml"
+      },
+      {
+        "title": "2025 \u2014 Macroscopic Quantum Tunneling",
+        "href": "chapter-119.xhtml"
+      }
+    ]
+  },
+  {
+    "id": "nobel-women",
+    "title": "Nobel Prizes",
+    "subtitle": "Women Laureates",
+    "cover": "/data/nobel-women/cover.png",
+    "epub": "/outputs/nobel-women/book.epub",
+    "chapters": [
+      {
+        "title": "1903 \u2014 Radioactivity (Marie Curie)",
+        "href": "chapter-001.xhtml"
+      },
+      {
+        "title": "1905 \u2014 The Peace Movement (Bertha von Suttner)",
+        "href": "chapter-002.xhtml"
+      },
+      {
+        "title": "1909 \u2014 The Sagas of Sweden (Selma Lagerl\u00f6f)",
+        "href": "chapter-003.xhtml"
+      },
+      {
+        "title": "1911 \u2014 Radium and Polonium (Marie Curie)",
+        "href": "chapter-004.xhtml"
+      },
+      {
+        "title": "1926 \u2014 Sardinian Lives (Grazia Deledda)",
+        "href": "chapter-005.xhtml"
+      },
+      {
+        "title": "1928 \u2014 Medieval Norway (Sigrid Undset)",
+        "href": "chapter-006.xhtml"
+      },
+      {
+        "title": "1931 \u2014 Hull House and Peace (Jane Addams)",
+        "href": "chapter-007.xhtml"
+      },
+      {
+        "title": "1935 \u2014 Artificial Radioactivity (Ir\u00e8ne Joliot-Curie)",
+        "href": "chapter-008.xhtml"
+      },
+      {
+        "title": "1938 \u2014 China Through Western Eyes (Pearl S. Buck)",
+        "href": "chapter-009.xhtml"
+      },
+      {
+        "title": "1945 \u2014 Poetry of Latin America (Gabriela Mistral)",
+        "href": "chapter-010.xhtml"
+      },
+      {
+        "title": "1946 \u2014 International Peace (Emily Greene Balch)",
+        "href": "chapter-011.xhtml"
+      },
+      {
+        "title": "1947 \u2014 Glycogen Metabolism (Gerty Cori)",
+        "href": "chapter-012.xhtml"
+      },
+      {
+        "title": "1963 \u2014 Nuclear Shell Structure (Maria Goeppert Mayer)",
+        "href": "chapter-013.xhtml"
+      },
+      {
+        "title": "1964 \u2014 The Structure of Biomolecules (Dorothy Crowfoot Hodgkin)",
+        "href": "chapter-014.xhtml"
+      },
+      {
+        "title": "1966 \u2014 Poetry of Jewish Fate (Nelly Sachs)",
+        "href": "chapter-015.xhtml"
+      },
+      {
+        "title": "1976 \u2014 Peace in Northern Ireland (Mairead Corrigan, Betty Williams)",
+        "href": "chapter-016.xhtml"
+      },
+      {
+        "title": "1977 \u2014 Radioimmunoassay (Rosalyn Yalow)",
+        "href": "chapter-017.xhtml"
+      },
+      {
+        "title": "1979 \u2014 Service to the Poorest (Mother Teresa)",
+        "href": "chapter-018.xhtml"
+      },
+      {
+        "title": "1982 \u2014 Disarmament (Alva Myrdal)",
+        "href": "chapter-019.xhtml"
+      },
+      {
+        "title": "1983 \u2014 Mobile Genetic Elements (Barbara McClintock)",
+        "href": "chapter-020.xhtml"
+      },
+      {
+        "title": "1986 \u2014 Nerve Growth Factor (Rita Levi-Montalcini)",
+        "href": "chapter-021.xhtml"
+      },
+      {
+        "title": "1988 \u2014 Drug Development (Gertrude Elion)",
+        "href": "chapter-022.xhtml"
+      },
+      {
+        "title": "1991 \u2014 Apartheid and Its Aftermath (Nadine Gordimer)",
+        "href": "chapter-023.xhtml"
+      },
+      {
+        "title": "1991 \u2014 Nonviolent Struggle for Democracy (Aung San Suu Kyi)",
+        "href": "chapter-024.xhtml"
+      },
+      {
+        "title": "1992 \u2014 Indigenous Rights (Rigoberta Mench\u00fa)",
+        "href": "chapter-025.xhtml"
+      },
+      {
+        "title": "1993 \u2014 American Memory (Toni Morrison)",
+        "href": "chapter-026.xhtml"
+      },
+      {
+        "title": "1995 \u2014 Embryonic Development (Christiane N\u00fcsslein-Volhard)",
+        "href": "chapter-027.xhtml"
+      },
+      {
+        "title": "1996 \u2014 Ironic Precision (Wis\u0142awa Szymborska)",
+        "href": "chapter-028.xhtml"
+      },
+      {
+        "title": "1997 \u2014 The Landmine Ban (Jody Williams)",
+        "href": "chapter-029.xhtml"
+      },
+      {
+        "title": "2003 \u2014 Human Rights in Iran (Shirin Ebadi)",
+        "href": "chapter-030.xhtml"
+      },
+      {
+        "title": "2004 \u2014 The Sense of Smell (Linda Buck)",
+        "href": "chapter-031.xhtml"
+      },
+      {
+        "title": "2004 \u2014 Voices Against Conformity (Elfriede Jelinek)",
+        "href": "chapter-032.xhtml"
+      },
+      {
+        "title": "2004 \u2014 The Green Belt Movement (Wangari Maathai)",
+        "href": "chapter-033.xhtml"
+      },
+      {
+        "title": "2007 \u2014 Epic of Female Experience (Doris Lessing)",
+        "href": "chapter-034.xhtml"
+      },
+      {
+        "title": "2008 \u2014 Discovery of HIV (Fran\u00e7oise Barr\u00e9-Sinoussi)",
+        "href": "chapter-035.xhtml"
+      },
+      {
+        "title": "2009 \u2014 Telomeres and Telomerase (Elizabeth Blackburn, Carol Greider)",
+        "href": "chapter-036.xhtml"
+      },
+      {
+        "title": "2009 \u2014 The Dispossessed (Herta M\u00fcller)",
+        "href": "chapter-037.xhtml"
+      },
+      {
+        "title": "2009 \u2014 Governing the Commons (Elinor Ostrom)",
+        "href": "chapter-038.xhtml"
+      },
+      {
+        "title": "2009 \u2014 The Ribosome (Ada Yonath)",
+        "href": "chapter-039.xhtml"
+      },
+      {
+        "title": "2011 \u2014 Women's Rights and Peace (Leymah Gbowee, Ellen Johnson Sirleaf, Tawakkol Karman)",
+        "href": "chapter-040.xhtml"
+      },
+      {
+        "title": "2013 \u2014 Master of the Short Story (Alice Munro)",
+        "href": "chapter-041.xhtml"
+      },
+      {
+        "title": "2014 \u2014 The Right to Education (Malala Yousafzai)",
+        "href": "chapter-042.xhtml"
+      },
+      {
+        "title": "2014 \u2014 The Brain's GPS (May-Britt Moser)",
+        "href": "chapter-043.xhtml"
+      },
+      {
+        "title": "2015 \u2014 Polyphonic Writing (Svetlana Alexievich)",
+        "href": "chapter-044.xhtml"
+      },
+      {
+        "title": "2015 \u2014 Artemisinin and Malaria (Tu Youyou)",
+        "href": "chapter-045.xhtml"
+      },
+      {
+        "title": "2018 \u2014 Directed Evolution (Frances Arnold)",
+        "href": "chapter-046.xhtml"
+      },
+      {
+        "title": "2018 \u2014 Against Sexual Violence in War (Nadia Murad)",
+        "href": "chapter-047.xhtml"
+      },
+      {
+        "title": "2018 \u2014 Chirped Pulse Amplification (Donna Strickland)",
+        "href": "chapter-048.xhtml"
+      },
+      {
+        "title": "2018 \u2014 Crossing Boundaries (Olga Tokarczuk)",
+        "href": "chapter-049.xhtml"
+      },
+      {
+        "title": "2019 \u2014 The Economics of Poverty (Esther Duflo)",
+        "href": "chapter-050.xhtml"
+      },
+      {
+        "title": "2020 \u2014 CRISPR Gene Editing (Emmanuelle Charpentier, Jennifer Doudna)",
+        "href": "chapter-051.xhtml"
+      },
+      {
+        "title": "2020 \u2014 The Galactic Center (Andrea Ghez)",
+        "href": "chapter-052.xhtml"
+      },
+      {
+        "title": "2020 \u2014 Unmistakable Poetic Voice (Louise Gl\u00fcck)",
+        "href": "chapter-053.xhtml"
+      },
+      {
+        "title": "2021 \u2014 Press Freedom (Maria Ressa)",
+        "href": "chapter-054.xhtml"
+      },
+      {
+        "title": "2022 \u2014 Click Chemistry in Living Systems (Carolyn Bertozzi)",
+        "href": "chapter-055.xhtml"
+      },
+      {
+        "title": "2022 \u2014 Memory and Estrangement (Annie Ernaux)",
+        "href": "chapter-056.xhtml"
+      },
+      {
+        "title": "2023 \u2014 Women in the Labor Market (Claudia Goldin)",
+        "href": "chapter-057.xhtml"
+      },
+      {
+        "title": "2023 \u2014 mRNA Technology (Katalin Karik\u00f3)",
+        "href": "chapter-058.xhtml"
+      },
+      {
+        "title": "2023 \u2014 Attosecond Physics (Anne L'Huillier)",
+        "href": "chapter-059.xhtml"
+      },
+      {
+        "title": "2023 \u2014 Human Rights in Iran (Narges Mohammadi)",
+        "href": "chapter-060.xhtml"
+      },
+      {
+        "title": "2024 \u2014 Confronting Historical Trauma (Han Kang)",
+        "href": "chapter-061.xhtml"
+      },
+      {
+        "title": "2025 \u2014 Immune Tolerance (Mary Brunkow)",
+        "href": "chapter-062.xhtml"
+      },
+      {
+        "title": "2025 \u2014 Democratic Rights in Venezuela (Mar\u00eda Corina Machado)",
+        "href": "chapter-063.xhtml"
+      }
+    ]
+  },
+  {
+    "id": "periodic-tales",
+    "title": "Periodic Tales",
+    "subtitle": "The biography of every element",
+    "cover": "/data/periodic-tales/cover.png",
+    "epub": "/outputs/periodic-tales/book.epub",
+    "chapters": [
+      {
+        "title": "Hydrogen",
+        "href": "chapter-001.xhtml"
+      },
+      {
+        "title": "Helium",
+        "href": "chapter-002.xhtml"
+      },
+      {
+        "title": "Lithium",
+        "href": "chapter-003.xhtml"
+      },
+      {
+        "title": "Beryllium",
+        "href": "chapter-004.xhtml"
+      },
+      {
+        "title": "Boron",
+        "href": "chapter-005.xhtml"
+      },
+      {
+        "title": "Carbon",
+        "href": "chapter-006.xhtml"
+      },
+      {
+        "title": "Nitrogen",
+        "href": "chapter-007.xhtml"
+      },
+      {
+        "title": "Oxygen",
+        "href": "chapter-008.xhtml"
+      },
+      {
+        "title": "Fluorine",
+        "href": "chapter-009.xhtml"
+      },
+      {
+        "title": "Neon",
+        "href": "chapter-010.xhtml"
+      },
+      {
+        "title": "Sodium",
+        "href": "chapter-011.xhtml"
+      },
+      {
+        "title": "Magnesium",
+        "href": "chapter-012.xhtml"
+      },
+      {
+        "title": "Aluminum",
+        "href": "chapter-013.xhtml"
+      },
+      {
+        "title": "Silicon",
+        "href": "chapter-014.xhtml"
+      },
+      {
+        "title": "Phosphorus",
+        "href": "chapter-015.xhtml"
+      },
+      {
+        "title": "Sulfur",
+        "href": "chapter-016.xhtml"
+      },
+      {
+        "title": "Chlorine",
+        "href": "chapter-017.xhtml"
+      },
+      {
+        "title": "Argon",
+        "href": "chapter-018.xhtml"
+      },
+      {
+        "title": "Potassium",
+        "href": "chapter-019.xhtml"
+      },
+      {
+        "title": "Calcium",
+        "href": "chapter-020.xhtml"
+      },
+      {
+        "title": "Scandium",
+        "href": "chapter-021.xhtml"
+      },
+      {
+        "title": "Titanium",
+        "href": "chapter-022.xhtml"
+      },
+      {
+        "title": "Vanadium",
+        "href": "chapter-023.xhtml"
+      },
+      {
+        "title": "Chromium",
+        "href": "chapter-024.xhtml"
+      },
+      {
+        "title": "Manganese",
+        "href": "chapter-025.xhtml"
+      },
+      {
+        "title": "Iron",
+        "href": "chapter-026.xhtml"
+      },
+      {
+        "title": "Cobalt",
+        "href": "chapter-027.xhtml"
+      },
+      {
+        "title": "Nickel",
+        "href": "chapter-028.xhtml"
+      },
+      {
+        "title": "Copper",
+        "href": "chapter-029.xhtml"
+      },
+      {
+        "title": "Zinc",
+        "href": "chapter-030.xhtml"
+      },
+      {
+        "title": "Gallium",
+        "href": "chapter-031.xhtml"
+      },
+      {
+        "title": "Germanium",
+        "href": "chapter-032.xhtml"
+      },
+      {
+        "title": "Arsenic",
+        "href": "chapter-033.xhtml"
+      },
+      {
+        "title": "Selenium",
+        "href": "chapter-034.xhtml"
+      },
+      {
+        "title": "Bromine",
+        "href": "chapter-035.xhtml"
+      },
+      {
+        "title": "Krypton",
+        "href": "chapter-036.xhtml"
+      },
+      {
+        "title": "Rubidium",
+        "href": "chapter-037.xhtml"
+      },
+      {
+        "title": "Strontium",
+        "href": "chapter-038.xhtml"
+      },
+      {
+        "title": "Yttrium",
+        "href": "chapter-039.xhtml"
+      },
+      {
+        "title": "Zirconium",
+        "href": "chapter-040.xhtml"
+      },
+      {
+        "title": "Niobium",
+        "href": "chapter-041.xhtml"
+      },
+      {
+        "title": "Molybdenum",
+        "href": "chapter-042.xhtml"
+      },
+      {
+        "title": "Technetium",
+        "href": "chapter-043.xhtml"
+      },
+      {
+        "title": "Ruthenium",
+        "href": "chapter-044.xhtml"
+      },
+      {
+        "title": "Rhodium",
+        "href": "chapter-045.xhtml"
+      },
+      {
+        "title": "Palladium",
+        "href": "chapter-046.xhtml"
+      },
+      {
+        "title": "Silver",
+        "href": "chapter-047.xhtml"
+      },
+      {
+        "title": "Cadmium",
+        "href": "chapter-048.xhtml"
+      },
+      {
+        "title": "Indium",
+        "href": "chapter-049.xhtml"
+      },
+      {
+        "title": "Tin",
+        "href": "chapter-050.xhtml"
+      },
+      {
+        "title": "Antimony",
+        "href": "chapter-051.xhtml"
+      },
+      {
+        "title": "Tellurium",
+        "href": "chapter-052.xhtml"
+      },
+      {
+        "title": "Iodine",
+        "href": "chapter-053.xhtml"
+      },
+      {
+        "title": "Xenon",
+        "href": "chapter-054.xhtml"
+      },
+      {
+        "title": "Cesium",
+        "href": "chapter-055.xhtml"
+      },
+      {
+        "title": "Barium",
+        "href": "chapter-056.xhtml"
+      },
+      {
+        "title": "Lanthanum",
+        "href": "chapter-057.xhtml"
+      },
+      {
+        "title": "Cerium",
+        "href": "chapter-058.xhtml"
+      },
+      {
+        "title": "Praseodymium",
+        "href": "chapter-059.xhtml"
+      },
+      {
+        "title": "Neodymium",
+        "href": "chapter-060.xhtml"
+      },
+      {
+        "title": "Promethium",
+        "href": "chapter-061.xhtml"
+      },
+      {
+        "title": "Samarium",
+        "href": "chapter-062.xhtml"
+      },
+      {
+        "title": "Europium",
+        "href": "chapter-063.xhtml"
+      },
+      {
+        "title": "Gadolinium",
+        "href": "chapter-064.xhtml"
+      },
+      {
+        "title": "Terbium",
+        "href": "chapter-065.xhtml"
+      },
+      {
+        "title": "Dysprosium",
+        "href": "chapter-066.xhtml"
+      },
+      {
+        "title": "Holmium",
+        "href": "chapter-067.xhtml"
+      },
+      {
+        "title": "Erbium",
+        "href": "chapter-068.xhtml"
+      },
+      {
+        "title": "Thulium",
+        "href": "chapter-069.xhtml"
+      },
+      {
+        "title": "Ytterbium",
+        "href": "chapter-070.xhtml"
+      },
+      {
+        "title": "Lutetium",
+        "href": "chapter-071.xhtml"
+      },
+      {
+        "title": "Hafnium",
+        "href": "chapter-072.xhtml"
+      },
+      {
+        "title": "Tantalum",
+        "href": "chapter-073.xhtml"
+      },
+      {
+        "title": "Tungsten",
+        "href": "chapter-074.xhtml"
+      },
+      {
+        "title": "Rhenium",
+        "href": "chapter-075.xhtml"
+      },
+      {
+        "title": "Osmium",
+        "href": "chapter-076.xhtml"
+      },
+      {
+        "title": "Iridium",
+        "href": "chapter-077.xhtml"
+      },
+      {
+        "title": "Platinum",
+        "href": "chapter-078.xhtml"
+      },
+      {
+        "title": "Gold",
+        "href": "chapter-079.xhtml"
+      },
+      {
+        "title": "Mercury",
+        "href": "chapter-080.xhtml"
+      },
+      {
+        "title": "Thallium",
+        "href": "chapter-081.xhtml"
+      },
+      {
+        "title": "Lead",
+        "href": "chapter-082.xhtml"
+      },
+      {
+        "title": "Bismuth",
+        "href": "chapter-083.xhtml"
+      },
+      {
+        "title": "Polonium",
+        "href": "chapter-084.xhtml"
+      },
+      {
+        "title": "Astatine",
+        "href": "chapter-085.xhtml"
+      },
+      {
+        "title": "Radon",
+        "href": "chapter-086.xhtml"
+      },
+      {
+        "title": "Francium",
+        "href": "chapter-087.xhtml"
+      },
+      {
+        "title": "Radium",
+        "href": "chapter-088.xhtml"
+      },
+      {
+        "title": "Actinium",
+        "href": "chapter-089.xhtml"
+      },
+      {
+        "title": "Thorium",
+        "href": "chapter-090.xhtml"
+      },
+      {
+        "title": "Protactinium",
+        "href": "chapter-091.xhtml"
+      },
+      {
+        "title": "Uranium",
+        "href": "chapter-092.xhtml"
+      },
+      {
+        "title": "Neptunium",
+        "href": "chapter-093.xhtml"
+      },
+      {
+        "title": "Plutonium",
+        "href": "chapter-094.xhtml"
+      },
+      {
+        "title": "Americium",
+        "href": "chapter-095.xhtml"
+      },
+      {
+        "title": "Curium",
+        "href": "chapter-096.xhtml"
+      },
+      {
+        "title": "Berkelium",
+        "href": "chapter-097.xhtml"
+      },
+      {
+        "title": "Californium",
+        "href": "chapter-098.xhtml"
+      },
+      {
+        "title": "Einsteinium",
+        "href": "chapter-099.xhtml"
+      },
+      {
+        "title": "Fermium",
+        "href": "chapter-100.xhtml"
+      },
+      {
+        "title": "Mendelevium",
+        "href": "chapter-101.xhtml"
+      },
+      {
+        "title": "Nobelium",
+        "href": "chapter-102.xhtml"
+      },
+      {
+        "title": "Lawrencium",
+        "href": "chapter-103.xhtml"
+      },
+      {
+        "title": "Rutherfordium",
+        "href": "chapter-104.xhtml"
+      },
+      {
+        "title": "Dubnium",
+        "href": "chapter-105.xhtml"
+      },
+      {
+        "title": "Seaborgium",
+        "href": "chapter-106.xhtml"
+      },
+      {
+        "title": "Bohrium",
+        "href": "chapter-107.xhtml"
+      },
+      {
+        "title": "Hassium",
+        "href": "chapter-108.xhtml"
+      },
+      {
+        "title": "Meitnerium",
+        "href": "chapter-109.xhtml"
+      },
+      {
+        "title": "Darmstadtium",
+        "href": "chapter-110.xhtml"
+      },
+      {
+        "title": "Roentgenium",
+        "href": "chapter-111.xhtml"
+      },
+      {
+        "title": "Copernicium",
+        "href": "chapter-112.xhtml"
+      },
+      {
+        "title": "Nihonium",
+        "href": "chapter-113.xhtml"
+      },
+      {
+        "title": "Flerovium",
+        "href": "chapter-114.xhtml"
+      },
+      {
+        "title": "Moscovium",
+        "href": "chapter-115.xhtml"
+      },
+      {
+        "title": "Livermorium",
+        "href": "chapter-116.xhtml"
+      },
+      {
+        "title": "Tennessine",
+        "href": "chapter-117.xhtml"
+      },
+      {
+        "title": "Oganesson",
+        "href": "chapter-118.xhtml"
+      }
+    ]
+  },
+  {
+    "id": "practices",
+    "title": "Practices",
+    "subtitle": "The Work of Flourishing",
+    "cover": "/data/practices/cover.png",
+    "epub": "/outputs/practices/book.epub",
+    "chapters": [
+      {
+        "title": "Meditation",
+        "href": "chapter-001.xhtml"
+      },
+      {
+        "title": "Centering Prayer",
+        "href": "chapter-002.xhtml"
+      },
+      {
+        "title": "Silence",
+        "href": "chapter-003.xhtml"
+      },
+      {
+        "title": "Solitude",
+        "href": "chapter-004.xhtml"
+      },
+      {
+        "title": "Retreat",
+        "href": "chapter-005.xhtml"
+      },
+      {
+        "title": "Sabbath",
+        "href": "chapter-006.xhtml"
+      },
+      {
+        "title": "Journaling",
+        "href": "chapter-007.xhtml"
+      },
+      {
+        "title": "Examination of Conscience",
+        "href": "chapter-008.xhtml"
+      },
+      {
+        "title": "Confession",
+        "href": "chapter-009.xhtml"
+      },
+      {
+        "title": "Spiritual Direction",
+        "href": "chapter-010.xhtml"
+      },
+      {
+        "title": "Therapy",
+        "href": "chapter-011.xhtml"
+      },
+      {
+        "title": "Gratitude Practice",
+        "href": "chapter-012.xhtml"
+      },
+      {
+        "title": "Review of the Day",
+        "href": "chapter-013.xhtml"
+      },
+      {
+        "title": "Walking",
+        "href": "chapter-014.xhtml"
+      },
+      {
+        "title": "Exercise",
+        "href": "chapter-015.xhtml"
+      },
+      {
+        "title": "Cold Exposure",
+        "href": "chapter-016.xhtml"
+      },
+      {
+        "title": "Breathwork",
+        "href": "chapter-017.xhtml"
+      },
+      {
+        "title": "Yoga",
+        "href": "chapter-018.xhtml"
+      },
+      {
+        "title": "Sleep",
+        "href": "chapter-019.xhtml"
+      },
+      {
+        "title": "Fasting",
+        "href": "chapter-020.xhtml"
+      },
+      {
+        "title": "Manual Labor",
+        "href": "chapter-021.xhtml"
+      },
+      {
+        "title": "Hospitality",
+        "href": "chapter-022.xhtml"
+      },
+      {
+        "title": "Listening",
+        "href": "chapter-023.xhtml"
+      },
+      {
+        "title": "Forgiveness Practice",
+        "href": "chapter-024.xhtml"
+      },
+      {
+        "title": "Difficult Conversations",
+        "href": "chapter-025.xhtml"
+      },
+      {
+        "title": "Service",
+        "href": "chapter-026.xhtml"
+      },
+      {
+        "title": "Community",
+        "href": "chapter-027.xhtml"
+      },
+      {
+        "title": "Mentorship",
+        "href": "chapter-028.xhtml"
+      },
+      {
+        "title": "Reading",
+        "href": "chapter-029.xhtml"
+      },
+      {
+        "title": "Memorization",
+        "href": "chapter-030.xhtml"
+      },
+      {
+        "title": "Study",
+        "href": "chapter-031.xhtml"
+      },
+      {
+        "title": "Deep Work",
+        "href": "chapter-032.xhtml"
+      },
+      {
+        "title": "Prayer",
+        "href": "chapter-033.xhtml"
+      },
+      {
+        "title": "Worship",
+        "href": "chapter-034.xhtml"
+      },
+      {
+        "title": "Chanting",
+        "href": "chapter-035.xhtml"
+      },
+      {
+        "title": "Pilgrimage",
+        "href": "chapter-036.xhtml"
+      },
+      {
+        "title": "Tithing",
+        "href": "chapter-037.xhtml"
+      },
+      {
+        "title": "Minimalism",
+        "href": "chapter-038.xhtml"
+      },
+      {
+        "title": "Frugality",
+        "href": "chapter-039.xhtml"
+      },
+      {
+        "title": "Rest",
+        "href": "chapter-040.xhtml"
+      },
+      {
+        "title": "Nature Immersion",
+        "href": "chapter-041.xhtml"
+      },
+      {
+        "title": "Slowness",
+        "href": "chapter-042.xhtml"
+      },
+      {
+        "title": "Presence",
+        "href": "chapter-043.xhtml"
+      },
+      {
+        "title": "Waiting",
+        "href": "chapter-044.xhtml"
+      },
+      {
+        "title": "Play",
+        "href": "chapter-045.xhtml"
+      },
+      {
+        "title": "Eating Well",
+        "href": "chapter-046.xhtml"
+      },
+      {
+        "title": "Friendship",
+        "href": "chapter-047.xhtml"
+      },
+      {
+        "title": "Dying Practice",
+        "href": "chapter-048.xhtml"
+      }
+    ]
+  },
+  {
+    "id": "prayers",
+    "title": "Prayers",
+    "subtitle": "A Collection",
+    "cover": "/data/prayers/cover.png",
+    "epub": "/outputs/prayers/book.epub",
+    "chapters": [
+      {
+        "title": "The Lord's Prayer",
+        "href": "chapter-001.xhtml"
+      },
+      {
+        "title": "The Shema",
+        "href": "chapter-002.xhtml"
+      },
+      {
+        "title": "The Aaronic Blessing",
+        "href": "chapter-003.xhtml"
+      },
+      {
+        "title": "The Magnificat",
+        "href": "chapter-004.xhtml"
+      },
+      {
+        "title": "The Nunc Dimittis",
+        "href": "chapter-005.xhtml"
+      },
+      {
+        "title": "Psalm 23",
+        "href": "chapter-006.xhtml"
+      },
+      {
+        "title": "Psalm 51",
+        "href": "chapter-007.xhtml"
+      },
+      {
+        "title": "Psalm 130",
+        "href": "chapter-008.xhtml"
+      },
+      {
+        "title": "Psalm 139",
+        "href": "chapter-009.xhtml"
+      },
+      {
+        "title": "Psalm 91",
+        "href": "chapter-010.xhtml"
+      },
+      {
+        "title": "The Jesus Prayer",
+        "href": "chapter-011.xhtml"
+      },
+      {
+        "title": "The Kyrie Eleison",
+        "href": "chapter-012.xhtml"
+      },
+      {
+        "title": "The Gloria",
+        "href": "chapter-013.xhtml"
+      },
+      {
+        "title": "The Sanctus",
+        "href": "chapter-014.xhtml"
+      },
+      {
+        "title": "The Agnus Dei",
+        "href": "chapter-015.xhtml"
+      },
+      {
+        "title": "The Te Deum",
+        "href": "chapter-016.xhtml"
+      },
+      {
+        "title": "The Trisagion",
+        "href": "chapter-017.xhtml"
+      },
+      {
+        "title": "The Anima Christi",
+        "href": "chapter-018.xhtml"
+      },
+      {
+        "title": "The Sursum Corda",
+        "href": "chapter-019.xhtml"
+      },
+      {
+        "title": "Kontakion for the Departed",
+        "href": "chapter-020.xhtml"
+      },
+      {
+        "title": "Prayer of St. Francis",
+        "href": "chapter-021.xhtml"
+      },
+      {
+        "title": "St. Patrick's Breastplate",
+        "href": "chapter-022.xhtml"
+      },
+      {
+        "title": "Prayer of St. Ephrem",
+        "href": "chapter-023.xhtml"
+      },
+      {
+        "title": "Late Have I Loved You",
+        "href": "chapter-024.xhtml"
+      },
+      {
+        "title": "All Shall Be Well",
+        "href": "chapter-025.xhtml"
+      },
+      {
+        "title": "The Prayer of The Cloud",
+        "href": "chapter-026.xhtml"
+      },
+      {
+        "title": "The Suscipe",
+        "href": "chapter-027.xhtml"
+      },
+      {
+        "title": "Let Nothing Disturb You",
+        "href": "chapter-028.xhtml"
+      },
+      {
+        "title": "O Living Flame of Love",
+        "href": "chapter-029.xhtml"
+      },
+      {
+        "title": "My Lord God, I Have No Idea",
+        "href": "chapter-030.xhtml"
+      },
+      {
+        "title": "Who Am I?",
+        "href": "chapter-031.xhtml"
+      },
+      {
+        "title": "Love Bade Me Welcome",
+        "href": "chapter-032.xhtml"
+      },
+      {
+        "title": "Batter My Heart",
+        "href": "chapter-033.xhtml"
+      },
+      {
+        "title": "Collect for Purity",
+        "href": "chapter-034.xhtml"
+      },
+      {
+        "title": "Collect for Peace",
+        "href": "chapter-035.xhtml"
+      },
+      {
+        "title": "The General Thanksgiving",
+        "href": "chapter-036.xhtml"
+      },
+      {
+        "title": "Prayer of Humble Access",
+        "href": "chapter-037.xhtml"
+      },
+      {
+        "title": "Lighten Our Darkness",
+        "href": "chapter-038.xhtml"
+      },
+      {
+        "title": "The Serenity Prayer",
+        "href": "chapter-039.xhtml"
+      },
+      {
+        "title": "The Amidah",
+        "href": "chapter-040.xhtml"
+      },
+      {
+        "title": "Modeh Ani",
+        "href": "chapter-041.xhtml"
+      },
+      {
+        "title": "The Kaddish",
+        "href": "chapter-042.xhtml"
+      },
+      {
+        "title": "Shehecheyanu",
+        "href": "chapter-043.xhtml"
+      },
+      {
+        "title": "Mi Shebeirach",
+        "href": "chapter-044.xhtml"
+      },
+      {
+        "title": "Al-Fatiha",
+        "href": "chapter-045.xhtml"
+      },
+      {
+        "title": "Ayat al-Kursi",
+        "href": "chapter-046.xhtml"
+      },
+      {
+        "title": "Prayer of Rabi'a al-Adawiyya",
+        "href": "chapter-047.xhtml"
+      },
+      {
+        "title": "The Guest House",
+        "href": "chapter-048.xhtml"
+      },
+      {
+        "title": "Love Dogs",
+        "href": "chapter-049.xhtml"
+      },
+      {
+        "title": "The Sun Never Says",
+        "href": "chapter-050.xhtml"
+      },
+      {
+        "title": "The Metta Prayer",
+        "href": "chapter-051.xhtml"
+      },
+      {
+        "title": "The Refuges",
+        "href": "chapter-052.xhtml"
+      },
+      {
+        "title": "The Heart Sutra",
+        "href": "chapter-053.xhtml"
+      },
+      {
+        "title": "Gatha for Waking",
+        "href": "chapter-054.xhtml"
+      },
+      {
+        "title": "The Gayatri Mantra",
+        "href": "chapter-055.xhtml"
+      },
+      {
+        "title": "The Shanti Mantra",
+        "href": "chapter-056.xhtml"
+      },
+      {
+        "title": "Lead Me from the Unreal",
+        "href": "chapter-057.xhtml"
+      },
+      {
+        "title": "For All That Has Been",
+        "href": "chapter-058.xhtml"
+      },
+      {
+        "title": "Attention as Prayer",
+        "href": "chapter-059.xhtml"
+      },
+      {
+        "title": "Sabbath Poem",
+        "href": "chapter-060.xhtml"
+      }
+    ]
+  },
+  {
+    "id": "questions",
+    "title": "Questions",
+    "subtitle": "What Philosophers Couldn't Stop Asking",
+    "cover": "/data/questions/cover.png",
+    "epub": "/outputs/questions/book.epub",
+    "chapters": [
+      {
+        "title": "What can we know for certain?",
+        "href": "chapter-001.xhtml"
+      },
+      {
+        "title": "How do we acquire knowledge?",
+        "href": "chapter-002.xhtml"
+      },
+      {
+        "title": "What is truth?",
+        "href": "chapter-003.xhtml"
+      },
+      {
+        "title": "Can we trust our senses?",
+        "href": "chapter-004.xhtml"
+      },
+      {
+        "title": "What is the scientific method?",
+        "href": "chapter-005.xhtml"
+      },
+      {
+        "title": "How do we justify belief?",
+        "href": "chapter-006.xhtml"
+      },
+      {
+        "title": "What is skepticism?",
+        "href": "chapter-007.xhtml"
+      },
+      {
+        "title": "Why is there something rather than nothing?",
+        "href": "chapter-008.xhtml"
+      },
+      {
+        "title": "What is Being?",
+        "href": "chapter-009.xhtml"
+      },
+      {
+        "title": "Do universals exist?",
+        "href": "chapter-010.xhtml"
+      },
+      {
+        "title": "What is substance?",
+        "href": "chapter-011.xhtml"
+      },
+      {
+        "title": "Is everything matter?",
+        "href": "chapter-012.xhtml"
+      },
+      {
+        "title": "What is time?",
+        "href": "chapter-013.xhtml"
+      },
+      {
+        "title": "What is causation?",
+        "href": "chapter-014.xhtml"
+      },
+      {
+        "title": "Is there free will?",
+        "href": "chapter-015.xhtml"
+      },
+      {
+        "title": "What is necessary vs contingent?",
+        "href": "chapter-016.xhtml"
+      },
+      {
+        "title": "What is the good life?",
+        "href": "chapter-017.xhtml"
+      },
+      {
+        "title": "What makes actions right or wrong?",
+        "href": "chapter-018.xhtml"
+      },
+      {
+        "title": "What is justice?",
+        "href": "chapter-019.xhtml"
+      },
+      {
+        "title": "What do we owe each other?",
+        "href": "chapter-020.xhtml"
+      },
+      {
+        "title": "Should we maximize happiness?",
+        "href": "chapter-021.xhtml"
+      },
+      {
+        "title": "What is virtue?",
+        "href": "chapter-022.xhtml"
+      },
+      {
+        "title": "Is morality objective?",
+        "href": "chapter-023.xhtml"
+      },
+      {
+        "title": "What is duty?",
+        "href": "chapter-024.xhtml"
+      },
+      {
+        "title": "How do we resolve moral dilemmas?",
+        "href": "chapter-025.xhtml"
+      },
+      {
+        "title": "What is care ethics?",
+        "href": "chapter-026.xhtml"
+      },
+      {
+        "title": "What is the social contract?",
+        "href": "chapter-027.xhtml"
+      },
+      {
+        "title": "What is freedom?",
+        "href": "chapter-028.xhtml"
+      },
+      {
+        "title": "What is equality?",
+        "href": "chapter-029.xhtml"
+      },
+      {
+        "title": "What is power?",
+        "href": "chapter-030.xhtml"
+      },
+      {
+        "title": "What legitimizes authority?",
+        "href": "chapter-031.xhtml"
+      },
+      {
+        "title": "What is property?",
+        "href": "chapter-032.xhtml"
+      },
+      {
+        "title": "Should we prioritize liberty or equality?",
+        "href": "chapter-033.xhtml"
+      },
+      {
+        "title": "What is the state?",
+        "href": "chapter-034.xhtml"
+      },
+      {
+        "title": "What is colonialism?",
+        "href": "chapter-035.xhtml"
+      },
+      {
+        "title": "What is consciousness?",
+        "href": "chapter-036.xhtml"
+      },
+      {
+        "title": "What is the self?",
+        "href": "chapter-037.xhtml"
+      },
+      {
+        "title": "Is the mind separate from the body?",
+        "href": "chapter-038.xhtml"
+      },
+      {
+        "title": "Do we have a soul?",
+        "href": "chapter-039.xhtml"
+      },
+      {
+        "title": "What is personal identity?",
+        "href": "chapter-040.xhtml"
+      },
+      {
+        "title": "What are emotions?",
+        "href": "chapter-041.xhtml"
+      },
+      {
+        "title": "What is intention?",
+        "href": "chapter-042.xhtml"
+      },
+      {
+        "title": "Can machines think?",
+        "href": "chapter-043.xhtml"
+      },
+      {
+        "title": "How does language mean?",
+        "href": "chapter-044.xhtml"
+      },
+      {
+        "title": "What is a language game?",
+        "href": "chapter-045.xhtml"
+      },
+      {
+        "title": "What is a speech act?",
+        "href": "chapter-046.xhtml"
+      },
+      {
+        "title": "Is meaning in the head or in the world?",
+        "href": "chapter-047.xhtml"
+      },
+      {
+        "title": "How should we read?",
+        "href": "chapter-048.xhtml"
+      },
+      {
+        "title": "What is hermeneutics?",
+        "href": "chapter-049.xhtml"
+      },
+      {
+        "title": "Can language capture reality?",
+        "href": "chapter-050.xhtml"
+      },
+      {
+        "title": "What is existence?",
+        "href": "chapter-051.xhtml"
+      },
+      {
+        "title": "What is nothingness?",
+        "href": "chapter-052.xhtml"
+      },
+      {
+        "title": "What is authenticity?",
+        "href": "chapter-053.xhtml"
+      },
+      {
+        "title": "What is bad faith?",
+        "href": "chapter-054.xhtml"
+      },
+      {
+        "title": "What is anxiety?",
+        "href": "chapter-055.xhtml"
+      },
+      {
+        "title": "What is absurdity?",
+        "href": "chapter-056.xhtml"
+      },
+      {
+        "title": "Why does anything persist?",
+        "href": "chapter-057.xhtml"
+      },
+      {
+        "title": "What is beauty?",
+        "href": "chapter-058.xhtml"
+      },
+      {
+        "title": "What is art?",
+        "href": "chapter-059.xhtml"
+      },
+      {
+        "title": "What is the sublime?",
+        "href": "chapter-060.xhtml"
+      },
+      {
+        "title": "Can art be immoral?",
+        "href": "chapter-061.xhtml"
+      },
+      {
+        "title": "What is logic?",
+        "href": "chapter-062.xhtml"
+      },
+      {
+        "title": "What is a valid argument?",
+        "href": "chapter-063.xhtml"
+      },
+      {
+        "title": "What are paradoxes telling us?",
+        "href": "chapter-064.xhtml"
+      },
+      {
+        "title": "What is rationality?",
+        "href": "chapter-065.xhtml"
+      },
+      {
+        "title": "Does God exist?",
+        "href": "chapter-066.xhtml"
+      },
+      {
+        "title": "What is faith?",
+        "href": "chapter-067.xhtml"
+      },
+      {
+        "title": "Can we speak of God?",
+        "href": "chapter-068.xhtml"
+      },
+      {
+        "title": "What is religious experience?",
+        "href": "chapter-069.xhtml"
+      },
+      {
+        "title": "What is death?",
+        "href": "chapter-070.xhtml"
+      },
+      {
+        "title": "What is suffering?",
+        "href": "chapter-071.xhtml"
+      },
+      {
+        "title": "What is desire?",
+        "href": "chapter-072.xhtml"
+      },
+      {
+        "title": "What is the Will to Power?",
+        "href": "chapter-073.xhtml"
+      },
+      {
+        "title": "What is dialectic?",
+        "href": "chapter-074.xhtml"
+      },
+      {
+        "title": "What is emptiness?",
+        "href": "chapter-075.xhtml"
+      }
+    ]
+  },
+  {
+    "id": "running",
+    "title": "Running",
+    "subtitle": "The Science and Soul of Human Movement",
+    "cover": "/data/running/cover.png",
+    "epub": "/outputs/running/book.epub",
+    "chapters": [
+      {
+        "title": "The Running Gait",
+        "href": "chapter-001.xhtml"
+      },
+      {
+        "title": "Foot Strike",
+        "href": "chapter-002.xhtml"
+      },
+      {
+        "title": "Cadence",
+        "href": "chapter-003.xhtml"
+      },
+      {
+        "title": "Ground Contact Time",
+        "href": "chapter-004.xhtml"
+      },
+      {
+        "title": "The Stretch-Shortening Cycle",
+        "href": "chapter-005.xhtml"
+      },
+      {
+        "title": "Running Economy",
+        "href": "chapter-006.xhtml"
+      },
+      {
+        "title": "Pronation and Supination",
+        "href": "chapter-007.xhtml"
+      },
+      {
+        "title": "The Kinetic Chain",
+        "href": "chapter-008.xhtml"
+      },
+      {
+        "title": "Vertical Oscillation",
+        "href": "chapter-009.xhtml"
+      },
+      {
+        "title": "Arm Swing",
+        "href": "chapter-010.xhtml"
+      },
+      {
+        "title": "VO2 Max",
+        "href": "chapter-011.xhtml"
+      },
+      {
+        "title": "Lactate Threshold",
+        "href": "chapter-012.xhtml"
+      },
+      {
+        "title": "The Aerobic System",
+        "href": "chapter-013.xhtml"
+      },
+      {
+        "title": "The Anaerobic System",
+        "href": "chapter-014.xhtml"
+      },
+      {
+        "title": "Mitochondrial Adaptation",
+        "href": "chapter-015.xhtml"
+      },
+      {
+        "title": "Capillary Density",
+        "href": "chapter-016.xhtml"
+      },
+      {
+        "title": "Slow-Twitch Fibers",
+        "href": "chapter-017.xhtml"
+      },
+      {
+        "title": "Fast-Twitch Fibers",
+        "href": "chapter-018.xhtml"
+      },
+      {
+        "title": "The Heart's Adaptation",
+        "href": "chapter-019.xhtml"
+      },
+      {
+        "title": "Oxygen Debt",
+        "href": "chapter-020.xhtml"
+      },
+      {
+        "title": "The Runner's High",
+        "href": "chapter-021.xhtml"
+      },
+      {
+        "title": "Endorphins",
+        "href": "chapter-022.xhtml"
+      },
+      {
+        "title": "Endocannabinoids",
+        "href": "chapter-023.xhtml"
+      },
+      {
+        "title": "Glycogen and Fat Metabolism",
+        "href": "chapter-024.xhtml"
+      },
+      {
+        "title": "The Wall",
+        "href": "chapter-025.xhtml"
+      },
+      {
+        "title": "Lactate",
+        "href": "chapter-026.xhtml"
+      },
+      {
+        "title": "Cortisol",
+        "href": "chapter-027.xhtml"
+      },
+      {
+        "title": "Adrenaline",
+        "href": "chapter-028.xhtml"
+      },
+      {
+        "title": "EPO",
+        "href": "chapter-029.xhtml"
+      },
+      {
+        "title": "Ketones",
+        "href": "chapter-030.xhtml"
+      },
+      {
+        "title": "Base Building",
+        "href": "chapter-031.xhtml"
+      },
+      {
+        "title": "The Long Run",
+        "href": "chapter-032.xhtml"
+      },
+      {
+        "title": "Tempo Runs",
+        "href": "chapter-033.xhtml"
+      },
+      {
+        "title": "Interval Training",
+        "href": "chapter-034.xhtml"
+      },
+      {
+        "title": "Hill Repeats",
+        "href": "chapter-035.xhtml"
+      },
+      {
+        "title": "Recovery Runs",
+        "href": "chapter-036.xhtml"
+      },
+      {
+        "title": "Fartlek",
+        "href": "chapter-037.xhtml"
+      },
+      {
+        "title": "Negative Splits",
+        "href": "chapter-038.xhtml"
+      },
+      {
+        "title": "Tapering",
+        "href": "chapter-039.xhtml"
+      },
+      {
+        "title": "The 80/20 Rule",
+        "href": "chapter-040.xhtml"
+      },
+      {
+        "title": "Periodization",
+        "href": "chapter-041.xhtml"
+      },
+      {
+        "title": "Overtraining Syndrome",
+        "href": "chapter-042.xhtml"
+      },
+      {
+        "title": "The Running Brain",
+        "href": "chapter-043.xhtml"
+      },
+      {
+        "title": "Motor Cortex and Cerebellum",
+        "href": "chapter-044.xhtml"
+      },
+      {
+        "title": "Neuroplasticity and Motor Learning",
+        "href": "chapter-045.xhtml"
+      },
+      {
+        "title": "The Prefrontal Cortex",
+        "href": "chapter-046.xhtml"
+      },
+      {
+        "title": "The Insula",
+        "href": "chapter-047.xhtml"
+      },
+      {
+        "title": "The Anterior Cingulate Cortex",
+        "href": "chapter-048.xhtml"
+      },
+      {
+        "title": "Default Mode Network",
+        "href": "chapter-049.xhtml"
+      },
+      {
+        "title": "Brain-Derived Neurotrophic Factor",
+        "href": "chapter-050.xhtml"
+      },
+      {
+        "title": "Mirror Neurons",
+        "href": "chapter-051.xhtml"
+      },
+      {
+        "title": "White Matter Integrity",
+        "href": "chapter-052.xhtml"
+      },
+      {
+        "title": "The Aging Brain",
+        "href": "chapter-053.xhtml"
+      },
+      {
+        "title": "Flow State",
+        "href": "chapter-054.xhtml"
+      },
+      {
+        "title": "The Central Governor Theory",
+        "href": "chapter-055.xhtml"
+      },
+      {
+        "title": "Pain Perception",
+        "href": "chapter-056.xhtml"
+      },
+      {
+        "title": "Race-Day Adrenaline",
+        "href": "chapter-057.xhtml"
+      },
+      {
+        "title": "Meditation in Motion",
+        "href": "chapter-058.xhtml"
+      },
+      {
+        "title": "The Comparison Trap",
+        "href": "chapter-059.xhtml"
+      },
+      {
+        "title": "Motivation",
+        "href": "chapter-060.xhtml"
+      },
+      {
+        "title": "Running Addiction",
+        "href": "chapter-061.xhtml"
+      },
+      {
+        "title": "Boredom and the Long Run",
+        "href": "chapter-062.xhtml"
+      },
+      {
+        "title": "Solitude vs Community",
+        "href": "chapter-063.xhtml"
+      },
+      {
+        "title": "Runner's Knee",
+        "href": "chapter-064.xhtml"
+      },
+      {
+        "title": "Shin Splints",
+        "href": "chapter-065.xhtml"
+      },
+      {
+        "title": "Plantar Fasciitis",
+        "href": "chapter-066.xhtml"
+      },
+      {
+        "title": "Achilles Tendinopathy",
+        "href": "chapter-067.xhtml"
+      },
+      {
+        "title": "Stress Fractures",
+        "href": "chapter-068.xhtml"
+      },
+      {
+        "title": "IT Band Syndrome",
+        "href": "chapter-069.xhtml"
+      },
+      {
+        "title": "Muscle Strains",
+        "href": "chapter-070.xhtml"
+      },
+      {
+        "title": "DOMS",
+        "href": "chapter-071.xhtml"
+      },
+      {
+        "title": "Inflammation",
+        "href": "chapter-072.xhtml"
+      },
+      {
+        "title": "The Return from Injury",
+        "href": "chapter-073.xhtml"
+      },
+      {
+        "title": "Cross-Training",
+        "href": "chapter-074.xhtml"
+      },
+      {
+        "title": "The 100 Meters",
+        "href": "chapter-075.xhtml"
+      },
+      {
+        "title": "The Mile",
+        "href": "chapter-076.xhtml"
+      },
+      {
+        "title": "The 5K",
+        "href": "chapter-077.xhtml"
+      },
+      {
+        "title": "The 10K",
+        "href": "chapter-078.xhtml"
+      },
+      {
+        "title": "The Half Marathon",
+        "href": "chapter-079.xhtml"
+      },
+      {
+        "title": "The Marathon",
+        "href": "chapter-080.xhtml"
+      },
+      {
+        "title": "The Ultramarathon",
+        "href": "chapter-081.xhtml"
+      },
+      {
+        "title": "Trail Running",
+        "href": "chapter-082.xhtml"
+      },
+      {
+        "title": "Track Running",
+        "href": "chapter-083.xhtml"
+      },
+      {
+        "title": "Vertical Kilometer",
+        "href": "chapter-084.xhtml"
+      },
+      {
+        "title": "Pheidippides",
+        "href": "chapter-085.xhtml"
+      },
+      {
+        "title": "Roger Bannister",
+        "href": "chapter-086.xhtml"
+      },
+      {
+        "title": "Emil Z\u00e1topek",
+        "href": "chapter-087.xhtml"
+      },
+      {
+        "title": "Abebe Bikila",
+        "href": "chapter-088.xhtml"
+      },
+      {
+        "title": "Steve Prefontaine",
+        "href": "chapter-089.xhtml"
+      },
+      {
+        "title": "Joan Benoit Samuelson",
+        "href": "chapter-090.xhtml"
+      },
+      {
+        "title": "Haile Gebrselassie",
+        "href": "chapter-091.xhtml"
+      },
+      {
+        "title": "Eliud Kipchoge",
+        "href": "chapter-092.xhtml"
+      },
+      {
+        "title": "Courtney Dauwalter",
+        "href": "chapter-093.xhtml"
+      },
+      {
+        "title": "Killian Jornet",
+        "href": "chapter-094.xhtml"
+      },
+      {
+        "title": "Usain Bolt",
+        "href": "chapter-095.xhtml"
+      },
+      {
+        "title": "Kathrine Switzer",
+        "href": "chapter-096.xhtml"
+      },
+      {
+        "title": "The Tarahumara",
+        "href": "chapter-097.xhtml"
+      },
+      {
+        "title": "East African Dominance",
+        "href": "chapter-098.xhtml"
+      }
+    ]
+  },
+  {
+    "id": "seekers",
+    "title": "Seekers",
+    "subtitle": "Lives at the Edge of Knowledge",
+    "cover": "/data/seekers/cover.png",
+    "epub": "/outputs/seekers/book.epub",
+    "chapters": [
+      {
+        "title": "Simone Weil",
+        "href": "chapter-001.xhtml"
+      },
+      {
+        "title": "Dietrich Bonhoeffer",
+        "href": "chapter-002.xhtml"
+      },
+      {
+        "title": "Etty Hillesum",
+        "href": "chapter-003.xhtml"
+      },
+      {
+        "title": "Edith Stein",
+        "href": "chapter-004.xhtml"
+      },
+      {
+        "title": "Blaise Pascal",
+        "href": "chapter-005.xhtml"
+      },
+      {
+        "title": "S\u00f8ren Kierkegaard",
+        "href": "chapter-006.xhtml"
+      },
+      {
+        "title": "Franz Kafka",
+        "href": "chapter-007.xhtml"
+      },
+      {
+        "title": "William James",
+        "href": "chapter-008.xhtml"
+      },
+      {
+        "title": "Gregory Bateson",
+        "href": "chapter-009.xhtml"
+      },
+      {
+        "title": "Michael Polanyi",
+        "href": "chapter-010.xhtml"
+      },
+      {
+        "title": "Mary Midgley",
+        "href": "chapter-011.xhtml"
+      },
+      {
+        "title": "Ivan Illich",
+        "href": "chapter-012.xhtml"
+      },
+      {
+        "title": "Ren\u00e9 Girard",
+        "href": "chapter-013.xhtml"
+      },
+      {
+        "title": "E.F. Schumacher",
+        "href": "chapter-014.xhtml"
+      },
+      {
+        "title": "Iain McGilchrist",
+        "href": "chapter-015.xhtml"
+      },
+      {
+        "title": "Alfred North Whitehead",
+        "href": "chapter-016.xhtml"
+      },
+      {
+        "title": "Jacques Ellul",
+        "href": "chapter-017.xhtml"
+      },
+      {
+        "title": "Thomas Merton",
+        "href": "chapter-018.xhtml"
+      },
+      {
+        "title": "Bede Griffiths",
+        "href": "chapter-019.xhtml"
+      },
+      {
+        "title": "Henri Nouwen",
+        "href": "chapter-020.xhtml"
+      },
+      {
+        "title": "Howard Thurman",
+        "href": "chapter-021.xhtml"
+      },
+      {
+        "title": "Raimon Panikkar",
+        "href": "chapter-022.xhtml"
+      },
+      {
+        "title": "Pierre Teilhard de Chardin",
+        "href": "chapter-023.xhtml"
+      },
+      {
+        "title": "Meister Eckhart",
+        "href": "chapter-024.xhtml"
+      },
+      {
+        "title": "Hildegard of Bingen",
+        "href": "chapter-025.xhtml"
+      },
+      {
+        "title": "Thich Nhat Hanh",
+        "href": "chapter-026.xhtml"
+      },
+      {
+        "title": "Dag Hammarskj\u00f6ld",
+        "href": "chapter-027.xhtml"
+      },
+      {
+        "title": "Hannah Arendt",
+        "href": "chapter-028.xhtml"
+      },
+      {
+        "title": "Iris Murdoch",
+        "href": "chapter-029.xhtml"
+      },
+      {
+        "title": "Charles Taylor",
+        "href": "chapter-030.xhtml"
+      },
+      {
+        "title": "Alasdair MacIntyre",
+        "href": "chapter-031.xhtml"
+      },
+      {
+        "title": "Paul Ricoeur",
+        "href": "chapter-032.xhtml"
+      },
+      {
+        "title": "Emmanuel Levinas",
+        "href": "chapter-033.xhtml"
+      },
+      {
+        "title": "Albert Camus",
+        "href": "chapter-034.xhtml"
+      },
+      {
+        "title": "Gabriel Marcel",
+        "href": "chapter-035.xhtml"
+      },
+      {
+        "title": "Martha Nussbaum",
+        "href": "chapter-036.xhtml"
+      },
+      {
+        "title": "Abraham Joshua Heschel",
+        "href": "chapter-037.xhtml"
+      },
+      {
+        "title": "Dorothy Day",
+        "href": "chapter-038.xhtml"
+      },
+      {
+        "title": "Desmond Tutu",
+        "href": "chapter-039.xhtml"
+      },
+      {
+        "title": "Aleksandr Solzhenitsyn",
+        "href": "chapter-040.xhtml"
+      },
+      {
+        "title": "V\u00e1clav Havel",
+        "href": "chapter-041.xhtml"
+      },
+      {
+        "title": "Wendell Berry",
+        "href": "chapter-042.xhtml"
+      },
+      {
+        "title": "Marilynne Robinson",
+        "href": "chapter-043.xhtml"
+      },
+      {
+        "title": "Jonathan Sacks",
+        "href": "chapter-044.xhtml"
+      },
+      {
+        "title": "George Orwell",
+        "href": "chapter-045.xhtml"
+      },
+      {
+        "title": "Jean Vanier",
+        "href": "chapter-046.xhtml"
+      },
+      {
+        "title": "Cicely Saunders",
+        "href": "chapter-047.xhtml"
+      },
+      {
+        "title": "Paulo Freire",
+        "href": "chapter-048.xhtml"
+      },
+      {
+        "title": "Jane Goodall",
+        "href": "chapter-049.xhtml"
+      },
+      {
+        "title": "Paul Farmer",
+        "href": "chapter-050.xhtml"
+      },
+      {
+        "title": "Viktor Frankl",
+        "href": "chapter-051.xhtml"
+      },
+      {
+        "title": "Walker Percy",
+        "href": "chapter-052.xhtml"
+      },
+      {
+        "title": "Flannery O'Connor",
+        "href": "chapter-053.xhtml"
+      },
+      {
+        "title": "Annie Dillard",
+        "href": "chapter-054.xhtml"
+      },
+      {
+        "title": "Rowan Williams",
+        "href": "chapter-055.xhtml"
+      },
+      {
+        "title": "Barbara McClintock",
+        "href": "chapter-056.xhtml"
+      },
+      {
+        "title": "Freeman Dyson",
+        "href": "chapter-057.xhtml"
+      },
+      {
+        "title": "John Polkinghorne",
+        "href": "chapter-058.xhtml"
+      },
+      {
+        "title": "Carl Jung",
+        "href": "chapter-059.xhtml"
+      },
+      {
+        "title": "Oliver Sacks",
+        "href": "chapter-060.xhtml"
+      }
+    ]
+  },
+  {
+    "id": "startup-paths",
+    "title": "Startup Paths",
+    "subtitle": "From idea to exit or failure",
+    "cover": "/data/startup-paths/cover.png",
+    "epub": "/outputs/startup-paths/book.epub",
+    "chapters": [
+      {
+        "title": "Medici Bank",
+        "href": "chapter-001.xhtml"
+      },
+      {
+        "title": "Dutch East India Company",
+        "href": "chapter-002.xhtml"
+      },
+      {
+        "title": "Hudson's Bay Company",
+        "href": "chapter-003.xhtml"
+      },
+      {
+        "title": "Lloyd's of London",
+        "href": "chapter-004.xhtml"
+      },
+      {
+        "title": "Wedgwood",
+        "href": "chapter-005.xhtml"
+      },
+      {
+        "title": "Rothschild Banking",
+        "href": "chapter-006.xhtml"
+      },
+      {
+        "title": "Standard Oil",
+        "href": "chapter-007.xhtml"
+      },
+      {
+        "title": "Carnegie Steel",
+        "href": "chapter-008.xhtml"
+      },
+      {
+        "title": "Ford Motor Company",
+        "href": "chapter-009.xhtml"
+      },
+      {
+        "title": "IBM",
+        "href": "chapter-010.xhtml"
+      },
+      {
+        "title": "Nokia",
+        "href": "chapter-011.xhtml"
+      },
+      {
+        "title": "Fairchild Semiconductor",
+        "href": "chapter-012.xhtml"
+      },
+      {
+        "title": "Digital Equipment Corporation",
+        "href": "chapter-013.xhtml"
+      },
+      {
+        "title": "Intel",
+        "href": "chapter-014.xhtml"
+      },
+      {
+        "title": "Xerox PARC",
+        "href": "chapter-015.xhtml"
+      },
+      {
+        "title": "Atari",
+        "href": "chapter-016.xhtml"
+      },
+      {
+        "title": "Microsoft",
+        "href": "chapter-017.xhtml"
+      },
+      {
+        "title": "Apple",
+        "href": "chapter-018.xhtml"
+      },
+      {
+        "title": "Oracle",
+        "href": "chapter-019.xhtml"
+      },
+      {
+        "title": "3Com",
+        "href": "chapter-020.xhtml"
+      },
+      {
+        "title": "Adobe",
+        "href": "chapter-021.xhtml"
+      },
+      {
+        "title": "Sun Microsystems",
+        "href": "chapter-022.xhtml"
+      },
+      {
+        "title": "Compaq",
+        "href": "chapter-023.xhtml"
+      },
+      {
+        "title": "Dell",
+        "href": "chapter-024.xhtml"
+      },
+      {
+        "title": "Cisco",
+        "href": "chapter-025.xhtml"
+      },
+      {
+        "title": "BlackBerry",
+        "href": "chapter-026.xhtml"
+      },
+      {
+        "title": "Arm Holdings",
+        "href": "chapter-027.xhtml"
+      },
+      {
+        "title": "Palm",
+        "href": "chapter-028.xhtml"
+      },
+      {
+        "title": "Silicon Graphics",
+        "href": "chapter-029.xhtml"
+      },
+      {
+        "title": "Wang Laboratories",
+        "href": "chapter-030.xhtml"
+      },
+      {
+        "title": "AOL",
+        "href": "chapter-031.xhtml"
+      },
+      {
+        "title": "GeoCities",
+        "href": "chapter-032.xhtml"
+      },
+      {
+        "title": "Netscape",
+        "href": "chapter-033.xhtml"
+      },
+      {
+        "title": "Yahoo",
+        "href": "chapter-034.xhtml"
+      },
+      {
+        "title": "Amazon",
+        "href": "chapter-035.xhtml"
+      },
+      {
+        "title": "Craigslist",
+        "href": "chapter-036.xhtml"
+      },
+      {
+        "title": "eBay",
+        "href": "chapter-037.xhtml"
+      },
+      {
+        "title": "Broadcast.com",
+        "href": "chapter-038.xhtml"
+      },
+      {
+        "title": "Webvan",
+        "href": "chapter-039.xhtml"
+      },
+      {
+        "title": "eToys",
+        "href": "chapter-040.xhtml"
+      },
+      {
+        "title": "PayPal",
+        "href": "chapter-041.xhtml"
+      },
+      {
+        "title": "Google",
+        "href": "chapter-042.xhtml"
+      },
+      {
+        "title": "Pets.com",
+        "href": "chapter-043.xhtml"
+      },
+      {
+        "title": "Kozmo.com",
+        "href": "chapter-044.xhtml"
+      },
+      {
+        "title": "Napster",
+        "href": "chapter-045.xhtml"
+      },
+      {
+        "title": "Salesforce",
+        "href": "chapter-046.xhtml"
+      },
+      {
+        "title": "Zappos",
+        "href": "chapter-047.xhtml"
+      },
+      {
+        "title": "Alibaba",
+        "href": "chapter-048.xhtml"
+      },
+      {
+        "title": "Mercado Libre",
+        "href": "chapter-049.xhtml"
+      },
+      {
+        "title": "Tencent",
+        "href": "chapter-050.xhtml"
+      },
+      {
+        "title": "Baidu",
+        "href": "chapter-051.xhtml"
+      },
+      {
+        "title": "Mailchimp",
+        "href": "chapter-052.xhtml"
+      },
+      {
+        "title": "LinkedIn",
+        "href": "chapter-053.xhtml"
+      },
+      {
+        "title": "Friendster",
+        "href": "chapter-054.xhtml"
+      },
+      {
+        "title": "Atlassian",
+        "href": "chapter-055.xhtml"
+      },
+      {
+        "title": "Sonos",
+        "href": "chapter-056.xhtml"
+      },
+      {
+        "title": "GoPro",
+        "href": "chapter-057.xhtml"
+      },
+      {
+        "title": "SpaceX",
+        "href": "chapter-058.xhtml"
+      },
+      {
+        "title": "Tesla",
+        "href": "chapter-059.xhtml"
+      },
+      {
+        "title": "Theranos",
+        "href": "chapter-060.xhtml"
+      },
+      {
+        "title": "Skype",
+        "href": "chapter-061.xhtml"
+      },
+      {
+        "title": "MySpace",
+        "href": "chapter-062.xhtml"
+      },
+      {
+        "title": "Palantir",
+        "href": "chapter-063.xhtml"
+      },
+      {
+        "title": "Splunk",
+        "href": "chapter-064.xhtml"
+      },
+      {
+        "title": "Facebook/Meta",
+        "href": "chapter-065.xhtml"
+      },
+      {
+        "title": "Yelp",
+        "href": "chapter-066.xhtml"
+      },
+      {
+        "title": "Roblox",
+        "href": "chapter-067.xhtml"
+      },
+      {
+        "title": "Unity",
+        "href": "chapter-068.xhtml"
+      },
+      {
+        "title": "ServiceNow",
+        "href": "chapter-069.xhtml"
+      },
+      {
+        "title": "Souq",
+        "href": "chapter-070.xhtml"
+      },
+      {
+        "title": "Workday",
+        "href": "chapter-071.xhtml"
+      },
+      {
+        "title": "Klarna",
+        "href": "chapter-072.xhtml"
+      },
+      {
+        "title": "Reddit",
+        "href": "chapter-073.xhtml"
+      },
+      {
+        "title": "UiPath",
+        "href": "chapter-074.xhtml"
+      },
+      {
+        "title": "YouTube",
+        "href": "chapter-075.xhtml"
+      },
+      {
+        "title": "23andMe",
+        "href": "chapter-076.xhtml"
+      },
+      {
+        "title": "Spotify",
+        "href": "chapter-077.xhtml"
+      },
+      {
+        "title": "Twitter/X",
+        "href": "chapter-078.xhtml"
+      },
+      {
+        "title": "Shopify",
+        "href": "chapter-079.xhtml"
+      },
+      {
+        "title": "HubSpot",
+        "href": "chapter-080.xhtml"
+      },
+      {
+        "title": "Beats Electronics",
+        "href": "chapter-081.xhtml"
+      },
+      {
+        "title": "DJI",
+        "href": "chapter-082.xhtml"
+      },
+      {
+        "title": "Fitbit",
+        "href": "chapter-083.xhtml"
+      },
+      {
+        "title": "Flipkart",
+        "href": "chapter-084.xhtml"
+      },
+      {
+        "title": "MongoDB",
+        "href": "chapter-085.xhtml"
+      },
+      {
+        "title": "Zendesk",
+        "href": "chapter-086.xhtml"
+      },
+      {
+        "title": "Waze",
+        "href": "chapter-087.xhtml"
+      },
+      {
+        "title": "Gilt Groupe",
+        "href": "chapter-088.xhtml"
+      },
+      {
+        "title": "Dropbox",
+        "href": "chapter-089.xhtml"
+      },
+      {
+        "title": "Zomato",
+        "href": "chapter-090.xhtml"
+      },
+      {
+        "title": "Airbnb",
+        "href": "chapter-091.xhtml"
+      },
+      {
+        "title": "Groupon",
+        "href": "chapter-092.xhtml"
+      },
+      {
+        "title": "Twilio",
+        "href": "chapter-093.xhtml"
+      },
+      {
+        "title": "GitHub",
+        "href": "chapter-094.xhtml"
+      },
+      {
+        "title": "Shein",
+        "href": "chapter-095.xhtml"
+      },
+      {
+        "title": "Uber",
+        "href": "chapter-096.xhtml"
+      },
+      {
+        "title": "WhatsApp",
+        "href": "chapter-097.xhtml"
+      },
+      {
+        "title": "Venmo",
+        "href": "chapter-098.xhtml"
+      },
+      {
+        "title": "Kickstarter",
+        "href": "chapter-099.xhtml"
+      },
+      {
+        "title": "Pinterest",
+        "href": "chapter-100.xhtml"
+      },
+      {
+        "title": "Square/Block",
+        "href": "chapter-101.xhtml"
+      },
+      {
+        "title": "Beyond Meat",
+        "href": "chapter-102.xhtml"
+      },
+      {
+        "title": "Rivian",
+        "href": "chapter-103.xhtml"
+      },
+      {
+        "title": "Okta",
+        "href": "chapter-104.xhtml"
+      },
+      {
+        "title": "Sea Limited/Shopee",
+        "href": "chapter-105.xhtml"
+      },
+      {
+        "title": "Mojang/Minecraft",
+        "href": "chapter-106.xhtml"
+      },
+      {
+        "title": "Instagram",
+        "href": "chapter-107.xhtml"
+      },
+      {
+        "title": "Xiaomi",
+        "href": "chapter-108.xhtml"
+      },
+      {
+        "title": "Meituan",
+        "href": "chapter-109.xhtml"
+      },
+      {
+        "title": "Gojek",
+        "href": "chapter-110.xhtml"
+      },
+      {
+        "title": "Ola",
+        "href": "chapter-111.xhtml"
+      },
+      {
+        "title": "Paytm",
+        "href": "chapter-112.xhtml"
+      },
+      {
+        "title": "WeWork",
+        "href": "chapter-113.xhtml"
+      },
+      {
+        "title": "Nest",
+        "href": "chapter-114.xhtml"
+      },
+      {
+        "title": "Fab.com",
+        "href": "chapter-115.xhtml"
+      },
+      {
+        "title": "Magic Leap",
+        "href": "chapter-116.xhtml"
+      },
+      {
+        "title": "DeepMind",
+        "href": "chapter-117.xhtml"
+      },
+      {
+        "title": "Datadog",
+        "href": "chapter-118.xhtml"
+      },
+      {
+        "title": "Stripe",
+        "href": "chapter-119.xhtml"
+      },
+      {
+        "title": "Warby Parker",
+        "href": "chapter-120.xhtml"
+      },
+      {
+        "title": "Snapchat",
+        "href": "chapter-121.xhtml"
+      },
+      {
+        "title": "Twitch",
+        "href": "chapter-122.xhtml"
+      },
+      {
+        "title": "Zoom",
+        "href": "chapter-123.xhtml"
+      },
+      {
+        "title": "GitLab",
+        "href": "chapter-124.xhtml"
+      },
+      {
+        "title": "Impossible Foods",
+        "href": "chapter-125.xhtml"
+      },
+      {
+        "title": "Wise/TransferWise",
+        "href": "chapter-126.xhtml"
+      },
+      {
+        "title": "SoFi",
+        "href": "chapter-127.xhtml"
+      },
+      {
+        "title": "Byju's",
+        "href": "chapter-128.xhtml"
+      },
+      {
+        "title": "CrowdStrike",
+        "href": "chapter-129.xhtml"
+      },
+      {
+        "title": "Dollar Shave Club",
+        "href": "chapter-130.xhtml"
+      },
+      {
+        "title": "MoviePass",
+        "href": "chapter-131.xhtml"
+      },
+      {
+        "title": "ByteDance/TikTok",
+        "href": "chapter-132.xhtml"
+      },
+      {
+        "title": "Lyft",
+        "href": "chapter-133.xhtml"
+      },
+      {
+        "title": "Snowflake",
+        "href": "chapter-134.xhtml"
+      },
+      {
+        "title": "Instacart",
+        "href": "chapter-135.xhtml"
+      },
+      {
+        "title": "Coinbase",
+        "href": "chapter-136.xhtml"
+      },
+      {
+        "title": "Affirm",
+        "href": "chapter-137.xhtml"
+      },
+      {
+        "title": "Peloton",
+        "href": "chapter-138.xhtml"
+      },
+      {
+        "title": "Figma",
+        "href": "chapter-139.xhtml"
+      },
+      {
+        "title": "Canva",
+        "href": "chapter-140.xhtml"
+      },
+      {
+        "title": "Calm",
+        "href": "chapter-141.xhtml"
+      },
+      {
+        "title": "Elastic",
+        "href": "chapter-142.xhtml"
+      },
+      {
+        "title": "Ripple",
+        "href": "chapter-143.xhtml"
+      },
+      {
+        "title": "Grab",
+        "href": "chapter-144.xhtml"
+      },
+      {
+        "title": "Careem",
+        "href": "chapter-145.xhtml"
+      },
+      {
+        "title": "Pebble",
+        "href": "chapter-146.xhtml"
+      },
+      {
+        "title": "Oculus",
+        "href": "chapter-147.xhtml"
+      },
+      {
+        "title": "Honey",
+        "href": "chapter-148.xhtml"
+      },
+      {
+        "title": "Didi",
+        "href": "chapter-149.xhtml"
+      },
+      {
+        "title": "DoorDash",
+        "href": "chapter-150.xhtml"
+      },
+      {
+        "title": "Databricks",
+        "href": "chapter-151.xhtml"
+      },
+      {
+        "title": "Nubank",
+        "href": "chapter-152.xhtml"
+      },
+      {
+        "title": "Deliveroo",
+        "href": "chapter-153.xhtml"
+      },
+      {
+        "title": "Flexport",
+        "href": "chapter-154.xhtml"
+      },
+      {
+        "title": "Notion",
+        "href": "chapter-155.xhtml"
+      },
+      {
+        "title": "Robinhood",
+        "href": "chapter-156.xhtml"
+      },
+      {
+        "title": "Plaid",
+        "href": "chapter-157.xhtml"
+      },
+      {
+        "title": "Chime",
+        "href": "chapter-158.xhtml"
+      },
+      {
+        "title": "Slack",
+        "href": "chapter-159.xhtml"
+      },
+      {
+        "title": "Ring",
+        "href": "chapter-160.xhtml"
+      },
+      {
+        "title": "Juicero",
+        "href": "chapter-161.xhtml"
+      },
+      {
+        "title": "Nikola",
+        "href": "chapter-162.xhtml"
+      },
+      {
+        "title": "Jet.com",
+        "href": "chapter-163.xhtml"
+      },
+      {
+        "title": "Casper",
+        "href": "chapter-164.xhtml"
+      },
+      {
+        "title": "OpenAI",
+        "href": "chapter-165.xhtml"
+      },
+      {
+        "title": "Revolut",
+        "href": "chapter-166.xhtml"
+      },
+      {
+        "title": "Pinduoduo",
+        "href": "chapter-167.xhtml"
+      },
+      {
+        "title": "Rappi",
+        "href": "chapter-168.xhtml"
+      },
+      {
+        "title": "Convoy",
+        "href": "chapter-169.xhtml"
+      },
+      {
+        "title": "Katerra",
+        "href": "chapter-170.xhtml"
+      },
+      {
+        "title": "Scale AI",
+        "href": "chapter-171.xhtml"
+      },
+      {
+        "title": "Hugging Face",
+        "href": "chapter-172.xhtml"
+      },
+      {
+        "title": "Bird",
+        "href": "chapter-173.xhtml"
+      },
+      {
+        "title": "Anduril",
+        "href": "chapter-174.xhtml"
+      },
+      {
+        "title": "Brex",
+        "href": "chapter-175.xhtml"
+      },
+      {
+        "title": "IRL",
+        "href": "chapter-176.xhtml"
+      },
+      {
+        "title": "Celsius Network",
+        "href": "chapter-177.xhtml"
+      },
+      {
+        "title": "Frank",
+        "href": "chapter-178.xhtml"
+      },
+      {
+        "title": "Quibi",
+        "href": "chapter-179.xhtml"
+      },
+      {
+        "title": "Runway",
+        "href": "chapter-180.xhtml"
+      },
+      {
+        "title": "FTX",
+        "href": "chapter-181.xhtml"
+      },
+      {
+        "title": "Stability AI",
+        "href": "chapter-182.xhtml"
+      },
+      {
+        "title": "Cohere",
+        "href": "chapter-183.xhtml"
+      },
+      {
+        "title": "Fast",
+        "href": "chapter-184.xhtml"
+      },
+      {
+        "title": "Wirecard",
+        "href": "chapter-185.xhtml"
+      },
+      {
+        "title": "Enron",
+        "href": "chapter-186.xhtml"
+      },
+      {
+        "title": "WorldCom",
+        "href": "chapter-187.xhtml"
+      },
+      {
+        "title": "Lehman Brothers",
+        "href": "chapter-188.xhtml"
+      },
+      {
+        "title": "Long-Term Capital Management",
+        "href": "chapter-189.xhtml"
+      },
+      {
+        "title": "Solyndra",
+        "href": "chapter-190.xhtml"
+      },
+      {
+        "title": "Better Place",
+        "href": "chapter-191.xhtml"
+      },
+      {
+        "title": "Jawbone",
+        "href": "chapter-192.xhtml"
+      },
+      {
+        "title": "Olive AI",
+        "href": "chapter-193.xhtml"
+      },
+      {
+        "title": "Epic Games",
+        "href": "chapter-194.xhtml"
+      },
+      {
+        "title": "Activision Blizzard",
+        "href": "chapter-195.xhtml"
+      },
+      {
+        "title": "Anthropic",
+        "href": "chapter-196.xhtml"
+      },
+      {
+        "title": "Midjourney",
+        "href": "chapter-197.xhtml"
+      },
+      {
+        "title": "Perplexity",
+        "href": "chapter-198.xhtml"
+      },
+      {
+        "title": "Lynda.com",
+        "href": "chapter-199.xhtml"
+      },
+      {
+        "title": "Descript",
+        "href": "chapter-200.xhtml"
+      }
+    ]
+  },
+  {
+    "id": "thinkers",
+    "title": "Thinkers",
+    "subtitle": "Ideas and Their Legacy",
+    "cover": "/data/thinkers/cover.png",
+    "epub": "/outputs/thinkers/book.epub",
+    "chapters": [
+      {
+        "title": "Parmenides",
+        "href": "chapter-001.xhtml"
+      },
+      {
+        "title": "Heraclitus",
+        "href": "chapter-002.xhtml"
+      },
+      {
+        "title": "Plato",
+        "href": "chapter-003.xhtml"
+      },
+      {
+        "title": "Aristotle",
+        "href": "chapter-004.xhtml"
+      },
+      {
+        "title": "N\u0101g\u0101rjuna",
+        "href": "chapter-005.xhtml"
+      },
+      {
+        "title": "Plotinus",
+        "href": "chapter-006.xhtml"
+      },
+      {
+        "title": "Baruch Spinoza",
+        "href": "chapter-007.xhtml"
+      },
+      {
+        "title": "Gottfried Wilhelm Leibniz",
+        "href": "chapter-008.xhtml"
+      },
+      {
+        "title": "Martin Heidegger",
+        "href": "chapter-009.xhtml"
+      },
+      {
+        "title": "Alfred North Whitehead",
+        "href": "chapter-010.xhtml"
+      },
+      {
+        "title": "Ren\u00e9 Descartes",
+        "href": "chapter-011.xhtml"
+      },
+      {
+        "title": "John Locke",
+        "href": "chapter-012.xhtml"
+      },
+      {
+        "title": "David Hume",
+        "href": "chapter-013.xhtml"
+      },
+      {
+        "title": "Immanuel Kant",
+        "href": "chapter-014.xhtml"
+      },
+      {
+        "title": "Ludwig Wittgenstein",
+        "href": "chapter-015.xhtml"
+      },
+      {
+        "title": "William James",
+        "href": "chapter-016.xhtml"
+      },
+      {
+        "title": "Edmund Husserl",
+        "href": "chapter-017.xhtml"
+      },
+      {
+        "title": "Karl Popper",
+        "href": "chapter-018.xhtml"
+      },
+      {
+        "title": "Thomas Kuhn",
+        "href": "chapter-019.xhtml"
+      },
+      {
+        "title": "Zhuangzi",
+        "href": "chapter-020.xhtml"
+      },
+      {
+        "title": "Dign\u0101ga",
+        "href": "chapter-021.xhtml"
+      },
+      {
+        "title": "Confucius",
+        "href": "chapter-022.xhtml"
+      },
+      {
+        "title": "Mencius",
+        "href": "chapter-023.xhtml"
+      },
+      {
+        "title": "Epicurus",
+        "href": "chapter-024.xhtml"
+      },
+      {
+        "title": "Epictetus",
+        "href": "chapter-025.xhtml"
+      },
+      {
+        "title": "Marcus Aurelius",
+        "href": "chapter-026.xhtml"
+      },
+      {
+        "title": "Thomas Aquinas",
+        "href": "chapter-027.xhtml"
+      },
+      {
+        "title": "Jeremy Bentham",
+        "href": "chapter-028.xhtml"
+      },
+      {
+        "title": "John Stuart Mill",
+        "href": "chapter-029.xhtml"
+      },
+      {
+        "title": "Friedrich Nietzsche",
+        "href": "chapter-030.xhtml"
+      },
+      {
+        "title": "Emmanuel Levinas",
+        "href": "chapter-031.xhtml"
+      },
+      {
+        "title": "Iris Murdoch",
+        "href": "chapter-032.xhtml"
+      },
+      {
+        "title": "Thucydides",
+        "href": "chapter-033.xhtml"
+      },
+      {
+        "title": "Han Fei",
+        "href": "chapter-034.xhtml"
+      },
+      {
+        "title": "Niccol\u00f2 Machiavelli",
+        "href": "chapter-035.xhtml"
+      },
+      {
+        "title": "Thomas Hobbes",
+        "href": "chapter-036.xhtml"
+      },
+      {
+        "title": "Jean-Jacques Rousseau",
+        "href": "chapter-037.xhtml"
+      },
+      {
+        "title": "Edmund Burke",
+        "href": "chapter-038.xhtml"
+      },
+      {
+        "title": "Mary Wollstonecraft",
+        "href": "chapter-039.xhtml"
+      },
+      {
+        "title": "Alexis de Tocqueville",
+        "href": "chapter-040.xhtml"
+      },
+      {
+        "title": "Karl Marx",
+        "href": "chapter-041.xhtml"
+      },
+      {
+        "title": "Hannah Arendt",
+        "href": "chapter-042.xhtml"
+      },
+      {
+        "title": "Frantz Fanon",
+        "href": "chapter-043.xhtml"
+      },
+      {
+        "title": "John Rawls",
+        "href": "chapter-044.xhtml"
+      },
+      {
+        "title": "Galileo Galilei",
+        "href": "chapter-045.xhtml"
+      },
+      {
+        "title": "Isaac Newton",
+        "href": "chapter-046.xhtml"
+      },
+      {
+        "title": "Charles Darwin",
+        "href": "chapter-047.xhtml"
+      },
+      {
+        "title": "Albert Einstein",
+        "href": "chapter-048.xhtml"
+      },
+      {
+        "title": "Werner Heisenberg",
+        "href": "chapter-049.xhtml"
+      },
+      {
+        "title": "Rachel Carson",
+        "href": "chapter-050.xhtml"
+      },
+      {
+        "title": "Stephen Jay Gould",
+        "href": "chapter-051.xhtml"
+      },
+      {
+        "title": "Francis Bacon",
+        "href": "chapter-052.xhtml"
+      },
+      {
+        "title": "Augustine of Hippo",
+        "href": "chapter-053.xhtml"
+      },
+      {
+        "title": "\u0100di \u015aa\u1e45kara",
+        "href": "chapter-054.xhtml"
+      },
+      {
+        "title": "Al-Ghaz\u0101l\u012b",
+        "href": "chapter-055.xhtml"
+      },
+      {
+        "title": "Moses Maimonides",
+        "href": "chapter-056.xhtml"
+      },
+      {
+        "title": "Meister Eckhart",
+        "href": "chapter-057.xhtml"
+      },
+      {
+        "title": "Blaise Pascal",
+        "href": "chapter-058.xhtml"
+      },
+      {
+        "title": "S\u00f8ren Kierkegaard",
+        "href": "chapter-059.xhtml"
+      },
+      {
+        "title": "Fyodor Dostoevsky",
+        "href": "chapter-060.xhtml"
+      },
+      {
+        "title": "Simone Weil",
+        "href": "chapter-061.xhtml"
+      },
+      {
+        "title": "Albert Camus",
+        "href": "chapter-062.xhtml"
+      },
+      {
+        "title": "Viktor Frankl",
+        "href": "chapter-063.xhtml"
+      },
+      {
+        "title": "Martin Buber",
+        "href": "chapter-064.xhtml"
+      },
+      {
+        "title": "Alexander Baumgarten",
+        "href": "chapter-065.xhtml"
+      },
+      {
+        "title": "Arthur Schopenhauer",
+        "href": "chapter-066.xhtml"
+      },
+      {
+        "title": "Leo Tolstoy",
+        "href": "chapter-067.xhtml"
+      },
+      {
+        "title": "Walter Benjamin",
+        "href": "chapter-068.xhtml"
+      },
+      {
+        "title": "Susan Sontag",
+        "href": "chapter-069.xhtml"
+      },
+      {
+        "title": "John Dewey",
+        "href": "chapter-070.xhtml"
+      },
+      {
+        "title": "Zeami Motokiyo",
+        "href": "chapter-071.xhtml"
+      },
+      {
+        "title": "Adam Smith",
+        "href": "chapter-072.xhtml"
+      },
+      {
+        "title": "Thomas Malthus",
+        "href": "chapter-073.xhtml"
+      },
+      {
+        "title": "John Maynard Keynes",
+        "href": "chapter-074.xhtml"
+      },
+      {
+        "title": "Friedrich Hayek",
+        "href": "chapter-075.xhtml"
+      },
+      {
+        "title": "Thorstein Veblen",
+        "href": "chapter-076.xhtml"
+      },
+      {
+        "title": "Joseph Schumpeter",
+        "href": "chapter-077.xhtml"
+      },
+      {
+        "title": "Ibn Khaldun",
+        "href": "chapter-078.xhtml"
+      },
+      {
+        "title": "Karl Polanyi",
+        "href": "chapter-079.xhtml"
+      },
+      {
+        "title": "Amartya Sen",
+        "href": "chapter-080.xhtml"
+      }
+    ]
+  },
+  {
+    "id": "virtues",
+    "title": "The Virtues",
+    "subtitle": "Character Examined",
+    "cover": "/data/virtues/cover.png",
+    "epub": "/outputs/virtues/book.epub",
+    "chapters": [
+      {
+        "title": "Prudence",
+        "href": "chapter-001.xhtml"
+      },
+      {
+        "title": "Justice",
+        "href": "chapter-002.xhtml"
+      },
+      {
+        "title": "Courage",
+        "href": "chapter-003.xhtml"
+      },
+      {
+        "title": "Temperance",
+        "href": "chapter-004.xhtml"
+      },
+      {
+        "title": "Faith",
+        "href": "chapter-005.xhtml"
+      },
+      {
+        "title": "Hope",
+        "href": "chapter-006.xhtml"
+      },
+      {
+        "title": "Love",
+        "href": "chapter-007.xhtml"
+      },
+      {
+        "title": "Honesty",
+        "href": "chapter-008.xhtml"
+      },
+      {
+        "title": "Truthfulness",
+        "href": "chapter-009.xhtml"
+      },
+      {
+        "title": "Integrity",
+        "href": "chapter-010.xhtml"
+      },
+      {
+        "title": "Humility",
+        "href": "chapter-011.xhtml"
+      },
+      {
+        "title": "Meekness",
+        "href": "chapter-012.xhtml"
+      },
+      {
+        "title": "Docility",
+        "href": "chapter-013.xhtml"
+      },
+      {
+        "title": "Compassion",
+        "href": "chapter-014.xhtml"
+      },
+      {
+        "title": "Kindness",
+        "href": "chapter-015.xhtml"
+      },
+      {
+        "title": "Gentleness",
+        "href": "chapter-016.xhtml"
+      },
+      {
+        "title": "Forgiveness",
+        "href": "chapter-017.xhtml"
+      },
+      {
+        "title": "Forbearance",
+        "href": "chapter-018.xhtml"
+      },
+      {
+        "title": "Hospitality",
+        "href": "chapter-019.xhtml"
+      },
+      {
+        "title": "Fidelity",
+        "href": "chapter-020.xhtml"
+      },
+      {
+        "title": "Loyalty",
+        "href": "chapter-021.xhtml"
+      },
+      {
+        "title": "Perseverance",
+        "href": "chapter-022.xhtml"
+      },
+      {
+        "title": "Diligence",
+        "href": "chapter-023.xhtml"
+      },
+      {
+        "title": "Chastity",
+        "href": "chapter-024.xhtml"
+      },
+      {
+        "title": "Generosity",
+        "href": "chapter-025.xhtml"
+      },
+      {
+        "title": "Contentment",
+        "href": "chapter-026.xhtml"
+      },
+      {
+        "title": "Detachment",
+        "href": "chapter-027.xhtml"
+      },
+      {
+        "title": "Reverence",
+        "href": "chapter-028.xhtml"
+      },
+      {
+        "title": "Piety",
+        "href": "chapter-029.xhtml"
+      },
+      {
+        "title": "Gratitude",
+        "href": "chapter-030.xhtml"
+      },
+      {
+        "title": "Wonder",
+        "href": "chapter-031.xhtml"
+      },
+      {
+        "title": "Joy",
+        "href": "chapter-032.xhtml"
+      },
+      {
+        "title": "Equanimity",
+        "href": "chapter-033.xhtml"
+      },
+      {
+        "title": "Patience",
+        "href": "chapter-034.xhtml"
+      },
+      {
+        "title": "Peace",
+        "href": "chapter-035.xhtml"
+      },
+      {
+        "title": "Mercy",
+        "href": "chapter-036.xhtml"
+      },
+      {
+        "title": "Repentance",
+        "href": "chapter-037.xhtml"
+      },
+      {
+        "title": "Obedience",
+        "href": "chapter-038.xhtml"
+      },
+      {
+        "title": "Zeal",
+        "href": "chapter-039.xhtml"
+      },
+      {
+        "title": "Discernment",
+        "href": "chapter-040.xhtml"
+      },
+      {
+        "title": "Studiousness",
+        "href": "chapter-041.xhtml"
+      },
+      {
+        "title": "Attention",
+        "href": "chapter-042.xhtml"
+      },
+      {
+        "title": "Magnanimity",
+        "href": "chapter-043.xhtml"
+      },
+      {
+        "title": "Simplicity",
+        "href": "chapter-044.xhtml"
+      },
+      {
+        "title": "Silence",
+        "href": "chapter-045.xhtml"
+      }
+    ]
+  },
+  {
+    "id": "wellness",
+    "title": "Wellness",
+    "subtitle": "The Systems That Sustain You",
+    "cover": "/data/wellness/cover.png",
+    "epub": "/outputs/wellness/book.epub",
+    "chapters": [
+      {
+        "title": "Sleep Architecture",
+        "href": "chapter-001.xhtml"
+      },
+      {
+        "title": "Circadian Rhythm",
+        "href": "chapter-002.xhtml"
+      },
+      {
+        "title": "Sleep Debt",
+        "href": "chapter-003.xhtml"
+      },
+      {
+        "title": "Recovery",
+        "href": "chapter-004.xhtml"
+      },
+      {
+        "title": "Dreams",
+        "href": "chapter-005.xhtml"
+      },
+      {
+        "title": "The Stress Response",
+        "href": "chapter-006.xhtml"
+      },
+      {
+        "title": "Hormesis",
+        "href": "chapter-007.xhtml"
+      },
+      {
+        "title": "Vagal Tone",
+        "href": "chapter-008.xhtml"
+      },
+      {
+        "title": "HPA Axis",
+        "href": "chapter-009.xhtml"
+      },
+      {
+        "title": "Autonomic Balance",
+        "href": "chapter-010.xhtml"
+      },
+      {
+        "title": "Allostatic Load",
+        "href": "chapter-011.xhtml"
+      },
+      {
+        "title": "Metabolic Health",
+        "href": "chapter-012.xhtml"
+      },
+      {
+        "title": "Insulin Sensitivity",
+        "href": "chapter-013.xhtml"
+      },
+      {
+        "title": "Mitochondrial Function",
+        "href": "chapter-014.xhtml"
+      },
+      {
+        "title": "Thermoregulation",
+        "href": "chapter-015.xhtml"
+      },
+      {
+        "title": "Metabolic Flexibility",
+        "href": "chapter-016.xhtml"
+      },
+      {
+        "title": "Energy Balance",
+        "href": "chapter-017.xhtml"
+      },
+      {
+        "title": "Neuroplasticity",
+        "href": "chapter-018.xhtml"
+      },
+      {
+        "title": "Cognitive Reserve",
+        "href": "chapter-019.xhtml"
+      },
+      {
+        "title": "Memory Systems",
+        "href": "chapter-020.xhtml"
+      },
+      {
+        "title": "Default Mode Network",
+        "href": "chapter-021.xhtml"
+      },
+      {
+        "title": "Executive Function",
+        "href": "chapter-022.xhtml"
+      },
+      {
+        "title": "Immune Function",
+        "href": "chapter-023.xhtml"
+      },
+      {
+        "title": "Inflammation",
+        "href": "chapter-024.xhtml"
+      },
+      {
+        "title": "The Microbiome",
+        "href": "chapter-025.xhtml"
+      },
+      {
+        "title": "Gut-Brain Axis",
+        "href": "chapter-026.xhtml"
+      },
+      {
+        "title": "Cytokines",
+        "href": "chapter-027.xhtml"
+      },
+      {
+        "title": "Hormonal Balance",
+        "href": "chapter-028.xhtml"
+      },
+      {
+        "title": "Cortisol Rhythm",
+        "href": "chapter-029.xhtml"
+      },
+      {
+        "title": "Growth Hormone",
+        "href": "chapter-030.xhtml"
+      },
+      {
+        "title": "Sex Hormones",
+        "href": "chapter-031.xhtml"
+      },
+      {
+        "title": "Thyroid Function",
+        "href": "chapter-032.xhtml"
+      },
+      {
+        "title": "Light Exposure",
+        "href": "chapter-033.xhtml"
+      },
+      {
+        "title": "Temperature Adaptation",
+        "href": "chapter-034.xhtml"
+      },
+      {
+        "title": "Air Quality",
+        "href": "chapter-035.xhtml"
+      },
+      {
+        "title": "Sound Environment",
+        "href": "chapter-036.xhtml"
+      },
+      {
+        "title": "Built Environment",
+        "href": "chapter-037.xhtml"
+      }
+    ]
+  }
+]
