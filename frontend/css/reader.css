@@ -100,6 +100,25 @@ body {
     margin: 0;
 }
 
+.nav-book-title {
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-left: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .nav-book-title {
+        max-width: 150px;
+        font-size: 0.875rem;
+    }
+}
+
 /* Nav Button Styles */
 .reader-tool-btn,
 .nav-btn-back {
@@ -220,11 +239,13 @@ body {
 .epubjs-content h1 {
     font-family: var(--font-serif) !important;
     font-weight: 600;
-    text-align: center;
-    margin-top: 10%;
+    text-align: left;
+    margin-top: 2rem;
     margin-bottom: 2em;
     font-size: 2.8rem;
 }
+
+
 
 .epubjs-content p {
     margin-bottom: 1.5rem;
@@ -301,9 +322,9 @@ body {
 
 .contents-menu-header h2 {
     font-size: 1.25rem;
-    font-family: var(--font-display, 'Lato', sans-serif);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+    font-family: var(--font-serif);
+    text-transform: none;
+    letter-spacing: normal;
     font-weight: 700;
     color: var(--text-primary);
     margin: 0;

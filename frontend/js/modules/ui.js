@@ -128,6 +128,9 @@ export function showEntryView(data, onNavigate) {
     const posEl = document.getElementById('entryPosition');
     if (posEl) posEl.textContent = `${entry.order} of ${totalEntries}`;
 
+    // Update Navbar Title
+    updateNavbarTitle(state.currentBook.title);
+
     // Render content
     const contentEl = document.getElementById('entryContent');
     // Using global marked
@@ -167,6 +170,11 @@ export function showContentPage(title, content, type, onNavigate) {
     const contentEl = document.getElementById('contentPageContent');
     const footer = document.getElementById('contentPageFooter');
     const pageView = document.getElementById('contentPageView');
+
+    // Update Navbar Title for content pages too
+    if (state.currentBook) {
+        updateNavbarTitle(state.currentBook.title);
+    }
 
     pageView.classList.remove('is-appendix');
 
@@ -325,6 +333,17 @@ export function populateMenu(onNavigate, onLoadPage) {
     const menuLinks = document.getElementById('contentsMenuLinks');
     if (!menuLinks) return;
 
+    // Update Contents Header to Book Title
+    const menuHeader = document.querySelector('.contents-menu-header h2');
+    if (menuHeader && state.currentBook) {
+        menuHeader.textContent = state.currentBook.title;
+        menuHeader.style.fontSize = '1rem';
+        menuHeader.style.textTransform = 'none';
+        menuHeader.style.letterSpacing = 'normal';
+        menuHeader.style.fontFamily = 'var(--font-serif)';
+        menuHeader.style.fontWeight = '700';
+    }
+
     const currentBook = state.currentBook;
     const currentEntries = state.currentEntries;
     const currentEntry = state.currentEntry;
@@ -436,5 +455,15 @@ export function updateSchema() {
     const schemaScript = document.getElementById('schemaData');
     if (schemaScript) {
         schemaScript.textContent = JSON.stringify(schema, null, 2);
+    }
+}
+
+export function updateNavbarTitle(title) {
+    console.log('UI: Setting title to', title);
+    const titleEl = document.getElementById('bookTitle');
+    if (titleEl) {
+        titleEl.textContent = title;
+        // Ensure it is visible if hidden by CSS for some reason, though class handles it
+        titleEl.style.display = '';
     }
 }

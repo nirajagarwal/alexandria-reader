@@ -1,0 +1,308 @@
+{
+  "batch": 6,
+  "entries": [
+    {
+      "entry_number": 41,
+      "title": "Talks to Teachers",
+      "cluster": "IX. The Blindness and the Sight: Ethics, Education, and the Significant Life",
+      "target_length": "1,800-2,200 words",
+      "source_works": [
+        "Talks to Teachers on Psychology (1899), Chapters I-VII"
+      ],
+      "key_passages_to_consider": [
+        "Psychology is a science, and teaching is an art; and sciences never generate arts directly out of themselves.",
+        "The art of teaching grew up in the schoolroom, out of inventiveness and sympathetic concrete observation.",
+        "The teachers of this country, one may say, have its future in their hands.",
+        "You make a great, a very great mistake, if you think that psychology, being the science of the mind's laws, is something from which you can deduce definite programmes and schemes and methods of instruction for immediate schoolroom use.",
+        "The child is simply a bundle of impulses and tendencies, which, by their interaction with the environment, are to be organized into a personality."
+      ],
+      "core_idea_brief": "James's lectures to teachers are a masterclass in applied psychology and a warning against its oversimplification. He told teachers that psychology can illuminate the principles underlying their work but cannot dictate practice. Teaching is an art that requires concrete observation, sympathy, and improvisational skill. The key principles he offered: education is the organization of habits and tendencies; interest is the engine of learning (you cannot teach a bored child); action must follow knowledge (the gap between knowing and doing is the central challenge); and the child is not a blank slate but a bundle of impulses seeking organization. James respected teachers deeply and wanted to give them useful tools without pretending psychology had all the answers.",
+      "contemporary_threads": [
+        {
+          "thread": "The neuroscience-of-learning industry (and its limits)",
+          "detail": "The contemporary 'brain-based learning' industry promises to translate neuroscience directly into classroom practice. James warned against exactly this: sciences do not generate arts directly. Many brain-based learning claims are oversimplified or unsupported (learning styles, left-brain/right-brain, the 10% myth). The evidence-based education movement (Dunlosky, Roediger) offers more Jamesian guidance: specific, tested strategies (spaced practice, retrieval practice, interleaving) that emerge from cognitive science but require artful implementation by teachers who know their students.",
+          "key_references": ["John Dunlosky (Strengthening the Student Toolbox)", "Henry Roediger", "Daniel Willingham (Why Don't Students Like School?)", "Paul Howard-Jones (debunking neuromyths)"]
+        },
+        {
+          "thread": "The attention crisis in education",
+          "detail": "James placed interest and attention at the center of education, and the contemporary classroom faces an unprecedented challenge to both. Smartphones, social media, and ubiquitous digital stimulation compete for student attention with an intensity James could not have imagined. Research on attention and learning (Jha, Rosen) confirms what James taught: sustained attention is the prerequisite for learning, and it is under siege. Some schools have responded with mindfulness programs, phone-free policies, and attention-training curricula, all of which are Jamesian interventions.",
+          "key_references": ["Amishi Jha", "Larry Rosen (The Distracted Mind)", "Johann Hari (Stolen Focus)", "Jean Twenge (iGen)"]
+        },
+        {
+          "thread": "Active learning and embodied pedagogy",
+          "detail": "James's insistence that action must follow knowledge (that learning without doing is incomplete) anticipates the active learning revolution in education. Flipped classrooms, project-based learning, experiential education, and maker spaces all embody his principle: the child is not a vessel to be filled but an agent to be engaged. The research is now overwhelming that active engagement produces deeper learning than passive reception. James would not have been surprised.",
+          "key_references": ["John Dewey (Democracy and Education, extending James)", "Scott Freeman (active learning meta-analysis)", "Paulo Freire (Pedagogy of the Oppressed)"]
+        }
+      ],
+      "living_question": "James told teachers that psychology cannot tell them what to do in the classroom. It can only tell them what is possible and what is unlikely. The gap between science and art, between principle and practice, between the laboratory and the classroom, is bridged only by the teacher's own judgment, sympathy, and skill. In an era of standardized testing, scripted curricula, and algorithmic personalization, James's respect for the teacher as artist and improviser feels both quaint and urgent. The best educational technology in the world cannot replace a teacher who sees the child in front of them and responds with intelligence and care.",
+      "generation_notes": "Warm, practical entry. James's respect for teachers should come through. The neuromyths thread is a useful cautionary tale. The attention crisis thread connects to the Selective Attention entry. Keep this grounded in the classroom rather than in theory. The living question should honor teachers without being sentimental."
+    },
+    {
+      "entry_number": 45,
+      "title": "Psychical Research",
+      "cluster": "X. The Unseen Order: Anomalous Experience and Open Inquiry",
+      "target_length": "2,000-2,500 words",
+      "source_works": [
+        "'What Psychical Research Has Accomplished' (1897)",
+        "Presidential Address to the Society for Psychical Research (1896)",
+        "Various essays and reports on mediumship, telepathy, and trance states"
+      ],
+      "key_passages_to_consider": [
+        "If you wish to upset the law that all crows are black, you mustn't seek to show that no crows are; it is enough if you prove one single crow to be white.",
+        "The concrete evidence for most of the 'psychic' phenomena under discussion is good enough to hang a man on.",
+        "I confess that at times I have been tempted to believe that the Creator has eternally intended this department of nature to remain baffling.",
+        "The scientific community's established habit of treating the reports of psychic phenomena as due to the weakness of human nature rather than to the strength of the phenomena is, in my opinion, the greatest scandal and the most unscientific thing in current science."
+      ],
+      "core_idea_brief": "For twenty-five years, James was centrally involved with the Society for Psychical Research, investigating mediums, telepathy, automatic writing, and trance states. He was neither a believer nor a debunker but a radical empiricist applying his principles to the most uncomfortable data available. His position was methodological: if experience is the court of last appeal, then anomalous experiences deserve investigation, not dismissal. He argued that the scientific establishment's refusal to investigate psychic phenomena was itself unscientific: a prejudice masquerading as rigor. He never found conclusive proof, and he said so honestly. But he also refused to close the inquiry, because the evidence was too persistent and too strange to be waved away.",
+      "contemporary_threads": [
+        {
+          "thread": "The methodology of anomaly investigation",
+          "detail": "James's approach to psychical research was methodologically exemplary: controlled conditions, detailed records, attention to fraud, willingness to report negative results. The contemporary debate about parapsychology turns largely on methodology. Dean Radin's meta-analyses claim small but consistent effects across psi studies. Critics (Wagenmakers, Alcock) argue the methodology is insufficient. What both sides share with James is the recognition that the question is not whether psi 'makes sense' theoretically but whether the evidence, properly gathered and analyzed, supports it. James would have insisted on this empirical framing regardless of his theoretical sympathies.",
+          "key_references": ["Dean Radin (The Conscious Universe)", "Daryl Bem (Feeling the Future)", "Jessica Utts (statistical analysis of psi)", "James Alcock (critique)", "Eric-Jan Wagenmakers"]
+        },
+        {
+          "thread": "The limits of materialist ontology",
+          "detail": "James's psychical research was partly motivated by his suspicion that the materialist ontology (mind is produced by brain, full stop) was too narrow. If consciousness is transmitted rather than produced, if the subliminal self connects to something wider, then phenomena like telepathy and mediumship are not violations of natural law but expressions of a wider nature. The contemporary consciousness studies landscape (panpsychism, Kastrup's idealism, the filter theory) reopens the space James was exploring. Whether or not specific psi claims are vindicated, the ontological question (is materialism sufficient?) is alive.",
+          "key_references": ["Edward Kelly (Irreducible Mind)", "Bernardo Kastrup", "David Chalmers (hard problem as challenge to materialism)", "Thomas Nagel (Mind and Cosmos)"]
+        },
+        {
+          "thread": "Scientific gatekeeping and the sociology of knowledge",
+          "detail": "James's complaint that the scientific establishment was dismissing evidence on ideological grounds rather than empirical ones remains relevant. The sociology of science (Kuhn, Latour, Collins) has shown that what counts as legitimate scientific inquiry is partly a social construction: gatekeeping, funding decisions, publication bias, and professional reputation all shape what gets studied and what gets ignored. James's demand was not that science accept psychic phenomena but that it investigate them with the same rigor applied to other domains. That demand is still unmet.",
+          "key_references": ["Thomas Kuhn", "Harry Collins (parapsychology and the sociology of science)", "Rupert Sheldrake (Science Set Free, controversial but relevant)"]
+        },
+        {
+          "thread": "Near-death experiences and anomalous cognition",
+          "detail": "Near-death experience research (van Lommel, Parnia) and studies of terminal lucidity (sudden clarity in patients with severe brain damage shortly before death) represent contemporary anomalies in the Jamesian sense: phenomena that resist easy materialist explanation. The AWARE study (Parnia) attempted to test veridical perception during cardiac arrest under controlled conditions. Results have been ambiguous. James would have expected ambiguity; he believed this domain might be 'eternally baffling.' But he would also have insisted that ambiguity is not the same as refutation.",
+          "key_references": ["Pim van Lommel (Consciousness Beyond Life)", "Sam Parnia (AWARE study)", "Alexander Batthyány (terminal lucidity)", "Bruce Greyson"]
+        }
+      ],
+      "living_question": "James spent a quarter of his career investigating phenomena that most of his colleagues considered beneath contempt. He found no conclusive proof but also no conclusive debunking. What he demonstrated was something more important than any particular finding: that genuine empiricism means following the evidence wherever it leads, even when it leads into territory that makes you uncomfortable. The easy positions are certainty (it is all fraud and delusion) and credulity (it proves the spirit world). The Jamesian position, the one that requires the most intellectual courage, is sustained investigation without premature closure. Whether the twenty-first century has the patience for this remains to be seen.",
+      "generation_notes": "This is the most intellectually uncomfortable entry in the book and should acknowledge that directly. James's intellectual courage is the story, not the specific phenomena. Do not try to prove or disprove anything; show James modeling a method. The sociology-of-science thread is essential: the question is not just empirical but institutional. The tone should be honest, curious, and neither credulous nor dismissive."
+    },
+    {
+      "entry_number": 47,
+      "title": "Mrs. Piper and the Trance State",
+      "cluster": "X. The Unseen Order: Anomalous Experience and Open Inquiry",
+      "target_length": "1,500-2,000 words",
+      "source_works": [
+        "Report on Mrs. Piper's Hodgson-Control (1909)",
+        "Various reports to the Society for Psychical Research",
+        "Correspondence and essays on Leonora Piper"
+      ],
+      "key_passages_to_consider": [
+        "If you wish to upset the law that all crows are black, you mustn't seek to show that no crows are; it is enough if you prove one single crow to be white. My own white crow is Mrs. Piper.",
+        "I now believe her to be in possession of a power as yet unexplained.",
+        "Science, so far as science denies such exceptional occurrences, lies prostrate in the dust for me; and the most urgent intellectual need which I feel is that science be built up again in a form in which such things may have a positive place.",
+        "I remain uncertain and await more facts."
+      ],
+      "core_idea_brief": "Leonora Piper was a Boston medium whom James studied intensively for over two decades. In trance, she produced detailed information about sitters' deceased relatives that seemed to exceed what could be explained by cold reading, fraud, or lucky guessing. James arranged controlled sittings, used anonymous sitters, tested for fraud, and remained rigorously honest about both the impressive hits and the embarrassing misses. He called her his 'white crow': the single case that, if genuine, would overturn the materialist assumption. In the end, he could neither debunk nor fully explain her. His final position was agnosticism: 'I remain uncertain and await more facts.' This was not evasion but the most honest available position given the evidence.",
+      "contemporary_threads": [
+        {
+          "thread": "Mediumship research at the University of Virginia",
+          "detail": "The Division of Perceptual Studies at the University of Virginia (founded by Ian Stevenson, now led by Bruce Greyson and others) continues the research tradition James initiated. Julie Beischel's Windbridge Research Center has developed blinded protocols for testing mediums that address many of the methodological criticisms of earlier research. Results show some mediums score above chance in controlled conditions, though effect sizes are modest and interpretation is contested. The institutional continuity from James to the present is direct and unbroken.",
+          "key_references": ["Julie Beischel (Windbridge Research Center)", "Emily Williams Kelly", "Ian Stevenson", "Bruce Greyson"]
+        },
+        {
+          "thread": "Dissociation and altered states",
+          "detail": "Whatever the source of Piper's information, her trance state itself is a well-documented psychological phenomenon. Dissociative states (in which a person's normal identity is partially or fully suspended and replaced by an alternate persona) are recognized in clinical psychology and have been studied extensively. The question James raised is whether dissociation in mediumship is merely pathological or whether it represents access to information or capacities not available to normal waking consciousness. Contemporary research on dissociation (Spiegel, van der Hart) treats it as a spectrum rather than a binary, which is consistent with James's nuanced approach.",
+          "key_references": ["David Spiegel", "Onno van der Hart", "Etzel Cardeña (anomalous experiences and dissociation)"]
+        },
+        {
+          "thread": "The ethics of honest uncertainty",
+          "detail": "James's handling of the Piper case is a model of epistemic virtue. He did not pretend to know more than he did. He did not suppress the evidence that puzzled him. He did not overstate his conclusions. In an age of hot takes and instant certainty, his willingness to sit with decades of inconclusive evidence and say 'I remain uncertain' is itself a contribution. The Piper case illustrates not a conclusion about the paranormal but a way of being an honest investigator when the evidence does not cooperate.",
+          "key_references": ["James's own methodology as model", "the broader epistemic virtue literature"]
+        }
+      ],
+      "living_question": "James's white crow remains unresolved. Mrs. Piper was neither definitively debunked nor definitively validated. The same can be said of the broader mediumship research that followed. What endures is not a conclusion but a posture: the willingness to investigate what cannot yet be explained, to report honestly what is found, and to resist the pressure to declare the case closed in either direction. In a culture that demands certainty and punishes ambiguity, this posture may be James's most valuable legacy in any domain.",
+      "generation_notes": "Shorter, narrative entry. The Piper story has inherent drama and should be told as a story: James meets Piper, tests her, is impressed and puzzled, spends decades investigating, and ends uncertain. This is the most personal and specific entry in the anomalous experience cluster. Keep the tone honest and grounded. Do not try to convince the reader of anything except James's integrity as an investigator."
+    },
+    {
+      "entry_number": 52,
+      "title": "The Perception of Space",
+      "cluster": "VIII. The Science of the Soul: Psychology's Foundations",
+      "target_length": "1,500-1,800 words",
+      "source_works": [
+        "The Principles of Psychology (1890), Chapter XX: The Perception of Space"
+      ],
+      "key_passages_to_consider": [
+        "Space-relations are perceived by various sense-organs, most of which give us knowledge that is vague and confused.",
+        "The original sensation of space is a vast, vague totality... subsequent discrimination carves it into definite parts.",
+        "Sensations of movement are the most important of all the space-determining sensations.",
+        "The body is the storm centre, the origin of co-ordinates, the constant place of stress in all that experience-train."
+      ],
+      "core_idea_brief": "James rejected both the Kantian view (space is an a priori form imposed by the mind on experience) and the strict empiricist view (space is learned through association alone). Instead, he proposed that spatial perception arises from the organization of sensory experience, with the body as the origin of all spatial orientation. Space is not given a priori but neither is it assembled from non-spatial atoms of sensation; it is there from the beginning as a vague totality that is progressively discriminated and refined. The body is central: our sense of up and down, near and far, here and there, originates in the bodily experience of movement, posture, and sensory contact.",
+      "contemporary_threads": [
+        {
+          "thread": "Place cells, grid cells, and the neuroscience of spatial navigation",
+          "detail": "O'Keefe's discovery of place cells (neurons that fire when an animal is in a specific location) and the Mosers' discovery of grid cells (neurons that create a coordinate map of space) earned them the Nobel Prize in 2014. These findings confirm that spatial representation is built from the organism's bodily movement through the environment, not imposed a priori. The hippocampal spatial system constructs maps through exploration, which is James's 'progressive discrimination of a vague totality' realized at the neural level.",
+          "key_references": ["John O'Keefe (place cells)", "May-Britt Moser & Edvard Moser (grid cells)", "Howard Eichenbaum"]
+        },
+        {
+          "thread": "Embodied cognition and the body as origin",
+          "detail": "James's insistence that 'the body is the storm centre, the origin of coordinates' anticipates the entire embodied cognition movement. Lakoff and Johnson's conceptual metaphor theory shows that abstract spatial reasoning (she's 'above' him in the hierarchy, the meeting is 'approaching') is grounded in bodily experience of space. Alva Noë's enactive approach argues that spatial perception requires active bodily movement: we perceive space not by computing it from static images but by exploring it through action.",
+          "key_references": ["George Lakoff & Mark Johnson", "Alva Noë (Action in Perception)", "Shaun Gallagher (How the Body Shapes the Mind)", "Olaf Blanke"]
+        },
+        {
+          "thread": "Virtual reality and proprioceptive disruption",
+          "detail": "Virtual reality systems work by manipulating the same sensory channels (vision, vestibular input, proprioception) that James identified as the foundations of spatial perception. When these channels conflict (as in VR-induced motion sickness), the result confirms James's account: spatial perception is a constructed integration of bodily senses, and when the construction fails, the experience collapses. Rubber hand illusions, out-of-body experience induction, and full-body illusions further demonstrate that the body's spatial self-model is flexible and constructible, not fixed.",
+          "key_references": ["Henrik Ehrsson (rubber hand illusion)", "Olaf Blanke (out-of-body illusions)", "Mel Slater (VR presence research)"]
+        }
+      ],
+      "living_question": "James placed the body at the center of spatial experience at a time when philosophy treated space as either an abstract form or a logical construction. The body has stayed at the center. Every advance in spatial neuroscience, every embodied cognition finding, every VR experiment confirms that our experience of space begins and ends with the body's position, movement, and sensory engagement. In a culture increasingly mediated by screens and disembodied digital experience, James's reminder that 'the body is the storm centre' is not just a finding about perception. It is a caution about what happens when we forget where experience originates.",
+      "generation_notes": "Shorter, more technical entry. The place cells/grid cells thread is the headline neuroscience connection. The VR thread is immediately engaging. Keep the philosophy of space (Kant vs. empiricists) very brief; the interest is in the embodied solution. James's body-as-origin language is strikingly modern and should be highlighted."
+    },
+    {
+      "entry_number": 56,
+      "title": "Meliorism",
+      "cluster": "XII. Pragmatism Applied",
+      "target_length": "1,800-2,200 words",
+      "source_works": [
+        "Pragmatism (1907), Lecture VIII: Pragmatism and Religion",
+        "Various essays and letters"
+      ],
+      "key_passages_to_consider": [
+        "Pragmatism is willing to take anything, to follow either logic or the senses, and to count the humblest and most personal experiences. She will count mystical experiences if they have practical consequences.",
+        "The world is all the richer for having a devil in it, so long as we keep our foot upon his neck.",
+        "Meliorism treats salvation as neither necessary nor impossible. It treats it as a possibility, which becomes more and more of a probability the more numerous the actual conditions of salvation become.",
+        "It is clear that pragmatism must incline towards meliorism.",
+        "The salvation of the world... is 'not yet' but is a real possibility."
+      ],
+      "core_idea_brief": "Meliorism is James's name for the position between optimism and pessimism. The optimist believes the world will be saved regardless of what we do. The pessimist believes it cannot be saved regardless of what we do. The meliorist believes the world can be improved and that the improvement depends partly on our effort. Salvation is genuinely possible but not guaranteed. This is not a compromise position but a demanding one: it requires action without certainty of success, hope without guarantees, and the willingness to struggle for an outcome that may not arrive. James saw meliorism as the natural ethical stance of pragmatism: the world is genuinely improvable, and our efforts genuinely matter.",
+      "contemporary_threads": [
+        {
+          "thread": "Effective altruism and rational hope",
+          "detail": "The effective altruism movement embodies meliorism: the world's suffering can be reduced through intelligent, sustained effort, but the outcome is not guaranteed and the work is never finished. EA's focus on measurable impact, cost-effectiveness, and prioritization is pragmatic meliorism in action. Its internal tensions (how much should an individual sacrifice? can systemic problems be solved through individual action? what counts as effective?) are the tensions James identified: meliorism is motivating but never comfortable.",
+          "key_references": ["Peter Singer", "William MacAskill", "Toby Ord (The Precipice)"]
+        },
+        {
+          "thread": "Climate activism and the possibility of catastrophe",
+          "detail": "Climate change is the defining meliorist test of the twenty-first century. The optimist says technology will solve it. The pessimist says it is already too late. The meliorist says: the outcome is genuinely in doubt, and our actions genuinely matter. James's meliorism provides a philosophical framework for sustainable activism: neither the paralysis of despair nor the complacency of optimism, but the steady, effortful engagement with a problem whose outcome depends partly on what we do. Whether meliorism can sustain the long-term effort climate action requires is an open question.",
+          "key_references": ["Bill McKibben", "Kate Marvel (climate scientist and writer)", "Jonathan Safran Foer (We Are the Weather)", "Rebecca Solnit (Hope in the Dark)"]
+        },
+        {
+          "thread": "Progress studies and the evidence for improvement",
+          "detail": "Steven Pinker's 'Enlightenment Now' and Hans Rosling's 'Factfulness' present extensive evidence that the world has improved dramatically on many dimensions: poverty, violence, health, education. This is meliorism's empirical case. But critics (Jason Hickel, Amia Srinivasan) argue that aggregate progress masks deep injustice and that the metrics themselves are biased. James would have welcomed the data while noting that past progress does not guarantee future progress: meliorism is about possibility, not inevitability.",
+          "key_references": ["Steven Pinker (Enlightenment Now)", "Hans Rosling (Factfulness)", "Jason Hickel (The Divide)", "Rutger Bregman (Humankind)"]
+        }
+      ],
+      "living_question": "Meliorism asks the hardest question: can you sustain effort toward a goal whose achievement is uncertain? Optimism does not need effort (the outcome is guaranteed). Pessimism does not need effort (the outcome is foreclosed). Only meliorism demands that we work without knowing whether the work will succeed. James called this the 'strenuous mood,' and he believed it was the most authentic and energizing stance a person could take. Whether meliorism is psychologically sustainable over a lifetime, or whether most people eventually collapse into either optimism or despair, may be the deepest question in the psychology of hope.",
+      "generation_notes": "This entry should have moral and emotional energy. Meliorism is James's signature ethical stance and should feel consequential. The climate thread is the most urgent contemporary test. The progress studies debate shows the evidence is real but contested. The living question should challenge the reader: can you sustain effort without guarantees? The tone should be bracing, not comforting."
+    },
+    {
+      "entry_number": 57,
+      "title": "The Ph.D. Octopus",
+      "cluster": "IX. The Blindness and the Sight: Ethics, Education, and the Significant Life",
+      "target_length": "1,200-1,500 words",
+      "source_works": [
+        "'The Ph.D. Octopus' (1903), Harvard Monthly"
+      ],
+      "key_passages_to_consider": [
+        "The Ph.D. degree has become the one thing needful for an academic career. No man can get a professorship without it.",
+        "Will any one pretend for a moment that the doctor's degree is a guarantee that its possessor will be successful as a teacher?",
+        "America is thus training up a set of young men who will be the type of academic Babbitts.",
+        "The quality of being human is more important than the quality of being learned."
+      ],
+      "core_idea_brief": "In this short, pointed essay, James attacked the growing requirement of the Ph.D. for academic employment. He argued that the degree measures a specific and narrow capacity (the ability to produce a research dissertation) and tells you almost nothing about whether the person can teach, think broadly, or inspire students. The Ph.D. requirement was producing a class of credentialed specialists who had jumped through institutional hoops but might lack the qualities that matter most in education: breadth, humanity, intellectual courage, and the capacity to communicate. The 'octopus' of credentialism was strangling intellectual life.",
+      "contemporary_threads": [
+        {
+          "thread": "The credentialism debate",
+          "detail": "James's complaint has only intensified. Credential inflation now extends far beyond academia: jobs that once required a high school diploma now demand a bachelor's degree; jobs that once required a bachelor's now demand a master's. Bryan Caplan's 'The Case Against Education' argues that much of formal education functions as signaling (proving you can jump through hoops) rather than human capital formation (actually building useful skills). James would have recognized the argument and sympathized, while insisting that genuine education (the formation of habits, attention, and character) is invaluable; it is the credentializing system that is broken.",
+          "key_references": ["Bryan Caplan (The Case Against Education)", "Peter Thiel (anti-credential arguments)", "David Goodhart (Head, Hand, Heart)"]
+        },
+        {
+          "thread": "Alternative education and the autodidact renaissance",
+          "detail": "Coding bootcamps, MOOCs, YouTube tutorials, micro-credentials, and the broader self-directed learning movement represent a partial realization of James's vision: learning decoupled from credentialing. The most successful self-taught programmers, designers, and entrepreneurs demonstrate that competence can be developed outside traditional institutions. But the tension James identified persists: institutions still use credentials as gatekeeping mechanisms, and the autodidact faces systematic disadvantage in hiring despite equivalent or superior ability.",
+          "key_references": ["Sal Khan (Khan Academy)", "MIT OpenCourseWare", "Scott Young (Ultralearning)", "the open-source education movement"]
+        },
+        {
+          "thread": "AI and the future of credentials",
+          "detail": "Artificial intelligence is accelerating the credentialism crisis. If AI can produce competent research output, what does a research degree prove? If AI tutors can teach as well as (or better than) human instructors, what does a teaching credential prove? The question James asked (what does the degree actually guarantee?) becomes more urgent as the tasks the degree was supposed to certify become automatable. The answer may be what James always said it was: the quality of being human, which no degree can measure and no machine can replicate.",
+          "key_references": ["emerging debate on AI and academic credentials", "Bryan Caplan's framework applied to AI disruption"]
+        }
+      ],
+      "living_question": "James wrote that 'the quality of being human is more important than the quality of being learned.' This is easy to applaud and hard to institutionalize. Institutions need legible signals of competence, and credentials provide them, however imperfectly. The Ph.D. octopus persists because the alternative (evaluating each person on their actual qualities) is expensive, subjective, and resistant to scaling. James's essay does not solve this problem. It does something more useful: it names it, clearly and early, so that every subsequent generation can recognize the octopus when it tightens its grip.",
+      "generation_notes": "Short, sharp entry. James's prose here is punchy and satirical; let it set the tone. The AI thread gives it unexpected contemporary urgency. Keep this entry tight and avoid over-developing the threads. The living question should acknowledge the institutional difficulty without excusing it."
+    },
+    {
+      "entry_number": 58,
+      "title": "The Moral Philosopher and the Moral Life",
+      "cluster": "IX. The Blindness and the Sight: Ethics, Education, and the Significant Life",
+      "target_length": "2,200-2,800 words",
+      "source_works": [
+        "'The Moral Philosopher and the Moral Life' (1891)"
+      ],
+      "key_passages_to_consider": [
+        "There is no such thing possible as an ethical philosophy dogmatically made up in advance.",
+        "The essence of good is simply to satisfy demand.",
+        "Since everything which is demanded is by that fact a good, must not the guiding principle for ethical philosophy (since all demands conjointly cannot be satisfied in this poor world) be simply to satisfy at all times as many demands as we can?",
+        "The course of history is nothing but the story of men's struggles from generation to generation to find the more and more inclusive order.",
+        "The deepest thing in our nature is this Binnenleben... this dumb region of the heart in which we dwell alone with our willingnesses and unwillingnesses, our faiths and fears."
+      ],
+      "core_idea_brief": "James's most sustained ethical essay argues against all fixed moral systems. There is no ethical truth waiting to be discovered a priori. Moral claims arise from the demands of sentient beings: every desire, every need, every aspiration is a claim on the moral universe. The ethical challenge is not to find the one true moral system but to satisfy as many of these competing demands as possible with the least sacrifice. This is pluralistic ethics: no single moral framework captures everything, and the 'more inclusive order' is an ongoing achievement, not a fixed destination. James's ethics is experimental: moral truths are discovered through living, tested by their consequences, and revised by experience.",
+      "contemporary_threads": [
+        {
+          "thread": "Moral pluralism and value pluralism",
+          "detail": "Isaiah Berlin's value pluralism (genuine values can conflict irreducibly) is the political-philosophical analog of James's ethical pluralism. There is no master value that harmonizes all others. Liberty and equality conflict. Justice and mercy conflict. Individual flourishing and collective welfare conflict. James saw this not as a flaw in moral reasoning but as a feature of a pluralistic universe. The task is not to resolve the conflicts but to navigate them with as much wisdom and as little destruction as possible.",
+          "key_references": ["Isaiah Berlin (The Hedgehog and the Fox, Four Essays on Liberty)", "Bernard Williams (Ethics and the Limits of Philosophy)", "Thomas Nagel (Mortal Questions)"]
+        },
+        {
+          "thread": "Effective altruism and the maximization of demand-satisfaction",
+          "detail": "James's principle (satisfy as many demands as possible with the least sacrifice) anticipates the utilitarian logic of effective altruism. EA asks: given limited resources, how can we reduce the most suffering and satisfy the most needs? But James's formulation is broader than EA's utilitarianism: he included all demands (aesthetic, spiritual, personal, not just material), and he recognized that the 'more inclusive order' is never final. EA's internal debate (should we prioritize global poverty, animal welfare, or existential risk?) is a Jamesian problem: competing legitimate demands that cannot all be satisfied at once.",
+          "key_references": ["Peter Singer", "William MacAskill", "Derek Parfit (Reasons and Persons)"]
+        },
+        {
+          "thread": "Experimental ethics and moral psychology",
+          "detail": "James's claim that moral truths are discovered through living and tested by consequences anticipates the experimental ethics movement. Joshua Greene's dual-process model of moral judgment, the trolley problem literature, and cross-cultural moral psychology all treat ethical intuitions as data to be investigated rather than axioms to be assumed. Jonathan Haidt's moral foundations theory (care, fairness, loyalty, authority, sanctity, liberty) maps the pluralistic landscape of moral demands that James described. Ethics, on both James's and Haidt's accounts, is not a single system but a negotiation among competing legitimate claims.",
+          "key_references": ["Jonathan Haidt (The Righteous Mind)", "Joshua Greene (Moral Tribes)", "Paul Bloom (Against Empathy)", "Kwame Anthony Appiah (Experiments in Ethics)"]
+        },
+        {
+          "thread": "Moral circle expansion",
+          "detail": "James's principle that 'everything which is demanded is by that fact a good' implies that the moral circle should expand to include any being capable of making a demand: other humans, future generations, animals, potentially ecosystems. Peter Singer's expanding moral circle, the animal rights movement, and even the legal personhood granted to rivers and forests can be read as extensions of James's principle. The 'more inclusive order' that history struggles toward is one that takes more and more demands into account.",
+          "key_references": ["Peter Singer (The Expanding Circle)", "Martha Nussbaum (animal justice)", "Christopher Stone (Should Trees Have Standing?)", "Will MacAskill (What We Owe the Future)"]
+        }
+      ],
+      "living_question": "James proposed that ethics is an ongoing experiment with no fixed endpoint. This is both liberating (no moral system can claim final authority) and demanding (the experiment is never finished, and the experimenter is responsible for the outcomes). In a world where moral certainty is weaponized by fundamentalists and moral relativism is exploited by cynics, James's experimental ethics offers a third path: take every demand seriously, satisfy as many as possible, accept that trade-offs are unavoidable, and keep working toward the more inclusive order without pretending you have arrived. This is ethics for adults: no guarantees, no final answers, only the ongoing discipline of moral attention.",
+      "generation_notes": "This is a major ethical entry and should have intellectual weight. James's pluralistic ethics resists easy summary; take time with it. The 'every demand is a good' principle is the key claim and should be stated clearly with its implications. The moral circle expansion thread connects to the broadest contemporary ethical conversations. The Haidt thread gives empirical grounding. The living question should challenge without moralizing."
+    },
+    {
+      "entry_number": 60,
+      "title": "The Principles of Psychology: A Whole",
+      "cluster": "Capstone",
+      "target_length": "2,500-3,000 words",
+      "source_works": [
+        "The Principles of Psychology (1890), considered as a complete work"
+      ],
+      "key_passages_to_consider": [
+        "I have kept close to the point of view of natural science throughout the book.",
+        "This book, assuming that thoughts and feelings exist and are vehicles of knowledge, thereupon contends that psychology when she has ascertained the empirical correlation of the various sorts of thought or feeling with definite conditions of the brain, can go no farther — can go no farther, that is, as a natural science.",
+        "When, then, we talk of 'psychology as a natural science,' we must not assume that that means a sort of psychology that stands at last on solid ground. It means just the reverse; it means a psychology particularly fragile.",
+        "The demand for atoms of feeling... is a demand which, if carried to its logical extreme, would render all our experience nil."
+      ],
+      "core_idea_brief": "The Principles of Psychology is not just a book; it is one of the great intellectual achievements of the nineteenth century. In 1,400 pages, James covered sensation, perception, habit, attention, memory, thought, consciousness, emotion, will, and the self, creating a work that essentially founded American psychology. But Principles is also deeply paradoxical: James declared it a work of 'natural science' while constantly pushing beyond the boundaries of natural science into philosophy, metaphysics, and phenomenology. He set up the scientific psychology he would spend the next two decades undermining and transcending. Every major school of twentieth-century psychology (behaviorism, gestalt, cognitive science, humanistic psychology, contemplative science) either built on or reacted against something in Principles. It remains, arguably, the most important psychology text ever written, and the most unfinished.",
+      "contemporary_threads": [
+        {
+          "thread": "Behaviorism's rejection and cognitive science's reclamation",
+          "detail": "Watson's behaviorism (1913) was explicitly a rejection of James's introspective method: psychology should study only observable behavior, not consciousness. For forty years, James's emphasis on subjective experience, the stream of thought, and the self was banished from mainstream psychology. The cognitive revolution of the 1950s and 60s reclaimed much of what behaviorism had rejected: internal representations, attention, memory structures, and (eventually) consciousness itself. James's Principles was the text cognitive science returned to, recognizing that James had anticipated many of its central concerns.",
+          "key_references": ["John B. Watson", "B.F. Skinner", "George Miller (cognitive revolution)", "Ulric Neisser (Cognitive Psychology)"]
+        },
+        {
+          "thread": "The fragility of a natural science of the mind",
+          "detail": "James's admission that psychology as a natural science is 'particularly fragile' was prescient. The replication crisis, the limitations of neuroimaging, the persistent failure to reduce consciousness to neural correlates, and the ongoing debates about what psychology even studies (behavior? experience? brain function? adaptation?) all confirm James's warning. He wrote the foundational text of scientific psychology while simultaneously noting that the scientific method might not be sufficient for its subject matter. That tension has not been resolved.",
+          "key_references": ["The replication crisis", "the hard problem", "Jerome Bruner (Acts of Meaning)", "Kurt Danziger (Constructing the Subject)"]
+        },
+        {
+          "thread": "The return of first-person methods",
+          "detail": "The contemplative science movement, neurophenomenology, and the broader interest in first-person experience in consciousness studies represent a return to the Jamesian approach: subjective experience matters, introspection (properly calibrated) is a necessary tool, and the richness of the inner life cannot be captured by third-person methods alone. James's Principles pioneered this approach; behaviorism buried it; the twenty-first century has revived it.",
+          "key_references": ["Francisco Varela", "Evan Thompson", "Antoine Lutz", "Christof Koch"]
+        },
+        {
+          "thread": "James as philosopher of mind, not just psychologist",
+          "detail": "Principles is increasingly read not as a dated psychology textbook but as a work of philosophy of mind that remains alive. James's arguments about the stream of consciousness, the impossibility of mental atoms, the embodied nature of emotion, the constructive role of attention, and the functional definition of mind are all active topics in contemporary philosophy. The book has outlived its own discipline: much of what James wrote under the heading 'psychology' is now claimed by philosophy, neuroscience, and cognitive science. Its interdisciplinary character was a feature, not a bug.",
+          "key_references": ["Owen Flanagan (The Science of the Mind)", "Gerald Myers (William James: His Life and Thought)", "Charlene Haddock Seigfried"]
+        }
+      ],
+      "living_question": "James spent twelve years writing the Principles and called it 'a loathsome, distended, tumefied, bloated, dropsical mass, testifying to nothing but two facts: first, that there is no such thing as a science of psychology, and second, that W.J. is an incapable.' He was being characteristically self-deprecating, but the first claim is worth taking seriously. After more than a century of professional psychology, we have libraries full of findings, hundreds of subdisciplines, and no unified science of the mind. James saw this coming. He also saw that the failure to achieve a unified science was not a failure of effort but a feature of the subject: the mind is too rich, too various, too intimately connected to everything else in the universe to be captured by any single science. Perhaps the Principles endures precisely because it refuses to pretend otherwise. It is the greatest textbook of a science that does not yet exist, written by a man who suspected it never would.",
+      "generation_notes": "This is the capstone entry and should feel like a culmination. It should look back across the whole book (referencing threads and entries that have come before) and forward to what remains unfinished. James's self-deprecating quote about the Principles is funny and should be included. The tone should be appreciative but not valedictory; the book's argument is that James's work is unfinished, and this entry should reinforce that. Do not try to summarize 1,400 pages; focus on the paradox (founding a science he knew was fragile) and the legacy (every school of psychology responds to him). End with the sense that the conversation continues."
+    }
+  ]
+}

@@ -494,6 +494,26 @@ a:hover {
     padding: 0;
 }
 
+.nav-book-title {
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-left: var(--space-md);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Limit width to avoid crowding on small screens */
+    max-width: 300px;
+}
+
+@media (max-width: 768px) {
+    .nav-book-title {
+        max-width: 150px;
+        font-size: 0.875rem;
+    }
+}
+
 .entry-header-right {
     display: flex;
     align-items: center;

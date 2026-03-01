@@ -3,6 +3,7 @@
    ============================================================================= */
 
 import * as router from './modules/router.js';
+import * as ui from './modules/ui.js';
 
 // Service Worker Registration
 if ('serviceWorker' in navigator) {

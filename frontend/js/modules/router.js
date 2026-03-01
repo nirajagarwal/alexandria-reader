@@ -31,6 +31,9 @@ export async function loadBook(bookId) {
         const currentBook = state.currentBook;
         document.title = `${currentBook.title} | Alexandria Press`;
         updateBookMeta(currentBook);
+        updateBookMeta(currentBook);
+        console.log('Router: Updating navbar title', currentBook.title);
+        ui.updateNavbarTitle(currentBook.title);
 
         console.log('Router: Fetching entries');
         state.currentEntries = await api.getEntries(bookId);

@@ -1,11 +1,11 @@
-const CACHE_NAME = 'alexandria-v1';
+const CACHE_NAME = 'alexandria-v3';
 const ASSETS_TO_CACHE = [
     '/',
     '/index.html',
     '/book.html',
     '/css/style.css',
     '/js/app.js',
-    '/js/book-reader.js',
+
     '/assets/favicon.png',
     'https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Lora:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Sans:wght@400;600&display=swap',
     'https://cdn.jsdelivr.net/npm/marked/marked.min.js',

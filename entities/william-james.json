@@ -1,0 +1,473 @@
+{
+  "book_metadata": {
+    "working_title": "The Stream Revisited: William James and the Unfinished Revolution",
+    "entry_architecture": [
+      "The Jamesian Insight: Key passages in James's own words (public domain)",
+      "The Idea Unpacked: Accessible explanation of the concept",
+      "The 130-Year Conversation: Contemporary resonance, organized by subtopic threads",
+      "The Living Question: What remains open, unresolved, or newly urgent"
+    ],
+    "style_notes": {
+      "voice": "Intelligent, warm, wondering. Not academic but not dumbed down. Assume a reader who is curious and capable but not specialized.",
+      "em_dashes": "Minimize. Use commas, semicolons, colons, parentheses, or sentence breaks instead.",
+      "formatting": "Prose-first. Subheadings within the 130-Year Conversation section only. No bullet points.",
+      "tone": "Reverence for James without hagiography. Honest about where he was wrong or incomplete. Excitement about contemporary connections without overselling.",
+      "length_range": "1,200-3,000 words depending on concept weight"
+    }
+  },
+  "entries": [
+    {
+      "entry_number": 1,
+      "title": "Stream of Consciousness",
+      "cluster": "I. The Stream: Consciousness and Attention",
+      "target_length": "2,500-3,000 words",
+      "source_works": [
+        "The Principles of Psychology (1890), Chapter IX: The Stream of Thought"
+      ],
+      "key_passages_to_consider": [
+        "Consciousness, then, does not appear to itself chopped up in bits. Such words as 'chain' or 'train' do not describe it fitly as it presents itself in the first instance. It is nothing jointed; it flows. A 'river' or a 'stream' are the metaphors by which it is most naturally described. In talking of it hereafter, let us call it the stream of thought, of consciousness, or of subjective life.",
+        "Within each personal consciousness, thought is sensibly continuous.",
+        "Every definite image in the mind is steeped and dyed in the free water that flows round it. With it goes the sense of its relations, near and remote, the dying echo of whence it came to us, the dawning sense of whither it is to lead.",
+        "Let anyone try to cut a thought across in the middle and get a look at its section, and he will see how difficult the introspective observation of the transitive tracts is."
+      ],
+      "core_idea_brief": "Consciousness is not a sequence of discrete states but a continuous flow. Thought is always changing, always personal, always continuous, and always selective. The stream metaphor captures what the 'chain' or 'train' metaphor misses: the transitional, relational, flowing quality of experience. James especially emphasized the 'transitive parts' of consciousness (the felt transitions between resting places) which introspection finds nearly impossible to catch.",
+      "contemporary_threads": [
+        {
+          "thread": "The failure of computationalism",
+          "detail": "Mid-20th century cognitive science adopted the computer metaphor: mind as information processor, discrete symbols, serial operations. This is precisely the 'chain or train' model James rejected. Dreyfus, Searle, and others argued the computational model misses what James saw: the fluid, contextual, holistic character of thought. The stream metaphor has aged better than the CPU metaphor.",
+          "key_references": ["Hubert Dreyfus", "John Searle (Chinese Room)", "George Lakoff (embodied cognition)"]
+        },
+        {
+          "thread": "Dynamic systems and process philosophy",
+          "detail": "James's stream anticipates dynamic systems approaches to cognition: thought as trajectory through state space rather than manipulation of discrete symbols. Also connects to Whitehead's process philosophy, where reality itself is composed of 'occasions of experience' flowing into one another.",
+          "key_references": ["Esther Thelen", "Tim van Gelder", "Alfred North Whitehead", "Evan Thompson"]
+        },
+        {
+          "thread": "Default mode network and mind-wandering",
+          "detail": "The discovery of the DMN (Raichle, 2001) revealed that the 'resting' brain is anything but quiet. It is engaged in spontaneous, self-referential, temporally extended thought. This is the stream when no external task constrains it. Mind-wandering research (Smallwood, Schooler) maps the stream's untethered flow and its costs and benefits.",
+          "key_references": ["Marcus Raichle", "Jonathan Smallwood", "Jonathan Schooler", "Kalina Christoff"]
+        },
+        {
+          "thread": "Phenomenology",
+          "detail": "Husserl was directly influenced by James. His analysis of time-consciousness (retention, primal impression, protention) is a rigorous formalization of what James described as the stream. Merleau-Ponty extended this into embodied experience. The phenomenological tradition is essentially a European elaboration of insights James stated first.",
+          "key_references": ["Edmund Husserl", "Maurice Merleau-Ponty", "Dan Zahavi"]
+        },
+        {
+          "thread": "Contemplative experience of the stream",
+          "detail": "Vipassana meditation is, in part, a systematic observation of the stream of consciousness. Advanced practitioners report seeing the 'micro-structure' of the stream: rapid arising and passing of sensory events, the constructed nature of continuity, the gaps between moments. This both confirms and complicates James's description. The stream is continuous at one level of observation and discrete at another.",
+          "key_references": ["Bhikkhu Bodhi", "Daniel Ingram", "Shinzen Young", "Culadasa (John Yates)"]
+        }
+      ],
+      "living_question": "Is consciousness truly continuous, as James insisted, or does contemplative and neuroscientific investigation reveal it to be a rapid succession of discrete moments that merely appears continuous? And if the stream is partly constructed, who or what is doing the constructing?",
+      "generation_notes": "This is the opening entry of the book and should set the tone. Begin with the power of the metaphor itself. James's prose in this chapter is extraordinary; let it breathe. The phenomenology thread should not become too technical. End with the contemplative paradox: the stream looks different depending on how closely you look."
+    },
+    {
+      "entry_number": 2,
+      "title": "The Fringe",
+      "cluster": "I. The Stream: Consciousness and Attention",
+      "target_length": "2,000-2,500 words",
+      "source_works": [
+        "The Principles of Psychology (1890), Chapter IX: The Stream of Thought",
+        "The Principles of Psychology (1890), Chapter XI: Attention"
+      ],
+      "key_passages_to_consider": [
+        "The significance, the value, of the image is all in this halo or penumbra that surrounds and escorts it, — or rather that is fused into one with it and has become bone of its bone and flesh of its flesh.",
+        "Every image in the mind is steeped and dyed in the free water that flows round it.",
+        "There is not a conjunction or a preposition, and hardly an adverbial phrase, syntactic form, or inflection of voice, in human speech, that does not express some shading or other of relation which we at some moment actually feel to exist between the larger objects of our thought.",
+        "The traditional psychology talks like one who should say a river consists of nothing but pailsful, spoonsful, quartpotsful, barrelsful, and other moulded forms of water. Even were the pails and the pots all actually standing in the stream, still between them the free water would continue to flow."
+      ],
+      "core_idea_brief": "Beyond the focused nucleus of any thought lies a vague, felt penumbra: a sense of direction, relation, rightness or wrongness, familiarity or strangeness. These 'transitive parts' of consciousness are real and important but nearly impossible to introspect on directly. James called this the 'fringe' or 'halo' of consciousness. It includes feelings of tendency, feelings of relation ('and,' 'but,' 'if'), the tip-of-the-tongue state, and the sense that a thought is leading somewhere even before we can articulate where.",
+      "contemporary_threads": [
+        {
+          "thread": "The tip of the tongue and feelings of knowing",
+          "detail": "The tip-of-the-tongue (TOT) state, first systematically studied by Brown and McNeill (1966), is James's fringe made experimentally accessible. You know you know something, you can feel its shape and proximity, but you cannot retrieve it. Metacognitive research on 'feelings of knowing' (FOK) has revealed a rich landscape of pre-articulate cognitive feelings that guide reasoning and retrieval. These are fringe phenomena.",
+          "key_references": ["Roger Brown & David McNeill", "Asher Koriat", "Janet Metcalfe", "Bennett Schwartz"]
+        },
+        {
+          "thread": "Predictive processing and precision",
+          "detail": "In predictive processing, the fringe maps onto low-precision, high-uncertainty predictions: the vague sense that something is off, the background hum of contextual expectation. The fringe is the felt quality of the brain's probabilistic inference operating at the edges of focal attention. When the fringe signals 'wrongness,' that may be a prediction error not yet sharp enough to reach focal awareness.",
+          "key_references": ["Karl Friston", "Andy Clark", "Jakob Hohwy"]
+        },
+        {
+          "thread": "Peripheral awareness in contemplative practice",
+          "detail": "Culadasa (John Yates) distinguishes 'attention' (focused, narrow) from 'awareness' (broad, peripheral). This maps closely onto James's nucleus-and-fringe distinction. Advanced meditation practice involves maintaining the clarity of both simultaneously, a state Culadasa calls 'metacognitive introspective awareness.' The fringe becomes less vague and more informationally rich as contemplative skill develops.",
+          "key_references": ["Culadasa (John Yates)", "Shinzen Young", "B. Alan Wallace"]
+        },
+        {
+          "thread": "Damasio and somatic markers",
+          "detail": "Damasio's somatic marker hypothesis proposes that bodily feeling-states guide decision-making before conscious deliberation. The 'gut feeling' that a choice is wrong, the subtle unease before a bad decision: these are fringe phenomena with a bodily signature. James's fringe is not just cognitive but somatic, a point Damasio made central.",
+          "key_references": ["Antonio Damasio", "Antoine Bechara (Iowa Gambling Task)"]
+        },
+        {
+          "thread": "Neglect and rediscovery",
+          "detail": "The fringe was largely ignored for most of the twentieth century because it resists the dominant methodologies. It is too vague for behaviorism, too qualitative for information processing models, too subjective for neuroscience. Bruce Mangan's work on the 'fringe' as a technical concept in consciousness studies has revived interest. The fringe may be where the 'hard problem' is most acute: it is experience at its most irreducibly felt.",
+          "key_references": ["Bruce Mangan", "David Galin"]
+        }
+      ],
+      "living_question": "Is the fringe merely the fuzzy edge of focal attention, or is it a distinct mode of consciousness with its own structure and intelligence? If contemplative practice can sharpen the fringe into clarity, what does that imply about the range of human awareness and the limits we accept as normal?",
+      "generation_notes": "This is one of James's most original and least appreciated ideas. Emphasize that the fringe is not a deficit but a positive cognitive resource: it carries meaning, guides thought, and may contain more information than focal attention. The free water metaphor is gorgeous and should be central. Connect to the reader's own experience: everyone has felt the fringe but lacked the vocabulary for it."
+    },
+    {
+      "entry_number": 5,
+      "title": "Habit",
+      "cluster": "VI. The Body Thinks: Emotion, Habit, and Embodiment",
+      "target_length": "2,500-3,000 words",
+      "source_works": [
+        "The Principles of Psychology (1890), Chapter IV: Habit",
+        "Talks to Teachers on Psychology (1899)"
+      ],
+      "key_passages_to_consider": [
+        "Habit is thus the enormous fly-wheel of society, its most precious conservative agent. It alone is what keeps us all within the bounds of ordinance, and saves the children of fortune from the envious uprisings of the poor.",
+        "The hell to be endured hereafter, of which theology tells, is no worse than the hell we make for ourselves in this world by habitually fashioning our characters in the wrong way.",
+        "Could the young but realize how soon they will become mere walking bundles of habits, they would give more heed to their conduct while in the plastic state.",
+        "Sow an action, and you reap a habit; sow a habit, and you reap a character; sow a character, and you reap a destiny.",
+        "Keep the faculty of effort alive in you by a little gratuitous exercise every day. That is, be systematically ascetic or heroic in little unnecessary points, do every day or two something for no other reason than that you would rather not do it."
+      ],
+      "core_idea_brief": "Habit is the mechanism by which the nervous system encodes repeated action into automatic patterns, freeing conscious attention for new challenges. James understood that habits literally reshape the physical structure of the nervous system ('the plasticity of the living matter of our nervous system'). He drew both practical and moral conclusions: habit can be our greatest ally or our prison. Character is the sum of habitual responses. The ethical imperative is to deliberately establish good habits early and guard against bad ones, because the nervous system records everything.",
+      "contemporary_threads": [
+        {
+          "thread": "Neuroplasticity",
+          "detail": "James's claim that habit reshapes the nervous system was speculative in 1890. It is now among the most well-established findings in neuroscience. Hebb's rule ('neurons that fire together wire together'), long-term potentiation, synaptic pruning, myelination of frequently used pathways, and adult neurogenesis all confirm that repeated experience physically restructures the brain. James was right about the mechanism even without the tools to see it.",
+          "key_references": ["Donald Hebb", "Eric Kandel", "Michael Merzenich", "Norman Doidge"]
+        },
+        {
+          "thread": "The habit loop and popular science",
+          "detail": "Charles Duhigg's 'The Power of Habit' and James Clear's 'Atomic Habits' are essentially popularizations of James's chapter. The cue-routine-reward loop, the emphasis on small changes, the idea that habits can be deliberately engineered: all of this is in James, stated with more philosophical depth. James anticipated the entire self-help habit industry by over a century.",
+          "key_references": ["Charles Duhigg", "James Clear", "BJ Fogg", "Wendy Wood"]
+        },
+        {
+          "thread": "Virtue ethics and character formation",
+          "detail": "James's connection between habit and character anticipates the revival of virtue ethics in the late twentieth century. Aristotle's insight that virtue is formed by practice (we become just by doing just acts) is restated in neural terms by James. MacIntyre, Hauerwas, and the virtue ethics tradition are making the same claim: character is not a matter of individual decisions but of formed dispositions, which is to say habits.",
+          "key_references": ["Alasdair MacIntyre", "Stanley Hauerwas", "Julia Annas", "Christian Miller"]
+        },
+        {
+          "thread": "Default mode network and habitual thought",
+          "detail": "The DMN represents habitual thought at the neural level: the default patterns of self-referential rumination, narrative construction, and future projection that the mind falls into whenever external demands relent. Mindfulness-based interventions attempt to interrupt these habitual mental grooves, creating space for new patterns. This is James's insight applied to thought itself: not just behavioral habits but cognitive habits shape character.",
+          "key_references": ["Marcus Raichle", "Judson Brewer", "Norman Farb"]
+        },
+        {
+          "thread": "Contemplative practice as habit reformation",
+          "detail": "Buddhist psychology's concept of samskara (mental formations, habitual patterns) maps directly onto James's habit. Contemplative practice is, in one framing, the systematic replacement of unskillful habits of mind with skillful ones. James's advice to 'keep the faculty of effort alive' through 'a little gratuitous exercise every day' is functionally identical to the contemplative prescription of daily practice.",
+          "key_references": ["Bhikkhu Bodhi (samskara)", "Judson Brewer (habit and craving)", "Tara Brach", "Rick Hanson"]
+        }
+      ],
+      "living_question": "If we are indeed 'mere walking bundles of habits,' what is the self that stands apart from its habits to evaluate and reform them? Is there an agent behind the habits, or is the agent itself a habit? And in an age of algorithmic habit formation, where technology designs our behavioral loops for us, who is doing the sowing and who is reaping the destiny?",
+      "generation_notes": "James's prose on habit is among his most quotable. The moral urgency is real and should come through. The connection to neuroplasticity is the strongest 'James was right' story in the whole book. But push beyond the popular science framing: the philosophical question of who reforms the habits is genuinely deep and unresolved."
+    },
+    {
+      "entry_number": 8,
+      "title": "Emotion (The James-Lange Theory)",
+      "cluster": "VI. The Body Thinks: Emotion, Habit, and Embodiment",
+      "target_length": "2,000-2,500 words",
+      "source_works": [
+        "The Principles of Psychology (1890), Chapter XXV: The Emotions",
+        "'What Is an Emotion?' (1884), Mind journal"
+      ],
+      "key_passages_to_consider": [
+        "Our natural way of thinking about these standard emotions is that the mental perception of some fact excites the mental affection called the emotion, and that this latter state of mind gives rise to the bodily expression. My thesis on the contrary is that the bodily changes follow directly the PERCEPTION of the exciting fact, and that our feeling of the same changes as they occur IS the emotion.",
+        "We feel sorry because we cry, angry because we strike, afraid because we tremble, and not that we cry, strike, or tremble, because we are sorry, angry, or fearful, as the case may be.",
+        "If we fancy some strong emotion, and then try to abstract from our consciousness of it all the feelings of its characteristic bodily symptoms, we find we have nothing left behind, no 'mind-stuff' out of which the emotion can be constituted."
+      ],
+      "core_idea_brief": "James reversed the common-sense order: we do not tremble because we are afraid; we are afraid because we tremble. Bodily changes come first (the racing heart, the clenched fist, the tears), and the feeling of those bodily changes constitutes the emotion. Remove the bodily sensations and nothing recognizable as an emotion remains. This was independently proposed by Carl Lange, hence the James-Lange theory. James was wrong in the strict formulation (Cannon showed that bodily feedback is too slow and unspecific to fully account for emotional experience), but profoundly right about the direction: the body is not an afterthought in emotion but a constitutive element.",
+      "contemporary_threads": [
+        {
+          "thread": "Lisa Feldman Barrett and constructed emotion",
+          "detail": "Barrett's theory of constructed emotion is the most sophisticated contemporary descendant of James. She argues that emotions are not triggered by dedicated brain circuits but actively constructed by the brain using interoceptive signals (body states), prior experience, and conceptual knowledge. The brain interprets bodily sensation in context and constructs an emotional category. This is James updated: the body is central, but so is the interpretive framework.",
+          "key_references": ["Lisa Feldman Barrett", "How Emotions Are Made (2017)"]
+        },
+        {
+          "thread": "Interoception",
+          "detail": "Interoception (the sense of the body's internal states: heartbeat, gut feeling, breath, temperature) has emerged as a major research area. Craig's insular cortex work shows that interoceptive signals are integrated into conscious feeling-states. People with better interoceptive accuracy tend to experience emotions more intensely. This is a direct neural mechanism for what James described: emotion as the feeling of bodily change.",
+          "key_references": ["A.D. (Bud) Craig", "Sarah Garfinkel", "Hugo Critchley"]
+        },
+        {
+          "thread": "Damasio's somatic marker hypothesis",
+          "detail": "Damasio's work on patients with damage to the ventromedial prefrontal cortex showed that without access to bodily feeling-states, decision-making collapses. The Iowa Gambling Task demonstrated that 'gut feelings' guide rational choice before conscious reasoning kicks in. James's insight that the body thinks is confirmed: emotion is not the opposite of reason but its necessary substrate.",
+          "key_references": ["Antonio Damasio", "Descartes' Error (1994)", "Antoine Bechara"]
+        },
+        {
+          "thread": "Embodied and body-based therapies",
+          "detail": "Somatic experiencing (Peter Levine), sensorimotor psychotherapy (Pat Ogden), and polyvagal-informed approaches (Stephen Porges) all rest on the Jamesian premise: emotional states are stored and expressed in the body, and healing requires attending to bodily sensation, not just cognitive reframing. Trauma, in this view, is a disorder of the body's emotional processing, not just a mental phenomenon.",
+          "key_references": ["Peter Levine", "Pat Ogden", "Stephen Porges", "Bessel van der Kolk"]
+        },
+        {
+          "thread": "Facial feedback and the ongoing debate",
+          "detail": "The facial feedback hypothesis (smiling makes you happier, frowning makes you sadder) is a direct test of James. The original Strack pencil study appeared to confirm it, then a large-scale replication failed, then a meta-analysis of many studies suggested a real but small effect. The story perfectly illustrates the Jamesian position: the body contributes to emotion, but is not the whole story.",
+          "key_references": ["Fritz Strack", "E.L. Coles (2022 meta-analysis)", "replication crisis context"]
+        }
+      ],
+      "living_question": "If emotions are partly constructed from bodily sensation rather than simply triggered by events, then attending to the body is not merely physical health but emotional and even moral education. The contemplative traditions have always insisted on this. What would it mean to take the body's role in emotional life as seriously as James proposed?",
+      "generation_notes": "The famous reversal ('we feel sorry because we cry') is one of James's most memorable moves. Start with the shock of it. Be honest that the strict James-Lange theory was shown to be incomplete by Cannon and Bard, but show how the contemporary lineage vindicates the core insight. The embodied therapy thread is practically important and connects to lived experience. Keep it grounded in the body, not abstract."
+    },
+    {
+      "entry_number": 10,
+      "title": "The Four Marks of Mystical Experience",
+      "cluster": "III. The Varieties: Religious and Mystical Experience",
+      "target_length": "2,500-3,000 words",
+      "source_works": [
+        "The Varieties of Religious Experience (1902), Lectures XVI-XVII: Mysticism"
+      ],
+      "key_passages_to_consider": [
+        "1. Ineffability. The handiest of the marks by which I classify a state of mind as mystical is negative. The subject of it immediately says that it defies expression, that no adequate report of its contents can be given in words.",
+        "2. Noetic quality. Although so similar to states of feeling, mystical states seem to those who experience them to be also states of knowledge. They are states of insight into depths of truth unplumbed by the discursive intellect.",
+        "3. Transiency. Mystical states cannot be sustained for long.",
+        "4. Passivity. Although the oncoming of mystical states may be facilitated by preliminary voluntary operations, as by fixing the attention, or going through certain bodily performances... yet when the characteristic sort of consciousness once has set in, the mystic feels as if his own will were in abeyance, and indeed sometimes as if he were grasped and held by a superior power.",
+        "This incommunicableness of the transport is the keynote of all mysticism."
+      ],
+      "core_idea_brief": "James proposed four defining characteristics of mystical experience that cut across traditions: the experience cannot be adequately expressed in words (ineffability); it carries a sense of deep knowing or revelation (noetic quality); it is temporary, not permanent (transiency); and the experiencer feels receptive rather than active, as if something is happening to them rather than something they are doing (passivity). This taxonomy has proven remarkably durable. It treats mystical experience as a natural phenomenon deserving of empirical study rather than a theological claim requiring belief.",
+      "contemporary_threads": [
+        {
+          "thread": "Psychedelic research and the mystical experience questionnaire",
+          "detail": "The Johns Hopkins psilocybin research program, led by Roland Griffiths and now Matthew Johnson, explicitly uses James's criteria (operationalized through Stace and Hood) to measure 'complete mystical experience.' The key finding: the degree of mystical experience (measured by the MEQ30, which descends directly from James's categories) predicts therapeutic outcomes for depression, addiction, and end-of-life anxiety. James's phenomenological taxonomy has become a clinical measurement tool.",
+          "key_references": ["Roland Griffiths", "Matthew Johnson", "Walter Stace (Mysticism and Philosophy)", "Ralph Hood (Mysticism Scale)", "Robin Carhart-Harris"]
+        },
+        {
+          "thread": "Neuroscience of mystical states",
+          "detail": "Neuroimaging of psilocybin, meditation, and spontaneous mystical experiences converges on a pattern: reduced activity in the default mode network (especially the medial prefrontal cortex), increased global connectivity, and a dissolution of the usual boundaries between brain networks. The 'noetic' quality may reflect this global integration: the brain accessing a wider information space than ordinary waking consciousness permits. The 'passivity' maps onto DMN deactivation: the narrative self stepping back.",
+          "key_references": ["Robin Carhart-Harris (entropic brain theory)", "Andrew Newberg (neurotheology)", "Judson Brewer (DMN and meditation)"]
+        },
+        {
+          "thread": "The perennial vs. constructivist debate",
+          "detail": "James assumed a common core to mystical experience across traditions. Stace formalized this as the 'perennial philosophy.' Katz and the constructivists argued that all experience is shaped by prior concepts, so there can be no tradition-free mystical experience. The debate continues, but recent cross-cultural psychedelic research (where subjects from different traditions report strikingly similar experiences) tilts back toward James's position, at least partially.",
+          "key_references": ["Walter Stace", "Steven Katz", "Robert Forman", "Aldous Huxley (The Perennial Philosophy)"]
+        },
+        {
+          "thread": "Self-transcendent experiences",
+          "detail": "David Yaden's work on self-transcendent experiences (STEs) broadens James's mystical category to include awe, flow, peak experiences, and 'overview effects.' These share features with mystical experiences (ego dissolution, noetic quality, positive affect) but occur in secular contexts. Yaden is effectively extending James's empirical, non-sectarian approach to a wider range of human experiences.",
+          "key_references": ["David Yaden", "Dacher Keltner (awe)", "Abraham Maslow (peak experiences)", "Andrew Newberg"]
+        },
+        {
+          "thread": "James's own experiments with altered states",
+          "detail": "James experimented with nitrous oxide and reported experiences that shaped his views on mysticism. He found that under its influence, the 'keynote of the experience is the tremendously exciting sense of an intense metaphysical illumination.' He was honest that the revelations faded upon return to sobriety but insisted the experience itself was evidence that ordinary waking consciousness is only one type of consciousness, 'whilst all about it, parted from it by the filmiest of screens, there lie potential forms of consciousness entirely different.'",
+          "key_references": ["James's nitrous oxide reports", "Dmitri Tymoczko analysis of James's N2O writings"]
+        }
+      ],
+      "living_question": "James treated mystical experience as data. The contemporary psychedelic renaissance has taken this further, treating it as a measurable variable that predicts clinical outcomes. But a tension remains: if mystical experience can be reliably induced by a molecule, does that undermine or confirm its noetic claim? Does the fact that psilocybin produces 'genuine' mystical experiences mean the divine is accessible through chemistry, or that what we call mystical experience is 'merely' neurological? James, characteristically, refused this either/or. The question is whether we can.",
+      "generation_notes": "The four marks should be clearly and vividly presented. The psychedelic research thread is the headline contemporary connection and should get the most space. James's own nitrous oxide experiments add personal texture and should not be omitted. The living question about chemistry and the sacred is one of the most alive questions in contemporary culture."
+    },
+    {
+      "entry_number": 11,
+      "title": "Healthy-Mindedness and the Sick Soul",
+      "cluster": "II. The Divided Self: Identity and Transformation",
+      "target_length": "2,500-3,000 words",
+      "source_works": [
+        "The Varieties of Religious Experience (1902), Lectures IV-VII"
+      ],
+      "key_passages_to_consider": [
+        "In many persons, happiness is congenital and irreclaimable. 'Cosmic emotion' inevitably takes in them the form of enthusiasm and freedom.",
+        "There are people for whom evil means only a mal-adjustment with things, a wrong correspondence of one's life with the environment. Such evil as this is curable... But there are others for whom evil is no mere relation of the subject to particular outer things, but something more radical and general, a wrongness or vice in his essential nature, which no alteration of the environment, or any superficial rearrangement of the inner self, can cure.",
+        "The method of averting one's attention from evil, and living simply in the light of good is splendid as long as it will work... But it breaks down impotently as soon as melancholy comes.",
+        "The securest way to the rapturous sorts of happiness of which the twice-born make report has as an historic matter of fact been through a more radical pessimism than anything that we have yet considered."
+      ],
+      "core_idea_brief": "James identified two fundamental religious temperaments. The 'healthy-minded' or 'once-born' see the world as fundamentally good. They practice the religion of optimism, minimize evil, and find God in nature, beauty, and the forward movement of life. The 'sick souls' or 'twice-born' cannot ignore evil, suffering, and the divided self. They must pass through darkness to reach any stable peace. James respected both but argued the sick soul sees deeper: healthy-mindedness works until it doesn't, and when it breaks, only the twice-born path offers resources for genuine integration.",
+      "contemporary_threads": [
+        {
+          "thread": "Positive psychology and its critics",
+          "detail": "The positive psychology movement (Seligman, Csikszentmihalyi) is essentially a scientific program for healthy-mindedness: focus on strengths, cultivate optimism, build resilience. Its critics (Barbara Ehrenreich, Svend Brinkmann, the 'second wave' positive psychologists) echo James's warning: relentless positivity can become a form of denial that collapses when genuine suffering arrives. The second wave of positive psychology now acknowledges the need for both orientations.",
+          "key_references": ["Martin Seligman", "Barbara Ehrenreich (Bright-Sided)", "Svend Brinkmann", "Paul Wong (second wave positive psychology)"]
+        },
+        {
+          "thread": "Spiritual bypassing",
+          "detail": "John Welwood coined 'spiritual bypassing' to describe using spiritual practice to avoid psychological pain. This is James's healthy-mindedness gone wrong in a contemplative context: using meditation, affirmation, or theology to suppress rather than integrate the dark material. The concept has become central to contemporary spiritual direction and psychotherapy.",
+          "key_references": ["John Welwood", "Robert Masters", "Miles Neale"]
+        },
+        {
+          "thread": "The dark night in contemplative practice",
+          "detail": "Willoughby Britton's 'Dark Night Project' at Brown University documents the challenging and sometimes destabilizing experiences that can arise in meditation practice. These parallel James's 'sick soul' trajectory: practitioners who encounter profound suffering, existential terror, or dissolution of the self during practice before (sometimes) reaching deeper integration. St. John of the Cross described this centuries ago. James gave it a psychological framework.",
+          "key_references": ["Willoughby Britton", "St. John of the Cross", "Jared Lindahl", "Daniel Ingram (maps of insight)"]
+        },
+        {
+          "thread": "Post-traumatic growth",
+          "detail": "Tedeschi and Calhoun's research on post-traumatic growth documents the 'twice-born' pattern empirically: people who undergo severe suffering sometimes report positive transformation, including deeper relationships, new priorities, greater appreciation for life, and spiritual change. This is not universal and should not romanticize suffering, but it confirms James's observation that the path through darkness can lead somewhere the merely healthy-minded never reach.",
+          "key_references": ["Richard Tedeschi", "Lawrence Calhoun", "Stephen Joseph"]
+        },
+        {
+          "thread": "Depression, meaning, and the existential tradition",
+          "detail": "Existential psychology (Frankl, Yalom, van Deurzen) takes the sick soul's perspective as its starting point: suffering is not a malfunction but a confrontation with the fundamental conditions of existence (death, freedom, isolation, meaninglessness). Depression, in this view, may sometimes be a signal rather than merely a symptom. James would not have endorsed all of this, but his sympathetic portrayal of the sick soul legitimized taking darkness seriously as a spiritual and psychological datum.",
+          "key_references": ["Viktor Frankl", "Irvin Yalom", "Emmy van Deurzen"]
+        }
+      ],
+      "living_question": "Are these two temperaments fixed, or can a person move between them? Is healthy-mindedness a stage to be outgrown or a legitimate orientation some people never need to leave? In a culture that oscillates between toxic positivity and performative despair, James's taxonomy offers a frame: not which is correct, but which is honest. And honesty, for James, meant admitting that the universe contains real evil that no amount of positive thinking can dissolve.",
+      "generation_notes": "This entry should have emotional weight. The sick soul material is drawn from James's own experience of depression and suicidal ideation (the 'panic fear' episode he describes anonymously in Varieties was autobiographical). Handle with care but do not omit. The spiritual bypassing thread connects directly to contemporary contemplative culture. The living question should resist the temptation to declare one temperament superior."
+    },
+    {
+      "entry_number": 17,
+      "title": "The Will to Believe",
+      "cluster": "IV. The Pragmatic Turn: Truth, Belief, and Action",
+      "target_length": "2,500-3,000 words",
+      "source_works": [
+        "The Will to Believe and Other Essays in Popular Philosophy (1897)"
+      ],
+      "key_passages_to_consider": [
+        "Our passional nature not only lawfully may, but must, decide an option between propositions, whenever it is a genuine option that cannot by its nature be decided on intellectual grounds alone.",
+        "A rule of thinking which would absolutely prevent me from acknowledging certain kinds of truth if those truths were really there, would be an irrational rule.",
+        "In truths dependent on our personal action, then, faith based on desire is certainly a lawful and possibly an indispensable thing.",
+        "The whole defence of religious faith hinges upon action. If the action required or inspired by the religious hypothesis is in no way different from that dictated by the naturalistic hypothesis, then religious faith is a pure superfluity.",
+        "Believe truth! Shun error! — these, we see, are two materially different laws; and by choosing between them we may end by coloring differently our whole intellectual life."
+      ],
+      "core_idea_brief": "James argued that in certain well-defined circumstances, we have the right to believe beyond what evidence strictly warrants. The conditions are: the option must be 'living' (both hypotheses are real possibilities for you), 'forced' (there is no neutral ground; not choosing is itself a choice), and 'momentous' (the stakes are real and the opportunity may not come again). Under these conditions, demanding certainty before commitment is not rational caution but a different kind of bet, one that risks missing truth to avoid error. James directed this primarily at religious belief, but the argument extends to any existential commitment.",
+      "contemporary_threads": [
+        {
+          "thread": "Bayesian epistemology and priors",
+          "detail": "James's argument can be reframed in Bayesian terms: our prior beliefs are not evidence-free but shaped by temperament, experience, and (James would say) passional nature. The choice between a high prior for theism and a high prior for atheism is not settled by evidence alone; it is a choice about which error is worse to risk. Bayesian epistemology has made this structure visible: everyone starts somewhere, and the starting point is not itself determined by the data.",
+          "key_references": ["Thomas Bayes", "Richard Swinburne (Bayesian theism)", "John Earman"]
+        },
+        {
+          "thread": "Epistemic injustice and the right to believe",
+          "detail": "Miranda Fricker's concept of epistemic injustice (being wrongly denied credibility) and the broader social epistemology movement raise Jamesian questions: who gets to decide what counts as sufficient evidence? Whose experiences are dismissed as insufficiently 'rational'? James's defense of the right to believe was partly a defense of the experiential knowledge of people whose testimony was discounted by the scientific establishment.",
+          "key_references": ["Miranda Fricker", "José Medina", "Charles Mills"]
+        },
+        {
+          "thread": "Placebo, expectation, and self-fulfilling belief",
+          "detail": "James noted that some truths are dependent on our personal action: 'Do you like me or not?' may only be resolved by acting as if the answer is yes. Contemporary research on placebo effects, growth mindset, expectancy effects, and self-fulfilling prophecies confirms this category of 'faith-dependent truths.' Believing in recovery can contribute to recovery. Believing in one's capacity can enhance capacity. These are not delusions but cases where belief participates in creating the reality it anticipates.",
+          "key_references": ["Ted Kaptchuk (placebo)", "Carol Dweck (mindset)", "Robert Rosenthal (expectancy effects)", "Michael Gazzaniga"]
+        },
+        {
+          "thread": "Post-truth and the misuse of James",
+          "detail": "James has been blamed for the 'post-truth' era: if truth is what works, doesn't that license believing whatever is convenient? This is a misreading. James's conditions are strict: the option must be genuine, forced, and momentous. Believing conspiracy theories because they feel good fails all three criteria. James was defending the right to commit under genuine uncertainty, not the right to ignore evidence when it exists.",
+          "key_references": ["Lee McIntyre (Post-Truth)", "Matthew d'Ancona", "the pragmatism-and-relativism debate"]
+        },
+        {
+          "thread": "The wager structure of life commitments",
+          "detail": "Every deep commitment (marriage, vocation, faith, parenthood) involves a Jamesian structure: you cannot wait for certainty because certainty only arrives through the commitment itself. L.A. Paul's 'transformative experience' argument makes a similar point: some experiences are so fundamentally life-altering that you cannot rationally evaluate them in advance. You must leap. James understood this before anyone formalized it.",
+          "key_references": ["L.A. Paul (Transformative Experience)", "Søren Kierkegaard (leap of faith)", "Charles Taylor"]
+        }
+      ],
+      "living_question": "In an era of information overload where evidence is available for almost any position, the Jamesian question becomes more urgent, not less: How do we commit under genuine uncertainty without collapsing into credulity? What distinguishes a legitimate will to believe from motivated reasoning? James offered conditions, but applying them requires exactly the kind of judgment that no algorithm can provide.",
+      "generation_notes": "This is one of James's most famous and most misunderstood essays. The generation must clearly state the conditions (living, forced, momentous) to prevent the common misreading that James endorsed believing whatever you want. The Cliffordian opposition (W.K. Clifford's 'The Ethics of Belief') should be briefly noted as context. The post-truth thread must be handled carefully: defend James from the misreading without dismissing the concern entirely."
+    },
+    {
+      "entry_number": 26,
+      "title": "Pure Experience",
+      "cluster": "VII. The Wider Self: Metaphysics of Experience",
+      "target_length": "2,500-3,000 words",
+      "source_works": [
+        "Essays in Radical Empiricism (1912), especially 'Does Consciousness Exist?' and 'A World of Pure Experience'",
+        "A Pluralistic Universe (1909)"
+      ],
+      "key_passages_to_consider": [
+        "I believe that 'consciousness,' when once it has evaporated to this estate of pure diaphaneity, is on the point of disappearing altogether. It is the name of a nonentity, and has no right to a place among first principles. Those who still cling to it are clinging to a mere echo, the faint rumor left behind by the disappearing 'soul' upon the air of philosophy.",
+        "My thesis is that if we start with the supposition that there is only one primal stuff or material in the world, a stuff of which everything is composed, and if we call that stuff 'pure experience,' then knowing can easily be explained as a particular sort of relation towards one another into which portions of pure experience may enter.",
+        "Experience, I believe, has no such inner duplicity; and the separation of it into consciousness and content comes, not by way of subtraction, but by way of addition."
+      ],
+      "core_idea_brief": "In his late metaphysical work, James proposed that the fundamental 'stuff' of reality is neither mind nor matter but 'pure experience,' prior to the subject-object split. A single portion of experience can function as 'consciousness' in one context and as 'physical object' in another, depending on the relational network it enters. The duality of knower and known, inner and outer, is not given in experience itself but is a functional distinction imposed afterward. This is not idealism (everything is mind) or materialism (everything is matter) but a radical middle path: neutral monism.",
+      "contemporary_threads": [
+        {
+          "thread": "The hard problem and the consciousness wars",
+          "detail": "Chalmers's hard problem (1995) asks why there is subjective experience at all, and why physical processes give rise to consciousness. James's pure experience doctrine sidesteps this by denying the initial premise: there is no gap between physical and mental because the distinction is not fundamental. The 'stuff' is already experiential. This anticipates certain responses to Chalmers, including Russellian monism and some forms of panpsychism.",
+          "key_references": ["David Chalmers", "Galen Strawson (Russellian monism)", "Philip Goff (Galileo's Error)"]
+        },
+        {
+          "thread": "Panpsychism revival",
+          "detail": "The contemporary panpsychism revival (Goff, Kastrup, Strawson) argues that experience or phenomenality is a fundamental feature of reality, not something that emerges from non-experiential matter. James anticipated this through his embrace of Fechner and through the pure experience doctrine. Kastrup's analytic idealism (reality is experiential, and individual minds are dissociated segments of a universal experiential field) is structurally close to what James was proposing.",
+          "key_references": ["Philip Goff", "Bernardo Kastrup", "Galen Strawson", "Hedda Hassel Mørch"]
+        },
+        {
+          "thread": "Nondual traditions and contemplative philosophy",
+          "detail": "James's 'pure experience' resonates powerfully with nondual contemplative traditions: Advaita Vedanta (Brahman as pure awareness prior to subject-object division), Dzogchen (rigpa as awareness prior to grasping), and certain Christian mystical traditions (Meister Eckhart's 'Godhead' prior to God-and-creature). James was not drawing directly from these traditions, but he arrived at a similar insight through radical empiricism. The convergence suggests the insight may be experientially available, not merely conceptual.",
+          "key_references": ["Shankara (Advaita)", "Longchenpa (Dzogchen)", "Meister Eckhart", "Rupert Spira (contemporary nondual teacher)"]
+        },
+        {
+          "thread": "Enactivism and 4E cognition",
+          "detail": "The 4E cognition movement (embodied, embedded, enacted, extended) challenges the representationalist view that the mind constructs internal models of an external world. Varela's enactivism proposes that cognition arises in the interaction between organism and environment, not in either alone. This is structurally Jamesian: experience is prior to the subject-object division, and the division is a product of relational dynamics, not a metaphysical given.",
+          "key_references": ["Francisco Varela", "Evan Thompson (Mind in Life)", "Alva Noë (Out of Our Heads)"]
+        },
+        {
+          "thread": "Quantum mechanics and the observer problem",
+          "detail": "Some interpretations of quantum mechanics (especially relational quantum mechanics, the participatory universe of Wheeler, and QBism) resonate with James's pure experience in intriguing ways. If the act of observation or measurement plays a role in determining physical outcomes, then the subject-object split is not prior to experience but emerges from it. James would not have endorsed all quantum mysticism, but the structural parallels are worth noting honestly.",
+          "key_references": ["John Wheeler (participatory universe)", "Carlo Rovelli (relational QM)", "Christopher Fuchs (QBism)", "caution: note speculative nature"]
+        }
+      ],
+      "living_question": "Is 'pure experience' a metaphysical discovery or a phenomenological description? Can the subject-object split genuinely be dissolved in experience, or only in theory? Contemplative practitioners claim direct access to a mode of awareness prior to the knower-known division. If they are right, James's pure experience is not merely a philosophical hypothesis but a recoverable state of consciousness. And if it is recoverable, then the foundations of our ordinary way of parsing the world are more contingent, more optional, than we usually assume.",
+      "generation_notes": "This is the most philosophically demanding entry in the batch. Keep it grounded through vivid examples and James's own concrete style. The nondual traditions thread is essential for your readership. The quantum mechanics thread should be handled with appropriate caveats: note the parallels without overclaiming. The living question should land on the contemplative dimension: is this available in experience?"
+    },
+    {
+      "entry_number": 38,
+      "title": "Pragmatic Religion",
+      "cluster": "VII. Philosophy of Religion and Spirituality",
+      "target_length": "2,000-2,500 words",
+      "source_works": [
+        "The Varieties of Religious Experience (1902), Lectures XVIII-XX",
+        "Pragmatism (1907), Lecture VIII: Pragmatism and Religion",
+        "A Pluralistic Universe (1909)"
+      ],
+      "key_passages_to_consider": [
+        "God is real since he produces real effects.",
+        "On pragmatistic principles, if the hypothesis of God works satisfactorily in the widest sense of the word, it is true.",
+        "The whole defence of religious faith hinges upon action.",
+        "The prince of darkness may be a gentleman, as we are told he is, but whatever the God of earth and heaven is, he can surely be no gentleman. His menial services are needed in the dust of our human trials, even more than his dignity is needed in the empyrean.",
+        "I accept the universe is reported to have been Margaret Fuller's spoken word. 'Gad! she'd better!' was Carlyle's retort."
+      ],
+      "core_idea_brief": "James applied his pragmatic method to religion: the question is not whether God exists in some abstract metaphysical sense but whether the hypothesis of God makes a real difference in human life. If belief in God produces energy, moral commitment, wider sympathy, and genuine transformation, then God is 'real' in the only sense that matters pragmatically. James was not reducing God to a useful fiction; he was arguing that 'reality' itself should be understood in terms of experienced effects rather than abstract correspondence. His God was not the Absolute of the idealists but a finite, struggling, relational God who works alongside human beings.",
+      "contemporary_threads": [
+        {
+          "thread": "The meaning crisis and religion as technology",
+          "detail": "John Vervaeke's 'Awakening from the Meaning Crisis' frames religion as a set of 'psycho-technologies' for cultivating wisdom, self-transcendence, and connectedness. This is a deeply Jamesian move: religion matters because of what it does to and for human consciousness, not because of its metaphysical propositions. The meaning crisis itself (the loss of these transformative frameworks in secular modernity) is precisely the kind of problem James's pragmatic approach was designed to address.",
+          "key_references": ["John Vervaeke", "Jonathan Pageau", "Iain McGilchrist"]
+        },
+        {
+          "thread": "Religious naturalism",
+          "detail": "Religious naturalists (Stuart Kauffman, Ursula Goodenough, Loyal Rue) seek to ground spiritual experience in the natural world without supernatural claims. James anticipated this: his pragmatic religion does not require miracles or metaphysical certainty, only real experienced effects. Religious naturalism is essentially pragmatic religion for those whose 'living option' no longer includes traditional theism.",
+          "key_references": ["Stuart Kauffman (Reinventing the Sacred)", "Ursula Goodenough", "Loyal Rue"]
+        },
+        {
+          "thread": "The 'Nones' and post-secular spirituality",
+          "detail": "The fastest-growing religious category in the West is 'none' (no affiliation), but many nones report spiritual experience and practice. They are pragmatic religionists almost by definition: they retain what works (meditation, community, moral framework, awe) and discard what doesn't (institutional authority, creedal rigidity, metaphysical systems). James would have recognized them immediately.",
+          "key_references": ["Pew Research data on 'nones'", "Elizabeth Drescher (Choosing Our Religion)", "Linda Mercadante"]
+        },
+        {
+          "thread": "Process theology and the finite God",
+          "detail": "Whitehead's process theology, developed partly under James's influence, proposes a God who participates in the world's becoming rather than controlling it from above. God offers 'initial aims' to each moment of experience but does not coerce. This is James's finite, relational God given systematic metaphysical expression. Open theism and relational theology in Christian circles develop similar themes.",
+          "key_references": ["Alfred North Whitehead", "Charles Hartshorne", "John B. Cobb Jr.", "Catherine Keller", "Thomas Jay Oord"]
+        },
+        {
+          "thread": "Therapeutic effectiveness of spiritual practice",
+          "detail": "A growing body of clinical evidence shows that spiritual and religious practice correlates with improved mental health, longevity, social connection, and resilience. The mechanisms (community, meditation, meaning-making, self-transcendence) are exactly the 'real effects' James pointed to. The pragmatic question is not whether the theology is correct but whether the practice transforms.",
+          "key_references": ["Harold Koenig", "Tyler VanderWeele (Harvard flourishing project)", "Andrew Newberg"]
+        }
+      ],
+      "living_question": "Can pragmatic religion sustain genuine depth, or does it inevitably flatten the sacred into the merely useful? James's critics have long charged that judging religion by its 'fruits' misses the point: the devout do not believe in God because it works; they believe because God is real. James's reply would be: and what does 'real' mean to you, if not 'making a difference'? The question presses hardest for those who find themselves between traditions, seeking depth without creedal certainty, transformed by experience they cannot fully explain. Which is to say: a growing share of the contemporary world.",
+      "generation_notes": "This entry is centrally important for your readership. The 'post-religious but not anti-spiritual' reader IS James's pragmatic religionist. Make the connection explicit. The meaning crisis thread should be developed fully. Handle the living question with care: the tension between pragmatic and realist approaches to God is genuine and should not be resolved too quickly. James himself leaned toward realism in his later years."
+    },
+    {
+      "entry_number": 44,
+      "title": "On a Certain Blindness in Human Beings",
+      "cluster": "IX. The Blindness and the Sight: Ethics, Education, and the Significant Life",
+      "target_length": "1,800-2,200 words",
+      "source_works": [
+        "Talks to Teachers on Psychology (1899), 'On a Certain Blindness in Human Beings'"
+      ],
+      "key_passages_to_consider": [
+        "Now the blindness in human beings, of which this discourse will treat, is the blindness with which we all are afflicted in regard to the feelings of creatures and people different from ourselves.",
+        "Neither the whole of truth nor the whole of good is revealed to any single observer, although each observer gains a partial superiority of insight from the peculiar position in which he stands.",
+        "The spectator's judgment is sure to miss the root of the matter, and to possess no truth. The subject judged knows a part of the world of reality which the judging spectator fails to see, knows more while the spectator knows less.",
+        "Hands off: neither the whole of truth nor the whole of good is revealed to any single observer."
+      ],
+      "core_idea_brief": "James considered this essay his most important piece of writing. Its argument is deceptively simple: we are constitutionally blind to the inner experience of others. What looks like a meaningless or contemptible life from the outside may be full of significance from within. A woodcutter clearing forest sees destruction; the settler sees home. Neither is wrong; both are blind to the other's reality. James draws a moral conclusion: the deepest ethical failure is the failure of imagination, the inability or unwillingness to recognize that other lives are as real, as full, as inwardly significant as our own.",
+      "contemporary_threads": [
+        {
+          "thread": "Empathy, theory of mind, and perspective-taking",
+          "detail": "Cognitive neuroscience has identified neural mechanisms for theory of mind (the ability to attribute mental states to others), localized partly in the temporoparietal junction and medial prefrontal cortex. But the research also confirms James's concern: our default is egocentrism, and perspective-taking is effortful, partial, and easily disrupted by intergroup bias. We are hardwired for blindness and must work against it.",
+          "key_references": ["Rebecca Saxe (theory of mind)", "Tania Singer (empathy)", "C. Daniel Batson", "Jamil Zaki (The War for Kindness)"]
+        },
+        {
+          "thread": "Implicit bias and structural blindness",
+          "detail": "The implicit bias research program (Greenwald, Banaji) documents unconscious prejudices that shape perception and judgment. This is a systematic form of the blindness James described. We do not see others clearly because our perceptual systems are shaped by social categories, stereotypes, and power structures that pre-filter experience before conscious judgment arrives.",
+          "key_references": ["Anthony Greenwald", "Mahzarin Banaji", "Jennifer Eberhardt (Biased)"]
+        },
+        {
+          "thread": "Narrative medicine and qualitative research",
+          "detail": "Rita Charon's narrative medicine movement insists that clinical care requires attending to the patient's own story, not just their symptoms. Arthur Kleinman's illness narratives make the same point: the meaning of disease is not captured by the diagnosis. These are direct applications of James's principle: the subject judged knows something the judging observer fails to see.",
+          "key_references": ["Rita Charon", "Arthur Kleinman", "Arthur Frank (The Wounded Storyteller)"]
+        },
+        {
+          "thread": "Contemplative ethics and the gaze",
+          "detail": "Simone Weil defined attention as the rarest form of generosity. Iris Murdoch argued that moral life begins in 'the just and loving gaze directed upon an individual reality.' Both are extending James's insight: the remedy for blindness is attention, and attention to the other as they truly are (not as we project them to be) is itself a moral and possibly a spiritual act.",
+          "key_references": ["Simone Weil", "Iris Murdoch (The Sovereignty of Good)", "Emmanuel Levinas (the face of the other)"]
+        }
+      ],
+      "living_question": "In the age of social media, we have more access to other people's inner lives than James could have imagined. And yet the blindness may be worse, not better: we see curated performances, not genuine interiority. Algorithmic sorting creates epistemic bubbles that reinforce our existing perspectives. James's prescription (humility, tolerance, the recognition that no single observer commands the whole truth) sounds quaint until you realize how thoroughly we have built systems that violate it.",
+      "generation_notes": "This is a shorter, more essayistic entry. James called it his most important work; honor that. The essay itself is beautifully written and the Jamesian quotes should carry much of the weight. The contemplative ethics thread (Weil, Murdoch) connects attention back to the earlier entries on selective attention, creating a throughline in the book. Keep the tone warm and humane, not preachy."
+    }
+  ]
+}

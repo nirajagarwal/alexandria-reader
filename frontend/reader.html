@@ -59,11 +59,14 @@
     <nav class="reader-toolbar">
         <div class="reader-toolbar-controls">
             <!-- Left: Back to Library -->
-            <a href="/" class="reader-tool-btn icon-only" id="backToLibrary" title="Back to Library">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M19 12H5M12 19l-7-7 7-7" />
-                </svg>
-            </a>
+            <div style="display: flex; align-items: center;">
+                <a href="/" class="reader-tool-btn icon-only" id="backToLibrary" title="Back to Library">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                </a>
+                <span class="nav-book-title" id="bookTitle"></span>
+            </div>
 
             <!-- Right: Pagination & Contents -->
             <div style="display: flex; align-items: center; gap: 10px;">
@@ -178,6 +181,7 @@
                 "h1": {
                     "font-family": "'Lora', serif",
                     "font-weight": "600",
+                    "text-align": "left",
                     "color": isDark ? colors.accent : colors.text
                 },
                 "p": {
@@ -271,12 +275,19 @@
                 loader.style.display = 'none';
 
                 book.loaded.metadata.then(meta => {
-                    // bookTitle.textContent = meta.title; // Removed as per layout change
+                    if (bookTitle) bookTitle.textContent = meta.title;
                     document.title = `${meta.title} - Alexandria Reader`;
 
                     // Update Back button to go to book detail
                     const backBtn = document.getElementById('backToLibrary');
                     backBtn.href = `/book.html?id=${bookId}`;
+
+                    // Update Contents Menu Header
+                    const menuHeader = document.querySelector('.contents-menu-header h2');
+                    if (menuHeader) {
+                        menuHeader.textContent = meta.title;
+                        // Styling handled by CSS I added in reader.css
+                    }
                 });
 
                 // Load Navigation
