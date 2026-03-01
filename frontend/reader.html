@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>Alexandria Reader</title>
     <meta name="description" content="Read from the Alexandria library.">
 
@@ -27,17 +28,19 @@
 
     <!-- Prevent theme flash -->
     <script>
-    (function(){
-        var s = localStorage.getItem('alexandria_theme');
-        var t = (s && s !== 'auto') ? s
-            : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-        document.documentElement.setAttribute('data-theme', t);
-    })();
+        (function () {
+            var s = localStorage.getItem('alexandria_theme');
+            var t = (s && s !== 'auto') ? s
+                : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', t);
+        })();
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Lora:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Lora:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/reader.css?v=10">
 
@@ -46,6 +49,8 @@
     <script src="https://cdn.jsdelivr.net/npm/epubjs/dist/epub.min.js"></script>
     <!-- Paper Texture -->
     <script src="js/texture.js"></script>
+    <!-- Vercel Analytics -->
+    <script defer src="/_vercel/insights/script.js"></script>
 </head>
 
 <body>
@@ -56,7 +61,7 @@
             <div class="toolbar-left">
                 <a href="/" class="reader-tool-btn icon-only" title="Back to Library" aria-label="Back to Library">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
                     </svg>
                 </a>
                 <span class="nav-book-title" id="bookTitle"></span>
@@ -66,32 +71,36 @@
 
             <!-- Right: settings + pagination + TOC -->
             <div class="toolbar-right">
-                <button id="settingsBtn" class="reader-tool-btn reader-settings-btn"
-                        title="Reader Settings" aria-label="Reader Settings" aria-expanded="false">
+                <button id="settingsBtn" class="reader-tool-btn reader-settings-btn" title="Reader Settings"
+                    aria-label="Reader Settings" aria-expanded="false">
                     Aa
                 </button>
                 <div class="reader-pagination">
                     <button id="prevBtn" class="reader-tool-btn icon-only" title="Previous" aria-label="Previous page">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="15 18 9 12 15 6"/>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6" />
                         </svg>
                     </button>
                     <span id="pageProgress" class="reader-page-info">—</span>
                     <button id="nextBtn" class="reader-tool-btn icon-only" title="Next" aria-label="Next page">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="9 18 15 12 9 6"/>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6" />
                         </svg>
                     </button>
                 </div>
 
-                <button id="contentsTrigger" class="reader-tool-btn icon-only" title="Table of Contents" aria-label="Table of Contents">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="8" y1="6" x2="21" y2="6"/>
-                        <line x1="8" y1="12" x2="21" y2="12"/>
-                        <line x1="8" y1="18" x2="21" y2="18"/>
-                        <line x1="3" y1="6" x2="3.01" y2="6"/>
-                        <line x1="3" y1="12" x2="3.01" y2="12"/>
-                        <line x1="3" y1="18" x2="3.01" y2="18"/>
+                <button id="contentsTrigger" class="reader-tool-btn icon-only" title="Table of Contents"
+                    aria-label="Table of Contents">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="8" y1="6" x2="21" y2="6" />
+                        <line x1="8" y1="12" x2="21" y2="12" />
+                        <line x1="8" y1="18" x2="21" y2="18" />
+                        <line x1="3" y1="6" x2="3.01" y2="6" />
+                        <line x1="3" y1="12" x2="3.01" y2="12" />
+                        <line x1="3" y1="18" x2="3.01" y2="18" />
                     </svg>
                 </button>
             </div>
@@ -109,11 +118,13 @@
         <!-- In-book search -->
         <div class="panel-section">
             <div class="panel-search-bar">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="panel-search-icon" aria-hidden="true">
-                    <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    class="panel-search-icon" aria-hidden="true">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.35-4.35" />
                 </svg>
-                <input type="search" id="bookSearchInput" class="panel-search-input"
-                       placeholder="Search in book…" autocomplete="off" spellcheck="false">
+                <input type="search" id="bookSearchInput" class="panel-search-input" placeholder="Search in book…"
+                    autocomplete="off" spellcheck="false">
                 <button id="bookSearchClear" class="panel-search-clear" aria-label="Clear search">×</button>
             </div>
             <div id="bookSearchResults" class="book-search-results"></div>
@@ -136,8 +147,10 @@
         <!-- Fullscreen -->
         <div class="panel-section">
             <button id="fullscreenBtn" class="panel-action-btn">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="fullscreenIcon" aria-hidden="true">
-                    <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    id="fullscreenIcon" aria-hidden="true">
+                    <path
+                        d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
                 </svg>
                 <span id="fullscreenLabel">Enter Fullscreen</span>
             </button>
@@ -150,9 +163,10 @@
     <!-- Copy popover -->
     <div class="copy-popover" id="copyPopover" role="tooltip">
         <button id="copyBtn" class="copy-btn">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
             </svg>
             Copy
         </button>
@@ -182,477 +196,479 @@
     </div>
 
     <script>
-    (function () {
-        'use strict';
+        (function () {
+            'use strict';
 
-        // ── Constants ────────────────────────────────────────────────────────
-        const STORAGE_PREFIX = 'alexandria_pos_';
-        const LAST_BOOK_KEY  = 'alexandria_last_book';
-        const THEME_KEY      = 'alexandria_theme';
-        const FONTSIZE_KEY   = 'alexandria_fontsize';
-        const FONT_SIZES     = [14, 16, 18, 20, 22, 24];
+            // ── Constants ────────────────────────────────────────────────────────
+            const STORAGE_PREFIX = 'alexandria_pos_';
+            const LAST_BOOK_KEY = 'alexandria_last_book';
+            const THEME_KEY = 'alexandria_theme';
+            const FONTSIZE_KEY = 'alexandria_fontsize';
+            const FONT_SIZES = [14, 16, 18, 20, 22, 24];
 
-        // ── URL params ───────────────────────────────────────────────────────
-        const params      = new URLSearchParams(window.location.search);
-        const bookId      = params.get('id');
-        const chapterHref = params.get('chapter') || null;
+            // ── URL params ───────────────────────────────────────────────────────
+            const params = new URLSearchParams(window.location.search);
+            const bookId = params.get('id');
+            const chapterHref = params.get('chapter') || null;
 
-        if (!bookId) { window.location.href = '/'; return; }
+            if (!bookId) { window.location.href = '/'; return; }
 
-        // ── State ────────────────────────────────────────────────────────────
-        let tocItems        = [];
-        let fontSizeIdx     = 2; // default 18px
-        let pendingCopyText = '';
-        let copyHideTimer   = null;
-        let searchDebounce  = null;
-        let locationSaveTimer = null;
+            // ── State ────────────────────────────────────────────────────────────
+            let tocItems = [];
+            let fontSizeIdx = 2; // default 18px
+            let pendingCopyText = '';
+            let copyHideTimer = null;
+            let searchDebounce = null;
+            let locationSaveTimer = null;
 
-        // ── Storage helpers ──────────────────────────────────────────────────
-        function lsGet(k, fallback) {
-            try { return localStorage.getItem(k) || fallback; } catch(e) { return fallback; }
-        }
-        function lsSet(k, v) {
-            try { localStorage.setItem(k, v); } catch(e) {}
-        }
-        function savePosition(cfi) { lsSet(STORAGE_PREFIX + bookId, cfi); }
-        function loadPosition()    { return lsGet(STORAGE_PREFIX + bookId, null); }
-        function saveLastBook()    { lsSet(LAST_BOOK_KEY, bookId); }
+            // ── Storage helpers ──────────────────────────────────────────────────
+            function lsGet(k, fallback) {
+                try { return localStorage.getItem(k) || fallback; } catch (e) { return fallback; }
+            }
+            function lsSet(k, v) {
+                try { localStorage.setItem(k, v); } catch (e) { }
+            }
+            function savePosition(cfi) { lsSet(STORAGE_PREFIX + bookId, cfi); }
+            function loadPosition() { return lsGet(STORAGE_PREFIX + bookId, null); }
+            function saveLastBook() { lsSet(LAST_BOOK_KEY, bookId); }
 
-        // ── Theme resolution ─────────────────────────────────────────────────
-        const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const savedTheme = lsGet(THEME_KEY, 'auto');
-        let currentTheme = (savedTheme === 'auto')
-            ? (systemDark ? 'dark' : 'light')
-            : savedTheme;
+            // ── Theme resolution ─────────────────────────────────────────────────
+            const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const savedTheme = lsGet(THEME_KEY, 'auto');
+            let currentTheme = (savedTheme === 'auto')
+                ? (systemDark ? 'dark' : 'light')
+                : savedTheme;
 
-        // ── Font size ────────────────────────────────────────────────────────
-        const savedFsIdx = parseInt(lsGet(FONTSIZE_KEY, '2'), 10);
-        fontSizeIdx = (savedFsIdx >= 0 && savedFsIdx < FONT_SIZES.length) ? savedFsIdx : 2;
+            // ── Font size ────────────────────────────────────────────────────────
+            const savedFsIdx = parseInt(lsGet(FONTSIZE_KEY, '2'), 10);
+            fontSizeIdx = (savedFsIdx >= 0 && savedFsIdx < FONT_SIZES.length) ? savedFsIdx : 2;
 
-        // ── epub.js init ─────────────────────────────────────────────────────
-        const book = ePub(`/outputs/${bookId}/book.epub`);
+            // ── epub.js init ─────────────────────────────────────────────────────
+            const book = ePub(`/outputs/${bookId}/book.epub`);
 
-        const rendition = book.renderTo('viewer', {
-            width:               '100%',
-            height:              '100%',
-            flow:                'paginated',
-            manager:             'default',
-            spread:              'auto',
-            minSpreadWidth:      700,
-            allowScriptedContent: false
-        });
+            const rendition = book.renderTo('viewer', {
+                width: '100%',
+                height: '100%',
+                flow: 'paginated',
+                manager: 'default',
+                spread: 'auto',
+                minSpreadWidth: 700,
+                allowScriptedContent: false
+            });
 
-        // ── Theme definitions ────────────────────────────────────────────────
-        const THEMES = {
-            light: { bg: 'transparent', text: '#1A1A1A', accent: '#D4AF37', mute: '#757575', img: 'none' },
-            sepia: { bg: '#ede0c4',    text: '#3b2a1a', accent: '#8b6914', mute: '#7a6040', img: 'sepia(0.25) contrast(0.9)' },
-            dark:  { bg: 'transparent', text: '#F2F2F2', accent: '#D4AF37', mute: '#999999', img: 'sepia(0.5) contrast(0.8) brightness(0.8)' }
-        };
-
-        function buildEpubTheme(name) {
-            const c = THEMES[name];
-            return {
-                body: { background: c.bg, color: c.text, 'font-family': "'Lora', serif" },
-                h1:  { 'font-family': "'Lora', serif", 'font-weight': '600', 'text-align': 'left',
-                       color: (name === 'dark') ? c.accent : c.text },
-                p:   { 'line-height': '1.65', 'text-align': 'justify', 'margin-bottom': '1.5rem' },
-                img: { 'max-width': '100%', filter: c.img },
-                '.section-label': {
-                    'font-family': "'IBM Plex Sans', sans-serif", 'font-weight': '600',
-                    'font-size': '0.75rem', 'text-transform': 'uppercase',
-                    color: c.mute, 'letter-spacing': '0.15em'
-                }
+            // ── Theme definitions ────────────────────────────────────────────────
+            const THEMES = {
+                light: { bg: 'transparent', text: '#1A1A1A', accent: '#D4AF37', mute: '#757575', img: 'none' },
+                sepia: { bg: '#ede0c4', text: '#3b2a1a', accent: '#8b6914', mute: '#7a6040', img: 'sepia(0.25) contrast(0.9)' },
+                dark: { bg: 'transparent', text: '#F2F2F2', accent: '#D4AF37', mute: '#999999', img: 'sepia(0.5) contrast(0.8) brightness(0.8)' }
             };
-        }
 
-        ['light', 'sepia', 'dark'].forEach(name => {
-            rendition.themes.register(name, buildEpubTheme(name));
-        });
-        rendition.themes.select(currentTheme);
+            function buildEpubTheme(name) {
+                const c = THEMES[name];
+                return {
+                    body: { background: c.bg, color: c.text, 'font-family': "'Lora', serif" },
+                    h1: {
+                        'font-family': "'Lora', serif", 'font-weight': '600', 'text-align': 'left',
+                        color: (name === 'dark') ? c.accent : c.text
+                    },
+                    p: { 'line-height': '1.65', 'text-align': 'justify', 'margin-bottom': '1.5rem' },
+                    img: { 'max-width': '100%', filter: c.img },
+                    '.section-label': {
+                        'font-family': "'IBM Plex Sans', sans-serif", 'font-weight': '600',
+                        'font-size': '0.75rem', 'text-transform': 'uppercase',
+                        color: c.mute, 'letter-spacing': '0.15em'
+                    }
+                };
+            }
 
-        // ── Content hooks ────────────────────────────────────────────────────
-        rendition.hooks.content.register((contents) => {
-            contents.addStylesheet('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Sans:wght@400;600&display=swap');
-            contents.addStylesheetRules({
-                body:              { '-webkit-font-smoothing': 'antialiased' },
-                p:                 { 'text-indent': '0', orphans: '2', widows: '2' },
-                'p:first-of-type': { 'text-indent': '0' },
-                'h1 + p':          { 'text-indent': '0' }
+            ['light', 'sepia', 'dark'].forEach(name => {
+                rendition.themes.register(name, buildEpubTheme(name));
             });
-        });
+            rendition.themes.select(currentTheme);
 
-        // ── Apply theme (epub + body) ─────────────────────────────────────────
-        function applyTheme(theme) {
-            currentTheme = theme;
-            lsSet(THEME_KEY, theme);
-            document.documentElement.setAttribute('data-theme', theme);
-            rendition.themes.select(theme);
-            updateTexture();
+            // ── Content hooks ────────────────────────────────────────────────────
+            rendition.hooks.content.register((contents) => {
+                contents.addStylesheet('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Sans:wght@400;600&display=swap');
+                contents.addStylesheetRules({
+                    body: { '-webkit-font-smoothing': 'antialiased' },
+                    p: { 'text-indent': '0', orphans: '2', widows: '2' },
+                    'p:first-of-type': { 'text-indent': '0' },
+                    'h1 + p': { 'text-indent': '0' }
+                });
+            });
+
+            // ── Apply theme (epub + body) ─────────────────────────────────────────
+            function applyTheme(theme) {
+                currentTheme = theme;
+                lsSet(THEME_KEY, theme);
+                document.documentElement.setAttribute('data-theme', theme);
+                rendition.themes.select(theme);
+                updateTexture();
+                document.querySelectorAll('.theme-btn').forEach(b => {
+                    b.classList.toggle('active', b.dataset.theme === theme);
+                });
+            }
+
+            // ── Apply font size ───────────────────────────────────────────────────
+            function applyFontSize() {
+                const sz = FONT_SIZES[fontSizeIdx];
+                lsSet(FONTSIZE_KEY, String(fontSizeIdx));
+                document.getElementById('fontSizeLabel').textContent = sz + 'px';
+                rendition.themes.fontSize(sz + 'px');
+                document.getElementById('fontDecBtn').disabled = (fontSizeIdx === 0);
+                document.getElementById('fontIncBtn').disabled = (fontSizeIdx === FONT_SIZES.length - 1);
+            }
+
+            // Sync initial UI state
+            document.getElementById('fontSizeLabel').textContent = FONT_SIZES[fontSizeIdx] + 'px';
             document.querySelectorAll('.theme-btn').forEach(b => {
-                b.classList.toggle('active', b.dataset.theme === theme);
+                b.classList.toggle('active', b.dataset.theme === currentTheme);
             });
-        }
 
-        // ── Apply font size ───────────────────────────────────────────────────
-        function applyFontSize() {
-            const sz = FONT_SIZES[fontSizeIdx];
-            lsSet(FONTSIZE_KEY, String(fontSizeIdx));
-            document.getElementById('fontSizeLabel').textContent = sz + 'px';
-            rendition.themes.fontSize(sz + 'px');
-            document.getElementById('fontDecBtn').disabled = (fontSizeIdx === 0);
-            document.getElementById('fontIncBtn').disabled = (fontSizeIdx === FONT_SIZES.length - 1);
-        }
+            // ── Navigation ────────────────────────────────────────────────────────
+            document.getElementById('prevBtn').onclick = () => rendition.prev();
+            document.getElementById('nextBtn').onclick = () => rendition.next();
 
-        // Sync initial UI state
-        document.getElementById('fontSizeLabel').textContent = FONT_SIZES[fontSizeIdx] + 'px';
-        document.querySelectorAll('.theme-btn').forEach(b => {
-            b.classList.toggle('active', b.dataset.theme === currentTheme);
-        });
+            document.addEventListener('keydown', (e) => {
+                const active = document.activeElement;
+                if (active && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA')) return;
+                if (e.key === 'Escape') { closePanel(); closeMenu(); return; }
+                if (isPanelOpen() || isMenuOpen()) return;
+                if (e.key === 'ArrowLeft' || e.key === 'PageUp') rendition.prev();
+                if (e.key === 'ArrowRight' || e.key === 'PageDown') rendition.next();
+                if (e.key === 'f' || e.key === 'F') toggleFullscreen();
+            });
 
-        // ── Navigation ────────────────────────────────────────────────────────
-        document.getElementById('prevBtn').onclick = () => rendition.prev();
-        document.getElementById('nextBtn').onclick = () => rendition.next();
+            // ── Touch swipe ───────────────────────────────────────────────────────
+            let touchStartX = 0;
+            document.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+            document.addEventListener('touchend', e => {
+                if (isPanelOpen()) return;
+                const dx = touchStartX - e.changedTouches[0].clientX;
+                if (Math.abs(dx) > 50) dx > 0 ? rendition.next() : rendition.prev();
+            }, { passive: true });
 
-        document.addEventListener('keydown', (e) => {
-            const active = document.activeElement;
-            if (active && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA')) return;
-            if (e.key === 'Escape') { closePanel(); closeMenu(); return; }
-            if (isPanelOpen() || isMenuOpen()) return;
-            if (e.key === 'ArrowLeft'  || e.key === 'PageUp')   rendition.prev();
-            if (e.key === 'ArrowRight' || e.key === 'PageDown')  rendition.next();
-            if (e.key === 'f' || e.key === 'F') toggleFullscreen();
-        });
-
-        // ── Touch swipe ───────────────────────────────────────────────────────
-        let touchStartX = 0;
-        document.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
-        document.addEventListener('touchend', e => {
-            if (isPanelOpen()) return;
-            const dx = touchStartX - e.changedTouches[0].clientX;
-            if (Math.abs(dx) > 50) dx > 0 ? rendition.next() : rendition.prev();
-        }, { passive: true });
-
-        // ── Chapter tracking ──────────────────────────────────────────────────
-        function findChapterTitle(href) {
-            if (!href || !tocItems.length) return '';
-            const base = href.split('#')[0];
-            const match = tocItems.find(t => t.href === href || t.href.split('#')[0] === base);
-            return match ? match.label : '';
-        }
-
-        function updateChapterDisplay(href) {
-            const title = findChapterTitle(href);
-            document.getElementById('toolbarChapter').textContent = title;
-            document.getElementById('panelChapterName').textContent = title;
-            document.getElementById('toolbarSep').style.visibility = title ? 'visible' : 'hidden';
-        }
-
-        // ── Position tracking ─────────────────────────────────────────────────
-        rendition.on('relocated', (location) => {
-            const pct = (book.locations && book.locations.percentageFromCfi)
-                ? Math.floor(book.locations.percentageFromCfi(location.start.cfi) * 100)
-                : null;
-            document.getElementById('pageProgress').textContent = (pct > 0) ? `${pct}%` : '—';
-            document.getElementById('prevBtn').disabled = location.atStart;
-            document.getElementById('nextBtn').disabled = location.atEnd;
-
-            const spineItem = book.spine.get(location.start.cfi);
-            if (spineItem) updateChapterDisplay(spineItem.href);
-
-            clearTimeout(locationSaveTimer);
-            locationSaveTimer = setTimeout(() => savePosition(location.start.cfi), 500);
-        });
-
-        book.ready.then(() => book.locations.generate(1000));
-
-        // ── Text selection → copy ─────────────────────────────────────────────
-        rendition.on('selected', (cfiRange, contents) => {
-            const text = contents.window.getSelection().toString().trim();
-            if (text) showCopyPopover(text);
-        });
-
-        function showCopyPopover(text) {
-            pendingCopyText = text;
-            document.getElementById('copyPopover').classList.add('visible');
-            clearTimeout(copyHideTimer);
-            copyHideTimer = setTimeout(hideCopyPopover, 4000);
-        }
-
-        function hideCopyPopover() {
-            document.getElementById('copyPopover').classList.remove('visible');
-            pendingCopyText = '';
-        }
-
-        document.getElementById('copyBtn').onclick = async () => {
-            if (!pendingCopyText) return;
-            try {
-                await navigator.clipboard.writeText(pendingCopyText);
-            } catch(e) {
-                const ta = document.createElement('textarea');
-                ta.value = pendingCopyText;
-                ta.style.cssText = 'position:fixed;opacity:0;pointer-events:none';
-                document.body.appendChild(ta);
-                ta.select();
-                document.execCommand('copy');
-                document.body.removeChild(ta);
+            // ── Chapter tracking ──────────────────────────────────────────────────
+            function findChapterTitle(href) {
+                if (!href || !tocItems.length) return '';
+                const base = href.split('#')[0];
+                const match = tocItems.find(t => t.href === href || t.href.split('#')[0] === base);
+                return match ? match.label : '';
             }
-            hideCopyPopover();
-        };
 
-        // ── Fullscreen ────────────────────────────────────────────────────────
-        function toggleFullscreen() {
-            const isFs = document.body.classList.toggle('reader-fullscreen');
-            document.getElementById('fullscreenLabel').textContent =
-                isFs ? 'Exit Fullscreen' : 'Enter Fullscreen';
-            if (isFs) {
-                const hint = document.getElementById('fullscreenHint');
-                hint.classList.add('visible');
-                setTimeout(() => hint.classList.remove('visible'), 2500);
+            function updateChapterDisplay(href) {
+                const title = findChapterTitle(href);
+                document.getElementById('toolbarChapter').textContent = title;
+                document.getElementById('panelChapterName').textContent = title;
+                document.getElementById('toolbarSep').style.visibility = title ? 'visible' : 'hidden';
             }
-            closePanel();
-        }
 
-        document.getElementById('fullscreenBtn').onclick = toggleFullscreen;
-        document.getElementById('fullscreenHint').onclick = () => {
-            document.body.classList.remove('reader-fullscreen');
-            document.getElementById('fullscreenLabel').textContent = 'Enter Fullscreen';
-        };
+            // ── Position tracking ─────────────────────────────────────────────────
+            rendition.on('relocated', (location) => {
+                const pct = (book.locations && book.locations.percentageFromCfi)
+                    ? Math.floor(book.locations.percentageFromCfi(location.start.cfi) * 100)
+                    : null;
+                document.getElementById('pageProgress').textContent = (pct > 0) ? `${pct}%` : '—';
+                document.getElementById('prevBtn').disabled = location.atStart;
+                document.getElementById('nextBtn').disabled = location.atEnd;
 
-        // ── Settings panel ─────────────────────────────────────────────────────
-        function isPanelOpen() {
-            return document.getElementById('settingsPanel').classList.contains('panel-open');
-        }
-        function openPanel() {
-            document.getElementById('settingsPanel').classList.add('panel-open');
-            document.getElementById('panelBackdrop').classList.add('panel-open');
-            document.getElementById('settingsBtn').setAttribute('aria-expanded', 'true');
-        }
-        function closePanel() {
-            document.getElementById('settingsPanel').classList.remove('panel-open');
-            document.getElementById('panelBackdrop').classList.remove('panel-open');
-            document.getElementById('settingsBtn').setAttribute('aria-expanded', 'false');
-        }
+                const spineItem = book.spine.get(location.start.cfi);
+                if (spineItem) updateChapterDisplay(spineItem.href);
 
-        document.getElementById('settingsBtn').onclick = e => {
-            e.stopPropagation();
-            isPanelOpen() ? closePanel() : openPanel();
-        };
-        document.getElementById('panelBackdrop').onclick = closePanel;
+                clearTimeout(locationSaveTimer);
+                locationSaveTimer = setTimeout(() => savePosition(location.start.cfi), 500);
+            });
 
-        document.addEventListener('click', e => {
-            const panel = document.getElementById('settingsPanel');
-            const btn   = document.getElementById('settingsBtn');
-            if (isPanelOpen() && !panel.contains(e.target) && e.target !== btn && !btn.contains(e.target)) {
+            book.ready.then(() => book.locations.generate(1000));
+
+            // ── Text selection → copy ─────────────────────────────────────────────
+            rendition.on('selected', (cfiRange, contents) => {
+                const text = contents.window.getSelection().toString().trim();
+                if (text) showCopyPopover(text);
+            });
+
+            function showCopyPopover(text) {
+                pendingCopyText = text;
+                document.getElementById('copyPopover').classList.add('visible');
+                clearTimeout(copyHideTimer);
+                copyHideTimer = setTimeout(hideCopyPopover, 4000);
+            }
+
+            function hideCopyPopover() {
+                document.getElementById('copyPopover').classList.remove('visible');
+                pendingCopyText = '';
+            }
+
+            document.getElementById('copyBtn').onclick = async () => {
+                if (!pendingCopyText) return;
+                try {
+                    await navigator.clipboard.writeText(pendingCopyText);
+                } catch (e) {
+                    const ta = document.createElement('textarea');
+                    ta.value = pendingCopyText;
+                    ta.style.cssText = 'position:fixed;opacity:0;pointer-events:none';
+                    document.body.appendChild(ta);
+                    ta.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(ta);
+                }
+                hideCopyPopover();
+            };
+
+            // ── Fullscreen ────────────────────────────────────────────────────────
+            function toggleFullscreen() {
+                const isFs = document.body.classList.toggle('reader-fullscreen');
+                document.getElementById('fullscreenLabel').textContent =
+                    isFs ? 'Exit Fullscreen' : 'Enter Fullscreen';
+                if (isFs) {
+                    const hint = document.getElementById('fullscreenHint');
+                    hint.classList.add('visible');
+                    setTimeout(() => hint.classList.remove('visible'), 2500);
+                }
                 closePanel();
             }
-        });
 
-        // ── Font size controls ────────────────────────────────────────────────
-        document.getElementById('fontDecBtn').onclick = () => {
-            if (fontSizeIdx > 0) { fontSizeIdx--; applyFontSize(); }
-        };
-        document.getElementById('fontIncBtn').onclick = () => {
-            if (fontSizeIdx < FONT_SIZES.length - 1) { fontSizeIdx++; applyFontSize(); }
-        };
+            document.getElementById('fullscreenBtn').onclick = toggleFullscreen;
+            document.getElementById('fullscreenHint').onclick = () => {
+                document.body.classList.remove('reader-fullscreen');
+                document.getElementById('fullscreenLabel').textContent = 'Enter Fullscreen';
+            };
 
-        // ── Theme buttons ─────────────────────────────────────────────────────
-        document.querySelectorAll('.theme-btn').forEach(btn => {
-            btn.onclick = () => applyTheme(btn.dataset.theme);
-        });
+            // ── Settings panel ─────────────────────────────────────────────────────
+            function isPanelOpen() {
+                return document.getElementById('settingsPanel').classList.contains('panel-open');
+            }
+            function openPanel() {
+                document.getElementById('settingsPanel').classList.add('panel-open');
+                document.getElementById('panelBackdrop').classList.add('panel-open');
+                document.getElementById('settingsBtn').setAttribute('aria-expanded', 'true');
+            }
+            function closePanel() {
+                document.getElementById('settingsPanel').classList.remove('panel-open');
+                document.getElementById('panelBackdrop').classList.remove('panel-open');
+                document.getElementById('settingsBtn').setAttribute('aria-expanded', 'false');
+            }
 
-        // ── In-book search ────────────────────────────────────────────────────
-        function escHtml(s) {
-            return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-        }
-        function escAttr(s) {
-            return s.replace(/"/g, '&quot;');
-        }
-        function highlightMatch(text, query) {
-            const rx = new RegExp(query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
-            return escHtml(text).replace(rx, m => `<mark>${m}</mark>`);
-        }
+            document.getElementById('settingsBtn').onclick = e => {
+                e.stopPropagation();
+                isPanelOpen() ? closePanel() : openPanel();
+            };
+            document.getElementById('panelBackdrop').onclick = closePanel;
 
-        async function doBookSearch(query) {
-            const resultsEl = document.getElementById('bookSearchResults');
-            if (!query.trim()) { resultsEl.innerHTML = ''; return; }
-            resultsEl.innerHTML = '<div class="search-status">Searching…</div>';
-            try {
-                const q = query.toLowerCase().trim();
-                const allResults = [];
-
-                // Collect spine items synchronously, then load each asynchronously
-                const spineItems = [];
-                book.spine.each(item => spineItems.push(item));
-
-                for (const item of spineItems) {
-                    if (allResults.length >= 25) break;
-                    try {
-                        const section = book.section(item.href);
-                        const doc = await section.load(book.load.bind(book));
-                        const text = (doc.body ? doc.body.textContent : doc.textContent) || '';
-                        const lower = text.toLowerCase();
-                        let idx = lower.indexOf(q);
-                        let countInSection = 0;
-                        while (idx !== -1 && countInSection < 3 && allResults.length < 25) {
-                            const start = Math.max(0, idx - 80);
-                            const end = Math.min(text.length, idx + q.length + 80);
-                            allResults.push({
-                                href: item.href,
-                                excerpt: text.slice(start, end).trim().replace(/\s+/g, ' ')
-                            });
-                            idx = lower.indexOf(q, idx + 1);
-                            countInSection++;
-                        }
-                        section.unload();
-                    } catch(e) {}
+            document.addEventListener('click', e => {
+                const panel = document.getElementById('settingsPanel');
+                const btn = document.getElementById('settingsBtn');
+                if (isPanelOpen() && !panel.contains(e.target) && e.target !== btn && !btn.contains(e.target)) {
+                    closePanel();
                 }
+            });
 
-                if (allResults.length === 0) {
-                    resultsEl.innerHTML = '<div class="search-status">No results found</div>';
-                    return;
-                }
+            // ── Font size controls ────────────────────────────────────────────────
+            document.getElementById('fontDecBtn').onclick = () => {
+                if (fontSizeIdx > 0) { fontSizeIdx--; applyFontSize(); }
+            };
+            document.getElementById('fontIncBtn').onclick = () => {
+                if (fontSizeIdx < FONT_SIZES.length - 1) { fontSizeIdx++; applyFontSize(); }
+            };
 
-                let html = '<ul class="search-results-list">';
-                allResults.forEach(r => {
-                    const chapter = findChapterTitle(r.href);
-                    const excerpt = highlightMatch(r.excerpt, query);
-                    html += `<li class="search-result-item" data-href="${escAttr(r.href)}">
+            // ── Theme buttons ─────────────────────────────────────────────────────
+            document.querySelectorAll('.theme-btn').forEach(btn => {
+                btn.onclick = () => applyTheme(btn.dataset.theme);
+            });
+
+            // ── In-book search ────────────────────────────────────────────────────
+            function escHtml(s) {
+                return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            }
+            function escAttr(s) {
+                return s.replace(/"/g, '&quot;');
+            }
+            function highlightMatch(text, query) {
+                const rx = new RegExp(query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
+                return escHtml(text).replace(rx, m => `<mark>${m}</mark>`);
+            }
+
+            async function doBookSearch(query) {
+                const resultsEl = document.getElementById('bookSearchResults');
+                if (!query.trim()) { resultsEl.innerHTML = ''; return; }
+                resultsEl.innerHTML = '<div class="search-status">Searching…</div>';
+                try {
+                    const q = query.toLowerCase().trim();
+                    const allResults = [];
+
+                    // Collect spine items synchronously, then load each asynchronously
+                    const spineItems = [];
+                    book.spine.each(item => spineItems.push(item));
+
+                    for (const item of spineItems) {
+                        if (allResults.length >= 25) break;
+                        try {
+                            const section = book.section(item.href);
+                            const doc = await section.load(book.load.bind(book));
+                            const text = (doc.body ? doc.body.textContent : doc.textContent) || '';
+                            const lower = text.toLowerCase();
+                            let idx = lower.indexOf(q);
+                            let countInSection = 0;
+                            while (idx !== -1 && countInSection < 3 && allResults.length < 25) {
+                                const start = Math.max(0, idx - 80);
+                                const end = Math.min(text.length, idx + q.length + 80);
+                                allResults.push({
+                                    href: item.href,
+                                    excerpt: text.slice(start, end).trim().replace(/\s+/g, ' ')
+                                });
+                                idx = lower.indexOf(q, idx + 1);
+                                countInSection++;
+                            }
+                            section.unload();
+                        } catch (e) { }
+                    }
+
+                    if (allResults.length === 0) {
+                        resultsEl.innerHTML = '<div class="search-status">No results found</div>';
+                        return;
+                    }
+
+                    let html = '<ul class="search-results-list">';
+                    allResults.forEach(r => {
+                        const chapter = findChapterTitle(r.href);
+                        const excerpt = highlightMatch(r.excerpt, query);
+                        html += `<li class="search-result-item" data-href="${escAttr(r.href)}">
                         ${chapter ? `<span class="srch-chapter">${escHtml(chapter)}</span>` : ''}
                         <span class="srch-excerpt">${excerpt}</span>
                     </li>`;
-                });
-                html += '</ul>';
-                resultsEl.innerHTML = html;
-                resultsEl.querySelectorAll('.search-result-item').forEach(item => {
-                    item.onclick = () => { rendition.display(item.dataset.href); closePanel(); };
-                });
-            } catch(err) {
-                resultsEl.innerHTML = '<div class="search-status">Search unavailable</div>';
+                    });
+                    html += '</ul>';
+                    resultsEl.innerHTML = html;
+                    resultsEl.querySelectorAll('.search-result-item').forEach(item => {
+                        item.onclick = () => { rendition.display(item.dataset.href); closePanel(); };
+                    });
+                } catch (err) {
+                    resultsEl.innerHTML = '<div class="search-status">Search unavailable</div>';
+                }
             }
-        }
 
-        const searchInput = document.getElementById('bookSearchInput');
-        const searchClear = document.getElementById('bookSearchClear');
+            const searchInput = document.getElementById('bookSearchInput');
+            const searchClear = document.getElementById('bookSearchClear');
 
-        searchInput.addEventListener('input', () => {
-            const q = searchInput.value;
-            searchClear.style.display = q ? 'flex' : 'none';
-            clearTimeout(searchDebounce);
-            searchDebounce = setTimeout(() => doBookSearch(q), 400);
-        });
+            searchInput.addEventListener('input', () => {
+                const q = searchInput.value;
+                searchClear.style.display = q ? 'flex' : 'none';
+                clearTimeout(searchDebounce);
+                searchDebounce = setTimeout(() => doBookSearch(q), 400);
+            });
 
-        searchClear.onclick = () => {
-            searchInput.value = '';
-            searchClear.style.display = 'none';
-            document.getElementById('bookSearchResults').innerHTML = '';
-            searchInput.focus();
-        };
+            searchClear.onclick = () => {
+                searchInput.value = '';
+                searchClear.style.display = 'none';
+                document.getElementById('bookSearchResults').innerHTML = '';
+                searchInput.focus();
+            };
 
-        // ── Main init ──────────────────────────────────────────────────────────
-        const loader = document.getElementById('loader');
+            // ── Main init ──────────────────────────────────────────────────────────
+            const loader = document.getElementById('loader');
 
-        async function start() {
-            try {
-                const startCfi = chapterHref || loadPosition() || undefined;
-                await rendition.display(startCfi);
-                loader.style.display = 'none';
-                saveLastBook();
-            } catch(err) {
+            async function start() {
                 try {
-                    await rendition.display(undefined);
+                    const startCfi = chapterHref || loadPosition() || undefined;
+                    await rendition.display(startCfi);
                     loader.style.display = 'none';
                     saveLastBook();
-                } catch(err2) {
-                    loader.textContent = 'Error loading book: ' + err2.message;
+                } catch (err) {
+                    try {
+                        await rendition.display(undefined);
+                        loader.style.display = 'none';
+                        saveLastBook();
+                    } catch (err2) {
+                        loader.textContent = 'Error loading book: ' + err2.message;
+                    }
                 }
+
+                // Apply stored font size after rendition is ready
+                applyFontSize();
+
+                // Metadata
+                book.loaded.metadata.then(meta => {
+                    const title = meta.title || bookId;
+                    document.getElementById('bookTitle').textContent = title;
+                    document.title = `${title} — Alexandria`;
+                    document.querySelector('meta[property="og:title"]').content = `${title} — Alexandria`;
+                    document.querySelector('meta[name="twitter:title"]').content = `${title} — Alexandria`;
+                });
+
+                // TOC
+                book.loaded.navigation.then(nav => {
+                    function flatten(items) {
+                        let out = [];
+                        (items || []).forEach(item => {
+                            out.push({ href: item.href, label: item.label.trim() });
+                            if (item.subitems && item.subitems.length) out = out.concat(flatten(item.subitems));
+                        });
+                        return out;
+                    }
+                    tocItems = flatten(nav.toc);
+
+                    if (!nav.toc.length) return;
+                    const menuLinks = document.getElementById('contentsMenuLinks');
+                    let html = '<ul class="menu-list">';
+                    nav.toc.forEach(ch => {
+                        html += `<li><a href="#" data-href="${escAttr(ch.href)}">${escHtml(ch.label.trim())}</a></li>`;
+                    });
+                    html += '</ul>';
+                    menuLinks.innerHTML = html;
+                    menuLinks.querySelectorAll('a').forEach(link => {
+                        link.onclick = e => {
+                            e.preventDefault();
+                            rendition.display(link.dataset.href);
+                            closeMenu();
+                        };
+                    });
+                });
+
+                initTexture();
+                initMenu();
             }
 
-            // Apply stored font size after rendition is ready
-            applyFontSize();
+            start();
 
-            // Metadata
-            book.loaded.metadata.then(meta => {
-                const title = meta.title || bookId;
-                document.getElementById('bookTitle').textContent = title;
-                document.title = `${title} — Alexandria`;
-                document.querySelector('meta[property="og:title"]').content = `${title} — Alexandria`;
-                document.querySelector('meta[name="twitter:title"]').content = `${title} — Alexandria`;
-            });
+            // ── Texture ────────────────────────────────────────────────────────────
+            let textureGenerator = null;
 
-            // TOC
-            book.loaded.navigation.then(nav => {
-                function flatten(items) {
-                    let out = [];
-                    (items || []).forEach(item => {
-                        out.push({ href: item.href, label: item.label.trim() });
-                        if (item.subitems && item.subitems.length) out = out.concat(flatten(item.subitems));
-                    });
-                    return out;
-                }
-                tocItems = flatten(nav.toc);
-
-                if (!nav.toc.length) return;
-                const menuLinks = document.getElementById('contentsMenuLinks');
-                let html = '<ul class="menu-list">';
-                nav.toc.forEach(ch => {
-                    html += `<li><a href="#" data-href="${escAttr(ch.href)}">${escHtml(ch.label.trim())}</a></li>`;
+            function updateTexture() {
+                const canvas = document.getElementById('paperTexture');
+                if (!textureGenerator) textureGenerator = new PaperTextureGenerator(canvas);
+                requestAnimationFrame(() => {
+                    if (currentTheme === 'dark') {
+                        textureGenerator.generate('dark', 0.15, 0.4);
+                    } else if (currentTheme === 'sepia') {
+                        textureGenerator.generate('cream', 0.25, 0.6);
+                    } else {
+                        textureGenerator.generate('cream', 0.1, 0.8);
+                    }
                 });
-                html += '</ul>';
-                menuLinks.innerHTML = html;
-                menuLinks.querySelectorAll('a').forEach(link => {
-                    link.onclick = e => {
-                        e.preventDefault();
-                        rendition.display(link.dataset.href);
-                        closeMenu();
-                    };
-                });
-            });
+            }
 
-            initTexture();
-            initMenu();
-        }
+            function initTexture() {
+                window.addEventListener('resize', updateTexture);
+                updateTexture();
+            }
 
-        start();
+            // ── TOC Menu ───────────────────────────────────────────────────────────
+            function isMenuOpen() {
+                return !document.getElementById('contentsOverlay').classList.contains('hidden');
+            }
+            function openMenu() { document.getElementById('contentsOverlay').classList.remove('hidden'); }
+            function closeMenu() { document.getElementById('contentsOverlay').classList.add('hidden'); }
 
-        // ── Texture ────────────────────────────────────────────────────────────
-        let textureGenerator = null;
+            function initMenu() {
+                document.getElementById('contentsTrigger').onclick = openMenu;
+                document.getElementById('contentsClose').onclick = closeMenu;
+                document.getElementById('contentsOverlay').onclick = e => {
+                    if (e.target === document.getElementById('contentsOverlay')) closeMenu();
+                };
+                window.closeMenu = closeMenu;
+            }
 
-        function updateTexture() {
-            const canvas = document.getElementById('paperTexture');
-            if (!textureGenerator) textureGenerator = new PaperTextureGenerator(canvas);
-            requestAnimationFrame(() => {
-                if (currentTheme === 'dark') {
-                    textureGenerator.generate('dark', 0.15, 0.4);
-                } else if (currentTheme === 'sepia') {
-                    textureGenerator.generate('cream', 0.25, 0.6);
-                } else {
-                    textureGenerator.generate('cream', 0.1, 0.8);
-                }
-            });
-        }
-
-        function initTexture() {
-            window.addEventListener('resize', updateTexture);
-            updateTexture();
-        }
-
-        // ── TOC Menu ───────────────────────────────────────────────────────────
-        function isMenuOpen() {
-            return !document.getElementById('contentsOverlay').classList.contains('hidden');
-        }
-        function openMenu()  { document.getElementById('contentsOverlay').classList.remove('hidden'); }
-        function closeMenu() { document.getElementById('contentsOverlay').classList.add('hidden'); }
-
-        function initMenu() {
-            document.getElementById('contentsTrigger').onclick = openMenu;
-            document.getElementById('contentsClose').onclick   = closeMenu;
-            document.getElementById('contentsOverlay').onclick = e => {
-                if (e.target === document.getElementById('contentsOverlay')) closeMenu();
-            };
-            window.closeMenu = closeMenu;
-        }
-
-    })();
+        })();
     </script>
 </body>
 
