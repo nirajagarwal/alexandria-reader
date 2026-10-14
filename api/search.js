@@ -1,3 +1,5 @@
+const dns = require('dns');
+try { dns.setServers(['8.8.8.8', '1.1.1.1']); } catch (e) {}
 /**
  * Alexandria Press - Serverless Search API
  * Full-text search endpoint querying MongoDB Atlas.
