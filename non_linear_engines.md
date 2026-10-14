@@ -95,7 +95,7 @@ Even more devastating to his competitors was the mechanism known as the "drawbac
 
 This arrangement mirrors the mathematical dynamics of preferential attachment in scale-free networks, as described by the Barabási-Albert model, combined with an autocatalytic chemical reaction. In a preferential attachment regime, the probability of a node acquiring new resources is proportional to its existing scale:
 
-$$Π(k_i) = k_i / ∑ k_j$$
+$$Π(k_{i}) = k_{i} / ∑ k_{j}$$
 
 The drawback functioned as an artificial feedback loop: every barrel of kerosene shipped by an independent competitor drained the competitor's working capital while directly funding Standard Oil’s cash reserves. Competitors were effectively subsidizing Rockefeller's expansion every time they moved product to market. As Standard Oil’s volume grew, its rail leverage expanded, widening the freight rebate spread and driving independent refiners further into operating losses.
 

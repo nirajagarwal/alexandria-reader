@@ -59,17 +59,17 @@ Shannon’s cognitive breakthrough was to perform a radical abstraction: he divo
 
 Shannon formalized the entropy of a discrete random variable X with possible outcomes x_1, ..., x_n as:
 
-$$H(X) = - ∑ P(x_i) * log_2 P(x_i)$$
+$$H(X) = - ∑ P(x_{i}) * log_{2} P(x_{i})$$
 
 This equation corresponds directly to Ludwig Boltzmann’s 1877 formulation of thermodynamic entropy in statistical mechanics:
 
-$$S = k_B * ln W$$
+$$S = k_{B} * ln W$$
 
 Shannon discovered that information is the mathematical mirror image of physical entropy. In thermodynamics, entropy measures the degree of microstate disorder in a gas. In communication theory, entropy measures the surprise, or unpredictability, of a message source. If a source transmits symbols with complete predictability (such as the letter 'u' following 'q' in English text), the informational entropy of that symbol is zero. By identifying the statistical redundancy inherent in human language, Shannon proved that messages could be compressed to their fundamental entropy limit without losing a single bit of fidelity.
 
 Even more radical was Shannon’s Noisy-Channel Coding Theorem. Shannon proved that every physical communication channel possesses a finite mathematical capacity, C:
 
-$$C = B * log_2 (1 + S / N)$$
+$$C = B * log_{2} (1 + S / N)$$
 
 Where B represents channel bandwidth, S represents signal power, and N represents noise power. Traditional engineers assumed that as transmission rate R approached channel capacity C, the error rate would inevitably increase. Shannon proved mathematically that so long as R < C, there exists an error-correcting coding scheme that allows information to be transmitted across the noisy channel with an arbitrarily small probability of error. Noise did not enforce an inevitable loss of clarity; it merely placed a hard ceiling on transmission velocity.
 
@@ -175,7 +175,7 @@ In the early 1960s, working in secret late at night at Eglin Air Force Base in F
 
 Boyd proved that static top speed was irrelevant in real combat. Aerial maneuvering requires shedding and gaining kinetic energy (velocity) and potential energy (altitude) while pulling high-g turns. Boyd derived the specific excess power equation:
 
-$$P_s = V * ((T - D) / W)$$
+$$P_{s} = V * ((T - D) / W)$$
 
 Where V represents airspeed velocity, T represents engine thrust, D represents aerodynamic drag, and W represents aircraft weight. Specific excess power (P_s), measured in feet per second, calculates an aircraft's rate of change of total energy. When P_s > 0, an aircraft can climb, accelerate, or maintain velocity in a turn. When P_s < 0, the aircraft is bleeding energy, decelerating toward an aerodynamic stall.
 
@@ -211,7 +211,7 @@ Unlike modern academics who specialize in a single subfield, Young’s cognitive
 
 In structural mechanics, Young analyzed the elastic deformation of materials under tensile stress, establishing the universal constant known as Young’s Modulus (E):
 
-$$E = σ / ε = (F / A) / (ΔL / L_0)$$
+$$E = σ / ε = (F / A) / (ΔL / L_{0})$$
 
 Where σ represents tensile stress (force per unit area) and ε represents extensional strain (fractional deformation). Young's modulus unified civil engineering, metallurgy, and material science, allowing architects and engineers to calculate the stiffness and load limits of iron beams, bridges, and cables before construction began.
 

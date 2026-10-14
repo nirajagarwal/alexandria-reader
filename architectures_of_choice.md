@@ -27,11 +27,11 @@ This treatise deconstructs the architecture of choice across twelve foundational
 
 The fundamental axiom of classical economics states that a rational agent should maximize expected utility:
 
-$$\mathbb{E}[U(x)] = \sum_{i} p_i U(x_i)$$
+$$\mathbb{E}[U(x)] = \sum_{i} p_{i} U(x_{i})$$
 
 However, as demonstrated by Ole Peters and Murray Gell-Mann in non-ergodic economics, the arithmetic expectation value $\mathbb{E}[x]$ diverges catastrophically from the time-average growth rate $g$ experienced by a single agent compounding over time:
 
-$$g = \lim_{T \to \infty} \frac{1}{T} \ln \left( \frac{X_T}{X_0} \right)$$
+$$g = \lim_{T \to \infty} \frac{1}{T} \ln \left( \frac{X_{T}{X_{0} \right)$$
 
 Consider a classic coin-toss game: heads yields a 50 percent gain on total capital ($+50\%$), while tails incurs a 40 percent loss ($-40\%$). The ensemble expected return per round appears decisively positive:
 
@@ -39,11 +39,11 @@ $$\mathbb{E}[\text{Return}] = 0.5(+0.50) + 0.5(-0.40) = +5.0\%$$
 
 If ten thousand people play a single round, the collective pool increases by 5 percent. Yet if a single individual plays this game sequentially for one hundred rounds, their capital compounds multiplicatively:
 
-$$X_T = X_0 \cdot (1.5)^{T/2} \cdot (0.6)^{T/2} = X_0 \cdot (0.9)^{T/2}$$
+$$X_{T} = X_{0} \cdot (1.5)^{T/2} \cdot (0.6)^{T/2} = X_{0} \cdot (0.9)^{T/2}$$
 
 Because $(1.5 \times 0.6) = 0.90$, the individual loses 10 percent of their wealth every two rounds. Over time, the time-average growth rate is strictly negative ($g \approx -5.13\%$), driving the player to inevitable financial ruin with probability 1:
 
-$$\lim_{T \to \infty} X_T = 0$$
+$$\lim_{T \to \infty} X_{T} = 0$$
 
 The presence of ruin represents an absorbing barrier—a state that irreversibly terminates the process. When an absorbing barrier exists, no positive ensemble expectation can justify risking total ruin. True rationality requires subordinating all local optimization to the preservation of optionality. The primary objective of an agent is never the maximization of local yield; it is the absolute elimination of absorbing states.
 
@@ -61,7 +61,7 @@ $$f^* = \frac{b p - q}{b} = \frac{p(b + 1) - 1}{b}$$
 
 The Kelly criterion maximizes the expected value of the logarithmic growth rate:
 
-$$\mathbb{E}[\ln(X_1 / X_0)] = p \ln(1 + f b) + q \ln(1 - f)$$
+$$\mathbb{E}[\ln(X_{1} / X_{0})] = p \ln(1 + f b) + q \ln(1 - f)$$
 
 Differentiating with respect to $f$ and setting the derivative to zero demonstrates that allocating any fraction $f > f^*$ reduces the long-term compound growth rate while monotonically increasing volatility and drawdown depth. If an overconfident allocator wagers at twice the optimal fraction ($2f^*$), the expected growth rate falls to zero, and any allocation beyond $2f^*$ guarantees mathematical ruin.
 
@@ -127,7 +127,7 @@ This methodology, championed mathematically by Carl Gustav Jacob Jacobi (*man mu
 
 There are infinite ways to fail at building a resilient enterprise, but the terminal mechanisms can be cataloged exhaustively: illiquidity, operational single-points-of-failure, fraud, regulatory non-compliance, and catastrophic debt. Instead of pursuing an illusory, high-entropy blueprint for greatness, the strategist systematically identifies and excises failure modes:
 
-$$\text{Success} = \mathcal{U} \setminus \bigcup_{i} \mathcal{F}_i$$
+$$\text{Success} = \mathcal{U} \setminus \bigcup_{i} \mathcal{F}_{i}$$
 
 where $\mathcal{U}$ represents the universal set of all operational policies and $\mathcal{F}_i$ represents identified failure regimes.
 
@@ -143,7 +143,7 @@ By projecting the mind past the psychological barrier of commitment, the pre-mor
 
 When human beings make decisions spanning decades, classical discounted cash flow models fail because biological nervous systems do not discount the future exponentially; they discount hyperbolically:
 
-$$V(D) = \frac{V_0}{1 + k D}$$
+$$V(D) = \frac{V_{0}{1 + k D}$$
 
 where $D$ is the temporal delay and $k$ is a discount parameter. Hyperbolic discounting produces systematic dynamic inconsistency: an agent prefers $100 today over $110 tomorrow, yet simultaneously prefers $110 in 31 days over $100 in 30 days. As the delayed reward approaches the present moment, the hyperbolic curve steepens, driving the agent to abandon long-term commitments in favor of myopic hedonic relief.
 
@@ -151,7 +151,7 @@ To counteract this neurobiological drift, advanced decision-makers construct cog
 
 At the terminal horizon, the human mind evaluates its life trajectory not through arithmetic variance or quarterly return on equity, but through the elimination of counterfactual regret:
 
-$$\mathcal{R}_{\text{total}} = \sum_{t} \mathbb{E}[\text{Regret}(\text{Omission}_t)] + \mathbb{E}[\text{Regret}(\text{Commission}_t)]$$
+$$\mathcal{R}_{\text{total}} = \sum_{t} \mathbb{E}[\text{Regret}(\text{Omission}_{t})] + \mathbb{E}[\text{Regret}(\text{Commission}_{t})]$$
 
 Empirical psychological research across terminal cancer wards and elderly cohorts reveals a profound structural asymmetry: human beings occasionally regret errors of commission (bold actions that failed), but they experience deep, chronic, corrosive grief over errors of omission (safe paths taken that left dormant call options unexplored). Regret minimization converts an ambiguous temporal optimization into a crisp vector that privileges bold exploration over stagnant comfort.
 
@@ -210,13 +210,13 @@ This is the exploration-exploitation dilemma, formalized mathematically as the M
 
 The exact mathematical solution for multi-armed bandits with discounted rewards was discovered by John C. Gittins in 1979. Gittins demonstrated that the complex, coupled multi-dimensional optimization could be decoupled into independent evaluations for each option through the Gittins Index $\nu$:
 
-$$\nu = \sup_{\tau > 0} \frac{\mathbb{E} \left[ \sum_{t=0}^{\tau-1} \beta^t R_t \right]}{\mathbb{E} \left[ \sum_{t=0}^{\tau-1} \beta^t \right]}$$
+$$\nu = \sup_{\tau > 0} \frac{\mathbb{E} \left[ \sum_{t=0}^{\tau-1} \beta^t R_{t} \right]}{\mathbb{E} \left[ \sum_{t=0}^{\tau-1} \beta^t \right]}$$
 
 where $\tau$ is an optimal stopping time, $\beta \in (0, 1)$ is the discount factor, and $R_t$ is the stochastic reward stream.
 
 The profound strategic insight of the Gittins Index is that the value of an option is the sum of its expected economic payoff plus an information premium proportional to its uncertainty:
 
-$$\nu_i = \mu_i + \text{Information Premium}(\sigma_i)$$
+$$\nu_{i} = \mu_{i} + \text{Information Premium}(\sigma_{i})$$
 
 A high-variance option with unknown payoffs has positive value simply because trying it yields information that permanently updates the agent's generative model. If the experiment succeeds, the agent exploits it indefinitely; if it fails, the agent abandons it rapidly. Uncertainty is not a penalty; it is an economic asset that must be priced into the architecture of exploration.
 

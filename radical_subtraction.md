@@ -33,7 +33,7 @@ Every Friday evening, the friars led John to the refectory. He knelt on the cold
 
 In Claude Shannon’s mathematical theory of communication, channel capacity is determined by the signal-to-noise ratio:
 
-$$C = B * log_2 (1 + S / N)$$
+$$C = B * log_{2} (1 + S / N)$$
 
 Human consciousness functions as an information channel saturated by high-amplitude noise: physical comfort-seeking, language, social rivalries, and fear. If transcendent reality is subtle and low-amplitude, it is drowned out by the noise floor (N). Most spiritual systems attempt to reach awareness by amplifying the signal (S) through sensory grandeur, cathedral architecture, music, and ritual, frequently driving the sensory channel into overload. John’s doctrine of *nada* (nothingness) operated exclusively on the denominator. By systematically driving noise down toward zero (N → 0), subtle invariants that are completely imperceptible in normal life became glaringly audible.
 

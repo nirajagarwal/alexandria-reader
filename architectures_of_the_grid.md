@@ -33,7 +33,7 @@ $$\sum P_{\text{generation}}(t) = \sum P_{\text{load}}(t) + P_{\text{losses}}(t)
 
 If power demand exceeds generation even slightly, the deficit is drawn directly from the kinetic energy of the spinning rotors. The turbines slow down, and grid frequency drops below 60.00 Hz:
 
-$$\frac{df}{dt} = \frac{f_0}{2 H S_n} \left( P_{\text{mechanical}} - P_{\text{electrical}} \right)$$
+$$\frac{df}{dt} = \frac{f_{0}{2 H S_{n} \left( P_{\text{mechanical}} - P_{\text{electrical}} \right)$$
 
 where $H$ is the inertia constant and $S_n$ is the system rating. If frequency falls below 59.5 Hz, steam turbine blades begin to vibrate mechanically. At 58.8 Hz, protective relays trip generators offline to prevent physical blade destruction.
 
@@ -69,7 +69,7 @@ The engineering challenge was gravity management over vast distances. An aqueduc
 
 If the downhill slope was too steep, the water velocity caused severe erosion to the mortar lining and generated hydraulic jumps that burst stone channels:
 
-$$v = \frac{1}{n} R_h^{2/3} S^{1/2}$$
+$$v = \frac{1}{n} R_{h}^{2/3} S^{1/2}$$
 
 According to Manning's formula for open channel flow, water velocity $v$ scales with the square root of the slope $S$ and hydraulic radius $R_h$. Conversely, if the gradient was too flat, the flow stalled, allowing sediment and calcifying minerals to choke the conduit. Roman surveyors used the chorobates—a twenty-foot wooden leveling bench with water troughs and plumb bobs—to maintain a uniform slope between 1:1000 and 1:3000 across rugged mountain terrain.
 

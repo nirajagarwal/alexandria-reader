@@ -33,15 +33,15 @@ Biot did not merely interview farmers. He mapped the impact zone with the precis
 
 Biot applied aerodynamic deceleration equations to model the flight path:
 
-$$m · (dv / dt) = - 0.5 · C_d · ρ_air · A · v^2 - m · g$$
+$$m · (dv / dt) = - 0.5 · C_{d} · ρ_{air} · A · v^2 - m · g$$
 
 A body entering the atmosphere at cosmic velocity (v > 15 km/s) experiences intense ram-pressure shock compression. The compressed air in front of the leading face heats to thousands of kelvins via stagnation enthalpy:
 
-$$T_0 = T_inf · (1 + ((γ - 1) / 2) · M^2)$$
+$$T_{0} = T_{inf} · (1 + ((γ - 1) / 2) · M^2)$$
 
 The extreme aerodynamic heat flux ablates the outer surface, producing the glass fusion crust within seconds, while the interior remains cold due to the short thermal diffusion timescale of silicate stone:
 
-$$τ_diff = L^2 / α$$
+$$τ_{diff} = L^2 / α$$
 
 Because stone is a poor thermal conductor (thermal diffusivity α ~ 10^-6 m^2/s), atmospheric transit lasting under fifteen seconds is insufficient for heat to penetrate beyond a millimeter. Biot presented his comprehensive report to the National Institute in Paris in July 1803. By documenting the physical geometry of the impact dispersion and the chemical singularity of the fusion crust, Biot demonstrated that the Earth is not an isolated mechanical box, but an open system sweeping through an interplanetary debris field.
 
@@ -63,11 +63,11 @@ Under Fourier's law, if container A begins at 100°C and container B begins at 3
 
 The fallacy lies in treating temperature as a single scalar state variable in an equilibrium system. A hot container cooling in a freezer is a non-equilibrium dynamical system characterized by Rayleigh-Bénard convection cells:
 
-$$Ra = (g · β · (T_hot - T_cold) · L^3) / (ν · α)$$
+$$Ra = (g · β · (T_{hot} - T_{cold}) · L^3) / (ν · α)$$
 
 The intense initial temperature differential creates vigorous bulk convection currents that persist via momentum even as the average bulk temperature drops. Heat transport shifts from slow molecular conduction to fast convective advection:
 
-$$q_conv = h_conv · A · (T_surface - T_ambient)$$
+$$q_{conv} = h_{conv} · A · (T_{surface} - T_{ambient})$$
 
 Furthermore, water possesses anomalous molecular geometry. The hydrogen bond network in liquid water exhibits structural relaxation delays. When water is heated, the hydrogen bonds stretch and weaken, allowing the covalent O-H bonds to shorten and stiffen. Upon sudden cooling, this stored energy releases faster than an unheated system can rearrange its disordered cage structures. Erasto Mpemba proved that complex fluids retain memory of their thermal trajectory; the rate of thermodynamic state transitions depends not merely on where a system is, but on the velocity and vector with which it arrived.
 
@@ -83,15 +83,15 @@ The phenomenon—sonoluminescence—represents the highest energy concentration 
 
 The radial dynamics of the oscillating bubble obey the Rayleigh-Plesset equation:
 
-$$R · (d^2 R / dt^2) + (3/2) · (dR / dt)^2 = (1 / ρ) · (P_inside - P_ambient(t) - 4 · μ · (1/R) · (dR/dt) - 2 · σ / R)$$
+$$R · (d^2 R / dt^2) + (3/2) · (dR / dt)^2 = (1 / ρ) · (P_{inside} - P_{ambient}(t) - 4 · μ · (1/R) · (dR/dt) - 2 · σ / R)$$
 
 During the negative acoustic pressure phase, the bubble expands to ten times its equilibrium radius. When the pressure cycle reverses into positive compression, the surrounding liquid inertia drives an uncontrolled spherical implosion:
 
-$$v_wall = dR / dt > c_sound$$
+$$v_{wall} = dR / dt > c_{sound}$$
 
 The collapsing gas bubble generates an inward-propagating supersonic spherical shock wave. Because the collapse timescale (under 50 picoseconds) is far shorter than the thermal dissipation timescale, the compression is strictly adiabatic:
 
-$$T_max = T_0 · (R_max / R_min)^(3 · (γ - 1))$$
+$$T_{max} = T_{0} · (R_{max} / R_{min})^(3 · (γ - 1))$$
 
 Spectroscopic measurements revealed that the bubble interior reaches temperatures between 15,000 and 30,000 kelvins—hotter than the photosphere of the Sun. At these temperatures, the noble gas atoms within the bubble ionize into a high-density micro-plasma, producing thermal bremsstrahlung and recombination radiation in a flash lasting less than one hundred picoseconds. Frenzel and Schultes demonstrated that macroscopic, low-amplitude acoustic fields can undergo catastrophic geometric focusing, bridging classical acoustics and high-energy atomic plasma physics within a cubic millimeter of room-temperature water.
 
@@ -109,9 +109,9 @@ The Curies formulated the fundamental structural criterion: piezoelectricity can
 
 The linear constitutive equations relate electrical displacement D, stress T, electric field E, and strain S:
 
-$$D_i = d_ijk · T_jk + ε_ij^T · E_j$$
+$$D_{i} = d_{ijk} · T_{jk} + ε_{ij}^T · E_{j}$$
 
-$$S_ij = s_ijkl^E · T_kl + d_kij · E_k$$
+$$S_{ij} = s_{ijkl}^E · T_{kl} + d_{kij} · E_{k}$$
 
 Where d_ijk represents the third-rank piezoelectric tensor. If a crystal possesses a center of inversion symmetry, applying a spatial inversion transformation (x_i -> -x_i) reverses the direction of the vector properties while leaving the symmetric second-rank stress tensor unchanged:
 
@@ -119,7 +119,7 @@ Where d_ijk represents the third-rank piezoelectric tensor. If a crystal possess
 
 In non-centrosymmetric crystals such as alpha-quartz (SiO_2, trigonal point group 32), the positive silicon ions (Si^4+) and negative oxygen ions (O^2-) do not coincide at a central inversion point. Under mechanical shear or compression, the mechanical strain displaces the centroids of positive and negative charge in opposite directions:
 
-$$P = ∑ q_i · Δr_i$$
+$$P = ∑ q_{i} · Δr_{i}$$
 
 This net internal charge displacement induces a macroscopic surface voltage. One year later, Gabriel Lippmann deduced mathematically from thermodynamic conservation principles that the converse effect must exist: applying an external electric field must produce mechanical deformation. The Curies verified Lippmann's prediction within months, measuring quartz deformations on the order of fractions of an angstrom. The Curie brothers established that structural symmetry breaking within a crystal lattice directly couples mechanical force with electromagnetic flux.
 
@@ -149,7 +149,7 @@ $$c = √( g · (h + A) )$$
 
 The resolution arrived sixty years later, in 1895, when Dutch mathematicians Diederik Korteweg and Gustav de Vries formulated the non-linear shallow-water wave equation (the KdV equation):
 
-$$∂η/∂t + c_0 · ( ∂η/∂x + (3 / (2 · h)) · η · (∂η/∂x) + (h^2 / 6) · (∂^3 η / ∂x^3) ) = 0$$
+$$∂η/∂t + c_{0} · ( ∂η/∂x + (3 / (2 · h)) · η · (∂η/∂x) + (h^2 / 6) · (∂^3 η / ∂x^3) ) = 0$$
 
 The KdV equation contains two competing terms:
 1. The non-linear convective steepening term (η · ∂η/∂x), which causes the crest of the wave to travel faster than the base, tilting the wave forward.
@@ -173,11 +173,11 @@ Seebeck misinterpreted his discovery. He believed he had proven that temperature
 
 The Seebeck effect revealed the microscopic coupling between thermal energy and electrical charge transport in solid-state conductors. In an electrically conducting material, charge carriers (electrons or holes) possess kinetic energy proportional to local temperature:
 
-$$E_kinetic = (3/2) · k_B · T$$
+$$E_{kinetic} = (3/2) · k_{B} · T$$
 
 When a temperature gradient ∇T is applied across a conductor, electrons at the hot junction possess higher thermal velocities than electrons at the cold junction. The high-energy electrons diffuse down the thermal gradient toward the cold end, accumulating negative charge at the cold terminal while leaving uncompensated positive ionic cores at the hot terminal:
 
-$$J_diffusion = - σ · S · ∇T$$
+$$J_{diffusion} = - σ · S · ∇T$$
 
 This charge accumulation produces an opposing internal electrostatic field E. In an open-circuit configuration, electron accumulation continues until the electrostatic drift force balances the thermal diffusion force:
 
@@ -185,11 +185,11 @@ $$E = S · ∇T$$
 
 Where S is the Seebeck coefficient (thermoelectric power), measured in microvolts per kelvin. The open-circuit voltage across a thermocouple junction of materials A and B is given by:
 
-$$V = ∫_{T_cold}^{T_hot} (S_B(T) - S_A(T)) dT$$
+$$V = ∫_{T_{cold}^{T_{hot} (S_{B}(T) - S_{A}(T)) dT$$
 
 Under the free-electron Fermi gas model, the Seebeck coefficient is expressed by the Mott formula:
 
-$$S = - (π^2 · k_B^2 · T) / (3 · e) · [ d(ln σ(E)) / dE ]_{E = E_F}$$
+$$S = - (π^2 · k_{B}^2 · T) / (3 · e) · [ d(ln σ(E)) / dE ]_{E = E_{F}$$
 
 The thermoelectric voltage is directly proportional to the energy derivative of the electrical conductivity at the Fermi level. Seebeck's thermal circuit proved that heat and electricity are not separate fluids; heat in a metal is transported by the same quantum electron gas that carries electric current, establishing the foundations of solid-state thermoelectric energy conversion.
 
@@ -211,19 +211,19 @@ Andrews described the critical moment: "The surface of demarcation between the l
 
 Andrews had discovered the critical temperature (T_c) and critical pressure (P_c). He plotted the first true pressure-volume-temperature (P-V-T) phase diagram, establishing the continuity of state:
 
-$$(∂P / ∂V)_T = 0   and   (∂^2 P / ∂V^2)_T = 0   at (T_c, P_c)$$
+$$(∂P / ∂V)_{T} = 0   and   (∂^2 P / ∂V^2)_{T} = 0   at (T_{c}, P_{c})$$
 
 At the critical point, the density of the gas phase equals the density of the liquid phase:
 
-$$ρ_liquid = ρ_gas$$
+$$ρ_{liquid} = ρ_{gas}$$
 
 Four years later, in 1873, Johannes Diderik van der Waals used Andrews's experimental isotherms to formulate his equation of state, introducing molecular attraction (a) and excluded volume (b):
 
-$$(P + a / V_m^2) · (V_m - b) = R · T$$
+$$(P + a / V_{m}^2) · (V_{m} - b) = R · T$$
 
 Van der Waals derived the critical coordinates directly from his equation:
 
-$$T_c = 8 · a / (27 · R · b),   P_c = a / (27 · b^2),   V_c = 3 · b$$
+$$T_{c} = 8 · a / (27 · R · b),   P_{c} = a / (27 · b^2),   V_{c} = 3 · b$$
 
 Andrews proved that liquid and gas are not distinct ontological substances, but two thermodynamic extremes of a single continuous fluid state. By forcing the phase boundary to dissolve under pressure, Andrews opened the discipline of critical phenomena, phase transitions, and modern supercritical fluid extraction.
 
@@ -237,7 +237,7 @@ On January 6, 1912, at the annual meeting of the Geological Association in Frank
 
 Geological orthodoxy condemned Wegener's theory. Prominent geologists asserted that the Earth's crust was completely rigid. Land bridges had once connected South America and Africa to explain identical fossil distributions (such as the reptile Mesosaurus and the fern Glossopteris), and these land bridges had simply subsided into the ocean depths. Wegener pointed out that continental granite (sial: silica-alumina, density ~2.7 g/cm^3) is significantly less dense than oceanic basalt (sima: silica-magnesia, density ~3.0 g/cm^3). Under the principle of isostasy:
 
-$$h_freeboard = h_crust · (1 - ρ_crust / ρ_mantle)$$
+$$h_{freeboard} = h_{crust} · (1 - ρ_{crust} / ρ_{mantle})$$
 
 Low-density continental granite cannot sink into high-density basalt any more than an iceberg can sink to the bottom of the Atlantic. The continents had to have moved horizontally.
 
@@ -271,7 +271,7 @@ In the spring of 1798, Benjamin Thompson—an American-born Loyalist, British kn
 
 Contemporary physics explained heat through the caloric theory, formalized by Antoine Lavoisier. Caloric was regarded as an imponderable, indestructible, self-repellent fluid that saturated the pores of all matter. When a material was compressed, rubbed, or cut, caloric was squeezed out like water from a sponge, manifesting as sensible heat:
 
-$$Q_caloric = constant (conserved fluid)$$
+$$Q_{caloric} = constant (conserved fluid)$$
 
 According to caloric theory, boring a cannon produced heat because the metal shavings produced by the cutter had a lower specific heat capacity than the solid bronze; the shavings released their excess caloric into the surrounding environment.
 
@@ -287,7 +287,7 @@ Q_generated ∝ W_mechanical · t   as t -> ∞
 
 If heat were a material fluid stored inside the metal, it would eventually exhaust its supply. A finite quantity of bronze could not contain an infinite reservoir of fluid:
 
-$$lim_{t -> ∞} Q_caloric = finite   =/=   Q_observed$$
+$$lim_{t -> ∞} Q_{caloric} = finite   =/=   Q_{observed}$$
 
 Rumford concluded that anything that can be produced without limitation from mechanical work cannot possibly be a material substance: "It appears to me to be extremely difficult, if not quite impossible, to form any distinct idea of anything capable of being excited and communicated in the manner heat was excited and communicated in these experiments, except it be MOTION."
 
@@ -305,13 +305,13 @@ Count Rumford demonstrated that heat is not a conserved material fluid, but the 
 
 In 1914, James Chadwick, working in Berlin under Ernest Rutherford, discovered an unsettling anomaly in nuclear physics. In alpha decay, an atomic nucleus emits an alpha particle with a discrete, well-defined energy peak, exactly as required by two-body conservation of energy and momentum:
 
-$$E_alpha = (M_initial - M_final) · c^2 - E_recoil$$
+$$E_{alpha} = (M_{initial} - M_{final}) · c^2 - E_{recoil}$$
 
 In beta decay, where an unstable nucleus emits a beta particle (an electron), physicists expected a similar sharp monoenergetic line. Instead, Chadwick found that the emitted electrons possessed a broad, continuous energy spectrum, extending from zero up to an endpoint energy E_max.
 
 For sixteen years, the continuous beta spectrum baffled the physics community. Where was the missing energy going? If an initial nucleus at rest decays into a daughter nucleus and an electron, energy and momentum conservation demand a unique electron energy:
 
-$$p_electron = - p_daughter$$
+$$p_{electron} = - p_{daughter}$$
 
 The data showed electrons carrying anywhere from zero to the maximum energy. Even Niels Bohr was driven to an extreme proposal: he suggested that conservation of energy and momentum might be merely statistical laws that hold on average in macroscopic systems, but fail in individual quantum events.
 
@@ -323,7 +323,7 @@ n -> p + e^- + ν_e_bar
 
 Because the decay is a three-body process rather than a two-body process, the available reaction energy is shared continuously between the electron and the neutral particle:
 
-$$E_total = E_electron + E_neutral + E_recoil = constant$$
+$$E_{total} = E_{electron} + E_{neutral} + E_{recoil} = constant$$
 
 The neutral particle had to possess zero electric charge, spin 1/2 (to conserve angular momentum), and an extremely small or zero rest mass:
 
@@ -333,7 +333,7 @@ Because the particle had neither charge nor strong nuclear interaction, it inter
 
 Two years later, Enrico Fermi formalized Pauli's hypothesis into the theory of weak interaction:
 
-$$H_weak = (G_F / √2) · [ψ_p_bar · γ^μ · ψ_n] · [ψ_e_bar · γ_μ · (1 - γ^5) · ψ_ν]$$
+$$H_{weak} = (G_{F} / √2) · [ψ_{p}_{bar} · γ^μ · ψ_{n}] · [ψ_{e}_{bar} · γ_μ · (1 - γ^5) · ψ_ν]$$
 
 Fermi named the particle the "neutrino" (the little neutral one). Twenty-six years later, in 1956, Clyde Cowan and Frederick Reines detected the neutrino experimentally at the Savannah River nuclear reactor, capturing inverse beta decay:
 
@@ -365,11 +365,11 @@ E_kinetic > E_F + Φ
 
 Richardson derived the thermionic emission current density equation:
 
-$$J = A_0 · T^2 · e^( - Φ / (k_B · T) )$$
+$$J = A_{0} · T^2 · e^( - Φ / (k_{B} · T) )$$
 
 Where A_0 is the universal Richardson constant:
 
-$$A_0 = (4 · π · m · e · k_B^2) / h^3 ~ 1.20 · 10^6 A / (m^2 · K^2)$$
+$$A_{0} = (4 · π · m · e · k_{B}^2) / h^3 ~ 1.20 · 10^6 A / (m^2 · K^2)$$
 
 The emission is strictly unilateral:
 1. The hot filament emits free electrons into the vacuum because its thermal energy allows electrons to surmount the work function Φ.
@@ -390,7 +390,7 @@ At precisely 3:20:47 PM, a downward-looking laser rangefinder mounted on the und
 
 For centuries, oceanographers and marine insurance cartels had dismissed mariners' tales of "rogue waves" or "freak seas" as drunken hyperbole. Standard oceanographic engineering used linear Gaussian surface wave models (the Rayleigh distribution):
 
-$$P(H > h) = e^( - 2 · (h / H_s)^2 )$$
+$$P(H > h) = e^( - 2 · (h / H_{s})^2 )$$
 
 Under linear Gaussian wave superposition, waves are treated as independent harmonic oscillators with random phases. To produce a 26-meter wave in a 12-meter significant sea state required an amplitude-to-H_s ratio of 2.13:
 
@@ -404,7 +404,7 @@ $$i · (∂ψ / ∂t) + α · (∂^2 ψ / ∂x^2) + β · |ψ|^2 · ψ = 0$$
 
 In deep water (k · h > 1.363), water waves are subject to the Benjamin-Feir instability (modulational instability). A uniform sinusoidal wave train is unstable to small sideband perturbations:
 
-$$ω_sideband = ω_0 ± δω$$
+$$ω_{sideband} = ω_{0} ± δω$$
 
 The non-linear term (β · |ψ|^2 · ψ) causes energy to cascade from neighboring wave crests into a single, localized wave packet. The rogue wave literally consumes the energy of its immediate neighbors, focusing twenty wave crests into an isolated, vertical mountain of water before collapsing back into the wave train.
 

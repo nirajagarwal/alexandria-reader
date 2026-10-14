@@ -35,7 +35,7 @@ The architectural competition in 1996 had demanded an unobstructed sightline acr
 
 The mathematical physics of the bridge deck corresponds directly to the Kuramoto model of coupled non-linear oscillators:
 
-$$dθ_i/dt = ω_i + (K/N) ∑ sin(θ_j - θ_i)$$
+$$dθ_{i}/dt = ω_{i} + (K/N) ∑ sin(θ_{j} - θ_{i})$$
 
 The flexible steel deck functions as the coupling medium (K). Each pedestrian is an independent biological oscillator with a baseline frequency (ω_i). When pedestrian density exceeds a critical threshold (K > K_c), the system undergoes a spontaneous phase transition, collapsing individual independence into forced mathematical synchrony without central leadership or intent.
 

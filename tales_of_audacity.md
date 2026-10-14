@@ -71,7 +71,7 @@ For fourteen centuries, Western civilization rested upon the Ptolemaic and Arist
 
 In the remote fortress cathedral of Frombork on the Baltic coast, an obscure Polish canon named Nicolaus Copernicus quietly analyzed the Ptolemaic tables. Ptolemy’s system was rotting under its own complexity. To explain the retrograde loops of Mars and Jupiter while maintaining geocentric orbits, astronomers had been forced to invent an arbitrary lattice of epicycles, deferents, and equants:
 
-$$\text{Ptolemaic Complexity} \propto \sum_{i} \text{Epicycles}_i \to \infty$$
+$$\text{Ptolemaic Complexity} \propto \sum_{i} \text{Epicycles}_{i} \to \infty$$
 
 Copernicus recognized that this geometric patchwork was an ugly kludge designed to rescue a bankrupt assumption.
 
@@ -161,7 +161,7 @@ Yet instead of celebrating Semmelweis, the medical establishment responded with 
 
 For two hundred and thirty years, Isaac Newton’s *Principia Mathematica* was the undisputed foundation of physical science. Newton’s inverse-square law of universal gravitation:
 
-$$F = G \frac{m_1 m_2}{r^2}$$
+$$F = G \frac{m_{1} m_{2}{r^2}$$
 
 had predicted the orbits of the planets, explained the tides, and guided the industrial revolution. In the Newtonian universe, space was a static, flat, Euclidean stage, time flowed uniformly and independently, and gravity was an instantaneous invisible force pulling masses toward one another across empty space.
 
@@ -290,7 +290,7 @@ SpaceX ignored the consensus and engineered Falcon 9 around the first-principles
 1. Re-lighting the Merlin 1D rocket engines at hypersonic velocity outside the atmosphere for an exo-atmospheric boostback burn, reversing the booster's horizontal trajectory toward the launch site.
 2. Deploying hypersonic aerodynamic grid fins made of forged titanium to guide the falling booster through transonic turbulence with millimeter precision:
 
-$$\vec{F}_{\text{control}} = \frac{1}{2} \rho v^2 A C_L$$
+$$\vec{F}_{\text{control}} = \frac{1}{2} \rho v^2 A C_{L}$$
 
 3. Executing a "suicide burn" (*hoverslam*) in the final three seconds of flight, firing the center Merlin engine at maximum thrust to decelerate the forty-meter rocket to zero velocity at the exact instant its carbon-fiber landing legs touched the concrete pad or autonomous drone ship at sea.
 

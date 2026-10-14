@@ -51,7 +51,7 @@ In colloquial discourse, joy is frequently conflated with sensory pleasure or he
 
 In computational reinforcement learning, dopaminergic neurons in the ventral tegmental area and substantia nigra pars compacta do not track absolute reward values. Instead, as demonstrated by Wolfram Schultz and Peter Dayan, they compute the temporal difference prediction error:
 
-$$\delta_t = r_{t+1} + \gamma V(s_{t+1}) - V(s_t)$$
+$$\delta_{t} = r_{t+1} + \gamma V(s_{t+1}) - V(s_{t})$$
 
 where $r_{t+1}$ is the empirical reward received at time $t+1$, $\gamma$ is a temporal discount parameter, and $V(s)$ represents the expected value of state $s$.
 
@@ -127,7 +127,7 @@ Most emotional experiences confirm or fine-tune an agent's existing mental model
 
 Perceived vastness is not merely physical scale; it can be temporal, conceptual, or computational. It occurs when sensory observation spans an order of magnitude that overwhelms the default receptive fields of the visual cortex, the narrative limits of episodic memory, or the axioms of working memory. Whether standing beneath the oceanic abyss of the night sky, observing a mathematical theorem of mathematical depth, or witnessing the sheer scale of a monumental architectural cathedral, the brain's internal predictive models are suddenly confronted with an unmanageable prediction error mass:
 
-$$\sum_{i} \xi_i \gg \theta_{\text{threshold}}$$
+$$\sum_{i} \xi_{i} \gg \theta_{\text{threshold}}$$
 
 Under ordinary conditions, the brain resolves prediction errors by small, incremental adjustments to the parameters of its generative model ($w \leftarrow w + \Delta w$). But in the presence of awe, the prediction error is so colossal that parametric adjustment is impossible. The system is forced into schema accommodation—a wholesale structural phase transition where the generative model must reconfigure its latent variables to accommodate the anomaly.
 
@@ -209,7 +209,7 @@ The answer lies in the human brain's capacity for non-linear temporal extrapolat
 
 The resulting mental representation is a mathematically impossible attractor landscape: an idealized coordinate characterized by pure social belonging, absolute allostatic equilibrium, and zero prediction error:
 
-$$s^* = \arg\min_s [F(s)]$$
+$$s^* = \arg\min_{s} [F(s)]$$
 
 Because this idealized state $s^*$ is physically non-existent, the agent's active inference policies can never close the distance. Every attempt to achieve it in physical reality generates an inescapable residual gap. Yearning marks the gap between counterfactual imagination and physical reality. The brain models an idealized state that no real environment can provide.
 

@@ -29,7 +29,7 @@ Two decades earlier in Munich, German physiologist Otto Frank had documented sim
 
 The intrinsic mechanical response is governed by sarcomere length-dependent activation. In skeletal muscle, maximal active tension occurs at a resting sarcomere length of approximately 2.2 micrometers, dropping sharply if the fiber is stretched further. Cardiac muscle operates on the steep ascending limb of its length-tension curve:
 
-$$L_sarcomere = 1.8 to 2.2 μm$$
+$$L_{sarcomere} = 1.8 to 2.2 μm$$
 
 When venous return increases end-diastolic volume (EDV), the ventricular myocardium stretches:
 
@@ -49,13 +49,13 @@ $$SV = EDV - ESV$$
 
 The mechanical stress experienced by the ventricular myocardium during systolic pressure generation is governed by the law of Laplace for thick-walled spherical geometry:
 
-$$σ_wall = (P_intraventricular · r) / (2 · h)$$
+$$σ_{wall} = (P_{intraventricular} · r) / (2 · h)$$
 
 Where r is the internal ventricular chamber radius and h is myocardial wall thickness. As the ventricle dilates (r increases), wall tension σ increases for any given internal pressure P. To counter this geometric disadvantage, the myocardium undergoes physiological concentric hypertrophy in response to chronic afterload, thickening wall dimension h to normalize systolic wall stress.
 
 Systemic blood flow further depends on the Windkessel effect—the hydraulic impedance matching provided by the elastic compliance of the ascending aorta:
 
-$$C_arterial = dV / dP$$
+$$C_{arterial} = dV / dP$$
 
 During rapid ventricular ejection, approximately fifty percent of the stroke volume is stored within the expanded elastic aortic arch, converting pulsatile kinetic energy into potential energy. During diastole, the elastic recoil of the aortic wall forces blood through systemic capillaries, dampening pressure oscillations and maintaining capillary perfusion pressure throughout the resting phase. Starling demonstrated that the cardiovascular engine does not require central computation to maintain volumetric equilibrium; its primary feedback loop is embedded directly into the physical elasticity and lattice geometry of its protein filaments.
 
@@ -80,17 +80,17 @@ The active transport in the ascending limb establishes a modest trans-epithelial
 
 At any horizontal level, the thick ascending limb pumps sodium chloride into the surrounding medullary interstitium, diluting the tubular fluid while concentrating the interstitial space. Because the adjacent descending limb is water-permeable, water diffuses out of the descending limb down the osmotic gradient into the hypertonic interstitium:
 
-$$J_v = L_p · A · (σ · ΔΠ - ΔP)$$
+$$J_{v} = L_{p} · A · (σ · ΔΠ - ΔP)$$
 
 Where $L_p$ is hydraulic conductivity and $\Delta\Pi$ is the osmotic pressure gradient. As water exits, the luminal fluid inside the descending limb concentrates as it approaches the hairpin turn at the tip of the papilla. When this concentrated fluid rounds the bend into the ascending limb, the NKCC2 pumps operate on an already concentrated substrate, pumping more solute into the interstitium and multiplying the axial gradient:
 
-$$C_papilla(z) = C_cortex · e^(k · z)$$
+$$C_{papilla}(z) = C_{cortex} · e^(k · z)$$
 
 Through this axial multiplication, an initial horizontal difference of only 200 mOsm/kg creates a steep longitudinal osmotic gradient that rises from 300 mOsm/kg at the corticomedullary junction to over 1,200 mOsm/kg at the papillary tip.
 
 The vascular supply to the medulla—the vasa recta—mirrors the hairpin geometry, operating as a passive countercurrent exchanger:
 
-$$q_solute_loss = D_eff · (dC / dz) · A$$
+$$q_{solute}_{loss} = D_{eff} · (dC / dz) · A$$
 
 Because blood flows down into the medulla and immediately back out, solutes that enter the descending capillary diffuse back into the ascending capillary, while water that leaves the descending capillary is drawn back into the ascending capillary. This architecture preserves the medullary hypertonicity without washing away the accumulated salt and urea.
 
@@ -112,7 +112,7 @@ Simultaneously, August Krogh and his wife Marie Krogh resolved the fundamental p
 
 Pulmonary gas transport is governed by Fick's first law of diffusion applied to a thin membrane:
 
-$$\dot{V}_{gas} = (A / T) · D · (P_alveolar - P_capillary)$$
+$$\dot{V}_{gas} = (A / T) · D · (P_{alveolar} - P_{capillary})$$
 
 Where:
 - A is the total alveolar surface area (70 to 100 square meters in a healthy adult).
@@ -121,13 +121,13 @@ Where:
 
 The human lung achieves this massive surface-to-thickness ratio ($A / T \approx 2 \cdot 10^8 \text{ m}$) by packing 300 million micro-spherical alveoli into a volume of only six liters. The capillary blood transit time across an alveolus at rest is approximately 0.75 seconds:
 
-$$t_transit = V_capillary / \dot{Q}_cardiac$$
+$$t_{transit} = V_{capillary} / \dot{Q}_{cardiac}$$
 
 Because oxygen diffusion across the thin blood-gas barrier is exceptionally rapid, equilibration between alveolar gas and capillary blood occurs within 0.25 seconds—a three-fold safety margin that permits complete saturation even during maximal exercise when cardiac output increases five-fold and transit time drops to 0.25 seconds.
 
 The transport of oxygen within red blood cells is mediated by hemoglobin ($Hb$), a tetrameric protein composed of two alpha and two beta globin subunits, each containing an iron-protoporphyrin IX heme complex. Hemoglobin exhibits allosteric sigmoidal cooperativity described by the Hill equation:
 
-$$Y = (P_{O_2})^n / ( (P_{50})^n + (P_{O_2})^n )$$
+$$Y = (P_{O_{2})^n / ( (P_{50})^n + (P_{O_{2})^n )$$
 
 Where $n \approx 2.8$ represents the Hill cooperativity coefficient. When oxygen binds to the first heme iron, it pulls the iron atom into the plane of the porphyrin ring by approximately 0.04 nanometers. This movement pulls on the proximal histidine residue, initiating a quaternary conformational shift from the low-affinity Tense (T) state to the high-affinity Relaxed (R) state.
 
@@ -153,24 +153,24 @@ The cardiac pacemaker—the sinoatrial (SA) node—generates action potentials t
 
 The intrinsic pacemaker potential is initiated by the hyperpolarization-activated cyclic nucleotide-gated (HCN) "funny" current ($I_f$):
 
-$$I_f = g_f · (V_m - E_rev)$$
+$$I_{f} = g_{f} · (V_{m} - E_{rev})$$
 
 Following the repolarization of an action potential, the negative membrane potential ($V_m < -50 \text{ mV}$) activates HCN channels, allowing an inward sodium ($Na^+$) flux that slowly depolarizes the membrane toward the firing threshold:
 
-$$dV_m / dt = - (I_f + I_Ca,T + I_Ca,L + I_NCX) / C_m$$
+$$dV_{m} / dt = - (I_{f} + I_{Ca},T + I_{Ca},L + I_{NCX}) / C_{m}$$
 
 When postganglionic parasympathetic vagal fibers fire, they release acetylcholine (ACh) directly onto the sinoatrial node. Acetylcholine binds to cardiac muscarinic $M_2$ G-protein-coupled receptors, initiating two simultaneous biochemical events:
 
 1. The activated $G_{\alpha,i}$ subunit inhibits adenylyl cyclase, lowering intracellular cyclic adenosine monophosphate (cAMP) levels:
-   $$[\text{cAMP}] \downarrow \implies \text{shifts the } I_f \text{ activation curve to more negative voltages}$$
+   $$[\text{cAMP}] \downarrow \implies \text{shifts the } I_{f} \text{ activation curve to more negative voltages}$$
 2. The dissociated $G_{\beta\gamma}$ dimer binds directly to inward-rectifying potassium channels, opening the acetylcholine-activated potassium current ($I_{K,ACh}$):
-   $$I_{K,ACh} = g_{K,ACh} · (V_m - E_K)$$
+   $$I_{K,ACh} = g_{K,ACh} · (V_{m} - E_{K})$$
 
 The outward potassium flux hyperpolarizes the maximum diastolic potential from -60 mV down to -70 mV, while the slope of the phase-4 spontaneous diastolic depolarization ($dV_m / dt$) flattens. The pacemaker cell takes significantly longer to reach the -40 mV threshold required to trigger L-type calcium channels ($I_{Ca,L}$), extending the interval between cardiac contractions.
 
 The control loop is mediated by the baroreceptor reflex transfer function:
 
-$$\Delta HR = - K_baro · \Delta MAP$$
+$$\Delta HR = - K_{baro} · \Delta MAP$$
 
 Stretch receptors located in the carotid sinus and aortic arch monitor mean arterial pressure (MAP). When arterial pressure rises, increased vessel wall tension activates mechanosensitive piezo channels in the baroreceptor nerve terminals, firing afferent signals along the glossopharyngeal and vagal nerves to the nucleus tractus solitarii (NTS) in the medulla. The NTS excites the nucleus ambiguus, ramping up vagal parasympathetic output within 200 milliseconds while simultaneously inhibiting rostral ventrolateral medullary sympathetic outflow.
 
@@ -186,7 +186,7 @@ In 2012, at the University of Rochester Medical Center, Danish neuroscientist Ma
 
 Neuroscientists assumed that waste clearance in the brain was mediated by simple passive diffusion through the dense, tortuous extracellular space:
 
-$$t_diff = x^2 / (2 · D_eff)$$
+$$t_{diff} = x^2 / (2 · D_{eff})$$
 
 Where the effective diffusion coefficient $D_{eff}$ is constrained by extracellular tortuosity ($\lambda \approx 1.6$). In a small laboratory animal, passive diffusion of large protein metabolites might suffice over short distances. In a human brain weighing 1,400 grams with a diameter exceeding fifteen centimeters, diffusion timescales for macromolecular proteins such as amyloid-beta (4 kDa) and tau (45 kDa) span hours or days—far too slow to prevent neurotoxic protein aggregation.
 
@@ -198,7 +198,7 @@ v_fluid ∝ \omega · r_artery · (\Delta r / r)
 
 This perivascular pressure wave drives CSF from the subarachnoid space into the deep brain parenchyma along periarterial channels. The interface between the perivascular space and the brain parenchyma is lined by astrocytic endfeet, which express high concentrations of aquaporin-4 (AQP4) water channels covering over ninety percent of the perivascular contact surface:
 
-$$J_volume = L_p,AQP4 · A · \Delta P_hydraulic$$
+$$J_{volume} = L_{p},AQP4 · A · \Delta P_{hydraulic}$$
 
 The AQP4 channels act as low-resistance fluid gates. CSF exits the periarterial space, streams through the astrocytic water channels, and flushes through the interstitial space, sweeping extracellular proteins toward perivenous channels that drain into the deep cervical lymph nodes.
 
@@ -237,7 +237,7 @@ When an alpha motor neuron fires an action potential down the motor axon, it rel
 
 In skeletal muscle, DHPRs are mechanically linked to ryanodine receptors (RyR1) located in the terminal cisternae of the sarcoplasmic reticulum. Voltage-induced conformational change in the DHPR mechanically unplugs the RyR1 channel:
 
-$$RyR1 opens \implies J_{Ca} = g_{RyR} · ([Ca^2+]_{SR} - [Ca^2+]_i)$$
+$$RyR1 opens \implies J_{Ca} = g_{RyR} · ([Ca^2+]_{SR} - [Ca^2+]_{i})$$
 
 Intracellular calcium surges by two orders of magnitude within milliseconds, rising to $10^{-5} \text{ M}$. Calcium binds to the low-affinity N-terminal regulatory sites of Troponin C:
 
@@ -278,10 +278,10 @@ The elongated all-trans chain no longer fits within the binding pocket, exerting
 Metarhodopsin II initiates a biochemical signal amplification cascade:
 
 1. A single $R^*$ molecule binds and activates approximately 800 molecules of transducin ($G_t$), a heterotrimeric G-protein:
-   $$R^* + G_t \longrightarrow 800 G_{\alpha,t}\text{-GTP}$$
+   $$R^* + G_{t} \longrightarrow 800 G_{\alpha,t}\text{-GTP}$$
 2. Each activated $G_{\alpha,t}$ subunit binds to the inhibitory gamma subunit of cGMP phosphodiesterase (PDE6), activating the enzyme.
 3. Activated PDE6 hydrolyzes cyclic guanosine monophosphate (cGMP) at a catalytic rate of 4,000 molecules per second:
-   $$\text{cGMP} + \text{H}_2\text{O} \longrightarrow 5'\text{-GMP}$$
+   $$\text{cGMP} + \text{H}_{2}\text{O} \longrightarrow 5'\text{-GMP}$$
 
 In the dark, high intracellular concentrations of cGMP ($4 \mu\text{M}$) keep cyclic nucleotide-gated (CNG) cation channels open in the outer segment membrane, allowing a continuous inward influx of sodium and calcium ions known as the dark current:
 
@@ -289,7 +289,7 @@ I_{dark} \approx -40 \text{ pA} \implies V_{dark} \approx -40 \text{ mV}
 
 The rapid catalytic depletion of cGMP causes CNG channels to close cooperatively ($n \approx 3$). With the inward sodium channel closed while potassium continues to exit through constitutive inner-segment channels ($I_K$), the photoreceptor hyperpolarizes from -40 mV down to -70 mV:
 
-$$\Delta V_m = -30 \text{ mV}$$
+$$\Delta V_{m} = -30 \text{ mV}$$
 
 This hyperpolarization shuts voltage-gated calcium channels at the synaptic terminal, reducing the tonic release of the neurotransmitter glutamate onto downstream bipolar cells. George Wald demonstrated that human vision relies on a single photochemical gateway: a quantum transition of two angstroms inside a single carbon-carbon double bond initiates a 100,000-fold enzymatic cascade, transducing electromagnetic light waves into conscious electrical thoughts.
 
@@ -360,13 +360,13 @@ V_{peak} \approx +40 \text{ mV}
 
 To isolate the individual ionic conductances responsible for this positive overshoot, Hodgkin and Huxley, utilizing an electronic design developed by American biophysicist Kenneth Cole, constructed the voltage-clamp apparatus. The voltage clamp uses a negative-feedback amplifier to hold the axonal membrane potential at any desired command voltage ($V_c$), measuring the current ($I_m$) required to maintain that potential:
 
-$$I_m = C_m · (dV_m / dt) + I_{ion}$$
+$$I_{m} = C_{m} · (dV_{m} / dt) + I_{ion}$$
 
 By holding $dV_m / dt = 0$, capacitive current vanishes, allowing direct measurement of ionic currents across the membrane. By systematically substituting extracellular choline for sodium, Hodgkin and Huxley separated the membrane current into two independent, time-dependent conductors: a transient, early inward sodium current ($I_{Na}$), followed by a delayed, prolonged outward potassium current ($I_K$).
 
 Hodgkin and Huxley formalized the system into a quantitative four-dimensional non-linear differential equation system:
 
-$$I_{ion} = g_{Na} · m^3 · h · (V_m - E_{Na}) + g_K · n^4 · (V_m - E_K) + g_L · (V_m - E_L)$$
+$$I_{ion} = g_{Na} · m^3 · h · (V_{m} - E_{Na}) + g_{K} · n^4 · (V_{m} - E_{K}) + g_{L} · (V_{m} - E_{L})$$
 
 Where:
 - $m$ is the sodium activation gate (third-order kinetics).
@@ -375,15 +375,15 @@ Where:
 
 Each gating variable obeys first-order transition kinetics between permissive and non-permissive states:
 
-$$dm / dt = \alpha_m(V) · (1 - m) - \beta_m(V) · m$$
+$$dm / dt = \alpha_{m}(V) · (1 - m) - \beta_{m}(V) · m$$
 
-$$dn / dt = \alpha_n(V) · (1 - n) - \beta_n(V) · n$$
+$$dn / dt = \alpha_{n}(V) · (1 - n) - \beta_{n}(V) · n$$
 
-$$dh / dt = \alpha_h(V) · (1 - h) - \beta_h(V) · h$$
+$$dh / dt = \alpha_{h}(V) · (1 - h) - \beta_{h}(V) · h$$
 
 Where the transition rate constants $\alpha(V)$ and $\beta(V)$ are non-linear exponential functions of membrane potential:
 
-$$\alpha_m(V) = 0.1 · (V + 25) / ( e^{(V + 25)/10} - 1 )$$
+$$\alpha_{m}(V) = 0.1 · (V + 25) / ( e^{(V + 25)/10} - 1 )$$
 
 When the membrane is depolarized past a critical threshold (typically -55 mV), the voltage-sensing S4 transmembrane helices of the voltage-gated sodium channel ($Na_V1.2$) rotate outward, driving the activation gate $m$ toward unity. Sodium ions rush down their steep electrochemical gradient into the cell:
 
@@ -397,7 +397,7 @@ At positive potentials, two delayed processes terminate the spike:
 
 Because myelinated mammalian axons wrap the membrane in thick, insulating myelin sheaths produced by Schwann cells and oligodendrocytes, action potentials do not propagate continuously:
 
-$$\lambda = \sqrt{ r_m / r_i }$$
+$$\lambda = \sqrt{ r_{m} / r_{i} }$$
 
 Myelin increases transmembrane resistance $r_m$ by several orders of magnitude while drastically reducing membrane capacitance $C_m$. The depolarizing current travels electrotonically down the internode with near-instantaneous velocity, regenerating exclusively at uninsulated nodes of Ranvier packed with sodium channels ($1,000 \text{ channels}/\mu\text{m}^2$)—saltatory conduction. Alan Hodgkin and Andrew Huxley proved that the electrical language of thought and movement is not an uninterrupted current flowing through a copper wire; it is a non-linear limit cycle oscillator driven by the mechanical gating of voltage-sensitive protein pore gates.
 
