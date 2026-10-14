@@ -1,5 +1,5 @@
 # Tales of Audacity
-## Twelve Forensic Studies in Asymmetric Defiance and Orthodoxy Breaching
+## Twelve Stories of Breaking Entrenched Consensus
 
 *Alexandria Press · alexandria.press*
 
@@ -7,7 +7,7 @@
 
 ### Introduction
 # Tales of Audacity
-## The Structural Mechanics of Defying Consensus
+## How Small Leverage Exposes Brittle Systems
 
 Audacity is routinely romanticized as blind bravado—a reckless emotional surge that ignores consequence. Popular mythology frames the audacious actor as a tragic or charismatic gambler who stakes everything on raw willpower against impossible odds. This cultural framing misunderstands the underlying physics of historical disruption.
 
@@ -23,7 +23,7 @@ This volume documents twelve historical, intellectual, and scientific ruptures a
 
 ### Chapter 1
 # The Solar Geometry
-## Eratosthenes, the Shadow of Syene, and Measuring the Earth with Camel Strides
+## Measuring the Earth with Shadows and Strides
 
 In the third century BCE, the intellectual universe of the Mediterranean was governed by local parochialism. While Hellenistic astronomers accepted that the Earth was roughly spherical, the physical scale of the planet remained locked in mythical ambiguity. It was regarded as an immeasurable realm beyond mortal calculation.
 
@@ -45,7 +45,7 @@ Multiplying 5,000 stadia by 50, Eratosthenes announced the Earth’s circumferen
 
 ### Chapter 2
 # The Burning Mirrors
-## Archimedes, the Siege of Syracuse, and the Kinetic Levers of Defiance
+## Stopping a Roman Fleet with Levers and Cranes
 
 In 214 BCE, the Roman Republic dispatched its supreme naval commander, Marcus Claudius Marcellus, with sixty quinquereme warships to crush the Sicilian city of Syracuse. Rome was the undisputed kinetic hegemon of the western Mediterranean; its legions possessed unyielding discipline, crushing siege towers, and numerical superiority that guaranteed total capitulation.
 
@@ -65,7 +65,7 @@ Classical historians Polybius and Lucian recorded that Archimedes aligned hexago
 
 ### Chapter 3
 # The Geocentric Fracture
-## Nicolaus Copernicus and the Dismantling of the Aristotelian Cosmos
+## Moving the Sun to the Center of the Solar System
 
 For fourteen centuries, Western civilization rested upon the Ptolemaic and Aristotelian cosmos. In this geocentric model, the Earth stood motionless at the center of existence, encircled by crystalline spheres carrying the moon, the sun, and the planets. This cosmology was not merely astronomical theory; it was the metaphysical and theological keystone of medieval Christendom. To question it was not simply an error in celestial mechanics; it carried severe ecclesiastical consequences.
 
@@ -87,7 +87,7 @@ Aware of the violent theological and academic storm his manuscript would unleash
 
 ### Chapter 4
 # The Celestial Clockmaker
-## Johannes Kepler, the Orbits of Mars, and the Broken Circle
+## Why Eight Minutes of Arc Broke Ancient Astronomy
 
 Nicolaus Copernicus established the heliocentric principle, but his cosmology remained shackled to classical dogma: the Aristotelian belief that heavenly bodies must move in uniform circular motion. The circle was considered the only divine, immutable geometric form; non-circular orbits were metaphysically impossible.
 
@@ -111,7 +111,7 @@ Kepler’s First Law of Planetary Motion was born. By refusing to compromise on 
 
 ### Chapter 5
 # The Scurvy Trials
-## James Lind, the Controlled Clinical Trial, and the Naval Scurvy Protocol
+## Curing Scurvy with the First Controlled Clinical Trial
 
 In the eighteenth century, the greatest maritime killer on Earth was not shipwreck, starvation, enemy cannons, or tropical malaria. It was scurvy. Between 1500 and 1800, scurvy killed more than two million merchant sailors and naval crewmen. Entire fleets put to sea only to be crippled by rotting gums, reopenings of healed bone fractures, lethal hemorrhages, and profound delirium.
 
@@ -135,7 +135,7 @@ Despite the blinding clarity of Lind’s clinical data, the Admiralty bureaucrac
 
 ### Chapter 6
 # The Puerperal Cleansing
-## Ignaz Semmelweis, the Cadaveric Particles, and the Chlorine Basin
+## Saving Mothers with a Basin of Chlorine
 
 In the 1840s, entering the maternity clinic of the Vienna General Hospital was functionally a death sentence. In the First Obstetrical Clinic, where medical students and physicians trained, up to 18 percent of healthy young mothers died within days of childbirth from puerperal sepsis (childbed fever)—a horrific systemic bacterial infection characterized by shivering rigors, high fever, peritonitis, and rotting uterine lochia. In the neighboring Second Clinic, where midwives delivered infants, the mortality rate was less than 3 percent. The disparity was so stark that pregnant women pleaded on their knees in the streets to avoid the First Clinic.
 
@@ -157,7 +157,7 @@ Yet instead of celebrating Semmelweis, the medical establishment responded with 
 
 ### Chapter 7
 # The Curved Cosmos
-## Albert Einstein, Arthur Eddington, and the Eclipse of Gravitational Orthodoxy
+## Bending Starlight During a Solar Eclipse
 
 For two hundred and thirty years, Isaac Newton’s *Principia Mathematica* was the undisputed foundation of physical science. Newton’s inverse-square law of universal gravitation:
 
@@ -183,7 +183,7 @@ Developing the photographic glass plates under tropical humidity, Eddington meas
 
 ### Chapter 8
 # The Continental Drift
-## Alfred Wegener and the Mobile Scaffolding of the Earth
+## The Long Battle to Prove Continents Move
 
 At the dawn of the twentieth century, geology was dominated by the permanence hypothesis. Geologists believed that the continents and ocean basins were permanent, immovable granitic features anchored to the Earth’s mantle since planetary cooling. Paleontologists explaining identical fossil species separated by thousands of miles of Atlantic ocean—such as the Permian freshwater reptile *Mesosaurus* found exclusively in Brazil and South Africa—concocted hypothetical "land bridges" that had supposedly spanned entire oceans and conveniently sunk into the seabed without leaving a trace.
 
@@ -206,7 +206,7 @@ Wegener died in November 1930 during an Arctic storm on the Greenland ice sheet,
 
 ### Chapter 9
 # The Star Graph Arbitrage
-## Fred Smith, the Las Vegas Blackjack Table, and the Birth of Overnight Freight
+## Saving Federal Express at a Las Vegas Blackjack Table
 
 In 1971, twenty-eight-year-old Fred Smith launched Federal Express with $25 million in venture debt and private equity—at the time, the largest venture-funded startup in American corporate history. Smith had identified a fatal structural flaw in commercial aviation: passenger airlines flew belly freight on daytime point-to-point routes between major industrial hubs. If an electronics firm in Rochester needed to send a critical replacement tube to Albuquerque, the package crawled across connecting passenger flights over three days, with planes flying 85 percent empty space on secondary routes.
 
@@ -228,7 +228,7 @@ By mid-1975, the density threshold tipped. As daily volume crossed 20,000 parcel
 
 ### Chapter 10
 # The Gastric Self-Infection
-## Barry Marshall, Robin Warren, and Swallowing Helicobacter Pylori
+## Swallowing Bacteria to Cure Stomach Ulcers
 
 Throughout the twentieth century, medical consensus insisted that peptic ulcers were caused by psychological stress, spicy food, smoking, and excess stomach acid production. The pharmaceutical industry built a multi-billion dollar empire on antacid drugs like Tagamet and Zantac, which offered temporary symptomatic relief but required lifelong patient dependence because ulcers inevitably relapsed once treatment ceased.
 
@@ -250,7 +250,7 @@ Marshall published his self-experimentation in the *Medical Journal of Australia
 
 ### Chapter 11
 # The Messenger Molecule
-## Katalin Karikó, Modified Nucleosides, and the Decades-Long Battle for mRNA
+## Thirty Years of Rejection to Unlock Modified mRNA
 
 In 1989, Hungarian biochemist Katalin Karikó arrived at the University of Pennsylvania with a scientific conviction: synthetic messenger RNA (mRNA) could be transformed into a programmable therapeutic delivery system. Rather than manufacturing complex recombinant proteins in industrial bioreactors, doctors could inject mRNA directly into human cells, instructing the patient's cellular ribosomes to synthesize their own vaccines, enzymes, and therapeutic proteins:
 
@@ -276,7 +276,7 @@ When the COVID-19 pandemic struck in early 2020, Karikó and Weissman's modified
 
 ### Chapter 12
 # The Inverted Rocket
-## The Reusable Orbital Booster and the Industrial Physics of Falcon 9
+## Landing an Orbital Rocket Booster on Its Tail
 
 For the first six decades of the space age, orbital rocketry was governed by expendability. Rocket stages costing upwards of $100 million were launched once, fired their engines for three minutes, and discarded into the ocean to rust or burn up in the upper atmosphere. Aviation pioneers did not discard a Boeing 747 after a single flight from New York to London; yet aerospace monoliths like Boeing, Lockheed Martin, and Roscosmos treated rocket expendability as a physical constant:
 

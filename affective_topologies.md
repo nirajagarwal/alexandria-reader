@@ -1,5 +1,5 @@
 # Affective Topologies
-## The Predictive Processing and Allostatic Manifolds of Human Emotion
+## The Predictive Control Loops of Human Emotion
 
 *Alexandria Press · alexandria.press*
 
@@ -7,7 +7,7 @@
 
 ### Introduction
 # Affective Topologies
-## The Cybernetics of the Feeling Brain
+## How the Brain Predicts What You Feel
 
 Human culture has long inherited a classical, modular taxonomy of emotions. In folk psychology and early natural science alike, emotions were understood as discrete internal states—innate neural circuits triggering autonomic programs such as the visceral freeze of panic, the jaw clench of rage, or the tearful slump of grief. In this classical view, an emotion was treated as an involuntary biological reflex erupting from a subterranean animal core, briefly overwhelming cortical reason.
 
@@ -23,7 +23,7 @@ This volume provides a forensic dissection of twelve foundational affective arch
 
 ### Chapter 1
 # The Prediction Error
-## Interoceptive Surprisal, Free Energy, and the Geometry of Dread
+## Uncertainty, Free Energy, and the Mechanics of Dread
 
 Dread is not the simple anticipation of pain. Pain is an exteroceptive event localized in time and sensory coordinate space; dread is an interoceptive crisis in hierarchical prediction. While acute fear mobilizes immediate motor reflexes to escape an impending physical impact, dread is characterized by a sustained, high-entropy belief state where the brain anticipates a catastrophic allostatic shift whose precise onset parameter remains inaccessible.
 
@@ -45,7 +45,7 @@ As precision weighting escalates, the anterior insular cortex and dorsal anterio
 
 ### Chapter 2
 # The Currency of Expectation
-## Temporal Difference Learning and the Asymmetric Spikes of Joy
+## Reward Prediction Errors and the Spikes of Joy
 
 In colloquial discourse, joy is frequently conflated with sensory pleasure or hedonic saturation. Yet hedonic reward is biochemically distinct from joy; sensory satiety is mediated by localized mu-opioid and cannabinoid receptor fields in the ventral pallidum and nucleus accumbens shell, whereas the dynamic sensation of joy is driven by the derivatives of expectation. Joy is not the arrival at an equilibrium state; it is the unexpected velocity of arrival.
 
@@ -63,7 +63,7 @@ Furthermore, joy exhibits a temporal second derivative: it tracks the rate of re
 
 ### Chapter 3
 # The Sunk Cost of Attachment
-## Grief as the Shattering of a Shared Generative Model
+## What Happens When a Shared World Vanishes
 
 When an individual loses a lifelong partner, parent, or companion, the profound agony of grief is routinely described as an emotional wound. However, a rigorous computational autopsy reveals that grief is fundamentally a catastrophic failure of Bayesian model updating. The human brain does not treat an intimate social companion as an external object; it integrates the other person directly into its own foundational generative model.
 
@@ -85,7 +85,7 @@ Grief is the excruciating computational work of updating these high-precision pr
 
 ### Chapter 4
 # The Allostatic Boundary
-## Disgust, the Behavioral Immune System, and Moral Contagion
+## Gut Defenses and the Spread of Moral Outrage
 
 Among all emotional architectures, disgust possesses the most direct phylogenetic lineage to biological survival. Originating as a chemical sensing reflex designed to prevent the ingestion of bacterial toxins and decaying organic matter, disgust is organized around the bitter-taste rejection circuits of the brainstem and the gustatory insular cortex. It is an allostatic defense perimeter constructed to maintain physical membrane boundaries.
 
@@ -103,7 +103,7 @@ By repurposing mucosal disgust circuits into social policing mechanisms, human t
 
 ### Chapter 5
 # The Hierarchical Ledger
-## Resentment, Envy, and the Asymmetric Game Theory of Status
+## Unpaid Social Debts and the Anatomy of Envy
 
 In social primates, energy and mating opportunities are governed by rank. Rank is not an abstract concept; it is an energetic ledger that determines an organism's survival buffer during seasonal resource scarcity. Resentment and envy are the computational sentinels that monitor this ledger, detecting infractions against cooperative reciprocity and measuring status distance within peer cohorts.
 
@@ -121,7 +121,7 @@ If the social collective fails to redeem this credit—or worse, rewards defecto
 
 ### Chapter 6
 # The Geometry of Sublimity
-## Awe and the Catastrophic Restructuring of Cognitive Schemata
+## What Happens When Reality Overwhelms the Mind
 
 Most emotional experiences confirm or fine-tune an agent's existing mental models. Awe represents the rare topological collapse of those models. In psychological literature, awe is defined by two structural invariants: perceived vastness and the urgent need for accommodation. It is the emotional signature of a cognitive system encountering a phenomenon that shatters its current representational capacity.
 
@@ -137,7 +137,7 @@ This structural reconfiguration produces distinct, measurable physiological sign
 
 ### Chapter 7
 # The Defensive Horizon
-## Chronic Hyperarousal, Threat Over-Fitting, and the Architecture of Paranoia
+## Constant Vigilance and the Trap of Paranoia
 
 Fear in its ancestral form is a transient, life-saving burst of sympathetic energy. The amygdala registers a low-resolution sensory signature of a predator—a slithering curve in the grass, the crack of a branch behind the perimeter—and bypasses the sensory cortex to trigger immediate autonomic mobilization:
 
@@ -159,7 +159,7 @@ Because the cost of failing to detect a predator is lethal, the paranoid system 
 
 ### Chapter 8
 # The Panoptic Mirror
-## Shame, Humiliation, and the Social Allostatic Collapse
+## Social Threat and the Mechanics of Shame
 
 If physical pain protects the integrity of the cellular body, shame protects the organism's inclusion within the reproductive and cooperative tribe. In human evolutionary history, banishment from the clan was functionally synonymous with physical death. An isolated hominid on the Pleistocene savannah could not hunt large game, could not defend against predators, and could not survive injury. Consequently, maintaining social allostatic capital was as critical as maintaining glucose levels.
 
@@ -177,7 +177,7 @@ This somatic collapse is not an accidental side effect; it is an active signalin
 
 ### Chapter 9
 # The Information Vacuum
-## Boredom, Restlessness, and the Search for Environmental Entropy
+## Why Restlessness Forces Us to Explore
 
 Boredom is routinely dismissed as an absence of feeling—a neutral cognitive vacuum. In truth, boredom is an active, highly uncomfortable affective drive designed to enforce the exploration-exploitation tradeoff in foraging animals. A creature that is entirely content in a static, depleted environment will inevitably exhaust its local food patch and starve. Boredom is the evolutionary circuit breaker that prevents cognitive stagnation.
 
@@ -199,7 +199,7 @@ In response to this informational exhaustion, the default mode network and salie
 
 ### Chapter 10
 # The Unattainable Coordinate
-## Saudade, Sehnsucht, and the Asymptotic Mechanics of Yearning
+## Longing for Places and People That Cannot Return
 
 Across disparate languages and cultures, there exist exquisite emotional descriptors that defy direct translation into rudimentary English: the Portuguese *saudade*, the German *Sehnsucht*, the Welsh *hiraeth*, and the Japanese *natsukashii*. While each carries subtle local nuances, they all share an identical topological structure: an intense, melancholic longing for a person, place, or era that is irretrievably lost, perhaps never existed, or is fundamentally unattainable.
 
@@ -217,7 +217,7 @@ Because this idealized state $s^*$ is physically non-existent, the agent's activ
 
 ### Chapter 11
 # The Vicarious Resonance
-## Mudita, Schaudenfreude, and the Zero-Sum Equations of Empathy
+## Why Other People's Fortune Hurts or Heals
 
 Human beings do not experience emotion within isolated solitudes; they exist embedded in dense, recursive social networks where the affective states of peers propagate across mirror-neuron systems and insular networks. The emotional reaction of an individual to the fortune or misfortune of another is governed by whether their relationship is computationally configured as cooperative (positive-sum) or competitive (zero-sum).
 
@@ -237,7 +237,7 @@ Now, any gain secured by the rival represents an implicit status demotion for th
 
 ### Chapter 12
 # The Metacognitive Equilibrium
-## Equanimity, Interoceptive Precision Tuning, and the Serene Mind
+## Keeping Calm Amid Biological Storms
 
 Throughout philosophical history, the pinnacle of human emotional development across both Stoic and Buddhist traditions has been described not as ecstatic euphoria, but as equanimity—*ataraxia*, *upekkha*, the unshakeable stillness of mind amidst environmental turbulence. Modern neurobiology demystifies this ancient ideal, revealing equanimity as the mastery of precision weighting over interoceptive inference.
 

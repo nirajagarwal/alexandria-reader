@@ -1,5 +1,5 @@
 # Architectures of the Grid
-## Physical Topology, Cascading Failure, and the Hidden Wiring of Civilization
+## The Physical Wiring That Keeps Modern Society Running
 
 *Alexandria Press · alexandria.press*
 
@@ -7,7 +7,7 @@
 
 ### Introduction
 # Architectures of the Grid
-## The Physical Constraints of Interconnected Systems
+## Why Physical Networks Break Differently Than Software
 
 Modern commentary discusses networks almost entirely as software abstractions: social graphs, digital protocols, recommendation algorithms, or decentralized ledgers. These digital abstractions create an illusion that networks are weightless, frictionless, and infinitely flexible.
 
@@ -21,7 +21,7 @@ This book investigates twelve physical network architectures across twelve chapt
 
 ### Chapter 1
 # The Frequency Anchor
-## Inertia, Phase Angle, and the Balancing Act of Continental Power Grids
+## Spinning Turbines and the Constant 60 Hz Balance
 
 The electric grid of North America or continental Europe is the largest interconnected machine ever constructed. Across thousands of miles, hundreds of millions of machines, lightbulbs, and factories run on alternating current synchronized to a single rhythm: sixty hertz in North America, fifty hertz in Europe.
 
@@ -43,7 +43,7 @@ This creates a vicious feedback loop. When one power plant trips offline, the su
 
 ### Chapter 2
 # The Girdle of the Deep
-## Iron Wire, Gutta-Percha, and the 1858 Transatlantic Telegraph Cable
+## The First Telegraph Wire Across the Atlantic Floor
 
 Before 1858, news traveled across the Atlantic Ocean at the speed of steamships—roughly ten to fourteen days under favorable winds. In August 1858, British and American engineers completed the first subsea telegraph cable linking Valentia Island in Ireland to Heart's Content in Newfoundland, spanning 3,000 kilometers of the North Atlantic seabed.
 
@@ -61,7 +61,7 @@ Ignoring Thomson’s calculations, the chief electrician Edward Whitehouse belie
 
 ### Chapter 3
 # The Hydraulic Incline
-## Gradient Management and Settling Basins in the Roman Water Network
+## Running Water Over Mountain Slopes by Gravity Alone
 
 The Roman aqueduct system is often remembered for its monumental stone arches. Yet arches represented less than twenty percent of the total network. Over eighty percent of the water conduits ran underground, cut into hillsides or tunneled through rock.
 
@@ -79,7 +79,7 @@ To maintain water purity and protect urban pipes, engineers built settling basin
 
 ### Chapter 4
 # The Rail Synchronization
-## Greenwich Mean Time and the Disappearance of Solar Noon
+## Why Steam Trains Forced Britain to Standardize Time
 
 Until the mid-nineteenth century, time was strictly local. Every town set its clocks to solar noon—the moment the sun crossed the local celestial meridian. Because the Earth rotates at roughly fifteen degrees per hour, solar time differs by one minute for every twelve miles of east-west distance. When it was noon in London, it was 12:05 in Reading, 12:11 in Bristol, and 12:20 in Penzance.
 
@@ -99,7 +99,7 @@ Towns initially protested. Church rectors refused to change church belfries, arg
 
 ### Chapter 5
 # The Nodal Bottleneck
-## Draft Depth, Chokepoints, and the Physical Constraints of Maritime Trade
+## Canals, Shallow Straits, and Global Shipping Chokepoints
 
 Over eighty percent of all physical goods traded globally move on water. Economists frequently treat container shipping as a frictionless fluid moving across open oceans. In reality, maritime trade is constrained by narrow topological funnels and shallow seabed trenches.
 
@@ -123,7 +123,7 @@ Because the global supply chain runs on lean, zero-buffer inventory, this single
 
 ### Chapter 6
 # The Natural Monopoly of the Loop
-## The Local Loop, Gauge Attenuation, and the Physical Economics of Telecom
+## Copper Wires and the Reach of Central Telephone Offices
 
 When Alexander Graham Bell demonstrated the telephone in 1876, early networks consisted of point-to-point wires between individual houses and offices. A physician had a wire to the pharmacy; a merchant had a wire to the warehouse. Within a decade, city streets were blocked by massive wooden poles carrying hundreds of tangled iron wires.
 
@@ -145,7 +145,7 @@ Once the American Telephone and Telegraph Company (AT&T) laid the copper loops a
 
 ### Chapter 7
 # The Pneumatic Tube Network
-## Atmospheric Despatch, Kinetic Sorting, and the Victorian Hyperloop
+## Shooting Letters Through Pressurized Pipes Under City Streets
 
 Decades before digital packets and message queues, nineteenth-century cities faced an information bottleneck: telegrams arrived at central telegraph offices in seconds via electric wire, but delivering those paper messages across city traffic to banks and stock exchanges took hours on foot.
 
@@ -165,7 +165,7 @@ The system was physically reliable, immune to surface weather, and completely pr
 
 ### Chapter 8
 # The Grain Elevator Nexus
-## Buffalo, Bulk Handling, and the Fluidization of Solid Harvests
+## Steam Bucket Elevators and Moving Grain Like Water
 
 Until the 1840s, shipping grain was a slow, manual labor ordeal. Wheat harvested across the Midwestern prairies was bagged into two-bushel burlap sacks, hauled by horse carts, stacked into the holds of canal boats, and unloaded at ports by lines of stevedores carrying sacks on their backs. Unloading a small 2,000-bushel schooner took three full days of intense manual labor.
 
@@ -185,7 +185,7 @@ The Dart elevator cut the cost of unloading grain by more than ninety percent an
 
 ### Chapter 9
 # The Gas Storage Lung
-## Salt Caverns, Linepack, and the Cushion Gas of Pipeline Grids
+## Pipeline Pressure and Storing Winter Gas in Salt Caverns
 
 When consumers turn on a gas stove or fire up a gas turbine peaker plant during a cold winter night, gas flows instantly. Most people assume that gas flows directly from drilling wells in Texas or the North Sea to their kitchen burner.
 
@@ -211,7 +211,7 @@ Cushion gas maintains the mechanical pressure required to prevent the subterrane
 
 ### Chapter 10
 # The Fiber Transponder Grid
-## Optical Amplification, Chromatic Dispersion, and the Undersea Spine
+## Laser Light and Rare-Earth Amplifiers in Ocean Cables
 
 Ninety-nine percent of all international internet traffic does not travel through communication satellites; it travels through undersea fiber-optic cables laid along the ocean floor. These cables are no thicker than a garden hose, containing four to sixteen pairs of hair-thin glass fiber strands.
 
@@ -231,7 +231,7 @@ Furthermore, because different wavelengths of light travel through glass at slig
 
 ### Chapter 11
 # The Aquifer Recharge Network
-## Managed Aquifer Recharge, Hydraulic Head, and the Underbelly of Water Security
+## Storing Drought Water in Sand and Gravel Underground
 
 In arid agricultural regions like California's Central Valley or the North China Plain, surface water from rivers is seasonal and erratic. For a century, industrial farming expanded by drilling deep wells and pumping ancient groundwater faster than natural rainfall could replenish it.
 
@@ -251,7 +251,7 @@ Once underground, the water is naturally filtered by sediment layers, protected 
 
 ### Chapter 12
 # The Siphon and the Surge Tank
-## Water Hammer, Elastic Waves, and Shock Absorption in Hydroelectric Pens
+## Controlling Water Hammer Shock Waves in Mountain Pipes
 
 In high-head hydroelectric power stations, water drops from mountain reservoirs through steep steel pipes called penstocks to spin high-velocity Pelton wheels or Francis turbines at the valley floor. The vertical drop can exceed one thousand meters, generating hydrostatic pressures over one hundred atmospheres:
 

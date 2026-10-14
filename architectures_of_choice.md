@@ -1,5 +1,5 @@
 # Architectures of Choice
-## Non-Ergodic Decision Theory and the Strategic Mathematics of Survival
+## Practical Decision Theory for an Unpredictable World
 
 *Alexandria Press · alexandria.press*
 
@@ -7,7 +7,7 @@
 
 ### Introduction
 # Architectures of Choice
-## The Physics of Irreversible Commitments
+## How to Make Irreversible Choices
 
 Conventional decision theory, formulated in economics departments and business schools throughout the twentieth century, rests on a foundational mathematical error: the confusion of ensemble averages with time averages. Classic expected value theory assumes that an individual facing a sequence of high-stakes gambles will experience the statistical average of an infinite collection of parallel universes. Under this ergodic assumption, calculated risk is treated as a linear optimization problem, and catastrophic downside is dismissed as an acceptable statistical variance.
 
@@ -23,7 +23,7 @@ This treatise deconstructs the architecture of choice across twelve foundational
 
 ### Chapter 1
 # The Absorbing Barrier
-## Non-Ergodicity, Multiplicative Compounding, and the Primacy of Survival
+## Why Staying in the Game Beats High Returns
 
 The fundamental axiom of classical economics states that a rational agent should maximize expected utility:
 
@@ -51,7 +51,7 @@ The presence of ruin represents an absorbing barrier—a state that irreversibly
 
 ### Chapter 2
 # The Kelly Frontier
-## Optimal Capital Allocation and the Logarithmic Geometry of Sizing
+## How Much to Bet When You Have an Edge
 
 Even when a decision-maker identifies a genuine structural edge in the environment, the mechanics of capital sizing determine whether that edge leads to exponential accumulation or liquidation. The problem of optimal bet sizing under uncertainty was resolved mathematically in 1956 by John Larry Kelly Jr. at Bell Laboratories, deriving the allocation rule from Claude Shannon’s information theory.
 
@@ -75,7 +75,7 @@ Fractional sizing sacrifices only 25 percent of the theoretical peak growth rate
 
 ### Chapter 3
 # The Asymmetric Convexity
-## Optionality, Jensen's Inequality, and Antifragility Under Uncertainty
+## How to Benefit from Unexpected Volatility
 
 In environments governed by high volatility and unknowable futures, predictive forecasting is a fragile strategy. Prediction assumes that the distribution of future outcomes can be modeled from historical samples. An alternative and superior strategic posture is optionality—the exploitation of asymmetric payoff functions where upside is unbounded while downside is strictly capped.
 
@@ -93,7 +93,7 @@ Strategic wisdom consists of systematically pruning concave exposures while accu
 
 ### Chapter 4
 # The Reversibility Calculus
-## Type One and Type Two Decisions and the Option Value of Waiting
+## Reversible Choices and One-Way Doors
 
 Not all commitments are created equal. Organizations frequently paralyze themselves by treating trivial, reversible actions with the bureaucratic scrutiny reserved for existential ruptures, or conversely, sleepwalk into irreversible traps through casual execution. The reversibility calculus categorizes choices by their topological exit costs.
 
@@ -119,7 +119,7 @@ Strategic mastery requires cultivating an organizational immune system that acce
 
 ### Chapter 5
 # The Inversion Protocol
-## Negative Problem Solving and the Structural Elimination of Failure
+## Solving Hard Problems by Removing Causes of Ruin
 
 Human cognition suffers from a systemic positive bias: when confronted with a complex objective, the mind instinctively asks, *What actions should I take to achieve success?* This additive framing exposes the agent to cognitive biases, narrative fallacies, and hubristic overconfidence. The inversion protocol replaces additive optimism with rigorous elimination: *What specific mechanisms guarantee catastrophe, and how do we engineer their absolute prevention?*
 
@@ -139,7 +139,7 @@ By projecting the mind past the psychological barrier of commitment, the pre-mor
 
 ### Chapter 6
 # The Regret Horizon
-## Counterfactual Simulation and Hyperbolic Temporal Discounting
+## Looking Back from Eighty to Beat Short-Term Bias
 
 When human beings make decisions spanning decades, classical discounted cash flow models fail because biological nervous systems do not discount the future exponentially; they discount hyperbolically:
 
@@ -159,7 +159,7 @@ Empirical psychological research across terminal cancer wards and elderly cohort
 
 ### Chapter 7
 # The Adversarial Red Team
-## Epistemic Immunization, Institutional Groupthink, and Counter-Modeling
+## Stress-Testing Plans Against Real Adversaries
 
 Every successful institution carries the seeds of its own blind spots. As an organization scales, it constructs a shared narrative model of reality that rewarded its early growth. Over time, social selection mechanisms reward conformity and punish internal skepticism. Dissenters are subtly marginalized, and the executive suite becomes trapped inside an echo chamber of confirmation bias.
 
@@ -178,7 +178,7 @@ A critical variant is the dialectical steel-man protocol. In typical corporate d
 
 ### Chapter 8
 # The Kill Criteria
-## Sunk Cost Entrapment, Prospect Theory, and the Automated Circuit Breaker
+## Setting Clear Exit Rules Before You Start
 
 Among all psychological failure modes that derail capital allocation, the sunk cost fallacy is the most pervasive. In classical economic theory, past expenditures that cannot be recovered are irrelevant to future decisions; only forward-looking marginal costs and marginal revenues should govern choice:
 
@@ -202,7 +202,7 @@ Crucially, the authority to execute the kill criteria must not reside with the p
 
 ### Chapter 9
 # The Information Horizon
-## The Exploration-Exploitation Dilemma and the Gittins Index
+## When to Exploit What Works and When to Explore
 
 Every autonomous agent—from a foraging insect navigating floral patches to a venture firm allocating a multi-billion dollar fund—faces a fundamental trade-off: should it exploit known, high-yielding opportunities, or should it explore unknown options that might offer vastly superior returns?
 
@@ -224,7 +224,7 @@ A high-variance option with unknown payoffs has positive value simply because tr
 
 ### Chapter 10
 # The Epistemic Boundary
-## The 10/10/10 Protocol and Multi-Scale Temporal Anchoring
+## Looking Ahead Ten Minutes, Ten Months, and Ten Years
 
 Human perception is trapped inside the immediate sensory now. The emotional intensity of a crisis, an insult, or a high-stakes negotiation triggers autonomic arousal that narrows attentional bandwidth, forcing decision-making into an urgent, short-term survival mode. In this hyper-aroused state, the prefrontal cortex suffers transient hypofrontality, subordinating long-term strategic coherence to immediate tension reduction.
 
@@ -243,7 +243,7 @@ Multi-scale anchoring prevents the agent from sacrificing a 10-year strategic po
 
 ### Chapter 11
 # The Second-Order Ripple
-## Feedback Loops, Unintended Consequences, and Dynamic Equilibrium
+## How Systems Push Back Against Obvious Fixes
 
 Amateurs evaluate decisions by their first-order consequences: *If I execute policy A, immediate benefit B occurs.* Advanced systems strategists recognize that in dense, interconnected networks, first-order effects are merely the initial catalyst in a cascading chain of non-linear feedback loops.
 
@@ -264,7 +264,7 @@ Complex systems are governed by Le Chatelier’s principle from physical chemist
 
 ### Chapter 12
 # The Decision Journal
-## Calibration, Retrospective Hindsight Bias, and Epistemic Ledgering
+## Tracking Past Decisions to Stop Fooling Yourself
 
 The greatest barrier to institutional learning is hindsight bias. Once an outcome has occurred, the human brain rewrites its episodic memory, manufacturing a false narrative that the outcome was predictable all along (*I knew it was going to fail*). Conversely, when an irresponsible gamble yields an accidental windfall due to stochastic noise, the brain attributes the victory to visionary intellect.
 

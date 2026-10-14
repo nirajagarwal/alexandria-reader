@@ -1,5 +1,5 @@
 # Singular Minds
-## Forensic Dissections of Anomalous Cognitive Architectures
+## How Exceptional Thinkers Solved Impossible Problems
 
 *Alexandria Press · alexandria.press*
 
@@ -35,7 +35,7 @@ Grothendieck did not attack the Weil conjectures directly. Instead, he spent twe
 
 This cognitive architecture corresponds directly to low Reynolds number creeping flow (Stokes flow) in viscous fluid dynamics:
 
-Re = (ρ * u * L) / μ << 1
+$$Re = (ρ * u * L) / μ << 1$$
 
 In a high Reynolds number regime, fluid motion is governed by inertia, kinetic turbulence, and sudden impacts. In a creeping Stokes flow regime, inertial forces are negligible compared to viscous forces. When a fluid with high viscosity envelops a solid body, shear stresses transfer momentum symmetrically across every boundary layer without forming shocks or turbulent eddies. The fluid does not bash the obstacle; it envelops it so completely that the solid object becomes a continuous boundary condition within the fluid's velocity field. Grothendieck submerged arithmetic problems inside categorical abstractions so vast that when the Weil conjectures were finally addressed, the solution was not a technical trick, but a trivial consequence of the surrounding landscape.
 
@@ -59,17 +59,17 @@ Shannon’s cognitive breakthrough was to perform a radical abstraction: he divo
 
 Shannon formalized the entropy of a discrete random variable X with possible outcomes x_1, ..., x_n as:
 
-H(X) = - ∑ P(x_i) * log_2 P(x_i)
+$$H(X) = - ∑ P(x_i) * log_2 P(x_i)$$
 
 This equation corresponds directly to Ludwig Boltzmann’s 1877 formulation of thermodynamic entropy in statistical mechanics:
 
-S = k_B * ln W
+$$S = k_B * ln W$$
 
 Shannon discovered that information is the mathematical mirror image of physical entropy. In thermodynamics, entropy measures the degree of microstate disorder in a gas. In communication theory, entropy measures the surprise, or unpredictability, of a message source. If a source transmits symbols with complete predictability (such as the letter 'u' following 'q' in English text), the informational entropy of that symbol is zero. By identifying the statistical redundancy inherent in human language, Shannon proved that messages could be compressed to their fundamental entropy limit without losing a single bit of fidelity.
 
 Even more radical was Shannon’s Noisy-Channel Coding Theorem. Shannon proved that every physical communication channel possesses a finite mathematical capacity, C:
 
-C = B * log_2 (1 + S / N)
+$$C = B * log_2 (1 + S / N)$$
 
 Where B represents channel bandwidth, S represents signal power, and N represents noise power. Traditional engineers assumed that as transmission rate R approached channel capacity C, the error rate would inevitably increase. Shannon proved mathematically that so long as R < C, there exists an error-correcting coding scheme that allows information to be transmitted across the noisy channel with an arbitrarily small probability of error. Noise did not enforce an inevitable loss of clarity; it merely placed a hard ceiling on transmission velocity.
 
@@ -117,7 +117,7 @@ On the afternoon of September 18, 1783, seventy-six-year-old Leonhard Euler sat 
 
 Euler was the most prolific mathematician in human history. Over his lifespan, he published 866 books and scientific memoirs, comprising roughly one-third of the entire body of mathematical, physical, and engineering research published in Europe between 1726 and 1800. His collected works, the *Opera Omnia*, span more than eighty large quarto volumes. During his career, Euler standardized modern mathematical notation: he popularized the use of π for the circumference-to-diameter ratio, introduced e for the base of the natural logarithm, i for the imaginary unit √(-1), Σ for summation, and f(x) for functional notation. He unified analysis, mechanics, and geometry, famously linking the five fundamental constants of mathematics in a single identity:
 
-e^(i * π) + 1 = 0
+$$e^(i * π) + 1 = 0$$
 
 Euler’s sensory loss occurred in two distinct stages. In 1735, while working at the Saint Petersburg Academy of Sciences, he threw himself into solving a complex astronomical cartography problem that the Academy had budgeted several months to resolve. Euler solved it in three days, but suffered a severe fever that resulted in the complete loss of vision in his right eye. In 1766, a cataract developed in his remaining left eye, reducing his vision to faint shadows and, following a botched surgical attempt to clear the lens in 1771, total blindness.
 
@@ -175,7 +175,7 @@ In the early 1960s, working in secret late at night at Eglin Air Force Base in F
 
 Boyd proved that static top speed was irrelevant in real combat. Aerial maneuvering requires shedding and gaining kinetic energy (velocity) and potential energy (altitude) while pulling high-g turns. Boyd derived the specific excess power equation:
 
-P_s = V * ((T - D) / W)
+$$P_s = V * ((T - D) / W)$$
 
 Where V represents airspeed velocity, T represents engine thrust, D represents aerodynamic drag, and W represents aircraft weight. Specific excess power (P_s), measured in feet per second, calculates an aircraft's rate of change of total energy. When P_s > 0, an aircraft can climb, accelerate, or maintain velocity in a turn. When P_s < 0, the aircraft is bleeding energy, decelerating toward an aerodynamic stall.
 
@@ -211,7 +211,7 @@ Unlike modern academics who specialize in a single subfield, Young’s cognitive
 
 In structural mechanics, Young analyzed the elastic deformation of materials under tensile stress, establishing the universal constant known as Young’s Modulus (E):
 
-E = σ / ε = (F / A) / (ΔL / L_0)
+$$E = σ / ε = (F / A) / (ΔL / L_0)$$
 
 Where σ represents tensile stress (force per unit area) and ε represents extensional strain (fractional deformation). Young's modulus unified civil engineering, metallurgy, and material science, allowing architects and engineers to calculate the stiffness and load limits of iron beams, bridges, and cables before construction began.
 
@@ -239,7 +239,7 @@ Before Gibbs, thermodynamics was a fragmented, empirical science limited to the 
 
 Gibbs unified physics and chemistry by introducing the concept of the chemical potential (μ) and defining the fundamental thermodynamic potentials. He recognized that systems at constant temperature and pressure do not seek maximum energy; they seek minimum thermodynamic free energy. He defined what is now universally termed the Gibbs Free Energy (G):
 
-G = H - T * S = U + P * V - T * S
+$$G = H - T * S = U + P * V - T * S$$
 
 Where H represents enthalpy, T represents absolute temperature, S represents entropy, U represents internal energy, P represents pressure, and V represents volume. Gibbs proved that a physical or chemical process can occur spontaneously at constant temperature and pressure if and only if the change in Gibbs free energy is negative:
 
@@ -249,7 +249,7 @@ When ΔG = 0, the system has reached chemical equilibrium. In a single stroke, G
 
 Gibbs then derived the Phase Rule, which governs the degrees of freedom (F) in any multi-phase, multi-component thermodynamic system at equilibrium:
 
-F = C - P + 2
+$$F = C - P + 2$$
 
 Where C represents the number of independent chemical components and P represents the number of coexisting physical phases (solid, liquid, gas). The phase rule allowed scientists to construct rigorous phase diagrams without needing to understand the microscopic atomic forces between molecules.
 

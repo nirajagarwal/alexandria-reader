@@ -1,5 +1,5 @@
 # Radical Subtraction
-## The Neuroscience and Information Theory of the Silent Contemplatives
+## Sensory Isolation and the Quiet Mind
 
 *Alexandria Press · alexandria.press*
 
@@ -7,7 +7,7 @@
 
 ### Introduction
 # Radical Subtraction
-## The Information Theory of Contemplative Neuroscience
+## What Happens When All Input Stops
 
 Most historical accounts of religious mysticism focus on theological disputes, ecclesiastical politics, or emotional devotionalism. These treatments treat monastic asceticism as a curious psychological aberration—a medieval obsession with physical self-punishment or an escape from societal trauma.
 
@@ -33,7 +33,7 @@ Every Friday evening, the friars led John to the refectory. He knelt on the cold
 
 In Claude Shannon’s mathematical theory of communication, channel capacity is determined by the signal-to-noise ratio:
 
-C = B * log_2 (1 + S / N)
+$$C = B * log_2 (1 + S / N)$$
 
 Human consciousness functions as an information channel saturated by high-amplitude noise: physical comfort-seeking, language, social rivalries, and fear. If transcendent reality is subtle and low-amplitude, it is drowned out by the noise floor (N). Most spiritual systems attempt to reach awareness by amplifying the signal (S) through sensory grandeur, cathedral architecture, music, and ritual, frequently driving the sensory channel into overload. John’s doctrine of *nada* (nothingness) operated exclusively on the denominator. By systematically driving noise down toward zero (N → 0), subtle invariants that are completely imperceptible in normal life became glaringly audible.
 
@@ -61,7 +61,7 @@ Julian’s core insight is summarized in her meditation on scale invariance:
 
 This observation corresponds to scale invariance and self-similarity in fractal geometry:
 
-f(λ * x) = λ^Δ * f(x)
+$$f(λ * x) = λ^Δ * f(x)$$
 
 Where a system’s structural properties remain constant under arbitrary transformations of scale (λ). In Julian’s vision, the cosmic order does not depend on physical volume. The macroscopic universe spanning stars and empires possesses no more ontological weight than a tiny hazelnut sitting in the palm of a hand. Both are finite, both are fragile, and both are held in existence by the same underlying law.
 
@@ -106,7 +106,7 @@ Living on a six-foot platform sixty feet in the air represented an extreme biolo
 
 This radical isolation operates on the psychophysics of sensory adaptation and the Weber-Fechner Law:
 
-ΔI / I = k
+$$ΔI / I = k$$
 
 Where the perceived change in a sensory stimulus (ΔI) is proportional to the baseline background stimulus intensity (I). In human urban environments, consciousness is battered by a relentless sensory signal: social conversations, architectural walls, artificial smells, and shifting interpersonal interactions. By elevating himself sixty feet into the empty desert sky, Simeon removed horizontal sensory complexity entirely. His sensory field was reduced to unchanging environmental constants: the movement of the sun, the wind over limestone, the stars across the Syrian sky, and the horizon.
 

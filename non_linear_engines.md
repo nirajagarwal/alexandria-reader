@@ -1,5 +1,5 @@
 # Non-Linear Engines
-## Structural Mechanics of Asymmetric Enterprise Creation
+## How Unusual Startups Escape Early Failure
 
 *Alexandria Press · alexandria.press*
 
@@ -7,7 +7,7 @@
 
 ### Introduction
 # Non-Linear Engines
-## The Structural Physics of Company Creation
+## The Physics of Company Creation
 
 Most commentary on startups focuses on mythology: visionary founders, relentless work hours, charismatic pitching, or stroke-of-luck timing. These stories make for entertaining biographies, but they obscure the underlying mechanics of how anomalous companies actually work.
 
@@ -27,13 +27,13 @@ At 11:30 PM on Tuesday, April 17, 1973, fourteen modified Dassault Falcon 20 twi
 
 The economics of conventional air freight were dictated by point-to-point routing. In a transportation network connecting N independent cities, direct bi-directional routing requires dedicated flight paths that scale quadratically according to the handshake formula:
 
-E = N(N - 1) / 2
+$$E = N(N - 1) / 2$$
 
 For a modest network of 25 metropolitan areas, serving every node directly requires 300 discrete flight paths. In 1971, commercial airlines carried belly cargo on scheduled daytime passenger flights between major industrial hubs. If an electronics manufacturer in Rochester, New York, needed to send a critical vacuum tube to a defense contractor in Albuquerque, New Mexico, the package was loaded onto a passenger flight to Chicago, transferred across airline baggage handlers, and reloaded onto a connecting flight the following afternoon. If the package missed the connection, transit stretched to seventy-two hours. Furthermore, freight volume between Rochester and Albuquerque on any given Tuesday was insufficient to fill an aircraft cargo bay. Point-to-point cargo planes on secondary routes routinely flew with 85 percent empty space, making dedicated overnight air freight economically impossible.
 
 Fred Smith’s insight was to discard point-to-point transportation and restructure national package delivery as a centralized star graph. In a star graph topology, N peripheral nodes connect exclusively to a single central hub node through radial edges. The number of required routes drops from quadratic complexity to strictly linear scaling:
 
-E = N
+$$E = N$$
 
 By routing all aircraft from twenty-five origin cities into a single coordinating node in Memphis, the total number of flight routes fell from 300 to exactly 25. The geographical location of Memphis was chosen with geometric precision: situated near the mean population center of the United States, with mild winter weather that kept runways free of ice when northern airports closed, and an airport authority willing to lease unused hangars and grant open runway access between midnight and 4:00 AM. Every aircraft departed its origin city at 10:00 PM, arrived in Memphis between midnight and 1:30 AM, unloaded its containers into a central 12,000-square-foot sorting carousel, reloaded sorted packages bound for its home market, and took off by 3:30 AM to deliver packages before 10:30 AM.
 
@@ -95,7 +95,7 @@ Even more devastating to his competitors was the mechanism known as the "drawbac
 
 This arrangement mirrors the mathematical dynamics of preferential attachment in scale-free networks, as described by the Barabási-Albert model, combined with an autocatalytic chemical reaction. In a preferential attachment regime, the probability of a node acquiring new resources is proportional to its existing scale:
 
-Π(k_i) = k_i / ∑ k_j
+$$Π(k_i) = k_i / ∑ k_j$$
 
 The drawback functioned as an artificial feedback loop: every barrel of kerosene shipped by an independent competitor drained the competitor's working capital while directly funding Standard Oil’s cash reserves. Competitors were effectively subsidizing Rockefeller's expansion every time they moved product to market. As Standard Oil’s volume grew, its rail leverage expanded, widening the freight rebate spread and driving independent refiners further into operating losses.
 
@@ -127,7 +127,7 @@ This growth loop mirrors mutualistic endosymbiosis and viral transmission dynami
 
 The viral reproduction rate of the referral program exceeded the critical epidemiological threshold:
 
-K = i * c > 1.0
+$$K = i * c > 1.0$$
 
 Where i represents the number of invitations sent per infected host, and c represents the conversion rate of recipient signups. Between December 1999 and April 2000, PayPal’s user base exploded from 12,000 accounts to one million. By October 2000, the user count reached five million, with eBay transactions accounting for over 70 percent of total volume. To streamline adoption, PayPal developed a software bot that scraped eBay auctions, identified winning bids where PayPal was not offered, and automatically generated HTML snippets for sellers to paste "Pay with PayPal" buttons directly into their item listings.
 
@@ -311,7 +311,7 @@ Amazon built a digital database listing 1.5 million titles—ten times more than
 
 This arrangement created a negative cash conversion cycle (CCC), calculated as:
 
-CCC = DSO + DIO - DPO
+$$CCC = DSO + DIO - DPO$$
 
 Where DSO represents days sales outstanding, DIO represents days inventory outstanding, and DPO represents days payable outstanding. For Amazon, days sales outstanding was roughly one day, as credit cards cleared immediately. Days inventory outstanding was two to three days, as books arrived from Ingram and were shipped within hours. Meanwhile, Amazon negotiated standard trade payment terms with book distributors, paying for inventory on thirty- to ninety-day credit terms.
 
@@ -367,11 +367,11 @@ UberCab bypassed the medallion dispatch system by turning passenger smartphone G
 
 The physics of an on-demand spatial dispatch network can be modeled as a two-dimensional Poisson point process. When a fleet of active vehicles (N) is distributed across an urban geography of area A, the average density of available vehicles is:
 
-D = N / A
+$$D = N / A$$
 
 Assuming vehicles are distributed roughly uniformly across space, the expected straight-line distance (r) from a random passenger location to the nearest available driver corresponds to the nearest-neighbor distribution in spatial statistics:
 
-E[r] = 1 / (2 * √D)
+$$E[r] = 1 / (2 * √D)$$
 
 The estimated time of arrival (ETA) for a passenger is directly proportional to this spatial distance divided by the average urban traffic velocity (v):
 

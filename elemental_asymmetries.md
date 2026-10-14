@@ -35,7 +35,7 @@ $N_2(g) + 3 H_2(g) \rightleftharpoons 2 NH_3(g) \quad (\Delta H^\circ = -92.4 \t
 
 Under Le Chatelier's principle, because the forward reaction converts four moles of gas into two moles, increasing pressure shifts the equilibrium toward ammonia:
 
-K_p = \frac{(P_{NH_3})^2}{(P_{N_2}) \cdot (P_{H_2})^3}
+$$K_p = \frac{(P_{NH_3})^2}{(P_{N_2}) \cdot (P_{H_2})^3}$$
 
 However, because the reaction is exothermic ($\Delta H^\circ < 0$), raising the temperature shifts the equilibrium backward toward the reactants. At room temperature, the thermodynamic equilibrium favors ammonia, but the reaction rate is zero because molecules lack the kinetic energy to surmount the 945 kJ/mol dissociation barrier. At high temperature, the reaction proceeds rapidly, but the equilibrium yield drops to fractions of a percent.
 
@@ -55,7 +55,7 @@ In the autumn of 1959, at Fairchild Semiconductor in Mountain View, California, 
 
 Silicon possessed an optimal bandgap for room-temperature electronics:
 
-E_g = 1.12 \text{ eV}
+$$E_g = 1.12 \text{ eV}$$
 
 At 1.12 eV, silicon remains an insulator at normal environmental temperatures, displaying negligible thermal carrier leakage. However, silicon melts at a refractory 1,414°C, forms aggressive liquid alloys with crucible materials, and oxidizes violently. To function as a semiconductor, raw metallurgical-grade silicon (ninety-eight percent pure) had to be refined to eleven nines—99.999999999 percent purity—containing fewer than one impurity atom per ten billion silicon atoms.
 
@@ -75,7 +75,7 @@ E_{breakdown} \approx 10^7 \text{ V/cm}
 
 Hoerni realized that this oxide layer could serve simultaneously as an electrical insulator and a chemical diffusion mask. By coating the oxide with photosensitive emulsion (photoresist), exposing it to ultraviolet light through a photographic negative, and etching microscopic windows with hydrofluoric acid, dopant atoms (boron for p-type, phosphorus for n-type) could be diffused into precise geometries:
 
-J_dopant = - D \cdot \frac{\partial C}{\partial x}
+$$J_dopant = - D \cdot \frac{\partial C}{\partial x}$$
 
 Because the silicon dioxide layer protects the delicate p-n junction edges beneath the surface from dust, humidity, and contamination, the transistor never degrades. Months later, Robert Noyce deposited aluminum strips over the oxide to connect multiple planar transistors on the same silicon die, inventing the monolithic integrated circuit. Silicon's unique pairing of an ideal 1.12 eV bandgap with a native self-passivating glass oxide made it the single elemental medium upon which all modern computation, telecommunications, and digital surveillance are etched.
 
@@ -93,15 +93,15 @@ These dendrites grew across the organic liquid electrolyte, short-circuited the 
 
 Goodenough recognized that the solution lay in thermodynamics. Lithium sits in the upper left corner of the periodic table, element number three, with an atomic mass of only 6.94 grams per mole. Possessing a single 2s valence electron outside a stable helium shell, lithium has the lowest standard reduction potential of any chemical element:
 
-E^\circ(\text{Li}^+ / \text{Li}) = -3.04 \text{ V} \quad (\text{relative to SHE})
+$$E^\circ(\text{Li}^+ / \text{Li}) = -3.04 \text{ V} \quad (\text{relative to SHE})$$
 
 This massive electronegative delta yields the highest possible theoretical cell voltage and gravimetric charge capacity:
 
-Q_{theoretical} = \frac{F}{M} = \frac{96,485 \text{ C/mol}}{6.94 \text{ g/mol}} = 3,861 \text{ mAh/g}
+$$Q_{theoretical} = \frac{F}{M} = \frac{96,485 \text{ C/mol}}{6.94 \text{ g/mol}} = 3,861 \text{ mAh/g}$$
 
 Whittingham's $TiS_2$ cathode operated at 2.2 volts against lithium. Goodenough reasoned that an oxide cathode, with its smaller, highly electronegative oxygen anions ($O^{2-}$), would pull the cathode energy level significantly lower, dramatically expanding the open-circuit voltage:
 
-V_{oc} = \frac{\mu_{Li}^{anode} - \mu_{Li}^{cathode}}{e}
+$$V_{oc} = \frac{\mu_{Li}^{anode} - \mu_{Li}^{cathode}}{e}$$
 
 Goodenough synthesized lithium cobalt oxide ($LiCoO_2$), a layered rock-salt framework where sheets of edge-sharing $CoO_6$ octahedra alternate with layers of lithium ions. Goodenough's cathode permitted reversible topotactic electrochemical intercalation:
 
@@ -133,13 +133,13 @@ In the autumn of 1944, in the Appalachian ridges of eastern Tennessee, the Manha
 
 When Otto Hahn and Fritz Strassmann discovered nuclear fission in Berlin in December 1938, and Lise Meitner and Otto Frisch formulated the physical explanation in Sweden, they recognized that a uranium nucleus struck by a neutron could split into two lighter nuclei, releasing millions of times more energy per reaction than any chemical combustion:
 
-E = \Delta m \cdot c^2 \approx 200 \text{ MeV per fission}
+$$E = \Delta m \cdot c^2 \approx 200 \text{ MeV per fission}$$
 
 Natural uranium consists of 99.28 percent uranium-238 and only 0.72 percent uranium-235. In early 1939, Niels Bohr made an astonishing theoretical deduction based on his liquid drop model of the nucleus. He proved that uranium-238 would not sustain a chain reaction with slow neutrons; the fissile isotope was exclusively the rare, scarce uranium-235.
 
 The mechanism rests on nuclear spin and pairing energy. The uranium-235 nucleus contains 92 protons and 143 neutrons—an even-odd configuration. When it absorbs a thermal neutron, it becomes uranium-236, an even-even nucleus. The addition of the odd neutron releases an extra pairing energy contribution described by the semi-empirical Bethe-Weizsäcker mass formula:
 
-\delta(A, Z) = + \frac{a_p}{\sqrt{A}}
+$$\delta(A, Z) = + \frac{a_p}{\sqrt{A}}$$
 
 This pairing energy gives the compound nucleus approximately 6.5 MeV of internal excitation energy. Because the critical barrier height for fission in uranium is only 5.3 MeV, even a zero-energy thermal neutron ($E \approx 0.025 \text{ eV}$) causes the compound nucleus to deform, pass its saddle point, and undergo fission:
 
@@ -151,7 +151,7 @@ Conversely, uranium-238 contains 146 neutrons—an even-even nucleus. Absorbing 
 
 To produce a chain reaction where each fission event produces more than one secondary neutron ($k_{eff} > 1$), natural uranium must either be enriched in uranium-235 or moderated in pure heavy water or graphite. Because the chemical properties of uranium-235 and uranium-238 are identical, separation can exploit only the three-neutron mass delta. Under Graham's law of effusion, the separation factor for gaseous uranium hexafluoride ($UF_6$) through porous nickel barriers is strictly limited by the square root of the molecular weight ratio:
 
-\alpha = \sqrt{ \frac{M(^{238}\text{UF}_6)}{M(^{235}\text{UF}_6)} } = \sqrt{ \frac{352}{349} } \approx 1.00429
+$$\alpha = \sqrt{ \frac{M(^{238}\text{UF}_6)}{M(^{235}\text{UF}_6)} } = \sqrt{ \frac{352}{349} } \approx 1.00429$$
 
 A single gas-diffusion stage enriches the stream by only 0.43 percent. Enriching uranium from 0.7 percent up to weapons-grade ninety percent requires cascading thousands of successive porous barriers across acres of floor space in the K-25 plant. Niels Bohr demonstrated that the geopolitics of the Cold War and the existential fragility of modern statecraft were decided by a subtle 0.7 MeV quantum pairing term in the nuclear shell structure of 143 neutrons.
 
@@ -167,7 +167,7 @@ Sagawa set out to replace cobalt with abundant, cheap iron. However, iron-rich b
 
 The magnetic performance of a permanent magnet is measured by its maximum energy product ($(BH)_{max}$), the maximum magnetic energy density stored within the material:
 
-(BH)_{max} = \frac{1}{2} \cdot B_r \cdot H_c
+$$(BH)_{max} = \frac{1}{2} \cdot B_r \cdot H_c$$
 
 Where $B_r$ is remanent magnetization (flux density at zero field) and $H_c$ is coercivity (resistance to demagnetization). Neodymium ($Nd$, element number 60) possesses four unpaired electrons in its 4f subshell:
 
@@ -175,11 +175,11 @@ Where $B_r$ is remanent magnetization (flux density at zero field) and $H_c$ is 
 
 In transition metals like iron, the 3d valence electrons sit on the outer periphery of the atom, where strong electrostatic crystal fields from neighboring atoms quench their orbital angular momentum ($L \approx 0$). In neodymium, the 4f electrons reside deep within the interior of the electron cloud, shielded from external electrostatic disruption by the full 5s and 5p shells. Consequently, the orbital angular momentum of neodymium remains completely unquenched ($L = 6$), coupling strongly to its spin angular momentum ($S = 2$) via relativistic spin-orbit interaction:
 
-H_{so} = \lambda \cdot (L \cdot S)
+$$H_{so} = \lambda \cdot (L \cdot S)$$
 
 Sagawa's $Nd_2Fe_{14}B$ crystal adopts a complex tetragonal unit cell containing sixty-eight atoms. The boron atoms act as structural spacers that force the iron atoms into a planar network, while the neodymium ions occupy asymmetric crystallographic sites. Because the 4f electron cloud of the neodymium ion is non-spherical (oblate), it aligns along the c-axis of the tetragonal crystal, generating an immense uniaxial magnetocrystalline anisotropy field:
 
-H_A = \frac{2 \cdot K_1}{M_s} \approx 7.3 \text{ Tesla}
+$$H_A = \frac{2 \cdot K_1}{M_s} \approx 7.3 \text{ Tesla}$$
 
 The energy required to rotate the magnetic vector away from the c-axis is extraordinarily high ($K_1 \approx 4.9 \text{ MJ/m}^3$). When combined with the high saturation magnetization of the fourteen iron atoms per formula unit, $Nd_2Fe_{14}B$ produced an energy product exceeding fifty mega-gauss-oersteds (MGOe)—quadruple the performance of traditional ferrite magnets.
 
@@ -195,7 +195,7 @@ In November 1937, at the Royal Society Mond Laboratory in Cambridge, Canadian ph
 
 Allen and Misener constructed an experimental glass cryostat containing an ultra-narrow capillary tube measuring only a few micrometers in diameter. Under classical fluid mechanics, the volumetric flow rate of a liquid through a cylindrical pipe is governed by the Hagen-Poiseuille equation:
 
-\dot{V} = \frac{\pi \cdot r^4 \cdot \Delta P}{8 \cdot \eta \cdot L}
+$$\dot{V} = \frac{\pi \cdot r^4 \cdot \Delta P}{8 \cdot \eta \cdot L}$$
 
 Flow rate is directly proportional to pressure drop $\Delta P$ and inversely proportional to dynamic viscosity $\eta$. As Allen and Misener pumped down the vapor pressure to cool the helium below 2.17 kelvins (the lambda point, $T_\lambda$), the liquid's behavior decoupled from classical mechanics:
 1. The liquid flowed through the sub-micron capillaries with a velocity that was completely independent of the applied pressure head $\Delta P$.
@@ -209,31 +209,31 @@ The vanishing viscosity is a macroscopic manifestation of quantum mechanics. Hel
 
 Unlike fermions, which are constrained by the Pauli exclusion principle, an arbitrary number of identical bosons can occupy the exact same quantum ground state. In 1938, Fritz London proposed that the lambda transition is a real-space manifestation of Bose-Einstein condensation:
 
-T_c = \frac{2 \cdot \pi \cdot \hbar^2}{m \cdot k_B} \cdot \left( \frac{n}{2.612} \right)^{2/3} \approx 3.1 \text{ K}
+$$T_c = \frac{2 \cdot \pi \cdot \hbar^2}{m \cdot k_B} \cdot \left( \frac{n}{2.612} \right)^{2/3} \approx 3.1 \text{ K}$$
 
 Below $T_\lambda$, a macroscopic fraction of the helium atoms condense into a single macroscopic wave function described by the complex order parameter:
 
-\Psi(r, t) = \sqrt{\rho_s(r)} \cdot e^{i \cdot \phi(r)}
+$$\Psi(r, t) = \sqrt{\rho_s(r)} \cdot e^{i \cdot \phi(r)}$$
 
 László Tisza and Lev Landau formulated the two-fluid model: liquid helium below 2.17 K behaves as an interpenetrating mixture of a normal fluid component with viscosity $\eta_n$ and entropy $S_n$, and a superfluid component with zero viscosity ($\eta_s = 0$) and zero entropy ($S_s = 0$):
 
-\rho = \rho_n + \rho_s
+$$\rho = \rho_n + \rho_s$$
 
 Because the superfluid velocity is the gradient of the quantum phase:
 
-v_s = \frac{\hbar}{m} \cdot \nabla \phi
+$$v_s = \frac{\hbar}{m} \cdot \nabla \phi$$
 
 The flow is strictly irrotational:
 
-\nabla \times v_s = 0
+$$\nabla \times v_s = 0$$
 
 Circulation around any closed contour is quantized in discrete units:
 
-\kappa = \oint v_s \cdot dl = n \cdot \frac{h}{m} \quad (n = 0, 1, 2, \dots)
+$$\kappa = \oint v_s \cdot dl = n \cdot \frac{h}{m} \quad (n = 0, 1, 2, \dots)$$
 
 Landau formulated his critical velocity criterion: a particle moving through the superfluid cannot dissipate kinetic energy by generating frictional heat unless its velocity exceeds the threshold required to create elementary excitations (phonons and rotons):
 
-v_{critical} = \min \left( \frac{\epsilon(p)}{p} \right) \approx 60 \text{ m/s}
+$$v_{critical} = \min \left( \frac{\epsilon(p)}{p} \right) \approx 60 \text{ m/s}$$
 
 Below this critical velocity, no dissipation mechanism exists. Because liquid helium remains liquid at absolute zero under ambient pressure (requiring twenty-five atmospheres of pressure to solidify due to its massive quantum zero-point energy), it serves as the ultimate cryogenic coolant for superconducting magnetic resonance imaging (MRI) coils, particle accelerators, and quantum computers. Allen, Kapitsa, and Landau demonstrated that the second element of the periodic table represents an elemental singularity: an macroscopic fluid that escapes the second law of thermodynamics by collapsing millions of atomic particles into an undivided quantum coherent state.
 
@@ -247,7 +247,7 @@ In 1946, in a pilot plant operated by the U.S. Bureau of Mines in Boulder City, 
 
 Titanium occupies group 4 of the periodic table, element number 22. In its elemental form, titanium has an extreme thermodynamic affinity for interstitial light elements: oxygen, nitrogen, and carbon:
 
-Ti + O_2 \longrightarrow TiO_2 \quad (\Delta G^\circ = -889 \text{ kJ/mol})
+$$Ti + O_2 \longrightarrow TiO_2 \quad (\Delta G^\circ = -889 \text{ kJ/mol})$$
 
 Titanium dissolves oxygen up to thirty-four atomic percent in its hexagonal close-packed (HCP) alpha crystal lattice without forming a separate phase. Even fractional traces of dissolved oxygen or nitrogen (under 0.1 percent) lodge in the octahedral interstitial sites, pinning dislocation glide planes and turning the ductile metal into a brittle ceramic. Smelting with carbon in air is thermodynamically impossible; carbon cannot pull oxygen away from titanium at any temperature below 2,000°C without reacting directly with the reduced metal.
 
@@ -265,7 +265,7 @@ The Kroll process is an energy-intensive batch operation: producing one ton of t
 
 When an aircraft exceeds Mach 2.5, atmospheric skin friction heats the airframe past three hundred degrees Celsius:
 
-T_{skin} = T_{ambient} \cdot (1 + r \cdot \frac{\gamma - 1}{2} \cdot M^2)
+$$T_{skin} = T_{ambient} \cdot (1 + r \cdot \frac{\gamma - 1}{2} \cdot M^2)$$
 
 At these temperatures, traditional duralumin aerospace alloys lose fifty percent of their structural yield strength, while titanium maintains structural integrity up to 450°C. During the Cold War, the Central Intelligence Agency established fictitious shell companies across Europe to covertly purchase hundreds of tons of titanium sponge from the Soviet Union—the world's primary producer—in order to fabricate the all-titanium airframe of the Mach 3.2 Lockheed SR-71 Blackbird. William Kroll proved that high-performance aerospace capability is strictly governed by chemical thermodynamics: an element cannot be deployed as an structural asset until industrial engineering masters the energetic cost of breaking its primary chemical bonds.
 
@@ -277,11 +277,11 @@ At these temperatures, traditional duralumin aerospace alloys lose fifty percent
 
 In 1965, at the Institute of Physical Chemistry at the Swiss Federal Institute of Technology (ETH Zurich), electrochemists were analyzing the oxygen reduction reaction at metal-electrolyte interfaces. Fuel cells, first demonstrated by William Grove in 1839, had found their first operational deployment providing electrical power and drinking water aboard the NASA Gemini and Apollo spacecraft. A hydrogen fuel cell operates as an electrochemical continuous combustion engine: hydrogen gas is oxidized at the anode, oxygen gas is reduced at the cathode, and the free energy of the reaction is converted directly into electrical work without passing through a Carnot thermal cycle:
 
-\Delta G^\circ = - n \cdot F \cdot E^\circ_{cell} = - 237.2 \text{ kJ/mol} \implies E^\circ_{cell} = 1.229 \text{ V}
+$$\Delta G^\circ = - n \cdot F \cdot E^\circ_{cell} = - 237.2 \text{ kJ/mol} \implies E^\circ_{cell} = 1.229 \text{ V}$$
 
 While the hydrogen oxidation reaction at the anode proceeds with rapid kinetics, the oxygen reduction reaction (ORR) at the cathode exhibits an immense kinetic barrier. Even when utilizing platinum catalysts, the cathode suffers an overpotential loss of nearly 0.3 to 0.4 volts:
 
-\eta = V_{ideal} - V_{operating} \approx 0.35 \text{ V}
+$$\eta = V_{ideal} - V_{operating} \approx 0.35 \text{ V}$$
 
 This single kinetic activation barrier dissipates thirty percent of the fuel cell's theoretical energy efficiency as low-grade waste heat.
 
@@ -313,7 +313,7 @@ In 1911, electrical engineer Frank B. Jewett was supervising the construction of
 
 AT&T engineers calculated that to transmit voice currents across the continent without excessive signal degradation, the two-wire circuit required 2,500 tons of hard-drawn copper wire with a diameter of 4.19 millimeters (No. 8 BWG). At an installation cost exceeding one thousand dollars per mile in 1911 currency, the physical line consumed nearly five million pounds of pure copper. The transmission of electricity is strictly bound to the physical resistance of the conducting medium:
 
-R = \rho \cdot \frac{L}{A}
+$$R = \rho \cdot \frac{L}{A}$$
 
 Where $\rho$ is the electrical resistivity of the material. Silver possesses the lowest electrical resistivity of any metal at room temperature ($1.59 \cdot 10^{-8} \ \Omega \cdot \text{m}$), but its high cost prohibits continental-scale infrastructure. Copper ($Cu$, element number 29) is the industrial cornerstone of the electrical grid, possessing a resistivity of only $1.68 \cdot 10^{-8} \ \Omega \cdot \text{m}$—less than six percent higher than silver at a fraction of the cost.
 
@@ -323,17 +323,17 @@ Copper's high conductivity stems from its filled 3d subshell and single 4s valen
 
 In metallic copper, the 4s valence electrons are delocalized into a broad conduction band, forming an exceptionally high carrier density:
 
-n = 8.49 \cdot 10^{28} \text{ electrons/m}^3
+$$n = 8.49 \cdot 10^{28} \text{ electrons/m}^3$$
 
 Because the filled 3d subshell holds its ten electrons tightly around the nucleus, the copper lattice ions present a small ionic radius, resulting in minimal electron-phonon scattering at room temperature. The mean free path of a conduction electron in pure copper is approximately 39 nanometers—nearly one hundred lattice spacings.
 
 In 1853, Gustav Wiedemann and Rudolf Franz discovered that the ratio of thermal conductivity ($k$) to electrical conductivity ($\sigma$) is nearly identical for all metals at a given temperature, formalized by Ludvig Lorenz:
 
-\frac{k}{\sigma} = L \cdot T
+$$\frac{k}{\sigma} = L \cdot T$$
 
 Where $L$ is the universal Lorenz number:
 
-L = \frac{\pi^2}{3} \cdot \left( \frac{k_B}{e} \right)^2 = 2.44 \cdot 10^{-8} \text{ W} \cdot \Omega / \text{K}^2
+$$L = \frac{\pi^2}{3} \cdot \left( \frac{k_B}{e} \right)^2 = 2.44 \cdot 10^{-8} \text{ W} \cdot \Omega / \text{K}^2$$
 
 The Wiedemann-Franz law reveals that in copper, heat and electricity are transported by the exact same degenerate Fermi electron gas. This law imposes an unyielding engineering ceiling on modern power grids and microprocessor architecture: Joule heating ($P = I^2 \cdot R$) generates thermal energy that must be dissipated, yet any material engineered to conduct electricity efficiently will inevitably conduct heat, and any alloy modified to increase mechanical strength will increase electron scattering and drive up electrical resistance.
 
@@ -349,7 +349,7 @@ In 1907, at the University of Manchester, New Zealand physicist Ernest Rutherfor
 
 Rutherford had recently demonstrated that alpha particles emitted during radioactive decay are helium nuclei ($^4\text{He}^{2+}$). Boltwood reasoned that if uranium-238 decays by emitting a sequence of alpha and beta particles, it must eventually terminate in an immutable, stable elemental endpoint. He measured the ratio of lead to uranium in ancient rock samples:
 
-t = \frac{1}{\lambda} \cdot \ln\left( 1 + \frac{N_{\text{Pb}}}{N_{\text{U}}} \right)
+$$t = \frac{1}{\lambda} \cdot \ln\left( 1 + \frac{N_{\text{Pb}}}{N_{\text{U}}} \right)$$
 
 Using this elemental ratio, Boltwood dated an uraninite specimen from Connecticut to 410 million years—demolishing Lord Kelvin’s thermodynamic estimate that the Earth was only twenty to forty million years old and establishing the first quantitative geological timescale.
 
@@ -364,7 +364,7 @@ Lead's terminal stability is governed by nuclear shell structure. In the nuclear
 
 Lead-208 contains 82 protons and 126 neutrons. It is doubly magic:
 
-Z = 82 \quad (\text{closed proton shell}), \quad N = 126 \quad (\text{closed neutron shell})
+$$Z = 82 \quad (\text{closed proton shell}), \quad N = 126 \quad (\text{closed neutron shell})$$
 
 The binding energy per nucleon in lead-208 is 7.87 MeV, creating an exceptionally stable, spherically symmetric nuclear potential well. For an alpha particle to escape from lead-208 via quantum tunneling would require traversing a Coulomb barrier that yields a calculated half-life exceeding $10^{100}$ years—far longer than the age of the universe.
 
@@ -386,7 +386,7 @@ Aluminum is the most abundant metallic element in the Earth's crust, comprising 
 
 Aluminum’s scarcity was governed by chemical bonding. Unlike iron, which is easily reduced from hematite ($Fe_2O_3$) by carbon monoxide in a blast furnace at 1,200°C, aluminum has an extraordinary thermodynamic affinity for oxygen. In bauxite ore, aluminum exists as aluminum oxide ($Al_2O_3$, alumina):
 
-2 Al_2O_3 \longrightarrow 4 Al + 3 O_2 \quad (\Delta G^\circ = +1,582 \text{ kJ/mol})
+$$2 Al_2O_3 \longrightarrow 4 Al + 3 O_2 \quad (\Delta G^\circ = +1,582 \text{ kJ/mol})$$
 
 With an enthalpy of formation exceeding 1,675 kJ/mol, the aluminum-oxygen ionic bond is exceptionally stable. Carbon reduction is thermodynamically impossible below 2,000°C, and at those extreme temperatures, aluminum reacts with carbon to form aluminum carbide ($Al_4C_3$). Direct electrolytic decomposition was blocked because alumina melts at a refractory 2,072°C—a temperature that melts steel and dissolves standard crucibles.
 
@@ -410,7 +410,7 @@ Because liquid aluminum at 960°C has a density of 2.3 g/cm³, while the molten 
 
 The Hall-Héroult process transformed aluminum from a precious jewelry metal into an ubiquitous structural material, dropping the price by ninety-nine percent within a decade. Yet aluminum reduction remains bound by Faraday’s laws of electrolysis: producing one kilogram of aluminum requires transferring nearly three thousand ampere-hours of charge, consuming thirteen to fifteen kilowatt-hours of electrical energy:
 
-W_{electrical} = \frac{n \cdot F \cdot V_{cell}}{M \cdot \eta_{current}} \approx 14 \text{ kWh/kg}
+$$W_{electrical} = \frac{n \cdot F \cdot V_{cell}}{M \cdot \eta_{current}} \approx 14 \text{ kWh/kg}$$
 
 Aluminum smelters are geographic parasites on cheap electricity, clustering near massive hydroelectric dams in Quebec, Norway, and Iceland. Charles Martin Hall and Paul Héroult proved that an element’s crustal abundance is irrelevant if its bond energy is high; modern materials scale only where industrial infrastructure can channel massive, dedicated energetic fluxes to break the underlying chemical lattice.
 
@@ -440,7 +440,7 @@ This planar sigma network is the strongest chemical bond network in nature, givi
 
 The remaining unhybridized $2p_z$ orbital oriented perpendicular to the lattice sheet forms a delocalized pi ($\pi$) and pi-star ($\pi^*$) molecular orbital network across the entire sheet:
 
-E(k) = \pm \hbar \cdot v_F \cdot |\mathbf{k} - \mathbf{K}|
+$$E(k) = \pm \hbar \cdot v_F \cdot |\mathbf{k} - \mathbf{K}|$$
 
 Where $v_F \approx 10^6 \text{ m/s}$ (roughly one three-hundredth the speed of light). The valence band and conduction band touch at six discrete points—the Dirac points—where the energy dispersion relation is strictly linear:
 
