@@ -922,6 +922,11 @@
             gap: 4px;
         }
 </style>
+
+    <!-- KaTeX Mathematical Typesetting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Alexandria Home Catalog View -->
@@ -1174,7 +1179,23 @@
 
         function formatInline(str) {
             if (!str) return '';
-            let s = escapeHtml(str);
+            // Render inline LaTeX math ($...$) first before escaping
+            let s = str.replace(/\$([^$]+)\$/g, (match, math) => {
+                if (typeof katex !== 'undefined') {
+                    try {
+                        return katex.renderToString(math, { displayMode: false, throwOnError: false });
+                    } catch (e) {
+                        return '<code class="inline-math">' + escapeHtml(math) + '</code>';
+                    }
+                }
+                return '<code class="inline-math">' + escapeHtml(math) + '</code>';
+            });
+
+            // For segments outside KaTeX rendered tags, escape HTML and format bold/italic
+            // If KaTeX was invoked, it produced safe HTML with class="katex"
+            if (!s.includes('<span class="katex">')) {
+                s = escapeHtml(s);
+            }
             s = s.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
             s = s.replace(/\*(.*?)\*/g, '<em>$1</em>');
             return s;
@@ -1279,11 +1300,43 @@
                     return;
                 }
 
-                if (p.length < 90 && (p.includes(' = ') || p.includes(' ∝ ') || p.includes('∑') || p.includes('Π(') || p.includes('·'))) {
+                // LaTeX Block Equation ($...$)
+                if (p.startsWith("$$") && p.endsWith("$$")) {
+                    const mathContent = p.slice(2, -2).trim();
+                    let rendered = '';
+                    if (typeof katex !== 'undefined') {
+                        try {
+                            rendered = katex.renderToString(mathContent, { displayMode: true, throwOnError: false });
+                        } catch (e) {
+                            rendered = escapeHtml(mathContent);
+                        }
+                    } else {
+                        rendered = escapeHtml(mathContent);
+                    }
                     blocks.push({
                         type: 'equation',
                         text: p,
-                        html: `<div class="equation-box">${escapeHtml(p)}</div>`
+                        html: `<div class="equation-box">${rendered}</div>`
+                    });
+                    return;
+                }
+
+                // Standalone formula line
+                if (p.length < 120 && (p.includes(' = ') || p.includes(' ∝ ') || p.includes('∑') || p.includes('Π(') || p.includes('·') || p.includes('∂') || p.includes('∫'))) {
+                    let rendered = '';
+                    if (typeof katex !== 'undefined') {
+                        try {
+                            rendered = katex.renderToString(p, { displayMode: true, throwOnError: false });
+                        } catch (e) {
+                            rendered = escapeHtml(p);
+                        }
+                    } else {
+                        rendered = escapeHtml(p);
+                    }
+                    blocks.push({
+                        type: 'equation',
+                        text: p,
+                        html: `<div class="equation-box">${rendered}</div>`
                     });
                     return;
                 }
