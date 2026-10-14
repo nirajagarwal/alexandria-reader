@@ -31,6 +31,7 @@ const BOOKS_METADATA = [
     { key: 'affective-topologies', file: 'affective_topologies.md', category: 'Neuroscience' },
     { key: 'architectures-of-choice', file: 'architectures_of_choice.md', category: 'Decision Science' },
     { key: 'tales-of-audacity', file: 'tales_of_audacity.md', category: 'History & Strategy' },
+    { key: 'architectures-of-the-grid', file: 'architectures_of_the_grid.md', category: 'Infrastructure' },
     { key: 'alexandria-manifesto', file: 'alexandria_manifesto.md', category: 'Platform' }
 ];
 
