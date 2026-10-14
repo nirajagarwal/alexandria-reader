@@ -723,7 +723,7 @@
             align-items: center;
             border-bottom: 1px solid var(--border-color);
             padding-bottom: 24px;
-            margin-bottom: 40px;
+            margin-bottom: 32px;
         }
 
         .home-brand {
@@ -1014,38 +1014,11 @@
                     </div>
                 </div>
                 <div class="home-nav-actions">
+                    <input type="text" id="catalog-search" class="catalog-search-input" placeholder="Search volumes &amp; concepts..." oninput="handleCatalogSearch(this.value)">
                     <button class="folio-btn" onclick="cycleTheme()" title="Toggle Theme (D)">Theme</button>
                     <button class="folio-btn" onclick="openHelpModal()" title="Shortcuts (?)">?</button>
                 </div>
             </header>
-
-            <section class="home-hero">
-                <div class="home-hero-kicker">Digital-Native Two-Column Paged Library</div>
-                <h1 class="home-hero-title">The Living Library of Machine-Synthesized Knowledge</h1>
-                <p class="home-hero-desc">
-                    Rigorous long-form treatises engineered around structural asymmetries, complex systems failure, anomalous cognition, apophatic contemplation, and foundational physics. Rendered with TeX-quality mathematical typesetting and zero vertical scrolling.
-                </p>
-            </section>
-
-            <div class="catalog-filter-bar">
-                <div class="filter-pills" id="catalog-filters">
-                    <button class="filter-pill active" onclick="filterCatalog('all', this)">All Works</button>
-                    <button class="filter-pill" onclick="filterCatalog('Startups', this)">Startups</button>
-                    <button class="filter-pill" onclick="filterCatalog('Failures', this)">Systemic Failure</button>
-                    <button class="filter-pill" onclick="filterCatalog('Thinkers', this)">Cognition</button>
-                    <button class="filter-pill" onclick="filterCatalog('Christian Mystics', this)">Contemplation</button>
-                    <button class="filter-pill" onclick="filterCatalog('Physics', this)">Physics</button>
-                    <button class="filter-pill" onclick="filterCatalog('Physiology', this)">Physiology</button>
-                    <button class="filter-pill" onclick="filterCatalog('Material Science', this)">Materials</button>
-                    <button class="filter-pill" onclick="filterCatalog('Neuroscience', this)">Neuroscience</button>
-                    <button class="filter-pill" onclick="filterCatalog('Decision Science', this)">Decision Science</button>
-                    <button class="filter-pill" onclick="filterCatalog('History & Strategy', this)">History & Strategy</button>
-                    <button class="filter-pill" onclick="filterCatalog('Platform', this)">Platform</button>
-                </div>
-                <div>
-                    <input type="text" id="catalog-search" class="catalog-search-input" placeholder="Search volumes &amp; concepts..." oninput="handleCatalogSearch(this.value)">
-                </div>
-            </div>
 
             <main class="books-grid" id="catalog-grid">
                 <!-- Book Cards populated dynamically -->

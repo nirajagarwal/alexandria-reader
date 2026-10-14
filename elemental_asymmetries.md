@@ -7,13 +7,13 @@
 
 ### Introduction
 # Elemental Asymmetries
-## The Geopolitical Thermodynamics of Twelve Atoms
+## The Physical Constraints of Twelve Elements
 
-Political economy treats power as an abstraction of institutions, currency reserves, trade treaties, and military doctrine. These conventions make for compelling diplomatic history, but they obscure the underlying physical constraints governing human civilization. An empire does not rise because its leaders write persuasive constitutions; it expands because its technological substrate captures an energy or material asymmetry, and it collapses when that material throughput encounters thermodynamic friction.
+History usually treats power as a contest of treaties, armies, and financial systems. But behind every political and industrial shift lies a physical constraint: the practical chemistry of specific elements. An economy does not scale on policy alone; it depends on securing raw materials with distinct physical properties, and it slows when those supplies hit bottlenecks.
 
-Every tool, energy grid, computational processor, weapon, and fertilizer is governed by the quantum electron configurations of specific elements on the periodic table. The triple covalent bond of atmospheric nitrogen dictates the carrying capacity of global agriculture; the 4f orbital shielding of neodymium determines the power density of electric turbines; the electrochemical redox potential of lithium fixes the weight limits of global transport; and the neutron capture cross-section of uranium-235 determines the boundary between energy abundance and thermonuclear annihilation.
+Modern life runs on a small set of chemical elements with unique atomic traits. The strong triple bond of nitrogen gas sets the limits of synthetic fertilizer and food production. The magnetic properties of neodymium shape the size and efficiency of electric motors and wind generators. The light atomic weight of lithium determines battery energy density, while uranium isotopes govern nuclear power and security.
 
-Civilization does not float above nature. It is an open thermodynamic heat engine organized around the extraction, purification, and assembly of a handful of atomic species distributed non-uniformly across the Earth’s crust. This volume investigates twelve elemental case studies where an overlooked atomic invariant dictated the rise of global industries, the emergence of macroeconomic chokepoints, and the geopolitical trajectory of nations.
+These materials are not evenly distributed around the globe. This book examines twelve case studies where the specific properties of a single chemical element shaped industrial development, trade chokepoints, and international competition.
 
 ---
 
@@ -25,13 +25,13 @@ On September 9, 1913, inside a concrete blast bunker at the BASF chemical works 
 
 At the beginning of the twentieth century, human civilization was approaching a hard Malthusian boundary. Crop yields were strictly limited by the availability of fixed reactive nitrogen in the soil. While molecular nitrogen makes up seventy-eight percent of the Earth's atmosphere, it is biologically inert to nearly all living organisms. The two nitrogen atoms are held together by a non-polar covalent triple bond ($N \equiv N$):
 
-N \equiv N \longrightarrow 2 N \quad (\Delta H^\circ = +945 \text{ kJ/mol})
+$N \equiv N \longrightarrow 2 N \quad (\Delta H^\circ = +945 \text{ kJ/mol})$
 
 With a dissociation energy of 945 kilojoules per mole, the nitrogen triple bond is one of the strongest chemical bonds in nature. Breaking it requires extreme thermal or catalytic energy to overcome an activation barrier of over 300 kJ/mol. Agriculture relied exclusively on slow biological fixation by diazotrophic soil bacteria and finite deposits of Peruvian guano and Chilean sodium nitrate (caliche). In 1898, Sir William Crookes warned the British Association for the Advancement of Science that all civilized nations were in deadly peril of starvation as the Chilean nitrate beds approached depletion.
 
 Fritz Haber applied the principles of chemical equilibrium formulated by Jacobus van 't Hoff and Henri Le Chatelier to the exothermic ammonia synthesis reaction:
 
-N_2(g) + 3 H_2(g) \rightleftharpoons 2 NH_3(g) \quad (\Delta H^\circ = -92.4 \text{ kJ/mol})
+$N_2(g) + 3 H_2(g) \rightleftharpoons 2 NH_3(g) \quad (\Delta H^\circ = -92.4 \text{ kJ/mol})$
 
 Under Le Chatelier's principle, because the forward reaction converts four moles of gas into two moles, increasing pressure shifts the equilibrium toward ammonia:
 
