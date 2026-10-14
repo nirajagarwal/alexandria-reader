@@ -1,0 +1,22 @@
+<!-- Running Header (Top Folio) Component -->
+<div class="running-header">
+    <div class="folio-left">
+        <span class="folio-brand" onclick="openLibraryModal()" title="Alexandria Library (L)">
+            ALEXANDRIA
+        </span>
+    </div>
+    <div class="folio-center" id="header-center-box" onclick="openTocModal()" title="View Contents (T)">
+        <span class="folio-chap-tag" id="header-chap-label">CHAPTER 1</span>
+        <span class="folio-sep">·</span>
+        <span class="folio-title" id="header-chap-title">Title</span>
+        <span class="folio-sep">—</span>
+        <span class="folio-subtitle" id="header-chap-subtitle">Subtitle</span>
+    </div>
+    <div class="folio-right">
+        <button class="folio-btn" onclick="openTocModal()" title="Contents (T)">Contents</button>
+        <button class="folio-btn" onclick="openLibraryModal()" title="Library (L)">Library</button>
+        <button class="folio-btn" onclick="toggleTelescope()" title="Telescope (E)">Telescope</button>
+        <button class="folio-btn" onclick="cycleTheme()" title="Theme (D)">Theme</button>
+        <button class="folio-btn" onclick="openHelpModal()" title="Shortcuts (?)">?</button>
+    </div>
+</div>
