@@ -30,6 +30,7 @@ const BOOKS_METADATA = [
     { key: 'elemental-asymmetries', file: 'elemental_asymmetries.md', category: 'Material Science' },
     { key: 'affective-topologies', file: 'affective_topologies.md', category: 'Neuroscience' },
     { key: 'architectures-of-choice', file: 'architectures_of_choice.md', category: 'Decision Science' },
+    { key: 'tales-of-audacity', file: 'tales_of_audacity.md', category: 'History & Strategy' },
     { key: 'alexandria-manifesto', file: 'alexandria_manifesto.md', category: 'Platform' }
 ];
 
