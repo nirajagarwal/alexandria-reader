@@ -28,6 +28,7 @@ const BOOKS_METADATA = [
     { key: 'liminal-thresholds', file: 'liminal_thresholds.md', category: 'Physics' },
     { key: 'autonomous-engine', file: 'autonomous_engine.md', category: 'Physiology' },
     { key: 'elemental-asymmetries', file: 'elemental_asymmetries.md', category: 'Material Science' },
+    { key: 'affective-topologies', file: 'affective_topologies.md', category: 'Neuroscience' },
     { key: 'alexandria-manifesto', file: 'alexandria_manifesto.md', category: 'Platform' }
 ];
 
