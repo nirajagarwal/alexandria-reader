@@ -119,9 +119,9 @@ Strategic mastery requires cultivating an organizational immune system that acce
 
 ### Chapter 5
 # The Inversion Protocol
-## Apophatic Problem Solving and the Structural Elimination of Failure
+## Negative Problem Solving and the Structural Elimination of Failure
 
-Human cognition suffers from a systemic positive bias: when confronted with a complex objective, the mind instinctively asks, *What actions should I take to achieve success?* This additive framing exposes the agent to cognitive biases, narrative fallacies, and hubristic overconfidence. The inversion protocol replaces additive optimism with apophatic rigor: *What specific mechanisms guarantee catastrophe, and how do we engineer their absolute prevention?*
+Human cognition suffers from a systemic positive bias: when confronted with a complex objective, the mind instinctively asks, *What actions should I take to achieve success?* This additive framing exposes the agent to cognitive biases, narrative fallacies, and hubristic overconfidence. The inversion protocol replaces additive optimism with rigorous elimination: *What specific mechanisms guarantee catastrophe, and how do we engineer their absolute prevention?*
 
 This methodology, championed mathematically by Carl Gustav Jacob Jacobi (*man muss immer umkehren*—"invert, always invert"), recognizes that the failure space of any complex system is far simpler, more bounded, and easier to identify than the multidimensional success space. 
 
@@ -243,7 +243,7 @@ Multi-scale anchoring prevents the agent from sacrificing a 10-year strategic po
 
 ### Chapter 11
 # The Second-Order Ripple
-## Feedback Loops, Unintended Consequences, and Systemic Teleodynamics
+## Feedback Loops, Unintended Consequences, and Dynamic Equilibrium
 
 Amateurs evaluate decisions by their first-order consequences: *If I execute policy A, immediate benefit B occurs.* Advanced systems strategists recognize that in dense, interconnected networks, first-order effects are merely the initial catalyst in a cascading chain of non-linear feedback loops.
 

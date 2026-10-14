@@ -1,5 +1,5 @@
 # Elemental Asymmetries
-## The Geopolitical Thermodynamics of Twelve Atoms
+## The Physical Constraints of Twelve Elements
 
 *Alexandria Press · alexandria.press*
 

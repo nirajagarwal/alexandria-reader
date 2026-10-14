@@ -97,7 +97,7 @@ Mislabelling a rotting, pathogen-laden carcass as edible results in lethal septi
 
 In humans, however, this archaic mucosal defense mechanism was co-opted through evolutionary exaptation to construct moral and social boundaries. The anterior insula, which fires during the presentation of rancid meat, activates with equal metabolic intensity when human subjects observe blatant betrayal, financial exploitation, or incest.
 
-By repurposing mucosal disgust circuits into social policing mechanisms, human tribes created an extraordinarily rapid, sub-cortical immune response against defectors. Moral disgust treats the norm-breaker not merely as an intellectual adversary with whom one might negotiate, but as a bio-contaminant that must be quarantined, excised, and cast beyond the tribal perimeter. The emotion that protected the gut from parasites became the ideological weapon that structured human civilization.
+By repurposing mucosal disgust circuits into social policing mechanisms, human tribes created an extraordinarily rapid, sub-cortical immune response against defectors. Moral disgust treats the norm-breaker not merely as an intellectual adversary with whom one might negotiate, but as a bio-contaminant that must be quarantined, excised, and cast beyond the tribal perimeter. A reflex originally tuned to bacterial pathogens became the baseline neural circuit for enforcing social norms.
 
 ---
 
@@ -125,7 +125,7 @@ If the social collective fails to redeem this credit—or worse, rewards defecto
 
 Most emotional experiences confirm or fine-tune an agent's existing mental models. Awe represents the rare topological collapse of those models. In psychological literature, awe is defined by two structural invariants: perceived vastness and the urgent need for accommodation. It is the emotional signature of a cognitive system encountering a phenomenon that shatters its current representational capacity.
 
-Perceived vastness is not merely physical scale; it can be temporal, conceptual, or computational. It occurs when sensory observation spans an order of magnitude that overwhelms the default receptive fields of the visual cortex, the narrative limits of episodic memory, or the axioms of working memory. Whether standing beneath the oceanic abyss of the night sky, observing a mathematical theorem of staggering depth, or witnessing the sheer scale of a monumental architectural cathedral, the brain's internal predictive models are suddenly confronted with an unmanageable prediction error mass:
+Perceived vastness is not merely physical scale; it can be temporal, conceptual, or computational. It occurs when sensory observation spans an order of magnitude that overwhelms the default receptive fields of the visual cortex, the narrative limits of episodic memory, or the axioms of working memory. Whether standing beneath the oceanic abyss of the night sky, observing a mathematical theorem of mathematical depth, or witnessing the sheer scale of a monumental architectural cathedral, the brain's internal predictive models are suddenly confronted with an unmanageable prediction error mass:
 
 $$\sum_{i} \xi_i \gg \theta_{\text{threshold}}$$
 
@@ -145,7 +145,7 @@ $$\text{Sensory Input} \longrightarrow \text{Thalamus} \xrightarrow{\text{Fast P
 
 Heart rate surges, peripheral blood vessels constrict to redirect oxygen to skeletal muscle, pupils dilate, and non-essential visceral digestion ceases.
 
-Paranoia occurs when this acute defensive circuit suffers an epistemological pathology known in machine learning as over-fitting. In statistical estimation, over-fitting occurs when a statistical model memorizes random noise in the training data, interpreting stochastic fluctuations as absolute causal patterns. In paranoia, the brain's threat-detection priors are set at such catastrophic precision that benign environmental noise is systematically interpreted as intentional malevolent coordination.
+Paranoia occurs when this defensive circuit experiences what statistical learning calls over-fitting. In statistical estimation, over-fitting occurs when a statistical model memorizes random noise in the training data, interpreting stochastic fluctuations as absolute causal patterns. In paranoia, the brain's threat-detection priors are set at such catastrophic precision that benign environmental noise is systematically interpreted as intentional malevolent coordination.
 
 Under sustained metabolic exhaustion, trauma, or dopaminergic dysregulation, the precision weighting of threat hypotheses collapses into rigidity:
 
@@ -153,7 +153,7 @@ $$\Pi_{\text{threat}} \to \infty, \quad \Pi_{\text{noise}} \to 0$$
 
 If a car turns onto the subject's street, it is not a random neighbor; it is a surveillance node. If a colleague glances across the conference room, it is not casual fatigue; it is a coordinated signal. The paranoid mind exhibits hyper-intentionality: every neutral event is stripped of its randomness and bound into a coherent, persecutory causal architecture.
 
-Because the cost of failing to detect a predator is lethal, the paranoid system operates in an inescapable positive feedback loop. Every perceived threat confirms the prior, which further amplifies the precision of subsequent threat filters. Paranoia is the tragic tragedy of a Bayesian prediction engine that has become entirely blinded by its own hyper-vigilant priors.
+Because the cost of failing to detect a predator is lethal, the paranoid system operates in an inescapable positive feedback loop. Every perceived threat confirms the prior, which further amplifies the precision of subsequent threat filters. In paranoia, high-precision threat priors overpower sensory evidence, locking the brain into an unyielding alert state.
 
 ---
 
@@ -176,8 +176,8 @@ This somatic collapse is not an accidental side effect; it is an active signalin
 ---
 
 ### Chapter 9
-# The Apophatic Pause
-## Boredom, Restlessness, and the Thermodynamic Search for Information
+# The Information Vacuum
+## Boredom, Restlessness, and the Search for Environmental Entropy
 
 Boredom is routinely dismissed as an absence of feeling—a neutral cognitive vacuum. In truth, boredom is an active, highly uncomfortable affective drive designed to enforce the exploration-exploitation tradeoff in foraging animals. A creature that is entirely content in a static, depleted environment will inevitably exhaust its local food patch and starve. Boredom is the evolutionary circuit breaker that prevents cognitive stagnation.
 
@@ -211,7 +211,7 @@ The resulting mental representation is a mathematically impossible attractor lan
 
 $$s^* = \arg\min_s [F(s)]$$
 
-Because this idealized state $s^*$ is physically non-existent, the agent's active inference policies can never close the distance. Every attempt to achieve it in physical reality generates an inescapable residual gap. Yearning is the bitter-sweet recognition of this asymptotic limit. It is the poetic tragedy of a computational imagination that can conceptualize perfections that the physical universe refuses to host.
+Because this idealized state $s^*$ is physically non-existent, the agent's active inference policies can never close the distance. Every attempt to achieve it in physical reality generates an inescapable residual gap. Yearning marks the gap between counterfactual imagination and physical reality. The brain models an idealized state that no real environment can provide.
 
 ---
 
@@ -253,4 +253,4 @@ $$\gamma_{\text{narrative}} \to 0, \quad \Pi_{\text{priors}} \sim \text{Flexible
 
 The sensations are permitted to exist as transient biological data rather than existential threats.
 
-Equanimity does not represent emotional numbness or the eradication of feeling; it is the decoupling of interoceptive sensation from catastrophic behavioral reaction. The mind becomes like a deep ocean: while severe storms may churn the top two meters of the water, the abyssal depths remain entirely silent, cold, and clear. It is the ultimate cybernetic triumph of the human brain—the attainment of an internal equilibrium so structurally sound that no temporal wave can overturn it.
+Equanimity does not represent emotional numbness or the eradication of feeling; it is the decoupling of interoceptive sensation from catastrophic behavioral reaction. By decoupling raw interoceptive inputs from reflexive behavioral reactions, the nervous system maintains baseline physiological stability regardless of transient sensory spikes.
