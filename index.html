@@ -828,15 +828,22 @@
             <header class="home-header">
                 <div class="home-brand" onclick="showHomeView()">
                     <img src="favicon.svg" alt="Alexandria Beacon" class="home-brand-icon">
-                    <div>
-                        <div class="home-brand-title">ALEXANDRIA</div>
-                        <div class="home-brand-tagline">alexandria.press</div>
-                    </div>
+                    <span class="home-brand-title">ALEXANDRIA.PRESS</span>
                 </div>
                 <div class="home-nav-actions">
                     <input type="text" id="catalog-search" class="catalog-search-input" placeholder="Search volumes &amp; concepts..." oninput="handleCatalogSearch(this.value)">
-                    <button class="folio-btn" onclick="cycleTheme()" title="Toggle Theme (D)">Theme</button>
-                    <button class="folio-btn" onclick="openHelpModal()" title="Shortcuts (?)">?</button>
+                    <button class="folio-btn icon-btn" onclick="cycleTheme()" title="Toggle Theme (D)" aria-label="Toggle Theme">
+                        <svg class="header-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    <button class="folio-btn icon-btn" onclick="openHelpModal()" title="Shortcuts &amp; Information (?)" aria-label="Information">
+                        <svg class="header-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="16" x2="12" y2="12"></line>
+                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                        </svg>
+                    </button>
                 </div>
             </header>
 
