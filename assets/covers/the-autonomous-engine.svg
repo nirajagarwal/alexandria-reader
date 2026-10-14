@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2400" width="1600" height="2400">
+  <defs>
+    <linearGradient id="bg-grad-the-autonomous-engine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#361212" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#240a0a" stop-opacity="1.0"/>
+      <stop offset="100%" stop-color="#240a0a" stop-opacity="1.0"/>
+    </linearGradient>
+    <radialGradient id="halo-the-autonomous-engine" cx="50%" cy="58%" r="42%">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.22"/>
+      <stop offset="60%" stop-color="#ef4444" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#ef4444" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="2400" fill="url(#bg-grad-the-autonomous-engine)"/>
+  <rect width="1600" height="2400" fill="url(#halo-the-autonomous-engine)"/>
+
+  <rect x="76" y="76" width="1448" height="2248" fill="none" stroke="#ef4444" stroke-width="1.5" opacity="0.35"/>
+  <rect x="92" y="92" width="1416" height="2216" fill="none" stroke="#ef4444" stroke-width="0.75" opacity="0.2"/>
+
+  <g stroke="#ef4444" stroke-width="1.5" opacity="0.6">
+    <path d="M 68 116 L 68 68 L 116 68" fill="none"/>
+    <path d="M 1532 116 L 1532 68 L 1484 68" fill="none"/>
+    <path d="M 68 2284 L 68 2332 L 116 2332" fill="none"/>
+    <path d="M 1532 2284 L 1532 2332 L 1484 2332" fill="none"/>
+  </g>
+
+  <g text-anchor="middle" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif">
+    <text x="800" y="210" font-size="20" font-weight="700" letter-spacing="9" fill="#ef4444" opacity="0.95">ALEXANDRIA PRESS</text>
+    <text x="800" y="250" font-size="13" font-weight="500" letter-spacing="4" fill="#fca5a5" opacity="0.75">VOLUME VI · PHYSIOLOGY & CYBERNETICS</text>
+    <line x1="680" y1="285" x2="920" y2="285" stroke="#ef4444" stroke-width="1" opacity="0.35"/>
+  </g>
+
+  <g text-anchor="middle">
+    <text x="800" y="490" font-family="'Literata', Georgia, serif" font-size="78" font-weight="700" letter-spacing="-0.5" fill="#fef2f2">
+      The Autonomous Engine
+    </text>
+    <text x="800" y="575" font-family="'Literata', Georgia, serif" font-size="28" font-weight="300" font-style="italic" fill="#fca5a5">
+      Structural Control Systems of Human
+    </text>
+    <text x="800" y="625" font-family="'Literata', Georgia, serif" font-size="28" font-weight="300" font-style="italic" fill="#fca5a5">Physiology</text>
+  </g>
+
+  <g class="emblem-cybernetic"><ellipse cx="680" cy="1380" rx="188" ry="122" transform="rotate(-25 680 1380)" stroke="#ef4444" stroke-width="1.4" fill="none" opacity="0.29999999999999993"/><ellipse cx="920" cy="1380" rx="188" ry="122" transform="rotate(25 920 1380)" stroke="#ef4444" stroke-width="1.4" fill="none" opacity="0.29999999999999993"/><ellipse cx="680" cy="1380" rx="206" ry="134" transform="rotate(-25 680 1380)" stroke="#ef4444" stroke-width="1.4" fill="none" opacity="0.3999999999999999"/><ellipse cx="920" cy="1380" rx="206" ry="134" transform="rotate(25 920 1380)" stroke="#ef4444" stroke-width="1.4" fill="none" opacity="0.3999999999999999"/><ellipse cx="680" cy="1380" rx="224" ry="146" transform="rotate(-25 680 1380)" stroke="#ef4444" stroke-width="1.4" fill="none" opacity="0.49999999999999994"/><ellipse cx="920" cy="1380" rx="224" ry="146" transform="rotate(25 920 1380)" stroke="#ef4444" stroke-width="1.4" fill="none" opacity="0.49999999999999994"/><ellipse cx="680" cy="1380" rx="242" ry="158" transform="rotate(-25 680 1380)" stroke="#ef4444" stroke-width="1.4" fill="none" opacity="0.6"/><ellipse cx="920" cy="1380" rx="242" ry="158" transform="rotate(25 920 1380)" stroke="#ef4444" stroke-width="1.4" fill="none" opacity="0.6"/><ellipse cx="680" cy="1380" rx="260" ry="170" transform="rotate(-25 680 1380)" stroke="#ef4444" stroke-width="1.4" fill="none" opacity="0.7"/><ellipse cx="920" cy="1380" rx="260" ry="170" transform="rotate(25 920 1380)" stroke="#ef4444" stroke-width="1.4" fill="none" opacity="0.7"/><ellipse cx="680" cy="1380" rx="278" ry="182" transform="rotate(-25 680 1380)" stroke="#ef4444" stroke-width="1.4" fill="none" opacity="0.6"/><ellipse cx="920" cy="1380" rx="278" ry="182" transform="rotate(25 920 1380)" stroke="#ef4444" stroke-width="1.4" fill="none" opacity="0.6"/><ellipse cx="680" cy="1380" rx="296" ry="194" transform="rotate(-25 680 1380)" stroke="#ef4444" stroke-width="1.4" fill="none" opacity="0.49999999999999994"/><ellipse cx="920" cy="1380" rx="296" ry="194" transform="rotate(25 920 1380)" stroke="#ef4444" stroke-width="1.4" fill="none" opacity="0.49999999999999994"/><ellipse cx="680" cy="1380" rx="314" ry="206" transform="rotate(-25 680 1380)" stroke="#ef4444" stroke-width="1.4" fill="none" opacity="0.3999999999999999"/><ellipse cx="920" cy="1380" rx="314" ry="206" transform="rotate(25 920 1380)" stroke="#ef4444" stroke-width="1.4" fill="none" opacity="0.3999999999999999"/><ellipse cx="680" cy="1380" rx="332" ry="218" transform="rotate(-25 680 1380)" stroke="#ef4444" stroke-width="1.4" fill="none" opacity="0.29999999999999993"/><ellipse cx="920" cy="1380" rx="332" ry="218" transform="rotate(25 920 1380)" stroke="#ef4444" stroke-width="1.4" fill="none" opacity="0.29999999999999993"/>
+            <circle cx="800" cy="1380" r="32" fill="#ef4444" opacity="0.15"/>
+            <circle cx="800" cy="1380" r="6" fill="#ef4444" opacity="0.9"/>
+        </g>
+
+  <g text-anchor="middle" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif">
+    <line x1="620" y1="2160" x2="980" y2="2160" stroke="#ef4444" stroke-width="1" opacity="0.35"/>
+    <text x="800" y="2210" font-size="13" font-weight="600" letter-spacing="5" fill="#fca5a5" opacity="0.8">LIVING LIBRARY ARCHITECTURE</text>
+    <text x="800" y="2246" font-size="11" font-weight="400" letter-spacing="3" fill="#fca5a5" opacity="0.55">ALEXANDRIA.PRESS · AUTONOMOUS EDITION</text>
+  </g>
+</svg>

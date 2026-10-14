@@ -1,7 +1,11 @@
-node_modules/
+node_modules
 .env
+.env.local
 .DS_Store
-*.pyc
-__pycache__/
-.vercel
-.env*
+*.epub
+reader_viewer_plan.md
+sample_calibrated_stream.md
+typography_audit.md
+scripts/patch_index_home.js
+scripts/patch_index_js.js
+.vercel/

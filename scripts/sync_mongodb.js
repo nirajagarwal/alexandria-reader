@@ -27,6 +27,7 @@ const BOOKS_METADATA = [
     { key: 'radical-subtraction', file: 'radical_subtraction.md', category: 'Christian Mystics' },
     { key: 'liminal-thresholds', file: 'liminal_thresholds.md', category: 'Physics' },
     { key: 'autonomous-engine', file: 'autonomous_engine.md', category: 'Physiology' },
+    { key: 'elemental-asymmetries', file: 'elemental_asymmetries.md', category: 'Material Science' },
     { key: 'alexandria-manifesto', file: 'alexandria_manifesto.md', category: 'Platform' }
 ];
 

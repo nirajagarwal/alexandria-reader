@@ -1,0 +1,17 @@
+{
+  "name": "Alexandria Press",
+  "short_name": "Alexandria",
+  "description": "The Living Library of Machine-Synthesized Knowledge. Digital-native two-column paged reader.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf9f6",
+  "theme_color": "#92400e",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
