@@ -868,12 +868,13 @@
         .book-cover-frame {
             width: 100%;
             aspect-ratio: 2 / 3;
-            background: #0f172a;
+            background: #181512;
             position: relative;
             overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
+            box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.4);
         }
 
         .book-cover-frame img {
@@ -881,6 +882,57 @@
             height: 100%;
             object-fit: cover;
             display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .book-card:hover .book-cover-frame img {
+            transform: scale(1.025);
+        }
+
+        .cover-fallback-card {
+            width: 100%;
+            height: 100%;
+            padding: 32px 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: linear-gradient(145deg, #1e1b18, #0f0d0c);
+            color: #faf9f6;
+            box-sizing: border-box;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .fallback-top-brand {
+            font-family: var(--font-sans);
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--accent-color);
+        }
+
+        .fallback-title {
+            font-family: var(--font-serif);
+            font-size: 1.35rem;
+            font-weight: 700;
+            line-height: 1.22;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+
+        .fallback-subtitle {
+            font-family: var(--font-serif);
+            font-size: 0.85rem;
+            line-height: 1.4;
+            color: #a8a29e;
+        }
+
+        .fallback-bottom {
+            font-family: var(--font-sans);
+            font-size: 0.65rem;
+            color: rgba(255, 255, 255, 0.45);
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
         }
 
         .book-meta {
@@ -972,15 +1024,15 @@
                 <div class="filter-pills" id="catalog-filters">
                     <button class="filter-pill active" onclick="filterCatalog('all', this)">All Works</button>
                     <button class="filter-pill" onclick="filterCatalog('Startups', this)">Startups</button>
-                    <button class="filter-pill" onclick="filterCatalog('Failures', this)">Complex Systems</button>
-                    <button class="filter-pill" onclick="filterCatalog('Thinkers', this)">Cognitive Architecture</button>
-                    <button class="filter-pill" onclick="filterCatalog('Christian Mystics', this)">Contemplative Theory</button>
+                    <button class="filter-pill" onclick="filterCatalog('Failures', this)">Systemic Failure</button>
+                    <button class="filter-pill" onclick="filterCatalog('Thinkers', this)">Cognition</button>
+                    <button class="filter-pill" onclick="filterCatalog('Christian Mystics', this)">Contemplation</button>
                     <button class="filter-pill" onclick="filterCatalog('Physics', this)">Physics</button>
                     <button class="filter-pill" onclick="filterCatalog('Physiology', this)">Physiology</button>
                     <button class="filter-pill" onclick="filterCatalog('Material Science', this)">Materials</button>
-                    <button class="filter-pill" onclick="filterCatalog('Platform', this)">Platform</button>
                     <button class="filter-pill" onclick="filterCatalog('Neuroscience', this)">Neuroscience</button>
                     <button class="filter-pill" onclick="filterCatalog('Decision Science', this)">Decision Science</button>
+                    <button class="filter-pill" onclick="filterCatalog('Platform', this)">Platform</button>
                 </div>
                 <div>
                     <input type="text" id="catalog-search" class="catalog-search-input" placeholder="Search volumes &amp; concepts..." oninput="handleCatalogSearch(this.value)">
@@ -2092,7 +2144,7 @@
                 cardsHtml += `
                     <article class="book-card" onclick="openBookFromCatalog('${key}')">
                         <div class="book-cover-frame">
-                            <img src="${coverSrc}" alt="${b.title} Cover" loading="lazy" onerror="this.style.display='none'">
+                            <img src="${coverSrc}" alt="${b.title} Cover" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML = `<div class='cover-fallback-card'><div class='fallback-top-brand'>ALEXANDRIA PRESS</div><div><div class='fallback-title'>${escapeHtml(b.title)}</div><div class='fallback-subtitle'>${escapeHtml(b.subtitle || '')}</div></div><div class='fallback-bottom'>alexandria.press</div></div>`;">
                         </div>
                         <div class="book-meta">
                             <div class="book-card-category">${b.category || 'Treatise'}</div>
