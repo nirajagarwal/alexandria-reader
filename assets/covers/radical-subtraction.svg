@@ -1,51 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2400" width="1600" height="2400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2400" width="100%" height="100%">
   <defs>
-    <linearGradient id="bg-grad-radical-subtraction" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#1c1c1e" stop-opacity="0.95"/>
-      <stop offset="60%" stop-color="#121212" stop-opacity="1.0"/>
-      <stop offset="100%" stop-color="#121212" stop-opacity="1.0"/>
+    <linearGradient id="bg-radical-subtraction" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#231f1c"/>
+      <stop offset="60%" stop-color="#171412"/>
+      <stop offset="100%" stop-color="#171412"/>
     </linearGradient>
-    <radialGradient id="halo-radical-subtraction" cx="50%" cy="58%" r="42%">
-      <stop offset="0%" stop-color="#a1a1aa" stop-opacity="0.22"/>
-      <stop offset="60%" stop-color="#a1a1aa" stop-opacity="0.04"/>
-      <stop offset="100%" stop-color="#a1a1aa" stop-opacity="0"/>
+    <radialGradient id="halo-radical-subtraction" cx="50%" cy="58%" r="45%">
+      <stop offset="0%" stop-color="#eab308" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#171412" stop-opacity="0"/>
     </radialGradient>
   </defs>
 
-  <rect width="1600" height="2400" fill="url(#bg-grad-radical-subtraction)"/>
+  <!-- Background -->
+  <rect width="1600" height="2400" fill="url(#bg-radical-subtraction)"/>
   <rect width="1600" height="2400" fill="url(#halo-radical-subtraction)"/>
 
-  <rect x="76" y="76" width="1448" height="2248" fill="none" stroke="#a1a1aa" stroke-width="1.5" opacity="0.35"/>
-  <rect x="92" y="92" width="1416" height="2216" fill="none" stroke="#a1a1aa" stroke-width="0.75" opacity="0.2"/>
+  <!-- Border Inset Frames -->
+  <rect x="70" y="70" width="1460" height="2260" fill="none" stroke="#eab308" stroke-width="1.8" opacity="0.35"/>
+  <rect x="86" y="86" width="1428" height="2228" fill="none" stroke="#eab308" stroke-width="0.8" opacity="0.2"/>
 
-  <g stroke="#a1a1aa" stroke-width="1.5" opacity="0.6">
-    <path d="M 68 116 L 68 68 L 116 68" fill="none"/>
-    <path d="M 1532 116 L 1532 68 L 1484 68" fill="none"/>
-    <path d="M 68 2284 L 68 2332 L 116 2332" fill="none"/>
-    <path d="M 1532 2284 L 1532 2332 L 1484 2332" fill="none"/>
+  <!-- Corner Brackets -->
+  <g stroke="#eab308" stroke-width="1.8" opacity="0.6">
+    <path d="M 60 110 L 60 60 L 110 60" fill="none"/>
+    <path d="M 1540 110 L 1540 60 L 1490 60" fill="none"/>
+    <path d="M 60 2290 L 60 2340 L 110 2340" fill="none"/>
+    <path d="M 1540 2290 L 1540 2340 L 1490 2340" fill="none"/>
   </g>
 
-  <g text-anchor="middle" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif">
-    <text x="800" y="210" font-size="20" font-weight="700" letter-spacing="9" fill="#a1a1aa" opacity="0.95">ALEXANDRIA PRESS</text>
-    <text x="800" y="250" font-size="13" font-weight="500" letter-spacing="4" fill="#71717a" opacity="0.75">VOLUME IV · APOPHATIC CONTEMPLATION</text>
-    <line x1="680" y1="285" x2="920" y2="285" stroke="#a1a1aa" stroke-width="1" opacity="0.35"/>
+  <!-- Colophon Header -->
+  <g text-anchor="middle" font-family="'Inter', -apple-system, sans-serif">
+    <text x="800" y="210" font-size="20" font-weight="700" letter-spacing="9" fill="#eab308" opacity="0.95">ALEXANDRIA PRESS</text>
+    <text x="800" y="252" font-size="13" font-weight="500" letter-spacing="4" fill="#a8a29e" opacity="0.75">VOLUME IV · CONTEMPLATIVE THEORY</text>
+    <line x1="680" y1="285" x2="920" y2="285" stroke="#eab308" stroke-width="1" opacity="0.35"/>
   </g>
 
+  <!-- Title & Subtitle Block -->
   <g text-anchor="middle">
-    <text x="800" y="490" font-family="'Literata', Georgia, serif" font-size="78" font-weight="700" letter-spacing="-0.5" fill="#f4f4f5">
+    <text x="800" y="470" font-family="'Literata', Georgia, serif" font-size="76" font-weight="700" fill="#faf9f6">
       Radical Subtraction
     </text>
-    <text x="800" y="575" font-family="'Literata', Georgia, serif" font-size="28" font-weight="300" font-style="italic" fill="#71717a">
-      The Neuroscience and Information of
+    <text x="800" y="555" font-family="'Literata', Georgia, serif" font-size="28" font-weight="300" font-style="italic" fill="#cbd5e1">
+      Sensory Isolation and the Quiet Mind
     </text>
-    <text x="800" y="625" font-family="'Literata', Georgia, serif" font-size="28" font-weight="300" font-style="italic" fill="#71717a">Theory the Silent Contemplatives</text>
   </g>
 
-  <g class="emblem-void"><circle cx="800" cy="1380" r="378" stroke="#a1a1aa" stroke-width="1.2" fill="none" opacity="0.04"/><circle cx="800" cy="1380" r="357" stroke="#a1a1aa" stroke-width="0.8" fill="none" opacity="0.08499999999999999"/><circle cx="800" cy="1380" r="336" stroke="#a1a1aa" stroke-width="1.2" fill="none" opacity="0.13"/><circle cx="800" cy="1380" r="315" stroke="#a1a1aa" stroke-width="0.8" fill="none" opacity="0.17500000000000002"/><circle cx="800" cy="1380" r="294" stroke="#a1a1aa" stroke-width="1.2" fill="none" opacity="0.22"/><circle cx="800" cy="1380" r="273" stroke="#a1a1aa" stroke-width="0.8" fill="none" opacity="0.26499999999999996"/><circle cx="800" cy="1380" r="252" stroke="#a1a1aa" stroke-width="1.2" fill="none" opacity="0.31"/><circle cx="800" cy="1380" r="231" stroke="#a1a1aa" stroke-width="0.8" fill="none" opacity="0.355"/><circle cx="800" cy="1380" r="210" stroke="#a1a1aa" stroke-width="1.2" fill="none" opacity="0.39999999999999997"/><circle cx="800" cy="1380" r="189" stroke="#a1a1aa" stroke-width="0.8" fill="none" opacity="0.44499999999999995"/><circle cx="800" cy="1380" r="168" stroke="#a1a1aa" stroke-width="1.2" fill="none" opacity="0.48999999999999994"/><circle cx="800" cy="1380" r="147" stroke="#a1a1aa" stroke-width="0.8" fill="none" opacity="0.535"/><circle cx="800" cy="1380" r="126" stroke="#a1a1aa" stroke-width="1.2" fill="none" opacity="0.5800000000000001"/><circle cx="800" cy="1380" r="105" stroke="#a1a1aa" stroke-width="0.8" fill="none" opacity="0.625"/><circle cx="800" cy="1380" r="84" stroke="#a1a1aa" stroke-width="1.2" fill="none" opacity="0.67"/><circle cx="800" cy="1380" r="63" stroke="#a1a1aa" stroke-width="0.8" fill="none" opacity="0.715"/><circle cx="800" cy="1380" r="42" stroke="#a1a1aa" stroke-width="1.2" fill="none" opacity="0.76"/><circle cx="800" cy="1380" r="21" stroke="#a1a1aa" stroke-width="0.8" fill="none" opacity="0.805"/><line x1="440" y1="1380" x2="1160" y2="1380" stroke="#a1a1aa" stroke-width="0.75" opacity="0.25"/><line x1="800" y1="1020" x2="800" y2="1740" stroke="#a1a1aa" stroke-width="0.75" opacity="0.25"/><circle cx="800" cy="1380" r="3" fill="#a1a1aa" opacity="0.95"/></g>
+  <!-- Mathematical Emblem -->
+  <g class="emblem-void"><circle cx="800" cy="1380" r="378" stroke="#eab308" stroke-width="1.2" fill="none" opacity="0.04"/><circle cx="800" cy="1380" r="357" stroke="#eab308" stroke-width="0.8" fill="none" opacity="0.08499999999999999"/><circle cx="800" cy="1380" r="336" stroke="#eab308" stroke-width="1.2" fill="none" opacity="0.13"/><circle cx="800" cy="1380" r="315" stroke="#eab308" stroke-width="0.8" fill="none" opacity="0.17500000000000002"/><circle cx="800" cy="1380" r="294" stroke="#eab308" stroke-width="1.2" fill="none" opacity="0.22"/><circle cx="800" cy="1380" r="273" stroke="#eab308" stroke-width="0.8" fill="none" opacity="0.26499999999999996"/><circle cx="800" cy="1380" r="252" stroke="#eab308" stroke-width="1.2" fill="none" opacity="0.31"/><circle cx="800" cy="1380" r="231" stroke="#eab308" stroke-width="0.8" fill="none" opacity="0.355"/><circle cx="800" cy="1380" r="210" stroke="#eab308" stroke-width="1.2" fill="none" opacity="0.39999999999999997"/><circle cx="800" cy="1380" r="189" stroke="#eab308" stroke-width="0.8" fill="none" opacity="0.44499999999999995"/><circle cx="800" cy="1380" r="168" stroke="#eab308" stroke-width="1.2" fill="none" opacity="0.48999999999999994"/><circle cx="800" cy="1380" r="147" stroke="#eab308" stroke-width="0.8" fill="none" opacity="0.535"/><circle cx="800" cy="1380" r="126" stroke="#eab308" stroke-width="1.2" fill="none" opacity="0.5800000000000001"/><circle cx="800" cy="1380" r="105" stroke="#eab308" stroke-width="0.8" fill="none" opacity="0.625"/><circle cx="800" cy="1380" r="84" stroke="#eab308" stroke-width="1.2" fill="none" opacity="0.67"/><circle cx="800" cy="1380" r="63" stroke="#eab308" stroke-width="0.8" fill="none" opacity="0.715"/><circle cx="800" cy="1380" r="42" stroke="#eab308" stroke-width="1.2" fill="none" opacity="0.76"/><circle cx="800" cy="1380" r="21" stroke="#eab308" stroke-width="0.8" fill="none" opacity="0.805"/><line x1="440" y1="1380" x2="1160" y2="1380" stroke="#eab308" stroke-width="0.75" opacity="0.25"/><line x1="800" y1="1020" x2="800" y2="1740" stroke="#eab308" stroke-width="0.75" opacity="0.25"/><circle cx="800" cy="1380" r="3" fill="#eab308" opacity="0.95"/></g>
 
-  <g text-anchor="middle" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif">
-    <line x1="620" y1="2160" x2="980" y2="2160" stroke="#a1a1aa" stroke-width="1" opacity="0.35"/>
-    <text x="800" y="2210" font-size="13" font-weight="600" letter-spacing="5" fill="#71717a" opacity="0.8">LIVING LIBRARY ARCHITECTURE</text>
-    <text x="800" y="2246" font-size="11" font-weight="400" letter-spacing="3" fill="#71717a" opacity="0.55">ALEXANDRIA.PRESS · AUTONOMOUS EDITION</text>
+  <!-- Footer Colophon -->
+  <g text-anchor="middle" font-family="'Inter', -apple-system, sans-serif" opacity="0.5">
+    <line x1="680" y1="2140" x2="920" y2="2140" stroke="#eab308" stroke-width="0.8"/>
+    <text x="800" y="2185" font-size="11" font-weight="600" letter-spacing="6" fill="#a8a29e">alexandria.press</text>
   </g>
 </svg>

@@ -1,115 +1,119 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2400" width="1600" height="2400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2400" width="100%" height="100%">
   <defs>
-    <linearGradient id="bg-grad-singular-minds" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#0c3b3b" stop-opacity="0.95"/>
-      <stop offset="60%" stop-color="#062828" stop-opacity="1.0"/>
-      <stop offset="100%" stop-color="#062828" stop-opacity="1.0"/>
+    <linearGradient id="bg-singular-minds" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1b263b"/>
+      <stop offset="60%" stop-color="#0d1b2a"/>
+      <stop offset="100%" stop-color="#0d1b2a"/>
     </linearGradient>
-    <radialGradient id="halo-singular-minds" cx="50%" cy="58%" r="42%">
-      <stop offset="0%" stop-color="#14b8a6" stop-opacity="0.22"/>
-      <stop offset="60%" stop-color="#14b8a6" stop-opacity="0.04"/>
-      <stop offset="100%" stop-color="#14b8a6" stop-opacity="0"/>
+    <radialGradient id="halo-singular-minds" cx="50%" cy="58%" r="45%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#0d1b2a" stop-opacity="0"/>
     </radialGradient>
   </defs>
 
-  <rect width="1600" height="2400" fill="url(#bg-grad-singular-minds)"/>
+  <!-- Background -->
+  <rect width="1600" height="2400" fill="url(#bg-singular-minds)"/>
   <rect width="1600" height="2400" fill="url(#halo-singular-minds)"/>
 
-  <rect x="76" y="76" width="1448" height="2248" fill="none" stroke="#14b8a6" stroke-width="1.5" opacity="0.35"/>
-  <rect x="92" y="92" width="1416" height="2216" fill="none" stroke="#14b8a6" stroke-width="0.75" opacity="0.2"/>
+  <!-- Border Inset Frames -->
+  <rect x="70" y="70" width="1460" height="2260" fill="none" stroke="#0ea5e9" stroke-width="1.8" opacity="0.35"/>
+  <rect x="86" y="86" width="1428" height="2228" fill="none" stroke="#0ea5e9" stroke-width="0.8" opacity="0.2"/>
 
-  <g stroke="#14b8a6" stroke-width="1.5" opacity="0.6">
-    <path d="M 68 116 L 68 68 L 116 68" fill="none"/>
-    <path d="M 1532 116 L 1532 68 L 1484 68" fill="none"/>
-    <path d="M 68 2284 L 68 2332 L 116 2332" fill="none"/>
-    <path d="M 1532 2284 L 1532 2332 L 1484 2332" fill="none"/>
+  <!-- Corner Brackets -->
+  <g stroke="#0ea5e9" stroke-width="1.8" opacity="0.6">
+    <path d="M 60 110 L 60 60 L 110 60" fill="none"/>
+    <path d="M 1540 110 L 1540 60 L 1490 60" fill="none"/>
+    <path d="M 60 2290 L 60 2340 L 110 2340" fill="none"/>
+    <path d="M 1540 2290 L 1540 2340 L 1490 2340" fill="none"/>
   </g>
 
-  <g text-anchor="middle" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif">
-    <text x="800" y="210" font-size="20" font-weight="700" letter-spacing="9" fill="#14b8a6" opacity="0.95">ALEXANDRIA PRESS</text>
-    <text x="800" y="250" font-size="13" font-weight="500" letter-spacing="4" fill="#99f6e4" opacity="0.75">VOLUME III · COGNITIVE ARCHITECTURE</text>
-    <line x1="680" y1="285" x2="920" y2="285" stroke="#14b8a6" stroke-width="1" opacity="0.35"/>
+  <!-- Colophon Header -->
+  <g text-anchor="middle" font-family="'Inter', -apple-system, sans-serif">
+    <text x="800" y="210" font-size="20" font-weight="700" letter-spacing="9" fill="#0ea5e9" opacity="0.95">ALEXANDRIA PRESS</text>
+    <text x="800" y="252" font-size="13" font-weight="500" letter-spacing="4" fill="#a8a29e" opacity="0.75">VOLUME III · COGNITIVE ARCHITECTURE</text>
+    <line x1="680" y1="285" x2="920" y2="285" stroke="#0ea5e9" stroke-width="1" opacity="0.35"/>
   </g>
 
+  <!-- Title & Subtitle Block -->
   <g text-anchor="middle">
-    <text x="800" y="490" font-family="'Literata', Georgia, serif" font-size="78" font-weight="700" letter-spacing="-0.5" fill="#f0fdfa">
+    <text x="800" y="470" font-family="'Literata', Georgia, serif" font-size="76" font-weight="700" fill="#faf9f6">
       Singular Minds
     </text>
-    <text x="800" y="575" font-family="'Literata', Georgia, serif" font-size="28" font-weight="300" font-style="italic" fill="#99f6e4">
-      Forensic Dissections of Anomalous
+    <text x="800" y="555" font-family="'Literata', Georgia, serif" font-size="28" font-weight="300" font-style="italic" fill="#cbd5e1">
+      How Exceptional Thinkers Solved Impossible Problems
     </text>
-    <text x="800" y="625" font-family="'Literata', Georgia, serif" font-size="28" font-weight="300" font-style="italic" fill="#99f6e4">Cognitive Architectures</text>
   </g>
 
+  <!-- Mathematical Emblem -->
   <g class="emblem-manifold">
                 <ellipse cx="800" cy="1380" rx="135.0" ry="64.8" 
                          transform="rotate(0 800 1380)" 
-                         stroke="#14b8a6" stroke-width="1.3" fill="none" opacity="0.18"/>
+                         stroke="#0ea5e9" stroke-width="1.3" fill="none" opacity="0.18"/>
             
                 <ellipse cx="800" cy="1380" rx="165.0" ry="79.2" 
                          transform="rotate(11 800 1380)" 
-                         stroke="#14b8a6" stroke-width="1.3" fill="none" opacity="0.22"/>
+                         stroke="#0ea5e9" stroke-width="1.3" fill="none" opacity="0.22"/>
             
                 <ellipse cx="800" cy="1380" rx="195.0" ry="93.6" 
                          transform="rotate(22 800 1380)" 
-                         stroke="#14b8a6" stroke-width="1.3" fill="none" opacity="0.26"/>
+                         stroke="#0ea5e9" stroke-width="1.3" fill="none" opacity="0.26"/>
             
                 <ellipse cx="800" cy="1380" rx="225.0" ry="108.0" 
                          transform="rotate(33 800 1380)" 
-                         stroke="#14b8a6" stroke-width="1.3" fill="none" opacity="0.3"/>
+                         stroke="#0ea5e9" stroke-width="1.3" fill="none" opacity="0.3"/>
             
                 <ellipse cx="800" cy="1380" rx="255.0" ry="122.39999999999999" 
                          transform="rotate(44 800 1380)" 
-                         stroke="#14b8a6" stroke-width="1.3" fill="none" opacity="0.33999999999999997"/>
+                         stroke="#0ea5e9" stroke-width="1.3" fill="none" opacity="0.33999999999999997"/>
             
                 <ellipse cx="800" cy="1380" rx="285.0" ry="136.79999999999998" 
                          transform="rotate(55 800 1380)" 
-                         stroke="#14b8a6" stroke-width="1.3" fill="none" opacity="0.38"/>
+                         stroke="#0ea5e9" stroke-width="1.3" fill="none" opacity="0.38"/>
             
                 <ellipse cx="800" cy="1380" rx="315.0" ry="151.2" 
                          transform="rotate(66 800 1380)" 
-                         stroke="#14b8a6" stroke-width="1.3" fill="none" opacity="0.42"/>
+                         stroke="#0ea5e9" stroke-width="1.3" fill="none" opacity="0.42"/>
             
                 <ellipse cx="800" cy="1380" rx="345.0" ry="165.6" 
                          transform="rotate(77 800 1380)" 
-                         stroke="#14b8a6" stroke-width="1.3" fill="none" opacity="0.46"/>
+                         stroke="#0ea5e9" stroke-width="1.3" fill="none" opacity="0.46"/>
             
                 <ellipse cx="800" cy="1380" rx="375.0" ry="180.0" 
                          transform="rotate(88 800 1380)" 
-                         stroke="#14b8a6" stroke-width="1.3" fill="none" opacity="0.5"/>
+                         stroke="#0ea5e9" stroke-width="1.3" fill="none" opacity="0.5"/>
             
                 <ellipse cx="800" cy="1380" rx="405.0" ry="194.4" 
                          transform="rotate(99 800 1380)" 
-                         stroke="#14b8a6" stroke-width="1.3" fill="none" opacity="0.54"/>
+                         stroke="#0ea5e9" stroke-width="1.3" fill="none" opacity="0.54"/>
             
                 <ellipse cx="800" cy="1380" rx="435.0" ry="208.79999999999998" 
                          transform="rotate(110 800 1380)" 
-                         stroke="#14b8a6" stroke-width="1.3" fill="none" opacity="0.5800000000000001"/>
+                         stroke="#0ea5e9" stroke-width="1.3" fill="none" opacity="0.5800000000000001"/>
             
                 <ellipse cx="800" cy="1380" rx="465.0" ry="223.2" 
                          transform="rotate(121 800 1380)" 
-                         stroke="#14b8a6" stroke-width="1.3" fill="none" opacity="0.62"/>
+                         stroke="#0ea5e9" stroke-width="1.3" fill="none" opacity="0.62"/>
             
                 <ellipse cx="800" cy="1380" rx="495.0" ry="237.6" 
                          transform="rotate(132 800 1380)" 
-                         stroke="#14b8a6" stroke-width="1.3" fill="none" opacity="0.6599999999999999"/>
+                         stroke="#0ea5e9" stroke-width="1.3" fill="none" opacity="0.6599999999999999"/>
             
                 <ellipse cx="800" cy="1380" rx="525.0" ry="252.0" 
                          transform="rotate(143 800 1380)" 
-                         stroke="#14b8a6" stroke-width="1.3" fill="none" opacity="0.7"/>
+                         stroke="#0ea5e9" stroke-width="1.3" fill="none" opacity="0.7"/>
             
                 <ellipse cx="800" cy="1380" rx="555.0" ry="266.4" 
                          transform="rotate(154 800 1380)" 
-                         stroke="#14b8a6" stroke-width="1.3" fill="none" opacity="0.74"/>
+                         stroke="#0ea5e9" stroke-width="1.3" fill="none" opacity="0.74"/>
             
                 <ellipse cx="800" cy="1380" rx="585.0" ry="280.8" 
                          transform="rotate(165 800 1380)" 
-                         stroke="#14b8a6" stroke-width="1.3" fill="none" opacity="0.78"/>
-            <circle cx="800" cy="1380" r="6" fill="#14b8a6" opacity="0.9"/></g>
+                         stroke="#0ea5e9" stroke-width="1.3" fill="none" opacity="0.78"/>
+            <circle cx="800" cy="1380" r="6" fill="#0ea5e9" opacity="0.9"/></g>
 
-  <g text-anchor="middle" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif">
-    <line x1="620" y1="2160" x2="980" y2="2160" stroke="#14b8a6" stroke-width="1" opacity="0.35"/>
-    <text x="800" y="2210" font-size="13" font-weight="600" letter-spacing="5" fill="#99f6e4" opacity="0.8">LIVING LIBRARY ARCHITECTURE</text>
-    <text x="800" y="2246" font-size="11" font-weight="400" letter-spacing="3" fill="#99f6e4" opacity="0.55">ALEXANDRIA.PRESS · AUTONOMOUS EDITION</text>
+  <!-- Footer Colophon -->
+  <g text-anchor="middle" font-family="'Inter', -apple-system, sans-serif" opacity="0.5">
+    <line x1="680" y1="2140" x2="920" y2="2140" stroke="#0ea5e9" stroke-width="0.8"/>
+    <text x="800" y="2185" font-size="11" font-weight="600" letter-spacing="6" fill="#a8a29e">alexandria.press</text>
   </g>
 </svg>
