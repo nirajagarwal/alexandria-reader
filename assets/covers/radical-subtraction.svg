@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2400" width="100%" height="100%">
   <defs>
     <linearGradient id="bg-radical-subtraction" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#231f1c"/>
-      <stop offset="60%" stop-color="#171412"/>
-      <stop offset="100%" stop-color="#171412"/>
+      <stop offset="0%" stop-color="#221d18"/>
+      <stop offset="60%" stop-color="#141210"/>
+      <stop offset="100%" stop-color="#141210"/>
     </linearGradient>
-    <radialGradient id="halo-radical-subtraction" cx="50%" cy="58%" r="45%">
-      <stop offset="0%" stop-color="#eab308" stop-opacity="0.22"/>
-      <stop offset="100%" stop-color="#171412" stop-opacity="0"/>
+    <radialGradient id="halo-radical-subtraction" cx="50%" cy="58%" r="48%">
+      <stop offset="0%" stop-color="#eab308" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#141210" stop-opacity="0"/>
     </radialGradient>
   </defs>
 
@@ -15,26 +15,26 @@
   <rect width="1600" height="2400" fill="url(#bg-radical-subtraction)"/>
   <rect width="1600" height="2400" fill="url(#halo-radical-subtraction)"/>
 
-  <!-- 1. Category -->
+  <!-- 1. Category Header -->
   <g text-anchor="middle" font-family="'Inter', -apple-system, sans-serif">
-    <text x="800" y="240" font-size="22" font-weight="700" letter-spacing="8" fill="#eab308" opacity="0.95">CONTEMPLATIVE THEORY</text>
+    <text x="800" y="270" font-size="34" font-weight="700" letter-spacing="10" fill="#eab308" opacity="0.95">CONTEMPLATIVE THEORY</text>
   </g>
 
-  <!-- 2. Title & 3. Subtitle -->
+  <!-- 2. Book Title (Bold, High Contrast) -->
   <g text-anchor="middle">
-    <text x="800" y="470" font-family="'Literata', Georgia, serif" font-size="78" font-weight="700" fill="#faf9f6">
+    <text x="800" y="500" font-family="'Literata', Georgia, serif" font-size="112" font-weight="700" letter-spacing="-0.01em" fill="#faf9f6">
       Radical Subtraction
     </text>
-    <text x="800" y="555" font-family="'Literata', Georgia, serif" font-size="28" font-weight="300" font-style="italic" fill="#cbd5e1">
+    <text x="800" y="590" font-family="'Literata', Georgia, serif" font-size="46" font-weight="400" font-style="italic" fill="#cbd5e1">
       Sensory Isolation and the Quiet Mind
     </text>
   </g>
 
-  <!-- 4. Image Emblem -->
-  <g class="emblem-void"><circle cx="800" cy="1380" r="40" stroke="#eab308" stroke-width="3.2" stroke-dasharray="none" fill="none" opacity="0.82"/><circle cx="800" cy="1380" r="75" stroke="#eab308" stroke-width="2.9" stroke-dasharray="none" fill="none" opacity="0.76"/><circle cx="800" cy="1380" r="120" stroke="#eab308" stroke-width="2.5" stroke-dasharray="none" fill="none" opacity="0.68"/><circle cx="800" cy="1380" r="175" stroke="#eab308" stroke-width="2.0" stroke-dasharray="26.2,17.5" fill="none" opacity="0.57"/><circle cx="800" cy="1380" r="240" stroke="#eab308" stroke-width="1.5" stroke-dasharray="36.0,24.0" fill="none" opacity="0.45"/><circle cx="800" cy="1380" r="315" stroke="#eab308" stroke-width="1.0" stroke-dasharray="47.2,31.5" fill="none" opacity="0.31"/><circle cx="800" cy="1380" r="400" stroke="#eab308" stroke-width="1.0" stroke-dasharray="60.0,40.0" fill="none" opacity="0.15"/><line x1="885.0" y1="1380.0" x2="1210.0" y2="1380.0" stroke="#eab308" stroke-width="0.8" opacity="0.25"/><line x1="878.5" y1="1412.5" x2="1178.8" y2="1536.9" stroke="#eab308" stroke-width="0.8" opacity="0.25"/><line x1="860.1" y1="1440.1" x2="1089.9" y2="1669.9" stroke="#eab308" stroke-width="0.8" opacity="0.25"/><line x1="832.5" y1="1458.5" x2="956.9" y2="1758.8" stroke="#eab308" stroke-width="0.8" opacity="0.25"/><line x1="800.0" y1="1465.0" x2="800.0" y2="1790.0" stroke="#eab308" stroke-width="0.8" opacity="0.25"/><line x1="767.5" y1="1458.5" x2="643.1" y2="1758.8" stroke="#eab308" stroke-width="0.8" opacity="0.25"/><line x1="739.9" y1="1440.1" x2="510.1" y2="1669.9" stroke="#eab308" stroke-width="0.8" opacity="0.25"/><line x1="721.5" y1="1412.5" x2="421.2" y2="1536.9" stroke="#eab308" stroke-width="0.8" opacity="0.25"/><line x1="715.0" y1="1380.0" x2="390.0" y2="1380.0" stroke="#eab308" stroke-width="0.8" opacity="0.25"/><line x1="721.5" y1="1347.5" x2="421.2" y2="1223.1" stroke="#eab308" stroke-width="0.8" opacity="0.25"/><line x1="739.9" y1="1319.9" x2="510.1" y2="1090.1" stroke="#eab308" stroke-width="0.8" opacity="0.25"/><line x1="767.5" y1="1301.5" x2="643.1" y2="1001.2" stroke="#eab308" stroke-width="0.8" opacity="0.25"/><line x1="800.0" y1="1295.0" x2="800.0" y2="970.0" stroke="#eab308" stroke-width="0.8" opacity="0.25"/><line x1="832.5" y1="1301.5" x2="956.9" y2="1001.2" stroke="#eab308" stroke-width="0.8" opacity="0.25"/><line x1="860.1" y1="1319.9" x2="1089.9" y2="1090.1" stroke="#eab308" stroke-width="0.8" opacity="0.25"/><line x1="878.5" y1="1347.5" x2="1178.8" y2="1223.1" stroke="#eab308" stroke-width="0.8" opacity="0.25"/><circle cx="800" cy="1380" r="12" fill="#eab308"/></g>
+  <!-- 4. Geometric Emblem -->
+  <g class="emblem-void"><circle cx="800" cy="1400" r="45" stroke="#eab308" stroke-width="3.6" stroke-dasharray="none" fill="none" opacity="0.87"/><circle cx="800" cy="1400" r="85" stroke="#eab308" stroke-width="3.2" stroke-dasharray="none" fill="none" opacity="0.80"/><circle cx="800" cy="1400" r="135" stroke="#eab308" stroke-width="2.8" stroke-dasharray="none" fill="none" opacity="0.71"/><circle cx="800" cy="1400" r="195" stroke="#eab308" stroke-width="2.2" stroke-dasharray="29.2,19.5" fill="none" opacity="0.60"/><circle cx="800" cy="1400" r="265" stroke="#eab308" stroke-width="1.6" stroke-dasharray="39.8,26.5" fill="none" opacity="0.48"/><circle cx="800" cy="1400" r="340" stroke="#eab308" stroke-width="1.2" stroke-dasharray="51.0,34.0" fill="none" opacity="0.34"/><circle cx="800" cy="1400" r="420" stroke="#eab308" stroke-width="1.2" stroke-dasharray="63.0,42.0" fill="none" opacity="0.20"/><line x1="890.0" y1="1400.0" x2="1230.0" y2="1400.0" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="883.1" y1="1434.4" x2="1197.3" y2="1564.6" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="863.6" y1="1463.6" x2="1104.1" y2="1704.1" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="834.4" y1="1483.1" x2="964.6" y2="1797.3" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="800.0" y1="1490.0" x2="800.0" y2="1830.0" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="765.6" y1="1483.1" x2="635.4" y2="1797.3" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="736.4" y1="1463.6" x2="495.9" y2="1704.1" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="716.9" y1="1434.4" x2="402.7" y2="1564.6" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="710.0" y1="1400.0" x2="370.0" y2="1400.0" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="716.9" y1="1365.6" x2="402.7" y2="1235.4" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="736.4" y1="1336.4" x2="495.9" y2="1095.9" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="765.6" y1="1316.9" x2="635.4" y2="1002.7" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="800.0" y1="1310.0" x2="800.0" y2="970.0" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="834.4" y1="1316.9" x2="964.6" y2="1002.7" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="863.6" y1="1336.4" x2="1104.1" y2="1095.9" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="883.1" y1="1365.6" x2="1197.3" y2="1235.4" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><circle cx="800" cy="1400" r="15" fill="#eab308"/></g>
 
-  <!-- 5. Bottom Brand: ALEXANDRIA.PRESS -->
+  <!-- 5. Bottom Publisher Imprint -->
   <g text-anchor="middle" font-family="'Inter', -apple-system, sans-serif">
-    <text x="800" y="2220" font-size="20" font-weight="700" letter-spacing="8" fill="#a8a29e" opacity="0.85">ALEXANDRIA.PRESS</text>
+    <text x="800" y="2220" font-size="34" font-weight="700" letter-spacing="10" fill="#a8a29e" opacity="0.85">ALEXANDRIA.PRESS</text>
   </g>
 </svg>

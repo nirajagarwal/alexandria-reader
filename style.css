@@ -534,7 +534,7 @@
         }
 
         /* Desktop Main Container (Centered with Generous Book Margins) */
-        main {
+        #main-stage {
             height: 100vh;
             width: 100vw;
             display: flex;
@@ -547,7 +547,7 @@
         }
 
         @media (max-width: 899px) {
-            main {
+            #main-stage {
                 padding: 12px 20px;
             }
             .spread-stage {
