@@ -1763,7 +1763,7 @@
                 spreads.push({
                     isFirstSpread: spreadIdx === 0,
                     colLeftHtml: (spreadIdx === 0 ? headerBoxHtml : "") + currentLeftItems.join(""),
-                    colRightHtml: ""
+                    colRightHtml: isTwoCol ? currentRightItems.join("") : ""
                 });
             }
 
