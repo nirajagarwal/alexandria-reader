@@ -67,7 +67,8 @@ def test_books_js_inventory():
         "radical-subtraction",
         "alexandria-manifesto",
         "liminal-thresholds",
-        "autonomous-engine"
+        "autonomous-engine",
+        "elemental-asymmetries"
     ]
     for k in expected_keys:
         assert k in books, f"Missing book {k} in books.js"
@@ -80,7 +81,8 @@ def test_books_js_inventory():
 
 def test_typography_and_headings(books):
     for k in ["singular-minds", "radical-subtraction", "liminal-thresholds",
-        "autonomous-engine"]:
+        "autonomous-engine",
+        "elemental-asymmetries"]:
         book = books[k]
         for line in book["markdown"].splitlines():
             line_s = line.strip()
