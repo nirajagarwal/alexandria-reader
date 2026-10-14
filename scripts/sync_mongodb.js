@@ -29,6 +29,7 @@ const BOOKS_METADATA = [
     { key: 'autonomous-engine', file: 'autonomous_engine.md', category: 'Physiology' },
     { key: 'elemental-asymmetries', file: 'elemental_asymmetries.md', category: 'Material Science' },
     { key: 'affective-topologies', file: 'affective_topologies.md', category: 'Neuroscience' },
+    { key: 'architectures-of-choice', file: 'architectures_of_choice.md', category: 'Decision Science' },
     { key: 'alexandria-manifesto', file: 'alexandria_manifesto.md', category: 'Platform' }
 ];
 
