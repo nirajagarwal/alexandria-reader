@@ -393,7 +393,8 @@
 
             // 3. Extract and render inline math ($...$)
             const mathTokens = [];
-            s = s.replace(/\$([^\s$](?:[^$\n]*?[^\s$])?)\$/g, (match, math) => {
+            s = s.replace(/\$([^\s$](?:[^$\n]*?[^\s$])?)\$/g, (match, rawMath) => {
+                const math = rawMath.replace(/___ESCAPED_DOLLAR___/g, '\\$');
                 // If it looks like plain isolated currency without math operators (e.g. $50, $5,000)
                 if (/^\d[\d,]*(?:\.\d+)?$/.test(math) && !/[+\-*/=^_\\]/.test(math)) {
                     return "$" + math;
@@ -644,12 +645,19 @@
             const fontSpec = "18px 'Literata', Charter, Georgia, serif";
             const lineH = 28.5;
 
+            // Keep inline $...$ expressions atomic so they never split across column/page breaks
+            const safeText = text
+                .replace(/\\\$/g, '___ESC_D___')
+                .replace(/\$([^\s$](?:[^$\n]*?[^\s$])?)\$/g, (m) => m.replace(/\s+/g, '\uE000'))
+                .replace(/___ESC_D___/g, '\\$');
+            const restoreMathSpaces = (lines) => lines.map(l => l.replace(/\uE000/g, ' ').trim()).filter(Boolean);
+
             if (pretextModule && pretextModule.prepareWithSegments && pretextModule.layoutWithLines) {
                 try {
-                    const prep = pretextModule.prepareWithSegments(text, fontSpec);
+                    const prep = pretextModule.prepareWithSegments(safeText, fontSpec);
                     const res = pretextModule.layoutWithLines(prep, colWidth, lineH);
                     if (res && res.lines && res.lines.length > 0) {
-                        return res.lines.map(l => l.text.trim()).filter(Boolean);
+                        return restoreMathSpaces(res.lines.map(l => l.text));
                     }
                 } catch (e) {}
             }
@@ -660,12 +668,12 @@
                     const ctx = _measureCanvas.getContext('2d');
                     if (ctx) {
                         ctx.font = fontSpec;
-                        const words = text.split(/\s+/).filter(Boolean);
+                        const words = safeText.split(/\s+/).filter(Boolean);
                         const lines = [];
                         let cur = "";
                         for (let i = 0; i < words.length; i++) {
                             const test = cur ? (cur + " " + words[i]) : words[i];
-                            const w = ctx.measureText(test).width;
+                            const w = ctx.measureText(test.replace(/\uE000/g, ' ')).width;
                             if (w > colWidth && cur) {
                                 lines.push(cur);
                                 cur = words[i];
@@ -674,13 +682,13 @@
                             }
                         }
                         if (cur) lines.push(cur);
-                        if (lines.length > 0) return lines;
+                        if (lines.length > 0) return restoreMathSpaces(lines);
                     }
                 } catch (e) {}
             }
 
             const charsPerLine = Math.max(40, Math.floor(colWidth / 8.2));
-            const words = text.split(/\s+/).filter(Boolean);
+            const words = safeText.split(/\s+/).filter(Boolean);
             const lines = [];
             let cur = "";
             for (let i = 0; i < words.length; i++) {
@@ -693,7 +701,7 @@
                 }
             }
             if (cur) lines.push(cur);
-            return lines;
+            return restoreMathSpaces(lines);
         }
 
         function renderParagraphHtml(text, isContinuation = false, isContinued = false) {
