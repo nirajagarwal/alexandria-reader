@@ -45,9 +45,9 @@ Before drafting a single sentence of book prose, write a structured JSON bluepri
 
 ---
 
-## Stage 3: Batched Chapter Drafting (~250-Word Introduction + 650–850 Words per Chapter)
+## Stage 3: Batched Chapter Drafting (~250-Word Introduction + 550–720 Words per Chapter)
 
-To prevent LLM context-window compression (where chapters shrink to 300 words by Chapter 5), spawn a dedicated author subagent (or 2 parallel subagents) using the **Canonical Manifesto Prompt Template** below so the Alexandria Manifesto is baked directly into every generation call:
+To prevent both context-window truncation and verbose drift toward the LLM's preferred mean, spawn a dedicated author subagent using the **Canonical Manifesto Prompt Template** below so the Alexandria Manifesto is baked directly into every generation call:
 
 ```markdown
 Read `/Users/niraj/book-writer/alexandria_manifesto.md`, `/Users/niraj/book-writer/GENERATION_GUIDELINES.md`, and `/Users/niraj/book-writer/dossiers/<slug>.json`.
@@ -58,8 +58,8 @@ Write `/Users/niraj/book-writer/<filename>.md` and validate it with `python3 scr
 2. **Authorial Humility & Honest Machine Synthesis**: "Do not be fashioned according to the age"—we do not hide machine synthesis or imitate commercial literary padding. Use plainspoken syntax, everyday nouns, and active verbs. Zero purple prose or hyperbole ("breathtaking", "awe-inspiring", "mind-boggling", "staggering", "paradigm-shifting"). Keep structured bullet lists wherever they bring clarity.
 3. **Concise Topic-Only Introduction (~250 Words)**: The `### Introduction` must be **200–275 words** (strictly $\le 300$ words). Introduce the core topic and structural thesis only—**NEVER summarize, list, or preview the individual chapters**.
 4. **Mandatory Concrete Grounding & Verbatim Quotes**: Every chapter must anchor its mechanism in real historical events, physical experiments, clinical cases, or primary records with named people, dates, places, and exact measurements. Sprinkle 1–2 brief, documented **verbatim quotes** from historical actors or primary texts to humanize the story without inventing dialogue.
-5. **Sentence Cadence & Length Variance (No Staccato Clichés)**: Avoid uniform 28–35 word sentences and repetitive participial-phrase openers ("Working alongside..., X did Y"). Aim for a smaller average sentence length (**~16–22 words**) with natural variance by splitting sprawling multi-clause sentences into clean declarative statements. **Warning**: Do NOT use cheesy LLM "short punchy sentences" (dramatic 2–4 word fragments like "It failed." or "Everything changed.").
-6. **Mechanism Completeness (650–850 Words per Chapter)**: Unpack *how* the mechanism worked step by step across 5–8 paragraphs. Never compress a chapter into a 300-word sketch.
+5. **Sentence Cadence & Length Variance (17–22 Words/Sentence)**: Prevent drift toward the LLM's 33-word multi-clause mean and avoid repetitive participial-phrase openers ("Working alongside..., X did Y"). Keep the average sentence length at **17–22 words** ($\le 24.0$ w/s) by writing direct declarative sentences. **Warning**: Do NOT use cheesy LLM "short punchy sentences" (dramatic 2–4 word fragments like "It failed." or "Everything changed.").
+6. **High-Density Compression (550–720 Words per Chapter)**: Our punchiness comes from compression. Unpack *how* the mechanism worked step by step across 5–6 crisp paragraphs (**550–720 words per chapter**, ~600–650 words ideal). Do not pad chapters to 850 words.
 7. **Earned Formalisms Only (Zero Math Cosplay)**: Follow each chapter's `formalism_mode` in `dossiers/<slug>.json`. Include `$$...$$` display equations ONLY in chapters marked `"equation"` (where a real mathematical, physical, chemical, or statistical law exists). In chapters marked `"ledger_or_list"`, use a clean Markdown bulleted/numbered list—never invent fake pseudo-equations!
 8. **Rotate the 3 Opening Doors**: Follow each chapter's `opening_door` (`A: Scene`, `B: Constraint/Paradox`, `C: Artifact/Measurement`). Ensure $\le 3$ chapters across the entire book begin their first sentence with `"In/On/At [Date]"`.
 9. **Clean Exits (Zero Concluding Sermons)**: End every chapter directly on the concrete `exit_fact`. Never add a moralizing summary sentence ("X showed that...", "This demonstrated that...", "Ultimately...", "serves as a testament").

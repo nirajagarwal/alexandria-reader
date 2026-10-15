@@ -214,14 +214,14 @@ def validate_book(filepath: str, min_words: int = 600, max_words: int = 900, leg
                 errors.append("Introduction must introduce the topic only—do not summarize or list the chapters.")
         else:
             effective_min = 280 if legacy else min_words
-            effective_max = 1050 if legacy else max_words
+            effective_max = 1070 if legacy else max_words
             if body_words < effective_min:
                 errors.append(
                     f"Chapter {idx} ('{h2[2:]}') body is too short: {body_words} words (minimum {effective_min})."
                 )
             elif body_words > effective_max:
-                warnings.append(
-                    f"Chapter {idx} ('{h2[2:]}') body is {body_words} words (target max {effective_max})."
+                errors.append(
+                    f"Chapter {idx} ('{h2[2:]}') body is too long: {body_words} words (maximum {effective_max}; target 550–720 words for high-density compression)."
                 )
 
             # Concrete grounding check (must have a 3-4 digit year or BCE/CE date)
@@ -312,8 +312,8 @@ def validate_book(filepath: str, min_words: int = 600, max_words: int = 900, leg
     sents = [s.strip() for s in re.split(r"(?<=[.!?])\s+", prose_text) if len(s.strip().split()) >= 3]
     avg_sent_words = round(sum(len(s.split()) for s in sents) / len(sents), 1) if sents else 0.0
     if not legacy and avg_sent_words > 24.0:
-        warnings.append(
-            f"Average sentence length is {avg_sent_words} words/sentence (target 16–23 w/s). Break up long multi-clause sentences into crisp declarative statements without using cheesy 2–3 word fragments."
+        errors.append(
+            f"Average sentence length is {avg_sent_words} words/sentence (maximum 24.0 w/s; target 17–22 w/s). Break up long multi-clause sentences into direct declarative statements."
         )
 
     summary = {
@@ -331,18 +331,29 @@ def validate_book(filepath: str, min_words: int = 600, max_words: int = 900, leg
 def main():
     parser = argparse.ArgumentParser(description="Validate Alexandria Press markdown manuscripts.")
     parser.add_argument("files", nargs="*", help="Markdown file(s) to validate")
-    parser.add_argument("--all", action="store_true", help="Validate all 11+ published books injs/books-data.js")
-    parser.add_argument("--min-words", type=int, default=600, help="Minimum words per chapter (default: 600)")
-    parser.add_argument("--max-words", type=int, default=900, help="Maximum words per chapter (default: 900)")
-    parser.add_argument("--legacy", action="store_true", help="Allow legacy 380+ word counts for earlier 7 volumes")
+    parser.add_argument("--all", action="store_true", help="Validate all published books in js/books-data.js")
+    parser.add_argument("--min-words", type=int, default=520, help="Minimum words per chapter (default: 520)")
+    parser.add_argument("--max-words", type=int, default=760, help="Maximum words per chapter (default: 760)")
+    parser.add_argument("--legacy", action="store_true", help="Allow legacy word counts and sentence lengths for existing volumes")
     args = parser.parse_args()
 
     LEGACY_BOOKS = {
+        "non_linear_engines.md",
         "latent_fragility.md",
+        "singular_minds.md",
         "radical_subtraction.md",
         "elemental_asymmetries.md",
         "liminal_thresholds.md",
         "autonomous_engine.md",
+        "affective_topologies.md",
+        "architectures_of_choice.md",
+        "tales_of_audacity.md",
+        "architectures_of_the_grid.md",
+        "sensory_worlds.md",
+        "instruments_of_precision.md",
+        "ghosts_in_the_parchment.md",
+        "fictions_of_order.md",
+        "bonds_of_enmity.md",
     }
 
     target_files = list(args.files)

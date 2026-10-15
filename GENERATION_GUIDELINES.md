@@ -11,7 +11,7 @@ This document defines the two-tier generation process for Alexandria Press (`ale
 Every book generation prompt must include and enforce these universal constraints:
 
 1. **The 1-Hour Book / 5-Minute Chapter & Two Structural Modes**
-   - Each volume consists of **12 chapters** (~650–850 words each, ~5 minutes per chapter, ~1 hour for the book) plus a concise **Introduction (~250 words)**.
+   - Each volume consists of **12 chapters** (~550–720 words each, ~5 minutes per chapter, ~1 hour for the book) plus a concise **Introduction (~250 words)**.
    - Choose the structural mode that fits the subject:
      - **Mode I — Modular Facets (Default)**: Twelve self-contained essays/stories examining a single theme from twelve independent angles ("shorts, not the long video"). Zero cross-chapter narrative continuity is required; a reader can read any chapter standalone, yet finishing one chapter makes them want to read another.
      - **Mode II — Continuous Arc (For Select Topics)**: A continuous 12-chapter sequential or developmental arc across the entire book, reserved for topics that inherently demand an unfolding narrative trajectory.
@@ -25,10 +25,9 @@ Every book generation prompt must include and enforce these universal constraint
    - Every single chapter must be anchored in a concrete historical event, physical experiment, clinical case, or primary empirical record with named people, dates, places, and specific measurements.
    - **Verbatim Quotes**: Sprinkle 1–2 short, authentic, documented verbatim quotes from primary sources (words actually written or spoken by the historical figures) into chapters to humanize the record without inventing fictional dialogue.
 
-4. **Depth & Mechanism Completeness (650–850 Words per Chapter; ~250-Word Introductions)**
+4. **High-Density Compression (550–720 Words per Chapter; ~250-Word Introductions)**
    - **Introductions**: Keep introductions around **250 words** (strictly 140–300 words). Introduce the core topic, structural problem, and thesis directly—**never** summarize or list the upcoming chapters.
-   - **Chapters**: Every chapter must be **650 to 850 words** (5 to 8 rich paragraphs). Never compress chapters into 300-word summaries.
-   - A story is not told until the reader can see *how* the mechanism actually worked step by step.
+   - **Chapters**: Keep every chapter tightly compressed between **550 and 720 words** (~600–650 words ideal; 5 to 6 crisp paragraphs). Do not let the model drift toward 850-word bloat, and do not truncate mechanisms into 300-word sketches.Punchiness comes from compression: unpack *how* the mechanism worked with zero wasted clauses.
 
 5. **Earned Formalisms Only (Zero "Math Cosplay")**
    - Include a display equation (`$$...$$`) **only** when a genuine, established mathematical, physical, chemical, or statistical law governs the mechanism (e.g., Kuramoto coupled oscillators, Shannon channel capacity, Fick's law of diffusion, Kelly criterion, Bethe-Weizsäcker pairing energy, Manning's open-channel flow).
@@ -36,10 +35,10 @@ Every book generation prompt must include and enforce these universal constraint
    - When a chapter's mechanism is clinical, historical, or procedural rather than mathematical, present the exact experimental setup, mortality ledger, or structured bullet list instead of forcing a fake equation.
    - All genuine math must use valid LaTeX enclosed in `$$...$$` (block) or `$...$` (inline), with multi-character subscripts wrapped in curly braces (`_{...}`).
 
-6. **Sentence Cadence: Smaller Average Length & Natural Variance (No Staccato Clichés)**
-   - Avoid uniform 28–35 word multi-clause sentences and repetitive participial-phrase openers (*"Working alongside..., X did Y"*, *"Having discovered..., Z..."*).
-   - Target a **lower average sentence length (~16–22 words)** with natural variance: mix clean 10–14 word declarative sentences with 20–28 word mechanism explanations.
-   - **Warning Against "Short Punchy Sentences"**: Do **not** write artificial LLM staccato fragments or dramatic one-liners (*"It failed."*, *"Then everything changed."*, *"The math was unforgiving."*). Keep all short sentences factual and plainspoken.
+6. **Sentence Cadence: Smaller Average Length & Natural Variance (17–22 Words/Sentence)**
+   - Prevent the model from drifting toward its default 33–36 word multi-clause encyclopedic mean or repetitive participial-phrase openers (*"Working alongside..., X did Y"*, *"Having discovered..., Z..."*).
+   - Target a **crisp average sentence length of 17–22 words** (strictly $\le 24$ words/sentence) with natural variance: mix clean 10–14 word declarative sentences with 20–26 word mechanism explanations.
+   - **Warning Against "Short Punchy Sentences"**: Do **not** write artificial LLM staccato fragments or dramatic one-liners (*"It failed."*, *"Then everything changed."*). Keep all short sentences factual and plainspoken.
 
 7. **Antidote to Opening Fatigue: Rotate Three Opening Doors**
    - Do **not** open every chapter with the same sentence formula (*"At [Time] on [Date], [Age]-year-old [Name]..."*).
