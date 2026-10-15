@@ -89,11 +89,38 @@ export function renderParagraphHtml(text, isContinuation = false, isContinued = 
  * Measure non-paragraph block heights (code, equation, list)
  */
 export function measureBlockHeight(block, colWidth) {
-    if (block.type === 'equation') {
-        return 44 + 24; // padding + font + margins
+    if (typeof document !== 'undefined') {
+        let probe = document.getElementById("block-measure-probe");
+        if (!probe) {
+            probe = document.createElement("div");
+            probe.id = "block-measure-probe";
+            probe.style.cssText = "position:absolute; visibility:hidden; pointer-events:none; z-index:-1000; top:0; left:0;";
+            document.body.appendChild(probe);
+        }
+        probe.style.width = colWidth + "px";
+        probe.innerHTML = block.html;
+        const el = probe.firstElementChild;
+        let result = 60;
+        if (el) {
+            const rect = el.getBoundingClientRect();
+            const cs = window.getComputedStyle(el);
+            const marginTop = parseFloat(cs.marginTop) || 0;
+            const marginBottom = parseFloat(cs.marginBottom) || 0;
+            result = Math.max(40, Math.ceil(rect.height + marginTop + marginBottom));
+        } else if (block.type === 'equation') {
+            result = 84;
+        } else if (block.type === 'code') {
+            const lines = block.text ? block.text.split('\n').length : 1;
+            result = (lines * 20) + 36;
+        } else if (block.type === 'list') {
+            result = (block.itemCount * 26) + 24;
+        }
+        probe.innerHTML = "";
+        return result;
     }
+    if (block.type === 'equation') return 84;
     if (block.type === 'code') {
-        const lines = block.text.split('\n').length;
+        const lines = block.text ? block.text.split('\n').length : 1;
         return (lines * 20) + 36;
     }
     if (block.type === 'list') {
