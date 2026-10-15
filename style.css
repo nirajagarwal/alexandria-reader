@@ -333,14 +333,16 @@
             flex-shrink: 0;
         }
 
-        ul {
-            margin: 10px 0 14px 20px;
+        ul, ol {
+            margin: 10px 0 14px 24px;
+            padding-left: 4px;
             flex-shrink: 0;
         }
 
         li {
             margin-bottom: 6px;
             font-size: 0.95em;
+            line-height: var(--prose-lh);
         }
 
         /* Telescopic Sidebar */

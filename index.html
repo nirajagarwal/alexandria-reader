@@ -505,6 +505,31 @@
                 return id;
             });
 
+            // Ensure lists preceded or followed immediately by prose are isolated by double newlines
+            const rawLines = text.split('\n');
+            const separatedLines = [];
+            let inList = false;
+            for (let i = 0; i < rawLines.length; i++) {
+                const line = rawLines[i];
+                const trimmed = line.trim();
+                const isListItem = /^(?:[\*\-]\s+|\d+\.\s+)/.test(trimmed);
+                if (isListItem) {
+                    if (!inList && separatedLines.length > 0 && separatedLines[separatedLines.length - 1].trim() !== '') {
+                        separatedLines.push('');
+                    }
+                    inList = true;
+                } else if (trimmed === '') {
+                    inList = false;
+                } else {
+                    if (inList) {
+                        separatedLines.push('');
+                    }
+                    inList = false;
+                }
+                separatedLines.push(line);
+            }
+            text = separatedLines.join('\n');
+
             const paragraphs = text.split(/\n\s*\n/);
             const blocks = [];
 

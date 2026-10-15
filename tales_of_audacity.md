@@ -120,6 +120,7 @@ The medical establishment of the Royal Navy was paralyzed by Galenic humors, ari
 In May 1747, aboard the HMS *Salisbury* in the English Channel, a thirty-one-year-old Scottish naval surgeon named James Lind decided to test the competing cures through direct empirical confrontation. Lind executed the first controlled clinical trial in recorded medical history.
 
 He selected twelve scorbutic sailors with nearly identical symptoms, housed them in the same sick bay berth, and placed them on a uniform naval diet. He divided them into six pairs and administered a different competing therapy to each pair:
+
 - Pair 1: One quart of hard cider daily.
 - Pair 2: Twenty-five drops of sulfuric acid elixir.
 - Pair 3: Half a pint of seawater daily.
