@@ -18,9 +18,10 @@ Every book generation prompt must include and enforce these universal constraint
    - Every single chapter must be anchored in a concrete historical event, physical experiment, clinical case, or primary empirical record with named people, dates, places, and specific measurements.
    - Never write a chapter as a purely theoretical overview or textbook summary.
 
-3. **Depth & Mechanism Completeness (650–900 Words per Chapter)**
-   - Volumes consist of **8 to 12 chapters**, plus an Introduction.
-   - Every chapter must be **650 to 900 words** (5 to 8 rich paragraphs). Never compress chapters into 300-word summaries.
+3. **Depth & Mechanism Completeness (650–900 Words per Chapter; ~250-Word Introductions)**
+   - Volumes consist of **8 to 12 chapters**, plus a concise **Introduction (~200–275 words)**.
+   - **Introductions**: Keep introductions around **250 words**. Introduce the core topic, structural problem, and thesis directly—**never** summarize or list the upcoming chapters.
+   - **Chapters**: Every chapter must be **650 to 900 words** (5 to 8 rich paragraphs). Never compress chapters into 300-word summaries.
    - A story is not told until the reader can see *how* the mechanism actually worked step by step.
 
 4. **Earned Formalisms Only (Zero "Math Cosplay")**

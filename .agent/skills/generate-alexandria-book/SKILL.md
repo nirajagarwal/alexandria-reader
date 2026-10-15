@@ -44,11 +44,12 @@ Before drafting a single sentence of book prose, write a structured JSON bluepri
 
 ---
 
-## Stage 3: Batched Chapter Drafting (650–850 Words per Chapter)
+## Stage 3: Batched Chapter Drafting (~250-Word Introduction + 650–850 Words per Chapter)
 
 To prevent LLM context-window compression (where chapters shrink to 300 words by Chapter 5):
 - Spawn a dedicated author subagent (or 2 parallel subagents drafting Chapters 1–6 and Chapters 7–12) equipped with the locked `dossiers/<slug>.json` blueprint and `GENERATION_GUIDELINES.md`.
-- Enforce the **650–850 word** target per chapter body (total book ~9,000–10,200 words).
+- **Introduction Rule (~250 Words, No Chapter Summaries)**: The `### Introduction` must be approximately **200–275 words** (~250 words). It should introduce the core topic and structural thesis only—**never** summarize or preview the individual chapters.
+- Enforce the **650–850 word** target per chapter body (total book ~9,000–10,000 words).
 - Formatting requirements:
   - Escape all literal currency dollar signs (`\$100`).
   - Never wrap bare numbers in `$...$` (write `50`, not `$50$`).
