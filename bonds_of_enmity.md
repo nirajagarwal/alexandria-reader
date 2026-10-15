@@ -1,4 +1,4 @@
-# Architectures of Enmity
+# Bonds of Enmity
 ## How Blood Feuds, Rivalries, and Escalation Traps Lock Adversaries Together
 
 *Alexandria Press · alexandria.press*
@@ -6,7 +6,7 @@
 ---
 
 ### Introduction
-# Architectures of Enmity
+# Bonds of Enmity
 ## The Coupled Machine of Rivalry
 
 Anger is a brief physiological reflex. A sudden insult or boundary violation triggers a surge of catecholamines from the adrenal medulla, elevating heart rate and priming skeletal muscle for immediate confrontation. Left to its own metabolic half-life, that neurochemical spike decays within minutes. Enmity is something altogether different. It is not a hot emotion but a cold, durable architecture—a coupled control system in which two adversaries become structurally locked into each other's decision loops across years, generations, or centuries.

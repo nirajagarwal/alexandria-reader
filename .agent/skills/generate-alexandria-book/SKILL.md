@@ -33,6 +33,7 @@ This skill executes the drift-proof, deterministic 5-stage pipeline for creating
 
 Before drafting a single sentence of book prose, write a structured JSON blueprint to `/Users/niraj/book-writer/dossiers/<slug>.json` containing:
 - `slug` (hyphenated, e.g., `"geometries-of-contagion"`), `file` (underscored, e.g., `"geometries_of_contagion.md"`), `title`, `subtitle` (zero colons!), `category`, `profile`, `accent`, `bg`, `theme`.
+- **Title Distinctness Rule**: Never reuse head nouns already used in existing Alexandria Press book titles (do NOT use *Architectures*, *Engines*, *Topologies*, *Thresholds*, *Asymmetries*, *Tales*, *Worlds*, *Instruments*, *Ghosts*, *Fictions*, or *Bonds* in new book titles).
 - `chapters`: Array of 12 chapter objects, each specifying:
   1. `chapter`: `1` through `12`
   2. `title`: Plainspoken chapter title (zero colons)

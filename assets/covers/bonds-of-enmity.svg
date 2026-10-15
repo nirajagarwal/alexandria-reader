@@ -1,26 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2400" width="100%" height="100%">
   <defs>
-    <linearGradient id="bg-architectures-of-enmity" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="bg-bonds-of-enmity" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#1f0808"/>
       <stop offset="65%" stop-color="#080c11"/>
       <stop offset="100%" stop-color="#05080b"/>
     </linearGradient>
-    <radialGradient id="halo-architectures-of-enmity" cx="50%" cy="58%" r="48%">
+    <radialGradient id="halo-bonds-of-enmity" cx="50%" cy="58%" r="48%">
       <stop offset="0%" stop-color="#ef4444" stop-opacity="0.25"/>
       <stop offset="100%" stop-color="#05080b" stop-opacity="0"/>
     </radialGradient>
   </defs>
 
-  <rect width="1600" height="2400" fill="url(#bg-architectures-of-enmity)"/>
-  <rect width="1600" height="2400" fill="url(#halo-architectures-of-enmity)"/>
+  <rect width="1600" height="2400" fill="url(#bg-bonds-of-enmity)"/>
+  <rect width="1600" height="2400" fill="url(#halo-bonds-of-enmity)"/>
 
   <g text-anchor="middle" font-family="'Inter', -apple-system, sans-serif">
     <text x="800" y="270" font-size="34" font-weight="700" letter-spacing="10" fill="#ef4444" opacity="0.95">CONFLICT &amp; GAME THEORY</text>
   </g>
 
   <g text-anchor="middle">
-    <text x="800" y="500" font-family="'Literata', Georgia, serif" font-size="88" font-weight="700" letter-spacing="-0.01em" fill="#faf9f6">
-      Architectures of Enmity
+    <text x="800" y="500" font-family="'Literata', Georgia, serif" font-size="104" font-weight="700" letter-spacing="-0.01em" fill="#faf9f6">
+      Bonds of Enmity
     </text>
     <text x="800" y="590" font-family="'Literata', Georgia, serif" font-size="44" font-weight="400" font-style="italic" fill="#cbd5e1">
       How Blood Feuds, Rivalries, and Escalation Traps Lock Adversaries Together
