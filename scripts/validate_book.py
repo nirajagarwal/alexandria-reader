@@ -267,7 +267,13 @@ def validate_svg_diagram(svg_str: str, loc: str):
     return errs
 
 
-def validate_book(filepath: str, min_words: int = 520, max_words: int = 760, legacy: bool = False):
+def validate_book(
+    filepath: str,
+    min_words: int = 520,
+    max_words: int = 760,
+    legacy: bool = False,
+    require_quotes: bool = False,
+):
     errors = []
     warnings = []
 
@@ -276,6 +282,24 @@ def validate_book(filepath: str, min_words: int = 520, max_words: int = 760, leg
 
     raw_text = open(filepath, encoding="utf-8").read()
     filename = os.path.basename(filepath)
+    slug = os.path.splitext(filename)[0].replace("_", "-")
+    dossier_path = os.path.join(BASE_DIR, "dossiers", f"{slug}.json")
+
+    min_diagrams = 0
+    if os.path.exists(dossier_path):
+        try:
+            dossier = json.load(open(dossier_path, encoding="utf-8"))
+            cc = dossier.get("creator_constraints", {})
+            if cc.get("require_quote_per_chapter"):
+                require_quotes = True
+            if "min_diagrams" in cc:
+                min_diagrams = int(cc["min_diagrams"])
+            # Also auto-enable require_quotes if all 12 dossier chapters specify verbatim_quote
+            d_chaps = dossier.get("chapters", [])
+            if d_chaps and all(c.get("verbatim_quote") for c in d_chaps):
+                require_quotes = True
+        except Exception:
+            pass
 
     # 1. Check for leftover script artifacts
     if "with open(" in raw_text or 'print(f"' in raw_text:
@@ -299,6 +323,7 @@ def validate_book(filepath: str, min_words: int = 520, max_words: int = 760, leg
     # Check Introduction (Section 1) and Chapters (Sections 2..N)
     chapters_meta = []
     date_open_count = 0
+    quote_chap_count = 0
     katex_items = []
     diagram_count = 0
 
@@ -365,6 +390,18 @@ def validate_book(filepath: str, min_words: int = 520, max_words: int = 760, leg
             # Concrete grounding check (must have a 3-4 digit year or BCE/CE date)
             if not re.search(r"\b(1\d{3}|20[0-2]\d|\d+\s*(?:BCE|BC|CE|AD))\b", body_no_code):
                 errors.append(f"Chapter {idx} ('{h2[2:]}') lacks a concrete historical year/date anchor.")
+
+            # Check for verbatim quote in chapter ("..." or “...” with >= 3 words)
+            quotes_found = [
+                q for q in re.findall(r'(?:"([^"\n]{12,})"|“([^”\n]{12,})”)', body_no_code)
+                if len((q[0] or q[1]).split()) >= 3
+            ]
+            if quotes_found:
+                quote_chap_count += 1
+            elif require_quotes:
+                errors.append(
+                    f"Chapter {idx} ('{h2[2:]}') is missing a required verbatim quote (--require-quotes / creator_constraints)."
+                )
 
             # Check opening sentence cadence
             paragraphs = [p.strip() for p in re.split(r"\n\s*\n", body_no_code) if p.strip()]
@@ -438,6 +475,8 @@ def validate_book(filepath: str, min_words: int = 520, max_words: int = 760, leg
         )
     if diagram_count > 4:
         errors.append(f"Too many diagrams in volume ({diagram_count}; maximum 4 per book so diagrams remain high-signal).")
+    if diagram_count < min_diagrams:
+        errors.append(f"Volume has {diagram_count} diagrams, fewer than creator_constraints.min_diagrams ({min_diagrams}).")
 
     katex_errors = verify_katex_batch(katex_items)
     errors.extend(katex_errors)
@@ -462,6 +501,7 @@ def validate_book(filepath: str, min_words: int = 520, max_words: int = 760, leg
         "total_words": len(raw_no_code.split()),
         "chapter_words": [c["words"] for c in chapters_meta[1:]],
         "date_opens": date_open_count,
+        "quote_chapters": quote_chap_count,
         "equations_checked": len(katex_items),
         "diagrams_checked": diagram_count,
         "avg_sent_words": avg_sent_words,
@@ -476,6 +516,7 @@ def main():
     parser.add_argument("--min-words", type=int, default=520, help="Minimum words per chapter (default: 520)")
     parser.add_argument("--max-words", type=int, default=760, help="Maximum words per chapter (default: 760)")
     parser.add_argument("--legacy", action="store_true", help="Allow legacy word counts and sentence lengths for existing volumes")
+    parser.add_argument("--require-quotes", action="store_true", help="Require at least one verbatim quote in every chapter (Creator Steering constraint)")
     args = parser.parse_args()
 
     LEGACY_BOOKS = {
@@ -513,13 +554,20 @@ def main():
     for fpath in target_files:
         fname = os.path.basename(fpath)
         use_legacy = args.legacy or (args.all and fname in LEGACY_BOOKS)
-        errs, warns, info = validate_book(fpath, args.min_words, args.max_words, legacy=use_legacy)
+        errs, warns, info = validate_book(
+            fpath,
+            args.min_words,
+            args.max_words,
+            legacy=use_legacy,
+            require_quotes=args.require_quotes,
+        )
         status = "PASS" if not errs else "FAIL"
         ch_w = info.get("chapter_words", [])
         w_range = f"{min(ch_w)}–{max(ch_w)} w/ch" if ch_w else "N/A"
         print(
             f"[{status}] {fname:28s} | {info.get('chapters', 0):2d} chs | {info.get('total_words', 0):6,d} words ({w_range}) | "
-            f"sent: {info.get('avg_sent_words', 0):4.1f} w/s | eqs: {info.get('equations_checked', 0):3d} | diags: {info.get('diagrams_checked', 0)}"
+            f"sent: {info.get('avg_sent_words', 0):4.1f} w/s | quotes: {info.get('quote_chapters', 0):2d}/{info.get('chapters', 0)} | "
+            f"eqs: {info.get('equations_checked', 0):3d} | diags: {info.get('diagrams_checked', 0)}"
         )
         for w in warns:
             print(f"   WARN: {w}")
@@ -536,3 +584,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

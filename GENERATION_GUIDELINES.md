@@ -6,15 +6,14 @@ This document defines the two-tier generation process for Alexandria Press (`ale
 
 ---
 
-## Tier 1: Universal Core Guidelines (Common to All Books)
+### Tier 1: Universal Core Guidelines (Common to All Books)
 
 Every book generation prompt must include and enforce these universal constraints:
 
-1. **The 1-Hour Book / 5-Minute Chapter & Two Structural Modes**
-   - Each volume consists of **12 chapters** (~550–720 words each, ~5 minutes per chapter, ~1 hour for the book) plus a concise **Introduction (~250 words)**.
-   - Choose the structural mode that fits the subject:
-     - **Mode I — Modular Facets (Default)**: Twelve self-contained essays/stories examining a single theme from twelve independent angles ("shorts, not the long video"). Zero cross-chapter narrative continuity is required; a reader can read any chapter standalone, yet finishing one chapter makes them want to read another.
-     - **Mode II — Continuous Arc (For Select Topics)**: A continuous 12-chapter sequential or developmental arc across the entire book, reserved for topics that inherently demand an unfolding narrative trajectory.
+1. **The Universal 12-Facet Volume ("Deep Learning for Humans")**
+   - Alexandria does not publish comprehensive textbooks or vocational curricula to teach a narrow skill. We publish **"Deep Learning for Humans"**—high-signal, non-exhaustive training volumes that wire the reader's internal neural network through compressed structural examples.
+   - Because we do not need to be comprehensive, **12 facets is always enough**. Every volume consists of **12 self-contained chapters** (~550–720 words each, ~5 minutes per chapter, ~1 hour for the book) plus a concise **Introduction (~250 words)**.
+   - **Elastic 12-Facet Container**: All book concepts—whether examining a cross-disciplinary phenomenon (*Bonds of Enmity*), twelve physical instruments (*Instruments of Precision*), or a single extraordinary thinker (*Twelve Facets: The Restless Mind of William James*, where one facet can be a biographical profile and the rest explore their experiments and ideas)—are shaped into 12 modular facets ("shorts, not the long video"). Zero cross-chapter narrative continuity is required; any facet can be read standalone.
 
 2. **Authorial Humility & Honest Machine Synthesis ("Do Not Be Fashioned According to the Age")**
    - Write in clear, direct, plainspoken prose. We are not trying to imitate commercial literary non-fiction or hide machine synthesis.
@@ -23,11 +22,11 @@ Every book generation prompt must include and enforce these universal constraint
 
 3. **Mandatory Concrete Grounding & Verbatim Historical Quotes**
    - Every single chapter must be anchored in a concrete historical event, physical experiment, clinical case, or primary empirical record with named people, dates, places, and specific measurements.
-   - **Verbatim Quotes**: Sprinkle 1–2 short, authentic, documented verbatim quotes from primary sources (words actually written or spoken by the historical figures) into chapters to humanize the record without inventing fictional dialogue.
+   - **Verbatim Quotes**: Sprinkle 1–2 short, authentic, documented verbatim quotes from primary sources (words actually written or spoken by the historical figures) into chapters to humanize the record without inventing fictional dialogue. When a creator or dossier sets `require_quote_per_chapter: true` (or `--require-quotes`), every single chapter (1–12) must contain at least one documented verbatim quote.
 
 4. **High-Density Compression (550–720 Words per Chapter; ~250-Word Introductions)**
    - **Introductions**: Keep introductions around **250 words** (strictly 140–300 words). Introduce the core topic, structural problem, and thesis directly—**never** summarize or list the upcoming chapters.
-   - **Chapters**: Keep every chapter tightly compressed between **550 and 720 words** (~600–650 words ideal; 5 to 6 crisp paragraphs). Do not let the model drift toward 850-word bloat, and do not truncate mechanisms into 300-word sketches.Punchiness comes from compression: unpack *how* the mechanism worked with zero wasted clauses.
+   - **Chapters**: Keep every chapter tightly compressed between **550 and 720 words** (~600–650 words ideal; hard validator bounds: `520–760` words). Do not let the model drift toward 850-word bloat, and do not truncate mechanisms into 300-word sketches. Punchiness comes from compression: unpack *how* the mechanism worked with zero wasted clauses.
 
 5. **Earned Formalisms Only (Zero "Math Cosplay")**
    - Include a display equation (`$$...$$`) **only** when a genuine, established mathematical, physical, chemical, or statistical law governs the mechanism (e.g., Kuramoto coupled oscillators, Shannon channel capacity, Fick's law of diffusion, Kelly criterion, Bethe-Weizsäcker pairing energy, Manning's open-channel flow).
@@ -61,9 +60,9 @@ Every book generation prompt must include and enforce these universal constraint
      ```
 
 10. **Earned Schematic Diagrams (` ```svg `)**
-   - **Restraint First (2–4 Per Book, Max 1 Per Chapter)**: Only include a diagram when a spatial topology, optical/mechanical apparatus, feedback loop, or timeline is genuinely clearer drawn than described in prose. Never include decorative or generic box-and-arrow filler.
-   - **Theme-Aware Inline SVG**: Use fenced ` ```svg ` blocks with `viewBox="0 0 600 H"` ($140 \le H \le 250$) and `data-caption="FIG. X.1 — ..."`. Use CSS variables (`var(--text-color)`, `var(--text-muted)`, `var(--accent-color)`, `var(--border-color)`, `var(--card-bg)`) rather than hardcoded black/white colors so diagrams adapt seamlessly to Light, Dark, and Sepia themes.
-   - **Complexity & Collision Cap**: Keep diagrams sparse ($\le 34$ SVG primitives), use `font-size` between `11` and `18`, and verify zero text bounding-box overlaps via `scripts/validate_book.py`.
+    - **Restraint First (2–4 Per Book, Max 1 Per Chapter)**: Only include a diagram when a spatial topology, optical/mechanical apparatus, feedback loop, or timeline is genuinely clearer drawn than described in prose. Never include decorative or generic box-and-arrow filler.
+    - **Theme-Aware Inline SVG**: Use fenced ` ```svg ` blocks with `viewBox="0 0 600 H"` ($140 \le H \le 250$) and `data-caption="FIG. X.1 — ..."`. Use CSS variables (`var(--text-color)`, `var(--text-muted)`, `var(--accent-color)`, `var(--border-color)`, `var(--card-bg)`) rather than hardcoded black/white colors so diagrams adapt seamlessly to Light, Dark, and Sepia themes.
+    - **Complexity & Collision Cap**: Keep diagrams sparse ($\le 34$ SVG primitives), use `font-size` between `11` and `18`, ensure every `<rect>` box is at least `20px` wider than its enclosed `<text>`, and verify zero text/box collisions via `scripts/validate_book.py`.
 
 ---
 
@@ -72,36 +71,47 @@ Every book generation prompt must include and enforce these universal constraint
 When generating or regenerating a book, select the profile that matches its domain and combine it with Tier 1:
 
 ### Profile A: Physical Systems, Infrastructure & Engineering Failures
-*Applies to: `Latent Fragility`, `Architectures of the Grid`, `Elemental Asymmetries`, `Liminal Thresholds`*
+*Applies to: `Latent Fragility`, `Architectures of the Grid`, `Elemental Asymmetries`, `Liminal Thresholds`, `Instruments of Precision`*
 - **Narrative Vector**: Focus on the physical machine, infrastructure node, industrial reactor, or experimental apparatus—the exact materials, pressures, voltages, dimensions, and the human operators or engineers on site.
 - **Forensic Engine**: Unpack the governing physical or chemical law, the boundary condition that was violated, the exact differential or thermodynamic equation, and the quantitative post-mortem telemetry.
 - **Cross-Domain Bridge**: Connect the physical mechanism to an isomorphic process in biology, acoustics, or network theory only when both systems obey the same mathematical law.
 
 ### Profile B: Biological, Neural & Affective Control Loops
-*Applies to: `The Autonomous Engine`, `Affective Topologies`, `Radical Subtraction`*
+*Applies to: `The Autonomous Engine`, `Affective Topologies`, `Radical Subtraction`, `Sensory Worlds`*
 - **Narrative Vector**: Every chapter **must** center on a specific landmark experiment, clinical patient, physiological ward, or historical practitioner (e.g., Wolfram Schultz's primate dopamine recordings, António Damasio's prefrontal patients, Colin Murray Parkes's bereavement studies, Ernest Starling's isolated heart preparation, John of the Cross in Toledo). Never write unanchored theory.
 - **Forensic Engine**: Trace the exact anatomical pathway, receptor kinetics, autonomic shift, or computational neuroscience equation (e.g., temporal-difference reward prediction error, variational free energy, Hill cooperative binding, countercurrent multiplication).
 
 ### Profile C: Decision Theory, Economics & Enterprise Mechanics
-*Applies to: `Non-Linear Engines`, `Architectures of Choice`*
-- **Narrative Vector**: Every chapter **must** center on a concrete historical decision, financial blowup, military survival problem, or startup inflection point (e.g., Abraham Wald's WWII bomber armor analysis, Ed Thorp and Claude Shannon testing the Kelly criterion in Las Vegas, Andy Grove and Gordon Moore exiting DRAM at Intel in 1985, Ole Peters resolving the 1713 St. Petersburg paradox).
-- **Forensic Engine**: Show the exact arithmetic—why ensemble averages diverge from time averages, how the payoff matrix or balance sheet worked, and where the absorbing barrier sat. Use real probability/financial equations where applicable; never invent symbolic jargon for simple business concepts.
+*Applies to: `Non-Linear Engines`, `Architectures of Choice`, `Fictions of Order`, `Bonds of Enmity`*
+- **Narrative Vector**: Every chapter **must** center on a concrete historical decision, financial blowup, legal/institutional invention, rivalry, or startup inflection point (e.g., Abraham Wald's WWII bomber armor analysis, Ed Thorp and Claude Shannon testing the Kelly criterion in Las Vegas, Andy Grove and Gordon Moore exiting DRAM at Intel in 1985, Ole Peters resolving the 1713 St. Petersburg paradox).
+- **Forensic Engine**: Show the exact arithmetic—why ensemble averages diverge from time averages, how the payoff matrix or balance sheet worked, and where the absorbing barrier sat. Use real probability/financial equations where applicable; never invent symbolic jargon for simple business or legal concepts.
 
-### Profile D: Intellectual Ruptures & Consensus Breaking
-*Applies to: `Singular Minds`, `Tales of Audacity`*
-- **Narrative Vector**: Establish the concrete institutional orthodoxy and why it held power, introduce the specific empirical anomaly or intractable problem that defied it, and walk through the exact sequence of trials, measurements, or proofs executed by the protagonist.
+### Profile D: Intellectual Ruptures, Forensic Scholarship & Prismatic Minds
+*Applies to: `Singular Minds`, `Tales of Audacity`, `Ghosts in the Parchment`, `Twelve Facets`*
+- **Narrative Vector**: Establish the concrete institutional orthodoxy or intellectual puzzle, introduce the specific empirical anomaly or primary text that broke it, and walk through the exact sequence of trials, measurements, or arguments executed by the protagonist(s). For a single-thinker 12-facet volume (*Twelve Facets*), one facet may serve as a biographical profile while the remaining eleven unpack distinct experiments, concepts, and intellectual collisions.
 - **Forensic Engine**:
   - When the breakthrough was mathematical, physical, or astronomical (Eratosthenes, Archimedes, Kepler, Grothendieck, Shannon, Noether), show the authentic geometric or mathematical derivation.
-  - When the breakthrough was medical, biological, or geological (James Lind's scurvy trial, Ignaz Semmelweis's Vienna maternity clinics, Barry Marshall's *H. pylori* self-experimentation, Barbara McClintock's maize chromosomes, Katalin Karikó's modified mRNA), show the exact experimental protocol, clinical comparison groups, or biochemical mechanism—**do not invent fake equations for non-mathematical discoveries**.
+  - When the breakthrough was medical, biological, philological, or philosophical (James Lind's scurvy trial, Ignaz Semmelweis's Vienna maternity clinics, William James's stream of thought or pragmatist maxim, Lorenzo Valla's philological exposure of the Donation of Constantine), show the exact experimental protocol, schematic diagram, or primary textual comparison—**do not invent fake equations for non-mathematical discoveries**.
 
 ---
 
-## Pre-Publication Quality Audit Checklist
+## Tier 3: The Two-Pass Creator Workflow & Steering Constraints
+
+Every book created on the platform follows a bounded two-pass loop:
+1. **Topic Input $\rightarrow$ 3–4 Forks on the Road**: Analyze the creator's raw topic and present 3–4 distinct 12-facet angles.
+2. **First-Pass Generation (`v1`)**: Lock `dossiers/<slug>.json`, generate `v1`, and pass `scripts/validate_book.py`.
+3. **Creator Steering Prompt $\rightarrow$ Regenerate `v2` & Done**: Accept the creator's post-`v1` steering prompt (e.g., *"I want at least one quote per chapter"*, *"Swap Chapter 8"*, *"Add a diagram to Chapter 2"*), encode the constraint into `dossiers/<slug>.json` (under `creator_constraints`) and `scripts/validate_book.py` (e.g., `--require-quotes`), regenerate `v2`, validate, publish, and call it done.
+
+---
+
+## Pre-Publication Quality Audit Checklist (`scripts/validate_book.py`)
 
 Before any volume is compiled into `js/books-data.js`:
-1. **Word Count Check**: Does every chapter have between **600 and 950 words**?
-2. **Concrete Anchor Check**: Does every chapter feature named people, dates, places, and concrete empirical events?
-3. **Opening Door Variety**: Are the openings varied across Scene, Constraint/Paradox, and Artifact/Evidence doors?
-4. **Clean Exit Check**: Are there zero *"X showed that..."* / *"This demonstrated that..."* moralizing tail paragraphs?
-5. **Equation Audit**: Is every `$$...$$` block a real mathematical, physical, chemical, or statistical formula with valid KaTeX syntax?
-6. **Zero-Colon Header Check**: Do all book titles, subtitles, and 3-line chapter headers contain zero colons?
+1. **Compression Check**: Is the Introduction `140–300` words (~250 target) with zero chapter summaries, and is every chapter `520–760` words (`550–720` target)?
+2. **Sentence Cadence Check**: Is the average sentence length $\le 24.0$ words/sentence (`17–22` w/s target)?
+3. **Concrete Anchor & Quote Check**: Does every chapter feature named people, dates, places, and concrete empirical events (plus $\ge 1$ verbatim quote per chapter when `--require-quotes` or `creator_constraints.require_quote_per_chapter` is active)?
+4. **Opening Door Variety**: Are openings rotated across Scene, Constraint/Paradox, and Artifact/Evidence doors ($\le 4$ date-phrase opens)?
+5. **Clean Exit Check**: Are there zero *"X showed that..."* / *"This demonstrated that..."* moralizing tail paragraphs?
+6. **Equation & Diagram Audit**: Is every `$$...$$` block a real KaTeX-compilable formula, and does every ` ```svg ` diagram pass text-in-box containment and collision checks?
+7. **Zero-Colon Header Check**: Do all book titles, subtitles, and 3-line chapter headers contain zero colons?
+

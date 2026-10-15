@@ -11,6 +11,10 @@
     "bg": "#1f1614",
     "theme": "harmonic-rings"
   },
+  "creator_constraints": {
+    "require_quote_per_chapter": true,
+    "min_diagrams": 3
+  },
   "introduction": {
     "title": "Twelve Facets",
     "subtitle": "The Physician Who Refused to Close the System",

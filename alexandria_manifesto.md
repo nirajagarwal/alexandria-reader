@@ -6,12 +6,14 @@
 ---
 
 ### The Vision
-# A New Medium for Human Understanding
-## Compressing Breakthroughs and Connecting Distant Fields
+# Deep Learning for Humans
+## Training the Mental Network Through High-Density Compression
 
-Alexandria is not an e-reader or a digital bookstore. It is a new medium for human understanding.
+Alexandria is not an e-reader, a digital bookstore, or a vocational curriculum. You do not come here to learn a narrow utilitarian skill or memorize a comprehensive textbook.
 
-Traditional publishing is bounded by human biology: the limits of individual lifespan, specialized academic silos, and commercial packaging that forces a single 5,000-word breakthrough to be diluted into 300 pages of paper padding. The result is an exhausted reader and a fragmented view of reality.
+This is **"useless" learning that turns out to be deeply useful at the end of the day**—**Deep Learning for Humans** designed to train your internal neural network. Just as a foundation model develops emergent reasoning by ingesting high-signal structural patterns across distant domains, a human mind expands when exposed to compressed, concrete mechanisms across physics, biology, history, psychology, and engineering.
+
+Traditional publishing is bounded by human biology: the limits of individual lifespan, specialized academic silos, and commercial packaging that forces a single 5,000-word insight to be diluted into 300 pages of paper padding. The result is an exhausted reader and a fragmented view of reality.
 
 Alexandria deploys the full breadth and depth of machine intelligence to do what human authors cannot:
 * Trace structural isomorphisms across fifty distant fields simultaneously.
@@ -32,19 +34,16 @@ When a writer tries to impress, the text draws attention to the author rather th
 ---
 
 ### The Form
-# The One-Hour Book and Five-Minute Chapter
-## Two Structural Modes for Contemporary Human Attention
+# The Universal Twelve-Facet Volume
+## One Hour per Book, Five Minutes per Facet
 
 > **"Do not be fashioned according to the age"—but be sensitive to real human needs. We do not hide machine synthesis, and we do not imitate literary padding.**
 
-Each Alexandria volume is designed to be read in **one hour** over the course of a day, divided into **twelve 5-minute chapters** (~550–720 words each). We reject the commercial trade-book obligation to stretch a single idea into 300 pages of connective tissue and rhetorical filler.
+Because we are training a mental network rather than writing an exhaustive encyclopedia, **we do not need to be comprehensive—twelve facets is enough.**
 
-Depending on the nature of the subject, volumes operate in one of two structural modes:
-
-1. **Mode I — Modular Facets (Default: The Essay Collection)**
-   * *"Not the long video, but shorts."* Each chapter is a completely self-contained story that requires zero narrative continuity from the chapter before it. A reader can open the book at any chapter without committing to continuous sequential reading—yet finishing one chapter naturally pulls them into the next. By examining a single theme through twelve distinct, independent instances, the reader grasps the full multifacetedness of the phenomenon.
-2. **Mode II — The Continuous Arc (For Select Topics)**
-   * Reserved for subjects that genuinely require a sequential, unfolding developmental or chronological trajectory across all twelve chapters, where each chapter builds directly on the state left by the previous one.
+Every Alexandria volume is shaped into **twelve 5-minute chapters** (~550–720 words each, readable in **one hour** across a day) preceded by a crisp **~250-word Introduction**. The **12-Facet Architecture** is our universal container:
+* *"Not the long video, but shorts."* Each chapter is a self-contained facet that requires zero narrative continuity from the chapter before it. A reader can open the book at any chapter without committing to sequential reading—yet finishing one facet naturally pulls them into the next.
+* **Elastic Across Every Subject**: Twelve facets can hold twelve historical instances of a phenomenon (*Bonds of Enmity*), twelve physical machines (*Instruments of Precision*), or twelve distinct angles on a single mind (*Twelve Facets: The Restless Mind of William James*, where one chapter can be a biographical profile of the person and the remaining eleven examine the experiments, rivalries, and ideas that define their brilliance).
 
 ---
 
@@ -103,6 +102,25 @@ While the seven universal laws bind every book, different domains rely on differ
 3. **Decision Theory, Economics & Enterprise Mechanics** (*Non-Linear Engines*, *Architectures of Choice*)
    - *Narrative Anchor*: A high-stakes historical wager, corporate survival crisis, financial blowup, or military/statistical case study.
    - *Forensic Engine*: The exact probability calculus, payoff convexity, balance-sheet ledger, network topology, or game-theoretic equilibrium.
-4. **Intellectual Ruptures & Consensus Breaking** (*Singular Minds*, *Tales of Audacity*)
+4. **Intellectual Ruptures & Consensus Breaking** (*Singular Minds*, *Tales of Audacity*, *Twelve Facets*)
    - *Narrative Anchor*: The entrenched institutional orthodoxy, the specific anomalous observation that broke it, and the physical or intellectual cost paid by the investigator.
    - *Forensic Engine*: Uses formal mathematical derivations where the discovery was mathematical or astronomical, and uses exact experimental protocols, clinical trials, or primary evidence tables where the breakthrough was biological, medical, or empirical.
+
+---
+
+### The Creator Platform
+# The Two-Pass Creator Workflow
+## Fork Selection, First-Pass Synthesis, and One-Shot Steering
+
+When a creator brings a topic to Alexandria Press, we do not hand them a blank canvas that invites 300-page fluff, nor do we trap them in an endless chat loop. Instead, every volume is produced through a bounded **Two-Pass Creator Workflow**:
+
+1. **Topic Input $\rightarrow$ Forks on the Road**
+   * The creator enters a raw topic (a person, a phenomenon, a technology, an institution).
+   * The engine prospects the topic and proposes **3–4 distinct 12-facet angles** ("forks on the road"), showing how the subject can be sliced into twelve high-signal facets.
+2. **Fork Selection $\rightarrow$ `v1` Generation**
+   * The creator chooses their fork.
+   * The engine compiles a locked 12-chapter dossier (`dossiers/<slug>.json`), synthesizes the complete `v1` volume, and enforces all eight universal laws via the deterministic validator (`scripts/validate_book.py`).
+3. **Creator Steering Prompt $\rightarrow$ `v2` Regeneration & Done**
+   * Reacting to a tangible 12-facet manuscript is vastly sharper than specifying rules in the abstract. After reading `v1`, the creator issues a single set of steering prompts (for example: *"Include at least one verbatim quote in every chapter"*, *"Make Chapter 1 a deeper biographical profile"*, or *"Add a schematic diagram to Chapter 2"*).
+   * The engine compiles those steering instructions into the dossier and validator rules, regenerates `v2`, verifies 100% gate compliance, publishes the volume, and calls it done.
+
