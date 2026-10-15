@@ -324,7 +324,6 @@ def main():
     LEGACY_BOOKS = {
         "latent_fragility.md",
         "radical_subtraction.md",
-        "singular_minds.md",
         "elemental_asymmetries.md",
         "liminal_thresholds.md",
         "autonomous_engine.md",
