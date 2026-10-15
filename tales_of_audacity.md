@@ -161,7 +161,7 @@ Yet instead of celebrating Semmelweis, the medical establishment responded with 
 
 For two hundred and thirty years, Isaac Newton’s *Principia Mathematica* was the undisputed foundation of physical science. Newton’s inverse-square law of universal gravitation:
 
-$$F = G \frac{m_{1} m_{2}{r^2}$$
+$$F = G \frac{m_{1} m_{2}}{r^2}$$
 
 had predicted the orbits of the planets, explained the tides, and guided the industrial revolution. In the Newtonian universe, space was a static, flat, Euclidean stage, time flowed uniformly and independently, and gravity was an instantaneous invisible force pulling masses toward one another across empty space.
 
@@ -208,7 +208,7 @@ Wegener died in November 1930 during an Arctic storm on the Greenland ice sheet,
 # The Star Graph Arbitrage
 ## Saving Federal Express at a Las Vegas Blackjack Table
 
-In 1971, twenty-eight-year-old Fred Smith launched Federal Express with $25 million in venture debt and private equity—at the time, the largest venture-funded startup in American corporate history. Smith had identified a fatal structural flaw in commercial aviation: passenger airlines flew belly freight on daytime point-to-point routes between major industrial hubs. If an electronics firm in Rochester needed to send a critical replacement tube to Albuquerque, the package crawled across connecting passenger flights over three days, with planes flying 85 percent empty space on secondary routes.
+In 1971, twenty-eight-year-old Fred Smith launched Federal Express with \$25 million in venture debt and private equity—at the time, the largest venture-funded startup in American corporate history. Smith had identified a fatal structural flaw in commercial aviation: passenger airlines flew belly freight on daytime point-to-point routes between major industrial hubs. If an electronics firm in Rochester needed to send a critical replacement tube to Albuquerque, the package crawled across connecting passenger flights over three days, with planes flying 85 percent empty space on secondary routes.
 
 Smith discarded point-to-point transportation and restructured national package delivery as a centralized star graph. In a star graph topology connecting $N$ peripheral nodes through a central coordinating hub in Memphis, Tennessee, the required routes drop from quadratic complexity to strictly linear scaling:
 
@@ -216,13 +216,13 @@ $$E_{\text{point-to-point}} = \frac{N(N - 1)}{2} \quad \longrightarrow \quad E_{
 
 On opening night in April 1973, fourteen modified Dassault Falcon 20 business jets flew into twenty-five cities, picked up packages, and converged on Memphis between midnight and 1:30 AM. Ramp workers sorted parcels on an automated carousel and reloaded planes by 3:30 AM to guarantee delivery before 10:30 AM. Total volume across the entire national fleet on that opening night was 186 packages.
 
-The startup nearly collapsed under its fixed capital costs. In its first twenty-four months, Federal Express lost $29 million. By mid-1973, the Arab oil embargo tripled aviation jet fuel costs from 11 cents to over 30 cents per gallon. Federal Express was burning $1 million a month in cash. Pilot paychecks bounced. Fuel distributors in St. Louis and Louisville placed the company on cash-on-delivery terms, refusing to pump kerosene until station managers presented certified cashier's checks.
+The startup nearly collapsed under its fixed capital costs. In its first twenty-four months, Federal Express lost \$29 million. By mid-1973, the Arab oil embargo tripled aviation jet fuel costs from 11 cents to over 30 cents per gallon. Federal Express was burning \$1 million a month in cash. Pilot paychecks bounced. Fuel distributors in St. Louis and Louisville placed the company on cash-on-delivery terms, refusing to pump kerosene until station managers presented certified cashier's checks.
 
-On a Friday in July 1973, Fred Smith sat in the Memphis headquarters with $5,000 left in the corporate bank account. A $24,000 jet fuel invoice was due the following Monday morning; if unpaid, the supplier would turn off the valves, grounding the fleet and forcing liquidation. The company’s board had just rejected Smith's emergency equity appeal.
+On a Friday in July 1973, Fred Smith sat in the Memphis headquarters with \$5,000 left in the corporate bank account. A \$24,000 jet fuel invoice was due the following Monday morning; if unpaid, the supplier would turn off the valves, grounding the fleet and forcing liquidation. The company’s board had just rejected Smith's emergency equity appeal.
 
-Smith took the final $5,000 from the bank account, boarded a flight to Las Vegas, and played continuous blackjack over the weekend. On Monday morning, Smith wired $27,000 in casino winnings back to Memphis, covering the fuel bill and keeping the planes flying. Two weeks later, Smith closed an emergency $11 million equity recapitalization.
+Smith took the final \$5,000 from the bank account, boarded a flight to Las Vegas, and played continuous blackjack over the weekend. On Monday morning, Smith wired \$27,000 in casino winnings back to Memphis, covering the fuel bill and keeping the planes flying. Two weeks later, Smith closed an emergency \$11 million equity recapitalization.
 
-By mid-1975, the density threshold tipped. As daily volume crossed 20,000 parcels, the fixed overhead amortized, delivering the company's first monthly profit of $59,000. Smith’s audacity had engineered the backbone of modern global commerce.
+By mid-1975, the density threshold tipped. As daily volume crossed 20,000 parcels, the fixed overhead amortized, delivering the company's first monthly profit of \$59,000. Smith’s audacity had engineered the backbone of modern global commerce.
 
 ---
 
@@ -278,7 +278,7 @@ When the COVID-19 pandemic struck in early 2020, Karikó and Weissman's modified
 # The Inverted Rocket
 ## Landing an Orbital Rocket Booster on Its Tail
 
-For the first six decades of the space age, orbital rocketry was governed by expendability. Rocket stages costing upwards of $100 million were launched once, fired their engines for three minutes, and discarded into the ocean to rust or burn up in the upper atmosphere. Aviation pioneers did not discard a Boeing 747 after a single flight from New York to London; yet aerospace monoliths like Boeing, Lockheed Martin, and Roscosmos treated rocket expendability as a physical constant:
+For the first six decades of the space age, orbital rocketry was governed by expendability. Rocket stages costing upwards of \$100 million were launched once, fired their engines for three minutes, and discarded into the ocean to rust or burn up in the upper atmosphere. Aviation pioneers did not discard a Boeing 747 after a single flight from New York to London; yet aerospace monoliths like Boeing, Lockheed Martin, and Roscosmos treated rocket expendability as a physical constant:
 
 $$\text{Cost per Launch} \propto \text{Cost of New Vehicle Build}$$
 

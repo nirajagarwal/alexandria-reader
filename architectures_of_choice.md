@@ -31,7 +31,7 @@ $$\mathbb{E}[U(x)] = \sum_{i} p_{i} U(x_{i})$$
 
 However, as demonstrated by Ole Peters and Murray Gell-Mann in non-ergodic economics, the arithmetic expectation value $\mathbb{E}[x]$ diverges catastrophically from the time-average growth rate $g$ experienced by a single agent compounding over time:
 
-$$g = \lim_{T \to \infty} \frac{1}{T} \ln \left( \frac{X_{T}{X_{0} \right)$$
+$$g = \lim_{T \to \infty} \frac{1}{T} \ln \left( \frac{X_{T}}{X_{0}} \right)$$
 
 Consider a classic coin-toss game: heads yields a 50 percent gain on total capital ($+50\%$), while tails incurs a 40 percent loss ($-40\%$). The ensemble expected return per round appears decisively positive:
 
@@ -63,7 +63,7 @@ The Kelly criterion maximizes the expected value of the logarithmic growth rate:
 
 $$\mathbb{E}[\ln(X_{1} / X_{0})] = p \ln(1 + f b) + q \ln(1 - f)$$
 
-Differentiating with respect to $f$ and setting the derivative to zero demonstrates that allocating any fraction $f > f^*$ reduces the long-term compound growth rate while monotonically increasing volatility and drawdown depth. If an overconfident allocator wagers at twice the optimal fraction ($2f^*$), the expected growth rate falls to zero, and any allocation beyond $2f^*$ guarantees mathematical ruin.
+Differentiating with respect to $f$ and setting the derivative to zero demonstrates that allocating any fraction $f > f^*$ reduces the long-term compound growth rate while monotonically increasing volatility and drawdown depth. If an overconfident allocator wagers at twice the optimal fraction (\$2f^*$), the expected growth rate falls to zero, and any allocation beyond \$2f^*$ guarantees mathematical ruin.
 
 In real-world environments, true probabilities $p$ and payoffs $b$ are never known with infinite precision; they are subject to epistemic uncertainty and parameter drift. Consequently, institutional allocators utilize fractional Kelly sizing—typically one-half or one-third Kelly:
 
@@ -143,9 +143,9 @@ By projecting the mind past the psychological barrier of commitment, the pre-mor
 
 When human beings make decisions spanning decades, classical discounted cash flow models fail because biological nervous systems do not discount the future exponentially; they discount hyperbolically:
 
-$$V(D) = \frac{V_{0}{1 + k D}$$
+$$V(D) = \frac{V_{0}}{1 + k D}$$
 
-where $D$ is the temporal delay and $k$ is a discount parameter. Hyperbolic discounting produces systematic dynamic inconsistency: an agent prefers $100 today over $110 tomorrow, yet simultaneously prefers $110 in 31 days over $100 in 30 days. As the delayed reward approaches the present moment, the hyperbolic curve steepens, driving the agent to abandon long-term commitments in favor of myopic hedonic relief.
+where $D$ is the temporal delay and $k$ is a discount parameter. Hyperbolic discounting produces systematic dynamic inconsistency: an agent prefers \$100 today over \$110 tomorrow, yet simultaneously prefers \$110 in 31 days over \$100 in 30 days. As the delayed reward approaches the present moment, the hyperbolic curve steepens, driving the agent to abandon long-term commitments in favor of myopic hedonic relief.
 
 To counteract this neurobiological drift, advanced decision-makers construct cognitive counterfactual architectures known as regret minimization frameworks. By artificially projecting the cognitive self to an extreme terminal horizon—such as age eighty looking back across the lifespan—the agent decouples choice evaluation from transient social friction, immediate prestige games, and short-term volatility.
 

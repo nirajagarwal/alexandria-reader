@@ -115,7 +115,7 @@ $$S_{ij} = s_{ijkl}^E · T_{kl} + d_{kij} · E_{k}$$
 
 Where d_ijk represents the third-rank piezoelectric tensor. If a crystal possesses a center of inversion symmetry, applying a spatial inversion transformation (x_i -> -x_i) reverses the direction of the vector properties while leaving the symmetric second-rank stress tensor unchanged:
 
-- D_i = d_ijk · T_jk  =>  d_ijk = 0
+$$- D_i = d_{ijk} \cdot T_{jk} \implies d_{ijk} = 0$$
 
 In non-centrosymmetric crystals such as alpha-quartz (SiO_2, trigonal point group 32), the positive silicon ions (Si^4+) and negative oxygen ions (O^2-) do not coincide at a central inversion point. Under mechanical shear or compression, the mechanical strain displaces the centroids of positive and negative charge in opposite directions:
 
@@ -139,13 +139,13 @@ $$∂^2 η / ∂t^2 = g · h · (∂^2 η / ∂x^2)$$
 
 Under linear theory, water waves are dispersive. The phase velocity depends on wavelength:
 
-$$c = √( (g / k) · tanh(k · h) )$$
+$$c = \sqrt{\frac{g}{k} \tanh(k \cdot h)}$$
 
 Longer wavelengths travel faster than shorter wavelengths. A finite wave packet inevitably disperses, spreading its energy across space and flattening into ripples. Linear theory proved mathematically that a localized heap of water could not maintain its shape.
 
 Russell was not deterred by linear theory. He constructed a thirty-foot experimental water tank in his garden, systematically measuring wave speeds as a function of water depth h and wave amplitude A:
 
-$$c = √( g · (h + A) )$$
+$$c = \sqrt{g \cdot (h + A)}$$
 
 The resolution arrived sixty years later, in 1895, when Dutch mathematicians Diederik Korteweg and Gustav de Vries formulated the non-linear shallow-water wave equation (the KdV equation):
 
@@ -157,7 +157,7 @@ The KdV equation contains two competing terms:
 
 When non-linear steepening perfectly balances linear dispersion, the wave forms a stable, localized, solitary solution:
 
-$$η(x, t) = A · sech^2( √( 3 · A / (4 · h^3) ) · (x - c · t) )$$
+$$\eta(x, t) = A \cdot \text{sech}^2\left( \sqrt{\frac{3 A}{4 h^3}} \cdot (x - c \cdot t) \right)$$
 
 Russell's wave was the first observed soliton. Non-linear wave mechanics revealed that when dispersion and non-linearity reach exact energetic equilibrium, localized packets of information and energy can propagate across vast distances without dissipation, anticipating modern optical fiber communication and quantum solitary waves.
 
@@ -185,11 +185,11 @@ $$E = S · ∇T$$
 
 Where S is the Seebeck coefficient (thermoelectric power), measured in microvolts per kelvin. The open-circuit voltage across a thermocouple junction of materials A and B is given by:
 
-$$V = ∫_{T_{cold}^{T_{hot} (S_{B}(T) - S_{A}(T)) dT$$
+$$V = \int_{T_{\text{cold}}}^{T_{\text{hot}}} (S_{B}(T) - S_{A}(T)) \, dT$$
 
 Under the free-electron Fermi gas model, the Seebeck coefficient is expressed by the Mott formula:
 
-$$S = - (π^2 · k_{B}^2 · T) / (3 · e) · [ d(ln σ(E)) / dE ]_{E = E_{F}$$
+$$S = - \frac{\pi^2 \cdot k_{B}^2 \cdot T}{3 \cdot e} \cdot \left[ \frac{d(\ln \sigma(E))}{dE} \right]_{E = E_{F}}$$
 
 The thermoelectric voltage is directly proportional to the energy derivative of the electrical conductivity at the Fermi level. Seebeck's thermal circuit proved that heat and electricity are not separate fluids; heat in a metal is transported by the same quantum electron gas that carries electric current, establishing the foundations of solid-state thermoelectric energy conversion.
 
@@ -243,7 +243,7 @@ Low-density continental granite cannot sink into high-density basalt any more th
 
 Physicist Harold Jeffreys delivered what contemporaries regarded as the fatal mathematical refutation of Wegener's theory. Jeffreys proved that the Earth's rock mantle possesses immense shear strength. The tidal forces and centrifugal forces that Wegener proposed as driving mechanisms were smaller than the rock shear strength by a factor of nearly one million:
 
-F_tidal / F_rock_strength ~ 10^-6
+$$\frac{F_{\text{tidal}}}{F_{\text{rock\_strength}}} \approx 10^{-6}$$
 
 Jeffreys concluded that continental drift was physical nonsense; a continent could no more plow through solid rock than a wooden boat could plow through cast iron.
 
@@ -253,7 +253,7 @@ $$dε/dt = (1 / E) · (dσ/dt) + σ / η$$
 
 Over short timescales (t < 1 hour, seismic wave propagation), the mantle responds as an elastic solid with high shear modulus. Over geological timescales (t > 10^6 years), the viscous flow term dominates. The mantle flows via solid-state dislocation creep with an effective viscosity:
 
-η_mantle ~ 10^21 Pa · s
+$$\eta_{\text{mantle}} \approx 10^{21} \text{ Pa} \cdot \text{s}$$
 
 Decades later, Arthur Holmes and later Harry Hess identified the missing thermal motor: radioactive decay within the core drives deep mantle convection currents characterized by the Rayleigh number:
 
@@ -283,7 +283,7 @@ Rumford isolated the fatal contradiction in caloric theory:
 1. The blunt borer generated virtually no shavings, yet heat flowed continuously.
 2. The heat source was inexhaustible so long as the horses continued to turn the shaft:
 
-Q_generated ∝ W_mechanical · t   as t -> ∞
+$$Q_{\text{generated}} \propto W_{\text{mechanical}} \cdot t \quad (\text{as } t \to \infty)$$
 
 If heat were a material fluid stored inside the metal, it would eventually exhaust its supply. A finite quantity of bronze could not contain an infinite reservoir of fluid:
 
@@ -333,7 +333,7 @@ Because the particle had neither charge nor strong nuclear interaction, it inter
 
 Two years later, Enrico Fermi formalized Pauli's hypothesis into the theory of weak interaction:
 
-$$H_{weak} = (G_{F} / √2) · [ψ_{p}_{bar} · γ^μ · ψ_{n}] · [ψ_{e}_{bar} · γ_μ · (1 - γ^5) · ψ_ν]$$
+$$H_{\text{weak}} = \frac{G_{F}}{\sqrt{2}} \cdot \left[ \bar{\psi}_{p} \cdot \gamma^\mu \cdot \psi_{n} \right] \cdot \left[ \bar{\psi}_{e} \cdot \gamma_\mu \cdot (1 - \gamma^5) \cdot \psi_\nu \right]$$
 
 Fermi named the particle the "neutrino" (the little neutral one). Twenty-six years later, in 1956, Clyde Cowan and Frederick Reines detected the neutrino experimentally at the Savannah River nuclear reactor, capturing inverse beta decay:
 

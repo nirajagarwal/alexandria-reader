@@ -33,7 +33,7 @@ $$\sum P_{\text{generation}}(t) = \sum P_{\text{load}}(t) + P_{\text{losses}}(t)
 
 If power demand exceeds generation even slightly, the deficit is drawn directly from the kinetic energy of the spinning rotors. The turbines slow down, and grid frequency drops below 60.00 Hz:
 
-$$\frac{df}{dt} = \frac{f_{0}{2 H S_{n} \left( P_{\text{mechanical}} - P_{\text{electrical}} \right)$$
+$$\frac{df}{dt} = \frac{f_{0}}{2 H S_{n}} \left( P_{\text{mechanical}} - P_{\text{electrical}} \right)$$
 
 where $H$ is the inertia constant and $S_n$ is the system rating. If frequency falls below 59.5 Hz, steam turbine blades begin to vibrate mechanically. At 58.8 Hz, protective relays trip generators offline to prevent physical blade destruction.
 
@@ -117,7 +117,7 @@ $$\Delta P \approx \frac{1}{2} \rho \left( v_{\text{bank}}^2 - v_{\text{open}}^2
 
 The vessel grounded diagonally across the narrow 200-meter-wide channel, completely blocking both northbound and southbound traffic.
 
-Because the global supply chain runs on lean, zero-buffer inventory, this single grounded hull halted approximately $9.6 billion worth of goods per day. Hundreds of ships anchored in open water, unable to pass. Rerouting around the Cape of Good Hope added ten days of transit and thousands of tons of heavy bunker fuel per ship. The incident demonstrated that globalized commerce is not a distributed web; it is a rigid physical pipeline tied to a handful of shallow trenches cut into sand.
+Because the global supply chain runs on lean, zero-buffer inventory, this single grounded hull halted approximately \$9.6 billion worth of goods per day. Hundreds of ships anchored in open water, unable to pass. Rerouting around the Cape of Good Hope added ten days of transit and thousands of tons of heavy bunker fuel per ship. The incident demonstrated that globalized commerce is not a distributed web; it is a rigid physical pipeline tied to a handful of shallow trenches cut into sand.
 
 ---
 

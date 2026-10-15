@@ -29,7 +29,7 @@ Two decades earlier in Munich, German physiologist Otto Frank had documented sim
 
 The intrinsic mechanical response is governed by sarcomere length-dependent activation. In skeletal muscle, maximal active tension occurs at a resting sarcomere length of approximately 2.2 micrometers, dropping sharply if the fiber is stretched further. Cardiac muscle operates on the steep ascending limb of its length-tension curve:
 
-$$L_{sarcomere} = 1.8 to 2.2 μm$$
+$$L_{\text{sarcomere}} = 1.8 \text{ to } 2.2 \, \mu\text{m}$$
 
 When venous return increases end-diastolic volume (EDV), the ventricular myocardium stretches:
 
@@ -37,7 +37,7 @@ When venous return increases end-diastolic volume (EDV), the ventricular myocard
 
 This physical elongation changes the lateral spacing between thick myosin filaments and thin actin filaments:
 
-d_interfilament ∝ 1 / √L_sarcomere
+$$d_{\text{interfilament}} \propto \frac{1}{\sqrt{L_{\text{sarcomere}}}}$$
 
 As the myocyte stretches, the interfilament lattice spacing compresses radially, pulling actin and myosin binding sites closer together. Simultaneously, structural tension in the giant elastic protein titin pulls myosin cross-bridge heads into closer proximity with actin targets, while troponin C displays heightened binding affinity for intracellular calcium ions:
 
@@ -45,17 +45,17 @@ K_a(Ca^2+) increases with L_sarcomere
 
 The stroke volume (SV) generated during systole is a function of end-diastolic filling and total peripheral resistance:
 
-$$SV = EDV - ESV$$
+$$\text{SV} = \text{EDV} - \text{ESV}$$
 
 The mechanical stress experienced by the ventricular myocardium during systolic pressure generation is governed by the law of Laplace for thick-walled spherical geometry:
 
-$$σ_{wall} = (P_{intraventricular} · r) / (2 · h)$$
+$$\sigma_{\text{wall}} = \frac{P_{\text{intraventricular}} \cdot r}{2 \cdot h}$$
 
 Where r is the internal ventricular chamber radius and h is myocardial wall thickness. As the ventricle dilates (r increases), wall tension σ increases for any given internal pressure P. To counter this geometric disadvantage, the myocardium undergoes physiological concentric hypertrophy in response to chronic afterload, thickening wall dimension h to normalize systolic wall stress.
 
 Systemic blood flow further depends on the Windkessel effect—the hydraulic impedance matching provided by the elastic compliance of the ascending aorta:
 
-$$C_{arterial} = dV / dP$$
+$$C_{\text{arterial}} = \frac{dV}{dP}$$
 
 During rapid ventricular ejection, approximately fifty percent of the stroke volume is stored within the expanded elastic aortic arch, converting pulsatile kinetic energy into potential energy. During diastole, the elastic recoil of the aortic wall forces blood through systemic capillaries, dampening pressure oscillations and maintaining capillary perfusion pressure throughout the resting phase. Starling demonstrated that the cardiovascular engine does not require central computation to maintain volumetric equilibrium; its primary feedback loop is embedded directly into the physical elasticity and lattice geometry of its protein filaments.
 
@@ -80,17 +80,17 @@ The active transport in the ascending limb establishes a modest trans-epithelial
 
 At any horizontal level, the thick ascending limb pumps sodium chloride into the surrounding medullary interstitium, diluting the tubular fluid while concentrating the interstitial space. Because the adjacent descending limb is water-permeable, water diffuses out of the descending limb down the osmotic gradient into the hypertonic interstitium:
 
-$$J_{v} = L_{p} · A · (σ · ΔΠ - ΔP)$$
+$$J_{v} = L_{p} \cdot A \cdot (\sigma \cdot \Delta\Pi - \Delta P)$$
 
 Where $L_p$ is hydraulic conductivity and $\Delta\Pi$ is the osmotic pressure gradient. As water exits, the luminal fluid inside the descending limb concentrates as it approaches the hairpin turn at the tip of the papilla. When this concentrated fluid rounds the bend into the ascending limb, the NKCC2 pumps operate on an already concentrated substrate, pumping more solute into the interstitium and multiplying the axial gradient:
 
-$$C_{papilla}(z) = C_{cortex} · e^(k · z)$$
+$$C_{\text{papilla}}(z) = C_{\text{cortex}} \cdot e^{k \cdot z}$$
 
 Through this axial multiplication, an initial horizontal difference of only 200 mOsm/kg creates a steep longitudinal osmotic gradient that rises from 300 mOsm/kg at the corticomedullary junction to over 1,200 mOsm/kg at the papillary tip.
 
 The vascular supply to the medulla—the vasa recta—mirrors the hairpin geometry, operating as a passive countercurrent exchanger:
 
-$$q_{solute}_{loss} = D_{eff} · (dC / dz) · A$$
+$$q_{\text{solute,loss}} = D_{\text{eff}} \cdot \left(\frac{dC}{dz}\right) \cdot A$$
 
 Because blood flows down into the medulla and immediately back out, solutes that enter the descending capillary diffuse back into the ascending capillary, while water that leaves the descending capillary is drawn back into the ascending capillary. This architecture preserves the medullary hypertonicity without washing away the accumulated salt and urea.
 
@@ -127,7 +127,7 @@ Because oxygen diffusion across the thin blood-gas barrier is exceptionally rapi
 
 The transport of oxygen within red blood cells is mediated by hemoglobin ($Hb$), a tetrameric protein composed of two alpha and two beta globin subunits, each containing an iron-protoporphyrin IX heme complex. Hemoglobin exhibits allosteric sigmoidal cooperativity described by the Hill equation:
 
-$$Y = (P_{O_{2})^n / ( (P_{50})^n + (P_{O_{2})^n )$$
+$$Y = \frac{(P_{\text{O}_2})^n}{(P_{50})^n + (P_{\text{O}_2})^n}$$
 
 Where $n \approx 2.8$ represents the Hill cooperativity coefficient. When oxygen binds to the first heme iron, it pulls the iron atom into the plane of the porphyrin ring by approximately 0.04 nanometers. This movement pulls on the proximal histidine residue, initiating a quaternary conformational shift from the low-affinity Tense (T) state to the high-affinity Relaxed (R) state.
 
@@ -157,7 +157,7 @@ $$I_{f} = g_{f} · (V_{m} - E_{rev})$$
 
 Following the repolarization of an action potential, the negative membrane potential ($V_m < -50 \text{ mV}$) activates HCN channels, allowing an inward sodium ($Na^+$) flux that slowly depolarizes the membrane toward the firing threshold:
 
-$$dV_{m} / dt = - (I_{f} + I_{Ca},T + I_{Ca},L + I_{NCX}) / C_{m}$$
+$$\frac{dV_m}{dt} = - \frac{I_{f} + I_{\text{Ca},T} + I_{\text{Ca},L} + I_{\text{NCX}}}{C_m}$$
 
 When postganglionic parasympathetic vagal fibers fire, they release acetylcholine (ACh) directly onto the sinoatrial node. Acetylcholine binds to cardiac muscarinic $M_2$ G-protein-coupled receptors, initiating two simultaneous biochemical events:
 
@@ -194,17 +194,17 @@ Nedergaard injected fluorescent tracers into the cisterna magna and watched thei
 
 The system—the glymphatic network—operates as a macroscopic convective rinsing engine driven by arterial hemodynamics. As cerebral arteries pulse with each cardiac contraction, the expansion and relaxation of the arterial wall creates a directional hydraulic pumping wave:
 
-v_fluid ∝ \omega · r_artery · (\Delta r / r)
+$$v_{\text{fluid}} \propto \omega \cdot r_{\text{artery}} \cdot \left(\frac{\Delta r}{r}\right)$$
 
 This perivascular pressure wave drives CSF from the subarachnoid space into the deep brain parenchyma along periarterial channels. The interface between the perivascular space and the brain parenchyma is lined by astrocytic endfeet, which express high concentrations of aquaporin-4 (AQP4) water channels covering over ninety percent of the perivascular contact surface:
 
-$$J_{volume} = L_{p},AQP4 · A · \Delta P_{hydraulic}$$
+$$J_{\text{volume}} = L_{p,\text{AQP4}} \cdot A \cdot \Delta P_{\text{hydraulic}}$$
 
 The AQP4 channels act as low-resistance fluid gates. CSF exits the periarterial space, streams through the astrocytic water channels, and flushes through the interstitial space, sweeping extracellular proteins toward perivenous channels that drain into the deep cervical lymph nodes.
 
 The efficiency of this convective flush is governed by the Péclet number:
 
-$$Pe = (v · L) / D$$
+$$\text{Pe} = \frac{v \cdot L}{D}$$
 
 When the Péclet number exceeds unity ($Pe > 1$), convective fluid transport dominates over passive Brownian diffusion. Nedergaard made a critical functional discovery: during wakefulness, the extracellular space fraction ($\alpha$) occupies approximately fourteen percent of total brain volume, with high resistance choking convective flow ($Pe < 1$).
 
@@ -231,13 +231,13 @@ Ebashi isolated a third structural protein complex distributed along the thin ac
 
 In relaxed striated muscle, intracellular calcium ($[Ca^{2+}]_i$) is maintained at sub-micromolar levels ($10^{-7} \text{ M}$) by the sarco-endoplasmic reticulum calcium ATPase (SERCA2a) pump. At this resting concentration, tropomyosin is positioned along the outer groove of the actin filament, sterically blocking myosin binding sites:
 
-[Ca^2+]_i \approx 0.1 \mu\text{M} \implies \text{Blocked state (cross-bridges inhibited)}
+$$[\text{Ca}^{2+}]_i \approx 0.1 \, \mu\text{M} \implies \text{Blocked state (cross-bridges inhibited)}$$
 
 When an alpha motor neuron fires an action potential down the motor axon, it releases acetylcholine at the neuromuscular junction, depolarizing the sarcolemma. The action potential propagates into the interior of the muscle fiber along transverse tubules (T-tubules), activating voltage-gated L-type calcium channels (dihydropyridine receptors, DHPR).
 
 In skeletal muscle, DHPRs are mechanically linked to ryanodine receptors (RyR1) located in the terminal cisternae of the sarcoplasmic reticulum. Voltage-induced conformational change in the DHPR mechanically unplugs the RyR1 channel:
 
-$$RyR1 opens \implies J_{Ca} = g_{RyR} · ([Ca^2+]_{SR} - [Ca^2+]_{i})$$
+$$\text{RyR1 opens} \implies J_{\text{Ca}} = g_{\text{RyR}} \cdot ([\text{Ca}^{2+}]_{\text{SR}} - [\text{Ca}^{2+}]_{i})$$
 
 Intracellular calcium surges by two orders of magnitude within milliseconds, rising to $10^{-5} \text{ M}$. Calcium binds to the low-affinity N-terminal regulatory sites of Troponin C:
 
@@ -245,11 +245,11 @@ TnC · 4 Ca^2+
 
 Calcium binding induces a hydrophobic patch to open in Troponin C, pulling Troponin I away from its actin anchor. This release shifts the long, filamentous tropomyosin molecule by approximately 25 degrees (0.8 nanometers) deeper into the actin groove:
 
-\text{Blocked state} \longrightarrow \text{Closed state} \longrightarrow \text{Open state}
+$$\text{Blocked state} \longrightarrow \text{Closed state} \longrightarrow \text{Open state}$$
 
 The spatial clearing of the actin binding site permits the myosin head to form strong electrostatic bonds with actin, triggering the power stroke:
 
-\text{Myosin} · \text{ADP} · \text{P}_i \longrightarrow \text{Myosin} · \text{Actin} + \text{P}_i \longrightarrow \text{Power stroke (10 nm, 5 pN)}
+$$\text{Myosin} \cdot \text{ADP} \cdot \text{P}_i \longrightarrow \text{Myosin} \cdot \text{Actin} + \text{P}_i \longrightarrow \text{Power stroke (10 nm, 5 pN)}$$
 
 The myosin lever arm rotates seventy degrees, translating the thin filament relative to the thick filament before binding a new ATP molecule to release and re-cock. Setsuro Ebashi established that biological movement does not operate as an on-demand motor powered from zero; it operates as an energized mechanical spring held under constant steric inhibition, triggered into instantaneous kinetic execution by a nanometer-scale calcium switch.
 
@@ -285,7 +285,7 @@ Metarhodopsin II initiates a biochemical signal amplification cascade:
 
 In the dark, high intracellular concentrations of cGMP ($4 \mu\text{M}$) keep cyclic nucleotide-gated (CNG) cation channels open in the outer segment membrane, allowing a continuous inward influx of sodium and calcium ions known as the dark current:
 
-I_{dark} \approx -40 \text{ pA} \implies V_{dark} \approx -40 \text{ mV}
+$$I_{\text{dark}} \approx -40 \text{ pA} \implies V_{\text{dark}} \approx -40 \text{ mV}$$
 
 The rapid catalytic depletion of cGMP causes CNG channels to close cooperatively ($n \approx 3$). With the inward sodium channel closed while potassium continues to exit through constitutive inner-segment channels ($I_K$), the photoreceptor hyperpolarizes from -40 mV down to -70 mV:
 
@@ -332,7 +332,7 @@ R_{vascular} \uparrow \implies \text{Blood flow to skin drops from 2.5 L/min to 
 
 Shunting blood away from the superficial capillary plexus reduces the skin-to-ambient temperature gradient. If insulation is insufficient, the posterior hypothalamus initiates involuntary rhythmic muscle contractions—shivering—increasing metabolic heat production four-fold:
 
-M_{shiver} \approx 4 · M_{basal}
+$$M_{\text{shiver}} \approx 4 \cdot M_{\text{basal}}$$
 
 Simultaneously, in human infants and cold-acclimated adults, sympathetic signaling stimulates beta-3 adrenergic receptors on brown adipose tissue (BAT). This triggers lipolysis and activates uncoupling protein 1 (UCP1, thermogenin) located in the inner mitochondrial membrane:
 
@@ -340,7 +340,7 @@ Simultaneously, in human infants and cold-acclimated adults, sympathetic signali
 
 Normally, the proton gradient established by the electron transport chain drives ATP synthase:
 
-\Delta\mu_{H^+} \implies \text{ADP} + \text{P}_i \longrightarrow \text{ATP}
+$$\Delta\mu_{\text{H}^+} \implies \text{ADP} + \text{P}_i \longrightarrow \text{ATP}$$
 
 UCP1 short-circuits this electrochemical gradient, allowing protons to flow down their concentration gradient without synthesizing ATP. The potential energy stored in the proton motive force is dissipated entirely as heat.
 
@@ -356,7 +356,7 @@ In the summer of 1952, at the Marine Biological Association Laboratory in Plymou
 
 For fifty years, Julius Bernstein’s membrane hypothesis held that an action potential was a momentary collapse of membrane resistance, allowing all ions to rush through non-specifically and dropping the transmembrane potential to zero. In 1939, using internal microelectrodes, Hodgkin and Huxley discovered that during an action potential, the intracellular potential does not merely rise to zero; it overshoots zero, flipping from a resting negative potential of -65 mV to a positive value of +40 mV:
 
-V_{peak} \approx +40 \text{ mV}
+$$V_{\text{peak}} \approx +40 \text{ mV}$$
 
 To isolate the individual ionic conductances responsible for this positive overshoot, Hodgkin and Huxley, utilizing an electronic design developed by American biophysicist Kenneth Cole, constructed the voltage-clamp apparatus. The voltage clamp uses a negative-feedback amplifier to hold the axonal membrane potential at any desired command voltage ($V_c$), measuring the current ($I_m$) required to maintain that potential:
 
@@ -387,7 +387,7 @@ $$\alpha_{m}(V) = 0.1 · (V + 25) / ( e^{(V + 25)/10} - 1 )$$
 
 When the membrane is depolarized past a critical threshold (typically -55 mV), the voltage-sensing S4 transmembrane helices of the voltage-gated sodium channel ($Na_V1.2$) rotate outward, driving the activation gate $m$ toward unity. Sodium ions rush down their steep electrochemical gradient into the cell:
 
-I_{Na} \approx - g_{Na,max} · (V_m - E_{Na})
+$$I_{\text{Na}} \approx - g_{\text{Na,max}} \cdot (V_m - E_{\text{Na}})$$
 
 This inward positive flux causes further membrane depolarization, creating a self-reinforcing Hodgkin cycle that rapidly drives the membrane potential toward the sodium equilibrium potential ($E_{Na} \approx +55 \text{ mV}$).
 
@@ -425,7 +425,7 @@ The molecular clock engine operates via an autoregulatory transcriptional-transl
 
 The autonomous human SCN clock possesses an intrinsic free-running period ($\tau$) slightly longer than the solar day:
 
-\tau \approx 24.15 \text{ to } 24.20 \text{ hours}
+$$\tau \approx 24.15 \text{ to } 24.20 \text{ hours}$$
 
 To prevent physiological desynchronization from the rotating planet, the master oscillator must be entrained daily by external time cues (*Zeitgebers*). The primary entrainment vector is light.
 

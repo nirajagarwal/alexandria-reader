@@ -167,7 +167,7 @@ Srinivasa Ramanujan proved that raw mathematical talent can emerge anywhere, ind
 # The Mechanical Clockwork of War
 ## John Boyd and the Energy-Maneuverability Calculus (1960–1976)
 
-In the late 1950s, Captain John Boyd was an instructor at the Fighter Weapons School at Nellis Air Force Base in the Nevada desert. Known throughout the tactical fighter community as "Forty-Second Boyd," he offered an open $40 wager to any military pilot: start behind Boyd in an aerial dogfight, and within forty seconds, Boyd would maneuver from disadvantage to behind the challenger's tail, locking on for a simulated kill. Over hundreds of simulated combat engagements against frontline pilots from the Air Force, Navy, and Marine Corps, Boyd never lost a wager.
+In the late 1950s, Captain John Boyd was an instructor at the Fighter Weapons School at Nellis Air Force Base in the Nevada desert. Known throughout the tactical fighter community as "Forty-Second Boyd," he offered an open \$40 wager to any military pilot: start behind Boyd in an aerial dogfight, and within forty seconds, Boyd would maneuver from disadvantage to behind the challenger's tail, locking on for a simulated kill. Over hundreds of simulated combat engagements against frontline pilots from the Air Force, Navy, and Marine Corps, Boyd never lost a wager.
 
 Boyd’s combat dominance was not due to superior physical reflexes or reckless courage. It was the product of a rigorous mechanical calculus. While other fighter pilots treated aerial combat as an intuitive art governed by warrior tradition and pilot bravado, Boyd treated an aircraft as a thermodynamic energy system moving through a gravitational vector field.
 

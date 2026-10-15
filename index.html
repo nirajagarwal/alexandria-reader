@@ -366,29 +366,70 @@
                 .replace(/'/g, "&#039;");
         }
 
+        function cleanMathSyntax(math) {
+            if (!math) return '';
+            let m = math.trim();
+            // Convert unescaped unicode symbols to standard LaTeX equivalents
+            m = m.replace(/·/g, ' \\cdot ');
+            m = m.replace(/×/g, ' \\times ');
+            m = m.replace(/∝/g, ' \\propto ');
+            m = m.replace(/⇒/g, ' \\implies ');
+            m = m.replace(/→/g, ' \\to ');
+            m = m.replace(/√\s*([a-zA-Z0-9_{}]+)/g, '\\sqrt{$1}');
+            m = m.replace(/√/g, '\\sqrt');
+            // Normalize unbraced multi-character subscripts: e.g. T_ambient -> T_{ambient}
+            m = m.replace(/_([a-zA-Z]{2,})(?![a-zA-Z0-9_]*\})/g, '_{$1}');
+            return m;
+        }
+
         function formatInline(str) {
             if (!str) return '';
-            // Render inline LaTeX math ($...$) first before escaping
-            let s = str.replace(/\$([^$]+)\$/g, (match, math) => {
-                // Normalize unbraced multi-char subscripts: e.g. T_ambient -> T_{ambient}
-                const normalizedMath = math.replace(/_([a-zA-Z]{2,})/g, '_{$1}');
+
+            // 1. Protect literal escaped \$
+            let s = str.replace(/\\\$/g, "___ESCAPED_DOLLAR___");
+
+            // 2. Protect unescaped currency amounts with scale words ($10 million, $1.25 trillion, etc.)
+            s = s.replace(/\$(?=\d[\d,]*(?:\.\d+)?\s*(?:million|billion|trillion|thousand|hundred|per\s+share)\b)/gi, "___CURRENCY_DOLLAR___");
+
+            // 3. Extract and render inline math ($...$)
+            const mathTokens = [];
+            s = s.replace(/\$([^\s$](?:[^$\n]*?[^\s$])?)\$/g, (match, math) => {
+                // If it looks like plain isolated currency without math operators (e.g. $50, $5,000)
+                if (/^\d[\d,]*(?:\.\d+)?$/.test(math) && !/[+\-*/=^_\\]/.test(math)) {
+                    return "$" + math;
+                }
+                const tokenId = `___MATH_INLINE_${mathTokens.length}___`;
+                const normalized = cleanMathSyntax(math);
+                let rendered = "";
                 if (typeof katex !== 'undefined') {
                     try {
-                        return katex.renderToString(normalizedMath, { displayMode: false, throwOnError: false });
+                        rendered = katex.renderToString(normalized, { displayMode: false, throwOnError: false });
                     } catch (e) {
-                        return '<code class="inline-math">' + escapeHtml(normalizedMath) + '</code>';
+                        rendered = `<code class="inline-math">${escapeHtml(normalized)}</code>`;
                     }
+                } else {
+                    rendered = `<code class="inline-math">${escapeHtml(normalized)}</code>`;
                 }
-                return '<code class="inline-math">' + escapeHtml(normalizedMath) + '</code>';
+                mathTokens.push(rendered);
+                return tokenId;
             });
 
-            // For segments outside KaTeX rendered tags, escape HTML and format bold/italic
-            // If KaTeX was invoked, it produced safe HTML with class="katex"
-            if (!s.includes('<span class="katex">')) {
-                s = escapeHtml(s);
-            }
+            // 4. HTML escape remaining prose
+            s = escapeHtml(s);
+
+            // 5. Format Markdown bold and italic
             s = s.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
             s = s.replace(/\*(.*?)\*/g, '<em>$1</em>');
+
+            // 6. Restore inline math tokens
+            mathTokens.forEach((mHtml, idx) => {
+                s = s.replace(`___MATH_INLINE_${idx}___`, mHtml);
+            });
+
+            // 7. Restore currency and escaped dollars
+            s = s.replace(/___CURRENCY_DOLLAR___/g, "$");
+            s = s.replace(/___ESCAPED_DOLLAR___/g, "$");
+
             return s;
         }
 
@@ -456,6 +497,14 @@
                 return id;
             });
 
+            // Pre-extract block equations ($$...$$) before paragraph splitting
+            const mathBlocks = [];
+            text = text.replace(/\$\$([\s\S]*?)\$\$/g, (match, math) => {
+                const id = `\n\n__MATH_${mathBlocks.length}__\n\n`;
+                mathBlocks.push(math.trim());
+                return id;
+            });
+
             const paragraphs = text.split(/\n\s*\n/);
             const blocks = [];
 
@@ -470,6 +519,28 @@
                         type: 'code',
                         text: code,
                         html: `<div class="code-box"><code>${escapeHtml(code)}</code></div>`
+                    });
+                    return;
+                }
+
+                if (p.startsWith('__MATH_')) {
+                    const idx = parseInt(p.replace(/[^0-9]/g, ''));
+                    const rawMath = mathBlocks[idx] || "";
+                    const normalized = cleanMathSyntax(rawMath);
+                    let rendered = '';
+                    if (typeof katex !== 'undefined') {
+                        try {
+                            rendered = katex.renderToString(normalized, { displayMode: true, throwOnError: false });
+                        } catch (e) {
+                            rendered = escapeHtml(rawMath);
+                        }
+                    } else {
+                        rendered = escapeHtml(rawMath);
+                    }
+                    blocks.push({
+                        type: 'equation',
+                        text: rawMath,
+                        html: `<div class="equation-box">${rendered}</div>`
                     });
                     return;
                 }
@@ -491,33 +562,34 @@
                     return;
                 }
 
-                // LaTeX Block Equation ($...$)
-                if (p.startsWith("$$") && p.endsWith("$$")) {
-                    const mathContent = p.slice(2, -2).trim();
-                    let rendered = '';
-                    if (typeof katex !== 'undefined') {
-                        try {
-                            rendered = katex.renderToString(mathContent, { displayMode: true, throwOnError: false });
-                        } catch (e) {
-                            rendered = escapeHtml(mathContent);
-                        }
-                    } else {
-                        rendered = escapeHtml(mathContent);
-                    }
+                if (/^\d+\.\s+/.test(p)) {
+                    const items = p.split('\n').filter(l => /^\d+\.\s+/.test(l.trim()));
+                    let listHtml = '<ol>';
+                    items.forEach(it => {
+                        let content = it.replace(/^\d+\.\s+/, '').trim();
+                        content = formatInline(content);
+                        listHtml += `<li>${content}</li>`;
+                    });
+                    listHtml += '</ol>';
                     blocks.push({
-                        type: 'equation',
-                        text: p,
-                        html: `<div class="equation-box">${rendered}</div>`
+                        type: 'list',
+                        itemCount: items.length,
+                        html: listHtml
                     });
                     return;
                 }
 
-                // Standalone formula line
-                if (p.length < 120 && (p.includes(' = ') || p.includes(' ∝ ') || p.includes('∑') || p.includes('Π(') || p.includes('·') || p.includes('∂') || p.includes('∫'))) {
+                // Standalone formula line fallback (for formulas not wrapped in $$)
+                if (p.length < 160 && !p.startsWith('*') && !p.endsWith('.') && !p.endsWith(':') && (
+                    p.includes('\\longrightarrow') || p.includes('\\rightleftharpoons') || p.includes('\\propto') ||
+                    p.includes('\\approx') || p.includes('\\nabla') || p.includes('\\frac') || p.includes(' ∝ ') ||
+                    p.includes('∑') || p.includes('Π(') || p.includes('∂') || p.includes('∫')
+                )) {
+                    const normalized = cleanMathSyntax(p);
                     let rendered = '';
                     if (typeof katex !== 'undefined') {
                         try {
-                            rendered = katex.renderToString(p, { displayMode: true, throwOnError: false });
+                            rendered = katex.renderToString(normalized, { displayMode: true, throwOnError: false });
                         } catch (e) {
                             rendered = escapeHtml(p);
                         }
