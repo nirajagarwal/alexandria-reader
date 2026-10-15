@@ -534,7 +534,7 @@
         }
 
         /* Desktop Main Container (Centered with Generous Book Margins) */
-        #main-stage {
+        #main-stage, main {
             height: 100vh;
             width: 100vw;
             display: flex;
@@ -547,7 +547,7 @@
         }
 
         @media (max-width: 899px) {
-            #main-stage {
+            #main-stage, main {
                 padding: 12px 20px;
             }
             .spread-stage {
@@ -559,4 +559,213 @@
             .spread-col.col-right {
                 display: none;
             }
+        }
+    
+        /* Alexandria Home Catalog View */
+        #home-view {
+            display: none;
+            width: 100vw;
+            min-height: 100vh;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            padding: 0;
+            margin: 0;
+            overflow-y: auto;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 50;
+        }
+
+        #home-view.active {
+            display: block;
+        }
+
+        .home-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 36px 40px 80px 40px;
+        }
+
+                /* Home Header & Single-Line Brand Bar */
+        .home-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 44px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color, rgba(255, 255, 255, 0.08));
+        }
+
+        .home-brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+            text-decoration: none;
+            user-select: none;
+            flex-shrink: 0;
+        }
+
+        .home-brand-icon {
+            width: 28px !important;
+            height: 28px !important;
+            min-width: 28px !important;
+            max-width: 28px !important;
+            border-radius: 6px;
+            object-fit: contain;
+            display: block;
+        }
+
+        .home-brand-title {
+            font-family: var(--font-sans, -apple-system, sans-serif);
+            font-size: 1.15rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            color: var(--text-color, #faf9f6);
+            white-space: nowrap;
+        }
+
+        .home-nav-actions {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+        .catalog-search-input {
+            width: 240px;
+            padding: 8px 14px;
+            font-family: var(--font-sans, -apple-system, sans-serif);
+            font-size: 0.82rem;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 6px;
+            color: var(--text-color, #faf9f6);
+            outline: none;
+            transition: border-color 0.2s, background 0.2s, width 0.2s;
+        }
+
+        .catalog-search-input:focus {
+            width: 280px;
+            border-color: var(--accent-color, #d97706);
+            background: rgba(255, 255, 255, 0.07);
+        }
+
+        .home-nav-actions .folio-btn {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: var(--text-color, #faf9f6);
+            border-radius: 6px;
+            width: 34px;
+            height: 34px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .home-nav-actions .folio-btn:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--accent-color, #d97706);
+        }
+
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 40px 32px;
+            align-items: start;
+        }
+
+        .book-card {
+            display: block;
+            width: 100%;
+            aspect-ratio: 2 / 3;
+            background: #141210;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.2s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .book-card:hover {
+            transform: translateY(-8px) scale(1.015);
+            box-shadow: 0 22px 48px rgba(0, 0, 0, 0.35), 0 6px 14px rgba(0, 0, 0, 0.15);
+            border-color: var(--accent-color);
+        }
+
+        .book-cover-frame {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 2 / 3;
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .book-cover-frame svg {
+            width: 100% !important;
+            height: 100% !important;
+            display: block !important;
+            object-fit: cover !important;
+            pointer-events: none;
+        }
+
+        .book-cover-frame img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .cover-fallback-card {
+            width: 100%;
+            height: 100%;
+            padding: 32px 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: linear-gradient(145deg, #1e1b18, #0f0d0c);
+            color: #faf9f6;
+            box-sizing: border-box;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .fallback-top-brand {
+            font-family: var(--font-sans);
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--accent-color);
+        }
+
+        .fallback-title {
+            font-family: var(--font-serif);
+            font-size: 1.35rem;
+            font-weight: 700;
+            line-height: 1.22;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+
+        .fallback-subtitle {
+            font-family: var(--font-serif);
+            font-size: 0.85rem;
+            line-height: 1.4;
+            color: #a8a29e;
+        }
+
+        .fallback-bottom {
+            font-family: var(--font-sans);
+            font-size: 0.65rem;
+            color: rgba(255, 255, 255, 0.45);
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
         }
