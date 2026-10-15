@@ -267,7 +267,7 @@ def validate_svg_diagram(svg_str: str, loc: str):
     return errs
 
 
-def validate_book(filepath: str, min_words: int = 600, max_words: int = 900, legacy: bool = False):
+def validate_book(filepath: str, min_words: int = 520, max_words: int = 760, legacy: bool = False):
     errors = []
     warnings = []
 
