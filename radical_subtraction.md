@@ -17,8 +17,6 @@ The human brain is a prediction machine chronically saturated by high-amplitude 
 
 By systematically applying radical sensory and social subtraction—fasting, physical enclosure, prolonged darkness, rhythmic breath synchronization, and apophatic cognitive silencing—the contemplatives drove the denominator of Shannon's channel capacity equation down toward zero. What they reported on the other side of that sensory silence was not cognitive disintegration or delirium, but an extraordinary, unshakeable state of unified awareness.
 
-This volume examines eight figures who mapped the territory of radical subtraction: John of the Cross, Julian of Norwich, Teresa of Ávila, Simeon Stylites, the anonymous author of The Cloud of Unknowing, Meister Eckhart, Hildegard of Bingen, and Gregory Palamas. In each case, this book dissects the physical, neurological, and structural mechanisms of their practice.
-
 ---
 
 ### Chapter 1

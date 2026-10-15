@@ -207,9 +207,11 @@ def validate_book(filepath: str, min_words: int = 600, max_words: int = 900, leg
         body_words = len(body.split())
 
         if idx == 0:
-            # Introduction word count check
-            if body_words < 120 or body_words > 650:
-                warnings.append(f"Introduction word count ({body_words}) outside typical 150–550 range.")
+            # Introduction word count & no-chapter-summary check (~250 words target)
+            if body_words < 140 or body_words > 300:
+                errors.append(f"Introduction word count ({body_words}) must be between 140 and 300 words (~250 word target).")
+            if re.search(r"\b(?:this volume traces|this volume examines|across twelve chapters|in the first half of the|in the second half of the|the twelve chapters that follow)\b", body, re.IGNORECASE):
+                errors.append("Introduction must introduce the topic only—do not summarize or list the chapters.")
         else:
             effective_min = 280 if legacy else min_words
             effective_max = 1050 if legacy else max_words

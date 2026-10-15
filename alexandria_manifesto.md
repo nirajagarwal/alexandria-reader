@@ -43,8 +43,9 @@ Say things simply. Avoid overwrought academic jargon, grand rhetorical flourishe
 #### 2. Mandatory Grounding in Concrete Reality
 Never write a chapter as an abstract essay or textbook definition. Every chapter must anchor its mechanism in real events, physical experiments, clinical cases, or primary historical records with named individuals, dates, locations, and verifiable measurements. Even in theoretical or psychological domains, the mechanism must be seen operating inside a real human or physical situation.
 
-#### 3. Mechanism Completeness (600–900 Words per Chapter)
-A story is not told until the reader can see *how* it worked. Never compress a chapter into a rushed 300-word sketch. Across an 8-to-12-chapter volume, each chapter must take 600 to 900 words so that both the narrative stakes and the step-by-step physical, biological, or financial mechanism are unpacked completely without leaving a reasonable reader asking "but how?"
+#### 3. Mechanism Completeness (600–900 Words per Chapter; ~250-Word Topic-Only Introductions)
+* **Introductions (~250 Words)**: Keep the book's Introduction around 250 words (strictly 140–300 words). Introduce the core topic and structural thesis directly—never summarize or preview the individual chapters.
+* **Chapters (600–900 Words)**: A story is not told until the reader can see *how* it worked. Never compress a chapter into a rushed 300-word sketch. Across an 8-to-12-chapter volume, each chapter must take 600 to 900 words so that both the narrative stakes and the step-by-step physical, biological, institutional, or financial mechanism are unpacked completely without leaving a reasonable reader asking "but how?"
 
 #### 4. Earned Formalisms Only (Zero Math Cosplay)
 Include display equations (`$$...$$`) only when a genuine, established mathematical, physical, chemical, or statistical law governs the phenomenon (such as the Kuramoto model, Shannon channel capacity, Fick's diffusion law, the Kelly criterion, or Manning's hydraulic flow). Never invent fake conceptual equations or pseudo-proportionalities (such as $\text{Fragility} \propto \text{Inertia} \times \text{Orthodoxy}^2$) just to put symbols on the page. When a mechanism is clinical, historical, or procedural rather than mathematical, present the exact experimental protocol, ledger, or causal chain instead.

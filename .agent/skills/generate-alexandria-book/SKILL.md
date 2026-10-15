@@ -46,14 +46,22 @@ Before drafting a single sentence of book prose, write a structured JSON bluepri
 
 ## Stage 3: Batched Chapter Drafting (~250-Word Introduction + 650–850 Words per Chapter)
 
-To prevent LLM context-window compression (where chapters shrink to 300 words by Chapter 5):
-- Spawn a dedicated author subagent (or 2 parallel subagents drafting Chapters 1–6 and Chapters 7–12) equipped with the locked `dossiers/<slug>.json` blueprint and `GENERATION_GUIDELINES.md`.
-- **Introduction Rule (~250 Words, No Chapter Summaries)**: The `### Introduction` must be approximately **200–275 words** (~250 words). It should introduce the core topic and structural thesis only—**never** summarize or preview the individual chapters.
-- Enforce the **650–850 word** target per chapter body (total book ~9,000–10,000 words).
-- Formatting requirements:
-  - Escape all literal currency dollar signs (`\$100`).
-  - Never wrap bare numbers in `$...$` (write `50`, not `$50$`).
-  - Use `\sum\nolimits` whenever a summation symbol appears inside a `\frac{...}{...}` numerator or denominator.
+To prevent LLM context-window compression (where chapters shrink to 300 words by Chapter 5), spawn a dedicated author subagent (or 2 parallel subagents) using the **Canonical Manifesto Prompt Template** below so the Alexandria Manifesto is baked directly into every generation call:
+
+```markdown
+Read `/Users/niraj/book-writer/alexandria_manifesto.md`, `/Users/niraj/book-writer/GENERATION_GUIDELINES.md`, and `/Users/niraj/book-writer/dossiers/<slug>.json`.
+Write `/Users/niraj/book-writer/<filename>.md` and validate it with `python3 scripts/validate_book.py <filename>.md` until it passes with 0 errors and 0 warnings.
+
+### Baked-In Alexandria Manifesto Laws (Non-Negotiable):
+1. **Authorial Humility & Reporter's Register**: We are not writing to impress; the material itself is impressive. Get out of the way and let the facts speak. Use plainspoken syntax, everyday nouns, and active verbs. Zero purple prose or hyperbole ("breathtaking", "awe-inspiring", "mind-boggling", "staggering", "paradigm-shifting").
+2. **Concise Topic-Only Introduction (~250 Words)**: The `### Introduction` must be **200–275 words** (strictly $\le 300$ words). Introduce the core topic and structural thesis only—**NEVER summarize, list, or preview the individual chapters**.
+3. **Mandatory Concrete Grounding**: Every chapter must anchor its mechanism in real historical events, physical experiments, clinical cases, or primary records with named people, dates, places, and exact measurements.
+4. **Mechanism Completeness (650–850 Words per Chapter)**: Unpack *how* the mechanism worked step by step across 5–8 paragraphs. Never compress a chapter into a 300-word sketch.
+5. **Earned Formalisms Only (Zero Math Cosplay)**: Follow each chapter's `formalism_mode` in `dossiers/<slug>.json`. Include `$$...$$` display equations ONLY in chapters marked `"equation"` (where a real mathematical, physical, chemical, or statistical law exists). In chapters marked `"ledger_or_list"`, use a clean Markdown bulleted/numbered list—never invent fake pseudo-equations!
+6. **Rotate the 3 Opening Doors**: Follow each chapter's `opening_door` (`A: Scene`, `B: Constraint/Paradox`, `C: Artifact/Measurement`). Ensure $\le 3$ chapters across the entire book begin their first sentence with `"In/On/At [Date]"`.
+7. **Clean Exits (Zero Concluding Sermons)**: End every chapter directly on the concrete `exit_fact`. Never add a moralizing summary sentence ("X showed that...", "This demonstrated that...", "Ultimately...", "serves as a testament").
+8. **Strict 3-Line Headers & LaTeX Hygiene**: Use `### Chapter N` / `# Title` / `## Subtitle` with zero colons. Escape literal currency dollar signs (`\$100`), never wrap bare numbers in `$50$`, and use `\sum\nolimits` inside `\frac{...}{...}`.
+```
 
 ---
 
