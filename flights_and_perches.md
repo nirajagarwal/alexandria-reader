@@ -1,12 +1,12 @@
-# Flights and Perches
-## Twelve Facets of William James
+# Twelve Facets
+## The Restless Mind of William James
 
 *Alexandria Press · alexandria.press*
 
 ---
 
 ### Introduction
-# Flights and Perches
+# Twelve Facets
 ## The Physician Who Refused to Close the System
 
 Nineteenth-century academic philosophy favored sealed systems. From Berlin and Königsberg to Oxford, theorists tried to deduce every sensation, moral choice, and historical event from a handful of first principles. Across the English Channel, empiricist psychologists pursued a parallel reduction. They sliced conscious life into static mental atoms that combined like bricks in a wall, while treating the human body as a deterministic clockwork automaton.
