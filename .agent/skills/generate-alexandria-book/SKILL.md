@@ -32,15 +32,15 @@ This skill executes the drift-proof, deterministic 5-stage pipeline for creating
 ## Stage 2: Lock the 12-Chapter Dossier (`dossiers/<slug>.json`)
 
 Before drafting a single sentence of book prose, write a structured JSON blueprint to `/Users/niraj/book-writer/dossiers/<slug>.json` containing:
-- `slug` (hyphenated, e.g., `"geometries-of-contagion"`), `file` (underscored, e.g., `"geometries_of_contagion.md"`), `title`, `subtitle` (zero colons!), `category`, `profile`, `accent`, `bg`, `theme`.
+- `slug` (hyphenated, e.g., `"geometries-of-contagion"`), `file` (underscored, e.g., `"geometries_of_contagion.md"`), `title`, `subtitle` (zero colons!), `category`, `profile`, `mode` (`"facet"` for Mode I modular essays on a theme, or `"arc"` for Mode II continuous 12-chapter narrative trajectory), `accent`, `bg`, `theme`.
 - **Title Distinctness Rule**: Never reuse head nouns already used in existing Alexandria Press book titles (do NOT use *Architectures*, *Engines*, *Topologies*, *Thresholds*, *Asymmetries*, *Tales*, *Worlds*, *Instruments*, *Ghosts*, *Fictions*, or *Bonds* in new book titles).
 - `chapters`: Array of 12 chapter objects, each specifying:
   1. `chapter`: `1` through `12`
   2. `title`: Plainspoken chapter title (zero colons)
   3. `subtitle`: Concrete chapter subtitle (zero colons)
   4. `opening_door`: Deterministically rotated across `"Door A (Scene)"`, `"Door B (Constraint/Paradox)"`, and `"Door C (Artifact/Measurement)"` so no more than 4 chapters open with a date/time phrase.
-  5. `historical_anchor`: Exact named person(s), year/date, location, and verifiable primary source/experiment (verified not in `--list-anchors`).
-  6. `formalism_mode`: Either `"equation"` (with the exact real governing equation written out) or `"ledger_or_list"` (explicitly forbidding display equations so the writer never invents "math cosplay").
+  5. `historical_anchor`: Exact named person(s), year/date, location, verifiable primary source/experiment (verified not in `--list-anchors`), and where available, a brief documented verbatim quote from the primary record.
+  6. `formalism_mode`: Either `"equation"` (with the exact real governing equation written out) or `"ledger_or_list"` (using a clear Markdown bulleted/numbered list for clarity, explicitly forbidding fake "math cosplay").
   7. `exit_fact`: The concrete historical, physical, or clinical fact on which the chapter will end cleanly (zero moralizing sermons).
 
 ---
@@ -54,14 +54,16 @@ Read `/Users/niraj/book-writer/alexandria_manifesto.md`, `/Users/niraj/book-writ
 Write `/Users/niraj/book-writer/<filename>.md` and validate it with `python3 scripts/validate_book.py <filename>.md` until it passes with 0 errors and 0 warnings.
 
 ### Baked-In Alexandria Manifesto Laws (Non-Negotiable):
-1. **Authorial Humility & Reporter's Register**: We are not writing to impress; the material itself is impressive. Get out of the way and let the facts speak. Use plainspoken syntax, everyday nouns, and active verbs. Zero purple prose or hyperbole ("breathtaking", "awe-inspiring", "mind-boggling", "staggering", "paradigm-shifting").
-2. **Concise Topic-Only Introduction (~250 Words)**: The `### Introduction` must be **200–275 words** (strictly $\le 300$ words). Introduce the core topic and structural thesis only—**NEVER summarize, list, or preview the individual chapters**.
-3. **Mandatory Concrete Grounding**: Every chapter must anchor its mechanism in real historical events, physical experiments, clinical cases, or primary records with named people, dates, places, and exact measurements.
-4. **Mechanism Completeness (650–850 Words per Chapter)**: Unpack *how* the mechanism worked step by step across 5–8 paragraphs. Never compress a chapter into a 300-word sketch.
-5. **Earned Formalisms Only (Zero Math Cosplay)**: Follow each chapter's `formalism_mode` in `dossiers/<slug>.json`. Include `$$...$$` display equations ONLY in chapters marked `"equation"` (where a real mathematical, physical, chemical, or statistical law exists). In chapters marked `"ledger_or_list"`, use a clean Markdown bulleted/numbered list—never invent fake pseudo-equations!
-6. **Rotate the 3 Opening Doors**: Follow each chapter's `opening_door` (`A: Scene`, `B: Constraint/Paradox`, `C: Artifact/Measurement`). Ensure $\le 3$ chapters across the entire book begin their first sentence with `"In/On/At [Date]"`.
-7. **Clean Exits (Zero Concluding Sermons)**: End every chapter directly on the concrete `exit_fact`. Never add a moralizing summary sentence ("X showed that...", "This demonstrated that...", "Ultimately...", "serves as a testament").
-8. **Strict 3-Line Headers & LaTeX Hygiene**: Use `### Chapter N` / `# Title` / `## Subtitle` with zero colons. Escape literal currency dollar signs (`\$100`), never wrap bare numbers in `$50$`, and use `\sum\nolimits` inside `\frac{...}{...}`.
+1. **Structural Modality (5-Minute Chapters / 1-Hour Book)**: Default to **Mode I (Modular Facets)**—12 self-contained 5-minute stories examining a single theme from 12 angles without requiring cross-chapter continuity ("shorts, not the long video")—unless `dossiers/<slug>.json` explicitly specifies **Mode II (Continuous Arc)**.
+2. **Authorial Humility & Honest Machine Synthesis**: "Do not be fashioned according to the age"—we do not hide machine synthesis or imitate commercial literary padding. Use plainspoken syntax, everyday nouns, and active verbs. Zero purple prose or hyperbole ("breathtaking", "awe-inspiring", "mind-boggling", "staggering", "paradigm-shifting"). Keep structured bullet lists wherever they bring clarity.
+3. **Concise Topic-Only Introduction (~250 Words)**: The `### Introduction` must be **200–275 words** (strictly $\le 300$ words). Introduce the core topic and structural thesis only—**NEVER summarize, list, or preview the individual chapters**.
+4. **Mandatory Concrete Grounding & Verbatim Quotes**: Every chapter must anchor its mechanism in real historical events, physical experiments, clinical cases, or primary records with named people, dates, places, and exact measurements. Sprinkle 1–2 brief, documented **verbatim quotes** from historical actors or primary texts to humanize the story without inventing dialogue.
+5. **Sentence Cadence & Length Variance (No Staccato Clichés)**: Avoid uniform 28–35 word sentences and repetitive participial-phrase openers ("Working alongside..., X did Y"). Aim for a smaller average sentence length (**~16–22 words**) with natural variance by splitting sprawling multi-clause sentences into clean declarative statements. **Warning**: Do NOT use cheesy LLM "short punchy sentences" (dramatic 2–4 word fragments like "It failed." or "Everything changed.").
+6. **Mechanism Completeness (650–850 Words per Chapter)**: Unpack *how* the mechanism worked step by step across 5–8 paragraphs. Never compress a chapter into a 300-word sketch.
+7. **Earned Formalisms Only (Zero Math Cosplay)**: Follow each chapter's `formalism_mode` in `dossiers/<slug>.json`. Include `$$...$$` display equations ONLY in chapters marked `"equation"` (where a real mathematical, physical, chemical, or statistical law exists). In chapters marked `"ledger_or_list"`, use a clean Markdown bulleted/numbered list—never invent fake pseudo-equations!
+8. **Rotate the 3 Opening Doors**: Follow each chapter's `opening_door` (`A: Scene`, `B: Constraint/Paradox`, `C: Artifact/Measurement`). Ensure $\le 3$ chapters across the entire book begin their first sentence with `"In/On/At [Date]"`.
+9. **Clean Exits (Zero Concluding Sermons)**: End every chapter directly on the concrete `exit_fact`. Never add a moralizing summary sentence ("X showed that...", "This demonstrated that...", "Ultimately...", "serves as a testament").
+10. **Strict 3-Line Headers & LaTeX Hygiene**: Use `### Chapter N` / `# Title` / `## Subtitle` with zero colons. Escape literal currency dollar signs (`\$100`), never wrap bare numbers in `$50$`, and use `\sum\nolimits` inside `\frac{...}{...}`.
 ```
 
 ---

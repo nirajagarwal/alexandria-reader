@@ -303,6 +303,19 @@ def validate_book(filepath: str, min_words: int = 600, max_words: int = 900, leg
     katex_errors = verify_katex_batch(katex_items)
     errors.extend(katex_errors)
 
+    # Compute prose sentence length cadence (excluding display math and bullet items)
+    prose_lines = [
+        l for l in re.sub(r"\$\$[\s\S]*?\$\$", "", raw_text).splitlines()
+        if l.strip() and not l.strip().startswith(("#", "*", "-", ">", "---")) and not re.match(r"^\d+\.", l.strip())
+    ]
+    prose_text = " ".join(prose_lines)
+    sents = [s.strip() for s in re.split(r"(?<=[.!?])\s+", prose_text) if len(s.strip().split()) >= 3]
+    avg_sent_words = round(sum(len(s.split()) for s in sents) / len(sents), 1) if sents else 0.0
+    if not legacy and avg_sent_words > 24.0:
+        warnings.append(
+            f"Average sentence length is {avg_sent_words} words/sentence (target 16–23 w/s). Break up long multi-clause sentences into crisp declarative statements without using cheesy 2–3 word fragments."
+        )
+
     summary = {
         "file": filename,
         "chapters": num_chapters,
@@ -310,6 +323,7 @@ def validate_book(filepath: str, min_words: int = 600, max_words: int = 900, leg
         "chapter_words": [c["words"] for c in chapters_meta[1:]],
         "date_opens": date_open_count,
         "equations_checked": len(katex_items),
+        "avg_sent_words": avg_sent_words,
     }
     return errors, warnings, summary
 
@@ -353,7 +367,7 @@ def main():
         w_range = f"{min(ch_w)}–{max(ch_w)} w/ch" if ch_w else "N/A"
         print(
             f"[{status}] {fname:28s} | {info.get('chapters', 0):2d} chs | {info.get('total_words', 0):6,d} words ({w_range}) | "
-            f"date-opens: {info.get('date_opens', 0)} | eqs: {info.get('equations_checked', 0)}"
+            f"sent: {info.get('avg_sent_words', 0):4.1f} w/s | date-opens: {info.get('date_opens', 0)} | eqs: {info.get('equations_checked', 0)}"
         )
         for w in warns:
             print(f"   WARN: {w}")

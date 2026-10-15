@@ -10,38 +10,49 @@ This document defines the two-tier generation process for Alexandria Press (`ale
 
 Every book generation prompt must include and enforce these universal constraints:
 
-1. **Authorial Humility & The Reporter's Register**
-   - Write in clear, direct, plainspoken prose. Use everyday nouns and active verbs.
-   - Never use purple prose, awe-inducing adjectives (*"profound"*, *"breathtaking"*, *"unprecedented"*, *"astonishing"*), or academic throat-clearing. Let the raw numbers, physical scales, and primary facts generate the wonder.
+1. **The 1-Hour Book / 5-Minute Chapter & Two Structural Modes**
+   - Each volume consists of **12 chapters** (~650–850 words each, ~5 minutes per chapter, ~1 hour for the book) plus a concise **Introduction (~250 words)**.
+   - Choose the structural mode that fits the subject:
+     - **Mode I — Modular Facets (Default)**: Twelve self-contained essays/stories examining a single theme from twelve independent angles ("shorts, not the long video"). Zero cross-chapter narrative continuity is required; a reader can read any chapter standalone, yet finishing one chapter makes them want to read another.
+     - **Mode II — Continuous Arc (For Select Topics)**: A continuous 12-chapter sequential or developmental arc across the entire book, reserved for topics that inherently demand an unfolding narrative trajectory.
 
-2. **Mandatory Concrete Grounding (Zero Abstract Essays)**
+2. **Authorial Humility & Honest Machine Synthesis ("Do Not Be Fashioned According to the Age")**
+   - Write in clear, direct, plainspoken prose. We are not trying to imitate commercial literary non-fiction or hide machine synthesis.
+   - Never use purple prose, awe-inducing adjectives (*"profound"*, *"breathtaking"*, *"unprecedented"*, *"astonishing"*), or academic throat-clearing.
+   - **Functional Bullet Lists**: Use structured bulleted or numbered lists freely whenever they bring clarity to a mechanism, protocol, or ledger.
+
+3. **Mandatory Concrete Grounding & Verbatim Historical Quotes**
    - Every single chapter must be anchored in a concrete historical event, physical experiment, clinical case, or primary empirical record with named people, dates, places, and specific measurements.
-   - Never write a chapter as a purely theoretical overview or textbook summary.
+   - **Verbatim Quotes**: Sprinkle 1–2 short, authentic, documented verbatim quotes from primary sources (words actually written or spoken by the historical figures) into chapters to humanize the record without inventing fictional dialogue.
 
-3. **Depth & Mechanism Completeness (650–900 Words per Chapter; ~250-Word Introductions)**
-   - Volumes consist of **8 to 12 chapters**, plus a concise **Introduction (~200–275 words)**.
-   - **Introductions**: Keep introductions around **250 words**. Introduce the core topic, structural problem, and thesis directly—**never** summarize or list the upcoming chapters.
-   - **Chapters**: Every chapter must be **650 to 900 words** (5 to 8 rich paragraphs). Never compress chapters into 300-word summaries.
+4. **Depth & Mechanism Completeness (650–850 Words per Chapter; ~250-Word Introductions)**
+   - **Introductions**: Keep introductions around **250 words** (strictly 140–300 words). Introduce the core topic, structural problem, and thesis directly—**never** summarize or list the upcoming chapters.
+   - **Chapters**: Every chapter must be **650 to 850 words** (5 to 8 rich paragraphs). Never compress chapters into 300-word summaries.
    - A story is not told until the reader can see *how* the mechanism actually worked step by step.
 
-4. **Earned Formalisms Only (Zero "Math Cosplay")**
+5. **Earned Formalisms Only (Zero "Math Cosplay")**
    - Include a display equation (`$$...$$`) **only** when a genuine, established mathematical, physical, chemical, or statistical law governs the mechanism (e.g., Kuramoto coupled oscillators, Shannon channel capacity, Fick's law of diffusion, Kelly criterion, Bethe-Weizsäcker pairing energy, Manning's open-channel flow).
    - **Never** invent conceptual pseudo-equations or fake proportionalities (e.g., $\text{Fragility} \propto \text{Inertia} \times \text{Orthodoxy}^2$ or $\Delta S_{\text{exit}} \to \infty$).
    - When a chapter's mechanism is clinical, historical, or procedural rather than mathematical, present the exact experimental setup, mortality ledger, or structured bullet list instead of forcing a fake equation.
    - All genuine math must use valid LaTeX enclosed in `$$...$$` (block) or `$...$` (inline), with multi-character subscripts wrapped in curly braces (`_{...}`).
 
-5. **Antidote to Cadence Fatigue: Rotate Three Opening Doors**
+6. **Sentence Cadence: Smaller Average Length & Natural Variance (No Staccato Clichés)**
+   - Avoid uniform 28–35 word multi-clause sentences and repetitive participial-phrase openers (*"Working alongside..., X did Y"*, *"Having discovered..., Z..."*).
+   - Target a **lower average sentence length (~16–22 words)** with natural variance: mix clean 10–14 word declarative sentences with 20–28 word mechanism explanations.
+   - **Warning Against "Short Punchy Sentences"**: Do **not** write artificial LLM staccato fragments or dramatic one-liners (*"It failed."*, *"Then everything changed."*, *"The math was unforgiving."*). Keep all short sentences factual and plainspoken.
+
+7. **Antidote to Opening Fatigue: Rotate Three Opening Doors**
    - Do **not** open every chapter with the same sentence formula (*"At [Time] on [Date], [Age]-year-old [Name]..."*).
-   - Across the 8–12 chapters of a book, deliberately rotate across three distinct opening doors:
+   - Across the 12 chapters of a book, deliberately rotate across three distinct opening doors:
      - **Door A — The Scene Open**: Drop into a specific moment, place, and physical action where an anomaly or crisis unfolded.
      - **Door B — The Constraint / Paradox Open**: Start directly with a hard physical limit, material bottleneck, or counterintuitive number, then introduce the person or system that confronted it.
      - **Door C — The Artifact / Evidence Open**: Start with a physical remnant, clinical ledger, or unexplained measurement (e.g., the open lower gunports of the salvaged *Vasa*, an eight-arcminute error in Mars tables, or a laboratory biopsy log).
 
-6. **Clean Exits: No Moralizing Final Paragraphs**
+8. **Clean Exits: No Moralizing Final Paragraphs**
    - Never end a chapter with a "high-school essay" summary paragraph (*"X showed that..."*, *"This demonstrated that..."*, *"His life proved that..."*).
    - End directly on the final factual outcome, physical resolution, or empirical consequence. Trust the reader to draw the conclusion.
 
-7. **Epistemic Honesty & Header Formatting**
+9. **Epistemic Honesty & Header Formatting**
    - Distinguish hard historical telemetry from company lore or hagiography (*"According to company lore..."*).
    - **Strict Three-Line Headers (Zero Colons)**:
      ```markdown

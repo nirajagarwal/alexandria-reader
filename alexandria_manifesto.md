@@ -31,35 +31,55 @@ When a writer tries to impress, the text draws attention to the author rather th
 
 ---
 
+### The Form
+# The One-Hour Book and Five-Minute Chapter
+## Two Structural Modes for Contemporary Human Attention
+
+> **"Do not be fashioned according to the age"—but be sensitive to real human needs. We do not hide machine synthesis, and we do not imitate literary padding.**
+
+Each Alexandria volume is designed to be read in **one hour** over the course of a day, divided into **twelve 5-minute chapters** (~650–850 words each). We reject the commercial trade-book obligation to stretch a single idea into 300 pages of connective tissue and rhetorical filler.
+
+Depending on the nature of the subject, volumes operate in one of two structural modes:
+
+1. **Mode I — Modular Facets (Default: The Essay Collection)**
+   * *"Not the long video, but shorts."* Each chapter is a completely self-contained story that requires zero narrative continuity from the chapter before it. A reader can open the book at any chapter without committing to continuous sequential reading—yet finishing one chapter naturally pulls them into the next. By examining a single theme through twelve distinct, independent instances, the reader grasps the full multifacetedness of the phenomenon.
+2. **Mode II — The Continuous Arc (For Select Topics)**
+   * Reserved for subjects that genuinely require a sequential, unfolding developmental or chronological trajectory across all twelve chapters, where each chapter builds directly on the state left by the previous one.
+
+---
+
 ### Universal Guidelines
-# Seven Laws Common to All Books
+# Eight Laws Common to All Books
 ## Guardrails Against Drift, Jargon, and Mechanical Fatigue
 
-Every volume generated for Alexandria Press is governed by seven non-negotiable laws:
+Every volume generated for Alexandria Press is governed by eight non-negotiable laws:
 
-#### 1. Direct, Plainspoken Prose (The Reporter's Register)
-Say things simply. Avoid overwrought academic jargon, grand rhetorical flourishes, and awe-inducing adjectives. The most powerful explanations rely on clean syntax, everyday nouns, and active verbs. The complexity belongs entirely in the underlying mechanics and cross-domain connections—never in decorative vocabulary. Clarity is the ultimate defense against pretension.
+#### 1. Direct, Plainspoken Prose & Honest Machine Synthesis
+Say things simply. We are not trying to sound "literary" or disguise machine synthesis behind artificial warmth. Avoid overwrought academic jargon, grand rhetorical flourishes, and awe-inducing adjectives. Where a structured bullet list brings immediate visual clarity to a ledger, protocol, or multi-part mechanism, use it unapologetically. Complexity belongs in the underlying mechanics—never in decorative vocabulary.
 
-#### 2. Mandatory Grounding in Concrete Reality
-Never write a chapter as an abstract essay or textbook definition. Every chapter must anchor its mechanism in real events, physical experiments, clinical cases, or primary historical records with named individuals, dates, locations, and verifiable measurements. Even in theoretical or psychological domains, the mechanism must be seen operating inside a real human or physical situation.
+#### 2. Mandatory Grounding & Verbatim Historical Quotes
+Never write a chapter as an abstract essay or textbook definition. Every chapter must anchor its mechanism in real events, physical experiments, clinical cases, or primary historical records with named individuals, dates, locations, and verifiable measurements. Sprinkle brief, documented **verbatim quotes** from primary sources—the actual words spoken, written in margin notes, or testified by the historical participants—to humanize the record without inventing fictional dialogue.
 
-#### 3. Mechanism Completeness (600–900 Words per Chapter; ~250-Word Topic-Only Introductions)
+#### 3. Mechanism Completeness (650–850 Words per Chapter; ~250-Word Topic-Only Introductions)
 * **Introductions (~250 Words)**: Keep the book's Introduction around 250 words (strictly 140–300 words). Introduce the core topic and structural thesis directly—never summarize or preview the individual chapters.
-* **Chapters (600–900 Words)**: A story is not told until the reader can see *how* it worked. Never compress a chapter into a rushed 300-word sketch. Across an 8-to-12-chapter volume, each chapter must take 600 to 900 words so that both the narrative stakes and the step-by-step physical, biological, institutional, or financial mechanism are unpacked completely without leaving a reasonable reader asking "but how?"
+* **Chapters (650–850 Words)**: A story is not told until the reader can see *how* it worked. Never compress a chapter into a rushed 300-word sketch. Across a 12-chapter volume, each 5-minute chapter takes 650 to 850 words so that both the concrete stakes and the step-by-step physical, biological, institutional, or financial mechanism are unpacked completely.
 
 #### 4. Earned Formalisms Only (Zero Math Cosplay)
-Include display equations (`$$...$$`) only when a genuine, established mathematical, physical, chemical, or statistical law governs the phenomenon (such as the Kuramoto model, Shannon channel capacity, Fick's diffusion law, the Kelly criterion, or Manning's hydraulic flow). Never invent fake conceptual equations or pseudo-proportionalities (such as $\text{Fragility} \propto \text{Inertia} \times \text{Orthodoxy}^2$) just to put symbols on the page. When a mechanism is clinical, historical, or procedural rather than mathematical, present the exact experimental protocol, ledger, or causal chain instead.
+Include display equations (`$$...$$`) only when a genuine, established mathematical, physical, chemical, or statistical law governs the phenomenon (such as the Kuramoto model, Shannon channel capacity, Fick's diffusion law, the Kelly criterion, or Manning's hydraulic flow). Never invent fake conceptual equations or pseudo-proportionalities (such as $\text{Fragility} \propto \text{Inertia} \times \text{Orthodoxy}^2$) just to put symbols on the page. When a mechanism is clinical, historical, or procedural rather than mathematical, present the exact experimental protocol, ledger, or structured bullet list instead.
 
-#### 5. Breaking Cadence Fatigue (Three Entry Doors)
-Because volumes run 8 to 12 focused chapters, starting every chapter with the same template (*"At [Time] on [Date], [Age]-year-old [Name]..."*) creates mechanical fatigue. Across any volume, rotate chapter openings across three distinct entry doors:
+#### 5. Sentence Cadence: Lower Average Length & Natural Variance (No Staccato Clichés)
+Avoid the monotonous 30-word "participial march" (*"Working alongside..., X did Y"*). Target a smaller average sentence length (**~16–22 words**) with natural variance between crisp 10–14 word declarative statements and 22–28 word technical explanations. Break up sprawling multi-clause sentences into direct statements. **Warning**: Never attempt artificial LLM "short punchy sentences" (melodramatic 2–4 word fragments like *"It failed."* or *"Then everything changed."*), which read as theatrical and leave a bad aftertaste.
+
+#### 6. Breaking Opening Fatigue (Three Entry Doors)
+Because volumes run 12 focused chapters, starting every chapter with the same template (*"At [Time] on [Date], [Age]-year-old [Name]..."*) creates mechanical fatigue. Across any volume, rotate chapter openings across three distinct entry doors:
 * **The Scene Open**: Drop directly into a decisive physical moment, time, and place where an anomaly or failure surfaced.
 * **The Constraint Open**: Open with a hard physical bottleneck, material limit, or counterintuitive number, then introduce the person or system that collided with it.
 * **The Artifact Open**: Open with a physical remnant, clinical ledger, or unexplained measurement—such as the open gunports of a salvaged warship, an eight-arcminute discrepancy in planetary tables, or a laboratory biopsy log.
 
-#### 6. Clean Exits (Withhold Concluding Sermons)
+#### 7. Clean Exits (Withhold Concluding Sermons)
 Resist the urge to end a chapter with either a theatrical mic-drop or a dutiful "high-school essay" summary paragraph (*"X showed that..."*, *"This demonstrated that..."*, *"His life proved that..."*). When the final empirical fact or physical resolution lands, stop. Juxtapose the facts and trust the reader to close the circuit.
 
-#### 7. Epistemic Honesty and Strict Header Architecture
+#### 8. Epistemic Honesty and Strict Header Architecture
 * **Fact vs. Lore**: State verified telemetry and primary records plainly. When referencing famous historical lore, contested figures, or hagiography, explicitly note the provenance in prose rather than reporting legend in the same register as laboratory data.
 * **Three-Line Header Standard**: Never use colons in titles, chapter labels, or section headers. Display the chapter identifier, plainspoken title, and concrete subtitle on three separate lines:
   - Line 1: `### Chapter [Number]` or `### Introduction`
