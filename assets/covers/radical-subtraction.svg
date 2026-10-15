@@ -1,13 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2400" width="100%" height="100%">
   <defs>
     <linearGradient id="bg-radical-subtraction" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#221d18"/>
-      <stop offset="60%" stop-color="#141210"/>
-      <stop offset="100%" stop-color="#141210"/>
+      <stop offset="0%" stop-color="#3b3124"/>
+      <stop offset="60%" stop-color="#2f271d"/>
+      <stop offset="100%" stop-color="#282119"/>
     </linearGradient>
-    <radialGradient id="halo-radical-subtraction" cx="50%" cy="58%" r="48%">
-      <stop offset="0%" stop-color="#eab308" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#141210" stop-opacity="0"/>
+    <radialGradient id="halo-radical-subtraction" cx="50%" cy="58%" r="75%">
+      <stop offset="0%" stop-color="#eab308" stop-opacity="0.26"/>
+      <stop offset="55%" stop-color="#eab308" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#eab308" stop-opacity="0.08"/>
     </radialGradient>
   </defs>
 

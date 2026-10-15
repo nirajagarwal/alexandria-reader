@@ -128,6 +128,53 @@ def generate_emblem_svg(theme: str, accent: str):
         return f'<g class="emblem-lattice">{"".join(elems)}</g>'
 
 
+def _blend_hex(c1: str, c2: str, t: float) -> str:
+    c1 = c1.lstrip("#")
+    c2 = c2.lstrip("#")
+    r1, g1, b1 = int(c1[0:2], 16), int(c1[2:4], 16), int(c1[4:6], 16)
+    r2, g2, b2 = int(c2[0:2], 16), int(c2[2:4], 16), int(c2[4:6], 16)
+    r = int(round(r1 * (1 - t) + r2 * t))
+    g = int(round(g1 * (1 - t) + g2 * t))
+    b = int(round(b1 * (1 - t) + b2 * t))
+    return f"#{max(0, min(255, r)):02x}{max(0, min(255, g)):02x}{max(0, min(255, b)):02x}"
+
+
+def _derive_cover_stops(bg: str, accent: str):
+    """Ensure cover background and edges stay rich and visible on mobile screens without black crush."""
+    top_stop = _blend_hex(_blend_hex("#242a33", bg, 0.65), accent, 0.22)
+    mid_stop = _blend_hex(top_stop, "#1b2028", 0.18)
+    edge_stop = _blend_hex(top_stop, "#181c24", 0.26)
+    return top_stop, mid_stop, edge_stop
+
+
+def sync_covers_data():
+    """Rebuild js/covers-data.js from assets/covers/*.svg so inline cover SVGs stay in sync."""
+    covers_js_path = os.path.join(BASE_DIR, "js", "covers-data.js")
+    covers = {}
+    for fname in sorted(os.listdir(COVERS_DIR)):
+        if not fname.endswith(".svg"):
+            continue
+        slug = fname[:-4]
+        if slug == "alexandria-manifesto":
+            continue
+        svg_text = open(os.path.join(COVERS_DIR, fname), encoding="utf-8").read().strip()
+        covers[slug] = svg_text
+    if "the-autonomous-engine" in covers and "autonomous-engine" not in covers:
+        covers["autonomous-engine"] = covers["the-autonomous-engine"]
+    js_out = (
+        "// Alexandria Press - Inlined Vector SVG Covers\n"
+        "(function(root) {\n"
+        "  const covers = " + json.dumps(covers, indent=2, ensure_ascii=False) + ";\n"
+        '  if (covers["the-autonomous-engine"] && !covers["autonomous-engine"]) {\n'
+        '    covers["autonomous-engine"] = covers["the-autonomous-engine"];\n'
+        "  }\n"
+        '  if (typeof window !== "undefined") window.EMBEDDED_COVER_SVGS = covers;\n'
+        '  if (typeof module !== "undefined" && module.exports) module.exports = covers;\n'
+        '})(typeof globalThis !== "undefined" ? globalThis : this);\n'
+    )
+    open(covers_js_path, "w", encoding="utf-8").write(js_out)
+
+
 def generate_cover_svg(slug: str, title: str, subtitle: str, category: str, accent: str, bg: str, theme: str):
     os.makedirs(COVERS_DIR, exist_ok=True)
     emblem = generate_emblem_svg(theme, accent)
@@ -135,17 +182,19 @@ def generate_cover_svg(slug: str, title: str, subtitle: str, category: str, acce
     esc_cat = html.escape(category.upper())
     esc_title = html.escape(title)
     esc_sub = html.escape(subtitle)
+    top_stop, mid_stop, edge_stop = _derive_cover_stops(bg, accent)
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2400" width="100%" height="100%">
   <defs>
     <linearGradient id="bg-{slug}" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="{bg}"/>
-      <stop offset="65%" stop-color="#080c11"/>
-      <stop offset="100%" stop-color="#05080b"/>
+      <stop offset="0%" stop-color="{top_stop}"/>
+      <stop offset="60%" stop-color="{mid_stop}"/>
+      <stop offset="100%" stop-color="{edge_stop}"/>
     </linearGradient>
-    <radialGradient id="halo-{slug}" cx="50%" cy="58%" r="48%">
-      <stop offset="0%" stop-color="{accent}" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#05080b" stop-opacity="0"/>
+    <radialGradient id="halo-{slug}" cx="50%" cy="58%" r="75%">
+      <stop offset="0%" stop-color="{accent}" stop-opacity="0.26"/>
+      <stop offset="55%" stop-color="{accent}" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="{accent}" stop-opacity="0.08"/>
     </radialGradient>
   </defs>
 
@@ -274,7 +323,8 @@ def main():
             meta["markdown"] = md_text
             print(f"[SYNCED] {slug:26s} -> {len(md_text):6,d} chars")
         save_books_data(prefix, data, suffix)
-        print("Successfully synced all volumes into js/books-data.js.")
+        sync_covers_data()
+        print("Successfully synced all volumes into js/books-data.js and js/covers-data.js.")
         return
 
     if not args.slug:
@@ -310,6 +360,7 @@ def main():
         "markdown": md_text,
     }
     save_books_data(prefix, data, suffix)
+    sync_covers_data()
     update_index_and_sitemap(slug, title, subtitle, args.category)
     print(
         f"[PUBLISHED] '{title}: {subtitle}' ({slug}) | {info['chapters']} chapters | {info['total_words']:,} words"
