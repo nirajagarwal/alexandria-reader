@@ -16,15 +16,15 @@
   <rect width="1600" height="2400" fill="url(#halo-ghosts-in-the-parchment)"/>
 
   <g text-anchor="middle" font-family="'Inter', -apple-system, sans-serif">
-    <text x="800" y="270" font-size="34" font-weight="700" letter-spacing="10" fill="#d97706" opacity="0.95">PHILOLOGY &amp; FORENSICS</text>
+    <text x="800" y="270" font-size="44" font-weight="700" letter-spacing="9" fill="#d97706" opacity="0.95">PHILOLOGY &amp; FORENSICS</text>
   </g>
 
   <g text-anchor="middle">
-    <text x="800" y="500" font-family="'Literata', Georgia, serif" font-size="88" font-weight="700" letter-spacing="-0.01em" fill="#faf9f6">
+    <text x="800" y="490" font-family="'Literata', Georgia, serif" font-size="88" font-weight="700" letter-spacing="-0.01em" fill="#faf9f6">
       Ghosts in the Parchment
     </text>
-    <text x="800" y="590" font-family="'Literata', Georgia, serif" font-size="44" font-weight="400" font-style="italic" fill="#cbd5e1">
-      How Scholars Exposed Forgeries, Deciphered Lost Scripts, and Reconstructed Vanished Books
+    <text x="800" y="610" font-family="'Literata', Georgia, serif" font-size="54" font-weight="400" font-style="italic" fill="#cbd5e1">
+      <tspan x="800" dy="0">How Scholars Exposed Forgeries, Deciphered</tspan><tspan x="800" dy="68">Lost Scripts, and Reconstructed Vanished Books</tspan>
     </text>
   </g>
 

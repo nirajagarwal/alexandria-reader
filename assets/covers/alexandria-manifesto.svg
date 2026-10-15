@@ -27,7 +27,7 @@
 
   <g text-anchor="middle" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif">
     <text x="800" y="210" font-size="20" font-weight="700" letter-spacing="9" fill="#fbbf24" opacity="0.95">ALEXANDRIA PRESS</text>
-    <text x="800" y="250" font-size="13" font-weight="500" letter-spacing="4" fill="#fde68a" opacity="0.75">SPECIAL EDITION · PLATFORM & PHILOSOPHY</text>
+    <text x="800" y="250" font-size="13" font-weight="500" letter-spacing="4" fill="#fde68a" opacity="0.75">SPECIAL EDITION · PLATFORM &amp; PHILOSOPHY</text>
     <line x1="680" y1="285" x2="920" y2="285" stroke="#fbbf24" stroke-width="1" opacity="0.35"/>
   </g>
 

@@ -16,15 +16,15 @@
   <rect width="1600" height="2400" fill="url(#halo-instruments-of-precision)"/>
 
   <g text-anchor="middle" font-family="'Inter', -apple-system, sans-serif">
-    <text x="800" y="270" font-size="34" font-weight="700" letter-spacing="10" fill="#06b6d4" opacity="0.95">PHYSICS &amp; METROLOGY</text>
+    <text x="800" y="270" font-size="44" font-weight="700" letter-spacing="9" fill="#06b6d4" opacity="0.95">PHYSICS &amp; METROLOGY</text>
   </g>
 
   <g text-anchor="middle">
-    <text x="800" y="500" font-family="'Literata', Georgia, serif" font-size="88" font-weight="700" letter-spacing="-0.01em" fill="#faf9f6">
+    <text x="800" y="490" font-family="'Literata', Georgia, serif" font-size="88" font-weight="700" letter-spacing="-0.01em" fill="#faf9f6">
       Instruments of Precision
     </text>
-    <text x="800" y="590" font-family="'Literata', Georgia, serif" font-size="44" font-weight="400" font-style="italic" fill="#cbd5e1">
-      Twelve Machines That Expanded the Boundaries of Measurement
+    <text x="800" y="610" font-family="'Literata', Georgia, serif" font-size="62" font-weight="400" font-style="italic" fill="#cbd5e1">
+      <tspan x="800" dy="0">Twelve Machines That Expanded</tspan><tspan x="800" dy="78">the Boundaries of Measurement</tspan>
     </text>
   </g>
 

@@ -16,15 +16,15 @@
   <rect width="1600" height="2400" fill="url(#halo-bonds-of-enmity)"/>
 
   <g text-anchor="middle" font-family="'Inter', -apple-system, sans-serif">
-    <text x="800" y="270" font-size="34" font-weight="700" letter-spacing="10" fill="#ef4444" opacity="0.95">CONFLICT &amp; GAME THEORY</text>
+    <text x="800" y="270" font-size="44" font-weight="700" letter-spacing="9" fill="#ef4444" opacity="0.95">CONFLICT &amp; GAME THEORY</text>
   </g>
 
   <g text-anchor="middle">
-    <text x="800" y="500" font-family="'Literata', Georgia, serif" font-size="104" font-weight="700" letter-spacing="-0.01em" fill="#faf9f6">
+    <text x="800" y="490" font-family="'Literata', Georgia, serif" font-size="104" font-weight="700" letter-spacing="-0.01em" fill="#faf9f6">
       Bonds of Enmity
     </text>
-    <text x="800" y="590" font-family="'Literata', Georgia, serif" font-size="44" font-weight="400" font-style="italic" fill="#cbd5e1">
-      How Blood Feuds, Rivalries, and Escalation Traps Lock Adversaries Together
+    <text x="800" y="610" font-family="'Literata', Georgia, serif" font-size="54" font-weight="400" font-style="italic" fill="#cbd5e1">
+      <tspan x="800" dy="0">How Blood Feuds, Rivalries, and</tspan><tspan x="800" dy="68">Escalation Traps Lock Adversaries Together</tspan>
     </text>
   </g>
 

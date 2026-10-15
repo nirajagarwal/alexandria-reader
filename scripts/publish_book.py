@@ -175,13 +175,36 @@ def sync_covers_data():
     open(covers_js_path, "w", encoding="utf-8").write(js_out)
 
 
+def _wrap_subtitle_svg(subtitle: str):
+    """Split subtitle into 1 or 2 balanced lines and return (font_size, inner_svg)."""
+    words = subtitle.strip().split()
+    if len(subtitle) <= 28 or len(words) <= 3:
+        return 62, html.escape(subtitle.strip())
+    best_idx = 1
+    best_diff = 9999
+    for i in range(1, len(words)):
+        l1 = " ".join(words[:i])
+        l2 = " ".join(words[i:])
+        diff = abs(len(l1) - len(l2))
+        if diff < best_diff:
+            best_diff = diff
+            best_idx = i
+    line1 = html.escape(" ".join(words[:best_idx]))
+    line2 = html.escape(" ".join(words[best_idx:]))
+    max_chars = max(len(" ".join(words[:best_idx])), len(" ".join(words[best_idx:])))
+    sub_font_size = 62 if max_chars <= 34 else 54
+    dy = 78 if sub_font_size == 62 else 68
+    inner = f'<tspan x="800" dy="0">{line1}</tspan><tspan x="800" dy="{dy}">{line2}</tspan>'
+    return sub_font_size, inner
+
+
 def generate_cover_svg(slug: str, title: str, subtitle: str, category: str, accent: str, bg: str, theme: str):
     os.makedirs(COVERS_DIR, exist_ok=True)
     emblem = generate_emblem_svg(theme, accent)
     title_font_size = 104 if len(title) <= 22 else (88 if len(title) <= 28 else 74)
     esc_cat = html.escape(category.upper())
     esc_title = html.escape(title)
-    esc_sub = html.escape(subtitle)
+    sub_font_size, sub_inner = _wrap_subtitle_svg(subtitle)
     top_stop, mid_stop, edge_stop = _derive_cover_stops(bg, accent)
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2400" width="100%" height="100%">
@@ -202,15 +225,15 @@ def generate_cover_svg(slug: str, title: str, subtitle: str, category: str, acce
   <rect width="1600" height="2400" fill="url(#halo-{slug})"/>
 
   <g text-anchor="middle" font-family="'Inter', -apple-system, sans-serif">
-    <text x="800" y="270" font-size="34" font-weight="700" letter-spacing="10" fill="{accent}" opacity="0.95">{esc_cat}</text>
+    <text x="800" y="270" font-size="44" font-weight="700" letter-spacing="9" fill="{accent}" opacity="0.95">{esc_cat}</text>
   </g>
 
   <g text-anchor="middle">
-    <text x="800" y="500" font-family="'Literata', Georgia, serif" font-size="{title_font_size}" font-weight="700" letter-spacing="-0.01em" fill="#faf9f6">
+    <text x="800" y="490" font-family="'Literata', Georgia, serif" font-size="{title_font_size}" font-weight="700" letter-spacing="-0.01em" fill="#faf9f6">
       {esc_title}
     </text>
-    <text x="800" y="590" font-family="'Literata', Georgia, serif" font-size="44" font-weight="400" font-style="italic" fill="#cbd5e1">
-      {esc_sub}
+    <text x="800" y="610" font-family="'Literata', Georgia, serif" font-size="{sub_font_size}" font-weight="400" font-style="italic" fill="#cbd5e1">
+      {sub_inner}
     </text>
   </g>
 
