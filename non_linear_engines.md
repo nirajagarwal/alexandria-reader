@@ -123,21 +123,21 @@ The drawback functioned as an artificial feedback loop: every barrel of kerosene
 
 ```svg
 <svg viewBox="0 0 600 185" xmlns="http://www.w3.org/2000/svg" data-caption="FIG. 3.1 — SOUTH IMPROVEMENT COMPANY FREIGHT REBATE AND DRAWBACK EXTRACTION LOOP (1872)">
-  <rect x="20" y="52" width="150" height="58" rx="4" fill="var(--card-bg)" stroke="var(--border-color)" stroke-width="1.5" />
-  <text x="95" y="77" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="var(--text-color)">RIVAL REFINERS</text>
-  <text x="95" y="96" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">26 Cleveland Plants</text>
-  <rect x="225" y="52" width="150" height="58" rx="4" fill="var(--card-bg)" stroke="var(--text-color)" stroke-width="1.5" />
+  <rect x="14" y="52" width="164" height="58" rx="4" fill="var(--card-bg)" stroke="var(--border-color)" stroke-width="1.5" />
+  <text x="96" y="77" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="var(--text-color)">RIVAL REFINERS</text>
+  <text x="96" y="96" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">26 Cleveland Plants</text>
+  <rect x="218" y="52" width="164" height="58" rx="4" fill="var(--card-bg)" stroke="var(--text-color)" stroke-width="1.5" />
   <text x="300" y="77" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="var(--text-color)">RAILROAD CARTEL</text>
   <text x="300" y="96" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">Erie · Penn · NYC</text>
-  <rect x="430" y="52" width="150" height="58" rx="4" fill="var(--card-bg)" stroke="var(--accent-color)" stroke-width="2" />
-  <text x="505" y="77" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="var(--accent-color)">STANDARD OIL CO.</text>
-  <text x="505" y="96" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-color)">60 Cars / Day Bulk</text>
-  <path d="M170,72 L220,72 M214,68 L221,72 L214,76" stroke="var(--text-muted)" stroke-width="1.5" fill="none" />
-  <text x="197" y="42" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">$2.00 / bbl Rate</text>
-  <path d="M375,72 L425,72 M419,68 L426,72 L419,76" stroke="var(--accent-color)" stroke-width="1.8" fill="none" />
+  <rect x="422" y="52" width="164" height="58" rx="4" fill="var(--card-bg)" stroke="var(--accent-color)" stroke-width="2" />
+  <text x="504" y="77" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="var(--accent-color)">STANDARD OIL CO.</text>
+  <text x="504" y="96" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-color)">60 Cars / Day Bulk</text>
+  <path d="M178,72 L214,72 M208,68 L215,72 L208,76" stroke="var(--text-muted)" stroke-width="1.5" fill="none" />
+  <text x="196" y="42" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">$2.00 / bbl Rate</text>
+  <path d="M382,72 L418,72 M412,68 L419,72 L412,76" stroke="var(--accent-color)" stroke-width="1.8" fill="none" />
   <text x="415" y="24" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="var(--accent-color)">+$0.40 / bbl Drawback Kickback</text>
   <text x="415" y="42" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">+ Rival Shipping Manifests</text>
-  <path d="M505,110 L505,148 L300,148 L300,114 M296,120 L300,113 L304,120" stroke="var(--accent-color)" stroke-width="1.5" stroke-dasharray="4 3" fill="none" />
+  <path d="M504,110 L504,148 L300,148 L300,114 M296,120 L300,113 L304,120" stroke="var(--accent-color)" stroke-width="1.5" stroke-dasharray="4 3" fill="none" />
   <text x="402" y="168" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--accent-color)">Net Rate $1.65 / bbl ($0.35 Rebate)</text>
 </svg>
 ```
@@ -339,19 +339,19 @@ Because days payable outstanding (60 days) far exceeded the sum of sales collect
 
 ```svg
 <svg viewBox="0 0 600 175" xmlns="http://www.w3.org/2000/svg" data-caption="FIG. 9.1 — AMAZON NEGATIVE CASH CONVERSION CYCLE [CCC = DSO (1d) + DIO (2d) − DPO (60d) = −57 DAYS]">
-  <line x1="40" y1="88" x2="560" y2="88" stroke="var(--text-color)" stroke-width="1.5" />
-  <line x1="50" y1="78" x2="50" y2="98" stroke="var(--text-color)" stroke-width="1.5" />
-  <line x1="145" y1="78" x2="145" y2="98" stroke="var(--text-color)" stroke-width="1.5" />
-  <line x1="545" y1="78" x2="545" y2="98" stroke="var(--accent-color)" stroke-width="2" />
-  <rect x="50" y="50" width="95" height="26" rx="3" fill="var(--card-bg)" stroke="var(--border-color)" stroke-width="1.2" />
-  <text x="97" y="67" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-color)">DSO+DIO: 3d</text>
-  <rect x="145" y="44" width="400" height="32" rx="3" fill="var(--accent-color)" fill-opacity="0.14" stroke="var(--accent-color)" stroke-width="1.8" />
-  <text x="345" y="64" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="var(--accent-color)" letter-spacing="0.04em">57-DAY NEGATIVE WORKING CAPITAL FLOAT (CASH IN BANK)</text>
+  <line x1="35" y1="88" x2="565" y2="88" stroke="var(--text-color)" stroke-width="1.5" />
+  <line x1="44" y1="78" x2="44" y2="98" stroke="var(--text-color)" stroke-width="1.5" />
+  <line x1="156" y1="78" x2="156" y2="98" stroke="var(--text-color)" stroke-width="1.5" />
+  <line x1="556" y1="78" x2="556" y2="98" stroke="var(--accent-color)" stroke-width="2" />
+  <rect x="44" y="48" width="112" height="28" rx="3" fill="var(--card-bg)" stroke="var(--border-color)" stroke-width="1.2" />
+  <text x="100" y="66" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-color)">DSO+DIO: 3d</text>
+  <rect x="156" y="44" width="400" height="32" rx="3" fill="var(--accent-color)" fill-opacity="0.14" stroke="var(--accent-color)" stroke-width="1.8" />
+  <text x="356" y="64" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="var(--accent-color)" letter-spacing="0.03em">57-DAY NEGATIVE WORKING CAPITAL FLOAT (CASH IN BANK)</text>
   <text x="62" y="26" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">Day 0: Order</text>
   <text x="235" y="26" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-color)">Day 3: Card Clears &amp; Ships</text>
-  <text x="485" y="26" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="var(--accent-color)">Day 60: Ingram Paid</text>
-  <path d="M50,115 L50,132 L545,132 L545,115" stroke="var(--text-muted)" stroke-width="1.2" fill="none" />
-  <text x="297" y="152" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">DPO = 60 Days Supplier Credit Terms (Ingram &amp; Baker &amp; Taylor)</text>
+  <text x="495" y="26" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="var(--accent-color)">Day 60: Ingram Paid</text>
+  <path d="M44,115 L44,132 L556,132 L556,115" stroke="var(--text-muted)" stroke-width="1.2" fill="none" />
+  <text x="300" y="152" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">DPO = 60 Days Supplier Credit Terms (Ingram &amp; Baker &amp; Taylor)</text>
 </svg>
 ```
 

@@ -49,8 +49,8 @@ To defeat friction without animal grease, Harrison crafted his bearings from *li
   <text x="330" y="69" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">Cold Pin Position (Longer L₀)</text>
   <text x="330" y="126" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="var(--accent-color)">Warm Pin Shift (−ΔL → +Δκ)</text>
   <path d="M256,66 C390,66 530,95 545,155" stroke="var(--text-color)" stroke-width="1.8" fill="none" />
-  <text x="495" y="168" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="var(--text-color)">HAIRSPRING COIL</text>
-  <text x="165" y="168" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">Thermal Softening Cancelled: T = 2π√(I/κ) = const</text>
+  <text x="505" y="168" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="var(--text-color)">HAIRSPRING COIL</text>
+  <text x="195" y="168" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">Thermal Softening Cancelled: T = 2π√(I/κ) = const</text>
 </svg>
 ```
 
@@ -148,9 +148,9 @@ Teaming up with Morley in Cleveland in 1887, Michelson redesigned every mechanic
 <svg viewBox="0 0 600 205" xmlns="http://www.w3.org/2000/svg" data-caption="FIG. 5.1 — MICHELSON-MORLEY 1887 ORTHOGONAL INTERFEROMETER ON MERCURY-FLOATED SANDSTONE SLAB">
   <rect x="170" y="16" width="240" height="145" rx="6" fill="var(--card-bg)" stroke="var(--border-color)" stroke-width="1.5" stroke-dasharray="5 3" />
   <text x="290" y="32" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="var(--text-muted)">2-TON BEREA SANDSTONE IN MERCURY TROUGH</text>
-  <rect x="28" y="84" width="90" height="28" rx="3" fill="var(--card-bg)" stroke="var(--text-color)" stroke-width="1.4" />
-  <text x="73" y="102" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-color)">Sodium Lamp</text>
-  <line x1="118" y1="98" x2="388" y2="98" stroke="var(--accent-color)" stroke-width="1.8" />
+  <rect x="16" y="84" width="110" height="28" rx="3" fill="var(--card-bg)" stroke="var(--text-color)" stroke-width="1.4" />
+  <text x="71" y="102" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-color)">Sodium Lamp</text>
+  <line x1="126" y1="98" x2="388" y2="98" stroke="var(--accent-color)" stroke-width="1.8" />
   <line x1="274" y1="114" x2="306" y2="82" stroke="var(--text-color)" stroke-width="2.2" />
   <text x="232" y="122" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">45° Splitter</text>
   <line x1="290" y1="98" x2="290" y2="44" stroke="var(--accent-color)" stroke-width="1.8" />
@@ -160,8 +160,8 @@ Teaming up with Morley in Cleveland in 1887, Michelson redesigned every mechanic
   <text x="485" y="94" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="var(--accent-color)">Arm ∥ Ether Wind v</text>
   <text x="485" y="112" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">8 Folded Bounces (11 m)</text>
   <line x1="290" y1="98" x2="290" y2="174" stroke="var(--accent-color)" stroke-width="1.8" stroke-dasharray="4 2" />
-  <rect x="215" y="174" width="150" height="22" rx="3" fill="var(--card-bg)" stroke="var(--accent-color)" stroke-width="1.5" />
-  <text x="290" y="189" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="var(--accent-color)">Telescope: ΔN &lt; 0.01 Fringe</text>
+  <rect x="175" y="174" width="230" height="24" rx="3" fill="var(--card-bg)" stroke="var(--accent-color)" stroke-width="1.5" />
+  <text x="290" y="190" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="var(--accent-color)">Telescope: ΔN &lt; 0.01 Fringe</text>
 </svg>
 ```
 
@@ -331,24 +331,24 @@ To bridge ten orders of magnitude in noise for the Advanced LIGO upgrade complet
 
 ```svg
 <svg viewBox="0 0 600 205" xmlns="http://www.w3.org/2000/svg" data-caption="FIG. 12.1 — ADVANCED LIGO 4-KM FABRY-PÉROT CAVITIES AND POWER-RECYCLED DARK PORT">
-  <rect x="20" y="108" width="90" height="28" rx="3" fill="var(--card-bg)" stroke="var(--text-color)" stroke-width="1.4" />
-  <text x="65" y="126" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-color)">20W Laser</text>
-  <line x1="110" y1="122" x2="530" y2="122" stroke="var(--accent-color)" stroke-width="1.8" />
-  <rect x="148" y="106" width="5" height="32" fill="var(--accent-color)" />
-  <text x="150" y="96" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">PRM</text>
+  <rect x="16" y="108" width="102" height="28" rx="3" fill="var(--card-bg)" stroke="var(--text-color)" stroke-width="1.4" />
+  <text x="67" y="126" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-color)">20W Laser</text>
+  <line x1="118" y1="122" x2="530" y2="122" stroke="var(--accent-color)" stroke-width="1.8" />
+  <rect x="152" y="106" width="5" height="32" fill="var(--accent-color)" />
+  <text x="154" y="96" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">PRM</text>
   <line x1="205" y1="137" x2="235" y2="107" stroke="var(--text-color)" stroke-width="2.2" />
   <line x1="220" y1="122" x2="220" y2="24" stroke="var(--accent-color)" stroke-width="1.8" />
   <rect x="204" y="78" width="32" height="5" fill="var(--text-color)" />
   <rect x="204" y="20" width="32" height="5" fill="var(--text-color)" />
-  <text x="335" y="42" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="var(--accent-color)">Y-ARM FABRY-PÉROT (4 KM · −½hL)</text>
-  <text x="335" y="60" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">280 Round-Trip Bounces (1,120 km)</text>
+  <text x="345" y="42" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="var(--accent-color)">Y-ARM FABRY-PÉROT (4 KM · −½hL)</text>
+  <text x="345" y="60" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">280 Round-Trip Bounces (1,120 km)</text>
   <rect x="285" y="106" width="5" height="32" fill="var(--text-color)" />
   <rect x="530" y="106" width="5" height="32" fill="var(--text-color)" />
   <text x="410" y="102" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="var(--accent-color)">X-ARM FABRY-PÉROT (4 KM · +½hL)</text>
   <text x="410" y="152" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">40 kg Quad-Pendulum Mirrors (200 kW)</text>
   <line x1="220" y1="122" x2="220" y2="174" stroke="var(--accent-color)" stroke-width="1.8" stroke-dasharray="4 2" />
-  <rect x="135" y="174" width="170" height="22" rx="3" fill="var(--card-bg)" stroke="var(--accent-color)" stroke-width="1.5" />
-  <text x="220" y="189" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="var(--accent-color)">Dark Port: ΔL = 4 × 10⁻¹⁸ m</text>
+  <rect x="105" y="174" width="230" height="24" rx="3" fill="var(--card-bg)" stroke="var(--accent-color)" stroke-width="1.5" />
+  <text x="220" y="190" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="var(--accent-color)">Dark Port: ΔL = 4 × 10⁻¹⁸ m</text>
 </svg>
 ```
 

@@ -172,11 +172,27 @@ def validate_svg_diagram(svg_str: str, loc: str):
     prim_tags = {"rect", "circle", "ellipse", "line", "polyline", "polygon", "path", "text"}
     prim_count = 0
     text_boxes = []
+    rect_boxes = []
 
     for el in root.iter():
         tag = el.tag.split("}")[-1]
         if tag in prim_tags:
             prim_count += 1
+        if tag == "rect":
+            try:
+                rx = float(el.attrib.get("x", "0"))
+                ry = float(el.attrib.get("y", "0"))
+                rw = float(el.attrib.get("width", "0"))
+                rh = float(el.attrib.get("height", "0"))
+            except ValueError:
+                errs.append(f"{loc}: Diagram <rect> has non-numeric x/y/width/height.")
+                continue
+            if rw > 0 and rh > 0:
+                if rx < 4 or rx + rw > vw - 4 or ry < 2 or ry + rh > vh - 2:
+                    errs.append(
+                        f"{loc}: Diagram <rect> at ({rx:.0f},{ry:.0f},{rw:.0f}x{rh:.0f}) clips outside viewBox (0..{int(vw)}, 0..{int(vh)})."
+                    )
+                rect_boxes.append((rx, ry, rx + rw, ry + rh, rw, rh))
         if tag == "text":
             txt = "".join(el.itertext()).strip()
             if not txt:
@@ -191,7 +207,11 @@ def validate_svg_diagram(svg_str: str, loc: str):
             if fs < 11 or fs > 18:
                 errs.append(f"{loc}: Diagram <text> '{txt}' font-size ({fs}) must be between 11 and 18.")
             anchor = el.attrib.get("text-anchor", "start").strip()
-            est_w = len(txt) * fs * 0.55
+            ff = el.attrib.get("font-family", "").lower()
+            char_factor = 0.64 if "mono" in ff else 0.58
+            if txt.isupper() and "mono" not in ff:
+                char_factor = 0.63
+            est_w = len(txt) * fs * char_factor
             if anchor == "middle":
                 x0, x1 = x - est_w / 2.0, x + est_w / 2.0
             elif anchor == "end":
@@ -203,17 +223,46 @@ def validate_svg_diagram(svg_str: str, loc: str):
                 errs.append(
                     f"{loc}: Diagram <text> '{txt}' at ({x},{y}) clips outside viewBox (0..{int(vw)}, 0..{int(vh)}): est x=[{x0:.0f}..{x1:.0f}], y=[{y0:.0f}..{y1:.0f}]."
                 )
-            text_boxes.append((txt, x0, y0, x1, y1))
+            text_boxes.append((txt, x0, y0, x1, y1, x, y))
 
     if prim_count > 34:
         errs.append(f"{loc}: Diagram is too cluttered ({prim_count} elements; maximum 34 for clean schematic legibility).")
 
     for i in range(len(text_boxes)):
-        t1, ax0, ay0, ax1, ay1 = text_boxes[i]
+        t1, ax0, ay0, ax1, ay1, _, _ = text_boxes[i]
         for j in range(i + 1, len(text_boxes)):
-            t2, bx0, by0, bx1, by1 = text_boxes[j]
+            t2, bx0, by0, bx1, by1, _, _ = text_boxes[j]
             if min(ax1, bx1) - max(ax0, bx0) > 6 and min(ay1, by1) - max(ay0, by0) > 3:
                 errs.append(f"{loc}: Diagram text labels overlap: '{t1}' and '{t2}'.")
+
+    # Check that text inside label <rect> boxes fits with padding, and external text does not cross box borders
+    label_rects = [r for r in rect_boxes if r[4] >= 24 and 16 <= r[5] <= 90]
+    for txt, tx0, ty0, tx1, ty1, tcx, tcy in text_boxes:
+        tw = tx1 - tx0
+        for rx0, ry0, rx1, ry1, rw, rh in label_rects:
+            # Is the text anchor point inside this label rect?
+            if rx0 - 2 <= tcx <= rx1 + 2 and ry0 <= tcy <= ry1 + 2:
+                req_w = int(tw + 20)
+                if rw < req_w or tx0 < rx0 + 7 or tx1 > rx1 - 7:
+                    errs.append(
+                        f"{loc}: Diagram box (x={rx0:.0f}, width={rw:.0f}) is too narrow for text '{txt}' (est text width={tw:.0f}px; box needs width >= {req_w})."
+                    )
+            else:
+                # Text is outside this label rect—ensure its bounding box doesn't collide with the rect
+                if min(tx1, rx1) - max(tx0, rx0) > 2 and min(ty1, ry1) - max(ty0, ry0) > 2:
+                    errs.append(
+                        f"{loc}: Diagram text '{txt}' collides with box at (x={rx0:.0f}..{rx1:.0f}, y={ry0:.0f}..{ry1:.0f})."
+                    )
+
+    # Check that label <rect> boxes do not overlap each other (except intentional adjacent timeline bars sharing an edge)
+    for i in range(len(label_rects)):
+        ax0, ay0, ax1, ay1, aw, ah = label_rects[i]
+        for j in range(i + 1, len(label_rects)):
+            bx0, by0, bx1, by1, bw, bh = label_rects[j]
+            if min(ax1, bx1) - max(ax0, bx0) > 1 and min(ay1, by1) - max(ay0, by0) > 1:
+                errs.append(
+                    f"{loc}: Diagram boxes overlap at (x={ax0:.0f}..{ax1:.0f}) and (x={bx0:.0f}..{bx1:.0f})."
+                )
 
     return errs
 

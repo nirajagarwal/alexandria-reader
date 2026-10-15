@@ -1091,6 +1091,63 @@
             updateTelescopeWidgets(ch);
         }
 
+        function fitDiagramBoxes(containerEl) {
+            if (!containerEl) return;
+            const svgs = containerEl.querySelectorAll('.diagram-box svg');
+            svgs.forEach(svg => {
+                const rects = Array.from(svg.querySelectorAll('rect'));
+                const texts = Array.from(svg.querySelectorAll('text'));
+                const lines = Array.from(svg.querySelectorAll('line'));
+                rects.forEach(rect => {
+                    const rx = parseFloat(rect.getAttribute('x') || '0');
+                    const ry = parseFloat(rect.getAttribute('y') || '0');
+                    const rw = parseFloat(rect.getAttribute('width') || '0');
+                    const rh = parseFloat(rect.getAttribute('height') || '0');
+                    if (rw < 24 || rh < 16 || rh > 90) return;
+                    const rx2 = rx + rw;
+                    const ry2 = ry + rh;
+                    const insideTexts = texts.filter(t => {
+                        const tx = parseFloat(t.getAttribute('x') || '0');
+                        const ty = parseFloat(t.getAttribute('y') || '0');
+                        return tx >= rx - 2 && tx <= rx2 + 2 && ty >= ry && ty <= ry2 + 2;
+                    });
+                    if (!insideTexts.length) return;
+                    let maxTextW = 0;
+                    insideTexts.forEach(t => {
+                        try {
+                            const bb = t.getBBox();
+                            if (bb && bb.width > maxTextW) maxTextW = bb.width;
+                        } catch (e) {}
+                    });
+                    const reqW = Math.ceil(maxTextW + 22);
+                    if (reqW > rw) {
+                        const cx = rx + rw / 2;
+                        const newX = Math.max(8, Math.min(600 - reqW - 8, Math.round(cx - reqW / 2)));
+                        const newX2 = newX + reqW;
+                        rect.setAttribute('x', String(newX));
+                        rect.setAttribute('width', String(reqW));
+                        insideTexts.forEach(t => {
+                            if ((t.getAttribute('text-anchor') || '') === 'middle') {
+                                t.setAttribute('x', String(Math.round(newX + reqW / 2)));
+                            }
+                        });
+                        // Trim any horizontal line endpoint that was attached to the old box left/right edge
+                        lines.forEach(ln => {
+                            const x1 = parseFloat(ln.getAttribute('x1') || '0');
+                            const y1 = parseFloat(ln.getAttribute('y1') || '0');
+                            const x2 = parseFloat(ln.getAttribute('x2') || '0');
+                            const y2 = parseFloat(ln.getAttribute('y2') || '0');
+                            if (y1 >= ry && y1 <= ry2 && Math.abs(x1 - rx2) <= 4 && x2 > rx2) {
+                                ln.setAttribute('x1', String(newX2));
+                            } else if (y2 >= ry && y2 <= ry2 && Math.abs(x2 - rx) <= 4 && x1 < rx) {
+                                ln.setAttribute('x2', String(newX));
+                            }
+                        });
+                    }
+                });
+            });
+        }
+
         function renderActiveSpread() {
             const ch = parsedBook.chapters[currentChapterIndex];
             const spread = chapterSpreads[currentSpreadIndex] || { colLeftHtml: "", colRightHtml: "" };
@@ -1121,6 +1178,7 @@
 
             if (colLeft) colLeft.innerHTML = spread.colLeftHtml || '';
             if (colRight) colRight.innerHTML = spread.colRightHtml || '';
+            fitDiagramBoxes(document.getElementById('spread-container'));
             // Render KaTeX across active column spreads
             if (typeof renderMathInElement !== 'undefined') {
                 try {
