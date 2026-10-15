@@ -140,6 +140,84 @@ console.log(JSON.stringify(errors));
     return []
 
 
+def validate_svg_diagram(svg_str: str, loc: str):
+    import xml.etree.ElementTree as ET
+    errs = []
+    try:
+        root = ET.fromstring(svg_str)
+    except Exception as e:
+        return [f"{loc}: Invalid SVG XML syntax ({e})"]
+
+    vb = root.attrib.get("viewBox", "").strip()
+    m_vb = re.match(r"^0\s+0\s+(\d+(?:\.\d+)?)\s+(\d+(?:\.\d+)?)$", vb)
+    if not m_vb:
+        errs.append(f"{loc}: Diagram <svg> must have viewBox='0 0 600 H' (found '{vb}').")
+        vw, vh = 600.0, 200.0
+    else:
+        vw, vh = float(m_vb.group(1)), float(m_vb.group(2))
+        if vw != 600.0 or vh < 140.0 or vh > 250.0:
+            errs.append(f"{loc}: Diagram viewBox must have width=600 and height between 140 and 250 (found '{vb}').")
+
+    # Check for forbidden hardcoded dark/light colors that break theme switching
+    bad_color = re.search(
+        r'(?:stroke|fill)\s*=\s*"\s*(?:#000(?:000)?|#fff(?:fff)?|#111(?:111)?|#222(?:222)?|#333(?:333)?|black|white)\s*"',
+        svg_str,
+        re.IGNORECASE,
+    )
+    if bad_color:
+        errs.append(
+            f"{loc}: Diagram uses hardcoded color {bad_color.group(0)}—use CSS theme variables (var(--text-color), var(--text-muted), var(--accent-color), var(--border-color), var(--card-bg))."
+        )
+
+    prim_tags = {"rect", "circle", "ellipse", "line", "polyline", "polygon", "path", "text"}
+    prim_count = 0
+    text_boxes = []
+
+    for el in root.iter():
+        tag = el.tag.split("}")[-1]
+        if tag in prim_tags:
+            prim_count += 1
+        if tag == "text":
+            txt = "".join(el.itertext()).strip()
+            if not txt:
+                continue
+            try:
+                x = float(el.attrib.get("x", "0"))
+                y = float(el.attrib.get("y", "0"))
+                fs = float(re.sub(r"[^0-9.]", "", el.attrib.get("font-size", "13")) or "13")
+            except ValueError:
+                errs.append(f"{loc}: Diagram <text> '{txt}' has non-numeric x/y/font-size.")
+                continue
+            if fs < 11 or fs > 18:
+                errs.append(f"{loc}: Diagram <text> '{txt}' font-size ({fs}) must be between 11 and 18.")
+            anchor = el.attrib.get("text-anchor", "start").strip()
+            est_w = len(txt) * fs * 0.55
+            if anchor == "middle":
+                x0, x1 = x - est_w / 2.0, x + est_w / 2.0
+            elif anchor == "end":
+                x0, x1 = x - est_w, x
+            else:
+                x0, x1 = x, x + est_w
+            y0, y1 = y - fs * 0.85, y + fs * 0.25
+            if x0 < 4 or x1 > vw - 4 or y0 < 2 or y1 > vh - 2:
+                errs.append(
+                    f"{loc}: Diagram <text> '{txt}' at ({x},{y}) clips outside viewBox (0..{int(vw)}, 0..{int(vh)}): est x=[{x0:.0f}..{x1:.0f}], y=[{y0:.0f}..{y1:.0f}]."
+                )
+            text_boxes.append((txt, x0, y0, x1, y1))
+
+    if prim_count > 34:
+        errs.append(f"{loc}: Diagram is too cluttered ({prim_count} elements; maximum 34 for clean schematic legibility).")
+
+    for i in range(len(text_boxes)):
+        t1, ax0, ay0, ax1, ay1 = text_boxes[i]
+        for j in range(i + 1, len(text_boxes)):
+            t2, bx0, by0, bx1, by1 = text_boxes[j]
+            if min(ax1, bx1) - max(ax0, bx0) > 6 and min(ay1, by1) - max(ay0, by0) > 3:
+                errs.append(f"{loc}: Diagram text labels overlap: '{t1}' and '{t2}'.")
+
+    return errs
+
+
 def validate_book(filepath: str, min_words: int = 600, max_words: int = 900, legacy: bool = False):
     errors = []
     warnings = []
@@ -173,6 +251,7 @@ def validate_book(filepath: str, min_words: int = 600, max_words: int = 900, leg
     chapters_meta = []
     date_open_count = 0
     katex_items = []
+    diagram_count = 0
 
     for idx, sec in enumerate(sections[1:]):
         sec_lines = sec.splitlines()
@@ -204,13 +283,23 @@ def validate_book(filepath: str, min_words: int = 600, max_words: int = 900, leg
                     header_end_line = line_i + 1
                     break
         body = "\n".join(sec_lines[header_end_line:]).strip()
-        body_words = len(body.split())
+
+        # Validate any ```svg diagram blocks in this section
+        svg_blocks = re.findall(r"```(?:svg|diagram)\s*\n([\s\S]*?)```", body, flags=re.IGNORECASE)
+        if len(svg_blocks) > 1:
+            errors.append(f"{expected_label} has {len(svg_blocks)} diagrams (maximum 1 per chapter).")
+        for svg_b in svg_blocks:
+            diagram_count += 1
+            errors.extend(validate_svg_diagram(svg_b.strip(), f"{filename}:{expected_label}"))
+
+        body_no_code = re.sub(r"```[\s\S]*?```", "", body)
+        body_words = len(body_no_code.split())
 
         if idx == 0:
             # Introduction word count & no-chapter-summary check (~250 words target)
             if body_words < 140 or body_words > 300:
                 errors.append(f"Introduction word count ({body_words}) must be between 140 and 300 words (~250 word target).")
-            if re.search(r"\b(?:this volume traces|this volume examines|across twelve chapters|in the first half of the|in the second half of the|the twelve chapters that follow)\b", body, re.IGNORECASE):
+            if re.search(r"\b(?:this volume traces|this volume examines|across twelve chapters|in the first half of the|in the second half of the|the twelve chapters that follow)\b", body_no_code, re.IGNORECASE):
                 errors.append("Introduction must introduce the topic only—do not summarize or list the chapters.")
         else:
             effective_min = 280 if legacy else min_words
@@ -225,11 +314,11 @@ def validate_book(filepath: str, min_words: int = 600, max_words: int = 900, leg
                 )
 
             # Concrete grounding check (must have a 3-4 digit year or BCE/CE date)
-            if not re.search(r"\b(1\d{3}|20[0-2]\d|\d+\s*(?:BCE|BC|CE|AD))\b", body):
+            if not re.search(r"\b(1\d{3}|20[0-2]\d|\d+\s*(?:BCE|BC|CE|AD))\b", body_no_code):
                 errors.append(f"Chapter {idx} ('{h2[2:]}') lacks a concrete historical year/date anchor.")
 
             # Check opening sentence cadence
-            paragraphs = [p.strip() for p in re.split(r"\n\s*\n", body) if p.strip()]
+            paragraphs = [p.strip() for p in re.split(r"\n\s*\n", body_no_code) if p.strip()]
             first_para = paragraphs[0] if paragraphs else ""
             if re.match(r"^(In|On|At)\s+(January|February|March|April|May|June|July|August|September|October|November|December|the\s+(?:morning|afternoon|evening|night|spring|summer|autumn|winter|early|late)|\d{4}|\d{1,2}:\d{2})", first_para):
                 date_open_count += 1
@@ -244,12 +333,11 @@ def validate_book(filepath: str, min_words: int = 600, max_words: int = 900, leg
 
         # Banned hyperbolic words check
         for bpat in BANNED_WORDS:
-            m = re.search(bpat, body, flags=re.IGNORECASE)
+            m = re.search(bpat, body_no_code, flags=re.IGNORECASE)
             if m:
                 errors.append(f"{expected_label} contains banned hyperbolic word: '{m.group(0)}'")
 
         # Math & LaTeX validation
-        body_no_code = re.sub(r"```[\s\S]*?```", "", body)
         body_esc = body_no_code.replace("\\$", "___ESC_DOLLAR___")
 
         # Extract display math $$...$$
@@ -299,13 +387,16 @@ def validate_book(filepath: str, min_words: int = 600, max_words: int = 900, leg
         errors.append(
             f"Cadence fatigue: {date_open_count}/{num_chapters} chapters open with a formulaic 'In/On/At [Date/Time]' sentence. Rotate across Door A (Scene), Door B (Paradox/Constraint), and Door C (Artifact/Measurement)."
         )
+    if diagram_count > 4:
+        errors.append(f"Too many diagrams in volume ({diagram_count}; maximum 4 per book so diagrams remain high-signal).")
 
     katex_errors = verify_katex_batch(katex_items)
     errors.extend(katex_errors)
 
-    # Compute prose sentence length cadence (excluding display math and bullet items)
+    # Compute prose sentence length cadence (excluding code/diagram blocks, display math, and bullet items)
+    raw_no_code = re.sub(r"```[\s\S]*?```", "", raw_text)
     prose_lines = [
-        l for l in re.sub(r"\$\$[\s\S]*?\$\$", "", raw_text).splitlines()
+        l for l in re.sub(r"\$\$[\s\S]*?\$\$", "", raw_no_code).splitlines()
         if l.strip() and not l.strip().startswith(("#", "*", "-", ">", "---")) and not re.match(r"^\d+\.", l.strip())
     ]
     prose_text = " ".join(prose_lines)
@@ -319,10 +410,11 @@ def validate_book(filepath: str, min_words: int = 600, max_words: int = 900, leg
     summary = {
         "file": filename,
         "chapters": num_chapters,
-        "total_words": len(raw_text.split()),
+        "total_words": len(raw_no_code.split()),
         "chapter_words": [c["words"] for c in chapters_meta[1:]],
         "date_opens": date_open_count,
         "equations_checked": len(katex_items),
+        "diagrams_checked": diagram_count,
         "avg_sent_words": avg_sent_words,
     }
     return errors, warnings, summary
@@ -378,7 +470,7 @@ def main():
         w_range = f"{min(ch_w)}–{max(ch_w)} w/ch" if ch_w else "N/A"
         print(
             f"[{status}] {fname:28s} | {info.get('chapters', 0):2d} chs | {info.get('total_words', 0):6,d} words ({w_range}) | "
-            f"sent: {info.get('avg_sent_words', 0):4.1f} w/s | date-opens: {info.get('date_opens', 0)} | eqs: {info.get('equations_checked', 0)}"
+            f"sent: {info.get('avg_sent_words', 0):4.1f} w/s | eqs: {info.get('equations_checked', 0):3d} | diags: {info.get('diagrams_checked', 0)}"
         )
         for w in warns:
             print(f"   WARN: {w}")

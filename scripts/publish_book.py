@@ -300,17 +300,9 @@ def main():
     prefix, data, suffix = load_books_data()
 
     if args.sync_all:
-        LEGACY = {
-            "latent_fragility.md",
-            "radical_subtraction.md",
-            "singular_minds.md",
-            "elemental_asymmetries.md",
-            "liminal_thresholds.md",
-            "autonomous_engine.md",
-        }
         for slug, meta in data.items():
             md_file = os.path.join(BASE_DIR, slug.replace("-", "_") + ".md")
-            errs, _, _ = validate_book(md_file, legacy=(os.path.basename(md_file) in LEGACY))
+            errs, _, _ = validate_book(md_file, legacy=True)
             if errs:
                 print(f"[FAIL] {md_file} failed validation:")
                 for e in errs:

@@ -60,6 +60,11 @@ Every book generation prompt must include and enforce these universal constraint
      ## [Concrete Subtitle Naming the Subject, Place, or Mechanism Without Colons]
      ```
 
+10. **Earned Schematic Diagrams (` ```svg `)**
+   - **Restraint First (2–4 Per Book, Max 1 Per Chapter)**: Only include a diagram when a spatial topology, optical/mechanical apparatus, feedback loop, or timeline is genuinely clearer drawn than described in prose. Never include decorative or generic box-and-arrow filler.
+   - **Theme-Aware Inline SVG**: Use fenced ` ```svg ` blocks with `viewBox="0 0 600 H"` ($140 \le H \le 250$) and `data-caption="FIG. X.1 — ..."`. Use CSS variables (`var(--text-color)`, `var(--text-muted)`, `var(--accent-color)`, `var(--border-color)`, `var(--card-bg)`) rather than hardcoded black/white colors so diagrams adapt seamlessly to Light, Dark, and Sepia themes.
+   - **Complexity & Collision Cap**: Keep diagrams sparse ($\le 34$ SVG primitives), use `font-size` between `11` and `18`, and verify zero text bounding-box overlaps via `scripts/validate_book.py`.
+
 ---
 
 ## Tier 2: Topic-Specific Prompt Profiles

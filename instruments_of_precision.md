@@ -35,6 +35,25 @@ After spending twenty-five years building three heavy brass sea clocks (H1, H2, 
 
 To defeat friction without animal grease, Harrison crafted his bearings from *lignum vitae*, a dense tropical hardwood that exudes its own microscopic film of guaiacum resin, and shaped the verge escapement pallets from polished diamond blades. Because a diamond verge escapement is sensitive to variations in mainspring force, Harrison inserted a mechanical remontoire driven by a tiny auxiliary spring that rewound itself every 7.5 seconds, feeding constant torque to the escapement teeth. Finally, to cancel thermal drift in $\kappa$ and $I$, he riveted a thin strip of brass to a strip of steel to form a bimetallic curb finger. Because brass expands 1.6 times faster than steel when heated, rising temperatures bent the composite strip along the outer coil of the hairspring, shortening its active vibrating length to increase $\kappa$ in exact proportion to the thermal softening of the steel.
 
+```svg
+<svg viewBox="0 0 600 185" xmlns="http://www.w3.org/2000/svg" data-caption="FIG. 1.1 — HARRISON BIMETALLIC CURB FINGER SHORTENING HAIRSPRING ACTIVE LENGTH UNDER HEAT">
+  <rect x="28" y="42" width="18" height="72" rx="2" fill="var(--border-color)" stroke="var(--text-color)" stroke-width="1.5" />
+  <text x="58" y="30" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="var(--text-color)">FIXED STUD</text>
+  <rect x="46" y="54" width="210" height="12" fill="var(--accent-color)" fill-opacity="0.25" stroke="var(--accent-color)" stroke-width="1.5" />
+  <rect x="46" y="66" width="210" height="12" fill="var(--card-bg)" stroke="var(--text-color)" stroke-width="1.5" />
+  <text x="150" y="46" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--accent-color)">BRASS LAYER (α = 19 ppm/°C)</text>
+  <text x="150" y="96" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">STEEL LAYER (α = 11 ppm/°C)</text>
+  <path d="M46,78 Q165,82 246,122" stroke="var(--accent-color)" stroke-width="2" stroke-dasharray="5 3" fill="none" />
+  <circle cx="256" cy="66" r="5" fill="var(--card-bg)" stroke="var(--text-color)" stroke-width="1.5" />
+  <circle cx="246" cy="122" r="5" fill="var(--accent-color)" />
+  <text x="330" y="69" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">Cold Pin Position (Longer L₀)</text>
+  <text x="330" y="126" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="var(--accent-color)">Warm Pin Shift (−ΔL → +Δκ)</text>
+  <path d="M256,66 C390,66 530,95 545,155" stroke="var(--text-color)" stroke-width="1.8" fill="none" />
+  <text x="495" y="168" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="var(--text-color)">HAIRSPRING COIL</text>
+  <text x="165" y="168" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">Thermal Softening Cancelled: T = 2π√(I/κ) = const</text>
+</svg>
+```
+
 When HMS *Deptford* docked at Port Royal, Jamaica, on January 19, 1762, after eighty-one days at sea, H4 had lost just 5.1 seconds after applying its pre-calibrated rate, corresponding to 1.25 nautical miles of error. Despite years of obstruction by Astronomer Royal Nevil Maskelyne, who favored his own lunar-distance tables, King George III intervened in 1773 after testing Harrison's H5 watch and forced Parliament to pay the aged carpenter his remaining prize money. When Captain James Cook returned from his three-year Antarctic circumnavigation aboard HMS *Resolution* in July 1775 carrying Larcum Kendall's K1 exact copy of the H4 watch, his South Pacific islands were charted to within three nautical miles.
 
 ---
@@ -124,6 +143,27 @@ $$\Delta N = \frac{2L}{\lambda} \frac{v^2}{c^2}$$
 When Michelson built his first brass-frame prototype in Hermann von Helmholtz's Berlin laboratory in 1881 and moved it to the brick vault beneath the astrophysical observatory at Potsdam, the instrument failed under environmental noise. With an arm length of only $1.2\text{ meters}$, the expected fringe shift was just $0.04\text{ fringes}$. Worse, footsteps on the pavement a hundred meters outside the Potsdam building shook the brass arms, and when Michelson rotated the metal frame on its mechanical pivot, uneven mechanical strain and the warmth of his own hands warped the arms by a fraction of a micron, shifting the fringes by more than the entire ether signal.
 
 Teaming up with Morley in Cleveland in 1887, Michelson redesigned every mechanical element around vibration isolation and optical multiplication. Replacing the hollow brass arms with a solid two-ton block of Ohio Berea sandstone gave the optical bench massive thermal inertia and structural stiffness. Floating that stone block in a circular trough containing sixty kilograms of liquid mercury eliminated solid-on-solid bearing friction altogether: a single tap of a finger set the two-ton block rotating for minutes without mechanical jerk or structural bending, while the dense liquid mercury damped out high-frequency seismic vibrations from horse-drawn wagons on Euclid Avenue outside. Finally, by reflecting each light beam back and forth eight times between the corner mirrors, Michelson folded an eleven-meter optical arm length ($L = 11.0\text{ meters}$) onto a $1.5\text{ meter}$ stone square, magnifying the predicted ether shift tenfold to $\Delta N = 0.40\text{ fringes}$.
+
+```svg
+<svg viewBox="0 0 600 205" xmlns="http://www.w3.org/2000/svg" data-caption="FIG. 5.1 — MICHELSON-MORLEY 1887 ORTHOGONAL INTERFEROMETER ON MERCURY-FLOATED SANDSTONE SLAB">
+  <rect x="170" y="16" width="240" height="145" rx="6" fill="var(--card-bg)" stroke="var(--border-color)" stroke-width="1.5" stroke-dasharray="5 3" />
+  <text x="290" y="32" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="var(--text-muted)">2-TON BEREA SANDSTONE IN MERCURY TROUGH</text>
+  <rect x="28" y="84" width="90" height="28" rx="3" fill="var(--card-bg)" stroke="var(--text-color)" stroke-width="1.4" />
+  <text x="73" y="102" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-color)">Sodium Lamp</text>
+  <line x1="118" y1="98" x2="388" y2="98" stroke="var(--accent-color)" stroke-width="1.8" />
+  <line x1="274" y1="114" x2="306" y2="82" stroke="var(--text-color)" stroke-width="2.2" />
+  <text x="232" y="122" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">45° Splitter</text>
+  <line x1="290" y1="98" x2="290" y2="44" stroke="var(--accent-color)" stroke-width="1.8" />
+  <rect x="272" y="39" width="36" height="5" fill="var(--text-color)" />
+  <text x="215" y="55" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--accent-color)">Arm ⊥ v (11 m)</text>
+  <rect x="388" y="80" width="5" height="36" fill="var(--text-color)" />
+  <text x="485" y="94" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="var(--accent-color)">Arm ∥ Ether Wind v</text>
+  <text x="485" y="112" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">8 Folded Bounces (11 m)</text>
+  <line x1="290" y1="98" x2="290" y2="174" stroke="var(--accent-color)" stroke-width="1.8" stroke-dasharray="4 2" />
+  <rect x="215" y="174" width="150" height="22" rx="3" fill="var(--card-bg)" stroke="var(--accent-color)" stroke-width="1.5" />
+  <text x="290" y="189" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="var(--accent-color)">Telescope: ΔN &lt; 0.01 Fringe</text>
+</svg>
+```
 
 Even with white-light fringes centered to a hundredth of a wavelength and readings logged at sixteen compass points during continuous rotation at both noon and six o'clock in the evening, the zebra stripes refused to budge. Instead of the predicted shift of 0.4 interference fringes, Michelson and Morley measured less than 0.01—the most consequential null measurement in physics, which forced Hendrik Lorentz and Albert Einstein to discard absolute space.
 
@@ -288,5 +328,28 @@ To bridge ten orders of magnitude in noise for the Advanced LIGO upgrade complet
 1. **Active Seismic Hydraulic Platforms and Quadruple Fused-Silica Pendulums**: Each forty-kilogram mirror (test mass) hung at the bottom of a four-stage cascade of pendulums suspended by $0.4\text{ millimeter}$ fused-silica glass fibers welded directly to the mirror ears; above its $1\text{ Hz}$ resonant frequency, each pendulum stage filtered out ground vibration by $1/f^2$, so four stages in series attenuated $100\text{ Hz}$ seismic noise by more than $10^{-10}$, letting the mirrors hang free in the horizontal plane.
 2. **Fabry-Pérot Arm Cavities (280 Bounces)**: Rather than bouncing the infrared $1,064\text{ nanometer}$ Nd:YAG laser beam once down each four-kilometer arm, partially transmissive input mirrors trapped the light inside resonant Fabry-Pérot cavities for roughly 280 round trips, extending the effective optical arm length from 4 kilometers to over 1,100 kilometers.
 3. **Power Recycling to Defeat Photon Shot Noise**: Because photon counting follows Poisson statistics ($\Delta N_{\gamma} \propto \sqrt{N_{\gamma}}$), resolving a $10^{-11}\text{ radian}$ phase shift required an enormous flux of photons; LIGO operated the beam splitter at destructive interference ("the dark port") so that nearly all returning laser light bounced back toward the laser source, where a power-recycling mirror reflected it back into the arms until circulating optical power reached 100 to 200 kilowatts from a 20-watt input laser.
+
+```svg
+<svg viewBox="0 0 600 205" xmlns="http://www.w3.org/2000/svg" data-caption="FIG. 12.1 — ADVANCED LIGO 4-KM FABRY-PÉROT CAVITIES AND POWER-RECYCLED DARK PORT">
+  <rect x="20" y="108" width="90" height="28" rx="3" fill="var(--card-bg)" stroke="var(--text-color)" stroke-width="1.4" />
+  <text x="65" y="126" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-color)">20W Laser</text>
+  <line x1="110" y1="122" x2="530" y2="122" stroke="var(--accent-color)" stroke-width="1.8" />
+  <rect x="148" y="106" width="5" height="32" fill="var(--accent-color)" />
+  <text x="150" y="96" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">PRM</text>
+  <line x1="205" y1="137" x2="235" y2="107" stroke="var(--text-color)" stroke-width="2.2" />
+  <line x1="220" y1="122" x2="220" y2="24" stroke="var(--accent-color)" stroke-width="1.8" />
+  <rect x="204" y="78" width="32" height="5" fill="var(--text-color)" />
+  <rect x="204" y="20" width="32" height="5" fill="var(--text-color)" />
+  <text x="335" y="42" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="var(--accent-color)">Y-ARM FABRY-PÉROT (4 KM · −½hL)</text>
+  <text x="335" y="60" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">280 Round-Trip Bounces (1,120 km)</text>
+  <rect x="285" y="106" width="5" height="32" fill="var(--text-color)" />
+  <rect x="530" y="106" width="5" height="32" fill="var(--text-color)" />
+  <text x="410" y="102" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="var(--accent-color)">X-ARM FABRY-PÉROT (4 KM · +½hL)</text>
+  <text x="410" y="152" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">40 kg Quad-Pendulum Mirrors (200 kW)</text>
+  <line x1="220" y1="122" x2="220" y2="174" stroke="var(--accent-color)" stroke-width="1.8" stroke-dasharray="4 2" />
+  <rect x="135" y="174" width="170" height="22" rx="3" fill="var(--card-bg)" stroke="var(--accent-color)" stroke-width="1.5" />
+  <text x="220" y="189" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="var(--accent-color)">Dark Port: ΔL = 4 × 10⁻¹⁸ m</text>
+</svg>
+```
 
 At 09:50:45 UTC on September 14, 2015, just days before Advanced LIGO's first official observing run was scheduled to begin, a rising frequency chirp (designated GW150914) swept from $35\text{ Hz}$ to $250\text{ Hz}$ through the Livingston detector and arrived at Hanford $6.9\text{ milliseconds}$ later, matching general-relativistic numerical simulations of two black holes of thirty-six and twenty-nine solar masses spiraling together 1.3 billion light-years away. During the final two-tenths of a second before the two black holes merged on September 14, 2015, their collision radiated three solar masses of pure gravitational wave energy—briefly outshining all the stars in the observable universe combined and nudging LIGO's mirrors by four attometers.

@@ -37,6 +37,32 @@ $$E = N$$
 
 By routing all aircraft from twenty-five origin cities into a single coordinating node in Memphis, the total number of flight routes fell from 300 to exactly 25. The geographical location of Memphis was chosen with geometric precision: situated near the mean population center of the United States, with mild winter weather that kept runways free of ice when northern airports closed, and an airport authority willing to lease unused hangars and grant open runway access between midnight and 4:00 AM. Every aircraft departed its origin city at 10:00 PM, arrived in Memphis between midnight and 1:30 AM, unloaded its containers into a central 12,000-square-foot sorting carousel, reloaded sorted packages bound for its home market, and took off by 3:30 AM to deliver packages before 10:30 AM.
 
+```svg
+<svg viewBox="0 0 600 195" xmlns="http://www.w3.org/2000/svg" data-caption="FIG. 1.1 — POINT-TO-POINT MESH [N(N−1)/2 = 15 ROUTES] VS. MEMPHIS STAR HUB [N = 6 ROUTES]">
+  <text x="150" y="22" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="var(--text-color)" letter-spacing="0.06em">POINT-TO-POINT MESH (N = 6)</text>
+  <path d="M150,42 L202,72 L202,132 L150,162 L98,132 L98,72 Z M150,42 L202,132 M150,42 L150,162 M150,42 L98,132 M202,72 L150,162 M202,72 L98,132 M202,72 L98,72 M202,132 L98,132 M202,132 L98,72 M150,162 L98,72" stroke="var(--text-muted)" stroke-width="1.1" stroke-opacity="0.45" fill="none" />
+  <circle cx="150" cy="42" r="5" fill="var(--card-bg)" stroke="var(--text-color)" stroke-width="1.5" />
+  <circle cx="202" cy="72" r="5" fill="var(--card-bg)" stroke="var(--text-color)" stroke-width="1.5" />
+  <circle cx="202" cy="132" r="5" fill="var(--card-bg)" stroke="var(--text-color)" stroke-width="1.5" />
+  <circle cx="150" cy="162" r="5" fill="var(--card-bg)" stroke="var(--text-color)" stroke-width="1.5" />
+  <circle cx="98" cy="132" r="5" fill="var(--card-bg)" stroke="var(--text-color)" stroke-width="1.5" />
+  <circle cx="98" cy="72" r="5" fill="var(--card-bg)" stroke="var(--text-color)" stroke-width="1.5" />
+  <text x="150" y="185" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">15 Direct Routes · O(N²)</text>
+  <line x1="300" y1="18" x2="300" y2="180" stroke="var(--border-color)" stroke-width="1" stroke-dasharray="4 4" />
+  <text x="450" y="22" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="var(--text-color)" letter-spacing="0.06em">CENTRALIZED STAR HUB (N = 6)</text>
+  <path d="M450,102 L450,42 M450,102 L502,72 M450,102 L502,132 M450,102 L450,162 M450,102 L398,132 M450,102 L398,72" stroke="var(--accent-color)" stroke-width="1.8" fill="none" />
+  <circle cx="450" cy="42" r="5" fill="var(--card-bg)" stroke="var(--text-color)" stroke-width="1.5" />
+  <circle cx="502" cy="72" r="5" fill="var(--card-bg)" stroke="var(--text-color)" stroke-width="1.5" />
+  <circle cx="502" cy="132" r="5" fill="var(--card-bg)" stroke="var(--text-color)" stroke-width="1.5" />
+  <circle cx="450" cy="162" r="5" fill="var(--card-bg)" stroke="var(--text-color)" stroke-width="1.5" />
+  <circle cx="398" cy="132" r="5" fill="var(--card-bg)" stroke="var(--text-color)" stroke-width="1.5" />
+  <circle cx="398" cy="72" r="5" fill="var(--card-bg)" stroke="var(--text-color)" stroke-width="1.5" />
+  <circle cx="450" cy="102" r="9" fill="var(--accent-color)" />
+  <text x="538" y="106" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="var(--accent-color)">MEMPHIS</text>
+  <text x="450" y="185" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--accent-color)">6 Radial Spokes · O(N)</text>
+</svg>
+```
+
 This network architecture corresponds directly to Murray’s Law in mammalian circulatory systems and capillary transport networks in angiosperm leaves. Vascular systems do not distribute oxygen by connecting every tissue cell directly to every other cell. Such a network would consume infinite metabolic biomass in vessel walls and generate catastrophic viscous fluid drag. Instead, mammalian biology routes high-velocity blood through a central aortic trunk, branching symmetrically into secondary arterioles and terminating in capillary beds. The star graph minimizes total metabolic transport work by concentrating high-volume exchange at a single high-flux coordinate, converting a chaotic spatial routing problem into a synchronized temporal sorting operation.
 
 The physical reality of the launch nearly destroyed the company. In its first twenty-four months of operation, Federal Express lost \$29 million. By mid-1973, the Organization of the Arab Petroleum Exporting Countries (OAPEC) instituted the oil embargo, sending aviation jet fuel prices from 11 cents per gallon to over 30 cents per gallon in weeks. Federal Express was burning \$1 million a month in cash. Pilot paychecks bounced. Fuel distributors in St. Louis and Louisville placed the company on cash-on-delivery terms, refusing to pump kerosene until station managers handed over certified cashier's checks.
@@ -91,9 +117,30 @@ Even more devastating to his competitors was the mechanism known as the "drawbac
 
 This arrangement mirrors the mathematical dynamics of preferential attachment in scale-free networks, as described by the Barabási-Albert model, combined with an autocatalytic chemical reaction. In a preferential attachment regime, the probability of a node acquiring new resources is proportional to its existing scale:
 
-$$\Pi(k_i) = \frac{k_i}{\sum_j k_j}$$
+$$\Pi(k_i) = \frac{k_i}{\sum\nolimits_j k_j}$$
 
 The drawback functioned as an artificial feedback loop: every barrel of kerosene shipped by an independent competitor drained the competitor's working capital while directly funding Standard Oil’s cash reserves. Competitors were effectively subsidizing Rockefeller's expansion every time they moved product to market. As Standard Oil’s volume grew, its rail leverage expanded, widening the freight rebate spread and driving independent refiners further into operating losses.
+
+```svg
+<svg viewBox="0 0 600 185" xmlns="http://www.w3.org/2000/svg" data-caption="FIG. 3.1 — SOUTH IMPROVEMENT COMPANY FREIGHT REBATE AND DRAWBACK EXTRACTION LOOP (1872)">
+  <rect x="20" y="52" width="150" height="58" rx="4" fill="var(--card-bg)" stroke="var(--border-color)" stroke-width="1.5" />
+  <text x="95" y="77" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="var(--text-color)">RIVAL REFINERS</text>
+  <text x="95" y="96" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">26 Cleveland Plants</text>
+  <rect x="225" y="52" width="150" height="58" rx="4" fill="var(--card-bg)" stroke="var(--text-color)" stroke-width="1.5" />
+  <text x="300" y="77" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="var(--text-color)">RAILROAD CARTEL</text>
+  <text x="300" y="96" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">Erie · Penn · NYC</text>
+  <rect x="430" y="52" width="150" height="58" rx="4" fill="var(--card-bg)" stroke="var(--accent-color)" stroke-width="2" />
+  <text x="505" y="77" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="var(--accent-color)">STANDARD OIL CO.</text>
+  <text x="505" y="96" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-color)">60 Cars / Day Bulk</text>
+  <path d="M170,72 L220,72 M214,68 L221,72 L214,76" stroke="var(--text-muted)" stroke-width="1.5" fill="none" />
+  <text x="197" y="42" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">$2.00 / bbl Rate</text>
+  <path d="M375,72 L425,72 M419,68 L426,72 L419,76" stroke="var(--accent-color)" stroke-width="1.8" fill="none" />
+  <text x="415" y="24" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="var(--accent-color)">+$0.40 / bbl Drawback Kickback</text>
+  <text x="415" y="42" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">+ Rival Shipping Manifests</text>
+  <path d="M505,110 L505,148 L300,148 L300,114 M296,120 L300,113 L304,120" stroke="var(--accent-color)" stroke-width="1.5" stroke-dasharray="4 3" fill="none" />
+  <text x="402" y="168" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--accent-color)">Net Rate $1.65 / bbl ($0.35 Rebate)</text>
+</svg>
+```
 
 In February 1872, Rockefeller initiated what business historians termed the "Cleveland Massacre." Over a period of six weeks, Rockefeller invited the owners of Cleveland’s twenty-six independent refineries into his private second-floor office in the Cushing Block on Public Square. He was calm, polite, and unhurried. He did not threaten his visitors or engage in verbal hostility. Instead, he opened his audited corporate ledgers and laid them flat on the mahogany desk.
 
@@ -289,6 +336,24 @@ $$\text{CCC} = \text{DSO} + \text{DIO} - \text{DPO}$$
 Where $\text{DSO}$ represents days sales outstanding, $\text{DIO}$ represents days inventory outstanding, and $\text{DPO}$ represents days payable outstanding. For Amazon, days sales outstanding was roughly one day, as credit cards cleared immediately. Days inventory outstanding was two to three days, as books arrived from Ingram and were shipped within hours. Meanwhile, Amazon negotiated standard trade payment terms with book distributors, paying for inventory on thirty- to ninety-day credit terms.
 
 Because days payable outstanding (60 days) far exceeded the sum of sales collection and inventory transit (3 days), Amazon’s cash conversion cycle was approximately $-57\text{ days}$. Amazon received cash from customers two months before it had to pay its suppliers. As sales grew exponentially, Amazon’s negative working capital generated a growing stream of operational cash float. Rather than needing bank loans or equity dilutions to fund inventory expansion, the company’s day-to-day operations generated the liquid capital required to finance software engineering, server infrastructure, and distribution expansion.
+
+```svg
+<svg viewBox="0 0 600 175" xmlns="http://www.w3.org/2000/svg" data-caption="FIG. 9.1 — AMAZON NEGATIVE CASH CONVERSION CYCLE [CCC = DSO (1d) + DIO (2d) − DPO (60d) = −57 DAYS]">
+  <line x1="40" y1="88" x2="560" y2="88" stroke="var(--text-color)" stroke-width="1.5" />
+  <line x1="50" y1="78" x2="50" y2="98" stroke="var(--text-color)" stroke-width="1.5" />
+  <line x1="145" y1="78" x2="145" y2="98" stroke="var(--text-color)" stroke-width="1.5" />
+  <line x1="545" y1="78" x2="545" y2="98" stroke="var(--accent-color)" stroke-width="2" />
+  <rect x="50" y="50" width="95" height="26" rx="3" fill="var(--card-bg)" stroke="var(--border-color)" stroke-width="1.2" />
+  <text x="97" y="67" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-color)">DSO+DIO: 3d</text>
+  <rect x="145" y="44" width="400" height="32" rx="3" fill="var(--accent-color)" fill-opacity="0.14" stroke="var(--accent-color)" stroke-width="1.8" />
+  <text x="345" y="64" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="var(--accent-color)" letter-spacing="0.04em">57-DAY NEGATIVE WORKING CAPITAL FLOAT (CASH IN BANK)</text>
+  <text x="62" y="26" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">Day 0: Order</text>
+  <text x="235" y="26" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-color)">Day 3: Card Clears &amp; Ships</text>
+  <text x="485" y="26" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="var(--accent-color)">Day 60: Ingram Paid</text>
+  <path d="M50,115 L50,132 L545,132 L545,115" stroke="var(--text-muted)" stroke-width="1.2" fill="none" />
+  <text x="297" y="152" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--text-muted)">DPO = 60 Days Supplier Credit Terms (Ingram &amp; Baker &amp; Taylor)</text>
+</svg>
+```
 
 By the time Amazon completed its initial public offering on NASDAQ in May 1997 at a valuation of \$438 million, it carried over 2.5 million titles and had shipped to 1.6 million customers worldwide.
 

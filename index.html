@@ -552,9 +552,9 @@
 
         function parseChapterBlocks(rawBody) {
             const codeBlocks = [];
-            let text = rawBody.replace(/```([a-zA-Z0-9]*)\n([\s\S]*?)```/g, (match, lang, code) => {
-                const id = `__CODE_${codeBlocks.length}__`;
-                codeBlocks.push(code.trim());
+            let text = rawBody.replace(/```([a-zA-Z0-9_-]*)\n([\s\S]*?)```/g, (match, lang, code) => {
+                const id = `\n\n__CODE_${codeBlocks.length}__\n\n`;
+                codeBlocks.push({ lang: (lang || '').toLowerCase().trim(), code: code.trim() });
                 return id;
             });
 
@@ -600,12 +600,23 @@
 
                 if (p.startsWith('__CODE_')) {
                     const idx = parseInt(p.replace(/[^0-9]/g, ''));
-                    const code = codeBlocks[idx] || "";
-                    blocks.push({
-                        type: 'code',
-                        text: code,
-                        html: `<div class="code-box"><code>${escapeHtml(code)}</code></div>`
-                    });
+                    const item = codeBlocks[idx] || { lang: '', code: '' };
+                    const code = item.code || "";
+                    if (item.lang === 'svg' || item.lang === 'diagram' || code.startsWith('<svg')) {
+                        const capMatch = code.match(/data-caption="([^"]+)"/);
+                        const captionHtml = capMatch ? `<figcaption class="diagram-caption">${escapeHtml(capMatch[1])}</figcaption>` : '';
+                        blocks.push({
+                            type: 'diagram',
+                            text: code,
+                            html: `<figure class="diagram-box">${code}${captionHtml}</figure>`
+                        });
+                    } else {
+                        blocks.push({
+                            type: 'code',
+                            text: code,
+                            html: `<div class="code-box"><code>${escapeHtml(code)}</code></div>`
+                        });
+                    }
                     return;
                 }
 
@@ -773,6 +784,17 @@
         }
 
         function measureBlockHeight(block, colWidth) {
+            if (block.type === 'diagram') {
+                const vb = block.text.match(/viewBox="\s*0\s+0\s+(\d+(?:\.\d+)?)\s+(\d+(?:\.\d+)?)\s*"/);
+                if (vb) {
+                    const vw = parseFloat(vb[1]) || 600;
+                    const vh = parseFloat(vb[2]) || 200;
+                    const innerW = Math.max(220, colWidth - 36);
+                    const svgH = Math.min(220, Math.ceil(innerW * (vh / vw)));
+                    const hasCap = /data-caption="[^"]+"/.test(block.text);
+                    return svgH + (hasCap ? 52 : 34);
+                }
+            }
             let probe = document.getElementById("block-measure-probe");
             if (!probe) {
                 probe = document.createElement("div");

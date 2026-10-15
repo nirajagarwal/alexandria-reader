@@ -64,6 +64,7 @@ Write `/Users/niraj/book-writer/<filename>.md` and validate it with `python3 scr
 8. **Rotate the 3 Opening Doors**: Follow each chapter's `opening_door` (`A: Scene`, `B: Constraint/Paradox`, `C: Artifact/Measurement`). Ensure $\le 3$ chapters across the entire book begin their first sentence with `"In/On/At [Date]"`.
 9. **Clean Exits (Zero Concluding Sermons)**: End every chapter directly on the concrete `exit_fact`. Never add a moralizing summary sentence ("X showed that...", "This demonstrated that...", "Ultimately...", "serves as a testament").
 10. **Strict 3-Line Headers & LaTeX Hygiene**: Use `### Chapter N` / `# Title` / `## Subtitle` with zero colons. Escape literal currency dollar signs (`\$100`), never wrap bare numbers in `$50$`, and use `\sum\nolimits` inside `\frac{...}{...}`.
+11. **Earned Schematic Diagrams (` ```svg ` — 2 to 4 Per Book Max)**: In 2–4 chapters per book where a spatial topology, physical apparatus, feedback loop, or timeline is genuinely clarified by a schematic, include a clean ` ```svg ` block with `viewBox="0 0 600 H"` ($140 \le H \le 250$), `data-caption="FIG. N.1 — ..."`, CSS theme variables (`var(--text-color)`, `var(--text-muted)`, `var(--accent-color)`, `var(--border-color)`, `var(--card-bg)`), and $\le 34$ SVG primitives.
 ```
 
 ---
@@ -78,11 +79,12 @@ python3 scripts/validate_book.py <slug_with_underscores>.md
 
 - The validator checks:
   1. Exact 3-line headers (`### Chapter N` / `# Title` / `## Subtitle`) with zero colons.
-  2. Chapter word counts (600–900 words per chapter).
+  2. Chapter word counts (520–760 words per chapter) and sentence cadence ($\le 24.0$ words/sentence).
   3. Concrete historical date/year anchors in every chapter.
   4. Opening-door rotation (fails if $>4$ chapters open with `"In/On/At [Date]"`).
   5. Clean exits & anti-hyperbole (fails on moralizing exit sermons or banned words).
   6. Math cosplay detection, raw LaTeX leak detection, and Node KaTeX compilation.
+  7. Schematic SVG diagram validation ($\le 1$ per chapter, $\le 4$ per book, valid XML, `viewBox="0 0 600 H"`, theme CSS variables, and zero text overlaps or clipping).
 - **Self-Healing Loop**: If `validate_book.py` reports any `ERROR` or `WARN`, fix the exact offending chapter(s) and re-run `validate_book.py` until it exits with code `0` (`PASS`).
 
 ---
