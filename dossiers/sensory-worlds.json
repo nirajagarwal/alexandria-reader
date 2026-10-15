@@ -1,0 +1,133 @@
+{
+  "slug": "sensory-worlds",
+  "file": "sensory_worlds.md",
+  "title": "Sensory Worlds",
+  "subtitle": "How Non-Human Nervous Systems Measure Reality",
+  "category": "Ethology & Biophysics",
+  "profile": "Profile B: Biological, Neural & Affective Control Loops (Sensory Biophysics)",
+  "accent": "#10b981",
+  "bg": "#061e16",
+  "theme": "harmonic-rings",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "The Acoustic Mirror",
+      "subtitle": "Donald Griffin, Bat Biosonar, and Doppler-Shift Compensation",
+      "opening_door": "Door A (Scene) — In 1938 at Harvard University's physics department, twenty-two-year-old undergraduate Donald Griffin bringing a cage of little brown bats (Myotis lucifugus) into George Washington Pierce's ultrasonic crystal microphone room and hearing the silent room erupt in 50 kHz clicks.",
+      "historical_anchor": "Lazzaro Spallanzani's 1793 Pavia blinded-bat flight experiments and Louis Jurine's ear-wax plugging; Donald Griffin and Robert Galambos's 1938–1940 Harvard experiments proving laryngeal ultrasonic emission; Hans-Ulrich Schnitzler's 1968 discovery of Doppler-shift compensation onto the acoustic fovea in horseshoe bats (Rhinolophus ferrumequinum).",
+      "formalism_mode": "equation",
+      "governing_formalism": "$$f_{\\text{echo}} = f_{\\text{emit}} \\left( \\frac{c + v_{\\text{bat}}}{c - v_{\\text{bat}}} \\right) \\approx f_{\\text{emit}} \\left( 1 + \\frac{2 v_{\\text{bat}}}{c} \\right)$$",
+      "exit_fact": "End on how the horseshoe bat lowers its laryngeal emission pitch by the exact kilohertz offset needed to keep the returning echo locked onto its 83.0 kHz cochlear fovea, while tensor tympani and stapedius muscles clamp the middle ear ossicles two milliseconds before each outgoing shriek and release them two milliseconds later to hear a mosquito's wingbeat."
+    },
+    {
+      "chapter": 2,
+      "title": "The Nanovolt Compass",
+      "subtitle": "Adriaan Kalmijn, Shark Ampullae, and Bioelectric Prey Detection",
+      "opening_door": "Door B (Constraint/Paradox) — Every living fish in the ocean generates a standing direct-current bioelectric dipole field across its gill membranes of a few hundred microvolts, decaying with the cube of distance down to nanovolts per centimeter—a voltage gradient smaller than a single AA battery connected across the Atlantic Ocean.",
+      "historical_anchor": "Stefano Lorenzini's 1678 anatomical dissection of jelly-filled skin pores in rays; Hans Lissmann and Kenneth Machin's 1958 Cambridge experiments; Adriaan Kalmijn's 1971 Woods Hole Oceanographic Institution agar-chamber and buried-electrode experiments with dogfish sharks (Scyliorhinus canicula) and skates.",
+      "formalism_mode": "equation",
+      "governing_formalism": "$$I_{m} = I_{\\text{Ca}} + I_{\\text{K(Ca)}} \\quad \\text{with threshold } E_{\\text{min}} \\approx 5 \\text{ nV/cm}$$",
+      "exit_fact": "End on Kalmijn's buried electrode experiment where dogfish ignored visible pieces of whiting flesh to bite repeatedly at sand hiding two salt-bridge agar electrodes passing 0.4 microamperes—and how Bell Labs' high-voltage transoceanic optical-amplifier submarine cables in the 1980s had to be armored in steel and high-density polyethylene after deep-sea sharks bit into the unshielded 60 Hz electric fields."
+    },
+    {
+      "chapter": 3,
+      "title": "The Sixteen-Channel Retina",
+      "subtitle": "Thomas Cronin, Mantis Shrimp, and Circular Polarization Optics",
+      "opening_door": "Door C (Artifact/Measurement) — Microspectrophotometry absorption curves measured in 1989 by Thomas Cronin and Julian Marshall across the midband of the peacock mantis shrimp (Odontodactylus scyllarus): twelve narrowband photoreceptor rows spanning 300 nanometers in the deep ultraviolet to 720 nanometers in the far red, plus four channels dedicated to linear and circular polarization.",
+      "historical_anchor": "Thomas Cronin and N. Justin Marshall's 1989 microspectrophotometry of stomatopod compound eyes; Hanne Thoen's 2014 University of Queensland behavioral wavelength-discrimination experiments proving mantis shrimp use hardware barcode scanning rather than opponent cortical comparison; Sonja Kleinlogel's 2008 discovery of quarter-wave retarder optics in the R8 rhabdom.",
+      "formalism_mode": "equation",
+      "governing_formalism": "$$\\Delta \\phi = \\frac{2\\pi \\, \\Delta n \\, L}{\\lambda} = \\frac{\\pi}{2}$$",
+      "exit_fact": "End on how synthetic optical engineers struggled for decades to build achromatic quarter-wave plates that work across the entire visible spectrum, while the mantis shrimp's R8 photoreceptor microvilli achieve flat quarter-wave retardation from 400 to 700 nanometers to read secret circularly polarized cuticular signals invisible to predatory reef fish."
+    },
+    {
+      "chapter": 4,
+      "title": "The Ephemeris Dance",
+      "subtitle": "Karl von Frisch, Honeybee Polarizers, and Vector Navigation",
+      "opening_door": "Door A (Scene) — In the summer of 1944 in Brunnwinkl on the shore of Lake Wolfgang in Austria, fifty-seven-year-old zoologist Karl von Frisch moving a saucer of sugar water step by step up to 1,250 meters up a forested mountain ridge while timing the figure-eight runs of numbered honeybees (Apis mellifera) inside a glass-walled observation hive.",
+      "historical_anchor": "Karl von Frisch's 1944–1946 Brunnwinkl experiments decoding the waggle dance; Martin Lindauer's overnight marathon dances proving bees compensate for the sun's azimuthal movement at 15 degrees per hour without seeing the sky; Rüdiger Wehner's mapping of the dorsal rim area (DRA) ultraviolet polarization analyzers.",
+      "formalism_mode": "equation",
+      "governing_formalism": "$$P(\\theta) = \\frac{\\sin^{2}\\theta}{1 + \\cos^{2}\\theta}$$",
+      "exit_fact": "End on James Gould's 1975 Princeton 'lying bee' experiment (painting over the ocelli of dancers so they misread artificial light direction while leaving recruit ocelli uncovered), which directed recruits to the exact geometric coordinate predicted by the waggle angle rather than where the forager had actually flown."
+    },
+    {
+      "chapter": 5,
+      "title": "The Microsecond Map",
+      "subtitle": "Masakazu Konishi, Barn Owls, and Coincidence-Detector Delay Lines",
+      "opening_door": "Door B (Constraint/Paradox) — Sound travels through air at 343 meters per second, meaning an acoustic wave striking the head of a barn owl (Tyto alba) from ten degrees off-center reaches the nearer eardrum just 30 microseconds before the farther eardrum—one hundred times faster than the 3-millisecond refractory period of a single neuron's action potential.",
+      "historical_anchor": "Roger Payne's 1962 Cornell darkroom experiments proving barn owls strike rustling leaves in total darkness with 1-degree accuracy in both azimuth and elevation; Masakazu Konishi and Eric Knudsen's 1978 Caltech discovery of a topographic space map in the external nucleus of the inferior colliculus; Catherine Carr and Konishi's 1988 anatomical confirmation of Lloyd Jeffress's 1948 axonal delay-line model.",
+      "formalism_mode": "equation",
+      "governing_formalism": "$$\\Delta t_{\\text{ITD}} = \\frac{r}{c}(\\theta + \\sin\\theta) = \\tau_{\\text{left}} - \\tau_{\\text{right}}$$",
+      "exit_fact": "End on the anatomical vertical asymmetry of the barn owl's skull—where the left ear opening points downward and the right ear opening points upward behind the facial ruff—allowing the bird to compute horizontal azimuth from microsecond phase timing in nucleus laminaris while simultaneously computing vertical elevation from decibel intensity differences in nucleus angularis."
+    },
+    {
+      "chapter": 6,
+      "title": "The Quantum Inclination",
+      "subtitle": "Wolfgang Wiltschko, Sea Turtles, and the Geomagnetic Compass",
+      "opening_door": "Door C (Artifact/Measurement) — Scratch marks on the inside of circular Emlen funnel cages in Frankfurt in 1966, where European robins (Erithacus rubecula) tested by Wolfgang Wiltschko under Helmholtz coils reversed their migratory heading not when the horizontal north pole was flipped, but when the vertical dip angle of the magnetic field lines relative to gravity was inverted.",
+      "historical_anchor": "Wolfgang and Roswitha Wiltschko's 1966–1972 Frankfurt Helmholtz-coil inclination compass discovery in European robins; Klaus Schulten and Thorsten Ritz's 1978–2000 radical-pair quantum spin-triplet/singlet mechanism in retinal cryptochrome-4 (Cry4); Kenneth Lohmann's 1991–2001 University of North Carolina tethered loggerhead hatchling (Caretta caretta) experiments mapping the North Atlantic Subtropical Gyre.",
+      "formalism_mode": "ledger_or_list",
+      "governing_formalism": "Structured list comparing Lohmann's three simulated regional magnetic field treatments (Northern Florida 57 deg inclination, Northeastern Gyre off Portugal 60 deg inclination, Southern Gyre 40 deg inclination) and the exact swimming headings of naive hatchlings that had never been in the ocean.",
+      "exit_fact": "End on Henrik Mouritsen and Peter Hore's 2021 Oxford/Oldenburg spectroscopic measurements showing that cryptochrome-4 extracted from migratory European robins exhibits significantly higher magnetic sensitivity in its FAD-tryptophan radical pair than cryptochrome-4 from non-migratory chickens and pigeons."
+    },
+    {
+      "chapter": 7,
+      "title": "The Biological Bolometer",
+      "subtitle": "Theodore Bullock, Pit Vipers, and Thermal Membrane Imaging",
+      "opening_door": "Door A (Scene) — In 1936 at the American Museum of Natural History, GK Noble and Arthur Schmidt blindfolding, deafening, and sealing the Jacobson's vomeronasal tongue organs of timber rattlesnakes (Crotalus horridus), then waving a dead, cloth-wrapped lightbulb warmed to 37 degrees Celsius past the cage—watching the blind snake strike the warm bulb with millimeter accuracy.",
+      "historical_anchor": "Noble and Schmidt's 1936 behavioral discovery; Theodore Holmes Bullock and Raymond Cowles's 1952 UCLA single-fiber trigeminal nerve recordings from the facial loreal pit; David Julius and Elena Gracheva's 2010 UCSF identification of the TRPA1 ion channel as the molecular thermal transducer.",
+      "formalism_mode": "equation",
+      "governing_formalism": "$$P_{\\text{rad}} = \\varepsilon \\sigma A \\left( T_{\\text{prey}}^{4} - T_{\\text{background}}^{4} \\right) \\implies \\Delta T_{\\text{membrane}} \\approx 0.001\\,^{\\circ}\\text{C}$$",
+      "exit_fact": "End on the suspended 15-micrometer-thick pit membrane architecture—stretched like a drumhead across an air-filled inner cavity rather than resting against тепло-sinking skull bone, and densely packed with capillary beds that rapidly flush absorbed heat away so the thermal image refreshes without afterimage smear."
+    },
+    {
+      "chapter": 8,
+      "title": "The Tactile Fovea",
+      "subtitle": "Kenneth Catania, Star-Nosed Moles, and the Speed Limit of Touch",
+      "opening_door": "Door B (Constraint/Paradox) — What is the fastest foraging mammal on Earth? Not a cheetah or a falcon, but a fifty-gram blind subterranean insectivore—the star-nosed mole (Condylura cristata)—which locates, touches, identifies, and swallows eight separate earthworm segments in under two seconds, taking as little as 120 milliseconds per prey item.",
+      "historical_anchor": "Kenneth Catania and Jon Kaas's 1995–2001 Vanderbilt University cytochrome-oxidase histological staining of the star-nosed mole's neocortex and high-speed 1,000-frame-per-second glass-tunnel foraging films.",
+      "formalism_mode": "ledger_or_list",
+      "governing_formalism": "Structured breakdown of the 22 fleshy nasal appendages (11 per side), packed with 25,000 Eimer's organs innervated by over 100,000 myelinated trigeminal nerve fibers in a surface area smaller than a human fingertip, and how Appendage 11 acts as a tactile fovea occupying 25 percent of the entire somatosensory cortex.",
+      "exit_fact": "End on Catania's high-speed video measurements showing that when the mole's lateral rays brush a potential food item, the star executes a saccadic motor snap in 20 milliseconds to press the tiny central eleventh pair of rays directly onto the target—performing the exact same peripheral-to-foveal saccade with flesh that a primate eye performs with light."
+    },
+    {
+      "chapter": 9,
+      "title": "The Seismic Horizon",
+      "subtitle": "Katy Payne, Caitlin O'Connell, and Elephant Rayleigh-Wave Communication",
+      "opening_door": "Door A (Scene) — In May 1984 at the Washington Park Zoo in Portland, Oregon, bioacoustician Katy Payne sitting alone on a concrete bench beside the Asian elephant enclosures and feeling a rhythmic, silent throbbing pressure in the air and floor beneath her ribs—identical to the sub-audible shudder of the 32-foot pedal pipes of the church organ she had sung beside as a girl in Ithaca.",
+      "historical_anchor": "Katy Payne, William Langbauer Jr., and Elizabeth Thomas's 1984–1986 recordings of 14–24 Hz infrasonic elephant rumbles; Caitlin O'Connell-Rodwell's 1997–2005 Etosha National Park (Namibia) geophone seismic playback experiments proving elephants freeze, lean forward onto their front toes, and orient toward ground-borne Rayleigh waves with speakers muted.",
+      "formalism_mode": "equation",
+      "governing_formalism": "$$I_{\\text{Rayleigh}}(r) \\propto \\frac{1}{r} e^{-\\alpha r} \\quad \\text{vs.} \\quad I_{\\text{spherical}}(r) \\propto \\frac{1}{r^{2}}$$",
+      "exit_fact": "End on the dual biomechanical reception pathways in the elephant's foot: bone-conducted vibrations traveling up the vertical column of the foreleg nails, digits, and humerus into hypertrophied middle-ear ossicles, paired with dense clusters of Pacinian corpuscles embedded around the cartilaginous acoustic fat pad of the heel."
+    },
+    {
+      "chapter": 10,
+      "title": "The Phase-Lock Reflex",
+      "subtitle": "Walter Heiligenberg, Electric Knifefish, and the Jamming Avoidance Algorithm",
+      "opening_door": "Door C (Artifact/Measurement) — Oscilloscope traces recorded in 1963 by Akira Watanabe and Kimihisa Takeda in Tokyo showing that when a glass-knifefish (Eigenmannia virescens) discharging its electric organ at 300.0 Hz encounters a synthetic sine-wave electrode in its tank at 302.0 Hz, the fish smoothly shifts its own pacemaker down to 296.0 Hz within seconds—without receiving any central command telling it which frequency was higher.",
+      "historical_anchor": "Hans Lissmann's 1951 discovery of continuous wave-type electric organ discharges (EODs); Watanabe and Takeda's 1963 jamming avoidance response (JAR) discovery; Walter Heiligenberg and Gary Rose's 1973–1985 Scripps Institution of Oceanography neuroethological dissection proving a 14-layer distributed neural circuit computes the sign of the frequency difference purely from local skin phase and amplitude modulations.",
+      "formalism_mode": "equation",
+      "governing_formalism": "$$S(t) = A_{1}\\cos(\\omega_{1}t) + A_{2}\\cos\\big((\\omega_{1} + \\Delta\\omega)t\\big)$$",
+      "exit_fact": "End on Gary Rose and Walter Heiligenberg's 1985 single-neuron intracellular recordings in the torus semicircularis of Eigenmannia, revealing individual neurons capable of detecting differential phase shifts of 0.4 microseconds between electroreceptors on the head and tail."
+    },
+    {
+      "chapter": 11,
+      "title": "The Pedometer in the Sand",
+      "subtitle": "Rüdiger Wehner, Saharan Ants, and Dead-Reckoning Path Integration",
+      "opening_door": "Door B (Constraint/Paradox) — At solar noon across the Chott el-Djerid salt pans of southern Tunisia, ground surface temperatures reach 60 degrees Celsius, evaporating every chemical pheromone trail within seconds and erasing every visual landmark across miles of flat salt crust.",
+      "historical_anchor": "Rüdiger Wehner's 1970s–2000s University of Zurich field expeditions in Maharès, Tunisia, tracking the Saharan silver ant (Cataglyphis fortis); Matthias Wittlinger, Harald Wolf, and Wehner's 2006 Science 'stilts and stumps' experiment proving the ant measures distance with an intrinsic stride-counting pedometer rather than optic flow or metabolic energy.",
+      "formalism_mode": "equation",
+      "governing_formalism": "$$\\mathbf{H} = -\\sum\\nolimits_{k=1}^{N} s_{k} \\begin{pmatrix} \\cos\\theta_{k} \\\\ \\sin\\theta_{k} \\end{pmatrix}$$",
+      "exit_fact": "End on the exact empirical measurements from Wittlinger and Wehner's 2006 experiment: after foraging 10.0 meters out on normal legs, ants given 1-millimeter pig-bristle stilts overshot their nest burrow and began searching at 15.3 meters, whereas ants whose legs were shortened by 1 millimeter stopped short and searched at 5.75 meters—until on their next outbound trip on altered legs they returned to the exact 10.0-meter nest entrance."
+    },
+    {
+      "chapter": 12,
+      "title": "The Blind Camouflage",
+      "subtitle": "Roger Hanlon, Cuttlefish Skin, and Distributed Reflectance Control",
+      "opening_door": "Door A (Scene) — In 1996 at the Marine Biological Laboratory in Woods Hole, Massachusetts, cephalopod biologist Roger Hanlon and photoreceptor physiologist Chuan-Chin Chiao placing common European cuttlefish (Sepia officinalis) onto laminated plastic checkerboards of varying square sizes—watching an animal whose retina contains only a single monochromatic visual opsin (492 nm) match the exact spatial frequency and contrast of colored gravel in 700 milliseconds.",
+      "historical_anchor": " Marshall Messenger's 1977 polarization and color-blindness behavioral experiments in octopuses and cuttlefish; Roger Hanlon and Chuan-Chin Chiao's 2001–2007 Woods Hole spatial-frequency classification (Uniform, Mottle, Disruptive); Lydia Mäthger's discovery of dermal opsins and dynamic acetylcholine-driven iridophore Bragg reflectors.",
+      "formalism_mode": "ledger_or_list",
+      "governing_formalism": "Structured three-layer optical stack of cephalopod skin: (1) Top layer of neuromuscular chromatophore organs (yellow, red, brown pigment sacs expanded by radial muscles wired directly to motor neurons in the subesophageal brain without hormonal delay), (2) Middle layer of acetylcholine-tuned reflectin protein plates (iridophores) shifting thin-film constructive interference wavelengths, and (3) Bottom layer of broadband diffuse white leucophores scattering ambient light.",
+      "exit_fact": "End on how the cuttlefish bypasses the impossible computational bottleneck of controlling two million individual chromatophores by wiring them into roughly thirty fixed dermal motor fields triggered by just three visual spatial-frequency templates."
+    }
+  ]
+}
