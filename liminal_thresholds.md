@@ -73,7 +73,7 @@ In a beaker starting at $100^\circ\text{C}$, the steep initial temperature diffe
 
 Submerged in a darkened tank of photographic developer fluid at the University of Cologne in the winter of 1934, an ultrasonic sonar transducer left mysterious black exposure dots across unexposed silver-halide plates. Physicists H. Frenzel and H. Schultes had placed the piezoelectric transducer in the bath to test whether high-frequency sound waves could speed up photo development. Instead, they discovered that sound waves propagating through water were emitting flashes of visible light.
 
-The phenomenon—sonoluminescence—represents an energy concentration ratio of twelve orders of magnitude. A low-frequency acoustic pressure wave with an ambient energy density of roughly $10^{-11}\text{ eV}$ per atom couples into a microscopic gas bubble, focusing that mechanical energy into an ultraviolet-bright optical flash carrying $2$ to $4\text{ eV}$ per photon.
+The phenomenon—sonoluminescence—represents an energy concentration ratio of twelve orders of magnitude. A low-frequency acoustic pressure wave with an ambient energy density of roughly $10^{-11}\text{ eV}$ per atom couples into a microscopic gas bubble, focusing that mechanical energy into an ultraviolet-bright optical flash carrying 2 to $4\text{ eV}$ per photon.
 
 The radial dynamics of the oscillating gas cavity obey the non-linear Rayleigh-Plesset equation:
 
@@ -85,7 +85,7 @@ The collapsing wall launches an inward-propagating supersonic spherical shock wa
 
 $$T_{\text{max}} = T_{0} \left(\frac{R_{\text{max}}}{R_{\text{min}}}\right)^{3(\gamma - 1)}$$
 
-Optical spectroscopy of single-bubble sonoluminescence later confirmed that the compressed gas core reaches temperatures between $15,000$ and $30,000\text{ kelvins}$—hotter than the surface of the Sun—ionizing trapped argon and xenon atoms into a dense micro-plasma that emits a broadband flash of bremsstrahlung radiation lasting under 100 picoseconds.
+Optical spectroscopy of single-bubble sonoluminescence later confirmed that the compressed gas core reaches temperatures between 15,000 and $30,000\text{ kelvins}$—hotter than the surface of the Sun—ionizing trapped argon and xenon atoms into a dense micro-plasma that emits a broadband flash of bremsstrahlung radiation lasting under 100 picoseconds.
 
 ---
 
