@@ -358,19 +358,6 @@
                 </div>
             </div>
         </div>
-
-        <aside id="telescope-drawer">
-            <div class="drawer-header">
-                <div class="drawer-title">Telescopic Inspection</div>
-                <button class="folio-btn" onclick="toggleTelescope()">Close (Esc)</button>
-            </div>
-            <div id="drawer-content">
-                <p style="font-size:0.95em; color:var(--text-muted); font-style:italic;">
-                    Select any equation or concept in the text, or inspect the active chapter's structural invariants below.
-                </p>
-                <div id="drawer-widget-area"></div>
-            </div>
-        </aside>
     </main>
 
     <!-- Table of Contents Modal -->
@@ -1205,8 +1192,6 @@
             if (activePdfDoc) {
                 syncChapterFromPdfPage();
                 renderPdfSpread();
-                const ch = parsedBook.chapters[currentChapterIndex];
-                if (ch) updateTelescopeWidgets(ch);
                 return;
             }
 
@@ -1218,7 +1203,6 @@
             if (currentSpreadIndex < 0) currentSpreadIndex = 0;
 
             renderActiveSpread();
-            updateTelescopeWidgets(ch);
         }
 
         async function renderSinglePdfPage(pageNumber, canvasEl, linksEl, slotEl, pageW, pageH, slotKey, myToken) {
@@ -1618,84 +1602,6 @@
             });
         }
 
-        function updateTelescopeWidgets(chapter) {
-            const area = document.getElementById('drawer-widget-area');
-            if (!area || !chapter) return;
-            let widgetsHtml = "";
-
-            if (chapter.title.includes("Star Graph")) {
-                widgetsHtml = `
-                    <div class="interactive-widget">
-                        <div class="widget-title">Star Graph Topology Reduction</div>
-                        <p style="font-size:0.85em; color:var(--text-muted); margin-bottom:10px;">
-                            Adjust the number of connected cities (N) to compare quadratic point-to-point routes against linear star routes.
-                        </p>
-                        <input type="range" min="5" max="100" value="25" class="widget-slider" id="city-slider" oninput="window.updateFedexMath(this.value)">
-                        <div class="widget-metric"><span>Cities (N):</span> <strong id="val-n">25</strong></div>
-                        <div class="widget-metric"><span>Point-to-Point [N(N-1)/2]:</span> <strong id="val-p2p" style="color:#ef4444;">300 routes</strong></div>
-                        <div class="widget-metric"><span>Star Graph [N]:</span> <strong id="val-star" style="color:#10b981;">25 routes</strong></div>
-                        <div class="widget-metric"><span>Route Reduction:</span> <strong id="val-pct">91.7%</strong></div>
-                    </div>
-                `;
-            } else if (chapter.title.includes("Infinite Shelf")) {
-                widgetsHtml = `
-                    <div class="interactive-widget">
-                        <div class="widget-title">Negative Cash Conversion Cycle</div>
-                        <p style="font-size:0.85em; color:var(--text-muted); margin-bottom:10px;">
-                            CCC = DSO + DIO - DPO. Negative days create free operational float.
-                        </p>
-                        <div class="widget-metric"><span>Days Sales (DSO):</span> <strong>1 day</strong></div>
-                        <div class="widget-metric"><span>Inventory Transit (DIO):</span> <strong>2 days</strong></div>
-                        <div class="widget-metric"><span>Days Payable (DPO):</span> <strong>60 days</strong></div>
-                        <div class="widget-metric"><span>Net Cash Cycle:</span> <strong style="color:#10b981;">-57 days (Free Float)</strong></div>
-                    </div>
-                `;
-            } else if (chapter.title.includes("Percolation Threshold")) {
-                widgetsHtml = `
-                    <div class="interactive-widget">
-                        <div class="widget-title">Spatial Nearest-Neighbor ETA</div>
-                        <p style="font-size:0.85em; color:var(--text-muted); margin-bottom:10px;">
-                            Expected distance E[r] = 1 / (2 * √Density). Non-linear drop as density crosses critical threshold.
-                        </p>
-                        <div class="widget-metric"><span>Sub-Critical (D = 0.4):</span> <strong style="color:#ef4444;">ETA ~ 18 min</strong></div>
-                        <div class="widget-metric"><span>Critical Threshold (D = 2.0):</span> <strong>ETA ~ 6 min</strong></div>
-                        <div class="widget-metric"><span>Super-Critical (D = 8.0):</span> <strong style="color:#10b981;">ETA ~ 2.8 min</strong></div>
-                    </div>
-                `;
-            } else {
-                widgetsHtml = `
-                    <div class="interactive-widget">
-                        <div class="widget-title">${escapeHtml(chapter.title)}</div>
-                        <p style="font-size:0.88em; color:var(--text-muted);">${escapeHtml(chapter.subtitle)}</p>
-                    </div>
-                `;
-            }
-
-            area.innerHTML = widgetsHtml;
-        }
-
-        function updateFedexMath(n) {
-            n = parseInt(n);
-            const p2p = (n * (n - 1)) / 2;
-            const star = n;
-            const pct = (((p2p - star) / p2p) * 100).toFixed(1);
-
-            const elN = document.getElementById('val-n');
-            const elP2p = document.getElementById('val-p2p');
-            const elStar = document.getElementById('val-star');
-            const elPct = document.getElementById('val-pct');
-
-            if (elN) elN.innerText = n;
-            if (elP2p) elP2p.innerText = `${p2p} routes`;
-            if (elStar) elStar.innerText = `${star} routes`;
-            if (elPct) elPct.innerText = `${pct}%`;
-        }
-
-        function toggleTelescope() {
-            const drawer = document.getElementById('telescope-drawer');
-            if (drawer) drawer.classList.toggle('open');
-        }
-
         function openTocModal() {
             const modal = document.getElementById('toc-modal');
             if (modal) modal.classList.add('open');
@@ -1801,8 +1707,6 @@
 
             if (e.key === 'Escape') {
                 document.querySelectorAll('.modal-overlay').forEach(m => m.classList.remove('open'));
-                const drawer = document.getElementById('telescope-drawer');
-                if (drawer) drawer.classList.remove('open');
             } else if (e.key === 'd') {
                 window.cycleTheme();
             } else if (e.key === '?') {
@@ -1834,8 +1738,6 @@
                     window.openTocModal();
                 } else if (e.key === 'l') {
                     window.openLibraryModal();
-                } else if (e.key === 'e') {
-                    window.toggleTelescope();
                 }
             }
         });
@@ -1847,8 +1749,6 @@
         window.adjustZoom = adjustZoom;
         window.resetZoom = resetZoom;
         window.toggleViewMode = toggleViewMode;
-        window.updateFedexMath = updateFedexMath;
-        window.toggleTelescope = toggleTelescope;
         window.openTocModal = openTocModal;
         window.openLibraryModal = openLibraryModal;
         window.openHelpModal = openHelpModal;
