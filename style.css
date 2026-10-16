@@ -307,7 +307,7 @@
         .pdf-icon-btn {
             background: transparent;
             border: 1px solid transparent;
-            color: #655f57;
+            color: #3d3831;
             width: calc(11.5 * var(--pt));
             height: calc(11.5 * var(--pt));
             min-width: 18px;
@@ -322,10 +322,10 @@
         }
 
         .pdf-icon-btn svg {
-            width: calc(8.4 * var(--pt));
-            height: calc(8.4 * var(--pt));
-            min-width: 13px;
-            min-height: 13px;
+            width: calc(8.6 * var(--pt));
+            height: calc(8.6 * var(--pt));
+            min-width: 14px;
+            min-height: 14px;
             display: block;
         }
 
@@ -336,7 +336,7 @@
         }
 
         [data-theme="dark"] .pdf-icon-btn {
-            color: #9e988e;
+            color: #c8c2b8;
         }
 
         [data-theme="dark"] .pdf-icon-btn:hover {
@@ -353,7 +353,7 @@
             z-index: 9;
             background: transparent;
             border: 1px solid transparent;
-            color: #655f57;
+            color: #3d3831;
             width: calc(11.5 * var(--pt));
             height: calc(11.5 * var(--pt));
             min-width: 18px;
@@ -369,10 +369,10 @@
         }
 
         .pdf-footer-nav svg {
-            width: calc(8.2 * var(--pt));
-            height: calc(8.2 * var(--pt));
-            min-width: 13px;
-            min-height: 13px;
+            width: calc(8.4 * var(--pt));
+            height: calc(8.4 * var(--pt));
+            min-width: 14px;
+            min-height: 14px;
             display: block;
         }
 
@@ -396,7 +396,7 @@
         }
 
         [data-theme="dark"] .pdf-footer-nav {
-            color: #9e988e;
+            color: #c8c2b8;
         }
 
         [data-theme="dark"] .pdf-footer-nav:hover {
@@ -664,10 +664,10 @@
         }
 
         .home-brand-icon {
-            width: 28px !important;
-            height: 28px !important;
-            min-width: 28px !important;
-            max-width: 28px !important;
+            width: 32px !important;
+            height: 32px !important;
+            min-width: 32px !important;
+            max-width: 32px !important;
             border-radius: 6px;
             object-fit: contain;
             display: block;
