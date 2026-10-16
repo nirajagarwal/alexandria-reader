@@ -566,9 +566,10 @@
         }
 
         .home-container {
-            max-width: 1680px;
-            margin: 0 auto;
-            padding: 36px 40px calc(80px + env(safe-area-inset-bottom, 0px)) 40px;
+            width: 100%;
+            max-width: none;
+            margin: 0;
+            padding: 28px 28px calc(80px + env(safe-area-inset-bottom, 0px)) 28px;
         }
 
                 /* Home Header & Single-Line Brand Bar */
@@ -577,8 +578,8 @@
             align-items: center;
             justify-content: space-between;
             gap: 20px;
-            margin-bottom: 44px;
-            padding-bottom: 24px;
+            margin-bottom: 36px;
+            padding-bottom: 20px;
             border-bottom: 1px solid var(--border-color, rgba(255, 255, 255, 0.08));
         }
 
@@ -657,16 +658,11 @@
         }
 
         .books-grid {
+            width: 100%;
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
-            gap: 28px 22px;
+            grid-template-columns: repeat(auto-fill, minmax(205px, 1fr));
+            gap: 24px 20px;
             align-items: start;
-        }
-
-        @media (min-width: 1360px) {
-            .books-grid {
-                grid-template-columns: repeat(6, 1fr);
-            }
         }
 
         .book-card {
