@@ -34,24 +34,42 @@ When a writer tries to impress, the text draws attention to the author rather th
 ---
 
 ### The Form
-# The Universal Twelve-Facet Volume
-## One Hour per Book, Five Minutes per Facet
+# The Universal Twelve-Chapter Volume & Nine-Form Stockpile
+## One Hour per Book, Five Minutes per Chapter
 
 > **"Do not be fashioned according to the age"—but be sensitive to real human needs. We do not hide machine synthesis, and we do not imitate literary padding.**
 
-Because we are training a mental network rather than writing an exhaustive encyclopedia, **we do not need to be comprehensive—twelve facets is enough.**
+Because we are training a mental network rather than writing an exhaustive encyclopedia, **we do not need to be comprehensive—twelve chapters is enough.**
 
-Every Alexandria volume is shaped into **twelve 5-minute chapters** (~550–720 words each, readable in **one hour** across a day) preceded by a crisp **~250-word Introduction**. Inside this 12-chapter container, Alexandria supports **three structural forms** depending on how a subject is best learned:
+Every Alexandria volume is shaped into **twelve 5-minute chapters** (~550–720 words each, readable in **one hour** across a day) preceded by a crisp **~250-word Introduction**. Inside this 12-chapter container, Alexandria maintains a **stockpile of nine structural forms** (`mode` in `dossiers/<slug>.json`) so each topic is paired with the exact container best suited to reveal it:
 
 1. **The Narrative-Mechanism Facet (`"facet"`)**:
-   * Each chapter pairs a concrete historical event, experiment, or clinical case with the physical, biological, or institutional mechanism underneath it. Ideal for ordinary human categories (*Twelve Plants*, *Twelve Virtues*), systemic phenomena (*Bonds of Enmity*, *Paper Panics*), or a single mind (*The Curious Physicist*).
+   * *When to use*: Examining 12 instances of an ordinary human category (*Twelve Plants*, *Twelve Virtues*), 12 systemic crises (*Bonds of Enmity*, *Paper Panics*), or 12 facets of a single mind (*The Curious Physicist*, *Flights and Perches*).
+   * *12-Chapter Construction*: Each chapter pairs a concrete historical scene, experiment, or clinical case with the physical, biological, or institutional mechanism underneath it.
 2. **The Prospected Fleuron Listicle (`"listicle"`)**:
-   * For many subjects, narrative is the wrong container—you do not want a "story" about the heart; you want **12 dynamite, perpendicular facts about the heart** in one chapter.
-   * Each chapter combines cross-disciplinary prospecting (via the `topic-prospector` engine—seeking perpendicular observations, hidden mechanics, and counterintuitive numbers) with deep domain knowledge to craft **12 single-paragraph highlights** (~45–55 words each).
-   * Instead of a mechanical numbered list (`1.`, `2.`), the twelve paragraphs are separated by a classic print **fleuron (`❦`)** ornament.
+   * *When to use*: When narrative is the wrong container—you do not want a "story" about the heart; you want **12 dynamite, perpendicular facts about the heart** in one chapter (*The Human Body*).
+   * *12-Chapter Construction*: Each chapter combines cross-disciplinary prospecting (via the `topic-prospector` engine—mining perpendicular observations, hidden mechanics, and counterintuitive numbers) with deep domain knowledge to craft **12 single-paragraph highlights** (~45–55 words each) separated by 11 centered print **fleurons (`❦`)**—never numbered lists.
 3. **The Contextual Landscape (`"landscape"`, from `knowra.com`)**:
-   * Designed to learn a central topic **in context with a view to its surrounding landscape**.
-   * Given a topic $X$, Chapter 1 examines the anchor concept itself, while Chapters 2–12 explore **eleven specific adjacent concepts** across Knowra's lenses (`Building blocks`, `Mechanism`, `Origins`, `Contrasts`, `Neighbors`, `Consequences`, `Cases`, `Open questions`) and relational moves (`zoom-in`, `zoom-out`, `go`, `contrast`). Each chapter explains both what the adjacent node is (`what`) and how it connects back to the central topic (`whyHere`), primed by its surrounding linked concepts.
+   * *When to use*: Learning a central concept **in context with a view to its surrounding conceptual neighborhood** (*Artificial Intelligence*).
+   * *12-Chapter Construction*: Given a central topic $X$, Chapter 1 examines the anchor concept itself (`what` + core mechanism), while Chapters 2–12 explore **eleven specific adjacent concepts** across Knowra's lenses (`Building blocks`, `Mechanism`, `Origins`, `Contrasts`, `Neighbors`, `Consequences`, `Cases`, `Open questions`) and relational moves (`zoom-in`, `zoom-out`, `go`, `contrast`). Each chapter explains both what the neighbor is (`what`) and how it connects to or constrains the central topic (`why_here`), primed by 3–5 linked `background_nodes`.
+4. **The Contrast / Twins Form (`"contrast"`)**:
+   * *When to use*: Clarifying look-alike pairs, rival architectures, or concepts people habitually blur together (either 12 look-alike pairs across a domain, or 12 head-to-head axes comparing two rival systems).
+   * *12-Chapter Construction*: Each chapter puts two things side by side across three movements: (1) the shared surface problem or origin that makes them look similar, (2) the exact physical, structural, or institutional fork where they diverge, and (3) a decisive real-world test or failure mode where confusing them is fatal.
+5. **The Anatomy / Under-the-Hood Form (`"anatomy"`)**:
+   * *When to use*: Opening up **one complex everyday black box** (*Anatomy of a Jetliner*, *Anatomy of a City*, *Anatomy of a Hospital*, *Anatomy of a Smartphone*, *Anatomy of a Central Bank*) into 12 functional subsystems.
+   * *12-Chapter Construction*: Each chapter zooms into one physical or institutional organ of the whole, the hard engineering or economic constraint it solves, its historical invention, and how it couples to the other eleven subsystems.
+6. **The Field Guide / "How to Read..." Form (`"field-guide"`)**:
+   * *When to use*: Training the reader's eye to decode visible signs hiding in plain sight in the everyday world (*How to Read a City Street*, *How to Read a Building*, *How to Read the Sky*, *How to Read a Financial Statement*).
+   * *12-Chapter Construction*: Each chapter takes one observable physical clue or artifact you pass in daily life, shows how to spot its diagnostic features, and unpacks the hidden engineering, geology, law, or economics that put it there.
+7. **The Scale Ladder / Powers of Ten (`"scale"`)**:
+   * *When to use*: Tracing how governing laws flip as a phenomenon scales across 12 orders of magnitude in size, time, energy, or population (*Being the Right Size*, *Twelve Scales of Time*, *From Village to Megacity*).
+   * *12-Chapter Construction*: Chapters 1–12 climb 12 sequential rungs from smallest/fastest to largest/slowest, pinpointing the exact physical or organizational phase transition where the old mechanism breaks and a new law takes over.
+8. **The Counter-Intuition / Inversion Form (`"inversion"`)**:
+   * *When to use*: Domains rife with folk science, optical/cognitive illusions, or intuitive traps where common sense points backward.
+   * *12-Chapter Construction*: Each chapter (1) states a universal everyday belief and explains why human intuition falls for it, (2) introduces the historical experiment or measurement that broke the illusion, and (3) unpacks the actual mechanism.
+9. **The End-to-End Chain (`"chain"`)**:
+   * *When to use*: Following one everyday object, signal, or resource across 12 sequential transformations (*From Sand to Thought*, *What Happens When You Click a Link*, *From Coffee Cherry to Morning Cup*).
+   * *12-Chapter Construction*: Each chapter is one self-contained link in a 12-stage physical or informational pipeline—receiving the output of Chapter $N-1$, executing its transformation and solving its bottleneck, and handing off to Chapter $N+1$.
 
 ---
 
@@ -99,18 +117,18 @@ Resist the urge to end a chapter with either a theatrical mic-drop or a dutiful 
 # Universal Laws + Topic-Specific Prompts
 ## Adapting the Engine to the Subject Without Losing the Voice
 
-While the seven universal laws bind every book, different domains rely on different kinds of proof. Applying a rigid physics-equation template to a book on psychology or historical strategy causes immediate drift. Each book therefore pairs the **Universal System Prompt** with a **Topic-Specific Prompt Profile**:
+While the eight universal laws bind every book, different domains rely on different kinds of proof. Applying a rigid physics-equation template to a book on psychology or historical strategy causes immediate drift. Each book therefore pairs the **Universal System Prompt** with a **Topic-Specific Prompt Profile** and a **Structural Form (`mode`)**:
 
-1. **Physical Systems, Infrastructure & Material Constraints** (*Latent Fragility*, *Architectures of the Grid*, *Elemental Asymmetries*, *Liminal Thresholds*)
+1. **Physical Systems, Infrastructure & Material Constraints** (*Latent Fragility*, *Architectures of the Grid*, *Elemental Asymmetries*, *Liminal Thresholds*, *Planetary Triggers*)
    - *Narrative Anchor*: The engineering site, physical apparatus, environmental stress, or anomalous laboratory observation.
    - *Forensic Engine*: The governing physical or chemical law, material failure threshold, differential equation, and exact post-mortem telemetry.
-2. **Biological, Neural & Affective Control Loops** (*The Autonomous Engine*, *Affective Topologies*, *Radical Subtraction*)
+2. **Biological, Neural & Affective Control Loops** (*The Autonomous Engine*, *Affective Topologies*, *Radical Subtraction*, *Sensory Worlds*)
    - *Narrative Anchor*: A landmark clinical case, physiological experiment, neurological patient, or documented contemplative practitioner. Never pure abstract theory.
    - *Forensic Engine*: The homeostatic/allostatic feedback loop, neural pathway, receptor kinetics, and formal computational or information-theoretic model.
-3. **Decision Theory, Economics & Enterprise Mechanics** (*Non-Linear Engines*, *Architectures of Choice*)
+3. **Decision Theory, Economics & Enterprise Mechanics** (*Non-Linear Engines*, *Architectures of Choice*, *Fictions of Order*, *Bonds of Enmity*, *Paper Panics*)
    - *Narrative Anchor*: A high-stakes historical wager, corporate survival crisis, financial blowup, or military/statistical case study.
    - *Forensic Engine*: The exact probability calculus, payoff convexity, balance-sheet ledger, network topology, or game-theoretic equilibrium.
-4. **Intellectual Ruptures & Consensus Breaking** (*Singular Minds*, *Tales of Audacity*, *Twelve Facets*)
+4. **Intellectual Ruptures & Consensus Breaking** (*Singular Minds*, *Tales of Audacity*, *Ghosts in the Parchment*, *Flights and Perches*, *The Curious Physicist*)
    - *Narrative Anchor*: The entrenched institutional orthodoxy, the specific anomalous observation that broke it, and the physical or intellectual cost paid by the investigator.
    - *Forensic Engine*: Uses formal mathematical derivations where the discovery was mathematical or astronomical, and uses exact experimental protocols, clinical trials, or primary evidence tables where the breakthrough was biological, medical, or empirical.
 
@@ -118,17 +136,21 @@ While the seven universal laws bind every book, different domains rely on differ
 
 ### The Creator Platform
 # The Two-Pass Creator Workflow
-## Fork Selection, First-Pass Synthesis, and One-Shot Steering
+## Composite Option Selection, First-Pass Synthesis, and One-Shot Steering
 
-When a creator brings a topic to Alexandria Press, we do not hand them a blank canvas that invites 300-page fluff, nor do we trap them in an endless chat loop. Instead, every volume is produced through a bounded **Two-Pass Creator Workflow**:
+When a creator brings a topic to Alexandria Press, we do not hand them a blank canvas that invites 300-page fluff, nor do we offer four variations of the exact same structural template. Instead, every volume is produced through a bounded **Two-Pass Creator Workflow** where **content angle and structural form are chosen together**:
 
-1. **Topic Input $\rightarrow$ Forks on the Road**
-   * The creator enters a raw topic (a person, a phenomenon, a technology, an institution).
-   * The engine prospects the topic and proposes **3–4 distinct 12-facet angles** ("forks on the road"), showing how the subject can be sliced into twelve high-signal facets.
-2. **Fork Selection $\rightarrow$ `v1` Generation**
-   * The creator chooses their fork.
+1. **Topic Input $\rightarrow$ 3–4 Composite Options (`Topic Angle × Structural Form × 12-Chapter Construction`)**
+   * The creator enters a raw topic (a person, an everyday object, a scientific field, an institution, a place).
+   * The engine evaluates the topic against the **Nine-Form Stockpile** (`"facet"`, `"listicle"`, `"landscape"`, `"contrast"`, `"anatomy"`, `"field-guide"`, `"scale"`, `"inversion"`, `"chain"`) and presents **3–4 distinct composite options**.
+   * Each composite option specifies:
+     - **Title & Subtitle**
+     - **Structural Form (`mode`) & Why It Fits This Angle**
+     - **12-Chapter Construction** (how the 12 chapters are sliced across the volume, and how each chapter is built internally).
+2. **Composite Selection $\rightarrow$ `v1` Generation**
+   * The creator chooses their preferred composite option (or mixes a topic angle from one option with a form from another).
    * The engine compiles a locked 12-chapter dossier (`dossiers/<slug>.json`), synthesizes the complete `v1` volume, and enforces all eight universal laws via the deterministic validator (`scripts/validate_book.py`).
 3. **Creator Steering Prompt $\rightarrow$ `v2` Regeneration & Done**
-   * Reacting to a tangible 12-facet manuscript is vastly sharper than specifying rules in the abstract. After reading `v1`, the creator issues a single set of steering prompts (for example: *"Include at least one verbatim quote in every chapter"*, *"Make Chapter 1 a deeper biographical profile"*, or *"Add a schematic diagram to Chapter 2"*).
+   * Reacting to a tangible 12-chapter manuscript is vastly sharper than specifying rules in the abstract. After reading `v1`, the creator issues a single set of steering prompts (for example: *"Include at least one verbatim quote in every chapter"*, *"Make Chapter 1 a deeper biographical profile"*, or *"Add a schematic diagram to Chapter 2"*).
    * The engine compiles those steering instructions into the dossier and validator rules, regenerates `v2`, verifies 100% gate compliance, publishes the volume, and calls it done.
 

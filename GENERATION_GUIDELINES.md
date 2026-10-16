@@ -113,12 +113,39 @@ When generating or regenerating a book, select the profile that matches its doma
   - In `dossiers/<slug>.json`, each chapter specifies its `lens`, `verb` (`anchor`, `zoom-in`, `zoom-out`, `go`, `contrast`), `what` (context-free definition), `why_here` (its exact connection to the central topic $X$), and 4–5 `background_nodes` (linked sub-concepts that prime the writing with concrete mechanisms, numbers, and names).
   - Each chapter (550–720 words) explains both the adjacent concept on its own terms and how it connects to, constrains, or contrasts with the book's central subject—building a 360-degree mental map of the landscape.
 
+### Profile G: Additional Structural Forms in the Nine-Form Stockpile
+Beyond `"facet"`, `"listicle"`, and `"landscape"`, the Alexandria stockpile includes six specialized structural forms (`mode` in `dossiers/<slug>.json`):
+- **`"contrast"` (The Contrast / Twins Form)**:
+  - *Structure*: Each chapter puts two confused, look-alike, or rival concepts side by side (either 12 pairs across a field, or 12 comparative axes between two rival systems).
+  - *Chapter Construction*: (1) The shared problem or surface resemblance, (2) the exact physical, structural, or institutional fork where they diverge, and (3) a decisive real-world test or failure mode where confusing them is fatal.
+- **`"anatomy"` (The Anatomy / Under-the-Hood Form)**:
+  - *Structure*: Opens up **one complex everyday black box** (*Anatomy of a Jetliner*, *Anatomy of a City*, *Anatomy of a Hospital*, *Anatomy of a Smartphone*, *Anatomy of a Central Bank*) into 12 functional subsystems.
+  - *Chapter Construction*: Zooms into one physical or institutional subsystem, the hard constraint it solves, its historical invention, and how it couples to the rest of the whole.
+- **`"field-guide"` (The Field Guide / "How to Read..." Form)**:
+  - *Structure*: Decodes visible clues hiding in plain sight in the everyday world (*How to Read a City Street*, *How to Read a Building*, *How to Read the Sky*, *How to Read a Financial Statement*).
+  - *Chapter Construction*: Starts with an observable physical sign or artifact you pass in daily life, shows how to spot its diagnostic features, and unpacks the hidden engineering, geology, law, or economics that put it there.
+- **`"scale"` (The Scale Ladder / Powers of Ten Form)**:
+  - *Structure*: Climbs 12 orders of magnitude in size, time, energy, or population (*Being the Right Size*, *Twelve Scales of Time*, *From Village to Megacity*).
+  - *Chapter Construction*: Each chapter represents one rung on the scale ladder, pinpointing the exact physical or organizational phase transition where the old governing mechanism breaks and a new law takes over.
+- **`"inversion"` (The Counter-Intuition / Myth-Buster Form)**:
+  - *Structure*: Examines 12 entrenched misconceptions, optical/cognitive illusions, or folk-science traps in a domain.
+  - *Chapter Construction*: (1) States the universal everyday belief and why human intuition falls for it, (2) introduces the historical experiment or measurement that broke the illusion, and (3) unpacks the actual mechanism.
+- **`"chain"` (The End-to-End Chain Form)**:
+  - *Structure*: Follows one everyday object, signal, or resource across 12 sequential transformations (*From Sand to Thought*, *What Happens When You Click a Link*, *From Coffee Cherry to Morning Cup*).
+  - *Chapter Construction*: Each chapter is one self-contained link in a 12-stage physical or informational pipeline—receiving the output of Chapter $N-1$, executing its transformation and solving its bottleneck, and handing off to Chapter $N+1$.
+
 ---
 
-## Tier 3: The Two-Pass Creator Workflow & Steering Constraints
+## Tier 3: The Two-Pass Creator Workflow & Composite Option Selection
 
-Every book created on the platform follows a bounded two-pass loop:
-1. **Topic Input $\rightarrow$ 3–4 Forks on the Road**: Analyze the creator's raw topic and present 3–4 distinct 12-facet angles.
+Every book created on the platform follows a bounded two-pass loop where **topic exploration always evaluates the 9-Form Stockpile**:
+1. **Topic Input $\rightarrow$ 3–4 Composite Options (`Topic Angle × Structural Form × 12-Chapter Construction`)**:
+   - When the creator proposes a topic, do **not** offer four subtopic slices of the same default form.
+   - Evaluate the topic across the **Nine-Form Stockpile** (`"facet"`, `"listicle"`, `"landscape"`, `"contrast"`, `"anatomy"`, `"field-guide"`, `"scale"`, `"inversion"`, `"chain"`) and present **3–4 distinct composite options**.
+   - For each option, show:
+     1. **Proposed Title & Subtitle**
+     2. **Selected Form (`mode`) & Why It Fits This Angle**
+     3. **The 12-Chapter Construction** (how the 12 chapters are sliced and how each individual chapter is built).
 2. **First-Pass Generation (`v1`)**: Lock `dossiers/<slug>.json`, generate `v1`, and pass `scripts/validate_book.py`.
 3. **Creator Steering Prompt $\rightarrow$ Regenerate `v2` & Done**: Accept the creator's post-`v1` steering prompt (e.g., *"I want at least one quote per chapter"*, *"Swap Chapter 8"*, *"Add a diagram to Chapter 2"*), encode the constraint into `dossiers/<slug>.json` (under `creator_constraints`) and `scripts/validate_book.py` (e.g., `--require-quotes`), regenerate `v2`, validate, publish, and call it done.
 

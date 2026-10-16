@@ -5,7 +5,7 @@
   "subtitle": "The Restless Mind of William James",
   "category": "Psychology & Philosophy",
   "profile": "Profile B & D Hybrid: Physiological Psychology, Pragmatism & Extreme States",
-  "mode": "Mode I: Modular Facets (12 self-contained 5-minute essays showcasing a single mind)",
+  "mode": "facet",
   "cover": {
     "accent": "#e07a5f",
     "bg": "#1f1614",

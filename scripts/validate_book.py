@@ -285,12 +285,28 @@ def validate_book(
     slug = os.path.splitext(filename)[0].replace("_", "-")
     dossier_path = os.path.join(BASE_DIR, "dossiers", f"{slug}.json")
 
+    VALID_MODES = {
+        "facet",
+        "listicle",
+        "landscape",
+        "contrast",
+        "anatomy",
+        "field-guide",
+        "scale",
+        "inversion",
+        "chain",
+    }
+
     min_diagrams = 0
     book_mode = "facet"
     if os.path.exists(dossier_path):
         try:
             dossier = json.load(open(dossier_path, encoding="utf-8"))
             book_mode = dossier.get("mode", "facet")
+            if book_mode not in VALID_MODES:
+                errors.append(
+                    f"Invalid dossier mode '{book_mode}' in {dossier_path}. Must be one of {sorted(VALID_MODES)}."
+                )
             cc = dossier.get("creator_constraints", {})
             if cc.get("require_quote_per_chapter"):
                 require_quotes = True

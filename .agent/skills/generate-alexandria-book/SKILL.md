@@ -14,7 +14,7 @@ Every Alexandria volume uses the **Universal 12-Facet Container** (a ~250-word t
 
 ---
 
-## Stage 1: Topic Analysis, Fork Proposals & Anchor Deduplication
+## Stage 1: Topic Analysis, 9-Form Stockpile Evaluation & Composite Options
 
 1. **Read the Core Rules**:
    - View `/Users/niraj/book-writer/alexandria_manifesto.md` and `/Users/niraj/book-writer/GENERATION_GUIDELINES.md`.
@@ -24,26 +24,36 @@ Every Alexandria volume uses the **Universal 12-Facet Container** (a ~250-word t
      python3 scripts/publish_book.py --list-anchors
      ```
    - Every historical event, clinical case, or primary experiment already used as a chapter anchor in an existing book is **strictly off-limits** as a primary chapter anchor in the new volume.
-3. **Select the Structural Form (`mode`) & Present 3–4 Forks on the Road**:
-   - Alexandria supports **three structural forms** inside the 12-chapter container:
-     1. **`"facet"` (Narrative-Mechanism Facet)**: Each chapter pairs a concrete historical event/experiment with its underlying physical, biological, or institutional mechanism.
-     2. **`"listicle"` (Prospected 12-Gem Fleuron Listicle)**: When narrative is not the right fit and the reader wants the high-voltage highlights (e.g., *The Human Body*, where Chapter 1 is 12 dynamite facts about the Heart). Each chapter combines [`topic-prospector`](file:///Users/niraj/.gemini/config/plugins/topic-prospector/skills/topic-prospector/SKILL.md) perpendicular seeds with domain knowledge to deliver **12 self-contained paragraphs** (~45–55 words each) separated by **11 standalone centered fleuron (`❦`) lines** (never numbered lists!).
+3. **Evaluate the 9-Form Stockpile & Present 3–4 Composite Options**:
+   - When exploring a topic, **never present 3–4 subtopic slices of the same structural form**. Always consider the form alongside the topic and present **3–4 Composite Options (`Topic Angle × Structural Form × 12-Chapter Construction`)** drawn from the **Nine-Form Stockpile**:
+     1. **`"facet"` (Narrative-Mechanism Facet)**: Each chapter pairs a concrete historical scene, experiment, or clinical case with its underlying physical, biological, or institutional mechanism (ideal for 12 instances of a category, 12 systemic crises, or 12 facets of a single mind).
+     2. **`"listicle"` (Prospected 12-Gem Fleuron Listicle)**: When narrative is the wrong container and the reader wants high-voltage highlights (e.g., *The Human Body*). Each chapter combines [`topic-prospector`](file:///Users/niraj/.gemini/config/plugins/topic-prospector/skills/topic-prospector/SKILL.md) perpendicular seeds with domain knowledge to deliver **12 self-contained paragraphs** (~45–55 words each) separated by **11 standalone centered fleuron (`❦`) lines** (never numbered lists!).
      3. **`"landscape"` (Knowra Contextual Landscape)**: Inspired by `knowra.com` ([`/Users/niraj/knowra-browser/lib/prompts.ts`](file:///Users/niraj/knowra-browser/lib/prompts.ts)). Given a central topic $X$, Chapter 1 examines the anchor concept itself, and Chapters 2–12 explore **11 adjacent concepts** across Knowra's lenses (`Building blocks`, `Mechanism`, `Origins`, `Contrasts`, `Neighbors`, `Consequences`, `Cases`, `Open questions`) and moves (`zoom-in`, `zoom-out`, `go`, `contrast`), primed by linked `background_nodes` so the reader learns the topic in context with its surrounding landscape.
+     4. **`"contrast"` (The Contrast / Twins Form)**: Each chapter puts two confused, look-alike, or rival concepts side by side—unpacking (1) their shared surface problem, (2) the exact physical/institutional fork where they diverge, and (3) a decisive real-world test or failure mode.
+     5. **`"anatomy"` (The Anatomy / Under-the-Hood Form)**: Opens up **one complex everyday black box** (e.g., a jetliner, a city, a hospital, a central bank, a smartphone) into 12 functional subsystems, showing the constraint each organ solves and how it couples to the whole.
+     6. **`"field-guide"` (The Field Guide / "How to Read..." Form)**: Trains the reader's eye to decode 12 observable physical signs or artifacts hiding in plain sight in the everyday world (*How to Read a City Street*, *How to Read a Building*, *How to Read the Sky*).
+     7. **`"scale"` (The Scale Ladder / Powers of Ten Form)**: Climbs 12 orders of magnitude in size, time, energy, or population, pinpointing the exact phase transition at each rung where the old governing law breaks and a new mechanism takes over.
+     8. **`"inversion"` (The Counter-Intuition / Myth-Buster Form)**: Examines 12 entrenched folk-science beliefs or intuitive traps—stating why human intuition falls for the myth, the historical experiment that broke it, and the real mechanism.
+     9. **`"chain"` (The End-to-End Chain Form)**: Follows one everyday object, signal, or resource across 12 sequential physical or informational transformations from raw origin to final delivery (Chapter $N$ hands its output to Chapter $N+1$).
+   - **Composite Option Presentation Format**: For each of the 3–4 options presented to the creator, clearly show:
+     - **Option Title & Subtitle**
+     - **Form (`mode`) & Why It Fits**
+     - **12-Chapter Construction** (the 12-chapter list/arc + how each individual chapter is built in that form).
 
 ---
 
 ## Stage 2: Lock the 12-Chapter Dossier (`dossiers/<slug>.json`)
 
 Before drafting a single sentence of book prose, write a structured JSON blueprint to `/Users/niraj/book-writer/dossiers/<slug>.json` containing:
-- `slug` (hyphenated), `file` (underscored), `title`, `subtitle` (zero colons!), `category`, `profile`, `mode` (`"facet"`, `"listicle"`, or `"landscape"`), `accent`, `bg`, `theme`.
+- `slug` (hyphenated), `file` (underscored), `title`, `subtitle` (zero colons!), `category`, `profile`, `mode` (`"facet"`, `"listicle"`, `"landscape"`, `"contrast"`, `"anatomy"`, `"field-guide"`, `"scale"`, `"inversion"`, or `"chain"`), `accent`, `bg`, `theme`.
 - `creator_constraints` (optional object): Encodes any explicit creator rules so `scripts/validate_book.py` enforces them deterministically:
   - `"require_quote_per_chapter": true` — requires at least one documented verbatim quote (`"..."`) in every chapter (Chapters 1–12).
   - `"min_diagrams": 2` — requires at least $N$ schematic SVG diagrams (`2–4`) across the volume.
 - **Title Distinctness Rule**: Avoid overused head nouns already saturated in the catalog (*Architectures*, *Engines*, *Topologies*, *Thresholds*, *Asymmetries*, *Tales*, *Worlds*, *Instruments*, *Ghosts*, *Fictions*, *Bonds*) unless deliberately pairing with a creator's chosen title.
 - `chapters`: Array of 12 chapter objects:
-  - **For `"facet"` mode**: `chapter`, `title`, `subtitle`, `opening_door`, `historical_anchor`, `verbatim_quote`, `formalism_mode` (`"equation"`, `"diagram"`, or `"ledger_or_list"`), `exit_fact`.
+  - **For `"facet"`, `"contrast"`, `"anatomy"`, `"field-guide"`, `"scale"`, `"inversion"`, and `"chain"` modes**: `chapter`, `title`, `subtitle`, `opening_door`, `historical_anchor`, `verbatim_quote`, `formalism_mode` (`"equation"`, `"diagram"`, or `"ledger_or_list"`), `exit_fact` (plus optional mode-specific fields such as `pair` for `"contrast"`, `subsystem` for `"anatomy"`, `observable_sign` for `"field-guide"`, `scale_rung` for `"scale"`, `myth` for `"inversion"`, or `stage_handoff` for `"chain"`).
   - **For `"listicle"` mode**: `chapter`, `title`, `subtitle`, `prospected_seeds` (array of 12 sharp, perpendicular, number-anchored seeds combining `topic-prospector` cross-disciplinary insights with core domain knowledge, which will become the 12 `❦`-separated paragraphs of that chapter).
-  - **For `"landscape"` mode**: `chapter`, `title`, `subtitle`, `lens` (Knowra lens: `anchor`, `building-blocks`, `mechanism`, `origins`, `contrasts`, `neighbors`, `consequences`, `cases`, `open-questions`), `verb` (`anchor`, `zoom-in`, `zoom-out`, `go`, `contrast`), `what` (context-free definition), `why_here` (specific connection to the central topic), `background_nodes` (array of 4–5 linked sub-concepts with `label`, `what`, `whyHere`), and `formalism_mode`.
+  - **For `"landscape"` mode**: `chapter`, `title`, `subtitle`, `lens` (Knowra lens: `anchor`, `building-blocks`, `mechanism`, `origins`, `contrasts`, `neighbors`, `consequences`, `cases`, `open-questions`), `verb` (`anchor`, `zoom-in`, `zoom-out`, `go`, `contrast`), `what` (context-free definition), `why_here` (specific connection to the central topic), `background_nodes` (array of 3–5 linked sub-concepts with `label`, `what`, `whyHere`), and `formalism_mode`.
 
 ---
 
