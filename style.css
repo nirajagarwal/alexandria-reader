@@ -388,11 +388,11 @@
         }
 
         .pdf-footer-nav.prev {
-            left: calc(var(--m-h) - 1.5 * var(--pt));
+            left: calc(var(--m-h) - 12.0 * var(--pt));
         }
 
         .pdf-footer-nav.next {
-            right: calc(var(--m-h) - 1.5 * var(--pt));
+            right: calc(var(--m-h) - 12.0 * var(--pt));
         }
 
         [data-theme="dark"] .pdf-footer-nav {

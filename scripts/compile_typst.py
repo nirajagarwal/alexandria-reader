@@ -444,9 +444,9 @@ def build_typ_source(
             if is_mobile
             else (
                 "      if calc.odd(p) {\n"
-                "        align(left)[#h(10.5pt)#p]\n"
+                "        align(left)[#p]\n"
                 "      } else {\n"
-                "        align(right)[#p#h(10.5pt)]\n"
+                "        align(right)[#p]\n"
                 "      }\n"
             )
         )
