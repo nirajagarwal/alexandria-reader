@@ -498,37 +498,63 @@ def build_typ_source(
         f'#text(font: "Literata", size: {"17.0pt" if (is_mobile or is_compact) else "19.5pt"}, weight: "bold", fill: ink-color)[#book-title]',
         "#v(2pt)",
         f'#text(font: "Literata", size: {"10.2pt" if (is_mobile or is_compact) else "11.2pt"}, fill: sub-color)[#book-subtitle]',
-        "#v(5pt)",
+        "#v(6pt)",
         "#line(length: 100%, stroke: 0.6pt + accent-color)",
-        "#v(5pt)",
+        "#v(7pt)",
         '#text(font: "IBM Plex Mono", size: 6.8pt, tracking: 1.5pt, fill: muted-color)[CONTENTS]',
-        "#v(3pt)",
+        "#v(2pt)",
     ]
 
-    toc_entries = []
-    toc_title_sz = "7.7pt" if is_compact else ("7.9pt" if is_mobile else "8.5pt")
-    toc_sub_sz = "6.7pt" if is_compact else ("6.9pt" if is_mobile else "7.5pt")
-    toc_spacing = "2.6pt" if is_compact else ("3.2pt" if is_mobile else "4.2pt")
+    toc_scale = preset.get("toc_scale", 1.0)
+    toc_entries = [
+        "#[",
+        "  #set par(justify: false, leading: 0.42em, spacing: 0pt)",
+    ]
+    toc_title_sz = "7.8pt" if is_compact else ("7.8pt" if is_mobile else "8.6pt")
+    toc_sub_sz = "6.8pt" if is_compact else ("6.8pt" if is_mobile else "7.4pt")
+    base_entry_gap = 6.8 if is_compact else (6.2 if is_mobile else 8.4)
+    base_inner_gap = 3.8 if (is_compact or is_mobile) else 4.4
+    toc_entry_gap = f"{base_entry_gap * toc_scale:.2f}pt"
+    toc_inner_gap = f"{base_inner_gap * max(0.85, toc_scale):.2f}pt"
+    num_col_w = "15.5pt" if (is_compact or is_mobile) else "17.0pt"
+
     for sec in sections:
         idx = sec["index"]
-        lbl = "Introduction" if idx == 0 else f"{idx}. {sec['title']}"
-        lbl_esc = escape_typst_text(lbl)
+        title_esc = escape_typst_text(sec["title"])
         sub_esc = escape_typst_text(sec["subtitle"])
+        if idx == 0:
+            title_line = (
+                f'#text(size: {toc_title_sz}, weight: "semibold", fill: ink-color)['
+                f'#box(width: {num_col_w})[#text(fill: muted-color, weight: "regular")[—]]#box[Introduction]]'
+            )
+            sub_line = f'#pad(left: {num_col_w})[#text(size: {toc_sub_sz}, fill: muted-color)[{sub_esc}]]'
+        else:
+            # Escape period (\\.) so Typst never parses "1. Title" as a block-level #enum list!
+            title_line = (
+                f'#text(size: {toc_title_sz}, weight: "semibold", fill: ink-color)['
+                f'#box(width: {num_col_w})[{idx}\\.]#box[{title_esc}]]'
+            )
+            sub_line = f'#pad(left: {num_col_w})[#text(size: {toc_sub_sz}, fill: muted-color)[{sub_esc}]]'
+
         toc_entries.append(
-            f'#block(spacing: {toc_spacing})[\n'
-            f'  #context {{\n'
-            f'    let target = label("sec-{idx}")\n'
-            f'    let pg = locate(target).page()\n'
-            f'    set par(leading: 0.34em)\n'
-            f'    grid(\n'
-            f'      columns: (1fr, auto),\n'
-            f'      gutter: 6pt,\n'
-            f'      [#text(size: {toc_title_sz}, weight: "semibold")[#link(target)[{lbl_esc}]] #h(3pt) #text(size: {toc_sub_sz}, fill: muted-color)[{sub_esc}]],\n'
-            f'      [#text(font: "IBM Plex Mono", size: 7.5pt, fill: muted-color)[#link(target)[#pg]]]\n'
-            f'    )\n'
-            f'  }}\n'
-            f']'
+            f'  #block(above: {toc_entry_gap}, below: 0pt, breakable: false)[\n'
+            f'    #context {{\n'
+            f'      let target = label("sec-{idx}")\n'
+            f'      let pg = locate(target).page()\n'
+            f'      link(target)[\n'
+            f'        #grid(\n'
+            f'          columns: (1fr, auto),\n'
+            f'          column-gutter: 8pt,\n'
+            f'          row-gutter: {toc_inner_gap},\n'
+            f'          [{title_line}],\n'
+            f'          align(right + bottom)[#text(font: "IBM Plex Mono", size: 7.4pt, fill: muted-color)[#pg]],\n'
+            f'          grid.cell(colspan: 2)[{sub_line}]\n'
+            f'        )\n'
+            f'      ]\n'
+            f'    }}\n'
+            f'  ]'
         )
+    toc_entries.append("]")
     typ_lines.extend(toc_entries)
     typ_lines.append("#v(1fr)")
     typ_lines.append('#align(left)[#text(font: "IBM Plex Mono", size: 6.5pt, tracking: 1.4pt, fill: muted-color)[ALEXANDRIA PRESS · ALEXANDRIA.PRESS]]')
@@ -620,19 +646,24 @@ MOBILE_PRESET = {
 
 def _compile_single_preset(book_title, book_subtitle, category, accent_hex, sections, temp_dir, preset, typ_name, out_path, slug):
     typ_path = os.path.join(temp_dir, typ_name)
-    typ_src = build_typ_source(book_title, book_subtitle, category, accent_hex, sections, temp_dir, preset)
-    with open(typ_path, "w", encoding="utf-8") as f:
-        f.write(typ_src)
+    for scale in (1.0, 0.82, 0.68):
+        p_copy = dict(preset)
+        p_copy["toc_scale"] = scale
+        typ_src = build_typ_source(book_title, book_subtitle, category, accent_hex, sections, temp_dir, p_copy)
+        with open(typ_path, "w", encoding="utf-8") as f:
+            f.write(typ_src)
 
-    q_proc = subprocess.run(
-        ["typst", "query", "--font-path", FONT_DIR, typ_path, "<sec-mark>"],
-        capture_output=True,
-        text=True,
-    )
-    if q_proc.returncode != 0:
-        raise RuntimeError(f"Typst query failed for {slug} ({typ_name}):\n{q_proc.stderr}")
-    marks = json.loads(q_proc.stdout)
-    sec_pages = [m["value"]["page"] for m in marks[:-1]]
+        q_proc = subprocess.run(
+            ["typst", "query", "--font-path", FONT_DIR, typ_path, "<sec-mark>"],
+            capture_output=True,
+            text=True,
+        )
+        if q_proc.returncode != 0:
+            raise RuntimeError(f"Typst query failed for {slug} ({typ_name}):\n{q_proc.stderr}")
+        marks = json.loads(q_proc.stdout)
+        sec_pages = [m["value"]["page"] for m in marks[:-1]]
+        if not sec_pages or sec_pages[0] == 2:
+            break
 
     proc = subprocess.run(
         ["typst", "compile", "--font-path", FONT_DIR, typ_path, out_path],
