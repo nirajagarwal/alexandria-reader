@@ -674,10 +674,11 @@
             height: 100vh;
             height: 100dvh;
             width: 100vw;
+            max-width: 100%;
             display: flex;
             justify-content: center;
             align-items: stretch;
-            padding: 10px min(2.5vw, 32px);
+            padding: 6px min(1.5vw, 20px);
             position: relative;
             overflow: hidden;
             box-sizing: border-box;
@@ -685,20 +686,31 @@
 
         @media (max-width: 899px) {
             #main-stage, main {
-                padding: 4px 6px;
+                padding: 2px 4px;
             }
             .running-header, .running-footer {
+                height: 32px;
                 gap: 4px;
-                overflow-x: auto;
+                padding: 0 2px;
+                overflow: hidden;
+            }
+            .folio-left, .folio-right {
+                gap: 3px;
             }
             .running-header .folio-center,
+            .running-footer .folio-left,
             #view-mode-btn,
             #open-pdf-link {
                 display: none !important;
             }
+            .folio-brand {
+                font-size: 10px;
+                letter-spacing: 0.12em;
+            }
             .folio-btn {
-                padding: 3px 5px;
-                font-size: 9.5px;
+                padding: 2px 4px;
+                font-size: 9px;
+                letter-spacing: 0.06em;
             }
             .spread-stage {
                 grid-template-columns: 1fr;

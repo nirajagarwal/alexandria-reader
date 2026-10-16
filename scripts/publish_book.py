@@ -334,13 +334,15 @@ def main():
                 sys.exit(1)
             md_text = open(md_file, encoding="utf-8").read()
             title, subtitle = extract_title_subtitle(md_text)
-            pdf_path, sec_pages = compile_book_to_pdf(md_file, category=meta.get("category", "NON-FICTION"))
+            pdf_path, sec_pages, mob_path, mob_pages = compile_book_to_pdf(md_file, category=meta.get("category", "NON-FICTION"))
             meta["title"] = title
             meta["subtitle"] = subtitle
             meta["pdf"] = f"assets/pdfs/{slug}.pdf"
+            meta["mobilePdf"] = f"assets/pdfs/{slug}-mobile.pdf"
             meta["sectionPages"] = sec_pages
+            meta["mobileSectionPages"] = mob_pages
             meta["markdown"] = md_text
-            print(f"[SYNCED] {slug:26s} -> {len(md_text):6,d} chars | PDF: {os.path.getsize(pdf_path)//1024} KB | pages: {sec_pages}")
+            print(f"[SYNCED] {slug:26s} -> {len(md_text):6,d} chars | Desktop PDF: {os.path.getsize(pdf_path)//1024} KB | Mobile PDF: {os.path.getsize(mob_path)//1024} KB")
         save_books_data(prefix, data, suffix)
         sync_covers_data()
         print("Successfully synced all volumes and Typst PDFs into js/books-data.js and js/covers-data.js.")
@@ -373,15 +375,17 @@ def main():
         print(f"[COVER] Generated vector cover: assets/covers/{slug}.svg")
 
     from compile_typst import compile_book_to_pdf
-    pdf_path, sec_pages = compile_book_to_pdf(md_path, category=args.category, accent_hex=args.accent)
-    print(f"[TYPST] Compiled PDF: assets/pdfs/{slug}.pdf ({os.path.getsize(pdf_path)//1024} KB)")
+    pdf_path, sec_pages, mob_path, mob_pages = compile_book_to_pdf(md_path, category=args.category, accent_hex=args.accent)
+    print(f"[TYPST] Compiled PDFs: assets/pdfs/{slug}.pdf ({os.path.getsize(pdf_path)//1024} KB) & {slug}-mobile.pdf ({os.path.getsize(mob_path)//1024} KB)")
 
     data[slug] = {
         "title": title,
         "subtitle": subtitle,
         "category": args.category,
         "pdf": f"assets/pdfs/{slug}.pdf",
+        "mobilePdf": f"assets/pdfs/{slug}-mobile.pdf",
         "sectionPages": sec_pages,
+        "mobileSectionPages": mob_pages,
         "markdown": md_text,
     }
     save_books_data(prefix, data, suffix)

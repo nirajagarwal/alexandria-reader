@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1094,6 +1096,7 @@
         }
 
         let activePdfDoc = null;
+        let activePdfEdition = 'desktop'; // 'desktop' | 'mobile'
         const pdfDocCache = {};
         let pdfPageNum = 1;
         let zoomScale = 1.0;
@@ -1123,10 +1126,16 @@
             rebuildAndRenderSpread();
         }
 
-        function getSectionPages() {
+        function getSectionPages(forEdition) {
             const bookData = EMBEDDED_BOOKS[currentBookKey];
-            if (bookData && Array.isArray(bookData.sectionPages) && bookData.sectionPages.length) {
-                return bookData.sectionPages;
+            const ed = forEdition || (isTwoPageEffective() ? 'desktop' : 'mobile');
+            if (bookData) {
+                if (ed === 'mobile' && Array.isArray(bookData.mobileSectionPages) && bookData.mobileSectionPages.length) {
+                    return bookData.mobileSectionPages;
+                }
+                if (Array.isArray(bookData.sectionPages) && bookData.sectionPages.length) {
+                    return bookData.sectionPages;
+                }
             }
             return [2, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25];
         }
@@ -1147,6 +1156,25 @@
             currentChapterIndex = Math.min(chapIdx, parsedBook.chapters.length - 1);
         }
 
+        async function ensurePdfEditionLoaded(key, edition) {
+            const bookData = EMBEDDED_BOOKS[key];
+            if (!bookData || !window.pdfjsLib) return null;
+            const pdfUrl = (edition === 'mobile' && bookData.mobilePdf) ? bookData.mobilePdf : bookData.pdf;
+            if (!pdfUrl) return null;
+
+            const pdfLink = document.getElementById('open-pdf-link');
+            if (pdfLink) {
+                pdfLink.href = pdfUrl;
+                pdfLink.style.display = '';
+            }
+
+            const cacheKey = `${key}:${edition}`;
+            if (!pdfDocCache[cacheKey]) {
+                pdfDocCache[cacheKey] = await window.pdfjsLib.getDocument(pdfUrl).promise;
+            }
+            return pdfDocCache[cacheKey];
+        }
+
         async function loadBook(key, initialPage = 1) {
             currentBookKey = key;
             const bookData = EMBEDDED_BOOKS[key];
@@ -1155,23 +1183,16 @@
             currentChapterIndex = 0;
             currentSpreadIndex = 0;
             pdfPageNum = initialPage || 1;
+            activePdfEdition = isTwoPageEffective() ? 'desktop' : 'mobile';
 
             const pdfLink = document.getElementById('open-pdf-link');
-            if (pdfLink) {
-                if (bookData.pdf) {
-                    pdfLink.href = bookData.pdf;
-                    pdfLink.style.display = '';
-                } else {
-                    pdfLink.style.display = 'none';
-                }
+            if (pdfLink && !bookData.pdf) {
+                pdfLink.style.display = 'none';
             }
 
             if (bookData.pdf && window.pdfjsLib) {
                 try {
-                    if (!pdfDocCache[key]) {
-                        pdfDocCache[key] = await window.pdfjsLib.getDocument(bookData.pdf).promise;
-                    }
-                    activePdfDoc = pdfDocCache[key];
+                    activePdfDoc = await ensurePdfEditionLoaded(key, activePdfEdition);
                 } catch (err) {
                     console.error('Failed to load Typst PDF, falling back to Markdown:', err);
                     activePdfDoc = null;
@@ -1186,8 +1207,27 @@
             closeModals();
         }
 
-        function rebuildAndRenderSpread() {
+        async function rebuildAndRenderSpread() {
             if (!parsedBook || !parsedBook.chapters.length) return;
+
+            const desiredEdition = isTwoPageEffective() ? 'desktop' : 'mobile';
+            const bookData = EMBEDDED_BOOKS[currentBookKey];
+            if (bookData && bookData.pdf && window.pdfjsLib && desiredEdition !== activePdfEdition) {
+                const wasPageOne = (pdfPageNum === 1);
+                const savedChap = currentChapterIndex;
+                activePdfEdition = desiredEdition;
+                try {
+                    activePdfDoc = await ensurePdfEditionLoaded(currentBookKey, activePdfEdition);
+                    if (wasPageOne) {
+                        pdfPageNum = 1;
+                    } else {
+                        const newSecPages = getSectionPages(activePdfEdition);
+                        pdfPageNum = newSecPages[savedChap] || 2;
+                    }
+                } catch (e) {
+                    console.warn('Failed to switch PDF edition:', e);
+                }
+            }
 
             if (activePdfDoc) {
                 syncChapterFromPdfPage();
@@ -1357,13 +1397,15 @@
                 }
             }
 
-            // Compute Fit-Window dimensions for 5.5in x 8.5in trade trim aspect ratio
-            const stageRect = spreadContainer ? spreadContainer.getBoundingClientRect() : { width: window.innerWidth, height: window.innerHeight - 84 };
-            const rawW = Math.min(stageRect.width || window.innerWidth, window.innerWidth - 16);
-            const rawH = Math.min(stageRect.height || (window.innerHeight - 84), window.innerHeight - 84);
-            const availW = Math.max(240, rawW - 12);
-            const availH = Math.max(240, rawH - 8);
-            const PAGE_ASPECT = 5.5 / 8.5;
+            // Compute Fit-Window dimensions for Digital Desktop (6.4x7.5 per page -> 12.8x7.5 spread) or Mobile (4.2x7.5)
+            const vpW = document.documentElement.clientWidth || window.innerWidth;
+            const vpH = document.documentElement.clientHeight || window.innerHeight;
+            const stageRect = spreadContainer ? spreadContainer.getBoundingClientRect() : { width: vpW, height: vpH - 76 };
+            const rawW = Math.min(stageRect.width || vpW, vpW - 8);
+            const rawH = Math.min(stageRect.height || (vpH - 76), vpH - 76);
+            const availW = Math.max(200, rawW - 6);
+            const availH = Math.max(200, rawH - 4);
+            const PAGE_ASPECT = (activePdfEdition === 'mobile') ? (4.2 / 7.5) : (6.4 / 7.5);
 
             const showBoth = twoPage && rightPage !== null;
             const fitPageH = showBoth
@@ -1885,6 +1927,10 @@
                 const bookKey = params.get('read');
                 const pageParam = parseInt(params.get('page') || '0', 10);
                 const zoomParam = parseFloat(params.get('zoom') || '0');
+                const viewParam = (params.get('view') || '').toLowerCase();
+                if (viewParam === '1p' || viewParam === '2p') {
+                    userViewMode = viewParam;
+                }
                 if (EMBEDDED_BOOKS[bookKey]) {
                     hideHomeView();
                     if (zoomParam >= 0.6 && zoomParam <= 2.5) {
