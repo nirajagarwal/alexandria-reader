@@ -186,12 +186,34 @@ def sync_covers_data():
     open(covers_js_path, "w", encoding="utf-8").write(js_out)
 
 
+def _wrap_title_svg(title: str):
+    """Wrap titles >20 chars into 2 balanced lines with +2px (138 SVG units) vertical spacing."""
+    text = title.strip()
+    words = text.split()
+    if len(text) <= 20 or len(words) <= 1:
+        return 102, 365, html.escape(text)
+    best_idx = 1
+    best_max = 9999
+    for i in range(1, len(words)):
+        l1 = " ".join(words[:i])
+        l2 = " ".join(words[i:])
+        m = max(len(l1), len(l2))
+        if m < best_max:
+            best_max = m
+            best_idx = i
+    line1 = html.escape(" ".join(words[:best_idx]))
+    line2 = html.escape(" ".join(words[best_idx:]))
+    dy = 138
+    inner = f'<tspan x="800" dy="0">{line1}</tspan><tspan x="800" dy="{dy}">{line2}</tspan>'
+    return 102, 320, inner
+
+
 def _wrap_subtitle_svg(subtitle: str):
-    """Split subtitle into 2 or 3 balanced lines in the bottom zone (y_center=2010) with 1.46x line spacing and return (font_size, y_start, inner_svg)."""
+    """Split subtitle into 2 or 3 balanced lines in the bottom zone (y_center=2015) and return (font_size, y_start, inner_svg)."""
     text = subtitle.strip()
     words = text.split()
     if len(text) <= 24 or len(words) <= 3:
-        return 76, 2010, html.escape(text)
+        return 78, 2015, html.escape(text)
 
     if len(text) <= 46:
         # 2 balanced lines
@@ -206,9 +228,9 @@ def _wrap_subtitle_svg(subtitle: str):
                 best_idx = i
         line1 = html.escape(" ".join(words[:best_idx]))
         line2 = html.escape(" ".join(words[best_idx:]))
-        sub_font_size = 76 if best_max <= 23 else 74
-        dy = int(round(sub_font_size * 1.47))
-        y_start = 2010 - dy // 2
+        sub_font_size = 78
+        dy = 122
+        y_start = 2015 - dy // 2
         inner = f'<tspan x="800" dy="0">{line1}</tspan><tspan x="800" dy="{dy}">{line2}</tspan>'
         return sub_font_size, y_start, inner
 
@@ -229,9 +251,9 @@ def _wrap_subtitle_svg(subtitle: str):
     line1 = html.escape(" ".join(words[:i]))
     line2 = html.escape(" ".join(words[i:j]))
     line3 = html.escape(" ".join(words[j:]))
-    sub_font_size = 72 if best_max <= 25 else 68
-    dy = int(round(sub_font_size * 1.46))
-    y_start = 2010 - dy
+    sub_font_size = 74 if best_max <= 27 else 70
+    dy = 115 if sub_font_size == 74 else 109
+    y_start = 2015 - dy
     inner = (
         f'<tspan x="800" dy="0">{line1}</tspan>'
         f'<tspan x="800" dy="{dy}">{line2}</tspan>'
@@ -244,13 +266,9 @@ def generate_cover_svg(slug: str, title: str, subtitle: str, category: str, acce
     os.makedirs(COVERS_DIR, exist_ok=True)
     emblem = generate_emblem_svg(theme, accent)
     emblem = re.sub(r'^<g class="([^"]+)">', r'<g class="\1" transform="translate(0, -210)">', emblem)
-    title_font_size = 100 if len(title) <= 21 else 96
-    esc_cat = html.escape(category.upper())
-    cat_raw_len = len(category.strip())
-    cat_size = 33 if cat_raw_len >= 26 else 35
-    cat_ls = 7 if cat_raw_len >= 26 else 8
-    esc_title = html.escape(title)
+    title_font_size, title_y, title_inner = _wrap_title_svg(title)
     sub_font_size, sub_y, sub_inner = _wrap_subtitle_svg(subtitle)
+    subtitle_color = _blend_hex(accent, "#ffffff", 0.44)
     top_stop, mid_stop, edge_stop = _derive_cover_stops(bg, accent)
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2400" width="100%" height="100%">
@@ -270,18 +288,14 @@ def generate_cover_svg(slug: str, title: str, subtitle: str, category: str, acce
   <rect width="1600" height="2400" fill="url(#bg-{slug})"/>
   <rect width="1600" height="2400" fill="url(#halo-{slug})"/>
 
-  <g text-anchor="middle" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif">
-    <text x="800" y="275" font-size="{cat_size}" font-weight="700" letter-spacing="{cat_ls}" fill="{accent}" opacity="0.95">{esc_cat}</text>
-  </g>
-
   <g text-anchor="middle">
-    <text x="800" y="415" font-family="'Literata', Georgia, serif" font-size="{title_font_size}" font-weight="700" letter-spacing="-0.01em" fill="#faf9f6">{esc_title}</text>
+    <text x="800" y="{title_y}" font-family="'Literata', Georgia, serif" font-size="{title_font_size}" font-weight="700" letter-spacing="-0.01em" fill="{accent}">{title_inner}</text>
   </g>
 
   {emblem}
 
-  <g text-anchor="middle">
-    <text x="800" y="{sub_y}" font-family="'Literata', Georgia, serif" font-size="{sub_font_size}" font-weight="500" letter-spacing="0.005em" fill="#e2e8f0" opacity="0.92">{sub_inner}</text>
+  <g text-anchor="middle" transform="translate(800, 0) scale(0.87, 1) translate(-800, 0)">
+    <text x="800" y="{sub_y}" font-family="'Literata', Georgia, serif" font-size="{sub_font_size}" font-weight="300" letter-spacing="0.01em" fill="{subtitle_color}">{sub_inner}</text>
   </g>
 </svg>
 """

@@ -15,17 +15,13 @@
   <rect width="1600" height="2400" fill="url(#bg-radical-subtraction)"/>
   <rect width="1600" height="2400" fill="url(#halo-radical-subtraction)"/>
 
-  <g text-anchor="middle" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif">
-    <text x="800" y="275" font-size="35" font-weight="700" letter-spacing="8" fill="#eab308" opacity="0.95">CONTEMPLATIVE THEORY</text>
-  </g>
-
   <g text-anchor="middle">
-    <text x="800" y="415" font-family="'Literata', Georgia, serif" font-size="100" font-weight="700" letter-spacing="-0.01em" fill="#faf9f6">Radical Subtraction</text>
+    <text x="800" y="365" font-family="'Literata', Georgia, serif" font-size="102" font-weight="700" letter-spacing="-0.01em" fill="#eab308">Radical Subtraction</text>
   </g>
 
   <g class="emblem-void" transform="translate(0, -210)"><circle cx="800" cy="1400" r="45" stroke="#eab308" stroke-width="3.6" stroke-dasharray="none" fill="none" opacity="0.87"/><circle cx="800" cy="1400" r="85" stroke="#eab308" stroke-width="3.2" stroke-dasharray="none" fill="none" opacity="0.80"/><circle cx="800" cy="1400" r="135" stroke="#eab308" stroke-width="2.8" stroke-dasharray="none" fill="none" opacity="0.71"/><circle cx="800" cy="1400" r="195" stroke="#eab308" stroke-width="2.2" stroke-dasharray="29.2,19.5" fill="none" opacity="0.60"/><circle cx="800" cy="1400" r="265" stroke="#eab308" stroke-width="1.6" stroke-dasharray="39.8,26.5" fill="none" opacity="0.48"/><circle cx="800" cy="1400" r="340" stroke="#eab308" stroke-width="1.2" stroke-dasharray="51.0,34.0" fill="none" opacity="0.34"/><circle cx="800" cy="1400" r="420" stroke="#eab308" stroke-width="1.2" stroke-dasharray="63.0,42.0" fill="none" opacity="0.20"/><line x1="890.0" y1="1400.0" x2="1230.0" y2="1400.0" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="883.1" y1="1434.4" x2="1197.3" y2="1564.6" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="863.6" y1="1463.6" x2="1104.1" y2="1704.1" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="834.4" y1="1483.1" x2="964.6" y2="1797.3" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="800.0" y1="1490.0" x2="800.0" y2="1830.0" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="765.6" y1="1483.1" x2="635.4" y2="1797.3" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="736.4" y1="1463.6" x2="495.9" y2="1704.1" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="716.9" y1="1434.4" x2="402.7" y2="1564.6" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="710.0" y1="1400.0" x2="370.0" y2="1400.0" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="716.9" y1="1365.6" x2="402.7" y2="1235.4" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="736.4" y1="1336.4" x2="495.9" y2="1095.9" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="765.6" y1="1316.9" x2="635.4" y2="1002.7" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="800.0" y1="1310.0" x2="800.0" y2="970.0" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="834.4" y1="1316.9" x2="964.6" y2="1002.7" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="863.6" y1="1336.4" x2="1104.1" y2="1095.9" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><line x1="883.1" y1="1365.6" x2="1197.3" y2="1235.4" stroke="#eab308" stroke-width="1.0" opacity="0.3"/><circle cx="800" cy="1400" r="15" fill="#eab308"/></g>
 
-  <g text-anchor="middle">
-    <text x="800" y="1954" font-family="'Literata', Georgia, serif" font-size="76" font-weight="500" letter-spacing="0.005em" fill="#e2e8f0" opacity="0.92"><tspan x="800" dy="0">Sensory Isolation</tspan><tspan x="800" dy="112">and the Quiet Mind</tspan></text>
+  <g text-anchor="middle" transform="translate(800, 0) scale(0.87, 1) translate(-800, 0)">
+    <text x="800" y="1954" font-family="'Literata', Georgia, serif" font-size="78" font-weight="300" letter-spacing="0.01em" fill="#f3d475"><tspan x="800" dy="0">Sensory Isolation</tspan><tspan x="800" dy="122">and the Quiet Mind</tspan></text>
   </g>
 </svg>

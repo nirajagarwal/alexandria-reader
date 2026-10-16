@@ -1,5 +1,12 @@
 @font-face {
     font-family: 'Literata';
+    src: url('fonts/Literata-300-normal.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Literata';
     src: url('fonts/Literata-400-normal.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
