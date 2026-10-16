@@ -2218,6 +2218,126 @@
         "subtitle": "How Thankfulness Binds Strangers into Long-Term Cooperators"
       }
     ]
+  },
+  "twelve-plants": {
+    "title": "Twelve Plants",
+    "subtitle": "How Familiar Crops, Trees, and Alkaloids Remade the Human World",
+    "category": "Botany & History",
+    "pdf": "assets/pdfs/twelve-plants.pdf",
+    "compactPdf": "assets/pdfs/twelve-plants-compact.pdf",
+    "mobilePdf": "assets/pdfs/twelve-plants-mobile.pdf",
+    "sectionPages": [
+      2,
+      3,
+      6,
+      9,
+      12,
+      15,
+      18,
+      21,
+      24,
+      27,
+      30,
+      33,
+      36
+    ],
+    "compactSectionPages": [
+      2,
+      3,
+      7,
+      11,
+      15,
+      19,
+      22,
+      26,
+      29,
+      33,
+      36,
+      39,
+      42
+    ],
+    "mobileSectionPages": [
+      2,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      44,
+      48
+    ],
+    "chapters": [
+      {
+        "label": "Introduction",
+        "title": "Twelve Plants",
+        "subtitle": "The Hidden Engineering Inside Everyday Flora"
+      },
+      {
+        "label": "Chapter 1",
+        "title": "Wheat and the Shortened Stalk",
+        "subtitle": "Non-Shattering Ears and Why Dwarf Straw Prevented Global Famine"
+      },
+      {
+        "label": "Chapter 2",
+        "title": "Coffee and the Memory Nectar",
+        "subtitle": "How a Mountain Shrub Poisoned Beetles and Bribed Honeybees"
+      },
+      {
+        "label": "Chapter 3",
+        "title": "Corn and the Two-Cell Carbon Pump",
+        "subtitle": "How Five Mutations Turned a Stony Wild Grass into a Solar Engine"
+      },
+      {
+        "label": "Chapter 4",
+        "title": "The Potato and the Clonal Trap",
+        "subtitle": "Andean Freeze-Dried Tubers and Why One Water Mold Broke Ireland"
+      },
+      {
+        "label": "Chapter 5",
+        "title": "Rubber and the Entropic Spring",
+        "subtitle": "Smuggled Amazonian Seeds and Why Stretched Polymer Chains Snap Back"
+      },
+      {
+        "label": "Chapter 6",
+        "title": "Cinchona and the Crystal Poison",
+        "subtitle": "Andean Fever Bark and How Quinine Drowns Malaria in Its Own Waste"
+      },
+      {
+        "label": "Chapter 7",
+        "title": "Chili Peppers and the Selective Fire",
+        "subtitle": "Why Capsaicin Burns Mammalian Molars While Leaving Birds Immune"
+      },
+      {
+        "label": "Chapter 8",
+        "title": "Tea and the Bruised Leaf",
+        "subtitle": "Robert Fortune's Glass Cases and the Enzyme Switch Between Green and Black"
+      },
+      {
+        "label": "Chapter 9",
+        "title": "Cotton and the Twisted Ribbon",
+        "subtitle": "An Ocean-Crossing Hybrid Seed and the Wire Teeth of Mulberry Grove"
+      },
+      {
+        "label": "Chapter 10",
+        "title": "Rice and the Underwater Snorkel",
+        "subtitle": "Hollow Root Tubes and the Hibernation Gene That Survives Monsoon Floods"
+      },
+      {
+        "label": "Chapter 11",
+        "title": "Sugar Cane and the Vacuum Pan",
+        "subtitle": "Turgor Pressure Limits and How Recycled Steam Transformed Boiling Houses"
+      },
+      {
+        "label": "Chapter 12",
+        "title": "The Oak and the Crooked Knee",
+        "subtitle": "Tannin Armor, Plugged Vessels, and the Two Thousand Trees Inside a Warship"
+      }
+    ]
   }
 };
 }));
