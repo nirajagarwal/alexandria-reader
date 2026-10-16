@@ -181,6 +181,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+
+    <!-- PDF.js for Typst Print-Grade Spread Rendering -->
+    <script src="vendor/pdfjs/pdf.min.js"></script>
 </head>
 <body>
     <!-- Alexandria Home Catalog View -->
@@ -309,18 +312,34 @@
                 </div>
                 <div class="folio-center" id="header-center-box" onclick="openTocModal()" title="View Contents (T)"></div>
                 <div class="folio-right">
+                    <div class="zoom-controls" id="pdf-zoom-controls">
+                        <button class="zoom-btn" onclick="adjustZoom(-0.15)" title="Zoom Out (-)">−</button>
+                        <span class="zoom-readout" id="zoom-readout" onclick="resetZoom()" title="Reset to Fit Window (0)">Fit</span>
+                        <button class="zoom-btn" onclick="adjustZoom(0.15)" title="Zoom In (+)">+</button>
+                    </div>
+                    <button class="folio-btn" id="view-mode-btn" onclick="toggleViewMode()" title="Toggle 2-Page / 1-Page View (V)">2P</button>
                     <button class="folio-btn" onclick="openTocModal()" title="Contents (T)">Contents</button>
                     <button class="folio-btn" onclick="openLibraryModal()" title="Library (L)">Library</button>
-                    <button class="folio-btn" onclick="toggleTelescope()" title="Telescope (E)">Telescope</button>
+                    <a class="folio-btn" id="open-pdf-link" href="assets/pdfs/non-linear-engines.pdf" target="_blank" rel="noopener" title="Open Print PDF" style="text-decoration:none;">PDF</a>
                     <button class="folio-btn" onclick="cycleTheme()" title="Theme (D)">Theme</button>
                     <button class="folio-btn" onclick="openHelpModal()" title="Shortcuts (?)">?</button>
                 </div>
             </div>
 
-            <!-- Two-Column Page Spread Stage -->
-            <div class="spread-stage" id="spread-container">
-                <div class="spread-col col-left" id="col-left"></div>
-                <div class="spread-col col-right" id="col-right"></div>
+            <!-- Two-Page / Single-Page Typst PDF Spread Stage -->
+            <div class="spread-stage pdf-spread-stage" id="spread-container">
+                <div class="pdf-book-frame two-page" id="pdf-book-frame">
+                    <div class="pdf-page-slot" id="pdf-slot-left">
+                        <canvas id="pdf-canvas-left"></canvas>
+                        <div class="pdf-link-layer" id="pdf-links-left"></div>
+                    </div>
+                    <div class="pdf-page-slot" id="pdf-slot-right">
+                        <canvas id="pdf-canvas-right"></canvas>
+                        <div class="pdf-link-layer" id="pdf-links-right"></div>
+                    </div>
+                </div>
+                <div class="spread-col col-left" id="col-left" style="display:none;"></div>
+                <div class="spread-col col-right" id="col-right" style="display:none;"></div>
             </div>
 
             <!-- Unified Running Footer (Bottom Folio) -->
@@ -331,7 +350,7 @@
                     </span>
                 </div>
                 <div class="folio-center">
-                    <span class="folio-page-counter" id="footer-page-counter">Spread 1 of 1</span>
+                    <span class="folio-page-counter" id="footer-page-counter">Pages 1–2 of 26</span>
                 </div>
                 <div class="folio-right">
                     <button class="folio-btn" id="prev-spread-btn" onclick="window.advancePage(-1)" title="Previous Spread (←)">← Prev</button>
@@ -388,18 +407,18 @@
                 <button class="btn-icon" onclick="closeModals()">Close</button>
             </div>
             <div style="font-family:var(--font-sans); font-size:0.92em; line-height:2.1; margin-bottom:14px;">
-                <div><kbd>→</kbd> / <kbd>Space</kbd> : Turn to next spread (no scrolling)</div>
-                <div><kbd>←</kbd> / <kbd>Shift+Space</kbd> : Turn to previous spread</div>
-                <div><kbd>n</kbd> : Next chapter</div>
-                <div><kbd>p</kbd> : Previous chapter</div>
+                <div><kbd>→</kbd> / <kbd>Space</kbd> : Turn to next spread / page</div>
+                <div><kbd>←</kbd> / <kbd>Shift+Space</kbd> : Turn to previous spread / page</div>
+                <div><kbd>+</kbd> / <kbd>−</kbd> / <kbd>0</kbd> : Zoom in / Zoom out / Fit Window</div>
+                <div><kbd>v</kbd> : Toggle 2-Page Spread / 1-Page View</div>
+                <div><kbd>n</kbd> / <kbd>p</kbd> : Next / Previous chapter</div>
                 <div><kbd>t</kbd> : Table of Contents</div>
                 <div><kbd>l</kbd> : Library Selector</div>
-                <div><kbd>e</kbd> : Toggle Telescopic Drawer</div>
                 <div><kbd>d</kbd> : Cycle Theme (Light / Dark / Sepia)</div>
                 <div><kbd>Esc</kbd> : Close open drawer / modal</div>
             </div>
             <div style="font-family:var(--font-sans); font-size:0.8em; color:var(--text-muted); border-top:1px solid var(--border-color); padding-top:10px;">
-                Engine: <strong>chenglou/pretext</strong> (exact canvas multiline text budget layout) + <strong>lyallcooper/justif</strong> (Knuth-Plass TeX line-breaking &amp; hyphenation).
+                Typesetting Engine: <strong>Typst 0.15</strong> (deterministic trade-book pagination, native math &amp; vector schematics) + <strong>PDF.js</strong> HiDPI spread renderer.
             </div>
         </div>
     </div>
@@ -1083,13 +1102,97 @@
             return spreads;
         }
 
-        function loadBook(key) {
+        if (window.pdfjsLib) {
+            window.pdfjsLib.GlobalWorkerOptions.workerSrc = 'vendor/pdfjs/pdf.worker.min.js';
+        }
+
+        let activePdfDoc = null;
+        const pdfDocCache = {};
+        let pdfPageNum = 1;
+        let zoomScale = 1.0;
+        let userViewMode = 'auto'; // 'auto' | '2p' | '1p'
+        let activeRenderTasks = { left: null, right: null };
+        let renderToken = 0;
+
+        function isTwoPageEffective() {
+            if (userViewMode === '2p') return true;
+            if (userViewMode === '1p') return false;
+            return window.innerWidth >= 900;
+        }
+
+        function adjustZoom(delta) {
+            zoomScale = Math.max(0.6, Math.min(2.5, Math.round((zoomScale + delta) * 100) / 100));
+            rebuildAndRenderSpread();
+        }
+
+        function resetZoom() {
+            zoomScale = 1.0;
+            rebuildAndRenderSpread();
+        }
+
+        function toggleViewMode() {
+            const currentlyTwo = isTwoPageEffective();
+            userViewMode = currentlyTwo ? '1p' : '2p';
+            rebuildAndRenderSpread();
+        }
+
+        function getSectionPages() {
+            const bookData = EMBEDDED_BOOKS[currentBookKey];
+            if (bookData && Array.isArray(bookData.sectionPages) && bookData.sectionPages.length) {
+                return bookData.sectionPages;
+            }
+            return [2, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25];
+        }
+
+        function syncChapterFromPdfPage() {
+            if (!parsedBook || !parsedBook.chapters.length) return;
+            const sectionPages = getSectionPages();
+            const twoPage = isTwoPageEffective();
+            const leftP = twoPage ? (Math.floor((pdfPageNum - 1) / 2) * 2 + 1) : pdfPageNum;
+            const maxVisiblePage = twoPage ? (leftP + 1) : leftP;
+
+            let chapIdx = 0;
+            for (let i = 0; i < sectionPages.length; i++) {
+                if (sectionPages[i] <= maxVisiblePage) {
+                    chapIdx = i;
+                }
+            }
+            currentChapterIndex = Math.min(chapIdx, parsedBook.chapters.length - 1);
+        }
+
+        async function loadBook(key, initialPage = 1) {
             currentBookKey = key;
             const bookData = EMBEDDED_BOOKS[key];
             if (!bookData) return;
             parsedBook = parseAlexandriaMarkdown(bookData.markdown);
             currentChapterIndex = 0;
             currentSpreadIndex = 0;
+            pdfPageNum = initialPage || 1;
+
+            const pdfLink = document.getElementById('open-pdf-link');
+            if (pdfLink) {
+                if (bookData.pdf) {
+                    pdfLink.href = bookData.pdf;
+                    pdfLink.style.display = '';
+                } else {
+                    pdfLink.style.display = 'none';
+                }
+            }
+
+            if (bookData.pdf && window.pdfjsLib) {
+                try {
+                    if (!pdfDocCache[key]) {
+                        pdfDocCache[key] = await window.pdfjsLib.getDocument(bookData.pdf).promise;
+                    }
+                    activePdfDoc = pdfDocCache[key];
+                } catch (err) {
+                    console.error('Failed to load Typst PDF, falling back to Markdown:', err);
+                    activePdfDoc = null;
+                }
+            } else {
+                activePdfDoc = null;
+            }
+
             rebuildAndRenderSpread();
             renderTocList();
             renderLibraryList();
@@ -1098,8 +1201,16 @@
 
         function rebuildAndRenderSpread() {
             if (!parsedBook || !parsedBook.chapters.length) return;
-            const ch = parsedBook.chapters[currentChapterIndex];
 
+            if (activePdfDoc) {
+                syncChapterFromPdfPage();
+                renderPdfSpread();
+                const ch = parsedBook.chapters[currentChapterIndex];
+                if (ch) updateTelescopeWidgets(ch);
+                return;
+            }
+
+            const ch = parsedBook.chapters[currentChapterIndex];
             chapterSpreads = paginateChapter(ch);
             if (currentSpreadIndex >= chapterSpreads.length) {
                 currentSpreadIndex = Math.max(0, chapterSpreads.length - 1);
@@ -1108,6 +1219,192 @@
 
             renderActiveSpread();
             updateTelescopeWidgets(ch);
+        }
+
+        async function renderSinglePdfPage(pageNumber, canvasEl, linksEl, slotEl, pageW, pageH, slotKey, myToken) {
+            if (!activePdfDoc || !canvasEl || !slotEl) return;
+            slotEl.style.width = pageW + 'px';
+            slotEl.style.height = pageH + 'px';
+            if (linksEl) linksEl.innerHTML = '';
+
+            if (activeRenderTasks[slotKey]) {
+                try { activeRenderTasks[slotKey].cancel(); } catch (e) {}
+                activeRenderTasks[slotKey] = null;
+            }
+
+            try {
+                const page = await activePdfDoc.getPage(pageNumber);
+                if (myToken !== renderToken) return;
+
+                const unscaledVp = page.getViewport({ scale: 1 });
+                const dpr = Math.min(window.devicePixelRatio || 1, 3);
+                const cssScale = pageW / unscaledVp.width;
+                const hiDpiViewport = page.getViewport({ scale: cssScale * dpr });
+
+                canvasEl.width = Math.floor(hiDpiViewport.width);
+                canvasEl.height = Math.floor(hiDpiViewport.height);
+                canvasEl.style.width = pageW + 'px';
+                canvasEl.style.height = pageH + 'px';
+
+                const ctx = canvasEl.getContext('2d');
+                const task = page.render({ canvasContext: ctx, viewport: hiDpiViewport });
+                activeRenderTasks[slotKey] = task;
+                await task.promise;
+                if (myToken !== renderToken) return;
+
+                // Render interactive TOC link hotspots on Page 1
+                if (linksEl && pageNumber === 1) {
+                    const annots = await page.getAnnotations();
+                    if (myToken !== renderToken) return;
+                    const linkAnnots = annots
+                        .filter(a => a.subtype === 'Link' && Array.isArray(a.rect))
+                        .sort((a, b) => b.rect[1] - a.rect[1]);
+                    const cssVp = page.getViewport({ scale: cssScale });
+                    const sectionPages = getSectionPages();
+
+                    linkAnnots.forEach((annot, idx) => {
+                        const rect = cssVp.convertToViewportRectangle(annot.rect);
+                        const left = Math.min(rect[0], rect[2]);
+                        const top = Math.min(rect[1], rect[3]);
+                        const width = Math.abs(rect[2] - rect[0]);
+                        const height = Math.abs(rect[3] - rect[1]);
+
+                        const targetPage = sectionPages[idx] || (idx === 0 ? 2 : (idx * 2 + 1));
+                        const chObj = parsedBook.chapters[idx];
+                        const a = document.createElement('a');
+                        a.className = 'pdf-link-hotspot';
+                        a.href = '#';
+                        a.title = chObj ? `${chObj.label}: ${chObj.title}` : `Jump to Page ${targetPage}`;
+                        a.style.left = `${left.toFixed(1)}px`;
+                        a.style.top = `${top.toFixed(1)}px`;
+                        a.style.width = `${width.toFixed(1)}px`;
+                        a.style.height = `${height.toFixed(1)}px`;
+                        a.onclick = (ev) => {
+                            ev.preventDefault();
+                            pdfPageNum = targetPage;
+                            rebuildAndRenderSpread();
+                        };
+                        linksEl.appendChild(a);
+                    });
+                }
+            } catch (err) {
+                if (err && err.name !== 'RenderingCancelledException') {
+                    console.warn('PDF page render notice:', err);
+                }
+            }
+        }
+
+        function updateHeaderAndFooterFolio() {
+            const ch = parsedBook.chapters[currentChapterIndex] || parsedBook.chapters[0];
+            const headerCenter = document.getElementById('header-center-box');
+            if (headerCenter && ch) {
+                headerCenter.innerHTML = `
+                    <span class="folio-chap-tag" id="header-chap-label">${escapeHtml(ch.label)}</span>
+                    <span class="folio-sep">·</span>
+                    <span class="folio-title" id="header-chap-title">${escapeHtml(ch.title)}</span>
+                    <span class="folio-sep">—</span>
+                    <span class="folio-subtitle" id="header-chap-subtitle">${escapeHtml(ch.subtitle)}</span>
+                `;
+            }
+
+            const footerBook = document.getElementById('footer-book-name');
+            if (footerBook) footerBook.innerText = parsedBook.title;
+        }
+
+        function renderPdfSpread() {
+            if (!activePdfDoc) return;
+            const myToken = ++renderToken;
+
+            const spreadContainer = document.getElementById('spread-container');
+            const bookFrame = document.getElementById('pdf-book-frame');
+            const slotLeft = document.getElementById('pdf-slot-left');
+            const slotRight = document.getElementById('pdf-slot-right');
+            const canvasLeft = document.getElementById('pdf-canvas-left');
+            const canvasRight = document.getElementById('pdf-canvas-right');
+            const linksLeft = document.getElementById('pdf-links-left');
+            const linksRight = document.getElementById('pdf-links-right');
+            const colLeft = document.getElementById('col-left');
+            const colRight = document.getElementById('col-right');
+
+            if (spreadContainer) {
+                spreadContainer.classList.add('pdf-spread-stage');
+                spreadContainer.classList.toggle('is-zoomed', zoomScale > 1.02);
+            }
+            if (bookFrame) bookFrame.style.display = 'flex';
+            if (colLeft) colLeft.style.display = 'none';
+            if (colRight) colRight.style.display = 'none';
+
+            const twoPage = isTwoPageEffective();
+            const totalPages = activePdfDoc.numPages;
+
+            let leftPage = pdfPageNum;
+            let rightPage = null;
+
+            if (twoPage) {
+                const spreadIdx = Math.floor((Math.max(1, Math.min(totalPages, pdfPageNum)) - 1) / 2);
+                leftPage = spreadIdx * 2 + 1;
+                rightPage = (leftPage + 1 <= totalPages) ? (leftPage + 1) : null;
+                pdfPageNum = leftPage;
+            } else {
+                leftPage = Math.max(1, Math.min(totalPages, pdfPageNum));
+                rightPage = null;
+                pdfPageNum = leftPage;
+            }
+
+            syncChapterFromPdfPage();
+            updateHeaderAndFooterFolio();
+
+            const viewBtn = document.getElementById('view-mode-btn');
+            if (viewBtn) viewBtn.innerText = twoPage ? '2P' : '1P';
+
+            const zoomReadout = document.getElementById('zoom-readout');
+            if (zoomReadout) {
+                zoomReadout.innerText = Math.abs(zoomScale - 1.0) < 0.01 ? 'Fit' : `${Math.round(zoomScale * 100)}%`;
+            }
+
+            const footerCounter = document.getElementById('footer-page-counter');
+            if (footerCounter) {
+                if (twoPage && rightPage) {
+                    const spreadIdx = Math.floor((leftPage - 1) / 2) + 1;
+                    const totalSpreads = Math.ceil(totalPages / 2);
+                    footerCounter.innerText = `Pages ${leftPage}–${rightPage} of ${totalPages}  ·  Spread ${spreadIdx} of ${totalSpreads}`;
+                } else {
+                    footerCounter.innerText = `Page ${leftPage} of ${totalPages}`;
+                }
+            }
+
+            // Compute Fit-Window dimensions for 5.5in x 8.5in trade trim aspect ratio
+            const stageRect = spreadContainer ? spreadContainer.getBoundingClientRect() : { width: window.innerWidth, height: window.innerHeight - 84 };
+            const rawW = Math.min(stageRect.width || window.innerWidth, window.innerWidth - 16);
+            const rawH = Math.min(stageRect.height || (window.innerHeight - 84), window.innerHeight - 84);
+            const availW = Math.max(240, rawW - 12);
+            const availH = Math.max(240, rawH - 8);
+            const PAGE_ASPECT = 5.5 / 8.5;
+
+            const showBoth = twoPage && rightPage !== null;
+            const fitPageH = showBoth
+                ? Math.floor(Math.min(availH, availW / (2 * PAGE_ASPECT)))
+                : Math.floor(Math.min(availH, availW / PAGE_ASPECT));
+            const fitPageW = Math.floor(fitPageH * PAGE_ASPECT);
+
+            const pageH = Math.max(220, Math.round(fitPageH * zoomScale));
+            const pageW = Math.max(142, Math.round(fitPageW * zoomScale));
+
+            if (bookFrame) {
+                bookFrame.className = showBoth ? 'pdf-book-frame two-page' : 'pdf-book-frame single-page';
+            }
+
+            if (slotLeft) slotLeft.style.display = 'block';
+            renderSinglePdfPage(leftPage, canvasLeft, linksLeft, slotLeft, pageW, pageH, 'left', myToken);
+
+            if (showBoth && slotRight) {
+                slotRight.style.display = 'block';
+                renderSinglePdfPage(rightPage, canvasRight, linksRight, slotRight, pageW, pageH, 'right', myToken);
+            } else if (slotRight) {
+                slotRight.style.display = 'none';
+            }
+
+            renderTocList();
         }
 
         function fitDiagramBoxes(containerEl) {
@@ -1150,7 +1447,6 @@
                                 t.setAttribute('x', String(Math.round(newX + reqW / 2)));
                             }
                         });
-                        // Trim any horizontal line endpoint that was attached to the old box left/right edge
                         lines.forEach(ln => {
                             const x1 = parseFloat(ln.getAttribute('x1') || '0');
                             const y1 = parseFloat(ln.getAttribute('y1') || '0');
@@ -1168,40 +1464,31 @@
         }
 
         function renderActiveSpread() {
+            const spreadContainer = document.getElementById('spread-container');
+            const bookFrame = document.getElementById('pdf-book-frame');
+            const colLeft = document.getElementById('col-left');
+            const colRight = document.getElementById('col-right');
+
+            if (spreadContainer) spreadContainer.classList.remove('pdf-spread-stage', 'is-zoomed');
+            if (bookFrame) bookFrame.style.display = 'none';
+            if (colLeft) colLeft.style.display = '';
+            if (colRight) colRight.style.display = '';
+
             const ch = parsedBook.chapters[currentChapterIndex];
             const spread = chapterSpreads[currentSpreadIndex] || { colLeftHtml: "", colRightHtml: "" };
 
-            const headerCenter = document.getElementById('header-center-box');
-            if (headerCenter) {
-                if (currentSpreadIndex === 0) {
-                    headerCenter.innerHTML = `<span class="folio-title" style="font-size:12.5px; opacity:0.65;">${escapeHtml(parsedBook.title)}</span>`;
-                } else {
-                    headerCenter.innerHTML = `
-                        <span class="folio-chap-tag" id="header-chap-label">${escapeHtml(ch.label)}</span>
-                        <span class="folio-sep">·</span>
-                        <span class="folio-title" id="header-chap-title">${escapeHtml(ch.title)}</span>
-                        <span class="folio-sep">—</span>
-                        <span class="folio-subtitle" id="header-chap-subtitle">${escapeHtml(ch.subtitle)}</span>
-                    `;
-                }
-            }
-
-            const footerBook = document.getElementById('footer-book-name');
-            if (footerBook) footerBook.innerText = parsedBook.title;
+            updateHeaderAndFooterFolio();
 
             const footerCounter = document.getElementById('footer-page-counter');
             if (footerCounter) footerCounter.innerText = `Spread ${currentSpreadIndex + 1} of ${chapterSpreads.length}`;
 
-            const colLeft = document.getElementById('col-left');
-            const colRight = document.getElementById('col-right');
-
             if (colLeft) colLeft.innerHTML = spread.colLeftHtml || '';
             if (colRight) colRight.innerHTML = spread.colRightHtml || '';
-            fitDiagramBoxes(document.getElementById('spread-container'));
-            // Render KaTeX across active column spreads
+            fitDiagramBoxes(spreadContainer);
+
             if (typeof renderMathInElement !== 'undefined') {
                 try {
-                    renderMathInElement(document.getElementById('spread-container'), {
+                    renderMathInElement(spreadContainer, {
                         delimiters: [
                             {left: '$$', right: '$$', display: true},
                             {left: '$', right: '$', display: false},
@@ -1212,7 +1499,6 @@
                     });
                 } catch (e) {}
             }
-
 
             if (justifModule && justifModule.justify) {
                 try {
@@ -1231,6 +1517,15 @@
         }
 
         function advancePage(direction) {
+            if (activePdfDoc) {
+                const step = isTwoPageEffective() ? 2 : 1;
+                const nextP = pdfPageNum + (direction > 0 ? step : -step);
+                if (nextP >= 1 && nextP <= activePdfDoc.numPages) {
+                    pdfPageNum = nextP;
+                    rebuildAndRenderSpread();
+                }
+                return;
+            }
 
             if (direction > 0) {
                 if (currentSpreadIndex < chapterSpreads.length - 1) {
@@ -1253,44 +1548,50 @@
                     rebuildAndRenderSpread();
                 }
             }
-        };
+        }
+
+        function jumpToChapterIndex(idx) {
+            if (!parsedBook || idx < 0 || idx >= parsedBook.chapters.length) return;
+            currentChapterIndex = idx;
+            currentSpreadIndex = 0;
+            if (activePdfDoc) {
+                const sectionPages = getSectionPages();
+                const targetPage = sectionPages[idx] || (idx === 0 ? 2 : (idx * 2 + 1));
+                pdfPageNum = targetPage;
+            }
+            rebuildAndRenderSpread();
+        }
 
         function nextChapter() {
-
             if (parsedBook && currentChapterIndex < parsedBook.chapters.length - 1) {
-                currentChapterIndex++;
-                currentSpreadIndex = 0;
-                rebuildAndRenderSpread();
+                jumpToChapterIndex(currentChapterIndex + 1);
             }
-        };
+        }
 
         function prevChapter() {
-
             if (currentChapterIndex > 0) {
-                currentChapterIndex--;
-                currentSpreadIndex = 0;
-                rebuildAndRenderSpread();
+                jumpToChapterIndex(currentChapterIndex - 1);
             }
-        };
+        }
 
         function renderTocList() {
             const list = document.getElementById('toc-container');
-            if (!list) return;
+            if (!list || !parsedBook) return;
             list.innerHTML = "";
             const titleEl = document.getElementById('toc-book-title');
             if (titleEl) titleEl.innerText = parsedBook.title;
 
+            const sectionPages = getSectionPages();
             parsedBook.chapters.forEach((ch, idx) => {
                 const li = document.createElement('li');
                 li.className = `toc-item ${idx === currentChapterIndex ? 'active' : ''}`;
                 li.onclick = () => {
-                    currentChapterIndex = idx;
-                    currentSpreadIndex = 0;
-                    rebuildAndRenderSpread();
+                    jumpToChapterIndex(idx);
                     closeModals();
                 };
+                const pageBadge = activePdfDoc && sectionPages[idx] ? ` <span style="float:right; font-size:0.78em; color:var(--text-muted);">p. ${sectionPages[idx]}</span>` : '';
                 li.innerHTML = `
-                    <div class="t-label">${escapeHtml(ch.label)}</div>
+                    <div class="t-label">${escapeHtml(ch.label)}${pageBadge}</div>
                     <div class="t-title">${escapeHtml(ch.title)}</div>
                     <div class="t-sub">${escapeHtml(ch.subtitle)}</div>
                 `;
@@ -1319,7 +1620,7 @@
 
         function updateTelescopeWidgets(chapter) {
             const area = document.getElementById('drawer-widget-area');
-            if (!area) return;
+            if (!area || !chapter) return;
             let widgetsHtml = "";
 
             if (chapter.title.includes("Star Graph")) {
@@ -1374,7 +1675,6 @@
         }
 
         function updateFedexMath(n) {
-
             n = parseInt(n);
             const p2p = (n * (n - 1)) / 2;
             const star = n;
@@ -1389,48 +1689,41 @@
             if (elP2p) elP2p.innerText = `${p2p} routes`;
             if (elStar) elStar.innerText = `${star} routes`;
             if (elPct) elPct.innerText = `${pct}%`;
-        };
+        }
 
         function toggleTelescope() {
-
             const drawer = document.getElementById('telescope-drawer');
             if (drawer) drawer.classList.toggle('open');
-        };
+        }
 
         function openTocModal() {
-
             const modal = document.getElementById('toc-modal');
             if (modal) modal.classList.add('open');
-        };
+        }
 
         function openLibraryModal() {
-
             const modal = document.getElementById('library-modal');
             if (modal) modal.classList.add('open');
-        };
+        }
 
         function openHelpModal() {
-
             const modal = document.getElementById('help-modal');
             if (modal) modal.classList.add('open');
-        };
+        }
 
         function closeModals(e) {
-
             if (!e || e.target.classList.contains('modal-overlay') || e.target.tagName === 'BUTTON') {
                 document.querySelectorAll('.modal-overlay').forEach(m => m.classList.remove('open'));
             }
-        };
+        }
 
         function cycleTheme() {
-
             currentThemeIndex = (currentThemeIndex + 1) % themes.length;
             const t = themes[currentThemeIndex];
             document.documentElement.setAttribute('data-theme', t);
-        };
+        }
 
         function handleFileUpload(e) {
-
             const file = e.target.files[0];
             if (!file) return;
 
@@ -1447,11 +1740,58 @@
                 loadBook(bookKey);
             };
             reader.readAsText(file);
-        };
+        }
 
+        let resizeTimer = null;
         window.addEventListener('resize', () => {
-            rebuildAndRenderSpread();
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                rebuildAndRenderSpread();
+            }, 60);
         });
+
+        // Trackpad pinch-to-zoom / Ctrl+Wheel vector zoom on the PDF stage
+        let wheelZoomTimer = null;
+        window.addEventListener('wheel', (e) => {
+            const homeView = document.getElementById('home-view');
+            if (homeView && homeView.classList.contains('active')) return;
+            if ((e.ctrlKey || e.metaKey) && activePdfDoc) {
+                e.preventDefault();
+                const delta = e.deltaY < 0 ? 0.08 : -0.08;
+                zoomScale = Math.max(0.6, Math.min(2.5, Math.round((zoomScale + delta) * 100) / 100));
+                const zoomReadout = document.getElementById('zoom-readout');
+                if (zoomReadout) {
+                    zoomReadout.innerText = Math.abs(zoomScale - 1.0) < 0.01 ? 'Fit' : `${Math.round(zoomScale * 100)}%`;
+                }
+                clearTimeout(wheelZoomTimer);
+                wheelZoomTimer = setTimeout(() => {
+                    rebuildAndRenderSpread();
+                }, 45);
+            }
+        }, { passive: false });
+
+        // Touch swipe left/right to turn pages on mobile/tablet when at Fit Window zoom
+        let touchStartX = 0;
+        let touchStartY = 0;
+        window.addEventListener('touchstart', (e) => {
+            if (e.touches && e.touches.length === 1) {
+                touchStartX = e.touches[0].clientX;
+                touchStartY = e.touches[0].clientY;
+            }
+        }, { passive: true });
+
+        window.addEventListener('touchend', (e) => {
+            const homeView = document.getElementById('home-view');
+            if (homeView && homeView.classList.contains('active')) return;
+            if (zoomScale > 1.02) return;
+            if (e.changedTouches && e.changedTouches.length === 1) {
+                const dx = e.changedTouches[0].clientX - touchStartX;
+                const dy = e.changedTouches[0].clientY - touchStartY;
+                if (Math.abs(dx) > 55 && Math.abs(dx) > Math.abs(dy) * 1.6) {
+                    window.advancePage(dx < 0 ? 1 : -1);
+                }
+            }
+        }, { passive: true });
 
         window.addEventListener('keydown', (e) => {
             if (e.target && e.target.tagName === 'INPUT') return;
@@ -1474,6 +1814,18 @@
                 } else if (e.key === 'ArrowLeft' || (e.key === ' ' && e.shiftKey)) {
                     e.preventDefault();
                     window.advancePage(-1);
+                } else if (e.key === '+' || e.key === '=') {
+                    e.preventDefault();
+                    adjustZoom(0.15);
+                } else if (e.key === '-' || e.key === '_') {
+                    e.preventDefault();
+                    adjustZoom(-0.15);
+                } else if (e.key === '0') {
+                    e.preventDefault();
+                    resetZoom();
+                } else if (e.key === 'v') {
+                    e.preventDefault();
+                    toggleViewMode();
                 } else if (e.key === 'n') {
                     window.nextChapter();
                 } else if (e.key === 'p') {
@@ -1492,6 +1844,9 @@
         window.advancePage = advancePage;
         window.nextChapter = nextChapter;
         window.prevChapter = prevChapter;
+        window.adjustZoom = adjustZoom;
+        window.resetZoom = resetZoom;
+        window.toggleViewMode = toggleViewMode;
         window.updateFedexMath = updateFedexMath;
         window.toggleTelescope = toggleTelescope;
         window.openTocModal = openTocModal;
@@ -1626,12 +1981,21 @@
         function handleHashRoute() {
             const hash = window.location.hash;
             if (hash.startsWith('#read=')) {
-                const bookKey = hash.replace('#read=', '');
+                const params = new URLSearchParams(hash.slice(1));
+                const bookKey = params.get('read');
+                const pageParam = parseInt(params.get('page') || '0', 10);
+                const zoomParam = parseFloat(params.get('zoom') || '0');
                 if (EMBEDDED_BOOKS[bookKey]) {
-                    if (currentBookKey !== bookKey || !parsedBook) {
-                        loadBook(bookKey);
-                    }
                     hideHomeView();
+                    if (zoomParam >= 0.6 && zoomParam <= 2.5) {
+                        zoomScale = zoomParam;
+                    }
+                    if (currentBookKey !== bookKey || !parsedBook) {
+                        loadBook(bookKey, pageParam > 0 ? pageParam : 1);
+                    } else if (pageParam > 0) {
+                        pdfPageNum = pageParam;
+                        rebuildAndRenderSpread();
+                    }
                 } else {
                     showHomeView();
                 }

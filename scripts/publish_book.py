@@ -323,6 +323,7 @@ def main():
     prefix, data, suffix = load_books_data()
 
     if args.sync_all:
+        from compile_typst import compile_book_to_pdf
         for slug, meta in data.items():
             md_file = os.path.join(BASE_DIR, slug.replace("-", "_") + ".md")
             errs, _, _ = validate_book(md_file, legacy=True)
@@ -333,13 +334,16 @@ def main():
                 sys.exit(1)
             md_text = open(md_file, encoding="utf-8").read()
             title, subtitle = extract_title_subtitle(md_text)
+            pdf_path, sec_pages = compile_book_to_pdf(md_file, category=meta.get("category", "NON-FICTION"))
             meta["title"] = title
             meta["subtitle"] = subtitle
+            meta["pdf"] = f"assets/pdfs/{slug}.pdf"
+            meta["sectionPages"] = sec_pages
             meta["markdown"] = md_text
-            print(f"[SYNCED] {slug:26s} -> {len(md_text):6,d} chars")
+            print(f"[SYNCED] {slug:26s} -> {len(md_text):6,d} chars | PDF: {os.path.getsize(pdf_path)//1024} KB | pages: {sec_pages}")
         save_books_data(prefix, data, suffix)
         sync_covers_data()
-        print("Successfully synced all volumes into js/books-data.js and js/covers-data.js.")
+        print("Successfully synced all volumes and Typst PDFs into js/books-data.js and js/covers-data.js.")
         return
 
     if not args.slug:
@@ -368,10 +372,16 @@ def main():
         generate_cover_svg(slug, title, subtitle, args.category, args.accent, args.bg, args.theme)
         print(f"[COVER] Generated vector cover: assets/covers/{slug}.svg")
 
+    from compile_typst import compile_book_to_pdf
+    pdf_path, sec_pages = compile_book_to_pdf(md_path, category=args.category, accent_hex=args.accent)
+    print(f"[TYPST] Compiled PDF: assets/pdfs/{slug}.pdf ({os.path.getsize(pdf_path)//1024} KB)")
+
     data[slug] = {
         "title": title,
         "subtitle": subtitle,
         "category": args.category,
+        "pdf": f"assets/pdfs/{slug}.pdf",
+        "sectionPages": sec_pages,
         "markdown": md_text,
     }
     save_books_data(prefix, data, suffix)
@@ -384,3 +394,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

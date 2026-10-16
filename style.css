@@ -61,7 +61,8 @@
         /* Spread Wrapper */
         .spread-wrapper {
             width: 100%;
-            max-width: 1320px;
+            max-width: 1680px;
+            min-width: 0;
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -72,8 +73,9 @@
 
         /* Unified Running Header & Running Footer */
         .running-header, .running-footer {
-            height: 38px;
+            height: 36px;
             width: 100%;
+            min-width: 0;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -84,25 +86,25 @@
             color: var(--text-muted);
             user-select: none;
             flex-shrink: 0;
-            gap: 16px;
+            gap: 12px;
             white-space: nowrap;
         }
 
         .running-header {
             border-bottom: 1px solid var(--border-color);
-            margin-bottom: 12px;
+            margin-bottom: 4px;
         }
 
         .running-footer {
             border-top: 1px solid var(--border-color);
-            margin-top: 12px;
+            margin-top: 4px;
         }
 
         /* Header Elements */
         .folio-left, .folio-right, .folio-center {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
             min-width: 0;
         }
 
@@ -179,6 +181,7 @@
             align-items: center;
             gap: 5px;
             transition: all 0.15s ease;
+            text-decoration: none;
         }
 
         .folio-btn:hover {
@@ -195,7 +198,7 @@
             color: var(--text-muted);
         }
 
-        /* Two-Column Page Spread Stage */
+        /* Legacy Two-Column Page Spread Stage */
         .spread-stage {
             flex: 1;
             min-height: 0;
@@ -217,6 +220,166 @@
             width: 1px;
             background: var(--border-color);
             pointer-events: none;
+        }
+
+        /* Typst PDF Spread Stage (Fit Window + Zoomable) */
+        .spread-stage.pdf-spread-stage {
+            flex: 1;
+            min-height: 0;
+            min-width: 0;
+            width: 100%;
+            display: flex !important;
+            grid-template-columns: none !important;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            padding: 4px;
+        }
+
+        .spread-stage.pdf-spread-stage.is-zoomed {
+            overflow: auto;
+            align-items: flex-start;
+        }
+
+        .spread-stage.pdf-spread-stage::after {
+            display: none !important;
+        }
+
+        .pdf-book-frame {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin: auto;
+            background: #faf8f5;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+            flex-shrink: 0;
+            transition: box-shadow 0.2s ease;
+        }
+
+        /* Subtle book spine shadow between facing pages in two-page mode */
+        .pdf-book-frame.two-page::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 24px;
+            transform: translateX(-50%);
+            background: linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0) 0%,
+                rgba(0, 0, 0, 0.045) 42%,
+                rgba(0, 0, 0, 0.11) 50%,
+                rgba(0, 0, 0, 0.045) 58%,
+                rgba(0, 0, 0, 0) 100%
+            );
+            pointer-events: none;
+            z-index: 5;
+        }
+
+        .pdf-page-slot {
+            position: relative;
+            display: block;
+            background: #faf8f5;
+            overflow: hidden;
+            user-select: none;
+            flex-shrink: 0;
+        }
+
+        .pdf-page-slot canvas {
+            display: block;
+        }
+
+        /* Theme filters for rendered Typst PDF pages */
+        [data-theme="sepia"] .pdf-book-frame {
+            background: #f4ecd8;
+            box-shadow: 0 12px 36px rgba(60, 42, 15, 0.16), 0 2px 8px rgba(60, 42, 15, 0.08);
+        }
+
+        [data-theme="sepia"] .pdf-page-slot canvas {
+            filter: sepia(0.26) brightness(0.975) contrast(1.02);
+        }
+
+        [data-theme="dark"] .pdf-book-frame {
+            background: #191a1c;
+            border-color: #2f3136;
+            box-shadow: 0 14px 42px rgba(0, 0, 0, 0.55), 0 2px 10px rgba(0, 0, 0, 0.35);
+        }
+
+        [data-theme="dark"] .pdf-page-slot {
+            background: #191a1c;
+        }
+
+        [data-theme="dark"] .pdf-page-slot canvas {
+            filter: invert(0.90) hue-rotate(180deg) contrast(1.05);
+        }
+
+        /* Clickable internal link annotations (e.g. Page 1 Table of Contents) */
+        .pdf-link-layer {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            z-index: 6;
+        }
+
+        .pdf-link-hotspot {
+            position: absolute;
+            pointer-events: auto;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: background-color 0.15s ease;
+        }
+
+        .pdf-link-hotspot:hover {
+            background-color: rgba(180, 130, 50, 0.12);
+        }
+
+        /* Zoom & Layout Controls Pill Group */
+        .zoom-controls {
+            display: inline-flex;
+            align-items: center;
+            gap: 2px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            padding: 1px 4px;
+        }
+
+        .zoom-btn {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-family: var(--font-sans);
+            font-size: 12px;
+            font-weight: 700;
+            cursor: pointer;
+            padding: 1px 5px;
+            border-radius: 3px;
+            line-height: 1.2;
+        }
+
+        .zoom-btn:hover {
+            color: var(--accent-color);
+        }
+
+        .zoom-readout {
+            font-family: var(--font-sans);
+            font-size: 10px;
+            font-weight: 600;
+            color: var(--text-color);
+            min-width: 28px;
+            text-align: center;
+            cursor: pointer;
+            padding: 1px 3px;
+        }
+
+        .zoom-readout:hover {
+            color: var(--accent-color);
         }
 
         /* In-Column Chapter Header (Top of First Column on Spread 0) */
@@ -574,14 +737,15 @@
             color: var(--text-muted);
         }
 
-        /* Desktop Main Container (Centered with Generous Book Margins) */
+        /* Desktop Main Container (Centered with Fit-Window Book Spread) */
         #main-stage, main {
             height: 100vh;
+            height: 100dvh;
             width: 100vw;
             display: flex;
             justify-content: center;
             align-items: stretch;
-            padding: 16px min(6vw, 76px);
+            padding: 10px min(2.5vw, 32px);
             position: relative;
             overflow: hidden;
             box-sizing: border-box;
@@ -589,7 +753,20 @@
 
         @media (max-width: 899px) {
             #main-stage, main {
-                padding: 12px 20px;
+                padding: 4px 6px;
+            }
+            .running-header, .running-footer {
+                gap: 4px;
+                overflow-x: auto;
+            }
+            .running-header .folio-center,
+            #view-mode-btn,
+            #open-pdf-link {
+                display: none !important;
+            }
+            .folio-btn {
+                padding: 3px 5px;
+                font-size: 9.5px;
             }
             .spread-stage {
                 grid-template-columns: 1fr;
