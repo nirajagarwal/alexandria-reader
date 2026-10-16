@@ -741,12 +741,15 @@
                     const cssVp = page.getViewport({ scale: alignedScale });
                     const sectionPages = getSectionPages(activePdfEdition);
 
+                    const padX = 7.5 * alignedScale;
+                    const padY = 2.8 * alignedScale;
+
                     linkAnnots.forEach((annot, idx) => {
                         const rect = cssVp.convertToViewportRectangle(annot.rect);
-                        const left = Math.min(rect[0], rect[2]);
-                        const top = Math.min(rect[1], rect[3]);
-                        const width = Math.abs(rect[2] - rect[0]);
-                        const height = Math.abs(rect[3] - rect[1]);
+                        const left = Math.min(rect[0], rect[2]) - padX;
+                        const top = Math.min(rect[1], rect[3]) - padY;
+                        const width = Math.abs(rect[2] - rect[0]) + padX * 2;
+                        const height = Math.abs(rect[3] - rect[1]) + padY * 2;
 
                         const targetPage = sectionPages[idx] || (idx === 0 ? 2 : (idx * 2 + 1));
                         const chObj = activeBook.chapters[idx];
