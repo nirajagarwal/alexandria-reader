@@ -380,8 +380,8 @@
             <!-- Two-Page / Single-Page Typst PDF Spread Stage -->
             <div class="spread-stage pdf-spread-stage" id="spread-container">
                 <div class="pdf-book-frame two-page" id="pdf-book-frame" data-edition="desktop">
-                    <!-- Overlaid Page-Header Navigation Bar (Icons Integrated with PDF Header) -->
-                    <div class="pdf-header-nav pdf-header-left">
+                    <!-- Overlaid Page-Header Navigation Bar (All Icons Integrated Together on Right Header) -->
+                    <div class="pdf-header-nav pdf-header-right">
                         <button class="pdf-icon-btn" onclick="showHomeView()" title="Home Catalog" aria-label="Home Catalog">
                             <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.35" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M3 10.5L12 3l9 7.5"></path>
@@ -389,8 +389,6 @@
                                 <path d="M9.5 20v-6h5v6"></path>
                             </svg>
                         </button>
-                    </div>
-                    <div class="pdf-header-nav pdf-header-right">
                         <button class="pdf-icon-btn" onclick="openTocModal()" title="Table of Contents (T)" aria-label="Table of Contents">
                             <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.35" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <line x1="8" y1="6" x2="21" y2="6"></line>
@@ -512,7 +510,7 @@
             window.pdfjsLib.GlobalWorkerOptions.workerSrc = 'vendor/pdfjs/pdf.worker.min.js';
         }
 
-        const PDF_BUILD_VERSION = '20261016h';
+        const PDF_BUILD_VERSION = '20261016i';
         const EDITION_SPECS = {
             desktop: { widthIn: 5.8, heightIn: 7.5, aspect: 5.8 / 7.5, fontPt: 11.6 },
             compact: { widthIn: 5.5, heightIn: 6.8, aspect: 5.5 / 6.8, fontPt: 12.2 },

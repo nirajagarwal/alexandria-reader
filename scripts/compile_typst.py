@@ -480,12 +480,24 @@ def build_typ_source(
         "  header: context {",
         "    let p = here().page()",
         "    if p > 1 {",
+        "      let marks = query(<sec-mark>)",
+        "      let is-chap-start = marks.any(m => m.location().page() == p)",
+        "      let active-marks = marks.filter(m => m.location().page() <= p)",
+        '      let chap-title = if active-marks.len() > 0 { active-marks.last().value.title } else { "" }',
         '      set text(font: "IBM Plex Mono", size: 6.5pt, tracking: 0.8pt, fill: muted-color)',
-        "      if calc.odd(p) {",
-        "        align(left)[#h(12.5pt)#upper(book-title)]",
-        "      } else {",
-        "        align(right)[#upper(current-chapter.get())#h(71pt)]",
-        "      }",
+        (
+            "      if not is-chap-start {\n"
+            "        align(left)[#pad(right: 84pt)[#upper(chap-title)]]\n"
+            "      }"
+            if is_mobile
+            else (
+                "      if calc.odd(p) {\n"
+                "        align(left)[#upper(book-title)]\n"
+                "      } else if not is-chap-start {\n"
+                "        align(left)[#pad(right: 84pt)[#upper(chap-title)]]\n"
+                "      }"
+            )
+        ),
         "    }",
         "  },",
         footer_block,
