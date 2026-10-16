@@ -2338,6 +2338,246 @@
         "subtitle": "Tannin Armor, Plugged Vessels, and the Two Thousand Trees Inside a Warship"
       }
     ]
+  },
+  "paper-panics": {
+    "title": "Paper Panics",
+    "subtitle": "Twelve Financial Manias, Runs, and Liquidity Crashes",
+    "category": "Economics & Financial History",
+    "pdf": "assets/pdfs/paper-panics.pdf",
+    "compactPdf": "assets/pdfs/paper-panics-compact.pdf",
+    "mobilePdf": "assets/pdfs/paper-panics-mobile.pdf",
+    "sectionPages": [
+      2,
+      3,
+      6,
+      9,
+      12,
+      15,
+      18,
+      21,
+      24,
+      27,
+      30,
+      33,
+      36
+    ],
+    "compactSectionPages": [
+      2,
+      3,
+      6,
+      9,
+      12,
+      15,
+      19,
+      22,
+      25,
+      28,
+      31,
+      35,
+      38
+    ],
+    "mobileSectionPages": [
+      3,
+      5,
+      9,
+      13,
+      16,
+      20,
+      24,
+      28,
+      31,
+      35,
+      39,
+      43,
+      47
+    ],
+    "chapters": [
+      {
+        "label": "Introduction",
+        "title": "Paper Panics",
+        "subtitle": "The Hydraulic Plumbing of Financial Runs"
+      },
+      {
+        "label": "Chapter 1",
+        "title": "The Winter Option in Haarlem",
+        "subtitle": "Why Turning Tulip Contracts into Penalty-Free Options Sparked the 1637 Frenzy"
+      },
+      {
+        "label": "Chapter 2",
+        "title": "The Rue Quincampoix Printing Press",
+        "subtitle": "John Law's Debt-for-Equity Swap and the Day Paper Pegged to Stock Collapsed"
+      },
+      {
+        "label": "Chapter 3",
+        "title": "The Bookseller of Exchange Alley",
+        "subtitle": "How Thomas Guy Cashed Out of the South Sea Bubble While Isaac Newton Doubled Down"
+      },
+      {
+        "label": "Chapter 4",
+        "title": "Black Friday on Lombard Street",
+        "subtitle": "The Collapse of Overend Gurney and the Rule of the Lender of Last Resort"
+      },
+      {
+        "label": "Chapter 5",
+        "title": "The Locked Library on Thirty-Sixth Street",
+        "subtitle": "Shadow Trust Companies and How J. P. Morgan Stopped the Run of 1907"
+      },
+      {
+        "label": "Chapter 6",
+        "title": "The Wheelbarrow Mark",
+        "subtitle": "Thirty Paper Mills, Exploding Velocity, and the Overnight Miracle of the Rentenmark"
+      },
+      {
+        "label": "Chapter 7",
+        "title": "The Ten-Percent Margin Trap",
+        "subtitle": "Call-Money Loans and Why Paying Down Debt Deepened the Crash of 1929"
+      },
+      {
+        "label": "Chapter 8",
+        "title": "Silver Rule Seven",
+        "subtitle": "How the Hunt Brothers Cornered Two Hundred Million Ounces and Lost to a Rule Change"
+      },
+      {
+        "label": "Chapter 9",
+        "title": "The Doomsday Machine of Black Monday",
+        "subtitle": "How Automated Portfolio Insurance Turned a Dip into a Twenty-Two Percent Crash"
+      },
+      {
+        "label": "Chapter 10",
+        "title": "The Broken Pound on Black Wednesday",
+        "subtitle": "George Soros, the Impossible Trinity, and the Ten-Billion-Dollar Wager Against the Bank of England"
+      },
+      {
+        "label": "Chapter 11",
+        "title": "Account Five Eights in Singapore",
+        "subtitle": "Nick Leeson, Short Straddles, and the Earthquake That Brought Down Barings Bank"
+      },
+      {
+        "label": "Chapter 12",
+        "title": "The Hot-Potato Algorithm",
+        "subtitle": "How a Volume-Pegged Sell Order Erased a Trillion Dollars in Thirty-Six Minutes"
+      }
+    ]
+  },
+  "curious-physicist": {
+    "title": "The Curious Physicist",
+    "subtitle": "Twelve Facets of Richard Feynman",
+    "category": "Physics & Biography",
+    "pdf": "assets/pdfs/curious-physicist.pdf",
+    "compactPdf": "assets/pdfs/curious-physicist-compact.pdf",
+    "mobilePdf": "assets/pdfs/curious-physicist-mobile.pdf",
+    "sectionPages": [
+      2,
+      3,
+      6,
+      9,
+      12,
+      15,
+      18,
+      21,
+      24,
+      27,
+      30,
+      33,
+      36
+    ],
+    "compactSectionPages": [
+      2,
+      3,
+      7,
+      10,
+      14,
+      17,
+      20,
+      24,
+      28,
+      31,
+      35,
+      38,
+      42
+    ],
+    "mobileSectionPages": [
+      2,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      44,
+      48
+    ],
+    "chapters": [
+      {
+        "label": "Introduction",
+        "title": "The Curious Physicist",
+        "subtitle": "Translating Symbols into Physical Toys"
+      },
+      {
+        "label": "Chapter 1",
+        "title": "The Boy from Far Rockaway",
+        "subtitle": "Fixing Radios by Thinking, the Name of the Bird, and the Loss of Arline"
+      },
+      {
+        "label": "Chapter 2",
+        "title": "The Least-Action Clockwork",
+        "subtitle": "How a High School Chalkboard Reframed the Laws of Motion"
+      },
+      {
+        "label": "Chapter 3",
+        "title": "The Beer Party in Princeton",
+        "subtitle": "Dirac's Mysterious Phrase and the Sum Over Every Possible Path"
+      },
+      {
+        "label": "Chapter 4",
+        "title": "The Safecracker of Los Alamos",
+        "subtitle": "How Mechanical Tolerances Reduced a Million Combinations to Twenty Minutes"
+      },
+      {
+        "label": "Chapter 5",
+        "title": "The Wobbling Cafeteria Plate",
+        "subtitle": "How a Tossed Porcelain Dish Rebuilt Feynman's Joy in Physics"
+      },
+      {
+        "label": "Chapter 6",
+        "title": "The Cartoons at Pocono Manor",
+        "subtitle": "How Stick-Figure Spacetime Lines Replaced Nine Pages of Integrals"
+      },
+      {
+        "label": "Chapter 7",
+        "title": "The Dance of Liquid Helium",
+        "subtitle": "Why Superfluid Atoms Refuse to Stir Below Two Kelvin"
+      },
+      {
+        "label": "Chapter 8",
+        "title": "The Left-Handed Universe",
+        "subtitle": "How Feynman and Gell-Mann Overturned the Broken Mirror of Beta Decay"
+      },
+      {
+        "label": "Chapter 9",
+        "title": "Plenty of Room at the Bottom",
+        "subtitle": "Two Thousand-Dollar Wagers and the Blueprint for Nanotechnology"
+      },
+      {
+        "label": "Chapter 10",
+        "title": "The Mayan Venus Tables",
+        "subtitle": "Cracking the Bars and Dots of the Dresden Codex on Honeymoon"
+      },
+      {
+        "label": "Chapter 11",
+        "title": "The Cargo Cult Runway",
+        "subtitle": "Bamboo Control Towers, Rat Mazes, and the Discipline of Not Fooling Yourself"
+      },
+      {
+        "label": "Chapter 12",
+        "title": "One in a Hundred Thousand",
+        "subtitle": "How Appendix F Exposed the Fantasy Math Behind the Shuttle Disaster"
+      }
+    ]
   }
 };
 }));
