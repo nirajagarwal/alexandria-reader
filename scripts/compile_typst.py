@@ -484,7 +484,7 @@ def build_typ_source(
         "      if calc.odd(p) {",
         "        align(left)[#h(12.5pt)#upper(book-title)]",
         "      } else {",
-        "        align(right)[#upper(current-chapter.get())#h(57pt)]",
+        "        align(right)[#upper(current-chapter.get())#h(71pt)]",
         "      }",
         "    }",
         "  },",
