@@ -187,13 +187,13 @@ def sync_covers_data():
 
 
 def _wrap_subtitle_svg(subtitle: str):
-    """Split subtitle into 1, 2, or 3 balanced lines at a large readable font size (72-80) and return (font_size, inner_svg)."""
+    """Split subtitle into 2 or 3 balanced lines in the bottom zone (y_center=2010) with 1.46x line spacing and return (font_size, y_start, inner_svg)."""
     text = subtitle.strip()
     words = text.split()
     if len(text) <= 24 or len(words) <= 3:
-        return 80, html.escape(text)
+        return 76, 2010, html.escape(text)
 
-    if len(text) <= 58:
+    if len(text) <= 46:
         # 2 balanced lines
         best_idx = 1
         best_max = 9999
@@ -206,12 +206,13 @@ def _wrap_subtitle_svg(subtitle: str):
                 best_idx = i
         line1 = html.escape(" ".join(words[:best_idx]))
         line2 = html.escape(" ".join(words[best_idx:]))
-        sub_font_size = 78 if best_max <= 28 else 74
-        dy = 96 if sub_font_size == 78 else 90
+        sub_font_size = 76 if best_max <= 23 else 74
+        dy = int(round(sub_font_size * 1.47))
+        y_start = 2010 - dy // 2
         inner = f'<tspan x="800" dy="0">{line1}</tspan><tspan x="800" dy="{dy}">{line2}</tspan>'
-        return sub_font_size, inner
+        return sub_font_size, y_start, inner
 
-    # 3 balanced lines for long subtitles (>58 chars) so font stays large (72)
+    # 3 balanced lines for subtitles > 46 chars
     best_pair = (1, 2)
     best_max = 9999
     n = len(words)
@@ -228,23 +229,28 @@ def _wrap_subtitle_svg(subtitle: str):
     line1 = html.escape(" ".join(words[:i]))
     line2 = html.escape(" ".join(words[i:j]))
     line3 = html.escape(" ".join(words[j:]))
-    sub_font_size = 72
-    dy = 88
+    sub_font_size = 72 if best_max <= 25 else 68
+    dy = int(round(sub_font_size * 1.46))
+    y_start = 2010 - dy
     inner = (
         f'<tspan x="800" dy="0">{line1}</tspan>'
         f'<tspan x="800" dy="{dy}">{line2}</tspan>'
         f'<tspan x="800" dy="{dy}">{line3}</tspan>'
     )
-    return sub_font_size, inner
+    return sub_font_size, y_start, inner
 
 
 def generate_cover_svg(slug: str, title: str, subtitle: str, category: str, accent: str, bg: str, theme: str):
     os.makedirs(COVERS_DIR, exist_ok=True)
     emblem = generate_emblem_svg(theme, accent)
-    title_font_size = 108 if len(title) <= 21 else (98 if len(title) <= 26 else 86)
+    emblem = re.sub(r'^<g class="([^"]+)">', r'<g class="\1" transform="translate(0, -210)">', emblem)
+    title_font_size = 100 if len(title) <= 21 else 96
     esc_cat = html.escape(category.upper())
+    cat_raw_len = len(category.strip())
+    cat_size = 33 if cat_raw_len >= 26 else 35
+    cat_ls = 7 if cat_raw_len >= 26 else 8
     esc_title = html.escape(title)
-    sub_font_size, sub_inner = _wrap_subtitle_svg(subtitle)
+    sub_font_size, sub_y, sub_inner = _wrap_subtitle_svg(subtitle)
     top_stop, mid_stop, edge_stop = _derive_cover_stops(bg, accent)
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2400" width="100%" height="100%">
@@ -254,7 +260,7 @@ def generate_cover_svg(slug: str, title: str, subtitle: str, category: str, acce
       <stop offset="60%" stop-color="{mid_stop}"/>
       <stop offset="100%" stop-color="{edge_stop}"/>
     </linearGradient>
-    <radialGradient id="halo-{slug}" cx="50%" cy="58%" r="75%">
+    <radialGradient id="halo-{slug}" cx="50%" cy="50%" r="75%">
       <stop offset="0%" stop-color="{accent}" stop-opacity="0.26"/>
       <stop offset="55%" stop-color="{accent}" stop-opacity="0.15"/>
       <stop offset="100%" stop-color="{accent}" stop-opacity="0.08"/>
@@ -264,23 +270,18 @@ def generate_cover_svg(slug: str, title: str, subtitle: str, category: str, acce
   <rect width="1600" height="2400" fill="url(#bg-{slug})"/>
   <rect width="1600" height="2400" fill="url(#halo-{slug})"/>
 
-  <g text-anchor="middle" font-family="'Inter', -apple-system, sans-serif">
-    <text x="800" y="270" font-size="44" font-weight="700" letter-spacing="9" fill="{accent}" opacity="0.95">{esc_cat}</text>
+  <g text-anchor="middle" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif">
+    <text x="800" y="275" font-size="{cat_size}" font-weight="700" letter-spacing="{cat_ls}" fill="{accent}" opacity="0.95">{esc_cat}</text>
   </g>
 
   <g text-anchor="middle">
-    <text x="800" y="485" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="{title_font_size}" font-weight="700" letter-spacing="-0.01em" fill="#faf9f6">
-      {esc_title}
-    </text>
-    <text x="800" y="615" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="{sub_font_size}" font-weight="500" fill="#e2e8f0">
-      {sub_inner}
-    </text>
+    <text x="800" y="415" font-family="'Literata', Georgia, serif" font-size="{title_font_size}" font-weight="700" letter-spacing="-0.01em" fill="#faf9f6">{esc_title}</text>
   </g>
 
   {emblem}
 
-  <g text-anchor="middle" font-family="'Inter', -apple-system, sans-serif">
-    <text x="800" y="2220" font-size="34" font-weight="700" letter-spacing="10" fill="#a8a29e" opacity="0.85">ALEXANDRIA.PRESS</text>
+  <g text-anchor="middle">
+    <text x="800" y="{sub_y}" font-family="'Literata', Georgia, serif" font-size="{sub_font_size}" font-weight="500" letter-spacing="0.005em" fill="#e2e8f0" opacity="0.92">{sub_inner}</text>
   </g>
 </svg>
 """
