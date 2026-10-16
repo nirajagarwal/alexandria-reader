@@ -1,0 +1,138 @@
+{
+  "slug": "twelve-virtues",
+  "file": "twelve_virtues.md",
+  "title": "Twelve Virtues",
+  "subtitle": "Why Courage, Honesty, and Restraint Survive in a Selfish World",
+  "category": "Ethics & Human Behavior",
+  "profile": "C: Decision Theory, Economics & Institutional Mechanics",
+  "mode": "facet",
+  "accent": "#d97706",
+  "bg": "#1c1917",
+  "theme": "harmonic-rings",
+  "creator_constraints": {
+    "require_quote_per_chapter": true,
+    "min_diagrams": 3
+  },
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "Courage Under the Wire",
+      "subtitle": "Bomb Disposal Heart Rates and Why Bravery Is Not Fearlessness",
+      "opening_door": "Door C (Artifact/Measurement)",
+      "historical_anchor": "Psychologist Stanley Rachman's 1978–1982 electrocardiograph telemetry of decorated British Royal Army Ordnance Corps bomb-disposal operators in Northern Ireland, paired with Polish courier Jan Karski infiltrating the Warsaw Ghetto in October 1942.",
+      "verbatim_quote": "Courage is not the absence of fear, but rather the persistence of attentive action in the presence of subjective terror.",
+      "formalism_mode": "ledger_or_list",
+      "exit_fact": "Decorated operators awarded the George Cross showed the exact same resting fear inventory scores as anxious novices, differing only in their parasympathetic vagal recovery within ninety seconds after disarming a fuse."
+    },
+    {
+      "chapter": 2,
+      "title": "The Cost of Honesty",
+      "subtitle": "Handicap Signals and the Ice Water Clamp on the Challenger Inquiry",
+      "opening_door": "Door A (Scene)",
+      "historical_anchor": "Richard Feynman dunking a segment of Morton Thiokol rubber O-ring into a glass of ice water during the televised Rogers Commission hearing on February 11, 1986, paired with Amotz Zahavi's 1975 Handicap Principle of costly signaling.",
+      "verbatim_quote": "For a successful technology, reality must take precedence over public relations, for Nature cannot be fooled.",
+      "formalism_mode": "equation",
+      "exit_fact": "Under Zahavi's signaling inequality, a pledge of safety or truth becomes credible only when the institutional or biological cost of faking the signal exceeds any short-term gain from deception."
+    },
+    {
+      "chapter": 3,
+      "title": "The Golden Mean of Temperance",
+      "subtitle": "Aristotle's Equilibrium and the Ulysses Contract of Self-Command",
+      "opening_door": "Door B (Constraint/Paradox)",
+      "historical_anchor": "Aristotle's 335 BCE Lyceum lectures on the Nicomachean Ethics defining virtue as a dynamic midpoint between two failure modes (deficiency and excess), paired with Walter Mischel's 1970 Stanford Bing Nursery School delay-of-gratification trials.",
+      "verbatim_quote": "Moral virtue is a mean between two vices, the one involving excess and the other deficiency.",
+      "formalism_mode": "diagram",
+      "exit_fact": "Children who lasted the full fifteen minutes did not win by staring harder at the treat to summon willpower; they turned their chairs away or covered their eyes to remove the visual trigger before desire spiked."
+    },
+    {
+      "chapter": 4,
+      "title": "Prudence in the Bunker",
+      "subtitle": "Practical Wisdom and the Night Five Phantom Missiles Launched",
+      "opening_door": "Door A (Scene)",
+      "historical_anchor": "Lieutenant Colonel Stanislav Petrov at the Serpukhov-15 command bunker south of Moscow shortly after midnight on September 26, 1983, when the Soviet Oko satellite network reported five American Minuteman ICBMs in flight.",
+      "verbatim_quote": "When people start a war, they do not start it with only five missiles.",
+      "formalism_mode": "ledger_or_list",
+      "exit_fact": "Post-incident orbital telemetry confirmed that sunlight glinting off high-altitude autumn clouds above North Dakota had aligned precisely with the Molniya satellite's viewing angle, mimicking rocket exhaust plumes."
+    },
+    {
+      "chapter": 5,
+      "title": "The Logic of Forgiveness",
+      "subtitle": "Why Generous Tit-for-Tat Defeats Strict Retaliation in a Noisy World",
+      "opening_door": "Door B (Constraint/Paradox)",
+      "historical_anchor": "Robert Axelrod's 1980 University of Michigan Prisoner's Dilemma computer tournaments and Martin Nowak and Karl Sigmund's 1992 evolutionary game-theory simulations introducing signal noise and Generous Tit-for-Tat.",
+      "verbatim_quote": "Forgiveness is the only mechanism that can restore mutual cooperation after an unintended mistake in a noisy environment.",
+      "formalism_mode": "diagram",
+      "exit_fact": "When Nowak and Sigmund introduced a one percent error rate across ten thousand simulated generations, strict Tit-for-Tat collapsed into mutual vendettas while a strategy programmed to forgive one-third of defections took over the population."
+    },
+    {
+      "chapter": 6,
+      "title": "The Storage Battery of Generosity",
+      "subtitle": "Risk-Pooling Networks and How Sharing Meat Beat Spoilage",
+      "opening_door": "Door C (Artifact/Measurement)",
+      "historical_anchor": "Anthropologist Polly Wiessner's 1974–1977 Kalahari Desert ledger of Ju/'hoansi (!Kung) hxaro bead-and-meat gift networks, paired with W. D. Hamilton's 1964 kin selection rule and Gerald Wilkinson's 1984 vampire bat blood-sharing experiments.",
+      "verbatim_quote": "A hunter does not store his surplus meat in a hut where it rots; he stores it in the belly of his neighbor.",
+      "formalism_mode": "equation",
+      "exit_fact": "In Wilkinson's Costa Rican hollow-tree trials, a bat that donated a fraction of its blood meal lost seven hours of its seventy-hour starvation reserve while giving a roost-mate thirty-six additional hours of life."
+    },
+    {
+      "chapter": 7,
+      "title": "The Blindfold of Justice",
+      "subtitle": "Solon's Boundary Stones and the Cake-Cutting Protocol of Fairness",
+      "opening_door": "Door C (Artifact/Measurement)",
+      "historical_anchor": "Solon's 594 BCE Athenian Seisachtheia (pulling up the horoi mortgage stones that enslaved farmers to creditors) and Hugo Steinhaus's 1944 mathematical fair-division protocol later formalized in John Rawls's 1971 Veil of Ignorance.",
+      "verbatim_quote": "I stood holding a strong shield over both parties, and permitted neither to triumph unjustly over the other.",
+      "formalism_mode": "ledger_or_list",
+      "exit_fact": "When the person who slices the loaf knows they will receive whichever piece remains last, self-interest forces the knife directly down the fifty-fifty line without requiring a single ounce of altruism."
+    },
+    {
+      "chapter": 8,
+      "title": "The Spectacles of Humility",
+      "subtitle": "Washington at Newburgh and the Calibration Curve of Foxes and Hedgehogs",
+      "opening_door": "Door A (Scene)",
+      "historical_anchor": "General George Washington putting on his new reading glasses before mutinous Continental Army officers at Newburgh, New York on March 15, 1783, paired with Philip Tetlock's 1984–2003 forecasting tournament of 284 experts.",
+      "verbatim_quote": "Gentlemen, you will permit me to put on my spectacles, for I have not only grown gray, but almost blind, in the service of my country.",
+      "formalism_mode": "diagram",
+      "exit_fact": "Across 27,450 geopolitical predictions in Tetlock's tournament, the most famous pundits who organized every event around one grand theory scored worse than random dart-throwing, while humble forecasters who updated small errors beat the field by thirty percent."
+    },
+    {
+      "chapter": 9,
+      "title": "The Dividend of Mercy",
+      "subtitle": "Plow Horses at Appomattox and Why Clemency Ends Insurgencies",
+      "opening_door": "Door A (Scene)",
+      "historical_anchor": "Ulysses S. Grant and Robert E. Lee inside Wilmer McLean's parlor at Appomattox Court House on April 9, 1865, where Grant paroled 28,231 Confederate soldiers and allowed every cavalryman and artillerist to take his horse home for spring planting.",
+      "verbatim_quote": "Let all the men who claim to own a horse or mule take the animals home with them to work their little farms.",
+      "formalism_mode": "ledger_or_list",
+      "exit_fact": "Giving cornered soldiers a safe exit ramp and a spring harvest dissolved the Army of Northern Virginia in seventy-two hours, preventing the multi-decade guerrilla bushwhacking war that Lincoln and Grant had feared."
+    },
+    {
+      "chapter": 10,
+      "title": "Patience in the Seed Vault",
+      "subtitle": "Hyperbolic Discounting and the Botanists Who Starved Surrounded by Grain",
+      "opening_door": "Door B (Constraint/Paradox)",
+      "historical_anchor": "Nikolai Vavilov's nine botanists—including rice specialist Dmitry Ivanov and peanut specialist Alexander Stchukin—locking themselves inside the Leningrad Institute of Plant Industry during the 872-day siege (1941–1944) to guard 250,000 packets of edible seeds, paired with George Ainslie's hyperbolic discounting law.",
+      "verbatim_quote": "It is hard to walk anymore, and it is agonizing to wake up every morning among tons of grain, yet not a single seed from the collection has been touched.",
+      "formalism_mode": "equation",
+      "exit_fact": "When Red Army forces broke the siege in January 1944, nine scientists had died of starvation at their desks while every single packet of wheat, rice, and potato tubers remained intact to replant Soviet farmland."
+    },
+    {
+      "chapter": 11,
+      "title": "Sanctuary for the Stranger",
+      "subtitle": "Ancient Laws of Hospitality and the Plateau That Hid Three Thousand Lives",
+      "opening_door": "Door B (Constraint/Paradox)",
+      "historical_anchor": "Ancient Mediterranean Xenia and Bedouin Dakhil sanctuary codes (three days of food and protection before asking a traveler's identity) paired with Pastor André Trocmé, Magda Trocmé, and the villagers of Le Chambon-sur-Lignon sheltering 3,500 refugees in Haute-Loire from 1940 to 1944.",
+      "verbatim_quote": "We do not know what a Jew is; we only know human beings.",
+      "formalism_mode": "ledger_or_list",
+      "exit_fact": "Across four years of Vichy police raids and Gestapo searches on the Vivarais-Lignon plateau, not a single villager in twelve Protestant parishes ever sold out a guest hiding in their haylofts."
+    },
+    {
+      "chapter": 12,
+      "title": "The Reciprocity of Gratitude",
+      "subtitle": "How Thankfulness Binds Strangers into Long-Term Cooperators",
+      "opening_door": "Door C (Artifact/Measurement)",
+      "historical_anchor": "Psychologists David DeSteno and Monica Bartlett's 2010–2014 Northeastern University economic exchange experiments (measuring costly helping after an unexpected rescue from a rigged computer crash) and Robert Emmons's 2003 UC Davis clinical trials.",
+      "verbatim_quote": "Gratitude is not only the greatest of virtues, but the parent of all the others.",
+      "formalism_mode": "ledger_or_list",
+      "exit_fact": "Subjects who experienced genuine gratitude did not merely repay the person who helped them; they doubled their costly generosity toward complete strangers in subsequent rounds, turning a two-person favor into a network-wide cascade."
+    }
+  ]
+}

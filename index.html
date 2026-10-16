@@ -84,7 +84,7 @@
           "name": "The Autonomous Engine",
           "headline": "The Control Loops of the Human Body",
           "url": "https://alexandria.press/?book=autonomous-engine",
-          "image": "https://alexandria.press/assets/covers/the-autonomous-engine.svg"
+          "image": "https://alexandria.press/assets/covers/autonomous-engine.svg"
         },
         {
           "@type": "Book",
@@ -158,17 +158,24 @@
         },
         {
           "@type": "Book",
-          "name": "Flights and Perches",
-          "headline": "Twelve Facets of William James",
+          "name": "Twelve Facets",
+          "headline": "The Restless Mind of William James",
           "url": "https://alexandria.press/?book=flights-and-perches",
           "image": "https://alexandria.press/assets/covers/flights-and-perches.svg"
         },
         {
           "@type": "Book",
-          "name": "Twelve Facets",
-          "headline": "The Restless Mind of William James",
-          "url": "https://alexandria.press/?book=flights-and-perches",
-          "image": "https://alexandria.press/assets/covers/flights-and-perches.svg"
+          "name": "Planetary Triggers",
+          "headline": "How Small Physical Instabilities Unleash Catastrophic Energy",
+          "url": "https://alexandria.press/?book=planetary-triggers",
+          "image": "https://alexandria.press/assets/covers/planetary-triggers.svg"
+        },
+        {
+          "@type": "Book",
+          "name": "Twelve Virtues",
+          "headline": "Why Courage, Honesty, and Restraint Survive in a Selfish World",
+          "url": "https://alexandria.press/?book=twelve-virtues",
+          "image": "https://alexandria.press/assets/covers/twelve-virtues.svg"
         }
       ]
     }
@@ -179,12 +186,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
-    <!-- KaTeX Mathematical Typesetting -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
-
-    <!-- PDF.js for Typst Print-Grade Spread Rendering -->
+    <!-- PDF.js for Typst Digital Spread Rendering -->
     <script src="vendor/pdfjs/pdf.min.js"></script>
 </head>
 <body>
@@ -299,6 +301,16 @@
                         <img src="assets/covers/flights-and-perches.svg" alt="Twelve Facets Cover" loading="eager">
                     </div>
                 </article>
+                <article class="book-card" data-key="planetary-triggers" data-title="Planetary Triggers" data-subtitle="How Small Physical Instabilities Unleash Catastrophic Energy" data-category="Geophysics &amp; Thermodynamics" onclick="openBookFromCatalog('planetary-triggers')" title="Planetary Triggers — How Small Physical Instabilities Unleash Catastrophic Energy">
+                    <div class="book-cover-frame">
+                        <img src="assets/covers/planetary-triggers.svg" alt="Planetary Triggers Cover" loading="eager">
+                    </div>
+                </article>
+                <article class="book-card" data-key="twelve-virtues" data-title="Twelve Virtues" data-subtitle="Why Courage, Honesty, and Restraint Survive in a Selfish World" data-category="Ethics &amp; Human Behavior" onclick="openBookFromCatalog('twelve-virtues')" title="Twelve Virtues — Why Courage, Honesty, and Restraint Survive in a Selfish World">
+                    <div class="book-cover-frame">
+                        <img src="assets/covers/twelve-virtues.svg" alt="Twelve Virtues Cover" loading="eager">
+                    </div>
+                </article>
             </div>
         </div>
     </div>
@@ -312,17 +324,9 @@
                         ALEXANDRIA
                     </span>
                 </div>
-                <div class="folio-center" id="header-center-box" onclick="openTocModal()" title="View Contents (T)"></div>
                 <div class="folio-right">
-                    <div class="zoom-controls" id="pdf-zoom-controls">
-                        <button class="zoom-btn" onclick="adjustZoom(-0.15)" title="Zoom Out (-)">−</button>
-                        <span class="zoom-readout" id="zoom-readout" onclick="resetZoom()" title="Reset to Fit Window (0)">Fit</span>
-                        <button class="zoom-btn" onclick="adjustZoom(0.15)" title="Zoom In (+)">+</button>
-                    </div>
-                    <button class="folio-btn" id="view-mode-btn" onclick="toggleViewMode()" title="Toggle 2-Page / 1-Page View (V)">2P</button>
                     <button class="folio-btn" onclick="openTocModal()" title="Contents (T)">Contents</button>
                     <button class="folio-btn" onclick="openLibraryModal()" title="Library (L)">Library</button>
-                    <a class="folio-btn" id="open-pdf-link" href="assets/pdfs/non-linear-engines.pdf" target="_blank" rel="noopener" title="Open Print PDF" style="text-decoration:none;">PDF</a>
                     <button class="folio-btn" onclick="cycleTheme()" title="Theme (D)">Theme</button>
                     <button class="folio-btn" onclick="openHelpModal()" title="Shortcuts (?)">?</button>
                 </div>
@@ -339,24 +343,8 @@
                         <canvas id="pdf-canvas-right"></canvas>
                         <div class="pdf-link-layer" id="pdf-links-right"></div>
                     </div>
-                </div>
-                <div class="spread-col col-left" id="col-left" style="display:none;"></div>
-                <div class="spread-col col-right" id="col-right" style="display:none;"></div>
-            </div>
-
-            <!-- Unified Running Footer (Bottom Folio) -->
-            <div class="running-footer">
-                <div class="folio-left">
-                    <span class="folio-brand" id="footer-book-name" onclick="showHomeView()" style="font-weight:600; color:var(--text-muted); cursor:pointer;">
-                        Non-Linear Engines
-                    </span>
-                </div>
-                <div class="folio-center">
-                    <span class="folio-page-counter" id="footer-page-counter">Pages 1–2 of 26</span>
-                </div>
-                <div class="folio-right">
-                    <button class="folio-btn" id="prev-spread-btn" onclick="window.advancePage(-1)" title="Previous Spread (←)">← Prev</button>
-                    <button class="folio-btn" id="next-spread-btn" onclick="window.advancePage(1)" title="Next Spread (→)">Next →</button>
+                    <button class="pdf-footer-nav prev" id="prev-spread-btn" onclick="window.advancePage(-1)" title="Previous Page / Spread (←)" aria-label="Previous Page">←</button>
+                    <button class="pdf-footer-nav next" id="next-spread-btn" onclick="window.advancePage(1)" title="Next Page / Spread (→)" aria-label="Next Page">→</button>
                 </div>
             </div>
         </div>
@@ -381,10 +369,6 @@
                 <button class="btn-icon" onclick="closeModals()">Close</button>
             </div>
             <div id="library-list"></div>
-            <div class="file-dropzone" onclick="document.getElementById('file-input').click()">
-                Drop a Markdown (.md) book here, or click to upload
-                <input type="file" id="file-input" accept=".md,.markdown" style="display:none" onchange="handleFileUpload(event)">
-            </div>
         </div>
     </div>
 
@@ -398,8 +382,6 @@
             <div style="font-family:var(--font-sans); font-size:0.92em; line-height:2.1; margin-bottom:14px;">
                 <div><kbd>→</kbd> / <kbd>Space</kbd> : Turn to next spread / page</div>
                 <div><kbd>←</kbd> / <kbd>Shift+Space</kbd> : Turn to previous spread / page</div>
-                <div><kbd>+</kbd> / <kbd>−</kbd> / <kbd>0</kbd> : Zoom in / Zoom out / Fit Window</div>
-                <div><kbd>v</kbd> : Toggle 2-Page Spread / 1-Page View</div>
                 <div><kbd>n</kbd> / <kbd>p</kbd> : Next / Previous chapter</div>
                 <div><kbd>t</kbd> : Table of Contents</div>
                 <div><kbd>l</kbd> : Library Selector</div>
@@ -407,7 +389,7 @@
                 <div><kbd>Esc</kbd> : Close open drawer / modal</div>
             </div>
             <div style="font-family:var(--font-sans); font-size:0.8em; color:var(--text-muted); border-top:1px solid var(--border-color); padding-top:10px;">
-                Typesetting Engine: <strong>Typst 0.15</strong> (deterministic trade-book pagination, native math &amp; vector schematics) + <strong>PDF.js</strong> HiDPI spread renderer.
+                Typesetting Engine: <strong>Typst 0.15</strong> (tri-density responsive desktop, compact &amp; mobile editions that automatically fit window height, width, and reading size) + <strong>PDF.js</strong> HiDPI vector renderer.
             </div>
         </div>
     </div>
@@ -417,31 +399,32 @@
     <script src="js/books-data.js"></script>
 
     <script>
-        // Self-contained execution ensuring zero CORS restrictions across local file:// and web servers
         const EMBEDDED_BOOKS = window.EMBEDDED_BOOKS || {};
 
         let currentBookKey = 'non-linear-engines';
         let currentChapterIndex = 0;
-        let currentSpreadIndex = 0;
-        let chapterSpreads = [];
-        let parsedBook = null;
+        let activeBook = null;
 
         const themes = ['light', 'dark', 'sepia'];
         let currentThemeIndex = 0;
 
-        let pretextModule = null;
-        let justifModule = null;
-        let hyphenateEnUS = null;
-        let activeJustifController = null;
-
-        // Asynchronously load external vendor modules if protocol supports it
-        if (typeof importShim !== 'undefined' || (location.protocol !== 'file:' && location.protocol !== 'blob:')) {
-            import('./vendor/pretext/layout.js').then(m => { pretextModule = m; }).catch(() => {});
-            import('./vendor/justif/index.js').then(m => {
-                justifModule = m;
-                import('./vendor/justif/hyphenate/en-us.js').then(h => { hyphenateEnUS = h.hyphenateEnUS; }).catch(() => {});
-            }).catch(() => {});
+        if (window.pdfjsLib) {
+            window.pdfjsLib.GlobalWorkerOptions.workerSrc = 'vendor/pdfjs/pdf.worker.min.js';
         }
+
+        const PDF_BUILD_VERSION = '20261016c';
+        const EDITION_SPECS = {
+            desktop: { widthIn: 5.8, heightIn: 7.5, aspect: 5.8 / 7.5, fontPt: 11.6 },
+            compact: { widthIn: 5.5, heightIn: 6.8, aspect: 5.5 / 6.8, fontPt: 12.2 },
+            mobile:  { widthIn: 4.2, heightIn: 7.5, aspect: 4.2 / 7.5, fontPt: 11.8 }
+        };
+
+        let activePdfDoc = null;
+        let activePdfEdition = 'desktop'; // 'desktop' | 'compact' | 'mobile'
+        const pdfDocCache = {};
+        let pdfPageNum = 1;
+        let activeRenderTasks = { left: null, right: null };
+        let renderToken = 0;
 
         function escapeHtml(str) {
             if (!str) return '';
@@ -453,685 +436,56 @@
                 .replace(/'/g, "&#039;");
         }
 
-        function cleanMathSyntax(math) {
-            if (!math) return '';
-            let m = math.trim();
-            // Convert unescaped unicode symbols to standard LaTeX equivalents
-            m = m.replace(/·/g, ' \\cdot ');
-            m = m.replace(/×/g, ' \\times ');
-            m = m.replace(/∝/g, ' \\propto ');
-            m = m.replace(/⇒/g, ' \\implies ');
-            m = m.replace(/→/g, ' \\to ');
-            m = m.replace(/√\s*([a-zA-Z0-9_{}]+)/g, '\\sqrt{$1}');
-            m = m.replace(/√/g, '\\sqrt');
-            // Normalize unbraced multi-character subscripts: e.g. T_ambient -> T_{ambient}
-            m = m.replace(/_([a-zA-Z]{2,})(?![a-zA-Z0-9_]*\})/g, '_{$1}');
-            return m;
-        }
-
-        function formatInline(str) {
-            if (!str) return '';
-
-            // 1. Protect literal escaped \$
-            let s = str.replace(/\\\$/g, "___ESCAPED_DOLLAR___");
-
-            // 2. Protect unescaped currency amounts with scale words ($10 million, $1.25 trillion, etc.)
-            s = s.replace(/\$(?=\d[\d,]*(?:\.\d+)?\s*(?:million|billion|trillion|thousand|hundred|per\s+share)\b)/gi, "___CURRENCY_DOLLAR___");
-
-            // 3. Extract and render inline math ($...$)
-            const mathTokens = [];
-            s = s.replace(/\$([^\s$](?:[^$\n]*?[^\s$])?)\$/g, (match, rawMath) => {
-                const math = rawMath.replace(/___ESCAPED_DOLLAR___/g, '\\$');
-                // If it looks like plain isolated currency without math operators (e.g. $50, $5,000)
-                if (/^\d[\d,]*(?:\.\d+)?$/.test(math) && !/[+\-*/=^_\\]/.test(math)) {
-                    return "$" + math;
-                }
-                const tokenId = `___MATH_INLINE_${mathTokens.length}___`;
-                const normalized = cleanMathSyntax(math);
-                let rendered = "";
-                if (typeof katex !== 'undefined') {
-                    try {
-                        rendered = katex.renderToString(normalized, { displayMode: false, throwOnError: false });
-                    } catch (e) {
-                        rendered = `<code class="inline-math">${escapeHtml(normalized)}</code>`;
-                    }
-                } else {
-                    rendered = `<code class="inline-math">${escapeHtml(normalized)}</code>`;
-                }
-                mathTokens.push(rendered);
-                return tokenId;
-            });
-
-            // 4. HTML escape remaining prose
-            s = escapeHtml(s);
-
-            // 5. Format Markdown bold and italic
-            s = s.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-            s = s.replace(/\*(.*?)\*/g, '<em>$1</em>');
-
-            // 6. Restore inline math tokens
-            mathTokens.forEach((mHtml, idx) => {
-                s = s.replace(`___MATH_INLINE_${idx}___`, mHtml);
-            });
-
-            // 7. Restore currency and escaped dollars
-            s = s.replace(/___CURRENCY_DOLLAR___/g, "$");
-            s = s.replace(/___ESCAPED_DOLLAR___/g, "$");
-
-            return s;
-        }
-
-        function parseAlexandriaMarkdown(mdText) {
-            const sections = mdText.split(/\n---\n/);
-            const chapters = [];
-            let bookTitle = "Alexandria Volume";
-            let bookSubtitle = "";
-
-            sections.forEach((sec, idx) => {
-                sec = sec.trim();
-                if (!sec) return;
-
-                if (idx === 0 && sec.startsWith('# ')) {
-                    const firstLines = sec.split('\n');
-                    bookTitle = firstLines[0].replace(/^#\s+/, '').trim();
-                    if (firstLines.length > 1 && firstLines[1].startsWith('## ')) {
-                        bookSubtitle = firstLines[1].replace(/^##\s+/, '').trim();
-                    }
-                    return;
-                }
-
-                const lines = sec.split('\n');
-                let label = "";
-                let title = "";
-                let subtitle = "";
-                let bodyStartIndex = 0;
-
-                for (let i = 0; i < lines.length; i++) {
-                    const l = lines[i].trim();
-                    if (l.startsWith('### ')) {
-                        label = l.replace(/^###\s+/, '').trim();
-                        if (i + 1 < lines.length && lines[i + 1].trim().startsWith('# ')) {
-                            title = lines[i + 1].trim().replace(/^#\s+/, '').trim();
-                        }
-                        if (i + 2 < lines.length && lines[i + 2].trim().startsWith('## ')) {
-                            subtitle = lines[i + 2].trim().replace(/^##\s+/, '').trim();
-                        }
-                        bodyStartIndex = i + 3;
-                        break;
-                    }
-                }
-
-                const rawBody = lines.slice(bodyStartIndex).join('\n').trim();
-                chapters.push({
-                    label: label || (idx === 0 ? "Introduction" : `Chapter ${idx}`),
-                    title: title || "Untitled Chapter",
-                    subtitle: subtitle || "",
-                    body: rawBody
-                });
-            });
-
+        function getStageViewport() {
+            const vpW = document.documentElement.clientWidth || window.innerWidth;
+            const vpH = document.documentElement.clientHeight || window.innerHeight;
             return {
-                title: bookTitle,
-                subtitle: bookSubtitle,
-                chapters: chapters
+                availW: Math.max(200, vpW - 8),
+                availH: Math.max(200, vpH - 46)
             };
         }
 
-        function parseChapterBlocks(rawBody) {
-            const codeBlocks = [];
-            let text = rawBody.replace(/```([a-zA-Z0-9_-]*)\n([\s\S]*?)```/g, (match, lang, code) => {
-                const id = `\n\n__CODE_${codeBlocks.length}__\n\n`;
-                codeBlocks.push({ lang: (lang || '').toLowerCase().trim(), code: code.trim() });
-                return id;
-            });
+        function computeResponsiveLayout() {
+            const { availW, availH } = getStageViewport();
+            const windowAspect = availW / availH;
 
-            // Pre-extract block equations ($$...$$) before paragraph splitting
-            const mathBlocks = [];
-            text = text.replace(/\$\$([\s\S]*?)\$\$/g, (match, math) => {
-                const id = `\n\n__MATH_${mathBlocks.length}__\n\n`;
-                mathBlocks.push(math.trim());
-                return id;
-            });
-
-            // Ensure lists preceded or followed immediately by prose are isolated by double newlines
-            const rawLines = text.split('\n');
-            const separatedLines = [];
-            let inList = false;
-            for (let i = 0; i < rawLines.length; i++) {
-                const line = rawLines[i];
-                const trimmed = line.trim();
-                const isListItem = /^(?:[\*\-]\s+|\d+\.\s+)/.test(trimmed);
-                if (isListItem) {
-                    if (!inList && separatedLines.length > 0 && separatedLines[separatedLines.length - 1].trim() !== '') {
-                        separatedLines.push('');
-                    }
-                    inList = true;
-                } else if (trimmed === '') {
-                    inList = false;
-                } else {
-                    if (inList) {
-                        separatedLines.push('');
-                    }
-                    inList = false;
-                }
-                separatedLines.push(line);
+            // Whenever the window has sufficient width (>= 800px and landscape aspect >= 1.05),
+            // ALWAYS use a 2-page spread!
+            if (availW >= 800 && windowAspect >= 1.05) {
+                const ed = (windowAspect >= 1.48 && availH >= 700) ? 'desktop' : 'compact';
+                const aspect = EDITION_SPECS[ed].aspect;
+                const pageH = Math.floor(Math.min(availH, availW / (2 * aspect)));
+                const pageW = Math.floor(pageH * aspect);
+                return { edition: ed, twoPage: true, pageW, pageH };
             }
-            text = separatedLines.join('\n');
 
-            const paragraphs = text.split(/\n\s*\n/);
-            const blocks = [];
+            // Single-page view for narrow or portrait windows
+            if (availW >= 540) {
+                const ed = (availH >= 720) ? 'desktop' : 'compact';
+                const aspect = EDITION_SPECS[ed].aspect;
+                const pageH = Math.floor(Math.min(availH, availW / aspect));
+                const pageW = Math.floor(pageH * aspect);
+                return { edition: ed, twoPage: false, pageW, pageH };
+            }
 
-            paragraphs.forEach(p => {
-                p = p.trim();
-                if (!p) return;
-
-                if (p.startsWith('__CODE_')) {
-                    const idx = parseInt(p.replace(/[^0-9]/g, ''));
-                    const item = codeBlocks[idx] || { lang: '', code: '' };
-                    const code = item.code || "";
-                    if (item.lang === 'svg' || item.lang === 'diagram' || code.startsWith('<svg')) {
-                        const capMatch = code.match(/data-caption="([^"]+)"/);
-                        const captionHtml = capMatch ? `<figcaption class="diagram-caption">${escapeHtml(capMatch[1])}</figcaption>` : '';
-                        blocks.push({
-                            type: 'diagram',
-                            text: code,
-                            html: `<figure class="diagram-box">${code}${captionHtml}</figure>`
-                        });
-                    } else {
-                        blocks.push({
-                            type: 'code',
-                            text: code,
-                            html: `<div class="code-box"><code>${escapeHtml(code)}</code></div>`
-                        });
-                    }
-                    return;
-                }
-
-                if (p.startsWith('__MATH_')) {
-                    const idx = parseInt(p.replace(/[^0-9]/g, ''));
-                    const rawMath = mathBlocks[idx] || "";
-                    const normalized = cleanMathSyntax(rawMath);
-                    let rendered = '';
-                    if (typeof katex !== 'undefined') {
-                        try {
-                            rendered = katex.renderToString(normalized, { displayMode: true, throwOnError: false });
-                        } catch (e) {
-                            rendered = escapeHtml(rawMath);
-                        }
-                    } else {
-                        rendered = escapeHtml(rawMath);
-                    }
-                    blocks.push({
-                        type: 'equation',
-                        text: rawMath,
-                        html: `<div class="equation-box">${rendered}</div>`
-                    });
-                    return;
-                }
-
-                if (p.startsWith('* ') || p.startsWith('- ')) {
-                    const items = p.split('\n').filter(l => l.trim().startsWith('* ') || l.trim().startsWith('- '));
-                    let listHtml = '<ul>';
-                    items.forEach(it => {
-                        let content = it.replace(/^[\*\-]\s+/, '').trim();
-                        content = formatInline(content);
-                        listHtml += `<li>${content}</li>`;
-                    });
-                    listHtml += '</ul>';
-                    blocks.push({
-                        type: 'list',
-                        itemCount: items.length,
-                        html: listHtml
-                    });
-                    return;
-                }
-
-                if (/^\d+\.\s+/.test(p)) {
-                    const items = p.split('\n').filter(l => /^\d+\.\s+/.test(l.trim()));
-                    let listHtml = '<ol>';
-                    items.forEach(it => {
-                        let content = it.replace(/^\d+\.\s+/, '').trim();
-                        content = formatInline(content);
-                        listHtml += `<li>${content}</li>`;
-                    });
-                    listHtml += '</ol>';
-                    blocks.push({
-                        type: 'list',
-                        itemCount: items.length,
-                        html: listHtml
-                    });
-                    return;
-                }
-
-                // Standalone formula line fallback (for formulas not wrapped in $$)
-                if (p.length < 160 && !p.startsWith('*') && !p.endsWith('.') && !p.endsWith(':') && (
-                    p.includes('\\longrightarrow') || p.includes('\\rightleftharpoons') || p.includes('\\propto') ||
-                    p.includes('\\approx') || p.includes('\\nabla') || p.includes('\\frac') || p.includes(' ∝ ') ||
-                    p.includes('∑') || p.includes('Π(') || p.includes('∂') || p.includes('∫')
-                )) {
-                    const normalized = cleanMathSyntax(p);
-                    let rendered = '';
-                    if (typeof katex !== 'undefined') {
-                        try {
-                            rendered = katex.renderToString(normalized, { displayMode: true, throwOnError: false });
-                        } catch (e) {
-                            rendered = escapeHtml(p);
-                        }
-                    } else {
-                        rendered = escapeHtml(p);
-                    }
-                    blocks.push({
-                        type: 'equation',
-                        text: p,
-                        html: `<div class="equation-box">${rendered}</div>`
-                    });
-                    return;
-                }
-
-                blocks.push({
-                    type: 'paragraph',
-                    text: p,
-                    html: `<p>${formatInline(p)}</p>`
-                });
-            });
-
-            return blocks;
+            const pageH = Math.floor(Math.min(availH, availW / EDITION_SPECS.mobile.aspect));
+            const pageW = Math.floor(pageH * EDITION_SPECS.mobile.aspect);
+            return { edition: 'mobile', twoPage: false, pageW, pageH };
         }
-
-        let _measureCanvas = null;
-        function getParagraphLines(text, colWidth) {
-            const fontSpec = "18px 'Literata', Charter, Georgia, serif";
-            const lineH = 28.5;
-
-            // Keep inline $...$ expressions atomic so they never split across column/page breaks
-            const safeText = text
-                .replace(/\\\$/g, '___ESC_D___')
-                .replace(/\$([^\s$](?:[^$\n]*?[^\s$])?)\$/g, (m) => m.replace(/\s+/g, '\uE000'))
-                .replace(/___ESC_D___/g, '\\$');
-            const restoreMathSpaces = (lines) => lines.map(l => l.replace(/\uE000/g, ' ').trim()).filter(Boolean);
-
-            if (pretextModule && pretextModule.prepareWithSegments && pretextModule.layoutWithLines) {
-                try {
-                    const prep = pretextModule.prepareWithSegments(safeText, fontSpec);
-                    const res = pretextModule.layoutWithLines(prep, colWidth, lineH);
-                    if (res && res.lines && res.lines.length > 0) {
-                        return restoreMathSpaces(res.lines.map(l => l.text));
-                    }
-                } catch (e) {}
-            }
-
-            if (typeof document !== 'undefined') {
-                try {
-                    if (!_measureCanvas) _measureCanvas = document.createElement('canvas');
-                    const ctx = _measureCanvas.getContext('2d');
-                    if (ctx) {
-                        ctx.font = fontSpec;
-                        const words = safeText.split(/\s+/).filter(Boolean);
-                        const lines = [];
-                        let cur = "";
-                        for (let i = 0; i < words.length; i++) {
-                            const test = cur ? (cur + " " + words[i]) : words[i];
-                            const w = ctx.measureText(test.replace(/\uE000/g, ' ')).width;
-                            if (w > colWidth && cur) {
-                                lines.push(cur);
-                                cur = words[i];
-                            } else {
-                                cur = test;
-                            }
-                        }
-                        if (cur) lines.push(cur);
-                        if (lines.length > 0) return restoreMathSpaces(lines);
-                    }
-                } catch (e) {}
-            }
-
-            const charsPerLine = Math.max(40, Math.floor(colWidth / 8.2));
-            const words = safeText.split(/\s+/).filter(Boolean);
-            const lines = [];
-            let cur = "";
-            for (let i = 0; i < words.length; i++) {
-                const test = cur ? (cur + " " + words[i]) : words[i];
-                if (test.length > charsPerLine && cur) {
-                    lines.push(cur);
-                    cur = words[i];
-                } else {
-                    cur = test;
-                }
-            }
-            if (cur) lines.push(cur);
-            return restoreMathSpaces(lines);
-        }
-
-        function renderParagraphHtml(text, isContinuation = false, isContinued = false) {
-            const classes = [];
-            if (isContinuation) classes.push('para-split-continuation');
-            if (isContinued) classes.push('para-split-continued');
-            const classAttr = classes.length > 0 ? ` class="${classes.join(' ')}"` : "";
-            return `<p${classAttr}>${formatInline(text)}</p>`;
-        }
-
-        function measureBlockHeight(block, colWidth) {
-            if (block.type === 'diagram') {
-                const vb = block.text.match(/viewBox="\s*0\s+0\s+(\d+(?:\.\d+)?)\s+(\d+(?:\.\d+)?)\s*"/);
-                if (vb) {
-                    const vw = parseFloat(vb[1]) || 600;
-                    const vh = parseFloat(vb[2]) || 200;
-                    const innerW = Math.max(220, colWidth - 36);
-                    const svgH = Math.min(220, Math.ceil(innerW * (vh / vw)));
-                    const hasCap = /data-caption="[^"]+"/.test(block.text);
-                    return svgH + (hasCap ? 52 : 34);
-                }
-            }
-            let probe = document.getElementById("block-measure-probe");
-            if (!probe) {
-                probe = document.createElement("div");
-                probe.id = "block-measure-probe";
-                probe.style.cssText = "position:absolute; visibility:hidden; pointer-events:none; z-index:-1000; top:0; left:0;";
-                document.body.appendChild(probe);
-            }
-            probe.style.width = colWidth + "px";
-            probe.innerHTML = block.html;
-            const el = probe.firstElementChild;
-            let result = 60;
-            if (el) {
-                const rect = el.getBoundingClientRect();
-                const cs = window.getComputedStyle(el);
-                const marginTop = parseFloat(cs.marginTop) || 0;
-                const marginBottom = parseFloat(cs.marginBottom) || 0;
-                result = Math.max(40, Math.ceil(rect.height + marginTop + marginBottom));
-            } else if (block.type === 'equation') {
-                result = 84;
-            } else if (block.type === 'code') {
-                result = (block.text.split('\n').length * 20) + 36;
-            } else if (block.type === 'list') {
-                result = (block.itemCount * 26) + 24;
-            }
-            probe.innerHTML = "";
-            return result;
-        }
-
-        function measureHeaderBox(chapter, colWidth) {
-            let probe = document.getElementById("header-measure-probe");
-            if (!probe) {
-                probe = document.createElement("div");
-                probe.id = "header-measure-probe";
-                probe.style.cssText = "position:absolute; visibility:hidden; pointer-events:none; z-index:-1000; top:0; left:0;";
-                document.body.appendChild(probe);
-            }
-            probe.style.width = colWidth + "px";
-            probe.innerHTML = `
-                <div class="chapter-header-box" style="margin-top:0;">
-                    <div class="c-label">${escapeHtml(chapter.label)}</div>
-                    <h1 class="c-title">${escapeHtml(chapter.title)}</h1>
-                    <div class="c-subtitle">${escapeHtml(chapter.subtitle)}</div>
-                </div>
-            `;
-            const rect = probe.getBoundingClientRect();
-            return Math.max(120, Math.ceil(rect.height) + 8);
-        }
-
-        function paginateChapter(chapter) {
-            const stage = document.getElementById("spread-container");
-            const colLeftEl = document.getElementById("col-left");
-            const totalWidth = (stage && stage.clientWidth > 400) ? stage.clientWidth : Math.max(600, window.innerWidth - 160);
-            const totalHeight = (colLeftEl && colLeftEl.clientHeight > 200) ? colLeftEl.clientHeight : ((stage && stage.clientHeight > 200) ? stage.clientHeight : Math.max(500, window.innerHeight - 120));
-            const isTwoCol = window.innerWidth >= 900;
-            const colWidth = (colLeftEl && colLeftEl.clientWidth > 200) ? colLeftEl.clientWidth : (isTwoCol ? Math.max(260, (totalWidth - 52) / 2) : totalWidth);
-            
-            const columnHeightBudget = totalHeight - 8;
-            const lineH = 28.5;
-            const paraMargin = 10;
-
-            const blocks = parseChapterBlocks(chapter.body);
-
-            const headerBoxHtml = `
-                <div class="chapter-header-box">
-                    <div class="c-label">${escapeHtml(chapter.label)}</div>
-                    <h1 class="c-title">${escapeHtml(chapter.title)}</h1>
-                    <div class="c-subtitle">${escapeHtml(chapter.subtitle)}</div>
-                </div>
-            `;
-            const headerBoxHeight = measureHeaderBox(chapter, colWidth);
-
-            const spreads = [];
-            let currentLeftItems = [];
-            let currentRightItems = [];
-            let leftUsedHeight = 0;
-            let rightUsedHeight = 0;
-            let spreadIdx = 0;
-
-            let blockIdx = 0;
-            let activeParaLines = null;
-            let activeIsContinuation = false;
-
-            while (blockIdx < blocks.length || activeParaLines !== null) {
-                const leftBudget = (spreadIdx === 0) ? (columnHeightBudget - headerBoxHeight) : columnHeightBudget;
-                const rightBudget = isTwoCol ? columnHeightBudget : 0;
-
-                const targetIsLeft = (rightUsedHeight === 0 && currentRightItems.length === 0 && leftUsedHeight < leftBudget);
-                const targetBudget = targetIsLeft ? leftBudget : rightBudget;
-                const targetUsed = targetIsLeft ? leftUsedHeight : rightUsedHeight;
-                const targetItems = targetIsLeft ? currentLeftItems : currentRightItems;
-                const remBudget = targetBudget - targetUsed;
-
-                if (!isTwoCol && leftUsedHeight >= leftBudget) {
-                    spreads.push({
-                        isFirstSpread: spreadIdx === 0,
-                        colLeftHtml: (spreadIdx === 0 ? headerBoxHtml : "") + currentLeftItems.join(""),
-                        colRightHtml: ""
-                    });
-                    spreadIdx++;
-                    currentLeftItems = [];
-                    currentRightItems = [];
-                    leftUsedHeight = 0;
-                    rightUsedHeight = 0;
-                    continue;
-                }
-
-                if (activeParaLines === null) {
-                    const block = blocks[blockIdx];
-                    if (block.type !== 'paragraph') {
-                        const blockH = measureBlockHeight(block, colWidth);
-                        if (blockH <= remBudget || targetItems.length === 0) {
-                            targetItems.push(block.html);
-                            if (targetIsLeft) leftUsedHeight += blockH;
-                            else rightUsedHeight += blockH;
-                            blockIdx++;
-                            continue;
-                        } else {
-                            if (targetIsLeft) {
-                                leftUsedHeight = leftBudget;
-                                if (!isTwoCol) {
-                                    spreads.push({
-                                        isFirstSpread: spreadIdx === 0,
-                                        colLeftHtml: (spreadIdx === 0 ? headerBoxHtml : "") + currentLeftItems.join(""),
-                                        colRightHtml: ""
-                                    });
-                                    spreadIdx++;
-                                    currentLeftItems = [];
-                                    currentRightItems = [];
-                                    leftUsedHeight = 0;
-                                    rightUsedHeight = 0;
-                                }
-                            } else {
-                                spreads.push({
-                                    isFirstSpread: spreadIdx === 0,
-                                    colLeftHtml: (spreadIdx === 0 ? headerBoxHtml : "") + currentLeftItems.join(""),
-                                    colRightHtml: currentRightItems.join("")
-                                });
-                                spreadIdx++;
-                                currentLeftItems = [];
-                                currentRightItems = [];
-                                leftUsedHeight = 0;
-                                rightUsedHeight = 0;
-                            }
-                            continue;
-                        }
-                    }
-                }
-
-                let pLines;
-                let isCont;
-                if (activeParaLines !== null) {
-                    pLines = activeParaLines;
-                    isCont = activeIsContinuation;
-                } else {
-                    const block = blocks[blockIdx];
-                    pLines = getParagraphLines(block.text, colWidth);
-                    isCont = false;
-                }
-
-                const totalParaH = (pLines.length * lineH) + paraMargin;
-
-                if (totalParaH <= remBudget || (targetItems.length === 0 && remBudget < lineH * 2)) {
-                    targetItems.push(renderParagraphHtml(pLines.join(" "), isCont, false));
-                    if (targetIsLeft) leftUsedHeight += totalParaH;
-                    else rightUsedHeight += totalParaH;
-
-                    if (activeParaLines !== null) {
-                        activeParaLines = null;
-                        activeIsContinuation = false;
-                        blockIdx++;
-                    } else {
-                        blockIdx++;
-                    }
-                    continue;
-                }
-
-                const linesFit = Math.floor((remBudget - 6) / lineH);
-
-                if (linesFit >= 1 && (pLines.length > linesFit)) {
-                    const firstSlice = pLines.slice(0, linesFit);
-                    const remSlice = pLines.slice(linesFit);
-
-                    targetItems.push(renderParagraphHtml(firstSlice.join(" "), isCont, true));
-                    if (targetIsLeft) leftUsedHeight += (linesFit * lineH);
-                    else rightUsedHeight += (linesFit * lineH);
-
-                    activeParaLines = remSlice;
-                    activeIsContinuation = true;
-
-                    if (targetIsLeft) {
-                        leftUsedHeight = leftBudget;
-                        if (!isTwoCol) {
-                            spreads.push({
-                                isFirstSpread: spreadIdx === 0,
-                                colLeftHtml: (spreadIdx === 0 ? headerBoxHtml : "") + currentLeftItems.join(""),
-                                colRightHtml: ""
-                            });
-                            spreadIdx++;
-                            currentLeftItems = [];
-                            currentRightItems = [];
-                            leftUsedHeight = 0;
-                            rightUsedHeight = 0;
-                        }
-                    } else {
-                        spreads.push({
-                            isFirstSpread: spreadIdx === 0,
-                            colLeftHtml: (spreadIdx === 0 ? headerBoxHtml : "") + currentLeftItems.join(""),
-                            colRightHtml: currentRightItems.join("")
-                        });
-                        spreadIdx++;
-                        currentLeftItems = [];
-                        currentRightItems = [];
-                        leftUsedHeight = 0;
-                        rightUsedHeight = 0;
-                    }
-                } else {
-                    if (targetItems.length === 0) {
-                        targetItems.push(renderParagraphHtml(pLines.join(" "), isCont, false));
-                        if (targetIsLeft) leftUsedHeight += totalParaH;
-                        else rightUsedHeight += totalParaH;
-                        if (activeParaLines !== null) {
-                            activeParaLines = null;
-                            activeIsContinuation = false;
-                            blockIdx++;
-                        } else {
-                            blockIdx++;
-                        }
-                    } else {
-                        if (targetIsLeft) {
-                            leftUsedHeight = leftBudget;
-                            if (!isTwoCol) {
-                                spreads.push({
-                                    isFirstSpread: spreadIdx === 0,
-                                    colLeftHtml: (spreadIdx === 0 ? headerBoxHtml : "") + currentLeftItems.join(""),
-                                    colRightHtml: ""
-                                });
-                                spreadIdx++;
-                                currentLeftItems = [];
-                                currentRightItems = [];
-                                leftUsedHeight = 0;
-                                rightUsedHeight = 0;
-                            }
-                        } else {
-                            spreads.push({
-                                isFirstSpread: spreadIdx === 0,
-                                colLeftHtml: (spreadIdx === 0 ? headerBoxHtml : "") + currentLeftItems.join(""),
-                                colRightHtml: currentRightItems.join("")
-                            });
-                            spreadIdx++;
-                            currentLeftItems = [];
-                            currentRightItems = [];
-                            leftUsedHeight = 0;
-                            rightUsedHeight = 0;
-                        }
-                    }
-                }
-            }
-
-            if (currentLeftItems.length > 0 || currentRightItems.length > 0 || spreads.length === 0) {
-                spreads.push({
-                    isFirstSpread: spreadIdx === 0,
-                    colLeftHtml: (spreadIdx === 0 ? headerBoxHtml : "") + currentLeftItems.join(""),
-                    colRightHtml: isTwoCol ? currentRightItems.join("") : ""
-                });
-            }
-
-            return spreads;
-        }
-
-        if (window.pdfjsLib) {
-            window.pdfjsLib.GlobalWorkerOptions.workerSrc = 'vendor/pdfjs/pdf.worker.min.js';
-        }
-
-        let activePdfDoc = null;
-        let activePdfEdition = 'desktop'; // 'desktop' | 'mobile'
-        const pdfDocCache = {};
-        let pdfPageNum = 1;
-        let zoomScale = 1.0;
-        let userViewMode = 'auto'; // 'auto' | '2p' | '1p'
-        let activeRenderTasks = { left: null, right: null };
-        let renderToken = 0;
 
         function isTwoPageEffective() {
-            if (userViewMode === '2p') return true;
-            if (userViewMode === '1p') return false;
-            return window.innerWidth >= 900;
-        }
-
-        function adjustZoom(delta) {
-            zoomScale = Math.max(0.6, Math.min(2.5, Math.round((zoomScale + delta) * 100) / 100));
-            rebuildAndRenderSpread();
-        }
-
-        function resetZoom() {
-            zoomScale = 1.0;
-            rebuildAndRenderSpread();
-        }
-
-        function toggleViewMode() {
-            const currentlyTwo = isTwoPageEffective();
-            userViewMode = currentlyTwo ? '1p' : '2p';
-            rebuildAndRenderSpread();
+            return computeResponsiveLayout().twoPage;
         }
 
         function getSectionPages(forEdition) {
             const bookData = EMBEDDED_BOOKS[currentBookKey];
-            const ed = forEdition || (isTwoPageEffective() ? 'desktop' : 'mobile');
+            const ed = forEdition || activePdfEdition || computeResponsiveLayout().edition;
             if (bookData) {
                 if (ed === 'mobile' && Array.isArray(bookData.mobileSectionPages) && bookData.mobileSectionPages.length) {
                     return bookData.mobileSectionPages;
+                }
+                if (ed === 'compact' && Array.isArray(bookData.compactSectionPages) && bookData.compactSectionPages.length) {
+                    return bookData.compactSectionPages;
                 }
                 if (Array.isArray(bookData.sectionPages) && bookData.sectionPages.length) {
                     return bookData.sectionPages;
@@ -1141,8 +495,8 @@
         }
 
         function syncChapterFromPdfPage() {
-            if (!parsedBook || !parsedBook.chapters.length) return;
-            const sectionPages = getSectionPages();
+            if (!activeBook || !activeBook.chapters || !activeBook.chapters.length) return;
+            const sectionPages = getSectionPages(activePdfEdition);
             const twoPage = isTwoPageEffective();
             const leftP = twoPage ? (Math.floor((pdfPageNum - 1) / 2) * 2 + 1) : pdfPageNum;
             const maxVisiblePage = twoPage ? (leftP + 1) : leftP;
@@ -1153,24 +507,24 @@
                     chapIdx = i;
                 }
             }
-            currentChapterIndex = Math.min(chapIdx, parsedBook.chapters.length - 1);
+            currentChapterIndex = Math.min(chapIdx, activeBook.chapters.length - 1);
         }
 
         async function ensurePdfEditionLoaded(key, edition) {
             const bookData = EMBEDDED_BOOKS[key];
             if (!bookData || !window.pdfjsLib) return null;
-            const pdfUrl = (edition === 'mobile' && bookData.mobilePdf) ? bookData.mobilePdf : bookData.pdf;
+            let pdfUrl = bookData.pdf;
+            if (edition === 'mobile' && bookData.mobilePdf) {
+                pdfUrl = bookData.mobilePdf;
+            } else if (edition === 'compact' && bookData.compactPdf) {
+                pdfUrl = bookData.compactPdf;
+            }
             if (!pdfUrl) return null;
 
-            const pdfLink = document.getElementById('open-pdf-link');
-            if (pdfLink) {
-                pdfLink.href = pdfUrl;
-                pdfLink.style.display = '';
-            }
-
-            const cacheKey = `${key}:${edition}`;
+            const versionedUrl = `${pdfUrl}?v=${PDF_BUILD_VERSION}`;
+            const cacheKey = `${key}:${edition}:${PDF_BUILD_VERSION}`;
             if (!pdfDocCache[cacheKey]) {
-                pdfDocCache[cacheKey] = await window.pdfjsLib.getDocument(pdfUrl).promise;
+                pdfDocCache[cacheKey] = await window.pdfjsLib.getDocument(versionedUrl).promise;
             }
             return pdfDocCache[cacheKey];
         }
@@ -1179,22 +533,21 @@
             currentBookKey = key;
             const bookData = EMBEDDED_BOOKS[key];
             if (!bookData) return;
-            parsedBook = parseAlexandriaMarkdown(bookData.markdown);
+            activeBook = {
+                title: bookData.title,
+                subtitle: bookData.subtitle,
+                category: bookData.category,
+                chapters: Array.isArray(bookData.chapters) ? bookData.chapters : []
+            };
             currentChapterIndex = 0;
-            currentSpreadIndex = 0;
             pdfPageNum = initialPage || 1;
-            activePdfEdition = isTwoPageEffective() ? 'desktop' : 'mobile';
-
-            const pdfLink = document.getElementById('open-pdf-link');
-            if (pdfLink && !bookData.pdf) {
-                pdfLink.style.display = 'none';
-            }
+            activePdfEdition = computeResponsiveLayout().edition;
 
             if (bookData.pdf && window.pdfjsLib) {
                 try {
                     activePdfDoc = await ensurePdfEditionLoaded(key, activePdfEdition);
                 } catch (err) {
-                    console.error('Failed to load Typst PDF, falling back to Markdown:', err);
+                    console.error('Failed to load Typst PDF:', err);
                     activePdfDoc = null;
                 }
             } else {
@@ -1208,13 +561,18 @@
         }
 
         async function rebuildAndRenderSpread() {
-            if (!parsedBook || !parsedBook.chapters.length) return;
+            if (!activeBook) return;
 
-            const desiredEdition = isTwoPageEffective() ? 'desktop' : 'mobile';
+            const layout = computeResponsiveLayout();
+            const desiredEdition = layout.edition;
             const bookData = EMBEDDED_BOOKS[currentBookKey];
             if (bookData && bookData.pdf && window.pdfjsLib && desiredEdition !== activePdfEdition) {
                 const wasPageOne = (pdfPageNum === 1);
+                const oldSecPages = getSectionPages(activePdfEdition);
                 const savedChap = currentChapterIndex;
+                const oldChapStart = oldSecPages[savedChap] || 2;
+                const pageOffset = Math.max(0, pdfPageNum - oldChapStart);
+
                 activePdfEdition = desiredEdition;
                 try {
                     activePdfDoc = await ensurePdfEditionLoaded(currentBookKey, activePdfEdition);
@@ -1222,7 +580,9 @@
                         pdfPageNum = 1;
                     } else {
                         const newSecPages = getSectionPages(activePdfEdition);
-                        pdfPageNum = newSecPages[savedChap] || 2;
+                        const newStart = newSecPages[savedChap] || 2;
+                        const nextStart = newSecPages[savedChap + 1] || (activePdfDoc.numPages + 1);
+                        pdfPageNum = Math.min(nextStart - 1, newStart + pageOffset);
                     }
                 } catch (e) {
                     console.warn('Failed to switch PDF edition:', e);
@@ -1231,24 +591,12 @@
 
             if (activePdfDoc) {
                 syncChapterFromPdfPage();
-                renderPdfSpread();
-                return;
+                renderPdfSpread(layout);
             }
-
-            const ch = parsedBook.chapters[currentChapterIndex];
-            chapterSpreads = paginateChapter(ch);
-            if (currentSpreadIndex >= chapterSpreads.length) {
-                currentSpreadIndex = Math.max(0, chapterSpreads.length - 1);
-            }
-            if (currentSpreadIndex < 0) currentSpreadIndex = 0;
-
-            renderActiveSpread();
         }
 
-        async function renderSinglePdfPage(pageNumber, canvasEl, linksEl, slotEl, pageW, pageH, slotKey, myToken) {
+        async function renderSinglePdfPage(pageNumber, canvasEl, linksEl, slotEl, maxPageW, maxPageH, slotKey, myToken) {
             if (!activePdfDoc || !canvasEl || !slotEl) return;
-            slotEl.style.width = pageW + 'px';
-            slotEl.style.height = pageH + 'px';
             if (linksEl) linksEl.innerHTML = '';
 
             if (activeRenderTasks[slotKey]) {
@@ -1262,13 +610,21 @@
 
                 const unscaledVp = page.getViewport({ scale: 1 });
                 const dpr = Math.min(window.devicePixelRatio || 1, 3);
-                const cssScale = pageW / unscaledVp.width;
-                const hiDpiViewport = page.getViewport({ scale: cssScale * dpr });
+                // Always preserve the PDF page's native aspect ratio and snap to exact device pixels
+                const cssScale = Math.min(maxPageW / unscaledVp.width, maxPageH / unscaledVp.height);
+                const exactCssW = Math.round(unscaledVp.width * cssScale);
+                const exactCssH = Math.round(unscaledVp.height * cssScale);
+                const alignedScale = exactCssW / unscaledVp.width;
+                const hiDpiViewport = page.getViewport({ scale: alignedScale * dpr });
 
-                canvasEl.width = Math.floor(hiDpiViewport.width);
-                canvasEl.height = Math.floor(hiDpiViewport.height);
-                canvasEl.style.width = pageW + 'px';
-                canvasEl.style.height = pageH + 'px';
+                canvasEl.width = Math.round(hiDpiViewport.width);
+                canvasEl.height = Math.round(hiDpiViewport.height);
+                const cssWStr = (canvasEl.width / dpr) + 'px';
+                const cssHStr = (canvasEl.height / dpr) + 'px';
+                canvasEl.style.width = cssWStr;
+                canvasEl.style.height = cssHStr;
+                slotEl.style.width = cssWStr;
+                slotEl.style.height = cssHStr;
 
                 const ctx = canvasEl.getContext('2d');
                 const task = page.render({ canvasContext: ctx, viewport: hiDpiViewport });
@@ -1283,8 +639,8 @@
                     const linkAnnots = annots
                         .filter(a => a.subtype === 'Link' && Array.isArray(a.rect))
                         .sort((a, b) => b.rect[1] - a.rect[1]);
-                    const cssVp = page.getViewport({ scale: cssScale });
-                    const sectionPages = getSectionPages();
+                    const cssVp = page.getViewport({ scale: alignedScale });
+                    const sectionPages = getSectionPages(activePdfEdition);
 
                     linkAnnots.forEach((annot, idx) => {
                         const rect = cssVp.convertToViewportRectangle(annot.rect);
@@ -1294,7 +650,7 @@
                         const height = Math.abs(rect[3] - rect[1]);
 
                         const targetPage = sectionPages[idx] || (idx === 0 ? 2 : (idx * 2 + 1));
-                        const chObj = parsedBook.chapters[idx];
+                        const chObj = activeBook.chapters[idx];
                         const a = document.createElement('a');
                         a.className = 'pdf-link-hotspot';
                         a.href = '#';
@@ -1318,28 +674,15 @@
             }
         }
 
-        function updateHeaderAndFooterFolio() {
-            const ch = parsedBook.chapters[currentChapterIndex] || parsedBook.chapters[0];
-            const headerCenter = document.getElementById('header-center-box');
-            if (headerCenter && ch) {
-                headerCenter.innerHTML = `
-                    <span class="folio-chap-tag" id="header-chap-label">${escapeHtml(ch.label)}</span>
-                    <span class="folio-sep">·</span>
-                    <span class="folio-title" id="header-chap-title">${escapeHtml(ch.title)}</span>
-                    <span class="folio-sep">—</span>
-                    <span class="folio-subtitle" id="header-chap-subtitle">${escapeHtml(ch.subtitle)}</span>
-                `;
-            }
-
-            const footerBook = document.getElementById('footer-book-name');
-            if (footerBook) footerBook.innerText = parsedBook.title;
-        }
-
-        function renderPdfSpread() {
+        function renderPdfSpread(layoutOverride) {
             if (!activePdfDoc) return;
             const myToken = ++renderToken;
 
-            const spreadContainer = document.getElementById('spread-container');
+            const layout = layoutOverride || computeResponsiveLayout();
+            const twoPage = layout.twoPage;
+            const pageW = Math.max(142, layout.pageW);
+            const pageH = Math.max(220, layout.pageH);
+
             const bookFrame = document.getElementById('pdf-book-frame');
             const slotLeft = document.getElementById('pdf-slot-left');
             const slotRight = document.getElementById('pdf-slot-right');
@@ -1347,18 +690,7 @@
             const canvasRight = document.getElementById('pdf-canvas-right');
             const linksLeft = document.getElementById('pdf-links-left');
             const linksRight = document.getElementById('pdf-links-right');
-            const colLeft = document.getElementById('col-left');
-            const colRight = document.getElementById('col-right');
 
-            if (spreadContainer) {
-                spreadContainer.classList.add('pdf-spread-stage');
-                spreadContainer.classList.toggle('is-zoomed', zoomScale > 1.02);
-            }
-            if (bookFrame) bookFrame.style.display = 'flex';
-            if (colLeft) colLeft.style.display = 'none';
-            if (colRight) colRight.style.display = 'none';
-
-            const twoPage = isTwoPageEffective();
             const totalPages = activePdfDoc.numPages;
 
             let leftPage = pdfPageNum;
@@ -1376,48 +708,19 @@
             }
 
             syncChapterFromPdfPage();
-            updateHeaderAndFooterFolio();
 
-            const viewBtn = document.getElementById('view-mode-btn');
-            if (viewBtn) viewBtn.innerText = twoPage ? '2P' : '1P';
-
-            const zoomReadout = document.getElementById('zoom-readout');
-            if (zoomReadout) {
-                zoomReadout.innerText = Math.abs(zoomScale - 1.0) < 0.01 ? 'Fit' : `${Math.round(zoomScale * 100)}%`;
-            }
-
-            const footerCounter = document.getElementById('footer-page-counter');
-            if (footerCounter) {
-                if (twoPage && rightPage) {
-                    const spreadIdx = Math.floor((leftPage - 1) / 2) + 1;
-                    const totalSpreads = Math.ceil(totalPages / 2);
-                    footerCounter.innerText = `Pages ${leftPage}–${rightPage} of ${totalPages}  ·  Spread ${spreadIdx} of ${totalSpreads}`;
-                } else {
-                    footerCounter.innerText = `Page ${leftPage} of ${totalPages}`;
-                }
-            }
-
-            // Compute Fit-Window dimensions for Digital Desktop (6.4x7.5 per page -> 12.8x7.5 spread) or Mobile (4.2x7.5)
-            const vpW = document.documentElement.clientWidth || window.innerWidth;
-            const vpH = document.documentElement.clientHeight || window.innerHeight;
-            const stageRect = spreadContainer ? spreadContainer.getBoundingClientRect() : { width: vpW, height: vpH - 76 };
-            const rawW = Math.min(stageRect.width || vpW, vpW - 8);
-            const rawH = Math.min(stageRect.height || (vpH - 76), vpH - 76);
-            const availW = Math.max(200, rawW - 6);
-            const availH = Math.max(200, rawH - 4);
-            const PAGE_ASPECT = (activePdfEdition === 'mobile') ? (4.2 / 7.5) : (6.4 / 7.5);
+            const prevBtn = document.getElementById('prev-spread-btn');
+            const nextBtn = document.getElementById('next-spread-btn');
+            const atStart = (leftPage <= 1);
+            const atEnd = twoPage ? ((rightPage || leftPage) >= totalPages) : (leftPage >= totalPages);
+            if (prevBtn) prevBtn.classList.toggle('is-disabled', atStart);
+            if (nextBtn) nextBtn.classList.toggle('is-disabled', atEnd);
 
             const showBoth = twoPage && rightPage !== null;
-            const fitPageH = showBoth
-                ? Math.floor(Math.min(availH, availW / (2 * PAGE_ASPECT)))
-                : Math.floor(Math.min(availH, availW / PAGE_ASPECT));
-            const fitPageW = Math.floor(fitPageH * PAGE_ASPECT);
-
-            const pageH = Math.max(220, Math.round(fitPageH * zoomScale));
-            const pageW = Math.max(142, Math.round(fitPageW * zoomScale));
 
             if (bookFrame) {
                 bookFrame.className = showBoth ? 'pdf-book-frame two-page' : 'pdf-book-frame single-page';
+                bookFrame.classList.toggle('is-page-one', leftPage === 1 && !showBoth);
             }
 
             if (slotLeft) slotLeft.style.display = 'block';
@@ -1433,163 +736,26 @@
             renderTocList();
         }
 
-        function fitDiagramBoxes(containerEl) {
-            if (!containerEl) return;
-            const svgs = containerEl.querySelectorAll('.diagram-box svg');
-            svgs.forEach(svg => {
-                const rects = Array.from(svg.querySelectorAll('rect'));
-                const texts = Array.from(svg.querySelectorAll('text'));
-                const lines = Array.from(svg.querySelectorAll('line'));
-                rects.forEach(rect => {
-                    const rx = parseFloat(rect.getAttribute('x') || '0');
-                    const ry = parseFloat(rect.getAttribute('y') || '0');
-                    const rw = parseFloat(rect.getAttribute('width') || '0');
-                    const rh = parseFloat(rect.getAttribute('height') || '0');
-                    if (rw < 24 || rh < 16 || rh > 90) return;
-                    const rx2 = rx + rw;
-                    const ry2 = ry + rh;
-                    const insideTexts = texts.filter(t => {
-                        const tx = parseFloat(t.getAttribute('x') || '0');
-                        const ty = parseFloat(t.getAttribute('y') || '0');
-                        return tx >= rx - 2 && tx <= rx2 + 2 && ty >= ry && ty <= ry2 + 2;
-                    });
-                    if (!insideTexts.length) return;
-                    let maxTextW = 0;
-                    insideTexts.forEach(t => {
-                        try {
-                            const bb = t.getBBox();
-                            if (bb && bb.width > maxTextW) maxTextW = bb.width;
-                        } catch (e) {}
-                    });
-                    const reqW = Math.ceil(maxTextW + 22);
-                    if (reqW > rw) {
-                        const cx = rx + rw / 2;
-                        const newX = Math.max(8, Math.min(600 - reqW - 8, Math.round(cx - reqW / 2)));
-                        const newX2 = newX + reqW;
-                        rect.setAttribute('x', String(newX));
-                        rect.setAttribute('width', String(reqW));
-                        insideTexts.forEach(t => {
-                            if ((t.getAttribute('text-anchor') || '') === 'middle') {
-                                t.setAttribute('x', String(Math.round(newX + reqW / 2)));
-                            }
-                        });
-                        lines.forEach(ln => {
-                            const x1 = parseFloat(ln.getAttribute('x1') || '0');
-                            const y1 = parseFloat(ln.getAttribute('y1') || '0');
-                            const x2 = parseFloat(ln.getAttribute('x2') || '0');
-                            const y2 = parseFloat(ln.getAttribute('y2') || '0');
-                            if (y1 >= ry && y1 <= ry2 && Math.abs(x1 - rx2) <= 4 && x2 > rx2) {
-                                ln.setAttribute('x1', String(newX2));
-                            } else if (y2 >= ry && y2 <= ry2 && Math.abs(x2 - rx) <= 4 && x1 < rx) {
-                                ln.setAttribute('x2', String(newX));
-                            }
-                        });
-                    }
-                });
-            });
-        }
-
-        function renderActiveSpread() {
-            const spreadContainer = document.getElementById('spread-container');
-            const bookFrame = document.getElementById('pdf-book-frame');
-            const colLeft = document.getElementById('col-left');
-            const colRight = document.getElementById('col-right');
-
-            if (spreadContainer) spreadContainer.classList.remove('pdf-spread-stage', 'is-zoomed');
-            if (bookFrame) bookFrame.style.display = 'none';
-            if (colLeft) colLeft.style.display = '';
-            if (colRight) colRight.style.display = '';
-
-            const ch = parsedBook.chapters[currentChapterIndex];
-            const spread = chapterSpreads[currentSpreadIndex] || { colLeftHtml: "", colRightHtml: "" };
-
-            updateHeaderAndFooterFolio();
-
-            const footerCounter = document.getElementById('footer-page-counter');
-            if (footerCounter) footerCounter.innerText = `Spread ${currentSpreadIndex + 1} of ${chapterSpreads.length}`;
-
-            if (colLeft) colLeft.innerHTML = spread.colLeftHtml || '';
-            if (colRight) colRight.innerHTML = spread.colRightHtml || '';
-            fitDiagramBoxes(spreadContainer);
-
-            if (typeof renderMathInElement !== 'undefined') {
-                try {
-                    renderMathInElement(spreadContainer, {
-                        delimiters: [
-                            {left: '$$', right: '$$', display: true},
-                            {left: '$', right: '$', display: false},
-                            {left: '\\(', right: '\\)', display: false},
-                            {left: '\\[', right: '\\]', display: true}
-                        ],
-                        throwOnError: false
-                    });
-                } catch (e) {}
-            }
-
-            if (justifModule && justifModule.justify) {
-                try {
-                    if (activeJustifController && activeJustifController.unjustify) {
-                        activeJustifController.unjustify();
-                    }
-                    const paras = Array.from(document.querySelectorAll('#spread-container .spread-col p:not(.para-split-continued):not(.para-split-continuation)'));
-                    if (paras.length > 0) {
-                        activeJustifController = justifModule.justify(paras, {
-                            hyphenate: hyphenateEnUS || undefined,
-                            observeResize: false
-                        });
-                    }
-                } catch (e) {}
-            }
-        }
-
         function advancePage(direction) {
-            if (activePdfDoc) {
-                const step = isTwoPageEffective() ? 2 : 1;
-                const nextP = pdfPageNum + (direction > 0 ? step : -step);
-                if (nextP >= 1 && nextP <= activePdfDoc.numPages) {
-                    pdfPageNum = nextP;
-                    rebuildAndRenderSpread();
-                }
-                return;
-            }
-
-            if (direction > 0) {
-                if (currentSpreadIndex < chapterSpreads.length - 1) {
-                    currentSpreadIndex++;
-                    renderActiveSpread();
-                } else if (currentChapterIndex < parsedBook.chapters.length - 1) {
-                    currentChapterIndex++;
-                    currentSpreadIndex = 0;
-                    rebuildAndRenderSpread();
-                }
-            } else {
-                if (currentSpreadIndex > 0) {
-                    currentSpreadIndex--;
-                    renderActiveSpread();
-                } else if (currentChapterIndex > 0) {
-                    currentChapterIndex--;
-                    const prevCh = parsedBook.chapters[currentChapterIndex];
-                    const prevSpreads = paginateChapter(prevCh);
-                    currentSpreadIndex = Math.max(0, prevSpreads.length - 1);
-                    rebuildAndRenderSpread();
-                }
+            if (!activePdfDoc) return;
+            const step = isTwoPageEffective() ? 2 : 1;
+            const nextP = pdfPageNum + (direction > 0 ? step : -step);
+            if (nextP >= 1 && nextP <= activePdfDoc.numPages) {
+                pdfPageNum = nextP;
+                rebuildAndRenderSpread();
             }
         }
 
         function jumpToChapterIndex(idx) {
-            if (!parsedBook || idx < 0 || idx >= parsedBook.chapters.length) return;
+            if (!activeBook || idx < 0 || idx >= activeBook.chapters.length) return;
             currentChapterIndex = idx;
-            currentSpreadIndex = 0;
-            if (activePdfDoc) {
-                const sectionPages = getSectionPages();
-                const targetPage = sectionPages[idx] || (idx === 0 ? 2 : (idx * 2 + 1));
-                pdfPageNum = targetPage;
-            }
+            const sectionPages = getSectionPages(activePdfEdition);
+            pdfPageNum = sectionPages[idx] || (idx === 0 ? 2 : (idx * 2 + 1));
             rebuildAndRenderSpread();
         }
 
         function nextChapter() {
-            if (parsedBook && currentChapterIndex < parsedBook.chapters.length - 1) {
+            if (activeBook && currentChapterIndex < activeBook.chapters.length - 1) {
                 jumpToChapterIndex(currentChapterIndex + 1);
             }
         }
@@ -1602,20 +768,20 @@
 
         function renderTocList() {
             const list = document.getElementById('toc-container');
-            if (!list || !parsedBook) return;
+            if (!list || !activeBook) return;
             list.innerHTML = "";
             const titleEl = document.getElementById('toc-book-title');
-            if (titleEl) titleEl.innerText = parsedBook.title;
+            if (titleEl) titleEl.innerText = activeBook.title;
 
-            const sectionPages = getSectionPages();
-            parsedBook.chapters.forEach((ch, idx) => {
+            const sectionPages = getSectionPages(activePdfEdition);
+            activeBook.chapters.forEach((ch, idx) => {
                 const li = document.createElement('li');
                 li.className = `toc-item ${idx === currentChapterIndex ? 'active' : ''}`;
                 li.onclick = () => {
                     jumpToChapterIndex(idx);
                     closeModals();
                 };
-                const pageBadge = activePdfDoc && sectionPages[idx] ? ` <span style="float:right; font-size:0.78em; color:var(--text-muted);">p. ${sectionPages[idx]}</span>` : '';
+                const pageBadge = sectionPages[idx] ? ` <span style="float:right; font-size:0.78em; color:var(--text-muted);">p. ${sectionPages[idx]}</span>` : '';
                 li.innerHTML = `
                     <div class="t-label">${escapeHtml(ch.label)}${pageBadge}</div>
                     <div class="t-title">${escapeHtml(ch.title)}</div>
@@ -1634,11 +800,14 @@
                 const b = EMBEDDED_BOOKS[k];
                 const div = document.createElement('div');
                 div.className = `library-item ${k === currentBookKey ? 'active' : ''}`;
-                div.onclick = () => loadBook(k);
+                div.onclick = () => {
+                    loadBook(k);
+                    window.location.hash = 'read=' + k;
+                };
                 div.innerHTML = `
-                    <div class="b-cat">${b.category}</div>
-                    <div class="b-title">${b.title}</div>
-                    <div class="b-sub">${b.subtitle}</div>
+                    <div class="b-cat">${escapeHtml(b.category)}</div>
+                    <div class="b-title">${escapeHtml(b.title)}</div>
+                    <div class="b-sub">${escapeHtml(b.subtitle)}</div>
                 `;
                 container.appendChild(div);
             });
@@ -1671,25 +840,6 @@
             document.documentElement.setAttribute('data-theme', t);
         }
 
-        function handleFileUpload(e) {
-            const file = e.target.files[0];
-            if (!file) return;
-
-            const reader = new FileReader();
-            reader.onload = function(evt) {
-                const content = evt.target.result;
-                const bookKey = 'custom-' + Date.now();
-                EMBEDDED_BOOKS[bookKey] = {
-                    title: file.name.replace(/\.[^/.]+$/, ''),
-                    subtitle: "Custom Uploaded Markdown",
-                    category: "Local",
-                    markdown: content
-                };
-                loadBook(bookKey);
-            };
-            reader.readAsText(file);
-        }
-
         let resizeTimer = null;
         window.addEventListener('resize', () => {
             clearTimeout(resizeTimer);
@@ -1698,27 +848,7 @@
             }, 60);
         });
 
-        // Trackpad pinch-to-zoom / Ctrl+Wheel vector zoom on the PDF stage
-        let wheelZoomTimer = null;
-        window.addEventListener('wheel', (e) => {
-            const homeView = document.getElementById('home-view');
-            if (homeView && homeView.classList.contains('active')) return;
-            if ((e.ctrlKey || e.metaKey) && activePdfDoc) {
-                e.preventDefault();
-                const delta = e.deltaY < 0 ? 0.08 : -0.08;
-                zoomScale = Math.max(0.6, Math.min(2.5, Math.round((zoomScale + delta) * 100) / 100));
-                const zoomReadout = document.getElementById('zoom-readout');
-                if (zoomReadout) {
-                    zoomReadout.innerText = Math.abs(zoomScale - 1.0) < 0.01 ? 'Fit' : `${Math.round(zoomScale * 100)}%`;
-                }
-                clearTimeout(wheelZoomTimer);
-                wheelZoomTimer = setTimeout(() => {
-                    rebuildAndRenderSpread();
-                }, 45);
-            }
-        }, { passive: false });
-
-        // Touch swipe left/right to turn pages on mobile/tablet when at Fit Window zoom
+        // Touch swipe left/right to turn pages on mobile/tablet
         let touchStartX = 0;
         let touchStartY = 0;
         window.addEventListener('touchstart', (e) => {
@@ -1731,7 +861,6 @@
         window.addEventListener('touchend', (e) => {
             const homeView = document.getElementById('home-view');
             if (homeView && homeView.classList.contains('active')) return;
-            if (zoomScale > 1.02) return;
             if (e.changedTouches && e.changedTouches.length === 1) {
                 const dx = e.changedTouches[0].clientX - touchStartX;
                 const dy = e.changedTouches[0].clientY - touchStartY;
@@ -1760,18 +889,6 @@
                 } else if (e.key === 'ArrowLeft' || (e.key === ' ' && e.shiftKey)) {
                     e.preventDefault();
                     window.advancePage(-1);
-                } else if (e.key === '+' || e.key === '=') {
-                    e.preventDefault();
-                    adjustZoom(0.15);
-                } else if (e.key === '-' || e.key === '_') {
-                    e.preventDefault();
-                    adjustZoom(-0.15);
-                } else if (e.key === '0') {
-                    e.preventDefault();
-                    resetZoom();
-                } else if (e.key === 'v') {
-                    e.preventDefault();
-                    toggleViewMode();
                 } else if (e.key === 'n') {
                     window.nextChapter();
                 } else if (e.key === 'p') {
@@ -1788,28 +905,12 @@
         window.advancePage = advancePage;
         window.nextChapter = nextChapter;
         window.prevChapter = prevChapter;
-        window.adjustZoom = adjustZoom;
-        window.resetZoom = resetZoom;
-        window.toggleViewMode = toggleViewMode;
         window.openTocModal = openTocModal;
         window.openLibraryModal = openLibraryModal;
         window.openHelpModal = openHelpModal;
         window.closeModals = closeModals;
         window.cycleTheme = cycleTheme;
         window.loadBook = loadBook;
-        window.getParsedBook = () => parsedBook;
-        window.getChapterSpreads = () => chapterSpreads;
-        window.handleFileUpload = handleFileUpload;
-
-
-        // Font readiness listener (only re-render spread if a book is actively open)
-        if (document.fonts && document.fonts.ready) {
-            document.fonts.ready.then(() => {
-                if (parsedBook) {
-                    rebuildAndRenderSpread();
-                }
-            });
-        }
 
         // Catalog Home View Logic
         let activeCategoryFilter = 'all';
@@ -1823,7 +924,7 @@
             if (!grid) return;
             grid.querySelectorAll('.book-card').forEach(card => {
                 const key = card.getAttribute('data-key');
-                const svg = EMBEDDED_COVER_SVGS[key] || EMBEDDED_COVER_SVGS['the-' + key];
+                const svg = EMBEDDED_COVER_SVGS[key];
                 if (svg) {
                     const frame = card.querySelector('.book-cover-frame');
                     if (frame && !frame.querySelector('svg')) {
@@ -1892,8 +993,10 @@
                     const title = (card.getAttribute('data-title') || '').toLowerCase();
                     const subtitle = (card.getAttribute('data-subtitle') || '').toLowerCase();
                     const cat = (card.getAttribute('data-category') || '').toLowerCase();
-                    const text = (b && b.markdown) ? b.markdown.toLowerCase() : '';
-                    matchSearch = title.includes(searchQuery) || subtitle.includes(searchQuery) || cat.includes(searchQuery) || text.includes(searchQuery);
+                    const chapText = (b && Array.isArray(b.chapters))
+                        ? b.chapters.map(c => `${c.title} ${c.subtitle}`).join(' ').toLowerCase()
+                        : '';
+                    matchSearch = title.includes(searchQuery) || subtitle.includes(searchQuery) || cat.includes(searchQuery) || chapText.includes(searchQuery);
                 }
 
                 if (matchCategory && matchSearch) {
@@ -1926,17 +1029,9 @@
                 const params = new URLSearchParams(hash.slice(1));
                 const bookKey = params.get('read');
                 const pageParam = parseInt(params.get('page') || '0', 10);
-                const zoomParam = parseFloat(params.get('zoom') || '0');
-                const viewParam = (params.get('view') || '').toLowerCase();
-                if (viewParam === '1p' || viewParam === '2p') {
-                    userViewMode = viewParam;
-                }
                 if (EMBEDDED_BOOKS[bookKey]) {
                     hideHomeView();
-                    if (zoomParam >= 0.6 && zoomParam <= 2.5) {
-                        zoomScale = zoomParam;
-                    }
-                    if (currentBookKey !== bookKey || !parsedBook) {
+                    if (currentBookKey !== bookKey || !activeBook) {
                         loadBook(bookKey, pageParam > 0 ? pageParam : 1);
                     } else if (pageParam > 0) {
                         pdfPageNum = pageParam;

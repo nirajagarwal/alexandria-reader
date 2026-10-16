@@ -1,0 +1,150 @@
+{
+  "slug": "planetary-triggers",
+  "file": "planetary_triggers.md",
+  "title": "Planetary Triggers",
+  "subtitle": "How Small Physical Instabilities Unleash Catastrophic Energy",
+  "category": "Geophysics & Thermodynamics",
+  "profile": "A",
+  "mode": "facet",
+  "accent": "#c95b3c",
+  "bg": "#1e1210",
+  "theme": "network-wave",
+  "creator_constraints": {
+    "require_quote_per_chapter": true,
+    "min_diagrams": 3
+  },
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "The Champagne Column",
+      "subtitle": "Lake Nyos and the Hydrostatic Trap of Dissolved Gas",
+      "opening_door": "Door A (Scene)",
+      "historical_anchor": "August 21, 1986 at Lake Nyos in northwestern Cameroon; geophysicist Haraldur Sigurdsson and geochemist William Evans sampling the 208-meter volcanic crater lake; survivor Joseph Nkwain waking in Subum after a silent ground-hugging river of carbon dioxide asphyxiated 1,746 people.",
+      "mechanism": "Henry's Law gas solubility C = k_H * P_hydrostatic across a thermally stratified meromictic lake. Magmatic CO2 seeps into cold bottom water under 20 bars of hydrostatic pressure, storing nearly a cubic kilometer of gas. A minor rockslide or internal wave lifts a parcel of deep water above its saturation depth, nucleating bubbles that lower column density, creating a self-accelerating gas-lift siphon that erupts as a 100-meter supersonic fountain before collapsing into a dense, suffocating gravity current.",
+      "verbatim_quote": "I could not speak. I became unconscious. I could not open my mouth because then I smelled something terrible.",
+      "formalism_mode": "diagram",
+      "exit_fact": "In January 2001, French engineer Michel Halbwachs installed the first polyethylene degassing pipe on a raft at Lake Nyos, priming a controlled 50-meter fountain that safely vented the bottom water into the open wind."
+    },
+    {
+      "chapter": 2,
+      "title": "The Pyroclastic Cushion",
+      "subtitle": "Mount Pelée and the Gravity Current of Superheated Ash",
+      "opening_door": "Door C (Artifact/Measurement)",
+      "historical_anchor": "May 8, 1902 in Saint-Pierre, Martinique; the clock on the military hospital frozen at 7:52 a.m.; French mineralogist Alfred Lacroix arriving to investigate how a lateral volcanic blast killed nearly 30,000 inhabitants while leaving prisoner Ludger Sylbaris alive inside his half-buried stone dungeon.",
+      "mechanism": "Column collapse and density-current fluidization (nuée ardente). When an eruptive mixture of gas, pumice, and pulverised rock exceeds the critical density of the surrounding air, buoyancy reverses into negative thermal buoyancy. Instead of rising as a Plinian plume, the column collapses and races downslope at over 150 kilometers per hour, lubricated by internal gas exsolution and thermal expansion of trapped air.",
+      "verbatim_quote": "A great black cloud burst forth from the crater and, rushing with terrific velocity down the mountain side, swept over the town in less than two minutes.",
+      "formalism_mode": "equation",
+      "exit_fact": "After pardoning Ludger Sylbaris for his prison brawl, colonial authorities watched him join the Barnum and Bailey Circus in New York as the lone man who survived the furnace of Saint-Pierre."
+    },
+    {
+      "chapter": 3,
+      "title": "The Two-Second Bowl",
+      "subtitle": "Mexico City and the Harmonic Amplification of Ancient Mud",
+      "opening_door": "Door B (Constraint/Paradox)",
+      "historical_anchor": "September 19, 1985 in Mexico City; the Magnitude 8.0 Michoacán subduction earthquake striking 350 kilometers away on the Pacific coast; UNAM seismologist Jorge Prince and engineer Emilio Rosenblueth recording how seismic waves that barely damaged stone towns near the epicenter toppled over 400 mid-rise concrete buildings in the old Lake Texcoco basin.",
+      "mechanism": "Quarter-wavelength acoustic impedance trapping and harmonic double resonance (T = 4H / v_s). Soft, water-logged montmorillonite clay (90 percent water by volume, shear wave velocity v_s = 75 m/s, depth H = 38 m) slows incoming bedrock waves and traps them in a 2.0-second standing oscillation that matches the exact natural swaying period of 8-to-15-story buildings.",
+      "verbatim_quote": "The soft clay of the lake bed behaved like a bowl of jelly shaken at its exact natural frequency, refusing to let the energy die out.",
+      "formalism_mode": "diagram",
+      "exit_fact": "On the UNAM basalt lava campus just five kilometers south of the lakebed, peak ground acceleration dropped by a factor of five and not a single window pane cracked."
+    },
+    {
+      "chapter": 4,
+      "title": "The Shoaling Wall",
+      "subtitle": "Lituya Bay and the Physics of Shallow-Water Wave Compression",
+      "opening_door": "Door A (Scene)",
+      "historical_anchor": "July 9, 1958 inside Lituya Bay, Alaska; commercial fisherman Howard Ulrich and his seven-year-old son Sonny aboard the 38-foot trolling boat Edrie watching a 30-million-cubic-meter rockslide drop into Gilbert Inlet and strip spruce trees 524 meters (1,720 feet) up the opposite mountain ridge; USGS geologist Don Miller mapping the trimline.",
+      "mechanism": "Shallow-water wave speed c = sqrt(g * h) and Green's Law of wave shoaling (H_2 / H_1 = (h_1 / h_2)^(1/4)). In the open ocean or a deep fjord, wave energy travels at jetliner speed with small amplitude; when the water depth h shoals or an impulsive rock mass displaces a confined fjord inlet, trailing water catches up to the decelerating wavefront, converting kinetic energy into vertical potential height.",
+      "verbatim_quote": "The wave definitely did not break on us, or we would not be here; it picked the boat up and carried us over the tops of the spruce trees.",
+      "formalism_mode": "equation",
+      "exit_fact": "In August 1958, USGS geologist Don Miller stood at the highest scar on the Gilbert Inlet spur and measured the stripped bedrock at 1,720 feet above sea level, the tallest wave run-up ever recorded on Earth."
+    },
+    {
+      "chapter": 5,
+      "title": "The Sulfate Veil",
+      "subtitle": "Mount Tambora and the Year Without a Summer",
+      "opening_door": "Door C (Artifact/Measurement)",
+      "historical_anchor": "April 10, 1815 on Sumbawa Island, Indonesia, and June 1816 across New England and Europe; Sir Stamford Raffles in Java mistaking the Tambora detonation for distant naval cannon fire; farmer Chauncey Jerome in Plymouth, Connecticut watching June snowdrifts kill newly shorn sheep while Mary Shelley wrote Frankenstein beside storm-darkened Lake Geneva.",
+      "mechanism": "Stratospheric aerosol radiative forcing. Tropospheric ash washes out in rain within days, but an eruption plume strong enough to punch across the tropopause (above 17 km in the tropics) injects 60 megatons of sulfur dioxide (SO2) into the dry, stable stratosphere. Photochemical oxidation converts SO2 into sub-micron sulfuric acid (H2SO4) droplets whose diameter (~0.5 microns) matches incoming visible sunlight, backscattering solar radiation into space for three years while absorbing outgoing infrared.",
+      "verbatim_quote": "The darkness was occasioned by a fine fall of ashes which covered the residency grounds to the depth of two inches and obscured the sun at noon.",
+      "formalism_mode": "ledger_or_list",
+      "exit_fact": "Ice cores drilled in Greenland and Antarctica in the late twentieth century revealed a sharp sulfuric acid spike at the 1815–1816 layer containing six times the sulfate deposition of the 1883 Krakatoa eruption."
+    },
+    {
+      "chapter": 6,
+      "title": "The Convective Chimney",
+      "subtitle": "The Peshtigo Firestorm and Self-Sustaining Atmospheric Vortices",
+      "opening_door": "Door A (Scene)",
+      "historical_anchor": "October 8, 1871 in Peshtigo, Wisconsin (the exact same night as the Great Chicago Fire); Father Peter Pernin dragging church vestments into the Peshtigo River as cyclonic fire whirls lifted wooden houses off their foundations and burned 1.2 million acres, killing over 1,500 people.",
+      "mechanism": "Pyrocumulonimbus latent-heat feedback and conservation of angular momentum. When scattered slash fires merge past a critical areal heat flux density, the rising superheated plume punches into the upper troposphere. Condensing moisture at the cloud top releases latent heat, accelerating the updraft like a blast furnace chimney; conservation of angular momentum spins the rushing surface indraft winds into tornadic fire vortices exceeding 160 kilometers per hour.",
+      "verbatim_quote": "The air was no longer air, but a whirling ocean of flame and glowing sand that tore the roofs from houses before the fire even touched them.",
+      "formalism_mode": "ledger_or_list",
+      "exit_fact": "During World War II, U.S. military fire-protection engineers studied the 1871 street maps and logging slash piles of Peshtigo to calculate the critical fuel-loading density required to ignite urban firestorms in Hamburg and Tokyo."
+    },
+    {
+      "chapter": 7,
+      "title": "The Acoustic Cushion",
+      "subtitle": "Huascarán and Why Falling Mountains Flow Like Water",
+      "opening_door": "Door B (Constraint/Paradox)",
+      "historical_anchor": "May 31, 1970 on Mount Huascarán in the Peruvian Andes; a 50-million-cubic-meter slab of glacier ice and granodiorite rock shaken loose by an offshore earthquake, hurtling 16 kilometers down the Santa Valley at 280 kilometers per hour to leap a 200-meter ridge and bury the city of Yungay; geophysicist Jay Melosh resolving Albert Heim's nineteenth-century 'sturzstrom' friction paradox.",
+      "mechanism": "Acoustic fluidization of dry granular rockslides. Classic Coulomb rock friction (mu ≈ 0.6) dictates that a rockslide should halt as soon as the slope drops below 31 degrees, yet giant sturzstroms flow across 5-degree valleys. High-frequency elastic pressure vibrations trapped inside the colliding rock debris momentarily relieve overburden normal stress at grain contacts, dropping effective friction by an order of magnitude without melting the rock.",
+      "verbatim_quote": "The mountain did not slide like stone upon stone; it rushed down the valley with the speed of a hurricane and the fluidity of water.",
+      "formalism_mode": "equation",
+      "exit_fact": "Out of twenty thousand residents in Yungay, only three hundred people survived by running up the stone steps of the municipal cemetery built atop an ancient pre-Columbian artificial mound."
+    },
+    {
+      "chapter": 8,
+      "title": "The Liquefied Foundation",
+      "subtitle": "Niigata and how Solid Sand Turns into Quicksand in Seconds",
+      "opening_door": "Door C (Artifact/Measurement)",
+      "historical_anchor": "June 16, 1964 at the Kawagishi-cho apartment complex in Niigata, Japan; geotechnical engineers H. Bolton Seed and Kenji Ishihara inspecting four-story reinforced-concrete apartment blocks that tilted 80 degrees onto their sides completely intact—without a single cracked wall—so residents evacuated by walking down the outside painted facades.",
+      "mechanism": "Cyclic undrained pore-water pressure buildup. Loose, water-saturated sand grains support building loads through grain-to-grain friction (effective stress sigma' = sigma - u). Rapid earthquake shear cycles shake the grains into a tighter packing before pore water can drain; water pressure u spikes until it equals total overburden weight sigma, reducing effective stress sigma' to zero and turning the ground into a heavy liquid where concrete buildings sink or float by buoyancy.",
+      "verbatim_quote": "The buildings did not break; they simply lost their footing and settled onto their backs as if sinking into a tub of mud.",
+      "formalism_mode": "ledger_or_list",
+      "exit_fact": "After pumping the sand out from beneath one tilted Kawagishi-cho block and righting it with hydraulic jacks, engineers found the concrete frame so undamaged that the building was put back into service."
+    },
+    {
+      "chapter": 9,
+      "title": "The Reservoir Lubricant",
+      "subtitle": "Vajont Dam and the Pore-Pressure Detachment of Monte Toc",
+      "opening_door": "Door B (Constraint/Paradox)",
+      "historical_anchor": "October 9, 1963 at 10:39 p.m. in the Vajont Gorge of the Italian Dolomites; young geologist Edoardo Semenza discovering the prehistoric M-shaped landslide scar on Monte Toc three years earlier; engineer Carlo Semenza's 262-meter concrete arch dam standing completely unbroken while 260 million cubic meters of limestone slid into the reservoir at 110 kilometers per hour, sending a 250-meter wave over the dam crest to erase Longarone below.",
+      "mechanism": "Archimedean uplift and frictional collapse along confined clay interbeds. Raising the reservoir water table submerged the lower toe of the ancient landslide, increasing pore-water pressure inside millimeter-thin montmorillonite clay seams until hydraulic uplift canceled gravitational normal stress, while rapid drawdown trapped high pore pressure inside the mountain.",
+      "verbatim_quote": "The dam itself held fast against a blow ten times greater than any designer had ever imagined, yet its survival made the tragedy below no smaller.",
+      "formalism_mode": "diagram",
+      "exit_fact": "Today the 262-meter double-curved concrete arch of the Vajont Dam still stands intact across the gorge, holding back a dry mountain of limestone rubble fifty meters higher than the former waterline."
+    },
+    {
+      "chapter": 10,
+      "title": "The Subglacial Siphon",
+      "subtitle": "Vatnajökull and the Runaway Physics of Ice-Dammed Floods",
+      "opening_door": "Door A (Scene)",
+      "historical_anchor": "November 5, 1996 on the Skeiðarársandur outwash plain beneath Iceland's Vatnajökull ice cap; glaciologist Helgi Björnsson tracking 3.2 cubic kilometers of meltwater trapped in the Grímsvötn subglacial caldera after the Gjálp subglacial volcanic eruption, until the 500-meter ice barrier floated and unleashed 50,000 cubic meters per second—twisting nine-ton steel bridge girders like wire.",
+      "mechanism": "Hydrostatic ice-dam flotation (rho_ice ≈ 0.917 rho_water) and frictional tunnel-enlargement runaway (Röthlisberger conduit mechanics). Once subglacial water depth reaches roughly nine-tenths of the overlying ice thickness, the glacier lifts off its bedrock seal. Escaping water converts gravitational potential energy into viscous frictional heat against the ice walls, melting the tunnel wider faster than ice creep can close it—producing an exponential discharge spike.",
+      "verbatim_quote": "Once the water lifts the ice off its bedrock sill, the flood carves its own highway by melting the walls with the heat of its own friction.",
+      "formalism_mode": "ledger_or_list",
+      "exit_fact": "Icelandic highway engineers now build the Ring Road across the Skeiðarársandur plain with sacrificial earthen embankments designed to wash away cleanly during a jökulhlaup so the expensive steel bridges survive."
+    },
+    {
+      "chapter": 11,
+      "title": "The Magnetic Surge",
+      "subtitle": "The Carrington Event and Geomagnetically Induced Grid Collapse",
+      "opening_door": "Door C (Artifact/Measurement)",
+      "historical_anchor": "September 1–2, 1859 in Redhill, England and Boston, Massachusetts, paired with March 13, 1989 across Québec; amateur astronomer Richard Carrington sketching two blinding white flares inside a giant sunspot group at 11:18 a.m.; Boston telegraph operator Thomasori / Portland operator conversing for two hours over unplugged wires using only the auroral current, and Hydro-Québec's grid collapsing in 92 seconds in 1989.",
+      "mechanism": "Faraday's Law of Electromagnetic Induction (curl E = -dB/dt) coupled through high-resistivity igneous bedrock. When a fast Coronal Mass Ejection (CME) compresses Earth's magnetosphere, ionospheric electrojets swing the surface magnetic field B rapidly. Because ancient crystalline shield rock (like the Canadian Shield) resists ground current, the induced quasi-DC electric field takes the path of least resistance up through grounded neutral wires of high-voltage transformers, driving their iron cores into half-cycle magnetic saturation.",
+      "verbatim_quote": "We are working with the aid of the Aurora alone, and the messages are coming through better than when our batteries were on.",
+      "formalism_mode": "equation",
+      "exit_fact": "After the 1989 blackout, Hydro-Québec spent over one billion dollars installing series capacitors on its long transmission lines to block quasi-direct geomagnetically induced currents before they reach transformer cores."
+    },
+    {
+      "chapter": 12,
+      "title": "The Ram-Pressure Pancake",
+      "subtitle": "Tunguska, Chelyabinsk, and Why Stony Asteroids Explode in Mid-Air",
+      "opening_door": "Door B (Constraint/Paradox)",
+      "historical_anchor": "June 30, 1908 over the Podkamennaya Tunguska River in Siberia, and February 15, 2013 over Chelyabinsk, Russia; Soviet mineralogist Leonid Kulik hiking into the Siberian swamp in 1927 expecting a giant iron crater and finding instead 80 million flattened larch trees radiating outward from a craterless ground zero where dead vertical 'telegraph pole' trunks still stood stripped of branches.",
+      "mechanism": "Hypersonic ram-pressure fragmentation (P_ram = rho_air * v^2). When a stony meteoroid enters the atmosphere at 15–20 km/s, it descends into exponentially denser air until the stagnation ram pressure on its nose exceeds the compressive strength of fractured stone (1–50 MPa). The bolide flattens sideways like a pancake, multiplying its frontal drag area and aerodynamic heating in milliseconds so its entire kinetic energy releases in a single mid-air blast wave.",
+      "verbatim_quote": "The sky split in two, and high above the forest the whole northern part of the sky appeared covered with fire.",
+      "formalism_mode": "equation",
+      "exit_fact": "When divers recovered a 570-kilogram fragment of the Chelyabinsk asteroid from the bottom of Lake Chebarkul in October 2013, the stone was criss-crossed with ancient dark shock veins that had weakened it long before it met Earth's air."
+    }
+  ]
+}

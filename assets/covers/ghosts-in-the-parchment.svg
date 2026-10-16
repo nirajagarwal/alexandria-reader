@@ -20,11 +20,11 @@
   </g>
 
   <g text-anchor="middle">
-    <text x="800" y="490" font-family="'Literata', Georgia, serif" font-size="88" font-weight="700" letter-spacing="-0.01em" fill="#faf9f6">
+    <text x="800" y="485" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="98" font-weight="700" letter-spacing="-0.01em" fill="#faf9f6">
       Ghosts in the Parchment
     </text>
-    <text x="800" y="610" font-family="'Literata', Georgia, serif" font-size="54" font-weight="400" font-style="italic" fill="#cbd5e1">
-      <tspan x="800" dy="0">How Scholars Exposed Forgeries, Deciphered</tspan><tspan x="800" dy="68">Lost Scripts, and Reconstructed Vanished Books</tspan>
+    <text x="800" y="615" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="72" font-weight="500" fill="#e2e8f0">
+      <tspan x="800" dy="0">How Scholars Exposed Forgeries,</tspan><tspan x="800" dy="88">Deciphered Lost Scripts, and</tspan><tspan x="800" dy="88">Reconstructed Vanished Books</tspan>
     </text>
   </g>
 

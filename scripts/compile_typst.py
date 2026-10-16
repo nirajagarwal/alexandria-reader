@@ -162,7 +162,7 @@ def prepare_svg_for_typst(svg_raw: str, accent_hex: str = "#a37c40") -> tuple[st
         "var(--bg-color)": "#faf8f5",
         "var(--font-sans)": "Inter, Helvetica Neue, Arial, sans-serif",
         "var(--font-mono)": "IBM Plex Mono, Courier New, monospace",
-        "var(--font-serif)": "Libertinus Serif, Georgia, serif",
+        "var(--font-serif)": "Literata, Georgia, serif",
     }
     for k, v in replacements.items():
         svg_clean = svg_clean.replace(k, v)
@@ -293,12 +293,12 @@ def convert_body_to_typst(body: str, temp_dir: str, sec_idx: int, accent_hex: st
 
     body = re.sub(r"```(?:svg|diagram)\s*\n([\s\S]*?)```", repl_svg, body, flags=re.IGNORECASE)
 
-    # 2. Display math $$...$$
+    # 2. Display math $$...$$ (centered and vertically spaced, no quote box)
     def repl_disp_math(m):
         eq_raw = m.group(1).strip()
         cleaned = clean_latex_for_mitex(eq_raw).replace("\\", "\\\\").replace('"', '\\"')
         return save_block(
-            f'#v(3pt)\n#block(breakable: false, width: 100%, inset: (x: 10pt, y: 7pt), radius: 3pt, fill: rgb("#f4f0e6"), stroke: (left: 2pt + rgb("{accent_hex}")))[\n  #align(center)[#mitex("{cleaned}")]\n]\n#v(3pt)'
+            f'#v(6pt)\n#block(breakable: false, width: 100%, inset: (y: 4pt))[\n  #align(center)[#mitex("{cleaned}")]\n]\n#v(6pt)'
         )
 
     body = re.sub(r"\$\$([\s\S]*?)\$\$", repl_disp_math, body)
@@ -420,7 +420,29 @@ def build_typ_source(
     m_h = preset["margin_h"]
     title_sz = preset["ch_title_size"]
     is_mobile = preset.get("is_mobile", False)
-    diag_w = "92%" if not is_mobile else "98%"
+    is_compact = preset.get("is_compact", False)
+    diag_w = "92%" if not (is_mobile or is_compact) else ("95%" if is_compact else "98%")
+
+    footer_block = (
+        "  footer-descent: 12pt,\n"
+        "  footer: context {\n"
+        "    let p = here().page()\n"
+        "    if p > 1 {\n"
+        '      set text(font: "IBM Plex Mono", size: 7.5pt, fill: muted-color)\n'
+        + (
+            "      align(center)[#p]\n"
+            if is_mobile
+            else (
+                "      if calc.odd(p) {\n"
+                "        align(left)[#h(18pt)#p]\n"
+                "      } else {\n"
+                "        align(right)[#p#h(18pt)]\n"
+                "      }\n"
+            )
+        )
+        + "    }\n"
+        "  }"
+    )
 
     typ_lines = [
         '#import "@preview/mitex:0.2.6": mitex-convert, mitex-scope',
@@ -434,6 +456,7 @@ def build_typ_source(
         "#let book-category = " + json.dumps(category.upper()),
         f'#let accent-color = rgb("{accent_hex}")',
         '#let ink-color = rgb("#1c1b18")',
+        '#let sub-color = rgb("#4a453e")',
         '#let muted-color = rgb("#655f57")',
         '#let rule-color = rgb("#dcd5ca")',
         '#let current-chapter = state("current-chapter", "")',
@@ -452,44 +475,32 @@ def build_typ_source(
         "      } else {",
         "        align(right)[#upper(current-chapter.get())]",
         "      }",
-        "      v(-4pt)",
-        "      line(length: 100%, stroke: 0.4pt + rule-color)",
         "    }",
         "  },",
-        "  footer: context {",
-        "    let p = here().page()",
-        "    if p > 1 {",
-        '      set text(font: "IBM Plex Mono", size: 7pt, fill: muted-color)',
-        "      if calc.odd(p) {",
-        "        align(left)[#p]",
-        "      } else {",
-        "        align(right)[#p]",
-        "      }",
-        "    }",
-        "  }",
+        footer_block,
         ")",
         "",
-        f'#set text(font: "Libertinus Serif", size: {f_size}, fill: ink-color, lang: "en")',
+        f'#set text(font: "Literata", size: {f_size}, fill: ink-color, lang: "en")',
         f"#set par(justify: true, leading: {leading}, spacing: {spacing})",
         "",
         "// PAGE 1: TITLE & CONTENTS FRONTISPIECE",
-        "#v(0.03in)",
+        "#v(0.02in)",
         '#text(font: "IBM Plex Mono", size: 7.2pt, tracking: 1.8pt, fill: accent-color, weight: "medium")[#book-category]',
         "#v(4pt)",
-        f'#text(font: "Libertinus Serif", size: {"17.5pt" if is_mobile else "20pt"}, weight: "bold", fill: ink-color)[#book-title]',
+        f'#text(font: "Literata", size: {"17.0pt" if (is_mobile or is_compact) else "19.5pt"}, weight: "bold", fill: ink-color)[#book-title]',
         "#v(2pt)",
-        f'#text(font: "Libertinus Serif", size: {"9.8pt" if is_mobile else "10.8pt"}, style: "italic", fill: muted-color)[#book-subtitle]',
-        "#v(6pt)",
+        f'#text(font: "Literata", size: {"10.2pt" if (is_mobile or is_compact) else "11.2pt"}, fill: sub-color)[#book-subtitle]',
+        "#v(5pt)",
         "#line(length: 100%, stroke: 0.6pt + accent-color)",
-        "#v(6pt)",
+        "#v(5pt)",
         '#text(font: "IBM Plex Mono", size: 6.8pt, tracking: 1.5pt, fill: muted-color)[CONTENTS]',
         "#v(3pt)",
     ]
 
     toc_entries = []
-    toc_title_sz = "8.0pt" if is_mobile else "8.6pt"
-    toc_sub_sz = "7.0pt" if is_mobile else "7.6pt"
-    toc_spacing = "3.4pt" if is_mobile else "4.5pt"
+    toc_title_sz = "7.7pt" if is_compact else ("7.9pt" if is_mobile else "8.5pt")
+    toc_sub_sz = "6.7pt" if is_compact else ("6.9pt" if is_mobile else "7.5pt")
+    toc_spacing = "2.6pt" if is_compact else ("3.2pt" if is_mobile else "4.2pt")
     for sec in sections:
         idx = sec["index"]
         lbl = "Introduction" if idx == 0 else f"{idx}. {sec['title']}"
@@ -500,11 +511,11 @@ def build_typ_source(
             f'  #context {{\n'
             f'    let target = label("sec-{idx}")\n'
             f'    let pg = locate(target).page()\n'
-            f'    set par(leading: 0.38em)\n'
+            f'    set par(leading: 0.34em)\n'
             f'    grid(\n'
             f'      columns: (1fr, auto),\n'
             f'      gutter: 6pt,\n'
-            f'      [#text(size: {toc_title_sz}, weight: "semibold")[#link(target)[{lbl_esc}]] #h(3pt) #text(size: {toc_sub_sz}, style: "italic", fill: muted-color)[{sub_esc}]],\n'
+            f'      [#text(size: {toc_title_sz}, weight: "semibold")[#link(target)[{lbl_esc}]] #h(3pt) #text(size: {toc_sub_sz}, fill: muted-color)[{sub_esc}]],\n'
             f'      [#text(font: "IBM Plex Mono", size: 7.5pt, fill: muted-color)[#link(target)[#pg]]]\n'
             f'    )\n'
             f'  }}\n'
@@ -529,115 +540,127 @@ def build_typ_source(
         typ_lines.append("#v(0.02in)")
         typ_lines.append(f'#text(font: "IBM Plex Mono", size: 7.2pt, tracking: 1.6pt, fill: accent-color, weight: "medium")[{label_txt}]')
         typ_lines.append("#v(2pt)")
-        typ_lines.append(f'#text(font: "Libertinus Serif", size: {title_sz}, weight: "bold", fill: ink-color)[{title_txt}]')
+        typ_lines.append(f'#text(font: "Literata", size: {title_sz}, weight: "bold", fill: ink-color)[{title_txt}]')
         typ_lines.append("#v(1pt)")
-        typ_lines.append(f'#text(font: "Libertinus Serif", size: 9.8pt, style: "italic", fill: muted-color)[{subtitle_txt}]')
+        typ_lines.append(f'#text(font: "Literata", size: 10.6pt, fill: sub-color)[{subtitle_txt}]')
         typ_lines.append("#v(4pt)")
         typ_lines.append("#line(length: 2.2in, stroke: 0.5pt + rule-color)")
-        typ_lines.append("#v(4pt)")
-        typ_lines.append(body_typ)
+        typ_lines.append("#v(5pt)")
+        # Ensure Introductions on Page 2 always fit on a single page so Chapter 1 always starts on Page 3
+        if not is_mobile and idx == 0 and len(sec["body"].split()) > 180:
+            w_cnt = len(sec["body"].split())
+            if is_compact:
+                intro_sz = "9.2pt" if w_cnt > 330 else ("9.8pt" if w_cnt > 260 else "10.3pt")
+                intro_lead = "0.48em" if w_cnt > 330 else "0.52em"
+                intro_spac = "0.68em" if w_cnt > 330 else "0.74em"
+            else:
+                intro_sz = "9.8pt" if w_cnt > 330 else ("10.3pt" if w_cnt > 270 else "10.8pt")
+                intro_lead = "0.52em" if w_cnt > 330 else "0.55em"
+                intro_spac = "0.76em" if w_cnt > 330 else "0.82em"
+            typ_lines.append(f'#block[#set text(size: {intro_sz}); #set par(leading: {intro_lead}, spacing: {intro_spac});\n{body_typ}\n]')
+        else:
+            typ_lines.append(body_typ)
 
     typ_lines.append('#context [#metadata((sec: -1, title: "END", page: here().page())) <sec-mark>]')
     return "\n".join(typ_lines)
 
 
-# Desktop Widescreen Presets: 6.4in x 7.5in per page -> 12.8in x 7.5in two-page spread (1.707:1 aspect ratio)
-DESKTOP_PRESETS = [
-    {"width": "6.4in", "height": "7.5in", "font_size": "10.3pt", "leading": "0.60em", "spacing": "0.94em", "margin_v": "0.48in", "margin_h": "0.52in", "ch_title_size": "15.8pt"},
-    {"width": "6.4in", "height": "7.5in", "font_size": "9.9pt",  "leading": "0.57em", "spacing": "0.88em", "margin_v": "0.45in", "margin_h": "0.49in", "ch_title_size": "15.2pt"},
-    {"width": "6.4in", "height": "7.5in", "font_size": "9.5pt",  "leading": "0.54em", "spacing": "0.82em", "margin_v": "0.42in", "margin_h": "0.46in", "ch_title_size": "14.6pt"},
-    {"width": "6.4in", "height": "7.5in", "font_size": "9.1pt",  "leading": "0.52em", "spacing": "0.76em", "margin_v": "0.40in", "margin_h": "0.44in", "ch_title_size": "14.0pt"},
-]
+FONT_DIR = os.path.join(BASE_DIR, "fonts")
 
-# Mobile Tall-Screen Preset: 4.2in x 7.5in per page (9:16 phone screen aspect ratio with tight edge margins)
+# Desktop Widescreen Preset: 5.8in x 7.5in per page -> 11.6in x 7.5in two-page spread (2P aspect = 1.55)
+DESKTOP_PRESET = {
+    "width": "5.8in",
+    "height": "7.5in",
+    "font_size": "11.6pt",
+    "leading": "0.59em",
+    "spacing": "0.90em",
+    "margin_v": "0.42in",
+    "margin_h": "0.42in",
+    "ch_title_size": "16.0pt",
+    "is_mobile": False,
+    "is_compact": False,
+}
+
+# Compact / Medium-Width 2-Page Preset: 5.5in x 6.8in per page (12.2pt font)
+COMPACT_PRESET = {
+    "width": "5.5in",
+    "height": "6.8in",
+    "font_size": "12.2pt",
+    "leading": "0.56em",
+    "spacing": "0.84em",
+    "margin_v": "0.36in",
+    "margin_h": "0.36in",
+    "ch_title_size": "15.8pt",
+    "is_mobile": False,
+    "is_compact": True,
+}
+
+# Mobile Tall-Screen Preset: 4.2in x 7.5in per page (Literata +2px body size)
 MOBILE_PRESET = {
     "width": "4.2in",
     "height": "7.5in",
-    "font_size": "10.4pt",
+    "font_size": "11.8pt",
     "leading": "0.58em",
     "spacing": "0.90em",
     "margin_v": "0.38in",
     "margin_h": "0.32in",
-    "ch_title_size": "14.8pt",
+    "ch_title_size": "15.2pt",
     "is_mobile": True,
+    "is_compact": False,
 }
+
+
+def _compile_single_preset(book_title, book_subtitle, category, accent_hex, sections, temp_dir, preset, typ_name, out_path, slug):
+    typ_path = os.path.join(temp_dir, typ_name)
+    typ_src = build_typ_source(book_title, book_subtitle, category, accent_hex, sections, temp_dir, preset)
+    with open(typ_path, "w", encoding="utf-8") as f:
+        f.write(typ_src)
+
+    q_proc = subprocess.run(
+        ["typst", "query", "--font-path", FONT_DIR, typ_path, "<sec-mark>"],
+        capture_output=True,
+        text=True,
+    )
+    if q_proc.returncode != 0:
+        raise RuntimeError(f"Typst query failed for {slug} ({typ_name}):\n{q_proc.stderr}")
+    marks = json.loads(q_proc.stdout)
+    sec_pages = [m["value"]["page"] for m in marks[:-1]]
+
+    proc = subprocess.run(
+        ["typst", "compile", "--font-path", FONT_DIR, typ_path, out_path],
+        capture_output=True,
+        text=True,
+    )
+    if proc.returncode != 0:
+        raise RuntimeError(f"Typst compile failed for {slug} ({typ_name}):\n{proc.stderr}")
+    return sec_pages
 
 
 def compile_book_to_pdf(md_path: str, category: str = "NON-FICTION", accent_hex: str = "#a37c40"):
     raw_md = open(md_path, encoding="utf-8").read()
     book_title, book_subtitle, sections = parse_book_markdown(raw_md)
     slug = os.path.splitext(os.path.basename(md_path))[0].replace("_", "-")
-    num_chapters = len(sections) - 1
-    expected_sec_pages = [2] + [3 + 2 * i for i in range(num_chapters)]
-    expected_end_page = expected_sec_pages[-1] + 1
 
     os.makedirs(PDF_OUT_DIR, exist_ok=True)
     out_pdf_path = os.path.join(PDF_OUT_DIR, f"{slug}.pdf")
+    out_compact_pdf_path = os.path.join(PDF_OUT_DIR, f"{slug}-compact.pdf")
     out_mobile_pdf_path = os.path.join(PDF_OUT_DIR, f"{slug}-mobile.pdf")
 
     with tempfile.TemporaryDirectory() as temp_dir:
-        typ_path = os.path.join(temp_dir, "book.typ")
-        sec_pages = []
-
-        # 1. Compile Desktop Widescreen Spread PDF (6.4in x 7.5in per page)
-        for preset in DESKTOP_PRESETS:
-            typ_src = build_typ_source(book_title, book_subtitle, category, accent_hex, sections, temp_dir, preset)
-            with open(typ_path, "w", encoding="utf-8") as f:
-                f.write(typ_src)
-
-            q_proc = subprocess.run(
-                ["typst", "query", typ_path, "<sec-mark>"],
-                capture_output=True,
-                text=True,
-            )
-            if q_proc.returncode != 0:
-                debug_typ = os.path.join(BASE_DIR, f"debug_{slug}.typ")
-                with open(debug_typ, "w", encoding="utf-8") as df:
-                    df.write(typ_src)
-                raise RuntimeError(f"Typst query failed for {slug} (saved {debug_typ}):\n{q_proc.stderr}")
-
-            marks = json.loads(q_proc.stdout)
-            sec_pages = [m["value"]["page"] for m in marks[:-1]]
-            end_page = marks[-1]["value"]["page"]
-            if sec_pages == expected_sec_pages and end_page <= expected_end_page:
-                break
-
-        proc = subprocess.run(
-            ["typst", "compile", typ_path, out_pdf_path],
-            capture_output=True,
-            text=True,
+        sec_pages = _compile_single_preset(
+            book_title, book_subtitle, category, accent_hex, sections, temp_dir,
+            DESKTOP_PRESET, "book.typ", out_pdf_path, slug
         )
-        if proc.returncode != 0:
-            debug_typ = os.path.join(BASE_DIR, f"debug_{slug}.typ")
-            with open(debug_typ, "w", encoding="utf-8") as df:
-                df.write(typ_src)
-            raise RuntimeError(f"Typst compile failed for {slug} (saved {debug_typ}):\n{proc.stderr}")
-
-        # 2. Compile Mobile Tall-Screen PDF (4.2in x 7.5in per page)
-        typ_mobile_path = os.path.join(temp_dir, "book_mobile.typ")
-        typ_mobile_src = build_typ_source(book_title, book_subtitle, category, accent_hex, sections, temp_dir, MOBILE_PRESET)
-        with open(typ_mobile_path, "w", encoding="utf-8") as f:
-            f.write(typ_mobile_src)
-
-        qm_proc = subprocess.run(
-            ["typst", "query", typ_mobile_path, "<sec-mark>"],
-            capture_output=True,
-            text=True,
+        compact_sec_pages = _compile_single_preset(
+            book_title, book_subtitle, category, accent_hex, sections, temp_dir,
+            COMPACT_PRESET, "book_compact.typ", out_compact_pdf_path, slug
         )
-        if qm_proc.returncode != 0:
-            raise RuntimeError(f"Typst mobile query failed for {slug}:\n{qm_proc.stderr}")
-        m_marks = json.loads(qm_proc.stdout)
-        mobile_sec_pages = [m["value"]["page"] for m in m_marks[:-1]]
-
-        m_proc = subprocess.run(
-            ["typst", "compile", typ_mobile_path, out_mobile_pdf_path],
-            capture_output=True,
-            text=True,
+        mobile_sec_pages = _compile_single_preset(
+            book_title, book_subtitle, category, accent_hex, sections, temp_dir,
+            MOBILE_PRESET, "book_mobile.typ", out_mobile_pdf_path, slug
         )
-        if m_proc.returncode != 0:
-            raise RuntimeError(f"Typst mobile compile failed for {slug}:\n{m_proc.stderr}")
 
-    return out_pdf_path, sec_pages, out_mobile_pdf_path, mobile_sec_pages
+    return out_pdf_path, sec_pages, out_compact_pdf_path, compact_sec_pages, out_mobile_pdf_path, mobile_sec_pages
 
 
 def main():
@@ -659,10 +682,11 @@ def main():
         slug = os.path.splitext(os.path.basename(fpath))[0].replace("_", "-")
         meta = books_meta.get(slug, {})
         cat = meta.get("category", "NON-FICTION")
-        pdf_path, sec_pages, mob_path, mob_pages = compile_book_to_pdf(fpath, category=cat)
+        pdf_path, sec_pages, comp_path, comp_pages, mob_path, mob_pages = compile_book_to_pdf(fpath, category=cat)
         size_kb = os.path.getsize(pdf_path) / 1024.0
+        comp_kb = os.path.getsize(comp_path) / 1024.0
         mob_kb = os.path.getsize(mob_path) / 1024.0
-        print(f"[OK] {slug:28s} -> desktop ({size_kb:5.1f} KB, {sec_pages}) | mobile ({mob_kb:5.1f} KB, {mob_pages})")
+        print(f"[OK] {slug:28s} -> desktop ({size_kb:5.1f} KB) | compact ({comp_kb:5.1f} KB) | mobile ({mob_kb:5.1f} KB)")
 
 
 if __name__ == "__main__":

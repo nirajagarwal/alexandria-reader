@@ -48,11 +48,29 @@ def save_books_data(prefix, data, suffix):
     open(BOOKS_JS_PATH, "w", encoding="utf-8").write(new_js)
 
 
-def extract_title_subtitle(md_text: str):
-    lines = [l.strip() for l in md_text.splitlines() if l.strip()]
-    title = lines[0].lstrip("#").strip() if lines else "Untitled Volume"
-    subtitle = lines[1].lstrip("#").strip() if len(lines) > 1 else ""
-    return title, subtitle
+def extract_book_metadata(md_text: str):
+    secs = [s.strip() for s in md_text.split("\n---\n") if s.strip()]
+    first_lines = [l.strip() for l in secs[0].splitlines() if l.strip()] if secs else []
+    title = first_lines[0].lstrip("#").strip() if first_lines else "Untitled Volume"
+    subtitle = first_lines[1].lstrip("#").strip() if len(first_lines) > 1 else ""
+    chapters = []
+    for idx, sec in enumerate(secs[1:]):
+        headers = []
+        for l in sec.splitlines():
+            if l.strip().startswith("#"):
+                headers.append(l.strip().lstrip("#").strip())
+                if len(headers) == 3:
+                    break
+        while len(headers) < 3:
+            headers.append("")
+        chapters.append(
+            {
+                "label": headers[0] or ("Introduction" if idx == 0 else f"Chapter {idx}"),
+                "title": headers[1] or "Untitled",
+                "subtitle": headers[2] or "",
+            }
+        )
+    return title, subtitle, chapters
 
 
 def list_existing_anchors():
@@ -60,13 +78,13 @@ def list_existing_anchors():
     print("=== EXISTING ALEXANDRIA PRESS LIBRARY ANCHORS (DO NOT DUPLICATE) ===")
     for slug, meta in data.items():
         print(f"\n[{slug}] {meta['title']} — {meta['subtitle']} ({meta['category']})")
-        secs = [s.strip() for s in meta["markdown"].split("\n---\n") if s.strip()]
-        for idx, sec in enumerate(secs[2:], 1):
-            lines = [l.strip() for l in sec.splitlines() if l.strip()]
-            if len(lines) >= 3:
-                ch_title = lines[1].lstrip("#").strip()
-                ch_sub = lines[2].lstrip("#").strip()
-                print(f"  Ch {idx:2d}: {ch_title} — {ch_sub}")
+        chapters = meta.get("chapters")
+        if not chapters:
+            md_file = os.path.join(BASE_DIR, slug.replace("-", "_") + ".md")
+            if os.path.exists(md_file):
+                _, _, chapters = extract_book_metadata(open(md_file, encoding="utf-8").read())
+        for idx, ch in enumerate((chapters or [])[1:], 1):
+            print(f"  Ch {idx:2d}: {ch['title']} — {ch['subtitle']}")
 
 
 def generate_emblem_svg(theme: str, accent: str):
@@ -155,19 +173,12 @@ def sync_covers_data():
         if not fname.endswith(".svg"):
             continue
         slug = fname[:-4]
-        if slug == "alexandria-manifesto":
-            continue
         svg_text = open(os.path.join(COVERS_DIR, fname), encoding="utf-8").read().strip()
         covers[slug] = svg_text
-    if "the-autonomous-engine" in covers and "autonomous-engine" not in covers:
-        covers["autonomous-engine"] = covers["the-autonomous-engine"]
     js_out = (
         "// Alexandria Press - Inlined Vector SVG Covers\n"
         "(function(root) {\n"
         "  const covers = " + json.dumps(covers, indent=2, ensure_ascii=False) + ";\n"
-        '  if (covers["the-autonomous-engine"] && !covers["autonomous-engine"]) {\n'
-        '    covers["autonomous-engine"] = covers["the-autonomous-engine"];\n'
-        "  }\n"
         '  if (typeof window !== "undefined") window.EMBEDDED_COVER_SVGS = covers;\n'
         '  if (typeof module !== "undefined" && module.exports) module.exports = covers;\n'
         '})(typeof globalThis !== "undefined" ? globalThis : this);\n'
@@ -176,32 +187,61 @@ def sync_covers_data():
 
 
 def _wrap_subtitle_svg(subtitle: str):
-    """Split subtitle into 1 or 2 balanced lines and return (font_size, inner_svg)."""
-    words = subtitle.strip().split()
-    if len(subtitle) <= 28 or len(words) <= 3:
-        return 62, html.escape(subtitle.strip())
-    best_idx = 1
-    best_diff = 9999
-    for i in range(1, len(words)):
-        l1 = " ".join(words[:i])
-        l2 = " ".join(words[i:])
-        diff = abs(len(l1) - len(l2))
-        if diff < best_diff:
-            best_diff = diff
-            best_idx = i
-    line1 = html.escape(" ".join(words[:best_idx]))
-    line2 = html.escape(" ".join(words[best_idx:]))
-    max_chars = max(len(" ".join(words[:best_idx])), len(" ".join(words[best_idx:])))
-    sub_font_size = 62 if max_chars <= 34 else 54
-    dy = 78 if sub_font_size == 62 else 68
-    inner = f'<tspan x="800" dy="0">{line1}</tspan><tspan x="800" dy="{dy}">{line2}</tspan>'
+    """Split subtitle into 1, 2, or 3 balanced lines at a large readable font size (72-80) and return (font_size, inner_svg)."""
+    text = subtitle.strip()
+    words = text.split()
+    if len(text) <= 24 or len(words) <= 3:
+        return 80, html.escape(text)
+
+    if len(text) <= 58:
+        # 2 balanced lines
+        best_idx = 1
+        best_max = 9999
+        for i in range(1, len(words)):
+            l1 = " ".join(words[:i])
+            l2 = " ".join(words[i:])
+            m = max(len(l1), len(l2))
+            if m < best_max:
+                best_max = m
+                best_idx = i
+        line1 = html.escape(" ".join(words[:best_idx]))
+        line2 = html.escape(" ".join(words[best_idx:]))
+        sub_font_size = 78 if best_max <= 28 else 74
+        dy = 96 if sub_font_size == 78 else 90
+        inner = f'<tspan x="800" dy="0">{line1}</tspan><tspan x="800" dy="{dy}">{line2}</tspan>'
+        return sub_font_size, inner
+
+    # 3 balanced lines for long subtitles (>58 chars) so font stays large (72)
+    best_pair = (1, 2)
+    best_max = 9999
+    n = len(words)
+    for i in range(1, n - 1):
+        for j in range(i + 1, n):
+            l1 = " ".join(words[:i])
+            l2 = " ".join(words[i:j])
+            l3 = " ".join(words[j:])
+            m = max(len(l1), len(l2), len(l3))
+            if m < best_max:
+                best_max = m
+                best_pair = (i, j)
+    i, j = best_pair
+    line1 = html.escape(" ".join(words[:i]))
+    line2 = html.escape(" ".join(words[i:j]))
+    line3 = html.escape(" ".join(words[j:]))
+    sub_font_size = 72
+    dy = 88
+    inner = (
+        f'<tspan x="800" dy="0">{line1}</tspan>'
+        f'<tspan x="800" dy="{dy}">{line2}</tspan>'
+        f'<tspan x="800" dy="{dy}">{line3}</tspan>'
+    )
     return sub_font_size, inner
 
 
 def generate_cover_svg(slug: str, title: str, subtitle: str, category: str, accent: str, bg: str, theme: str):
     os.makedirs(COVERS_DIR, exist_ok=True)
     emblem = generate_emblem_svg(theme, accent)
-    title_font_size = 104 if len(title) <= 22 else (88 if len(title) <= 28 else 74)
+    title_font_size = 108 if len(title) <= 21 else (98 if len(title) <= 26 else 86)
     esc_cat = html.escape(category.upper())
     esc_title = html.escape(title)
     sub_font_size, sub_inner = _wrap_subtitle_svg(subtitle)
@@ -229,10 +269,10 @@ def generate_cover_svg(slug: str, title: str, subtitle: str, category: str, acce
   </g>
 
   <g text-anchor="middle">
-    <text x="800" y="490" font-family="'Literata', Georgia, serif" font-size="{title_font_size}" font-weight="700" letter-spacing="-0.01em" fill="#faf9f6">
+    <text x="800" y="485" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="{title_font_size}" font-weight="700" letter-spacing="-0.01em" fill="#faf9f6">
       {esc_title}
     </text>
-    <text x="800" y="610" font-family="'Literata', Georgia, serif" font-size="{sub_font_size}" font-weight="400" font-style="italic" fill="#cbd5e1">
+    <text x="800" y="615" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="{sub_font_size}" font-weight="500" fill="#e2e8f0">
       {sub_inner}
     </text>
   </g>
@@ -314,6 +354,7 @@ def main():
     parser.add_argument("--bg", default="#0b1d18", help="Hex background color for cover")
     parser.add_argument("--theme", default="lattice", choices=["network-wave", "harmonic-rings", "lattice"], help="Cover geometric emblem")
     parser.add_argument("--regenerate-cover", action="store_true", help="Force regenerate SVG cover")
+    parser.add_argument("--recompile", action="store_true", help="Force recompile all PDFs during --sync-all")
     args = parser.parse_args()
 
     if args.list_anchors:
@@ -333,16 +374,40 @@ def main():
                     print("  ", e)
                 sys.exit(1)
             md_text = open(md_file, encoding="utf-8").read()
-            title, subtitle = extract_title_subtitle(md_text)
-            pdf_path, sec_pages, mob_path, mob_pages = compile_book_to_pdf(md_file, category=meta.get("category", "NON-FICTION"))
+            title, subtitle, chapters = extract_book_metadata(md_text)
+            pdf_path = os.path.join(BASE_DIR, "assets", "pdfs", f"{slug}.pdf")
+            comp_path = os.path.join(BASE_DIR, "assets", "pdfs", f"{slug}-compact.pdf")
+            mob_path = os.path.join(BASE_DIR, "assets", "pdfs", f"{slug}-mobile.pdf")
+            needs_compile = (
+                args.recompile
+                or not os.path.exists(pdf_path)
+                or not os.path.exists(comp_path)
+                or not os.path.exists(mob_path)
+                or os.path.getmtime(md_file) > os.path.getmtime(pdf_path)
+                or not meta.get("sectionPages")
+                or not meta.get("compactSectionPages")
+                or not meta.get("mobileSectionPages")
+            )
+            if needs_compile:
+                pdf_path, sec_pages, comp_path, comp_pages, mob_path, mob_pages = compile_book_to_pdf(
+                    md_file, category=meta.get("category", "NON-FICTION")
+                )
+            else:
+                sec_pages = meta["sectionPages"]
+                comp_pages = meta["compactSectionPages"]
+                mob_pages = meta["mobileSectionPages"]
+
+            meta.pop("markdown", None)
             meta["title"] = title
             meta["subtitle"] = subtitle
             meta["pdf"] = f"assets/pdfs/{slug}.pdf"
+            meta["compactPdf"] = f"assets/pdfs/{slug}-compact.pdf"
             meta["mobilePdf"] = f"assets/pdfs/{slug}-mobile.pdf"
             meta["sectionPages"] = sec_pages
+            meta["compactSectionPages"] = comp_pages
             meta["mobileSectionPages"] = mob_pages
-            meta["markdown"] = md_text
-            print(f"[SYNCED] {slug:26s} -> {len(md_text):6,d} chars | Desktop PDF: {os.path.getsize(pdf_path)//1024} KB | Mobile PDF: {os.path.getsize(mob_path)//1024} KB")
+            meta["chapters"] = chapters
+            print(f"[SYNCED] {slug:26s} -> {len(chapters)} sections | Desktop: {os.path.getsize(pdf_path)//1024} KB | Compact: {os.path.getsize(comp_path)//1024} KB | Mobile: {os.path.getsize(mob_path)//1024} KB")
         save_books_data(prefix, data, suffix)
         sync_covers_data()
         print("Successfully synced all volumes and Typst PDFs into js/books-data.js and js/covers-data.js.")
@@ -367,7 +432,7 @@ def main():
         print("  WARN:", w)
 
     md_text = open(md_path, encoding="utf-8").read()
-    title, subtitle = extract_title_subtitle(md_text)
+    title, subtitle, chapters = extract_book_metadata(md_text)
 
     cover_file = os.path.join(COVERS_DIR, f"{slug}.svg")
     if not os.path.exists(cover_file) or args.regenerate_cover:
@@ -375,18 +440,20 @@ def main():
         print(f"[COVER] Generated vector cover: assets/covers/{slug}.svg")
 
     from compile_typst import compile_book_to_pdf
-    pdf_path, sec_pages, mob_path, mob_pages = compile_book_to_pdf(md_path, category=args.category, accent_hex=args.accent)
-    print(f"[TYPST] Compiled PDFs: assets/pdfs/{slug}.pdf ({os.path.getsize(pdf_path)//1024} KB) & {slug}-mobile.pdf ({os.path.getsize(mob_path)//1024} KB)")
+    pdf_path, sec_pages, comp_path, comp_pages, mob_path, mob_pages = compile_book_to_pdf(md_path, category=args.category, accent_hex=args.accent)
+    print(f"[TYPST] Compiled PDFs: {slug}.pdf ({os.path.getsize(pdf_path)//1024} KB), {slug}-compact.pdf ({os.path.getsize(comp_path)//1024} KB), {slug}-mobile.pdf ({os.path.getsize(mob_path)//1024} KB)")
 
     data[slug] = {
         "title": title,
         "subtitle": subtitle,
         "category": args.category,
         "pdf": f"assets/pdfs/{slug}.pdf",
+        "compactPdf": f"assets/pdfs/{slug}-compact.pdf",
         "mobilePdf": f"assets/pdfs/{slug}-mobile.pdf",
         "sectionPages": sec_pages,
+        "compactSectionPages": comp_pages,
         "mobileSectionPages": mob_pages,
-        "markdown": md_text,
+        "chapters": chapters,
     }
     save_books_data(prefix, data, suffix)
     sync_covers_data()

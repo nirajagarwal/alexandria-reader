@@ -61,7 +61,6 @@
         /* Spread Wrapper */
         .spread-wrapper {
             width: 100%;
-            max-width: 1680px;
             min-width: 0;
             height: 100%;
             display: flex;
@@ -71,8 +70,8 @@
             margin: 0 auto;
         }
 
-        /* Unified Running Header & Running Footer */
-        .running-header, .running-footer {
+        /* Unified Running Header */
+        .running-header {
             height: 36px;
             width: 100%;
             min-width: 0;
@@ -88,20 +87,12 @@
             flex-shrink: 0;
             gap: 12px;
             white-space: nowrap;
-        }
-
-        .running-header {
             border-bottom: 1px solid var(--border-color);
             margin-bottom: 4px;
         }
 
-        .running-footer {
-            border-top: 1px solid var(--border-color);
-            margin-top: 4px;
-        }
-
         /* Header Elements */
-        .folio-left, .folio-right, .folio-center {
+        .folio-left, .folio-right {
             display: flex;
             align-items: center;
             gap: 8px;
@@ -125,46 +116,7 @@
             color: var(--accent-color);
         }
 
-        .folio-chap-tag {
-            font-family: var(--font-sans);
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            color: var(--accent-color);
-        }
-
-        .folio-center {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            justify-content: center;
-            flex: 1;
-        }
-
-        .folio-title {
-            font-family: var(--font-serif);
-            font-size: 13.5px;
-            font-weight: 600;
-            color: var(--text-color);
-            letter-spacing: 0.01em;
-        }
-
-        .folio-sep {
-            color: var(--border-color);
-            font-weight: 300;
-        }
-
-        .folio-subtitle {
-            font-family: var(--font-serif);
-            font-style: italic;
-            font-size: 12px;
-            color: var(--text-muted);
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        /* Minimal Editorial Buttons (Matching across Header & Footer) */
+        /* Minimal Editorial Buttons */
         .folio-btn {
             background: none;
             border: none;
@@ -189,61 +141,18 @@
             background-color: var(--card-bg);
         }
 
-        .folio-page-counter {
-            font-family: var(--font-sans);
-            font-size: 11px;
-            font-weight: 600;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            color: var(--text-muted);
-        }
-
-        /* Legacy Two-Column Page Spread Stage */
-        .spread-stage {
-            flex: 1;
-            min-height: 0;
-            width: 100%;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--column-gap);
-            position: relative;
-            overflow: hidden;
-        }
-
-        /* Vertical Center Rule Between Columns */
-        .spread-stage::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            width: 1px;
-            background: var(--border-color);
-            pointer-events: none;
-        }
-
-        /* Typst PDF Spread Stage (Fit Window + Zoomable) */
+        /* Typst PDF Spread Stage (Automatic Window-Height & Responsive Spread Fit) */
         .spread-stage.pdf-spread-stage {
             flex: 1;
             min-height: 0;
             min-width: 0;
             width: 100%;
-            display: flex !important;
-            grid-template-columns: none !important;
+            display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
             overflow: hidden;
-            padding: 4px;
-        }
-
-        .spread-stage.pdf-spread-stage.is-zoomed {
-            overflow: auto;
-            align-items: flex-start;
-        }
-
-        .spread-stage.pdf-spread-stage::after {
-            display: none !important;
+            padding: 2px;
         }
 
         .pdf-book-frame {
@@ -276,7 +185,7 @@
                 rgba(0, 0, 0, 0.045) 42%,
                 rgba(0, 0, 0, 0.11) 50%,
                 rgba(0, 0, 0, 0.045) 58%,
-                rgba(0, 0, 0, 0) 100%
+                rgba(0, 0, 0, 0.0) 100%
             );
             pointer-events: none;
             z-index: 5;
@@ -293,6 +202,73 @@
 
         .pdf-page-slot canvas {
             display: block;
+        }
+
+        /* Overlaid Back/Next Navigation Arrows on the PDF Page Footer Next to Page Numbers */
+        .pdf-footer-nav {
+            position: absolute;
+            bottom: 2.3%;
+            z-index: 8;
+            background: transparent;
+            border: 1px solid transparent;
+            color: #655f57;
+            font-family: var(--font-mono);
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 1;
+            width: 24px;
+            height: 20px;
+            padding: 0;
+            border-radius: 4px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            user-select: none;
+            transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, opacity 0.15s ease;
+        }
+
+        .pdf-footer-nav:hover {
+            color: var(--accent-color);
+            background-color: rgba(163, 124, 64, 0.12);
+            border-color: rgba(163, 124, 64, 0.28);
+        }
+
+        .pdf-footer-nav.is-disabled {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        /* Two-page spread: Prev arrow next to bottom-left page number, Next arrow next to bottom-right page number */
+        .pdf-book-frame.two-page .pdf-footer-nav.prev {
+            left: 3.65%;
+        }
+
+        .pdf-book-frame.two-page .pdf-footer-nav.next {
+            right: 3.65%;
+        }
+
+        /* Single-page view: Prev arrow at bottom-left, Next arrow at bottom-right */
+        .pdf-book-frame.single-page .pdf-footer-nav {
+            bottom: 2.3%;
+        }
+
+        .pdf-book-frame.single-page .pdf-footer-nav.prev {
+            left: 4.5%;
+        }
+
+        .pdf-book-frame.single-page .pdf-footer-nav.next {
+            right: 4.5%;
+        }
+
+        [data-theme="dark"] .pdf-footer-nav {
+            color: #9e988e;
+        }
+
+        [data-theme="dark"] .pdf-footer-nav:hover {
+            color: var(--accent-color);
+            background-color: rgba(217, 119, 6, 0.18);
+            border-color: rgba(217, 119, 6, 0.35);
         }
 
         /* Theme filters for rendered Typst PDF pages */
@@ -337,208 +313,6 @@
 
         .pdf-link-hotspot:hover {
             background-color: rgba(180, 130, 50, 0.12);
-        }
-
-        /* Zoom & Layout Controls Pill Group */
-        .zoom-controls {
-            display: inline-flex;
-            align-items: center;
-            gap: 2px;
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 5px;
-            padding: 1px 4px;
-        }
-
-        .zoom-btn {
-            background: none;
-            border: none;
-            color: var(--text-muted);
-            font-family: var(--font-sans);
-            font-size: 12px;
-            font-weight: 700;
-            cursor: pointer;
-            padding: 1px 5px;
-            border-radius: 3px;
-            line-height: 1.2;
-        }
-
-        .zoom-btn:hover {
-            color: var(--accent-color);
-        }
-
-        .zoom-readout {
-            font-family: var(--font-sans);
-            font-size: 10px;
-            font-weight: 600;
-            color: var(--text-color);
-            min-width: 28px;
-            text-align: center;
-            cursor: pointer;
-            padding: 1px 3px;
-        }
-
-        .zoom-readout:hover {
-            color: var(--accent-color);
-        }
-
-        /* In-Column Chapter Header (Top of First Column on Spread 0) */
-        .chapter-header-box {
-            text-align: left;
-            margin-bottom: 1.1em;
-            padding-bottom: 0.8em;
-            border-bottom: 1px solid var(--border-color);
-            flex-shrink: 0;
-        }
-
-        .chapter-header-box .c-label {
-            font-family: var(--font-sans);
-            font-size: 0.78em;
-            text-transform: uppercase;
-            letter-spacing: 0.18em;
-            color: var(--accent-color);
-            margin-bottom: 0.3em;
-            font-weight: 700;
-        }
-
-        .chapter-header-box .c-title {
-            font-family: var(--font-serif);
-            font-size: 1.92em;
-            font-weight: 500;
-            line-height: 1.22;
-            letter-spacing: -0.02em;
-            color: var(--text-color);
-            margin-bottom: 0.25em;
-        }
-
-        .chapter-header-box .c-subtitle {
-            font-family: var(--font-serif);
-            font-size: 1.05em;
-            font-style: italic;
-            color: var(--text-muted);
-            font-weight: 300;
-            line-height: 1.4;
-        }
-
-        /* Individual Spread Column */
-        .spread-col {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            font-size: var(--prose-size);
-            line-height: var(--prose-lh);
-            text-align: justify;
-            hyphens: auto;
-            -webkit-hyphens: auto;
-            --justif-protrusion: 1;
-            --justif-expansion: none;
-            --justif-tracking: none;
-        }
-
-        /* Paragraphs */
-        .spread-col p {
-            font-size: var(--prose-size);
-            line-height: var(--prose-lh);
-            margin-bottom: 0.55em;
-            text-align: justify;
-            color: var(--text-color);
-            letter-spacing: normal;
-            flex-shrink: 0;
-        }
-
-        /* Split Paragraph Handling across Columns & Spreads */
-        .spread-col p.para-split-continued {
-            margin-bottom: 0 !important;
-            text-align-last: auto !important;
-        }
-
-        .spread-col p.para-split-continuation {
-            margin-top: 0 !important;
-            text-indent: 0 !important;
-        }
-
-
-        .equation-box {
-            background-color: var(--card-bg);
-            border-left: 3px solid var(--accent-color);
-            padding: 12px 20px;
-            margin: 12px 0;
-            font-size: 1.05em;
-            line-height: normal;
-            overflow-x: auto;
-            text-align: center;
-            border-radius: 4px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-            flex-shrink: 0;
-            box-sizing: border-box;
-        }
-
-        .equation-box .katex-display {
-            margin: 0.25em 0 !important;
-        }
-
-        .katex-display {
-            margin: 0.5em 0 !important;
-        }
-
-        .code-box {
-            background-color: var(--code-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            padding: 12px 16px;
-            margin: 12px 0;
-            font-family: var(--font-mono);
-            font-size: 0.82em;
-            line-height: 1.4;
-            overflow-x: auto;
-            color: var(--text-color);
-            flex-shrink: 0;
-        }
-
-        .diagram-box {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-left: 3px solid var(--accent-color);
-            border-radius: 4px;
-            padding: 12px 16px 10px 16px;
-            margin: 12px 0;
-            text-align: center;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-            flex-shrink: 0;
-            box-sizing: border-box;
-        }
-
-        .diagram-box svg {
-            width: 100%;
-            height: auto;
-            max-height: 215px;
-            display: block;
-            margin: 0 auto;
-        }
-
-        .diagram-caption {
-            font-family: var(--font-sans);
-            font-size: 0.68rem;
-            font-weight: 600;
-            letter-spacing: 0.11em;
-            text-transform: uppercase;
-            color: var(--text-muted);
-            margin-top: 6px;
-            line-height: 1.3;
-            text-align: center;
-        }
-
-        ul, ol {
-            margin: 10px 0 14px 24px;
-            padding-left: 4px;
-            flex-shrink: 0;
-        }
-
-        li {
-            margin-bottom: 6px;
-            font-size: 0.95em;
-            line-height: var(--prose-lh);
         }
 
         /* Modals */
@@ -657,18 +431,6 @@
             color: var(--text-muted);
         }
 
-        .file-dropzone {
-            border: 2px dashed var(--border-color);
-            border-radius: 8px;
-            padding: 24px;
-            text-align: center;
-            margin-top: 18px;
-            cursor: pointer;
-            font-family: var(--font-sans);
-            font-size: 0.9em;
-            color: var(--text-muted);
-        }
-
         /* Desktop Main Container (Centered with Fit-Window Book Spread) */
         #main-stage, main {
             height: 100vh;
@@ -678,7 +440,7 @@
             display: flex;
             justify-content: center;
             align-items: stretch;
-            padding: 6px min(1.5vw, 20px);
+            padding: 2px 4px;
             position: relative;
             overflow: hidden;
             box-sizing: border-box;
@@ -688,7 +450,7 @@
             #main-stage, main {
                 padding: 2px 4px;
             }
-            .running-header, .running-footer {
+            .running-header {
                 height: 32px;
                 gap: 4px;
                 padding: 0 2px;
@@ -698,7 +460,6 @@
                 gap: 3px;
             }
             .running-header .folio-center,
-            .running-footer .folio-left,
             #view-mode-btn,
             #open-pdf-link {
                 display: none !important;
@@ -711,15 +472,6 @@
                 padding: 2px 4px;
                 font-size: 9px;
                 letter-spacing: 0.06em;
-            }
-            .spread-stage {
-                grid-template-columns: 1fr;
-            }
-            .spread-stage::after {
-                display: none;
-            }
-            .spread-col.col-right {
-                display: none;
             }
         }
     
@@ -750,7 +502,7 @@
         }
 
         .home-container {
-            max-width: 1400px;
+            max-width: 1680px;
             margin: 0 auto;
             padding: 36px 40px calc(80px + env(safe-area-inset-bottom, 0px)) 40px;
         }
@@ -842,9 +594,15 @@
 
         .books-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-            gap: 40px 32px;
+            grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
+            gap: 28px 22px;
             align-items: start;
+        }
+
+        @media (min-width: 1360px) {
+            .books-grid {
+                grid-template-columns: repeat(6, 1fr);
+            }
         }
 
         .book-card {

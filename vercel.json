@@ -7,10 +7,6 @@
   ],
   "routes": [
     {
-      "src": "/api/search",
-      "dest": "/api/search.js"
-    },
-    {
       "src": "/sitemap.xml",
       "dest": "/sitemap.xml"
     },
