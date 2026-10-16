@@ -317,6 +317,14 @@ def convert_body_to_typst(body: str, temp_dir: str, sec_idx: int, accent_hex: st
         if not lines:
             continue
 
+        # Check if standalone fleuron / asterism / dinkus separator for listicle chapters
+        if len(lines) == 1 and lines[0] in ("❦", "☙", "⁂", "✦", "* * *", "***"):
+            ornament = "❦" if lines[0] in ("❦", "* * *", "***") else lines[0]
+            out_typ.append(
+                f'#v(1pt)\n#align(center)[#text(font: ("Literata", "Zapf Dingbats", "Apple Symbols", "Georgia"), size: 10.5pt, fill: rgb("{accent_hex}"))[{ornament}]]\n#v(1pt)'
+            )
+            continue
+
         # Check if blockquote
         if all(l.startswith(">") for l in lines):
             q_text = " ".join(re.sub(r"^>\s*", "", l) for l in lines)

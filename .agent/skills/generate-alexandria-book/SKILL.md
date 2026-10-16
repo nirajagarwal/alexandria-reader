@@ -24,30 +24,26 @@ Every Alexandria volume uses the **Universal 12-Facet Container** (a ~250-word t
      python3 scripts/publish_book.py --list-anchors
      ```
    - Every historical event, clinical case, or primary experiment already used as a chapter anchor in an existing book is **strictly off-limits** as a primary chapter anchor in the new volume.
-3. **Present 3–4 Forks on the Road (Creator Mode) or Select Angle (Autonomous Queue Mode)**:
-   - Because we do not need to be comprehensive—12 facets is enough—any topic (a phenomenon, a technology, an institution, or a single extraordinary person) can be sliced in several distinct ways.
-   - When a creator inputs a topic, analyze the domain and present **3–4 distinct 12-facet options ("Forks on the Road")**, showing the core structural thesis and sample facets for each fork (e.g., for *William James*: Fork 1 = *Twelve Facets of a Restless Mind* with one biographical profile facet and eleven experimental/conceptual facets; Fork 2 = *The American Rupture*; Fork 3 = *The Varieties of Extreme Experience*).
-   - Classify the chosen fork into one of the four Tier-2 profiles (`A: Physical Systems`, `B: Biological/Neural`, `C: Decision/Institutional`, `D: Intellectual Ruptures & Prismatic Minds`).
+3. **Select the Structural Form (`mode`) & Present 3–4 Forks on the Road**:
+   - Alexandria supports **three structural forms** inside the 12-chapter container:
+     1. **`"facet"` (Narrative-Mechanism Facet)**: Each chapter pairs a concrete historical event/experiment with its underlying physical, biological, or institutional mechanism.
+     2. **`"listicle"` (Prospected 12-Gem Fleuron Listicle)**: When narrative is not the right fit and the reader wants the high-voltage highlights (e.g., *The Human Body*, where Chapter 1 is 12 dynamite facts about the Heart). Each chapter combines [`topic-prospector`](file:///Users/niraj/.gemini/config/plugins/topic-prospector/skills/topic-prospector/SKILL.md) perpendicular seeds with domain knowledge to deliver **12 self-contained paragraphs** (~45–55 words each) separated by **11 standalone centered fleuron (`❦`) lines** (never numbered lists!).
+     3. **`"landscape"` (Knowra Contextual Landscape)**: Inspired by `knowra.com` ([`/Users/niraj/knowra-browser/lib/prompts.ts`](file:///Users/niraj/knowra-browser/lib/prompts.ts)). Given a central topic $X$, Chapter 1 examines the anchor concept itself, and Chapters 2–12 explore **11 adjacent concepts** across Knowra's lenses (`Building blocks`, `Mechanism`, `Origins`, `Contrasts`, `Neighbors`, `Consequences`, `Cases`, `Open questions`) and moves (`zoom-in`, `zoom-out`, `go`, `contrast`), primed by linked `background_nodes` so the reader learns the topic in context with its surrounding landscape.
 
 ---
 
-## Stage 2: Lock the 12-Facet Dossier (`dossiers/<slug>.json`)
+## Stage 2: Lock the 12-Chapter Dossier (`dossiers/<slug>.json`)
 
 Before drafting a single sentence of book prose, write a structured JSON blueprint to `/Users/niraj/book-writer/dossiers/<slug>.json` containing:
-- `slug` (hyphenated, e.g., `"flights-and-perches"`), `file` (underscored, e.g., `"flights_and_perches.md"`), `title`, `subtitle` (zero colons!), `category`, `profile`, `mode` (`"facet"`), `accent`, `bg`, `theme`.
+- `slug` (hyphenated), `file` (underscored), `title`, `subtitle` (zero colons!), `category`, `profile`, `mode` (`"facet"`, `"listicle"`, or `"landscape"`), `accent`, `bg`, `theme`.
 - `creator_constraints` (optional object): Encodes any explicit creator rules so `scripts/validate_book.py` enforces them deterministically:
   - `"require_quote_per_chapter": true` — requires at least one documented verbatim quote (`"..."`) in every chapter (Chapters 1–12).
   - `"min_diagrams": 2` — requires at least $N$ schematic SVG diagrams (`2–4`) across the volume.
 - **Title Distinctness Rule**: Avoid overused head nouns already saturated in the catalog (*Architectures*, *Engines*, *Topologies*, *Thresholds*, *Asymmetries*, *Tales*, *Worlds*, *Instruments*, *Ghosts*, *Fictions*, *Bonds*) unless deliberately pairing with a creator's chosen title.
-- `chapters`: Array of 12 facet objects, each specifying:
-  1. `chapter`: `1` through `12`
-  2. `title`: Plainspoken chapter title (zero colons)
-  3. `subtitle`: Concrete chapter subtitle (zero colons)
-  4. `opening_door`: Deterministically rotated across `"Door A (Scene)"`, `"Door B (Constraint/Paradox)"`, and `"Door C (Artifact/Measurement)"` so no more than 3–4 chapters open with a date/time phrase.
-  5. `historical_anchor`: Exact named person(s), year/date, location, and verifiable primary source/experiment (verified not in `--list-anchors`).
-  6. `verbatim_quote`: Documented primary-source quote spoken or written by the historical participant(s).
-  7. `formalism_mode`: Either `"equation"` (with a real mathematical/physical/statistical law), `"diagram"` (a theme-aware schematic ` ```svg ` block, 2–4 per book), or `"ledger_or_list"` (a crisp Markdown bulleted/numbered list, forbidding fake "math cosplay").
-  8. `exit_fact`: The concrete historical, physical, or clinical fact on which the chapter will end cleanly (zero moralizing sermons).
+- `chapters`: Array of 12 chapter objects:
+  - **For `"facet"` mode**: `chapter`, `title`, `subtitle`, `opening_door`, `historical_anchor`, `verbatim_quote`, `formalism_mode` (`"equation"`, `"diagram"`, or `"ledger_or_list"`), `exit_fact`.
+  - **For `"listicle"` mode**: `chapter`, `title`, `subtitle`, `prospected_seeds` (array of 12 sharp, perpendicular, number-anchored seeds combining `topic-prospector` cross-disciplinary insights with core domain knowledge, which will become the 12 `❦`-separated paragraphs of that chapter).
+  - **For `"landscape"` mode**: `chapter`, `title`, `subtitle`, `lens` (Knowra lens: `anchor`, `building-blocks`, `mechanism`, `origins`, `contrasts`, `neighbors`, `consequences`, `cases`, `open-questions`), `verb` (`anchor`, `zoom-in`, `zoom-out`, `go`, `contrast`), `what` (context-free definition), `why_here` (specific connection to the central topic), `background_nodes` (array of 4–5 linked sub-concepts with `label`, `what`, `whyHere`), and `formalism_mode`.
 
 ---
 

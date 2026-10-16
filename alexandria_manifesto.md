@@ -41,9 +41,17 @@ When a writer tries to impress, the text draws attention to the author rather th
 
 Because we are training a mental network rather than writing an exhaustive encyclopedia, **we do not need to be comprehensive—twelve facets is enough.**
 
-Every Alexandria volume is shaped into **twelve 5-minute chapters** (~550–720 words each, readable in **one hour** across a day) preceded by a crisp **~250-word Introduction**. The **12-Facet Architecture** is our universal container:
-* *"Not the long video, but shorts."* Each chapter is a self-contained facet that requires zero narrative continuity from the chapter before it. A reader can open the book at any chapter without committing to sequential reading—yet finishing one facet naturally pulls them into the next.
-* **Elastic Across Every Subject—Especially the Ordinary**: Twelve facets can hold twelve historical instances of a phenomenon (*Bonds of Enmity*), twelve physical machines (*Instruments of Precision*), or twelve distinct angles on a single mind (*Flights and Perches — Twelve Facets of William James*). More importantly, it excels at **ordinary things of human interest**: *Twelve Countries*, *Twelve Plants*, *Twelve Animals*, *Twelve Everyday Objects*, *Twelve Buildings*. Left to itself, an LLM gravitates toward what *models* find fascinating—abstract academic nouns, esoteric laboratory curiosities, and systems jargon. Alexandria does the opposite: it takes familiar things in the human world and reveals the unseen geographical, biological, physical, and historical mechanics that made them what they are.
+Every Alexandria volume is shaped into **twelve 5-minute chapters** (~550–720 words each, readable in **one hour** across a day) preceded by a crisp **~250-word Introduction**. Inside this 12-chapter container, Alexandria supports **three structural forms** depending on how a subject is best learned:
+
+1. **The Narrative-Mechanism Facet (`"facet"`)**:
+   * Each chapter pairs a concrete historical event, experiment, or clinical case with the physical, biological, or institutional mechanism underneath it. Ideal for ordinary human categories (*Twelve Plants*, *Twelve Virtues*), systemic phenomena (*Bonds of Enmity*, *Paper Panics*), or a single mind (*The Curious Physicist*).
+2. **The Prospected Fleuron Listicle (`"listicle"`)**:
+   * For many subjects, narrative is the wrong container—you do not want a "story" about the heart; you want **12 dynamite, perpendicular facts about the heart** in one chapter.
+   * Each chapter combines cross-disciplinary prospecting (via the `topic-prospector` engine—seeking perpendicular observations, hidden mechanics, and counterintuitive numbers) with deep domain knowledge to craft **12 single-paragraph highlights** (~45–55 words each).
+   * Instead of a mechanical numbered list (`1.`, `2.`), the twelve paragraphs are separated by a classic print **fleuron (`❦`)** ornament.
+3. **The Contextual Landscape (`"landscape"`, from `knowra.com`)**:
+   * Designed to learn a central topic **in context with a view to its surrounding landscape**.
+   * Given a topic $X$, Chapter 1 examines the anchor concept itself, while Chapters 2–12 explore **eleven specific adjacent concepts** across Knowra's lenses (`Building blocks`, `Mechanism`, `Origins`, `Contrasts`, `Neighbors`, `Consequences`, `Cases`, `Open questions`) and relational moves (`zoom-in`, `zoom-out`, `go`, `contrast`). Each chapter explains both what the adjacent node is (`what`) and how it connects back to the central topic (`whyHere`), primed by its surrounding linked concepts.
 
 ---
 

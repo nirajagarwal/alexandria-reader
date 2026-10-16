@@ -87,11 +87,31 @@ When generating or regenerating a book, select the profile that matches its doma
 - **Forensic Engine**: Show the exact arithmetic—why ensemble averages diverge from time averages, how the payoff matrix or balance sheet worked, and where the absorbing barrier sat. Use real probability/financial equations where applicable; never invent symbolic jargon for simple business or legal concepts.
 
 ### Profile D: Intellectual Ruptures, Forensic Scholarship & Prismatic Minds
-*Applies to: `Singular Minds`, `Tales of Audacity`, `Ghosts in the Parchment`, `Twelve Facets`*
+*Applies to: `Singular Minds`, `Tales of Audacity`, `Ghosts in the Parchment`, `Flights and Perches`, `The Curious Physicist`*
 - **Narrative Vector**: Establish the concrete institutional orthodoxy or intellectual puzzle, introduce the specific empirical anomaly or primary text that broke it, and walk through the exact sequence of trials, measurements, or arguments executed by the protagonist(s). For a single-thinker 12-facet volume (*Twelve Facets*), one facet may serve as a biographical profile while the remaining eleven unpack distinct experiments, concepts, and intellectual collisions.
 - **Forensic Engine**:
   - When the breakthrough was mathematical, physical, or astronomical (Eratosthenes, Archimedes, Kepler, Grothendieck, Shannon, Noether), show the authentic geometric or mathematical derivation.
   - When the breakthrough was medical, biological, philological, or philosophical (James Lind's scurvy trial, Ignaz Semmelweis's Vienna maternity clinics, William James's stream of thought or pragmatist maxim, Lorenzo Valla's philological exposure of the Donation of Constantine), show the exact experimental protocol, schematic diagram, or primary textual comparison—**do not invent fake equations for non-mathematical discoveries**.
+
+### Profile E: The Prospected Fleuron Listicle (`mode: "listicle"`)
+*Applies when narrative is not the right fit and the reader wants 12 dynamite, perpendicular highlights per chapter (e.g., `The Human Body`, where Chapter 1 is 12 dynamite facts about the Heart).*
+- **Prospecting Engine (`topic-prospector` + Domain Knowledge)**:
+  - Before writing each chapter, run a **Topic Prospector** pass on that chapter's subject to mine perpendicular, cross-disciplinary seeds—insights that violate expectations, reveal hidden mechanics, dissolve categories, and lean into concrete numbers, measurements, or named studies.
+  - Combine the sharpest prospected seeds with domain essentials to select **12 distinct, high-voltage observations** for the chapter.
+- **Typographic Structure (12 Paragraphs Separated by `❦`)**:
+  - Do **not** use numbered lists (`1.`, `2.`) or bullet points for the 12 items.
+  - Write **12 standalone paragraphs** per chapter (~45–55 words per paragraph; ~550–700 words total per chapter).
+  - Separate each of the 12 paragraphs with a standalone centered **fleuron (`❦`)** on its own line (`11` fleurons per chapter between the `12` paragraphs).
+  - Every paragraph must open directly with the substance (never throat-clearing) and pack a concrete number, physical ratio, or surprising mechanism.
+
+### Profile F: The Contextual Landscape (`mode: "landscape"`, from `knowra.com`)
+*Applies when the goal is to learn a central topic in context with a view to its surrounding conceptual landscape.*
+- **Neighborhood Mapping (Knowra Lenses & Relational Moves)**:
+  - Given a central topic $X$, **Chapter 1** examines the **Anchor Concept ($X$)** itself (`what` it is, how it works at the core, and what makes it distinctive).
+  - **Chapters 2–12** explore **eleven specific adjacent concepts** (never vague categories!) chosen across Knowra's lenses (`Building blocks` — what you need to understand first; `Mechanism` — finer sub-parts via `zoom-in`; `Origins` — where it came from; `People` — who shaped it; `Contrasts` — rival theories, opposites, or things it is confused with; `Neighbors` — sibling ideas at the same level via `go`; `Consequences` & `Cases` — what it changed and canonical instances; `Open questions` — unresolved boundaries).
+- **Map-Primed Chapter Synthesis**:
+  - In `dossiers/<slug>.json`, each chapter specifies its `lens`, `verb` (`anchor`, `zoom-in`, `zoom-out`, `go`, `contrast`), `what` (context-free definition), `why_here` (its exact connection to the central topic $X$), and 4–5 `background_nodes` (linked sub-concepts that prime the writing with concrete mechanisms, numbers, and names).
+  - Each chapter (550–720 words) explains both the adjacent concept on its own terms and how it connects to, constrains, or contrasts with the book's central subject—building a 360-degree mental map of the landscape.
 
 ---
 

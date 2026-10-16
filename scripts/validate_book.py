@@ -286,9 +286,11 @@ def validate_book(
     dossier_path = os.path.join(BASE_DIR, "dossiers", f"{slug}.json")
 
     min_diagrams = 0
+    book_mode = "facet"
     if os.path.exists(dossier_path):
         try:
             dossier = json.load(open(dossier_path, encoding="utf-8"))
+            book_mode = dossier.get("mode", "facet")
             cc = dossier.get("creator_constraints", {})
             if cc.get("require_quote_per_chapter"):
                 require_quotes = True
@@ -367,7 +369,8 @@ def validate_book(
             errors.extend(validate_svg_diagram(svg_b.strip(), f"{filename}:{expected_label}"))
 
         body_no_code = re.sub(r"```[\s\S]*?```", "", body)
-        body_words = len(body_no_code.split())
+        # Exclude standalone fleuron separators from word count
+        body_words = len([w for w in body_no_code.split() if w not in ("❦", "☙", "⁂", "✦")])
 
         if idx == 0:
             # Introduction word count & no-chapter-summary check (~250 words target)
@@ -387,9 +390,20 @@ def validate_book(
                     f"Chapter {idx} ('{h2[2:]}') body is too long: {body_words} words (maximum {effective_max}; target 550–720 words for high-density compression)."
                 )
 
-            # Concrete grounding check (must have a 3-4 digit year or BCE/CE date)
-            if not re.search(r"\b(1\d{3}|20[0-2]\d|\d+\s*(?:BCE|BC|CE|AD))\b", body_no_code):
-                errors.append(f"Chapter {idx} ('{h2[2:]}') lacks a concrete historical year/date anchor.")
+            if book_mode == "listicle":
+                fleuron_count = len(re.findall(r"(?m)^\s*[❦☙⁂✦]\s*$", body_no_code))
+                if fleuron_count != 11:
+                    errors.append(
+                        f"Chapter {idx} ('{h2[2:]}') in listicle mode must have 12 single-paragraph items separated by 11 standalone fleuron ('❦') lines (found {fleuron_count} fleurons)."
+                    )
+                if re.search(r"(?m)^\s*\d+\.\s+", body_no_code):
+                    errors.append(
+                        f"Chapter {idx} ('{h2[2:]}') in listicle mode must NOT use numbered lists ('1. ', '2. ')—use 12 paragraphs separated by standalone fleuron ('❦') lines."
+                    )
+            else:
+                # Concrete grounding check (must have a 3-4 digit year or BCE/CE date)
+                if not re.search(r"\b(1\d{3}|20[0-2]\d|\d+\s*(?:BCE|BC|CE|AD))\b", body_no_code):
+                    errors.append(f"Chapter {idx} ('{h2[2:]}') lacks a concrete historical year/date anchor.")
 
             # Check for verbatim quote in chapter ("..." or “...” with >= 3 words)
             quotes_found = [
@@ -404,7 +418,7 @@ def validate_book(
                 )
 
             # Check opening sentence cadence
-            paragraphs = [p.strip() for p in re.split(r"\n\s*\n", body_no_code) if p.strip()]
+            paragraphs = [p.strip() for p in re.split(r"\n\s*\n", body_no_code) if p.strip() and p.strip() not in ("❦", "☙", "⁂", "✦")]
             first_para = paragraphs[0] if paragraphs else ""
             if re.match(r"^(In|On|At)\s+(January|February|March|April|May|June|July|August|September|October|November|December|the\s+(?:morning|afternoon|evening|night|spring|summer|autumn|winter|early|late)|\d{4}|\d{1,2}:\d{2})", first_para):
                 date_open_count += 1
@@ -485,7 +499,10 @@ def validate_book(
     raw_no_code = re.sub(r"```[\s\S]*?```", "", raw_text)
     prose_lines = [
         l for l in re.sub(r"\$\$[\s\S]*?\$\$", "", raw_no_code).splitlines()
-        if l.strip() and not l.strip().startswith(("#", "*", "-", ">", "---")) and not re.match(r"^\d+\.", l.strip())
+        if l.strip()
+        and l.strip() not in ("❦", "☙", "⁂", "✦")
+        and not l.strip().startswith(("#", "*", "-", ">", "---"))
+        and not re.match(r"^\d+\.", l.strip())
     ]
     prose_text = " ".join(prose_lines)
     sents = [s.strip() for s in re.split(r"(?<=[.!?])\s+", prose_text) if len(s.strip().split()) >= 3]

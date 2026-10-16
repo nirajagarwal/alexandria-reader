@@ -2578,6 +2578,246 @@
         "subtitle": "How Appendix F Exposed the Fantasy Math Behind the Shuttle Disaster"
       }
     ]
+  },
+  "artificial-intelligence": {
+    "title": "Artificial Intelligence",
+    "subtitle": "The Core Concept and Eleven Neighbors That Shape Its Landscape",
+    "category": "Computation & Intelligence",
+    "pdf": "assets/pdfs/artificial-intelligence.pdf",
+    "compactPdf": "assets/pdfs/artificial-intelligence-compact.pdf",
+    "mobilePdf": "assets/pdfs/artificial-intelligence-mobile.pdf",
+    "sectionPages": [
+      2,
+      3,
+      6,
+      9,
+      12,
+      15,
+      18,
+      21,
+      24,
+      27,
+      30,
+      33,
+      36
+    ],
+    "compactSectionPages": [
+      2,
+      3,
+      6,
+      9,
+      12,
+      15,
+      18,
+      21,
+      25,
+      28,
+      31,
+      34,
+      38
+    ],
+    "mobileSectionPages": [
+      2,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      44,
+      48
+    ],
+    "chapters": [
+      {
+        "label": "Introduction",
+        "title": "Artificial Intelligence",
+        "subtitle": "Mapping a Concept Through Its Surrounding Landscape"
+      },
+      {
+        "label": "Chapter 1",
+        "title": "Artificial Intelligence",
+        "subtitle": "Systems That Infer Representations from Data Rather Than Explicit Rules"
+      },
+      {
+        "label": "Chapter 2",
+        "title": "Backpropagation and Gradient Descent",
+        "subtitle": "How Error Signals Flow Backward Through Millions of Synaptic Weights"
+      },
+      {
+        "label": "Chapter 3",
+        "title": "The Perceptron and the Linear Barrier",
+        "subtitle": "Frank Rosenblatt's Photocell Machine and Why Exclusive-OR Froze Neural Research"
+      },
+      {
+        "label": "Chapter 4",
+        "title": "Symbolic Logic and Expert Systems",
+        "subtitle": "Why Hand-Coded Rules Mastered Medical Checklists Yet Shattered on Common Sense"
+      },
+      {
+        "label": "Chapter 5",
+        "title": "The Transformer and Self-Attention",
+        "subtitle": "How Replacing Sequential Memory with All-to-All Queries Unlocked Modern Scale"
+      },
+      {
+        "label": "Chapter 6",
+        "title": "The Bitter Lesson and Scaling Laws",
+        "subtitle": "Why Raw Compute and Power-Law Curves Repeatedly Defeat Human Ingenuity"
+      },
+      {
+        "label": "Chapter 7",
+        "title": "High-Dimensional Vector Embeddings",
+        "subtitle": "How Meaning Becomes Geometry Inside a Thousand-Dimensional Space"
+      },
+      {
+        "label": "Chapter 8",
+        "title": "Reinforcement Learning and Self-Play",
+        "subtitle": "How Trial, Error, and Temporal-Difference Credit Discover Superhuman Moves"
+      },
+      {
+        "label": "Chapter 9",
+        "title": "Silicon Weights Versus Biological Brains",
+        "subtitle": "Why a Twenty-Watt Cortex Learns from Three Examples While Data Centers Burn Megawatts"
+      },
+      {
+        "label": "Chapter 10",
+        "title": "AlphaFold and the Geometry of Proteins",
+        "subtitle": "How Evolutionary Co-Mutations and Triangle Attention Solved a Fifty-Year Puzzle"
+      },
+      {
+        "label": "Chapter 11",
+        "title": "Reward Hacking and Specification Gaming",
+        "subtitle": "Why Powerful Optimizers Exploit Every Crack in a Human Metric"
+      },
+      {
+        "label": "Chapter 12",
+        "title": "World Models and the Causal Frontier",
+        "subtitle": "Where Next-Token Compression Ends and Causal Understanding Begins"
+      }
+    ]
+  },
+  "the-human-body": {
+    "title": "The Human Body",
+    "subtitle": "Twelve Organs and Systems in Twelve Highlights Each",
+    "category": "Physiology & Biology",
+    "pdf": "assets/pdfs/the-human-body.pdf",
+    "compactPdf": "assets/pdfs/the-human-body-compact.pdf",
+    "mobilePdf": "assets/pdfs/the-human-body-mobile.pdf",
+    "sectionPages": [
+      2,
+      3,
+      7,
+      11,
+      14,
+      17,
+      20,
+      23,
+      26,
+      29,
+      32,
+      35,
+      38
+    ],
+    "compactSectionPages": [
+      2,
+      3,
+      7,
+      11,
+      15,
+      19,
+      23,
+      27,
+      31,
+      35,
+      39,
+      43,
+      47
+    ],
+    "mobileSectionPages": [
+      3,
+      5,
+      10,
+      15,
+      19,
+      23,
+      27,
+      31,
+      35,
+      39,
+      43,
+      47,
+      51
+    ],
+    "chapters": [
+      {
+        "label": "Introduction",
+        "title": "The Human Body",
+        "subtitle": "Twelve Organs Viewed Through Twelve Perpendicular Facts"
+      },
+      {
+        "label": "Chapter 1",
+        "title": "The Heart",
+        "subtitle": "Wringing Muscle Bands, Silent Pacemakers, and Why Cardiac Cells Never Get Cancer"
+      },
+      {
+        "label": "Chapter 2",
+        "title": "The Brain",
+        "subtitle": "Pain-Free Tissue, Nighttime Plumbing Flushes, and the Twenty-Watt Power Budget"
+      },
+      {
+        "label": "Chapter 3",
+        "title": "The Eye",
+        "subtitle": "Inside-Out Retinas, Single-Photon Rods, and Transparent Living Cells"
+      },
+      {
+        "label": "Chapter 4",
+        "title": "The Lungs",
+        "subtitle": "Tennis-Court Membranes, Soap Surfactants, and Why Carbon Dioxide Drives Every Breath"
+      },
+      {
+        "label": "Chapter 5",
+        "title": "The Liver",
+        "subtitle": "Dual Blood Supplies, Prometheus Regeneration, and Five Hundred Chemical Reactors"
+      },
+      {
+        "label": "Chapter 6",
+        "title": "The Kidneys",
+        "subtitle": "One Hundred Eighty Liters of Daily Filtrate and the Salt Hairpin Loop"
+      },
+      {
+        "label": "Chapter 7",
+        "title": "The Gut and Microbiome",
+        "subtitle": "Hydrochloric Acid Baths, Five Hundred Million Enteric Neurons, and Microbial Fermentation"
+      },
+      {
+        "label": "Chapter 8",
+        "title": "The Skin",
+        "subtitle": "Brick-and-Mortar Dead Cells, Evaporative Sweating, and Ultraviolet Vitamin Factories"
+      },
+      {
+        "label": "Chapter 9",
+        "title": "The Ear and Balance",
+        "subtitle": "Levered Ossicles, Sub-Nanometer Hair Bundles, and Three Orthogonal Gyroscopes"
+      },
+      {
+        "label": "Chapter 10",
+        "title": "Bone and Muscle",
+        "subtitle": "Piezoelectric Remodeling, Sliding Myosin Ratchets, and the Tendon Spring"
+      },
+      {
+        "label": "Chapter 11",
+        "title": "Blood and Immunity",
+        "subtitle": "Nucleus-Free Red Discs, Gene-Shuffling Antibodies, and Self-Destructing Neutrophils"
+      },
+      {
+        "label": "Chapter 12",
+        "title": "Sleep and Circadian Time",
+        "subtitle": "Twenty-Thousand Master Clock Neurons, Adenosine Hourglasses, and REM Paralysis"
+      }
+    ]
   }
 };
 }));
