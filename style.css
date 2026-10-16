@@ -220,6 +220,10 @@
         }
 
         .pdf-book-frame {
+            --pt: 1.5px;
+            --m-h: calc(30.24 * var(--pt));
+            --hdr-y: calc(17.38 * var(--pt));
+            --ftr-y: calc(16.50 * var(--pt));
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -232,6 +236,18 @@
             overflow: hidden;
             flex-shrink: 0;
             transition: box-shadow 0.2s ease;
+        }
+
+        .pdf-book-frame[data-edition="compact"] {
+            --m-h: calc(25.92 * var(--pt));
+            --hdr-y: calc(14.38 * var(--pt));
+            --ftr-y: calc(12.50 * var(--pt));
+        }
+
+        .pdf-book-frame[data-edition="mobile"] {
+            --m-h: calc(23.04 * var(--pt));
+            --hdr-y: calc(15.50 * var(--pt));
+            --ftr-y: calc(13.50 * var(--pt));
         }
 
         /* Subtle book spine shadow between facing pages in two-page mode */
@@ -268,20 +284,80 @@
             display: block;
         }
 
-        /* Overlaid Back/Next Navigation Arrows on the PDF Page Footer Next to Page Numbers */
-        .pdf-footer-nav {
+        /* Overlaid Page-Header Navigation Bar Integrated with Typst Running Header */
+        .pdf-header-nav {
             position: absolute;
-            bottom: 2.3%;
-            z-index: 8;
+            top: var(--hdr-y);
+            transform: translateY(-50%);
+            z-index: 9;
+            display: inline-flex;
+            align-items: center;
+            gap: calc(2.5 * var(--pt));
+            user-select: none;
+        }
+
+        .pdf-header-left {
+            left: calc(var(--m-h) - 1.5 * var(--pt));
+        }
+
+        .pdf-header-right {
+            right: calc(var(--m-h) - 1.5 * var(--pt));
+        }
+
+        .pdf-icon-btn {
             background: transparent;
             border: 1px solid transparent;
             color: #655f57;
-            font-family: var(--font-mono);
-            font-size: 13px;
-            font-weight: 600;
-            line-height: 1;
-            width: 24px;
-            height: 20px;
+            width: calc(11.5 * var(--pt));
+            height: calc(11.5 * var(--pt));
+            min-width: 18px;
+            min-height: 18px;
+            padding: 0;
+            border-radius: 4px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+        }
+
+        .pdf-icon-btn svg {
+            width: calc(8.4 * var(--pt));
+            height: calc(8.4 * var(--pt));
+            min-width: 13px;
+            min-height: 13px;
+            display: block;
+        }
+
+        .pdf-icon-btn:hover {
+            color: var(--accent-color);
+            background-color: rgba(163, 124, 64, 0.12);
+            border-color: rgba(163, 124, 64, 0.28);
+        }
+
+        [data-theme="dark"] .pdf-icon-btn {
+            color: #9e988e;
+        }
+
+        [data-theme="dark"] .pdf-icon-btn:hover {
+            color: var(--accent-color);
+            background-color: rgba(217, 119, 6, 0.18);
+            border-color: rgba(217, 119, 6, 0.35);
+        }
+
+        /* Overlaid Back/Next Navigation Arrows on the PDF Page Footer Next to Page Numbers */
+        .pdf-footer-nav {
+            position: absolute;
+            bottom: var(--ftr-y);
+            transform: translateY(50%);
+            z-index: 9;
+            background: transparent;
+            border: 1px solid transparent;
+            color: #655f57;
+            width: calc(11.5 * var(--pt));
+            height: calc(11.5 * var(--pt));
+            min-width: 18px;
+            min-height: 18px;
             padding: 0;
             border-radius: 4px;
             display: inline-flex;
@@ -290,6 +366,14 @@
             cursor: pointer;
             user-select: none;
             transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, opacity 0.15s ease;
+        }
+
+        .pdf-footer-nav svg {
+            width: calc(8.2 * var(--pt));
+            height: calc(8.2 * var(--pt));
+            min-width: 13px;
+            min-height: 13px;
+            display: block;
         }
 
         .pdf-footer-nav:hover {
@@ -303,26 +387,12 @@
             pointer-events: none;
         }
 
-        /* Two-page spread: Prev arrow next to bottom-left page number, Next arrow next to bottom-right page number */
-        .pdf-book-frame.two-page .pdf-footer-nav.prev {
-            left: 3.65%;
+        .pdf-footer-nav.prev {
+            left: calc(var(--m-h) - 1.5 * var(--pt));
         }
 
-        .pdf-book-frame.two-page .pdf-footer-nav.next {
-            right: 3.65%;
-        }
-
-        /* Single-page view: Prev arrow at bottom-left, Next arrow at bottom-right */
-        .pdf-book-frame.single-page .pdf-footer-nav {
-            bottom: 2.3%;
-        }
-
-        .pdf-book-frame.single-page .pdf-footer-nav.prev {
-            left: 4.5%;
-        }
-
-        .pdf-book-frame.single-page .pdf-footer-nav.next {
-            right: 4.5%;
+        .pdf-footer-nav.next {
+            right: calc(var(--m-h) - 1.5 * var(--pt));
         }
 
         [data-theme="dark"] .pdf-footer-nav {

@@ -424,8 +424,10 @@ def build_typ_source(
     f_size = preset["font_size"]
     leading = preset["leading"]
     spacing = preset["spacing"]
+    m_top = preset.get("margin_top", preset["margin_v"])
     m_v = preset["margin_v"]
     m_h = preset["margin_h"]
+    h_ascent = preset.get("header_ascent", "13pt")
     title_sz = preset["ch_title_size"]
     is_mobile = preset.get("is_mobile", False)
     is_compact = preset.get("is_compact", False)
@@ -442,9 +444,9 @@ def build_typ_source(
             if is_mobile
             else (
                 "      if calc.odd(p) {\n"
-                "        align(left)[#h(18pt)#p]\n"
+                "        align(left)[#h(10.5pt)#p]\n"
                 "      } else {\n"
-                "        align(right)[#p#h(18pt)]\n"
+                "        align(right)[#p#h(10.5pt)]\n"
                 "      }\n"
             )
         )
@@ -473,15 +475,16 @@ def build_typ_source(
         f"  width: {page_w},",
         f"  height: {page_h},",
         '  fill: rgb("#faf8f5"),',
-        f"  margin: (top: {m_v}, bottom: {m_v}, left: {m_h}, right: {m_h}),",
+        f"  margin: (top: {m_top}, bottom: {m_v}, left: {m_h}, right: {m_h}),",
+        f"  header-ascent: {h_ascent},",
         "  header: context {",
         "    let p = here().page()",
         "    if p > 1 {",
         '      set text(font: "IBM Plex Mono", size: 6.5pt, tracking: 0.8pt, fill: muted-color)',
         "      if calc.odd(p) {",
-        "        align(left)[#upper(book-title)]",
+        "        align(left)[#h(12.5pt)#upper(book-title)]",
         "      } else {",
-        "        align(right)[#upper(current-chapter.get())]",
+        "        align(right)[#upper(current-chapter.get())#h(57pt)]",
         "      }",
         "    }",
         "  },",
@@ -565,9 +568,10 @@ def build_typ_source(
         title_txt = escape_typst_text(sec["title"])
         subtitle_txt = escape_typst_text(sec["subtitle"])
         body_typ = convert_body_to_typst(sec["body"], temp_dir, idx, accent_hex).replace('width: 98%', f'width: {diag_w}')
+        running_chap = "Introduction" if idx == 0 else sec["title"]
 
         typ_lines.append("")
-        typ_lines.append(f'#current-chapter.update({json.dumps(sec["title"])})')
+        typ_lines.append(f'#current-chapter.update({json.dumps(running_chap)})')
         typ_lines.append("#pagebreak()")
         typ_lines.append(f'#context [#metadata((sec: {idx}, title: {json.dumps(sec["title"])}, page: here().page())) <sec-mark>]')
         typ_lines.append(f'#metadata({idx}) <sec-{idx}>')
@@ -608,8 +612,10 @@ DESKTOP_PRESET = {
     "font_size": "11.6pt",
     "leading": "0.59em",
     "spacing": "0.90em",
+    "margin_top": "0.46in",
     "margin_v": "0.42in",
     "margin_h": "0.42in",
+    "header_ascent": "13pt",
     "ch_title_size": "16.0pt",
     "is_mobile": False,
     "is_compact": False,
@@ -622,8 +628,10 @@ COMPACT_PRESET = {
     "font_size": "12.2pt",
     "leading": "0.56em",
     "spacing": "0.84em",
+    "margin_top": "0.40in",
     "margin_v": "0.36in",
     "margin_h": "0.36in",
+    "header_ascent": "11.5pt",
     "ch_title_size": "15.8pt",
     "is_mobile": False,
     "is_compact": True,
@@ -636,8 +644,10 @@ MOBILE_PRESET = {
     "font_size": "11.8pt",
     "leading": "0.58em",
     "spacing": "0.90em",
+    "margin_top": "0.42in",
     "margin_v": "0.38in",
     "margin_h": "0.32in",
+    "header_ascent": "12pt",
     "ch_title_size": "15.2pt",
     "is_mobile": True,
     "is_compact": False,
