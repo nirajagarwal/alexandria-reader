@@ -560,7 +560,7 @@ def build_typ_source(
     toc_entries.append("]")
     typ_lines.extend(toc_entries)
     typ_lines.append("#v(1fr)")
-    typ_lines.append('#align(left)[#text(font: "IBM Plex Mono", size: 6.5pt, tracking: 1.4pt, fill: muted-color)[ALEXANDRIA PRESS · ALEXANDRIA.PRESS]]')
+    typ_lines.append('#align(left)[#text(font: "IBM Plex Mono", size: 6.5pt, tracking: 1.4pt, fill: muted-color)[ALEXANDRIA.PRESS]]')
 
     for sec in sections:
         idx = sec["index"]
