@@ -157,11 +157,21 @@ def _blend_hex(c1: str, c2: str, t: float) -> str:
     return f"#{max(0, min(255, r)):02x}{max(0, min(255, g)):02x}{max(0, min(255, b)):02x}"
 
 
+def _mute_pastel_hex(hex_str: str, target_l: float, max_s: float) -> str:
+    import colorsys
+    c = hex_str.lstrip("#")
+    r, g, b = int(c[0:2], 16) / 255.0, int(c[2:4], 16) / 255.0, int(c[4:6], 16) / 255.0
+    h, l, s = colorsys.rgb_to_hls(r, g, b)
+    s_new = min(max_s, s * 0.42)
+    r2, g2, b2 = colorsys.hls_to_rgb(h, target_l, s_new)
+    return f"#{int(round(r2*255)):02x}{int(round(g2*255)):02x}{int(round(b2*255)):02x}"
+
+
 def _derive_cover_stops(bg: str, accent: str):
-    """Derive soft pastel background stops and dark base title/subtitle/emblem colors."""
-    top_pastel = _blend_hex("#fbf9f5", accent, 0.22)
-    mid_pastel = _blend_hex("#f7f4ee", accent, 0.28)
-    edge_pastel = _blend_hex("#f2ede4", accent, 0.34)
+    """Derive muted mineral/bookcloth pastel background stops."""
+    top_pastel = _blend_hex(_mute_pastel_hex(accent, 0.83, 0.32), "#e3ded4", 0.24)
+    mid_pastel = _blend_hex(_mute_pastel_hex(accent, 0.79, 0.34), "#dbd5c8", 0.26)
+    edge_pastel = _blend_hex(_mute_pastel_hex(accent, 0.75, 0.36), "#d2cbbd", 0.28)
     return top_pastel, mid_pastel, edge_pastel
 
 
@@ -264,9 +274,9 @@ def _wrap_subtitle_svg(subtitle: str):
 
 def generate_cover_svg(slug: str, title: str, subtitle: str, category: str, accent: str, bg: str, theme: str):
     os.makedirs(COVERS_DIR, exist_ok=True)
-    title_color = _blend_hex(_blend_hex("#1e222a", bg, 0.72), accent, 0.18)
-    subtitle_color = _blend_hex(title_color, accent, 0.30)
-    emblem_color = _blend_hex(accent, title_color, 0.52)
+    title_color = _blend_hex(_blend_hex("#1e222a", bg, 0.78), accent, 0.12)
+    subtitle_color = _blend_hex(title_color, "#4a4842", 0.35)
+    emblem_color = _blend_hex(title_color, accent, 0.35)
     emblem = generate_emblem_svg(theme, emblem_color)
     emblem = re.sub(r'^<g class="([^"]+)">', r'<g class="\1" transform="translate(0, -210)">', emblem)
     title_font_size, title_y, title_inner = _wrap_title_svg(title)
@@ -281,9 +291,9 @@ def generate_cover_svg(slug: str, title: str, subtitle: str, category: str, acce
       <stop offset="100%" stop-color="{edge_stop}"/>
     </linearGradient>
     <radialGradient id="halo-{slug}" cx="50%" cy="50%" r="75%">
-      <stop offset="0%" stop-color="{accent}" stop-opacity="0.16"/>
-      <stop offset="55%" stop-color="{accent}" stop-opacity="0.09"/>
-      <stop offset="100%" stop-color="{accent}" stop-opacity="0.03"/>
+      <stop offset="0%" stop-color="{accent}" stop-opacity="0.06"/>
+      <stop offset="55%" stop-color="{accent}" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="{accent}" stop-opacity="0.00"/>
     </radialGradient>
   </defs>
 
