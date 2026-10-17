@@ -9,3 +9,5 @@ typography_audit.md
 scripts/patch_index_home.js
 scripts/patch_index_js.js
 .vercel/
+__pycache__/
+*.pyc
