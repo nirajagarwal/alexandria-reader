@@ -4,11 +4,11 @@
   "description": "Alexandria Press — Deep Learning for Humans.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#faf9f6",
-  "theme_color": "#92400e",
+  "background_color": "#faf8f5",
+  "theme_color": "#faf8f5",
   "icons": [
     {
-      "src": "/favicon.svg",
+      "src": "/favicon.svg?v=3",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"

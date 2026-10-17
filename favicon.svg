@@ -1,22 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
-  <defs>
-    <linearGradient id="fav-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#2e2013"/>
-      <stop offset="100%" stop-color="#160f09"/>
-    </linearGradient>
-    <linearGradient id="fav-gold" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fef08a"/>
-      <stop offset="50%" stop-color="#fbbf24"/>
-      <stop offset="100%" stop-color="#f59e0b"/>
-    </linearGradient>
-  </defs>
-  <rect width="128" height="128" rx="26" fill="url(#fav-bg)"/>
-  <rect x="5" y="5" width="118" height="118" rx="22" fill="none" stroke="url(#fav-gold)" stroke-width="5.5" opacity="0.88"/>
-  <g stroke="url(#fav-gold)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
-    <path d="M 64 22 L 26 102 L 102 102 Z"/>
-    <line x1="40" y1="72" x2="88" y2="72" stroke-width="8.5"/>
-    <line x1="64" y1="22" x2="64" y2="72" stroke-width="6.5"/>
-    <circle cx="64" cy="22" r="10.5" fill="#fef08a" stroke="none"/>
-    <circle cx="64" cy="72" r="7" fill="#fbbf24" stroke="none"/>
+  <rect width="128" height="128" rx="26" fill="#faf8f5"/>
+  <rect x="2" y="2" width="124" height="124" rx="24" fill="none" stroke="#e4ded2" stroke-width="3"/>
+  <!-- Authentic Literata Bold capital letter 'A' outline centered in 128x128 viewBox -->
+  <g transform="matrix(1.06 0 0 -1.06 25.6 99.6)">
+    <path fill="#1c1917" fill-rule="nonzero" d="M 0.672 0v 7.008l 3.84 0.768q 1.824 0.384 2.784 1.44q 0.96 1.056 1.92 3.744l 19.584 54.336h 15.456l 19.584 -54.72q 1.056 -2.688 1.824 -3.648q 0.768 -0.96 2.688 -1.344l 3.36 -0.672v -6.912h -31.008v 7.008l 4.512 0.576q 1.728 0.288 2.16 1.44q 0.432 1.152 -0.336 3.456l -2.592 7.872h -22.752l -2.592 -7.488q -0.672 -2.016 -0.48 -3.456q 0.192 -1.44 2.88 -1.92l 4.224 -0.672v -6.816h -25.056Z m 23.616 28.128h 17.856l -8.448 26.688h -0.384l -9.024 -26.688Z"/>
   </g>
 </svg>
