@@ -530,33 +530,6 @@
         }
     }
 
-    function getShareableChapterUrl(idx) {
-        if (!activeBook || !currentBookKey) return window.location.origin + '/';
-        const ch = activeBook.chapters[idx];
-        const chSlug = (ch && ch.slug) ? ch.slug : (idx === 0 ? 'introduction' : `chapter-${idx}`);
-        const base = window.location.origin + window.location.pathname.replace(/\/index\.html$/, '').replace(/\/$/, '');
-        return `${base}/read/${currentBookKey}/${chSlug}.html`;
-    }
-
-    function copyChapterLink(idx, btnEl, ev) {
-        if (ev) {
-            ev.stopPropagation();
-            ev.preventDefault();
-        }
-        const url = getShareableChapterUrl(idx);
-        const flashSuccess = () => {
-            if (!btnEl) return;
-            const orig = btnEl.textContent;
-            btnEl.textContent = 'Copied!';
-            setTimeout(() => { btnEl.textContent = orig; }, 1400);
-        };
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-            navigator.clipboard.writeText(url).then(flashSuccess).catch(flashSuccess);
-        } else {
-            flashSuccess();
-        }
-    }
-
     function renderTocList() {
         const list = document.getElementById('toc-container');
         if (!list || !activeBook) return;
@@ -577,12 +550,7 @@
                     <div class="t-title">${escapeHtml(ch.title)}</div>
                     <div class="t-sub">${escapeHtml(ch.subtitle)}</div>
                 </div>
-                <button class="copy-link-btn" type="button" title="Copy direct link to this chapter">Copy Link</button>
             `;
-            const copyBtn = li.querySelector('.copy-link-btn');
-            if (copyBtn) {
-                copyBtn.onclick = (ev) => copyChapterLink(idx, copyBtn, ev);
-            }
             list.appendChild(li);
         });
     }
@@ -600,10 +568,10 @@
         if (!container || !activeBook) return;
         container.innerHTML = '';
         const titleEl = document.getElementById('sources-book-title');
-        if (titleEl) titleEl.innerText = `${activeBook.title} — Sources & Provenance`;
+        if (titleEl) titleEl.innerText = `${activeBook.title} — Provenance`;
 
         activeBook.chapters.forEach((ch, idx) => {
-            if (idx === 0) return; // Skip Introduction in chapter provenance ledger
+            if (idx === 0) return; // Start directly with Chapter 1
             const div = document.createElement('div');
             div.className = `source-item ${idx === currentChapterIndex ? 'active' : ''}`;
             div.onclick = () => {
@@ -619,21 +587,12 @@
                 : '';
 
             div.innerHTML = `
-                <div class="source-item-top">
-                    <div>
-                        <div class="source-item-meta">${escapeHtml(ch.label)} &middot; ${escapeHtml(fBadge)}</div>
-                        <div class="source-item-title">${escapeHtml(ch.title)}</div>
-                    </div>
-                    <button class="copy-link-btn" type="button" title="Copy direct link to this chapter">Copy Link</button>
-                </div>
+                <div class="source-item-meta">${escapeHtml(ch.label)} &middot; ${escapeHtml(fBadge)}</div>
+                <div class="source-item-title">${escapeHtml(ch.title)}</div>
                 <div class="source-item-sub">${escapeHtml(ch.subtitle)}</div>
                 ${anchorHtml}
                 ${exitHtml}
             `;
-            const copyBtn = div.querySelector('.copy-link-btn');
-            if (copyBtn) {
-                copyBtn.onclick = (ev) => copyChapterLink(idx, copyBtn, ev);
-            }
             container.appendChild(div);
         });
     }

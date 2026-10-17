@@ -467,8 +467,61 @@
             box-shadow: var(--shadow);
         }
 
-        .modal-card-wide {
-            max-width: 680px;
+        /* Right-Side Overlay Panel (Provenance) */
+        .modal-overlay.side-panel-overlay {
+            justify-content: flex-end;
+            align-items: stretch;
+            padding: 0;
+            background: rgba(0, 0, 0, 0.28);
+            backdrop-filter: blur(2px);
+        }
+
+        .side-panel-card {
+            background: var(--surface-color);
+            border-left: 1px solid var(--border-color);
+            width: 38vw;
+            max-width: 40vw;
+            min-width: 340px;
+            height: 100vh;
+            height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            box-shadow: -12px 0 36px rgba(0, 0, 0, 0.18);
+            box-sizing: border-box;
+            animation: slideInRightPanel 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        @keyframes slideInRightPanel {
+            from {
+                transform: translateX(28px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .side-panel-header {
+            padding: 20px 24px 16px;
+            margin-bottom: 0;
+            border-bottom: 1px solid var(--border-color);
+            flex-shrink: 0;
+            background: var(--surface-color);
+        }
+
+        .side-panel-body {
+            padding: 18px 24px 28px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        @media (max-width: 900px) {
+            .side-panel-card {
+                width: min(88vw, 480px);
+                max-width: 92vw;
+                min-width: 0;
+            }
         }
 
         .modal-title {
@@ -547,63 +600,12 @@
             color: var(--text-muted);
         }
 
-        .copy-link-btn {
-            background: var(--surface-color);
-            border: 1px solid var(--border-color);
-            color: var(--text-muted);
-            font-family: var(--font-sans);
-            font-size: 0.72rem;
-            font-weight: 600;
-            padding: 4px 9px;
-            border-radius: 5px;
-            cursor: pointer;
-            white-space: nowrap;
-            flex-shrink: 0;
-            transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
-        }
-
-        .copy-link-btn:hover {
-            color: var(--accent-color);
-            border-color: var(--accent-color);
-        }
-
-        /* Sources & Provenance Ledger Modal */
-        .provenance-colophon {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 13px 15px;
-            margin-bottom: 16px;
-            font-size: 0.86rem;
-            line-height: 1.5;
-            color: var(--text-muted);
-        }
-
-        .prov-badge-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            margin-bottom: 8px;
-        }
-
-        .prov-badge {
-            font-family: var(--font-sans);
-            font-size: 0.68rem;
-            font-weight: 600;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            color: var(--accent-color);
-            background: var(--surface-color);
-            border: 1px solid var(--border-color);
-            padding: 2px 8px;
-            border-radius: 999px;
-        }
-
+        /* Sources & Provenance Side Panel Items */
         .source-item {
-            padding: 14px 15px;
+            padding: 14px 16px;
             border-radius: 8px;
             border: 1px solid var(--border-color);
-            margin-bottom: 11px;
+            margin-bottom: 12px;
             cursor: pointer;
             transition: border-color 0.15s ease, background-color 0.15s ease;
         }
@@ -611,14 +613,6 @@
         .source-item:hover, .source-item.active {
             border-color: var(--accent-color);
             background-color: var(--card-bg);
-        }
-
-        .source-item-top {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            gap: 10px;
-            margin-bottom: 6px;
         }
 
         .source-item-meta {
@@ -658,27 +652,6 @@
             letter-spacing: 0.05em;
             color: var(--text-muted);
             margin-right: 4px;
-        }
-
-        .about-method-box {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 13px 15px;
-            margin-bottom: 16px;
-            font-size: 0.88rem;
-            line-height: 1.54;
-            color: var(--text-color);
-        }
-
-        .about-method-heading {
-            font-family: var(--font-sans);
-            font-size: 0.75rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--accent-color);
-            margin-bottom: 5px;
         }
 
         /* Desktop Main Container (Centered with Fit-Window Book Spread) */

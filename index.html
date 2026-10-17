@@ -291,7 +291,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=41">
+    <link rel="stylesheet" href="style.css?v=42">
 
     <!-- PDF.js for Typst Digital Spread Rendering -->
     <script src="vendor/pdfjs/pdf.min.js"></script>
@@ -739,11 +739,11 @@
         </div>
     </div>
 
-    <!-- Sources & Provenance Ledger Modal -->
-    <div class="modal-overlay" id="sources-modal" onclick="closeModals(event)">
-        <div class="modal-card modal-card-wide">
-            <div class="modal-title">
-                <span id="sources-book-title">Sources &amp; Provenance Ledger</span>
+    <!-- Sources & Provenance Side Panel -->
+    <div class="modal-overlay side-panel-overlay" id="sources-modal" onclick="closeModals(event)">
+        <aside class="side-panel-card" aria-label="Sources and Provenance">
+            <div class="modal-title side-panel-header">
+                <span id="sources-book-title">Sources &amp; Provenance</span>
                 <button class="btn-icon" onclick="closeModals()" title="Close (Esc)" aria-label="Close">
                     <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -751,33 +751,21 @@
                     </svg>
                 </button>
             </div>
-            <div class="provenance-colophon">
-                <div class="prov-badge-row">
-                    <span class="prov-badge">Zero Fabricated Quotes</span>
-                    <span class="prov-badge">Primary-Record Grounded</span>
-                    <span class="prov-badge">Earned Formalisms Only</span>
-                </div>
-                <p>Every Alexandria Press chapter is anchored in documented historical events, laboratory experiments, or archival records, audited through an independent verification gate. All statements are paraphrased in indirect speech rather than reconstructed as novelistic dialogue.</p>
-            </div>
-            <div id="sources-container"></div>
-        </div>
+            <div class="side-panel-body" id="sources-container"></div>
+        </aside>
     </div>
 
-    <!-- Editorial Method & Shortcuts Modal -->
+    <!-- Shortcuts Modal -->
     <div class="modal-overlay" id="help-modal" onclick="closeModals(event)">
         <div class="modal-card">
             <div class="modal-title">
-                <span>About Alexandria Press &amp; Shortcuts</span>
+                <span>Keyboard Shortcuts</span>
                 <button class="btn-icon" onclick="closeModals()" title="Close (Esc)" aria-label="Close">
                     <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="18" y1="6" x2="6" y2="18"></line>
                         <line x1="6" y1="6" x2="18" y2="18"></line>
                     </svg>
                 </button>
-            </div>
-            <div class="about-method-box">
-                <div class="about-method-heading">How These Volumes Are Built</div>
-                <p>Alexandria Press synthesizes concise twelve-chapter monographs (<em>Deep Learning for Humans</em>) designed to be read in a single sitting. Each chapter pairs a concrete historical or experimental record with the governing equation, schematic diagram, or empirical ledger that explains how the phenomenon works—without invented quotes, fictionalized scene padding, or decorative analogies.</p>
             </div>
             <div style="font-family:var(--font-sans); font-size:0.90em; line-height:2.05;">
                 <div><kbd>/</kbd> : Focus search bar on Home catalog (<kbd>Esc</kbd> to clear)</div>
@@ -785,17 +773,17 @@
                 <div><kbd>→</kbd> / <kbd>Space</kbd> : Turn to next spread / page (or click right page margin)</div>
                 <div><kbd>←</kbd> / <kbd>Shift+Space</kbd> : Turn to previous spread / page (or click left page margin)</div>
                 <div><kbd>n</kbd> / <kbd>p</kbd> : Next / Previous chapter</div>
-                <div><kbd>t</kbd> : Table of Contents &amp; chapter links</div>
-                <div><kbd>s</kbd> : Sources &amp; Provenance Ledger</div>
+                <div><kbd>t</kbd> : Table of Contents</div>
+                <div><kbd>s</kbd> : Sources &amp; Provenance side panel</div>
                 <div><kbd>h</kbd> : Return to Home catalog</div>
                 <div><kbd>d</kbd> : Cycle Theme (Light / Dark / Sepia)</div>
-                <div><kbd>Esc</kbd> : Close open modal</div>
+                <div><kbd>Esc</kbd> : Close open panel / modal</div>
             </div>
         </div>
     </div>
 
     <!-- Book Dataset & Reader Application -->
-    <script src="js/books-data.js?v=41"></script>
-    <script src="js/app.js?v=41"></script>
+    <script src="js/books-data.js?v=42"></script>
+    <script src="js/app.js?v=42"></script>
 </body>
 </html>
