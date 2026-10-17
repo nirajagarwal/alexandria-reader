@@ -2818,6 +2818,126 @@
         "subtitle": "Twenty-Thousand Master Clock Neurons, Adenosine Hourglasses, and REM Paralysis"
       }
     ]
+  },
+  "attention": {
+    "title": "Attention",
+    "subtitle": "The Core Bottleneck and Eleven Neighbors That Shape Human Focus",
+    "category": "Cognitive Architecture",
+    "pdf": "assets/pdfs/attention.pdf",
+    "compactPdf": "assets/pdfs/attention-compact.pdf",
+    "mobilePdf": "assets/pdfs/attention-mobile.pdf",
+    "sectionPages": [
+      3,
+      4,
+      7,
+      10,
+      13,
+      16,
+      19,
+      22,
+      25,
+      28,
+      31,
+      34,
+      37
+    ],
+    "compactSectionPages": [
+      3,
+      4,
+      7,
+      11,
+      14,
+      17,
+      20,
+      23,
+      26,
+      29,
+      32,
+      35,
+      38
+    ],
+    "mobileSectionPages": [
+      3,
+      5,
+      9,
+      13,
+      17,
+      21,
+      25,
+      29,
+      33,
+      37,
+      40,
+      44,
+      48
+    ],
+    "chapters": [
+      {
+        "label": "Introduction",
+        "title": "Attention",
+        "subtitle": "Mapping Focus Through Its Surrounding Landscape"
+      },
+      {
+        "label": "Chapter 1",
+        "title": "Selective Attention",
+        "subtitle": "Why a Ten-Million-Bit Sensory Flood Passes Through a Fifty-Bit Conscious Gate"
+      },
+      {
+        "label": "Chapter 2",
+        "title": "The Thalamic Reticular Gate",
+        "subtitle": "How a Paper-Thin Shell of Inhibitory Neurons Dims Unwanted Senses at the Source"
+      },
+      {
+        "label": "Chapter 3",
+        "title": "Saccadic Suppression and the Foveal Spotlight",
+        "subtitle": "Why You Are Functionally Blind for Forty Minutes Every Day While Your Eyes Jump"
+      },
+      {
+        "label": "Chapter 4",
+        "title": "Biased Competition and Neural Gain",
+        "subtitle": "How Two Objects Fight for One Receptive Field Inside the Visual Cortex"
+      },
+      {
+        "label": "Chapter 5",
+        "title": "Predator Vigilance and Bayesian Surprise",
+        "subtitle": "Why Sudden Motion and Statistical Anomalies Hijack Every Vertebrate Brain"
+      },
+      {
+        "label": "Chapter 6",
+        "title": "Spotlight Focus Versus Open Vigilance",
+        "subtitle": "How the Left and Right Hemispheres Divide Narrow Grasping from Broad Watchfulness"
+      },
+      {
+        "label": "Chapter 7",
+        "title": "Working Memory and the Magical Number Four",
+        "subtitle": "Why Holding an Idea in Mind Is the Same Neural Act as Paying Attention to It"
+      },
+      {
+        "label": "Chapter 8",
+        "title": "Inattentional Blindness and the Invisible Gorilla",
+        "subtitle": "Why Pilots Stare Directly at a Runway Obstacle Without Seeing It"
+      },
+      {
+        "label": "Chapter 9",
+        "title": "The Attentional Blink and Switching Costs",
+        "subtitle": "Why the Mind Goes Blind for Half a Second After Catching a Target"
+      },
+      {
+        "label": "Chapter 10",
+        "title": "Variable-Ratio Salience and the Gain Knob",
+        "subtitle": "How Unpredictable Rewards and Brainstem Norepinephrine Lock the Gaze"
+      },
+      {
+        "label": "Chapter 11",
+        "title": "Vigilance Decrement and the Radar Watchman's Trap",
+        "subtitle": "Why Human Monitors Miss Rare Signals After Thirty Minutes of Quiet Watch"
+      },
+      {
+        "label": "Chapter 12",
+        "title": "Effortless Absorption and the Default Mode Seesaw",
+        "subtitle": "What Happens in the Brain When Self-Monitoring Quiets Down During Deep Focus"
+      }
+    ]
   }
 };
 }));

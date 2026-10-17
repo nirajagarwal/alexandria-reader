@@ -87,63 +87,68 @@ def list_existing_anchors():
             print(f"  Ch {idx:2d}: {ch['title']} — {ch['subtitle']}")
 
 
-def generate_emblem_svg(theme: str, accent: str):
+def generate_emblem_svg(theme: str, accent: str, slug: str = ""):
+    import hashlib
     cx, cy = 800, 1400
-    if theme == "network-wave":
+    seed = int(hashlib.sha256((slug or theme).encode("utf-8")).hexdigest()[:8], 16)
+
+    if theme == "foveal-aperture" or slug == "attention":
+        # Bespoke Foveal Aperture & Thalamic Searchlight geometry for Attention
         elems = []
-        for r in range(70, 420, 55):
-            op = max(0.18, 0.78 - (r / 450) * 0.55)
+        # Outer peripheral retinal rings (fading outward)
+        for r in (380, 330, 280, 230, 180):
+            op = 0.16 + (400 - r) / 700
+            dash = ' stroke-dasharray="6,10"' if r > 250 else ""
             elems.append(
-                f'<circle cx="{cx}" cy="{cy}" r="{r}" stroke="{accent}" stroke-width="1.5" stroke-dasharray="10,8" fill="none" opacity="{op:.2f}"/>'
+                f'<circle cx="{cx}" cy="{cy}" r="{r}" stroke="{accent}" stroke-width="1.5"{dash} fill="none" opacity="{op:.2f}"/>'
             )
-        num_spokes = 16
-        for i in range(num_spokes):
-            ang = (i * 2 * math.pi) / num_spokes
-            ox = cx + 380 * math.cos(ang)
-            oy = cy + 380 * math.sin(ang)
+        # 24 iris aperture blades tangent to an inner 92px foveal circle
+        blades = 24
+        r_inner = 92
+        r_outer = 340
+        for i in range(blades):
+            a1 = (i * 2 * math.pi) / blades
+            a2 = a1 + 0.68
+            x1 = cx + r_inner * math.cos(a1)
+            y1 = cy + r_inner * math.sin(a1)
+            x2 = cx + r_outer * math.cos(a2)
+            y2 = cy + r_outer * math.sin(a2)
+            op = 0.28 + 0.35 * ((i % 3) / 2)
             elems.append(
-                f'<line x1="{cx}" y1="{cy}" x2="{ox:.1f}" y2="{oy:.1f}" stroke="{accent}" stroke-width="1.2" opacity="0.35"/>'
+                f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}" stroke="{accent}" stroke-width="1.6" opacity="{op:.2f}"/>'
             )
-            for r_node in (125, 235, 345):
-                nx = cx + r_node * math.cos(ang)
-                ny = cy + r_node * math.sin(ang)
-                elems.append(f'<circle cx="{nx:.1f}" cy="{ny:.1f}" r="5.5" fill="{accent}" opacity="0.88"/>')
-        elems.append(f'<circle cx="{cx}" cy="{cy}" r="42" fill="{accent}" opacity="0.16"/>')
+            if i % 2 == 0:
+                elems.append(f'<circle cx="{x2:.1f}" cy="{y2:.1f}" r="4.2" fill="{accent}" opacity="0.65"/>')
+        # Crisp foveal aperture ring + crosshairs + central fixation target
+        elems.append(f'<circle cx="{cx}" cy="{cy}" r="{r_inner}" stroke="{accent}" stroke-width="2.6" fill="{accent}" fill-opacity="0.08" opacity="0.92"/>')
+        elems.append(f'<circle cx="{cx}" cy="{cy}" r="44" stroke="{accent}" stroke-width="1.8" fill="none" opacity="0.85"/>')
+        for a_deg in (0, 90, 180, 270):
+            rad = math.radians(a_deg)
+            x_in, y_in = cx + 52 * math.cos(rad), cy + 52 * math.sin(rad)
+            x_out, y_out = cx + 118 * math.cos(rad), cy + 118 * math.sin(rad)
+            elems.append(f'<line x1="{x_in:.1f}" y1="{y_in:.1f}" x2="{x_out:.1f}" y2="{y_out:.1f}" stroke="{accent}" stroke-width="2.0" opacity="0.85"/>')
         elems.append(f'<circle cx="{cx}" cy="{cy}" r="11" fill="{accent}"/>')
-        return f'<g class="emblem-network">{"".join(elems)}</g>'
+        return f'<g class="emblem-foveal-aperture">{"".join(elems)}</g>'
 
-    elif theme == "harmonic-rings":
-        elems = []
-        for step in range(18):
-            r = 80 + step * 18
-            rot = step * 10
-            op = 0.16 + step * 0.038
-            elems.append(
-                f'<ellipse cx="{cx}" cy="{cy}" rx="{r * 1.45:.1f}" ry="{r * 0.68:.1f}" transform="rotate({rot} {cx} {cy})" stroke="{accent}" stroke-width="1.4" fill="none" opacity="{min(0.85, op):.2f}"/>'
-            )
-        elems.append(f'<circle cx="{cx}" cy="{cy}" r="9" fill="{accent}"/>')
-        return f'<g class="emblem-harmonic">{"".join(elems)}</g>'
-
-    else:
-        # Default geometric phase-lattice
-        elems = []
-        for ring in range(1, 7):
-            r = ring * 62
-            pts = []
-            sides = 8
-            for s in range(sides):
-                a = (s * 2 * math.pi) / sides + (ring * 0.12)
-                px = cx + r * math.cos(a)
-                py = cy + r * math.sin(a)
-                pts.append(f"{px:.1f},{py:.1f}")
-                elems.append(f'<circle cx="{px:.1f}" cy="{py:.1f}" r="4.8" fill="{accent}" opacity="0.85"/>')
-            op = max(0.22, 0.78 - ring * 0.08)
-            elems.append(
-                f'<polygon points="{" ".join(pts)}" stroke="{accent}" stroke-width="1.5" fill="none" opacity="{op:.2f}"/>'
-            )
-        elems.append(f'<circle cx="{cx}" cy="{cy}" r="36" fill="{accent}" opacity="0.18"/>')
-        elems.append(f'<circle cx="{cx}" cy="{cy}" r="9" fill="{accent}"/>')
-        return f'<g class="emblem-lattice">{"".join(elems)}</g>'
+    # Slug-parameterized unique mathematical rose / spirograph / polyhedral family so no two covers ever repeat
+    elems = []
+    petals = 5 + (seed % 9)  # 5..13
+    loops = 140
+    pts = []
+    r_base = 150 + (seed % 50)
+    r_amp = 160 + ((seed >> 4) % 45)
+    phase = ((seed >> 8) % 360) * math.pi / 180.0
+    for step in range(loops + 1):
+        t = (step * 2 * math.pi) / loops
+        r = r_base + r_amp * math.cos(petals * t + phase) * math.sin(2 * t)
+        px = cx + r * math.cos(t)
+        py = cy + r * math.sin(t)
+        pts.append(f"{px:.1f},{py:.1f}")
+    elems.append(f'<polyline points="{" ".join(pts)}" stroke="{accent}" stroke-width="1.8" fill="none" opacity="0.72"/>')
+    for ring in (110, 240, 365):
+        elems.append(f'<circle cx="{cx}" cy="{cy}" r="{ring}" stroke="{accent}" stroke-width="1.2" stroke-dasharray="6,8" fill="none" opacity="0.35"/>')
+    elems.append(f'<circle cx="{cx}" cy="{cy}" r="10" fill="{accent}"/>')
+    return f'<g class="emblem-{slug or "custom"}">{"".join(elems)}</g>'
 
 
 def _blend_hex(c1: str, c2: str, t: float) -> str:
@@ -277,7 +282,7 @@ def generate_cover_svg(slug: str, title: str, subtitle: str, category: str, acce
     title_color = _blend_hex(_blend_hex("#1e222a", bg, 0.78), accent, 0.12)
     subtitle_color = _blend_hex(title_color, "#4a4842", 0.35)
     emblem_color = _blend_hex(title_color, accent, 0.35)
-    emblem = generate_emblem_svg(theme, emblem_color)
+    emblem = generate_emblem_svg(theme, emblem_color, slug=slug)
     emblem = re.sub(r'^<g class="([^"]+)">', r'<g class="\1" transform="translate(0, -210)">', emblem)
     title_font_size, title_y, title_inner = _wrap_title_svg(title)
     sub_font_size, sub_y, sub_inner = _wrap_subtitle_svg(subtitle)
@@ -379,7 +384,7 @@ def main():
     parser.add_argument("--category", default="Systems & Science", help="Book category label")
     parser.add_argument("--accent", default="#10b981", help="Hex accent color for cover")
     parser.add_argument("--bg", default="#0b1d18", help="Hex background color for cover")
-    parser.add_argument("--theme", default="lattice", choices=["network-wave", "harmonic-rings", "lattice"], help="Cover geometric emblem")
+    parser.add_argument("--theme", default="lattice", help="Cover geometric emblem")
     parser.add_argument("--regenerate-cover", action="store_true", help="Force regenerate SVG cover")
     parser.add_argument("--recompile", action="store_true", help="Force recompile all PDFs during --sync-all")
     args = parser.parse_args()
