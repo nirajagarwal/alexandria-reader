@@ -410,6 +410,25 @@ def parse_book_markdown(md_text: str):
     return book_title, book_subtitle, parsed_sections
 
 
+def prepare_cover_svg_for_typst(slug: str, page_w: str, page_h: str) -> str:
+    cover_path = os.path.join(BASE_DIR, "assets", "covers", f"{slug}.svg")
+    if not os.path.exists(cover_path):
+        return ""
+    svg = open(cover_path, encoding="utf-8").read()
+    try:
+        w_in = float(page_w.replace("in", ""))
+        h_in = float(page_h.replace("in", ""))
+        ar = w_in / h_in
+    except Exception:
+        ar = 5.8 / 7.5
+    vw = int(round(2400 * ar))
+    vx = int(round((1600 - vw) / 2))
+    svg = svg.replace('viewBox="0 0 1600 2400"', f'viewBox="{vx} 0 {vw} 2400"')
+    svg = svg.replace('<rect width="1600" height="2400"', f'<rect x="{vx}" y="0" width="{vw}" height="2400"')
+    svg = svg.replace("font-family=\"'Literata', Georgia, serif\"", 'font-family="Literata"')
+    return svg
+
+
 def build_typ_source(
     book_title: str,
     book_subtitle: str,
@@ -418,6 +437,7 @@ def build_typ_source(
     sections: list,
     temp_dir: str,
     preset: dict,
+    slug: str = "",
 ) -> str:
     page_w = preset.get("width", "6.4in")
     page_h = preset.get("height", "7.5in")
@@ -433,20 +453,34 @@ def build_typ_source(
     is_compact = preset.get("is_compact", False)
     diag_w = "92%" if not (is_mobile or is_compact) else ("95%" if is_compact else "98%")
 
+    cover_block = []
+    if slug:
+        cover_svg = prepare_cover_svg_for_typst(slug, page_w, page_h)
+        if cover_svg:
+            cover_file = os.path.join(temp_dir, "cover.svg")
+            with open(cover_file, "w", encoding="utf-8") as cf:
+                cf.write(cover_svg)
+            cover_block = [
+                "// PAGE 1: FULL-BLEED BOOK COVER",
+                '#page(margin: 0pt, header: none, footer: none)[#image("cover.svg", width: 100%, height: 100%)]',
+                "#counter(page).update(1)",
+                "",
+            ]
+
     footer_block = (
         "  footer-descent: 12pt,\n"
         "  footer: context {\n"
-        "    let p = here().page()\n"
-        "    if p > 1 {\n"
+        "    let lp = counter(page).get().first()\n"
+        "    if lp > 1 {\n"
         '      set text(font: "IBM Plex Mono", size: 7.5pt, fill: muted-color)\n'
         + (
-            "      align(center)[#p]\n"
+            "      align(center)[#lp]\n"
             if is_mobile
             else (
-                "      if calc.odd(p) {\n"
-                "        align(left)[#p]\n"
+                "      if calc.odd(lp) {\n"
+                "        align(left)[#lp]\n"
                 "      } else {\n"
-                "        align(right)[#p]\n"
+                "        align(right)[#lp]\n"
                 "      }\n"
             )
         )
@@ -479,7 +513,8 @@ def build_typ_source(
         f"  header-ascent: {h_ascent},",
         "  header: context {",
         "    let p = here().page()",
-        "    if p > 1 {",
+        "    let lp = counter(page).get().first()",
+        "    if lp > 1 {",
         "      let marks = query(<sec-mark>)",
         "      let is-chap-start = marks.any(m => m.location().page() == p)",
         "      let active-marks = marks.filter(m => m.location().page() <= p)",
@@ -491,7 +526,7 @@ def build_typ_source(
             "      }"
             if is_mobile
             else (
-                "      if calc.odd(p) {\n"
+                "      if calc.odd(lp) {\n"
                 "        align(left)[#upper(book-title)]\n"
                 "      } else if not is-chap-start {\n"
                 "        align(left)[#pad(right: 84pt)[#upper(chap-title)]]\n"
@@ -506,7 +541,8 @@ def build_typ_source(
         f'#set text(font: "Literata", size: {f_size}, fill: ink-color, lang: "en")',
         f"#set par(justify: true, leading: {leading}, spacing: {spacing})",
         "",
-        "// PAGE 1: TITLE & CONTENTS FRONTISPIECE",
+        *cover_block,
+        "// TITLE & CONTENTS FRONTISPIECE",
         "#v(0.02in)",
         '#text(font: "IBM Plex Mono", size: 7.2pt, tracking: 1.8pt, fill: accent-color, weight: "medium")[#book-category]',
         "#v(4pt)",
@@ -555,7 +591,7 @@ def build_typ_source(
             f'  #block(above: {toc_entry_gap}, below: 0pt, breakable: false)[\n'
             f'    #context {{\n'
             f'      let target = label("sec-{idx}")\n'
-            f'      let pg = locate(target).page()\n'
+            f'      let pg = counter(page).at(target).first()\n'
             f'      link(target)[\n'
             f'        #grid(\n'
             f'          columns: (1fr, auto),\n'
@@ -668,10 +704,11 @@ MOBILE_PRESET = {
 
 def _compile_single_preset(book_title, book_subtitle, category, accent_hex, sections, temp_dir, preset, typ_name, out_path, slug):
     typ_path = os.path.join(temp_dir, typ_name)
+    expected_intro_page = 3 if os.path.exists(os.path.join(BASE_DIR, "assets", "covers", f"{slug}.svg")) else 2
     for scale in (1.0, 0.82, 0.68):
         p_copy = dict(preset)
         p_copy["toc_scale"] = scale
-        typ_src = build_typ_source(book_title, book_subtitle, category, accent_hex, sections, temp_dir, p_copy)
+        typ_src = build_typ_source(book_title, book_subtitle, category, accent_hex, sections, temp_dir, p_copy, slug=slug)
         with open(typ_path, "w", encoding="utf-8") as f:
             f.write(typ_src)
 
@@ -684,7 +721,7 @@ def _compile_single_preset(book_title, book_subtitle, category, accent_hex, sect
             raise RuntimeError(f"Typst query failed for {slug} ({typ_name}):\n{q_proc.stderr}")
         marks = json.loads(q_proc.stdout)
         sec_pages = [m["value"]["page"] for m in marks[:-1]]
-        if not sec_pages or sec_pages[0] == 2:
+        if not sec_pages or sec_pages[0] == expected_intro_page:
             break
 
     proc = subprocess.run(
