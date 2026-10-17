@@ -22,7 +22,7 @@ Instead of padding one idea into 300 pages of filler, every Alexandria volume is
 
 ## Four Volume Formats
 
-1. **12-Facet Mechanisms (`mode: "mechanisms"`)**: Examines a complex phenomenon or class of systems from twelve independent physical, mathematical, or historical angles (e.g., *Latent Fragility*, *Planetary Triggers*, *Paper Panics*, *Twelve Materials*).
+1. **12-Facet Mechanisms (`mode: "mechanisms"`)**: Examines a complex phenomenon or class of systems from twelve independent physical, mathematical, or historical angles (e.g., *Latent Fragility*, *Planetary Triggers*, *Paper Panics*, *Materials*).
 2. **Conceptual Landscapes (`mode: "landscape"`)**: Maps a foundational concept in Chapter 1 and explores eleven neighboring concepts across building blocks, mechanisms, contrasts, cases, and consequences in Chapters 2–12 (e.g., *Entropy*, *Quantum Mechanics*, *Artificial Intelligence*, *Consciousness*).
 3. **12×12 Prospected Highlights (`mode: "listicle"`)**: Examines twelve subsystems through twelve standalone, counterintuitive physical facts each—144 empirical highlights per volume, separated by centered typographic fleurons (`❦`) (e.g., *The Human Body*, *The Ocean*, *The Solar System*, *The Cell*).
 4. **12-Facet Biographies (`format: "biography"`)**: Traces a singular thinker through an early formative profile in Chapter 1 followed by eleven decisive machines, theorems, or intellectual breakthroughs in Chapters 2–12 (e.g., *Claude Shannon*, *The Curious Physicist*, *John von Neumann*, *Michael Faraday*).
@@ -131,8 +131,8 @@ python3 scripts/book_creator_server.py --port 8765
 Executes Stage 1 (Dossier Batch API), Stage 2 (1 Google Search per chapter validation = 12 grounded queries), Stage 3 (13-section Manuscript Batch API + 12-gate validator), and Stage 4 (3 Typst PDFs, OG PNG card, catalog sync, and email delivery receipt):
 ```bash
 python3 scripts/create_book_pipeline.py \
-  --slug twelve-vaccines \
-  --title "Twelve Vaccines" \
+  --slug vaccines \
+  --title "Vaccines" \
   --subtitle "How Cowpox Scabs, Weakened Viruses, Sugar Coats, and Fat Droplets Taught the Body to Fight Back" \
   --category "Medicine & Immunology" \
   --mode facet \
@@ -143,22 +143,22 @@ python3 scripts/create_book_pipeline.py \
 ### 3. Validate a Book Manuscript
 Runs all structural, word-count (`520–760` words/chapter), sentence-cadence ($\le 24.0$ words/sentence), SVG geometry, LaTeX/KaTeX balance, and provenance gates:
 ```bash
-python3 scripts/validate_book.py books/twelve-vaccines.md
+python3 scripts/validate_book.py books/vaccines.md
 ```
 
 ### 4. Compile Typst PDF Editions for a Single Book
 ```bash
 # Desktop (5.8in x 7.5in), Compact (5.5in x 6.8in), and Mobile (4.2in x 7.5in)
-python3 scripts/compile_typst.py books/twelve-vaccines.md assets/pdfs/twelve-vaccines.pdf --edition desktop
-python3 scripts/compile_typst.py books/twelve-vaccines.md assets/pdfs/twelve-vaccines-compact.pdf --edition compact
-python3 scripts/compile_typst.py books/twelve-vaccines.md assets/pdfs/twelve-vaccines-mobile.pdf --edition mobile
+python3 scripts/compile_typst.py books/vaccines.md assets/pdfs/vaccines.pdf --edition desktop
+python3 scripts/compile_typst.py books/vaccines.md assets/pdfs/vaccines-compact.pdf --edition compact
+python3 scripts/compile_typst.py books/vaccines.md assets/pdfs/vaccines-mobile.pdf --edition mobile
 ```
 
 ### 5. Publish an Existing Manuscript End-to-End
 Validates `books/<slug>.md`, generates the geometric cover SVG and thumbnail, compiles all 3 Typst PDF editions, renders the `1200×630` OpenGraph PNG card, updates `catalog.json` and `js/books-data.js`, builds `read/<slug>/*.html`, and syncs `index.html` and `sitemap.xml`:
 ```bash
 python3 scripts/publish_book.py \
-  --slug twelve-vaccines \
+  --slug vaccines \
   --category "Medicine & Immunology" \
   --accent "#0d9488" \
   --bg "#0b1f1d"
@@ -194,8 +194,8 @@ python3 tests/test_reader.py
 | 16 | **Protocols of Coordination** | *How Strangers Build Trust Without Central Authority* | Economics & Institutions | Mechanisms |
 | 17 | **Anatomies of Diagnostic Error** | *Twelve Medical Mysteries That Revealed Hidden Biology* | Medicine & Pathology | Mechanisms |
 | 18 | **Planetary Triggers** | *How Small Physical Instabilities Unleash Catastrophic Energy* | Earth & Planetary Physics | Mechanisms |
-| 19 | **Twelve Virtues** | *Why Courage, Honesty, and Restraint Survive in a Selfish World* | Moral Psychology & Strategy | Mechanisms |
-| 20 | **Twelve Plants** | *How Familiar Crops, Trees, and Alkaloids Remade the Human World* | Botany & Civilization | Mechanisms |
+| 19 | **Virtues** | *Why Courage, Honesty, and Restraint Survive in a Selfish World* | Moral Psychology & Strategy | Mechanisms |
+| 20 | **Plants** | *How Familiar Crops, Trees, and Alkaloids Remade the Human World* | Botany & Civilization | Mechanisms |
 | 21 | **The Curious Physicist** | *Twelve Facets of Richard Feynman* | Physics & Biography | Biography |
 | 22 | **Paper Panics** | *Twelve Financial Manias, Runs, and Liquidity Crashes* | Financial History & Risk | Mechanisms |
 | 23 | **Artificial Intelligence** | *The Core Concept and Eleven Neighbors That Shape Its Landscape* | Computer Science & Intelligence | Landscape |
@@ -203,12 +203,12 @@ python3 tests/test_reader.py
 | 25 | **Attention** | *The Core Bottleneck and Eleven Neighbors That Shape Human Focus* | Cognitive Science & Psychology | Landscape |
 | 26 | **Self-Transcendence** | *The Core Shift and Eleven Neighbors That Dissolve the Boundaries of the Self* | Psychology & Contemplative Science | Landscape |
 | 27 | **Entropy** | *The Core Law of Disorder and Eleven Neighbors That Govern Time, Heat, and Information* | Physics & Information | Landscape |
-| 28 | **Twelve Materials** | *How Concrete, Steel, Glass, Paper, and Silicon Built Civilization* | Materials Science & Engineering | Mechanisms |
+| 28 | **Materials** | *How Concrete, Steel, Glass, Paper, and Silicon Built Civilization* | Materials Science & Engineering | Mechanisms |
 | 29 | **Claude Shannon** | *The Juggler Who Turned Information Into Physics* | Information Theory & Biography | Biography |
 | 30 | **The Ocean** | *Twelve Marine Zones and Systems in Twelve Highlights Each* | Oceanography & Earth Science | 12×12 Highlights |
 | 31 | **Consciousness** | *The Subjective Mind and Eleven Neighbors From Global Workspace to Split-Brain Patients* | Neuroscience & Philosophy of Mind | Landscape |
-| 32 | **Twelve Equations** | *The Mathematical Laws That Govern Heat, Waves, Gravity, and Chance* | Mathematics & Physics | Mechanisms |
+| 32 | **Emotions** | *The Mathematical Laws That Govern Heat, Waves, Gravity, and Chance* | Mathematics & Physics | Mechanisms |
 | 33 | **John von Neumann** | *The Mind That Architected Game Theory, Stored-Program Computers, and Self-Replicating Automata* | Mathematics, Computing & Biography | Biography |
 | 34 | **The Solar System** | *Twelve Worlds and Orbital Realms in Twelve Highlights Each* | Planetary Science & Astrophysics | 12×12 Highlights |
 | 35 | **Human Functions** | *Sleeping, Breathing, Walking, Running, and Eight Other Daily Acts in Twelve Highlights Each* | Physiology & Biomechanics | 12×12 Highlights |
-| 36 | **Twelve Vaccines** | *How Cowpox Scabs, Weakened Viruses, Sugar Coats, and Fat Droplets Taught the Body to Fight Back* | Medicine & Immunology | Mechanisms |
+| 36 | **Vaccines** | *How Cowpox Scabs, Weakened Viruses, Sugar Coats, and Fat Droplets Taught the Body to Fight Back* | Medicine & Immunology | Mechanisms |

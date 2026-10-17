@@ -44,7 +44,7 @@ Because we are training a mental network rather than writing an exhaustive encyc
 Every Alexandria volume is shaped into **twelve 5-minute chapters** (~550–720 words each, readable in **one hour** across a day) preceded by a crisp **~250-word Introduction**. Inside this 12-chapter container, Alexandria maintains a **stockpile of nine structural forms** (`mode` in `dossiers/<slug>.json`) so each topic is paired with the exact container best suited to reveal it:
 
 1. **The Narrative-Mechanism Facet (`"facet"`)**:
-   * *When to use*: Examining 12 instances of an ordinary human category (*Twelve Plants*, *Twelve Virtues*), 12 systemic crises (*Bonds of Enmity*, *Paper Panics*), or 12 facets of a single mind (*The Curious Physicist*, *Flights and Perches*).
+   * *When to use*: Examining 12 instances of an ordinary human category (*Plants*, *Virtues*), 12 systemic crises (*Bonds of Enmity*, *Paper Panics*), or 12 facets of a single mind (*The Curious Physicist*, *Flights and Perches*).
    * *12-Chapter Construction*: Each chapter pairs a concrete historical scene, experiment, or clinical case with the physical, biological, or institutional mechanism underneath it.
 2. **The Prospected Spaced-Dot Listicle (`"listicle"`)**:
    * *When to use*: When narrative is the wrong container—you do not want a "story" about the heart; you want **12 dynamite, perpendicular facts about the heart** in one chapter (*The Human Body*).

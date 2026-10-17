@@ -3139,15 +3139,15 @@
       }
     ]
   },
-  "twelve-virtues": {
-    "title": "Twelve Virtues",
+  "virtues": {
+    "title": "Virtues",
     "subtitle": "Why Courage, Honesty, and Restraint Survive in a Selfish World",
     "category": "Ethics & Human Behavior",
     "mode": "facet",
     "format": "mechanisms",
-    "pdf": "assets/pdfs/twelve-virtues.pdf",
-    "compactPdf": "assets/pdfs/twelve-virtues-compact.pdf",
-    "mobilePdf": "assets/pdfs/twelve-virtues-mobile.pdf",
+    "pdf": "assets/pdfs/virtues.pdf",
+    "compactPdf": "assets/pdfs/virtues-compact.pdf",
+    "mobilePdf": "assets/pdfs/virtues-mobile.pdf",
     "sectionPages": [
       3,
       4,
@@ -3196,7 +3196,7 @@
     "chapters": [
       {
         "label": "Introduction",
-        "title": "Twelve Virtues",
+        "title": "Virtues",
         "subtitle": "The Hidden Mechanics of Human Character",
         "slug": "introduction",
         "formalismMode": "introduction",
@@ -3313,15 +3313,15 @@
       }
     ]
   },
-  "twelve-plants": {
-    "title": "Twelve Plants",
+  "plants": {
+    "title": "Plants",
     "subtitle": "How Familiar Crops, Trees, and Alkaloids Remade the Human World",
     "category": "Botany & History",
     "mode": "facet",
     "format": "mechanisms",
-    "pdf": "assets/pdfs/twelve-plants.pdf",
-    "compactPdf": "assets/pdfs/twelve-plants-compact.pdf",
-    "mobilePdf": "assets/pdfs/twelve-plants-mobile.pdf",
+    "pdf": "assets/pdfs/plants.pdf",
+    "compactPdf": "assets/pdfs/plants-compact.pdf",
+    "mobilePdf": "assets/pdfs/plants-mobile.pdf",
     "sectionPages": [
       3,
       4,
@@ -3370,7 +3370,7 @@
     "chapters": [
       {
         "label": "Introduction",
-        "title": "Twelve Plants",
+        "title": "Plants",
         "subtitle": "The Hidden Engineering Inside Everyday Flora",
         "slug": "introduction",
         "formalismMode": "introduction",
@@ -4705,15 +4705,15 @@
       }
     ]
   },
-  "twelve-materials": {
-    "title": "Twelve Materials",
+  "materials": {
+    "title": "Materials",
     "subtitle": "How Concrete, Steel, Glass, Paper, and Silicon Built Civilization",
     "category": "Materials & Engineering",
     "mode": "facet",
     "format": "mechanisms",
-    "pdf": "assets/pdfs/twelve-materials.pdf",
-    "compactPdf": "assets/pdfs/twelve-materials-compact.pdf",
-    "mobilePdf": "assets/pdfs/twelve-materials-mobile.pdf",
+    "pdf": "assets/pdfs/materials.pdf",
+    "compactPdf": "assets/pdfs/materials-compact.pdf",
+    "mobilePdf": "assets/pdfs/materials-mobile.pdf",
     "sectionPages": [
       3,
       4,
@@ -4762,7 +4762,7 @@
     "chapters": [
       {
         "label": "Introduction",
-        "title": "Twelve Materials",
+        "title": "Materials",
         "subtitle": "The Atomic Architecture Beneath Everyday Matter",
         "slug": "introduction",
         "formalismMode": "introduction",
@@ -5401,15 +5401,15 @@
       }
     ]
   },
-  "twelve-emotions": {
-    "title": "Twelve Emotions",
+  "emotions": {
+    "title": "Emotions",
     "subtitle": "The Evolutionary Calculus and Neural Circuitry of Human Feeling",
     "category": "Psychology & Behavior",
     "mode": "facet",
     "format": "mechanisms",
-    "pdf": "assets/pdfs/twelve-emotions.pdf",
-    "compactPdf": "assets/pdfs/twelve-emotions-compact.pdf",
-    "mobilePdf": "assets/pdfs/twelve-emotions-mobile.pdf",
+    "pdf": "assets/pdfs/emotions.pdf",
+    "compactPdf": "assets/pdfs/emotions-compact.pdf",
+    "mobilePdf": "assets/pdfs/emotions-mobile.pdf",
     "sectionPages": [
       3,
       4,
@@ -5458,7 +5458,7 @@
     "chapters": [
       {
         "label": "Introduction",
-        "title": "Twelve Emotions",
+        "title": "Emotions",
         "subtitle": "The Hidden Engineering of Human Feeling",
         "slug": "introduction",
         "formalismMode": "introduction",
@@ -6097,15 +6097,15 @@
       }
     ]
   },
-  "twelve-vaccines": {
-    "title": "Twelve Vaccines",
+  "vaccines": {
+    "title": "Vaccines",
     "subtitle": "How Cowpox Scabs, Weakened Viruses, Sugar Coats, and Fat Droplets Taught the Body to Fight Back",
     "category": "Medicine & Immunology",
     "mode": "facet",
     "format": "mechanisms",
-    "pdf": "assets/pdfs/twelve-vaccines.pdf",
-    "compactPdf": "assets/pdfs/twelve-vaccines-compact.pdf",
-    "mobilePdf": "assets/pdfs/twelve-vaccines-mobile.pdf",
+    "pdf": "assets/pdfs/vaccines.pdf",
+    "compactPdf": "assets/pdfs/vaccines-compact.pdf",
+    "mobilePdf": "assets/pdfs/vaccines-mobile.pdf",
     "sectionPages": [
       3,
       4,
@@ -6154,7 +6154,7 @@
     "chapters": [
       {
         "label": "Introduction",
-        "title": "Twelve Vaccines",
+        "title": "Vaccines",
         "subtitle": "Teaching the Immune System With Harmless Mugshots Before the Real Fight",
         "slug": "introduction",
         "formalismMode": "introduction",

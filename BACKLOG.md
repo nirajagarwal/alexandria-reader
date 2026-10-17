@@ -15,13 +15,13 @@
 
 ### Batch 1 — Completed & Published (`30` Catalog Volumes)
 1. **Entropy** — *The Core Law of Disorder and Eleven Neighbors That Govern Time, Heat, and Information* (`books/entropy.md`, `mode: "landscape"`, Profile A)
-2. **Twelve Materials** — *How Concrete, Steel, Glass, Paper, and Silicon Built Civilization* (`books/twelve-materials.md`, `mode: "facet"`, Profile A)
+2. **Materials** — *How Concrete, Steel, Glass, Paper, and Silicon Built Civilization* (`books/materials.md`, `mode: "facet"`, Profile A)
 3. **Claude Shannon** — *The Juggler Who Turned Information Into Physics* (`books/claude-shannon.md`, `mode: "facet"`, Profile D)
 4. **The Ocean** — *Twelve Marine Zones and Systems in Twelve Highlights Each* (`books/the-ocean.md`, `mode: "listicle"`, Profile B)
 
 ### Batch 2 — Completed & Published (`34` Catalog Volumes)
 5. **Consciousness** — *The Subjective Mind and Eleven Neighbors From Global Workspace to Split-Brain Patients* (`books/consciousness.md`, `mode: "landscape"`, Profile B)
-6. **Twelve Emotions** — *The Evolutionary Calculus and Neural Circuitry of Human Feeling* (`books/twelve-emotions.md`, `mode: "facet"`, Profile C)
+6. **Emotions** — *The Evolutionary Calculus and Neural Circuitry of Human Feeling* (`books/emotions.md`, `mode: "facet"`, Profile C)
 7. **Alan Turing** — *Computability, Codebreaking, and the Patterns of Living Form* (`books/alan-turing.md`, `mode: "facet"`, Profile D)
 8. **The Cell** — *Twelve Molecular Machines in Twelve Highlights Each* (`books/the-cell.md`, `mode: "listicle"`, Profile B)
 
@@ -29,14 +29,14 @@
 
 ### Batch 3 — In Progress (`36` Catalog Volumes)
 9. **Human Functions** — *Sleeping, Breathing, Walking, Running, and Eight Other Daily Acts in Twelve Highlights Each* (`books/human-functions.md`, `mode: "listicle"`, Profile B — **Completed & Published**)
-10. **Twelve Vaccines** — *How Cowpox Scabs, Weakened Viruses, Sugar Coats, and Fat Droplets Taught the Body to Fight Back* (`books/twelve-vaccines.md`, `mode: "facet"`, Profile B — **Completed & Published**)
+10. **Vaccines** — *How Cowpox Scabs, Weakened Viruses, Sugar Coats, and Fat Droplets Taught the Body to Fight Back* (`books/vaccines.md`, `mode: "facet"`, Profile B — **Completed & Published**)
 
 ---
 
 ## Queued Batches (Paused — Ready to Resume Anytime)
 
 ### Batch 3 Remaining (3 Volumes)
-11. **Twelve Foods** (`twelve-foods` · `mode: "facet"` · Profile B · Accent `#ea580c`)
+11. **Foods** (`foods` · `mode: "facet"` · Profile B · Accent `#ea580c`)
     - *Subtitle*: The Physics, Chemistry, and History of the Kitchen
     - *12-Chapter Blueprint*:
       1. **Bread** (Glutenin and gliadin disulfide cross-linking into viscoelastic sheets that trap Saccharomyces cerevisiae $\text{CO}_2$ bubbles)
@@ -79,7 +79,7 @@
     - *Subtitle*: Natural Selection and Eleven Neighbors That Shape Adaptation, Drift, and Form
     - *12-Chapter Blueprint*: Ch 1: Natural Selection and Differential Reproduction · Ch 2: Fisher's Fundamental Theorem and Additive Genetic Variance · Ch 3: Sewall Wright's Fitness Landscapes and Genetic Drift · Ch 4: Motoo Kimura's Neutral Theory and the Molecular Clock · Ch 5: Inclusive Fitness and Hamilton's Rule · Ch 6: Lynn Margulis and Symbiogenesis · Ch 7: Hox Genes and Deep Homology (Evo-Devo) · Ch 8: The Red Queen and Host-Parasite Coevolution · Ch 9: Muller's Ratchet and the Evolution of Sex · Ch 10: Allopatric Speciation and Dobzhansky-Muller Incompatibilities · Ch 11: Convergent Evolution and Physical Constraints · Ch 12: Lenski's Long-Term *E. coli* Evolution Experiment
 
-14. **Twelve Colors** (`twelve-colors` · `mode: "facet"` · Profile A · Accent `#9333ea`)
+14. **Colors** (`colors` · `mode: "facet"` · Profile A · Accent `#9333ea`)
     - *Subtitle*: How Rare Pigments, Quantum Transitions, and Synthetic Dyes Painted the World
     - *12-Chapter Blueprint*: Ultramarine (Lapis lazuli $\text{S}_3^-$ radical anions) · Tyrian Purple (6,6'-dibromoindigo photochemistry from *Bolinus brandaris*) · Cochineal Carmine (Carminic acid aluminum chelation) · Lead White (Dutch stack corrosion optics) · Prussian Blue (Diesbach's accidental intervalence charge transfer) · Mauveine (William Henry Perkin's 1856 coal-tar aniline oxidation) · Verdigris and Scheele's Green · Cadmium Yellow and Red (Semiconductor band-gap tuning with selenium) · Titanium Dioxide White (Rutile refractive index $n = 2.7$ Mie scattering) · International Klein Blue (Matte polyvinyl acetate binder preservation) · YInMn Blue (Mas Subramanian's 2009 trigonal bipyramidal $\text{Mn}^{3+}$ discovery) · Structural Iridescence (Morpho butterfly photonic crystal interference)
 
@@ -98,7 +98,7 @@
     - *Subtitle*: The Nociceptive Alarm and Eleven Neighbors That Separate Tissue Damage From Suffering
     - *12-Chapter Blueprint*: Ch 1: Nociception Versus Pain Experience · Ch 2: C-Fibers, A-Delta Axons, and the Double-Pain Delay · Ch 3: Melzack and Wall's Dorsal Horn Gate Control Theory · Ch 4: TRPV1, Capsaicin, and Thermal Transduction (David Julius) · Ch 5: Congenital Insensitivity to Pain (`SCN9A` / Nav1.7 Loss) · Ch 6: Central Sensitization, Wind-Up, and Allodynia · Ch 7: Periaqueductal Gray Descending Inhibition and Stress Analgesia · Ch 8: Anterior Cingulate Affective Dissociation · Ch 9: Phantom Limb Pain and Somatosensory Cortical Remapping · Ch 10: Placebo Analgesia and Naloxone-Reversible Endogenous Opioids · Ch 11: Referred Visceral Pain and Dermatome Convergence · Ch 12: Nociceptive Sensitization in Cephalopods and Evolutionary Survival Value
 
-18. **Twelve Sounds** (`twelve-sounds` · `mode: "facet"` · Profile A · Accent `#ca8a04`)
+18. **Sounds** (`sounds` · `mode: "facet"` · Profile A · Accent `#ca8a04`)
     - *Subtitle*: How Acoustic Resonance, Fourier Harmonics, and Psychoacoustics Shape What We Hear
     - *12-Chapter Blueprint*: The Pythagorean Monochord and the Comma · Stradivarius Top Plates and Chladni Eigenmodes · Wallace Sabine's Fogg Lecture Hall Cushions and Reverberation Time · Piano Wire Stiffness and Railsback Stretched Tuning · Georg von Békésy's Basilar Membrane Traveling Wave · The Missing Fundamental and Pitch Perception · Lord Rayleigh and the St. Paul's Whispering Gallery · Church Bell Profiles and the Hum-to-Strike Harmonic Octave · Edison Cylinders to Nyquist-Shannon Sampling · Psychoacoustic Masking and the MP3 Perceptual Codec · Active Noise Cancellation and Destructive Phase Interference · Pistol Shrimp Cavitation and Sonar Echo-Ranging
 

@@ -328,6 +328,10 @@ def validate_book(
     title_lines = [l.strip() for l in sections[0].splitlines() if l.strip()]
     if not title_lines or not title_lines[0].startswith("# "):
         errors.append("Section 0 must start with '# [Book Title]'.")
+    else:
+        book_title_str = title_lines[0][2:].strip()
+        if book_title_str.lower().startswith("twelve "):
+            errors.append(f"Book title '{book_title_str}' must not start with the prefix 'Twelve'.")
     if len(title_lines) < 2 or not title_lines[1].startswith("## "):
         errors.append("Section 0 second line must be '## [Book Subtitle]'.")
     for tl in title_lines[:2]:

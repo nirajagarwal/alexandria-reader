@@ -2,7 +2,8 @@
   "updated_at": "2026-10-16",
   "rules": {
     "biographical_titles": "Books about a single person MUST use the person's name as the main title (e.g. 'Claude Shannon', 'Alan Turing'), with the descriptive angle in the subtitle.",
-    "provenance": "Zero multi-word direct quotes (paraphrase only), zero novelistic micro-details (no weekdays, clock times, weather cold-opens, or hyphenated ages), mandatory Independent Fact-Check Pass after generation."
+    "provenance": "Zero multi-word direct quotes (paraphrase only), zero novelistic micro-details (no weekdays, clock times, weather cold-opens, or hyphenated ages), mandatory Independent Fact-Check Pass after generation.",
+    "no_twelve_prefix": "Book titles and slugs must NEVER start with the prefix \"Twelve\" (e.g. use \"Materials\", \"Vaccines\", \"Emotions\", \"Plants\", \"Virtues\", \"Foods\", \"Colors\", \"Sounds\")."
   },
   "batches": [
     {
@@ -22,9 +23,9 @@
           "status": "completed"
         },
         {
-          "slug": "twelve-materials",
-          "file": "books/twelve-materials.md",
-          "title": "Twelve Materials",
+          "slug": "materials",
+          "file": "books/materials.md",
+          "title": "Materials",
           "subtitle": "How Concrete, Steel, Glass, Paper, and Silicon Built Civilization",
           "category": "Materials & Engineering",
           "mode": "facet",
@@ -76,9 +77,9 @@
           "status": "completed"
         },
         {
-          "slug": "twelve-emotions",
-          "file": "books/twelve-emotions.md",
-          "title": "Twelve Emotions",
+          "slug": "emotions",
+          "file": "books/emotions.md",
+          "title": "Emotions",
           "subtitle": "The Evolutionary Calculus and Neural Circuitry of Human Feeling",
           "category": "Psychology & Behavior",
           "mode": "facet",
@@ -130,9 +131,9 @@
           "status": "completed"
         },
         {
-          "slug": "twelve-foods",
-          "file": "books/twelve-foods.md",
-          "title": "Twelve Foods",
+          "slug": "foods",
+          "file": "books/foods.md",
+          "title": "Foods",
           "subtitle": "The Physics, Chemistry, and History of the Kitchen",
           "category": "Chemistry & Culture",
           "mode": "facet",
@@ -184,9 +185,9 @@
           "status": "queued"
         },
         {
-          "slug": "twelve-colors",
-          "file": "books/twelve-colors.md",
-          "title": "Twelve Colors",
+          "slug": "colors",
+          "file": "books/colors.md",
+          "title": "Colors",
           "subtitle": "How Rare Pigments, Quantum Transitions, and Synthetic Dyes Painted the World",
           "category": "Optics & Chemistry",
           "mode": "facet",
@@ -238,9 +239,9 @@
           "status": "queued"
         },
         {
-          "slug": "twelve-sounds",
-          "file": "books/twelve-sounds.md",
-          "title": "Twelve Sounds",
+          "slug": "sounds",
+          "file": "books/sounds.md",
+          "title": "Sounds",
           "subtitle": "How Acoustic Resonance, Fourier Harmonics, and Psychoacoustics Shape What We Hear",
           "category": "Acoustics & Physics",
           "mode": "facet",

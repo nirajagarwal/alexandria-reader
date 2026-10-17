@@ -120,6 +120,12 @@ def test_catalog_dossiers_and_pdfs():
 
     for slug, entry in catalog.items():
         b = books[slug]
+        assert not b.get("title", "").lower().startswith("twelve "), (
+            f"{slug} title must not start with 'Twelve ': {b.get('title')}"
+        )
+        assert not slug.startswith("twelve-"), (
+            f"Book slug must not start with 'twelve-': {slug}"
+        )
         assert "markdown" not in b, f"{slug} should not embed raw markdown in js/books-data.js"
         assert b.get("format") in ("mechanisms", "landscape", "highlights", "biography"), (
             f"{slug} missing valid format in js/books-data.js: {b.get('format')}"

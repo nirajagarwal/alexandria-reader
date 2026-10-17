@@ -867,16 +867,24 @@
     }
 
     // URL Hash and Query Parameter routing check
+    const LEGACY_BOOK_SLUGS = {
+        'sleep': 'human-functions',
+        'twelve-virtues': 'virtues',
+        'twelve-plants': 'plants',
+        'twelve-materials': 'materials',
+        'twelve-emotions': 'emotions',
+        'twelve-vaccines': 'vaccines'
+    };
     function handleHashRoute() {
         const hash = window.location.hash;
         const searchParams = new URLSearchParams(window.location.search);
         let queryBook = searchParams.get('book');
-        if (queryBook === 'sleep') queryBook = 'human-functions';
+        if (LEGACY_BOOK_SLUGS[queryBook]) queryBook = LEGACY_BOOK_SLUGS[queryBook];
 
         if (hash.startsWith('#read=')) {
             const params = new URLSearchParams(hash.slice(1));
             let bookKey = params.get('read');
-            if (bookKey === 'sleep') bookKey = 'human-functions';
+            if (LEGACY_BOOK_SLUGS[bookKey]) bookKey = LEGACY_BOOK_SLUGS[bookKey];
             const pageParam = parseInt(params.get('page') || '0', 10);
             const chParam = params.get('ch');
             if (EMBEDDED_BOOKS[bookKey]) {
