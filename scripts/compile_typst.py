@@ -303,6 +303,9 @@ def convert_body_to_typst(body: str, temp_dir: str, sec_idx: int, accent_hex: st
 
     body = re.sub(r"\$\$([\s\S]*?)\$\$", repl_disp_math, body)
 
+    # Ensure standalone middle-dot separator lines always have surrounding blank lines so paragraphs never merge
+    body = re.sub(r"(?m)^[ \t]*(·\s*·\s*·|···|•\s*•\s*•)[ \t]*$", r"\n\n· · ·\n\n", body)
+
     # Split remaining body into paragraphs / list groups
     raw_paras = [p.strip() for p in re.split(r"\n\s*\n", body) if p.strip()]
     out_typ = []
@@ -317,10 +320,10 @@ def convert_body_to_typst(body: str, temp_dir: str, sec_idx: int, accent_hex: st
         if not lines:
             continue
 
-        # Check if standalone dinkus separator for listicle chapters
-        if len(lines) == 1 and lines[0] in ("* * *", "***", "⁂", "❦", "☙", "✦"):
+        # Check if standalone middle-dot separator (· · ·) for listicle chapters
+        if len(lines) == 1 and lines[0] in ("· · ·", "···", "• • •", "* * *", "***", "⁂", "❦", "☙", "✦"):
             out_typ.append(
-                f'#v(1pt)\n#align(center)[#text(font: "Literata", size: 9.5pt, weight: "bold", fill: rgb("{accent_hex}"))[\\*#h(5pt)\\*#h(5pt)\\*]]\n#v(1pt)'
+                f'#v(1pt)\n#align(center)[#text(font: "Literata", size: 10.5pt, weight: "bold", fill: rgb("{accent_hex}"))[·#h(6pt)·#h(6pt)·]]\n#v(1pt)'
             )
             continue
 

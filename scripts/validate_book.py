@@ -385,8 +385,8 @@ def validate_book(
             errors.extend(validate_svg_diagram(svg_b.strip(), f"{filename}:{expected_label}"))
 
         body_no_code = re.sub(r"```[\s\S]*?```", "", body)
-        # Exclude standalone dinkus separators from word count
-        body_no_sep = re.sub(r"(?m)^\s*(?:\*\s*\*\s*\*|[❦☙⁂✦])\s*$", "", body_no_code)
+        # Exclude standalone middle-dot separators from word count
+        body_no_sep = re.sub(r"(?m)^[ \t]*(?:·\s*·\s*·|\*\s*\*\s*\*|[❦☙⁂✦])[ \t]*$", "", body_no_code)
         body_words = len(body_no_sep.split())
 
         if idx == 0:
@@ -408,14 +408,19 @@ def validate_book(
                 )
 
             if book_mode == "listicle":
-                dinkus_count = len(re.findall(r"(?m)^\s*\*\s*\*\s*\*\s*$", body_no_code))
-                if dinkus_count != 11:
+                mid_dot_count = len(re.findall(r"(?m)^[ \t]*·\s*·\s*·[ \t]*$", body_no_code))
+                if mid_dot_count != 11:
                     errors.append(
-                        f"Chapter {idx} ('{h2[2:]}') in listicle mode must have 12 single-paragraph items separated by 11 standalone dinkus ('* * *') lines (found {dinkus_count} dinkus lines)."
+                        f"Chapter {idx} ('{h2[2:]}') in listicle mode must have 12 single-paragraph items separated by 11 standalone middle-dot ('· · ·') lines (found {mid_dot_count} '· · ·' lines)."
+                    )
+                para_blocks = [p.strip() for p in re.split(r"\n\s*\n", body_no_code) if p.strip()]
+                if len(para_blocks) != 23:
+                    errors.append(
+                        f"Chapter {idx} ('{h2[2:]}') in listicle mode must have blank lines around every '· · ·' separator (expected 23 blank-line-separated blocks, found {len(para_blocks)})."
                     )
                 if re.search(r"(?m)^\s*\d+\.\s+", body_no_code):
                     errors.append(
-                        f"Chapter {idx} ('{h2[2:]}') in listicle mode must NOT use numbered lists ('1. ', '2. ')—use 12 paragraphs separated by standalone dinkus ('* * *') lines."
+                        f"Chapter {idx} ('{h2[2:]}') in listicle mode must NOT use numbered lists ('1. ', '2. ')—use 12 paragraphs separated by standalone '· · ·' lines."
                     )
             else:
                 # Concrete grounding check (must have a 3-4 digit year or BCE/CE date)

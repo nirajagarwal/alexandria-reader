@@ -211,6 +211,13 @@
           "headline": "Twelve Organs and Systems in Twelve Highlights Each",
           "url": "https://alexandria.press/?book=the-human-body",
           "image": "https://alexandria.press/assets/covers/the-human-body.svg"
+        },
+        {
+          "@type": "Book",
+          "name": "The Human Body",
+          "headline": "Twelve Organs and Systems in Twelve Highlights Each",
+          "url": "https://alexandria.press/?book=the-human-body",
+          "image": "https://alexandria.press/assets/covers/the-human-body.svg"
         }
       ]
     }
@@ -366,7 +373,7 @@
                         <img src="assets/covers/artificial-intelligence.svg" alt="Artificial Intelligence Cover" loading="eager">
                     </div>
                 </article>
-                <article class="book-card" data-key="the-human-body" data-title="The Human Body" data-subtitle="Twelve Organs and Systems in Twelve Highlights Each" data-category="Physiology &amp; Biology" onclick="openBookFromCatalog('the-human-body')" title="The Human Body — Twelve Organs and Systems in Twelve Highlights Each">
+                <article class="book-card" data-key="the-human-body" data-title="The Human Body" data-subtitle="Twelve Organs and Systems in Twelve Highlights Each" data-category="Life Sciences" onclick="openBookFromCatalog('the-human-body')" title="The Human Body — Twelve Organs and Systems in Twelve Highlights Each">
                     <div class="book-cover-frame">
                         <img src="assets/covers/the-human-body.svg" alt="The Human Body Cover" loading="eager">
                     </div>
@@ -494,8 +501,8 @@
     </div>
 
     <!-- Book & Cover Datasets (Universal UMD modules) -->
-    <script src="js/covers-data.js"></script>
-    <script src="js/books-data.js"></script>
+    <script src="js/covers-data.js?v=33"></script>
+    <script src="js/books-data.js?v=33"></script>
 
     <script>
         const EMBEDDED_BOOKS = window.EMBEDDED_BOOKS || {};
@@ -511,7 +518,7 @@
             window.pdfjsLib.GlobalWorkerOptions.workerSrc = 'vendor/pdfjs/pdf.worker.min.js';
         }
 
-        const PDF_BUILD_VERSION = '20261016k';
+        const PDF_BUILD_VERSION = '20261016l';
         const READER_FIRST_PAGE = 2; // Physical Page 1 is the Book Cover; Physical Page 2 is the TOC Frontispiece
         const EDITION_SPECS = {
             desktop: { widthIn: 5.8, heightIn: 7.5, aspect: 5.8 / 7.5, fontPt: 11.6 },
