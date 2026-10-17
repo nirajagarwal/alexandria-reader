@@ -158,11 +158,11 @@ def _blend_hex(c1: str, c2: str, t: float) -> str:
 
 
 def _derive_cover_stops(bg: str, accent: str):
-    """Ensure cover background and edges stay rich and visible on mobile screens without black crush."""
-    top_stop = _blend_hex(_blend_hex("#242a33", bg, 0.65), accent, 0.22)
-    mid_stop = _blend_hex(top_stop, "#1b2028", 0.18)
-    edge_stop = _blend_hex(top_stop, "#181c24", 0.26)
-    return top_stop, mid_stop, edge_stop
+    """Derive soft pastel background stops and dark base title/subtitle/emblem colors."""
+    top_pastel = _blend_hex("#fbf9f5", accent, 0.22)
+    mid_pastel = _blend_hex("#f7f4ee", accent, 0.28)
+    edge_pastel = _blend_hex("#f2ede4", accent, 0.34)
+    return top_pastel, mid_pastel, edge_pastel
 
 
 def sync_covers_data():
@@ -264,11 +264,13 @@ def _wrap_subtitle_svg(subtitle: str):
 
 def generate_cover_svg(slug: str, title: str, subtitle: str, category: str, accent: str, bg: str, theme: str):
     os.makedirs(COVERS_DIR, exist_ok=True)
-    emblem = generate_emblem_svg(theme, accent)
+    title_color = _blend_hex(_blend_hex("#1e222a", bg, 0.72), accent, 0.18)
+    subtitle_color = _blend_hex(title_color, accent, 0.30)
+    emblem_color = _blend_hex(accent, title_color, 0.52)
+    emblem = generate_emblem_svg(theme, emblem_color)
     emblem = re.sub(r'^<g class="([^"]+)">', r'<g class="\1" transform="translate(0, -210)">', emblem)
     title_font_size, title_y, title_inner = _wrap_title_svg(title)
     sub_font_size, sub_y, sub_inner = _wrap_subtitle_svg(subtitle)
-    subtitle_color = _blend_hex(accent, "#ffffff", 0.44)
     top_stop, mid_stop, edge_stop = _derive_cover_stops(bg, accent)
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2400" width="100%" height="100%">
@@ -279,9 +281,9 @@ def generate_cover_svg(slug: str, title: str, subtitle: str, category: str, acce
       <stop offset="100%" stop-color="{edge_stop}"/>
     </linearGradient>
     <radialGradient id="halo-{slug}" cx="50%" cy="50%" r="75%">
-      <stop offset="0%" stop-color="{accent}" stop-opacity="0.26"/>
-      <stop offset="55%" stop-color="{accent}" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="{accent}" stop-opacity="0.08"/>
+      <stop offset="0%" stop-color="{accent}" stop-opacity="0.16"/>
+      <stop offset="55%" stop-color="{accent}" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="{accent}" stop-opacity="0.03"/>
     </radialGradient>
   </defs>
 
@@ -289,13 +291,13 @@ def generate_cover_svg(slug: str, title: str, subtitle: str, category: str, acce
   <rect width="1600" height="2400" fill="url(#halo-{slug})"/>
 
   <g text-anchor="middle">
-    <text x="800" y="{title_y}" font-family="'Literata', Georgia, serif" font-size="{title_font_size}" font-weight="700" letter-spacing="-0.01em" fill="{accent}">{title_inner}</text>
+    <text x="800" y="{title_y}" font-family="'Literata', Georgia, serif" font-size="{title_font_size}" font-weight="700" letter-spacing="-0.01em" fill="{title_color}">{title_inner}</text>
   </g>
 
   {emblem}
 
   <g text-anchor="middle" transform="translate(800, 0) scale(0.87, 1) translate(-800, 0)">
-    <text x="800" y="{sub_y}" font-family="'Literata', Georgia, serif" font-size="{sub_font_size}" font-weight="300" letter-spacing="0.01em" fill="{subtitle_color}">{sub_inner}</text>
+    <text x="800" y="{sub_y}" font-family="'Literata', Georgia, serif" font-size="{sub_font_size}" font-weight="400" letter-spacing="0.01em" fill="{subtitle_color}">{sub_inner}</text>
   </g>
 </svg>
 """

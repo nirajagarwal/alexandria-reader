@@ -389,11 +389,13 @@
         }
 
         .pdf-footer-nav.prev {
-            left: calc(var(--m-h) - 12.0 * var(--pt));
+            left: calc(var(--m-h) / 2);
+            transform: translate(-50%, 50%);
         }
 
         .pdf-footer-nav.next {
-            right: calc(var(--m-h) - 12.0 * var(--pt));
+            right: calc(var(--m-h) / 2);
+            transform: translate(50%, 50%);
         }
 
         [data-theme="dark"] .pdf-footer-nav {
@@ -696,8 +698,8 @@
             padding: 8px 14px;
             font-family: var(--font-sans, -apple-system, sans-serif);
             font-size: 0.85rem;
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.12);
+            background: var(--card-bg, rgba(0, 0, 0, 0.03));
+            border: 1px solid var(--border-color, rgba(0, 0, 0, 0.14));
             border-radius: 6px;
             color: var(--text-color, #faf9f6);
             outline: none;
@@ -707,12 +709,12 @@
         .catalog-search-input:focus {
             width: 400px;
             border-color: var(--accent-color, #d97706);
-            background: rgba(255, 255, 255, 0.07);
+            background: var(--surface-color, rgba(255, 255, 255, 0.07));
         }
 
         .home-nav-actions .folio-btn {
-            background: transparent;
-            border: 1px solid rgba(255, 255, 255, 0.12);
+            background: var(--card-bg, transparent);
+            border: 1px solid var(--border-color, rgba(255, 255, 255, 0.12));
             color: var(--text-color, #faf9f6);
             border-radius: 6px;
             width: 34px;
@@ -725,7 +727,7 @@
         }
 
         .home-nav-actions .folio-btn:hover {
-            background: rgba(255, 255, 255, 0.08);
+            background: var(--surface-color, rgba(255, 255, 255, 0.08));
             border-color: var(--accent-color, #d97706);
         }
 
@@ -741,15 +743,20 @@
             display: block;
             width: 100%;
             aspect-ratio: 2 / 3;
-            background: #1f1b18;
-            border: 1px solid rgba(255, 255, 255, 0.14);
+            background: transparent;
+            border: 1px solid rgba(0, 0, 0, 0.10);
             border-radius: 8px;
             overflow: hidden;
             cursor: pointer;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10), 0 2px 6px rgba(0, 0, 0, 0.06);
             transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.2s ease;
             text-decoration: none;
             color: inherit;
+        }
+
+        [data-theme="dark"] .book-card {
+            border-color: rgba(255, 255, 255, 0.14);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35), 0 2px 6px rgba(0, 0, 0, 0.2);
         }
 
         .book-card:hover {
