@@ -1,12 +1,12 @@
-# The Curious Physicist
-## Twelve Facets of Richard Feynman
+# Richard Feynman
+## Translating Abstract Symbols Into Physical Toys
 
 *Alexandria Press · alexandria.press*
 
 ---
 
 ### Introduction
-# The Curious Physicist
+# Richard Feynman
 ## Translating Symbols into Physical Toys
 
 Theoretical physics in the twentieth century often rewarded formal abstraction. Calculators manipulated differential operators and infinite series on paper while treating the physical process as secondary to the algebra. Richard Phillips Feynman worked in the opposite direction. Born in Queens in 1918, he distrusted technical nomenclature, Latinate jargon, and mathematical proofs that could not be pictured as concrete interactions in space and time. When presented with an abstract theorem or an institutional consensus, he stripped the problem down to the simplest toy model he could build in his head. If a formal statement broke under that concrete test, he discarded the formalism and trusted the physical mechanism.

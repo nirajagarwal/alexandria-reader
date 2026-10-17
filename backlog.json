@@ -1,0 +1,279 @@
+{
+  "updated_at": "2026-10-16",
+  "rules": {
+    "biographical_titles": "Books about a single person MUST use the person's name as the main title (e.g. 'Claude Shannon', 'Alan Turing'), with the descriptive angle in the subtitle.",
+    "provenance": "Zero multi-word direct quotes (paraphrase only), zero novelistic micro-details (no weekdays, clock times, weather cold-opens, or hyphenated ages), mandatory Independent Fact-Check Pass after generation."
+  },
+  "batches": [
+    {
+      "batch": 1,
+      "status": "completed",
+      "books": [
+        {
+          "slug": "entropy",
+          "file": "entropy.md",
+          "title": "Entropy",
+          "subtitle": "The Core Law of Disorder and Eleven Neighbors That Govern Time, Heat, and Information",
+          "category": "Physics & Information",
+          "mode": "landscape",
+          "profile": "A",
+          "accent": "#d97706",
+          "bg": "#1c1917",
+          "status": "completed"
+        },
+        {
+          "slug": "twelve-materials",
+          "file": "twelve_materials.md",
+          "title": "Twelve Materials",
+          "subtitle": "How Concrete, Steel, Glass, Paper, and Silicon Built Civilization",
+          "category": "Materials & Engineering",
+          "mode": "mechanisms",
+          "profile": "A",
+          "accent": "#0284c7",
+          "bg": "#0f172a",
+          "status": "completed"
+        },
+        {
+          "slug": "claude-shannon",
+          "file": "claude_shannon.md",
+          "title": "Claude Shannon",
+          "subtitle": "The Juggler Who Turned Information Into Physics",
+          "category": "Biography & Information Theory",
+          "mode": "mechanisms",
+          "profile": "D",
+          "accent": "#10b981",
+          "bg": "#064e3b",
+          "status": "completed"
+        },
+        {
+          "slug": "the-ocean",
+          "file": "the_ocean.md",
+          "title": "The Ocean",
+          "subtitle": "Twelve Marine Zones and Systems in Twelve Highlights Each",
+          "category": "Earth & Ocean Science",
+          "mode": "listicle",
+          "profile": "B",
+          "accent": "#0369a1",
+          "bg": "#082f49",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "status": "in_progress",
+      "books": [
+        {
+          "slug": "consciousness",
+          "file": "consciousness.md",
+          "title": "Consciousness",
+          "subtitle": "The Subjective Mind and Eleven Neighbors From Global Workspace to Split-Brain Patients",
+          "category": "Neuroscience & Philosophy",
+          "mode": "landscape",
+          "profile": "B",
+          "accent": "#7c3aed",
+          "bg": "#1e1b4b",
+          "status": "in_progress"
+        },
+        {
+          "slug": "twelve-emotions",
+          "file": "twelve_emotions.md",
+          "title": "Twelve Emotions",
+          "subtitle": "The Evolutionary Calculus and Neural Circuitry of Human Feeling",
+          "category": "Psychology & Behavior",
+          "mode": "mechanisms",
+          "profile": "C",
+          "accent": "#e11d48",
+          "bg": "#27121b",
+          "status": "in_progress"
+        },
+        {
+          "slug": "alan-turing",
+          "file": "alan_turing.md",
+          "title": "Alan Turing",
+          "subtitle": "Computability, Codebreaking, and the Patterns of Living Form",
+          "category": "Biography & Computation",
+          "mode": "mechanisms",
+          "profile": "D",
+          "accent": "#2563eb",
+          "bg": "#0f172a",
+          "status": "in_progress"
+        },
+        {
+          "slug": "the-cell",
+          "file": "the_cell.md",
+          "title": "The Cell",
+          "subtitle": "Twelve Molecular Machines in Twelve Highlights Each",
+          "category": "Molecular Biology",
+          "mode": "listicle",
+          "profile": "B",
+          "accent": "#059669",
+          "bg": "#062e22",
+          "status": "in_progress"
+        }
+      ]
+    },
+    {
+      "batch": 3,
+      "status": "queued",
+      "books": [
+        {
+          "slug": "sleep",
+          "file": "sleep.md",
+          "title": "Sleep",
+          "subtitle": "The Nightly Brain Shutdown and Eleven Neighbors From Circadian Clocks to Synaptic Pruning",
+          "category": "Neurobiology & Physiology",
+          "mode": "landscape",
+          "profile": "B",
+          "accent": "#4f46e5",
+          "bg": "#17153b",
+          "status": "queued"
+        },
+        {
+          "slug": "twelve-foods",
+          "file": "twelve_foods.md",
+          "title": "Twelve Foods",
+          "subtitle": "The Physics, Chemistry, and History of the Kitchen",
+          "category": "Chemistry & Culture",
+          "mode": "mechanisms",
+          "profile": "B",
+          "accent": "#ea580c",
+          "bg": "#271509",
+          "status": "queued"
+        },
+        {
+          "slug": "leonardo-da-vinci",
+          "file": "leonardo_da_vinci.md",
+          "title": "Leonardo da Vinci",
+          "subtitle": "The Anatomist Engineer of Renaissance Florence and Milan",
+          "category": "Biography & Engineering",
+          "mode": "mechanisms",
+          "profile": "D",
+          "accent": "#b45309",
+          "bg": "#23180d",
+          "status": "queued"
+        },
+        {
+          "slug": "the-night-sky",
+          "file": "the_night_sky.md",
+          "title": "The Night Sky",
+          "subtitle": "Twelve Celestial Objects and Phenomena in Twelve Highlights Each",
+          "category": "Astrophysics & Astronomy",
+          "mode": "listicle",
+          "profile": "A",
+          "accent": "#3b82f6",
+          "bg": "#0b132b",
+          "status": "queued"
+        }
+      ]
+    },
+    {
+      "batch": 4,
+      "status": "queued",
+      "books": [
+        {
+          "slug": "evolution",
+          "file": "evolution.md",
+          "title": "Evolution",
+          "subtitle": "Natural Selection and Eleven Neighbors That Shape Adaptation, Drift, and Form",
+          "category": "Evolutionary Biology",
+          "mode": "landscape",
+          "profile": "B",
+          "accent": "#15803d",
+          "bg": "#0b2618",
+          "status": "queued"
+        },
+        {
+          "slug": "twelve-colors",
+          "file": "twelve_colors.md",
+          "title": "Twelve Colors",
+          "subtitle": "How Rare Pigments, Quantum Transitions, and Synthetic Dyes Painted the World",
+          "category": "Optics & Chemistry",
+          "mode": "mechanisms",
+          "profile": "A",
+          "accent": "#9333ea",
+          "bg": "#241236",
+          "status": "queued"
+        },
+        {
+          "slug": "john-von-neumann",
+          "file": "john_von_neumann.md",
+          "title": "John von Neumann",
+          "subtitle": "Logic, Shock Waves, Game Theory, and Self-Replicating Machines",
+          "category": "Biography & Mathematics",
+          "mode": "mechanisms",
+          "profile": "D",
+          "accent": "#0d9488",
+          "bg": "#082927",
+          "status": "queued"
+        },
+        {
+          "slug": "the-city",
+          "file": "the_city.md",
+          "title": "The City",
+          "subtitle": "Twelve Urban Systems in Twelve Highlights Each",
+          "category": "Urban Engineering",
+          "mode": "listicle",
+          "profile": "A",
+          "accent": "#64748b",
+          "bg": "#151c24",
+          "status": "queued"
+        }
+      ]
+    },
+    {
+      "batch": 5,
+      "status": "queued",
+      "books": [
+        {
+          "slug": "pain",
+          "file": "pain.md",
+          "title": "Pain",
+          "subtitle": "The Nociceptive Alarm and Eleven Neighbors That Separate Tissue Damage From Suffering",
+          "category": "Neurology & Medicine",
+          "mode": "landscape",
+          "profile": "B",
+          "accent": "#dc2626",
+          "bg": "#291010",
+          "status": "queued"
+        },
+        {
+          "slug": "twelve-sounds",
+          "file": "twelve_sounds.md",
+          "title": "Twelve Sounds",
+          "subtitle": "How Acoustic Resonance, Fourier Harmonics, and Psychoacoustics Shape What We Hear",
+          "category": "Acoustics & Physics",
+          "mode": "mechanisms",
+          "profile": "A",
+          "accent": "#ca8a04",
+          "bg": "#241b08",
+          "status": "queued"
+        },
+        {
+          "slug": "charles-darwin",
+          "file": "charles_darwin.md",
+          "title": "Charles Darwin",
+          "subtitle": "The Patient Experimentalist of Down House",
+          "category": "Biography & Natural History",
+          "mode": "mechanisms",
+          "profile": "D",
+          "accent": "#4d7c0f",
+          "bg": "#162409",
+          "status": "queued"
+        },
+        {
+          "slug": "language",
+          "file": "language.md",
+          "title": "Language",
+          "subtitle": "Twelve Dimensions of Human Speech and Script in Twelve Highlights Each",
+          "category": "Linguistics & Philology",
+          "mode": "listicle",
+          "profile": "D",
+          "accent": "#be185d",
+          "bg": "#29101d",
+          "status": "queued"
+        }
+      ]
+    }
+  ]
+}

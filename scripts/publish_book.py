@@ -532,9 +532,6 @@ def main():
                 sys.exit(1)
             md_text = open(md_file, encoding="utf-8").read()
             title, subtitle, chapters = extract_book_metadata(md_text)
-            if slug == "flights-and-perches":
-                title = "Twelve Facets"
-                subtitle = "The Restless Mind of William James"
             refresh_existing_pdf_cover_typography(slug, title, subtitle)
             update_index_and_sitemap(slug, title, subtitle, meta.get("category", "Systems & Science"))
             pdf_path = os.path.join(BASE_DIR, "assets", "pdfs", f"{slug}.pdf")
@@ -602,6 +599,8 @@ def main():
     if not os.path.exists(cover_file) or args.regenerate_cover:
         generate_cover_svg(slug, title, subtitle, args.category, args.accent, args.bg, args.theme)
         print(f"[COVER] Generated vector cover: assets/covers/{slug}.svg")
+    else:
+        refresh_existing_pdf_cover_typography(slug, title, subtitle)
 
     from compile_typst import compile_book_to_pdf
     pdf_path, sec_pages, comp_path, comp_pages, mob_path, mob_pages = compile_book_to_pdf(md_path, category=args.category, accent_hex=args.accent)

@@ -1,0 +1,125 @@
+{
+  "slug": "claude-shannon",
+  "file": "claude_shannon.md",
+  "title": "Claude Shannon",
+  "subtitle": "The Juggler Who Turned Information Into Physics",
+  "category": "Information Theory & Biography",
+  "profile": "D: Intellectual Ruptures, Forensic Scholarship & Prismatic Minds",
+  "mode": "facet",
+  "accent": "#3b82f6",
+  "bg": "#0b1528",
+  "theme": "network-wave",
+  "creator_constraints": {
+    "min_diagrams": 3
+  },
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "The Barbed-Wire Telegraph",
+      "subtitle": "How a Michigan Boyhood of Fences, Barn Switches, and Radio Kits Formed an Engineer's Mind",
+      "opening_door": "Door A (Scene)",
+      "historical_anchor": "Claude Elwood Shannon growing up in Gaylord, Michigan in the 1920s, wiring a half-mile telegraph across livestock barbed-wire fences to a childhood friend's house, repairing Western Union telegraphs, building an elevator and radio-controlled boat, and earning dual bachelor's degrees in electrical engineering and mathematics at the University of Michigan in 1936.",
+      "formalism_mode": "ledger_or_list",
+      "exit_fact": "When Shannon graduated from the University of Michigan in spring 1936 with simultaneous degrees in mathematics and electrical engineering, he answered a postcard advertisement from the Massachusetts Institute of Technology seeking a research assistant to maintain Vannevar Bush's hundred-ton mechanical computer."
+    },
+    {
+      "chapter": 2,
+      "title": "The Boolean Relay Switch",
+      "subtitle": "How a Master's Thesis Merged Nineteenth-Century Logic With Telephone Circuits",
+      "opening_door": "Door B (Constraint/Paradox)",
+      "historical_anchor": "Operating Vannevar Bush's 100-ton mechanical Differential Analyzer and its hundred-relay control panel at MIT in 1936–1937, and writing his 1937 master's thesis 'A Symbolic Analysis of Relay and Switching Circuits' (published in 1938) mapping George Boole's 1854 algebra onto series, parallel, and inverted electromagnetic relays.",
+      "formalism_mode": "diagram",
+      "exit_fact": "In 1940, Shannon's master's thesis won the Alfred Noble American Institute of Electrical Engineers Award, transforming ad-hoc telephone relay wiring into a deductive algebra that governs every digital logic gate built since."
+    },
+    {
+      "chapter": 3,
+      "title": "The Algebra of Mendelian Genetics",
+      "subtitle": "Cold Spring Harbor and the Forgotten Doctoral Equations of Population Inheritance",
+      "opening_door": "Door C (Artifact/Measurement)",
+      "historical_anchor": "Vannevar Bush sending Shannon to the Cold Spring Harbor Laboratory on Long Island in summer 1939 to work alongside geneticist Barbara Burks in the institution where Barbara McClintock studied maize chromosomes, resulting in Shannon's 1940 MIT PhD dissertation 'An Algebra for Theoretical Genetics'.",
+      "formalism_mode": "ledger_or_list",
+      "exit_fact": "Although Shannon never published his 1940 doctoral dissertation and left biology for Bell Laboratories the following year, population geneticists who rediscovered the bound MIT typescript decades later found that his multi-locus recombination algebra had solved three-locus generational forecasts years ahead of the field."
+    },
+    {
+      "chapter": 4,
+      "title": "The Anti-Aircraft Predictor",
+      "subtitle": "Fire Control Smoothing Filters and the Wartime Collaboration With Norbert Wiener",
+      "opening_door": "Door B (Constraint/Paradox)",
+      "historical_anchor": "Shannon's 1940–1945 National Defense Research Committee Section D-2 fire-control work under Warren Weaver alongside Hendrik Bode and Ralph B. Blackman at Bell Telephone Laboratories, parallel to Norbert Wiener's MIT radar smoothing filters, culminating in their report 'Data Smoothing and Prediction in Fire-Control Systems'.",
+      "formalism_mode": "ledger_or_list",
+      "exit_fact": "In their postwar summary report for the National Defense Research Committee, Bode, Blackman, and Shannon noted that isolating a bomber's future path from radar jitter was mathematically identical to extracting a voice signal from telephone line noise."
+    },
+    {
+      "chapter": 5,
+      "title": "The Unicity Distance of Secrecy",
+      "subtitle": "Classified Cryptanalysis, the SIGSALY Voice Scrambler, and Proof of the One-Time Pad",
+      "opening_door": "Door C (Artifact/Measurement)",
+      "historical_anchor": "Shannon's September 1, 1945 classified Bell Labs memorandum 'A Mathematical Theory of Cryptography' (declassified in 1949 as 'Communication Theory of Secrecy Systems'), his wartime review of the 55-ton SIGSALY pulse-code-modulated speech scrambler, his proof of Gilbert Vernam's one-time pad perfect secrecy, and his derivation of the unicity distance.",
+      "formalism_mode": "equation",
+      "exit_fact": "Because a true one-time pad supplies as many bits of fresh key entropy as the message itself contains, its unicity distance is infinite and no amount of intercepted ciphertext or computing power can ever narrow the set of possible plaintexts."
+    },
+    {
+      "chapter": 6,
+      "title": "The Measure of Surprise",
+      "subtitle": "Why Information Has Nothing to Do With Meaning and Everything to Do With Choice",
+      "opening_door": "Door B (Constraint/Paradox)",
+      "historical_anchor": "Shannon's July and October 1948 Bell System Technical Journal paper 'A Mathematical Theory of Communication', building on Harry Nyquist (1924) and Ralph Hartley (1928), adopting John Tukey's word 'bit', deriving the entropy formula from three axioms, and generating word-level Markov approximations of English.",
+      "formalism_mode": "equation",
+      "exit_fact": "By stripping semantic meaning out of engineering calculations, Shannon gave every medium on Earth—from copper telegraph wires and vinyl phonograph grooves to cellular DNA and optical fibers—a single universal unit of measurement in the binary digit."
+    },
+    {
+      "chapter": 7,
+      "title": "The Noisy Channel Limit",
+      "subtitle": "Sphere Packing in High Dimensions and the Speed Limit of All Communication",
+      "opening_door": "Door B (Constraint/Paradox)",
+      "historical_anchor": "Shannon's 1948 noisy-channel coding theorem and the Shannon-Hartley capacity formula in 'A Mathematical Theory of Communication', overturning the pre-1948 engineering orthodoxy that driving error probability toward zero required driving transmission rate toward zero, alongside Richard Hamming's 1950 error-correcting codes at Bell Labs.",
+      "formalism_mode": "equation",
+      "exit_fact": "Forty-five years after Shannon proved via high-dimensional sphere packing that near-zero error rates were possible right up to channel capacity, the 1993 discovery of turbo codes and the revival of low-density parity-check codes brought real deep-space and cellular receivers within fractions of a decibel of the 1948 limit."
+    },
+    {
+      "chapter": 8,
+      "title": "The Redundancy of Printed English",
+      "subtitle": "Guessing the Next Letter With Betty Shannon at the Kitchen Table",
+      "opening_door": "Door A (Scene)",
+      "historical_anchor": "Shannon's January 1951 Bell System Technical Journal paper 'Prediction and Entropy of Printed English', conducting 27-symbol letter-by-letter guessing trials up to 100 characters of context with his wife and fellow Bell Labs numerical analyst Mary Elizabeth 'Betty' Moore Shannon.",
+      "formalism_mode": "ledger_or_list",
+      "exit_fact": "That seventy-five percent redundancy in written English explains why human readers can decipher smudged telegrams or mistyped text messages, and why lossless data-compression algorithms from Huffman coding to Lempel-Ziv can shrink English text files to roughly one-quarter of their raw ASCII size."
+    },
+    {
+      "chapter": 9,
+      "title": "The Relay Maze Mouse",
+      "subtitle": "How Theseus Remembered Fifty Relay Bits of Trial and Error",
+      "opening_door": "Door A (Scene)",
+      "historical_anchor": "Shannon building his electromechanical maze-solving mouse Theseus at Bell Labs and home between 1950 and 1952, using a hollow wooden mouse carrying a bar magnet over a 5-by-5 aluminum-walled grid driven from beneath by an electromagnet carriage and roughly 75 to 90 telephone relays storing 50 bits of directional memory.",
+      "formalism_mode": "diagram",
+      "exit_fact": "When Bell Telephone Laboratories filmed Theseus in 1952 for its archival documentary on machine learning, the wooden mouse solved a newly rearranged twenty-five-square labyrinth by trial and error and then sprinted from start to goal on its second run in twelve seconds without a single wrong turn."
+    },
+    {
+      "chapter": 10,
+      "title": "The Minimax Chess Horizon",
+      "subtitle": "Type A Brute Force Versus Type B Selective Pruning Before Any Computer Played Chess",
+      "opening_door": "Door B (Constraint/Paradox)",
+      "historical_anchor": "Shannon's March 1950 Philosophical Magazine paper 'Programming a Computer for Playing Chess' (first presented in March 1949 in New York), calculating the 10^120 game-tree combinations, defining the static evaluation function, contrasting Type A full-width minimax against Type B quiescent selective search, and building his six-piece relay endgame machine.",
+      "formalism_mode": "diagram",
+      "exit_fact": "Every championship chess engine built over the following seven decades—from Belle and Deep Blue to modern neural-network searchers—operated by combining Shannon's 1950 static evaluation scoring with selective pruning of his Type A and Type B minimax game trees."
+    },
+    {
+      "chapter": 11,
+      "title": "The Roulette and Market Edge",
+      "subtitle": "Wearable Computers in Las Vegas and Constant-Rebalanced Portfolios With Ed Thorp",
+      "opening_door": "Door A (Scene)",
+      "historical_anchor": "Shannon and MIT mathematician Edward O. Thorp in 1960–1961 testing a precision roulette wheel in Shannon's Winchester, Massachusetts basement, building a twelve-transistor cigarette-pack-sized wearable analog computer operated by toe switches in Las Vegas in summer 1961, and Shannon's mid-1960s MIT lecture on constant-rebalanced portfolios ('Shannon's Demon').",
+      "formalism_mode": "equation",
+      "exit_fact": "By rebalancing fifty percent cash against fifty percent of a volatile zero-drift stock after every price swing, Shannon's mathematical portfolio compounded wealth by twelve and a half percent across every up-and-down cycle while a buy-and-hold investor broke exactly even."
+    },
+    {
+      "chapter": 12,
+      "title": "The Theorem of Juggling and the Ultimate Machine",
+      "subtitle": "Unicycles, Flame-Throwing Trumpets, and the Box That Turns Itself Off",
+      "opening_door": "Door C (Artifact/Measurement)",
+      "historical_anchor": "Shannon at his 'Entropy House' in Winchester, Massachusetts from the 1950s through the 1980s, building Marvin Minsky's 'Ultimate Machine' desktop casket, constructing an Erector-set W. C. Fields mannequin that bounce-juggled three steel balls off a drumhead, and proving his Juggling Theorem in 'Scientific Aspects of Juggling'.",
+      "formalism_mode": "equation",
+      "exit_fact": "When high-speed video cameras timed world-record jugglers tossing up to nine balls in the 1980s, every measured throw and catch obeyed Shannon's conservation equation linking flight time, dwell time, vacant hand time, hands, and balls."
+    }
+  ]
+}

@@ -1940,10 +1940,12 @@
     ]
   },
   "flights-and-perches": {
-    "title": "Twelve Facets",
-    "subtitle": "The Restless Mind of William James",
-    "category": "Psychology & Philosophy",
+    "title": "William James",
+    "subtitle": "Flights, Perches, and the Science of the Stream of Thought",
+    "category": "Biography & Psychology",
     "pdf": "assets/pdfs/flights-and-perches.pdf",
+    "compactPdf": "assets/pdfs/flights-and-perches-compact.pdf",
+    "mobilePdf": "assets/pdfs/flights-and-perches-mobile.pdf",
     "sectionPages": [
       3,
       4,
@@ -1959,7 +1961,21 @@
       34,
       37
     ],
-    "mobilePdf": "assets/pdfs/flights-and-perches-mobile.pdf",
+    "compactSectionPages": [
+      3,
+      4,
+      8,
+      11,
+      15,
+      19,
+      23,
+      26,
+      29,
+      32,
+      35,
+      39,
+      42
+    ],
     "mobileSectionPages": [
       3,
       5,
@@ -1978,7 +1994,7 @@
     "chapters": [
       {
         "label": "Introduction",
-        "title": "Twelve Facets",
+        "title": "William James",
         "subtitle": "The Physician Who Refused to Close the System"
       },
       {
@@ -2041,22 +2057,6 @@
         "title": "The San Francisco Fault",
         "subtitle": "Earthquake Ruin and the Moral Equivalent of War"
       }
-    ],
-    "compactPdf": "assets/pdfs/flights-and-perches-compact.pdf",
-    "compactSectionPages": [
-      3,
-      4,
-      8,
-      11,
-      15,
-      19,
-      23,
-      26,
-      29,
-      32,
-      35,
-      39,
-      42
     ]
   },
   "planetary-triggers": {
@@ -2540,9 +2540,9 @@
     ]
   },
   "curious-physicist": {
-    "title": "The Curious Physicist",
-    "subtitle": "Twelve Facets of Richard Feynman",
-    "category": "Physics & Biography",
+    "title": "Richard Feynman",
+    "subtitle": "Translating Abstract Symbols Into Physical Toys",
+    "category": "Biography & Physics",
     "pdf": "assets/pdfs/curious-physicist.pdf",
     "compactPdf": "assets/pdfs/curious-physicist-compact.pdf",
     "mobilePdf": "assets/pdfs/curious-physicist-mobile.pdf",
@@ -2594,7 +2594,7 @@
     "chapters": [
       {
         "label": "Introduction",
-        "title": "The Curious Physicist",
+        "title": "Richard Feynman",
         "subtitle": "Translating Symbols into Physical Toys"
       },
       {
@@ -3136,6 +3136,486 @@
         "label": "Chapter 12",
         "title": "The Overview Horizon and Generativity",
         "subtitle": "How Long-Term Self-Transcendence Rewires Legacy, Care, and Time Perception"
+      }
+    ]
+  },
+  "entropy": {
+    "title": "Entropy",
+    "subtitle": "The Core Law of Disorder and Eleven Neighbors That Govern Time, Heat, and Information",
+    "category": "Physics & Information",
+    "pdf": "assets/pdfs/entropy.pdf",
+    "compactPdf": "assets/pdfs/entropy-compact.pdf",
+    "mobilePdf": "assets/pdfs/entropy-mobile.pdf",
+    "sectionPages": [
+      3,
+      4,
+      7,
+      10,
+      13,
+      16,
+      19,
+      22,
+      25,
+      28,
+      31,
+      34,
+      37
+    ],
+    "compactSectionPages": [
+      3,
+      4,
+      7,
+      10,
+      13,
+      16,
+      20,
+      24,
+      27,
+      30,
+      33,
+      37,
+      40
+    ],
+    "mobileSectionPages": [
+      3,
+      5,
+      9,
+      13,
+      17,
+      21,
+      25,
+      29,
+      33,
+      37,
+      41,
+      45,
+      49
+    ],
+    "chapters": [
+      {
+        "label": "Introduction",
+        "title": "Entropy",
+        "subtitle": "Mapping Disorder Through Its Surrounding Landscape"
+      },
+      {
+        "label": "Chapter 1",
+        "title": "Thermodynamic and Statistical Entropy",
+        "subtitle": "How Clausius's Lost Heat and Boltzmann's Microstate Count Became the Same Law"
+      },
+      {
+        "label": "Chapter 2",
+        "title": "Maxwell's Demon and Landauer's Principle",
+        "subtitle": "Why Erasing One Bit of Memory Must Dump Heat Into the Room"
+      },
+      {
+        "label": "Chapter 3",
+        "title": "Shannon Information Entropy",
+        "subtitle": "How Bell Labs Measured Uncertainty Without Mentioning Heat"
+      },
+      {
+        "label": "Chapter 4",
+        "title": "Gibbs Free Energy and ATP Coupling",
+        "subtitle": "How Living Cells Pay the Second Law's Tax to Build Order"
+      },
+      {
+        "label": "Chapter 5",
+        "title": "The Past Hypothesis and the Arrow of Time",
+        "subtitle": "Why Broken Teacups Never Reassemble if Microscopic Laws Run Both Ways"
+      },
+      {
+        "label": "Chapter 6",
+        "title": "Dissipative Structures and Benard Convection",
+        "subtitle": "How Steep Thermal Gradients Self-Organize Fluid Into Hexagonal Cells"
+      },
+      {
+        "label": "Chapter 7",
+        "title": "Kolmogorov Algorithmic Complexity",
+        "subtitle": "Why Digits of Pi Look Random to Statistics Yet Compress Into Tiny Code"
+      },
+      {
+        "label": "Chapter 8",
+        "title": "Black Hole Bekenstein-Hawking Entropy",
+        "subtitle": "Why the Maximum Information in Space Scales With Surface Area Instead of Volume"
+      },
+      {
+        "label": "Chapter 9",
+        "title": "Entropic Elasticity in Polymers and DNA",
+        "subtitle": "Why Stretching a Rubber Band or a DNA Strand Fights Probability Rather Than Bonds"
+      },
+      {
+        "label": "Chapter 10",
+        "title": "The Protein Folding Funnel",
+        "subtitle": "How Water Cages Push Polypeptide Chains Past Levinthal's Combinatorial Trap"
+      },
+      {
+        "label": "Chapter 11",
+        "title": "Kullback-Leibler Divergence and Cross-Entropy",
+        "subtitle": "How Cryptanalysis Built the Loss Function That Trains Modern Neural Networks"
+      },
+      {
+        "label": "Chapter 12",
+        "title": "Poincare Recurrence and Fluctuation Theorems",
+        "subtitle": "Why the Second Law Violates Itself for Milliseconds Inside Nanoscale Traps"
+      }
+    ]
+  },
+  "twelve-materials": {
+    "title": "Twelve Materials",
+    "subtitle": "How Concrete, Steel, Glass, Paper, and Silicon Built Civilization",
+    "category": "Materials & Engineering",
+    "pdf": "assets/pdfs/twelve-materials.pdf",
+    "compactPdf": "assets/pdfs/twelve-materials-compact.pdf",
+    "mobilePdf": "assets/pdfs/twelve-materials-mobile.pdf",
+    "sectionPages": [
+      3,
+      4,
+      7,
+      10,
+      13,
+      16,
+      19,
+      22,
+      25,
+      28,
+      31,
+      34,
+      37
+    ],
+    "compactSectionPages": [
+      3,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      44,
+      48
+    ],
+    "mobileSectionPages": [
+      3,
+      5,
+      9,
+      13,
+      17,
+      21,
+      25,
+      29,
+      33,
+      37,
+      41,
+      45,
+      49
+    ],
+    "chapters": [
+      {
+        "label": "Introduction",
+        "title": "Twelve Materials",
+        "subtitle": "The Atomic Architecture Beneath Everyday Matter"
+      },
+      {
+        "label": "Chapter 1",
+        "title": "The Self-Healing Stone",
+        "subtitle": "How Volcanic Ash and Lime Clasts Kept Roman Harbors Standing for Two Millennia"
+      },
+      {
+        "label": "Chapter 2",
+        "title": "The Decarburized Blade",
+        "subtitle": "Henry Bessemer's Air Blast and the Iron-Carbon Phase Boundary"
+      },
+      {
+        "label": "Chapter 3",
+        "title": "The Molten Tin Ribbon",
+        "subtitle": "How Alastair Pilkington Floated Perfect Plate Glass on Liquid Metal"
+      },
+      {
+        "label": "Chapter 4",
+        "title": "The Delignified Fiber",
+        "subtitle": "From Cai Lun's Mulberry Bark to Carl Dahl's Sulfate Wood Pulp"
+      },
+      {
+        "label": "Chapter 5",
+        "title": "The Vitrified White Gold",
+        "subtitle": "How Jingdezhen Kilns and Meissen Alchemists Grew Mullite Needles in Glass"
+      },
+      {
+        "label": "Chapter 6",
+        "title": "The Electrolytic Crown",
+        "subtitle": "How Two Twenty-Two-Year-Olds Unlocked the Crust's Most Abundant Metal"
+      },
+      {
+        "label": "Chapter 7",
+        "title": "The Polyamide Thread",
+        "subtitle": "Wallace Carothers and the Step-Growth Condensation of Synthetic Silk"
+      },
+      {
+        "label": "Chapter 8",
+        "title": "The Dislocation-Free Ingot",
+        "subtitle": "Jan Czochralski's Accidental Pen Dip and the Dash Necking Bottleneck"
+      },
+      {
+        "label": "Chapter 9",
+        "title": "The Passivated Airframe",
+        "subtitle": "William Kroll's Magnesium Reactor and the Lockheed Skunk Works Mach Three Barrier"
+      },
+      {
+        "label": "Chapter 10",
+        "title": "The Liquid-Crystal Weave",
+        "subtitle": "Stephanie Kwolek's Cloudy Solution and Rigid-Rod Aramid Alignment"
+      },
+      {
+        "label": "Chapter 11",
+        "title": "The Ion-Stuffed Surface",
+        "subtitle": "Donald Stookey's Chemcor Bath and Compressive Stress Armor"
+      },
+      {
+        "label": "Chapter 12",
+        "title": "The Supercritical Smoke",
+        "subtitle": "Samuel Kistler's Jelly Wager and the Knudsen Effect in Nanoporous Silica"
+      }
+    ]
+  },
+  "claude-shannon": {
+    "title": "Claude Shannon",
+    "subtitle": "The Juggler Who Turned Information Into Physics",
+    "category": "Biography & Information Theory",
+    "pdf": "assets/pdfs/claude-shannon.pdf",
+    "compactPdf": "assets/pdfs/claude-shannon-compact.pdf",
+    "mobilePdf": "assets/pdfs/claude-shannon-mobile.pdf",
+    "sectionPages": [
+      3,
+      4,
+      7,
+      10,
+      13,
+      16,
+      19,
+      22,
+      25,
+      28,
+      31,
+      34,
+      37
+    ],
+    "compactSectionPages": [
+      3,
+      4,
+      7,
+      11,
+      14,
+      17,
+      20,
+      23,
+      26,
+      29,
+      33,
+      37,
+      40
+    ],
+    "mobileSectionPages": [
+      3,
+      5,
+      9,
+      13,
+      17,
+      21,
+      25,
+      29,
+      33,
+      37,
+      41,
+      45,
+      49
+    ],
+    "chapters": [
+      {
+        "label": "Introduction",
+        "title": "Claude Shannon",
+        "subtitle": "The Playful Tinkering Behind the Information Age"
+      },
+      {
+        "label": "Chapter 1",
+        "title": "The Barbed-Wire Telegraph",
+        "subtitle": "How a Michigan Boyhood of Fences, Barn Switches, and Radio Kits Formed an Engineer's Mind"
+      },
+      {
+        "label": "Chapter 2",
+        "title": "The Boolean Relay Switch",
+        "subtitle": "How a Master's Thesis Merged Nineteenth-Century Logic With Telephone Circuits"
+      },
+      {
+        "label": "Chapter 3",
+        "title": "The Algebra of Mendelian Genetics",
+        "subtitle": "Cold Spring Harbor and the Forgotten Doctoral Equations of Population Inheritance"
+      },
+      {
+        "label": "Chapter 4",
+        "title": "The Anti-Aircraft Predictor",
+        "subtitle": "Fire Control Smoothing Filters and the Wartime Collaboration With Norbert Wiener"
+      },
+      {
+        "label": "Chapter 5",
+        "title": "The Unicity Distance of Secrecy",
+        "subtitle": "Classified Cryptanalysis, the SIGSALY Voice Scrambler, and Proof of the One-Time Pad"
+      },
+      {
+        "label": "Chapter 6",
+        "title": "The Measure of Surprise",
+        "subtitle": "Why Information Has Nothing to Do With Meaning and Everything to Do With Choice"
+      },
+      {
+        "label": "Chapter 7",
+        "title": "The Noisy Channel Limit",
+        "subtitle": "Sphere Packing in High Dimensions and the Speed Limit of All Communication"
+      },
+      {
+        "label": "Chapter 8",
+        "title": "The Redundancy of Printed English",
+        "subtitle": "Guessing the Next Letter With Betty Shannon at the Kitchen Table"
+      },
+      {
+        "label": "Chapter 9",
+        "title": "The Relay Maze Mouse",
+        "subtitle": "How Theseus Remembered Fifty Relay Bits of Trial and Error"
+      },
+      {
+        "label": "Chapter 10",
+        "title": "The Minimax Chess Horizon",
+        "subtitle": "Type A Brute Force Versus Type B Selective Pruning Before Any Computer Played Chess"
+      },
+      {
+        "label": "Chapter 11",
+        "title": "The Roulette and Market Edge",
+        "subtitle": "Wearable Computers in Las Vegas and Constant-Rebalanced Portfolios With Ed Thorp"
+      },
+      {
+        "label": "Chapter 12",
+        "title": "The Theorem of Juggling and the Ultimate Machine",
+        "subtitle": "Unicycles, Flame-Throwing Trumpets, and the Box That Turns Itself Off"
+      }
+    ]
+  },
+  "the-ocean": {
+    "title": "The Ocean",
+    "subtitle": "Twelve Marine Zones and Systems in Twelve Highlights Each",
+    "category": "Earth & Ocean Science",
+    "pdf": "assets/pdfs/the-ocean.pdf",
+    "compactPdf": "assets/pdfs/the-ocean-compact.pdf",
+    "mobilePdf": "assets/pdfs/the-ocean-mobile.pdf",
+    "sectionPages": [
+      3,
+      4,
+      7,
+      10,
+      13,
+      17,
+      20,
+      23,
+      27,
+      31,
+      34,
+      38,
+      42
+    ],
+    "compactSectionPages": [
+      3,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      44,
+      48
+    ],
+    "mobileSectionPages": [
+      3,
+      5,
+      9,
+      13,
+      17,
+      22,
+      26,
+      30,
+      35,
+      40,
+      44,
+      49,
+      54
+    ],
+    "chapters": [
+      {
+        "label": "Introduction",
+        "title": "The Ocean",
+        "subtitle": "Twelve Marine Realms Viewed Through Twelve Physical Facts"
+      },
+      {
+        "label": "Chapter 1",
+        "title": "The Surface Microlayer and Wind Waves",
+        "subtitle": "Capillary Ripples, Breaking Whitecaps, and the Aerosol Skin of the Sea"
+      },
+      {
+        "label": "Chapter 2",
+        "title": "Tides and Amphidromic Nodes",
+        "subtitle": "Lunar Gravitational Tractive Forces, Kelvin Waves, and Resonant Bays"
+      },
+      {
+        "label": "Chapter 3",
+        "title": "The Sunlit Epipelagic Zone",
+        "subtitle": "Prochlorococcus Cyanobacteria, Photic Attenuation, and the Invisible Forest"
+      },
+      {
+        "label": "Chapter 4",
+        "title": "Coral Reefs and Calcium Carbonate Architecture",
+        "subtitle": "Symbiodiniaceae Dinoflagellates, Aragonite Saturation, and Wave Energy Dissipation"
+      },
+      {
+        "label": "Chapter 5",
+        "title": "Kelp Forests and Coastal Upwelling",
+        "subtitle": "Ekman Spiral Transport, Pneumatocyst Buoyancy, and Trophic Cascades"
+      },
+      {
+        "label": "Chapter 6",
+        "title": "The Great Ocean Conveyor",
+        "subtitle": "Western Boundary Intensification, Gulf Stream Rings, and Thermohaline Overturning"
+      },
+      {
+        "label": "Chapter 7",
+        "title": "The Twilight Mesopelagic Zone",
+        "subtitle": "Diel Vertical Migration, Luciferin Bioluminescence, and the Oxygen Minimum Layer"
+      },
+      {
+        "label": "Chapter 8",
+        "title": "Marine Snow and the Biological Carbon Pump",
+        "subtitle": "Fecal Pellet Sinking Rates, Salp Mucous Houses, and the Carbonate Compensation Depth"
+      },
+      {
+        "label": "Chapter 9",
+        "title": "Polar Sea Ice and Brine Channels",
+        "subtitle": "Frazil Crystal Rejection, Antarctic Bottom Water Formation, and Ice-Edge Blooms"
+      },
+      {
+        "label": "Chapter 10",
+        "title": "The Abyssal Plain and Whale Falls",
+        "subtitle": "Piezophilic Membrane Lipids, Manganese Nodules, and Osedax Bone-Eating Worms"
+      },
+      {
+        "label": "Chapter 11",
+        "title": "Hydrothermal Vents and Cold Seeps",
+        "subtitle": "Black Smoker Sulfide Chimneys, Riftia Symbionts, and Lost City Alkaline Towers"
+      },
+      {
+        "label": "Chapter 12",
+        "title": "Hadal Trenches and the SOFAR Acoustic Channel",
+        "subtitle": "Mariana Hydrostatic Pressure, Trimethylamine N-Oxide Stabilizers, and Sound Waveguides"
       }
     ]
   }
