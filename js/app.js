@@ -437,11 +437,13 @@
             : (leftPage >= totalPages);
 
         if (prevBtn) {
-            prevBtn.classList.toggle('is-disabled', atCover);
-            prevBtn.title = (leftPage === TOC_PAGE) ? 'View Book Cover (←)' : 'Previous Page (←)';
+            prevBtn.classList.remove('is-disabled');
+            prevBtn.title = atCover
+                ? 'Return to Home Catalog (←)'
+                : ((leftPage === TOC_PAGE) ? 'View Book Cover (←)' : 'Previous Page (←)');
         }
         if (edgePrev) {
-            edgePrev.classList.toggle('is-disabled', atCover);
+            edgePrev.classList.remove('is-disabled');
         }
         if (nextBtn) {
             nextBtn.classList.toggle('is-disabled', atEnd);
@@ -479,7 +481,11 @@
         const total = activePdfDoc.numPages;
 
         if (direction < 0) {
-            if (pdfPageNum <= COVER_PAGE) return; // Clamped at cover page — never accidentally exit book
+            if (pdfPageNum <= COVER_PAGE) {
+                saveBookPageProgress(currentBookKey, READER_FIRST_PAGE);
+                showHomeView();
+                return;
+            }
             if (pdfPageNum <= TOC_PAGE) {
                 pdfPageNum = COVER_PAGE;
             } else {
@@ -527,6 +533,9 @@
         } else if (pdfPageNum === TOC_PAGE) {
             pdfPageNum = COVER_PAGE;
             rebuildAndRenderSpread();
+        } else {
+            saveBookPageProgress(currentBookKey, READER_FIRST_PAGE);
+            showHomeView();
         }
     }
 
