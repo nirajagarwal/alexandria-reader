@@ -3618,6 +3618,486 @@
         "subtitle": "Mariana Hydrostatic Pressure, Trimethylamine N-Oxide Stabilizers, and Sound Waveguides"
       }
     ]
+  },
+  "consciousness": {
+    "title": "Consciousness",
+    "subtitle": "The Subjective Mind and Eleven Neighbors From Global Workspace to Split-Brain Patients",
+    "category": "Neuroscience & Philosophy",
+    "pdf": "assets/pdfs/consciousness.pdf",
+    "compactPdf": "assets/pdfs/consciousness-compact.pdf",
+    "mobilePdf": "assets/pdfs/consciousness-mobile.pdf",
+    "sectionPages": [
+      3,
+      4,
+      7,
+      10,
+      13,
+      16,
+      19,
+      22,
+      25,
+      28,
+      31,
+      34,
+      37
+    ],
+    "compactSectionPages": [
+      3,
+      5,
+      8,
+      12,
+      15,
+      19,
+      22,
+      25,
+      29,
+      32,
+      35,
+      38,
+      42
+    ],
+    "mobileSectionPages": [
+      3,
+      5,
+      9,
+      13,
+      17,
+      21,
+      25,
+      29,
+      33,
+      37,
+      41,
+      45,
+      49
+    ],
+    "chapters": [
+      {
+        "label": "Introduction",
+        "title": "Consciousness",
+        "subtitle": "Mapping Subjective Experience Through Its Surrounding Landscape"
+      },
+      {
+        "label": "Chapter 1",
+        "title": "Phenomenal Versus Access Consciousness",
+        "subtitle": "How Philosophy and Neurobiology Split Subjective Experience From Functional Report"
+      },
+      {
+        "label": "Chapter 2",
+        "title": "Global Neuronal Workspace Ignition",
+        "subtitle": "Why a Fifty-Millisecond Word Triggers an All-or-None Prefrontal Broadcast"
+      },
+      {
+        "label": "Chapter 3",
+        "title": "Integrated Information Theory",
+        "subtitle": "Why Sixty-Nine Billion Cerebellar Neurons Contribute Nothing to Subjective Sight"
+      },
+      {
+        "label": "Chapter 4",
+        "title": "Split-Brain Hemispheric Division",
+        "subtitle": "How Severing Two Hundred Million Axons Created Two Independent Streams of Awareness"
+      },
+      {
+        "label": "Chapter 5",
+        "title": "Blindsight and Cortical Unconscious Routing",
+        "subtitle": "How Subcortical Visual Pathways Guide the Hand After Primary Visual Cortex Dies"
+      },
+      {
+        "label": "Chapter 6",
+        "title": "Binocular Rivalry and Bistable Perception",
+        "subtitle": "Where the Primate Visual Hierarchy Switches From Retinal Input to Subjective Percept"
+      },
+      {
+        "label": "Chapter 7",
+        "title": "Thalamocortical Loops and General Anesthesia",
+        "subtitle": "How Propofol Locks the Frontal Cortex and Thalamus Into a Ten-Hertz Cage"
+      },
+      {
+        "label": "Chapter 8",
+        "title": "Detecting Covert Awareness in Vegetative Patients",
+        "subtitle": "How Mental Tennis Inside an MRI Scanner Exposed Consciousness Without Movement"
+      },
+      {
+        "label": "Chapter 9",
+        "title": "The Perturbational Complexity Index",
+        "subtitle": "How Magnetic Cortical Pulses and Lempel-Ziv Compression Measure the Capacity for Experience"
+      },
+      {
+        "label": "Chapter 10",
+        "title": "Predictive Processing and Controlled Hallucination",
+        "subtitle": "How Top-Down Cortical Priors and Precision Weighting Construct the Bodily Self"
+      },
+      {
+        "label": "Chapter 11",
+        "title": "Higher-Order Metacognition and Prefrontal Monitoring",
+        "subtitle": "How Anterior Prefrontal Lesions Blind Introspection While Leaving Vision Intact"
+      },
+      {
+        "label": "Chapter 12",
+        "title": "The Adversarial Testing of Rival Theories",
+        "subtitle": "What Happened When Global Workspace and Integrated Information Theory Faced the Same Data"
+      }
+    ]
+  },
+  "twelve-emotions": {
+    "title": "Twelve Emotions",
+    "subtitle": "The Evolutionary Calculus and Neural Circuitry of Human Feeling",
+    "category": "Psychology & Behavior",
+    "pdf": "assets/pdfs/twelve-emotions.pdf",
+    "compactPdf": "assets/pdfs/twelve-emotions-compact.pdf",
+    "mobilePdf": "assets/pdfs/twelve-emotions-mobile.pdf",
+    "sectionPages": [
+      3,
+      4,
+      8,
+      11,
+      14,
+      17,
+      20,
+      23,
+      26,
+      29,
+      32,
+      35,
+      38
+    ],
+    "compactSectionPages": [
+      3,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      44,
+      48
+    ],
+    "mobileSectionPages": [
+      3,
+      5,
+      9,
+      13,
+      17,
+      21,
+      25,
+      29,
+      33,
+      38,
+      43,
+      47,
+      51
+    ],
+    "chapters": [
+      {
+        "label": "Introduction",
+        "title": "Twelve Emotions",
+        "subtitle": "The Hidden Engineering of Human Feeling"
+      },
+      {
+        "label": "Chapter 1",
+        "title": "The Dual-Road Alarm",
+        "subtitle": "Joseph LeDoux's Thalamic Shortcut and Patient S.M.'s Bilateral Amygdala Calcification"
+      },
+      {
+        "label": "Chapter 2",
+        "title": "The Pathogen Shield",
+        "subtitle": "Paul Rozin's Fudge Trials and the Insular Cortex Hijack From Toxins to Taboos"
+      },
+      {
+        "label": "Chapter 3",
+        "title": "The Credible Threat",
+        "subtitle": "Robert Frank's Commitment Problem and Why Irrational Retaliation Wins Rational Bargaining"
+      },
+      {
+        "label": "Chapter 4",
+        "title": "The Severed Attachment Loop",
+        "subtitle": "Colin Murray Parkes's Widowhood Mortality Studies and Nucleus Accumbens Yearning"
+      },
+      {
+        "label": "Chapter 5",
+        "title": "The Public Gaze Versus the Private Debt",
+        "subtitle": "June Tangney's Prisoner Studies and the Fork Between Hiding and Repair"
+      },
+      {
+        "label": "Chapter 6",
+        "title": "The Relative Payoff Trap",
+        "subtitle": "Sarah Brosnan's Capuchin Cucumber Revolt and Ventral Striatum Social Comparison"
+      },
+      {
+        "label": "Chapter 7",
+        "title": "The Information Gap",
+        "subtitle": "George Loewenstein's Curiosity Curve and Dopamine Firing for Non-Instrumental Answers"
+      },
+      {
+        "label": "Chapter 8",
+        "title": "The Involuntary Blush",
+        "subtitle": "Charles Darwin's Reddening Paradox and Dacher Keltner's Appeasement Signal"
+      },
+      {
+        "label": "Chapter 9",
+        "title": "The Play-Bow Breath",
+        "subtitle": "Jaak Panksepp's Ultrasonic Rat Tickling and the Metabolic Cost of Social Grooming"
+      },
+      {
+        "label": "Chapter 10",
+        "title": "The Swiss Mercenary's Fever",
+        "subtitle": "Johannes Hofer's Seventeenth-Century Medical Diagnosis and Sedikides's Thermoregulatory Buffer"
+      },
+      {
+        "label": "Chapter 11",
+        "title": "The Asymmetric Curl",
+        "subtitle": "Paul Ekman's Unilateral Lip Raise and John Gottman's Four-Horseman Divorce Predictor"
+      },
+      {
+        "label": "Chapter 12",
+        "title": "The Upstream Reciprocity Engine",
+        "subtitle": "Robert Trivers's Altruism Ledger and Sara Algoe's Find-Remind-and-Bind Amplification"
+      }
+    ]
+  },
+  "alan-turing": {
+    "title": "Alan Turing",
+    "subtitle": "Computability, Codebreaking, and the Patterns of Living Form",
+    "category": "Biography & Computation",
+    "pdf": "assets/pdfs/alan-turing.pdf",
+    "compactPdf": "assets/pdfs/alan-turing-compact.pdf",
+    "mobilePdf": "assets/pdfs/alan-turing-mobile.pdf",
+    "sectionPages": [
+      3,
+      4,
+      7,
+      10,
+      14,
+      17,
+      20,
+      23,
+      26,
+      29,
+      32,
+      35,
+      38
+    ],
+    "compactSectionPages": [
+      3,
+      4,
+      7,
+      11,
+      15,
+      18,
+      21,
+      25,
+      29,
+      33,
+      37,
+      40,
+      44
+    ],
+    "mobileSectionPages": [
+      3,
+      5,
+      9,
+      13,
+      17,
+      21,
+      25,
+      29,
+      33,
+      37,
+      41,
+      45,
+      49
+    ],
+    "chapters": [
+      {
+        "label": "Introduction",
+        "title": "Alan Turing",
+        "subtitle": "The Mechanist of Logic, Secrecy, and Living Form"
+      },
+      {
+        "label": "Chapter 1",
+        "title": "The Sherborne Notebook and the Nature of Spirit",
+        "subtitle": "How Cycling Sixty Miles to School and Losing Christopher Morcom Shaped a Materialist Mind"
+      },
+      {
+        "label": "Chapter 2",
+        "title": "The Central Limit Theorem Rediscovered Alone",
+        "subtitle": "King's College Fellowship and the Probabilistic Bridge to Mathematical Foundations"
+      },
+      {
+        "label": "Chapter 3",
+        "title": "The Paper Tape and the Uncomputable Number",
+        "subtitle": "How a Mechanical Clerk Destroyed David Hilbert's Dream of Complete Decidability"
+      },
+      {
+        "label": "Chapter 4",
+        "title": "The Princeton Ordinal Hierarchies",
+        "subtitle": "Alonzo Church's Lambda Calculus, Emil Post, and Oracle Machines Over the Abyss"
+      },
+      {
+        "label": "Chapter 5",
+        "title": "The Riemann Zeta Gear-Wheel Machine",
+        "subtitle": "Cutting Brass Cams in Cambridge to Hunt Zeroes on the Critical Line"
+      },
+      {
+        "label": "Chapter 6",
+        "title": "The Electromechanical Bombe and the Diagonal Board",
+        "subtitle": "Turning Enigma's Self-Reciprocal Flaw Into a Parallel Contradiction Engine"
+      },
+      {
+        "label": "Chapter 7",
+        "title": "Banburismus and the Weight of Evidence",
+        "subtitle": "Punched Paper Sheets, Decibans, and Sequential Bayesian Inference Against Naval Enigma"
+      },
+      {
+        "label": "Chapter 8",
+        "title": "Delilah and the Bell Labs Tea-Time Encounter",
+        "subtitle": "Portable Speech Scrambling at Hanslope Park and Meeting Claude Shannon in Manhattan"
+      },
+      {
+        "label": "Chapter 9",
+        "title": "The Automatic Computing Engine Blueprint",
+        "subtitle": "Mercury Delay Lines, Micro-Coded Logic Tables, and the First Subroutine Stack"
+      },
+      {
+        "label": "Chapter 10",
+        "title": "The Imitation Game and Lady Lovelace's Objection",
+        "subtitle": "Why Playing Chess, Learning From Mistakes, and Conversing Replaced Definitions of Thought"
+      },
+      {
+        "label": "Chapter 11",
+        "title": "The Matrix Condition Number and LU Decomposition",
+        "subtitle": "Inventing Modern Numerical Linear Algebra to Measure Round-Off Error"
+      },
+      {
+        "label": "Chapter 12",
+        "title": "The Chemical Basis of Morphogenesis",
+        "subtitle": "How Two Diffusing Molecules Carve Leopard Spots, Zebra Stripes, and Fibonacci Spirals"
+      }
+    ]
+  },
+  "the-cell": {
+    "title": "The Cell",
+    "subtitle": "Twelve Molecular Machines in Twelve Highlights Each",
+    "category": "Molecular Biology",
+    "pdf": "assets/pdfs/the-cell.pdf",
+    "compactPdf": "assets/pdfs/the-cell-compact.pdf",
+    "mobilePdf": "assets/pdfs/the-cell-mobile.pdf",
+    "sectionPages": [
+      3,
+      4,
+      7,
+      11,
+      15,
+      19,
+      23,
+      27,
+      31,
+      35,
+      39,
+      43,
+      47
+    ],
+    "compactSectionPages": [
+      3,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      44,
+      48
+    ],
+    "mobileSectionPages": [
+      3,
+      5,
+      9,
+      13,
+      17,
+      21,
+      26,
+      31,
+      36,
+      41,
+      46,
+      51,
+      56
+    ],
+    "chapters": [
+      {
+        "label": "Introduction",
+        "title": "The Cell",
+        "subtitle": "Twelve Nanoscale Engines Viewed Through Twelve Physical Facts"
+      },
+      {
+        "label": "Chapter 1",
+        "title": "The Lipid Bilayer and Ion Channels",
+        "subtitle": "Hydrophobic Self-Assembly, Potassium Selectivity Filters, and the Resting Membrane Voltage"
+      },
+      {
+        "label": "Chapter 2",
+        "title": "ATP Synthase and the Mitochondrial Turbine",
+        "subtitle": "Chemiosmotic Proton Gradients, Boyer's Binding-Change Rotor, and Magnetic Bead Rotation"
+      },
+      {
+        "label": "Chapter 3",
+        "title": "DNA Polymerase and Mismatch Proofreading",
+        "subtitle": "Kornberg's Replication Fork, Exonuclease Editing, and Okazaki Fragment Stitching"
+      },
+      {
+        "label": "Chapter 4",
+        "title": "The Ribosome and Peptidyl Transfer",
+        "subtitle": "Ribozyme Catalysis, Aminoacyl-tRNA Kinetic Proofreading, and Polysome Assembly Lines"
+      },
+      {
+        "label": "Chapter 5",
+        "title": "Kinesin, Dynein, and Cytoskeletal Highways",
+        "subtitle": "Eight-Nanometer Hand-Over-Hand Steps, Optical Tweezer Stall Forces, and Retrograde Axonal Transport"
+      },
+      {
+        "label": "Chapter 6",
+        "title": "The Spliceosome and Alternative Splicing",
+        "subtitle": "Lariat Intron Excision, Small Nuclear Ribonucleoproteins, and the DSCAM Isoform Explosion"
+      },
+      {
+        "label": "Chapter 7",
+        "title": "The Chaperonin Barrel and the Proteasome",
+        "subtitle": "GroEL-GroES Hydrophobic Cages, Ubiquitin Death Tags, and the 20S Proteolytic Shredder"
+      },
+      {
+        "label": "Chapter 8",
+        "title": "The Nuclear Pore Complex and Ran-GTP Gating",
+        "subtitle": "Phenylalanine-Glycine Hydrogel Sieves, Importin Shuttles, and Directional mRNA Export"
+      },
+      {
+        "label": "Chapter 9",
+        "title": "Photosystem II and the Oxygen-Evolving Complex",
+        "subtitle": "Manganese-Calcium Cubane Clusters, Kok's Four-Flash S-State Clock, and Exciton Funneling"
+      },
+      {
+        "label": "Chapter 10",
+        "title": "The Bacterial Flagellar Rotary Motor",
+        "subtitle": "MotAB Proton Stators, Hook Universal Joints, and Run-and-Tumble Chemotactic Memory"
+      },
+      {
+        "label": "Chapter 11",
+        "title": "The Mitotic Spindle and Kinetochore Tension",
+        "subtitle": "Microtubule Dynamic Instability, Aurora B Tension Sensing, and the Mad2 Wait Signal"
+      },
+      {
+        "label": "Chapter 12",
+        "title": "CRISPR-Cas and Viral Immune Memory",
+        "subtitle": "Spacer Acquisition, PAM Recognition, and R-Loop Conformational Cleavage"
+      }
+    ]
   }
 };
 }));

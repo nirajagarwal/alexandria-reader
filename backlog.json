@@ -61,7 +61,7 @@
     },
     {
       "batch": 2,
-      "status": "in_progress",
+      "status": "completed",
       "books": [
         {
           "slug": "consciousness",
@@ -73,7 +73,7 @@
           "profile": "B",
           "accent": "#7c3aed",
           "bg": "#1e1b4b",
-          "status": "in_progress"
+          "status": "completed"
         },
         {
           "slug": "twelve-emotions",
@@ -85,7 +85,7 @@
           "profile": "C",
           "accent": "#e11d48",
           "bg": "#27121b",
-          "status": "in_progress"
+          "status": "completed"
         },
         {
           "slug": "alan-turing",
@@ -97,7 +97,7 @@
           "profile": "D",
           "accent": "#2563eb",
           "bg": "#0f172a",
-          "status": "in_progress"
+          "status": "completed"
         },
         {
           "slug": "the-cell",
@@ -109,7 +109,7 @@
           "profile": "B",
           "accent": "#059669",
           "bg": "#062e22",
-          "status": "in_progress"
+          "status": "completed"
         }
       ]
     },

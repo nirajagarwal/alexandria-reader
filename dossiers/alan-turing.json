@@ -1,0 +1,125 @@
+{
+  "slug": "alan-turing",
+  "file": "alan_turing.md",
+  "title": "Alan Turing",
+  "subtitle": "Computability, Codebreaking, and the Patterns of Living Form",
+  "category": "Computation, Logic & Biography",
+  "profile": "D: Intellectual Ruptures, Forensic Scholarship & Prismatic Minds",
+  "mode": "facet",
+  "accent": "#0d9488",
+  "bg": "#041c1a",
+  "theme": "lattice",
+  "creator_constraints": {
+    "min_diagrams": 3
+  },
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "The Sherborne Notebook and the Nature of Spirit",
+      "subtitle": "How Cycling Sixty Miles to School and Losing Christopher Morcom Shaped a Materialist Mind",
+      "opening_door": "Door A (Scene)",
+      "historical_anchor": "Alan Mathison Turing cycling sixty miles from Southampton to Sherborne School in Dorset during the May 1926 General Strike, forming an intense scientific friendship with fellow student Christopher Collan Morcom until Morcom's death from bovine tuberculosis in February 1930, and writing his 1932 manuscript 'Nature of Spirit' for Sara Morcom examining Arthur Eddington's quantum indeterminacy and brain states.",
+      "formalism_mode": "ledger_or_list",
+      "exit_fact": "That shift from grieving a disembodied soul to asking how physical matter stores and executes a mind's state vector guided every machine Turing designed from Cambridge to Manchester."
+    },
+    {
+      "chapter": 2,
+      "title": "The Central Limit Theorem Rediscovered Alone",
+      "subtitle": "King's College Fellowship and the Probabilistic Bridge to Mathematical Foundations",
+      "opening_door": "Door C (Artifact/Measurement)",
+      "historical_anchor": "Turing at King's College, Cambridge in 1933–1935, independently proving the Lindeberg-Feller Central Limit Theorem in his fellowship dissertation 'On the Gaussian Error Function' without knowing Jarl Waldemar Lindeberg had proved it in 1922, winning election as a Fellow of King's College at twenty-two in March 1935, and attending Max Newman's spring 1935 Part III lectures on Kurt Gödel and David Hilbert's Entscheidungsproblem.",
+      "formalism_mode": "equation",
+      "exit_fact": "Within weeks of hearing Max Newman ask whether a definite mechanical method could decide the truth of any mathematical assertion, Turing set aside continuous probability distributions to construct an idealized clerk working on an endless strip of paper."
+    },
+    {
+      "chapter": 3,
+      "title": "The Paper Tape and the Uncomputable Number",
+      "subtitle": "How a Mechanical Clerk Destroyed David Hilbert's Dream of Complete Decidability",
+      "opening_door": "Door B (Constraint/Paradox)",
+      "historical_anchor": "Turing's 1936 paper 'On Computable Numbers, with an Application to the Entscheidungsproblem' in the Proceedings of the London Mathematical Society, defining a-machines (Turing machines) with an infinite one-dimensional paper tape, finite state tables, integer description numbers D(M), the Universal Turing Machine U, and Cantor diagonalization to prove the printing and halting problems undecidable.",
+      "formalism_mode": "diagram",
+      "exit_fact": "By encoding the transition table of any specialized calculating machine as a single string of digits on a universal tape, Turing established the stored-program principle nine years before the first electronic computer was wired."
+    },
+    {
+      "chapter": 4,
+      "title": "The Princeton Ordinal Hierarchies",
+      "subtitle": "Alonzo Church's Lambda Calculus, Emil Post, and Oracle Machines Over the Abyss",
+      "opening_door": "Door A (Scene)",
+      "historical_anchor": "Turing at Princeton University from 1936 to 1938 working with Alonzo Church, proving the formal equivalence of lambda-definability and Turing computability, and completing his May 1938 Princeton PhD dissertation 'Systems of Logic Based on Ordinals' introducing transfinite ordinal logics and the O-machine (oracle machine) for relative computability.",
+      "formalism_mode": "ledger_or_list",
+      "exit_fact": "In 1944, American logician Emil Post transformed Turing's 1938 oracle machine into the formal theory of Turing reducibility and degrees of unsolvability, mapping an infinite hierarchy of mathematical problems that even a halting oracle cannot untangle."
+    },
+    {
+      "chapter": 5,
+      "title": "The Riemann Zeta Gear-Wheel Machine",
+      "subtitle": "Cutting Brass Cams in Cambridge to Hunt Zeroes on the Critical Line",
+      "opening_door": "Door C (Artifact/Measurement)",
+      "historical_anchor": "Turing in 1938–1939 securing a forty-pound Royal Society grant to machine a thirty-wheel bronze analog mechanical computer at Cambridge (modeled on Lord Kelvin's Liverpool tide-predicting machine) to evaluate the Riemann zeta function on the critical line, leaving the gears unpacked in September 1939, and later running his 'Turing method' on the Manchester Mark 1 in June 1950 to verify the first 1,104 non-trivial zeroes.",
+      "formalism_mode": "equation",
+      "exit_fact": "Although his thirty-wheel brass calculator never turned a single shaft before war mobilization in September 1939, the analytic error bound Turing derived to certify zeroes across adjacent intervals remains the standard verification algorithm in computational number theory."
+    },
+    {
+      "chapter": 6,
+      "title": "The Electromechanical Bombe and the Diagonal Board",
+      "subtitle": "Turning Enigma's Self-Reciprocal Flaw Into a Parallel Contradiction Engine",
+      "opening_door": "Door B (Constraint/Paradox)",
+      "historical_anchor": "Turing at Bletchley Park's Hut 8 in 1939–1940 extending Marian Rejewski's 1938 Polish Bomba into the British Victory Bombe (delivered March 1940, followed by the Agnus Dei Bombe in August 1940 with Gordon Welchman's diagonal board), built by Harold 'Doc' Keen at the British Tabulating Machine Company in Letchworth to test 17,576 three-rotor orientations against closed crib loops.",
+      "formalism_mode": "diagram",
+      "exit_fact": "By the end of the Second World War, more than two hundred British Bombes spinning in Letchworth and outstations around Bletchley Park were testing thousands of Enigma rotor orders every day and turning electrical short circuits into naval and air intelligence."
+    },
+    {
+      "chapter": 7,
+      "title": "Banburismus and the Weight of Evidence",
+      "subtitle": "Punched Paper Sheets, Decibans, and Sequential Bayesian Inference Against Naval Enigma",
+      "opening_door": "Door C (Artifact/Measurement)",
+      "historical_anchor": "Turing and statistical assistant I. J. (Jack) Good in Hut 8 during 1941–1942 inventing Banburismus—punching intercepted German Kriegsmarine M3 Enigma ciphertexts onto long Banbury-printed paper sheets to score letter coincidences—and defining the logarithmic 'ban' and 'deciban' units of sequential Bayesian odds to identify shared Naval Enigma rotor wheels before running the Bombes.",
+      "formalism_mode": "equation",
+      "exit_fact": "During the height of the U-boat wolfpack campaign in 1941 and 1942, those sliding paper sheets in Hut 8 reduced the number of three-rotor wheel orders that the Bombes had to test from 336 down to fewer than twenty."
+    },
+    {
+      "chapter": 8,
+      "title": "Delilah and the Bell Labs Tea-Time Encounter",
+      "subtitle": "Portable Speech Scrambling at Hanslope Park and Meeting Claude Shannon in Manhattan",
+      "opening_door": "Door A (Scene)",
+      "historical_anchor": "Turing sailing to New York aboard the troopship RMS Queen Elizabeth in November 1942, inspecting the 55-ton SIGSALY (Green Hornet) voice scrambler and meeting Claude Shannon daily at Bell Telephone Laboratories in early 1943, and returning to Britain to build the portable thirty-valve Delilah speech scrambler with Donald Bayley at Hanslope Park in 1943–1945.",
+      "formalism_mode": "ledger_or_list",
+      "exit_fact": "When Turing and Donald Bayley demonstrated the completed Delilah unit at Hanslope Park in late 1944 by encrypting and cleanly recovering a gramophone recording of Winston Churchill's voice across a desk, the entire scrambler occupied less space than four shoeboxes."
+    },
+    {
+      "chapter": 9,
+      "title": "The Automatic Computing Engine Blueprint",
+      "subtitle": "Mercury Delay Lines, Micro-Coded Logic Tables, and the First Subroutine Stack",
+      "opening_door": "Door C (Artifact/Measurement)",
+      "historical_anchor": "Turing joining the Mathematics Division of the National Physical Laboratory in Teddington under John Womersley in October 1945 and submitting his December 1945 report 'Proposed Electronic Calculator' for the Automatic Computing Engine (ACE), specifying 1 MHz clock timing, five-foot mercury acoustic delay lines holding 1,024 bits, optimum coding, and hardware BURY/UNBURY subroutine stack operations.",
+      "formalism_mode": "diagram",
+      "exit_fact": "When the Pilot ACE finally ran its first program at Teddington in May 1950 using Turing's optimum delay-line coding, its one-megahertz mercury tubes outperformed rival stored-program machines built with ten times as many vacuum valves."
+    },
+    {
+      "chapter": 10,
+      "title": "The Imitation Game and Lady Lovelace's Objection",
+      "subtitle": "Why Playing Chess, Learning From Mistakes, and Conversing Replaced Definitions of Thought",
+      "opening_door": "Door B (Constraint/Paradox)",
+      "historical_anchor": "Turing's October 1950 paper 'Computing Machinery and Intelligence' in the philosophical journal Mind, replacing the question 'Can machines think?' with a three-participant teleprinter imitation game, systematically refuting nine philosophical and mathematical objections including Ada Lovelace's 1843 note on Charles Babbage's Analytical Engine, and proposing the training of a child machine.",
+      "formalism_mode": "ledger_or_list",
+      "exit_fact": "Instead of attempting to write a static program for an adult chess player or conversationalist from scratch, the final pages of Turing's 1950 paper outlined the training of an unorganized child machine through reward, punishment, and empirical experience."
+    },
+    {
+      "chapter": 11,
+      "title": "The Matrix Condition Number and LU Decomposition",
+      "subtitle": "Inventing Modern Numerical Linear Algebra to Measure Round-Off Error",
+      "opening_door": "Door B (Constraint/Paradox)",
+      "historical_anchor": "Turing's 1948 paper 'Rounding-Off Errors in Matrix Processes' in the Quarterly Journal of Mechanics and Applied Mathematics, formalizing the PA = LU lower-upper triangular matrix factorization with partial row pivoting, defining the matrix condition number M(A) and N(A) (now written kappa(A)), and overturning pessimistic round-off error fears about Gaussian elimination.",
+      "formalism_mode": "equation",
+      "exit_fact": "Every modern scientific computing library that solves linear equations—from LAPACK and MATLAB to tensor accelerators—executes Turing's 1948 pivoted LU factorization and monitors his condition number to separate matrix ill-conditioning from hardware rounding noise."
+    },
+    {
+      "chapter": 12,
+      "title": "The Chemical Basis of Morphogenesis",
+      "subtitle": "How Two Diffusing Molecules Carve Leopard Spots, Zebra Stripes, and Fibonacci Spirals",
+      "opening_door": "Door B (Constraint/Paradox)",
+      "historical_anchor": "Turing's August 1952 paper 'The Chemical Basis of Morphogenesis' in the Philosophical Transactions of the Royal Society of London (Series B), deriving coupled reaction-diffusion partial differential equations for morphogens X and Y with unequal diffusion coefficients, computing spotted patterns on the Ferranti Mark 1 at the University of Manchester, and studying phyllotaxis Fibonacci spirals in Wilmslow between 1952 and June 1954.",
+      "formalism_mode": "equation",
+      "exit_fact": "Four decades after Turing solved those coupled reaction-diffusion equations on the Manchester Mark 1, experimental chemists in 1990 and developmental biologists studying vertebrate skin and digit spacing confirmed stationary Turing waves operating inside living embryos."
+    }
+  ]
+}
