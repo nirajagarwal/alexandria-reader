@@ -17,9 +17,25 @@
     "sectionPages": [
       3,
       4,
-      8,
-      12,
+      7,
+      10,
+      13,
       16,
+      19,
+      22,
+      25,
+      28,
+      31,
+      34,
+      37
+    ],
+    "mobilePdf": "assets/pdfs/non-linear-engines-mobile.pdf",
+    "mobileSectionPages": [
+      3,
+      5,
+      9,
+      13,
+      17,
       21,
       25,
       29,
@@ -28,22 +44,6 @@
       41,
       45,
       49
-    ],
-    "mobilePdf": "assets/pdfs/non-linear-engines-mobile.pdf",
-    "mobileSectionPages": [
-      3,
-      5,
-      11,
-      17,
-      23,
-      29,
-      35,
-      40,
-      45,
-      51,
-      56,
-      61,
-      66
     ],
     "chapters": [
       {
@@ -54,84 +54,84 @@
       {
         "label": "Chapter 1",
         "title": "The Star Graph",
-        "subtitle": "Federal Express and the Topological Arbitrage of Memphis (1971–1973)"
+        "subtitle": "Federal Express and the Topological Arbitrage of Memphis"
       },
       {
         "label": "Chapter 2",
         "title": "The Planar Genesis",
-        "subtitle": "Fairchild Semiconductor and the Invention of Silicon Equity (1957)"
+        "subtitle": "Fairchild Semiconductor and the Invention of Silicon Equity"
       },
       {
         "label": "Chapter 3",
         "title": "The Drawback Flywheel",
-        "subtitle": "Standard Oil and the Cleveland Massacre (1870–1872)"
+        "subtitle": "Standard Oil and the Cleveland Massacre"
       },
       {
         "label": "Chapter 4",
         "title": "The Symbiotic Vector",
-        "subtitle": "PayPal and the Virulence of the eBay Host (1999–2000)"
+        "subtitle": "PayPal and the Virulence of the eBay Host"
       },
       {
         "label": "Chapter 5",
         "title": "The Analog Citadel",
-        "subtitle": "Linear Technology and the 30-Year Gross Margin (1981)"
+        "subtitle": "Linear Technology and the Thirty-Year Gross Margin"
       },
       {
         "label": "Chapter 6",
         "title": "The Protocol Commons",
-        "subtitle": "Netscape and the Zero Marginal Cost Capture (1994–1995)"
+        "subtitle": "Netscape and the Zero-Marginal-Cost Capture of the Web"
       },
       {
         "label": "Chapter 7",
         "title": "The Seven-Line Abstraction",
-        "subtitle": "Stripe and the Collapse of Transaction Friction (2010–2011)"
+        "subtitle": "Stripe and the Collapse of Online Payment Friction"
       },
       {
         "label": "Chapter 8",
         "title": "The Asymmetric Ratio",
-        "subtitle": "Instagram and the Thirteen-Person Scale (2010–2012)"
+        "subtitle": "Instagram and the Thirteen-Employee Scale Architecture"
       },
       {
         "label": "Chapter 9",
         "title": "The Infinite Shelf",
-        "subtitle": "Amazon and the Negative Working Capital Arbitrage (1994–1997)"
+        "subtitle": "Amazon and the Negative Working Capital Arbitrage"
       },
       {
         "label": "Chapter 10",
         "title": "The Commodity Inversion",
-        "subtitle": "SpaceX and the First-Principles Physics of Aerospace (2002–2008)"
+        "subtitle": "SpaceX and the First-Principles Physics of Aerospace"
       },
       {
         "label": "Chapter 11",
         "title": "The Percolation Threshold",
-        "subtitle": "Uber and the Spatial Density of Dispatch (2010–2012)"
+        "subtitle": "Uber and the Spatial Density of Urban Dispatch"
       },
       {
         "label": "Chapter 12",
         "title": "The Dedicated Terminal",
-        "subtitle": "Bloomberg and the Closed-Loop Financial Network (1981–1984)"
+        "subtitle": "Bloomberg and the Closed-Loop Financial Network"
       }
     ],
     "compactPdf": "assets/pdfs/non-linear-engines-compact.pdf",
     "compactSectionPages": [
       3,
       4,
-      9,
-      14,
+      8,
+      12,
+      16,
       19,
-      24,
+      22,
+      25,
       29,
-      33,
-      38,
-      43,
-      47,
-      52,
-      57
+      32,
+      36,
+      40,
+      43
     ]
   },
   "latent-fragility": {
     "title": "Latent Fragility",
-    "subtitle": "Why Optimized Systems Suddenly Fail",
+    "subtitle": "Hidden Structural Flaws, Coupled Cascades, and Catastrophic Engineering Failures",
     "category": "Systemic Failure & Risk",
     "coverSvg": "assets/covers/latent-fragility.svg",
     "pdf": "assets/pdfs/latent-fragility.pdf",
@@ -141,10 +141,14 @@
       7,
       10,
       13,
-      15,
-      17,
+      16,
       19,
-      21
+      22,
+      25,
+      28,
+      31,
+      34,
+      37
     ],
     "mobilePdf": "assets/pdfs/latent-fragility-mobile.pdf",
     "mobileSectionPages": [
@@ -153,69 +157,97 @@
       9,
       13,
       17,
-      20,
-      23,
-      26,
-      29
+      21,
+      25,
+      29,
+      33,
+      37,
+      41,
+      45,
+      49
     ],
     "chapters": [
       {
         "label": "Introduction",
         "title": "Latent Fragility",
-        "subtitle": "Why Optimization Creates Fragility"
+        "subtitle": "How Dormant Design Flaws Turn Routine Perturbations into Disasters"
       },
       {
         "label": "Chapter 1",
-        "title": "The Resonance of the Crowd",
-        "subtitle": "The Millennium Footbridge (River Thames, London)"
+        "title": "The Top-Heavy Flagship",
+        "subtitle": "Metacentric Instability and the Sinking of the Warship Vasa"
       },
       {
         "label": "Chapter 2",
-        "title": "The Secret Welds of Midtown",
-        "subtitle": "The Citicorp Center Crisis (1978, Manhattan)"
+        "title": "The Dual Software Race",
+        "subtitle": "Concurrent State Bugs in the Therac-25 Radiation Overdoses"
       },
       {
         "label": "Chapter 3",
-        "title": "The Gaussian Mirage",
-        "subtitle": "Long-Term Capital Management (September 1998, Greenwich)"
+        "title": "The Dormant Flag on Server Eight",
+        "subtitle": "Dead Code Reuse and the Forty-Five-Minute Liquidation of Knight Capital"
       },
       {
         "label": "Chapter 4",
-        "title": "The Vortex of Delcambre",
-        "subtitle": "The Lake Peigneur Inundation (November 20, 1980, Louisiana)"
+        "title": "The Cost-Plus Ratchet",
+        "subtitle": "Aerospace Subcontractor Chains and the Falcon 1 Hardware Failures"
       },
       {
         "label": "Chapter 5",
-        "title": "The Silent Overdose",
-        "subtitle": "The Therac-25 Accidents (1985–1987, North America)"
+        "title": "The Thirty-Seven-Second Overflow",
+        "subtitle": "Inherited Inertial Code and the Destruction of Ariane 5 Flight 501"
       },
       {
         "label": "Chapter 6",
-        "title": "The Shear of Gandsfjorden",
-        "subtitle": "The Sleipner A Platform Collapse (August 23, 1991, Norway)"
+        "title": "The Synchronized Footbridge",
+        "subtitle": "Coupled Pedestrian Oscillators on the London Millennium Crossing"
       },
       {
         "label": "Chapter 7",
-        "title": "The Forty-Five Minute Liquidation",
-        "subtitle": "The Knight Capital Algorithmic Crash (August 1, 2012, New Jersey)"
+        "title": "The Salt Dome Whirlpool",
+        "subtitle": "Hydrostatic Dissolution and the Draining of Lake Peigneur"
       },
       {
         "label": "Chapter 8",
-        "title": "The Admiral’s Folly",
-        "subtitle": "The Swedish Warship Vasa (August 10, 1628, Stockholm)"
+        "title": "The Torsional Flutter of Puget Sound",
+        "subtitle": "Aeroelastic Self-Excitation and the Collapse of Tacoma Narrows"
+      },
+      {
+        "label": "Chapter 9",
+        "title": "The Square Window Corner",
+        "subtitle": "De Havilland Comet Fatigue Cracks and Stress Concentration in Pressurized Cabins"
+      },
+      {
+        "label": "Chapter 10",
+        "title": "The Doubled Load on Box Beam Four",
+        "subtitle": "How a Simple Rod Substitution Caused the Hyatt Regency Walkway Collapse"
+      },
+      {
+        "label": "Chapter 11",
+        "title": "The Cold-Stiffened O-Ring",
+        "subtitle": "How Fluoroelastomer Glass Transition Defeated Dual Redundancy on Challenger"
+      },
+      {
+        "label": "Chapter 12",
+        "title": "The Frozen Pitot Tube",
+        "subtitle": "Air France Flight 447 and the Paradox of Automation Hand-Off at Thirty-Five Thousand Feet"
       }
     ],
     "compactPdf": "assets/pdfs/latent-fragility-compact.pdf",
     "compactSectionPages": [
       3,
-      4,
+      5,
       8,
-      11,
-      14,
-      17,
-      20,
-      23,
-      25
+      12,
+      15,
+      18,
+      21,
+      24,
+      27,
+      30,
+      33,
+      37,
+      41
     ]
   },
   "singular-minds": {
@@ -349,24 +381,32 @@
       3,
       4,
       7,
-      9,
-      12,
-      15,
-      18,
-      20,
-      22
+      10,
+      13,
+      16,
+      19,
+      22,
+      25,
+      28,
+      31,
+      34,
+      37
     ],
     "mobilePdf": "assets/pdfs/radical-subtraction-mobile.pdf",
     "mobileSectionPages": [
       3,
       5,
-      8,
-      11,
-      15,
-      18,
-      21,
+      9,
+      12,
+      16,
+      20,
       24,
-      27
+      28,
+      32,
+      36,
+      40,
+      44,
+      48
     ],
     "chapters": [
       {
@@ -377,42 +417,62 @@
       {
         "label": "Chapter 1",
         "title": "The Cell on the Tagus",
-        "subtitle": "John of the Cross and the Doctrine of the Dark Night (Toledo, 1577–1578)"
+        "subtitle": "John of the Cross and the Doctrine of the Dark Night in Toledo"
       },
       {
         "label": "Chapter 2",
         "title": "The Anchorhold of Norwich",
-        "subtitle": "Julian of Norwich and the Confinement of the Hazelnuts (1373–1416)"
+        "subtitle": "Julian of Norwich and the Confinement of the Hazelnuts"
       },
       {
         "label": "Chapter 3",
         "title": "The Interior Castle",
-        "subtitle": "Teresa of Ávila and the Neurodynamics of the Seventh Mansion (1577, Toledo)"
+        "subtitle": "Teresa of Ávila and the Neurodynamics of the Seventh Mansion"
       },
       {
         "label": "Chapter 4",
         "title": "The Desert Pillar",
-        "subtitle": "Simeon Stylites and the Physics of Vertical Isolation (423–459 AD, Syria)"
+        "subtitle": "Simeon Stylites and the Physics of Vertical Isolation in Syria"
       },
       {
         "label": "Chapter 5",
         "title": "The Apophatic Cloud",
-        "subtitle": "The Anonymous English Contemplative and the Erasure of Memory (c. 1375)"
+        "subtitle": "The Anonymous English Contemplative and the Erasure of Memory"
       },
       {
         "label": "Chapter 6",
         "title": "The Dialectic of the Nothing",
-        "subtitle": "Meister Eckhart and the Breakthrough of the Ground (1314–1326, Cologne)"
+        "subtitle": "Meister Eckhart and the Breakthrough of the Ground in Cologne"
       },
       {
         "label": "Chapter 7",
         "title": "The Rhenish Hermitage",
-        "subtitle": "Hildegard of Bingen and the Scivias Telemetry (1141–1151, Disibodenberg)"
+        "subtitle": "Hildegard of Bingen and the Scivias Telemetry at Disibodenberg"
       },
       {
         "label": "Chapter 8",
         "title": "The Hesychast Breath",
-        "subtitle": "Gregory Palamas and the Physiology of the Uncreated Light (1338–1351, Mount Athos)"
+        "subtitle": "Gregory Palamas and the Physiology of the Uncreated Light on Mount Athos"
+      },
+      {
+        "label": "Chapter 9",
+        "title": "The Uncarved Block",
+        "subtitle": "Zhuangzi, Butcher Ding's Ox Cleaver, and the Mechanics of Non-Interference"
+      },
+      {
+        "label": "Chapter 10",
+        "title": "The Sculptor's Chisel",
+        "subtitle": "Plotinus, Pseudo-Dionysius, and the Removal of Conceptual Marble"
+      },
+      {
+        "label": "Chapter 11",
+        "title": "The Suspended Judgment",
+        "subtitle": "Pyrrho of Elis, Sextus Empiricus, and the Quietness That Follows Equipollence"
+      },
+      {
+        "label": "Chapter 12",
+        "title": "The Kicked-Away Ladder",
+        "subtitle": "Ludwig Wittgenstein and Where Logical Language Draws Its Own Border"
       }
     ],
     "compactPdf": "assets/pdfs/radical-subtraction-compact.pdf",
@@ -421,11 +481,15 @@
       4,
       7,
       10,
-      13,
-      16,
-      19,
-      22,
-      25
+      14,
+      17,
+      20,
+      23,
+      26,
+      30,
+      33,
+      36,
+      40
     ]
   },
   "liminal-thresholds": {
@@ -557,16 +621,18 @@
     "pdf": "assets/pdfs/autonomous-engine.pdf",
     "sectionPages": [
       3,
-      5,
-      8,
-      11,
-      14,
-      17,
-      20,
-      23,
+      4,
+      7,
+      10,
+      13,
+      16,
+      19,
+      22,
       25,
       28,
-      31
+      31,
+      34,
+      37
     ],
     "mobilePdf": "assets/pdfs/autonomous-engine-mobile.pdf",
     "mobileSectionPages": [
@@ -576,11 +642,13 @@
       13,
       17,
       21,
-      24,
-      27,
-      30,
+      25,
+      29,
       33,
-      36
+      37,
+      41,
+      45,
+      49
     ],
     "chapters": [
       {
@@ -591,67 +659,79 @@
       {
         "label": "Chapter 1",
         "title": "The Hydraulic Impedance",
-        "subtitle": "Otto Frank, Ernest Starling, and Myocardial Compliance (London, 1914)"
+        "subtitle": "Otto Frank, Ernest Starling, and Myocardial Compliance in London"
       },
       {
         "label": "Chapter 2",
         "title": "The Countercurrent Multiplexer",
-        "subtitle": "Werner Kuhn and the Medullary Osmotic Gradient (Basel, 1942)"
+        "subtitle": "Werner Kuhn and the Medullary Osmotic Gradient in Basel"
       },
       {
         "label": "Chapter 3",
         "title": "The Convective Sieve",
-        "subtitle": "Christian Bohr, August Krogh, and Alveolar Gas Exchange (Copenhagen, 1904)"
+        "subtitle": "Christian Bohr, August Krogh, and Alveolar Gas Exchange in Copenhagen"
       },
       {
         "label": "Chapter 4",
         "title": "The Homeostatic Brake",
-        "subtitle": "Walter Holbrook Gaskell and Parasympathetic Vagal Hysteresis (Cambridge, 1886)"
+        "subtitle": "Walter Holbrook Gaskell and Parasympathetic Vagal Hysteresis in Cambridge"
       },
       {
         "label": "Chapter 5",
         "title": "The Convective Flush",
-        "subtitle": "Maiken Nedergaard and Glymphatic Interstitial Clearance (Rochester, 2012)"
+        "subtitle": "Maiken Nedergaard and Glymphatic Interstitial Clearance in Rochester"
       },
       {
         "label": "Chapter 6",
         "title": "The Calcium Trigger",
-        "subtitle": "Setsuro Ebashi and the Troponin Molecular Switch (Tokyo, 1963)"
+        "subtitle": "Setsuro Ebashi and the Troponin Molecular Switch in Tokyo"
       },
       {
         "label": "Chapter 7",
         "title": "The Photonic Transducer",
-        "subtitle": "George Wald and Retinal Rhodopsin Isomerization (Woods Hole, 1958)"
+        "subtitle": "George Wald and Retinal Rhodopsin Isomerization at Woods Hole"
       },
       {
         "label": "Chapter 8",
         "title": "The Thermal Core",
-        "subtitle": "Carl von Voit, Max Rubner, and Metabolic Energy Conservation (Munich, 1894)"
+        "subtitle": "Carl von Voit, Max Rubner, and Metabolic Energy Conservation in Munich"
       },
       {
         "label": "Chapter 9",
         "title": "The Electrochemical Gate",
-        "subtitle": "Alan Hodgkin, Andrew Huxley, and the Axonal Voltage Clamp (Plymouth, 1952)"
+        "subtitle": "Alan Hodgkin, Andrew Huxley, and the Axonal Voltage Clamp in Plymouth"
       },
       {
         "label": "Chapter 10",
         "title": "The Master Oscillator",
-        "subtitle": "Colin Pittendrigh, Seymour Benzer, and Suprachiasmatic Phase Alignment (Pasadena, 1971)"
+        "subtitle": "Colin Pittendrigh, Seymour Benzer, and Suprachiasmatic Phase Alignment in Pasadena"
+      },
+      {
+        "label": "Chapter 11",
+        "title": "The Acid-Base Servo",
+        "subtitle": "John Scott Haldane, Lawrence Henderson, and the Medullary Chemoreceptor Loop in Oxford"
+      },
+      {
+        "label": "Chapter 12",
+        "title": "The Glycemic Integral Controller",
+        "subtitle": "Frederick Banting, Charles Best, and the Pancreatic Bihormonal Loop in Toronto"
       }
     ],
     "compactPdf": "assets/pdfs/autonomous-engine-compact.pdf",
     "compactSectionPages": [
       3,
-      5,
-      9,
+      4,
+      8,
       12,
       16,
-      19,
-      22,
-      25,
-      28,
-      31,
-      34
+      20,
+      24,
+      27,
+      30,
+      34,
+      38,
+      42,
+      45
     ]
   },
   "elemental-asymmetries": {
@@ -808,9 +888,9 @@
       30,
       35,
       39,
-      44,
-      48,
-      53
+      43,
+      47,
+      52
     ],
     "chapters": [
       {
@@ -1048,11 +1128,11 @@
       23,
       27,
       31,
-      36,
-      40,
-      45,
-      50,
-      55
+      35,
+      39,
+      44,
+      49,
+      54
     ],
     "chapters": [
       {
@@ -1404,16 +1484,16 @@
       3,
       5,
       10,
-      15,
-      20,
-      24,
-      29,
-      34,
-      38,
-      42,
-      46,
-      51,
-      56
+      14,
+      19,
+      23,
+      28,
+      33,
+      37,
+      41,
+      45,
+      50,
+      55
     ],
     "chapters": [
       {
@@ -1508,32 +1588,32 @@
       3,
       4,
       7,
-      11,
-      15,
-      18,
-      21,
-      24,
+      10,
+      13,
+      16,
+      19,
+      22,
+      25,
       28,
-      31,
+      32,
       35,
-      38,
-      42
+      38
     ],
     "mobilePdf": "assets/pdfs/ghosts-in-the-parchment-mobile.pdf",
     "mobileSectionPages": [
       3,
       5,
-      10,
-      15,
-      20,
-      24,
+      9,
+      13,
+      17,
+      21,
+      25,
       29,
-      34,
-      39,
-      44,
-      49,
-      54,
-      59
+      33,
+      37,
+      42,
+      46,
+      50
     ],
     "chapters": [
       {
@@ -1773,7 +1853,7 @@
       41,
       45,
       49,
-      54
+      53
     ],
     "chapters": [
       {
@@ -2160,7 +2240,7 @@
       {
         "label": "Chapter 1",
         "title": "Courage Under the Wire",
-        "subtitle": "Bomb Disposal Heart Rates and Why Bravery Is Not Fearlessness"
+        "subtitle": "Bomb Disposal Heart Rates and How Skill Mastery Quiets Fear"
       },
       {
         "label": "Chapter 2",
@@ -2368,13 +2448,13 @@
       10,
       13,
       16,
-      20,
-      23,
-      26,
-      29,
-      32,
-      36,
-      39
+      19,
+      22,
+      25,
+      28,
+      31,
+      35,
+      38
     ],
     "mobileSectionPages": [
       3,
@@ -2864,12 +2944,12 @@
       17,
       21,
       25,
-      29,
-      33,
-      37,
-      40,
-      44,
-      48
+      28,
+      32,
+      36,
+      39,
+      43,
+      47
     ],
     "chapters": [
       {
@@ -2936,6 +3016,126 @@
         "label": "Chapter 12",
         "title": "Effortless Absorption and the Default Mode Seesaw",
         "subtitle": "What Happens in the Brain When Self-Monitoring Quiets Down During Deep Focus"
+      }
+    ]
+  },
+  "self-transcendence": {
+    "title": "Self-Transcendence",
+    "subtitle": "The Core Shift and Eleven Neighbors That Dissolve the Boundaries of the Self",
+    "category": "Psychology & Philosophy",
+    "pdf": "assets/pdfs/self-transcendence.pdf",
+    "compactPdf": "assets/pdfs/self-transcendence-compact.pdf",
+    "mobilePdf": "assets/pdfs/self-transcendence-mobile.pdf",
+    "sectionPages": [
+      3,
+      4,
+      7,
+      10,
+      13,
+      16,
+      19,
+      22,
+      25,
+      28,
+      31,
+      34,
+      37
+    ],
+    "compactSectionPages": [
+      3,
+      5,
+      8,
+      11,
+      14,
+      17,
+      21,
+      25,
+      28,
+      32,
+      35,
+      39,
+      43
+    ],
+    "mobileSectionPages": [
+      3,
+      5,
+      9,
+      13,
+      17,
+      21,
+      25,
+      29,
+      33,
+      37,
+      41,
+      45,
+      49
+    ],
+    "chapters": [
+      {
+        "label": "Introduction",
+        "title": "Self-Transcendence",
+        "subtitle": "Mapping the Dissolution of the Bounded Ego"
+      },
+      {
+        "label": "Chapter 1",
+        "title": "Self-Transcendence",
+        "subtitle": "Why Maslow Placed Going Beyond the Ego Above Self-Actualization"
+      },
+      {
+        "label": "Chapter 2",
+        "title": "The Temporoparietal Boundary Map",
+        "subtitle": "How a Patch of Parietal Cortex Draws the Physical Border of Your Body"
+      },
+      {
+        "label": "Chapter 3",
+        "title": "Posterior Cingulate Deactivation",
+        "subtitle": "What Happens When the Brain's Autobiographical Hub Drops Offline"
+      },
+      {
+        "label": "Chapter 4",
+        "title": "Entropic Brain Flattening",
+        "subtitle": "How Relaxing Top-Down Priors Dissolves the Ego's Control Hierarchy"
+      },
+      {
+        "label": "Chapter 5",
+        "title": "Autotelic Flow and Transient Hypofrontality",
+        "subtitle": "How Total Absorption in a Demanding Craft Silences the Inner Critic"
+      },
+      {
+        "label": "Chapter 6",
+        "title": "Collective Effervescence and Synchronized Rhythm",
+        "subtitle": "Why Marching, Singing, and Fire-Walking Merge Individual Nervous Systems"
+      },
+      {
+        "label": "Chapter 7",
+        "title": "Multi-Level Selection and the Hive Switch",
+        "subtitle": "How Evolution Built Primates That Can Temporarily Act Like Bees"
+      },
+      {
+        "label": "Chapter 8",
+        "title": "Healthy Ego Dissolution Versus Depersonalization",
+        "subtitle": "Why Losing the Self Feels Blissful in One Brain and Terrifying in Another"
+      },
+      {
+        "label": "Chapter 9",
+        "title": "The Small Self and Prosocial Generosity",
+        "subtitle": "How Vast Landscapes Shrink the Ego and Expand Moral Concern"
+      },
+      {
+        "label": "Chapter 10",
+        "title": "Hemispheric Silence and the Stroke of Insight",
+        "subtitle": "What Happens When Left-Brain Narrative Chatter Suddenly Stops"
+      },
+      {
+        "label": "Chapter 11",
+        "title": "Existential Terror Management and Death Acceptance",
+        "subtitle": "Why Dissolving the Bounded Ego Disarms the Fear of Mortality"
+      },
+      {
+        "label": "Chapter 12",
+        "title": "The Overview Horizon and Generativity",
+        "subtitle": "How Long-Term Self-Transcendence Rewires Legacy, Care, and Time Perception"
       }
     ]
   }

@@ -1,0 +1,377 @@
+{
+  "slug": "self-transcendence",
+  "file": "self_transcendence.md",
+  "title": "Self-Transcendence",
+  "subtitle": "The Core Shift and Eleven Neighbors That Dissolve the Boundaries of the Self",
+  "category": "Psychology & Philosophy",
+  "profile": "F: The Contextual Landscape (Knowra Neighborhood Mapping)",
+  "mode": "landscape",
+  "accent": "#6d28d9",
+  "bg": "#1e1b4b",
+  "theme": "open-horizon",
+  "creator_constraints": {
+    "min_diagrams": 3
+  },
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "Self-Transcendence",
+      "subtitle": "Why Maslow Placed Going Beyond the Ego Above Self-Actualization",
+      "lens": "anchor",
+      "verb": "anchor",
+      "what": "The psychological and neurobiological shift in which the cognitive boundary separating the individual ego from other people, tasks, or the wider world temporarily softens or dissolves.",
+      "why_here": "The anchor concept of the volume, establishing why both Viktor Frankl and an older Abraham Maslow concluded that self-actualization is a self-defeating trap unless attention is aimed beyond the self.",
+      "background_nodes": [
+        {
+          "label": "Frankl's Eye Paradox (1946)",
+          "what": "Viktor Frankl's clinical observation in Vienna that just as a healthy human eye never sees itself unless afflicted by a cataract, a healthy mind functions properly only when directed toward a task or person outside itself.",
+          "whyHere": "Explains why obsessive self-monitoring ('hyper-reflection') directly causes clinical anxiety and existential vacuum."
+        },
+        {
+          "label": "Maslow's Theory Z Revision (1969)",
+          "what": "Abraham Maslow's final papers written after his December 1967 heart attack, splitting 'self-actualizers' into merely healthy strivers ('peakers' vs. 'non-peakers') and adding a sixth tier—Self-Transcendence—at the summit of human motivation.",
+          "whyHere": "Corrects the textbook five-tier pyramid that mistakenly stopped at individual self-actualization."
+        },
+        {
+          "label": "Cloninger's Self-Transcendence Trait (1993)",
+          "what": "C. Robert Cloninger's psychobiological Temperament and Character Inventory dimension measuring a person's capacity for self-forgetfulness and transpersonal identification.",
+          "whyHere": "Converted a philosophical idea into a quantitative psychometric scale correlated with psychological resilience under chronic illness."
+        }
+      ],
+      "opening_door": "Door B (Constraint/Paradox)",
+      "historical_anchor": "Viktor Frankl's 1946 Vienna lectures on logotherapy and hyper-reflection, paired with Abraham Maslow's 1967–1969 Menlo Park revision of his hierarchy ('Theory Z') placing self-transcendence above self-actualization.",
+      "formalism_mode": "ledger_or_list",
+      "exit_fact": "Although introductory psychology textbooks printed after Abraham Maslow's death in June 1970 froze his hierarchy at five tiers ending in self-actualization, Maslow's final 1969 essay explicitly placed a sixth tier—self-transcendence—at the apex, warning that pursuing self-actualization as an end in itself locks the personality inside a brittle cage."
+    },
+    {
+      "chapter": 2,
+      "title": "The Temporoparietal Boundary Map",
+      "subtitle": "How a Patch of Parietal Cortex Draws the Physical Border of Your Body",
+      "lens": "building-blocks",
+      "verb": "zoom-in",
+      "what": "The multisensory integration hub at the junction of the temporal and parietal lobes that continuously fuses vestibular balance, proprioceptive joint angles, and visual perspective into the feeling of residing inside a physical body.",
+      "why_here": "Reveals the physical hardware of the self-boundary: before the brain can transcend the self, it must first construct the spatial border of 'me' versus 'not-me' millisecond by millisecond.",
+      "background_nodes": [
+        {
+          "label": "The Rubber Hand Illusion (Botvinick & Cohen, 1998)",
+          "what": "Matthew Botvinick and Jonathan Cohen's University of Pittsburgh experiment showing that sixty seconds of synchronous paintbrush strokes on a visible rubber hand and a hidden real hand tricks the brain into adopting the rubber hand as its own flesh.",
+          "whyHere": "Proved that bodily ownership is not hardwired in the skin, but dynamically inferred from synchronous timing."
+        },
+        {
+          "label": "Focal Stimulation of the Right Angular Gyrus (Blanke, 2002)",
+          "what": "Olaf Blanke's Geneva University Hospital discovery that passing a 3.5-milliampere current through a single electrode on the right temporoparietal junction (TPJ) instantly caused a patient to feel herself floating two meters above the bed looking down at her body.",
+          "whyHere": "Pinpointed the exact cortical coordinate where vestibular and visual reference frames lock together—and where their mismatch uncouples the self from the body."
+        },
+        {
+          "label": "Full-Body Ownership Swap (Ehrsson, 2007)",
+          "what": "Henrik Ehrsson's Karolinska Institutet head-mounted camera experiments inducing healthy volunteers to experience a plastic mannequin—or a stranger shaking their own real hand—as their own physical body.",
+          "whyHere": "Demonstrates that the spatial seat of the first-person perspective can be relocated outside the biological body in under two minutes."
+        }
+      ],
+      "opening_door": "Door A (Scene)",
+      "historical_anchor": "Matthew Botvinick and Jonathan Cohen's 1998 rubber-hand illusion in Nature, Olaf Blanke's September 2002 Geneva University Hospital electrical stimulation of the right angular gyrus, and Henrik Ehrsson's 2007 Karolinska full-body swap experiments.",
+      "formalism_mode": "diagram",
+      "exit_fact": "When Henrik Ehrsson suddenly jabbed a kitchen knife toward the chest of a plastic mannequin while volunteers viewed their own real bodies through cameras mounted on the mannequin's head, the volunteers' skin conductance spiked with the exact physiological terror response of watching their own flesh being stabbed."
+    },
+    {
+      "chapter": 3,
+      "title": "Posterior Cingulate Deactivation",
+      "subtitle": "What Happens When the Brain's Autobiographical Hub Drops Offline",
+      "lens": "building-blocks",
+      "verb": "zoom-in",
+      "what": "The metabolic quietening of the posterior cingulate cortex—the central connector hub of the Default Mode Network that binds present sensations to autobiographical memory and self-evaluation.",
+      "why_here": "While the temporoparietal junction draws the physical body border, the posterior cingulate cortex maintains the narrative ego ('I', 'me', 'mine'); quieting this hub is the common neural signature of effortless self-forgetfulness.",
+      "background_nodes": [
+        {
+          "label": "Posterior Cingulate Cortex (PCC) Connector Hub",
+          "what": "A densely wired cortical region tucked behind the corpus callosum that consumes roughly forty percent more glucose than the cortical average to link episodic memories with personal stakes.",
+          "whyHere": "Acts as the narrator that tags every passing thought with 'What does this mean for me?'"
+        },
+        {
+          "label": "Yale Real-Time Neurofeedback Study (Brewer, 2011–2013)",
+          "what": "Judson Brewer's Yale School of Medicine fMRI recordings comparing novices against contemplatives with over 10,000 hours of practice across three distinct traditions.",
+          "whyHere": "Found that across all three practices, the posterior cingulate cortex did not light up—it consistently deactivated below baseline whenever subjects reported effortless, non-striving awareness."
+        },
+        {
+          "label": "Effortful Trying vs. Effortless Release",
+          "what": "Real-time fMRI neurofeedback curves showing that trying to force one's mind to be quiet causes posterior cingulate activity to spike upward, whereas dropping self-monitoring causes it to plunge.",
+          "whyHere": "Explains the mechanical paradox of why willpower cannot force self-transcendence."
+        }
+      ],
+      "opening_door": "Door C (Artifact/Measurement)",
+      "historical_anchor": "Judson Brewer and colleagues' 2011–2013 Yale University School of Medicine fMRI and real-time neurofeedback studies of posterior cingulate cortex deactivation in experienced contemplatives.",
+      "formalism_mode": "ledger_or_list",
+      "exit_fact": "When Judson Brewer placed subjects inside a real-time functional MRI scanner at Yale and displayed a live graph of their own posterior cingulate cortex activity, asking a subject to actively try to force the graph downward caused the red line to shoot sharply upward within four seconds, whereas simply noticing a distraction without self-criticism dropped the line into the blue."
+    },
+    {
+      "chapter": 4,
+      "title": "Entropic Brain Flattening",
+      "subtitle": "How Relaxing Top-Down Priors Dissolves the Ego's Control Hierarchy",
+      "lens": "mechanism",
+      "verb": "zoom-in",
+      "what": "The neurocomputational mechanism (REBUS: Relaxed Beliefs Under Psychedelics and related altered states) in which lowering the precision-weighting of high-level cortical priors flattens the brain's predictive energy landscape.",
+      "why_here": "Provides the exact mathematical and biophysical model of how top-down ego boundaries dissolve when deep layer-V pyramidal neurons lose their synchronous alpha-band grip over lower sensory areas.",
+      "background_nodes": [
+        {
+          "label": "REBUS Model (Carhart-Harris & Friston, 2019)",
+          "what": "Robin Carhart-Harris and Karl Friston's unified active-inference formulation showing that self-transcendent states relax the precision weight of high-level autobiographical priors.",
+          "whyHere": "Explains why softening the top-down 'ego prior' simultaneously dissolves self-boundaries and allows suppressed bottom-up sensory and emotional signals to surface."
+        },
+        {
+          "label": "Alpha-Band Desynchronization in PCC",
+          "what": "Magnetoencephalography (MEG) recordings at Imperial College London showing that subjective ego-dissolution correlates most strongly with the collapse of 8-to-13-hertz alpha rhythms in the posterior cingulate cortex.",
+          "whyHere": "Alpha oscillations carry the top-down inhibitory predictions that normally keep the cortical hierarchy rigid."
+        },
+        {
+          "label": "Lempel-Ziv Signal Entropy",
+          "what": "Applying Abraham Lempel and Jacob Ziv's 1976 data-compression complexity metric to human MEG brainwaves to measure the diversity of neural states per second.",
+          "whyHere": "Demonstrated that ego-dissolving states push cortical signal diversity above normal waking consciousness, whereas anesthesia and sleep push it below."
+        }
+      ],
+      "opening_door": "Door B (Constraint/Paradox)",
+      "historical_anchor": "Robin Carhart-Harris, David Nutt, and colleagues' 2012–2016 Imperial College London arterial spin labeling fMRI and MEG studies, and Carhart-Harris and Karl Friston's 2019 REBUS ('Relaxed Beliefs Under Psychedelics') mathematical formulation.",
+      "formalism_mode": "equation",
+      "exit_fact": "When Robin Carhart-Harris and David Nutt injected two milligrams of intravenous psilocybin into fifteen healthy volunteers inside an MRI scanner at Imperial College London in 2012 expecting to see an explosion of brain activity, they found zero brain regions with increased blood flow—and instead observed a twenty percent drop in blood flow directly inside the thalamus, anterior cingulate, and posterior cingulate ego hubs."
+    },
+    {
+      "chapter": 5,
+      "title": "Autotelic Flow and Transient Hypofrontality",
+      "subtitle": "How Total Absorption in a Demanding Craft Silences the Inner Critic",
+      "lens": "mechanism",
+      "verb": "zoom-in",
+      "what": "The state of effortless action achieved when a task's demands exactly match an operator's trained skill, prompting the brain to down-regulate dorsolateral prefrontal self-monitoring in favor of fast sensorimotor execution.",
+      "why_here": "Demonstrates that self-transcendence does not require a monastery or a molecule—it occurs every day on rock walls, operating tables, and concert stages whenever task difficulty consumes every drop of working memory.",
+      "background_nodes": [
+        {
+          "label": "Autotelic Experience (Csikszentmihalyi, 1975)",
+          "what": "Mihaly Csikszentmihalyi's University of Chicago interviews with rock climbers, surgeons, and chess masters who reported that at peak concentration, awareness of their own name, worries, and passage of time vanished completely.",
+          "whyHere": "Identified the universal phenomenology of skill-based self-forgetfulness."
+        },
+        {
+          "label": "Transient Hypofrontality (Dietrich, 2003)",
+          "what": "Arne Dietrich's neurocognitive hypothesis that because the brain operates under a fixed metabolic blood-flow budget, intense sensorimotor computation forces a temporary shutdown of prefrontal analytical and self-reflective circuits.",
+          "whyHere": "Explains why time distorts and the inner critic falls silent during high-speed action."
+        },
+        {
+          "label": "Jazz Improvisation fMRI (Limb & Braun, 2008)",
+          "what": "Charles Limb and Allen Braun's National Institutes of Health experiment placing professional jazz pianists inside an fMRI scanner with a non-magnetic thirty-five-key fiberglass piano keyboard on their laps.",
+          "whyHere": "Captured the exact moment a musician switched from a memorized scale to spontaneous improvisation: the dorsolateral prefrontal cortex shut down across a wide swath while medial motor-auditory networks took over."
+        }
+      ],
+      "opening_door": "Door A (Scene)",
+      "historical_anchor": "Mihaly Csikszentmihalyi's 1975 University of Chicago studies of surgeons and rock climbers (*Beyond Boredom and Anxiety*) and Charles Limb and Allen Braun's 2008 NIH fiberglass-piano fMRI recordings of jazz improvisation.",
+      "formalism_mode": "diagram",
+      "exit_fact": "When surgeons interviewed by Mihaly Csikszentmihalyi in Chicago were asked why they preferred grueling six-hour microvascular operations over quiet weekends at home, seventy-eight percent reported that the operating room was the only place where their chronic self-critical ruminations stopped."
+    },
+    {
+      "chapter": 6,
+      "title": "Collective Effervescence and Synchronized Rhythm",
+      "subtitle": "Why Marching, Singing, and Fire-Walking Merge Individual Nervous Systems",
+      "lens": "origins",
+      "verb": "zoom-out",
+      "what": "The physiological and autonomic coupling that occurs when human bodies move, breathe, or vocalize at a shared temporal frequency, blurring the boundary between individual and group.",
+      "why_here": "Zooms out from a single skull to multiple coupled nervous systems, showing how shared rhythm acts as an external pacemaker that synchronizes heart rates, pain thresholds, and identity.",
+      "background_nodes": [
+        {
+          "label": "Collective Effervescence (Durkheim, 1912)",
+          "what": "Émile Durkheim's sociological formulation in *The Elementary Forms of the Religious Life* describing how synchronous ritual gatherings generate an electric, boundary-dissolving state that lifts participants out of petty private concerns.",
+          "whyHere": "Named the foundational social mechanism of group self-transcendence."
+        },
+        {
+          "label": "Muscular Bonding & Synchronous Rowing (McNeill, 1995; Cohen et al., 2010)",
+          "what": "William McNeill's historical analysis of close-order military drill and Emma Cohen's Oxford rowing-ergometer experiments showing that rowing in exact synchrony doubles endorphin pain thresholds compared to rowing alone at the exact same power output.",
+          "whyHere": "Proved that interpersonal motor synchrony triggers endogenous opioid release."
+        },
+        {
+          "label": "San Pedro Manrique Fire-Walking Telemetry (Konvalinka, 2011)",
+          "what": "Ivana Konvalinka and Andreas Roepstorff's heart-rate monitor study in a Spanish mountain village of 600 people during the solstice fire-walking ritual over a bed of oak coals burning at 677 degrees Celsius.",
+          "whyHere": "Discovered that the complex, non-linear heart-rate rhythms of the fire-walkers and their watching relatives in the bleachers locked into phase-synchrony even though the spectators were sitting completely still."
+        }
+      ],
+      "opening_door": "Door A (Scene)",
+      "historical_anchor": "Émile Durkheim's 1912 analysis of collective effervescence, Emma Cohen and Robin Dunbar's 2010 Oxford synchronized rowing endorphin trials, and Ivana Konvalinka's 2011 San Pedro Manrique fire-walking heart-rate coupling study.",
+      "formalism_mode": "equation",
+      "exit_fact": "In Emma Cohen and Robin Dunbar's 2010 Oxford laboratory trials, varsity oarsmen who pulled ergometer handles in synchronous two-second strokes tolerated an inflated blood-pressure cuff squeezing their arms for nearly twice as many seconds—indicating a surge in central endorphin release—as when the exact same rowers pulled the exact same wattage out of phase in separate booths."
+    },
+    {
+      "chapter": 7,
+      "title": "Multi-Level Selection and the Hive Switch",
+      "subtitle": "How Evolution Built Primates That Can Temporarily Act Like Bees",
+      "lens": "origins",
+      "verb": "zoom-out",
+      "what": "The evolutionary mechanism proposed by Jonathan Haidt and David Sloan Wilson in which natural selection equipped humans with a neurobiological switch that temporarily suppresses individual self-interest to forge cohesive, superorganism-like groups.",
+      "why_here": "Answers the evolutionary puzzle of why a Darwinian brain would ever possess hardware for dissolving its own ego: groups capable of flipping the 'hive switch' outcompeted groups of pure egoists.",
+      "background_nodes": [
+        {
+          "label": "Darwin's Tribe Paradox (1871)",
+          "what": "Charles Darwin's observation in *The Descent of Man* that while brave, self-sacrificing individuals are more likely to die within any single tribe, a tribe rich in self-transcending members will reliably defeat and replace a tribe of cowards.",
+          "whyHere": "Framed the tension between within-group egoism and between-group cooperation."
+        },
+        {
+          "label": "The Price Equation (George Price, 1970)",
+          "what": "George Price's exact covariance equation partitioning evolutionary change into selection between groups versus selection between individuals within groups.",
+          "whyHere": "Mathematically defines the exact condition under which group-level cohesion overrides individual selfishness."
+        },
+        {
+          "label": "The Hive Switch (Haidt, 2012)",
+          "what": "Jonathan Haidt's synthesis showing that humans are 'ninety percent chimp and ten percent bee'—possessing an ancient primate ego overlaid by a temporary collective switch triggered by synchronous rhythm, shared awe, and common threat.",
+          "whyHere": "Explains why self-transcendence feels intensely meaningful: it is the biological reward for stepping out of the primate status hierarchy."
+        }
+      ],
+      "opening_door": "Door B (Constraint/Paradox)",
+      "historical_anchor": "Charles Darwin's 1871 *The Descent of Man* tribe-selection passage, George Price's 1970 London covariance equation of multi-level selection, and Jonathan Haidt's 2012 'Hive Switch' formulation.",
+      "formalism_mode": "equation",
+      "exit_fact": "Shortly after deriving the exact mathematical equation showing how selfless sacrifice can evolve when group-level variance exceeds individual-level variance, the American chemist and mathematician George Price gave away all his money and possessions to homeless strangers in central London until he was sleeping on the floor of a squatter's room near Euston Station."
+    },
+    {
+      "chapter": 8,
+      "title": "Healthy Ego Dissolution Versus Depersonalization",
+      "subtitle": "Why Losing the Self Feels Blissful in One Brain and Terrifying in Another",
+      "lens": "contrasts",
+      "verb": "contrast",
+      "what": "The sharp clinical divergence between voluntary self-transcendence—where prefrontal self-scrutiny relaxes and emotional connectedness expands—and clinical depersonalization disorder, where hyperactive prefrontal threat alarms sever emotional feeling from a hyper-vigilant observer ego.",
+      "why_here": "Resolves a critical clinical confusion: not all 'loss of self' is transcendent. Comparing the two states reveals that bliss versus terror depends on whether the inner watchman is put to sleep or locked into overdrive.",
+      "background_nodes": [
+        {
+          "label": "Cortico-Limbic Disconnection Model (Sierra & Berrios, 1998)",
+          "what": "Mauricio Sierra and German Berrios's Cambridge University discovery that in clinical depersonalization, the left prefrontal cortex fires in hyper-vigilant overdrive while clamping down on the anterior insula and amygdala.",
+          "whyHere": "Explains why depersonalized patients feel like 'a robot watching myself from behind glass'—their self-monitoring ego is hyperactive while their emotional body is numbed."
+        },
+        {
+          "label": "Autonomic Skin-Conductance Flatlining",
+          "what": "Sierra and David's King's College London polygraph trials showing that depersonalization patients exhibit near-zero galvanic skin response to gruesome photographs despite normal visual recognition.",
+          "whyHere": "Proves that pathological ego-estrangement is an emergency emotional circuit breaker rather than an opening to the world."
+        },
+        {
+          "label": "Connectedness vs. Estrangement Axis",
+          "what": "The phenomenological fork where healthy self-transcendence quiets the self-critic while keeping the anterior insula open to awe and empathy, whereas depersonalization keeps the self-critic screaming while shutting the insula off.",
+          "whyHere": "Provides clinicians with an objective diagnostic boundary between contemplative insight and dissociative pathology."
+        }
+      ],
+      "opening_door": "Door C (Artifact/Measurement)",
+      "historical_anchor": "Mauricio Sierra and German Berrios's 1998 Cambridge University cortico-limbic disconnection model of depersonalization disorder and King's College London Institute of Psychiatry fMRI and skin-conductance studies (2002).",
+      "formalism_mode": "ledger_or_list",
+      "exit_fact": "In Mary Phillips and Mauricio Sierra's 2001 functional MRI study at the Institute of Psychiatry in London, showing disgusting or threatening photographs to healthy volunteers lit up the emotional anterior insula, whereas showing the exact same images to patients with chronic depersonalization disorder left the insula completely dark while firing Brodmann area 47 of the ventral prefrontal cortex in a rigid inhibitory lock."
+    },
+    {
+      "chapter": 9,
+      "title": "The Small Self and Prosocial Generosity",
+      "subtitle": "How Vast Landscapes Shrink the Ego and Expand Moral Concern",
+      "lens": "neighbors",
+      "verb": "go",
+      "what": "The cognitive-perceptual recalibration ('the small self') triggered by vast natural or architectural scale, which shrinks an individual's subjective self-importance and automatically increases generosity toward strangers.",
+      "why_here": "Traces the direct behavioral output of everyday self-transcendence: when an external stimulus forces the brain to expand its spatial frame of reference, petty status competition drops.",
+      "background_nodes": [
+        {
+          "label": "The Eucalyptus Grove Experiment (Piff & Keltner, 2015)",
+          "what": "Paul Piff and Dacher Keltner's UC Berkeley field experiment assigning half of participants to spend sixty seconds craning their necks up at a grove of two-hundred-foot Tasmanian blue-gum eucalyptus trees and the other half to stare at the flat facade of a campus science building.",
+          "whyHere": "When an experimenter 'accidentally' dropped a box of pens in front of them, the tree-gazers picked up nearly fifty percent more pens for the stranger than the building-gazers."
+        },
+        {
+          "label": "Graphical Circle-Self Shrinkage (Bai et al., 2017)",
+          "what": "Yang Bai and Dacher Keltner's cross-cultural field studies at Yosemite Valley and the Great Wall of China asking visitors to draw a circle representing themselves next to a circle representing the world.",
+          "whyHere": "Visitors standing at Tunnel View in Yosemite drew their 'Me' circle less than one-third the diameter drawn by visitors at Fisherman's Wharf in San Francisco."
+        },
+        {
+          "label": "Perceived Vastness & Accommodation",
+          "what": "The two-part cognitive trigger in which an encounter with vast scale exceeds the mind's current reference frame and forces an immediate downward revision of one's own rank in the room.",
+          "whyHere": "Shows how a sixty-second perceptual shift alters economic game-theory choices."
+        }
+      ],
+      "opening_door": "Door A (Scene)",
+      "historical_anchor": "Paul Piff, Pia Dietze, Matthew Feinberg, Daniel Stancato, and Dacher Keltner's 2015 UC Berkeley Tasmanian blue-gum eucalyptus grove experiments and Yang Bai's 2017 Yosemite Valley 'Small Self' circle-drawing trials.",
+      "formalism_mode": "ledger_or_list",
+      "exit_fact": "In Paul Piff and Dacher Keltner's 2015 Dictator Game trials at UC Berkeley, volunteers who had just spent four minutes watching high-definition footage of vast planetary landscapes gave away forty-two percent more raffle tickets to an anonymous stranger than volunteers who had just watched an equally uplifting comedy clip."
+    },
+    {
+      "chapter": 10,
+      "title": "Hemispheric Silence and the Stroke of Insight",
+      "subtitle": "What Happens When Left-Brain Narrative Chatter Suddenly Stops",
+      "lens": "cases",
+      "verb": "zoom-in",
+      "what": "The radical shift in conscious experience that occurs when vascular injury or targeted inhibition silences the left hemisphere's serial language and categorization loops, leaving the right hemisphere's holistic, boundaryless present-moment perception unopposed.",
+      "why_here": "Provides a dramatic neurological case study proving that the bounded, autobiographical ego is actively maintained by specific left-hemisphere language and somatic circuits.",
+      "background_nodes": [
+        {
+          "label": "The Left-Hemisphere 'Interpreter' (Gazzaniga, 1977)",
+          "what": "Michael Gazzaniga's split-brain discovery that the left hemisphere contains a compulsive narrative module that invents continuous stories, excuses, and causal links to maintain a coherent 'I' across time.",
+          "whyHere": "Identifies the neural narrator that chatters from waking until sleep."
+        },
+        {
+          "label": "Jill Bolte Taylor's 1996 Left-Hemisphere Hemorrhage",
+          "what": "On the morning of December 10, 1996, Harvard Medical School neuroanatomist Jill Bolte Taylor suffered a congenital arteriovenous malformation (AVM) rupture in her left cerebral hemisphere.",
+          "whyHere": "Over four hours, as blood pooled over her left language and parietal association areas, her internal verbal chatter went completely silent and she lost the ability to tell where her fingers ended and the shower wall began."
+        },
+        {
+          "label": "Urgesi's Neurosurgical Lesion Mapping (2010)",
+          "what": "Cosimo Urgesi's University of Udine study of eighty-eight brain-tumor patients before and five days after precision cortical resection.",
+          "whyHere": "Demonstrated that surgical removal of tissue in the inferior parietal lobule immediately and specifically elevated patients' trait Self-Transcendence scores within days of surgery, whereas frontal lesions did not."
+        }
+      ],
+      "opening_door": "Door A (Scene)",
+      "historical_anchor": "Harvard neuroanatomist Jill Bolte Taylor's December 10, 1996 left-hemisphere arteriovenous malformation hemorrhage in Belmont, Massachusetts, Michael Gazzaniga's split-brain left-hemisphere 'Interpreter' studies, and Cosimo Urgesi's 2010 University of Udine neurosurgical lesion mapping of self-transcendence.",
+      "formalism_mode": "ledger_or_list",
+      "exit_fact": "When Cosimo Urgesi and his neurosurgical team at the University of Udine tested eighty-eight brain-tumor patients three days before and five days after surgery in 2010, patients whose tumors were excised from the left or right inferior posterior parietal cortex showed an immediate, statistically significant jump in Cloninger Self-Transcendence scores less than one week after leaving the operating room."
+    },
+    {
+      "chapter": 11,
+      "title": "Existential Terror Management and Death Acceptance",
+      "subtitle": "Why Dissolving the Bounded Ego Disarms the Fear of Mortality",
+      "lens": "consequences",
+      "verb": "zoom-out",
+      "what": "The psychological mechanism by which experiencing the self as part of a larger whole removes the defensive hostility, tribalism, and existential panic normally triggered by reminders of physical death.",
+      "why_here": "Unpacks the deepest existential consequence of self-transcendence: when the mind no longer identifies exclusively with the bounded ego, mortality salience stops triggering defensive tribal aggression.",
+      "background_nodes": [
+        {
+          "label": "Terror Management Theory (Greenberg, Solomon & Pyszczynski, 1989)",
+          "what": "Inspired by Ernest Becker's 1973 *The Denial of Death*, the discovery that briefly reminding people of their own death ('mortality salience') causes them to harshly punish outsiders and cling dogmatically to in-group symbols.",
+          "whyHere": "In the famous 1989 Tucson municipal judge study, judges who wrote two paragraphs about their own death set an average bail of 455 dollars for a misdemeanor defendant, compared to 50 dollars among control judges."
+        },
+        {
+          "label": "Hopkins Terminal Cancer Trials (Griffiths, 2016)",
+          "what": "Roland Griffiths's randomized, double-blind crossover clinical trial at Johns Hopkins School of Medicine with fifty-one patients suffering from life-threatening cancer and clinical depression or death anxiety.",
+          "whyHere": "Proved that a single five-hour session of guided ego-transcendence produced an immediate, enduring eighty percent remission in death anxiety six months later."
+        },
+        {
+          "label": "Ego-Dissolution Mediation Curve",
+          "what": "Statistical mediation models showing that the long-term drop in clinical depression and fear of death is not predicted by visual imagery or drug dose alone, but specifically by the depth of the self-transcendent mystical experience score ($MEQ_{30}$).",
+          "whyHere": "Confirms that stepping outside the bounded ego is the active therapeutic mechanism that disarms fear of death."
+        }
+      ],
+      "opening_door": "Door C (Artifact/Measurement)",
+      "historical_anchor": "Jeff Greenberg, Sheldon Solomon, and Tom Pyszczynski's 1989 University of Arizona municipal court judge mortality-salience bail experiment and Roland Griffiths's 2016 Johns Hopkins University School of Medicine randomized trial with fifty-one terminal cancer patients.",
+      "formalism_mode": "equation",
+      "exit_fact": "In Jeff Greenberg, Sheldon Solomon, and Tom Pyszczynski's 1989 experiment with twenty-two sitting municipal court judges in Tucson, Arizona, judges who were asked to jot down two brief sentences about what would happen to their physical bodies when they died set bail nine times higher—four hundred and fifty-five dollars versus fifty dollars—on the exact same hypothetical case file as judges who had not been reminded of death."
+    },
+    {
+      "chapter": 12,
+      "title": "The Overview Horizon and Generativity",
+      "subtitle": "How Long-Term Self-Transcendence Rewires Legacy, Care, and Time Perception",
+      "lens": "open-questions",
+      "verb": "zoom-out",
+      "what": "The developmental transition across the human lifespan in which shrinking personal time horizons and repeated self-transcendent states shift human motivation from ego-accumulation toward transgenerational care ('generativity') and cosmic perspective ('gerotranscendence').",
+      "why_here": "Closes the volume by asking how temporary states of self-transcendence crystallize into a permanent trait across decades of life.",
+      "background_nodes": [
+        {
+          "label": "Generativity vs. Stagnation (Erikson, 1950)",
+          "what": "Erik Erikson's seventh and eighth developmental stages, where adult psychological health hinges on shifting concern from personal ambition to establishing and guiding the next generation.",
+          "whyHere": "Defines self-transcendence in developmental time: planting trees under whose shade one knows one will never sit."
+        },
+        {
+          "label": "Socioemotional Selectivity Theory (Carstensen, 1999)",
+          "what": "Laura Carstensen's Stanford University discovery that as humans perceive their remaining time horizon shrinking—whether through age or acute crisis—they systematically prune status-seeking ego goals and prioritize deep emotional meaning.",
+          "whyHere": "Explains why older adults report lower rates of anger and anxiety than thirty-year-olds despite physical decline."
+        },
+        {
+          "label": "Gerotranscendence (Tornstam, 1989)",
+          "what": "Lars Tornstam's Uppsala University longitudinal studies of Swedish octogenarians and centenarians documenting a natural developmental shift toward reduced self-preoccupation, decreased fear of death, and felt kinship with past and future generations.",
+          "whyHere": "Shows that self-transcendence is not an anomaly, but the natural developmental destination of a maturing human nervous system."
+        }
+      ],
+      "opening_door": "Door B (Constraint/Paradox)",
+      "historical_anchor": "Erik Erikson's 1950 *Childhood and Society* formulation of generativity, Lars Tornstam's 1989–1997 Uppsala University longitudinal studies of gerotranscendence, and Laura Carstensen's 1999 Stanford socioemotional selectivity experiments.",
+      "formalism_mode": "diagram",
+      "exit_fact": "When Laura Carstensen and her Stanford colleagues tracked emotional experience across ages eighteen to ninety-four using electronic pagers that beeped subjects five times a day for a week, older adults approaching the end of life reported significantly fewer negative emotions and longer-lasting positive states than twenty-five-year-olds—a shift that could be instantly reproduced in twenty-year-olds simply by framing a laboratory choice around a finite time horizon."
+    }
+  ]
+}

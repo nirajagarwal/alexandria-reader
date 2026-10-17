@@ -10,7 +10,6 @@
   "bg": "#111827",
   "theme": "lattice",
   "creator_constraints": {
-    "require_quote_per_chapter": true,
     "min_diagrams": 3
   },
   "chapters": [
@@ -20,7 +19,6 @@
       "subtitle": "Why Turning Tulip Contracts into Penalty-Free Options Sparked the 1637 Frenzy",
       "opening_door": "Door C (Artifact/Measurement)",
       "historical_anchor": "November 1636 to February 3, 1637 in Haarlem and Alkmaar, when a Dutch florists' guild proposal to let buyers cancel forward bulb contracts for a 3.5 percent fee converted binding debt into asymmetric call options and drove tulip prices up tenfold in ten weeks.",
-      "verbatim_quote": "One may buy and sell millions of guilders in tulips without having a single bulb, or a single stiver of coin in his purse.",
       "formalism_mode": "diagram",
       "exit_fact": "When the tulip fever broke at a Haarlem tavern auction on February 3, 1637, not a single bulb had changed hands in the winter taverns and the wider Dutch economy grew without interruption."
     },
@@ -30,7 +28,6 @@
       "subtitle": "John Law's Debt-for-Equity Swap and the Day Paper Pegged to Stock Collapsed",
       "opening_door": "Door A (Scene)",
       "historical_anchor": "1716 to May 1720 in Paris, where Scottish monetary theorist John Law merged the Banque Royale with the Mississippi Company to swap two billion livres of French royal war debt into equity—before making the fatal error of pegging paper currency directly to the company's share price.",
-      "verbatim_quote": "My bank is not a mine of gold, it is better; it is the circulation of credit that multiplies the wealth of the kingdom tenfold.",
       "formalism_mode": "diagram",
       "exit_fact": "After the Prince de Conti sent three wagons to the Banque Royale in May 1720 to redeem paper notes for silver coin, French food prices doubled in six months and John Law fled Paris with only eight hundred louis d'or in his pocket."
     },
@@ -40,7 +37,6 @@
       "subtitle": "How Thomas Guy Cashed Out of the South Sea Bubble While Isaac Newton Doubled Down",
       "opening_door": "Door B (Constraint/Paradox)",
       "historical_anchor": "April to September 1720 in London's Exchange Alley—John Blunt's South Sea Company lending investors money against their own shares to inflate the stock from £128 to £1,000, while 76-year-old bookseller Thomas Guy sold out in six disciplined tranches between £300 and £600.",
-      "verbatim_quote": "I can calculate the motions of the heavenly bodies, but not the madness of people.",
       "formalism_mode": "ledger_or_list",
       "exit_fact": "While Isaac Newton re-entered the market near the summer peak and lost twenty thousand pounds, Thomas Guy used his £234,000 cash profit to construct and endow Guy's Hospital in Southwark before the stock collapsed to £124."
     },
@@ -50,7 +46,6 @@
       "subtitle": "The Collapse of Overend Gurney and the Rule of the Lender of Last Resort",
       "opening_door": "Door A (Scene)",
       "historical_anchor": "May 10, 1866 in the City of London, when the giant discount house Overend, Gurney & Co. suspended payment on £11 million of liabilities after hiding rotten railway and steamship loans, prompting Walter Bagehot to formulate the central banking rule of Lombard Street.",
-      "verbatim_quote": "In a panic, the holders of the ultimate Bank reserve should lend to all that bring good securities quickly, freely, and readily, but at a very high rate of interest.",
       "formalism_mode": "ledger_or_list",
       "exit_fact": "Once Prime Minister Gladstone suspended the gold-backing ceiling of the Bank Charter Act on the evening of May 11 and the Bank of England lent £4 million at a punitive ten percent rate, the street run halted without a single note being printed beyond the legal limit."
     },
@@ -60,7 +55,6 @@
       "subtitle": "Shadow Trust Companies and How J. P. Morgan Stopped the Run of 1907",
       "opening_door": "Door A (Scene)",
       "historical_anchor": "October 21 to November 4, 1907 in Manhattan—after a failed corner on United Copper shares triggered a run on the unregulated Knickerbocker Trust Company, J. Pierpont Morgan audited the Trust Company of America overnight and locked New York's bank presidents inside his library until 4:45 a.m.",
-      "verbatim_quote": "This then is the place to stop the trouble.",
       "formalism_mode": "ledger_or_list",
       "exit_fact": "Realizing that the American financial system had survived only because one seventy-year-old private banker held the keys to his library door, Congress convened the Aldrich Commission and created the Federal Reserve System in December 1913."
     },
@@ -70,7 +64,6 @@
       "subtitle": "Thirty Paper Mills, Exploding Velocity, and the Overnight Miracle of the Rentenmark",
       "opening_door": "Door C (Artifact/Measurement)",
       "historical_anchor": "August to November 15, 1923 in Weimar Berlin, where Reichsbank President Rudolf Havenstein ran 30 paper mills and 1,783 printing presses day and night to print 4.2 trillion marks to the dollar, until Hjalmar Schacht halted central-bank bill discounting and issued the land-backed Rentenmark.",
-      "verbatim_quote": "Our thirty paper mills are working at full capacity, and soon we shall be able to deliver two-thirds of a quadrillion marks every single day.",
       "formalism_mode": "equation",
       "exit_fact": "At the peak of hyperinflation in October 1923, workers spent their wages so fast that the entire paper currency of Germany was worth less in gold than one-tenth of the pre-war coin supply."
     },
@@ -80,7 +73,6 @@
       "subtitle": "Call-Money Loans and Why Paying Down Debt Deepened the Crash of 1929",
       "opening_door": "Door B (Constraint/Paradox)",
       "historical_anchor": "October 24–29, 1929 on the New York Stock Exchange, when $8.5 billion in overnight call-money broker loans hit forced margin liquidation, analyzed by Yale economist Irving Fisher in his 1933 Debt-Deflation Theory after losing $10 million of his own fortune.",
-      "verbatim_quote": "The more the debtors pay, the more they owe. The very effort of individuals to lessen their burden of debt increases it, because of the mass effect of the stampede to liquidate.",
       "formalism_mode": "equation",
       "exit_fact": "Between October 1929 and March 1933, American borrowers paid off twenty percent of their nominal dollar debts, yet because forced liquidation drove the price level down by forty percent, every remaining dollar of debt weighed thirty-three percent more in real terms."
     },
@@ -90,7 +82,6 @@
       "subtitle": "How the Hunt Brothers Cornered Two Hundred Million Ounces and Lost to a Rule Change",
       "opening_door": "Door B (Constraint/Paradox)",
       "historical_anchor": "1979 to March 27, 1980 ('Silver Thursday') in Dallas and New York, where Nelson Bunker Hunt and William Herbert Hunt cornered one-third of the world's deliverable silver at $50.35 an ounce until COMEX Chairman Michel Marks enacted liquidation-only trading under Silver Rule 7.",
-      "verbatim_quote": "Anyone who thinks that a couple of fellows from Texas can corner the world silver market doesn't understand how big the world is.",
       "formalism_mode": "ledger_or_list",
       "exit_fact": "Once COMEX prohibited new long buyers and raised margin requirements to seventy-five thousand dollars per contract, silver plunged from fifty dollars to ten dollars and eighty cents, forcing the Hunts to pledge their Placid Oil empire for a $1.1 billion rescue loan."
     },
@@ -100,7 +91,6 @@
       "subtitle": "How Automated Portfolio Insurance Turned a Dip into a Twenty-Two Percent Crash",
       "opening_door": "Door B (Constraint/Paradox)",
       "historical_anchor": "Monday, October 19, 1987 in Chicago and New York, when computerized portfolio-insurance algorithms designed by Hayne Leland, Mark Rubinstein, and John O'Brien mechanically dumped S&P 500 futures into a falling market and drove the Dow Jones Industrial Average down 508 points.",
-      "verbatim_quote": "Portfolio insurance worked wonderfully if only one investor used it, just as a fire exit works wonderfully if only one person runs for the door.",
       "formalism_mode": "equation",
       "exit_fact": "Because dynamic delta-hedging requires selling shares whenever prices fall, the sixty billion dollars of insured pension portfolios acted as a synchronized mechanical seller that overwhelmed every human buyer on the floor in five hours."
     },
@@ -110,7 +100,6 @@
       "subtitle": "George Soros, the Impossible Trinity, and the Ten-Billion-Dollar Wager Against the Bank of England",
       "opening_door": "Door A (Scene)",
       "historical_anchor": "September 15–16, 1992 in London and New York, when Stanley Druckenmiller and George Soros shorted $10 billion of British pounds pegged at 2.95 Deutsche Marks in the European Exchange Rate Mechanism, forcing Chancellor Norman Lamont out of the peg by 7:40 p.m.",
-      "verbatim_quote": "If the position is right, why do you only have two billion dollars? Go for the jugular.",
       "formalism_mode": "diagram",
       "exit_fact": "While the Bank of England burned through twenty-seven billion dollars of reserves and hiked interest rates to fifteen percent in a single morning, Britain's exit from the peg lowered borrowing costs and launched sixteen consecutive years of economic expansion."
     },
@@ -120,7 +109,6 @@
       "subtitle": "Nick Leeson, Short Straddles, and the Earthquake That Brought Down Barings Bank",
       "opening_door": "Door C (Artifact/Measurement)",
       "historical_anchor": "July 1992 to February 26, 1995 on the Singapore International Monetary Exchange, where twenty-seven-year-old trader Nick Leeson hid losing Nikkei 225 futures bets inside secret error account 88888 and sold 37,000 short straddles right before the January 17, 1995 Kobe earthquake.",
-      "verbatim_quote": "I'm sorry.",
       "formalism_mode": "equation",
       "exit_fact": "When the Kobe earthquake knocked the Nikkei index down past eighteen thousand points, Leeson's unhedged futures and option losses reached £827 million—twice the entire equity capital of 233-year-old Barings Bank, which was sold to ING for one pound."
     },
@@ -130,7 +118,6 @@
       "subtitle": "How a Volume-Pegged Sell Order Erased a Trillion Dollars in Thirty-Six Minutes",
       "opening_door": "Door C (Artifact/Measurement)",
       "historical_anchor": "May 6, 2010 between 2:32 p.m. and 3:08 p.m. Eastern Time, when a Waddell & Reed mutual fund execution algorithm programmed to sell 75,000 E-Mini S&P 500 contracts at nine percent of rolling one-minute volume locked into a high-frequency feedback loop until a five-second CME pause halted trading.",
-      "verbatim_quote": "Our algorithm was instructed to target nine percent of the volume calculated over the previous minute, without regard to price or time.",
       "formalism_mode": "ledger_or_list",
       "exit_fact": "During a single fourteen-second window at 2:45 p.m., high-frequency trading firms passed twenty-seven thousand futures contracts back and forth while changing their net inventory by fewer than two hundred contracts."
     }

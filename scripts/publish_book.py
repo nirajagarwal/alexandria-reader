@@ -130,6 +130,38 @@ def generate_emblem_svg(theme: str, accent: str, slug: str = ""):
         elems.append(f'<circle cx="{cx}" cy="{cy}" r="11" fill="{accent}"/>')
         return f'<g class="emblem-foveal-aperture">{"".join(elems)}</g>'
 
+    if theme == "open-horizon" or slug == "self-transcendence":
+        # Bespoke Dissolving Boundary / Open Horizon geometry for Self-Transcendence
+        elems = []
+        # Inner crisp dodecagonal self-boundary that progressively opens into wider broken arcs
+        for ring_idx, r in enumerate((76, 122, 172, 226, 284, 346)):
+            dash_len = max(4, 38 - ring_idx * 6)
+            gap_len = 4 + ring_idx * 9
+            op = max(0.20, 0.88 - ring_idx * 0.11)
+            sw = max(1.2, 2.4 - ring_idx * 0.2)
+            rot = ring_idx * 15
+            elems.append(
+                f'<circle cx="{cx}" cy="{cy}" r="{r}" stroke="{accent}" stroke-width="{sw:.1f}" stroke-dasharray="{dash_len},{gap_len}" transform="rotate({rot} {cx} {cy})" fill="none" opacity="{op:.2f}"/>'
+            )
+        # 12 ascending parabolic/hyperbolic horizon rays opening upward and outward from the center
+        rays = 12
+        for i in range(rays):
+            ang = (i * 2 * math.pi) / rays
+            x1 = cx + 76 * math.cos(ang)
+            y1 = cy + 76 * math.sin(ang)
+            x2 = cx + 375 * math.cos(ang)
+            y2 = cy + 375 * math.sin(ang)
+            ctrl_ang = ang + 0.24 * (1 if i % 2 == 0 else -1)
+            cx_ctrl = cx + 225 * math.cos(ctrl_ang)
+            cy_ctrl = cy + 225 * math.sin(ctrl_ang)
+            elems.append(
+                f'<path d="M {x1:.1f} {y1:.1f} Q {cx_ctrl:.1f} {cy_ctrl:.1f} {x2:.1f} {y2:.1f}" stroke="{accent}" stroke-width="1.5" fill="none" opacity="0.48"/>'
+            )
+            elems.append(f'<circle cx="{x2:.1f}" cy="{y2:.1f}" r="4.5" fill="{accent}" opacity="0.72"/>')
+        elems.append(f'<circle cx="{cx}" cy="{cy}" r="28" stroke="{accent}" stroke-width="1.8" fill="{accent}" fill-opacity="0.10" opacity="0.90"/>')
+        elems.append(f'<circle cx="{cx}" cy="{cy}" r="7" fill="{accent}"/>')
+        return f'<g class="emblem-open-horizon">{"".join(elems)}</g>'
+
     # Slug-parameterized unique mathematical rose / spirograph / polyhedral family so no two covers ever repeat
     elems = []
     petals = 5 + (seed % 9)  # 5..13

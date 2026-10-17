@@ -55,7 +55,7 @@ Engineers unlocked that purity threshold through the Siemens chemical vapor depo
 
 $$\text{SiHCl}_3(g) + \text{H}_2(g) \longrightarrow \text{Si}(s) + 3\,\text{HCl}(g)$$
 
-In the autumn of 1959 at Fairchild Semiconductor in Mountain View, thirty-two-year-old Swiss physicist Jean Hoerni discovered how to exploit silicon's second chemical advantage over germanium: its native oxide. While germanium oxide ($\text{GeO}_2$) dissolves in warm water and flakes off in humid air, exposing silicon to oxygen at $1,000^\circ\text{C}$ grows a continuous, atomically bonded surface layer of vitreous silicon dioxide glass ($\text{Si}(s) + \text{O}_2(g) \longrightarrow \text{SiO}_2(s)$) with an electrical breakdown strength exceeding ten megavolts per centimeter ($E_{\text{breakdown}} \approx 10^7\text{ V/cm}$).
+On December 1, 1957, at Fairchild Semiconductor in Palo Alto, Swiss physicist Jean Hoerni discovered how to exploit silicon's second chemical advantage over germanium: its native oxide. While germanium oxide ($\text{GeO}_2$) dissolves in warm water and flakes off in humid air, exposing silicon to oxygen at $1,000^\circ\text{C}$ grows a continuous, atomically bonded surface layer of vitreous silicon dioxide glass ($\text{Si}(s) + \text{O}_2(g) \longrightarrow \text{SiO}_2(s)$) with an electrical breakdown strength exceeding ten megavolts per centimeter ($E_{\text{breakdown}} \approx 10^7\text{ V/cm}$).
 
 Instead of grinding away the oxide after diffusing dopants, Hoerni left the insulating $\text{SiO}_2$ glass permanently in place over the flat wafer surface. By etching microscopic windows through the oxide with hydrofluoric acid and diffusing boron or phosphorus atoms down Fick's concentration gradient ($J_{\text{dopant}} = - D \frac{\partial C}{\partial x}$), the delicate p-n junctions remained permanently sealed beneath a glass shield. Six months later, Robert Noyce evaporated thin aluminum lines directly on top of Hoerni's flat $\text{SiO}_2$ insulator to wire multiple transistors together on a single crystal die.
 
@@ -71,7 +71,7 @@ $$Q_{\text{theoretical}} = \frac{F}{M} = \frac{96,485 \text{ C/mol}}{6.94 \text{
 
 When M. Stanley Whittingham built the first rechargeable lithium battery at Exxon in the mid-1970s using a titanium disulfide ($\text{TiS}_2$) cathode and a metallic lithium anode, it delivered $2.2\text{ volts}$—but repeated charging caused metallic lithium to plate unevenly into sharp microscopic needles ($v_{\text{dendrite}} \propto J \cdot \nabla \phi$) that pierced the separator, short-circuited the cell, and ignited the organic electrolyte.
 
-In 1980, at the Inorganic Chemistry Laboratory at the University of Oxford, fifty-seven-year-old solid-state physicist John B. Goodenough realized that replacing sulfur ($S^{2-}$) with smaller, more electronegative oxygen anions ($O^{2-}$) would drop the cathode's chemical potential $\mu_{\text{Li}}^{\text{cathode}}$ and double the open-circuit voltage:
+In 1980, at the Inorganic Chemistry Laboratory at the University of Oxford, solid-state physicist John B. Goodenough realized that replacing sulfur ($S^{2-}$) with smaller, more electronegative oxygen anions ($O^{2-}$) would drop the cathode's chemical potential $\mu_{\text{Li}}^{\text{cathode}}$ and double the open-circuit voltage:
 
 $$V_{\text{oc}} = \frac{\mu_{\text{Li}}^{\text{anode}} - \mu_{\text{Li}}^{\text{cathode}}}{e}$$
 
@@ -272,7 +272,7 @@ Because lead has eighty-two orbital electrons, its probability of photoelectric 
 # The Molten Cryolite
 ## Aluminum and the Hall-Héroult Electrolytic Reduction (Oberlin, 1886)
 
-In February 1886, in a woodshed behind his family home in Oberlin, Ohio, twenty-two-year-old chemistry graduate Charles Martin Hall was melting minerals over a gasoline-fired furnace. Working with homemade clay crucibles and battery cells constructed from glass jam jars, Hall was attempting to solve the industrial enigma of aluminum. Concurrently and completely independently in Gentilly, France, twenty-two-year-old Paul Héroult was pursuing the exact same experiment.
+In February 1886, in a woodshed behind his family home in Oberlin, Ohio, chemistry graduate Charles Martin Hall was melting minerals over a gasoline-fired furnace. Working with homemade clay crucibles and battery cells constructed from glass jam jars, Hall was attempting to solve the industrial enigma of aluminum. Concurrently and completely independently in Gentilly, France, Paul Héroult was pursuing the exact same experiment.
 
 Aluminum is the most abundant metallic element in the Earth's crust, comprising eight percent of its mass—far more abundant than iron. Yet throughout the nineteenth century, pure aluminum was more valuable than silver or gold. Napoleon III held state banquets where honored guests ate with aluminum forks while lesser nobility used gold; the capstone of the Washington Monument in 1884 was cast from six pounds of solid aluminum as a display of national industrial wealth.
 

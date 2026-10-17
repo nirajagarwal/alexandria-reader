@@ -13,7 +13,7 @@ Standard anatomy textbooks present the human body as a static catalog of Latin n
 
 Every square millimeter of human tissue solves engineering contradictions that would destroy synthetic hardware. Epithelial cells line a stomach filled with hydrochloric acid strong enough to dissolve zinc without digesting themselves. Red blood cells eject their own nuclei and mitochondria so they can fold through capillaries narrower than their own diameter without consuming a single molecule of the oxygen they carry. Hair bundles inside the inner ear detect mechanical displacements smaller than the width of a hydrogen atom while submerged in warm fluid.
 
-A conventional narrative arc is the wrong instrument for examining such a system. You do not need a chronological biography to understand how a kidney concentrates salt four times higher than seawater or how a bone remodels its mineral struts along lines of principal stress. You need perpendicular observations—specific measurements, boundary conditions, and clinical anomalies where the hidden mechanism exposes itself.
+A conventional narrative arc is the wrong instrument for examining such a system. You do not need a chronological biography to understand how a kidney concentrates urine four times higher than blood plasma or how a bone remodels its mineral struts along lines of principal stress. You need perpendicular observations—specific measurements, boundary conditions, and clinical anomalies where the hidden mechanism exposes itself.
 
 When stripped of decorative metaphor, the numbers of human physiology carry their own weight. A twenty-watt brain, a hundred-square-meter lung membrane, and a three-billion-beat muscular band require no rhetorical inflation. Each observation stands alone as a window into the physical laws that keep thirty-seven trillion cells alive.
 
@@ -83,7 +83,7 @@ Weighing roughly 1,400 grams, the human brain represents just 2 percent of body 
 
 · · ·
 
-Because the brain lacks conventional lymphatic vessels inside the skull, neuroscientist Maiken Nedergaard wondered how neural tissue clears its daily metabolic trash. She discovered in 2012 that during deep slow-wave sleep, glial cells shrink by 60 percent. That contraction opens perivascular glymphatic channels, allowing cerebrospinal fluid to flush beta-amyloid and tau proteins out of the cortex.
+Because the brain lacks conventional lymphatic vessels inside the skull, neuroscientist Maiken Nedergaard wondered how neural tissue clears its daily metabolic trash. Lulu Xie and Maiken Nedergaard demonstrated in 2013 that during deep slow-wave sleep, the interstitial space between brain cells expands by 60 percent. That expansion opens perivascular glymphatic channels, allowing cerebrospinal fluid to flush beta-amyloid and tau proteins out of the cortex.
 
 · · ·
 
@@ -291,7 +291,7 @@ From an engineering standpoint, the kidney cleans blood backward. Instead of bui
 
 · · ·
 
-Physical chemist Werner Kuhn realized in 1942 that the Loop of Henle is a hairpin countercurrent multiplier. Pumps in the ascending limb create a horizontal gradient of only 200 milliosmoles per liter between the parallel tubes. Folding the tube into a deep hairpin multiplies that gradient lengthwise to 1,200 milliosmoles—four times saltier than seawater.
+Physical chemist Werner Kuhn realized in 1942 that the Loop of Henle is a hairpin countercurrent multiplier. Pumps in the ascending limb create a horizontal gradient of only 200 milliosmoles per liter between the parallel tubes. Folding the tube into a deep hairpin multiplies that gradient lengthwise to 1,200 milliosmoles—four times more concentrated than human blood plasma.
 
 · · ·
 
@@ -595,7 +595,7 @@ Fever is not a chaotic thermostat malfunction caused by pathogen heat. When macr
 # Sleep and Circadian Time
 ## Twenty-Thousand Master Clock Neurons, Adenosine Hourglasses, and REM Paralysis
 
-French geologist Michel Siffre descended 130 meters into the pitch-black Scarasson glacier cave in 1962 and lived for two months without a watch, calendar, or sunlight. His sleep-wake cycle and core body temperature did not dissolve into chaos. Instead, his body free-ran on an endogenous biological period of roughly 24 hours and 11 minutes.
+French geologist Michel Siffre descended 130 meters into the pitch-black Scarasson glacier cave in 1962 and lived for two months without a watch, calendar, or sunlight. His sleep-wake cycle did not dissolve into chaos, drifting near 24 hours and 30 minutes, while Charles Czeisler's 1999 Harvard forced-desynchrony trials pinned the intrinsic human pacemaker at 24 hours and 11 minutes.
 
 · · ·
 

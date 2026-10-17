@@ -10,7 +10,6 @@
   "bg": "#0f172a",
   "theme": "foveal-aperture",
   "creator_constraints": {
-    "require_quote_per_chapter": true,
     "min_diagrams": 3
   },
   "chapters": [
@@ -23,13 +22,24 @@
       "what": "The biological allocation mechanism that selects a tiny fraction of incoming sensory data for high-resolution cortical processing while suppressing the rest.",
       "why_here": "The anchor concept of the volume, establishing why a brain bombarded by ten million bits per second from the optic nerves alone can consciously process only forty to fifty bits per second.",
       "background_nodes": [
-        {"label": "Cocktail Party Problem (Cherry, 1953)", "what": "Colin Cherry's Imperial College dichotic listening experiments feeding two different spoken messages into a listener's left and right ears simultaneously.", "whyHere": "Proved that listeners shadowing one ear notice if the unattended voice switches to a pure tone or changes gender, yet remain completely deaf to its words, language, or meaning."},
-        {"label": "Broadbent's Filter Model (1958)", "what": "Donald Broadbent's Royal Navy air-traffic control model proposing a physical Y-shaped bottleneck where a short-term sensory buffer feeds a single limited-capacity channel.", "whyHere": "Explained why air-traffic controllers simultaneously addressed by two pilots calling on the same loudspeaker hear a garbled mixture unless the voices are separated in space or pitch."},
-        {"label": "Treisman's Attenuation Theory (1960)", "what": "Anne Treisman's Oxford discovery that unattended messages are turned down like a dimmer switch rather than physically unplugged.", "whyHere": "Explained why a person's own name or a contextually primed word leaps across from the unattended ear to hijack conscious awareness."}
+        {
+          "label": "Cocktail Party Problem (Cherry, 1953)",
+          "what": "Colin Cherry's Imperial College dichotic listening experiments feeding two different spoken messages into a listener's left and right ears simultaneously.",
+          "whyHere": "Proved that listeners shadowing one ear notice if the unattended voice switches to a pure tone or changes gender, yet remain completely deaf to its words, language, or meaning."
+        },
+        {
+          "label": "Broadbent's Filter Model (1958)",
+          "what": "Donald Broadbent's Royal Navy air-traffic control model proposing a physical Y-shaped bottleneck where a short-term sensory buffer feeds a single limited-capacity channel.",
+          "whyHere": "Explained why air-traffic controllers simultaneously addressed by two pilots calling on the same loudspeaker hear a garbled mixture unless the voices are separated in space or pitch."
+        },
+        {
+          "label": "Treisman's Attenuation Theory (1960)",
+          "what": "Anne Treisman's Oxford discovery that unattended messages are turned down like a dimmer switch rather than physically unplugged.",
+          "whyHere": "Explained why a person's own name or a contextually primed word leaps across from the unattended ear to hijack conscious awareness."
+        }
       ],
       "opening_door": "Door B (Constraint/Paradox)",
       "historical_anchor": "Colin Cherry's 1953 Imperial College London dichotic tape experiments, Donald Broadbent's 1958 Cambridge Applied Psychology Research Unit split-ear air-traffic control studies, and Anne Treisman's 1960 Oxford speech-switching breakthrough.",
-      "verbatim_quote": "How do we recognize what one person is saying when others are speaking at the same time?",
       "formalism_mode": "equation",
       "exit_fact": "When Anne Treisman swapped the two prose narratives mid-sentence between her Oxford subjects' left and right headphones in 1960, listeners unconsciously jumped to the ignored ear for one or two words to keep the story grammatical before snapping back to the assigned channel."
     },
@@ -42,13 +52,24 @@
       "what": "A thin sheet of inhibitory GABAergic neurons wrapping around the thalamus that intercepts sensory relays from the eyes and ears before they reach the cerebral cortex.",
       "why_here": "Reveals the physical hardware of the attentional gate: attention does not merely amplify chosen signals in the cortex, it actively inhibits competing sensory channels down in the thalamus.",
       "background_nodes": [
-        {"label": "Searchlight Hypothesis (Crick, 1984)", "what": "Francis Crick's Salk Institute proposal that the thalamic reticular nucleus acts as the brain's internal attentional searchlight.", "whyHere": "Identified the only anatomical structure positioned at the crossroads of every ascending thalamocortical sensory wire and every descending corticothalamic feedback wire."},
-        {"label": "Corticothalamic Feedback Ratio", "what": "The neuroanatomical discovery that descending axons from layer VI of the visual cortex back to the lateral geniculate nucleus outnumber ascending retinal axons by roughly ten to one.", "whyHere": "Demonstrates that the thalamus is not a passive relay station but an active filter controlled from above."},
-        {"label": "Cross-Modal Thalamic Inhibition (Halassa, 2015)", "what": "Michael Halassa and colleagues' optogenetic recordings showing that prefrontal cortex commands the visual sector of the thalamic reticular nucleus to silence visual thalamus when an animal attends to a sound.", "whyHere": "Provided the direct circuit proof that focusing on one sense physically turns down the gain on another sense at the subcortical entry gate."}
+        {
+          "label": "Searchlight Hypothesis (Crick, 1984)",
+          "what": "Francis Crick's Salk Institute proposal that the thalamic reticular nucleus acts as the brain's internal attentional searchlight.",
+          "whyHere": "Identified the only anatomical structure positioned at the crossroads of every ascending thalamocortical sensory wire and every descending corticothalamic feedback wire."
+        },
+        {
+          "label": "Corticothalamic Feedback Ratio",
+          "what": "The neuroanatomical discovery that descending axons from layer VI of the visual cortex back to the lateral geniculate nucleus outnumber ascending retinal axons by roughly ten to one.",
+          "whyHere": "Demonstrates that the thalamus is not a passive relay station but an active filter controlled from above."
+        },
+        {
+          "label": "Cross-Modal Thalamic Inhibition (Halassa, 2015)",
+          "what": "Michael Halassa and colleagues' optogenetic recordings showing that prefrontal cortex commands the visual sector of the thalamic reticular nucleus to silence visual thalamus when an animal attends to a sound.",
+          "whyHere": "Provided the direct circuit proof that focusing on one sense physically turns down the gain on another sense at the subcortical entry gate."
+        }
       ],
       "opening_door": "Door C (Artifact/Measurement)",
       "historical_anchor": "Francis Crick's 1984 Salk Institute paper 'Function of the Thalamic Reticular Complex: The Searchlight Hypothesis' and Michael Halassa's 2014–2015 NYU/MIT multi-electrode and optogenetic recordings of mice switching between auditory and visual attention tasks.",
-      "verbatim_quote": "What the reticular complex does is to select a small part of the thalamus and allow it to communicate with the cortex.",
       "formalism_mode": "diagram",
       "exit_fact": "When researchers optogenetically silenced the chloride transporters inside a mouse's visual thalamic reticular neurons during a sound-detection trial, the animal could no longer ignore a flashing light distraction and its error rate jumped by more than thirty percent."
     },
@@ -61,13 +82,24 @@
       "what": "The motor-sensory system that aims a two-degree central patch of high-density retinal cones across the visual scene three times per second while blanking out visual motion between landings.",
       "why_here": "Explains why human visual attention is yoked to a ballistic scanning system: because the retina cannot afford high resolution everywhere, the brain builds a stable world out of rapid keyhole snapshots.",
       "background_nodes": [
-        {"label": "Fovea Centralis Acuity Drop-Off", "what": "A 1.5-millimeter pit in the center of the retina packed with 150,000 cone photoreceptors per square millimeter, surrounded by a vast peripheral retina dominated by low-resolution rods.", "whyHere": "Forces the eye to move constantly because visual acuity drops by seventy-five percent just five degrees outside the center of gaze."},
-        {"label": "Yarbus Suction-Cap Scanpaths (1965)", "what": "Alfred Yarbus's Moscow biophysics experiments cementing tiny rubber suction caps with mirrors directly onto subjects' anesthetized corneas.", "whyHere": "Proved that eye movements are not driven by raw brightness or contrast alone, but by the specific question the observer is trying to answer."},
-        {"label": "Corollary Discharge & Saccadic Suppression", "what": "An internal copy of the eye-movement motor command sent from the superior colliculus to visual areas to suppress magnocellular motion signals fifty milliseconds before the eye moves.", "whyHere": "Explains why you never see your own eyes move in a bathroom mirror and why the room does not blur violently three times a second."}
+        {
+          "label": "Fovea Centralis Acuity Drop-Off",
+          "what": "A 1.5-millimeter pit in the center of the retina packed with 150,000 cone photoreceptors per square millimeter, surrounded by a vast peripheral retina dominated by low-resolution rods.",
+          "whyHere": "Forces the eye to move constantly because visual acuity drops by seventy-five percent just five degrees outside the center of gaze."
+        },
+        {
+          "label": "Yarbus Suction-Cap Scanpaths (1965)",
+          "what": "Alfred Yarbus's Moscow biophysics experiments cementing tiny rubber suction caps with mirrors directly onto subjects' anesthetized corneas.",
+          "whyHere": "Proved that eye movements are not driven by raw brightness or contrast alone, but by the specific question the observer is trying to answer."
+        },
+        {
+          "label": "Corollary Discharge & Saccadic Suppression",
+          "what": "An internal copy of the eye-movement motor command sent from the superior colliculus to visual areas to suppress magnocellular motion signals fifty milliseconds before the eye moves.",
+          "whyHere": "Explains why you never see your own eyes move in a bathroom mirror and why the room does not blur violently three times a second."
+        }
       ],
       "opening_door": "Door A (Scene)",
       "historical_anchor": "Émile Javal's 1879 Paris discovery that reading eyes jump in discrete *saccades* rather than gliding smoothly, and Alfred Yarbus's 1965 Moscow Institute for Information Transmission Problems suction-cap recordings of subjects inspecting Ilya Repin's painting *An Unexpected Visitor*.",
-      "verbatim_quote": "The human eyes voluntarily and involuntarily fixate on those elements of an object which carry or may carry essential and useful information.",
       "formalism_mode": "ledger_or_list",
       "exit_fact": "Because a human executes roughly one hundred and fifty thousand ballistic saccades during sixteen waking hours—each lasting thirty to fifty milliseconds—the brain actively shuts down incoming visual motion for more than forty minutes of every day without the observer ever noticing a gap."
     },
@@ -80,13 +112,24 @@
       "what": "The cortical computation in which multiple stimuli falling inside the same neuron's receptive field mutually suppress each other until top-down prefrontal bias tips the competition toward the attended target.",
       "why_here": "Answers what happens inside the cortex after sensory signals pass the thalamus: attention resolves neural crowding by shrinking a neuron's effective receptive field around the chosen object.",
       "background_nodes": [
-        {"label": "Receptive Field Escalation (V1 to V4 to IT)", "what": "As visual signals travel from primary visual cortex (V1) to area V4 and inferior temporal (IT) cortex, receptive fields widen from fractions of a degree to cover entire quadrants of the visual scene.", "whyHere": "Creates a severe crowding crisis: a single V4 neuron receives simultaneous input from a red bar and a green bar sitting side by side."},
-        {"label": "Biased Competition Model (Desimone & Duncan, 1995)", "what": "Robert Desimone and John Duncan's discovery that an unattended distractor inside the same V4 receptive field pulls the neuron's firing rate down unless top-down attention suppresses the distractor's synaptic input.", "whyHere": "Replaced the metaphor of a passive spotlight with an active local tug-of-war mediated by inhibitory interneurons."},
-        {"label": "Gamma-Band Coherence (Fries, 2001)", "what": "Pascal Fries's finding that attended V4 neurons synchronize their firing in the 35-to-70-hertz gamma band so their spikes arrive together at downstream targets.", "whyHere": "Shows how attention boosts signal impact without needing to burn exorbitant metabolic energy on raw firing rates."}
+        {
+          "label": "Receptive Field Escalation (V1 to V4 to IT)",
+          "what": "As visual signals travel from primary visual cortex (V1) to area V4 and inferior temporal (IT) cortex, receptive fields widen from fractions of a degree to cover entire quadrants of the visual scene.",
+          "whyHere": "Creates a severe crowding crisis: a single V4 neuron receives simultaneous input from a red bar and a green bar sitting side by side."
+        },
+        {
+          "label": "Biased Competition Model (Desimone & Duncan, 1995)",
+          "what": "Robert Desimone and John Duncan's discovery that an unattended distractor inside the same V4 receptive field pulls the neuron's firing rate down unless top-down attention suppresses the distractor's synaptic input.",
+          "whyHere": "Replaced the metaphor of a passive spotlight with an active local tug-of-war mediated by inhibitory interneurons."
+        },
+        {
+          "label": "Gamma-Band Coherence (Fries, 2001)",
+          "what": "Pascal Fries's finding that attended V4 neurons synchronize their firing in the 35-to-70-hertz gamma band so their spikes arrive together at downstream targets.",
+          "whyHere": "Shows how attention boosts signal impact without needing to burn exorbitant metabolic energy on raw firing rates."
+        }
       ],
       "opening_door": "Door C (Artifact/Measurement)",
       "historical_anchor": "Jeffrey Moran and Robert Desimone's 1985 NIH microelectrode recordings in macaque area V4 and Robert Desimone and John Duncan's 1995 formulation of the Biased Competition model of selective visual attention.",
-      "verbatim_quote": "Objects in the visual field compete for representation, analysis, and control in visual cortex, and this competition is biased toward information that is currently relevant to behavior.",
       "formalism_mode": "diagram",
       "exit_fact": "When Moran and Desimone placed both a preferred red bar and a non-preferred green bar inside a single macaque V4 neuron's receptive field, shifting the monkey's attention from the green bar to the red bar caused the exact same cell's firing rate to jump nearly threefold without either physical bar moving a millimeter on the screen."
     },
@@ -99,13 +142,24 @@
       "what": "The fast, involuntary bottom-up salience circuit anchored in the superior colliculus and amygdala that overrides voluntary focus whenever an environmental change violates the brain's statistical prior.",
       "why_here": "Explains why human attention is deliberately fragile: an animal that could lock its top-down focus so tightly that a snapping twig failed to interrupt it would be eaten before reproducing.",
       "background_nodes": [
-        {"label": "The Orienting Reflex (Pavlov, 1910)", "what": "Ivan Pavlov's observation that whenever a visitor walked into his St. Petersburg laboratory, dogs immediately froze their conditioned salivation and turned their ears, eyes, and nostrils toward the anomaly.", "whyHere": "Established that involuntary novelty detection possesses a hardwired biological veto over learned goal-directed behavior."},
-        {"label": "Neuronal Model of the Stimulus (Sokolov, 1960)", "what": "Evgeny Sokolov's Moscow State University discovery that the brain builds an internal prediction of repeated background noises and fires an orienting response even when a recurring tone is suddenly made quieter or shorter.", "whyHere": "Proved that bottom-up capture is triggered not by raw energy alone, but by prediction error against an internal model."},
-        {"label": "Bayesian Surprise (Itti & Baldi, 2005)", "what": "Laurent Itti and Pierre Baldi's mathematical proof that human eye fixations gravitate toward image patches that maximize the Kullback-Leibler divergence between prior and posterior beliefs.", "whyHere": "Quantifies exactly how many bits of model-updating force a stimulus exerts on the human gaze."}
+        {
+          "label": "The Orienting Reflex (Pavlov, 1910)",
+          "what": "Ivan Pavlov's observation that whenever a visitor walked into his St. Petersburg laboratory, dogs immediately froze their conditioned salivation and turned their ears, eyes, and nostrils toward the anomaly.",
+          "whyHere": "Established that involuntary novelty detection possesses a hardwired biological veto over learned goal-directed behavior."
+        },
+        {
+          "label": "Neuronal Model of the Stimulus (Sokolov, 1960)",
+          "what": "Evgeny Sokolov's Moscow State University discovery that the brain builds an internal prediction of repeated background noises and fires an orienting response even when a recurring tone is suddenly made quieter or shorter.",
+          "whyHere": "Proved that bottom-up capture is triggered not by raw energy alone, but by prediction error against an internal model."
+        },
+        {
+          "label": "Bayesian Surprise (Itti & Baldi, 2005)",
+          "what": "Laurent Itti and Pierre Baldi's mathematical proof that human eye fixations gravitate toward image patches that maximize the Kullback-Leibler divergence between prior and posterior beliefs.",
+          "whyHere": "Quantifies exactly how many bits of model-updating force a stimulus exerts on the human gaze."
+        }
       ],
       "opening_door": "Door A (Scene)",
       "historical_anchor": "Ivan Pavlov's 1910 St. Petersburg 'What-is-it?' reflex observations, Evgeny Sokolov's 1960 habituation mismatch experiments, and Laurent Itti and Pierre Baldi's 2005–2009 USC/UC Irvine eye-tracking validation of Bayesian surprise.",
-      "verbatim_quote": "It is this reflex which brings about the immediate response in man and animals to the slightest changes in the world around them, so that they immediately orientate their appropriate receptor organ in accordance with the perceptible quality in the agent bringing about the change.",
       "formalism_mode": "equation",
       "exit_fact": "In Evgeny Sokolov's Moscow recordings, repeating a loud sixty-decibel tone twenty times extinguished the subject's autonomic orienting response completely, yet dropping the twenty-first tone to a quiet forty decibels triggered an immediate skin-conductance spike and alpha-wave block because the silence violated the brain's timing template."
     },
@@ -118,13 +172,24 @@
       "what": "The anatomical division of labor across the vertebrate brain in which the left hemisphere specializes in narrow, foveal, object-grasping focus while the right hemisphere sustains broad, panoramic vigilance across the entire space.",
       "why_here": "Contrasts the two fundamental modes of attention and explains one of neurology's strangest phenomena: why right-parietal strokes erase the left half of reality while left-parietal strokes rarely erase the right.",
       "background_nodes": [
-        {"label": "Avian Dual-Attention Lateralization (Rogers, 1979)", "what": "Lesley Rogers's discovery that domestic chicks and songbirds use their right eye (wired to the left hemisphere) to peck tiny seeds out of gravel while using their left eye (wired to the right hemisphere) to scan the sky for hawks.", "whyHere": "Reveals the four-hundred-million-year evolutionary origin of divided hemispheric attention."},
-        {"label": "Piazza del Duomo Neglect Experiment (Bisiach & Luzzatti, 1978)", "what": "Edoardo Bisiach and Claudio Luzzatti's study of two Milan stroke patients with right-parietal lesions who omitted every building on the left side of the Piazza del Duomo when describing the square from memory, then immediately named those exact omitted buildings when asked to imagine standing at the opposite end of the square.", "whyHere": "Proved that hemispatial neglect is not blindness of the eye or destruction of memory, but a failure of the right hemisphere's attentional map."},
-        {"label": "Marek Marsel Mesulam's Asymmetric Spatial Model (1981)", "what": "The clinical demonstration that the right parietal cortex monitors both the left and right halves of space, whereas the left parietal cortex monitors only the right half.", "whyHere": "Explains the structural asymmetry of human spatial awareness after brain injury."}
+        {
+          "label": "Avian Dual-Attention Lateralization (Rogers, 1979)",
+          "what": "Lesley Rogers's discovery that domestic chicks and songbirds use their right eye (wired to the left hemisphere) to peck tiny seeds out of gravel while using their left eye (wired to the right hemisphere) to scan the sky for hawks.",
+          "whyHere": "Reveals the four-hundred-million-year evolutionary origin of divided hemispheric attention."
+        },
+        {
+          "label": "Piazza del Duomo Neglect Experiment (Bisiach & Luzzatti, 1978)",
+          "what": "Edoardo Bisiach and Claudio Luzzatti's study of two Milan stroke patients with right-parietal lesions who omitted every building on the left side of the Piazza del Duomo when describing the square from memory, then immediately named those exact omitted buildings when asked to imagine standing at the opposite end of the square.",
+          "whyHere": "Proved that hemispatial neglect is not blindness of the eye or destruction of memory, but a failure of the right hemisphere's attentional map."
+        },
+        {
+          "label": "Marek Marsel Mesulam's Asymmetric Spatial Model (1981)",
+          "what": "The clinical demonstration that the right parietal cortex monitors both the left and right halves of space, whereas the left parietal cortex monitors only the right half.",
+          "whyHere": "Explains the structural asymmetry of human spatial awareness after brain injury."
+        }
       ],
       "opening_door": "Door A (Scene)",
       "historical_anchor": "Edoardo Bisiach and Claudio Luzzatti's 1978 University of Milan Piazza del Duomo mental-imagery experiment on right-parietal stroke patients and Lesley Rogers's 1979 avian lateralized foraging-versus-predator studies.",
-      "verbatim_quote": "Unilateral neglect was similarly manifested by two patients in the description of a single, well-known piazza from two opposite perspectives given in rapid succession.",
       "formalism_mode": "ledger_or_list",
       "exit_fact": "When Bisiach and Luzzatti asked patient I. G. to imagine walking across the Piazza del Duomo and turning around to face the cathedral doors, the palaces on the northern side of the square—which had been completely invisible to his mind's eye sixty seconds earlier when they sat on his imagined left—instantly reappeared in vivid detail now that they sat on his imagined right."
     },
@@ -137,13 +202,24 @@
       "what": "The active maintenance of three to four discrete representations in prefrontal-parietal neural loops through sustained, phase-locked electrical oscillations.",
       "why_here": "Connects perceptual attention to thought: working memory is simply selective attention turned inward upon mental representations that are no longer physically present on the retina.",
       "background_nodes": [
-        {"label": "The Magical Number Seven (Miller, 1956)", "what": "George Miller's Harvard paper observing that immediate memory span holds roughly seven items only because subjects rapidly group inputs into familiar multi-item chunks.", "whyHere": "Opened the quantitative study of cognitive capacity limits."},
-        {"label": "Cowan's Four-Chunk Focus Limit (2001)", "what": "Nelson Cowan's behavioral and electrophysiological proof that when rehearsal and chunking are blocked, the human focus of attention holds strictly three to four independent items.", "whyHere": "Revised the true bottleneck of conscious mental workspace downward from seven to four."},
-        {"label": "Theta-Gamma Phase-Locking (Lisman & Idiart, 1995; Earl Miller, 2009)", "what": "The biophysical mechanism in which four to five fast 40-hertz gamma waves nest inside a single slow 6-hertz theta wave in the prefrontal cortex, with each gamma burst holding one distinct item.", "whyHere": "Explains why human working memory caps out at four items: if five or six gamma bursts crowd into a single theta cycle, their neural spikes overlap and scramble."}
+        {
+          "label": "The Magical Number Seven (Miller, 1956)",
+          "what": "George Miller's Harvard paper observing that immediate memory span holds roughly seven items only because subjects rapidly group inputs into familiar multi-item chunks.",
+          "whyHere": "Opened the quantitative study of cognitive capacity limits."
+        },
+        {
+          "label": "Cowan's Four-Chunk Focus Limit (2001)",
+          "what": "Nelson Cowan's behavioral and electrophysiological proof that when rehearsal and chunking are blocked, the human focus of attention holds strictly three to four independent items.",
+          "whyHere": "Revised the true bottleneck of conscious mental workspace downward from seven to four."
+        },
+        {
+          "label": "Theta-Gamma Phase-Locking (Lisman & Idiart, 1995; Earl Miller, 2009)",
+          "what": "The biophysical mechanism in which four to five fast 40-hertz gamma waves nest inside a single slow 6-hertz theta wave in the prefrontal cortex, with each gamma burst holding one distinct item.",
+          "whyHere": "Explains why human working memory caps out at four items: if five or six gamma bursts crowd into a single theta cycle, their neural spikes overlap and scramble."
+        }
       ],
       "opening_door": "Door B (Constraint/Paradox)",
       "historical_anchor": "George Miller's 1956 Harvard Psychological Review paper 'The Magical Number Seven, Plus or Minus Two,' Nelson Cowan's 2001 University of Missouri four-chunk revision, and Earl Miller and Timothy Buschman's MIT prefrontal cortex recordings.",
-      "verbatim_quote": "There seems to be some limitation built into us either by learning or by the design of our nervous systems, a limit that keeps our channel capacities in this general range.",
       "formalism_mode": "ledger_or_list",
       "exit_fact": "In Steven Luck and Edward Vogel's 1997 visual change-detection trials at the University of Iowa, human observers tracked colors, orientations, and conjunctions with near-perfect accuracy up to four objects, followed by a sharp cliff at five objects where contralateral parietal event-related potentials flatlined."
     },
@@ -156,13 +232,24 @@
       "what": "The failure to perceive a fully visible, high-contrast object sitting directly in the center of the visual field because cognitive attention is engaged in another task.",
       "why_here": "Exposes the most dangerous consequence of the attentional bottleneck: looking directly at an object with healthy eyes guarantees zero conscious perception if executive focus is occupied elsewhere.",
       "background_nodes": [
-        {"label": "NASA Ames HUD Simulator Study (Haines, 1980)", "what": "Richard Haines's flight-simulator trials at NASA Ames Research Center testing Boeing 727 airline pilots landing with newly invented windshield head-up displays (HUDs).", "whyHere": "Revealed that commercial pilots tracking digital altitude and airspeed numbers projected onto the glass could roll straight through a wide-body jet parked across the middle of the runway."},
-        {"label": "Inattentional Blindness (Mack & Rock, 1998)", "what": "Arien Mack and Irvin Rock's psychophysical experiments showing that subjects judging which arm of a cross is longer fail to see a word or geometric shape flashed directly at the fixation point.", "whyHere": "Coined the term and proved that conscious perception requires active attentional engagement."},
-        {"label": "Gorillas in Our Midst (Simons & Chabris, 1999)", "what": "Daniel Simons and Christopher Chabris's Harvard experiment in which half of observers counting basketball passes failed to notice a woman in a full gorilla suit walk to the center of the court, thump her chest, and walk off.", "whyHere": "Eye-tracking follow-ups proved that observers who missed the gorilla looked directly at her for an average of one full second."}
+        {
+          "label": "NASA Ames HUD Simulator Study (Haines, 1980)",
+          "what": "Richard Haines's flight-simulator trials at NASA Ames Research Center testing Boeing 727 airline pilots landing with newly invented windshield head-up displays (HUDs).",
+          "whyHere": "Revealed that commercial pilots tracking digital altitude and airspeed numbers projected onto the glass could roll straight through a wide-body jet parked across the middle of the runway."
+        },
+        {
+          "label": "Inattentional Blindness (Mack & Rock, 1998)",
+          "what": "Arien Mack and Irvin Rock's psychophysical experiments showing that subjects judging which arm of a cross is longer fail to see a word or geometric shape flashed directly at the fixation point.",
+          "whyHere": "Coined the term and proved that conscious perception requires active attentional engagement."
+        },
+        {
+          "label": "Gorillas in Our Midst (Simons & Chabris, 1999)",
+          "what": "Daniel Simons and Christopher Chabris's Harvard experiment in which half of observers counting basketball passes failed to notice a woman in a full gorilla suit walk to the center of the court, thump her chest, and walk off.",
+          "whyHere": "Eye-tracking follow-ups proved that observers who missed the gorilla looked directly at her for an average of one full second."
+        }
       ],
       "opening_door": "Door A (Scene)",
       "historical_anchor": "Richard Haines and Edith Fischer's 1980 NASA Ames Boeing 727 Head-Up Display runway-obstruction simulator trials and Daniel Simons and Christopher Chabris's 1999 Harvard basketball-pass gorilla experiment.",
-      "verbatim_quote": "Without attention, conscious perception cannot occur.",
       "formalism_mode": "ledger_or_list",
       "exit_fact": "When Daniel Memmert later repeated the basketball-pass study with infrared eye trackers, the observers who swore there was no gorilla in the room had fixated their foveas directly on the gorilla's chest an average of the exact same number of times as the observers who spotted her immediately."
     },
@@ -175,13 +262,24 @@
       "what": "The transient 200-to-500-millisecond refractory blackout during which the brain cannot consolidate a second target into working memory while it is still locking in the first.",
       "why_here": "Maps the temporal bottleneck of attention alongside its spatial bottleneck, showing why rapid task-switching and serial visual scanning leave blind windows in time.",
       "background_nodes": [
-        {"label": "Rapid Serial Visual Presentation (Raymond, Shapiro & Arnell, 1992)", "what": "Jane Raymond's University of Calgary experiment flashing ten letters per second at the same spot on a screen and asking subjects to identify a white letter (T1) and then detect whether a black X (T2) appeared shortly afterward.", "whyHere": "Discovered that when T2 arrives 200 to 500 milliseconds after T1, detection crashes as if the mind's eye literally blinked."},
-        {"label": "Lag-1 Sparing", "what": "The paradoxical finding that if the second target arrives within 100 milliseconds of the first target, both ride through the attentional gate together before the gate slams shut.", "whyHere": "Proved that the attentional blink is not sensory fatigue in the retina, but a protective lock that closes the working-memory consolidation gate once the first item enters."},
-        {"label": "Psychological Refractory Period & Attention Residue (Pashler, 1994; Leroy, 2009)", "what": "The central response-selection queue that delays a second decision until the first decision clears, compounded by lingering semantic activation from unfinished tasks.", "whyHere": "Explains why human multitasking in cockpits and offices degrades accuracy and doubles task completion time."}
+        {
+          "label": "Rapid Serial Visual Presentation (Raymond, Shapiro & Arnell, 1992)",
+          "what": "Jane Raymond's University of Calgary experiment flashing ten letters per second at the same spot on a screen and asking subjects to identify a white letter (T1) and then detect whether a black X (T2) appeared shortly afterward.",
+          "whyHere": "Discovered that when T2 arrives 200 to 500 milliseconds after T1, detection crashes as if the mind's eye literally blinked."
+        },
+        {
+          "label": "Lag-1 Sparing",
+          "what": "The paradoxical finding that if the second target arrives within 100 milliseconds of the first target, both ride through the attentional gate together before the gate slams shut.",
+          "whyHere": "Proved that the attentional blink is not sensory fatigue in the retina, but a protective lock that closes the working-memory consolidation gate once the first item enters."
+        },
+        {
+          "label": "Psychological Refractory Period & Attention Residue (Pashler, 1994; Leroy, 2009)",
+          "what": "The central response-selection queue that delays a second decision until the first decision clears, compounded by lingering semantic activation from unfinished tasks.",
+          "whyHere": "Explains why human multitasking in cockpits and offices degrades accuracy and doubles task completion time."
+        }
       ],
       "opening_door": "Door C (Artifact/Measurement)",
       "historical_anchor": "Jane Raymond, Kim Shapiro, and Karen Arnell's 1992 discovery of the 'Attentional Blink' in rapid serial visual streams, Harold Pashler's 1994 Psychological Refractory Period bottleneck, and Joshua Rubinstein, David Meyer, and Jeffrey Evans's 2001 task-switching cost measurements.",
-      "verbatim_quote": "This temporary deficit in the processing of rapidly presented sequential stimuli may be analogous to a blink of the mind's eye.",
       "formalism_mode": "equation",
       "exit_fact": "When Raymond, Shapiro, and Arnell presented the exact same stream of ten letters per second but instructed observers to ignore the white letter completely, detection of the trailing black X three hundred milliseconds later jumped from under fifty percent back to over ninety percent, proving the blindness was caused entirely by locking the first letter into memory."
     },
@@ -194,13 +292,24 @@
       "what": "The neurochemical coupling between unpredictable reward schedules in the midbrain and the locus coeruleus norepinephrine system that regulates whether the cortex exploits a single task or scans restlessly for alternatives.",
       "why_here": "Explains how external environments and digital feeds capture and hold human attention by manipulating prediction error and brainstem arousal gain.",
       "background_nodes": [
-        {"label": "Variable-Ratio Schedules (Skinner & Ferster, 1957)", "what": "B. F. Skinner's Harvard pigeon conditioning experiments showing that delivering food after an unpredictable number of pecks produces the highest, most extinction-resistant response rates in biology.", "whyHere": "Because every unrewarded check updates the subjective probability that the next check might pay off, attention cannot safely disengage."},
-        {"label": "Adaptive Gain Theory (Aston-Jones & Cohen, 2005)", "what": "Gary Aston-Jones and Jonathan Cohen's discovery that the locus coeruleus—a tiny brainstem nucleus of 30,000 norepinephrine neurons—operates in two distinct modes: phasic bursts that lock focus onto a high-utility task, and high tonic firing that makes the mind restless and distractible.", "whyHere": "Identified the physical dial that switches the brain between deep exploitation and broad exploration, directly visible in pupil diameter."},
-        {"label": "Incentive Salience ('Wanting' vs. 'Liking', Berridge, 1993)", "what": "Kent Berridge and Terry Robinson's University of Michigan demonstration that mesolimbic dopamine drives compulsive attentional magnetizing ('wanting') even when hedonic pleasure ('liking') is zero.", "whyHere": "Explains why people keep scrolling or pulling levers that they actively report disliking."}
+        {
+          "label": "Variable-Ratio Schedules (Skinner & Ferster, 1957)",
+          "what": "B. F. Skinner's Harvard pigeon conditioning experiments showing that delivering food after an unpredictable number of pecks produces the highest, most extinction-resistant response rates in biology.",
+          "whyHere": "Because every unrewarded check updates the subjective probability that the next check might pay off, attention cannot safely disengage."
+        },
+        {
+          "label": "Adaptive Gain Theory (Aston-Jones & Cohen, 2005)",
+          "what": "Gary Aston-Jones and Jonathan Cohen's discovery that the locus coeruleus—a tiny brainstem nucleus of 30,000 norepinephrine neurons—operates in two distinct modes: phasic bursts that lock focus onto a high-utility task, and high tonic firing that makes the mind restless and distractible.",
+          "whyHere": "Identified the physical dial that switches the brain between deep exploitation and broad exploration, directly visible in pupil diameter."
+        },
+        {
+          "label": "Incentive Salience ('Wanting' vs. 'Liking', Berridge, 1993)",
+          "what": "Kent Berridge and Terry Robinson's University of Michigan demonstration that mesolimbic dopamine drives compulsive attentional magnetizing ('wanting') even when hedonic pleasure ('liking') is zero.",
+          "whyHere": "Explains why people keep scrolling or pulling levers that they actively report disliking."
+        }
       ],
       "opening_door": "Door B (Constraint/Paradox)",
       "historical_anchor": "B. F. Skinner and Charles Ferster's 1957 Harvard variable-ratio reinforcement experiments, Kent Berridge and Terry Robinson's 1993 Michigan dissociation of dopaminergic 'wanting' from hedonic 'liking,' and Gary Aston-Jones and Jonathan Cohen's 2005 Princeton/UPenn locus coeruleus Adaptive Gain Theory.",
-      "verbatim_quote": "Variable-ratio schedules generate a very high rate of responding and render the behavior extraordinarily resistant to extinction.",
       "formalism_mode": "ledger_or_list",
       "exit_fact": "In Gary Aston-Jones and Jonathan Cohen's primate recordings, a monkey's baseline pupil diameter—governed directly by tonic firing in the thirty thousand neurons of the locus coeruleus—predicted whether the animal would stay locked on its current visual target or abandon the task to explore the room several seconds before its hand moved."
     },
@@ -213,13 +322,24 @@
       "what": "The steep, predictable collapse in human signal-detection sensitivity after twenty to thirty minutes of monitoring an uneventful display for rare critical events.",
       "why_here": "Traces the industrial and military consequence of attentional limits: the quieter and more reliable an automated system becomes, the worse a human operator becomes at catching its rare failures.",
       "background_nodes": [
-        {"label": "The Mackworth Clock Test (1943)", "what": "Norman Mackworth's Cambridge wartime laboratory clock whose black pointer jumped forward once per second in 3.6-degree steps, except at rare, irregular intervals when it jumped twice as far (7.2 degrees).", "whyHere": "Built for the Royal Air Force Coastal Command to discover why airborne radar operators missed German U-boat periscopes after half an hour on patrol."},
-        {"label": "Signal Detection Theory (Green & Swets, 1966)", "what": "The mathematical separation of an observer's true perceptual sensitivity ($d'$) from their conservative or liberal decision threshold ($\\beta$).", "whyHere": "Proved that when target prevalence is very low (under 1%), operators shift their threshold $\\beta$ dramatically upward and miss up to forty percent of real threats."},
-        {"label": "The Low-Prevalence Effect (Wolfe, Horowitz & Kenner, 2005)", "what": "Jeremy Wolfe's Harvard Medical School baggage-screening experiments showing that when weapons appear in only 1% of X-ray bags instead of 50%, miss rates more thanquadruple from 7% to 30%.", "whyHere": "Explains why airport screeners, radiologists, and semi-autonomous vehicle drivers fail precisely when threats are rarest."}
+        {
+          "label": "The Mackworth Clock Test (1943)",
+          "what": "Norman Mackworth's Cambridge wartime laboratory clock whose black pointer jumped forward once per second in 3.6-degree steps, except at rare, irregular intervals when it jumped twice as far (7.2 degrees).",
+          "whyHere": "Built for the Royal Air Force Coastal Command to discover why airborne radar operators missed German U-boat periscopes after half an hour on patrol."
+        },
+        {
+          "label": "Signal Detection Theory (Green & Swets, 1966)",
+          "what": "The mathematical separation of an observer's true perceptual sensitivity ($d'$) from their conservative or liberal decision threshold ($\\beta$).",
+          "whyHere": "Proved that when target prevalence is very low (under 1%), operators shift their threshold $\\beta$ dramatically upward and miss up to forty percent of real threats."
+        },
+        {
+          "label": "The Low-Prevalence Effect (Wolfe, Horowitz & Kenner, 2005)",
+          "what": "Jeremy Wolfe's Harvard Medical School baggage-screening experiments showing that when weapons appear in only 1% of X-ray bags instead of 50%, miss rates more thanquadruple from 7% to 30%.",
+          "whyHere": "Explains why airport screeners, radiologists, and semi-autonomous vehicle drivers fail precisely when threats are rarest."
+        }
       ],
       "opening_door": "Door B (Constraint/Paradox)",
       "historical_anchor": "Norman Mackworth's November 1943 Cambridge Applied Psychology Unit 'Clock Test' for Royal Air Force Coastal Command anti-submarine radar crews, David Green and John Swets's Signal Detection Theory, and Jeremy Wolfe's 2005 Harvard Medical School low-prevalence baggage-screening experiments.",
-      "verbatim_quote": "A sharp decline in the number of signals detected occurred after the first half-hour of the watch.",
       "formalism_mode": "equation",
       "exit_fact": "In Norman Mackworth's 1943 Cambridge bunker trials, RAF cadets watching the jumping clock pointer missed fifteen percent of double-jumps during the first thirty minutes of watch, jumped to twenty-six percent misses in the second thirty minutes, and recovered completely only when Coastal Command shortened radar watches to thirty-minute shifts or injected artificial training blips onto the screen."
     },
@@ -232,13 +352,24 @@
       "what": "The reciprocal anti-correlation between the brain's outward-facing Dorsal Attention Network and its inward-facing Default Mode Network, which suppresses self-referential chatter during states of deep absorption.",
       "why_here": "Closes the landscape on the central paradox of human focus: why forced vigilance feels exhausting after thirty minutes, yet total absorption in a demanding craft can run for hours while quieting the sense of self.",
       "background_nodes": [
-        {"label": "The Default Mode Network (Raichle, 2001)", "what": "Marcus Raichle's Washington University PET and fMRI discovery that a specific midline circuit—the medial prefrontal cortex and posterior cingulate cortex—burns maximal metabolic energy when a person is doing nothing at all.", "whyHere": "Revealed that the 'resting' brain is actually running a costly simulation of autobiographical memory, social status, and future worry."},
-        {"label": "Anti-Correlated Network Seesaw (Fox et al., 2005)", "what": "Michael Fox and Marcus Raichle's demonstration that the Dorsal Attention Network and the Default Mode Network operate like opposite ends of a mechanical seesaw: as task focus rises, midline self-referential activity drops below baseline.", "whyHere": "Explains why deep absorption in a mathematical proof, surgical suture, or musical score temporarily extinguishes self-conscious anxiety."},
-        {"label": "Transient Hypofrontality & Explicit Monitoring Choking (Beilock, 2002; Dietrich, 2004)", "what": "The finding that during peak skilled performance, unnecessary prefrontal self-monitoring quiets down, whereas turning conscious attention back onto one's own fingers or mechanics ('explicit monitoring') wrecks execution.", "whyHere": "Shows that mastery relies on delegating execution to trained sensorimotor loops while keeping the Default Mode Network quiet."}
+        {
+          "label": "The Default Mode Network (Raichle, 2001)",
+          "what": "Marcus Raichle's Washington University PET and fMRI discovery that a specific midline circuit—the medial prefrontal cortex and posterior cingulate cortex—burns maximal metabolic energy when a person is doing nothing at all.",
+          "whyHere": "Revealed that the 'resting' brain is actually running a costly simulation of autobiographical memory, social status, and future worry."
+        },
+        {
+          "label": "Anti-Correlated Network Seesaw (Fox et al., 2005)",
+          "what": "Michael Fox and Marcus Raichle's demonstration that the Dorsal Attention Network and the Default Mode Network operate like opposite ends of a mechanical seesaw: as task focus rises, midline self-referential activity drops below baseline.",
+          "whyHere": "Explains why deep absorption in a mathematical proof, surgical suture, or musical score temporarily extinguishes self-conscious anxiety."
+        },
+        {
+          "label": "Transient Hypofrontality & Explicit Monitoring Choking (Beilock, 2002; Dietrich, 2004)",
+          "what": "The finding that during peak skilled performance, unnecessary prefrontal self-monitoring quiets down, whereas turning conscious attention back onto one's own fingers or mechanics ('explicit monitoring') wrecks execution.",
+          "whyHere": "Shows that mastery relies on delegating execution to trained sensorimotor loops while keeping the Default Mode Network quiet."
+        }
       ],
       "opening_door": "Door C (Artifact/Measurement)",
       "historical_anchor": "Marcus Raichle's 2001 Washington University in St. Louis discovery of the Default Mode Network via oxygen-15 PET scans, Michael Fox and Raichle's 2005 anti-correlated network discovery, and Judson Brewer's 2011 Yale fMRI studies of posterior cingulate deactivation during effortless absorption.",
-      "verbatim_quote": "There exists an organized mode of brain function that is present as a baseline or default state and is suspended during specific goal-directed behaviors.",
       "formalism_mode": "diagram",
       "exit_fact": "In Marcus Raichle's oxygen-15 positron emission tomography scans at Washington University, shifting a human brain from quiet daydreaming to an intense visual target-tracking task increased total cerebral energy consumption by less than five percent because the metabolic savings from shutting down the midline Default Mode Network nearly offset the cost of firing the visual attention circuits."
     }

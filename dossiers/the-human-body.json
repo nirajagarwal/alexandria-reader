@@ -10,7 +10,6 @@
   "bg": "#1c1014",
   "theme": "harmonic-rings",
   "creator_constraints": {
-    "require_quote_per_chapter": false,
     "min_diagrams": 0
   },
   "chapters": [

@@ -93,7 +93,7 @@ Optical spectroscopy of single-bubble sonoluminescence later confirmed that the 
 # The Crystalline Vector
 ## Jacques and Pierre Curie and Hemimorphic Polar Asymmetry (Paris, 1880)
 
-In 1880, in the mineralogy laboratory of the Sorbonne, twenty-four-year-old Jacques Curie and his twenty-one-year-old brother Pierre were investigating the pyroelectric effect—the ability of minerals like tourmaline to accumulate electric charges when heated. Contemporary physicists treated pyroelectricity as a purely thermal phenomenon. The Curie brothers suspected that heat was merely an indirect trigger: uneven heating caused non-uniform thermal expansion, which subjected the crystal lattice to mechanical strain.
+In 1880, in the mineralogy laboratory of the Sorbonne, Jacques Curie and his brother Pierre were investigating the pyroelectric effect—the ability of minerals like tourmaline to accumulate electric charges when heated. Contemporary physicists treated pyroelectricity as a purely thermal phenomenon. The Curie brothers suspected that heat was merely an indirect trigger: uneven heating caused non-uniform thermal expansion, which subjected the crystal lattice to mechanical strain.
 
 To test whether pure mechanical stress at constant temperature could generate electricity, the Curies built a tin-leaf electrometer and a screw-driven vise. They cut thin crystal plates of tourmaline, quartz, topaz, cane sugar, and Rochelle salt along specific crystallographic axes. When they compressed the crystals with weights, opposite faces developed surface charges directly proportional to the applied mechanical force; releasing the weights reversed the sign of the charge. They had discovered piezoelectricity.
 
@@ -117,7 +117,7 @@ $$c = \sqrt{\frac{g}{k} \tanh(k h)}$$
 
 Because long wavelengths travel faster than short wavelengths, any localized pulse of water must disperse, spreading its energy into a trailing train of diminishing ripples.
 
-Yet in August 1834, twenty-six-year-old Scottish engineer John Scott Russell watched a single mound of water defy that proof along the Union Canal at Hermiston, six miles west of Edinburgh. A pair of horses was towing a canal boat at high speed when the vessel struck an underwater obstacle and stopped dead. The water piled up around the bow did not disperse into ripples; instead, it detached from the boat as a smooth, rounded solitary crest thirty feet long and eighteen inches high. Russell spurred his horse along the towpath and galloped beside the wave for nearly two miles as it rolled forward at eight miles per hour without changing its shape or losing speed.
+Yet in August 1834, Scottish engineer John Scott Russell watched a single mound of water defy that proof along the Union Canal at Hermiston, six miles west of Edinburgh. A pair of horses was towing a canal boat at high speed when the vessel struck an underwater obstacle and stopped dead. The water piled up around the bow did not disperse into ripples; instead, it detached from the boat as a smooth, rounded solitary crest thirty feet long and eighteen inches high. Russell spurred his horse along the towpath and galloped beside the wave for nearly two miles as it rolled forward at eight miles per hour without changing its shape or losing speed.
 
 When Airy and Stokes dismissed his report as an illusion of shallow canal geometry, Russell built a thirty-foot test tank in his garden and proved empirically that the solitary wave's speed depends directly on its amplitude $A$:
 
@@ -165,7 +165,7 @@ For two centuries, natural philosophers treated liquid and gas as fundamentally 
 
 In 1869, Thomas Andrews, professor of chemistry at Queen's College, Belfast, sealed pure carbon dioxide inside thick-walled capillary glass tubes and subjected it to hydrostatic pressures exceeding one hundred atmospheres while controlling the temperature in a water bath. At $13^\circ\text{C}$, increasing the pressure caused liquid carbon dioxide to condense at the bottom of the tube with a sharp meniscus separating it from the gas above. At $21^\circ\text{C}$, condensation required higher pressure, but the phase boundary remained distinct.
 
-When Andrews raised the water bath to $31.1^\circ\text{C}$ and pushed the pressure past $73\text{ atmospheres}$, the curved meniscus dividing liquid and gas flattened, grew faint, and vanished completely as the interfacial surface tension fell to zero ($\gamma \to 0$). Andrews recorded in his Bakerian Lecture to the Royal Society: "The surface of demarcation between the liquid and gas became faint, lost its curvature, and at last disappeared. The space was then occupied by a homogeneous fluid, which exhibited, when the pressure was suddenly diminished, a peculiar flickering striae or opalescence." Above $31.1^\circ\text{C}$, no amount of mechanical compression could condense carbon dioxide into a separate liquid phase.
+When Andrews raised the water bath to $31.1^\circ\text{C}$ and pushed the pressure past $73\text{ atmospheres}$, the curved meniscus dividing liquid and gas flattened, grew faint, and vanished completely as the interfacial surface tension fell to zero ($\gamma \to 0$). Andrews recorded in his Bakerian Lecture to the Royal Society: that the boundary between liquid and gas grew faint, lost its meniscus curvature, and vanished into a homogeneous fluid that shimmered with flickering opalescence whenever the pressure dropped. Above $31.1^\circ\text{C}$, no amount of mechanical compression could condense carbon dioxide into a separate liquid phase.
 
 Andrews had discovered the critical point ($T_c, P_c$), where the first and second volume derivatives of pressure along an isotherm vanish simultaneously and liquid density equals gas density ($\rho_{\text{liquid}} = \rho_{\text{gas}}$):
 
@@ -185,7 +185,7 @@ $$T_{c} = \frac{8a}{27Rb}, \qquad P_{c} = \frac{a}{27b^2}, \qquad V_{c} = 3b$$
 # The Drifting Slabs
 ## Alfred Wegener and the Rheology of the Earth Mantle (Marburg, 1912)
 
-On January 6, 1912, at the annual meeting of the Geological Association in Frankfurt, thirty-one-year-old German meteorologist and Greenland explorer Alfred Wegener delivered a paper titled "The Geophysical Basis of the Evolution of the Earth's Surface Features." Wegener proposed that the continents are not permanent granite pillars anchored to the Earth's interior, but buoyant blocks that fractured and drifted thousands of kilometers across the ocean floor.
+On January 6, 1912, at the annual meeting of the Geological Association in Frankfurt, German meteorologist and Greenland explorer Alfred Wegener delivered a paper titled *The Geophysical Basis of the Evolution of the Earth's Surface Features*. Wegener proposed that the continents are not permanent granite pillars anchored to the Earth's interior, but buoyant blocks that fractured and drifted thousands of kilometers across the ocean floor.
 
 Geological orthodoxy rejected Wegener's hypothesis. Prominent geologists insisted that the Earth's crust was rigid and immobile, arguing that ancient land bridges had once spanned the Atlantic to explain why identical fossils of the freshwater reptile *Mesosaurus* and the fern *Glossopteris* appeared in both Brazil and South Africa, before sinking into the oceanic abyss. Wegener countered that continental granite ($\rho_{\text{crust}} \approx 2.7\text{ g/cm}^3$) is substantially less dense than oceanic basalt and mantle rock ($\rho_{\text{mantle}} \approx 3.3\text{ g/cm}^3$). Under Archimedes' principle of hydrostatic isostasy:
 
@@ -227,7 +227,7 @@ Because no finite block of metal can contain an infinite supply of a physical fl
 # The Ghost Inventory
 ## Wolfgang Pauli and the Missing Momentum of Beta Decay (Zurich, 1930)
 
-"Dear Radioactive Ladies and Gentlemen," began a one-page typewritten letter mailed from Zurich on December 4, 1930, to a nuclear physics conference in Tübingen. Thirty-year-old theoretical physicist Wolfgang Pauli had declined to attend the meeting in person because he preferred to attend a charity ballroom dance in Zurich, but his letter proposed a "desperate remedy" to rescue the law of conservation of energy.
+his dear radioactive ladies and gentlemen, began a one-page typewritten letter mailed from Zurich on December 4, 1930, to a nuclear physics conference in Tübingen. theoretical physicist Wolfgang Pauli had declined to attend the meeting in person because he preferred to attend a charity ballroom dance in Zurich, but his letter proposed a "desperate remedy" to rescue the law of conservation of energy.
 
 Sixteen years earlier, in 1914, James Chadwick had discovered a disturbing anomaly in radioactive beta decay. In alpha decay, an unstable nucleus ejects an alpha particle at a single discrete energy:
 

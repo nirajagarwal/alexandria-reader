@@ -10,7 +10,6 @@
   "bg": "#181310",
   "theme": "harmonic-rings",
   "creator_constraints": {
-    "require_quote_per_chapter": true,
     "min_diagrams": 3
   },
   "chapters": [
@@ -20,7 +19,6 @@
       "subtitle": "Fixing Radios by Thinking, the Name of the Bird, and the Loss of Arline",
       "opening_door": "Door A (Scene)",
       "historical_anchor": "Twelve-year-old Richard Feynman repairing vacuum-tube radios in Far Rockaway, Queens during the Great Depression by deducing why the loud hum faded, learning from his father Melville in the Catskill woods the difference between the name of a bird and its behavior, and caring for his wife Arline Greenbaum at the Albuquerque tuberculosis sanatorium until June 16, 1945.",
-      "verbatim_quote": "You can know the name of that bird in all the languages of the world, but when you're finished, you'll know absolutely nothing whatever about the bird.",
       "formalism_mode": "ledger_or_list",
       "exit_fact": "When Arline died of lymphatic tuberculosis at Presbyterian Sanatorium on June 16, 1945, the bedside alarm clock stopped at 9:22 p.m. because Feynman had repaired its loose dial earlier that evening and set it down on the nightstand."
     },
@@ -30,7 +28,6 @@
       "subtitle": "How a High School Chalkboard Reframed the Laws of Motion",
       "opening_door": "Door B (Constraint/Paradox)",
       "historical_anchor": "Physics teacher Abram Bader keeping fifteen-year-old Richard Feynman after class at Far Rockaway High School in 1933 to show him how a falling parabola minimizes the time integral of kinetic minus potential energy (Hamilton's Principle of Least Action).",
-      "verbatim_quote": "The particle doesn't just respond to the force right where it is; it seems to smell all the neighboring paths and choose the one with the least action.",
       "formalism_mode": "equation",
       "exit_fact": "Every macroscopic law of classical mechanics, optics, and electromagnetism collapses into the single requirement that the first-order variation of the action integral vanishes along the true trajectory."
     },
@@ -40,7 +37,6 @@
       "subtitle": "Dirac's Mysterious Phrase and the Sum Over Every Possible Path",
       "opening_door": "Door A (Scene)",
       "historical_anchor": "Graduate student Feynman meeting European physicist Herbert Jehle at a Nassau Tavern beer party in Princeton in autumn 1941, learning of Paul Dirac's 1933 remark on the quantum phase factor, and proving on a Fine Hall blackboard the next morning that 'analogous to' meant directly proportional.",
-      "verbatim_quote": "You know, what Dirac means by analogous to is simply equal to—there is just a proportionality constant in front!",
       "formalism_mode": "equation",
       "exit_fact": "While Jehle copied the derivation furiously into his notebook, Dirac himself later remarked at the 1946 Princeton Bicentennial that he had never imagined the phase relation could be turned into a complete calculus of quantum mechanics."
     },
@@ -50,7 +46,6 @@
       "subtitle": "How Mechanical Tolerances Reduced a Million Combinations to Twenty Minutes",
       "opening_door": "Door B (Constraint/Paradox)",
       "historical_anchor": "Twenty-five-year-old group leader Richard Feynman at the Manhattan Project's Los Alamos laboratory (1943–1945) exploiting the mechanical cam slack of Mosler three-wheel filing cabinets and reading off the final two wheels of open safes to crack the atomic project's classified vaults.",
-      "verbatim_quote": "When a guy has his safe open, you go in to talk to him and you casually put your hand on the handle and spin the dial to get the last two numbers.",
       "formalism_mode": "ledger_or_list",
       "exit_fact": "When Feynman pulled open Captain Karl's newly installed safe to borrow classified uranium-enrichment reports, he left a yellow slip inside reading that he had picked the lock because the cabinet was no safer than a wooden drawer."
     },
@@ -60,7 +55,6 @@
       "subtitle": "How a Tossed Porcelain Dish Rebuilt Feynman's Joy in Physics",
       "opening_door": "Door C (Artifact/Measurement)",
       "historical_anchor": "Sitting burned-out in the Cornell University student cafeteria in 1947, Feynman watching a student toss a white dinner plate stamped with the blue Cornell medallion into the air and calculating why the medallion wobbled at exactly twice the frequency of its spin.",
-      "verbatim_quote": "The diagrams and the whole business that I got the Nobel Prize for came from that piddling around with the wobbling plate.",
       "formalism_mode": "equation",
       "exit_fact": "Within eighteen months of deriving the two-to-one nutation ratio of the Cornell dinner plate, Feynman used the same relativistic spin habits to calculate the anomalous magnetic moment of the electron to five decimal places."
     },
@@ -70,7 +64,6 @@
       "subtitle": "How Stick-Figure Spacetime Lines Replaced Nine Pages of Integrals",
       "opening_door": "Door A (Scene)",
       "historical_anchor": "March 30, 1948 at the Pocono Manor Inn in Pennsylvania, where Feynman drew his first spacetime electron-positron vertex diagrams before a skeptical Niels Bohr and Paul Dirac, followed by Freeman Dyson's June 1948 Greyhound bus proof uniting Schwinger and Feynman.",
-      "verbatim_quote": "I had a scheme, which I still use today when somebody is explaining something that I'm trying to understand, and that is I keep making up examples.",
       "formalism_mode": "diagram",
       "exit_fact": "Calculations of photon-electron scattering that previously took Julian Schwinger's graduate students six months of error-prone page algebra could be written down directly from a three-line Feynman diagram in twenty minutes."
     },
@@ -80,7 +73,6 @@
       "subtitle": "Why Superfluid Atoms Refuse to Stir Below Two Kelvin",
       "opening_door": "Door B (Constraint/Paradox)",
       "historical_anchor": "Feynman at Caltech between 1953 and 1955 deriving the microscopic wave function of liquid Helium-4 cooled below 2.17 Kelvin, proving how Bose-Einstein permutation symmetry forbids low-energy shear and forces circulation into quantized vortex lines.",
-      "verbatim_quote": "Because one helium atom cannot be distinguished from another, a ring of atoms sliding past its neighbors leaves the quantum state completely unchanged.",
       "formalism_mode": "diagram",
       "exit_fact": "Two years after Feynman predicted that rotating superfluid helium must break into a regular lattice of quantized whirlpools, W. F. Vinen measured the exact single-quantum circulation steps in a vibrating wire experiment at Cambridge."
     },
@@ -90,7 +82,6 @@
       "subtitle": "How Feynman and Gell-Mann Overturned the Broken Mirror of Beta Decay",
       "opening_door": "Door C (Artifact/Measurement)",
       "historical_anchor": "Summer 1957 in Pasadena—following Chien-Shiung Wu's Cobalt-60 parity experiment, Feynman and Murray Gell-Mann formulating the universal V-minus-A (vector minus axial-vector) theory of weak interactions by discarding three years of faulty neutron-decay measurements.",
-      "verbatim_quote": "There was a moment when I knew how nature worked. It had elegance and beauty. The goddam thing was gleaming.",
       "formalism_mode": "equation",
       "exit_fact": "When experimentalists at Argonne and Columbia repeated the beta-decay measurements with thinner radioactive sources in 1958, every prior anomaly vanished and confirmed the left-handed V-minus-A current."
     },
@@ -100,7 +91,6 @@
       "subtitle": "Two Thousand-Dollar Wagers and the Blueprint for Nanotechnology",
       "opening_door": "Door B (Constraint/Paradox)",
       "historical_anchor": "Feynman's December 29, 1959 American Physical Society banquet lecture at Caltech proposing atomic-scale engineering and offering two $1,000 personal prizes—one claimed in November 1960 by craftsman William McLellan with a 250-microgram electric motor and the second in 1985 by Stanford graduate student Tom Newman.",
-      "verbatim_quote": "The principles of physics, as far as I can see, do not speak against the possibility of maneuvering things atom by atom.",
       "formalism_mode": "ledger_or_list",
       "exit_fact": "When William McLellan brought his wooden box with a microscope to Caltech in November 1960 to claim the first thousand-dollar check, his working two-thousand-part electric motor was smaller than the period at the end of a printed sentence."
     },
@@ -110,7 +100,6 @@
       "subtitle": "Cracking the Bars and Dots of the Dresden Codex on Honeymoon",
       "opening_door": "Door C (Artifact/Measurement)",
       "historical_anchor": "Feynman in 1952 treating a facsimile of the eleventh-century Mayan Dresden Codex like a Los Alamos cryptogram, spotting the base-twenty vigesimal carry bars, the 584-day synodic cycle of Venus, and the 2,920-day correction table on pages 46 through 50.",
-      "verbatim_quote": "I got a copy of the Dresden Codex and worked out the bars and dots on the pages just like a safe combination.",
       "formalism_mode": "ledger_or_list",
       "exit_fact": "By subtracting four days every sixty-one Venus cycles and eight days at the end of every three hundredth cycle, the Mayan astronomers in the Dresden Codex kept their Venus table accurate to within two hours over five hundred years."
     },
@@ -120,7 +109,6 @@
       "subtitle": "Bamboo Control Towers, Rat Mazes, and the Discipline of Not Fooling Yourself",
       "opening_door": "Door A (Scene)",
       "historical_anchor": "Feynman's June 1974 Caltech commencement address ('Cargo Cult Science'), contrasting South Pacific islanders who built wooden headphones and bamboo control towers to summon cargo planes with psychologists who ignored Paul Thomas Young's 1937 sand-isolated rat-maze experiments.",
-      "verbatim_quote": "The first principle is that you must not fool yourself—and you are the easiest person to fool.",
       "formalism_mode": "diagram",
       "exit_fact": "Although Young's 1937 paper proved that laboratory rats navigated mazes by the sound of their own footsteps on hollow floorboards unless the corridors were set in damp sand, subsequent psychology papers cited him almost zero times and kept running uninsulated mazes."
     },
@@ -130,7 +118,6 @@
       "subtitle": "How Appendix F Exposed the Fantasy Math Behind the Shuttle Disaster",
       "opening_door": "Door C (Artifact/Measurement)",
       "historical_anchor": "Spring 1986 at Marshall Space Flight Center in Huntsville—Feynman bypassing NASA handlers to poll working propulsion engineers on Space Shuttle failure rates (1 in 100 vs. management's claim of 1 in 100,000) and publishing his unedited dissent as Appendix F of the Rogers Commission Report.",
-      "verbatim_quote": "If a guy tells me the probability of failure is one in a hundred thousand, I know he is exaggerating, because you cannot prove a machine is that safe when the seals are eroding on every flight.",
       "formalism_mode": "ledger_or_list",
       "exit_fact": "Historical flight records after two hundred and five Space Shuttle missions proved the working engineers right to the exact order of magnitude, with two catastrophic vehicle losses yielding an empirical failure rate of one in one hundred and two."
     }

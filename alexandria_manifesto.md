@@ -82,24 +82,24 @@ Every volume generated for Alexandria Press is governed by eight non-negotiable 
 #### 1. Direct, Plainspoken Prose & Honest Machine Synthesis
 Say things simply. We are not trying to sound "literary" or disguise machine synthesis behind artificial warmth. Avoid overwrought academic jargon, grand rhetorical flourishes, and awe-inducing adjectives. Where a structured bullet list brings immediate visual clarity to a ledger, protocol, or multi-part mechanism, use it unapologetically. Complexity belongs in the underlying mechanics—never in decorative vocabulary.
 
-#### 2. Mandatory Grounding & Verbatim Historical Quotes
-Never write a chapter as an abstract essay or textbook definition. Every chapter must anchor its mechanism in real events, physical experiments, clinical cases, or primary historical records with named individuals, dates, locations, and verifiable measurements. Sprinkle brief, documented **verbatim quotes** from primary sources—the actual words spoken, written in margin notes, or testified by the historical participants—to humanize the record without inventing fictional dialogue.
+#### 2. Mandatory Empirical Grounding & Zero Fabricated Quotations (Paraphrase Only)
+Never write a chapter as an abstract essay or textbook definition. Every chapter must anchor its mechanism in real events, physical experiments, clinical cases, or primary historical records with named individuals, years, institutions, and verifiable measurements. **Never place multi-word direct quotations (`"..."`) attributed to historical figures or scientists in prose**: language models under thesis pressure inevitably smooth or fabricate quotations. Always paraphrase arguments, papers, and testimonies in crisp, accurate indirect speech.
 
 #### 3. High-Density Compression (550–720 Words per Chapter; ~250-Word Topic-Only Introductions)
 * **Introductions (~250 Words)**: Keep the book's Introduction around 250 words (strictly 140–300 words). Introduce the core topic and structural thesis directly—never summarize or preview the individual chapters.
 * **Chapters (550–720 Words)**: Our punchiness comes from compression. A chapter must unpack *how* the mechanism worked step by step without drifting into the LLM's verbose, encyclopedic mean. Keep chapters tightly compressed between 550 and 720 words (~600–650 words ideal) so every sentence carries a fact, a measurement, or a causal link.
 
-#### 4. Earned Formalisms Only (Zero Math Cosplay)
-Include display equations (`$$...$$`) only when a genuine, established mathematical, physical, chemical, or statistical law governs the phenomenon (such as the Kuramoto model, Shannon channel capacity, Fick's diffusion law, the Kelly criterion, or Manning's hydraulic flow). Never invent fake conceptual equations or pseudo-proportionalities (such as $\text{Fragility} \propto \text{Inertia} \times \text{Orthodoxy}^2$) just to put symbols on the page. When a mechanism is clinical, historical, or procedural rather than mathematical, present the exact experimental protocol, ledger, or structured bullet list instead.
+#### 4. Earned Formalisms & Isomorphic Parallels Only (Zero Math Cosplay or Decorative Metaphors)
+Include display equations (`$$...$$`) only when a genuine, established mathematical, physical, chemical, or statistical law governs the phenomenon (such as the Kuramoto model, Shannon channel capacity, Fick's diffusion law, the Kelly criterion, or Manning's hydraulic flow). Never invent fake conceptual equations or pseudo-proportionalities (such as $\text{Fragility} \propto \text{Inertia} \times \text{Orthodoxy}^2$) just to put symbols on the page. Similarly, include a cross-domain parallel only when the exact same mathematical equation governs both systems—never attach decorative biological or physics metaphors.
 
 #### 5. Sentence Cadence: Lower Average Length & Natural Variance (17–22 Words/Sentence)
 Left unchecked, language models drift toward a monotonous 32–36 word "participial march" (*"Working alongside..., X did Y"*). Target a crisp average sentence length of **17–22 words** (strictly $\le 24$ words/sentence) with natural variance between direct 10–14 word declarative statements and 20–26 word technical explanations. Break up sprawling multi-clause sentences into direct statements, and never attempt artificial 2–3 word melodramatic fragments.
 
-#### 6. Breaking Opening Fatigue (Three Entry Doors)
-Because volumes run 12 focused chapters, starting every chapter with the same template (*"At [Time] on [Date], [Age]-year-old [Name]..."*) creates mechanical fatigue. Across any volume, rotate chapter openings across three distinct entry doors:
-* **The Scene Open**: Drop directly into a decisive physical moment, time, and place where an anomaly or failure surfaced.
-* **The Constraint Open**: Open with a hard physical bottleneck, material limit, or counterintuitive number, then introduce the person or system that collided with it.
-* **The Artifact Open**: Open with a physical remnant, clinical ledger, or unexplained measurement—such as the open gunports of a salvaged warship, an eight-arcminute discrepancy in planetary tables, or a laboratory biopsy log.
+#### 6. Anti-Novelistic Openings (Zero Unverified Micro-Details)
+Never open or pad chapters with novelistic micro-details that invite hallucinated precision: **no weekdays (`"On a Sunday afternoon"`), no exact clock times unless recorded in an official accident log, no weather descriptions (`"On a cold autumn morning"`), and no researcher ages (`"Forty-three-year-old..."`)**. Across any 12-chapter volume, rotate openings across three substantive entry doors:
+* **The Mechanism / Constraint Open**: Open with a hard physical bottleneck, material limit, or counterintuitive number, then introduce the researcher or system that collided with it.
+* **The Experiment / Case Open**: Open directly with the laboratory apparatus, clinical trial, or engineering system, grounded by year and institution.
+* **The Artifact / Anomaly Open**: Open with a physical remnant, clinical ledger, or unexplained measurement—such as an eight-arcminute discrepancy in planetary tables or a pathology log.
 
 #### 7. Clean Exits (Withhold Concluding Sermons)
 Resist the urge to end a chapter with either a theatrical mic-drop or a dutiful "high-school essay" summary paragraph (*"X showed that..."*, *"This demonstrated that..."*, *"His life proved that..."*). When the final empirical fact or physical resolution lands, stop. Juxtapose the facts and trust the reader to close the circuit.

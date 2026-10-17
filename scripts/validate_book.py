@@ -308,14 +308,8 @@ def validate_book(
                     f"Invalid dossier mode '{book_mode}' in {dossier_path}. Must be one of {sorted(VALID_MODES)}."
                 )
             cc = dossier.get("creator_constraints", {})
-            if cc.get("require_quote_per_chapter"):
-                require_quotes = True
             if "min_diagrams" in cc:
                 min_diagrams = int(cc["min_diagrams"])
-            # Also auto-enable require_quotes if all 12 dossier chapters specify verbatim_quote
-            d_chaps = dossier.get("chapters", [])
-            if d_chaps and all(c.get("verbatim_quote") for c in d_chaps):
-                require_quotes = True
         except Exception:
             pass
 
@@ -324,8 +318,8 @@ def validate_book(
         errors.append("Found leftover Python script snippet ('with open(' or 'print(f\"') in file.")
 
     sections = [s.strip() for s in raw_text.split("\n---\n") if s.strip()]
-    if len(sections) < 9:
-        errors.append(f"Expected Title + Intro + 8–12 chapters (>=10 sections), found {len(sections)} sections.")
+    if len(sections) != 14:
+        errors.append(f"Expected Title + Intro + 12 chapters (14 sections), found {len(sections)} sections.")
         return errors, warnings, {}
 
     # Check Book Title block (Section 0)
@@ -427,16 +421,46 @@ def validate_book(
                 if not re.search(r"\b(1\d{3}|20[0-2]\d|\d+\s*(?:BCE|BC|CE|AD))\b", body_no_code):
                     errors.append(f"Chapter {idx} ('{h2[2:]}') lacks a concrete historical year/date anchor.")
 
-            # Check for verbatim quote in chapter ("..." or “...” with >= 3 words)
+            # Check for forbidden direct speech quotations (>= 5 words inside "..." or “...”)
             quotes_found = [
-                q for q in re.findall(r'(?:"([^"\n]{12,})"|“([^”\n]{12,})”)', body_no_code)
-                if len((q[0] or q[1]).split()) >= 3
+                (q[0] or q[1]).strip()
+                for q in re.findall(r'(?:"([^"\n]+)"|“([^”\n]+)”)', body_no_code)
+                if len((q[0] or q[1]).split()) >= 5
             ]
             if quotes_found:
                 quote_chap_count += 1
-            elif require_quotes:
+                for q_str in quotes_found:
+                    errors.append(
+                        f"Chapter {idx} ('{h2[2:]}') contains direct quotation (paraphrase in indirect speech to eliminate fabricated quote risk): \"{q_str[:80]}...\""
+                    )
+
+            # Check for novelistic micro-details (weekday + time-of-day, weather cold-opens, hyphenated ages)
+            novelistic_weekday = re.search(
+                r"\b(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\s+(?:morning|afternoon|evening|night)\b",
+                body_no_code,
+                flags=re.IGNORECASE,
+            )
+            if novelistic_weekday:
                 errors.append(
-                    f"Chapter {idx} ('{h2[2:]}') is missing a required verbatim quote (--require-quotes / creator_constraints)."
+                    f"Chapter {idx} ('{h2[2:]}') contains novelistic weekday/time-of-day padding: '{novelistic_weekday.group(0)}'"
+                )
+            novelistic_age = re.search(
+                r"\b(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty)(?:-(?:one|two|three|four|five|six|seven|eight|nine))?|[2-8]\d)-year-old\b",
+                body_no_code,
+                flags=re.IGNORECASE,
+            )
+            if novelistic_age:
+                errors.append(
+                    f"Chapter {idx} ('{h2[2:]}') contains novelistic hyphenated age detail: '{novelistic_age.group(0)}'"
+                )
+            novelistic_weather = re.search(
+                r"\bOn a (?:cold|warm|rainy|humid|freezing|bitter|bright|gray|grey|crisp|muggy|foggy|damp|chilly|sweltering|clear|dark|sunny|windy|snowy|blustery|overcast)\s+",
+                body_no_code,
+                flags=re.IGNORECASE,
+            )
+            if novelistic_weather:
+                errors.append(
+                    f"Chapter {idx} ('{h2[2:]}') contains novelistic weather cold-open: '{novelistic_weather.group(0)}'"
                 )
 
             # Check opening sentence cadence

@@ -20,17 +20,18 @@ Every book generation prompt must include and enforce these universal constraint
    - Never use purple prose, awe-inducing adjectives (*"profound"*, *"breathtaking"*, *"unprecedented"*, *"astonishing"*), or academic throat-clearing.
    - **Functional Bullet Lists**: Use structured bulleted or numbered lists freely whenever they bring clarity to a mechanism, protocol, or ledger.
 
-3. **Mandatory Concrete Grounding & Verbatim Historical Quotes**
-   - Every single chapter must be anchored in a concrete historical event, physical experiment, clinical case, or primary empirical record with named people, dates, places, and specific measurements.
-   - **Verbatim Quotes**: Sprinkle 1–2 short, authentic, documented verbatim quotes from primary sources (words actually written or spoken by the historical figures) into chapters to humanize the record without inventing fictional dialogue. When a creator or dossier sets `require_quote_per_chapter: true` (or `--require-quotes`), every single chapter (1–12) must contain at least one documented verbatim quote.
+3. **Mandatory Concrete Grounding & Zero Direct Quotations (Paraphrase Only)**
+   - Every single chapter must be anchored in a concrete historical event, physical experiment, clinical case, or primary empirical record with named people, years, institutions, and specific measurements.
+   - **No Direct Quotations (`"..."`)**: Never place multi-word direct speech quotations attributed to historical actors or scientists in prose. Always paraphrase findings, arguments, and statements in crisp indirect speech so quote fabrication is impossible. Let empirical findings drive the chapter thesis rather than bending a study to fit a pre-written moral takeaway.
 
 4. **High-Density Compression (550–720 Words per Chapter; ~250-Word Introductions)**
    - **Introductions**: Keep introductions around **250 words** (strictly 140–300 words). Introduce the core topic, structural problem, and thesis directly—**never** summarize or list the upcoming chapters.
    - **Chapters**: Keep every chapter tightly compressed between **550 and 720 words** (~600–650 words ideal; hard validator bounds: `520–760` words). Do not let the model drift toward 850-word bloat, and do not truncate mechanisms into 300-word sketches. Punchiness comes from compression: unpack *how* the mechanism worked with zero wasted clauses.
 
-5. **Earned Formalisms Only (Zero "Math Cosplay")**
+5. **Earned Formalisms & Isomorphic Parallels Only (Zero "Math Cosplay" or Decorative Metaphors)**
    - Include a display equation (`$$...$$`) **only** when a genuine, established mathematical, physical, chemical, or statistical law governs the mechanism (e.g., Kuramoto coupled oscillators, Shannon channel capacity, Fick's law of diffusion, Kelly criterion, Bethe-Weizsäcker pairing energy, Manning's open-channel flow).
    - **Never** invent conceptual pseudo-equations or fake proportionalities (e.g., $\text{Fragility} \propto \text{Inertia} \times \text{Orthodoxy}^2$ or $\Delta S_{\text{exit}} \to \infty$).
+   - Include a cross-domain parallel only when the exact same mathematical equation governs both systems—never add decorative biological or physics metaphors.
    - When a chapter's mechanism is clinical, historical, or procedural rather than mathematical, present the exact experimental setup, mortality ledger, or structured bullet list instead of forcing a fake equation.
    - All genuine math must use valid LaTeX enclosed in `$$...$$` (block) or `$...$` (inline), with multi-character subscripts wrapped in curly braces (`_{...}`).
 
@@ -39,12 +40,12 @@ Every book generation prompt must include and enforce these universal constraint
    - Target a **crisp average sentence length of 17–22 words** (strictly $\le 24$ words/sentence) with natural variance: mix clean 10–14 word declarative sentences with 20–26 word mechanism explanations.
    - **Warning Against "Short Punchy Sentences"**: Do **not** write artificial LLM staccato fragments or dramatic one-liners (*"It failed."*, *"Then everything changed."*). Keep all short sentences factual and plainspoken.
 
-7. **Antidote to Opening Fatigue: Rotate Three Opening Doors**
-   - Do **not** open every chapter with the same sentence formula (*"At [Time] on [Date], [Age]-year-old [Name]..."*).
-   - Across the 12 chapters of a book, deliberately rotate across three distinct opening doors:
-     - **Door A — The Scene Open**: Drop into a specific moment, place, and physical action where an anomaly or crisis unfolded.
+7. **Anti-Novelistic Openings: Ban Unverified Micro-Details & Rotate Three Entry Doors**
+   - **Forbid Novelistic Micro-Details**: Never invent or include weekdays (*"On a Sunday afternoon"*), clock times (unless part of an official telemetry log), weather adjectives (*"On a cold, rainy morning"*), or researcher ages (*"Forty-three-year-old..."*).
+   - Across the 12 chapters of a book, deliberately rotate across three substantive opening doors:
+     - **Door A — The Experiment / Case Open**: Start directly with the laboratory setup, clinical ward, or engineering system, anchored by year and institution.
      - **Door B — The Constraint / Paradox Open**: Start directly with a hard physical limit, material bottleneck, or counterintuitive number, then introduce the person or system that confronted it.
-     - **Door C — The Artifact / Evidence Open**: Start with a physical remnant, clinical ledger, or unexplained measurement (e.g., the open lower gunports of the salvaged *Vasa*, an eight-arcminute error in Mars tables, or a laboratory biopsy log).
+     - **Door C — The Artifact / Evidence Open**: Start with a physical remnant, clinical ledger, or unexplained measurement (e.g., an eight-arcminute error in Mars tables or a laboratory biopsy log).
 
 8. **Clean Exits: No Moralizing Final Paragraphs**
    - Never end a chapter with a "high-school essay" summary paragraph (*"X showed that..."*, *"This demonstrated that..."*, *"His life proved that..."*).

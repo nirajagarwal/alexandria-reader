@@ -54,7 +54,7 @@
         {
           "@type": "Book",
           "name": "Latent Fragility",
-          "headline": "Why Optimized Systems Suddenly Fail",
+          "headline": "Hidden Structural Flaws, Coupled Cascades, and Catastrophic Engineering Failures",
           "url": "https://alexandria.press/?book=latent-fragility",
           "image": "https://alexandria.press/assets/covers/latent-fragility.svg"
         },
@@ -214,17 +214,17 @@
         },
         {
           "@type": "Book",
-          "name": "The Human Body",
-          "headline": "Twelve Organs and Systems in Twelve Highlights Each",
-          "url": "https://alexandria.press/?book=the-human-body",
-          "image": "https://alexandria.press/assets/covers/the-human-body.svg"
-        },
-        {
-          "@type": "Book",
           "name": "Attention",
           "headline": "The Core Bottleneck and Eleven Neighbors That Shape Human Focus",
           "url": "https://alexandria.press/?book=attention",
           "image": "https://alexandria.press/assets/covers/attention.svg"
+        },
+        {
+          "@type": "Book",
+          "name": "Self-Transcendence",
+          "headline": "The Core Shift and Eleven Neighbors That Dissolve the Boundaries of the Self",
+          "url": "https://alexandria.press/?book=self-transcendence",
+          "image": "https://alexandria.press/assets/covers/self-transcendence.svg"
         }
       ]
     }
@@ -270,7 +270,7 @@
                         <img src="assets/covers/non-linear-engines.svg" alt="Non-Linear Engines Cover" loading="eager">
                     </div>
                 </article>
-                <article class="book-card" data-key="latent-fragility" data-title="Latent Fragility" data-subtitle="Why Optimized Systems Suddenly Fail" data-category="Systemic Failure &amp; Risk" onclick="openBookFromCatalog('latent-fragility')" title="Latent Fragility — Why Optimized Systems Suddenly Fail">
+                <article class="book-card" data-key="latent-fragility" data-title="Latent Fragility" data-subtitle="Hidden Structural Flaws, Coupled Cascades, and Catastrophic Engineering Failures" data-category="Systemic Failure &amp; Risk" onclick="openBookFromCatalog('latent-fragility')" title="Latent Fragility — Hidden Structural Flaws, Coupled Cascades, and Catastrophic Engineering Failures">
                     <div class="book-cover-frame">
                         <img src="assets/covers/latent-fragility.svg" alt="Latent Fragility Cover" loading="eager">
                     </div>
@@ -388,6 +388,11 @@
                 <article class="book-card" data-key="attention" data-title="Attention" data-subtitle="The Core Bottleneck and Eleven Neighbors That Shape Human Focus" data-category="Cognitive Architecture" onclick="openBookFromCatalog('attention')" title="Attention — The Core Bottleneck and Eleven Neighbors That Shape Human Focus">
                     <div class="book-cover-frame">
                         <img src="assets/covers/attention.svg" alt="Attention Cover" loading="eager">
+                    </div>
+                </article>
+                <article class="book-card" data-key="self-transcendence" data-title="Self-Transcendence" data-subtitle="The Core Shift and Eleven Neighbors That Dissolve the Boundaries of the Self" data-category="Psychology &amp; Philosophy" onclick="openBookFromCatalog('self-transcendence')" title="Self-Transcendence — The Core Shift and Eleven Neighbors That Dissolve the Boundaries of the Self">
+                    <div class="book-cover-frame">
+                        <img src="assets/covers/self-transcendence.svg" alt="Self-Transcendence Cover" loading="eager">
                     </div>
                 </article>
             </div>
@@ -513,8 +518,8 @@
     </div>
 
     <!-- Book & Cover Datasets (Universal UMD modules) -->
-    <script src="js/covers-data.js?v=34"></script>
-    <script src="js/books-data.js?v=34"></script>
+    <script src="js/covers-data.js?v=35"></script>
+    <script src="js/books-data.js?v=35"></script>
 
     <script>
         const EMBEDDED_BOOKS = window.EMBEDDED_BOOKS || {};
@@ -530,7 +535,7 @@
             window.pdfjsLib.GlobalWorkerOptions.workerSrc = 'vendor/pdfjs/pdf.worker.min.js';
         }
 
-        const PDF_BUILD_VERSION = '20261016m';
+        const PDF_BUILD_VERSION = '20261016n';
         const READER_FIRST_PAGE = 2; // Physical Page 1 is the Book Cover; Physical Page 2 is the TOC Frontispiece
         const EDITION_SPECS = {
             desktop: { widthIn: 5.8, heightIn: 7.5, aspect: 5.8 / 7.5, fontPt: 11.6 },
