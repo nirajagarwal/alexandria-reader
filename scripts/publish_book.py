@@ -903,10 +903,8 @@ def generate_app_og_png(catalog: dict, force: bool = False) -> str:
       [#text(font: "IBM Plex Mono", size: 9.5pt, tracking: 2.0pt, weight: "medium", fill: rgb("#1c1917"))[ALEXANDRIA.PRESS]]
     )
     #v(1fr)
-    #text(font: "Literata", size: 32pt, weight: "bold", fill: rgb("#1c1917"))[Deep Learning for Humans]
-    #v(8pt)
-    #set par(leading: 0.50em)
-    #text(font: "Literata", size: 13.5pt, style: "italic", fill: rgb("#4a453e"))[Concise twelve-chapter volumes across science, history, engineering, philosophy, and human behavior — grounded in primary records, equations, and schematic diagrams.]
+    #set par(leading: 0.42em)
+    #text(font: "Literata", size: 28pt, weight: "bold", fill: rgb("#1c1917"))[Deep Learning for Humans.\\ Distilled by Frontier AI.]
     #v(1fr)
     #line(length: 100%, stroke: 0.75pt + rgb("#e4ded2"))
     #v(12pt)
@@ -960,7 +958,7 @@ def sync_index_and_sitemap_from_catalog(catalog: dict) -> None:
         "@type": "CollectionPage",
         "name": "Alexandria Press",
         "url": "https://alexandria.press",
-        "description": "Deep Learning for Humans. Concise twelve-chapter volumes across science, history, engineering, decision theory, and human behavior.",
+        "description": "Deep Learning for Humans. Distilled by Frontier AI.",
         "publisher": {
             "@type": "Organization",
             "name": "Alexandria Press",

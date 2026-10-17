@@ -90,7 +90,9 @@ def test_index_html_and_markers():
     assert 'id="prev-spread-btn"' in html_text
     assert 'id="next-spread-btn"' in html_text
     assert 'id="sources-modal"' in html_text
-    assert 'id="catalog-filters"' in html_text
+    assert 'class="home-tagline"' in html_text
+    assert 'Deep Learning for Humans. Distilled by Frontier AI.' in html_text
+    assert 'id="catalog-filters"' not in html_text, "Filter pills bar should be removed"
     assert 'id="library-modal"' not in html_text, "Redundant #library-modal should be removed"
     assert 'class="running-footer"' not in html_text, "Legacy .running-footer should be removed"
     assert 'id="col-left"' not in html_text, "Legacy HTML reflow columns should be removed"

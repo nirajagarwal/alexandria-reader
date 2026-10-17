@@ -91,19 +91,20 @@
     }
 
     function updatePageMetaForCatalog() {
-        const title = 'Alexandria Press — Deep Learning for Humans';
-        const desc = 'Concise twelve-chapter volumes across science, history, engineering, philosophy, and human behavior — grounded in primary records, equations, and schematic diagrams.';
+        const title = 'Alexandria Press — Deep Learning for Humans. Distilled by Frontier AI.';
+        const cardTitle = 'Alexandria Press';
+        const desc = 'Deep Learning for Humans. Distilled by Frontier AI.';
         const url = 'https://alexandria.press/';
         const img = 'https://alexandria.press/og-image.png';
         document.title = title;
         setMetaAttr('meta-canonical', 'href', url);
         setMetaAttr('meta-og-type', 'content', 'website');
         setMetaAttr('meta-og-url', 'content', url);
-        setMetaAttr('meta-og-title', 'content', title);
+        setMetaAttr('meta-og-title', 'content', cardTitle);
         setMetaAttr('meta-og-desc', 'content', desc);
         setMetaAttr('meta-og-image', 'content', img);
         setMetaAttr('meta-og-image-alt', 'content', title);
-        setMetaAttr('meta-tw-title', 'content', title);
+        setMetaAttr('meta-tw-title', 'content', cardTitle);
         setMetaAttr('meta-tw-desc', 'content', desc);
         setMetaAttr('meta-tw-image', 'content', img);
         setMetaAttr('meta-tw-image-alt', 'content', title);
