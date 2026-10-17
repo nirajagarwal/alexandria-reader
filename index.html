@@ -825,8 +825,14 @@
             const nextBtn = document.getElementById('next-spread-btn');
             const atStart = (leftPage <= 1);
             const atEnd = twoPage ? ((rightPage || leftPage) >= totalPages) : (leftPage >= totalPages);
-            if (prevBtn) prevBtn.classList.toggle('is-disabled', atStart);
-            if (nextBtn) nextBtn.classList.toggle('is-disabled', atEnd);
+            if (prevBtn) {
+                prevBtn.classList.remove('is-disabled');
+                prevBtn.title = atStart ? 'Return to Home (←)' : 'Previous Page (←)';
+            }
+            if (nextBtn) {
+                nextBtn.classList.remove('is-disabled');
+                nextBtn.title = atEnd ? 'Return to Home (→)' : 'Next Page (→)';
+            }
 
             const showBoth = twoPage && rightPage !== null;
 
@@ -855,6 +861,8 @@
             if (nextP >= 1 && nextP <= activePdfDoc.numPages) {
                 pdfPageNum = nextP;
                 rebuildAndRenderSpread();
+            } else {
+                showHomeView();
             }
         }
 
@@ -867,14 +875,22 @@
         }
 
         function nextChapter() {
-            if (activeBook && currentChapterIndex < activeBook.chapters.length - 1) {
+            if (!activeBook) return;
+            if (currentChapterIndex < activeBook.chapters.length - 1) {
                 jumpToChapterIndex(currentChapterIndex + 1);
+            } else {
+                showHomeView();
             }
         }
 
         function prevChapter() {
             if (currentChapterIndex > 0) {
                 jumpToChapterIndex(currentChapterIndex - 1);
+            } else if (pdfPageNum > 1) {
+                pdfPageNum = 1;
+                rebuildAndRenderSpread();
+            } else {
+                showHomeView();
             }
         }
 
