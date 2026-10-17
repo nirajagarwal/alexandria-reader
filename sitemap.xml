@@ -2551,18 +2551,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alexandria.press/read/emotions/disgust.html</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alexandria.press/read/emotions/joy.html</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://alexandria.press/read/emotions/grief.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -2575,7 +2563,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alexandria.press/read/emotions/shame-and-guilt.html</loc>
+    <loc>https://alexandria.press/read/emotions/joy.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2587,25 +2575,37 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alexandria.press/read/emotions/curiosity-and-surprise.html</loc>
+    <loc>https://alexandria.press/read/emotions/shame-and-guilt.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alexandria.press/read/emotions/loneliness.html</loc>
+    <loc>https://alexandria.press/read/emotions/disgust.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alexandria.press/read/emotions/gratitude.html</loc>
+    <loc>https://alexandria.press/read/emotions/loneliness-and-solitude.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alexandria.press/read/emotions/awe.html</loc>
+    <loc>https://alexandria.press/read/emotions/nostalgia-and-melancholy.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alexandria.press/read/emotions/curiosity-and-wonder.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alexandria.press/read/emotions/gratitude-and-awe.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

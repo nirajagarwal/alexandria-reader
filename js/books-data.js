@@ -5228,7 +5228,7 @@
     ]
   },
   "emotions": {
-    "title": "Science of Emotions",
+    "title": "Emotions",
     "subtitle": "Fear, Anger, Joy, Grief, Love, and Seven Other Everyday Feelings in Twelve Highlights Each",
     "category": "Psychology & Behavior",
     "mode": "listicle",
@@ -5239,17 +5239,17 @@
     "sectionPages": [
       3,
       4,
-      8,
-      12,
+      7,
+      10,
+      13,
       16,
-      20,
-      24,
+      19,
+      22,
+      25,
       28,
-      32,
-      36,
-      40,
-      44,
-      48
+      31,
+      34,
+      37
     ],
     "compactSectionPages": [
       3,
@@ -5269,135 +5269,135 @@
     "mobileSectionPages": [
       3,
       5,
-      10,
-      15,
-      20,
+      9,
+      13,
+      17,
+      21,
       25,
-      30,
-      35,
-      40,
+      29,
+      33,
+      37,
+      41,
       45,
-      50,
-      55,
-      60
+      49
     ],
     "chapters": [
       {
         "label": "Introduction",
-        "title": "Science of Emotions",
-        "subtitle": "Twelve Ancient Survival Programs Running in a Modern World",
+        "title": "Emotions",
+        "subtitle": "The Philosophy, History, Culture, and Everyday Logic of Human Feeling",
         "slug": "introduction",
         "formalismMode": "introduction",
-        "anchor": "Classical philosophy and early neurology treated emotions as evolutionary noise—irrational visceral disturbances that cloud deliberate reason. Modern affective neuroscience and behavioral biology have overturned that hierarchy.",
-        "exitFact": "Viewed through twelve perpendicular observations each—spanning focal brain lesions, game-theoretic wagers, endocrinology, comparative ethology, and cross-cultural linguistics—twelve everyday feelings expose the physical control loops governing human behavior."
+        "anchor": "For more than two thousand years, writers and philosophers have argued over what to do with human feelings. Early Stoics treated passion as a sudden storm at sea that blows reason off course.",
+        "exitFact": "Examined through twelve independent lenses each—drawn from philosophy, history, literature, language, and everyday observation—twelve familiar feelings reveal the invisible architecture of a human life."
       },
       {
         "label": "Chapter 1",
         "title": "Fear",
-        "subtitle": "Thalamic Shortcuts, Amygdala Lesions, and the Brainstem Suffocation Alarm",
+        "subtitle": "Ancient Alarms, Philosophical Courage, and the Shadows We Invent",
         "slug": "fear",
         "formalismMode": "highlights",
-        "anchor": "An acoustic startle pulse reaches the lateral amygdala in twelve milliseconds via a direct subcortical shortcut from the auditory thalamus, as neuroscientist Joseph LeDoux demonstrated in 1986.",
-        "exitFact": "Although blindfolded volunteers inside an fMRI scanner detected no conscious odor difference between the two sweat types, inhaling skydiver sweat selectively activated the recipient's left amygdala and sharpened acoustic startle reflexes."
+        "anchor": "Roman poet Lucretius observed in On the Nature of Things that the unexamined terror of death is the secret engine behind human greed and ruthless political ambition.",
+        "exitFact": "She also stood nose-to-nose with strangers without discomfort, revealing that the same internal alarm that recoils from snakes also maintains the invisible boundary of personal space."
       },
       {
         "label": "Chapter 2",
         "title": "Anger",
-        "subtitle": "Cutaneous Vasodilation, Costly Deterrence, and Left-Frontal Approach Asymmetry",
+        "subtitle": "Honor Cultures, Strategic Commitment, and the Temporary Madness of Seneca",
         "slug": "anger",
         "formalismMode": "highlights",
-        "anchor": "Autonomic telemetry disproves the textbook assumption that all negative emotions share a single undifferentiated stress response. At the University of California, San Francisco in 1983, Paul Ekman and Robert Levenson measured peripheral vascular flow across distinct affective states.",
-        "exitFact": "Elevated catecholamines increase arterial shear stress and blood platelet adhesiveness, multiplying a patient's baseline risk of a heart attack 2.3-fold during the two hours immediately following an outburst."
+        "anchor": "Western literature begins with a single Greek word for wrath—Menin—at the opening line of Homer's Iliad.",
+        "exitFact": "Responders reject splits below twenty percent more than half the time, gladly burning their own free cash so the greedy partner walks away with nothing."
       },
       {
         "label": "Chapter 3",
-        "title": "Disgust",
-        "subtitle": "Sympathetic Magic, Insular Cortex Lesions, and the Behavioral Immune System",
-        "slug": "disgust",
+        "title": "Grief",
+        "subtitle": "Public Weeping, Stolen Consolations, and the Price of Attachment",
+        "slug": "grief",
         "formalismMode": "highlights",
-        "anchor": "Human contamination alarms obey the anthropological laws of similarity and contagion rather than rational germ calculus. At the University of Pennsylvania in 1986, psychologist Paul Rozin molded freshly unwrapped chocolate fudge into the realistic shape of dog feces.",
-        "exitFact": "Fourier image analysis revealed that trypophobic hole clusters share the exact mid-range spatial-frequency contrast spectrum exhibited by cutaneous myiasis parasites, ticks, and venomous reptiles."
+        "anchor": "In the oldest surviving epic of world literature, the Mesopotamian Epic of Gilgamesh, the king sits beside the corpse of his companion Enkidu for seven days and seven nights.",
+        "exitFact": "Knowing that life is as brief as morning dew is an easy philosophical truth until the dew that vanishes is your own child."
       },
       {
         "label": "Chapter 4",
-        "title": "Joy",
-        "subtitle": "Orbicularis Oculi Contractions, Dopamine Prediction Errors, and Hedonic Hotspots",
-        "slug": "joy",
+        "title": "Love and Attachment",
+        "subtitle": "Plato's Divided Halves, Courtly Invention, and the Shelter of Another Mind",
+        "slug": "love-and-attachment",
         "formalismMode": "highlights",
-        "anchor": "Localized electrical stimulation at the Salpêtrière hospital in Paris in 1862 allowed neurologist Guillaume Duchenne to separate polite social grimaces from authentic joy.",
-        "exitFact": "Cross-cultural replications in Canada, Uganda, and South Africa confirmed that spending money on others generates a larger, more durable lift in daily happiness than spending the identical sum on oneself."
+        "anchor": "In Plato's Symposium, composed around 385 BCE, the comic playwright Aristophanes explains human longing through a fable of severed wholeness.",
+        "exitFact": "When Takefumi Kikusui ran the identical eye-contact experiment with hand-raised wolves in 2015, the wolves showed zero bonding response, proving dogs adopted our human attachment gaze during domestication."
       },
       {
         "label": "Chapter 5",
-        "title": "Grief",
-        "subtitle": "Chemical Tears, Takotsubo Myocardial Stunning, and Accumbens Craving",
-        "slug": "grief",
+        "title": "Joy",
+        "subtitle": "Aristotle's Flourishing, Contagious Laughter, and the Hedonic Treadmill",
+        "slug": "joy",
         "formalismMode": "highlights",
-        "anchor": "Homo sapiens is the only known vertebrate species in which emotional distress triggers lacrimal gland overflow across the cheeks. At St. Paul-Ramsey Medical Center in 1981, biochemist William Frey collected emotional tears shed during tragic films and compared them against irritant tears triggered by freshly cut onion vapors.",
-        "exitFact": "While 10 to 15 percent of bereaved spouses suffer chronic multi-year complicated grief, more than half return to steady emotional functioning within months without delayed pathology."
+        "anchor": "Ancient Greek philosophy drew a sharp boundary between hedone—the fleeting sensory pleasure of a sweet fig—and eudaimonia, or human flourishing.",
+        "exitFact": "Wordsworth's ache reveals that human joy is so fundamentally social that its first reflex is always to look for a witness."
       },
       {
         "label": "Chapter 6",
-        "title": "Love and Attachment",
-        "subtitle": "Vole Vasopressin Receptors, Tactile C-Fibers, and Neural Threat Attenuation",
-        "slug": "love-and-attachment",
+        "title": "Envy and Jealousy",
+        "subtitle": "Othello's Green Monster, Neighborly Rivalry, and the Pain of Near-Misses",
+        "slug": "envy-and-jealousy",
         "formalismMode": "highlights",
-        "anchor": "Early twentieth-century behaviorists assumed that infants bond with mothers strictly because the caregiver is associated with milk delivery. At the University of Wisconsin in 1958, psychologist Harry Harlow separated infant rhesus macaques and placed two inanimate surrogates in their cages.",
-        "exitFact": "Neither serum cholesterol nor socioeconomic status at age fifty predicted physical health and cognitive sharpness at age eighty as strongly as warm, trustworthy attachment satisfaction."
+        "anchor": "Everyday conversation blurs envy and jealousy, yet moral philosophers separate them by counting how many people stand in the room.",
+        "exitFact": "Sympathizing with a friend's bad luck flatters our own generosity, whereas celebrating a friend's triumph requires silencing the quiet sting of comparison."
       },
       {
         "label": "Chapter 7",
         "title": "Shame and Guilt",
-        "subtitle": "Identity Collapse, Action Repair, and the Unforgeable Facial Blush",
+        "subtitle": "Public Exposure, Private Debt, and the Unforgeable Blush",
         "slug": "shame-and-guilt",
         "formalismMode": "highlights",
-        "anchor": "Colloquial speech treats shame and guilt as synonyms, yet psychologist June Tangney demonstrated across three decades of research beginning in 1992 that they drive opposite behavioral trajectories.",
-        "exitFact": "Blood assays and clinic records showed enhanced mitogen-induced T-lymphocyte proliferation and a 50 percent drop in medical visits across the following six weeks."
+        "anchor": "In her 1946 study The Chrysanthemum and the Sword, anthropologist Ruth Benedict drew a classic distinction between shame and guilt.",
+        "exitFact": "Speaking a hidden mistake out loud to a witness converts paralyzing, global shame into a bounded human debt that can finally be repaired."
       },
       {
         "label": "Chapter 8",
-        "title": "Envy and Jealousy",
-        "subtitle": "Dyadic Status Pain, Triadic Mate Guarding, and Counterfactual Bronze Smiles",
-        "slug": "envy-and-jealousy",
+        "title": "Disgust",
+        "subtitle": "Contagion Laws, Table Manners, and the Guard at the Border of the Body",
+        "slug": "disgust",
         "formalismMode": "highlights",
-        "anchor": "Everyday speech blurs envy and jealousy, yet psychologists W. Gerrod Parrott and Richard Smith formalized their structural separation in 1993 by counting the actors involved.",
-        "exitFact": "Reviewing 105 Mayo Clinic cases in 2011, neurologist Jonathan Graff-Radford localized the delusion primarily to right dorsolateral frontal strokes and Parkinsonian dopamine-agonist medications that corrupt prediction-error circuits."
+        "anchor": "Camping in Tierra del Fuego in 1832 aboard HMS Beagle, a young Charles Darwin observed how culture shapes the targets of revulsion.",
+        "exitFact": "Volunteers who transcribed an unethical deed were twice as likely to take a free antiseptic wipe as a pencil, trying to scrub away a guilty conscience with soap."
       },
       {
         "label": "Chapter 9",
-        "title": "Curiosity and Surprise",
-        "subtitle": "The Information-Gap Itch, Locus Coeruleus Broadcasts, and Hippocampal Memory Stamping",
-        "slug": "curiosity-and-surprise",
+        "title": "Loneliness and Solitude",
+        "subtitle": "Robinson Crusoe, Crowded Cities, and the Hunger for Witness",
+        "slug": "loneliness-and-solitude",
         "formalismMode": "highlights",
-        "anchor": "Surprise begins with the fastest generalized motor reflex in the mammalian nervous system. Neuroscientist Michael Davis mapped the primary acoustic startle pathway in 1982 to just three central relay nuclei linking the cochlear root, the pontine reticular formation, and spinal motor neurons.",
-        "exitFact": "Roughly 500 milliseconds before a sudden insight surfaces, the solver executes an involuntary eye blink and gaze shift away from the screen to shut out visual noise while locus coeruleus norepinephrine spikes pupil diameter."
+        "anchor": "Philosopher Hannah Arendt drew a sharp line between the fertile company of solitude and the barren ache of loneliness.",
+        "exitFact": "In his 1904 Letters to a Young Poet, Rainer Maria Rilke defined the highest form of love not as merging two unfinished halves, but as two solitudes that protect, border, and greet each other."
       },
       {
         "label": "Chapter 10",
-        "title": "Loneliness",
-        "subtitle": "Selfish Herd Geometry, Conserved Transcriptional Leukocyte Shifts, and Dorsal Raphe Dopamine",
-        "slug": "loneliness",
+        "title": "Nostalgia and Melancholy",
+        "subtitle": "Swiss Cowbells, Proust's Madeleine, and the Bittersweet Ache of Time",
+        "slug": "nostalgia-and-melancholy",
         "formalismMode": "highlights",
-        "anchor": "Mathematical biology explains why physical separation from a group triggers immediate autonomic panic across gregarious species. In his 1971 paper on the geometry of the selfish herd, evolutionary biologist W. D. Hamilton modeled a predator emerging at a random point near a group of prey.",
-        "exitFact": "Crew members lost an average of 7.2 percent of tissue volume in the hippocampal dentate gyrus alongside drops in circulating brain-derived neurotrophic factor (`BDNF`) and spatial processing speed."
+        "anchor": "For more than two hundred years after the word was invented, nostalgia was classified as a potentially fatal medical disease rather than a wistful mood.",
+        "exitFact": "Because memory edits out physical exhaustion while keeping the pride of survival, today's ordeal regularly becomes tomorrow's cherished story."
       },
       {
         "label": "Chapter 11",
-        "title": "Gratitude",
-        "subtitle": "Reciprocal Altruism, Anterior Cingulate Valuation, and the Epley Estimation Gap",
-        "slug": "gratitude",
+        "title": "Curiosity and Wonder",
+        "subtitle": "Forbidden Fruit, Cabinets of Curiosity, and the Itch of the Unknown",
+        "slug": "curiosity-and-wonder",
         "formalismMode": "highlights",
-        "anchor": "Evolutionary biologist Robert Trivers proposed in 1971 that gratitude evolved as the proximate cognitive bookkeeper governing reciprocal altruism among non-kin.",
-        "exitFact": "Senders consistently overestimated how awkward recipients would feel and underestimated how warm and delighted recipients actually reported feeling upon opening the unexpected note."
+        "anchor": "Aristotle opened his Metaphysics with a sweeping observation about human nature: all human beings by nature desire to know.",
+        "exitFact": "Once a lion's belly is full, the animal sleeps, whereas a human being lies awake wondering what drives the tides and the stars."
       },
       {
         "label": "Chapter 12",
-        "title": "Awe",
-        "subtitle": "Vastness and Accommodation, the Small Self, and Interleukin-6 Attenuation",
-        "slug": "awe",
+        "title": "Gratitude and Awe",
+        "subtitle": "Seneca's Three Graces, Pascal's Starry Abyss, and the Small Self",
+        "slug": "gratitude-and-awe",
         "formalismMode": "highlights",
-        "anchor": "Philosopher Edmund Burke separated the sublime from ordinary beauty in 1757 by observing that vast, overwhelming phenomena inspire reverent astonishment when viewed from physical safety.",
-        "exitFact": "While benevolent nature awe elevates parasympathetic vagal tone, threat-based awe drives sympathetic cardiovascular arousal while producing the exact same small-self cognitive humility."
+        "anchor": "In his seven-book treatise On Benefits, Roman Stoic philosopher Seneca asked why ancient artists always painted the Three Graces dancing hand in hand in an unbroken circle.",
+        "exitFact": "By shrinking the noisy, self-important ego down to its true proportions, awe quiets daily anxieties and reconnects the individual to a larger whole."
       }
     ]
   },
