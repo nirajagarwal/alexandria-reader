@@ -759,10 +759,16 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35), 0 2px 6px rgba(0, 0, 0, 0.2);
         }
 
-        .book-card:hover {
+        .book-card:hover,
+        .book-card.is-selected {
             transform: translateY(-8px) scale(1.015);
             box-shadow: 0 22px 48px rgba(0, 0, 0, 0.35), 0 6px 14px rgba(0, 0, 0, 0.15);
             border-color: var(--accent-color);
+        }
+
+        .book-card.is-selected {
+            outline: 2px solid var(--accent-color);
+            outline-offset: 2px;
         }
 
         .book-cover-frame {
