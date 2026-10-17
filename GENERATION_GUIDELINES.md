@@ -1,55 +1,84 @@
-# Alexandria Press — Book Generation Guidelines & Prompt Architecture
+# Alexandria Press — Book Generation Guidelines
 
-This document defines the minimal, high-trust editorial architecture for Alexandria Press (`alexandria.press`).
-
----
-
-## Core Editorial Principle: Minimal Pointers, High Intellectual Trust
-
-Over-constraining a frontier model with rigid formatting schedules, forced sentence-length caps, or instructions to "write simply for any reader" causes **mean reversion**: the model spends its attention budget on checklist compliance and retreats to the safest, most overused 101-level anecdotes in its pretraining distribution.
-
-Conversely, feeding a model a dense checklist of sub-nodes to cram into 600 words causes **academic compression**: joyless, Latinate deepspeak where terms are defined rather than ideas explored.
-
-To preserve the intellectual electricity of our best volumes (*Singular Minds*, *Architectures of Choice*, *Sensory Worlds*, *Fictions of Order*), prompts must stay **minimal, high-trust, and thesis-driven**:
-
-1. **Thesis-Driven Chapters (Never Safe Anecdotes)**
-   - Every chapter must be built around a **sharp, non-obvious thesis, paradox, or structural insight**.
-   - Historical episodes, clinical patients, experiments, and contemplative texts are **servants of the argument**, not the point of the chapter.
-   - Avoid overused pop-science chestnuts (or if a classic problem is unavoidable, bypass the 101-level textbook summary and expose the deeper mathematical, structural, or philosophical fault line underneath).
-
-2. **High Intellectual Voltage, Zero Pretension**
-   - Write for an intellectually ambitious adult reader. Never talk down to the reader in a breezy explainer tone ("Imagine your brain inside a dark box..."), and never use pretentious academic throat-clearing ("perceptual disengagement and motor quiescence" when you mean "falling asleep").
-   - Use precise technical, mathematical, or philosophical concepts whenever they do real explanatory work, and unpack them with crystalline clarity.
-
-3. **Organic Formalisms (No Pre-Assigned Schedules)**
-   - **Never** force a fixed schedule of equations, diagrams, or bullet lists across chapters.
-   - Include a display equation (`$$...$$`) **only** when a genuine mathematical, physical, or information-theoretic law is the sharpest way to state the argument.
-   - Include a schematic SVG diagram (` ```svg `) or a structured bullet list **only** when a topology, comparison, or multi-part distinction is clearer structured than in continuous prose. When pure essay prose is stronger, use pure prose.
-
-4. **The 12-Chapter Container (~550–750 Words per Chapter)**
-   - Every volume consists of a concise **Introduction (~200–280 words)** that frames the core conceptual tension of the book (without listing or previewing chapters), followed by **12 self-contained chapters** (~550–750 words each; validator window `500–800` words).
-   - Book titles must never start with the prefix `"Twelve "` (use `# Virtues`, `# Vaccines`, `# Emotions`, `# Plants`, `# Materials`).
-
-5. **Mechanical & Factual Hygiene (Enforced by `scripts/validate_book.py`)**
-   - Keep formatting rules out of the creative way while enforcing clean production hygiene:
-     - **3-Line Headers (No Colons)**: `### Chapter N` / `# Title` / `## Subtitle`.
-     - **Concrete Grounding**: Anchor every chapter in real experiments, thinkers, or primary records (verified via 1 Google Search per chapter in Stage 2).
-     - **Paraphrase Only (No 5+ Word Direct Quotes)**: Paraphrase all statements in indirect speech so fabricated quotes are impossible.
-     - **Clean Exits**: End each chapter when the argument lands—never tack on a moralizing summary sentence (*"This proved that..."*, *"Ultimately..."*, *"serves as a testament"*).
-     - **LaTeX & SVG Hygiene**: Escape literal currency dollar signs (`\$100`), use valid KaTeX syntax, and keep any SVG diagram inside `viewBox="0 0 600 H"` ($140 \le H \le 250$) using CSS theme variables.
+These guidelines translate the **Alexandria Manifesto** ([`alexandria_manifesto.md`](alexandria_manifesto.md)) into the **Two-Tier Generation Architecture**:
+- **Tier 1**: Seven broad laws common to all books.
+- **Tier 2**: Topic-specific prompt profiles that adapt the *Narrative Vector* and *Forensic Engine* to the specific subject without forcing a one-size-fits-all template.
 
 ---
 
-## Structural Modes
+## The First Principle: Authorial Humility & The Contrapuntal Cadence
 
-1. **12-Facet Essays & Mechanisms (`mode: "facet"` / `format: "mechanisms"`)**
-   - Examines a rich phenomenon from 12 distinct structural, scientific, philosophical, or historical angles. Each chapter is a self-contained essay driven by a sharp thesis and concrete empirical or historical evidence.
+> **"We are not writing to impress. The material we have itself is impressive. We need to get out of the way and let the material speak for itself."**
 
-2. **12-Facet Biographies (`mode: "facet"` / `format: "biography"`)**
-   - Uses the subject's name as the main book title (`# Claude Shannon`, `# Richard Feynman`, `# Alan Turing`). Chapter 1 examines the thinker's formative cognitive style; Chapters 2–12 each unpack a decisive theorem, machine, experiment, or intellectual collision.
+Every Alexandria chapter is built on **The Contrapuntal Cadence**—the interplay between two modes:
+1. **The Narrative Vector**: The human stakes, historical anomaly, entrenched orthodoxy, or physical crisis where a problem surfaced.
+2. **The Forensic Deep-Dive**: The step-by-step physical, mathematical, biological, philosophical, or institutional mechanism that explains *why* and *how* it works.
 
-3. **Conceptual Landscapes (`mode: "landscape"` / `format: "landscape"`)**
-   - Chapter 1 examines the anchor concept itself; Chapters 2–12 explore 11 neighboring concepts that constrain, contrast with, or illuminate the anchor. Focus on the *structural relationship* between the neighbor and the core topic—never reduce a chapter to a glossary definition of background nodes.
+---
 
-4. **12×12 Prospected Highlights (`mode: "listicle"` / `format: "highlights"`)**
-   - Each of the 12 chapters examines one subsystem through 12 standalone paragraphs separated by 11 centered middle-dot lines (`· · ·`), where each paragraph delivers a counterintuitive, quantitative insight.
+## Tier 1: Seven Universal Laws (Common to All Books)
+
+1. **Direct, Clear Prose (Zero Pretension, Zero Condescension)**
+   - Say things simply and directly. Complexity belongs in the underlying ideas, mechanisms, and cross-domain connections—never in decorative vocabulary or academic throat-clearing.
+   - Do not talk down to the reader with breezy pop-science filler, and do not use hyperbolic adjectives (*"breathtaking"*, *"awe-inspiring"*, *"mind-boggling"*, *"staggering"*, *"paradigm-shifting"*, *"unprecedented"*, *"astonishing"*). Let the facts, scale, and logic carry the weight.
+
+2. **Mandatory Concrete Grounding**
+   - Never write an unanchored abstract overview. Anchor every chapter in real experiments, historical events, clinical cases, or primary texts with named individuals, years, places, and concrete evidence.
+   - Use the historical or experimental case to expose the underlying mechanism or conceptual fault line—never as a superficial anecdote told for its own sake.
+
+3. **Mechanism Completeness (550–800 Words per Chapter; ~250-Word Topic-Only Introductions)**
+   - **Introductions (~200–270 Words)**: Frame the central intellectual tension or physical constraint of the book's topic directly. Never summarize, list, or preview the individual chapters.
+   - **Chapters (550–800 Words)**: Unpack *how* the mechanism or argument works step by step across 5–7 paragraphs so a reader is never left asking *"but how?"*
+
+4. **Earned Formalisms Only (Zero Math Cosplay)**
+   - Choose each chapter's formalism organically based on the subject:
+     - **Genuine Equations (`"equation"`)**: Include a `$$...$$` display equation *only* when an authentic mathematical, physical, chemical, or statistical law governs the phenomenon (e.g., non-ergodic time-average growth, Kelly criterion, Shannon capacity, Kuramoto synchronization). Never invent conceptual pseudo-equations ($\text{Fragility} \propto \text{Inertia}^2$).
+     - **Protocols & Ledgers (`"ledger_or_list"`)**: When a mechanism is experimental, clinical, or comparative (such as James Lind's six scurvy treatment pairs), use a crisp 3–4 item structured list where it brings immediate clarity.
+     - **Schematic Diagrams (`"diagram"`)**: Include a theme-aware SVG schematic (`FIG. N.1`) only where a 3-stage structural flow genuinely clarifies the system.
+     - **Continuous Prose (`"prose"`)**: When the chapter's engine is philosophical, historical, contemplative, or conceptual, let continuous prose carry the entire argument.
+
+5. **Three Opening Doors (Preventing Cadence Fatigue)**
+   - Never start every chapter with the same mechanical formula (*"In [Year], in [City], [Name]..."*). Rotate naturally across three entry doors:
+     - **Door A — The Scene / Collision Open**: Drop into a decisive historical moment, laboratory apparatus, or clinical encounter where an anomaly surfaced.
+     - **Door B — The Constraint / Paradox Open**: Start directly with a hard physical bottleneck, mathematical paradox, or entrenched orthodoxy, then introduce the thinker or system that collided with it.
+     - **Door C — The Artifact / Measurement Open**: Start with a physical remnant, primary text, clinical ledger, or unexplained discrepancy (such as an eight-arcminute error in Mars tables or the open gunports of a salvaged hull).
+
+6. **Clean Exits (Withhold Concluding Sermons)**
+   - Never end a chapter with a moralizing summary sentence (*"X showed that..."*, *"This demonstrated that..."*, *"Ultimately..."*, *"serves as a testament"*).
+   - When the final empirical fact, mathematical resolution, or philosophical consequence lands, stop and let the reader close the circuit.
+
+7. **Epistemic Honesty, Paraphrase Hygiene & Strict 3-Line Headers**
+   - **Paraphrase Only**: Paraphrase primary arguments and historical statements in accurate indirect speech (no 5+ word direct quotes inside `"..."`).
+   - **No Fabricated Micro-Details**: Do not invent novelistic weekdays, weather cold-opens, or hyphenated character ages (`"forty-three-year-old"`).
+   - **Three-Line Header Standard (Zero Colons)**:
+     ```markdown
+     ### Chapter [N]
+     # [Title Without Colons]
+     ## [Subtitle Naming the Subject or Mechanism Without Colons]
+     ```
+
+---
+
+## Tier 2: Topic-Specific Prompt Profiles
+
+Rather than forcing every subject into a single template, each volume pairs **Tier 1** with a **Topic-Specific Prompt Profile** tailored to how that domain proves its truths:
+
+### Profile A: Physical Systems, Infrastructure & Engineering Failures
+*Examples: `Latent Fragility`, `Architectures of the Grid`, `Elemental Asymmetries`, `Liminal Thresholds`, `Planetary Triggers`, `Materials`, `Entropy`*
+- **Narrative Vector**: Focus on the physical machine, infrastructure node, geological fault, or experimental apparatus—the exact materials, pressures, voltages, dimensions, and the engineers or physicists on site.
+- **Forensic Engine**: Unpack the governing physical or chemical law, the boundary condition that was violated, the thermodynamic or differential equation, and the quantitative post-mortem telemetry.
+
+### Profile B: Biological, Neural, Cognitive & Contemplative Systems
+*Examples: `The Autonomous Engine`, `Radical Subtraction`, `Sensory Worlds`, `Consciousness`, `Attention`, `Self-Transcendence`, `Vaccines`*
+- **Narrative Vector**: Center on the landmark clinical patient, physiological experiment, evolutionary adaptation, contemplative tradition, or philosophical thought experiment that exposed a hidden property of life or mind.
+- **Forensic Engine**: Trace the anatomical circuit, cellular/immunological mechanism, receptor kinetics, computational neuroscience model, or phenomenological argument step by step.
+
+### Profile C: Decision Theory, Economics & Institutional Mechanics
+*Examples: `Non-Linear Engines`, `Architectures of Choice`, `Fictions of Order`, `Bonds of Enmity`, `Paper Panics`*
+- **Narrative Vector**: Center on a high-stakes historical wager, financial blowup, legal invention, military survival problem, or corporate inflection point.
+- **Forensic Engine**: Show the exact structural logic—why ensemble averages diverge from time averages, how the payoff convexity or balance-sheet plumbing worked, where the absorbing barrier sat, or how the institutional rule altered incentives.
+
+### Profile D: Intellectual Ruptures, Forensics & Biography
+*Examples: `Singular Minds`, `Tales of Audacity`, `Instruments of Precision`, `Ghosts in the Parchment`, `William James`, `Richard Feynman`, `Claude Shannon`, `Alan Turing`*
+- **Narrative Vector**: Establish the entrenched consensus or intractable problem, introduce the specific anomaly or conceptual leap that broke it, and walk through the sequence of trials, instruments, or proofs executed by the protagonist.
+- **Forensic Engine**: Use authentic geometric or mathematical derivations where the discovery was mathematical or physical, and use exact experimental protocols, philological forensics, or primary evidence tables where the breakthrough was biological, medical, or historical.

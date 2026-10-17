@@ -344,6 +344,34 @@ def extract_json_object(raw_text: str) -> dict:
     return json.loads(cleaned[start : end + 1])
 
 
+PROFILE_GUIDANCE = {
+    "A": (
+        "Profile A — Physical Systems, Infrastructure & Material Constraints: "
+        "Pair the Narrative Vector (the engineering site, physical apparatus, or anomalous observation) "
+        "with the Forensic Deep-Dive (the governing physical or chemical law, boundary condition violated, "
+        "equation, and post-mortem telemetry)."
+    ),
+    "B": (
+        "Profile B — Biological, Neural, Cognitive & Contemplative Systems: "
+        "Pair the Narrative Vector (the landmark clinical patient, physiological experiment, evolutionary case, "
+        "contemplative practice, or philosophical anomaly) with the Forensic Deep-Dive (the anatomical pathway, "
+        "cellular mechanism, computational/information-theoretic model, or phenomenological argument)."
+    ),
+    "C": (
+        "Profile C — Decision Theory, Economics & Institutional Mechanics: "
+        "Pair the Narrative Vector (the historical wager, corporate survival crisis, financial blowup, or legal/strategic "
+        "turning point) with the Forensic Deep-Dive (the exact probability calculus, ensemble vs. time average, "
+        "payoff convexity, absorbing barrier, or incentive structure)."
+    ),
+    "D": (
+        "Profile D — Intellectual Ruptures, Forensics & Biography: "
+        "Pair the Narrative Vector (the entrenched orthodoxy, the empirical anomaly or intractable problem that defied it, "
+        "and the protagonist's sequence of trials) with the Forensic Deep-Dive (authentic mathematical/geometric derivations "
+        "for mathematical discoveries, or exact experimental protocols and primary evidence ledgers for empirical ones)."
+    ),
+}
+
+
 def stage1_generate_dossier_batch(api_key: str, spec: dict, tracker: CostAndStateTracker) -> dict:
     tracker.set_stage(1, "Stage 1/4 · Designing 12-Chapter Research Dossier (Gemini Batch API)", 10)
     mode = spec["mode"]
@@ -351,53 +379,59 @@ def stage1_generate_dossier_batch(api_key: str, spec: dict, tracker: CostAndStat
     title = spec["title"]
     subtitle = spec["subtitle"]
     category = spec["category"]
-    profile = spec["profile"]
+    profile = spec.get("profile", "B")
+    profile_desc = PROFILE_GUIDANCE.get(profile, PROFILE_GUIDANCE["B"])
 
     mode_instructions = ""
     if mode == "landscape":
         mode_instructions = """
-Structural Approach (`mode: "landscape"`):
+Structural Form (`mode: "landscape"`):
 - Chapter 1 examines the core phenomenon itself and its governing conceptual tension.
 - Chapters 2 through 12 explore 11 distinct neighboring concepts, rival frameworks, boundary cases, or non-obvious extensions that illuminate the core phenomenon from different angles.
 """
     elif mode == "listicle":
         mode_instructions = """
-Structural Approach (`mode: "listicle"`):
+Structural Form (`mode: "listicle"`):
 - Each of the 12 chapters examines one major subsystem, zone, or component of the topic through 12 counterintuitive, high-signal empirical facts (`prospected_seeds`: array of 12 strings per chapter).
 """
     elif fmt == "biography":
         mode_instructions = """
-Structural Approach (`format: "biography"`):
+Structural Form (`format: "biography"`):
 - Chapter 1 examines the thinker's formative cognitive style and intellectual departure point.
 - Chapters 2 through 12 each examine one decisive theorem, experiment, machine, or intellectual collision.
 """
     else:
         mode_instructions = """
-Structural Approach (`mode: "facet"` / `format: "mechanisms"`):
-- Design 12 distinct, high-voltage chapters that explore the subject across its sharpest scientific mechanisms, competing theories, curious empirical anomalies, and philosophical or outside-of-science perspectives.
-- Avoid safe, overused 101 pop-science chestnuts unless you are exposing a deeper mathematical, structural, or philosophical fault line that standard summaries miss.
+Structural Form (`mode: "facet"` / `format: "mechanisms"`):
+- Design 12 distinct chapters that examine the subject across its deepest scientific mechanisms, competing theories, curious anomalies, and philosophical or cross-disciplinary dimensions.
 """
 
-    prompt = f"""You are the Editorial Architect for Alexandria Press (alexandria.press), in the tradition of volumes like *Singular Minds* and *Architectures of Choice*.
+    prompt = f"""You are the Editorial Architect for Alexandria Press (alexandria.press).
+
+ALEXANDRIA MANIFESTO FIRST PRINCIPLE:
+"We are not writing to impress. The material we have itself is impressive. We need to get out of the way and let the material speak for itself."
+
 Design a 12-chapter dossier JSON for:
 - Slug: "{spec['slug']}"
 - Title: "{title}" (no colons)
 - Subtitle: "{subtitle}" (no colons)
 - Category: "{category}"
+- Tier-2 Domain Profile: {profile_desc}
 
 {mode_instructions}
 
-EDITORIAL POINTERS:
-1. Every chapter must be driven by a **sharp, non-obvious thesis, paradox, or structural insight**—not a safe textbook anecdote.
-2. Anchor each chapter in real experiments, thinkers, historical records, or primary texts (`historical_anchor`), and specify the concrete finding or resolution where the argument lands (`exit_fact`).
-3. Choose `"formalism_mode"` organically for each chapter based ONLY on what genuinely sharpens that chapter's argument:
-   - `"prose"`: pure essay prose when the argument is philosophical, contemplative, literary, or conceptual.
-   - `"equation"`: when a genuine mathematical, physical, or information-theoretic equation does real explanatory work.
-   - `"ledger_or_list"`: when a crisp 3–4 item structural comparison or experimental breakdown clarifies the contrast.
-   - `"diagram"`: at most 1–3 chapters across the entire book, only where a 3-stage schematic flow genuinely aids comprehension.
+TWO-TIER ARCHITECTURE GUIDELINES:
+1. The Contrapuntal Cadence: Every chapter alternates between the Narrative Vector (the concrete historical event, experiment, clinical case, or philosophical collision) and the Forensic Deep-Dive (the exact underlying mechanism, mathematical law, or structural logic).
+2. Maximum Entropy (Anti-Padding): Every chapter must be driven by a sharp, non-obvious thesis, paradox, or structural mechanism—never a superficial textbook survey or safe pop-science anecdote.
+3. Earned Formalisms Only (Zero Math Cosplay): Choose `"formalism_mode"` organically for each chapter based ONLY on what genuinely governs that chapter's mechanism:
+   - `"equation"`: ONLY when a genuine mathematical, physical, statistical, or information-theoretic law governs the phenomenon. Never invent conceptual pseudo-equations.
+   - `"ledger_or_list"`: when a mechanism is experimental, clinical, or comparative and a 3–4 item structured breakdown clarifies the protocol or contrast.
+   - `"diagram"`: at most 1–3 chapters across the book, only where a 3-stage schematic flow genuinely clarifies the system.
+   - `"prose"`: continuous essay prose when the mechanism is philosophical, historical, contemplative, or conceptual.
    (If `mode` is `"listicle"`, set `"formalism_mode": "listicle"` for all chapters.)
-4. Chapter `title` and `subtitle` must not contain colons (`:`).
-5. Include a `"search_query"` (8–14 words) to verify the chapter's primary researcher, year, and empirical details via Google Search.
+4. Rotate Opening Doors across the 12 chapters (`Scene/Collision`, `Constraint/Paradox`, `Artifact/Measurement`) so chapters do not all begin with the same formula.
+5. Chapter `title` and `subtitle` must not contain colons (`:`).
+6. Include a `"search_query"` (8–14 words) to verify the chapter's primary researcher, year, and empirical details via Google Search.
 
 Return ONLY a valid JSON object matching this structure:
 {{
@@ -414,9 +448,9 @@ Return ONLY a valid JSON object matching this structure:
       "title": "...",
       "subtitle": "...",
       "formalism_mode": "prose | equation | ledger_or_list | diagram",
-      "historical_anchor": "The specific thesis, thinkers, experiments, years, and quantitative or textual evidence driving this chapter.",
+      "historical_anchor": "The Narrative Vector + Forensic Deep-Dive: specific thesis, thinkers, experiments, years, and mechanism driving this chapter.",
       "exit_fact": "The concrete empirical, mathematical, or philosophical resolution that closes the chapter.",
-      "equation_or_diagram_spec": "If equation, the genuine LaTeX equation and variable meanings; if list, the key contrasts; if prose, brief structural note.",
+      "equation_or_diagram_spec": "If equation, the genuine LaTeX equation and variable meanings; if list, the experimental protocol or contrast; if prose, brief structural note.",
       "search_query": "..."
     }}
   ]
@@ -613,6 +647,8 @@ def build_chapter_prompt(dossier: dict, ch: dict) -> str:
     exit_fact = ch.get("exit_fact", "")
     v_facts = "\n".join(f"- {f}" for f in ch.get("verified_facts", []))
     eq_spec = ch.get("equation_or_diagram_spec", "")
+    profile = dossier.get("profile", "B")
+    profile_desc = PROFILE_GUIDANCE.get(profile, PROFILE_GUIDANCE["B"])
 
     if f_mode == "listicle":
         seeds = ch.get("prospected_seeds", [])
@@ -624,39 +660,40 @@ Format (`mode: "listicle"`):
 """
     elif f_mode == "diagram":
         formalism_instr = f"""
-Optional Visual: Include `[DIAGRAM_SLOT_{ch_num}]` on its own line between two paragraphs where a schematic fits, and at the very end after `===DIAGRAM_LABELS===` provide 6 short labels (`<= 14` chars each): `Box1Title | Box1Sub | Box2Title | Box2Sub | Box3Title | Box3Sub`.
+Earned Visual: Include `[DIAGRAM_SLOT_{ch_num}]` on its own line between two paragraphs where a schematic fits, and at the very end after `===DIAGRAM_LABELS===` provide 6 short labels (`<= 14` chars each): `Box1Title | Box1Sub | Box2Title | Box2Sub | Box3Title | Box3Sub`.
 """
     elif f_mode == "equation" and eq_spec:
         formalism_instr = f"""
-Earned Formalism: Integrate the genuine mathematical relationship ({eq_spec}) as a `$$...$$` display equation where it sharpens the argument, defining its terms naturally in prose.
+Earned Formalism: Integrate the genuine mathematical law ({eq_spec}) as a `$$...$$` display equation where it governs the mechanism, defining its variables naturally in prose.
 """
     elif f_mode == "ledger_or_list" and eq_spec:
         formalism_instr = f"""
-Earned Structure: You may use a concise bulleted list (3–4 items) if it sharpens the structural contrast ({eq_spec}), or write continuous essay prose if stronger.
+Earned Structure: Use a concise bulleted list (3–4 items) if it sharpens the experimental protocol or structural contrast ({eq_spec}), or write continuous prose if stronger.
 """
     else:
         formalism_instr = """
-Format: Continuous, high-clarity essay prose. Include an equation or bullet list only if the argument genuinely requires it.
+Format: Continuous essay prose. Include an equation or bullet list only if the mechanism genuinely requires it.
 """
 
-    return f"""Write Chapter {ch_num} of "{dossier['title']}: {dossier['subtitle']}".
+    return f"""Write Chapter {ch_num} of "{dossier['title']}: {dossier['subtitle']}" for Alexandria Press.
 
 Start with this exact 3-line header (no colons `:`):
 ### Chapter {ch_num}
 # {ch_title}
 ## {ch_sub}
 
-Chapter Thesis & Verified Grounding:
-- Core Angle & Evidence: {anchor}
-{f"- Verified Details:{chr(10)}{v_facts}" if v_facts else ""}
+Chapter Grounding & Mechanism:
+- Narrative Vector & Forensic Deep-Dive: {anchor}
+{f"- Verified Primary Details:{chr(10)}{v_facts}" if v_facts else ""}
 - Closing Resolution: {exit_fact}
+- Tier-2 Domain Profile: {profile_desc}
 {formalism_instr}
-Editorial Pointers:
-- Write with the intellectual depth, clarity, and narrative authority of *Singular Minds* and *Architectures of Choice*.
-- Let the conceptual thesis drive the chapter: use the historical experiments, clinical anomalies, or philosophical arguments to expose *why* the phenomenon works the way it does, never as safe pop-science anecdotes or a superficial survey.
-- Trust the reader's intelligence. Use precise concepts when they do real explanatory work, stated in clean, direct English—zero pretentious academic throat-clearing, and zero talking down to the reader.
-- Length: roughly **560 to 720 words** (validator bounds: `500–800` words).
-- Hygiene: Paraphrase all statements in indirect speech (no 5+ word direct quotes inside `"..."`), escape literal dollar currency as `\\$100`, and end directly when the final point lands without a moralizing summary sentence (`"proved that"`, `"demonstrated that"`, `"Ultimately"`).
+Alexandria Manifesto Compass Points:
+1. Authorial Humility: "We are not writing to impress. The material we have itself is impressive. Get out of the way and let the material speak for itself."
+2. Direct, Clear Prose: Complexity belongs entirely in the underlying mechanics and cross-domain connections—never in pretentious academic jargon, and never in condescending pop-science filler.
+3. The Contrapuntal Cadence: Weave the Narrative Vector (the concrete human/historical stakes, anomaly, or experiment) together with the Forensic Deep-Dive (unpacking *how* and *why* the mechanism worked step by step, so a reader is never left asking "but how?").
+4. Maximum Entropy (Anti-Padding): Every sentence should advance the causal chain, unpack a mechanism, or reveal a structural link (~560 to 720 words; validator bounds `500–800` words).
+5. Clean Exit & Hygiene: Paraphrase all statements in indirect speech (no 5+ word direct quotes inside `"..."`), escape literal dollar currency as `\\$100`, and stop directly when the final factual or conceptual resolution lands—no moralizing concluding summary (`"X showed that..."`, `"This demonstrated that..."`, `"Ultimately"`).
 
 Output ONLY the Markdown for Chapter {ch_num} starting with `### Chapter {ch_num}`."""
 
@@ -664,18 +701,20 @@ Output ONLY the Markdown for Chapter {ch_num} starting with `### Chapter {ch_num
 def build_intro_prompt(dossier: dict) -> str:
     title = dossier["title"].replace(":", "")
     intro_sub = dossier.get("intro_subtitle", f"The Architecture and Paradoxes of {title}")[:68].replace(":", "")
-    return f"""Write the Introduction for "{title}: {dossier['subtitle']}".
+    profile = dossier.get("profile", "B")
+    profile_desc = PROFILE_GUIDANCE.get(profile, PROFILE_GUIDANCE["B"])
+    return f"""Write the Introduction for "{title}: {dossier['subtitle']}" for Alexandria Press.
 
 Start with this exact 3-line header (no colons `:`):
 ### Introduction
 # {title}
 ## {intro_sub}
 
-Editorial Pointers:
-- Frame the central intellectual tension, paradox, or structural mystery of {title} in **200 to 270 words** (3 crisp paragraphs).
-- Write with the essayistic sharpness of *Singular Minds* and *Architectures of Choice*—neither stiff academic jargon nor a breezy pop-science explainer.
-- Frame the phenomenon itself; do not list or preview the upcoming chapters.
-- Paraphrase any references in indirect speech (no direct quotes).
+Alexandria Manifesto Compass Points:
+- Authorial Humility & Direct Prose: Let the scale, paradox, and elegance of the subject speak for itself without academic jargon or commercial throat-clearing.
+- Tier-2 Domain Profile: {profile_desc}
+- Frame the core intellectual tension or governing constraint of {title} directly in **200 to 270 words** (3 crisp paragraphs).
+- Do not summarize, list, or preview the individual chapters, and paraphrase any references in indirect speech (no direct quotes).
 
 Output ONLY the Markdown for the Introduction starting with `### Introduction`."""
 
