@@ -446,11 +446,11 @@
             edgePrev.classList.remove('is-disabled');
         }
         if (nextBtn) {
-            nextBtn.classList.toggle('is-disabled', atEnd);
-            nextBtn.title = 'Next Page (→)';
+            nextBtn.classList.remove('is-disabled');
+            nextBtn.title = atEnd ? 'Return to Home Catalog (→)' : 'Next Page (→)';
         }
         if (edgeNext) {
-            edgeNext.classList.toggle('is-disabled', atEnd);
+            edgeNext.classList.remove('is-disabled');
         }
 
         const showBoth = twoPage && rightPage !== null && leftPage >= TOC_PAGE;
@@ -504,8 +504,10 @@
             if (nextP <= total) {
                 pdfPageNum = nextP;
                 rebuildAndRenderSpread();
+            } else {
+                saveBookPageProgress(currentBookKey, READER_FIRST_PAGE);
+                showHomeView();
             }
-            // Clamped at final page — never accidentally exit book
         }
     }
 
@@ -521,6 +523,9 @@
         if (!activeBook) return;
         if (currentChapterIndex < activeBook.chapters.length - 1) {
             jumpToChapterIndex(currentChapterIndex + 1);
+        } else {
+            saveBookPageProgress(currentBookKey, READER_FIRST_PAGE);
+            showHomeView();
         }
     }
 
