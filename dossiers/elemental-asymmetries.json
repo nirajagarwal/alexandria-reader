@@ -1,0 +1,97 @@
+{
+  "slug": "elemental-asymmetries",
+  "file": "books/elemental-asymmetries.md",
+  "title": "Elemental Asymmetries",
+  "subtitle": "The Physical Constraints of Twelve Elements",
+  "category": "Materials & Chemistry",
+  "mode": "facet",
+  "profile": "A",
+  "accent": "#ca8a04",
+  "bg": "#211a09",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "The Triple Bond Trap",
+      "subtitle": "Nitrogen and the Metabolic Ceiling of Civilization (Oppau, 1913)",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 2,
+      "title": "The Lattice Arbitrage",
+      "subtitle": "Silicon and the Purity Threshold of Planar Semiconductors (Mountain View, 1959)",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 3,
+      "title": "The Intercalation Bottleneck",
+      "subtitle": "Lithium and the Electrochemical Redox Gradient (Oxford, 1980)",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 4,
+      "title": "The Radiative Fission",
+      "subtitle": "Uranium-235 and the Thermal Neutron Cross-Section (Oak Ridge, 1944)",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 5,
+      "title": "The Unpaired Electrons",
+      "subtitle": "Neodymium and the Coercivity of Rare Earth Permanent Magnets (Tokyo, 1982)",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 6,
+      "title": "The Quantum Cryogen",
+      "subtitle": "Helium-4 and the Vanishing Viscosity of the Superfluid (Cambridge, 1937)",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 7,
+      "title": "The Refractory Airframe",
+      "subtitle": "Titanium and the Kroll Reduction Energy Barrier (Boulder City, 1946)",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 8,
+      "title": "The Catalytic Terrace",
+      "subtitle": "Platinum and Proton-Exchange Adsorption Kinetics (Zurich, 1965)",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 9,
+      "title": "The Resistive Ceiling",
+      "subtitle": "Copper and the Wiedemann-Franz Thermal Dissipation Ratio (Pasadena, 1911)",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 10,
+      "title": "The Nuclear Valley",
+      "subtitle": "Lead and the Radiogenic Endpoint of Heavy Elements (Manchester, 1907)",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 11,
+      "title": "The Molten Cryolite",
+      "subtitle": "Aluminum and the Hall-Héroult Electrolytic Reduction (Oberlin, 1886)",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 12,
+      "title": "The Graphitic Sheet",
+      "subtitle": "Carbon-12 and the Covalent Orbital Hybridization Limits (Manchester, 2004)",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    }
+  ]
+}

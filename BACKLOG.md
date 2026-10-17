@@ -14,16 +14,16 @@
 ## Completed Batches
 
 ### Batch 1 — Completed & Published (`30` Catalog Volumes)
-1. **Entropy** — *The Core Law of Disorder and Eleven Neighbors That Govern Time, Heat, and Information* (`entropy.md`, `mode: "landscape"`, Profile A)
-2. **Twelve Materials** — *How Concrete, Steel, Glass, Paper, and Silicon Built Civilization* (`twelve_materials.md`, `mode: "facet"`, Profile A)
-3. **Claude Shannon** — *The Juggler Who Turned Information Into Physics* (`claude_shannon.md`, `mode: "facet"`, Profile D)
-4. **The Ocean** — *Twelve Marine Zones and Systems in Twelve Highlights Each* (`the_ocean.md`, `mode: "listicle"`, Profile B)
+1. **Entropy** — *The Core Law of Disorder and Eleven Neighbors That Govern Time, Heat, and Information* (`books/entropy.md`, `mode: "landscape"`, Profile A)
+2. **Twelve Materials** — *How Concrete, Steel, Glass, Paper, and Silicon Built Civilization* (`books/twelve-materials.md`, `mode: "facet"`, Profile A)
+3. **Claude Shannon** — *The Juggler Who Turned Information Into Physics* (`books/claude-shannon.md`, `mode: "facet"`, Profile D)
+4. **The Ocean** — *Twelve Marine Zones and Systems in Twelve Highlights Each* (`books/the-ocean.md`, `mode: "listicle"`, Profile B)
 
 ### Batch 2 — Completed & Published (`34` Catalog Volumes)
-5. **Consciousness** — *The Subjective Mind and Eleven Neighbors From Global Workspace to Split-Brain Patients* (`consciousness.md`, `mode: "landscape"`, Profile B)
-6. **Twelve Emotions** — *The Evolutionary Calculus and Neural Circuitry of Human Feeling* (`twelve_emotions.md`, `mode: "facet"`, Profile C)
-7. **Alan Turing** — *Computability, Codebreaking, and the Patterns of Living Form* (`alan_turing.md`, `mode: "facet"`, Profile D)
-8. **The Cell** — *Twelve Molecular Machines in Twelve Highlights Each* (`the_cell.md`, `mode: "listicle"`, Profile B)
+5. **Consciousness** — *The Subjective Mind and Eleven Neighbors From Global Workspace to Split-Brain Patients* (`books/consciousness.md`, `mode: "landscape"`, Profile B)
+6. **Twelve Emotions** — *The Evolutionary Calculus and Neural Circuitry of Human Feeling* (`books/twelve-emotions.md`, `mode: "facet"`, Profile C)
+7. **Alan Turing** — *Computability, Codebreaking, and the Patterns of Living Form* (`books/alan-turing.md`, `mode: "facet"`, Profile D)
+8. **The Cell** — *Twelve Molecular Machines in Twelve Highlights Each* (`books/the-cell.md`, `mode: "listicle"`, Profile B)
 
 ---
 

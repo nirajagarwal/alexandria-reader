@@ -1,24 +1,17 @@
 {
-  "name": "book-writer",
+  "name": "alexandria-press",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "test": "tests"
-  },
+  "description": "Alexandria Press — Deep Learning for Humans (alexandria.press)",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "python3 tests/test_reader.py",
+    "validate": "python3 scripts/validate_book.py --all",
+    "sync": "python3 scripts/publish_book.py --sync-all",
+    "compile": "python3 scripts/compile_typst.py --all"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "type": "commonjs",
-  "dependencies": {
-    "dotenv": "^18.0.8",
-    "mongodb": "^7.7.0",
-    "vercel": "^64.0.2"
-  },
   "devDependencies": {
-    "katex": "^0.19.0"
+    "katex": "^0.16.11",
+    "vercel": "^50.0.0"
   }
 }

@@ -1,0 +1,97 @@
+{
+  "slug": "architectures-of-choice",
+  "file": "books/architectures-of-choice.md",
+  "title": "Architectures of Choice",
+  "subtitle": "Practical Decision Theory for an Unpredictable World",
+  "category": "Decision Science & Strategy",
+  "mode": "facet",
+  "profile": "C",
+  "accent": "#7c3aed",
+  "bg": "#1b122e",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "The Absorbing Barrier",
+      "subtitle": "Non-Ergodicity from the St. Petersburg Paradox to Long-Term Capital Management",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 2,
+      "title": "The Kelly Frontier",
+      "subtitle": "Optimal Bet Sizing from Bell Labs to the Las Vegas Blackjack Tables",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 3,
+      "title": "Asymmetric Convexity",
+      "subtitle": "Optionality from Thales of Miletus to Modern R&D Portfolios",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 4,
+      "title": "The One-Way Door",
+      "subtitle": "Real Options and Reversibility at Intel in October 1985",
+      "opening_door": "A: Scene",
+      "formalism_mode": "ledger_or_list"
+    },
+    {
+      "chapter": 5,
+      "title": "The Weight of Evidence",
+      "subtitle": "Bayesian Updating and Decibans Inside Bletchley Park's Hut 8",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 6,
+      "title": "The Missing Fuselage",
+      "subtitle": "Survivorship Bias in Abraham Wald's 1943 Bomber Vulnerability Memos",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 7,
+      "title": "The Severed Tail",
+      "subtitle": "Goodhart's Law from Colonial Hanoi to the Qumran Caves",
+      "opening_door": "A: Scene",
+      "formalism_mode": "ledger_or_list"
+    },
+    {
+      "chapter": 8,
+      "title": "The Minimax Brink",
+      "subtitle": "Game Theory and Credible Commitment in October 1962",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 9,
+      "title": "The Concorde Trap",
+      "subtitle": "Sunk Costs and Asymmetric Loss Aversion in Prospect Theory",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 10,
+      "title": "The Two-Second Roll",
+      "subtitle": "Hydraulic Transients and the OODA Loop Over MiG Alley",
+      "opening_door": "A: Scene",
+      "formalism_mode": "ledger_or_list"
+    },
+    {
+      "chapter": 11,
+      "title": "The Tenth Man",
+      "subtitle": "Institutionalizing Dissent from the 1973 Yom Kippur Failure to the Pre-Mortem",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "ledger_or_list"
+    },
+    {
+      "chapter": 12,
+      "title": "The Gittins Index",
+      "subtitle": "Exploration versus Exploitation and the Multi-Armed Bandit",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    }
+  ]
+}

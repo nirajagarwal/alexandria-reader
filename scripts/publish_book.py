@@ -2,22 +2,28 @@
 """
 Alexandria Press — Autonomous Book Publisher & Library Sync (scripts/publish_book.py)
 
-Automates Stage 5 of the Alexandria Press generation pipeline:
-1. Runs deterministic validation (`validate_book`) on the manuscript.
-2. Generates a 1600x2400 mathematical vector SVG cover (`assets/covers/<slug>.svg`) if needed.
-3. Registers or updates the book inside `js/books-data.js`.
-4. Injects or updates the catalog card and JSON-LD entry inside `index.html`.
-5. Updates `sitemap.xml`.
-6. Can also dump all existing chapter anchors (`--list-anchors`) to prevent cross-book duplication.
+Automates Stage 5 of the Alexandria Press generation pipeline using `catalog.json`
+as the single source of truth:
+1. Runs deterministic validation (`validate_book`) on `books/<slug>.md`.
+2. Generates a 1600x2400 mathematical vector SVG cover (`assets/covers/<slug>.svg`) and
+   a 1:1 high-contrast thumbnail (`assets/covers/thumbs/<slug>.svg`).
+3. Compiles Desktop, Compact, and Mobile Typst PDF editions (`assets/pdfs/<slug>*.pdf`).
+4. Updates `catalog.json` and deterministically regenerates:
+   - `js/books-data.js`
+   - `<!-- BEGIN:JSON_LD -->` and `<!-- BEGIN:CATALOG_GRID -->` in `index.html`
+   - `sitemap.xml`
 
 Usage:
     python3 scripts/publish_book.py --list-anchors
-    python3 scripts/publish_book.py --sync-all
-    python3 scripts/publish_book.py --slug geometries-of-contagion --category "Epidemiology & Networks" --accent "#10b981" --bg "#061e16" --theme "network-wave"
+    python3 scripts/publish_book.py --sync-all [--recompile]
+    python3 scripts/publish_book.py --slug the-cell --category "Molecular Biology" --accent "#10b981" --bg "#061e16"
+    python3 scripts/publish_book.py --batch 3
 """
 
 import argparse
+import colorsys
 import datetime
+import hashlib
 import html
 import json
 import math
@@ -27,60 +33,35 @@ import sys
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(BASE_DIR, "scripts"))
+
+from lib import (  # noqa: E402
+    COVERS_DIR,
+    DOSSIERS_DIR,
+    INDEX_HTML_PATH,
+    LEGACY_SLUGS,
+    PDFS_DIR,
+    SITEMAP_PATH,
+    THUMBS_DIR,
+    extract_book_metadata,
+    load_backlog,
+    load_catalog,
+    normalize_slug,
+    resolve_book_md,
+    save_backlog,
+    save_catalog,
+    write_books_js_from_catalog,
+)
 from validate_book import validate_book  # noqa: E402
-
-BOOKS_JS_PATH = os.path.join(BASE_DIR, "js", "books-data.js")
-INDEX_HTML_PATH = os.path.join(BASE_DIR, "index.html")
-SITEMAP_PATH = os.path.join(BASE_DIR, "sitemap.xml")
-COVERS_DIR = os.path.join(BASE_DIR, "assets", "covers")
-
-
-def load_books_data():
-    text = open(BOOKS_JS_PATH, encoding="utf-8").read()
-    p_end = text.find("return {") + len("return ")
-    s_start = text.rfind("};") + 1
-    data = json.loads(text[p_end:s_start])
-    return text[:p_end], data, text[s_start:]
-
-
-def save_books_data(prefix, data, suffix):
-    new_js = prefix + json.dumps(data, indent=2, ensure_ascii=False) + suffix
-    open(BOOKS_JS_PATH, "w", encoding="utf-8").write(new_js)
-
-
-def extract_book_metadata(md_text: str):
-    secs = [s.strip() for s in md_text.split("\n---\n") if s.strip()]
-    first_lines = [l.strip() for l in secs[0].splitlines() if l.strip()] if secs else []
-    title = first_lines[0].lstrip("#").strip() if first_lines else "Untitled Volume"
-    subtitle = first_lines[1].lstrip("#").strip() if len(first_lines) > 1 else ""
-    chapters = []
-    for idx, sec in enumerate(secs[1:]):
-        headers = []
-        for l in sec.splitlines():
-            if l.strip().startswith("#"):
-                headers.append(l.strip().lstrip("#").strip())
-                if len(headers) == 3:
-                    break
-        while len(headers) < 3:
-            headers.append("")
-        chapters.append(
-            {
-                "label": headers[0] or ("Introduction" if idx == 0 else f"Chapter {idx}"),
-                "title": headers[1] or "Untitled",
-                "subtitle": headers[2] or "",
-            }
-        )
-    return title, subtitle, chapters
 
 
 def list_existing_anchors():
-    _, data, _ = load_books_data()
+    catalog = load_catalog()
     print("=== EXISTING ALEXANDRIA PRESS LIBRARY ANCHORS (DO NOT DUPLICATE) ===")
-    for slug, meta in data.items():
-        print(f"\n[{slug}] {meta['title']} — {meta['subtitle']} ({meta['category']})")
+    for slug, meta in catalog.items():
+        print(f"\n[{slug}] {meta['title']} — {meta['subtitle']} ({meta.get('category', '')})")
         chapters = meta.get("chapters")
         if not chapters:
-            md_file = os.path.join(BASE_DIR, slug.replace("-", "_") + ".md")
+            _, md_file = resolve_book_md(slug)
             if os.path.exists(md_file):
                 _, _, chapters = extract_book_metadata(open(md_file, encoding="utf-8").read())
         for idx, ch in enumerate((chapters or [])[1:], 1):
@@ -88,21 +69,17 @@ def list_existing_anchors():
 
 
 def generate_emblem_svg(theme: str, accent: str, slug: str = ""):
-    import hashlib
     cx, cy = 800, 1400
     seed = int(hashlib.sha256((slug or theme).encode("utf-8")).hexdigest()[:8], 16)
 
     if theme == "foveal-aperture" or slug == "attention":
-        # Bespoke Foveal Aperture & Thalamic Searchlight geometry for Attention
         elems = []
-        # Outer peripheral retinal rings (fading outward)
         for r in (380, 330, 280, 230, 180):
             op = 0.16 + (400 - r) / 700
             dash = ' stroke-dasharray="6,10"' if r > 250 else ""
             elems.append(
                 f'<circle cx="{cx}" cy="{cy}" r="{r}" stroke="{accent}" stroke-width="1.5"{dash} fill="none" opacity="{op:.2f}"/>'
             )
-        # 24 iris aperture blades tangent to an inner 92px foveal circle
         blades = 24
         r_inner = 92
         r_outer = 340
@@ -119,21 +96,22 @@ def generate_emblem_svg(theme: str, accent: str, slug: str = ""):
             )
             if i % 2 == 0:
                 elems.append(f'<circle cx="{x2:.1f}" cy="{y2:.1f}" r="4.2" fill="{accent}" opacity="0.65"/>')
-        # Crisp foveal aperture ring + crosshairs + central fixation target
-        elems.append(f'<circle cx="{cx}" cy="{cy}" r="{r_inner}" stroke="{accent}" stroke-width="2.6" fill="{accent}" fill-opacity="0.08" opacity="0.92"/>')
+        elems.append(
+            f'<circle cx="{cx}" cy="{cy}" r="{r_inner}" stroke="{accent}" stroke-width="2.6" fill="{accent}" fill-opacity="0.08" opacity="0.92"/>'
+        )
         elems.append(f'<circle cx="{cx}" cy="{cy}" r="44" stroke="{accent}" stroke-width="1.8" fill="none" opacity="0.85"/>')
         for a_deg in (0, 90, 180, 270):
             rad = math.radians(a_deg)
             x_in, y_in = cx + 52 * math.cos(rad), cy + 52 * math.sin(rad)
             x_out, y_out = cx + 118 * math.cos(rad), cy + 118 * math.sin(rad)
-            elems.append(f'<line x1="{x_in:.1f}" y1="{y_in:.1f}" x2="{x_out:.1f}" y2="{y_out:.1f}" stroke="{accent}" stroke-width="2.0" opacity="0.85"/>')
+            elems.append(
+                f'<line x1="{x_in:.1f}" y1="{y_in:.1f}" x2="{x_out:.1f}" y2="{y_out:.1f}" stroke="{accent}" stroke-width="2.0" opacity="0.85"/>'
+            )
         elems.append(f'<circle cx="{cx}" cy="{cy}" r="11" fill="{accent}"/>')
         return f'<g class="emblem-foveal-aperture">{"".join(elems)}</g>'
 
     if theme == "open-horizon" or slug == "self-transcendence":
-        # Bespoke Dissolving Boundary / Open Horizon geometry for Self-Transcendence
         elems = []
-        # Inner crisp dodecagonal self-boundary that progressively opens into wider broken arcs
         for ring_idx, r in enumerate((76, 122, 172, 226, 284, 346)):
             dash_len = max(4, 38 - ring_idx * 6)
             gap_len = 4 + ring_idx * 9
@@ -143,7 +121,6 @@ def generate_emblem_svg(theme: str, accent: str, slug: str = ""):
             elems.append(
                 f'<circle cx="{cx}" cy="{cy}" r="{r}" stroke="{accent}" stroke-width="{sw:.1f}" stroke-dasharray="{dash_len},{gap_len}" transform="rotate({rot} {cx} {cy})" fill="none" opacity="{op:.2f}"/>'
             )
-        # 12 ascending parabolic/hyperbolic horizon rays opening upward and outward from the center
         rays = 12
         for i in range(rays):
             ang = (i * 2 * math.pi) / rays
@@ -158,11 +135,13 @@ def generate_emblem_svg(theme: str, accent: str, slug: str = ""):
                 f'<path d="M {x1:.1f} {y1:.1f} Q {cx_ctrl:.1f} {cy_ctrl:.1f} {x2:.1f} {y2:.1f}" stroke="{accent}" stroke-width="1.5" fill="none" opacity="0.48"/>'
             )
             elems.append(f'<circle cx="{x2:.1f}" cy="{y2:.1f}" r="4.5" fill="{accent}" opacity="0.72"/>')
-        elems.append(f'<circle cx="{cx}" cy="{cy}" r="28" stroke="{accent}" stroke-width="1.8" fill="{accent}" fill-opacity="0.10" opacity="0.90"/>')
+        elems.append(
+            f'<circle cx="{cx}" cy="{cy}" r="28" stroke="{accent}" stroke-width="1.8" fill="{accent}" fill-opacity="0.10" opacity="0.90"/>'
+        )
         elems.append(f'<circle cx="{cx}" cy="{cy}" r="7" fill="{accent}"/>')
         return f'<g class="emblem-open-horizon">{"".join(elems)}</g>'
 
-    # Slug-parameterized unique mathematical rose / spirograph / polyhedral family so no two covers ever repeat
+    # Slug-parameterized mathematical rose / spirograph / polyhedral family so no two covers ever repeat
     elems = []
     petals = 5 + (seed % 9)  # 5..13
     loops = 140
@@ -178,7 +157,9 @@ def generate_emblem_svg(theme: str, accent: str, slug: str = ""):
         pts.append(f"{px:.1f},{py:.1f}")
     elems.append(f'<polyline points="{" ".join(pts)}" stroke="{accent}" stroke-width="1.8" fill="none" opacity="0.72"/>')
     for ring in (110, 240, 365):
-        elems.append(f'<circle cx="{cx}" cy="{cy}" r="{ring}" stroke="{accent}" stroke-width="1.2" stroke-dasharray="6,8" fill="none" opacity="0.35"/>')
+        elems.append(
+            f'<circle cx="{cx}" cy="{cy}" r="{ring}" stroke="{accent}" stroke-width="1.2" stroke-dasharray="6,8" fill="none" opacity="0.35"/>'
+        )
     elems.append(f'<circle cx="{cx}" cy="{cy}" r="10" fill="{accent}"/>')
     return f'<g class="emblem-{slug or "custom"}">{"".join(elems)}</g>'
 
@@ -195,7 +176,6 @@ def _blend_hex(c1: str, c2: str, t: float) -> str:
 
 
 def _mute_pastel_hex(hex_str: str, target_l: float, max_s: float) -> str:
-    import colorsys
     c = hex_str.lstrip("#")
     r, g, b = int(c[0:2], 16) / 255.0, int(c[2:4], 16) / 255.0, int(c[4:6], 16) / 255.0
     h, l, s = colorsys.rgb_to_hls(r, g, b)
@@ -210,9 +190,6 @@ def _derive_cover_stops(bg: str, accent: str):
     mid_pastel = _blend_hex(_mute_pastel_hex(accent, 0.79, 0.34), "#dbd5c8", 0.26)
     edge_pastel = _blend_hex(_mute_pastel_hex(accent, 0.75, 0.36), "#d2cbbd", 0.28)
     return top_pastel, mid_pastel, edge_pastel
-
-
-THUMBS_DIR = os.path.join(COVERS_DIR, "thumbs")
 
 
 def build_thumb_svg_from_cover(cover_svg: str, slug: str) -> str:
@@ -266,11 +243,9 @@ def build_thumb_svg_from_cover(cover_svg: str, slug: str) -> str:
     )
 
 
-def sync_covers_data():
-    """Rebuild assets/covers/thumbs/*.svg and js/covers-data.js (emblem-only square thumbnails for Home cards)."""
+def sync_thumbs_from_covers():
+    """Rebuild `assets/covers/thumbs/*.svg` emblem-only square thumbnails for Home cards."""
     os.makedirs(THUMBS_DIR, exist_ok=True)
-    covers_js_path = os.path.join(BASE_DIR, "js", "covers-data.js")
-    covers = {}
     for fname in sorted(os.listdir(COVERS_DIR)):
         if not fname.endswith(".svg"):
             continue
@@ -278,16 +253,6 @@ def sync_covers_data():
         svg_text = open(os.path.join(COVERS_DIR, fname), encoding="utf-8").read().strip()
         thumb_svg = build_thumb_svg_from_cover(svg_text, slug)
         open(os.path.join(THUMBS_DIR, fname), "w", encoding="utf-8").write(thumb_svg)
-        covers[slug] = thumb_svg
-    js_out = (
-        "// Alexandria Press - Inlined Vector SVG Thumbnails (Home Catalog Cards)\n"
-        "(function(root) {\n"
-        "  const covers = " + json.dumps(covers, indent=2, ensure_ascii=False) + ";\n"
-        '  if (typeof window !== "undefined") window.EMBEDDED_COVER_SVGS = covers;\n'
-        '  if (typeof module !== "undefined" && module.exports) module.exports = covers;\n'
-        '})(typeof globalThis !== "undefined" ? globalThis : this);\n'
-    )
-    open(covers_js_path, "w", encoding="utf-8").write(js_out)
 
 
 def _wrap_title_svg(title: str):
@@ -313,14 +278,13 @@ def _wrap_title_svg(title: str):
 
 
 def _wrap_subtitle_svg(subtitle: str):
-    """Split PDF cover subtitle into 1, 2, or 3 balanced lines in the bottom zone (y_center=1985) without horizontal distortion."""
+    """Split PDF cover subtitle into 1, 2, or 3 balanced lines in the bottom zone (y_center=1985)."""
     text = subtitle.strip()
     words = text.split()
     if len(text) <= 28 or len(words) <= 3:
         return 54, 1985, html.escape(text)
 
     if len(text) <= 54:
-        # 2 balanced lines
         best_idx = 1
         best_max = 9999
         for i in range(1, len(words)):
@@ -338,7 +302,6 @@ def _wrap_subtitle_svg(subtitle: str):
         inner = f'<tspan x="800" dy="0">{line1}</tspan><tspan x="800" dy="{dy}">{line2}</tspan>'
         return sub_font_size, y_start, inner
 
-    # 3 balanced lines for subtitles > 54 chars
     best_pair = (1, 2)
     best_max = 9999
     n = len(words)
@@ -367,7 +330,7 @@ def _wrap_subtitle_svg(subtitle: str):
 
 
 def refresh_existing_pdf_cover_typography(slug: str, title: str, subtitle: str):
-    """Update title and subtitle blocks in an existing assets/covers/<slug>.svg for optimal PDF cover proportions while preserving its bespoke emblem."""
+    """Update title and subtitle blocks in an existing `assets/covers/<slug>.svg` while preserving its bespoke emblem."""
     cover_path = os.path.join(COVERS_DIR, f"{slug}.svg")
     if not os.path.exists(cover_path):
         return False
@@ -389,7 +352,6 @@ def refresh_existing_pdf_cover_typography(slug: str, title: str, subtitle: str):
         f'    <text x="800" y="{sub_y}" font-family="\'Literata\', Georgia, serif" font-size="{sub_font_size}" font-weight="400" letter-spacing="0.01em" fill="{subtitle_color}">{sub_inner}</text>\n'
         f"  </g>"
     )
-    # Replace last block first so indices stay valid
     s2, e2 = text_blocks[-1].span()
     svg = svg[:s2] + new_sub_g + svg[e2:]
     s1, e1 = text_blocks[0].span()
@@ -442,149 +404,140 @@ def generate_cover_svg(slug: str, title: str, subtitle: str, category: str, acce
     return cover_path
 
 
-def update_index_and_sitemap(slug: str, title: str, subtitle: str, category: str):
+def sync_index_and_sitemap_from_catalog(catalog: dict) -> None:
+    """
+    Deterministically regenerate the `<!-- BEGIN:JSON_LD -->` and `<!-- BEGIN:CATALOG_GRID -->`
+    sections of `index.html`, plus `sitemap.xml`, directly from `catalog.json`.
+    """
     index_html = open(INDEX_HTML_PATH, encoding="utf-8").read()
-    esc_title = html.escape(title)
-    esc_sub = html.escape(subtitle)
-    esc_cat = html.escape(category)
 
-    # 1. Check if book card already in index.html
-    card_pattern = re.compile(
-        rf'<article class="book-card"\s+data-key="{re.escape(slug)}"[\s\S]*?</article>'
+    # 1. Regenerate JSON-LD block
+    has_part = []
+    for slug, entry in catalog.items():
+        has_part.append(
+            {
+                "@type": "Book",
+                "name": entry["title"],
+                "headline": entry["subtitle"],
+                "url": f"https://alexandria.press/?book={slug}",
+                "image": f"https://alexandria.press/assets/covers/{slug}.svg",
+            }
+        )
+    ld_obj = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Alexandria Press",
+        "url": "https://alexandria.press",
+        "description": "Deep Learning for Humans. Concise twelve-chapter volumes across science, history, engineering, decision theory, and human behavior.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Alexandria Press",
+            "url": "https://alexandria.press",
+            "logo": "https://alexandria.press/favicon.svg",
+        },
+        "hasPart": has_part,
+    }
+    ld_json_str = "\n".join("    " + line for line in json.dumps(ld_obj, indent=2, ensure_ascii=False).splitlines())
+    ld_block = (
+        "<!-- BEGIN:JSON_LD -->\n"
+        '    <script type="application/ld+json">\n'
+        f"{ld_json_str}\n"
+        "    </script>\n"
+        "    <!-- END:JSON_LD -->"
     )
-    new_card = f"""<article class="book-card" data-key="{slug}" data-title="{esc_title}" data-subtitle="{esc_sub}" data-category="{esc_cat}" onclick="openBookFromCatalog('{slug}')" title="{esc_title} — {esc_sub}">
-                    <div class="book-cover-frame">
-                        <img src="assets/covers/thumbs/{slug}.svg" alt="{esc_title}" loading="eager">
-                    </div>
-                    <div class="book-card-info">
-                        <div class="book-card-title">{esc_title}</div>
-                        <div class="book-card-subtitle">{esc_sub}</div>
-                    </div>
-                </article>"""
+    index_html = re.sub(
+        r"<!-- BEGIN:JSON_LD -->[\s\S]*?<!-- END:JSON_LD -->",
+        lambda _: ld_block,
+        index_html,
+        count=1,
+    )
 
-    if card_pattern.search(index_html):
-        index_html = card_pattern.sub(new_card, index_html)
-    else:
-        grid_close = '            </div>\n        </div>\n    </div>\n\n    <main id="main-stage">'
-        if grid_close in index_html:
-            index_html = index_html.replace(grid_close, f"                {new_card}\n{grid_close}", 1)
-
-    # 2. Check JSON-LD in index.html
-    if f'"?book={slug}"' not in index_html:
-        ld_entry = f""",
-        {{
-          "@type": "Book",
-          "name": {json.dumps(title)},
-          "headline": {json.dumps(subtitle)},
-          "url": "https://alexandria.press/?book={slug}",
-          "image": "https://alexandria.press/assets/covers/{slug}.svg"
-        }}
-      ]"""
-        index_html = re.sub(r"\n\s*\]\s*\n\s*\}\s*\n\s*</script>", ld_entry + "\n    }\n    </script>", index_html, count=1)
+    # 2. Regenerate Catalog Grid block
+    cards_html = []
+    for slug, entry in catalog.items():
+        esc_title = html.escape(entry["title"])
+        esc_sub = html.escape(entry["subtitle"])
+        esc_cat = html.escape(entry.get("category", "Systems & Science"))
+        cards_html.append(
+            f'                <article class="book-card" data-key="{slug}" data-title="{esc_title}" data-subtitle="{esc_sub}" data-category="{esc_cat}" onclick="openBookFromCatalog(\'{slug}\')" title="{esc_title} — {esc_sub}">\n'
+            f'                    <div class="book-cover-frame">\n'
+            f'                        <img src="assets/covers/thumbs/{slug}.svg" alt="{esc_title}" loading="eager">\n'
+            f'                    </div>\n'
+            f'                    <div class="book-card-info">\n'
+            f'                        <div class="book-card-title">{esc_title}</div>\n'
+            f'                        <div class="book-card-subtitle">{esc_sub}</div>\n'
+            f'                    </div>\n'
+            f"                </article>"
+        )
+    grid_block = (
+        "<!-- BEGIN:CATALOG_GRID -->\n"
+        + "\n".join(cards_html)
+        + "\n                <!-- END:CATALOG_GRID -->"
+    )
+    index_html = re.sub(
+        r"<!-- BEGIN:CATALOG_GRID -->[\s\S]*?<!-- END:CATALOG_GRID -->",
+        lambda _: grid_block,
+        index_html,
+        count=1,
+    )
 
     open(INDEX_HTML_PATH, "w", encoding="utf-8").write(index_html)
 
-    # 3. Update sitemap.xml
-    if os.path.exists(SITEMAP_PATH):
-        smap = open(SITEMAP_PATH, encoding="utf-8").read()
-        loc_url = f"https://alexandria.press/?book={slug}"
-        if loc_url not in smap:
-            today = datetime.date.today().isoformat()
-            entry = f"""  <url>
-    <loc>{loc_url}</loc>
-    <lastmod>{today}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-</urlset>"""
-            smap = smap.replace("</urlset>", entry)
-            open(SITEMAP_PATH, "w", encoding="utf-8").write(smap)
+    # 3. Regenerate sitemap.xml
+    today = datetime.date.today().isoformat()
+    smap_lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+        "  <url>",
+        "    <loc>https://alexandria.press/</loc>",
+        f"    <lastmod>{today}</lastmod>",
+        "    <changefreq>daily</changefreq>",
+        "    <priority>1.0</priority>",
+        "  </url>",
+    ]
+    for slug in catalog.keys():
+        smap_lines.extend(
+            [
+                "  <url>",
+                f"    <loc>https://alexandria.press/?book={slug}</loc>",
+                f"    <lastmod>{today}</lastmod>",
+                "    <changefreq>weekly</changefreq>",
+                "    <priority>0.9</priority>",
+                "  </url>",
+            ]
+        )
+    smap_lines.append("</urlset>\n")
+    open(SITEMAP_PATH, "w", encoding="utf-8").write("\n".join(smap_lines))
 
 
-def main():
-    parser = argparse.ArgumentParser(description="Publish or sync Alexandria Press books.")
-    parser.add_argument("--list-anchors", action="store_true", help="List all existing books and chapters")
-    parser.add_argument("--sync-all", action="store_true", help="Validate and sync all existing books into js/books-data.js")
-    parser.add_argument("--slug", help="Hyphenated book slug (e.g. geometries-of-contagion)")
-    parser.add_argument("--category", default="Systems & Science", help="Book category label")
-    parser.add_argument("--accent", default="#10b981", help="Hex accent color for cover")
-    parser.add_argument("--bg", default="#0b1d18", help="Hex background color for cover")
-    parser.add_argument("--theme", default="lattice", help="Cover geometric emblem")
-    parser.add_argument("--regenerate-cover", action="store_true", help="Force regenerate SVG cover")
-    parser.add_argument("--recompile", action="store_true", help="Force recompile all PDFs during --sync-all")
-    args = parser.parse_args()
+def publish_single_volume(
+    catalog: dict,
+    slug: str,
+    category: str = None,
+    accent: str = None,
+    bg: str = None,
+    theme: str = "lattice",
+    regenerate_cover: bool = False,
+    force_recompile: bool = True,
+) -> dict:
+    """Validate, generate cover + thumb, compile 3 Typst PDFs, and update catalog entry for `slug`."""
+    from compile_typst import compile_book_to_pdf
 
-    if args.list_anchors:
-        list_existing_anchors()
-        return
+    slug, md_path = resolve_book_md(slug)
+    existing = catalog.get(slug, {})
 
-    prefix, data, suffix = load_books_data()
+    dossier_meta = {}
+    dossier_path = os.path.join(DOSSIERS_DIR, f"{slug}.json")
+    if os.path.exists(dossier_path):
+        try:
+            dossier_meta = json.load(open(dossier_path, encoding="utf-8"))
+        except Exception:
+            pass
 
-    if args.sync_all:
-        from compile_typst import compile_book_to_pdf
-        for slug, meta in data.items():
-            md_file = os.path.join(BASE_DIR, slug.replace("-", "_") + ".md")
-            errs, _, _ = validate_book(md_file, legacy=True)
-            if errs:
-                print(f"[FAIL] {md_file} failed validation:")
-                for e in errs:
-                    print("  ", e)
-                sys.exit(1)
-            md_text = open(md_file, encoding="utf-8").read()
-            title, subtitle, chapters = extract_book_metadata(md_text)
-            refresh_existing_pdf_cover_typography(slug, title, subtitle)
-            update_index_and_sitemap(slug, title, subtitle, meta.get("category", "Systems & Science"))
-            pdf_path = os.path.join(BASE_DIR, "assets", "pdfs", f"{slug}.pdf")
-            comp_path = os.path.join(BASE_DIR, "assets", "pdfs", f"{slug}-compact.pdf")
-            mob_path = os.path.join(BASE_DIR, "assets", "pdfs", f"{slug}-mobile.pdf")
-            cover_path = os.path.join(COVERS_DIR, f"{slug}.svg")
-            needs_compile = (
-                args.recompile
-                or not os.path.exists(pdf_path)
-                or not os.path.exists(comp_path)
-                or not os.path.exists(mob_path)
-                or os.path.getmtime(md_file) > os.path.getmtime(pdf_path)
-                or (os.path.exists(cover_path) and os.path.getmtime(cover_path) > os.path.getmtime(pdf_path))
-                or not meta.get("sectionPages")
-                or not meta.get("compactSectionPages")
-                or not meta.get("mobileSectionPages")
-            )
-            if needs_compile:
-                pdf_path, sec_pages, comp_path, comp_pages, mob_path, mob_pages = compile_book_to_pdf(
-                    md_file, category=meta.get("category", "NON-FICTION")
-                )
-            else:
-                sec_pages = meta["sectionPages"]
-                comp_pages = meta["compactSectionPages"]
-                mob_pages = meta["mobileSectionPages"]
-
-            meta.pop("markdown", None)
-            meta["title"] = title
-            meta["subtitle"] = subtitle
-            meta["pdf"] = f"assets/pdfs/{slug}.pdf"
-            meta["compactPdf"] = f"assets/pdfs/{slug}-compact.pdf"
-            meta["mobilePdf"] = f"assets/pdfs/{slug}-mobile.pdf"
-            meta["sectionPages"] = sec_pages
-            meta["compactSectionPages"] = comp_pages
-            meta["mobileSectionPages"] = mob_pages
-            meta["chapters"] = chapters
-            print(f"[SYNCED] {slug:26s} -> {len(chapters)} sections | Desktop: {os.path.getsize(pdf_path)//1024} KB | Compact: {os.path.getsize(comp_path)//1024} KB | Mobile: {os.path.getsize(mob_path)//1024} KB")
-        save_books_data(prefix, data, suffix)
-        sync_covers_data()
-        print("Successfully synced all volumes and Typst PDFs into js/books-data.js and js/covers-data.js.")
-        return
-
-    if not args.slug:
-        parser.print_help()
-        sys.exit(1)
-
-    slug = args.slug.strip().lower().replace("_", "-")
-    md_filename = slug.replace("-", "_") + ".md"
-    md_path = os.path.join(BASE_DIR, md_filename)
-
-    errs, warns, info = validate_book(md_path)
+    use_legacy = slug in LEGACY_SLUGS
+    errs, warns, info = validate_book(md_path, legacy=use_legacy)
     if errs:
-        print(f"[ABORT] {md_filename} failed quality gates ({len(errs)} error(s)):")
+        print(f"[ABORT] {md_path} failed quality gates ({len(errs)} error(s)):")
         for e in errs:
             print("  ERROR:", e)
         sys.exit(1)
@@ -595,21 +548,53 @@ def main():
     md_text = open(md_path, encoding="utf-8").read()
     title, subtitle, chapters = extract_book_metadata(md_text)
 
+    eff_cat = category or existing.get("category") or dossier_meta.get("category") or "Systems & Science"
+    eff_accent = accent or existing.get("accent") or dossier_meta.get("accent") or "#d97706"
+    eff_bg = bg or existing.get("bg") or dossier_meta.get("bg") or "#1c1917"
+    eff_mode = existing.get("mode") or dossier_meta.get("mode") or "mechanisms"
+    eff_profile = existing.get("profile") or dossier_meta.get("profile") or "A"
+
     cover_file = os.path.join(COVERS_DIR, f"{slug}.svg")
-    if not os.path.exists(cover_file) or args.regenerate_cover:
-        generate_cover_svg(slug, title, subtitle, args.category, args.accent, args.bg, args.theme)
+    if not os.path.exists(cover_file) or regenerate_cover:
+        generate_cover_svg(slug, title, subtitle, eff_cat, eff_accent, eff_bg, theme)
         print(f"[COVER] Generated vector cover: assets/covers/{slug}.svg")
     else:
         refresh_existing_pdf_cover_typography(slug, title, subtitle)
 
-    from compile_typst import compile_book_to_pdf
-    pdf_path, sec_pages, comp_path, comp_pages, mob_path, mob_pages = compile_book_to_pdf(md_path, category=args.category, accent_hex=args.accent)
-    print(f"[TYPST] Compiled PDFs: {slug}.pdf ({os.path.getsize(pdf_path)//1024} KB), {slug}-compact.pdf ({os.path.getsize(comp_path)//1024} KB), {slug}-mobile.pdf ({os.path.getsize(mob_path)//1024} KB)")
+    pdf_path = os.path.join(PDFS_DIR, f"{slug}.pdf")
+    comp_path = os.path.join(PDFS_DIR, f"{slug}-compact.pdf")
+    mob_path = os.path.join(PDFS_DIR, f"{slug}-mobile.pdf")
+    needs_compile = (
+        force_recompile
+        or not os.path.exists(pdf_path)
+        or not os.path.exists(comp_path)
+        or not os.path.exists(mob_path)
+        or os.path.getmtime(md_path) > os.path.getmtime(pdf_path)
+        or (os.path.exists(cover_file) and os.path.getmtime(cover_file) > os.path.getmtime(pdf_path))
+        or not existing.get("sectionPages")
+        or not existing.get("compactSectionPages")
+        or not existing.get("mobileSectionPages")
+    )
 
-    data[slug] = {
+    if needs_compile:
+        pdf_path, sec_pages, comp_path, comp_pages, mob_path, mob_pages = compile_book_to_pdf(
+            md_path, category=eff_cat, accent_hex=eff_accent
+        )
+    else:
+        sec_pages = existing["sectionPages"]
+        comp_pages = existing["compactSectionPages"]
+        mob_pages = existing["mobileSectionPages"]
+
+    catalog[slug] = {
+        "slug": slug,
+        "file": f"books/{slug}.md",
         "title": title,
         "subtitle": subtitle,
-        "category": args.category,
+        "category": eff_cat,
+        "mode": eff_mode,
+        "profile": eff_profile,
+        "accent": eff_accent,
+        "bg": eff_bg,
         "pdf": f"assets/pdfs/{slug}.pdf",
         "compactPdf": f"assets/pdfs/{slug}-compact.pdf",
         "mobilePdf": f"assets/pdfs/{slug}-mobile.pdf",
@@ -618,14 +603,108 @@ def main():
         "mobileSectionPages": mob_pages,
         "chapters": chapters,
     }
-    save_books_data(prefix, data, suffix)
-    sync_covers_data()
-    update_index_and_sitemap(slug, title, subtitle, args.category)
+    return info
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Publish or sync Alexandria Press books.")
+    parser.add_argument("--list-anchors", action="store_true", help="List all existing books and chapters")
+    parser.add_argument("--sync-all", action="store_true", help="Validate and sync all catalog books into js/books-data.js and index.html")
+    parser.add_argument("--batch", type=int, help="Publish all books in batch N of backlog.json")
+    parser.add_argument("--slug", help="Hyphenated book slug (e.g. the-cell)")
+    parser.add_argument("--category", default=None, help="Book category label")
+    parser.add_argument("--accent", default=None, help="Hex accent color for cover")
+    parser.add_argument("--bg", default=None, help="Hex background color for cover")
+    parser.add_argument("--theme", default="lattice", help="Cover geometric emblem")
+    parser.add_argument("--regenerate-cover", action="store_true", help="Force regenerate SVG cover")
+    parser.add_argument("--recompile", action="store_true", help="Force recompile all PDFs during --sync-all")
+    args = parser.parse_args()
+
+    if args.list_anchors:
+        list_existing_anchors()
+        return
+
+    catalog = load_catalog()
+
+    if args.sync_all:
+        for slug in list(catalog.keys()):
+            publish_single_volume(
+                catalog,
+                slug=slug,
+                regenerate_cover=args.regenerate_cover,
+                force_recompile=args.recompile,
+            )
+            pdf_path = os.path.join(PDFS_DIR, f"{slug}.pdf")
+            comp_path = os.path.join(PDFS_DIR, f"{slug}-compact.pdf")
+            mob_path = os.path.join(PDFS_DIR, f"{slug}-mobile.pdf")
+            print(
+                f"[SYNCED] {slug:26s} -> {len(catalog[slug]['chapters'])} sections | "
+                f"Desktop: {os.path.getsize(pdf_path)//1024} KB | "
+                f"Compact: {os.path.getsize(comp_path)//1024} KB | "
+                f"Mobile: {os.path.getsize(mob_path)//1024} KB"
+            )
+        save_catalog(catalog)
+        write_books_js_from_catalog(catalog)
+        sync_thumbs_from_covers()
+        sync_index_and_sitemap_from_catalog(catalog)
+        print(f"Successfully synced all {len(catalog)} volumes into catalog.json, js/books-data.js, index.html, and sitemap.xml.")
+        return
+
+    if args.batch is not None:
+        backlog = load_backlog()
+        batch_books = [b for b in backlog.get("books", []) if b.get("batch") == args.batch]
+        if not batch_books:
+            print(f"[ERROR] No books found for batch {args.batch} in backlog.json.")
+            sys.exit(1)
+        for b in batch_books:
+            b_slug = b["slug"]
+            info = publish_single_volume(
+                catalog,
+                slug=b_slug,
+                category=b.get("category"),
+                accent=b.get("accent"),
+                bg=b.get("bg"),
+                regenerate_cover=args.regenerate_cover,
+                force_recompile=True,
+            )
+            b["status"] = "published"
+            entry = catalog[b_slug]
+            print(
+                f"[PUBLISHED] '{entry['title']}: {entry['subtitle']}' ({b_slug}) | "
+                f"{info['chapters']} chapters | {info['total_words']:,} words"
+            )
+        save_backlog(backlog)
+        save_catalog(catalog)
+        write_books_js_from_catalog(catalog)
+        sync_thumbs_from_covers()
+        sync_index_and_sitemap_from_catalog(catalog)
+        return
+
+    if not args.slug:
+        parser.print_help()
+        sys.exit(1)
+
+    slug = normalize_slug(args.slug)
+    info = publish_single_volume(
+        catalog,
+        slug=slug,
+        category=args.category,
+        accent=args.accent,
+        bg=args.bg,
+        theme=args.theme,
+        regenerate_cover=args.regenerate_cover,
+        force_recompile=True,
+    )
+    save_catalog(catalog)
+    write_books_js_from_catalog(catalog)
+    sync_thumbs_from_covers()
+    sync_index_and_sitemap_from_catalog(catalog)
+    entry = catalog[slug]
     print(
-        f"[PUBLISHED] '{title}: {subtitle}' ({slug}) | {info['chapters']} chapters | {info['total_words']:,} words"
+        f"[PUBLISHED] '{entry['title']}: {entry['subtitle']}' ({slug}) | "
+        f"{info['chapters']} chapters | {info['total_words']:,} words"
     )
 
 
 if __name__ == "__main__":
     main()
-

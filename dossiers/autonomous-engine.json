@@ -1,0 +1,97 @@
+{
+  "slug": "autonomous-engine",
+  "file": "books/autonomous-engine.md",
+  "title": "The Autonomous Engine",
+  "subtitle": "The Control Loops of the Human Body",
+  "category": "Physiology & Cybernetics",
+  "mode": "facet",
+  "profile": "B",
+  "accent": "#059669",
+  "bg": "#08241b",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "The Hydraulic Impedance",
+      "subtitle": "Otto Frank, Ernest Starling, and Myocardial Compliance in London",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 2,
+      "title": "The Countercurrent Multiplexer",
+      "subtitle": "Werner Kuhn and the Medullary Osmotic Gradient in Basel",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "diagram"
+    },
+    {
+      "chapter": 3,
+      "title": "The Convective Sieve",
+      "subtitle": "Christian Bohr, August Krogh, and Alveolar Gas Exchange in Copenhagen",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 4,
+      "title": "The Homeostatic Brake",
+      "subtitle": "Walter Holbrook Gaskell and Parasympathetic Vagal Hysteresis in Cambridge",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 5,
+      "title": "The Convective Flush",
+      "subtitle": "Maiken Nedergaard and Glymphatic Interstitial Clearance in Rochester",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "diagram"
+    },
+    {
+      "chapter": 6,
+      "title": "The Calcium Trigger",
+      "subtitle": "Setsuro Ebashi and the Troponin Molecular Switch in Tokyo",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 7,
+      "title": "The Photonic Transducer",
+      "subtitle": "George Wald and Retinal Rhodopsin Isomerization at Woods Hole",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 8,
+      "title": "The Thermal Core",
+      "subtitle": "Carl von Voit, Max Rubner, and Metabolic Energy Conservation in Munich",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 9,
+      "title": "The Electrochemical Gate",
+      "subtitle": "Alan Hodgkin, Andrew Huxley, and the Axonal Voltage Clamp in Plymouth",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "diagram"
+    },
+    {
+      "chapter": 10,
+      "title": "The Master Oscillator",
+      "subtitle": "Colin Pittendrigh, Seymour Benzer, and Suprachiasmatic Phase Alignment in Pasadena",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 11,
+      "title": "The Acid-Base Servo",
+      "subtitle": "John Scott Haldane, Lawrence Henderson, and the Medullary Chemoreceptor Loop in Oxford",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 12,
+      "title": "The Glycemic Integral Controller",
+      "subtitle": "Frederick Banting, Charles Best, and the Pancreatic Bihormonal Loop in Toronto",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    }
+  ]
+}

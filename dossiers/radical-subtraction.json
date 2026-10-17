@@ -1,0 +1,97 @@
+{
+  "slug": "radical-subtraction",
+  "file": "books/radical-subtraction.md",
+  "title": "Radical Subtraction",
+  "subtitle": "Sensory Isolation and the Quiet Mind",
+  "category": "Contemplative Theory",
+  "mode": "facet",
+  "profile": "B",
+  "accent": "#4f46e5",
+  "bg": "#15132b",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "The Cell on the Tagus",
+      "subtitle": "John of the Cross and the Doctrine of the Dark Night in Toledo",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 2,
+      "title": "The Anchorhold of Norwich",
+      "subtitle": "Julian of Norwich and the Confinement of the Hazelnuts",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "ledger_or_list"
+    },
+    {
+      "chapter": 3,
+      "title": "The Interior Castle",
+      "subtitle": "Teresa of Ávila and the Neurodynamics of the Seventh Mansion",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "diagram"
+    },
+    {
+      "chapter": 4,
+      "title": "The Desert Pillar",
+      "subtitle": "Simeon Stylites and the Physics of Vertical Isolation in Syria",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 5,
+      "title": "The Apophatic Cloud",
+      "subtitle": "The Anonymous English Contemplative and the Erasure of Memory",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "ledger_or_list"
+    },
+    {
+      "chapter": 6,
+      "title": "The Dialectic of the Nothing",
+      "subtitle": "Meister Eckhart and the Breakthrough of the Ground in Cologne",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "ledger_or_list"
+    },
+    {
+      "chapter": 7,
+      "title": "The Rhenish Hermitage",
+      "subtitle": "Hildegard of Bingen and the Scivias Telemetry at Disibodenberg",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 8,
+      "title": "The Hesychast Breath",
+      "subtitle": "Gregory Palamas and the Physiology of the Uncreated Light on Mount Athos",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "diagram"
+    },
+    {
+      "chapter": 9,
+      "title": "The Uncarved Block",
+      "subtitle": "Zhuangzi, Butcher Ding's Ox Cleaver, and the Mechanics of Non-Interference",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 10,
+      "title": "The Sculptor's Chisel",
+      "subtitle": "Plotinus, Pseudo-Dionysius, and the Removal of Conceptual Marble",
+      "opening_door": "A: Scene",
+      "formalism_mode": "ledger_or_list"
+    },
+    {
+      "chapter": 11,
+      "title": "The Suspended Judgment",
+      "subtitle": "Pyrrho of Elis, Sextus Empiricus, and the Quietness That Follows Equipollence",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "diagram"
+    },
+    {
+      "chapter": 12,
+      "title": "The Kicked-Away Ladder",
+      "subtitle": "Ludwig Wittgenstein and Where Logical Language Draws Its Own Border",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "ledger_or_list"
+    }
+  ]
+}

@@ -24,7 +24,7 @@ import re
 import subprocess
 import sys
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+from lib import BASE_DIR, DOSSIERS_DIR, LEGACY_SLUGS, load_catalog, resolve_book_md  # noqa: E402
 
 BANNED_WORDS = [
     r"\bbreathtaking\b",
@@ -277,16 +277,18 @@ def validate_book(
     errors = []
     warnings = []
 
-    if not os.path.exists(filepath):
-        return [f"File not found: {filepath}"], [], {}
+    slug, resolved_path = resolve_book_md(filepath)
+    if not os.path.exists(resolved_path):
+        return [f"File not found: {resolved_path}"], [], {}
 
-    raw_text = open(filepath, encoding="utf-8").read()
-    filename = os.path.basename(filepath)
-    slug = os.path.splitext(filename)[0].replace("_", "-")
-    dossier_path = os.path.join(BASE_DIR, "dossiers", f"{slug}.json")
+    raw_text = open(resolved_path, encoding="utf-8").read()
+    filename = os.path.basename(resolved_path)
+    dossier_path = os.path.join(DOSSIERS_DIR, f"{slug}.json")
 
     VALID_MODES = {
         "facet",
+        "mechanisms",
+        "biography",
         "listicle",
         "landscape",
         "contrast",
@@ -547,6 +549,7 @@ def validate_book(
         l for l in re.sub(r"\$\$[\s\S]*?\$\$", "", raw_no_code).splitlines()
         if l.strip()
         and l.strip() not in ("❦", "☙", "⁂", "✦")
+        and not re.sub(r"\s+", " ", l.strip()).startswith("· · ·")
         and not l.strip().startswith(("#", "*", "-", ">", "---"))
         and not re.match(r"^\d+\.", l.strip())
     ]
@@ -560,6 +563,7 @@ def validate_book(
 
     summary = {
         "file": filename,
+        "slug": slug,
         "chapters": num_chapters,
         "total_words": len(raw_no_code.split()),
         "chapter_words": [c["words"] for c in chapters_meta[1:]],
@@ -574,40 +578,18 @@ def validate_book(
 
 def main():
     parser = argparse.ArgumentParser(description="Validate Alexandria Press markdown manuscripts.")
-    parser.add_argument("files", nargs="*", help="Markdown file(s) to validate")
-    parser.add_argument("--all", action="store_true", help="Validate all published books in js/books-data.js")
+    parser.add_argument("files", nargs="*", help="Markdown file(s) or slug(s) to validate")
+    parser.add_argument("--all", action="store_true", help="Validate all published books in catalog.json")
     parser.add_argument("--min-words", type=int, default=520, help="Minimum words per chapter (default: 520)")
     parser.add_argument("--max-words", type=int, default=760, help="Maximum words per chapter (default: 760)")
     parser.add_argument("--legacy", action="store_true", help="Allow legacy word counts and sentence lengths for existing volumes")
-    parser.add_argument("--require-quotes", action="store_true", help="Require at least one verbatim quote in every chapter (Creator Steering constraint)")
+    parser.add_argument("--require-quotes", action="store_true", help="Deprecated flag kept for CLI compatibility")
     args = parser.parse_args()
-
-    LEGACY_BOOKS = {
-        "non_linear_engines.md",
-        "latent_fragility.md",
-        "singular_minds.md",
-        "radical_subtraction.md",
-        "elemental_asymmetries.md",
-        "liminal_thresholds.md",
-        "autonomous_engine.md",
-        "affective_topologies.md",
-        "architectures_of_choice.md",
-        "tales_of_audacity.md",
-        "architectures_of_the_grid.md",
-        "sensory_worlds.md",
-        "instruments_of_precision.md",
-        "ghosts_in_the_parchment.md",
-        "fictions_of_order.md",
-        "bonds_of_enmity.md",
-    }
 
     target_files = list(args.files)
     if args.all:
-        books_js = open(os.path.join(BASE_DIR, "js", "books-data.js"), encoding="utf-8").read()
-        p_end = books_js.find("return {") + len("return ")
-        s_start = books_js.rfind("};") + 1
-        data = json.loads(books_js[p_end:s_start])
-        target_files = [os.path.join(BASE_DIR, k.replace("-", "_") + ".md") for k in data.keys()]
+        catalog = load_catalog()
+        target_files = [resolve_book_md(slug)[1] for slug in catalog.keys()]
 
     if not target_files:
         parser.print_help()
@@ -615,10 +597,11 @@ def main():
 
     total_errors = 0
     for fpath in target_files:
-        fname = os.path.basename(fpath)
-        use_legacy = args.legacy or (args.all and fname in LEGACY_BOOKS)
+        slug, resolved_path = resolve_book_md(fpath)
+        fname = os.path.basename(resolved_path)
+        use_legacy = args.legacy or (args.all and slug in LEGACY_SLUGS)
         errs, warns, info = validate_book(
-            fpath,
+            resolved_path,
             args.min_words,
             args.max_words,
             legacy=use_legacy,
@@ -647,4 +630,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 

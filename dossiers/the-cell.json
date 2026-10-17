@@ -1,6 +1,6 @@
 {
   "slug": "the-cell",
-  "file": "the_cell.md",
+  "file": "books/the-cell.md",
   "title": "The Cell",
   "subtitle": "Twelve Molecular Machines in Twelve Highlights Each",
   "category": "Physiology & Biology",
@@ -139,7 +139,7 @@
         "Because mechanical stretching and partial unfolding help rescue kinetically trapped proteins before encapsulation, Helen Saibil and Ulrich Hartl showed that GroEL's expanding apical domains pull outward on the bound polypeptide during GroES docking—physically unfolding misfolded beta-sheet tangles before releasing the chain into the chamber.",
         "In the late 1970s, Avram Hershko, Aaron Ciechanover, and Irwin Rose wondered why destroying intracellular proteins requires metabolic ATP when peptide bond cleavage is thermodynamically downhill; using reticulocyte lysates, they discovered that ATP is spent to covalently attach a 76-amino-acid polypeptide tag called ubiquitin.",
         "Ubiquitin tagging operates through a three-tier enzymatic cascade—two E1 activating enzymes, roughly 40 E2 conjugating enzymes, and more than 600 E3 ubiquitin ligases in humans—where E3 ligases provide exquisite target specificity by recognizing phosphorylated degron motifs and assembling a polyubiquitin chain linked through lysine-48.",
-        "Once tagged with a chain of at least four lysine-48-linked ubiquitins, a doomed protein is hauled to the 2.5-megadalton 26S proteasome, whose central 20S core particle—solved by Robert Huber and Wolfgang Baumeister in 1995—consists of four stacked heptameric rings ($\alpha_7\beta_7\beta_7\alpha_7$) enclosing a sealed catalytic chamber.",
+        "Once tagged with a chain of at least four lysine-48-linked ubiquitins, a doomed protein is hauled to the 2.5-megadalton 26S proteasome, whose central 20S core particle—solved by Robert Huber and Wolfgang Baumeister in 1995—consists of four stacked heptameric rings ($\\alpha_7\beta_7\beta_7\\alpha_7$) enclosing a sealed catalytic chamber.",
         "To prevent the 20S proteasome from indiscriminately chopping up healthy cytosolic proteins, the N-terminal tails of the outer alpha subunits seal the axial entry pore to a 1.3-nanometer pinhole that blocks every folded protein until the 19S regulatory cap docks on top.",
         "Sitting atop the 20S barrel, the 19S regulatory particle uses the Rpn11 deubiquitinase to clip off and recycle the ubiquitin tags for reuse while a hexameric ring of six AAA+ ATPase motors (Rpt1–Rpt6) grabs an unstructured tail of the target protein and pulls with up to 11 piconewtons of force to unravel even rock-stable GFP barrels.",
         "Inside the middle two beta rings of the 20S proteasome sit six active sites armed with N-terminal threonine nucleophiles (displaying caspase-like, trypsin-like, and chymotrypsin-like specificity) that processively shred the threaded polypeptide into 7- to 9-amino-acid fragments—the exact length required for MHC Class I immune presentation on the cell surface.",

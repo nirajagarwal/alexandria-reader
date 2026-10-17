@@ -45,12 +45,12 @@ Every Alexandria volume uses the **Universal 12-Facet Container** (a ~250-word t
 ## Stage 2: Lock the 12-Chapter Dossier (`dossiers/<slug>.json`)
 
 Before drafting a single sentence of book prose, write a structured JSON blueprint to `/Users/niraj/book-writer/dossiers/<slug>.json` containing:
-- `slug` (hyphenated), `file` (underscored), `title`, `subtitle` (zero colons!), `category`, `profile`, `mode` (`"facet"`, `"listicle"`, `"landscape"`, `"contrast"`, `"anatomy"`, `"field-guide"`, `"scale"`, `"inversion"`, or `"chain"`), `accent`, `bg`, `theme`.
+- `slug` (hyphenated), `file` (`"books/<slug>.md"`), `title`, `subtitle` (zero colons!), `category`, `profile`, `mode` (`"facet"`, `"mechanisms"`, `"biography"`, `"listicle"`, `"landscape"`, `"contrast"`, `"anatomy"`, `"field-guide"`, `"scale"`, `"inversion"`, or `"chain"`), `accent`, `bg`, `theme`.
 - `creator_constraints` (optional object): Encodes any explicit creator rules so `scripts/validate_book.py` enforces them deterministically:
   - `"min_diagrams": 3` — requires at least $N$ schematic SVG diagrams (`2–4`) across the volume.
-- **Title Distinctness Rule**: Avoid overused head nouns already saturated in the catalog (*Architectures*, *Engines*, *Topologies*, *Thresholds*, *Asymmetries*, *Tales*, *Worlds*, *Instruments*, *Ghosts*, *Fictions*, *Bonds*) unless deliberately pairing with a creator's chosen title.
+- **Title Distinctness & Biographical Rule**: Avoid overused head nouns already saturated in the catalog (*Architectures*, *Engines*, *Topologies*, *Thresholds*, *Asymmetries*, *Tales*, *Worlds*, *Instruments*, *Ghosts*, *Fictions*, *Bonds*) unless deliberately pairing with a creator's chosen title. Any volume about a single historical figure MUST use the person's name as the main book title (`# Claude Shannon`, `# Alan Turing`, `# Emmy Noether`).
 - `chapters`: Array of 12 chapter objects:
-  - **For `"facet"`, `"contrast"`, `"anatomy"`, `"field-guide"`, `"scale"`, `"inversion"`, and `"chain"` modes**: `chapter`, `title`, `subtitle`, `opening_door`, `historical_anchor`, `formalism_mode` (`"equation"`, `"diagram"`, or `"ledger_or_list"`), `exit_fact` (plus optional mode-specific fields such as `pair` for `"contrast"`, `subsystem` for `"anatomy"`, `observable_sign` for `"field-guide"`, `scale_rung` for `"scale"`, `myth` for `"inversion"`, or `stage_handoff` for `"chain"`).
+  - **For `"facet"`, `"mechanisms"`, `"biography"`, `"contrast"`, `"anatomy"`, `"field-guide"`, `"scale"`, `"inversion"`, and `"chain"` modes**: `chapter`, `title`, `subtitle`, `opening_door`, `historical_anchor`, `formalism_mode` (`"equation"`, `"diagram"`, or `"ledger_or_list"`), `exit_fact` (plus optional mode-specific fields such as `pair` for `"contrast"`, `subsystem` for `"anatomy"`, `observable_sign` for `"field-guide"`, `scale_rung` for `"scale"`, `myth` for `"inversion"`, or `stage_handoff` for `"chain"`).
   - **For `"listicle"` mode**: `chapter`, `title`, `subtitle`, `prospected_seeds` (array of 12 sharp, perpendicular, number-anchored seeds combining `topic-prospector` cross-disciplinary insights with core domain knowledge, which will become the 12 `· · ·`-separated paragraphs of that chapter).
   - **For `"landscape"` mode**: `chapter`, `title`, `subtitle`, `lens` (Knowra lens: `anchor`, `building-blocks`, `mechanism`, `origins`, `contrasts`, `neighbors`, `consequences`, `cases`, `open-questions`), `verb` (`anchor`, `zoom-in`, `zoom-out`, `go`, `contrast`), `what` (context-free definition), `why_here` (specific connection to the central topic), `background_nodes` (array of 3–5 linked sub-concepts with `label`, `what`, `whyHere`), and `formalism_mode`.
 
@@ -62,7 +62,7 @@ To prevent both context-window truncation and verbose drift toward the LLM's pre
 
 ```markdown
 Read `/Users/niraj/book-writer/alexandria_manifesto.md`, `/Users/niraj/book-writer/GENERATION_GUIDELINES.md`, and `/Users/niraj/book-writer/dossiers/<slug>.json`.
-Write `/Users/niraj/book-writer/<filename>.md` and validate it with `python3 scripts/validate_book.py <filename>.md` until it passes with 0 errors and 0 warnings.
+Write `/Users/niraj/book-writer/books/<slug>.md` and validate it with `python3 scripts/validate_book.py books/<slug>.md` until it passes with 0 errors and 0 warnings.
 
 ### Baked-In Alexandria Manifesto Laws (Non-Negotiable):
 1. **Universal 12-Facet Container ("Deep Learning for Humans")**: We are not writing a comprehensive textbook or vocational curriculum; 12 facets is enough. Write 12 self-contained 5-minute facets examining the subject from 12 angles ("shorts, not the long video").
@@ -87,7 +87,7 @@ Because error density in machine synthesis tracks narrative pressure—and an au
 
 ```markdown
 You are an independent Fact-Checker and Provenance Auditor for Alexandria Press.
-Read `/Users/niraj/book-writer/<filename>.md` and `/Users/niraj/book-writer/dossiers/<slug>.json`.
+Read `/Users/niraj/book-writer/books/<slug>.md` and `/Users/niraj/book-writer/dossiers/<slug>.json`.
 Do NOT trust the manuscript's fluency. Audit all 12 chapters against external sources (`wiki-grounding` MCP tools, `pubmed-database`, `literature-search-openalex`, or `search_web`) across the six Alexandria failure modes:
 
 1. **Direct Quote Purge**: Verify there are ZERO multi-word direct quotations (`"..."` >= 5 words) anywhere in the manuscript.
@@ -97,7 +97,7 @@ Do NOT trust the manuscript's fluency. Audit all 12 chapters against external so
 5. **Epistemic Hedges & Anti-Absolutes Audit**: Verify that unconfirmed mechanisms, out-of-court settlements, or contested historical hypotheses retain their proper qualifiers rather than being stated as proven judicial/federal facts, and check that sweeping absolutes ("never", "every single", "worse than random") match the real source bounds.
 6. **Isomorphic Parallels & Internal Math Audit**: Verify that every cross-domain parallel obeys the *exact same mathematical equation* (delete any decorative biological or physical metaphor), and check all arithmetic ratios and unit comparisons across the chapter and book for internal consistency.
 
-Output a concise Chapter-by-Chapter Fact-Check Ledger (`VERIFIED` / `FIXED`), apply all necessary corrections directly to `/Users/niraj/book-writer/<filename>.md`, and run `python3 scripts/validate_book.py <filename>.md` until it outputs `[PASS]` with 0 errors and 0 warnings.
+Output a concise Chapter-by-Chapter Fact-Check Ledger (`VERIFIED` / `FIXED`), apply all necessary corrections directly to `/Users/niraj/book-writer/books/<slug>.md`, and run `python3 scripts/validate_book.py books/<slug>.md` until it outputs `[PASS]` with 0 errors and 0 warnings.
 ```
 
 ---
@@ -107,7 +107,7 @@ Output a concise Chapter-by-Chapter Fact-Check Ledger (`VERIFIED` / `FIXED`), ap
 Run the hard validator script against the fact-checked manuscript:
 
 ```bash
-python3 scripts/validate_book.py <slug_with_underscores>.md
+python3 scripts/validate_book.py books/<slug>.md
 ```
 
 - The validator checks:
@@ -125,20 +125,30 @@ python3 scripts/validate_book.py <slug_with_underscores>.md
 ## Stage 5: Creator Steering Pass ("Director's Cut") & Publication (`v2` & Done)
 
 1. **Creator Steering Prompt (`v1` $\rightarrow$ `v2`)**:
-   - After `v1` is synthesized and fact-checked, if the creator provides steering input (e.g., *"Swap Chapter 8 for his Brazil expedition"*, *"Change the title to Twelve Facets"*):
+   - After `v1` is synthesized and fact-checked, if the creator provides steering input (e.g., *"Swap Chapter 8 for his Brazil expedition"*, *"Change the title to William James"*):
      1. Update `dossiers/<slug>.json`.
-     2. Regenerate the affected chapters (or full manuscript `v2`), run the independent fact-check pass on any new chapters, and run `python3 scripts/validate_book.py <filename>.md`.
+     2. Regenerate the affected chapters (or full manuscript `v2`), run the independent fact-check pass on any new chapters, and run `python3 scripts/validate_book.py books/<slug>.md`.
      3. Once `v2` passes with 0 errors, lock the book and call it done.
 2. **Publish & Deploy (`scripts/publish_book.py`)**:
-   ```bash
-   python3 scripts/publish_book.py \
-     --slug <slug> \
-     --category "<Category>" \
-     --accent "<#hex>" \
-     --bg "<#hex>" \
-     --theme "<network-wave|harmonic-rings|lattice>"
-   python3 scripts/validate_book.py --all
-   git add . && git commit -m "Publish volume: <Title>" && git push origin main && npx vercel --prod --yes
-   ```
+   - For a single volume:
+     ```bash
+     python3 scripts/publish_book.py \
+       --slug <slug> \
+       --category "<Category>" \
+       --accent "<#hex>" \
+       --bg "<#hex>" \
+       --theme "<network-wave|harmonic-rings|lattice>"
+     ```
+   - Or for an entire batch from `backlog.json`:
+     ```bash
+     python3 scripts/publish_book.py --batch <N>
+     ```
+   - Validate and deploy:
+     ```bash
+     python3 scripts/validate_book.py --all
+     python3 tests/test_reader.py
+     git add . && git commit -m "Publish volume: <Title>" && git push origin main && npx vercel --prod --yes
+     ```
+
 
 

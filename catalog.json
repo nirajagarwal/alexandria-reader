@@ -1,0 +1,4290 @@
+{
+  "version": 1,
+  "updated_at": "2026-10-17",
+  "books": [
+    {
+      "slug": "non-linear-engines",
+      "file": "books/non-linear-engines.md",
+      "title": "Non-Linear Engines",
+      "subtitle": "How Unusual Startups Escape Early Failure",
+      "category": "Startups & Strategy",
+      "mode": "facet",
+      "profile": "C",
+      "accent": "#d97706",
+      "bg": "#1c1917",
+      "pdf": "assets/pdfs/non-linear-engines.pdf",
+      "compactPdf": "assets/pdfs/non-linear-engines-compact.pdf",
+      "mobilePdf": "assets/pdfs/non-linear-engines-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        34,
+        37
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        8,
+        12,
+        16,
+        19,
+        22,
+        25,
+        29,
+        32,
+        36,
+        40,
+        43
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29,
+        33,
+        37,
+        41,
+        45,
+        49
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Non-Linear Engines",
+          "subtitle": "The Physics of Company Creation"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "The Star Graph",
+          "subtitle": "Federal Express and the Topological Arbitrage of Memphis"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Planar Genesis",
+          "subtitle": "Fairchild Semiconductor and the Invention of Silicon Equity"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "The Drawback Flywheel",
+          "subtitle": "Standard Oil and the Cleveland Massacre"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "The Symbiotic Vector",
+          "subtitle": "PayPal and the Virulence of the eBay Host"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Analog Citadel",
+          "subtitle": "Linear Technology and the Thirty-Year Gross Margin"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Protocol Commons",
+          "subtitle": "Netscape and the Zero-Marginal-Cost Capture of the Web"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "The Seven-Line Abstraction",
+          "subtitle": "Stripe and the Collapse of Online Payment Friction"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "The Asymmetric Ratio",
+          "subtitle": "Instagram and the Thirteen-Employee Scale Architecture"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "The Infinite Shelf",
+          "subtitle": "Amazon and the Negative Working Capital Arbitrage"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "The Commodity Inversion",
+          "subtitle": "SpaceX and the First-Principles Physics of Aerospace"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "The Percolation Threshold",
+          "subtitle": "Uber and the Spatial Density of Urban Dispatch"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "The Dedicated Terminal",
+          "subtitle": "Bloomberg and the Closed-Loop Financial Network"
+        }
+      ]
+    },
+    {
+      "slug": "latent-fragility",
+      "file": "books/latent-fragility.md",
+      "title": "Latent Fragility",
+      "subtitle": "Hidden Structural Flaws, Coupled Cascades, and Catastrophic Engineering Failures",
+      "category": "Systemic Failure & Risk",
+      "mode": "facet",
+      "profile": "A",
+      "accent": "#818cf8",
+      "bg": "#1f1212",
+      "pdf": "assets/pdfs/latent-fragility.pdf",
+      "compactPdf": "assets/pdfs/latent-fragility-compact.pdf",
+      "mobilePdf": "assets/pdfs/latent-fragility-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        34,
+        37
+      ],
+      "compactSectionPages": [
+        3,
+        5,
+        8,
+        12,
+        15,
+        18,
+        21,
+        24,
+        27,
+        30,
+        33,
+        37,
+        41
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29,
+        33,
+        37,
+        41,
+        45,
+        49
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Latent Fragility",
+          "subtitle": "How Dormant Design Flaws Turn Routine Perturbations into Disasters"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "The Top-Heavy Flagship",
+          "subtitle": "Metacentric Instability and the Sinking of the Warship Vasa"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Dual Software Race",
+          "subtitle": "Concurrent State Bugs in the Therac-25 Radiation Overdoses"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "The Dormant Flag on Server Eight",
+          "subtitle": "Dead Code Reuse and the Forty-Five-Minute Liquidation of Knight Capital"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "The Cost-Plus Ratchet",
+          "subtitle": "Aerospace Subcontractor Chains and the Falcon 1 Hardware Failures"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Thirty-Seven-Second Overflow",
+          "subtitle": "Inherited Inertial Code and the Destruction of Ariane 5 Flight 501"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Synchronized Footbridge",
+          "subtitle": "Coupled Pedestrian Oscillators on the London Millennium Crossing"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "The Salt Dome Whirlpool",
+          "subtitle": "Hydrostatic Dissolution and the Draining of Lake Peigneur"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "The Torsional Flutter of Puget Sound",
+          "subtitle": "Aeroelastic Self-Excitation and the Collapse of Tacoma Narrows"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "The Square Window Corner",
+          "subtitle": "De Havilland Comet Fatigue Cracks and Stress Concentration in Pressurized Cabins"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "The Doubled Load on Box Beam Four",
+          "subtitle": "How a Simple Rod Substitution Caused the Hyatt Regency Walkway Collapse"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "The Cold-Stiffened O-Ring",
+          "subtitle": "How Fluoroelastomer Glass Transition Defeated Dual Redundancy on Challenger"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "The Frozen Pitot Tube",
+          "subtitle": "Air France Flight 447 and the Paradox of Automation Hand-Off at Thirty-Five Thousand Feet"
+        }
+      ]
+    },
+    {
+      "slug": "singular-minds",
+      "file": "books/singular-minds.md",
+      "title": "Singular Minds",
+      "subtitle": "How Exceptional Thinkers Solved Impossible Problems",
+      "category": "Cognitive Architecture",
+      "mode": "facet",
+      "profile": "D",
+      "accent": "#0ea5e9",
+      "bg": "#0f172a",
+      "pdf": "assets/pdfs/singular-minds.pdf",
+      "compactPdf": "assets/pdfs/singular-minds-compact.pdf",
+      "mobilePdf": "assets/pdfs/singular-minds-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        34,
+        37
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        31,
+        35,
+        39,
+        43,
+        47
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        13,
+        18,
+        22,
+        26,
+        30,
+        34,
+        38,
+        43,
+        47,
+        51
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Singular Minds",
+          "subtitle": "How Twelve Thinkers Reframed Impossible Problems"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "The Rising Sea",
+          "subtitle": "Alexander Grothendieck and the Radical Power of Categorical Sheaves"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Redundancy of Chaos",
+          "subtitle": "Claude Shannon and the Information Theory of Play"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "The Arithmetic Machine",
+          "subtitle": "John von Neumann and the Architecture of Instantaneous Synthesis"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "The Geometry of Blindness",
+          "subtitle": "Leonhard Euler and the Internal Blackboard of Petersburg"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Master of the Unseen",
+          "subtitle": "Srinivasa Ramanujan and the Mock Theta Partition"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Mechanical Clockwork of War",
+          "subtitle": "John Boyd and the Energy-Maneuverability Calculus"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "The Reluctant Polymath",
+          "subtitle": "Thomas Young and the Wave Particle Coherence"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "The Silent Compass",
+          "subtitle": "J. Willard Gibbs and the Vectorial Foundation of Thermodynamics"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "The Lines of Force",
+          "subtitle": "Michael Faraday and the Visual Geometry of Electromagnetic Fields"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "The Invariant Symmetry",
+          "subtitle": "Emmy Noether and the Conservation Laws of Physics"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "The Self-Referential Loop",
+          "subtitle": "Kurt Gödel and the Arithmetic of Incompleteness"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "The Algebraic Positron",
+          "subtitle": "Paul Dirac and the Relativistic Electron Equation"
+        }
+      ]
+    },
+    {
+      "slug": "radical-subtraction",
+      "file": "books/radical-subtraction.md",
+      "title": "Radical Subtraction",
+      "subtitle": "Sensory Isolation and the Quiet Mind",
+      "category": "Contemplative Theory",
+      "mode": "facet",
+      "profile": "B",
+      "accent": "#eab308",
+      "bg": "#15132b",
+      "pdf": "assets/pdfs/radical-subtraction.pdf",
+      "compactPdf": "assets/pdfs/radical-subtraction-compact.pdf",
+      "mobilePdf": "assets/pdfs/radical-subtraction-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        34,
+        37
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        7,
+        10,
+        14,
+        17,
+        20,
+        23,
+        26,
+        30,
+        33,
+        36,
+        40
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Radical Subtraction",
+          "subtitle": "What Happens When All Input Stops"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "The Cell on the Tagus",
+          "subtitle": "John of the Cross and the Doctrine of the Dark Night in Toledo"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Anchorhold of Norwich",
+          "subtitle": "Julian of Norwich and the Confinement of the Hazelnuts"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "The Interior Castle",
+          "subtitle": "Teresa of Ávila and the Neurodynamics of the Seventh Mansion"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "The Desert Pillar",
+          "subtitle": "Simeon Stylites and the Physics of Vertical Isolation in Syria"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Apophatic Cloud",
+          "subtitle": "The Anonymous English Contemplative and the Erasure of Memory"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Dialectic of the Nothing",
+          "subtitle": "Meister Eckhart and the Breakthrough of the Ground in Cologne"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "The Rhenish Hermitage",
+          "subtitle": "Hildegard of Bingen and the Scivias Telemetry at Disibodenberg"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "The Hesychast Breath",
+          "subtitle": "Gregory Palamas and the Physiology of the Uncreated Light on Mount Athos"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "The Uncarved Block",
+          "subtitle": "Zhuangzi, Butcher Ding's Ox Cleaver, and the Mechanics of Non-Interference"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "The Sculptor's Chisel",
+          "subtitle": "Plotinus, Pseudo-Dionysius, and the Removal of Conceptual Marble"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "The Suspended Judgment",
+          "subtitle": "Pyrrho of Elis, Sextus Empiricus, and the Quietness That Follows Equipollence"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "The Kicked-Away Ladder",
+          "subtitle": "Ludwig Wittgenstein and Where Logical Language Draws Its Own Border"
+        }
+      ]
+    },
+    {
+      "slug": "liminal-thresholds",
+      "file": "books/liminal-thresholds.md",
+      "title": "Liminal Thresholds",
+      "subtitle": "Discoveries That Broke Scientific Consensus",
+      "category": "Anomalous Physics",
+      "mode": "facet",
+      "profile": "A",
+      "accent": "#a855f7",
+      "bg": "#0b2229",
+      "pdf": "assets/pdfs/liminal-thresholds.pdf",
+      "compactPdf": "assets/pdfs/liminal-thresholds-compact.pdf",
+      "mobilePdf": "assets/pdfs/liminal-thresholds-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        7,
+        9,
+        11,
+        14,
+        17,
+        20,
+        23,
+        26,
+        28,
+        31,
+        34
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        8,
+        11,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        30,
+        33,
+        36
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Liminal Thresholds",
+          "subtitle": "How Science Deals with Impossible Data"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "The Falling Stones",
+          "subtitle": "Jean-Baptiste Biot and the Aerodynamics of Cosmic Debris (L'Aigle, 1803)"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Inverted Freeze",
+          "subtitle": "Erasto Mpemba and Non-Equilibrium Thermal Convection (Dar es Salaam, 1963)"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "The Luminescent Bubble",
+          "subtitle": "H. Frenzel, H. Schultes, and the Physics of Acoustic Cavitation (Cologne, 1934)"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "The Crystalline Vector",
+          "subtitle": "Jacques and Pierre Curie and Hemimorphic Polar Asymmetry (Paris, 1880)"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Unbroken Soliton",
+          "subtitle": "John Scott Russell and the Wave of Translation (Hermiston, 1834)"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Thermal Circuit",
+          "subtitle": "Thomas Johann Seebeck and Differential Metallic Diffusion (Berlin, 1821)"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "The Disappearing Boundary",
+          "subtitle": "Thomas Andrews and the Continuity of Gaseous and Liquid States (Belfast, 1869)"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "The Drifting Slabs",
+          "subtitle": "Alfred Wegener and the Rheology of the Earth Mantle (Marburg, 1912)"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "The Boiling Friction",
+          "subtitle": "Count Rumford, Benjamin Thompson, and the Mechanical Equivalence of Caloric (Munich, 1798)"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "The Ghost Inventory",
+          "subtitle": "Wolfgang Pauli and the Missing Momentum of Beta Decay (Zurich, 1930)"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "The Unilateral Current",
+          "subtitle": "Thomas Edison, Owen Richardson, and Thermionic Barrier Penetration (Menlo Park, 1883)"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "The Solitary Wall",
+          "subtitle": "The Draupner Platform and Non-Linear Surface Wave Modulation (North Sea, 1995)"
+        }
+      ]
+    },
+    {
+      "slug": "autonomous-engine",
+      "file": "books/autonomous-engine.md",
+      "title": "The Autonomous Engine",
+      "subtitle": "The Control Loops of the Human Body",
+      "category": "Physiology & Cybernetics",
+      "mode": "facet",
+      "profile": "B",
+      "accent": "#22c55e",
+      "bg": "#08241b",
+      "pdf": "assets/pdfs/autonomous-engine.pdf",
+      "compactPdf": "assets/pdfs/autonomous-engine-compact.pdf",
+      "mobilePdf": "assets/pdfs/autonomous-engine-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        34,
+        37
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        27,
+        30,
+        34,
+        38,
+        42,
+        45
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29,
+        33,
+        37,
+        41,
+        45,
+        49
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "The Autonomous Engine",
+          "subtitle": "How the Body Balances Itself"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "The Hydraulic Impedance",
+          "subtitle": "Otto Frank, Ernest Starling, and Myocardial Compliance in London"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Countercurrent Multiplexer",
+          "subtitle": "Werner Kuhn and the Medullary Osmotic Gradient in Basel"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "The Convective Sieve",
+          "subtitle": "Christian Bohr, August Krogh, and Alveolar Gas Exchange in Copenhagen"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "The Homeostatic Brake",
+          "subtitle": "Walter Holbrook Gaskell and Parasympathetic Vagal Hysteresis in Cambridge"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Convective Flush",
+          "subtitle": "Maiken Nedergaard and Glymphatic Interstitial Clearance in Rochester"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Calcium Trigger",
+          "subtitle": "Setsuro Ebashi and the Troponin Molecular Switch in Tokyo"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "The Photonic Transducer",
+          "subtitle": "George Wald and Retinal Rhodopsin Isomerization at Woods Hole"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "The Thermal Core",
+          "subtitle": "Carl von Voit, Max Rubner, and Metabolic Energy Conservation in Munich"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "The Electrochemical Gate",
+          "subtitle": "Alan Hodgkin, Andrew Huxley, and the Axonal Voltage Clamp in Plymouth"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "The Master Oscillator",
+          "subtitle": "Colin Pittendrigh, Seymour Benzer, and Suprachiasmatic Phase Alignment in Pasadena"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "The Acid-Base Servo",
+          "subtitle": "John Scott Haldane, Lawrence Henderson, and the Medullary Chemoreceptor Loop in Oxford"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "The Glycemic Integral Controller",
+          "subtitle": "Frederick Banting, Charles Best, and the Pancreatic Bihormonal Loop in Toronto"
+        }
+      ]
+    },
+    {
+      "slug": "elemental-asymmetries",
+      "file": "books/elemental-asymmetries.md",
+      "title": "Elemental Asymmetries",
+      "subtitle": "The Physical Constraints of Twelve Elements",
+      "category": "Materials & Chemistry",
+      "mode": "facet",
+      "profile": "A",
+      "accent": "#f97316",
+      "bg": "#211a09",
+      "pdf": "assets/pdfs/elemental-asymmetries.pdf",
+      "compactPdf": "assets/pdfs/elemental-asymmetries-compact.pdf",
+      "mobilePdf": "assets/pdfs/elemental-asymmetries-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        20,
+        23,
+        26,
+        29,
+        32
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        7,
+        9,
+        11,
+        14,
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        34
+      ],
+      "mobileSectionPages": [
+        3,
+        4,
+        7,
+        9,
+        11,
+        14,
+        17,
+        20,
+        24,
+        27,
+        30,
+        33,
+        36
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Elemental Asymmetries",
+          "subtitle": "The Physical Constraints of Twelve Elements"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "The Triple Bond Trap",
+          "subtitle": "Nitrogen and the Metabolic Ceiling of Civilization (Oppau, 1913)"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Lattice Arbitrage",
+          "subtitle": "Silicon and the Purity Threshold of Planar Semiconductors (Mountain View, 1959)"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "The Intercalation Bottleneck",
+          "subtitle": "Lithium and the Electrochemical Redox Gradient (Oxford, 1980)"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "The Radiative Fission",
+          "subtitle": "Uranium-235 and the Thermal Neutron Cross-Section (Oak Ridge, 1944)"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Unpaired Electrons",
+          "subtitle": "Neodymium and the Coercivity of Rare Earth Permanent Magnets (Tokyo, 1982)"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Quantum Cryogen",
+          "subtitle": "Helium-4 and the Vanishing Viscosity of the Superfluid (Cambridge, 1937)"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "The Refractory Airframe",
+          "subtitle": "Titanium and the Kroll Reduction Energy Barrier (Boulder City, 1946)"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "The Catalytic Terrace",
+          "subtitle": "Platinum and Proton-Exchange Adsorption Kinetics (Zurich, 1965)"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "The Resistive Ceiling",
+          "subtitle": "Copper and the Wiedemann-Franz Thermal Dissipation Ratio (Pasadena, 1911)"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "The Nuclear Valley",
+          "subtitle": "Lead and the Radiogenic Endpoint of Heavy Elements (Manchester, 1907)"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "The Molten Cryolite",
+          "subtitle": "Aluminum and the Hall-Héroult Electrolytic Reduction (Oberlin, 1886)"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "The Graphitic Sheet",
+          "subtitle": "Carbon-12 and the Covalent Orbital Hybridization Limits (Manchester, 2004)"
+        }
+      ]
+    },
+    {
+      "slug": "affective-topologies",
+      "file": "books/affective-topologies.md",
+      "title": "Affective Topologies",
+      "subtitle": "The Predictive Control Loops of Human Emotion",
+      "category": "Neuroscience & Cybernetics",
+      "mode": "facet",
+      "profile": "B",
+      "accent": "#f43f5e",
+      "bg": "#26101d",
+      "pdf": "assets/pdfs/affective-topologies.pdf",
+      "compactPdf": "assets/pdfs/affective-topologies-compact.pdf",
+      "mobilePdf": "assets/pdfs/affective-topologies-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        26,
+        29,
+        32,
+        35,
+        39
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        30,
+        35,
+        39,
+        43,
+        47,
+        52
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Affective Topologies",
+          "subtitle": "How the Brain Predicts What You Feel"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "The Uncontrollable Loop",
+          "subtitle": "Martin Seligman, Yoked Circuits, and the Mechanics of Dread"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Derivative of Expectation",
+          "subtitle": "Wolfram Schultz, Midbrain Dopamine, and the Spikes of Joy"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "The Phantom Prior",
+          "subtitle": "Colin Murray Parkes, Bereavement Wards, and the Updating of Attachment"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "The Law of Contagion",
+          "subtitle": "Paul Rozin, Sterilized Cockroaches, and the Insular Perimeter"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Status Ledger",
+          "subtitle": "Frans de Waal, Whitehall Civil Servants, and the Cost of Inequity"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Overview Collapse",
+          "subtitle": "Edgar Mitchell, the Default Mode Network, and the Mechanics of Awe"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "The Inflammatory Gaze",
+          "subtitle": "Dickerson, Slavich, and the Immunological Signature of Shame"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "The Suffocation Alarm",
+          "subtitle": "Donald Klein, Sodium Lactate, and the Brainstem Mechanics of Panic"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "The Decorticate Deterrent",
+          "subtitle": "Walter Cannon, Hypothalamic Release, and the Game Theory of Rage"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "The Epistemic Drive",
+          "subtitle": "Harry Harlow, Mechanical Puzzles, and the Information Calculus of Curiosity"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "The Myelinated Truce",
+          "subtitle": "Ernst Fehr, Intranasal Oxytocin, and the Vagal Circuit of Trust"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "The Allostatic Debt",
+          "subtitle": "Bruce McEwen, Hippocampal Receptors, and the Resonance of Calm"
+        }
+      ]
+    },
+    {
+      "slug": "architectures-of-choice",
+      "file": "books/architectures-of-choice.md",
+      "title": "Architectures of Choice",
+      "subtitle": "Practical Decision Theory for an Unpredictable World",
+      "category": "Decision Science & Strategy",
+      "mode": "facet",
+      "profile": "C",
+      "accent": "#06b6d4",
+      "bg": "#1b122e",
+      "pdf": "assets/pdfs/architectures-of-choice.pdf",
+      "compactPdf": "assets/pdfs/architectures-of-choice-compact.pdf",
+      "mobilePdf": "assets/pdfs/architectures-of-choice-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        17,
+        21,
+        25,
+        29,
+        33,
+        37,
+        41,
+        45
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        13,
+        17,
+        22,
+        27,
+        32,
+        37,
+        42,
+        47,
+        52,
+        57
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Architectures of Choice",
+          "subtitle": "How to Make Irreversible Choices"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "The Absorbing Barrier",
+          "subtitle": "Non-Ergodicity from the St. Petersburg Paradox to Long-Term Capital Management"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Kelly Frontier",
+          "subtitle": "Optimal Bet Sizing from Bell Labs to the Las Vegas Blackjack Tables"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "Asymmetric Convexity",
+          "subtitle": "Optionality from Thales of Miletus to Modern R&D Portfolios"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "The One-Way Door",
+          "subtitle": "Real Options and Reversibility at Intel in October 1985"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Weight of Evidence",
+          "subtitle": "Bayesian Updating and Decibans Inside Bletchley Park's Hut 8"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Missing Fuselage",
+          "subtitle": "Survivorship Bias in Abraham Wald's 1943 Bomber Vulnerability Memos"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "The Severed Tail",
+          "subtitle": "Goodhart's Law from Colonial Hanoi to the Qumran Caves"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "The Minimax Brink",
+          "subtitle": "Game Theory and Credible Commitment in October 1962"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "The Concorde Trap",
+          "subtitle": "Sunk Costs and Asymmetric Loss Aversion in Prospect Theory"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "The Two-Second Roll",
+          "subtitle": "Hydraulic Transients and the OODA Loop Over MiG Alley"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "The Tenth Man",
+          "subtitle": "Institutionalizing Dissent from the 1973 Yom Kippur Failure to the Pre-Mortem"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "The Gittins Index",
+          "subtitle": "Exploration versus Exploitation and the Multi-Armed Bandit"
+        }
+      ]
+    },
+    {
+      "slug": "tales-of-audacity",
+      "file": "books/tales-of-audacity.md",
+      "title": "Tales of Audacity",
+      "subtitle": "Twelve Stories of Breaking Entrenched Consensus",
+      "category": "History & Strategy",
+      "mode": "facet",
+      "profile": "D",
+      "accent": "#f59e0b",
+      "bg": "#24140a",
+      "pdf": "assets/pdfs/tales-of-audacity.pdf",
+      "compactPdf": "assets/pdfs/tales-of-audacity-compact.pdf",
+      "mobilePdf": "assets/pdfs/tales-of-audacity-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        32,
+        35,
+        38
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        14,
+        18,
+        23,
+        27,
+        31,
+        35,
+        39,
+        44,
+        49,
+        54
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Tales of Audacity",
+          "subtitle": "How Small Leverage Exposes Brittle Systems"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "The Solar Geometry",
+          "subtitle": "Measuring the Earth with Shadows and Strides"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Burning Mirrors",
+          "subtitle": "Stopping a Roman Fleet with Levers and Cranes"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "The Geocentric Fracture",
+          "subtitle": "Moving the Sun to the Center of the Solar System"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "The Celestial Clockmaker",
+          "subtitle": "Why Eight Minutes of Arc Broke Ancient Astronomy"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Scurvy Trials",
+          "subtitle": "Curing Scurvy with the First Controlled Clinical Trial"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Cadaver Ward",
+          "subtitle": "How Handwashing Ended Childbed Fever in Vienna"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "The Continental Jigsaw",
+          "subtitle": "Why Nobody Believed the Continents Could Move"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "The Jumping Genes",
+          "subtitle": "Finding Mobile DNA in Maize Chromosomes"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "The Acid Pathogen",
+          "subtitle": "Drinking Bacteria to Prove the Cause of Ulcers"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "The Modified Messenger",
+          "subtitle": "Thirty Years in the Wilderness of mRNA"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "The Deciphered Cartouche",
+          "subtitle": "Cracking the Phonetic Code of Egyptian Hieroglyphs"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "The Forbidden Symmetry",
+          "subtitle": "How Quasicrystals Broke Two Centuries of Crystallography"
+        }
+      ]
+    },
+    {
+      "slug": "architectures-of-the-grid",
+      "file": "books/architectures-of-the-grid.md",
+      "title": "Architectures of the Grid",
+      "subtitle": "The Physical Wiring That Keeps Modern Society Running",
+      "category": "Infrastructure & Physics",
+      "mode": "facet",
+      "profile": "A",
+      "accent": "#14b8a6",
+      "bg": "#0c1f2e",
+      "pdf": "assets/pdfs/architectures-of-the-grid.pdf",
+      "compactPdf": "assets/pdfs/architectures-of-the-grid-compact.pdf",
+      "mobilePdf": "assets/pdfs/architectures-of-the-grid-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        11,
+        14,
+        17,
+        20,
+        24,
+        27,
+        31,
+        35,
+        38,
+        42
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        14,
+        19,
+        23,
+        27,
+        32,
+        37,
+        42,
+        47,
+        52,
+        57
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Architectures of the Grid",
+          "subtitle": "Why Physical Networks Break Differently Than Software"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "The Frequency Anchor",
+          "subtitle": "Spinning Turbines and the Constant 60 Hz Balance"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Girdle of the Deep",
+          "subtitle": "The First Telegraph Wire Across the Atlantic Floor"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "The Hydraulic Incline",
+          "subtitle": "Running Water Over Mountain Slopes by Gravity Alone"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "The Rail Synchronization",
+          "subtitle": "Why Steam Trains Forced Britain to Standardize Time"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Nodal Bottleneck",
+          "subtitle": "Canals, Shallow Straits, and Global Shipping Chokepoints"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Switching Matrix",
+          "subtitle": "From Tangled Copper Loops to Automated Exchanges"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "The Steel Box Standard",
+          "subtitle": "How One Aluminum Container Rewired Global Trade"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "The Borderless Table",
+          "subtitle": "How Fragile Trust Holds the Internet Together"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "The Thermal Chain",
+          "subtitle": "How Artificial Cold Created the Modern City"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "The Orbital Clockwork",
+          "subtitle": "Why GPS Satellites Must Correct for Bent Spacetime"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "The Subterranean River",
+          "subtitle": "How Brick Intercepting Sewers Saved London"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "The Extreme Ultraviolet Mirror",
+          "subtitle": "How Global Computation Depends on Molten Tin Droplets"
+        }
+      ]
+    },
+    {
+      "slug": "sensory-worlds",
+      "file": "books/sensory-worlds.md",
+      "title": "Sensory Worlds",
+      "subtitle": "How Non-Human Nervous Systems Measure Reality",
+      "category": "Ethology & Biophysics",
+      "mode": "facet",
+      "profile": "Profile B: Biological, Neural & Affective Control Loops (Sensory Biophysics)",
+      "accent": "#10b981",
+      "bg": "#061e16",
+      "pdf": "assets/pdfs/sensory-worlds.pdf",
+      "compactPdf": "assets/pdfs/sensory-worlds-compact.pdf",
+      "mobilePdf": "assets/pdfs/sensory-worlds-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        11,
+        14,
+        17,
+        21,
+        25,
+        29,
+        32,
+        36,
+        40,
+        44
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        44,
+        49,
+        54,
+        59
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Sensory Worlds",
+          "subtitle": "Beyond the Human Slice of the Spectrum"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "The Acoustic Mirror",
+          "subtitle": "Donald Griffin, Bat Biosonar, and Doppler-Shift Compensation"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Nanovolt Compass",
+          "subtitle": "Adriaan Kalmijn, Shark Ampullae, and Bioelectric Prey Detection"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "The Sixteen-Channel Retina",
+          "subtitle": "Thomas Cronin, Mantis Shrimp, and Circular Polarization Optics"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "The Ephemeris Dance",
+          "subtitle": "Karl von Frisch, Honeybee Polarizers, and Vector Navigation"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Microsecond Map",
+          "subtitle": "Masakazu Konishi, Barn Owls, and Coincidence-Detector Delay Lines"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Quantum Inclination",
+          "subtitle": "Wolfgang Wiltschko, Sea Turtles, and the Geomagnetic Compass"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "The Biological Bolometer",
+          "subtitle": "Theodore Bullock, Pit Vipers, and Thermal Membrane Imaging"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "The Tactile Fovea",
+          "subtitle": "Kenneth Catania, Star-Nosed Moles, and the Speed Limit of Touch"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "The Seismic Horizon",
+          "subtitle": "Katy Payne, Caitlin O'Connell, and Elephant Rayleigh-Wave Communication"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "The Phase-Lock Reflex",
+          "subtitle": "Walter Heiligenberg, Electric Knifefish, and the Jamming Avoidance Algorithm"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "The Pedometer in the Sand",
+          "subtitle": "Rüdiger Wehner, Saharan Ants, and Dead-Reckoning Path Integration"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "The Blind Camouflage",
+          "subtitle": "Roger Hanlon, Cuttlefish Skin, and Distributed Reflectance Control"
+        }
+      ]
+    },
+    {
+      "slug": "instruments-of-precision",
+      "file": "books/instruments-of-precision.md",
+      "title": "Instruments of Precision",
+      "subtitle": "Twelve Machines That Expanded the Boundaries of Measurement",
+      "category": "Physics & Metrology",
+      "mode": "facet",
+      "profile": "A",
+      "accent": "#06b6d4",
+      "bg": "#061a23",
+      "pdf": "assets/pdfs/instruments-of-precision.pdf",
+      "compactPdf": "assets/pdfs/instruments-of-precision-compact.pdf",
+      "mobilePdf": "assets/pdfs/instruments-of-precision-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        8,
+        11,
+        15,
+        18,
+        22,
+        25,
+        28,
+        31,
+        34,
+        38,
+        42
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        10,
+        14,
+        19,
+        23,
+        28,
+        33,
+        37,
+        41,
+        45,
+        50,
+        55
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Instruments of Precision",
+          "subtitle": "The War Against Thermal Drift and Noise"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "The Bimetallic Balance",
+          "subtitle": "John Harrison, the H4 Marine Watch, and the Longitude Prize"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Garden Shed Torsion Wire",
+          "subtitle": "Henry Cavendish, the Michell Balance, and Weighing the Earth"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "The Endless Screw",
+          "subtitle": "Jesse Ramsden, the Dividing Engine, and the Sub-Arcsecond Circle"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "The Rotating Cogwheel",
+          "subtitle": "Hippolyte Fizeau, Léon Foucault, and the Terrestrial Speed of Light"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Mercury Pool Interferometer",
+          "subtitle": "Albert Michelson, Edward Morley, and the Missing Luminiferous Ether"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Wrung Steel Blocks",
+          "subtitle": "Carl Edvard Johansson and the Sub-Micron Gauge Standard"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "The Bottled Cloud",
+          "subtitle": "C. T. R. Wilson, Supersaturated Vapor, and the Tracks of Invisible Particles"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "The Hyperfine Pendulum",
+          "subtitle": "Louis Essen, Jack Parry, and the First Caesium Atomic Clock"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "The Tunneling Needle",
+          "subtitle": "Gerd Binnig, Heinrich Rohrer, and the Scanning Tunneling Microscope"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "The Thermal Photocopier",
+          "subtitle": "Kary Mullis, Yellowstone Extremophiles, and the Polymerase Chain Reaction"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "The Underground Dry-Cleaning Tank",
+          "subtitle": "Raymond Davis Jr., the Homestake Mine, and the Missing Solar Neutrinos"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "The Four-Kilometer Yardstick",
+          "subtitle": "Rainer Weiss, Kip Thorne, Barry Barish, and the LIGO Gravitational Wave Detector"
+        }
+      ]
+    },
+    {
+      "slug": "ghosts-in-the-parchment",
+      "file": "books/ghosts-in-the-parchment.md",
+      "title": "Ghosts in the Parchment",
+      "subtitle": "How Scholars Exposed Forgeries, Deciphered Lost Scripts, and Reconstructed Vanished Books",
+      "category": "Philology & Forensics",
+      "mode": "facet",
+      "profile": "D",
+      "accent": "#d97706",
+      "bg": "#1c1208",
+      "pdf": "assets/pdfs/ghosts-in-the-parchment.pdf",
+      "compactPdf": "assets/pdfs/ghosts-in-the-parchment-compact.pdf",
+      "mobilePdf": "assets/pdfs/ghosts-in-the-parchment-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        32,
+        35,
+        38
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29,
+        33,
+        37,
+        42,
+        46,
+        50
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Ghosts in the Parchment",
+          "subtitle": "The Forensic Science of the Written Word"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "The Anachronistic Words",
+          "subtitle": "Lorenzo Valla and the Forgery of the Donation of Constantine"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Cliff of Three Tongues",
+          "subtitle": "Henry Rawlinson and the Cuneiform Trilingual of Behistun"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "The Vanished Archetype",
+          "subtitle": "Karl Lachmann and the Forensic Reconstruction of Lucretius"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "The Sacred Attic",
+          "subtitle": "Solomon Schechter, the Twin Sisters, and the Cairo Geniza"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Coffeehouse Homer",
+          "subtitle": "Milman Parry, Albert Lord, and the Oral Machinery of Epic"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Inflectional Grid",
+          "subtitle": "Alice Kober, Michael Ventris, and the Decipherment of Linear B"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "The Burned Library of Leningrad",
+          "subtitle": "Yuri Knorozov and the Phonetic Key to Maya Hieroglyphs"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "The Compositor's Spelling",
+          "subtitle": "Charlton Hinman and the Optical Collator of the First Folio"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "The Bayesian Quill",
+          "subtitle": "Frederick Mosteller, David Wallace, and the Disputed Federalist Papers"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "The Sunken Papyrus",
+          "subtitle": "Bernard Grenfell, Arthur Hunt, and the Trash Heaps of Oxyrhynchus"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "The Iron-Gall Prayer Book",
+          "subtitle": "Reviel Netz, William Noel, and the X-Ray Archimedes Palimpsest"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "The Carbonized Scrolls",
+          "subtitle": "Brent Seales and the Virtual Unwrapping of the Herculaneum Library"
+        }
+      ]
+    },
+    {
+      "slug": "fictions-of-order",
+      "file": "books/fictions-of-order.md",
+      "title": "Fictions of Order",
+      "subtitle": "Twelve Legal Inventions That Engineered the Modern World",
+      "category": "Law & Institutions",
+      "mode": "facet",
+      "profile": "C",
+      "accent": "#eab308",
+      "bg": "#181305",
+      "pdf": "assets/pdfs/fictions-of-order.pdf",
+      "compactPdf": "assets/pdfs/fictions-of-order-compact.pdf",
+      "mobilePdf": "assets/pdfs/fictions-of-order-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        8,
+        11,
+        15,
+        18,
+        21,
+        24,
+        27,
+        30,
+        33,
+        37,
+        40
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        34,
+        38,
+        42,
+        47,
+        52,
+        57
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Fictions of Order",
+          "subtitle": "How Invisible Rules Rewired the Physical World"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "The Jettisoned Amphora",
+          "subtitle": "The Rhodian Sea Law and the Birth of General Average"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Friar's Monastery",
+          "subtitle": "Franciscan Poverty and the Invention of the Common-Law Trust"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "The Clockwork Patent",
+          "subtitle": "Filippo Brunelleschi's Barge and the Venetian Statute of 1474"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "The Sovereign Fiction",
+          "subtitle": "Hugo Grotius, the Peace of Westphalia, and the Extraterritorial Embassy"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Fat Peer's Tally",
+          "subtitle": "Lord Shaftesbury, the Habeas Corpus Act of 1679, and the Body in Court"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Booksellers' Monopoly",
+          "subtitle": "The Statute of Anne, Donaldson v. Beckett, and the Birth of the Public Domain"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "The Stolen Banknote",
+          "subtitle": "Lord Mansfield, Miller v. Race, and the Velocity of Paper Credit"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "The Grid in the Wilderness",
+          "subtitle": "Thomas Jefferson, the Land Ordinance of 1785, and the Torrens Title Registry"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "The Fresh Start",
+          "subtitle": "Robert Morris in Prune Street Jail and the Invention of Bankruptcy Discharge"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "The Bootmaker's Ghost",
+          "subtitle": "Aron Salomon and the Immortal Corporate Person"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "The Snail in the Ginger Beer",
+          "subtitle": "Donoghue v. Stevenson and the Duty of Care to Strangers"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "The Battle of the Forms",
+          "subtitle": "Karl Llewellyn, the Uniform Commercial Code, and the Death of the Mirror Image"
+        }
+      ]
+    },
+    {
+      "slug": "bonds-of-enmity",
+      "file": "books/bonds-of-enmity.md",
+      "title": "Bonds of Enmity",
+      "subtitle": "How Blood Feuds, Rivalries, and Escalation Traps Lock Adversaries Together",
+      "category": "Conflict & Game Theory",
+      "mode": "facet",
+      "profile": "C/D",
+      "accent": "#ef4444",
+      "bg": "#1f0808",
+      "pdf": "assets/pdfs/bonds-of-enmity.pdf",
+      "compactPdf": "assets/pdfs/bonds-of-enmity-compact.pdf",
+      "mobilePdf": "assets/pdfs/bonds-of-enmity-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        34,
+        37
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        13,
+        17,
+        22,
+        27,
+        32,
+        37,
+        41,
+        45,
+        49,
+        53
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Bonds of Enmity",
+          "subtitle": "The Coupled Machine of Rivalry"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "The Security Spiral",
+          "subtitle": "Thucydides, Lewis Fry Richardson, and the Calculus of Defensive Fear"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Spite Ledger",
+          "subtitle": "Cope, Marsh, and the Negative-Sum Payoffs of the Bone Wars"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "The Stateless Deterrent",
+          "subtitle": "The Albanian Kanun, Icelandic Sagas, and the Mechanics of the Blood Feud"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "The Priority Trap",
+          "subtitle": "Isaac Newton, Gottfried Wilhelm Leibniz, and the Calculus War"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Single Iota",
+          "subtitle": "The Nika Factions, the Council of Chalcedon, and the Hatred of the Near-Neighbor"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Robbers Cave Tournament",
+          "subtitle": "Muzafer Sherif and the Ninety-Six-Hour Manufacture of Hatred"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "The Divided Town",
+          "subtitle": "Adolf and Rudolf Dassler and the Thirty-Year Cold War of Herzogenaurach"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "The Ritualized Shelling",
+          "subtitle": "The 1915 Western Front and How High Commands Engineered Trench Hatred"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "The Shield That Provokes",
+          "subtitle": "Robert McNamara, Alexei Kosygin, and the Anti-Ballistic Missile Paradox"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "The Hostage Collateral",
+          "subtitle": "The Treaty of Brétigny and How Mortal Enemies Trade Without Trust"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "The Chiseled Face",
+          "subtitle": "Emperor Caracalla, the Severan Tondo, and the Paradox of Damnatio Memoriae"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "The Forbidden Memory",
+          "subtitle": "The 403 BCE Athenian Amnesty, Desmond Tutu, and How Enmities End"
+        }
+      ]
+    },
+    {
+      "slug": "flights-and-perches",
+      "file": "books/flights-and-perches.md",
+      "title": "William James",
+      "subtitle": "Flights, Perches, and the Science of the Stream of Thought",
+      "category": "Biography & Psychology",
+      "mode": "facet",
+      "profile": "Profile B & D Hybrid: Physiological Psychology, Pragmatism & Extreme States",
+      "accent": "#e07a5f",
+      "bg": "#0f172a",
+      "pdf": "assets/pdfs/flights-and-perches.pdf",
+      "compactPdf": "assets/pdfs/flights-and-perches-compact.pdf",
+      "mobilePdf": "assets/pdfs/flights-and-perches-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        34,
+        37
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        8,
+        11,
+        15,
+        19,
+        23,
+        26,
+        29,
+        32,
+        35,
+        39,
+        42
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29,
+        33,
+        37,
+        41,
+        45,
+        49
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "William James",
+          "subtitle": "The Physician Who Refused to Close the System"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "The Cosmopolitan Invalid",
+          "subtitle": "From the Amazon River Basin to the Diary Wager of 1870"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Flywheel of Nerve",
+          "subtitle": "How Physical Plasticity Carves the Grooves of Habit"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "The Visceral Loop",
+          "subtitle": "Why We Are Afraid Because We Run"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "The Continuous Stream",
+          "subtitle": "Substantive Perches, Transitive Flights, and the Death of Mental Atoms"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Deaf-Mute Swing",
+          "subtitle": "Five Hundred Subjects and the Inner Ear Organ of Equilibrium"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Winter Bed",
+          "subtitle": "Ideo-Motor Action and the Mechanics of Getting Up in the Cold"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "The Laughing Gas Notebook",
+          "subtitle": "Nitrous Oxide and the Filmy Screens of Waking Consciousness"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "The Rhode Island Fugue",
+          "subtitle": "Ansel Bourne and the Clinical Discovery of the Subliminal Self"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "The Alpine Leap",
+          "subtitle": "Why Waiting for Proof in a Forced Choice Guarantees Ruin"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "The One White Crow",
+          "subtitle": "Twenty-Five Years Testing the Trance Medium of Beacon Hill"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "The Squirrel Around the Tree",
+          "subtitle": "How the Pragmatic Razor Dissolves Verbal Metaphysics"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "The San Francisco Fault",
+          "subtitle": "Earthquake Ruin and the Moral Equivalent of War"
+        }
+      ]
+    },
+    {
+      "slug": "planetary-triggers",
+      "file": "books/planetary-triggers.md",
+      "title": "Planetary Triggers",
+      "subtitle": "How Small Physical Instabilities Unleash Catastrophic Energy",
+      "category": "Geophysics & Thermodynamics",
+      "mode": "facet",
+      "profile": "A",
+      "accent": "#c95b3c",
+      "bg": "#1e1210",
+      "pdf": "assets/pdfs/planetary-triggers.pdf",
+      "compactPdf": "assets/pdfs/planetary-triggers-compact.pdf",
+      "mobilePdf": "assets/pdfs/planetary-triggers-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        34,
+        37
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        34,
+        37
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        13,
+        17,
+        20,
+        24,
+        28,
+        31,
+        35,
+        39,
+        43,
+        47
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Planetary Triggers",
+          "subtitle": "Metastable Reservoirs and the Physics of Sudden Release"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "The Champagne Column",
+          "subtitle": "Lake Nyos and the Hydrostatic Trap of Dissolved Gas"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Pyroclastic Cushion",
+          "subtitle": "Mount Pelée and the Gravity Current of Superheated Ash"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "The Two-Second Bowl",
+          "subtitle": "Mexico City and the Harmonic Amplification of Ancient Mud"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "The Shoaling Wall",
+          "subtitle": "Lituya Bay and the Physics of Shallow-Water Wave Compression"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Sulfate Veil",
+          "subtitle": "Mount Tambora and the Year Without a Summer"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Convective Chimney",
+          "subtitle": "The Peshtigo Firestorm and Self-Sustaining Atmospheric Vortices"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "The Acoustic Cushion",
+          "subtitle": "Huascarán and Why Falling Mountains Flow Like Water"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "The Liquefied Foundation",
+          "subtitle": "Niigata and How Solid Sand Turns into Quicksand in Seconds"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "The Reservoir Lubricant",
+          "subtitle": "Vajont Dam and the Pore-Pressure Detachment of Monte Toc"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "The Subglacial Siphon",
+          "subtitle": "Vatnajökull and the Runaway Physics of Ice-Dammed Floods"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "The Magnetic Surge",
+          "subtitle": "The Carrington Event and Geomagnetically Induced Grid Collapse"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "The Ram-Pressure Pancake",
+          "subtitle": "Tunguska, Chelyabinsk, and Why Stony Asteroids Explode in Mid-Air"
+        }
+      ]
+    },
+    {
+      "slug": "twelve-virtues",
+      "file": "books/twelve-virtues.md",
+      "title": "Twelve Virtues",
+      "subtitle": "Why Courage, Honesty, and Restraint Survive in a Selfish World",
+      "category": "Ethics & Human Behavior",
+      "mode": "facet",
+      "profile": "C: Decision Theory, Economics & Institutional Mechanics",
+      "accent": "#d97706",
+      "bg": "#1c1917",
+      "pdf": "assets/pdfs/twelve-virtues.pdf",
+      "compactPdf": "assets/pdfs/twelve-virtues-compact.pdf",
+      "mobilePdf": "assets/pdfs/twelve-virtues-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        34,
+        37
+      ],
+      "compactSectionPages": [
+        3,
+        5,
+        8,
+        11,
+        14,
+        17,
+        20,
+        23,
+        26,
+        29,
+        32,
+        35,
+        38
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Twelve Virtues",
+          "subtitle": "The Hidden Mechanics of Human Character"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "Courage Under the Wire",
+          "subtitle": "Bomb Disposal Heart Rates and How Skill Mastery Quiets Fear"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Cost of Honesty",
+          "subtitle": "Handicap Signals and the Ice Water Clamp on the Challenger Inquiry"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "The Golden Mean of Temperance",
+          "subtitle": "Aristotle's Equilibrium and the Ulysses Contract of Self-Command"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "Prudence in the Bunker",
+          "subtitle": "Practical Wisdom and the Night Five Phantom Missiles Launched"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Logic of Forgiveness",
+          "subtitle": "Why Generous Tit-for-Tat Defeats Strict Retaliation in a Noisy World"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Storage Battery of Generosity",
+          "subtitle": "Risk-Pooling Networks and How Sharing Meat Beat Spoilage"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "The Blindfold of Justice",
+          "subtitle": "Solon's Boundary Stones and the Cake-Cutting Protocol of Fairness"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "The Spectacles of Humility",
+          "subtitle": "Washington at Newburgh and the Calibration Curve of Foxes and Hedgehogs"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "The Dividend of Mercy",
+          "subtitle": "Plow Horses at Appomattox and Why Clemency Ends Insurgencies"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "Patience in the Seed Vault",
+          "subtitle": "Hyperbolic Discounting and the Botanists Who Starved Surrounded by Grain"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "Sanctuary for the Stranger",
+          "subtitle": "Ancient Laws of Hospitality and the Plateau That Hid Three Thousand Lives"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "The Reciprocity of Gratitude",
+          "subtitle": "How Thankfulness Binds Strangers into Long-Term Cooperators"
+        }
+      ]
+    },
+    {
+      "slug": "twelve-plants",
+      "file": "books/twelve-plants.md",
+      "title": "Twelve Plants",
+      "subtitle": "How Familiar Crops, Trees, and Alkaloids Remade the Human World",
+      "category": "Botany & History",
+      "mode": "facet",
+      "profile": "B: Biological, Chemical & Historical Mechanics",
+      "accent": "#34d399",
+      "bg": "#0f1f17",
+      "pdf": "assets/pdfs/twelve-plants.pdf",
+      "compactPdf": "assets/pdfs/twelve-plants-compact.pdf",
+      "mobilePdf": "assets/pdfs/twelve-plants-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        34,
+        37
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        8,
+        12,
+        16,
+        20,
+        23,
+        27,
+        30,
+        34,
+        37,
+        40,
+        43
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29,
+        33,
+        37,
+        41,
+        45,
+        49
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Twelve Plants",
+          "subtitle": "The Hidden Engineering Inside Everyday Flora"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "Wheat and the Shortened Stalk",
+          "subtitle": "Non-Shattering Ears and Why Dwarf Straw Prevented Global Famine"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "Coffee and the Memory Nectar",
+          "subtitle": "How a Mountain Shrub Poisoned Beetles and Bribed Honeybees"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "Corn and the Two-Cell Carbon Pump",
+          "subtitle": "How Five Mutations Turned a Stony Wild Grass into a Solar Engine"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "The Potato and the Clonal Trap",
+          "subtitle": "Andean Freeze-Dried Tubers and Why One Water Mold Broke Ireland"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "Rubber and the Entropic Spring",
+          "subtitle": "Smuggled Amazonian Seeds and Why Stretched Polymer Chains Snap Back"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "Cinchona and the Crystal Poison",
+          "subtitle": "Andean Fever Bark and How Quinine Drowns Malaria in Its Own Waste"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "Chili Peppers and the Selective Fire",
+          "subtitle": "Why Capsaicin Burns Mammalian Molars While Leaving Birds Immune"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "Tea and the Bruised Leaf",
+          "subtitle": "Robert Fortune's Glass Cases and the Enzyme Switch Between Green and Black"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "Cotton and the Twisted Ribbon",
+          "subtitle": "An Ocean-Crossing Hybrid Seed and the Wire Teeth of Mulberry Grove"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "Rice and the Underwater Snorkel",
+          "subtitle": "Hollow Root Tubes and the Hibernation Gene That Survives Monsoon Floods"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "Sugar Cane and the Vacuum Pan",
+          "subtitle": "Turgor Pressure Limits and How Recycled Steam Transformed Boiling Houses"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "The Oak and the Crooked Knee",
+          "subtitle": "Tannin Armor, Plugged Vessels, and the Two Thousand Trees Inside a Warship"
+        }
+      ]
+    },
+    {
+      "slug": "paper-panics",
+      "file": "books/paper-panics.md",
+      "title": "Paper Panics",
+      "subtitle": "Twelve Financial Manias, Runs, and Liquidity Crashes",
+      "category": "Economics & Financial History",
+      "mode": "facet",
+      "profile": "C: Decision Theory, Economics & Institutional Mechanics",
+      "accent": "#ca8a04",
+      "bg": "#111827",
+      "pdf": "assets/pdfs/paper-panics.pdf",
+      "compactPdf": "assets/pdfs/paper-panics-compact.pdf",
+      "mobilePdf": "assets/pdfs/paper-panics-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        34,
+        37
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        35,
+        38
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        13,
+        16,
+        20,
+        24,
+        28,
+        31,
+        35,
+        39,
+        43,
+        47
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Paper Panics",
+          "subtitle": "The Hydraulic Plumbing of Financial Runs"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "The Winter Option in Haarlem",
+          "subtitle": "Why Turning Tulip Contracts into Penalty-Free Options Sparked the 1637 Frenzy"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Rue Quincampoix Printing Press",
+          "subtitle": "John Law's Debt-for-Equity Swap and the Day Paper Pegged to Stock Collapsed"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "The Bookseller of Exchange Alley",
+          "subtitle": "How Thomas Guy Cashed Out of the South Sea Bubble While Isaac Newton Doubled Down"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "Black Friday on Lombard Street",
+          "subtitle": "The Collapse of Overend Gurney and the Rule of the Lender of Last Resort"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Locked Library on Thirty-Sixth Street",
+          "subtitle": "Shadow Trust Companies and How J. P. Morgan Stopped the Run of 1907"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Wheelbarrow Mark",
+          "subtitle": "Thirty Paper Mills, Exploding Velocity, and the Overnight Miracle of the Rentenmark"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "The Ten-Percent Margin Trap",
+          "subtitle": "Call-Money Loans and Why Paying Down Debt Deepened the Crash of 1929"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "Silver Rule Seven",
+          "subtitle": "How the Hunt Brothers Cornered Two Hundred Million Ounces and Lost to a Rule Change"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "The Doomsday Machine of Black Monday",
+          "subtitle": "How Automated Portfolio Insurance Turned a Dip into a Twenty-Two Percent Crash"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "The Broken Pound on Black Wednesday",
+          "subtitle": "George Soros, the Impossible Trinity, and the Ten-Billion-Dollar Wager Against the Bank of England"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "Account Five Eights in Singapore",
+          "subtitle": "Nick Leeson, Short Straddles, and the Earthquake That Brought Down Barings Bank"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "The Hot-Potato Algorithm",
+          "subtitle": "How a Volume-Pegged Sell Order Erased a Trillion Dollars in Thirty-Six Minutes"
+        }
+      ]
+    },
+    {
+      "slug": "curious-physicist",
+      "file": "books/curious-physicist.md",
+      "title": "Richard Feynman",
+      "subtitle": "Translating Abstract Symbols Into Physical Toys",
+      "category": "Biography & Physics",
+      "mode": "facet",
+      "profile": "D: Intellectual Ruptures, Forensic Scholarship & Prismatic Minds",
+      "accent": "#ea580c",
+      "bg": "#181310",
+      "pdf": "assets/pdfs/curious-physicist.pdf",
+      "compactPdf": "assets/pdfs/curious-physicist-compact.pdf",
+      "mobilePdf": "assets/pdfs/curious-physicist-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        34,
+        37
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        8,
+        11,
+        15,
+        18,
+        21,
+        25,
+        29,
+        32,
+        36,
+        39,
+        43
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29,
+        33,
+        37,
+        41,
+        45,
+        49
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Richard Feynman",
+          "subtitle": "Translating Symbols into Physical Toys"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "The Boy from Far Rockaway",
+          "subtitle": "Fixing Radios by Thinking, the Name of the Bird, and the Loss of Arline"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Least-Action Clockwork",
+          "subtitle": "How a High School Chalkboard Reframed the Laws of Motion"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "The Beer Party in Princeton",
+          "subtitle": "Dirac's Mysterious Phrase and the Sum Over Every Possible Path"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "The Safecracker of Los Alamos",
+          "subtitle": "How Mechanical Tolerances Reduced a Million Combinations to Twenty Minutes"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Wobbling Cafeteria Plate",
+          "subtitle": "How a Tossed Porcelain Dish Rebuilt Feynman's Joy in Physics"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Cartoons at Pocono Manor",
+          "subtitle": "How Stick-Figure Spacetime Lines Replaced Nine Pages of Integrals"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "The Dance of Liquid Helium",
+          "subtitle": "Why Superfluid Atoms Refuse to Stir Below Two Kelvin"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "The Left-Handed Universe",
+          "subtitle": "How Feynman and Gell-Mann Overturned the Broken Mirror of Beta Decay"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "Plenty of Room at the Bottom",
+          "subtitle": "Two Thousand-Dollar Wagers and the Blueprint for Nanotechnology"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "The Mayan Venus Tables",
+          "subtitle": "Cracking the Bars and Dots of the Dresden Codex on Honeymoon"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "The Cargo Cult Runway",
+          "subtitle": "Bamboo Control Towers, Rat Mazes, and the Discipline of Not Fooling Yourself"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "One in a Hundred Thousand",
+          "subtitle": "How Appendix F Exposed the Fantasy Math Behind the Shuttle Disaster"
+        }
+      ]
+    },
+    {
+      "slug": "artificial-intelligence",
+      "file": "books/artificial-intelligence.md",
+      "title": "Artificial Intelligence",
+      "subtitle": "The Core Concept and Eleven Neighbors That Shape Its Landscape",
+      "category": "Computation & Intelligence",
+      "mode": "landscape",
+      "profile": "F: The Contextual Landscape (Knowra Neighborhood Mapping)",
+      "accent": "#60a5fa",
+      "bg": "#0f172a",
+      "pdf": "assets/pdfs/artificial-intelligence.pdf",
+      "compactPdf": "assets/pdfs/artificial-intelligence-compact.pdf",
+      "mobilePdf": "assets/pdfs/artificial-intelligence-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        34,
+        37
+      ],
+      "compactSectionPages": [
+        3,
+        5,
+        8,
+        11,
+        14,
+        17,
+        20,
+        23,
+        27,
+        30,
+        33,
+        36,
+        40
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29,
+        33,
+        37,
+        41,
+        45,
+        49
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Artificial Intelligence",
+          "subtitle": "Mapping a Concept Through Its Surrounding Landscape"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "Artificial Intelligence",
+          "subtitle": "Systems That Infer Representations from Data Rather Than Explicit Rules"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "Backpropagation and Gradient Descent",
+          "subtitle": "How Error Signals Flow Backward Through Millions of Synaptic Weights"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "The Perceptron and the Linear Barrier",
+          "subtitle": "Frank Rosenblatt's Photocell Machine and Why Exclusive-OR Froze Neural Research"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "Symbolic Logic and Expert Systems",
+          "subtitle": "Why Hand-Coded Rules Mastered Medical Checklists Yet Shattered on Common Sense"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Transformer and Self-Attention",
+          "subtitle": "How Replacing Sequential Memory with All-to-All Queries Unlocked Modern Scale"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Bitter Lesson and Scaling Laws",
+          "subtitle": "Why Raw Compute and Power-Law Curves Repeatedly Defeat Human Ingenuity"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "High-Dimensional Vector Embeddings",
+          "subtitle": "How Meaning Becomes Geometry Inside a Thousand-Dimensional Space"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "Reinforcement Learning and Self-Play",
+          "subtitle": "How Trial, Error, and Temporal-Difference Credit Discover Superhuman Moves"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "Silicon Weights Versus Biological Brains",
+          "subtitle": "Why a Twenty-Watt Cortex Learns from Three Examples While Data Centers Burn Megawatts"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "AlphaFold and the Geometry of Proteins",
+          "subtitle": "How Evolutionary Co-Mutations and Triangle Attention Solved a Fifty-Year Puzzle"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "Reward Hacking and Specification Gaming",
+          "subtitle": "Why Powerful Optimizers Exploit Every Crack in a Human Metric"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "World Models and the Causal Frontier",
+          "subtitle": "Where Next-Token Compression Ends and Causal Understanding Begins"
+        }
+      ]
+    },
+    {
+      "slug": "the-human-body",
+      "file": "books/the-human-body.md",
+      "title": "The Human Body",
+      "subtitle": "Twelve Organs and Systems in Twelve Highlights Each",
+      "category": "Life Sciences",
+      "mode": "listicle",
+      "profile": "E: The Prospected Spaced-Dot Listicle (topic-prospector + Domain Highlights)",
+      "accent": "#fb7185",
+      "bg": "#1c1014",
+      "pdf": "assets/pdfs/the-human-body.pdf",
+      "compactPdf": "assets/pdfs/the-human-body-compact.pdf",
+      "mobilePdf": "assets/pdfs/the-human-body-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        8,
+        12,
+        15,
+        18,
+        21,
+        24,
+        27,
+        30,
+        33,
+        36,
+        39
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        10,
+        15,
+        19,
+        23,
+        27,
+        31,
+        35,
+        39,
+        43,
+        47,
+        51
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "The Human Body",
+          "subtitle": "Twelve Organs Viewed Through Twelve Perpendicular Facts"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "The Heart",
+          "subtitle": "Wringing Muscle Bands, Silent Pacemakers, and Why Cardiac Cells Never Get Cancer"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Brain",
+          "subtitle": "Pain-Free Tissue, Nighttime Plumbing Flushes, and the Twenty-Watt Power Budget"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "The Eye",
+          "subtitle": "Inside-Out Retinas, Single-Photon Rods, and Transparent Living Cells"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "The Lungs",
+          "subtitle": "Tennis-Court Membranes, Soap Surfactants, and Why Carbon Dioxide Drives Every Breath"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Liver",
+          "subtitle": "Dual Blood Supplies, Prometheus Regeneration, and Five Hundred Chemical Reactors"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Kidneys",
+          "subtitle": "One Hundred Eighty Liters of Daily Filtrate and the Salt Hairpin Loop"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "The Gut and Microbiome",
+          "subtitle": "Hydrochloric Acid Baths, Five Hundred Million Enteric Neurons, and Microbial Fermentation"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "The Skin",
+          "subtitle": "Brick-and-Mortar Dead Cells, Evaporative Sweating, and Ultraviolet Vitamin Factories"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "The Ear and Balance",
+          "subtitle": "Levered Ossicles, Sub-Nanometer Hair Bundles, and Three Orthogonal Gyroscopes"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "Bone and Muscle",
+          "subtitle": "Piezoelectric Remodeling, Sliding Myosin Ratchets, and the Tendon Spring"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "Blood and Immunity",
+          "subtitle": "Nucleus-Free Red Discs, Gene-Shuffling Antibodies, and Self-Destructing Neutrophils"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "Sleep and Circadian Time",
+          "subtitle": "Twenty-Thousand Master Clock Neurons, Adenosine Hourglasses, and REM Paralysis"
+        }
+      ]
+    },
+    {
+      "slug": "attention",
+      "file": "books/attention.md",
+      "title": "Attention",
+      "subtitle": "The Core Bottleneck and Eleven Neighbors That Shape Human Focus",
+      "category": "Cognitive Architecture",
+      "mode": "landscape",
+      "profile": "F: The Contextual Landscape (Knowra Neighborhood Mapping)",
+      "accent": "#0284c7",
+      "bg": "#0f172a",
+      "pdf": "assets/pdfs/attention.pdf",
+      "compactPdf": "assets/pdfs/attention-compact.pdf",
+      "mobilePdf": "assets/pdfs/attention-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        34,
+        37
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        7,
+        11,
+        14,
+        17,
+        20,
+        23,
+        26,
+        29,
+        32,
+        35,
+        38
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        28,
+        32,
+        36,
+        39,
+        43,
+        47
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Attention",
+          "subtitle": "Mapping Focus Through Its Surrounding Landscape"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "Selective Attention",
+          "subtitle": "Why a Ten-Million-Bit Sensory Flood Passes Through a Fifty-Bit Conscious Gate"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Thalamic Reticular Gate",
+          "subtitle": "How a Paper-Thin Shell of Inhibitory Neurons Dims Unwanted Senses at the Source"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "Saccadic Suppression and the Foveal Spotlight",
+          "subtitle": "Why You Are Functionally Blind for Forty Minutes Every Day While Your Eyes Jump"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "Biased Competition and Neural Gain",
+          "subtitle": "How Two Objects Fight for One Receptive Field Inside the Visual Cortex"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "Predator Vigilance and Bayesian Surprise",
+          "subtitle": "Why Sudden Motion and Statistical Anomalies Hijack Every Vertebrate Brain"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "Spotlight Focus Versus Open Vigilance",
+          "subtitle": "How the Left and Right Hemispheres Divide Narrow Grasping from Broad Watchfulness"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "Working Memory and the Magical Number Four",
+          "subtitle": "Why Holding an Idea in Mind Is the Same Neural Act as Paying Attention to It"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "Inattentional Blindness and the Invisible Gorilla",
+          "subtitle": "Why Pilots Stare Directly at a Runway Obstacle Without Seeing It"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "The Attentional Blink and Switching Costs",
+          "subtitle": "Why the Mind Goes Blind for Half a Second After Catching a Target"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "Variable-Ratio Salience and the Gain Knob",
+          "subtitle": "How Unpredictable Rewards and Brainstem Norepinephrine Lock the Gaze"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "Vigilance Decrement and the Radar Watchman's Trap",
+          "subtitle": "Why Human Monitors Miss Rare Signals After Thirty Minutes of Quiet Watch"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "Effortless Absorption and the Default Mode Seesaw",
+          "subtitle": "What Happens in the Brain When Self-Monitoring Quiets Down During Deep Focus"
+        }
+      ]
+    },
+    {
+      "slug": "self-transcendence",
+      "file": "books/self-transcendence.md",
+      "title": "Self-Transcendence",
+      "subtitle": "The Core Shift and Eleven Neighbors That Dissolve the Boundaries of the Self",
+      "category": "Psychology & Philosophy",
+      "mode": "landscape",
+      "profile": "F: The Contextual Landscape (Knowra Neighborhood Mapping)",
+      "accent": "#6d28d9",
+      "bg": "#1e1b4b",
+      "pdf": "assets/pdfs/self-transcendence.pdf",
+      "compactPdf": "assets/pdfs/self-transcendence-compact.pdf",
+      "mobilePdf": "assets/pdfs/self-transcendence-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        34,
+        37
+      ],
+      "compactSectionPages": [
+        3,
+        5,
+        8,
+        11,
+        14,
+        17,
+        21,
+        25,
+        28,
+        32,
+        35,
+        39,
+        43
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29,
+        33,
+        37,
+        41,
+        45,
+        49
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Self-Transcendence",
+          "subtitle": "Mapping the Dissolution of the Bounded Ego"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "Self-Transcendence",
+          "subtitle": "Why Maslow Placed Going Beyond the Ego Above Self-Actualization"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Temporoparietal Boundary Map",
+          "subtitle": "How a Patch of Parietal Cortex Draws the Physical Border of Your Body"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "Posterior Cingulate Deactivation",
+          "subtitle": "What Happens When the Brain's Autobiographical Hub Drops Offline"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "Entropic Brain Flattening",
+          "subtitle": "How Relaxing Top-Down Priors Dissolves the Ego's Control Hierarchy"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "Autotelic Flow and Transient Hypofrontality",
+          "subtitle": "How Total Absorption in a Demanding Craft Silences the Inner Critic"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "Collective Effervescence and Synchronized Rhythm",
+          "subtitle": "Why Marching, Singing, and Fire-Walking Merge Individual Nervous Systems"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "Multi-Level Selection and the Hive Switch",
+          "subtitle": "How Evolution Built Primates That Can Temporarily Act Like Bees"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "Healthy Ego Dissolution Versus Depersonalization",
+          "subtitle": "Why Losing the Self Feels Blissful in One Brain and Terrifying in Another"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "The Small Self and Prosocial Generosity",
+          "subtitle": "How Vast Landscapes Shrink the Ego and Expand Moral Concern"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "Hemispheric Silence and the Stroke of Insight",
+          "subtitle": "What Happens When Left-Brain Narrative Chatter Suddenly Stops"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "Existential Terror Management and Death Acceptance",
+          "subtitle": "Why Dissolving the Bounded Ego Disarms the Fear of Mortality"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "The Overview Horizon and Generativity",
+          "subtitle": "How Long-Term Self-Transcendence Rewires Legacy, Care, and Time Perception"
+        }
+      ]
+    },
+    {
+      "slug": "entropy",
+      "file": "books/entropy.md",
+      "title": "Entropy",
+      "subtitle": "The Core Law of Disorder and Eleven Neighbors That Govern Time, Heat, and Information",
+      "category": "Physics & Information",
+      "mode": "landscape",
+      "profile": "A: Physical Systems & Statistical Mechanics + F: The Contextual Landscape (Knowra Neighborhood Mapping)",
+      "accent": "#d97706",
+      "bg": "#1c1917",
+      "pdf": "assets/pdfs/entropy.pdf",
+      "compactPdf": "assets/pdfs/entropy-compact.pdf",
+      "mobilePdf": "assets/pdfs/entropy-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        34,
+        37
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        16,
+        20,
+        24,
+        27,
+        30,
+        33,
+        37,
+        40
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29,
+        33,
+        37,
+        41,
+        45,
+        49
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Entropy",
+          "subtitle": "Mapping Disorder Through Its Surrounding Landscape"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "Thermodynamic and Statistical Entropy",
+          "subtitle": "How Clausius's Lost Heat and Boltzmann's Microstate Count Became the Same Law"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "Maxwell's Demon and Landauer's Principle",
+          "subtitle": "Why Erasing One Bit of Memory Must Dump Heat Into the Room"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "Shannon Information Entropy",
+          "subtitle": "How Bell Labs Measured Uncertainty Without Mentioning Heat"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "Gibbs Free Energy and ATP Coupling",
+          "subtitle": "How Living Cells Pay the Second Law's Tax to Build Order"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Past Hypothesis and the Arrow of Time",
+          "subtitle": "Why Broken Teacups Never Reassemble if Microscopic Laws Run Both Ways"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "Dissipative Structures and Benard Convection",
+          "subtitle": "How Steep Thermal Gradients Self-Organize Fluid Into Hexagonal Cells"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "Kolmogorov Algorithmic Complexity",
+          "subtitle": "Why Digits of Pi Look Random to Statistics Yet Compress Into Tiny Code"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "Black Hole Bekenstein-Hawking Entropy",
+          "subtitle": "Why the Maximum Information in Space Scales With Surface Area Instead of Volume"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "Entropic Elasticity in Polymers and DNA",
+          "subtitle": "Why Stretching a Rubber Band or a DNA Strand Fights Probability Rather Than Bonds"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "The Protein Folding Funnel",
+          "subtitle": "How Water Cages Push Polypeptide Chains Past Levinthal's Combinatorial Trap"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "Kullback-Leibler Divergence and Cross-Entropy",
+          "subtitle": "How Cryptanalysis Built the Loss Function That Trains Modern Neural Networks"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "Poincare Recurrence and Fluctuation Theorems",
+          "subtitle": "Why the Second Law Violates Itself for Milliseconds Inside Nanoscale Traps"
+        }
+      ]
+    },
+    {
+      "slug": "twelve-materials",
+      "file": "books/twelve-materials.md",
+      "title": "Twelve Materials",
+      "subtitle": "How Concrete, Steel, Glass, Paper, and Silicon Built Civilization",
+      "category": "Materials & Engineering",
+      "mode": "facet",
+      "profile": "A: Physical Systems, Infrastructure & Material Constraints",
+      "accent": "#0284c7",
+      "bg": "#0b1924",
+      "pdf": "assets/pdfs/twelve-materials.pdf",
+      "compactPdf": "assets/pdfs/twelve-materials-compact.pdf",
+      "mobilePdf": "assets/pdfs/twelve-materials-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        34,
+        37
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29,
+        33,
+        37,
+        41,
+        45,
+        49
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Twelve Materials",
+          "subtitle": "The Atomic Architecture Beneath Everyday Matter"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "The Self-Healing Stone",
+          "subtitle": "How Volcanic Ash and Lime Clasts Kept Roman Harbors Standing for Two Millennia"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Decarburized Blade",
+          "subtitle": "Henry Bessemer's Air Blast and the Iron-Carbon Phase Boundary"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "The Molten Tin Ribbon",
+          "subtitle": "How Alastair Pilkington Floated Perfect Plate Glass on Liquid Metal"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "The Delignified Fiber",
+          "subtitle": "From Cai Lun's Mulberry Bark to Carl Dahl's Sulfate Wood Pulp"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Vitrified White Gold",
+          "subtitle": "How Jingdezhen Kilns and Meissen Alchemists Grew Mullite Needles in Glass"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Electrolytic Crown",
+          "subtitle": "How Two Twenty-Two-Year-Olds Unlocked the Crust's Most Abundant Metal"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "The Polyamide Thread",
+          "subtitle": "Wallace Carothers and the Step-Growth Condensation of Synthetic Silk"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "The Dislocation-Free Ingot",
+          "subtitle": "Jan Czochralski's Accidental Pen Dip and the Dash Necking Bottleneck"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "The Passivated Airframe",
+          "subtitle": "William Kroll's Magnesium Reactor and the Lockheed Skunk Works Mach Three Barrier"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "The Liquid-Crystal Weave",
+          "subtitle": "Stephanie Kwolek's Cloudy Solution and Rigid-Rod Aramid Alignment"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "The Ion-Stuffed Surface",
+          "subtitle": "Donald Stookey's Chemcor Bath and Compressive Stress Armor"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "The Supercritical Smoke",
+          "subtitle": "Samuel Kistler's Jelly Wager and the Knudsen Effect in Nanoporous Silica"
+        }
+      ]
+    },
+    {
+      "slug": "claude-shannon",
+      "file": "books/claude-shannon.md",
+      "title": "Claude Shannon",
+      "subtitle": "The Juggler Who Turned Information Into Physics",
+      "category": "Biography & Information Theory",
+      "mode": "facet",
+      "profile": "D: Intellectual Ruptures, Forensic Scholarship & Prismatic Minds",
+      "accent": "#10b981",
+      "bg": "#0b1528",
+      "pdf": "assets/pdfs/claude-shannon.pdf",
+      "compactPdf": "assets/pdfs/claude-shannon-compact.pdf",
+      "mobilePdf": "assets/pdfs/claude-shannon-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        34,
+        37
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        7,
+        11,
+        14,
+        17,
+        20,
+        23,
+        26,
+        29,
+        33,
+        37,
+        40
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29,
+        33,
+        37,
+        41,
+        45,
+        49
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Claude Shannon",
+          "subtitle": "The Playful Tinkering Behind the Information Age"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "The Barbed-Wire Telegraph",
+          "subtitle": "How a Michigan Boyhood of Fences, Barn Switches, and Radio Kits Formed an Engineer's Mind"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Boolean Relay Switch",
+          "subtitle": "How a Master's Thesis Merged Nineteenth-Century Logic With Telephone Circuits"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "The Algebra of Mendelian Genetics",
+          "subtitle": "Cold Spring Harbor and the Forgotten Doctoral Equations of Population Inheritance"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "The Anti-Aircraft Predictor",
+          "subtitle": "Fire Control Smoothing Filters and the Wartime Collaboration With Norbert Wiener"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Unicity Distance of Secrecy",
+          "subtitle": "Classified Cryptanalysis, the SIGSALY Voice Scrambler, and Proof of the One-Time Pad"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Measure of Surprise",
+          "subtitle": "Why Information Has Nothing to Do With Meaning and Everything to Do With Choice"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "The Noisy Channel Limit",
+          "subtitle": "Sphere Packing in High Dimensions and the Speed Limit of All Communication"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "The Redundancy of Printed English",
+          "subtitle": "Guessing the Next Letter With Betty Shannon at the Kitchen Table"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "The Relay Maze Mouse",
+          "subtitle": "How Theseus Remembered Fifty Relay Bits of Trial and Error"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "The Minimax Chess Horizon",
+          "subtitle": "Type A Brute Force Versus Type B Selective Pruning Before Any Computer Played Chess"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "The Roulette and Market Edge",
+          "subtitle": "Wearable Computers in Las Vegas and Constant-Rebalanced Portfolios With Ed Thorp"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "The Theorem of Juggling and the Ultimate Machine",
+          "subtitle": "Unicycles, Flame-Throwing Trumpets, and the Box That Turns Itself Off"
+        }
+      ]
+    },
+    {
+      "slug": "the-ocean",
+      "file": "books/the-ocean.md",
+      "title": "The Ocean",
+      "subtitle": "Twelve Marine Zones and Systems in Twelve Highlights Each",
+      "category": "Earth & Ocean Science",
+      "mode": "listicle",
+      "profile": "B: The Prospected Spaced-Dot Listicle (topic-prospector + Domain Highlights)",
+      "accent": "#0369a1",
+      "bg": "#081420",
+      "pdf": "assets/pdfs/the-ocean.pdf",
+      "compactPdf": "assets/pdfs/the-ocean-compact.pdf",
+      "mobilePdf": "assets/pdfs/the-ocean-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        17,
+        20,
+        23,
+        27,
+        31,
+        34,
+        38,
+        42
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        13,
+        17,
+        22,
+        26,
+        30,
+        35,
+        40,
+        44,
+        49,
+        54
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "The Ocean",
+          "subtitle": "Twelve Marine Realms Viewed Through Twelve Physical Facts"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "The Surface Microlayer and Wind Waves",
+          "subtitle": "Capillary Ripples, Breaking Whitecaps, and the Aerosol Skin of the Sea"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "Tides and Amphidromic Nodes",
+          "subtitle": "Lunar Gravitational Tractive Forces, Kelvin Waves, and Resonant Bays"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "The Sunlit Epipelagic Zone",
+          "subtitle": "Prochlorococcus Cyanobacteria, Photic Attenuation, and the Invisible Forest"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "Coral Reefs and Calcium Carbonate Architecture",
+          "subtitle": "Symbiodiniaceae Dinoflagellates, Aragonite Saturation, and Wave Energy Dissipation"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "Kelp Forests and Coastal Upwelling",
+          "subtitle": "Ekman Spiral Transport, Pneumatocyst Buoyancy, and Trophic Cascades"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Great Ocean Conveyor",
+          "subtitle": "Western Boundary Intensification, Gulf Stream Rings, and Thermohaline Overturning"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "The Twilight Mesopelagic Zone",
+          "subtitle": "Diel Vertical Migration, Luciferin Bioluminescence, and the Oxygen Minimum Layer"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "Marine Snow and the Biological Carbon Pump",
+          "subtitle": "Fecal Pellet Sinking Rates, Salp Mucous Houses, and the Carbonate Compensation Depth"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "Polar Sea Ice and Brine Channels",
+          "subtitle": "Frazil Crystal Rejection, Antarctic Bottom Water Formation, and Ice-Edge Blooms"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "The Abyssal Plain and Whale Falls",
+          "subtitle": "Piezophilic Membrane Lipids, Manganese Nodules, and Osedax Bone-Eating Worms"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "Hydrothermal Vents and Cold Seeps",
+          "subtitle": "Black Smoker Sulfide Chimneys, Riftia Symbionts, and Lost City Alkaline Towers"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "Hadal Trenches and the SOFAR Acoustic Channel",
+          "subtitle": "Mariana Hydrostatic Pressure, Trimethylamine N-Oxide Stabilizers, and Sound Waveguides"
+        }
+      ]
+    },
+    {
+      "slug": "consciousness",
+      "file": "books/consciousness.md",
+      "title": "Consciousness",
+      "subtitle": "The Subjective Mind and Eleven Neighbors From Global Workspace to Split-Brain Patients",
+      "category": "Neuroscience & Philosophy",
+      "mode": "landscape",
+      "profile": "B: Biological, Neural & Affective Control Loops + F: The Contextual Landscape (Knowra Neighborhood Mapping)",
+      "accent": "#7c3aed",
+      "bg": "#0f172a",
+      "pdf": "assets/pdfs/consciousness.pdf",
+      "compactPdf": "assets/pdfs/consciousness-compact.pdf",
+      "mobilePdf": "assets/pdfs/consciousness-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        34,
+        37
+      ],
+      "compactSectionPages": [
+        3,
+        5,
+        8,
+        12,
+        15,
+        19,
+        22,
+        25,
+        29,
+        32,
+        35,
+        38,
+        42
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29,
+        33,
+        37,
+        41,
+        45,
+        49
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Consciousness",
+          "subtitle": "Mapping Subjective Experience Through Its Surrounding Landscape"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "Phenomenal Versus Access Consciousness",
+          "subtitle": "How Philosophy and Neurobiology Split Subjective Experience From Functional Report"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "Global Neuronal Workspace Ignition",
+          "subtitle": "Why a Fifty-Millisecond Word Triggers an All-or-None Prefrontal Broadcast"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "Integrated Information Theory",
+          "subtitle": "Why Sixty-Nine Billion Cerebellar Neurons Contribute Nothing to Subjective Sight"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "Split-Brain Hemispheric Division",
+          "subtitle": "How Severing Two Hundred Million Axons Created Two Independent Streams of Awareness"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "Blindsight and Cortical Unconscious Routing",
+          "subtitle": "How Subcortical Visual Pathways Guide the Hand After Primary Visual Cortex Dies"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "Binocular Rivalry and Bistable Perception",
+          "subtitle": "Where the Primate Visual Hierarchy Switches From Retinal Input to Subjective Percept"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "Thalamocortical Loops and General Anesthesia",
+          "subtitle": "How Propofol Locks the Frontal Cortex and Thalamus Into a Ten-Hertz Cage"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "Detecting Covert Awareness in Vegetative Patients",
+          "subtitle": "How Mental Tennis Inside an MRI Scanner Exposed Consciousness Without Movement"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "The Perturbational Complexity Index",
+          "subtitle": "How Magnetic Cortical Pulses and Lempel-Ziv Compression Measure the Capacity for Experience"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "Predictive Processing and Controlled Hallucination",
+          "subtitle": "How Top-Down Cortical Priors and Precision Weighting Construct the Bodily Self"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "Higher-Order Metacognition and Prefrontal Monitoring",
+          "subtitle": "How Anterior Prefrontal Lesions Blind Introspection While Leaving Vision Intact"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "The Adversarial Testing of Rival Theories",
+          "subtitle": "What Happened When Global Workspace and Integrated Information Theory Faced the Same Data"
+        }
+      ]
+    },
+    {
+      "slug": "twelve-emotions",
+      "file": "books/twelve-emotions.md",
+      "title": "Twelve Emotions",
+      "subtitle": "The Evolutionary Calculus and Neural Circuitry of Human Feeling",
+      "category": "Psychology & Behavior",
+      "mode": "facet",
+      "profile": "B/C: Biological, Neural & Affective Control Loops + Decision Theory & Game-Theoretic Equilibria",
+      "accent": "#e11d48",
+      "bg": "#1f0d14",
+      "pdf": "assets/pdfs/twelve-emotions.pdf",
+      "compactPdf": "assets/pdfs/twelve-emotions-compact.pdf",
+      "mobilePdf": "assets/pdfs/twelve-emotions-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        8,
+        11,
+        14,
+        17,
+        20,
+        23,
+        26,
+        29,
+        32,
+        35,
+        38
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29,
+        33,
+        38,
+        43,
+        47,
+        51
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Twelve Emotions",
+          "subtitle": "The Hidden Engineering of Human Feeling"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "The Dual-Road Alarm",
+          "subtitle": "Joseph LeDoux's Thalamic Shortcut and Patient S.M.'s Bilateral Amygdala Calcification"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Pathogen Shield",
+          "subtitle": "Paul Rozin's Fudge Trials and the Insular Cortex Hijack From Toxins to Taboos"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "The Credible Threat",
+          "subtitle": "Robert Frank's Commitment Problem and Why Irrational Retaliation Wins Rational Bargaining"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "The Severed Attachment Loop",
+          "subtitle": "Colin Murray Parkes's Widowhood Mortality Studies and Nucleus Accumbens Yearning"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Public Gaze Versus the Private Debt",
+          "subtitle": "June Tangney's Prisoner Studies and the Fork Between Hiding and Repair"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Relative Payoff Trap",
+          "subtitle": "Sarah Brosnan's Capuchin Cucumber Revolt and Ventral Striatum Social Comparison"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "The Information Gap",
+          "subtitle": "George Loewenstein's Curiosity Curve and Dopamine Firing for Non-Instrumental Answers"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "The Involuntary Blush",
+          "subtitle": "Charles Darwin's Reddening Paradox and Dacher Keltner's Appeasement Signal"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "The Play-Bow Breath",
+          "subtitle": "Jaak Panksepp's Ultrasonic Rat Tickling and the Metabolic Cost of Social Grooming"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "The Swiss Mercenary's Fever",
+          "subtitle": "Johannes Hofer's Seventeenth-Century Medical Diagnosis and Sedikides's Thermoregulatory Buffer"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "The Asymmetric Curl",
+          "subtitle": "Paul Ekman's Unilateral Lip Raise and John Gottman's Four-Horseman Divorce Predictor"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "The Upstream Reciprocity Engine",
+          "subtitle": "Robert Trivers's Altruism Ledger and Sara Algoe's Find-Remind-and-Bind Amplification"
+        }
+      ]
+    },
+    {
+      "slug": "alan-turing",
+      "file": "books/alan-turing.md",
+      "title": "Alan Turing",
+      "subtitle": "Computability, Codebreaking, and the Patterns of Living Form",
+      "category": "Biography & Computation",
+      "mode": "facet",
+      "profile": "D: Intellectual Ruptures, Forensic Scholarship & Prismatic Minds",
+      "accent": "#2563eb",
+      "bg": "#041c1a",
+      "pdf": "assets/pdfs/alan-turing.pdf",
+      "compactPdf": "assets/pdfs/alan-turing-compact.pdf",
+      "mobilePdf": "assets/pdfs/alan-turing-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        10,
+        14,
+        17,
+        20,
+        23,
+        26,
+        29,
+        32,
+        35,
+        38
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        7,
+        11,
+        15,
+        18,
+        21,
+        25,
+        29,
+        33,
+        37,
+        40,
+        44
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29,
+        33,
+        37,
+        41,
+        45,
+        49
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Alan Turing",
+          "subtitle": "The Mechanist of Logic, Secrecy, and Living Form"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "The Sherborne Notebook and the Nature of Spirit",
+          "subtitle": "How Cycling Sixty Miles to School and Losing Christopher Morcom Shaped a Materialist Mind"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Central Limit Theorem Rediscovered Alone",
+          "subtitle": "King's College Fellowship and the Probabilistic Bridge to Mathematical Foundations"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "The Paper Tape and the Uncomputable Number",
+          "subtitle": "How a Mechanical Clerk Destroyed David Hilbert's Dream of Complete Decidability"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "The Princeton Ordinal Hierarchies",
+          "subtitle": "Alonzo Church's Lambda Calculus, Emil Post, and Oracle Machines Over the Abyss"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Riemann Zeta Gear-Wheel Machine",
+          "subtitle": "Cutting Brass Cams in Cambridge to Hunt Zeroes on the Critical Line"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Electromechanical Bombe and the Diagonal Board",
+          "subtitle": "Turning Enigma's Self-Reciprocal Flaw Into a Parallel Contradiction Engine"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "Banburismus and the Weight of Evidence",
+          "subtitle": "Punched Paper Sheets, Decibans, and Sequential Bayesian Inference Against Naval Enigma"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "Delilah and the Bell Labs Tea-Time Encounter",
+          "subtitle": "Portable Speech Scrambling at Hanslope Park and Meeting Claude Shannon in Manhattan"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "The Automatic Computing Engine Blueprint",
+          "subtitle": "Mercury Delay Lines, Micro-Coded Logic Tables, and the First Subroutine Stack"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "The Imitation Game and Lady Lovelace's Objection",
+          "subtitle": "Why Playing Chess, Learning From Mistakes, and Conversing Replaced Definitions of Thought"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "The Matrix Condition Number and LU Decomposition",
+          "subtitle": "Inventing Modern Numerical Linear Algebra to Measure Round-Off Error"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "The Chemical Basis of Morphogenesis",
+          "subtitle": "How Two Diffusing Molecules Carve Leopard Spots, Zebra Stripes, and Fibonacci Spirals"
+        }
+      ]
+    },
+    {
+      "slug": "the-cell",
+      "file": "books/the-cell.md",
+      "title": "The Cell",
+      "subtitle": "Twelve Molecular Machines in Twelve Highlights Each",
+      "category": "Molecular Biology",
+      "mode": "listicle",
+      "profile": "B: The Prospected Spaced-Dot Listicle (topic-prospector + Domain Highlights)",
+      "accent": "#059669",
+      "bg": "#061812",
+      "pdf": "assets/pdfs/the-cell.pdf",
+      "compactPdf": "assets/pdfs/the-cell-compact.pdf",
+      "mobilePdf": "assets/pdfs/the-cell-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        11,
+        15,
+        19,
+        23,
+        27,
+        31,
+        35,
+        39,
+        43,
+        47
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        13,
+        17,
+        21,
+        26,
+        31,
+        36,
+        41,
+        46,
+        51,
+        56
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "The Cell",
+          "subtitle": "Twelve Nanoscale Engines Viewed Through Twelve Physical Facts"
+        },
+        {
+          "label": "Chapter 1",
+          "title": "The Lipid Bilayer and Ion Channels",
+          "subtitle": "Hydrophobic Self-Assembly, Potassium Selectivity Filters, and the Resting Membrane Voltage"
+        },
+        {
+          "label": "Chapter 2",
+          "title": "ATP Synthase and the Mitochondrial Turbine",
+          "subtitle": "Chemiosmotic Proton Gradients, Boyer's Binding-Change Rotor, and Magnetic Bead Rotation"
+        },
+        {
+          "label": "Chapter 3",
+          "title": "DNA Polymerase and Mismatch Proofreading",
+          "subtitle": "Kornberg's Replication Fork, Exonuclease Editing, and Okazaki Fragment Stitching"
+        },
+        {
+          "label": "Chapter 4",
+          "title": "The Ribosome and Peptidyl Transfer",
+          "subtitle": "Ribozyme Catalysis, Aminoacyl-tRNA Kinetic Proofreading, and Polysome Assembly Lines"
+        },
+        {
+          "label": "Chapter 5",
+          "title": "Kinesin, Dynein, and Cytoskeletal Highways",
+          "subtitle": "Eight-Nanometer Hand-Over-Hand Steps, Optical Tweezer Stall Forces, and Retrograde Axonal Transport"
+        },
+        {
+          "label": "Chapter 6",
+          "title": "The Spliceosome and Alternative Splicing",
+          "subtitle": "Lariat Intron Excision, Small Nuclear Ribonucleoproteins, and the DSCAM Isoform Explosion"
+        },
+        {
+          "label": "Chapter 7",
+          "title": "The Chaperonin Barrel and the Proteasome",
+          "subtitle": "GroEL-GroES Hydrophobic Cages, Ubiquitin Death Tags, and the 20S Proteolytic Shredder"
+        },
+        {
+          "label": "Chapter 8",
+          "title": "The Nuclear Pore Complex and Ran-GTP Gating",
+          "subtitle": "Phenylalanine-Glycine Hydrogel Sieves, Importin Shuttles, and Directional mRNA Export"
+        },
+        {
+          "label": "Chapter 9",
+          "title": "Photosystem II and the Oxygen-Evolving Complex",
+          "subtitle": "Manganese-Calcium Cubane Clusters, Kok's Four-Flash S-State Clock, and Exciton Funneling"
+        },
+        {
+          "label": "Chapter 10",
+          "title": "The Bacterial Flagellar Rotary Motor",
+          "subtitle": "MotAB Proton Stators, Hook Universal Joints, and Run-and-Tumble Chemotactic Memory"
+        },
+        {
+          "label": "Chapter 11",
+          "title": "The Mitotic Spindle and Kinetochore Tension",
+          "subtitle": "Microtubule Dynamic Instability, Aurora B Tension Sensing, and the Mad2 Wait Signal"
+        },
+        {
+          "label": "Chapter 12",
+          "title": "CRISPR-Cas and Viral Immune Memory",
+          "subtitle": "Spacer Acquisition, PAM Recognition, and R-Loop Conformational Cleavage"
+        }
+      ]
+    }
+  ]
+}

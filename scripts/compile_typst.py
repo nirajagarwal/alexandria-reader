@@ -20,18 +20,11 @@ import sys
 import tempfile
 import xml.etree.ElementTree as ET
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PDF_OUT_DIR = os.path.join(BASE_DIR, "assets", "pdfs")
+from lib import BASE_DIR, PDFS_DIR as PDF_OUT_DIR, load_catalog, resolve_book_md  # noqa: E402
 
 
 def load_books_metadata():
-    books_js_path = os.path.join(BASE_DIR, "js", "books-data.js")
-    if not os.path.exists(books_js_path):
-        return {}
-    books_js = open(books_js_path, encoding="utf-8").read()
-    p_end = books_js.find("return {") + len("return ")
-    s_start = books_js.rfind("};") + 1
-    return json.loads(books_js[p_end:s_start])
+    return load_catalog()
 
 
 def clean_latex_for_mitex(latex_str: str) -> str:
@@ -737,9 +730,9 @@ def _compile_single_preset(book_title, book_subtitle, category, accent_hex, sect
 
 
 def compile_book_to_pdf(md_path: str, category: str = "NON-FICTION", accent_hex: str = "#a37c40"):
-    raw_md = open(md_path, encoding="utf-8").read()
+    slug, resolved_path = resolve_book_md(md_path)
+    raw_md = open(resolved_path, encoding="utf-8").read()
     book_title, book_subtitle, sections = parse_book_markdown(raw_md)
-    slug = os.path.splitext(os.path.basename(md_path))[0].replace("_", "-")
 
     os.makedirs(PDF_OUT_DIR, exist_ok=True)
     out_pdf_path = os.path.join(PDF_OUT_DIR, f"{slug}.pdf")
@@ -765,24 +758,27 @@ def compile_book_to_pdf(md_path: str, category: str = "NON-FICTION", accent_hex:
 
 def main():
     parser = argparse.ArgumentParser(description="Compile Alexandria Press markdown manuscripts to Typst PDFs.")
-    parser.add_argument("files", nargs="*", help="Markdown file(s) to compile")
-    parser.add_argument("--all", action="store_true", help="Compile all books in js/books-data.js")
+    parser.add_argument("files", nargs="*", help="Markdown file(s) or slug(s) to compile")
+    parser.add_argument("--all", action="store_true", help="Compile all books in catalog.json")
     args = parser.parse_args()
 
     books_meta = load_books_metadata()
     target_files = list(args.files)
     if args.all:
-        target_files = [os.path.join(BASE_DIR, slug.replace("-", "_") + ".md") for slug in books_meta.keys()]
+        target_files = [resolve_book_md(slug)[1] for slug in books_meta.keys()]
 
     if not target_files:
         parser.print_help()
         sys.exit(1)
 
     for fpath in target_files:
-        slug = os.path.splitext(os.path.basename(fpath))[0].replace("_", "-")
+        slug, resolved_path = resolve_book_md(fpath)
         meta = books_meta.get(slug, {})
         cat = meta.get("category", "NON-FICTION")
-        pdf_path, sec_pages, comp_path, comp_pages, mob_path, mob_pages = compile_book_to_pdf(fpath, category=cat)
+        accent = meta.get("accent", "#a37c40")
+        pdf_path, sec_pages, comp_path, comp_pages, mob_path, mob_pages = compile_book_to_pdf(
+            resolved_path, category=cat, accent_hex=accent
+        )
         size_kb = os.path.getsize(pdf_path) / 1024.0
         comp_kb = os.path.getsize(comp_path) / 1024.0
         mob_kb = os.path.getsize(mob_path) / 1024.0
@@ -791,4 +787,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 

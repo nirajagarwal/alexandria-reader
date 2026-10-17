@@ -1,0 +1,97 @@
+{
+  "slug": "architectures-of-the-grid",
+  "file": "books/architectures-of-the-grid.md",
+  "title": "Architectures of the Grid",
+  "subtitle": "The Physical Wiring That Keeps Modern Society Running",
+  "category": "Infrastructure & Physics",
+  "mode": "facet",
+  "profile": "A",
+  "accent": "#0284c7",
+  "bg": "#0c1f2e",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "The Frequency Anchor",
+      "subtitle": "Spinning Turbines and the Constant 60 Hz Balance",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 2,
+      "title": "The Girdle of the Deep",
+      "subtitle": "The First Telegraph Wire Across the Atlantic Floor",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 3,
+      "title": "The Hydraulic Incline",
+      "subtitle": "Running Water Over Mountain Slopes by Gravity Alone",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 4,
+      "title": "The Rail Synchronization",
+      "subtitle": "Why Steam Trains Forced Britain to Standardize Time",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 5,
+      "title": "The Nodal Bottleneck",
+      "subtitle": "Canals, Shallow Straits, and Global Shipping Chokepoints",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 6,
+      "title": "The Switching Matrix",
+      "subtitle": "From Tangled Copper Loops to Automated Exchanges",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 7,
+      "title": "The Steel Box Standard",
+      "subtitle": "How One Aluminum Container Rewired Global Trade",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 8,
+      "title": "The Borderless Table",
+      "subtitle": "How Fragile Trust Holds the Internet Together",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 9,
+      "title": "The Thermal Chain",
+      "subtitle": "How Artificial Cold Created the Modern City",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 10,
+      "title": "The Orbital Clockwork",
+      "subtitle": "Why GPS Satellites Must Correct for Bent Spacetime",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 11,
+      "title": "The Subterranean River",
+      "subtitle": "How Brick Intercepting Sewers Saved London",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 12,
+      "title": "The Extreme Ultraviolet Mirror",
+      "subtitle": "How Global Computation Depends on Molten Tin Droplets",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    }
+  ]
+}

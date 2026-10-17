@@ -1,0 +1,97 @@
+{
+  "slug": "liminal-thresholds",
+  "file": "books/liminal-thresholds.md",
+  "title": "Liminal Thresholds",
+  "subtitle": "Discoveries That Broke Scientific Consensus",
+  "category": "Anomalous Physics",
+  "mode": "facet",
+  "profile": "A",
+  "accent": "#0891b2",
+  "bg": "#0b2229",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "The Falling Stones",
+      "subtitle": "Jean-Baptiste Biot and the Aerodynamics of Cosmic Debris (L'Aigle, 1803)",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 2,
+      "title": "The Inverted Freeze",
+      "subtitle": "Erasto Mpemba and Non-Equilibrium Thermal Convection (Dar es Salaam, 1963)",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 3,
+      "title": "The Luminescent Bubble",
+      "subtitle": "H. Frenzel, H. Schultes, and the Physics of Acoustic Cavitation (Cologne, 1934)",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 4,
+      "title": "The Crystalline Vector",
+      "subtitle": "Jacques and Pierre Curie and Hemimorphic Polar Asymmetry (Paris, 1880)",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 5,
+      "title": "The Unbroken Soliton",
+      "subtitle": "John Scott Russell and the Wave of Translation (Hermiston, 1834)",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 6,
+      "title": "The Thermal Circuit",
+      "subtitle": "Thomas Johann Seebeck and Differential Metallic Diffusion (Berlin, 1821)",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 7,
+      "title": "The Disappearing Boundary",
+      "subtitle": "Thomas Andrews and the Continuity of Gaseous and Liquid States (Belfast, 1869)",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 8,
+      "title": "The Drifting Slabs",
+      "subtitle": "Alfred Wegener and the Rheology of the Earth Mantle (Marburg, 1912)",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 9,
+      "title": "The Boiling Friction",
+      "subtitle": "Count Rumford, Benjamin Thompson, and the Mechanical Equivalence of Caloric (Munich, 1798)",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 10,
+      "title": "The Ghost Inventory",
+      "subtitle": "Wolfgang Pauli and the Missing Momentum of Beta Decay (Zurich, 1930)",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 11,
+      "title": "The Unilateral Current",
+      "subtitle": "Thomas Edison, Owen Richardson, and Thermionic Barrier Penetration (Menlo Park, 1883)",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 12,
+      "title": "The Solitary Wall",
+      "subtitle": "The Draupner Platform and Non-Linear Surface Wave Modulation (North Sea, 1995)",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    }
+  ]
+}

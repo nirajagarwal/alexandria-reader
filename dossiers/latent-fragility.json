@@ -1,0 +1,97 @@
+{
+  "slug": "latent-fragility",
+  "file": "books/latent-fragility.md",
+  "title": "Latent Fragility",
+  "subtitle": "Hidden Structural Flaws, Coupled Cascades, and Catastrophic Engineering Failures",
+  "category": "Systemic Failure & Risk",
+  "mode": "facet",
+  "profile": "A",
+  "accent": "#dc2626",
+  "bg": "#1f1212",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "The Top-Heavy Flagship",
+      "subtitle": "Metacentric Instability and the Sinking of the Warship Vasa",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 2,
+      "title": "The Dual Software Race",
+      "subtitle": "Concurrent State Bugs in the Therac-25 Radiation Overdoses",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "diagram"
+    },
+    {
+      "chapter": 3,
+      "title": "The Dormant Flag on Server Eight",
+      "subtitle": "Dead Code Reuse and the Forty-Five-Minute Liquidation of Knight Capital",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 4,
+      "title": "The Cost-Plus Ratchet",
+      "subtitle": "Aerospace Subcontractor Chains and the Falcon 1 Hardware Failures",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 5,
+      "title": "The Thirty-Seven-Second Overflow",
+      "subtitle": "Inherited Inertial Code and the Destruction of Ariane 5 Flight 501",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 6,
+      "title": "The Synchronized Footbridge",
+      "subtitle": "Coupled Pedestrian Oscillators on the London Millennium Crossing",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 7,
+      "title": "The Salt Dome Whirlpool",
+      "subtitle": "Hydrostatic Dissolution and the Draining of Lake Peigneur",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 8,
+      "title": "The Torsional Flutter of Puget Sound",
+      "subtitle": "Aeroelastic Self-Excitation and the Collapse of Tacoma Narrows",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 9,
+      "title": "The Square Window Corner",
+      "subtitle": "De Havilland Comet Fatigue Cracks and Stress Concentration in Pressurized Cabins",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 10,
+      "title": "The Doubled Load on Box Beam Four",
+      "subtitle": "How a Simple Rod Substitution Caused the Hyatt Regency Walkway Collapse",
+      "opening_door": "A: Scene",
+      "formalism_mode": "diagram"
+    },
+    {
+      "chapter": 11,
+      "title": "The Cold-Stiffened O-Ring",
+      "subtitle": "How Fluoroelastomer Glass Transition Defeated Dual Redundancy on Challenger",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "diagram"
+    },
+    {
+      "chapter": 12,
+      "title": "The Frozen Pitot Tube",
+      "subtitle": "Air France Flight 447 and the Paradox of Automation Hand-Off at Thirty-Five Thousand Feet",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    }
+  ]
+}

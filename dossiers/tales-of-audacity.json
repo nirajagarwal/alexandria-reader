@@ -1,0 +1,97 @@
+{
+  "slug": "tales-of-audacity",
+  "file": "books/tales-of-audacity.md",
+  "title": "Tales of Audacity",
+  "subtitle": "Twelve Stories of Breaking Entrenched Consensus",
+  "category": "History & Strategy",
+  "mode": "facet",
+  "profile": "D",
+  "accent": "#ea580c",
+  "bg": "#24140a",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "The Solar Geometry",
+      "subtitle": "Measuring the Earth with Shadows and Strides",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 2,
+      "title": "The Burning Mirrors",
+      "subtitle": "Stopping a Roman Fleet with Levers and Cranes",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 3,
+      "title": "The Geocentric Fracture",
+      "subtitle": "Moving the Sun to the Center of the Solar System",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 4,
+      "title": "The Celestial Clockmaker",
+      "subtitle": "Why Eight Minutes of Arc Broke Ancient Astronomy",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 5,
+      "title": "The Scurvy Trials",
+      "subtitle": "Curing Scurvy with the First Controlled Clinical Trial",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "ledger_or_list"
+    },
+    {
+      "chapter": 6,
+      "title": "The Cadaver Ward",
+      "subtitle": "How Handwashing Ended Childbed Fever in Vienna",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "ledger_or_list"
+    },
+    {
+      "chapter": 7,
+      "title": "The Continental Jigsaw",
+      "subtitle": "Why Nobody Believed the Continents Could Move",
+      "opening_door": "A: Scene",
+      "formalism_mode": "ledger_or_list"
+    },
+    {
+      "chapter": 8,
+      "title": "The Jumping Genes",
+      "subtitle": "Finding Mobile DNA in Maize Chromosomes",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "ledger_or_list"
+    },
+    {
+      "chapter": 9,
+      "title": "The Acid Pathogen",
+      "subtitle": "Drinking Bacteria to Prove the Cause of Ulcers",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 10,
+      "title": "The Modified Messenger",
+      "subtitle": "Thirty Years in the Wilderness of mRNA",
+      "opening_door": "A: Scene",
+      "formalism_mode": "ledger_or_list"
+    },
+    {
+      "chapter": 11,
+      "title": "The Deciphered Cartouche",
+      "subtitle": "Cracking the Phonetic Code of Egyptian Hieroglyphs",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "ledger_or_list"
+    },
+    {
+      "chapter": 12,
+      "title": "The Forbidden Symmetry",
+      "subtitle": "How Quasicrystals Broke Two Centuries of Crystallography",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    }
+  ]
+}

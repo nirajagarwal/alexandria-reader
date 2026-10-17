@@ -1,171 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Alexandria Press Home Catalog -->
   <url>
     <loc>https://alexandria.press/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://alexandria.press/?book=non-linear-engines</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://alexandria.press/?book=latent-fragility</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://alexandria.press/?book=singular-minds</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://alexandria.press/?book=radical-subtraction</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://alexandria.press/?book=liminal-thresholds</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://alexandria.press/?book=autonomous-engine</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://alexandria.press/?book=elemental-asymmetries</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://alexandria.press/?book=affective-topologies</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://alexandria.press/?book=architectures-of-choice</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://alexandria.press/?book=tales-of-audacity</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://alexandria.press/?book=alexandria-manifesto</loc>
-    <lastmod>2026-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://alexandria.press/?book=architectures-of-the-grid</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://alexandria.press/?book=sensory-worlds</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://alexandria.press/?book=instruments-of-precision</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://alexandria.press/?book=ghosts-in-the-parchment</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://alexandria.press/?book=fictions-of-order</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://alexandria.press/?book=bonds-of-enmity</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://alexandria.press/?book=flights-and-perches</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://alexandria.press/?book=planetary-triggers</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://alexandria.press/?book=twelve-virtues</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://alexandria.press/?book=twelve-plants</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://alexandria.press/?book=paper-panics</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://alexandria.press/?book=curious-physicist</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://alexandria.press/?book=artificial-intelligence</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://alexandria.press/?book=the-human-body</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://alexandria.press/?book=attention</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://alexandria.press/?book=self-transcendence</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>

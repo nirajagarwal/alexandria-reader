@@ -1,19 +1,19 @@
+// Alexandria Press — Universal Book Metadata Bundle (Generated from catalog.json)
 (function (root, factory) {
-    if (typeof define === 'function' && define.amd) {
-        define([], factory);
-    } else if (typeof module === 'object' && module.exports) {
-        module.exports = factory();
-    } else {
-        root.EMBEDDED_BOOKS = factory();
-    }
+  if (typeof module === 'object' && module.exports) {
+    module.exports = factory();
+  } else {
+    root.EMBEDDED_BOOKS = factory();
+  }
 }(typeof self !== 'undefined' ? self : this, function () {
-    return {
+  return {
   "non-linear-engines": {
     "title": "Non-Linear Engines",
     "subtitle": "How Unusual Startups Escape Early Failure",
     "category": "Startups & Strategy",
-    "coverSvg": "assets/covers/non-linear-engines.svg",
     "pdf": "assets/pdfs/non-linear-engines.pdf",
+    "compactPdf": "assets/pdfs/non-linear-engines-compact.pdf",
+    "mobilePdf": "assets/pdfs/non-linear-engines-mobile.pdf",
     "sectionPages": [
       3,
       4,
@@ -29,7 +29,21 @@
       34,
       37
     ],
-    "mobilePdf": "assets/pdfs/non-linear-engines-mobile.pdf",
+    "compactSectionPages": [
+      3,
+      4,
+      8,
+      12,
+      16,
+      19,
+      22,
+      25,
+      29,
+      32,
+      36,
+      40,
+      43
+    ],
     "mobileSectionPages": [
       3,
       5,
@@ -111,30 +125,15 @@
         "title": "The Dedicated Terminal",
         "subtitle": "Bloomberg and the Closed-Loop Financial Network"
       }
-    ],
-    "compactPdf": "assets/pdfs/non-linear-engines-compact.pdf",
-    "compactSectionPages": [
-      3,
-      4,
-      8,
-      12,
-      16,
-      19,
-      22,
-      25,
-      29,
-      32,
-      36,
-      40,
-      43
     ]
   },
   "latent-fragility": {
     "title": "Latent Fragility",
     "subtitle": "Hidden Structural Flaws, Coupled Cascades, and Catastrophic Engineering Failures",
     "category": "Systemic Failure & Risk",
-    "coverSvg": "assets/covers/latent-fragility.svg",
     "pdf": "assets/pdfs/latent-fragility.pdf",
+    "compactPdf": "assets/pdfs/latent-fragility-compact.pdf",
+    "mobilePdf": "assets/pdfs/latent-fragility-mobile.pdf",
     "sectionPages": [
       3,
       4,
@@ -150,7 +149,21 @@
       34,
       37
     ],
-    "mobilePdf": "assets/pdfs/latent-fragility-mobile.pdf",
+    "compactSectionPages": [
+      3,
+      5,
+      8,
+      12,
+      15,
+      18,
+      21,
+      24,
+      27,
+      30,
+      33,
+      37,
+      41
+    ],
     "mobileSectionPages": [
       3,
       5,
@@ -232,30 +245,15 @@
         "title": "The Frozen Pitot Tube",
         "subtitle": "Air France Flight 447 and the Paradox of Automation Hand-Off at Thirty-Five Thousand Feet"
       }
-    ],
-    "compactPdf": "assets/pdfs/latent-fragility-compact.pdf",
-    "compactSectionPages": [
-      3,
-      5,
-      8,
-      12,
-      15,
-      18,
-      21,
-      24,
-      27,
-      30,
-      33,
-      37,
-      41
     ]
   },
   "singular-minds": {
     "title": "Singular Minds",
     "subtitle": "How Exceptional Thinkers Solved Impossible Problems",
     "category": "Cognitive Architecture",
-    "coverSvg": "assets/covers/singular-minds.svg",
     "pdf": "assets/pdfs/singular-minds.pdf",
+    "compactPdf": "assets/pdfs/singular-minds-compact.pdf",
+    "mobilePdf": "assets/pdfs/singular-minds-mobile.pdf",
     "sectionPages": [
       3,
       4,
@@ -271,7 +269,21 @@
       34,
       37
     ],
-    "mobilePdf": "assets/pdfs/singular-minds-mobile.pdf",
+    "compactSectionPages": [
+      3,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      31,
+      35,
+      39,
+      43,
+      47
+    ],
     "mobileSectionPages": [
       3,
       5,
@@ -353,30 +365,15 @@
         "title": "The Algebraic Positron",
         "subtitle": "Paul Dirac and the Relativistic Electron Equation"
       }
-    ],
-    "compactPdf": "assets/pdfs/singular-minds-compact.pdf",
-    "compactSectionPages": [
-      3,
-      4,
-      8,
-      12,
-      16,
-      20,
-      24,
-      28,
-      31,
-      35,
-      39,
-      43,
-      47
     ]
   },
   "radical-subtraction": {
     "title": "Radical Subtraction",
     "subtitle": "Sensory Isolation and the Quiet Mind",
     "category": "Contemplative Theory",
-    "coverSvg": "assets/covers/radical-subtraction.svg",
     "pdf": "assets/pdfs/radical-subtraction.pdf",
+    "compactPdf": "assets/pdfs/radical-subtraction-compact.pdf",
+    "mobilePdf": "assets/pdfs/radical-subtraction-mobile.pdf",
     "sectionPages": [
       3,
       4,
@@ -392,7 +389,21 @@
       34,
       37
     ],
-    "mobilePdf": "assets/pdfs/radical-subtraction-mobile.pdf",
+    "compactSectionPages": [
+      3,
+      4,
+      7,
+      10,
+      14,
+      17,
+      20,
+      23,
+      26,
+      30,
+      33,
+      36,
+      40
+    ],
     "mobileSectionPages": [
       3,
       5,
@@ -474,30 +485,15 @@
         "title": "The Kicked-Away Ladder",
         "subtitle": "Ludwig Wittgenstein and Where Logical Language Draws Its Own Border"
       }
-    ],
-    "compactPdf": "assets/pdfs/radical-subtraction-compact.pdf",
-    "compactSectionPages": [
-      3,
-      4,
-      7,
-      10,
-      14,
-      17,
-      20,
-      23,
-      26,
-      30,
-      33,
-      36,
-      40
     ]
   },
   "liminal-thresholds": {
     "title": "Liminal Thresholds",
     "subtitle": "Discoveries That Broke Scientific Consensus",
     "category": "Anomalous Physics",
-    "coverSvg": "assets/covers/liminal-thresholds.svg",
     "pdf": "assets/pdfs/liminal-thresholds.pdf",
+    "compactPdf": "assets/pdfs/liminal-thresholds-compact.pdf",
+    "mobilePdf": "assets/pdfs/liminal-thresholds-mobile.pdf",
     "sectionPages": [
       3,
       4,
@@ -513,7 +509,21 @@
       25,
       27
     ],
-    "mobilePdf": "assets/pdfs/liminal-thresholds-mobile.pdf",
+    "compactSectionPages": [
+      3,
+      4,
+      7,
+      9,
+      11,
+      14,
+      17,
+      20,
+      23,
+      26,
+      28,
+      31,
+      34
+    ],
     "mobileSectionPages": [
       3,
       5,
@@ -595,30 +605,15 @@
         "title": "The Solitary Wall",
         "subtitle": "The Draupner Platform and Non-Linear Surface Wave Modulation (North Sea, 1995)"
       }
-    ],
-    "compactPdf": "assets/pdfs/liminal-thresholds-compact.pdf",
-    "compactSectionPages": [
-      3,
-      4,
-      7,
-      9,
-      11,
-      14,
-      17,
-      20,
-      23,
-      26,
-      28,
-      31,
-      34
     ]
   },
   "autonomous-engine": {
     "title": "The Autonomous Engine",
     "subtitle": "The Control Loops of the Human Body",
     "category": "Physiology & Cybernetics",
-    "coverSvg": "assets/covers/the-autonomous-engine.svg",
     "pdf": "assets/pdfs/autonomous-engine.pdf",
+    "compactPdf": "assets/pdfs/autonomous-engine-compact.pdf",
+    "mobilePdf": "assets/pdfs/autonomous-engine-mobile.pdf",
     "sectionPages": [
       3,
       4,
@@ -634,7 +629,21 @@
       34,
       37
     ],
-    "mobilePdf": "assets/pdfs/autonomous-engine-mobile.pdf",
+    "compactSectionPages": [
+      3,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      27,
+      30,
+      34,
+      38,
+      42,
+      45
+    ],
     "mobileSectionPages": [
       3,
       5,
@@ -716,30 +725,15 @@
         "title": "The Glycemic Integral Controller",
         "subtitle": "Frederick Banting, Charles Best, and the Pancreatic Bihormonal Loop in Toronto"
       }
-    ],
-    "compactPdf": "assets/pdfs/autonomous-engine-compact.pdf",
-    "compactSectionPages": [
-      3,
-      4,
-      8,
-      12,
-      16,
-      20,
-      24,
-      27,
-      30,
-      34,
-      38,
-      42,
-      45
     ]
   },
   "elemental-asymmetries": {
     "title": "Elemental Asymmetries",
     "subtitle": "The Physical Constraints of Twelve Elements",
     "category": "Materials & Chemistry",
-    "coverSvg": "assets/covers/elemental-asymmetries.svg",
     "pdf": "assets/pdfs/elemental-asymmetries.pdf",
+    "compactPdf": "assets/pdfs/elemental-asymmetries-compact.pdf",
+    "mobilePdf": "assets/pdfs/elemental-asymmetries-mobile.pdf",
     "sectionPages": [
       3,
       4,
@@ -755,7 +749,21 @@
       29,
       32
     ],
-    "mobilePdf": "assets/pdfs/elemental-asymmetries-mobile.pdf",
+    "compactSectionPages": [
+      3,
+      4,
+      7,
+      9,
+      11,
+      14,
+      16,
+      19,
+      22,
+      25,
+      28,
+      31,
+      34
+    ],
     "mobileSectionPages": [
       3,
       4,
@@ -837,30 +845,15 @@
         "title": "The Graphitic Sheet",
         "subtitle": "Carbon-12 and the Covalent Orbital Hybridization Limits (Manchester, 2004)"
       }
-    ],
-    "compactPdf": "assets/pdfs/elemental-asymmetries-compact.pdf",
-    "compactSectionPages": [
-      3,
-      4,
-      7,
-      9,
-      11,
-      14,
-      16,
-      19,
-      22,
-      25,
-      28,
-      31,
-      34
     ]
   },
   "affective-topologies": {
     "title": "Affective Topologies",
     "subtitle": "The Predictive Control Loops of Human Emotion",
     "category": "Neuroscience & Cybernetics",
-    "coverSvg": "assets/covers/affective-topologies.svg",
     "pdf": "assets/pdfs/affective-topologies.pdf",
+    "compactPdf": "assets/pdfs/affective-topologies-compact.pdf",
+    "mobilePdf": "assets/pdfs/affective-topologies-mobile.pdf",
     "sectionPages": [
       3,
       4,
@@ -876,7 +869,21 @@
       35,
       39
     ],
-    "mobilePdf": "assets/pdfs/affective-topologies-mobile.pdf",
+    "compactSectionPages": [
+      3,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      44,
+      48
+    ],
     "mobileSectionPages": [
       3,
       5,
@@ -958,30 +965,15 @@
         "title": "The Allostatic Debt",
         "subtitle": "Bruce McEwen, Hippocampal Receptors, and the Resonance of Calm"
       }
-    ],
-    "compactPdf": "assets/pdfs/affective-topologies-compact.pdf",
-    "compactSectionPages": [
-      3,
-      4,
-      8,
-      12,
-      16,
-      20,
-      24,
-      28,
-      32,
-      36,
-      40,
-      44,
-      48
     ]
   },
   "architectures-of-choice": {
     "title": "Architectures of Choice",
     "subtitle": "Practical Decision Theory for an Unpredictable World",
     "category": "Decision Science & Strategy",
-    "coverSvg": "assets/covers/architectures-of-choice.svg",
     "pdf": "assets/pdfs/architectures-of-choice.pdf",
+    "compactPdf": "assets/pdfs/architectures-of-choice-compact.pdf",
+    "mobilePdf": "assets/pdfs/architectures-of-choice-mobile.pdf",
     "sectionPages": [
       3,
       4,
@@ -997,7 +989,21 @@
       41,
       45
     ],
-    "mobilePdf": "assets/pdfs/architectures-of-choice-mobile.pdf",
+    "compactSectionPages": [
+      3,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      44,
+      48
+    ],
     "mobileSectionPages": [
       3,
       5,
@@ -1079,30 +1085,15 @@
         "title": "The Gittins Index",
         "subtitle": "Exploration versus Exploitation and the Multi-Armed Bandit"
       }
-    ],
-    "compactPdf": "assets/pdfs/architectures-of-choice-compact.pdf",
-    "compactSectionPages": [
-      3,
-      4,
-      8,
-      12,
-      16,
-      20,
-      24,
-      28,
-      32,
-      36,
-      40,
-      44,
-      48
     ]
   },
   "tales-of-audacity": {
     "title": "Tales of Audacity",
     "subtitle": "Twelve Stories of Breaking Entrenched Consensus",
     "category": "History & Strategy",
-    "coverSvg": "assets/covers/tales-of-audacity.svg",
     "pdf": "assets/pdfs/tales-of-audacity.pdf",
+    "compactPdf": "assets/pdfs/tales-of-audacity-compact.pdf",
+    "mobilePdf": "assets/pdfs/tales-of-audacity-mobile.pdf",
     "sectionPages": [
       3,
       4,
@@ -1118,7 +1109,21 @@
       35,
       38
     ],
-    "mobilePdf": "assets/pdfs/tales-of-audacity-mobile.pdf",
+    "compactSectionPages": [
+      3,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      44,
+      48
+    ],
     "mobileSectionPages": [
       3,
       5,
@@ -1200,30 +1205,15 @@
         "title": "The Forbidden Symmetry",
         "subtitle": "How Quasicrystals Broke Two Centuries of Crystallography"
       }
-    ],
-    "compactPdf": "assets/pdfs/tales-of-audacity-compact.pdf",
-    "compactSectionPages": [
-      3,
-      4,
-      8,
-      12,
-      16,
-      20,
-      24,
-      28,
-      32,
-      36,
-      40,
-      44,
-      48
     ]
   },
   "architectures-of-the-grid": {
     "title": "Architectures of the Grid",
     "subtitle": "The Physical Wiring That Keeps Modern Society Running",
     "category": "Infrastructure & Physics",
-    "coverSvg": "assets/covers/architectures-of-the-grid.svg",
     "pdf": "assets/pdfs/architectures-of-the-grid.pdf",
+    "compactPdf": "assets/pdfs/architectures-of-the-grid-compact.pdf",
+    "mobilePdf": "assets/pdfs/architectures-of-the-grid-mobile.pdf",
     "sectionPages": [
       3,
       4,
@@ -1239,7 +1229,21 @@
       38,
       42
     ],
-    "mobilePdf": "assets/pdfs/architectures-of-the-grid-mobile.pdf",
+    "compactSectionPages": [
+      3,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      44,
+      48
+    ],
     "mobileSectionPages": [
       3,
       5,
@@ -1321,22 +1325,6 @@
         "title": "The Extreme Ultraviolet Mirror",
         "subtitle": "How Global Computation Depends on Molten Tin Droplets"
       }
-    ],
-    "compactPdf": "assets/pdfs/architectures-of-the-grid-compact.pdf",
-    "compactSectionPages": [
-      3,
-      4,
-      8,
-      12,
-      16,
-      20,
-      24,
-      28,
-      32,
-      36,
-      40,
-      44,
-      48
     ]
   },
   "sensory-worlds": {
@@ -1344,6 +1332,8 @@
     "subtitle": "How Non-Human Nervous Systems Measure Reality",
     "category": "Ethology & Biophysics",
     "pdf": "assets/pdfs/sensory-worlds.pdf",
+    "compactPdf": "assets/pdfs/sensory-worlds-compact.pdf",
+    "mobilePdf": "assets/pdfs/sensory-worlds-mobile.pdf",
     "sectionPages": [
       3,
       4,
@@ -1359,7 +1349,21 @@
       40,
       44
     ],
-    "mobilePdf": "assets/pdfs/sensory-worlds-mobile.pdf",
+    "compactSectionPages": [
+      3,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      44,
+      48
+    ],
     "mobileSectionPages": [
       3,
       5,
@@ -1441,22 +1445,6 @@
         "title": "The Blind Camouflage",
         "subtitle": "Roger Hanlon, Cuttlefish Skin, and Distributed Reflectance Control"
       }
-    ],
-    "compactPdf": "assets/pdfs/sensory-worlds-compact.pdf",
-    "compactSectionPages": [
-      3,
-      4,
-      8,
-      12,
-      16,
-      20,
-      24,
-      28,
-      32,
-      36,
-      40,
-      44,
-      48
     ]
   },
   "instruments-of-precision": {
@@ -1464,6 +1452,8 @@
     "subtitle": "Twelve Machines That Expanded the Boundaries of Measurement",
     "category": "Physics & Metrology",
     "pdf": "assets/pdfs/instruments-of-precision.pdf",
+    "compactPdf": "assets/pdfs/instruments-of-precision-compact.pdf",
+    "mobilePdf": "assets/pdfs/instruments-of-precision-mobile.pdf",
     "sectionPages": [
       3,
       4,
@@ -1479,7 +1469,21 @@
       38,
       42
     ],
-    "mobilePdf": "assets/pdfs/instruments-of-precision-mobile.pdf",
+    "compactSectionPages": [
+      3,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      44,
+      48
+    ],
     "mobileSectionPages": [
       3,
       5,
@@ -1561,22 +1565,6 @@
         "title": "The Four-Kilometer Yardstick",
         "subtitle": "Rainer Weiss, Kip Thorne, Barry Barish, and the LIGO Gravitational Wave Detector"
       }
-    ],
-    "compactPdf": "assets/pdfs/instruments-of-precision-compact.pdf",
-    "compactSectionPages": [
-      3,
-      4,
-      8,
-      12,
-      16,
-      20,
-      24,
-      28,
-      32,
-      36,
-      40,
-      44,
-      48
     ]
   },
   "ghosts-in-the-parchment": {
@@ -1584,6 +1572,8 @@
     "subtitle": "How Scholars Exposed Forgeries, Deciphered Lost Scripts, and Reconstructed Vanished Books",
     "category": "Philology & Forensics",
     "pdf": "assets/pdfs/ghosts-in-the-parchment.pdf",
+    "compactPdf": "assets/pdfs/ghosts-in-the-parchment-compact.pdf",
+    "mobilePdf": "assets/pdfs/ghosts-in-the-parchment-mobile.pdf",
     "sectionPages": [
       3,
       4,
@@ -1599,7 +1589,21 @@
       35,
       38
     ],
-    "mobilePdf": "assets/pdfs/ghosts-in-the-parchment-mobile.pdf",
+    "compactSectionPages": [
+      3,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      44,
+      48
+    ],
     "mobileSectionPages": [
       3,
       5,
@@ -1681,22 +1685,6 @@
         "title": "The Carbonized Scrolls",
         "subtitle": "Brent Seales and the Virtual Unwrapping of the Herculaneum Library"
       }
-    ],
-    "compactPdf": "assets/pdfs/ghosts-in-the-parchment-compact.pdf",
-    "compactSectionPages": [
-      3,
-      4,
-      8,
-      12,
-      16,
-      20,
-      24,
-      28,
-      32,
-      36,
-      40,
-      44,
-      48
     ]
   },
   "fictions-of-order": {
@@ -1704,6 +1692,8 @@
     "subtitle": "Twelve Legal Inventions That Engineered the Modern World",
     "category": "Law & Institutions",
     "pdf": "assets/pdfs/fictions-of-order.pdf",
+    "compactPdf": "assets/pdfs/fictions-of-order-compact.pdf",
+    "mobilePdf": "assets/pdfs/fictions-of-order-mobile.pdf",
     "sectionPages": [
       3,
       4,
@@ -1719,7 +1709,21 @@
       37,
       40
     ],
-    "mobilePdf": "assets/pdfs/fictions-of-order-mobile.pdf",
+    "compactSectionPages": [
+      3,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      44,
+      48
+    ],
     "mobileSectionPages": [
       3,
       5,
@@ -1801,22 +1805,6 @@
         "title": "The Battle of the Forms",
         "subtitle": "Karl Llewellyn, the Uniform Commercial Code, and the Death of the Mirror Image"
       }
-    ],
-    "compactPdf": "assets/pdfs/fictions-of-order-compact.pdf",
-    "compactSectionPages": [
-      3,
-      4,
-      8,
-      12,
-      16,
-      20,
-      24,
-      28,
-      32,
-      36,
-      40,
-      44,
-      48
     ]
   },
   "bonds-of-enmity": {
@@ -1824,6 +1812,8 @@
     "subtitle": "How Blood Feuds, Rivalries, and Escalation Traps Lock Adversaries Together",
     "category": "Conflict & Game Theory",
     "pdf": "assets/pdfs/bonds-of-enmity.pdf",
+    "compactPdf": "assets/pdfs/bonds-of-enmity-compact.pdf",
+    "mobilePdf": "assets/pdfs/bonds-of-enmity-mobile.pdf",
     "sectionPages": [
       3,
       4,
@@ -1839,7 +1829,21 @@
       34,
       37
     ],
-    "mobilePdf": "assets/pdfs/bonds-of-enmity-mobile.pdf",
+    "compactSectionPages": [
+      3,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      44,
+      48
+    ],
     "mobileSectionPages": [
       3,
       5,
@@ -1921,22 +1925,6 @@
         "title": "The Forbidden Memory",
         "subtitle": "The 403 BCE Athenian Amnesty, Desmond Tutu, and How Enmities End"
       }
-    ],
-    "compactPdf": "assets/pdfs/bonds-of-enmity-compact.pdf",
-    "compactSectionPages": [
-      3,
-      4,
-      8,
-      12,
-      16,
-      20,
-      24,
-      28,
-      32,
-      36,
-      40,
-      44,
-      48
     ]
   },
   "flights-and-perches": {
@@ -2064,8 +2052,24 @@
     "subtitle": "How Small Physical Instabilities Unleash Catastrophic Energy",
     "category": "Geophysics & Thermodynamics",
     "pdf": "assets/pdfs/planetary-triggers.pdf",
+    "compactPdf": "assets/pdfs/planetary-triggers-compact.pdf",
     "mobilePdf": "assets/pdfs/planetary-triggers-mobile.pdf",
     "sectionPages": [
+      3,
+      4,
+      7,
+      10,
+      13,
+      16,
+      19,
+      22,
+      25,
+      28,
+      31,
+      34,
+      37
+    ],
+    "compactSectionPages": [
       3,
       4,
       7,
@@ -2161,22 +2165,6 @@
         "title": "The Ram-Pressure Pancake",
         "subtitle": "Tunguska, Chelyabinsk, and Why Stony Asteroids Explode in Mid-Air"
       }
-    ],
-    "compactPdf": "assets/pdfs/planetary-triggers-compact.pdf",
-    "compactSectionPages": [
-      3,
-      4,
-      7,
-      10,
-      13,
-      16,
-      19,
-      22,
-      25,
-      28,
-      31,
-      34,
-      37
     ]
   },
   "twelve-virtues": {

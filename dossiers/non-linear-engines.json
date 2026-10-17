@@ -1,0 +1,97 @@
+{
+  "slug": "non-linear-engines",
+  "file": "books/non-linear-engines.md",
+  "title": "Non-Linear Engines",
+  "subtitle": "How Unusual Startups Escape Early Failure",
+  "category": "Startups & Strategy",
+  "mode": "facet",
+  "profile": "C",
+  "accent": "#d97706",
+  "bg": "#1c1917",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "The Star Graph",
+      "subtitle": "Federal Express and the Topological Arbitrage of Memphis",
+      "opening_door": "A: Scene",
+      "formalism_mode": "diagram"
+    },
+    {
+      "chapter": 2,
+      "title": "The Planar Genesis",
+      "subtitle": "Fairchild Semiconductor and the Invention of Silicon Equity",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "ledger_or_list"
+    },
+    {
+      "chapter": 3,
+      "title": "The Drawback Flywheel",
+      "subtitle": "Standard Oil and the Cleveland Massacre",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "diagram"
+    },
+    {
+      "chapter": 4,
+      "title": "The Symbiotic Vector",
+      "subtitle": "PayPal and the Virulence of the eBay Host",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 5,
+      "title": "The Analog Citadel",
+      "subtitle": "Linear Technology and the Thirty-Year Gross Margin",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 6,
+      "title": "The Protocol Commons",
+      "subtitle": "Netscape and the Zero-Marginal-Cost Capture of the Web",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 7,
+      "title": "The Seven-Line Abstraction",
+      "subtitle": "Stripe and the Collapse of Online Payment Friction",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 8,
+      "title": "The Asymmetric Ratio",
+      "subtitle": "Instagram and the Thirteen-Employee Scale Architecture",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 9,
+      "title": "The Infinite Shelf",
+      "subtitle": "Amazon and the Negative Working Capital Arbitrage",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "diagram"
+    },
+    {
+      "chapter": 10,
+      "title": "The Commodity Inversion",
+      "subtitle": "SpaceX and the First-Principles Physics of Aerospace",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 11,
+      "title": "The Percolation Threshold",
+      "subtitle": "Uber and the Spatial Density of Urban Dispatch",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 12,
+      "title": "The Dedicated Terminal",
+      "subtitle": "Bloomberg and the Closed-Loop Financial Network",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    }
+  ]
+}

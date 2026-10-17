@@ -1,8 +1,8 @@
 {
   "slug": "flights-and-perches",
   "filename": "flights_and_perches.md",
-  "title": "Twelve Facets",
-  "subtitle": "The Restless Mind of William James",
+  "title": "William James",
+  "subtitle": "Flights, Perches, and the Science of the Stream of Thought",
   "category": "Psychology & Philosophy",
   "profile": "Profile B & D Hybrid: Physiological Psychology, Pragmatism & Extreme States",
   "mode": "facet",
@@ -145,5 +145,6 @@
       "formalism_mode": "ledger_or_list",
       "exit_fact": "Twenty-three years after James died at his New Hampshire farmhouse in August 1910, his former Harvard student Franklin Delano Roosevelt put the 1910 proposal into federal statute by signing the Emergency Conservation Work Act of March 31, 1933, mobilizing three million young men into the Civilian Conservation Corps."
     }
-  ]
+  ],
+  "file": "books/flights-and-perches.md"
 }

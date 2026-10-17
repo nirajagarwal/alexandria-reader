@@ -1,0 +1,97 @@
+{
+  "slug": "affective-topologies",
+  "file": "books/affective-topologies.md",
+  "title": "Affective Topologies",
+  "subtitle": "The Predictive Control Loops of Human Emotion",
+  "category": "Neuroscience & Cybernetics",
+  "mode": "facet",
+  "profile": "B",
+  "accent": "#db2777",
+  "bg": "#26101d",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "The Uncontrollable Loop",
+      "subtitle": "Martin Seligman, Yoked Circuits, and the Mechanics of Dread",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 2,
+      "title": "The Derivative of Expectation",
+      "subtitle": "Wolfram Schultz, Midbrain Dopamine, and the Spikes of Joy",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 3,
+      "title": "The Phantom Prior",
+      "subtitle": "Colin Murray Parkes, Bereavement Wards, and the Updating of Attachment",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 4,
+      "title": "The Law of Contagion",
+      "subtitle": "Paul Rozin, Sterilized Cockroaches, and the Insular Perimeter",
+      "opening_door": "A: Scene",
+      "formalism_mode": "ledger_or_list"
+    },
+    {
+      "chapter": 5,
+      "title": "The Status Ledger",
+      "subtitle": "Frans de Waal, Whitehall Civil Servants, and the Cost of Inequity",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 6,
+      "title": "The Overview Collapse",
+      "subtitle": "Edgar Mitchell, the Default Mode Network, and the Mechanics of Awe",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "ledger_or_list"
+    },
+    {
+      "chapter": 7,
+      "title": "The Inflammatory Gaze",
+      "subtitle": "Dickerson, Slavich, and the Immunological Signature of Shame",
+      "opening_door": "A: Scene",
+      "formalism_mode": "ledger_or_list"
+    },
+    {
+      "chapter": 8,
+      "title": "The Suffocation Alarm",
+      "subtitle": "Donald Klein, Sodium Lactate, and the Brainstem Mechanics of Panic",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 9,
+      "title": "The Decorticate Deterrent",
+      "subtitle": "Walter Cannon, Hypothalamic Release, and the Game Theory of Rage",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "ledger_or_list"
+    },
+    {
+      "chapter": 10,
+      "title": "The Epistemic Drive",
+      "subtitle": "Harry Harlow, Mechanical Puzzles, and the Information Calculus of Curiosity",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation"
+    },
+    {
+      "chapter": 11,
+      "title": "The Myelinated Truce",
+      "subtitle": "Ernst Fehr, Intranasal Oxytocin, and the Vagal Circuit of Trust",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "ledger_or_list"
+    },
+    {
+      "chapter": 12,
+      "title": "The Allostatic Debt",
+      "subtitle": "Bruce McEwen, Hippocampal Receptors, and the Resonance of Calm",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation"
+    }
+  ]
+}
