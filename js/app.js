@@ -85,10 +85,57 @@
         } catch (e) {}
     }
 
+    function setMetaAttr(id, attr, val) {
+        const el = document.getElementById(id);
+        if (el) el.setAttribute(attr, val);
+    }
+
+    function updatePageMetaForCatalog() {
+        const title = 'Alexandria Press — Deep Learning for Humans';
+        const desc = 'Concise twelve-chapter volumes across science, history, engineering, philosophy, and human behavior — grounded in primary records, equations, and schematic diagrams.';
+        const url = 'https://alexandria.press/';
+        const img = 'https://alexandria.press/og-image.png';
+        document.title = title;
+        setMetaAttr('meta-canonical', 'href', url);
+        setMetaAttr('meta-og-type', 'content', 'website');
+        setMetaAttr('meta-og-url', 'content', url);
+        setMetaAttr('meta-og-title', 'content', title);
+        setMetaAttr('meta-og-desc', 'content', desc);
+        setMetaAttr('meta-og-image', 'content', img);
+        setMetaAttr('meta-og-image-alt', 'content', title);
+        setMetaAttr('meta-tw-title', 'content', title);
+        setMetaAttr('meta-tw-desc', 'content', desc);
+        setMetaAttr('meta-tw-image', 'content', img);
+        setMetaAttr('meta-tw-image-alt', 'content', title);
+    }
+
+    function updatePageMetaForBook(bookKey) {
+        const b = EMBEDDED_BOOKS[bookKey];
+        if (!b) return;
+        const title = `${b.title} — ${b.subtitle} | Alexandria Press`;
+        const cardTitle = `${b.title} — ${b.subtitle}`;
+        const desc = `${b.subtitle} — Twelve-chapter illustrated monograph published by Alexandria Press.`;
+        const url = `https://alexandria.press/read/${bookKey}/`;
+        const img = `https://alexandria.press/assets/og/${bookKey}.png`;
+        document.title = title;
+        setMetaAttr('meta-canonical', 'href', url);
+        setMetaAttr('meta-og-type', 'content', 'book');
+        setMetaAttr('meta-og-url', 'content', url);
+        setMetaAttr('meta-og-title', 'content', cardTitle);
+        setMetaAttr('meta-og-desc', 'content', desc);
+        setMetaAttr('meta-og-image', 'content', img);
+        setMetaAttr('meta-og-image-alt', 'content', cardTitle);
+        setMetaAttr('meta-tw-title', 'content', cardTitle);
+        setMetaAttr('meta-tw-desc', 'content', desc);
+        setMetaAttr('meta-tw-image', 'content', img);
+        setMetaAttr('meta-tw-image-alt', 'content', cardTitle);
+    }
+
     function syncReaderUrlHash() {
         const homeView = document.getElementById('home-view');
         if (homeView && homeView.classList.contains('active')) return;
         if (!currentBookKey) return;
+        updatePageMetaForBook(currentBookKey);
         const pageSuffix = (pdfPageNum !== READER_FIRST_PAGE) ? `&page=${pdfPageNum}` : '';
         const desiredHash = `#read=${currentBookKey}${pageSuffix}`;
         if (window.location.hash !== desiredHash) {
@@ -703,6 +750,7 @@
         const homeView = document.getElementById('home-view');
         if (homeView) {
             homeView.classList.add('active');
+            updatePageMetaForCatalog();
             renderCatalogGrid();
             const visible = getVisibleBookCards();
             const matchIdx = visible.findIndex(c => c.getAttribute('data-key') === currentBookKey);

@@ -29,7 +29,9 @@ import json
 import math
 import os
 import re
+import subprocess
 import sys
+import tempfile
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(BASE_DIR, "scripts"))
@@ -39,6 +41,7 @@ from lib import (  # noqa: E402
     DOSSIERS_DIR,
     INDEX_HTML_PATH,
     LEGACY_SLUGS,
+    OG_DIR,
     PDFS_DIR,
     READ_HTML_DIR,
     SITEMAP_PATH,
@@ -526,7 +529,8 @@ def sync_crawlable_read_pages(catalog: dict) -> None:
         b_title = entry["title"]
         b_sub = entry["subtitle"]
         b_cat = entry.get("category", "Systems & Science")
-        cover_url = f"https://alexandria.press/assets/covers/{slug}.svg"
+        og_img_url = f"https://alexandria.press/assets/og/{slug}.png"
+        og_img_alt = f"{b_title} — {b_sub} (Alexandria Press)"
 
         # 1. Generate each section/chapter page: read/<slug>/<ch_slug>.html
         for idx, ch in enumerate(chapters):
@@ -551,6 +555,7 @@ def sync_crawlable_read_pages(catalog: dict) -> None:
                 "headline": ch_sub,
                 "position": idx,
                 "url": page_url,
+                "image": og_img_url,
                 "isPartOf": {
                     "@type": "Book",
                     "name": b_title,
@@ -591,17 +596,27 @@ def sync_crawlable_read_pages(catalog: dict) -> None:
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{html.escape(ch_title)} — {html.escape(b_title)} | Alexandria Press</title>
   <meta name="description" content="{html.escape(meta_desc)}">
+  <meta name="author" content="Alexandria Press">
   <link rel="canonical" href="{page_url}">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=3">
+  <link rel="apple-touch-icon" href="../../favicon.svg?v=3">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Alexandria Press">
+  <meta property="og:locale" content="en_US">
   <meta property="og:title" content="{html.escape(ch_title)} — {html.escape(b_title)}">
   <meta property="og:description" content="{html.escape(meta_desc)}">
   <meta property="og:url" content="{page_url}">
-  <meta property="og:image" content="{cover_url}">
+  <meta property="og:image" content="{og_img_url}">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{html.escape(og_img_alt)}">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@alexandriapress">
   <meta name="twitter:title" content="{html.escape(ch_title)} — {html.escape(b_title)}">
   <meta name="twitter:description" content="{html.escape(meta_desc)}">
-  <meta name="twitter:image" content="{cover_url}">
+  <meta name="twitter:image" content="{og_img_url}">
+  <meta name="twitter:image:alt" content="{html.escape(og_img_alt)}">
   <script type="application/ld+json">{json.dumps(ld_chapter, ensure_ascii=False)}</script>
   <script>
   (function(){{
@@ -658,7 +673,7 @@ def sync_crawlable_read_pages(catalog: dict) -> None:
             "headline": b_sub,
             "genre": b_cat,
             "url": book_url,
-            "image": cover_url,
+            "image": og_img_url,
             "publisher": {
                 "@type": "Organization",
                 "name": "Alexandria Press",
@@ -676,31 +691,44 @@ def sync_crawlable_read_pages(catalog: dict) -> None:
                 f'<div class="t-sub">{html.escape(c.get("subtitle", ""))}</div>'
                 f"{anch}</a></li>"
             )
+        vol_desc = f"{b_sub} — Twelve-chapter illustrated monograph published by Alexandria Press."
         vol_html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{html.escape(b_title)} — {html.escape(b_sub)} | Alexandria Press</title>
-  <meta name="description" content="{html.escape(b_sub)}. Twelve-chapter monograph published by Alexandria Press.">
+  <meta name="description" content="{html.escape(vol_desc)}">
+  <meta name="author" content="Alexandria Press">
   <link rel="canonical" href="{book_url}">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=3">
+  <link rel="apple-touch-icon" href="../../favicon.svg?v=3">
   <meta property="og:type" content="book">
   <meta property="og:site_name" content="Alexandria Press">
+  <meta property="og:locale" content="en_US">
   <meta property="og:title" content="{html.escape(b_title)} — {html.escape(b_sub)}">
-  <meta property="og:description" content="{html.escape(b_sub)}">
+  <meta property="og:description" content="{html.escape(vol_desc)}">
   <meta property="og:url" content="{book_url}">
-  <meta property="og:image" content="{cover_url}">
+  <meta property="og:image" content="{og_img_url}">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{html.escape(og_img_alt)}">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@alexandriapress">
   <meta name="twitter:title" content="{html.escape(b_title)} — {html.escape(b_sub)}">
-  <meta name="twitter:description" content="{html.escape(b_sub)}">
-  <meta name="twitter:image" content="{cover_url}">
+  <meta name="twitter:description" content="{html.escape(vol_desc)}">
+  <meta name="twitter:image" content="{og_img_url}">
+  <meta name="twitter:image:alt" content="{html.escape(og_img_alt)}">
   <script type="application/ld+json">{json.dumps(ld_book, ensure_ascii=False)}</script>
   <script>
   (function(){{
     var ua = navigator.userAgent || '';
     var isBot = /bot|crawl|spider|slurp|bingpreview|facebookexternalhit|twitterbot|slackbot|discordbot|linkedinbot|whatsapp|telegram|applebot|gptbot|claudebot|perplexity|bytespider/i.test(ua);
     if (!isBot && window.location.search.indexOf('static=1') === -1 && !navigator.webdriver) {{
-      window.location.replace('../../index.html#read={slug}');
+      var h = (window.location.hash || '').replace(/^#/, '');
+      var extra = h ? ('&' + h) : '';
+      window.location.replace('../../index.html#read={slug}' + extra);
     }}
   }})();
   </script>
@@ -733,11 +761,185 @@ def sync_crawlable_read_pages(catalog: dict) -> None:
         open(os.path.join(book_dir, "index.html"), "w", encoding="utf-8").write(vol_html)
 
 
+def _escape_typst_str(s: str) -> str:
+    return (
+        (s or "")
+        .replace("\\", "\\\\")
+        .replace("#", "\\#")
+        .replace("$", "\\$")
+        .replace("*", "\\*")
+        .replace("_", "\\_")
+        .replace("[", "\\[")
+        .replace("]", "\\]")
+        .replace("<", "\\<")
+        .replace(">", "\\>")
+        .replace("@", "\\@")
+    )
+
+
+def generate_book_og_png(slug: str, entry: dict, force: bool = False) -> str:
+    """Render a 1200x630 PNG OpenGraph social card (`assets/og/<slug>.png`) via Typst."""
+    os.makedirs(OG_DIR, exist_ok=True)
+    out_png = os.path.join(OG_DIR, f"{slug}.png")
+    thumb_file = os.path.join(THUMBS_DIR, f"{slug}.svg")
+    if not os.path.exists(thumb_file):
+        sync_thumbs_from_covers()
+    if (
+        not force
+        and os.path.exists(out_png)
+        and os.path.getsize(out_png) > 10_000
+        and os.path.getmtime(out_png) >= os.path.getmtime(thumb_file)
+    ):
+        return out_png
+
+    font_dir = os.path.join(BASE_DIR, "fonts")
+    cat_esc = _escape_typst_str(entry.get("category", "Systems & Science").upper())
+    title_esc = _escape_typst_str(entry["title"])
+    sub_esc = _escape_typst_str(entry["subtitle"])
+    title_pt = "24pt" if len(entry["title"]) > 22 else "28pt"
+
+    with tempfile.TemporaryDirectory() as td:
+        open(os.path.join(td, "thumb.svg"), "w", encoding="utf-8").write(
+            open(thumb_file, encoding="utf-8").read()
+        )
+        typ_path = os.path.join(td, "card.typ")
+        typ_code = f"""#set page(width: 600pt, height: 315pt, margin: 0pt, fill: rgb("#faf8f5"))
+#set text(font: "Literata", fill: rgb("#1c1917"), lang: "en")
+
+#place(top + left, dx: 12pt, dy: 12pt)[
+  #rect(width: 576pt, height: 291pt, radius: 12pt, stroke: 1pt + rgb("#e4ded2"), fill: rgb("#faf8f5"))
+]
+
+#place(top + left, dx: 30pt, dy: 30pt)[
+  #box(width: 255pt, height: 255pt, radius: 10pt, clip: true, stroke: 1pt + rgb("#dcd5ca"))[
+    #image("thumb.svg", width: 255pt, height: 255pt)
+  ]
+]
+
+#place(top + left, dx: 310pt, dy: 34pt)[
+  #block(width: 254pt, height: 247pt)[
+    #text(font: "IBM Plex Mono", size: 8.5pt, tracking: 1.6pt, weight: "medium", fill: rgb("#9a6b2f"))[{cat_esc}]
+    #v(1fr)
+    #set par(leading: 0.35em)
+    #text(font: "Literata", size: {title_pt}, weight: "bold", fill: rgb("#1c1917"))[{title_esc}]
+    #v(10pt)
+    #set par(leading: 0.48em)
+    #text(font: "Literata", size: 14pt, style: "italic", fill: rgb("#4a453e"))[{sub_esc}]
+    #v(1fr)
+    #line(length: 100%, stroke: 0.75pt + rgb("#e4ded2"))
+    #v(10pt)
+    #grid(
+      columns: (1fr, auto),
+      align: (left + horizon, right + horizon),
+      [#text(font: "IBM Plex Mono", size: 8pt, tracking: 1.4pt, weight: "medium", fill: rgb("#1c1917"))[ALEXANDRIA.PRESS]],
+      [#text(font: "IBM Plex Mono", size: 7.5pt, tracking: 1.1pt, fill: rgb("#78716c"))[12 CHAPTERS]]
+    )
+  ]
+]
+"""
+        open(typ_path, "w", encoding="utf-8").write(typ_code)
+        subprocess.run(
+            ["typst", "compile", "--font-path", font_dir, "--ppi", "144", typ_path, out_png],
+            check=True,
+        )
+    return out_png
+
+
+def generate_app_og_png(catalog: dict, force: bool = False) -> str:
+    """Render the 1200x630 PNG OpenGraph social card (`og-image.png`) for the Alexandria Press app."""
+    out_png = os.path.join(BASE_DIR, "og-image.png")
+    fav_path = os.path.join(BASE_DIR, "favicon.svg")
+    if not force and os.path.exists(out_png) and os.path.getsize(out_png) > 10_000:
+        return out_png
+
+    font_dir = os.path.join(BASE_DIR, "fonts")
+    preferred = [
+        "non-linear-engines",
+        "latent-fragility",
+        "singular-minds",
+        "elemental-asymmetries",
+        "architectures-of-choice",
+        "instruments-of-precision",
+        "planetary-triggers",
+        "entropy",
+    ]
+    sample_slugs = [s for s in preferred if os.path.exists(os.path.join(THUMBS_DIR, f"{s}.svg"))]
+    if len(sample_slugs) < 8:
+        for s in catalog:
+            if s not in sample_slugs and os.path.exists(os.path.join(THUMBS_DIR, f"{s}.svg")):
+                sample_slugs.append(s)
+            if len(sample_slugs) == 8:
+                break
+
+    with tempfile.TemporaryDirectory() as td:
+        for i, s in enumerate(sample_slugs):
+            open(os.path.join(td, f"t{i}.svg"), "w", encoding="utf-8").write(
+                open(os.path.join(THUMBS_DIR, f"{s}.svg"), encoding="utf-8").read()
+            )
+        open(os.path.join(td, "fav.svg"), "w", encoding="utf-8").write(
+            open(fav_path, encoding="utf-8").read()
+        )
+        tiles_code = ",\n      ".join(
+            [
+                f'box(width: 56pt, height: 56pt, radius: 6pt, clip: true, stroke: 0.75pt + rgb("#dcd5ca"))[#image("t{i}.svg", width: 56pt, height: 56pt)]'
+                for i in range(len(sample_slugs))
+            ]
+        )
+        app_typ = os.path.join(td, "app.typ")
+        app_code = f"""#set page(width: 600pt, height: 315pt, margin: 0pt, fill: rgb("#faf8f5"))
+#set text(font: "Literata", fill: rgb("#1c1917"), lang: "en")
+
+#place(top + left, dx: 12pt, dy: 12pt)[
+  #rect(width: 576pt, height: 291pt, radius: 12pt, stroke: 1pt + rgb("#e4ded2"), fill: rgb("#faf8f5"))
+]
+
+#place(top + left, dx: 36pt, dy: 34pt)[
+  #block(width: 528pt, height: 247pt)[
+    #grid(
+      columns: (auto, 1fr),
+      column-gutter: 12pt,
+      align: horizon,
+      [#image("fav.svg", width: 32pt, height: 32pt)],
+      [#text(font: "IBM Plex Mono", size: 9.5pt, tracking: 2.0pt, weight: "medium", fill: rgb("#1c1917"))[ALEXANDRIA.PRESS]]
+    )
+    #v(1fr)
+    #text(font: "Literata", size: 32pt, weight: "bold", fill: rgb("#1c1917"))[Deep Learning for Humans]
+    #v(8pt)
+    #set par(leading: 0.50em)
+    #text(font: "Literata", size: 13.5pt, style: "italic", fill: rgb("#4a453e"))[Concise twelve-chapter volumes across science, history, engineering, philosophy, and human behavior — grounded in primary records, equations, and schematic diagrams.]
+    #v(1fr)
+    #line(length: 100%, stroke: 0.75pt + rgb("#e4ded2"))
+    #v(12pt)
+    #grid(
+      columns: (1fr,) * {len(sample_slugs)},
+      column-gutter: 10pt,
+      align: center,
+      {tiles_code}
+    )
+  ]
+]
+"""
+        open(app_typ, "w", encoding="utf-8").write(app_code)
+        subprocess.run(
+            ["typst", "compile", "--font-path", font_dir, "--ppi", "144", app_typ, out_png],
+            check=True,
+        )
+    return out_png
+
+
+def sync_all_og_images(catalog: dict, force: bool = False) -> None:
+    """Ensure `og-image.png` and all `assets/og/<slug>.png` (1200x630 PNG) exist."""
+    generate_app_og_png(catalog, force=force)
+    for slug, entry in catalog.items():
+        generate_book_og_png(slug, entry, force=force)
+
+
 def sync_index_and_sitemap_from_catalog(catalog: dict) -> None:
     """
     Deterministically regenerate the `<!-- BEGIN:JSON_LD -->` and `<!-- BEGIN:CATALOG_GRID -->`
-    sections of `index.html`, static crawlable `read/<slug>/` HTML pages, and `sitemap.xml`.
+    sections of `index.html`, 1200x630 PNG OG images, static crawlable `read/<slug>/` HTML pages, and `sitemap.xml`.
     """
+    sync_all_og_images(catalog)
     sync_crawlable_read_pages(catalog)
     index_html = open(INDEX_HTML_PATH, encoding="utf-8").read()
 
@@ -750,7 +952,7 @@ def sync_index_and_sitemap_from_catalog(catalog: dict) -> None:
                 "name": entry["title"],
                 "headline": entry["subtitle"],
                 "url": f"https://alexandria.press/read/{slug}/",
-                "image": f"https://alexandria.press/assets/covers/{slug}.svg",
+                "image": f"https://alexandria.press/assets/og/{slug}.png",
             }
         )
     ld_obj = {

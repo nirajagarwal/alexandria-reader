@@ -16,6 +16,7 @@ BOOKS_DIR = os.path.join(BASE_DIR, "books")
 DOSSIERS_DIR = os.path.join(BASE_DIR, "dossiers")
 COVERS_DIR = os.path.join(BASE_DIR, "assets", "covers")
 THUMBS_DIR = os.path.join(COVERS_DIR, "thumbs")
+OG_DIR = os.path.join(BASE_DIR, "assets", "og")
 PDFS_DIR = os.path.join(BASE_DIR, "assets", "pdfs")
 READ_HTML_DIR = os.path.join(BASE_DIR, "read")
 

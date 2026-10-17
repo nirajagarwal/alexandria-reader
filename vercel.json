@@ -18,6 +18,10 @@
       "dest": "/favicon.svg"
     },
     {
+      "src": "/og-image.png",
+      "dest": "/og-image.png"
+    },
+    {
       "src": "/og-image.svg",
       "dest": "/og-image.svg"
     },
@@ -40,6 +44,14 @@
     {
       "src": "/vendor/(.*)",
       "dest": "/vendor/$1"
+    },
+    {
+      "src": "/read/([^/]+)/?$",
+      "dest": "/read/$1/index.html"
+    },
+    {
+      "src": "/read/(.*)",
+      "dest": "/read/$1"
     },
     {
       "handle": "filesystem"

@@ -138,15 +138,17 @@ def test_catalog_dossiers_and_pdfs():
                 assert ch.get("anchor"), f"Missing provenance anchor for {slug} ch {ch_idx}"
                 assert ch.get("exitFact"), f"Missing provenance exitFact for {slug} ch {ch_idx}"
 
-        # Verify manuscript, dossier, cover SVG, and thumbnail SVG exist
+        # Verify manuscript, dossier, cover SVG, thumbnail SVG, and 1200x630 OG PNG exist
         md_path = os.path.join(BASE_DIR, "books", f"{slug}.md")
         dossier_path = os.path.join(BASE_DIR, "dossiers", f"{slug}.json")
         cover_path = os.path.join(BASE_DIR, "assets", "covers", f"{slug}.svg")
         thumb_path = os.path.join(BASE_DIR, "assets", "covers", "thumbs", f"{slug}.svg")
+        og_png_path = os.path.join(BASE_DIR, "assets", "og", f"{slug}.png")
         assert os.path.exists(md_path), f"Missing manuscript: books/{slug}.md"
         assert os.path.exists(dossier_path), f"Missing dossier: dossiers/{slug}.json"
         assert os.path.exists(cover_path), f"Missing cover SVG: assets/covers/{slug}.svg"
         assert os.path.exists(thumb_path), f"Missing thumbnail SVG: assets/covers/thumbs/{slug}.svg"
+        assert os.path.exists(og_png_path) and os.path.getsize(og_png_path) > 10_000, f"Missing OG PNG: assets/og/{slug}.png"
 
         # Verify dossier JSON parses cleanly
         dossier_data = json.load(open(dossier_path, encoding="utf-8"))
