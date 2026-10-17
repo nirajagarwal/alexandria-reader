@@ -292,6 +292,13 @@
           "headline": "Twelve Molecular Machines in Twelve Highlights Each",
           "url": "https://alexandria.press/read/the-cell/",
           "image": "https://alexandria.press/assets/og/the-cell.png"
+        },
+        {
+          "@type": "Book",
+          "name": "Sleep",
+          "headline": "The Nightly Brain Shutdown and Eleven Neighbors From Circadian Clocks to Synaptic Pruning",
+          "url": "https://alexandria.press/read/sleep/",
+          "image": "https://alexandria.press/assets/og/sleep.png"
         }
       ]
     }
@@ -301,7 +308,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=43">
+    <link rel="stylesheet" href="style.css?v=44">
 
     <!-- PDF.js for Typst Digital Spread Rendering -->
     <script src="vendor/pdfjs/pdf.min.js"></script>
@@ -318,6 +325,13 @@
                 <div class="home-nav-actions">
                     <input type="text" id="catalog-search" class="catalog-search-input" placeholder="Search volumes &amp; concepts... ( / )" oninput="handleCatalogSearch(this.value)">
                     <div class="home-icon-group">
+                        <button class="folio-btn creator-trigger-btn" id="open-creator-btn" onclick="openCreatorModal()" title="Commission &amp; Publish a New Volume (C)" aria-label="Commission Volume">
+                            <svg class="header-icon" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                            <span>Create</span>
+                        </button>
                         <button class="folio-btn icon-btn" onclick="cycleTheme()" title="Toggle Theme (D)" aria-label="Toggle Theme">
                             <svg class="header-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
@@ -642,6 +656,15 @@
                         <div class="book-card-subtitle">Twelve Molecular Machines in Twelve Highlights Each</div>
                     </div>
                 </a>
+                <a class="book-card" href="read/sleep/index.html" data-key="sleep" data-format="landscape" data-title="Sleep" data-subtitle="The Nightly Brain Shutdown and Eleven Neighbors From Circadian Clocks to Synaptic Pruning" data-category="Neurobiology &amp; Physiology" onclick="if(!event.metaKey &amp;&amp; !event.ctrlKey &amp;&amp; !event.shiftKey &amp;&amp; event.button === 0){event.preventDefault(); openBookFromCatalog('sleep');}" title="Sleep — The Nightly Brain Shutdown and Eleven Neighbors From Circadian Clocks to Synaptic Pruning">
+                    <div class="book-cover-frame">
+                        <img src="assets/covers/thumbs/sleep.svg" alt="Sleep" loading="eager">
+                    </div>
+                    <div class="book-card-info">
+                        <div class="book-card-title">Sleep</div>
+                        <div class="book-card-subtitle">The Nightly Brain Shutdown and Eleven Neighbors From Circadian Clocks to Synaptic Pruning</div>
+                    </div>
+                </a>
                 <!-- END:CATALOG_GRID -->
             </div>
         </div>
@@ -772,6 +795,7 @@
             </div>
             <div style="font-family:var(--font-sans); font-size:0.90em; line-height:2.05;">
                 <div><kbd>/</kbd> : Focus search bar on Home catalog (<kbd>Esc</kbd> to clear)</div>
+                <div><kbd>c</kbd> : Commission &amp; publish a new volume (Book Creator)</div>
                 <div><kbd>←</kbd> <kbd>→</kbd> <kbd>↑</kbd> <kbd>↓</kbd> / <kbd>Enter</kbd> : Select &amp; open book on Home grid</div>
                 <div><kbd>→</kbd> / <kbd>Space</kbd> : Turn to next spread / page (or click right page margin)</div>
                 <div><kbd>←</kbd> / <kbd>Shift+Space</kbd> : Turn to previous spread / page (or click left page margin)</div>
@@ -785,8 +809,167 @@
         </div>
     </div>
 
+    <!-- Commission & Publish Volume Modal (Book Creator) -->
+    <div class="modal-overlay" id="creator-modal" onclick="closeModals(event)">
+        <div class="modal-card creator-modal-card">
+            <div class="modal-title creator-modal-header">
+                <div>
+                    <span class="creator-eyebrow">ALEXANDRIA PRESS &middot; VOLUME STUDIO</span>
+                    <div class="creator-header-title">Commission a Twelve-Chapter Volume</div>
+                </div>
+                <button class="btn-icon" onclick="closeModals()" title="Close (Esc)" aria-label="Close">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Step Indicator Bar -->
+            <div class="creator-stepper" id="creator-stepper">
+                <button type="button" class="creator-step-pill active" data-step="1" onclick="setCreatorStep(1)">1. Topic &amp; Format</button>
+                <button type="button" class="creator-step-pill" data-step="2" onclick="setCreatorStep(2)">2. Editorial Blueprint</button>
+                <button type="button" class="creator-step-pill" data-step="3" onclick="setCreatorStep(3)">3. Batch &amp; Delivery</button>
+            </div>
+
+            <!-- Step 1: Topic & Format -->
+            <div class="creator-step-pane active" id="creator-step-1">
+                <div class="creator-field-group">
+                    <label class="creator-label" for="creator-title">Volume Title / Topic</label>
+                    <input type="text" id="creator-title" class="creator-input" placeholder="e.g. Sleep, Twelve Foods, Leonardo da Vinci..." oninput="handleCreatorTitleInput(this.value)">
+                    <div class="creator-chips-row" id="creator-pipeline-chips">
+                        <span class="creator-chips-label">Pipeline Queue:</span>
+                        <button type="button" class="creator-chip" onclick="selectPipelineTopic('sleep')">Sleep</button>
+                        <button type="button" class="creator-chip" onclick="selectPipelineTopic('twelve-foods')">Twelve Foods</button>
+                        <button type="button" class="creator-chip" onclick="selectPipelineTopic('leonardo-da-vinci')">Leonardo da Vinci</button>
+                        <button type="button" class="creator-chip" onclick="selectPipelineTopic('the-night-sky')">The Night Sky</button>
+                        <button type="button" class="creator-chip" onclick="selectPipelineTopic('evolution')">Evolution</button>
+                        <button type="button" class="creator-chip" onclick="selectPipelineTopic('twelve-colors')">Twelve Colors</button>
+                    </div>
+                </div>
+
+                <div class="creator-field-group">
+                    <label class="creator-label">Structural Container (12 Chapters)</label>
+                    <div class="creator-format-grid" id="creator-format-grid">
+                        <button type="button" class="creator-format-card active" data-format="landscape" data-mode="landscape" onclick="selectCreatorFormat('landscape', 'landscape', this)">
+                            <div class="cf-title">Conceptual Landscape</div>
+                            <div class="cf-desc">Core anchor concept in Ch 1 + eleven neighboring concepts across mechanisms, contrasts &amp; cases.</div>
+                        </button>
+                        <button type="button" class="creator-format-card" data-format="mechanisms" data-mode="facet" onclick="selectCreatorFormat('mechanisms', 'facet', this)">
+                            <div class="cf-title">12-Facet Mechanisms</div>
+                            <div class="cf-desc">Twelve distinct physical, engineering, or historical mechanisms unpacked from primary records.</div>
+                        </button>
+                        <button type="button" class="creator-format-card" data-format="highlights" data-mode="listicle" onclick="selectCreatorFormat('highlights', 'listicle', this)">
+                            <div class="cf-title">12&times;12 Highlights</div>
+                            <div class="cf-desc">Twelve subsystems in twelve perpendicular quantitative facts each, separated by fleurons (&#10086;).</div>
+                        </button>
+                        <button type="button" class="creator-format-card" data-format="biography" data-mode="facet" onclick="selectCreatorFormat('biography', 'facet', this)">
+                            <div class="cf-title">12-Facet Biography</div>
+                            <div class="cf-desc">Early formation in Ch 1 + eleven decisive machines, theorems, or intellectual breakthroughs.</div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="creator-actions-row">
+                    <span class="creator-hint">Model: <strong>Gemini 4 Argon</strong> &middot; Batch Mode (50% Discount)</span>
+                    <button type="button" class="creator-primary-btn" onclick="setCreatorStep(2)">Continue to Blueprint &rarr;</button>
+                </div>
+            </div>
+
+            <!-- Step 2: Editorial Blueprint & Guardrails -->
+            <div class="creator-step-pane" id="creator-step-2">
+                <div class="creator-field-group">
+                    <label class="creator-label" for="creator-subtitle">Volume Subtitle (No Colons)</label>
+                    <input type="text" id="creator-subtitle" class="creator-input" placeholder="e.g. The Nightly Brain Shutdown and Eleven Neighbors From Circadian Clocks to Synaptic Pruning">
+                </div>
+
+                <div class="creator-two-col">
+                    <div class="creator-field-group">
+                        <label class="creator-label" for="creator-category">Catalog Discipline</label>
+                        <input type="text" id="creator-category" class="creator-input" placeholder="e.g. Neurobiology &amp; Physiology">
+                    </div>
+                    <div class="creator-field-group">
+                        <label class="creator-label" for="creator-profile">Editorial Profile</label>
+                        <select id="creator-profile" class="creator-input">
+                            <option value="A">Profile A &middot; Formal &amp; Physical</option>
+                            <option value="B" selected>Profile B &middot; Mechanistic &amp; Biological</option>
+                            <option value="C">Profile C &middot; Strategic &amp; Institutional</option>
+                            <option value="D">Profile D &middot; Biographical &amp; Historical</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="creator-spec-box">
+                    <div class="creator-spec-title">Editorial &amp; Verification Specification</div>
+                    <div class="creator-spec-grid">
+                        <div><strong>Architecture</strong><span>Intro (~225w) + 12 Chapters (~620w each)</span></div>
+                        <div><strong>Formalisms</strong><span>3 Schematic SVGs &middot; 5 Equations &middot; 4 Ledgers</span></div>
+                        <div><strong>Fact Grounding</strong><span>1 Google Search / Chapter Allowed (12 Max)</span></div>
+                        <div><strong>Typesetting</strong><span>3 Responsive Typst PDFs + 1200&times;630 OG Card</span></div>
+                    </div>
+                </div>
+
+                <div class="creator-actions-row">
+                    <button type="button" class="creator-secondary-btn" onclick="setCreatorStep(1)">&larr; Back</button>
+                    <button type="button" class="creator-primary-btn" onclick="setCreatorStep(3)">Continue to Delivery &amp; Cost &rarr;</button>
+                </div>
+            </div>
+
+            <!-- Step 3: Email Capture, Batch Execution & Live Cost Tracker -->
+            <div class="creator-step-pane" id="creator-step-3">
+                <div class="creator-field-group">
+                    <label class="creator-label" for="creator-email">Delivery Email (For Published Volume Link &amp; PDF)</label>
+                    <input type="email" id="creator-email" class="creator-input" placeholder="reader@alexandria.press" value="niraj@alexandria.press">
+                </div>
+
+                <div class="creator-cost-ledger" id="creator-cost-ledger">
+                    <div class="creator-ledger-header">
+                        <span>GEMINI 4 ARGON &middot; BATCH API COST &amp; PROVENANCE LEDGER</span>
+                        <span class="creator-badge" id="creator-status-badge">50% BATCH DISCOUNT</span>
+                    </div>
+                    <div class="creator-metrics-grid">
+                        <div class="creator-metric-cell">
+                            <span class="cm-label">Batch Input Tokens</span>
+                            <span class="cm-val" id="cm-input-tokens">~80,000 est.</span>
+                        </div>
+                        <div class="creator-metric-cell">
+                            <span class="cm-label">Output + Thinking</span>
+                            <span class="cm-val" id="cm-output-tokens">~55,000 est.</span>
+                        </div>
+                        <div class="creator-metric-cell">
+                            <span class="cm-label">Google Searches</span>
+                            <span class="cm-val" id="cm-searches">0 / 12 (1/ch cap)</span>
+                        </div>
+                        <div class="creator-metric-cell highlight">
+                            <span class="cm-label">Batch Token Cost</span>
+                            <span class="cm-val" id="cm-cost-usd">~$0.36 est.</span>
+                        </div>
+                    </div>
+                    <div class="creator-savings-line" id="creator-savings-line">
+                        Batch API 50% discount applied ($1.00/1M input &middot; $5.00/1M output vs. $2.00/$10.00 on-demand).
+                    </div>
+
+                    <div class="creator-progress-wrap" id="creator-progress-wrap" style="display:none;">
+                        <div class="creator-progress-bar-track">
+                            <div class="creator-progress-bar-fill" id="creator-progress-fill" style="width:0%"></div>
+                        </div>
+                        <div class="creator-stage-text" id="creator-stage-text">Initializing batch job...</div>
+                        <div class="creator-log-box" id="creator-log-box"></div>
+                    </div>
+
+                    <div class="creator-delivery-card" id="creator-delivery-card" style="display:none;"></div>
+                </div>
+
+                <div class="creator-actions-row" id="creator-step3-actions">
+                    <button type="button" class="creator-secondary-btn" id="creator-back-btn-3" onclick="setCreatorStep(2)">&larr; Back</button>
+                    <button type="button" class="creator-primary-btn" id="creator-launch-btn" onclick="submitCreatorJob()">Commission Volume via Batch API &rarr;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Book Dataset & Reader Application -->
-    <script src="js/books-data.js?v=47"></script>
-    <script src="js/app.js?v=47"></script>
+    <script src="js/books-data.js?v=48"></script>
+    <script src="js/app.js?v=48"></script>
 </body>
 </html>

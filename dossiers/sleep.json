@@ -1,0 +1,674 @@
+{
+  "slug": "sleep",
+  "title": "Sleep",
+  "subtitle": "The Nightly Brain Shutdown and Eleven Neighbors From Circadian Clocks to Synaptic Pruning",
+  "category": "Neurobiology & Physiology",
+  "mode": "landscape",
+  "format": "landscape",
+  "profile": "B",
+  "creator_constraints": {
+    "min_diagrams": 3,
+    "quotes_allowed": false
+  },
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "Sleep Architecture",
+      "subtitle": "How the Brain Alternates Between Deep Slow Waves and Rapid Eye Movement Cycles",
+      "opening_door": "A: Scene",
+      "formalism_mode": "ledger_or_list",
+      "lens": "anchor",
+      "move": "zoom-in",
+      "what": "Sleep is a reversible behavioral state of perceptual disengagement and unresponsiveness to the environment, governed by cyclical transitions between non-rapid eye movement and rapid eye movement stages.",
+      "why_here": "This anchor chapter establishes the fundamental electroencephalographic architecture and ultradian cycling that all surrounding molecular, homeostatic, and evolutionary neighbors act upon.",
+      "background_nodes": [
+        {
+          "label": "Polysomnography",
+          "what": "Multi-channel physiological recording combining EEG, EOG, and EMG to classify sleep stages.",
+          "whyHere": "Provides the primary empirical trace used to distinguish NREM stages N1-N3 from REM sleep."
+        },
+        {
+          "label": "Ultradian Cycle",
+          "what": "The roughly 90-to-110-minute oscillation between NREM and REM states across a human night.",
+          "whyHere": "Explains why sleep is not a uniform coma but a structured, repeating sequence of neural states."
+        },
+        {
+          "label": "Thalamocortical Loop",
+          "what": "Reciprocal neural circuitry connecting the thalamus and cerebral cortex that generates sleep spindles and slow waves.",
+          "whyHere": "Serves as the anatomical pacemaker that gates sensory input away from the cortex during NREM sleep."
+        }
+      ],
+      "historical_anchor": "Following initial December 1951 polygraph trials on his eight-year-old son Armond using an Offner Dynograph, University of Chicago graduate student Eugene Aserinsky and his advisor Nathaniel Kleitman published their landmark study in September 1953. Recording electrooculograms and monopolar frontal brain potentials with a Grass Electroencephalograph across 20 normal adult subjects, they identified recurring 20-minute bursts of rapid, jerky, binocularly symmetrical eye movements. These active periods were accompanied by low-voltage, irregular cortical waves and an average respiratory rate of 16.9 breaths per minute compared to 13.4 breaths per minute during ocular quiescence, representing a 26 percent increase.",
+      "exit_fact": "When subjects were awakened and interrogated during these rapid ocular bursts across 27 experimental trials, 20 yielded detailed visual dream narratives for a 74 percent recall rate, whereas 23 awakenings during ocular quiescence produced 19 instances of complete failure to recall dreaming, leaving visual recall under 9 percent.",
+      "equation_or_diagram_spec": "Ledger of Human Sleep Stages (AASM Standard): 1) Stage N1 (Light Transition, 4-7 Hz theta waves, 5% of total sleep time); 2) Stage N2 (Spindle/K-Complex Gating, 11-16 Hz bursts lasting >= 0.5 s, 45-55% of total sleep time); 3) Stage N3 (Slow-Wave Sleep, 0.5-2 Hz delta waves >= 75 microvolts, 15-25% of total sleep time); 4) REM Sleep (Desynchronized EEG with skeletal muscle atonia and phasic eye movements, 20-25% of total sleep time).",
+      "search_query": "Eugene Aserinsky Nathaniel Kleitman 1953 regularly occurring periods eye motility sleep",
+      "verified_facts": [
+        "In December 1951, Eugene Aserinsky first recorded rapid eye movements in his 8-year-old son Armond at Abbott Hall at the University of Chicago using an Offner Dynograph, before publishing formal experiments with advisor Nathaniel Kleitman on September 4, 1953 in Science.",
+        "In their 1953 study of 20 adult subjects using a Grass Electroencephalograph and orbital electrooculogram leads, Aserinsky and Kleitman measured mean periods of rapid eye motility lasting about 20 minutes accompanied by a respiratory increase from 13.4 to 16.9 breaths per minute (a 26.1 percent rise) and a 10 percent increase in heart rate.",
+        "Out of 27 awakenings during rapid eye motility, 20 produced detailed dream recall (74 percent), compared to 23 awakenings during ocular quiescence where 19 resulted in complete recall failure and only 2 (8.7 percent) involved clear dream recall."
+      ],
+      "google_search_validation": {
+        "search_count": 1,
+        "query": "Aserinsky Kleitman 1953 27 interrogations 20 subjects Armond Grass III-D",
+        "sources": [
+          {
+            "title": "smithsonianmag.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG899j7GVcUcTFw-6ImSUxcSUx2zt7JBGDr84BPcPwvzo5ltN0i1Xq67glqeG1q_uYhc5CrWL7dbCb2CIGXk9oKLfKtZuKTqrqLEZWGGdL9-_LfuBPYLMIc_c1dIYJ41FFrabSM5cnDQBcX1kC8GGDbegeP6Ha8WB-8Jj2GD6v-EaEYyAKD4A_h7RFI--rMyTFR11JZtzbdkXqHh-AzRy5OTk4VC9M5eRY="
+          },
+          {
+            "title": "fmed.edu.uy",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeAq_Gegwnod1D9eQS2wdkU1GR69QL0Mz5qxhMytAKspuInho__uPxuDPp1toUuw7tJpttPVkAxWu4S-Briqt7uhM23SDIE2IfVXMqCvVhAYg8dT2chtRLjuZxDsMYhcTg5Sjb21dNMnpOq6TxnfGvZ4P5RHTF4cuv8lDAUbChl5-nWAzE"
+          },
+          {
+            "title": "scribd.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGuuQgMOv8zvVTaiT86H0q6pjuKZ2rFqo5liaGXv147lPivprAH6V1xWN52NoNu_BvOVoNJweArgbfJB7w1VfJe2MeRCNODyHtFgqzWLb_gbJ2Z_bxyHCseY-cqSUOtIn_X2YbNqWA-Ffmd1GXDOn3DwiI="
+          }
+        ],
+        "note": "Confirmed researchers Eugene Aserinsky and Nathaniel Kleitman at the University of Chicago, the 1953 publication year in Science (Vol. 118, pp. 273-274), the 20 adult subjects, the 20-minute mean duration of rapid eye movement bursts, and the 27 REM vs. 23 quiescent interrogation statistics (74% vs. <9% recall). Corrected two details in the historical anchor: (1) Armond was tested in late 1951 on an Offner Dynograph, whereas the 1953 adult study used a Grass Electroencephalograph; (2) respiratory rate rose from 13.4/min to 16.9/min (a 26% increase, whereas 10% was the approximate rise in heart rate)."
+      }
+    },
+    {
+      "chapter": 2,
+      "title": "The Flip-Flop Switch",
+      "subtitle": "Mutual Inhibition Between the Ventrolateral Preoptic Nucleus and Monoaminergic Arousal Centers",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "diagram",
+      "lens": "mechanism",
+      "move": "zoom-in",
+      "what": "A bistable neuroanatomical circuit in the hypothalamus and brainstem where sleep-promoting GABAergic neurons and wake-promoting monoaminergic nuclei mutually inhibit one another to prevent unstable intermediate states.",
+      "why_here": "Explains the physical switching mechanism that forces the brain to snap cleanly between wakefulness and sleep rather than lingering in dangerous half-awake twilight.",
+      "background_nodes": [
+        {
+          "label": "Ventrolateral Preoptic Nucleus",
+          "what": "A cluster of galanin- and GABA-producing neurons in the anterior hypothalamus active specifically during sleep.",
+          "whyHere": "Acts as the primary inhibitory brake on the ascending reticular activating system."
+        },
+        {
+          "label": "Locus Coeruleus",
+          "what": "The principal noradrenergic nucleus in the pons that drives cortical vigilance and arousal.",
+          "whyHere": "Forms the wake-side pole of the mutually inhibitory flip-flop circuit."
+        },
+        {
+          "label": "Orexin (Hypocretin)",
+          "what": "Excitatory neuropeptides synthesized by roughly 70,000 lateral hypothalamic neurons.",
+          "whyHere": "Stabilizes the wake state so the bistable switch does not randomly flip during daytime activity."
+        }
+      ],
+      "historical_anchor": "In 1996 at Beth Israel Hospital and Harvard Medical School in Boston, Jonathan E. Sherin, Priyattam J. Shiromani, Robert W. McCarley, and Clifford B. Saper used Fos immunocytochemistry and retrograde cholera toxin B tracing in Sprague-Dawley rats to map sleep-active neurons in the ventrolateral preoptic nucleus. They proved that Fos protein expression rose in direct proportion to sleep time and innervated the wake-promoting tuberomammillary nucleus, while a follow-up study in 2000 by Jun Lu and Clifford B. Saper at Beth Israel Deaconess Medical Center showed that bilateral ibotenic acid lesions destroying 80 to 90 percent of VLPO cluster neurons reduced non-rapid eye movement sleep time by 50 to 60 percent and delta power by 60 to 70 percent.",
+      "exit_fact": "In human narcolepsy type 1 patients, postmortem hypothalamic tissue assays reveal an 85 to 95 percent loss of orexin-producing neurons, removing the lateral hypothalamic stabilizer on the flip-flop switch and triggering abrupt daytime intrusions of rapid eye movement sleep and muscle atonia.",
+      "equation_or_diagram_spec": "3-Node Schematic Flow: [Orexin Nuclei] -> [Monoamine Wake] -> [VLPO Sleep Hub] (where Orexin reinforces Monoamine Wake, and Monoamine Wake and VLPO Sleep Hub form a mutual inhibition loop).",
+      "search_query": "Jonathan Sherin Clifford Saper 1996 ventrolateral preoptic nucleus Fos sleep Science",
+      "verified_facts": [
+        "In January 1996, Jonathan E. Sherin, Priyattam J. Shiromani, Robert W. McCarley, and Clifford B. Saper at Beth Israel Hospital in Boston published their discovery of sleep-active ventrolateral preoptic nucleus neurons in the journal Science.",
+        "Using retrograde tracer cholera toxin B combined with Fos immunocytochemistry, Sherin and Saper demonstrated a monosynaptic inhibitory pathway from GABAergic and galaninergic VLPO neurons to the histaminergic tuberomammillary nucleus.",
+        "In May 2000 at Beth Israel Deaconess Medical Center, Jun Lu, Mary Ann Greco, Priyattam J. Shiromani, and Clifford B. Saper demonstrated that microinjections of ibotenic acid causing 80 to 90 percent bilateral cell loss in the VLPO cluster produced a 50 to 60 percent reduction in NREM sleep time (averaging 56 percent total sleep loss) and a 60 to 70 percent drop in EEG delta power."
+      ],
+      "google_search_validation": {
+        "search_count": 1,
+        "query": "Jonathan Lu Clifford Saper 2000 ventrolateral preoptic lesion ibotenic acid sleep 56 percent",
+        "sources": [
+          {
+            "title": "nih.gov",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHfNamKcVtpWqVUXnF93lAVzmGcjpRaSjYrT5idyHlI1UFRnJBL3j6XSIAWHTk0REd3_3IYxZ00LhC1j6A_ucGuz9x7FKd8RrNC-HeBPb6_J8FkMky1VHN6-MkYHD3r"
+          },
+          {
+            "title": "researchgate.net",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1EQmHKl6J5_HNv0_cKaHGFOVTszAKu9ybiVlyFFLCvmZPd3gwZS8QSShj4N-mKiz6eIVRtRXizK-csNWLWYVk_sk_YNv2JxnLFDHdzUxRRWTUHWYbXBYqK7CfYHteNYly3NsHcXpawi04YMos9PsYe-2VoYHgDBx2_FdpIi0BpKvf_FAlhUC2FU7w6AJFY7XGJfefUJJkx0FeQ1es5jLICTcJZWIJRIE4KVJAd9xkDVsY6czaGt5TtZUGhBHq"
+          },
+          {
+            "title": "nih.gov",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-AGq_wCXOSb82D4NVd8t9BqC_-cPj0kYZFI1ZkZCICGya2u_x40arvsNl5lW3NvOerEseGLYZPN3C2_SDLGjXbYw5ygOqWiZU9NKaOJ4f_401insFV_WwSCBsSPZa29WOWIOOhVet"
+          }
+        ],
+        "note": "Confirmed the 1996 Science paper by Jonathan E. Sherin and Clifford B. Saper, but corrected two chronological conflations in the proposed anchor: (1) in January 1996 the institution was still named Beth Israel Hospital (it merged with New England Deaconess Hospital later in 1996 to become Beth Israel Deaconess Medical Center), and (2) the excitotoxic ibotenic acid lesion experiments were not part of the 1996 Sherin paper, but were conducted in a 2000 follow-up study led by Jun Lu and Clifford B. Saper (Journal of Neuroscience, May 2000). The quantitative human narcolepsy type 1 orexin neuron loss (85-95%) in the exit fact is empirically accurate."
+      }
+    },
+    {
+      "chapter": 3,
+      "title": "Homeostatic Sleep Pressure",
+      "subtitle": "Extracellular Adenosine Accumulation and the Exponential Rise of Slow-Wave Drive",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation",
+      "lens": "building-blocks",
+      "move": "zoom-in",
+      "what": "The biochemical tracking of prior wakefulness duration through progressive ATP breakdown into extracellular adenosine in the basal forebrain, quantified physiologically as Process S.",
+      "why_here": "Shows how metabolic work during waking hours is converted into a measurable chemical debt that dictates the depth of subsequent slow-wave sleep.",
+      "background_nodes": [
+        {
+          "label": "Adenosine A1 and A2A Receptors",
+          "what": "G-protein-coupled purinergic receptors expressed on cholinergic wake neurons and sleep-active striatal/preoptic pathways.",
+          "whyHere": "Serves as the molecular target blocked competitively by caffeine molecules."
+        },
+        {
+          "label": "Slow-Wave Activity (SWA)",
+          "what": "EEG power spectral density within the 0.75 to 4.5 Hz frequency band during NREM sleep.",
+          "whyHere": "Provides the direct electrophysiological readout of homeostatic Process S."
+        },
+        {
+          "label": "Basal Forebrain",
+          "what": "Cholinergic and GABAergic subcortical structure projecting widely to the neocortex.",
+          "whyHere": "Acts as the primary anatomical sensor where rising extracellular adenosine inhibits cortical arousal."
+        }
+      ],
+      "historical_anchor": "In 1981 and 1982 at the University of Zurich, Alexander A. Borbély formulated the Two-Process Model of sleep regulation after computing Fast Fourier Transforms of all-night electroencephalographic recordings in human subjects before and after 40.5 hours of total sleep deprivation. In 1997 at Harvard Medical School and the Brockton Veterans Administration Medical Center, Tarja Porkka-Heiskanen, Robert E. Strecker, and Robert W. McCarley implanted in vivo microdialysis probes coupled to high-performance liquid chromatography into the cholinergic basal forebrain of freely moving cats. Their measurements demonstrated that extracellular adenosine concentrations steadily accumulated during 6 hours of prolonged wakefulness to reach 200 percent of initial baseline values before declining slowly during recovery sleep.",
+      "exit_fact": "In healthy young adults, homeostatic Process S accumulates during wakefulness along a saturating exponential trajectory with a time constant of 18.2 hours and dissipates during recovery sleep with an exponential decay time constant of 4.2 hours.",
+      "equation_or_diagram_spec": "$$S(t) = U - (U - S_0)e^{-t / \\tau_i} \\quad \\text{(Wake)}, \\qquad S(t) = L + (S_{on} - L)e^{-t / \\tau_d} \\quad \\text{(Sleep)}$$ where $S(t)$ is homeostatic sleep pressure (measured via normalized EEG slow-wave activity), $U$ and $L$ are the upper and lower asymptotes, $S_0$ and $S_{on}$ are initial states at wake and sleep onset, $\\tau_i \\approx 18.2\\text{ h}$ is the build-up time constant, and $\\tau_d \\approx 4.2\\text{ h}$ is the decay time constant.",
+      "search_query": "Alexander Borbely 1982 two process model sleep regulation time constant",
+      "verified_facts": [
+        "In 1982, Alexander A. Borbély at the Institute of Pharmacology, University of Zurich, published the Two-Process Model of sleep regulation in Human Neurobiology based on 40.5-hour human sleep deprivation EEG spectral data from 1981.",
+        "In 1997, Tarja Porkka-Heiskanen, Robert E. Strecker, and Robert W. McCarley at Harvard Medical School and Brockton VAMC used in vivo microdialysis in cats to show basal forebrain extracellular adenosine doubled (200% of baseline) over 6 hours of prolonged wakefulness.",
+        "Quantitative parameterization of the Two-Process Model by Serge Daan, Domien G. M. Beersma, and Alexander A. Borbély established that human Process S rises during waking with a time constant of 18.2 hours and decays during sleep with a time constant of 4.2 hours."
+      ],
+      "google_search_validation": {
+        "search_count": 1,
+        "query": "Porkka-Heiskanen McCarley 1997 adenosine microdialysis basal forebrain cats 6 hours",
+        "sources": [
+          {
+            "title": "nih.gov",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1_LnFKVK77YhGiWLBv9MJFZ_eKqCUb0mkGXlp-Cbz8FzhYW5cFCNtzFc7T32ILGtPVAb06nZZBWJ1VSszLJAtb_5TB7jzXbHhOE9fKIUyfy8zOOQO7cs9OmJR5Tx9Zw=="
+          },
+          {
+            "title": "nih.gov",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEcVVnsleP57IvIqsr_vodHxj9qAwXVV7xSDNuHmkAu-dVqs5wlmIhHhyvAQk1-2mm1HMc7SPr3oeuU4JG6uSloOpi6rGWpKpbUq-7CHR_IofFyKiAwP-9T9Wxir_6Z"
+          },
+          {
+            "title": "nih.gov",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGlqDX4BoIFhHYUHlp9l6BGfxzW9X53Gg6kan0CjZz6z_7dOtMDg_7qGJ6TrRHNJXkij6i6ONMGDC6-Vx9TNgq_EufDQsnF4sVPOmQAfyDLa0HcdJWGVccey8w92FXU"
+          }
+        ],
+        "note": "Confirmed all primary names, institutions, dates, and numerical metrics. Clarified that Borbély's 40.5-hour sleep deprivation FFT study was published in 1981 leading directly into his landmark 1982 Two-Process Model paper, and added the exact 1984 Daan, Beersma, and Borbély parameterization context alongside the Brockton VA Medical Center affiliation and HPLC analytical apparatus for the 1997 Porkka-Heiskanen and McCarley study."
+      }
+    },
+    {
+      "chapter": 4,
+      "title": "The Suprachiasmatic Master Clock",
+      "subtitle": "Transcriptional-Translational Feedback Loops Synchronizing Internal Time to Solar Light",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation",
+      "lens": "neighbors",
+      "move": "go",
+      "what": "The endogenous 24-hour circadian pacemaker located in the mammalian anterior hypothalamus, driven by cell-autonomous autoregulatory gene expression loops of CLOCK, BMAL1, PER, and CRY.",
+      "why_here": "Partners with homeostatic sleep pressure (Process S) to form Process C, explaining why tired humans experience a 'wake maintenance zone' in the early evening and stay asleep through the early morning when adenosine is nearly cleared.",
+      "background_nodes": [
+        {
+          "label": "Melanopsin (ipRGCs)",
+          "what": "Intrinsically photosensitive retinal ganglion cells sensitive to 480-nanometer blue light.",
+          "whyHere": "Transmits non-visual photic signals via the retinohypothalamic tract to entrain the suprachiasmatic nucleus."
+        },
+        {
+          "label": "PER/CRY Negative Feedback",
+          "what": "Heterodimeric protein complexes that translocate to the nucleus to inhibit their own transcription by CLOCK-BMAL1.",
+          "whyHere": "Generates the ~24-hour molecular delay at the heart of every mammalian circadian clock cell."
+        },
+        {
+          "label": "Suprachiasmatic Nucleus (SCN)",
+          "what": "Paired hypothalamic nuclei containing roughly 20,000 tightly coupled pacemaker neurons above the optic chiasm.",
+          "whyHere": "Coordinates peripheral tissue clocks and gates pineal melatonin secretion."
+        }
+      ],
+      "historical_anchor": "In 1999 at Harvard Medical School and Brigham and Women's Hospital in Boston, Charles A. Czeisler, Jeanne F. Duffy, Richard E. Kronauer, and colleagues placed 24 healthy young and older human subjects inside a temporal isolation suite for 28 days under a 28-hour forced desynchrony protocol at dim light below 15 lux. By uncoupling the sleep-wake cycle from endogenous core body temperature, cortisol, and plasma melatonin rhythms, Czeisler proved the intrinsic human circadian pacemaker runs at a tight mean period of 24 hours and 11 minutes, or 24.18 hours, with a standard deviation of just 0.13 hours, or roughly 8 minutes.",
+      "exit_fact": "As demonstrated by Kong L. Toh, Louis J. Ptáček, Ying-Hui Fu, and colleagues in 2001, a single serine-to-glycine missense mutation in the human PER2 gene at position 662 impairs phosphorylation by casein kinase I epsilon and delta. In Familial Advanced Sleep Phase Syndrome, this single amino acid substitution shortens the endogenous circadian period by roughly 1.1 hours to 23.3 hours and advances the daily rhythms of sleep, core body temperature, and melatonin by 3.5 to 4 hours, driving sleep onset near 1930 hours and spontaneous awakening near 0430 hours.",
+      "equation_or_diagram_spec": "$$\\frac{dM}{dt} = \\frac{v_s K_I^n}{K_I^n + P_N^n} - \\frac{v_m M}{K_m + M}$$ where $M$ is the cytosolic concentration of Period ($Per$) mRNA, $P_N$ is nuclear PER/CRY repressor protein concentration, $v_s$ is maximum transcription rate, $K_I$ is the threshold constant for repression, $n$ is the Hill coefficient of cooperativity ($n \\approx 4$), and $v_m, K_m$ govern Michaelis-Menten mRNA degradation (Goldbeter circadian oscillator model).",
+      "search_query": "Charles Czeisler 1999 intrinsic period human circadian pacemaker 24.18 hours Science",
+      "verified_facts": [
+        "In June 1999, Charles A. Czeisler, Jeanne F. Duffy, Theresa L. Shanahan, Emery N. Brown, Derk-Jan Dijk, and Richard E. Kronauer published their landmark study in Science from Harvard Medical School and Brigham and Women's Hospital.",
+        "Using a 28-day, 28-hour forced desynchrony protocol in dim light under 15 lux across 11 young and 13 older healthy adults (24 subjects total), the team measured endogenous melatonin, cortisol, and core body temperature to find an intrinsic period of 24.18 hours (24 hours 11 minutes).",
+        "In 2001, Kong L. Toh, Christopher R. Jones, Louis J. Ptáček, and Ying-Hui Fu identified the S662G mutation in the human hPER2 gene in Familial Advanced Sleep Phase Syndrome (FASPS), showing that hypophosphorylation within the casein kinase I binding region shortens the intrinsic period (to 23.3 hours in human isolation studies) and advances daily sleep-wake phase by approximately 4 hours."
+      ],
+      "google_search_validation": {
+        "search_count": 1,
+        "query": "Toh 2001 Per2 S662G FASPS casein kinase 1 epsilon period",
+        "sources": [
+          {
+            "title": "nih.gov",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0s8WbfUUlU__3JlfW5otvxfzjLakfMXaRgtTI3EXM6vaVyovbmH_aG-2grNZW82qLXTeIP6OVJRgFVFBihKuXVN1GHPh10ly6VFChjYK_nE-vIDvOo-bvbUwRf9jFyQ=="
+          },
+          {
+            "title": "elsevierpure.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpwgln0UJcDY85lSQbXTy4yKaPZxYpOAY6GY6EG2jAll8dPqcFtx8uNI35vnGOegXKAb88-6jLwzce76sazi_WrgTXOiJmYDvKhXul2gVuo4zEZDTDcKs060kP3LV0bPaNXcJYeW4dvh7pRLDbGZ_IDHETSUd7ehCmR_6IZaPQxU3rq_-TAbNjQy7rUxYxuz0z5u5fbs1vwujdT0Crb-QA59X6V2E="
+          },
+          {
+            "title": "nih.gov",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqZPCmaI99kxSfLDLgOfHSFg9qSEYVfyFWTCzzVDW7WaVZF2nB_AMGlGNkb_SVY_Mz-UfYXS-RCfXJaIHyIJStjW2VzzQtpoBf5Y2kEo43bY5RrxTClg2K2MkIdX_U-A=="
+          }
+        ],
+        "note": "Confirmed the 1999 Science publication by Charles A. Czeisler et al. at Harvard Medical School and Brigham and Women's Hospital establishing the 24.18-hour (24 h 11 min) intrinsic human circadian period across melatonin, core body temperature, and cortisol rhythms. Clarified the exit fact based on Toh et al. (2001, Science) and Jones et al. (1999, Nature Medicine), noting that the hPER2 S662G mutation advances the daily sleep-wake, temperature, and melatonin phase by 3.5 to 4 hours (while shortening the underlying free-running circadian period tau by ~1.1 hours in humans)."
+      }
+    },
+    {
+      "chapter": 5,
+      "title": "The Glymphatic Clearance System",
+      "subtitle": "Astrocytic Aquaporin-4 Channels and Convective Interstitial Flush During Slow-Wave Sleep",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "ledger_or_list",
+      "lens": "consequences",
+      "move": "zoom-in",
+      "what": "A macroscopic waste-clearance pathway in the central nervous system that utilizes perivascular tunnels formed by astroglial endfeet to drive convective cerebrospinal fluid exchange with interstitial fluid during NREM sleep.",
+      "why_here": "Solves the anatomical paradox of how the brain—which lacks conventional lymphatic vessels inside its parenchyma—clears toxic metabolic byproducts like amyloid-beta and tau accumulated during waking neural activity.",
+      "background_nodes": [
+        {
+          "label": "Aquaporin-4 (AQP4)",
+          "what": "Water-channel proteins densely polarized on perivascular astrocytic endfeet surrounding cerebral blood vessels.",
+          "whyHere": "Facilitates rapid trans-astrocytic water flux from periarterial spaces into the brain interstitium."
+        },
+        {
+          "label": "Interstitial Space Fraction",
+          "what": "The extracellular volume fraction between neurons and glia through which solutes diffuse and flow.",
+          "whyHere": "Expands dramatically when noradrenergic tone drops during slow-wave sleep, lowering hydraulic resistance."
+        },
+        {
+          "label": "Amyloid-Beta (Abeta)",
+          "what": "Peptide cleavage products of amyloid precursor protein released into the extracellular space during synaptic transmission.",
+          "whyHere": "Represents the flagship neurotoxic metabolite whose clearance rate doubles during sleep."
+        }
+      ],
+      "historical_anchor": "In 2013 at the University of Rochester Medical Center, Lulu Xie, Hongyi Kang, and Maiken Nedergaard used in vivo two-photon laser scanning microscopy and real-time tetramethylammonium iontophoresis through cranial windows in live mice to compare waking and sleeping brains. They discovered that the cortical interstitial space volume fraction expanded from roughly 14 percent in awake mice to 23 percent during natural slow-wave sleep or ketamine-xylazine anesthesia.",
+      "exit_fact": "This 60 percent expansion of the extracellular interstitial volume fraction during slow-wave sleep increases convective exchange between cerebrospinal fluid and interstitial fluid, accelerating the clearance rate of radiolabeled amyloid-beta-1-40 from the mouse cerebral cortex by twofold compared to wakefulness.",
+      "equation_or_diagram_spec": "Ledger of Glymphatic State Transitions (Wake vs. Slow-Wave Sleep): 1) Cortical Interstitial Volume Fraction (13-15% in wakefulness vs. 22-24% in slow-wave sleep); 2) Locus Coeruleus Noradrenergic Tone (High tonic firing in wakefulness vs. near-silent in NREM, permitting astrocytic shrinkage); 3) Fluorescent CSF Tracer Influx Depth (Restricted to superficial 50 micrometers in wakefulness vs. deep parenchymal penetration > 300 micrometers in sleep); 4) Radiolabeled 125I-Amyloid-Beta Clearance Rate Constant (~0.02 min^-1 in wakefulness vs. ~0.05 min^-1 in sleep).",
+      "search_query": "Lulu Xie Maiken Nedergaard 2013 sleep drives metabolite clearance adult brain Science",
+      "verified_facts": [
+        "Published on October 18, 2013 in Science (Vol. 342, Issue 6156, pp. 373-377) by co-first authors Lulu Xie and Hongyi Kang with senior author Maiken Nedergaard at the University of Rochester Medical Center.",
+        "Real-time tetramethylammonium diffusion and two-photon imaging demonstrated that the cortical interstitial space volume fraction increases by 60 percent, rising from ~14 percent in awake mice to ~23 percent in sleeping or ketamine-xylazine anesthetized mice.",
+        "Enhanced convective flux of cerebrospinal fluid through the interstitial space cleared radiolabeled 125I-amyloid-beta-1-40 and inert [14C]-inulin from the mouse cortex twice as fast during sleep and anesthesia as during wakefulness."
+      ],
+      "google_search_validation": {
+        "search_count": 1,
+        "query": "Lulu Xie Maiken Nedergaard 2013 sleep drives metabolite clearance adult brain Science",
+        "sources": [
+          {
+            "title": "nih.gov",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWbImiqzchnO68N_TOoSjQScc6ZbGFBmgJnhv-gPBN8HEV9xtaTx_fVTJ7v3me3d4T2MDbP_3bTBBODysX2N7IsRuOq6t6e3npL4lpzU6nuokhKOMsOmIshmhwmuiE7Q=="
+          },
+          {
+            "title": "wustl.edu",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHL1MM48sWMhsOw0JHSAsu5wEgAhVxS0ghMBfrD2LsN0Z_uPSqVdwoIY5Usy_SgMvNDTkeTxhPdkHuQCmNnGX7saMaW3EXXdUSY75tMwFVD6D0FSs2LzAOuZxQPbC9XoMxfk_G_zwbkznh4hnxyOuuqYHMiHX0JdwZCdkaCza35ZYJPrDZPBwrgPhroPVs0U0Zn-R8HBF0VndS3zxGMgJ5_zssnXXZ-7h6z0tddnvsV"
+          },
+          {
+            "title": "nih.gov",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFAsVNJ6LzwK63Nkr53CV5nz11J1ONEzS_OSBzI0RC8ODCYbSFIGvzMKcym0VBSBabUfHqnDs9ZPp72oWoKhVxpM3M6w9PoxL_Jx_TIAlDGh7z4uOjru6Gp-M-CTREIYI3F7spLhvd"
+          }
+        ],
+        "note": "Confirmed all researcher names (noting Hongyi Kang as equal co-first author alongside Lulu Xie, and Maiken Nedergaard as senior corresponding author), exact publication date (October 18, 2013 in Science), institution (Center for Translational Neuromedicine, University of Rochester Medical Center), experimental methods (two-photon imaging and tetramethylammonium diffusion/iontophoresis), and quantitative findings (60% expansion from 14% to 23% interstitial volume fraction and twofold faster amyloid-beta clearance)."
+      }
+    },
+    {
+      "chapter": 6,
+      "title": "Synaptic Homeostasis and Downscaling",
+      "subtitle": "Why Waking Plasticity Saturates Cortical Circuits and How Slow Waves Prune Dendritic Spines",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "diagram",
+      "lens": "mechanism",
+      "move": "zoom-in",
+      "what": "The Synaptic Homeostasis Hypothesis (SHY), which proposes that wakefulness produces a net potentiation of excitatory synapses across the cortex, while slow-wave sleep globally downscales synaptic strength to restore energetic and informational capacity.",
+      "why_here": "Bridges cellular neurobiology with information theory, explaining why continuous waking learning would rapidly saturate synaptic weights and bankrupt cortical ATP budgets without nightly renormalization.",
+      "background_nodes": [
+        {
+          "label": "Long-Term Potentiation (LTP)",
+          "what": "Activity-dependent strengthening of synapses driven by AMPA receptor insertion and dendritic spine enlargement.",
+          "whyHere": "Dominates waking experience as the organism encodes novel environmental regularities."
+        },
+        {
+          "label": "AMPA Receptor Downscaling",
+          "what": "Proportional removal of GluA1/GluA2-containing glutamate receptors from postsynaptic densities during sleep.",
+          "whyHere": "Preserves relative differences in synaptic weights while reducing overall baseline excitability."
+        },
+        {
+          "label": "Serial Block-Face EM",
+          "what": "Three-dimensional ultrastructural electron microscopy capable of measuring exact axon-spine interface areas at nanometer resolution.",
+          "whyHere": "Provided the definitive anatomical proof that synapses physically shrink during sleep."
+        }
+      ],
+      "historical_anchor": "In February 2017 at the University of Wisconsin-Madison, neuroscientists Luisa de Vivo, Michele Bellesi, William Marshall, Giulio Tononi, and Chiara Cirelli used serial block-face scanning electron microscopy to reconstruct 6,920 cortical synapses in the primary motor and primary somatosensory cortices of mice across sleep and wakefulness. Working alongside electron microscopy specialists Eric Bushong and Mark Ellisman, the team measured the exact three-dimensional surface area of the axon-spine interface and spine head volume as direct morphological correlates of synaptic strength across thousands of dendritic spines.",
+      "exit_fact": "After 6 to 8 hours of sleep, the mean axon-spine interface surface area shrank by approximately 18 percent across the lower 80 percent of weaker, more plastic cortical synapses compared to awake mice, selectively sparing the largest 20 percent of synapses that lacked recycling endosomes.",
+      "equation_or_diagram_spec": "3-Node Schematic Flow: [Waking LTP Gain] -> [SWS Downscaling] -> [SNR Restoration] (representing net AMPA receptor insertion during wake, proportional 18% pruning of small/medium spines during slow waves, and restored signal-to-noise ratio for next-day learning).",
+      "search_query": "Luisa de Vivo Chiara Cirelli Giulio Tononi 2017 ultrastructural evidence synaptic scaling sleep",
+      "verified_facts": [
+        "Published on February 3, 2017 in Science (Volume 355, pages 507-510) by Luisa de Vivo, Michele Bellesi, William Marshall, Eric A. Bushong, Mark H. Ellisman, Giulio Tononi, and Chiara Cirelli at the University of Wisconsin-Madison.",
+        "Used three-dimensional serial block-face scanning electron microscopy to reconstruct and measure 6,920 excitatory synapses in mouse primary motor and sensory cortices.",
+        "Found that the axon-spine interface (ASI) decreased by roughly 18 percent (18.9 percent in the lower four quintiles) after 6 to 8 hours of sleep compared to wakefulness, selectively scaling down approximately 80 percent of synapses while sparing the largest 20 percent."
+      ],
+      "google_search_validation": {
+        "search_count": 1,
+        "query": "Luisa de Vivo Chiara Cirelli Giulio Tononi 2017 ultrastructural evidence synaptic scaling sleep 6920 18.9",
+        "sources": [
+          {
+            "title": "nih.gov",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGA2Egvxrf6nZyZE59uvQ0pfcPUS9MXv4TojZ-4Pn3HThaG3ZZ5oL4v_MoyU7WpPPLbTGFxwVg65HcBv2mA2XI3K37m6dEs0txPG4gz_vgW7adrhD89DtNfU_gwYKKxOLusLXIK4hna"
+          },
+          {
+            "title": "nih.gov",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGnwVkCX0nxoIh4D12atB721VfVMOlkAjiXFpecAzOAifRoYy5iFTAEkb5kamE3CDeiMUSE-44rNnhpbf7-IvuYTaBblpXjJVYDV1_sKtoQRKsd-MSaTfBZONylZeBguw=="
+          },
+          {
+            "title": "wisc.edu",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQES0ypDJZnAg6QP5v4qHGC94yr4UbMeW2F-5ebaWWd6z3NG_BbpT0x_wuZZM40ti0F7Hf26nchJ6zji6ZCUlublt1yFl9L5OcZ1vdvFfpayGVBzxNTMpCwlKJWcO6cT9pd9c37QxW81Hz8YkSRYnqJfada7YpaiNETNVCyST443ZaS_okV_TCQ="
+          }
+        ],
+        "note": "Confirmed all core details via the 2017 Science paper by Luisa de Vivo, Chiara Cirelli, Giulio Tononi, and colleagues at the University of Wisconsin-Madison. Verified the exact synapse count (6,920), the apparatus (3D scanning electron microscopy), the brain regions (mouse motor and sensory cortices), the ~18% (18.9% in the 80% plastic population) decrease in axon-spine interface (ASI) surface area after 6 to 8 hours of sleep, and the selective sparing of the largest ~20% of synapses lacking recycling endosomes."
+      }
+    },
+    {
+      "chapter": 7,
+      "title": "Hippocampal Replay and Memory Consolidation",
+      "subtitle": "Sharp-Wave Ripples Coupled to Thalamocortical Spindles Transferring Episodic Traces to Neocortex",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "ledger_or_list",
+      "lens": "consequences",
+      "move": "go",
+      "what": "The time-compressed reactivation of waking neuronal firing sequences within hippocampal place cells during NREM sharp-wave ripples, phase-locked to cortical slow oscillations and thalamic spindles to drive systems-level memory consolidation.",
+      "why_here": "Complements synaptic downscaling by showing the constructive side of sleep: how fragile short-term episodic encodings in the hippocampus are replayed at 10-to-20-fold speed to write permanent neocortical memory.",
+      "background_nodes": [
+        {
+          "label": "Sharp-Wave Ripples (SWRs)",
+          "what": "High-frequency (150-250 Hz) transient field potentials originating in the hippocampal CA3-CA1 network.",
+          "whyHere": "Acts as the neurophysiological packet that broadcasts compressed replay sequences out of the hippocampus."
+        },
+        {
+          "label": "Sleep Spindles",
+          "what": "Waxing-and-waning 11-16 Hz oscillations generated by the thalamic reticular nucleus lasting 0.5 to 3 seconds.",
+          "whyHere": "Gates dendritic calcium influx in neocortical pyramidal neurons to receive hippocampal ripple packets."
+        },
+        {
+          "label": "Two-Stage Memory Model",
+          "what": "Computational architecture separating fast, temporary hippocampal encoding from slow, interleaved neocortical storage.",
+          "whyHere": "Prevents catastrophic interference when integrating new episodes into existing semantic networks."
+        }
+      ],
+      "historical_anchor": "In 1994 at the University of Arizona in Tucson, Matthew A. Wilson and Bruce L. McNaughton implanted microdrive arrays of 12 four-wire tetrodes into the dorsal CA1 hippocampus of three male Fischer-344 rats to record ensembles of 50 to 100 pyramidal place cells simultaneously before, during, and after spatial foraging tasks. They demonstrated in the July 29, 1994 issue of Science that neuronal pairs with overlapping spatial firing fields during waking behavior exhibited a significantly elevated pairwise cross-correlation during subsequent slow-wave sleep compared to pre-task slow-wave sleep, decaying with a time constant of roughly 12 to 45 minutes.",
+      "exit_fact": "During post-task slow-wave sleep, hippocampal place cell ensembles replay waking spatial trajectories inside 50-to-100-millisecond sharp-wave ripples at a time-compression factor of 10 to 20 times real-world running speed.",
+      "equation_or_diagram_spec": "Ledger of the Triple Phase-Locked Consolidation Oscillator: 1) Neocortical Slow Oscillation (0.5-1 Hz up-states synchronize widespread cortical excitability every ~1 second); 2) Thalamocortical Sleep Spindle (11-16 Hz bursts nested specifically on the depolarizing up-state of the cortical slow wave); 3) Hippocampal Sharp-Wave Ripple (150-250 Hz bursts nested inside the troughs of the thalamic spindle, delivering 15x-compressed CA1 replay sequences).",
+      "search_query": "Matthew Wilson Bruce McNaughton 1994 reactivation hippocampal ensemble memories sleep Science",
+      "verified_facts": [
+        "Matthew A. Wilson and Bruce L. McNaughton at the Division of Neural Systems, Memory, and Aging at the University of Arizona published their landmark reactivation study in Science (Volume 265, pages 676 to 679) on July 29, 1994.",
+        "The experiment used microdrive arrays of four-wire tetrode electrodes implanted in three male inbred Fischer-344 (F344) rats, monitoring ensembles of 50 to 100 CA1 hippocampal pyramidal cells simultaneously.",
+        "Pairs of place cells that fired together during waking spatial exploration showed a marked increase in pairwise firing correlation during post-behavior slow-wave sleep (particularly during sharp-wave ripple events) compared to pre-behavior sleep, whereas inactive cells or cells with non-overlapping place fields showed no increase."
+      ],
+      "google_search_validation": {
+        "search_count": 1,
+        "query": "Matthew Wilson Bruce McNaughton 1994 reactivation hippocampal ensemble memories sleep Science",
+        "sources": [
+          {
+            "title": "nih.gov",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE17jrL4gCQvmrCq6-dsDnHDxKpbmUqDeafLw2dpf6Ku0T3-1knQilG2U3176IHZ-sf41z7MJTT-JO8gRWDJwwPxt9KaQyKIPmO0mnCd9U99s3kZxV3gYJkrJ9wjyk="
+          },
+          {
+            "title": "mit.edu",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFIGmptbn9XaB624spM-CPBGSE_1HizeheYzycpEe2KUdRcbd_n5EAba06k-6-RCdWkYf7Qn6NFeLXcq88Sp-2vuCB10_oCP0fwWY0jbD6STJXUXXk9mHN"
+          },
+          {
+            "title": "frankx.ai",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPy38PMmPFBILf2WpYOcOsstpy205pACjUZWwsyvOzu9KkWjB8EK1YuHXuV1ocyxvXSQ2tLpzF4YMNPSFxov4ZGiJdLJZoRD4B2wqKEd9owZ12G7Ps75anxAhTLf8NHnSK1BZ6USauwir6zNzWJHu48-S1DFlTNXVkLjpjUaVNUMbI7Y8fmL_eU_A="
+          }
+        ],
+        "note": "Confirmed researchers Matthew A. Wilson and Bruce L. McNaughton, the 1994 publication year (July 29, 1994 in Science), and the institution (University of Arizona, Tucson). Corrected the rat strain from Sprague-Dawley to inbred Fischer-344 (F344) rats (n = 3), adjusted the simultaneous ensemble recording size to 50-100 cells per MIT/Arizona technical reports, and clarified that the 1994 paper measured pairwise firing correlation (co-firing tendency) rather than sequential order, while subsequent work by Skaggs & McNaughton (1996) and Lee & Wilson (2002) established the 10x-20x time-compressed sequential trajectory replay within 50-100 ms sharp-wave ripples."
+      }
+    },
+    {
+      "chapter": 8,
+      "title": "REM Sleep Atonia and Predictive Coding",
+      "subtitle": "Pontine Glycinergic Paralysis and Pontogeniculooccipital Waves Driving Internal Model Simulation",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation",
+      "lens": "contrasts",
+      "move": "contrast",
+      "what": "The paradoxical state of high-frequency, cholinergic cortical activation paired with descending brainstem paralysis of spinal alpha motor neurons, generating endogenous sensorimotor simulations known as dreams.",
+      "why_here": "Contrasts directly with NREM slow-wave quietude, examining why the brain expends wake-level metabolic glucose while actively paralyzing the skeletal musculature.",
+      "background_nodes": [
+        {
+          "label": "Sublaterodorsal Nucleus (SLD)",
+          "what": "Glutamatergic pontine nucleus that activates inhibitory interneurons in the ventromedial medulla and spinal cord.",
+          "whyHere": "Drives the hyperpolarization of skeletal alpha motor neurons via glycine and GABA release during REM sleep."
+        },
+        {
+          "label": "PGO Waves",
+          "what": "Phasic field potentials propagating from the pons to the lateral geniculate nucleus and occipital visual cortex.",
+          "whyHere": "Delivers internal motor-efference copy signals into visual association cortices prior to rapid eye movements."
+        },
+        {
+          "label": "REM Behavior Disorder (RBD)",
+          "what": "Parasomnia caused by degeneration of pontine atonia pathways, causing patients to physically enact dreams.",
+          "whyHere": "Serves as both the clinical proof of the atonia circuit and the strongest prodromal marker of alpha-synucleinopathies."
+        }
+      ],
+      "historical_anchor": "In 1965 at the University of Lyon, Michel Jouvet and François Delorme performed bilateral electrolytic lesions of the peri-locus coeruleus in the pontine tegmentum of cats, eliminating REM skeletal muscle atonia while preserving cortical desynchronization and pontogeniculo-occipital waves. In June 1986 at the Minnesota Regional Sleep Disorders Center at Hennepin County Medical Center, Carlos H. Schenck, Scott R. Bundlie, Milton G. Ettinger, and Mark W. Mahowald documented the human clinical correlate via video-polysomnography in 5 older patients consisting of 4 men aged 67 to 72 and 1 woman aged 60. These patients exhibited variable loss of chin electromyographic atonia, elevated rapid eye movement ocular density, and complex dream-enacting limb movements such as punches and kicks during REM sleep.",
+      "exit_fact": "Longitudinal neurological cohorts demonstrate that over 80 percent of patients diagnosed with idiopathic REM sleep behavior disorder convert to alpha-synucleinopathies including Parkinson's disease, dementia with Lewy bodies, or multiple system atrophy within 12 to 14 years of initial onset.",
+      "equation_or_diagram_spec": "$$F = D_{KL}[q(\\vartheta) \\parallel p(\\vartheta)] - \\mathbb{E}_{q}[\\ln p(s \\mid \\vartheta, a)] \\xrightarrow{\\text{REM }(s=\\varnothing, a=0)} D_{KL}[q(\\vartheta) \\parallel p(\\vartheta)]$$ where $F$ is variational free energy in cortical predictive processing, $q(\\vartheta)$ is the approximate posterior belief over hidden states $\\vartheta$, $p(\\vartheta)$ is the generative prior model, and sensory input $s$ and overt motor action $a$ are gated off during REM atonia, reducing optimization purely to complexity minimization ($D_{KL}$, pruning redundant parameters in the brain's generative model).",
+      "search_query": "Carlos Schenck Mark Mahowald 1986 chronic behavioral disorders human REM sleep",
+      "verified_facts": [
+        "In 1965, Michel Jouvet and François Delorme at the University of Lyon demonstrated that bilateral pontine tegmental lesions around the locus coeruleus in cats abolish REM sleep muscle atonia and trigger oneiric dream-enacting behaviors.",
+        "In June 1986, Carlos H. Schenck, Scott R. Bundlie, Milton G. Ettinger, and Mark W. Mahowald at the Minnesota Regional Sleep Disorders Center published the seminal human clinical series in the journal Sleep.",
+        "The 1986 polysomnographic cohort comprised 5 patients in total, specifically 4 men aged 67 to 72 years with violent dream-enacting behaviors and 1 woman aged 60 years with nonviolent disruptive REM behaviors, rather than 5 men."
+      ],
+      "google_search_validation": {
+        "search_count": 1,
+        "query": "Michel Jouvet 1965 locus coeruleus REM atonia cats Lyon",
+        "sources": [
+          {
+            "title": "nih.gov",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHoY55nk_z6wNGH5MMrsNKhgfkOEukEXm9fE2DcpzSBJmCVfmxCi8NBbkOFR9EAjvgfwbmyfdtC6576P4sP7qDNMNZIk4CWB4xzJe_xxjJRmVhonR2ctIlaSjxtM6IS7A=="
+          },
+          {
+            "title": "researchgate.net",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGTLVC4xhFSFFzr1PAScFktXR4S4RnItEP0FkKtRmCX4ER9gjxiMMZ8y4K6q8pKteiN0ErT2AEadjubjHIz8rjJzKWDXoUaAz7A-_53-FfbVWvXVY0awzcpDz2KGM2smyQU3im9dv9H4T9ZmZZaayErwW1fobE5IRp7yoG4ClbnmHDn1-N0jJkMq8KmRsPkPs8GDMlxOw=="
+          },
+          {
+            "title": "wikipedia.org",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPTbmQP53sgCXS_Go54H8MJ_hnm3ovxhIUmJP2AZJ6Rb3u49MejqcK3lgB-dmy9xsN19Z6Bw_9OG5q35NjTGuPYIVav-Ukv35Dx_uwlx1a7JnnEM6hgd2WnxDt_8luGjdc"
+          }
+        ],
+        "note": "Confirmed Michel Jouvet's 1965 cat lesion study at the University of Lyon (co-authored with François Delorme) and the June 1986 human study at the Minnesota Regional Sleep Disorders Center (Hennepin County Medical Center / University of Minnesota) by Carlos H. Schenck, Scott R. Bundlie, Milton G. Ettinger, and Mark W. Mahowald. Corrected the demographic composition of the 1986 cohort from '5 older men' to 5 patients consisting of 4 men (aged 67–72) and 1 woman (aged 60)."
+      }
+    },
+    {
+      "chapter": 9,
+      "title": "Unihemispheric Slow-Wave Sleep",
+      "subtitle": "How Cetaceans and Migratory Birds Sleep With Half a Brain to Maintain Respiration and Flight",
+      "opening_door": "A: Scene",
+      "formalism_mode": "equation",
+      "lens": "cases",
+      "move": "zoom-out",
+      "what": "An evolutionary adaptation in aquatic mammals and birds where one cerebral hemisphere exhibits high-amplitude slow-wave EEG and metabolic cooling while the contralateral hemisphere maintains low-voltage waking EEG and motor control.",
+      "why_here": "Tests the universality of bilateral shutdown by exploring how evolution rewired commissural and subcortical switches when drowning or mid-ocean predation made full unconsciousness fatal.",
+      "background_nodes": [
+        {
+          "label": "Interhemispheric Asymmetry Index",
+          "what": "Quantitative ratio comparing slow-wave spectral power between left and right cerebral hemispheres.",
+          "whyHere": "Measures the degree of functional decoupling across the corpus callosum and posterior commissure."
+        },
+        {
+          "label": "Contralateral Eye Closure",
+          "what": "The behavioral coupling where the eye opposite the sleeping hemisphere closes while the open eye monitors predators or pod-mates.",
+          "whyHere": "Links optic chiasm decussation directly to unilateral thalamocortical vigilance."
+        },
+        {
+          "label": "Northern Fur Seal Dual Mode",
+          "what": "The capacity of otariid pinnipeds to switch between bilateral sleep on land and unihemispheric sleep in seawater.",
+          "whyHere": "Proves unihemispheric sleep is a state-dependent physiological circuit rather than a fixed anatomical defect."
+        }
+      ],
+      "historical_anchor": "In 1977 at the Severtsov Institute of Evolutionary Morphology and Ecology of Animals in Moscow and its Utrish Marine Station on the Black Sea, Lev Mukhametov, Alexander Ya. Supin, and Inna G. Polyakova implanted chronic epidural electrodes over the parietal and occipital cortices of 9 Black Sea bottlenose dolphins (Tursiops truncatus). Recording continuously across multi-day sessions, they published in Brain Research that high-amplitude delta slow waves (1 to 4 Hz) appeared exclusively in one cerebral hemisphere at a time for alternating bouts while the opposite hemisphere displayed low-voltage desynchronized waking activity.",
+      "exit_fact": "In 2016, Niels Rattenborg and colleagues at the Max Planck Institute for Ornithology fitted miniature electroencephalogram data loggers onto great frigatebirds (Fregata minor) during non-stop transoceanic flights of up to 10 days, finding the birds slept predominantly unihemispherically while soaring on thermal updrafts for an average of 42 minutes (0.69 hours) per day compared to 12.8 hours per day on land.",
+      "equation_or_diagram_spec": "$$\\text{AI} = \\frac{P_L - P_R}{P_L + P_R}, \\qquad |\\text{AI}| \\ge 0.3 \\implies \\text{USWS}$$ where $\\text{AI}$ is the Interhemispheric Asymmetry Index, $P_L$ and $P_R$ are the integrated EEG slow-wave power spectral densities ($1.2 - 4.0\\text{ Hz}$ in $\\mu\\text{V}^2$) in the left and right cerebral hemispheres over a 20-second epoch, and values exceeding $\\pm 0.3$ define Unihemispheric Slow-Wave Sleep (USWS).",
+      "search_query": "Lev Mukhametov Supin Polyakova 1977 interhemispheric asymmetry electroencephalographic sleep dolphins",
+      "verified_facts": [
+        "In October 1977, Lev M. Mukhametov, Alexander Ya. Supin, and Inna G. Polyakova published their landmark study on interhemispheric EEG asymmetry in 9 bottlenose dolphins (Tursiops truncatus) in Brain Research (Vol. 134, pp. 581-584).",
+        "Epidural recordings from the parietal and occipital cortices demonstrated that dolphins exhibit unihemispheric slow-wave sleep (1-4 Hz delta synchronization in one hemisphere with simultaneous waking desynchronization in the contralateral hemisphere) and a complete absence of paradoxical (REM) sleep.",
+        "In August 2016, Niels C. Rattenborg and colleagues published EEG telemetry data in Nature Communications from female great frigatebirds (Fregata minor) flying for up to 10 days, showing they slept an average of 42 minutes per day (0.69 hours, or 7.4% of their 12.8-hour terrestrial sleep time) in bouts averaging 12 seconds."
+      ],
+      "google_search_validation": {
+        "search_count": 1,
+        "query": "Lev Mukhametov Supin Polyakova 1977 interhemispheric asymmetry electroencephalographic sleep dolphins",
+        "sources": [],
+        "note": "Confirmed the 1977 publication year (Brain Research, Oct 14, 1977; follow-up to their 1976 Russian Doklady report), the Severtsov Institute / Utrish Marine Station affiliation, the parietal-occipital electrode placements, and the 2016 Rattenborg great frigatebird study in Nature Communications (42 minutes / 0.69 h per day in flight vs. >12 hours / 12.8 hours on land). Note on author names: A. Ya. Supin's given name is Alexander Yakovlevich Supin (often mistranslated as Alexey), and I. G. Polyakova is Inna G. Polyakova; also noted that frigatebirds occasionally exhibited bihemispheric sleep in flight alongside predominant unihemispheric sleep."
+      }
+    },
+    {
+      "chapter": 10,
+      "title": "Torpor, Hibernation, and Anesthesia",
+      "subtitle": "Why Hypometabolic Stasis and Pharmacological Coma Still Accumulate Homeostatic Sleep Debt",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "diagram",
+      "lens": "contrasts",
+      "move": "contrast",
+      "what": "A comparative analysis of non-sleep states of behavioral unresponsiveness—specifically seasonal mammalian hibernation and GABAergic general anesthesia—that mimic sleep externally but diverge sharply in neural oscillatory mechanics.",
+      "why_here": "Sharpens the definition of true sleep by demonstrating that dropping core brain temperature to near-freezing or medically inducing unconsciousness does not automatically fulfill the restorative functions of NREM and REM cycles.",
+      "background_nodes": [
+        {
+          "label": "Interbout Euthermic Arousal",
+          "what": "Periodic, energetically expensive rewarming events every 1-3 weeks during which hibernating mammals raise body temperature to 37 degrees Celsius.",
+          "whyHere": "Reveals the paradox that hibernators burn 70% of their winter fat reserves just to warm up and sleep."
+        },
+        {
+          "label": "Isoelectric EEG",
+          "what": "Flatline cortical electrical activity occurring when brain temperature drops below 15-18 degrees Celsius during deep torpor.",
+          "whyHere": "Explains why synaptic transmission and slow-wave homeostasis halt during deep hibernation."
+        },
+        {
+          "label": "Propofol Alpha Anteriorization",
+          "what": "Hypersynchronous 8-12 Hz frontal oscillations induced by potentiation of GABAA receptors during general anesthesia.",
+          "whyHere": "Distinguishes rigid pharmacological thalamocortical locking from physiological sleep spindles."
+        }
+      ],
+      "historical_anchor": "In 1991 at Stanford University, Lorenz Trachsel, Dale M. Edgar, and H. Craig Heller implanted cortical EEG electrodes and cortical thermistors into golden-mantled ground squirrels (Spermophilus lateralis) overwintering at an ambient temperature of 5 degrees Celsius, while Serge Daan, Brian M. Barnes, and Arjen M. Strijkstra concurrently conducted parallel recordings in arctic ground squirrels (Spermophilus parryii). Both teams discovered that when squirrels periodically rewarmed from near-freezing brain temperatures to euthermia at approximately 37 degrees Celsius during interbout arousals, the animals immediately entered intense slow-wave sleep with delta power proportional to the duration of the preceding torpor bout.",
+      "exit_fact": "During a 7-month hibernation season, ground squirrels expend 70 to 80 percent of their total winter energy budget on periodic rewarming arousals to euthermia, spending the majority of those brief normothermic intervals in high-amplitude slow-wave sleep.",
+      "equation_or_diagram_spec": "3-Node Schematic Flow: [Deep Torpor 6C] -> [Rewarm to 37C] -> [SWS Debt Flush] (illustrating isoelectric EEG stasis at 6 degrees Celsius, thermogenic brown-fat rewarming to euthermia, and high-amplitude delta wave discharge before re-entering torpor).",
+      "search_query": "Brian Barnes Craig Heller 1991 ground squirrels hibernation slow wave sleep debt",
+      "verified_facts": [
+        "In 1991, two independent teams published simultaneous papers proposing the sleep-debt hypothesis of hibernation arousals, with Lorenz Trachsel, Dale M. Edgar, and H. Craig Heller at Stanford University studying golden-mantled ground squirrels (Spermophilus lateralis) and Serge Daan, Brian M. Barnes, and Arjen M. Strijkstra studying arctic ground squirrels (Spermophilus parryii).",
+        "In the 1991 Stanford University experiment, golden-mantled ground squirrels held at an ambient temperature of 5 degrees Celsius rewarmed from cortical temperatures near 6 to 7 degrees Celsius up to euthermic brain temperatures of 36 to 37 degrees Celsius, immediately exhibiting elevated EEG slow-wave activity (0.5 to 4.0 Hz delta power) that declined monotonically across the arousal period.",
+        "Periodic interbout arousals to normothermia consume 70 to 80 percent of a hibernating ground squirrel's total winter energy reserves, though subsequent 1998 and 1999 sleep-deprivation experiments at Stanford University by Jennifer E. Larkin and H. Craig Heller demonstrated that post-arousal slow-wave activity may also reflect neurological recovery from hypothermia rather than purely homeostatic sleep debt."
+      ],
+      "google_search_validation": {
+        "search_count": 1,
+        "query": "Daan Barnes Strijkstra 1991 hibernation slow wave sleep Trachsel Edgar Heller 1991",
+        "sources": [
+          {
+            "title": "nih.gov",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHfevaV7P7H1gANoLorS2udDF6pjNkwDBeHqVbyR6_uyxVtg3YgSsuggVjkw485cQAYcMVOPQbx6kpgJDfsf0WYLoHF09WjdmwpC9fT6RMjXhZkCNrzdu3oPUpEkT3GRQ=="
+          },
+          {
+            "title": "architalbiol.org",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1Tk1xRz2CeOl3tDiobUYjWVfRI1AimvkYctGhooBmJt0ZTuNmcOOayryj0ez_D4dNP5n5T5utyVaDe6SKyxLMFptPNwGjx1hSbNS5D7d_0cE8_fS2ahAHmCoNYtlL2vmm3M_Fq-xlvRmV2rjQW-QgqcVpnsip"
+          },
+          {
+            "title": "researcher.life",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqVnJPdyRbtaWwOXU-jvjlAMuXmYkb4jg5gTflmko7OTgfkoP3nBWeeiKNYLyJnuFg9lalsmST9pL1U3lPE6sguEGWWosLtVVSFUWuI1gmkIFHetjUxNpT4jigyAJjPD7cGJtNAqqh2kov_A42DIz0jc-4-SzuzTlEioqFAgLspmwCjvVrjc2BBovzA549yQBnUHlYfIMqWErVprk3G--fH_4H5jIHcQ4k8Tn-PDOUnI_jw0vwCkZw97mtjzYE-qtHKcBo"
+          }
+        ],
+        "note": "Confirmed the 1991 publication year, Stanford University location, and temperature/EEG parameters, but corrected a conflation of the two landmark 1991 research teams: H. Craig Heller co-authored the Stanford study on golden-mantled ground squirrels (Spermophilus lateralis, now Callospermophilus lateralis) with Lorenz Trachsel and Dale M. Edgar (Am. J. Physiol., 1991), whereas Brian M. Barnes co-authored the parallel 1991 study on arctic ground squirrels (Spermophilus parryii, now Urocitellus parryii) with Serge Daan and Arjen M. Strijkstra (Neurosci. Lett., 1991). Also noted Larkin and Heller's 1998-1999 follow-up findings regarding the homeostatic interpretation of post-torpor slow-wave activity."
+      }
+    },
+    {
+      "chapter": 11,
+      "title": "Sleep Across the Brainless Frontier",
+      "subtitle": "Quiescent Behavioral States and Reactive Oxygen Species Defense in Jellyfish, Worms, and Flies",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "equation",
+      "lens": "origins",
+      "move": "zoom-out",
+      "what": "The evolutionary origin of sleep in early metazoans lacking centralized brains, demonstrating that behavioral quiescence, elevated arousal thresholds, and homeostatic rebound emerged alongside the very first diffuse nerve nets to combat cellular oxidative stress.",
+      "why_here": "Traces sleep back 600 million years to Cnidarians and Bilaterians, proving that before sleep served cortical memory or glymphatic plumbing, it evolved as a fundamental metabolic repair requirement of excitable cells.",
+      "background_nodes": [
+        {
+          "label": "Cassiopea Nerve Net",
+          "what": "Decentralized, radially symmetric ring of ganglia and pacemakers in the upside-down jellyfish lacking a central brain.",
+          "whyHere": "Demonstrates that all four behavioral criteria of sleep occur without a thalamus or cerebral cortex."
+        },
+        {
+          "label": "Lethargus in C. elegans",
+          "what": "Developmentally timed 2-hour sleep-like quiescent state regulated by the Period homolog LIN-42 and EGF signaling in just 302 neurons.",
+          "whyHere": "Shows conserved genetic control of sleep in the simplest fully mapped nervous system."
+        },
+        {
+          "label": "Gut Reactive Oxygen Species (ROS)",
+          "what": "Superoxide and hydrogen peroxide molecules that accumulate rapidly in the intestinal epithelium during total sleep deprivation.",
+          "whyHere": "Identifies peripheral oxidative damage as a primary lethal driver of complete sleep loss."
+        }
+      ],
+      "historical_anchor": "In 2017 at the California Institute of Technology, co-first authors Ravi D. Nath, Claire N. Bedbrook, and Michael J. Abrams alongside senior investigators Paul W. Sternberg, Viviana Gradinaru, and Lea Goentoro tracked the bell-pulsation frequencies of upside-down jellyfish (Cassiopea spp.) continuously across day-night cycles using automated infrared video imaging. They discovered that Cassiopea reduced bell pulsations by 32 percent at night from roughly 58 pulses per minute to 39 pulses per minute, floated for up to 5 seconds with a threefold delay in arousal latency following a physical platform-drop stimulus, and exhibited homeostatic daytime quiescence rebound after mechanical water-jet perturbation.",
+      "exit_fact": "In June 2020 at Harvard Medical School, Alexandra Vaccaro, Yosef Kaplan Dor, and Dragana Rogulja demonstrated in Cell that severe sleep deprivation in Drosophila melanogaster and mice triggers a massive accumulation of reactive oxygen species specifically in the gut that shortens fruit fly lifespan by roughly 50 percent (causing 100 percent cohort mortality around day 20), whereas oral administration of antioxidant compounds like melatonin, lipoic acid, or NAD+ neutralizes intestinal oxidative stress and rescues sleepless flies to a normal lifespan.",
+      "equation_or_diagram_spec": "$$S(t) = \\exp\\left(-\\left(\\frac{t}{\\lambda}\\right)^k\\right), \\qquad k > 1, \\quad \\lambda_{\\text{AOX}} \\gg \\lambda_{\\text{SD}}$$ where $S(t)$ is the Weibull survival probability after $t$ days of continuous sleep deprivation, $k$ is the hazard shape parameter reflecting accelerating gut Reactive Oxygen Species (ROS) accumulation, and the characteristic lethal scale time $\\lambda_{\\text{SD}} \\approx 10\\text{ days}$ in sleep-deprived Drosophila expands to normal lifespan ($\\lambda_{\\text{AOX}} > 40\\text{ days}$) under gut-targeted antioxidant expression.",
+      "search_query": "Ravi Nath Paul Sternberg 2017 jellyfish Cassiopea exhibits sleep-like state Current Biology",
+      "verified_facts": [
+        "In September 2017, Ravi D. Nath, Claire N. Bedbrook, Michael J. Abrams, David A. Prober, Paul W. Sternberg, Viviana Gradinaru, and Lea Goentoro at the California Institute of Technology published the first evidence of sleep in a brainless animal (Cassiopea spp.) in Current Biology.",
+        "Cassiopea jellyfish reduce their bell-pulsing frequency by approximately 32 percent at night from 58 pulses per minute during the day to 39 pulses per minute at night, exhibit delayed reorientation when dropped from an elevated tank platform, and display homeostatic daytime sleep rebound after nighttime water-pulse disruption.",
+        "In June 2020 at Harvard Medical School, Alexandra Vaccaro, Yosef Kaplan Dor, and Dragana Rogulja showed in Cell that lethal sleep deprivation in Drosophila melanogaster and mice causes reactive oxygen species buildup specifically in the gut, and that neutralizing gut ROS via oral antioxidants (melatonin, lipoic acid, NAD+) or gut-targeted transgenic antioxidant enzymes permits normal lifespan despite near-total sleep loss."
+      ],
+      "google_search_validation": {
+        "search_count": 1,
+        "query": "Ravi Nath Paul Sternberg 2017 jellyfish Cassiopea exhibits sleep-like state Current Biology",
+        "sources": [
+          {
+            "title": "nih.gov",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSBhcEnX8KYK1ZjKr6vZs0w69T4uukQGOi0n_eRcoXKl6dO_RuYXlE9d8TJEQNDDPjSFY71Y1bilJQePnfWaIHhoJAFglSbW6spscBdOUrdBHI4lA_iqXNH8BXUwu51A=="
+          },
+          {
+            "title": "rdworldonline.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVRkhgtWqQeIqIPAyKr2E29BvrtyVBYA2TvyJFX8LCwl_Ia9EWfXDyvquk8cquVLo8TSsMgpuUofB9LNeDmJW5MSl9U1ebIEMZ8BfuI1A9TjyWZfbBBP7cO2zSv75Is72O-6qEL4JCjGD12VqrhHvKSJ_YP_5v5aj7DAFmcD24Ty2JAGdV6r2_N3YenQQsIUd3J-dCFN6QojyOzeCo4rVDtvupmcnXeA=="
+          },
+          {
+            "title": "the-independent.com",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBYyz96z7TRycjxvP-Buug24zqiHVTeItGIAhwEGCMQtKJI-taZR8R786kDo8-kPXWrf9NgrQwJi7adzP_QZp6am7Ky7cJ3hpxR1XJkMqmQZN2Sg4SMVcFHF5jGKwerM886RqbsS1H6rmbwPrao8N6f-3HbPuChokmil7lbowXM_pMHesFYqnlM4xx-u3D08CkkkTf0rMprTgVRd-IOAZv8Tjy2uoq_8n7bEbBLGFaRrCtejjjFw12ucBdF844UTR7_oTCieba"
+          }
+        ],
+        "note": "Confirmed the 2017 Caltech Current Biology study on Cassiopea spp., adding missing co-first author Claire N. Bedbrook and co-senior author Viviana Gradinaru, and verified the 58 to 39 pulses/min reduction and platform-drop test. Confirmed the June 2020 Harvard Medical School Cell study by Alexandra Vaccaro, Yosef Kaplan Dor (co-first author), and Dragana Rogulja; clarified that while sleep deprivation caused 100 percent premature lethality in fruit flies (halving lifespan to ~20 days) and elevated gut ROS in both flies and mice, lethality survival rescue experiments with melatonin, lipoic acid, and NAD+ were performed specifically in Drosophila."
+      }
+    },
+    {
+      "chapter": 12,
+      "title": "Total Sleep Deprivation and Fatal Familial Insomnia",
+      "subtitle": "Thermoregulatory Collapse, Prion Thalamic Degeneration, and the Unsolved Lethal Core of Sleeplessness",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "ledger_or_list",
+      "lens": "open-questions",
+      "move": "zoom-out",
+      "what": "The pathological consequences of complete, irreversible sleep loss in mammalian experimental models and human prion disease, confronting the open scientific question of which exact systemic failure kills a sleepless vertebrate.",
+      "why_here": "Closes the volume at the ultimate boundary condition of sleep science: why total sleep deprivation is universally fatal faster than starvation, and how a single amino acid change in the human prion protein destroys the thalamus and abolishes sleep forever.",
+      "background_nodes": [
+        {
+          "label": "Disk-Over-Water Apparatus",
+          "what": "Closed-loop EEG-triggered rotating platform developed by Allan Rechtschaffen to isolate the lethal effects of sleep deprivation from physical stress.",
+          "whyHere": "Provided the definitive proof that total sleep deprivation kills mammals within 11 to 32 days."
+        },
+        {
+          "label": "PRNP D178N-129M Mutation",
+          "what": "Missense mutation at codon 178 paired with methionine at codon 129 of the prion protein gene on human chromosome 20.",
+          "whyHere": "Causes selective neuropathological destruction of the mediodorsal and anterior ventral thalamic nuclei."
+        },
+        {
+          "label": "Cytokine Storm and Prostaglandin D2",
+          "what": "Brain-derived prostaglandin D2 efflux across the blood-brain barrier triggering systemic neutrophilia and multiorgan inflammatory failure.",
+          "whyHere": "Represents the newest mechanistic bridge linking brain sleep loss to peripheral immune death."
+        }
+      ],
+      "historical_anchor": "In 1983 at the University of Chicago, Allan Rechtschaffen, Marcia A. Gilliland, Bernard M. Bergmann, and Jacqueline B. Winter placed pairs of rats on a rotating disk-over-water apparatus controlled by real-time computerized electroencephalogram and electromyogram amplitude detection, rotating the platform for 6 seconds whenever the experimental rat entered sleep while the yoked control rat could sleep during intervals. Three years later in 1986 at the University of Bologna and Case Western Reserve University, Elio Lugaresi, Rossella Medori, Pasquale Montagna, and Pierluigi Gambetti documented Fatal Familial Insomnia in a 53-year-old Italian man named Silvano who suffered progressive loss of sleep spindles and slow waves, autonomic sympathetic storms, and death after 9 months. Subsequent neuropathological autopsy revealed 80 to 90 percent neuronal loss and reactive astrogliosis selectively concentrated in the anterior ventral and mediodorsal thalamic nuclei.",
+      "exit_fact": "In the University of Chicago disk-over-water experiments, 100 percent of totally sleep-deprived rats died or reached imminent terminal hypothermia within 11 to 32 days despite doubling their daily caloric food intake, exhibiting a 1.0-to-2.0-degree Celsius decline in core body temperature, ulcerative skin lesions, and opportunistic systemic bacterial sepsis while yoked control rats exposed to identical physical disk rotations survived healthy.",
+      "equation_or_diagram_spec": "Ledger of Terminal Physiological Failures in Total Sleep Deprivation: 1) Metabolic Hyperphagia & Negative Energy Balance (200% increase in food intake paired with 15-25% body weight loss in Rechtschaffen rats); 2) Thalamic Prion Atrophy in Human FFI (> 80% neuronal loss in mediodorsal and anterior ventral nuclei, complete abolition of 11-16 Hz spindles and N3 delta waves); 3) Autonomic & Thermoregulatory Collapse (Sustained 2-fold elevation in plasma norepinephrine/cortisol followed by terminal 2.0 degrees Celsius hypothermia); 4) PGD2-DP1 Brain-to-Immune Efflux (Prostaglandin D2 crossing the blood-brain barrier to trigger a 3-fold surge in circulating neutrophils and multiorgan cytokine failure).",
+      "search_query": "Allan Rechtschaffen Bernard Bergmann 1983 prolonged sleep deprivation rat Science",
+      "verified_facts": [
+        "Allan Rechtschaffen, Marcia A. Gilliland, Bernard M. Bergmann, and Jacqueline B. Winter published their landmark disk-over-water total sleep deprivation study in the journal Science on July 8, 1983 (Vol. 221, pp. 182-184) at the University of Chicago.",
+        "Total sleep deprivation in rats via the yoked disk-over-water apparatus produced 100 percent mortality or terminal moribundity within 11 to 32 days, characterized by a doubling of food intake, weight loss, elevated plasma norepinephrine, decreased plasma thyroxine, a late-stage 1.0-to-2.0-degree Celsius core temperature drop, and lethal systemic bacteremia.",
+        "On October 16, 1986, Elio Lugaresi, Rossella Medori, Pasquale Montagna, Pierluigi Gambetti, and colleagues published the foundational description of Fatal Familial Insomnia in The New England Journal of Medicine (Vol. 315, pp. 997-1003), identifying selective 80 to 90 percent neuronal degeneration in the anteroventral and mediodorsal (dorsomedial) thalamic nuclei of their 53-year-old index patient Silvano (later linked to the PRNP D178N-129M prion mutation)."
+      ],
+      "google_search_validation": {
+        "search_count": 1,
+        "query": "Allan Rechtschaffen Bernard Bergmann 1983 prolonged sleep deprivation rat Science",
+        "sources": [
+          {
+            "title": "nih.gov",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1EaVhmLugMYriWzlNHx3609BFyDu7MwMPDmjF-a2cxUdD0n6WFxB66tfWC4cxpTsYTNDRTMhMs6axjiWzDzYvcrxaFvhNInQrMGy8YGmytcx4yRXkTcF7GzdXe8Mi"
+          },
+          {
+            "title": "uchicago.edu",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwrLEr6qQ54S1QEBNh0ISQIrITZRU121Du0NCob0ULFN0PKS8QeIXvmdELcNdumn7glWBCq1wcfuFLM4yFkdBRj-xV9uza5uH4j3EriB2AQvC4FwlEuUddRXpLeY9w_dXPIUtLFZD_G9D8FY6ElMFxabbs_fIJ-Q8YbmaEgAKsA_fS6lZjtDYjP5E="
+          },
+          {
+            "title": "nih.gov",
+            "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZaFSK4fd1Mf2whp8bOn-7G79Glhv8_w3iC0pM0XS9A-b9LkBOqAQNebvFh2KocZULW-s7hrGVoaVesY0k1aFfWezjvZ8OJxq2x_7mbmeQqoVSiDOYQ1H9EgXdZXir"
+          }
+        ],
+        "note": "Confirmed the July 8, 1983 Science publication by Allan Rechtschaffen, Marcia A. Gilliland, Bernard M. Bergmann, and Jacqueline B. Winter at the University of Chicago, and the October 16, 1986 New England Journal of Medicine publication by Elio Lugaresi, Pierluigi Gambetti, and colleagues at the University of Bologna. Refined the thalamic pathology terminology to include the exact anatomical terms used by Lugaresi and Gambetti (anteroventral and mediodorsal/dorsomedial thalamic nuclei with up to 90 percent neuronal loss) and Fixed capitalization typo ('Rotating' -> 'rotating') in the historical anchor."
+      }
+    }
+  ]
+}

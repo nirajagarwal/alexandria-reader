@@ -933,11 +933,335 @@
         }
     }, { passive: true });
 
+    // Book Creator Studio State & Logic
+    const PIPELINE_PRESETS = {
+        'sleep': {
+            slug: 'sleep',
+            title: 'Sleep',
+            subtitle: 'The Nightly Brain Shutdown and Eleven Neighbors From Circadian Clocks to Synaptic Pruning',
+            category: 'Neurobiology & Physiology',
+            mode: 'landscape',
+            format: 'landscape',
+            profile: 'B'
+        },
+        'twelve-foods': {
+            slug: 'twelve-foods',
+            title: 'Twelve Foods',
+            subtitle: 'The Physics, Chemistry, and History of the Kitchen',
+            category: 'Chemistry & Culture',
+            mode: 'facet',
+            format: 'mechanisms',
+            profile: 'B'
+        },
+        'leonardo-da-vinci': {
+            slug: 'leonardo-da-vinci',
+            title: 'Leonardo da Vinci',
+            subtitle: 'The Anatomist Engineer of Renaissance Florence and Milan',
+            category: 'Biography & Engineering',
+            mode: 'facet',
+            format: 'biography',
+            profile: 'D'
+        },
+        'the-night-sky': {
+            slug: 'the-night-sky',
+            title: 'The Night Sky',
+            subtitle: 'Twelve Celestial Objects and Phenomena in Twelve Highlights Each',
+            category: 'Astrophysics & Astronomy',
+            mode: 'listicle',
+            format: 'highlights',
+            profile: 'A'
+        },
+        'evolution': {
+            slug: 'evolution',
+            title: 'Evolution',
+            subtitle: 'Natural Selection and Eleven Neighbors That Shape Adaptation, Drift, and Form',
+            category: 'Evolutionary Biology',
+            mode: 'landscape',
+            format: 'landscape',
+            profile: 'B'
+        },
+        'twelve-colors': {
+            slug: 'twelve-colors',
+            title: 'Twelve Colors',
+            subtitle: 'How Rare Pigments, Quantum Transitions, and Synthetic Dyes Painted the World',
+            category: 'Optics & Chemistry',
+            mode: 'facet',
+            format: 'mechanisms',
+            profile: 'A'
+        }
+    };
+
+    let creatorState = {
+        step: 1,
+        slug: 'sleep',
+        title: 'Sleep',
+        subtitle: 'The Nightly Brain Shutdown and Eleven Neighbors From Circadian Clocks to Synaptic Pruning',
+        category: 'Neurobiology & Physiology',
+        mode: 'landscape',
+        format: 'landscape',
+        profile: 'B',
+        email: 'niraj@alexandria.press',
+        activeJobId: null,
+        pollTimer: null
+    };
+
+    function syncCreatorInputsFromState() {
+        const titleEl = document.getElementById('creator-title');
+        const subEl = document.getElementById('creator-subtitle');
+        const catEl = document.getElementById('creator-category');
+        const profEl = document.getElementById('creator-profile');
+        const emailEl = document.getElementById('creator-email');
+        if (titleEl) titleEl.value = creatorState.title;
+        if (subEl) subEl.value = creatorState.subtitle;
+        if (catEl) catEl.value = creatorState.category;
+        if (profEl) profEl.value = creatorState.profile;
+        if (emailEl && !emailEl.value) emailEl.value = creatorState.email;
+
+        document.querySelectorAll('#creator-format-grid .creator-format-card').forEach(card => {
+            card.classList.toggle('active', card.getAttribute('data-format') === creatorState.format);
+        });
+        document.querySelectorAll('#creator-pipeline-chips .creator-chip').forEach(chip => {
+            const onClickAttr = chip.getAttribute('onclick') || '';
+            chip.classList.toggle('active', onClickAttr.includes(`'${creatorState.slug}'`));
+        });
+    }
+
+    function openCreatorModal() {
+        const modal = document.getElementById('creator-modal');
+        if (modal) {
+            modal.classList.add('open');
+            syncCreatorInputsFromState();
+            fetchLatestCreatorJobReceipt();
+        }
+    }
+
+    function setCreatorStep(stepNum) {
+        creatorState.step = stepNum;
+        const titleEl = document.getElementById('creator-title');
+        const subEl = document.getElementById('creator-subtitle');
+        const catEl = document.getElementById('creator-category');
+        const profEl = document.getElementById('creator-profile');
+        if (titleEl && titleEl.value.trim()) {
+            creatorState.title = titleEl.value.trim().replace(/:/g, '');
+        }
+        if (subEl && subEl.value.trim()) {
+            creatorState.subtitle = subEl.value.trim().replace(/:/g, '');
+        }
+        if (catEl && catEl.value.trim()) {
+            creatorState.category = catEl.value.trim();
+        }
+        if (profEl && profEl.value) {
+            creatorState.profile = profEl.value;
+        }
+        document.querySelectorAll('#creator-stepper .creator-step-pill').forEach(p => {
+            p.classList.toggle('active', parseInt(p.getAttribute('data-step'), 10) === stepNum);
+        });
+        [1, 2, 3].forEach(n => {
+            const pane = document.getElementById(`creator-step-${n}`);
+            if (pane) pane.classList.toggle('active', n === stepNum);
+        });
+    }
+
+    function selectPipelineTopic(slug) {
+        const preset = PIPELINE_PRESETS[slug];
+        if (!preset) return;
+        creatorState.slug = preset.slug;
+        creatorState.title = preset.title;
+        creatorState.subtitle = preset.subtitle;
+        creatorState.category = preset.category;
+        creatorState.mode = preset.mode;
+        creatorState.format = preset.format;
+        creatorState.profile = preset.profile;
+        syncCreatorInputsFromState();
+    }
+
+    function handleCreatorTitleInput(val) {
+        const clean = (val || '').trim().replace(/:/g, '');
+        creatorState.title = clean;
+        const slugKey = clean.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+        creatorState.slug = slugKey || 'custom-volume';
+        if (PIPELINE_PRESETS[slugKey]) {
+            selectPipelineTopic(slugKey);
+        } else if (clean) {
+            const subEl = document.getElementById('creator-subtitle');
+            if (subEl && (!subEl.value || Object.values(PIPELINE_PRESETS).some(p => p.subtitle === subEl.value))) {
+                creatorState.subtitle = creatorState.format === 'landscape'
+                    ? `The Core Concept and Eleven Neighbors That Shape ${clean}`
+                    : (creatorState.format === 'highlights'
+                        ? `Twelve Subsystems of ${clean} in Twelve Highlights Each`
+                        : `Twelve Mechanisms and Turning Points of ${clean}`);
+                subEl.value = creatorState.subtitle;
+            }
+        }
+    }
+
+    function selectCreatorFormat(format, mode, btnEl) {
+        creatorState.format = format;
+        creatorState.mode = mode;
+        document.querySelectorAll('#creator-format-grid .creator-format-card').forEach(c => c.classList.remove('active'));
+        if (btnEl) btnEl.classList.add('active');
+    }
+
+    function renderCreatorTelemetry(job) {
+        if (!job) return;
+        const u = job.usage || {};
+        const c = job.cost || {};
+        const inEl = document.getElementById('cm-input-tokens');
+        const outEl = document.getElementById('cm-output-tokens');
+        const srchEl = document.getElementById('cm-searches');
+        const costEl = document.getElementById('cm-cost-usd');
+        const savEl = document.getElementById('creator-savings-line');
+        const badgeEl = document.getElementById('creator-status-badge');
+        const progWrap = document.getElementById('creator-progress-wrap');
+        const progFill = document.getElementById('creator-progress-fill');
+        const stageTxt = document.getElementById('creator-stage-text');
+        const logBox = document.getElementById('creator-log-box');
+        const delivCard = document.getElementById('creator-delivery-card');
+        const launchBtn = document.getElementById('creator-launch-btn');
+
+        if (inEl) inEl.textContent = (u.total_input_tokens || 0).toLocaleString();
+        if (outEl) {
+            const vis = u.total_visible_output_tokens || 0;
+            const thk = u.total_thinking_tokens || 0;
+            outEl.textContent = `${(vis + thk).toLocaleString()} (${thk.toLocaleString()} think)`;
+        }
+        if (srchEl) {
+            srchEl.textContent = `${u.google_searches_used || 0} / ${u.google_searches_max || 12} (1/ch)`;
+        }
+        if (costEl) {
+            costEl.textContent = `$${(c.intro_batch_token_cost_usd || 0).toFixed(4)}`;
+        }
+        if (savEl) {
+            savEl.textContent = `50% Batch API savings: -$${(c.intro_batch_savings_usd || 0).toFixed(4)} vs. on-demand ($${(c.intro_ondemand_equivalent_usd || 0).toFixed(4)}) · Standard tier eq: $${(c.standard_batch_token_cost_usd || 0).toFixed(4)}`;
+        }
+        if (badgeEl) {
+            badgeEl.textContent = (job.status || 'RUNNING').toUpperCase();
+        }
+        if (progWrap) progWrap.style.display = 'block';
+        if (progFill) progFill.style.width = `${job.progress_pct || 5}%`;
+        if (stageTxt) {
+            stageTxt.textContent = `${job.stage_label || 'Running...'} (${job.elapsed_seconds || 0}s)`;
+        }
+        if (logBox && Array.isArray(job.logs)) {
+            logBox.innerHTML = job.logs.slice(-14).map(l => `<div>${escapeHtml(l)}</div>`).join('');
+            logBox.scrollTop = logBox.scrollHeight;
+        }
+        if (job.status === 'completed' && job.delivery && delivCard) {
+            delivCard.style.display = 'block';
+            const d = job.delivery;
+            const valSummary = (job.validation && job.validation.summary) || {};
+            delivCard.innerHTML = `
+                <div style="font-family:var(--font-mono);font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent-color);font-weight:600;margin-bottom:4px;">
+                    Volume Published &amp; Link Dispatched
+                </div>
+                <div><strong>Email Sent To:</strong> ${escapeHtml(d.recipient_email || '')}</div>
+                <div><strong>Validation Gate:</strong> PASS (${valSummary.chapters || 12} chs &middot; ${(valSummary.total_words || 0).toLocaleString()} words &middot; ${valSummary.avg_sent_words || 0} w/s &middot; ${u.google_searches_used || 12}/12 Google Searches)</div>
+                <div style="margin-top:8px;display:flex;gap:10px;align-items:center;">
+                    <a href="#read=${escapeHtml(job.slug)}" onclick="closeModals(); selectBook('${escapeHtml(job.slug)}'); return false;" class="creator-primary-btn" style="text-decoration:none;display:inline-block;">Open "${escapeHtml(job.title)}" in Spread Reader &rarr;</a>
+                    <a href="assets/pdfs/${escapeHtml(job.slug)}.pdf" target="_blank" rel="noopener" class="creator-secondary-btn" style="text-decoration:none;display:inline-block;">Download PDF</a>
+                </div>
+            `;
+            if (launchBtn) {
+                launchBtn.disabled = false;
+                launchBtn.textContent = 'Commission Another Volume \u2192';
+            }
+        }
+    }
+
+    async function fetchLatestCreatorJobReceipt() {
+        try {
+            let res = await fetch('/api/creator/status?job_id=latest', { cache: 'no-store' });
+            if (!res.ok) {
+                res = await fetch('dossiers/jobs/latest.json?t=' + Date.now(), { cache: 'no-store' });
+            }
+            if (res.ok) {
+                const data = await res.json();
+                if (data && data.job_id) {
+                    renderCreatorTelemetry(data);
+                    if (data.status === 'running' || data.status === 'initializing') {
+                        startCreatorPolling(data.job_id);
+                    }
+                }
+            }
+        } catch (e) {}
+    }
+
+    function startCreatorPolling(jobId) {
+        if (creatorState.pollTimer) clearInterval(creatorState.pollTimer);
+        creatorState.activeJobId = jobId;
+        creatorState.pollTimer = setInterval(async () => {
+            try {
+                let res = await fetch(`/api/creator/status?job_id=${encodeURIComponent(jobId)}`, { cache: 'no-store' });
+                if (!res.ok) {
+                    res = await fetch('dossiers/jobs/latest.json?t=' + Date.now(), { cache: 'no-store' });
+                }
+                if (res.ok) {
+                    const job = await res.json();
+                    renderCreatorTelemetry(job);
+                    if (job.status === 'completed' || job.status === 'failed') {
+                        clearInterval(creatorState.pollTimer);
+                        creatorState.pollTimer = null;
+                    }
+                }
+            } catch (e) {}
+        }, 2500);
+    }
+
+    async function submitCreatorJob() {
+        const titleEl = document.getElementById('creator-title');
+        const subEl = document.getElementById('creator-subtitle');
+        const catEl = document.getElementById('creator-category');
+        const profEl = document.getElementById('creator-profile');
+        const emailEl = document.getElementById('creator-email');
+        const launchBtn = document.getElementById('creator-launch-btn');
+
+        if (titleEl && titleEl.value.trim()) creatorState.title = titleEl.value.trim().replace(/:/g, '');
+        if (subEl && subEl.value.trim()) creatorState.subtitle = subEl.value.trim().replace(/:/g, '');
+        if (catEl && catEl.value.trim()) creatorState.category = catEl.value.trim();
+        if (profEl && profEl.value) creatorState.profile = profEl.value;
+        if (emailEl && emailEl.value.trim()) creatorState.email = emailEl.value.trim();
+
+        if (!creatorState.title || !creatorState.email) return;
+
+        if (launchBtn) {
+            launchBtn.disabled = true;
+            launchBtn.textContent = 'Submitting Gemini 4 Argon Batch...';
+        }
+
+        try {
+            const resp = await fetch('/api/creator/start', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    slug: creatorState.slug,
+                    title: creatorState.title,
+                    subtitle: creatorState.subtitle,
+                    category: creatorState.category,
+                    mode: creatorState.mode,
+                    format: creatorState.format,
+                    profile: creatorState.profile,
+                    email: creatorState.email
+                })
+            });
+            if (resp.ok) {
+                const initData = await resp.json();
+                startCreatorPolling(initData.job_id || 'latest');
+            }
+        } catch (e) {
+            if (launchBtn) {
+                launchBtn.disabled = false;
+                launchBtn.textContent = 'Commission Volume via Batch API \u2192';
+            }
+        }
+    }
+
     window.addEventListener('keydown', (e) => {
-        if (e.target && e.target.tagName === 'INPUT') {
+        if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT' || e.target.tagName === 'TEXTAREA')) {
             if (e.key === 'Escape') {
-                e.target.value = '';
-                handleCatalogSearch('');
+                if (e.target.id === 'catalog-search') {
+                    e.target.value = '';
+                    handleCatalogSearch('');
+                }
                 e.target.blur();
             }
             return;
@@ -954,6 +1278,11 @@
             cycleTheme();
         } else if (e.key === '?') {
             openHelpModal();
+        } else if (e.key === 'c' || e.key === 'C') {
+            if (isHomeActive && !isModalOpen) {
+                e.preventDefault();
+                openCreatorModal();
+            }
         } else if (e.key === 'h' || e.key === 'H') {
             e.preventDefault();
             document.querySelectorAll('.modal-overlay').forEach(m => m.classList.remove('open'));
@@ -1015,6 +1344,12 @@
     window.openSourcesModal = openSourcesModal;
     window.openLibraryModal = openSourcesModal;
     window.openHelpModal = openHelpModal;
+    window.openCreatorModal = openCreatorModal;
+    window.setCreatorStep = setCreatorStep;
+    window.selectPipelineTopic = selectPipelineTopic;
+    window.handleCreatorTitleInput = handleCreatorTitleInput;
+    window.selectCreatorFormat = selectCreatorFormat;
+    window.submitCreatorJob = submitCreatorJob;
     window.closeModals = closeModals;
     window.cycleTheme = cycleTheme;
     window.loadBook = loadBook;

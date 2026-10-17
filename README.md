@@ -64,6 +64,7 @@ The client application ([`index.html`](index.html), [`style.css`](style.css), [`
 | `n` / `p` | Jump to Next / Previous chapter |
 | `t` | Open Table of Contents modal |
 | `s` | Open Sources & Provenance side panel |
+| `c` | Open Book Creator Studio (`+ Create`) |
 | `h` | Return to Home catalog |
 | `d` | Cycle color theme (`Light` / `Dark` / `Sepia`) |
 | `?` | Open Keyboard Shortcuts modal |
@@ -78,8 +79,8 @@ The client application ([`index.html`](index.html), [`style.css`](style.css), [`
 
 ```text
 .
-├── index.html                  # Main catalog & 2-page spread reader shell
-├── style.css                   # Responsive layout, theme tokens & side-panel styles
+├── index.html                  # Main catalog, spread reader & Book Creator Studio modal
+├── style.css                   # Responsive layout, theme tokens & Book Creator UI styles
 ├── catalog.json                # Single source of truth for all published volumes
 ├── backlog.json / BACKLOG.md   # Queued volume pipeline & batch status
 ├── alexandria_manifesto.md     # Core editorial & structural laws
@@ -87,22 +88,24 @@ The client application ([`index.html`](index.html), [`style.css`](style.css), [`
 ├── favicon.svg                 # Light-styled Literata 'A' vector app icon
 ├── site.webmanifest            # PWA manifest
 ├── og-image.png                # 1200x630 PNG OpenGraph card for alexandria.press
-├── sitemap.xml                 # Full XML sitemap (root + 34 books + 442 chapters)
+├── sitemap.xml                 # Full XML sitemap (root + 35 books + 455 chapters)
 ├── books/                      # Canonical 12-chapter Markdown manuscripts (<slug>.md)
-├── dossiers/                   # Verified 12-chapter research dossiers (<slug>.json)
+├── dossiers/                   # Verified 12-chapter research dossiers & job telemetry
 ├── assets/
 │   ├── covers/                 # Full-bleed cover SVGs & square 120x120 thumbs/
 │   ├── og/                     # Per-book 1200x630 PNG OpenGraph social cards
 │   └── pdfs/                   # Compiled Typst PDFs (desktop, compact/, mobile/)
 ├── read/                       # Static crawlable HTML pages per book & chapter
 ├── js/
-│   ├── app.js                  # Reader, catalog search, routing & provenance logic
+│   ├── app.js                  # Reader, catalog search, Book Creator UI & provenance logic
 │   └── books-data.js           # Auto-generated metadata, section pages & provenance
 ├── scripts/
 │   ├── lib.py                  # Shared catalog & markdown parsing utilities
 │   ├── validate_book.py        # 12-gate structural, prose, SVG & provenance validator
 │   ├── compile_typst.py        # Markdown -> Typst -> 3-edition PDF compiler
-│   └── publish_book.py         # End-to-end publisher (covers, PDFs, OG PNGs, HTML, JS)
+│   ├── publish_book.py         # End-to-end publisher (covers, PDFs, OG PNGs, HTML, JS)
+│   ├── create_book_pipeline.py # Gemini 4 Argon Batch API + 1-Search/Ch book generator
+│   └── book_creator_server.py  # Local HTTP + API server for the Book Creator UI
 ├── fonts/                      # Bundled Literata & IBM Plex Mono TTF fonts
 ├── vendor/pdfjs/               # Local PDF.js runtime & web worker
 └── tests/
@@ -116,47 +119,60 @@ The client application ([`index.html`](index.html), [`style.css`](style.css), [`
 ### Prerequisites
 - **Python 3.10+**
 - **[Typst CLI](https://github.com/typst/typst)** (`brew install typst`)
+- **`GEMINI_API_KEY` in `.env`** (for running the Gemini 4 Argon Batch Book Creator)
 
-### 1. Run Local Development Server
+### 1. Run Local Server with Book Creator Studio API
 ```bash
-python3 -m http.server 8080
-# Open http://localhost:8080
+python3 scripts/book_creator_server.py --port 8765
+# Open http://localhost:8765 and click "+ Create" (or press "c")
 ```
 
-### 2. Validate a Book Manuscript
+### 2. Generate & Publish a New Volume via Gemini 4 Argon Batch Pipeline
+Executes Stage 1 (Dossier Batch API), Stage 2 (1 Google Search per chapter validation = 12 grounded queries), Stage 3 (13-section Manuscript Batch API + 12-gate validator), and Stage 4 (3 Typst PDFs, OG PNG card, catalog sync, and email delivery receipt):
+```bash
+python3 scripts/create_book_pipeline.py \
+  --slug sleep \
+  --title "Sleep" \
+  --subtitle "The Nightly Brain Shutdown and Eleven Neighbors From Circadian Clocks to Synaptic Pruning" \
+  --category "Neurobiology & Physiology" \
+  --mode landscape \
+  --profile B \
+  --email reader@alexandria.press
+```
+
+### 3. Validate a Book Manuscript
 Runs all structural, word-count (`520–760` words/chapter), sentence-cadence ($\le 24.0$ words/sentence), SVG geometry, LaTeX/KaTeX balance, and provenance gates:
 ```bash
-python3 scripts/validate_book.py books/entropy.md
+python3 scripts/validate_book.py books/sleep.md
 ```
 
-### 3. Compile Typst PDF Editions for a Single Book
+### 4. Compile Typst PDF Editions for a Single Book
 ```bash
 # Desktop (5.8in x 7.5in), Compact (5.5in x 6.8in), and Mobile (4.2in x 7.5in)
-python3 scripts/compile_typst.py books/entropy.md assets/pdfs/entropy.pdf --edition desktop
-python3 scripts/compile_typst.py books/entropy.md assets/pdfs/compact/entropy.pdf --edition compact
-python3 scripts/compile_typst.py books/entropy.md assets/pdfs/mobile/entropy.pdf --edition mobile
+python3 scripts/compile_typst.py books/sleep.md assets/pdfs/sleep.pdf --edition desktop
+python3 scripts/compile_typst.py books/sleep.md assets/pdfs/compact/sleep.pdf --edition compact
+python3 scripts/compile_typst.py books/sleep.md assets/pdfs/mobile/sleep.pdf --edition mobile
 ```
 
-### 4. Publish a New Volume End-to-End
-Validates the manuscript, generates the geometric cover SVG and thumbnail, compiles all 3 Typst PDF editions, renders the `1200×630` OpenGraph PNG card, updates `catalog.json` and `js/books-data.js`, builds `read/<slug>/*.html`, and syncs `index.html` and `sitemap.xml`:
+### 5. Publish an Existing Manuscript End-to-End
+Validates `books/<slug>.md`, generates the geometric cover SVG and thumbnail, compiles all 3 Typst PDF editions, renders the `1200×630` OpenGraph PNG card, updates `catalog.json` and `js/books-data.js`, builds `read/<slug>/*.html`, and syncs `index.html` and `sitemap.xml`:
 ```bash
 python3 scripts/publish_book.py \
-  --slug entropy \
-  --title "Entropy" \
-  --subtitle "The Core Law of Disorder and Eleven Neighbors That Govern Time, Heat, and Information" \
-  --category "Physics & Information" \
-  --pattern-idx 1
+  --slug sleep \
+  --category "Neurobiology & Physiology" \
+  --accent "#4f46e5" \
+  --bg "#17153b"
 ```
 
-### 5. Run the Automated Test Suite
-Verifies repository hygiene, `index.html` markers, `catalog.json` parity, all 34 manuscripts and dossiers, all 442 chapter HTML pages, cover SVGs, OG PNGs, and all 102 Typst PDFs:
+### 6. Run the Automated Test Suite
+Verifies repository hygiene, `index.html` markers, `catalog.json` parity, all 35 manuscripts and dossiers, all 455 chapter HTML pages, cover SVGs, OG PNGs, and all 105 Typst PDFs:
 ```bash
 python3 tests/test_reader.py
 ```
 
 ---
 
-## Published Catalog (34 Volumes)
+## Published Catalog (35 Volumes)
 
 | # | Volume | Subtitle | Category | Format |
 | :- | :--- | :--- | :--- | :--- |
@@ -194,3 +210,4 @@ python3 tests/test_reader.py
 | 32 | **Twelve Equations** | *The Mathematical Laws That Govern Heat, Waves, Gravity, and Chance* | Mathematics & Physics | Mechanisms |
 | 33 | **John von Neumann** | *The Mind That Architected Game Theory, Stored-Program Computers, and Self-Replicating Automata* | Mathematics, Computing & Biography | Biography |
 | 34 | **The Solar System** | *Twelve Worlds and Orbital Realms in Twelve Highlights Each* | Planetary Science & Astrophysics | 12×12 Highlights |
+| 35 | **Sleep** | *The Nightly Brain Shutdown and Eleven Neighbors From Circadian Clocks to Synaptic Pruning* | Neurobiology & Physiology | Landscape |
