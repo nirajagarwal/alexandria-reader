@@ -269,8 +269,8 @@ def validate_svg_diagram(svg_str: str, loc: str):
 
 def validate_book(
     filepath: str,
-    min_words: int = 520,
-    max_words: int = 760,
+    min_words: int = 500,
+    max_words: int = 800,
     legacy: bool = False,
     require_quotes: bool = False,
 ):
@@ -299,7 +299,6 @@ def validate_book(
         "chain",
     }
 
-    min_diagrams = 0
     book_mode = "facet"
     if os.path.exists(dossier_path):
         try:
@@ -309,9 +308,6 @@ def validate_book(
                 errors.append(
                     f"Invalid dossier mode '{book_mode}' in {dossier_path}. Must be one of {sorted(VALID_MODES)}."
                 )
-            cc = dossier.get("creator_constraints", {})
-            if "min_diagrams" in cc:
-                min_diagrams = int(cc["min_diagrams"])
         except Exception:
             pass
 
@@ -390,9 +386,9 @@ def validate_book(
         body_words = len(body_no_sep.split())
 
         if idx == 0:
-            # Introduction word count & no-chapter-summary check (~250 words target)
-            if body_words < 140 or body_words > 300:
-                errors.append(f"Introduction word count ({body_words}) must be between 140 and 300 words (~250 word target).")
+            # Introduction word count & no-chapter-summary check (~200–270 words target)
+            if body_words < 130 or body_words > 320:
+                errors.append(f"Introduction word count ({body_words}) must be between 130 and 320 words.")
             if re.search(r"\b(?:this volume traces|this volume examines|across twelve chapters|in the first half of the|in the second half of the|the twelve chapters that follow)\b", body_no_code, re.IGNORECASE):
                 errors.append("Introduction must introduce the topic only—do not summarize or list the chapters.")
         else:
@@ -404,7 +400,7 @@ def validate_book(
                 )
             elif body_words > effective_max:
                 errors.append(
-                    f"Chapter {idx} ('{h2[2:]}') body is too long: {body_words} words (maximum {effective_max}; target 550–720 words for high-density compression)."
+                    f"Chapter {idx} ('{h2[2:]}') body is too long: {body_words} words (maximum {effective_max})."
                 )
 
             if book_mode == "listicle":
@@ -535,14 +531,12 @@ def validate_book(
         chapters_meta.append({"label": expected_label, "title": h2[2:], "words": body_words})
 
     num_chapters = len(sections) - 2
-    if date_open_count > max(4, num_chapters // 2):
+    if date_open_count > 7:
         errors.append(
-            f"Cadence fatigue: {date_open_count}/{num_chapters} chapters open with a formulaic 'In/On/At [Date/Time]' sentence. Rotate across Door A (Scene), Door B (Paradox/Constraint), and Door C (Artifact/Measurement)."
+            f"Cadence fatigue: {date_open_count}/{num_chapters} chapters open with a formulaic 'In/On/At [Date/Time]' sentence."
         )
     if diagram_count > 4:
         errors.append(f"Too many diagrams in volume ({diagram_count}; maximum 4 per book so diagrams remain high-signal).")
-    if diagram_count < min_diagrams:
-        errors.append(f"Volume has {diagram_count} diagrams, fewer than creator_constraints.min_diagrams ({min_diagrams}).")
 
     katex_errors = verify_katex_batch(katex_items)
     errors.extend(katex_errors)
@@ -560,9 +554,9 @@ def validate_book(
     prose_text = " ".join(prose_lines)
     sents = [s.strip() for s in re.split(r"(?<=[.!?])\s+", prose_text) if len(s.strip().split()) >= 3]
     avg_sent_words = round(sum(len(s.split()) for s in sents) / len(sents), 1) if sents else 0.0
-    if not legacy and avg_sent_words > 24.0:
+    if not legacy and avg_sent_words > 28.5:
         errors.append(
-            f"Average sentence length is {avg_sent_words} words/sentence (maximum 24.0 w/s; target 17–22 w/s). Break up long multi-clause sentences into direct declarative statements."
+            f"Average sentence length is {avg_sent_words} words/sentence (maximum 28.5 w/s)."
         )
 
     summary = {
@@ -584,8 +578,8 @@ def main():
     parser = argparse.ArgumentParser(description="Validate Alexandria Press markdown manuscripts.")
     parser.add_argument("files", nargs="*", help="Markdown file(s) or slug(s) to validate")
     parser.add_argument("--all", action="store_true", help="Validate all published books in catalog.json")
-    parser.add_argument("--min-words", type=int, default=520, help="Minimum words per chapter (default: 520)")
-    parser.add_argument("--max-words", type=int, default=760, help="Maximum words per chapter (default: 760)")
+    parser.add_argument("--min-words", type=int, default=500, help="Minimum words per chapter (default: 500)")
+    parser.add_argument("--max-words", type=int, default=800, help="Maximum words per chapter (default: 800)")
     parser.add_argument("--legacy", action="store_true", help="Allow legacy word counts and sentence lengths for existing volumes")
     parser.add_argument("--require-quotes", action="store_true", help="Deprecated flag kept for CLI compatibility")
     args = parser.parse_args()

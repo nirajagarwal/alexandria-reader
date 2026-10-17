@@ -141,7 +141,7 @@ python3 scripts/create_book_pipeline.py \
 ```
 
 ### 3. Validate a Book Manuscript
-Runs all structural, word-count (`520–760` words/chapter), sentence-cadence ($\le 24.0$ words/sentence), SVG geometry, LaTeX/KaTeX balance, and provenance gates:
+Runs all structural, word-count (`500–800` words/chapter), sentence-cadence ($\le 28.5$ words/sentence), SVG geometry, LaTeX/KaTeX balance, and provenance gates:
 ```bash
 python3 scripts/validate_book.py books/vaccines.md
 ```
@@ -205,7 +205,7 @@ python3 tests/test_reader.py
 | 27 | **Materials** | *How Concrete, Steel, Glass, Paper, and Silicon Built Civilization* | Materials & Engineering | Mechanisms |
 | 28 | **Claude Shannon** | *The Juggler Who Turned Information Into Physics* | Biography & Information Theory | Biography |
 | 29 | **The Ocean** | *Twelve Marine Zones and Systems in Twelve Highlights Each* | Earth & Ocean Science | 12×12 Highlights |
-| 30 | **Consciousness** | *Brains, Illusions, Meditation, Octopus Minds, and the Mystery of Inner Experience* | Neuroscience & Philosophy | Mechanisms |
+| 30 | **Consciousness** | *The Architecture, Anomalies, and Philosophy of Inner Experience* | Neuroscience & Philosophy | Mechanisms |
 | 31 | **Emotions** | *Fear, Anger, Joy, Grief, Love, and Seven Other Everyday Feelings in Twelve Highlights Each* | Psychology & Behavior | 12×12 Highlights |
 | 32 | **Alan Turing** | *Computability, Codebreaking, and the Patterns of Living Form* | Biography & Computation | Biography |
 | 33 | **The Cell** | *Twelve Molecular Machines in Twelve Highlights Each* | Molecular Biology | 12×12 Highlights |

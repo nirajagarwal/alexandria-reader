@@ -353,91 +353,53 @@ def stage1_generate_dossier_batch(api_key: str, spec: dict, tracker: CostAndStat
     category = spec["category"]
     profile = spec["profile"]
 
-    formalism_map = {
-        1: "ledger_or_list",
-        2: "diagram",
-        3: "equation",
-        4: "equation",
-        5: "ledger_or_list",
-        6: "diagram",
-        7: "ledger_or_list",
-        8: "equation",
-        9: "equation",
-        10: "diagram",
-        11: "equation",
-        12: "ledger_or_list",
-    }
-    doors = {
-        1: "A: Scene",
-        2: "B: Constraint/Paradox",
-        3: "C: Artifact/Measurement",
-        4: "A: Scene",
-        5: "B: Constraint/Paradox",
-        6: "C: Artifact/Measurement",
-        7: "B: Constraint/Paradox",
-        8: "C: Artifact/Measurement",
-        9: "A: Scene",
-        10: "B: Constraint/Paradox",
-        11: "C: Artifact/Measurement",
-        12: "B: Constraint/Paradox",
-    }
-
     mode_instructions = ""
     if mode == "landscape":
         mode_instructions = """
-This volume uses Knowra Contextual Landscape mode (`mode: "landscape"`):
-- Chapter 1 is the Anchor Concept itself (the core mechanism and physical/biological definition of the book's topic).
-- Chapters 2 through 12 examine 11 distinct neighboring concepts that surround, constrain, or interact with the anchor concept across lenses (`building-blocks`, `mechanism`, `origins`, `contrasts`, `neighbors`, `cases`, `consequences`, `open-questions`) and moves (`zoom-in`, `zoom-out`, `go`, `contrast`).
-- Include `lens`, `move`, `what`, `why_here`, and 3 `background_nodes` (`[{"label": "...", "what": "...", "whyHere": "..."}]`) for each chapter.
+Structural Approach (`mode: "landscape"`):
+- Chapter 1 examines the core phenomenon itself and its governing conceptual tension.
+- Chapters 2 through 12 explore 11 distinct neighboring concepts, rival frameworks, boundary cases, or non-obvious extensions that illuminate the core phenomenon from different angles.
 """
     elif mode == "listicle":
         mode_instructions = """
-This volume uses the 12x12 Prospected Highlights mode (`mode: "listicle"`):
-- Each of the 12 chapters examines one major subsystem, zone, or component of the topic through 12 perpendicular quantitative facts (`prospected_seeds`: array of 12 detailed factual strings per chapter).
+Structural Approach (`mode: "listicle"`):
+- Each of the 12 chapters examines one major subsystem, zone, or component of the topic through 12 counterintuitive, high-signal empirical facts (`prospected_seeds`: array of 12 strings per chapter).
 """
     elif fmt == "biography":
         mode_instructions = """
-This volume is a 12-Facet Biography (`format: "biography"`):
-- Chapter 1 examines the subject's early formation and intellectual style.
-- Chapters 2 through 12 each examine one landmark theorem, experiment, machine, or historical collision.
+Structural Approach (`format: "biography"`):
+- Chapter 1 examines the thinker's formative cognitive style and intellectual departure point.
+- Chapters 2 through 12 each examine one decisive theorem, experiment, machine, or intellectual collision.
 """
     else:
         mode_instructions = """
-This volume uses 12-Facet Mechanisms mode (`mode: "mechanisms"`):
-- Each of the 12 chapters examines a distinct physical, biological, engineering, or historical mechanism with a concrete primary experiment/event anchor and quantitative payoff.
+Structural Approach (`mode: "facet"` / `format: "mechanisms"`):
+- Design 12 distinct, high-voltage chapters that explore the subject across its sharpest scientific mechanisms, competing theories, curious empirical anomalies, and philosophical or outside-of-science perspectives.
+- Avoid safe, overused 101 pop-science chestnuts unless you are exposing a deeper mathematical, structural, or philosophical fault line that standard summaries miss.
 """
 
-    prompt = f"""You are the Chief Editorial Architect for Alexandria Press (alexandria.press).
-Design the complete 12-chapter research dossier JSON for the volume:
+    prompt = f"""You are the Editorial Architect for Alexandria Press (alexandria.press), in the tradition of volumes like *Singular Minds* and *Architectures of Choice*.
+Design a 12-chapter dossier JSON for:
 - Slug: "{spec['slug']}"
-- Title: "{title}" (NO colons allowed)
-- Subtitle: "{subtitle}" (NO colons allowed)
+- Title: "{title}" (no colons)
+- Subtitle: "{subtitle}" (no colons)
 - Category: "{category}"
-- Mode: "{mode}"
-- Format: "{fmt}"
-- Profile: "{profile}"
 
 {mode_instructions}
 
-CRITICAL RULES:
-1. Return ONLY a valid JSON object matching the schema below (no markdown commentary outside the JSON).
-2. Every chapter `title` and `subtitle` MUST contain ZERO colons (`:`).
-3. Follow this exact `formalism_mode` schedule for chapters 1..12:
-   {json.dumps(formalism_map)}
-4. Follow this exact `opening_door` schedule for chapters 1..12:
-   {json.dumps(doors)}
-5. Every chapter MUST include:
-   - `"chapter"`: integer 1..12
-   - `"title"`: crisp title (no colons)
-   - `"subtitle"`: crisp subtitle (no colons)
-   - `"opening_door"`: from schedule above
-   - `"formalism_mode"`: from schedule above
-   - `"historical_anchor"`: 2-3 sentences naming the real researcher(s), exact year (4-digit year), institution/location, experimental apparatus or primary record, and quantitative measurements.
-   - `"exit_fact"`: 1-2 sentences stating the concrete empirical measurement or outcome that closes the chapter.
-   - `"equation_or_diagram_spec"`: If `formalism_mode` is `"equation"`, provide the exact LaTeX display equation (e.g. Borbély's two-process model, Hodgkin-Huxley/Kuramoto, exponential decay, Michaelis-Menten, Shannon entropy, etc.) and define its variables. If `"diagram"`, describe the 3-node schematic flow (`Node 1 -> Node 2 -> Node 3`) with short labels (<= 15 chars each). If `"ledger_or_list"`, list the 3-4 structured bullet items with concrete metrics.
-   - `"search_query"`: A specific Google Search query (8-14 words) to verify the chapter's primary scientist, paper/experiment year, and quantitative measurement.
+EDITORIAL POINTERS:
+1. Every chapter must be driven by a **sharp, non-obvious thesis, paradox, or structural insight**—not a safe textbook anecdote.
+2. Anchor each chapter in real experiments, thinkers, historical records, or primary texts (`historical_anchor`), and specify the concrete finding or resolution where the argument lands (`exit_fact`).
+3. Choose `"formalism_mode"` organically for each chapter based ONLY on what genuinely sharpens that chapter's argument:
+   - `"prose"`: pure essay prose when the argument is philosophical, contemplative, literary, or conceptual.
+   - `"equation"`: when a genuine mathematical, physical, or information-theoretic equation does real explanatory work.
+   - `"ledger_or_list"`: when a crisp 3–4 item structural comparison or experimental breakdown clarifies the contrast.
+   - `"diagram"`: at most 1–3 chapters across the entire book, only where a 3-stage schematic flow genuinely aids comprehension.
+   (If `mode` is `"listicle"`, set `"formalism_mode": "listicle"` for all chapters.)
+4. Chapter `title` and `subtitle` must not contain colons (`:`).
+5. Include a `"search_query"` (8–14 words) to verify the chapter's primary researcher, year, and empirical details via Google Search.
 
-Output JSON schema:
+Return ONLY a valid JSON object matching this structure:
 {{
   "slug": "{spec['slug']}",
   "title": "{title}",
@@ -446,20 +408,15 @@ Output JSON schema:
   "mode": "{mode}",
   "format": "{fmt}",
   "profile": "{profile}",
-  "creator_constraints": {{
-    "min_diagrams": 3,
-    "quotes_allowed": false
-  }},
   "chapters": [
     {{
       "chapter": 1,
       "title": "...",
       "subtitle": "...",
-      "opening_door": "A: Scene",
-      "formalism_mode": "ledger_or_list",
-      "historical_anchor": "...",
-      "exit_fact": "...",
-      "equation_or_diagram_spec": "...",
+      "formalism_mode": "prose | equation | ledger_or_list | diagram",
+      "historical_anchor": "The specific thesis, thinkers, experiments, years, and quantitative or textual evidence driving this chapter.",
+      "exit_fact": "The concrete empirical, mathematical, or philosophical resolution that closes the chapter.",
+      "equation_or_diagram_spec": "If equation, the genuine LaTeX equation and variable meanings; if list, the key contrasts; if prose, brief structural note.",
       "search_query": "..."
     }}
   ]
@@ -469,7 +426,7 @@ Output JSON schema:
         {
             "request": {
                 "contents": [{"parts": [{"text": prompt}]}],
-                "generationConfig": {"temperature": 0.4},
+                "generationConfig": {"temperature": 0.65},
             },
             "metadata": {"key": "dossier"},
         }
@@ -483,14 +440,24 @@ Output JSON schema:
     dossier["mode"] = mode
     dossier["format"] = fmt
     dossier["profile"] = profile
-    dossier["creator_constraints"] = {"min_diagrams": 0 if mode == "listicle" else 3, "quotes_allowed": False}
+    dossier["creator_constraints"] = {"min_diagrams": 0, "quotes_allowed": False}
 
+    diag_seen = 0
     for idx, ch in enumerate(dossier.get("chapters", []), 1):
         ch["chapter"] = idx
         ch["title"] = (ch.get("title") or f"Facet {idx}").replace(":", "")
         ch["subtitle"] = (ch.get("subtitle") or f"Mechanism {idx}").replace(":", "")
-        ch["formalism_mode"] = "listicle" if mode == "listicle" else formalism_map.get(idx, "ledger_or_list")
-        ch["opening_door"] = doors.get(idx, "A: Scene")
+        if mode == "listicle":
+            ch["formalism_mode"] = "listicle"
+        else:
+            fm = ch.get("formalism_mode", "prose")
+            if fm not in ("prose", "equation", "ledger_or_list", "diagram"):
+                fm = "prose"
+            if fm == "diagram":
+                diag_seen += 1
+                if diag_seen > 3:
+                    fm = "prose"
+            ch["formalism_mode"] = fm
 
     dossier_path = os.path.join(DOSSIERS_DIR, f"{spec['slug']}.json")
     with open(dossier_path, "w", encoding="utf-8") as f:
@@ -515,22 +482,22 @@ def stage2_validate_chapters_with_google_search(api_key: str, dossier: dict, tra
     def verify_one_chapter(ch: dict) -> dict:
         ch_num = ch["chapter"]
         q = ch.get("search_query") or f"{ch['title']} {ch['historical_anchor'][:80]}"
-        prompt = f"""Use Google Search (1 search) to fact-check and verify the following chapter dossier for "{dossier['title']}" — Chapter {ch_num} ({ch['title']}):
+        prompt = f"""Use Google Search (1 search) to fact-check and enrich the following chapter dossier for "{dossier['title']}" — Chapter {ch_num} ({ch['title']}):
 
-Proposed Historical Anchor: {ch.get('historical_anchor', '')}
-Proposed Exit Fact: {ch.get('exit_fact', '')}
+Proposed Thesis & Grounding: {ch.get('historical_anchor', '')}
+Proposed Closing Resolution: {ch.get('exit_fact', '')}
 Verification Query Focus: {q}
 
-Verify the exact researcher full names, 4-digit publication/experiment year, institution/place, and quantitative measurements. Correct any date, spelling, or numerical inaccuracy.
+Verify exact researcher names, 4-digit publication/experiment years, institutions, and measurements, while preserving the intellectual thesis of the chapter.
 Return ONLY a JSON object with:
 {{
   "chapter": {ch_num},
-  "verified_historical_anchor": "2-3 sentences with verified names, exact 4-digit year, institution, apparatus, and measurements (NO colons, NO direct quotes)",
-  "verified_exit_fact": "1-2 sentences with the verified empirical/quantitative payoff that ends the chapter (NO moralizing summary)",
+  "verified_historical_anchor": "2-4 sentences preserving the chapter's thesis and verified names, years, institutions, and measurements (no direct quotes)",
+  "verified_exit_fact": "1-2 sentences with the verified empirical or conceptual payoff that closes the chapter",
   "key_verified_facts": [
-    "Fact 1 with exact date/name/number",
-    "Fact 2 with exact mechanism/measurement",
-    "Fact 3 with exact experimental outcome"
+    "Verified detail 1",
+    "Verified detail 2",
+    "Verified detail 3"
   ],
   "verification_note": "Brief summary of what was confirmed or corrected via Google Search"
 }}"""
@@ -632,7 +599,7 @@ def build_safe_svg_diagram(ch_num: int, ch_title: str, labels: list[str]) -> str
   <text x="494" y="86" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="var(--text-color)">{b3}</text>
   <text x="494" y="108" text-anchor="middle" font-family="sans-serif" font-size="11" fill="var(--text-muted)">{b3_sub}</text>
   <path d="M 494 126 L 494 152 L 106 152 L 106 126" fill="none" stroke="var(--border-color)" stroke-width="1.2" stroke-dasharray="4,4"/>
-  <text x="300" y="168" text-anchor="middle" font-family="sans-serif" font-size="11" fill="var(--text-muted)">Regulatory Feedback Loop</text>
+  <text x="300" y="168" text-anchor="middle" font-family="sans-serif" font-size="11" fill="var(--text-muted)">System Coupling</text>
 </svg>
 ```"""
 
@@ -641,116 +608,74 @@ def build_chapter_prompt(dossier: dict, ch: dict) -> str:
     ch_num = ch["chapter"]
     ch_title = ch["title"].replace(":", "")
     ch_sub = ch["subtitle"].replace(":", "")
-    f_mode = ch.get("formalism_mode", "ledger_or_list")
-    door = ch.get("opening_door", "A: Scene")
+    f_mode = ch.get("formalism_mode", "prose")
     anchor = ch.get("historical_anchor", "")
     exit_fact = ch.get("exit_fact", "")
     v_facts = "\n".join(f"- {f}" for f in ch.get("verified_facts", []))
     eq_spec = ch.get("equation_or_diagram_spec", "")
-    landscape_ctx = ""
-    if dossier.get("mode") == "landscape":
-        bg_nodes = ch.get("background_nodes", [])
-        bg_str = "\n".join(
-            f"  * {n.get('label', '')}: {n.get('what', '')} ({n.get('whyHere', '')})"
-            for n in bg_nodes
-        )
-        landscape_ctx = f"""
-Knowra Contextual Landscape Details:
-- What this concept is: {ch.get('what', '')}
-- How it connects to {dossier['title']}: {ch.get('why_here', '')}
-- Background Nodes to weave into the mechanism:
-{bg_str}
-"""
 
     if f_mode == "listicle":
         seeds = ch.get("prospected_seeds", [])
         seeds_str = "\n".join(f"  {idx}. {s}" for idx, s in enumerate(seeds, 1)) if seeds else ""
         formalism_instr = f"""
-FORMALISM MODE — 12-HIGHLIGHT LISTICLE (`mode: "listicle"`, `format: "highlights"`):
-- Write EXACTLY 12 standalone paragraphs (~48–54 words per paragraph, totaling 580–650 words across the chapter).
-- Separate the 12 paragraphs with 11 standalone lines containing ONLY `· · ·` surrounded by blank lines:
-  Paragraph 1...
-
-  · · ·
-
-  Paragraph 2...
-- Do NOT use numbered lists (`1.`, `2.`), bullet lists, SVG diagrams, or `$$...$$` display equations.
-- Open every paragraph directly with the surprising physical fact, everyday bodily or physical experience, and concrete numbers—zero throat-clearing and zero academic jargon.
-{f"- Expand these 12 prospected seeds:{chr(10)}{seeds_str}" if seeds_str else ""}
+Format (`mode: "listicle"`):
+- Write 12 standalone paragraphs (~48–56 words per paragraph, ~600–670 words total) separated by 11 standalone lines containing `· · ·`.
+{f"- Seeds:{chr(10)}{seeds_str}" if seeds_str else ""}
 """
     elif f_mode == "diagram":
         formalism_instr = f"""
-FORMALISM MODE — SCHEMATIC DIAGRAM CHAPTER (`formalism_mode: "diagram"`):
-- Do NOT include any `$$...$$` display math or Markdown bullet lists in this chapter.
-- Instead, include a single line placeholder `[DIAGRAM_SLOT_{ch_num}]` between Paragraph 3 and Paragraph 4, AND at the very end of your response after `===DIAGRAM_LABELS===`, provide 6 short label strings (each <= 14 characters, no punctuation) for the 3 diagram boxes (`Box1Title | Box1Sub | Box2Title | Box2Sub | Box3Title | Box3Sub`).
-- Write 5 to 6 crisp paragraphs of prose totaling **590 to 660 words** (excluding the diagram block).
+Optional Visual: Include `[DIAGRAM_SLOT_{ch_num}]` on its own line between two paragraphs where a schematic fits, and at the very end after `===DIAGRAM_LABELS===` provide 6 short labels (`<= 14` chars each): `Box1Title | Box1Sub | Box2Title | Box2Sub | Box3Title | Box3Sub`.
 """
-    elif f_mode == "equation":
+    elif f_mode == "equation" and eq_spec:
         formalism_instr = f"""
-FORMALISM MODE — DISPLAY EQUATION CHAPTER (`formalism_mode: "equation"`):
-- Include EXACTLY ONE `$$...$$` display equation on its own lines between paragraphs, unpacking the mathematical relationship: {eq_spec}
-- Use valid KaTeX syntax. If using `\\sum` inside `\\frac`, write `\\sum\\nolimits`. Define every symbol in plain prose right after the equation.
-- Do NOT include any SVG diagram or bullet list in this chapter.
-- Write 5 to 6 crisp paragraphs totaling **590 to 660 words**.
+Earned Formalism: Integrate the genuine mathematical relationship ({eq_spec}) as a `$$...$$` display equation where it sharpens the argument, defining its terms naturally in prose.
+"""
+    elif f_mode == "ledger_or_list" and eq_spec:
+        formalism_instr = f"""
+Earned Structure: You may use a concise bulleted list (3–4 items) if it sharpens the structural contrast ({eq_spec}), or write continuous essay prose if stronger.
 """
     else:
-        formalism_instr = f"""
-FORMALISM MODE — STRUCTURED LEDGER / LIST CHAPTER (`formalism_mode: "ledger_or_list"`):
-- Include ONE crisp Markdown bulleted list (`- **Stage/Metric** — explanation...` with 3 to 4 bullet items, NO colons inside headers, use an em-dash `—` after the bold term) unpacking: {eq_spec}
-- Do NOT include any `$$...$$` display equation or SVG diagram in this chapter!
-- Write 5 paragraphs plus the 3–4 bullet items totaling **590 to 660 words**.
+        formalism_instr = """
+Format: Continuous, high-clarity essay prose. Include an equation or bullet list only if the argument genuinely requires it.
 """
 
-    open_rule = (
-        "Do NOT start the first sentence with 'In [Year]', 'On [Date]', or 'At [Time]'—open directly with the physical apparatus, anatomical structure, or paradox first, and introduce the year in the second sentence."
-        if ch_num != 1
-        else "Open directly with the concrete experimental setting and researcher."
-    )
+    return f"""Write Chapter {ch_num} of "{dossier['title']}: {dossier['subtitle']}".
 
-    return f"""Write Chapter {ch_num} of the Alexandria Press book "{dossier['title']}: {dossier['subtitle']}".
-
-MANDATORY 3-LINE HEADER (must appear at the very top of your output, with ZERO colons `:`):
+Start with this exact 3-line header (no colons `:`):
 ### Chapter {ch_num}
 # {ch_title}
 ## {ch_sub}
 
-VERIFIED PRIMARY ANCHOR & FACTS (from Google Search Grounding):
-- Historical Anchor: {anchor}
-- Verified Facts:
-{v_facts}
-- Mandatory Exit Fact (close the final sentence of the chapter directly on this concrete fact): {exit_fact}
-{landscape_ctx}
+Chapter Thesis & Verified Grounding:
+- Core Angle & Evidence: {anchor}
+{f"- Verified Details:{chr(10)}{v_facts}" if v_facts else ""}
+- Closing Resolution: {exit_fact}
 {formalism_instr}
-
-NON-NEGOTIABLE ALEXANDRIA MANIFESTO LAWS:
-1. PLAIN-ENGLISH CLARITY & ZERO ACADEMIC JARGON: Write in plainspoken, vivid everyday English using ordinary nouns and active verbs. NEVER try to impress with dense academic/Latinate jargon (e.g., never write "perceptual disengagement and motor quiescence", "monosynaptic tract", "transcriptional-translational autoregulatory loop"). Explain how things actually work so any curious human immediately pictures the mechanism. Never include journal volume, issue, or page numbers in prose.
-2. WORD COUNT: The chapter body (after the 3-line header) MUST be between **580 and 670 words** (hard validator gate: `520–760` words). Count carefully so it is never under 550 or over 720 words.
-3. SENTENCE LENGTH CADENCE: Keep average sentence length between **17 and 21 words per sentence** (hard gate: `<= 23.0` words/sentence). Write direct, declarative sentences with active verbs. Avoid long 35-word multi-clause sentences, and avoid 2-word fragment gimmicks.
-4. ZERO DIRECT QUOTATIONS: NEVER include direct quotations of 5 or more words inside `"..."` or `“...”`. Paraphrase all statements and primary sources in crisp indirect speech.
-5. ZERO NOVELISTIC MICRO-DETAILS: NEVER include weekdays with time of day (`Monday morning`, `Sunday afternoon`), weather cold-opens (`On a cold morning`), or hyphenated ages (`forty-three-year-old`, `32-year-old`).
-6. OPENING CADENCE ({door}): {open_rule}
-7. CLEAN EXIT: End the final paragraph directly on the concrete `exit_fact` measurement/outcome. NEVER write moralizing concluding sentences (`"proved that"`, `"demonstrated that"`, `"showed that"`, `"reminds us that"`, `"serves as a testament"`, `"Ultimately,"`, `"In conclusion"`).
-8. BANNED WORDS & LATEX HYGIENE: Never use `breathtaking`, `awe-inspiring`, `mind-boggling`, `staggering`, or `paradigm-shifting`. Escape any literal currency dollar sign as `\\$100`, never wrap bare numbers in `$50$`, and never leak raw un-delimited LaTeX commands outside `$...$`.
+Editorial Pointers:
+- Write with the intellectual depth, clarity, and narrative authority of *Singular Minds* and *Architectures of Choice*.
+- Let the conceptual thesis drive the chapter: use the historical experiments, clinical anomalies, or philosophical arguments to expose *why* the phenomenon works the way it does, never as safe pop-science anecdotes or a superficial survey.
+- Trust the reader's intelligence. Use precise concepts when they do real explanatory work, stated in clean, direct English—zero pretentious academic throat-clearing, and zero talking down to the reader.
+- Length: roughly **560 to 720 words** (validator bounds: `500–800` words).
+- Hygiene: Paraphrase all statements in indirect speech (no 5+ word direct quotes inside `"..."`), escape literal dollar currency as `\\$100`, and end directly when the final point lands without a moralizing summary sentence (`"proved that"`, `"demonstrated that"`, `"Ultimately"`).
 
 Output ONLY the Markdown for Chapter {ch_num} starting with `### Chapter {ch_num}`."""
 
 
 def build_intro_prompt(dossier: dict) -> str:
     title = dossier["title"].replace(":", "")
-    intro_sub = f"The Physical and Conceptual Architecture of {title}"[:68]
-    return f"""Write the Introduction section for the Alexandria Press volume "{title}" ({dossier['subtitle']}).
+    intro_sub = dossier.get("intro_subtitle", f"The Architecture and Paradoxes of {title}")[:68].replace(":", "")
+    return f"""Write the Introduction for "{title}: {dossier['subtitle']}".
 
-MANDATORY 3-LINE HEADER (must appear at the very top of your output, with ZERO colons `:`):
+Start with this exact 3-line header (no colons `:`):
 ### Introduction
 # {title}
 ## {intro_sub}
 
-NON-NEGOTIABLE RULES:
-1. PLAIN-ENGLISH CLARITY & ZERO JARGON: Write in clear, plainspoken everyday English. Never use stiff academic jargon or Latinate phrasing to sound impressive.
-2. WORD COUNT: The Introduction body (after the 3-line header) MUST be **200 to 250 words** (hard validator gate: `140–300` words; write 3 crisp paragraphs of ~75 words each).
-3. TOPIC-ONLY INTRODUCTION: Introduce the core phenomenon, physical constraints, and governing tension of {title} only. **NEVER summarize, list, or preview the individual chapters** (never write phrases like "this volume traces", "this volume examines", "across twelve chapters", or "the twelve chapters that follow").
-4. SENTENCE CADENCE: Keep average sentence length at **17–21 words/sentence** (`<= 23.0` w/s).
-5. ZERO QUOTES & ZERO HYPERBOLE: No direct quotations (`"..."`), no novelistic weather/weekday openings, and no banned words (`breathtaking`, `awe-inspiring`, `mind-boggling`, `staggering`, `paradigm-shifting`).
+Editorial Pointers:
+- Frame the central intellectual tension, paradox, or structural mystery of {title} in **200 to 270 words** (3 crisp paragraphs).
+- Write with the essayistic sharpness of *Singular Minds* and *Architectures of Choice*—neither stiff academic jargon nor a breezy pop-science explainer.
+- Frame the phenomenon itself; do not list or preview the upcoming chapters.
+- Paraphrase any references in indirect speech (no direct quotes).
 
 Output ONLY the Markdown for the Introduction starting with `### Introduction`."""
 
@@ -759,7 +684,7 @@ def postprocess_chapter_markdown(raw_md: str, ch: dict) -> str:
     ch_num = ch["chapter"]
     ch_title = ch["title"].replace(":", "")
     ch_sub = ch["subtitle"].replace(":", "")
-    f_mode = ch.get("formalism_mode", "ledger_or_list")
+    f_mode = ch.get("formalism_mode", "prose")
 
     text = re.sub(r"^```(?:markdown|md)?\s*\n", "", raw_md.strip(), flags=re.IGNORECASE)
     text = re.sub(r"\n```\s*$", "", text.strip())
@@ -795,9 +720,7 @@ def postprocess_chapter_markdown(raw_md: str, ch: dict) -> str:
 
     # Inject safe SVG diagram if f_mode == "diagram"
     if f_mode == "diagram":
-        # Remove any display math or LLM-hallucinated svg block and insert our verified schematic SVG
         body = re.sub(r"```(?:svg|diagram)[\s\S]*?```", f"[DIAGRAM_SLOT_{ch_num}]", body, flags=re.IGNORECASE)
-        body = re.sub(r"\$\$[\s\S]*?\$\$", "", body)
         svg_block = build_safe_svg_diagram(ch_num, ch_title, diag_labels)
         if f"[DIAGRAM_SLOT_{ch_num}]" in body:
             body = body.replace(f"[DIAGRAM_SLOT_{ch_num}]", svg_block, 1)
@@ -816,7 +739,7 @@ def postprocess_chapter_markdown(raw_md: str, ch: dict) -> str:
 
 def postprocess_intro_markdown(raw_md: str, dossier: dict) -> str:
     title = dossier["title"].replace(":", "")
-    intro_sub = f"The Physical and Conceptual Architecture of {title}"[:68].replace(":", "")
+    intro_sub = dossier.get("intro_subtitle", f"The Architecture and Paradoxes of {title}")[:68].replace(":", "")
     text = re.sub(r"^```(?:markdown|md)?\s*\n", "", raw_md.strip(), flags=re.IGNORECASE)
     text = re.sub(r"\n```\s*$", "", text.strip())
     lines = text.splitlines()
@@ -843,7 +766,7 @@ def stage3_synthesize_and_validate_manuscript(api_key: str, dossier: dict, track
         {
             "request": {
                 "contents": [{"parts": [{"text": build_intro_prompt(dossier)}]}],
-                "generationConfig": {"temperature": 0.45},
+                "generationConfig": {"temperature": 0.65},
             },
             "metadata": {"key": "intro"},
         }
@@ -854,7 +777,7 @@ def stage3_synthesize_and_validate_manuscript(api_key: str, dossier: dict, track
             {
                 "request": {
                     "contents": [{"parts": [{"text": build_chapter_prompt(dossier, ch)}]}],
-                    "generationConfig": {"temperature": 0.45},
+                    "generationConfig": {"temperature": 0.65},
                 },
                 "metadata": {"key": f"ch-{ch_num}"},
             }
@@ -889,7 +812,7 @@ def stage3_synthesize_and_validate_manuscript(api_key: str, dossier: dict, track
         if not all_issues:
             tracker.state["validation"] = {"passed": True, "errors": 0, "warnings": 0, "summary": summary}
             tracker.log(
-                f"Manuscript passed all 12 validator gates (0 errors, 0 warnings, {summary.get('total_words', 0):,d} words, {summary.get('avg_sent_words', 0)} w/s)."
+                f"Manuscript passed all validator gates (0 errors, 0 warnings, {summary.get('total_words', 0):,d} words, {summary.get('avg_sent_words', 0)} w/s)."
             )
             break
 
@@ -899,17 +822,13 @@ def stage3_synthesize_and_validate_manuscript(api_key: str, dossier: dict, track
 
         # Fix Introduction if flagged
         if any("Introduction" in x or "Section 1 " in x for x in all_issues):
-            fix_prompt = f"""Fix the following Introduction section so it strictly satisfies these validator errors:
-Errors: {[x for x in all_issues if 'Introduction' in x or 'Section 1 ' in x]}
+            fix_prompt = f"""Adjust the following Introduction section to fix only these mechanical issues while preserving its intellectual voice:
+Issues: {[x for x in all_issues if 'Introduction' in x or 'Section 1 ' in x]}
 
 Current Introduction:
 {sec_intro}
 
-Requirements:
-- Keep the exact 3-line header (`### Introduction` / `# ...` / `## ...`) with ZERO colons.
-- Body word count MUST be 205–245 words (strictly between 140 and 300 words).
-- Introduce the topic only—never preview or mention the chapters.
-- Average sentence length <= 21 words/sentence.
+Keep the 3-line header (`### Introduction` / `# ...` / `## ...`) with no colons, keep word count between 180 and 280 words, and do not preview individual chapters.
 Output ONLY the corrected Markdown starting with `### Introduction`."""
             fixed_intro, _ = call_gemini_single(api_key, fix_prompt, tracker, use_google_search=False)
             sec_intro = postprocess_intro_markdown(fixed_intro, dossier)
@@ -921,37 +840,32 @@ Output ONLY the corrected Markdown starting with `### Introduction`."""
             if m_ch:
                 ch_to_fix.add(int(m_ch.group(1)))
         if any("Average sentence length" in x or "Cadence fatigue" in x for x in all_issues) and not ch_to_fix:
-            # Find chapters with longest average sentence length or date opening
             for idx_c, ch_txt in enumerate(sec_chapters, 1):
                 sents = [s for s in re.split(r"(?<=[.!?])\s+", ch_txt) if len(s.split()) >= 3]
                 avg_w = sum(len(s.split()) for s in sents) / max(1, len(sents))
-                if avg_w > 22.5:
+                if avg_w > 27.5:
                     ch_to_fix.add(idx_c)
 
         for ch_num in sorted(ch_to_fix):
             ch_obj = dossier["chapters"][ch_num - 1]
             ch_issues = [x for x in all_issues if f"Chapter {ch_num}" in x or "sentence length" in x or "Cadence" in x]
             cur_text = sec_chapters[ch_num - 1]
-            # Extract existing SVG block if present so we preserve it intact
             svg_match = re.search(r"```svg[\s\S]*?```", cur_text)
             saved_svg = svg_match.group(0) if svg_match else ""
 
-            repair_prompt = f"""Rewrite Chapter {ch_num} below to fix all validator errors while preserving its facts and formalism:
+            repair_prompt = f"""Adjust Chapter {ch_num} below to resolve these specific validator issues without watering down its intellectual depth or prose style:
 
-Validator Issues to Fix:
+Issues to resolve:
 {json.dumps(ch_issues, indent=2)}
 
 Current Chapter {ch_num}:
 {cur_text}
 
-STRICT RULES:
-1. Keep the exact 3-line header (`### Chapter {ch_num}` / `# {ch_obj['title']}` / `## {ch_obj['subtitle']}`) with ZERO colons.
-2. Target body word count: **600 to 650 words** (must be strictly between 540 and 710 words, excluding any ```svg block).
-3. Break long sentences into crisp declarative sentences so average sentence length is **17–20 words/sentence** (strictly <= 22.0 w/s).
-4. ZERO direct quotes of 5+ words (`"..."`), ZERO novelistic weekdays/weather/hyphenated ages, and ZERO moralizing exit sentences (`proved that`, `demonstrated that`, `showed that`, `reminds us`, `testament`, `Ultimately`).
-5. Do NOT start the first sentence with `In [Year]`, `On [Date]`, or `At [Time]`.
-6. End directly on the concrete exit fact: {ch_obj.get('exit_fact', '')}
-7. Escape literal dollar currency as `\\$100` and keep valid KaTeX math (`$...$` or `$$...$$`).
+Requirements:
+- Keep the exact 3-line header (`### Chapter {ch_num}` / `# {ch_obj['title']}` / `## {ch_obj['subtitle']}`) with no colons.
+- Word count must sit between 530 and 760 words (excluding any ```svg block).
+- Paraphrase any 5+ word direct quotes into indirect speech, and avoid moralizing concluding clichés (`proved that`, `demonstrated that`, `showed that`, `Ultimately`).
+- Escape literal currency dollar signs as `\\$100` and keep valid KaTeX math.
 
 Output ONLY the corrected Markdown starting with `### Chapter {ch_num}`."""
             fixed_raw, _ = call_gemini_single(api_key, repair_prompt, tracker, use_google_search=False)
