@@ -1,4 +1,4 @@
-# Emotions
+# Science of Emotions
 ## Fear, Anger, Joy, Grief, Love, and Seven Other Everyday Feelings in Twelve Highlights Each
 
 *Alexandria Press · alexandria.press*
@@ -6,7 +6,7 @@
 ---
 
 ### Introduction
-# Emotions
+# Science of Emotions
 ## Twelve Ancient Survival Programs Running in a Modern World
 
 Classical philosophy and early neurology treated emotions as evolutionary noise—irrational visceral disturbances that cloud deliberate reason. Modern affective neuroscience and behavioral biology have overturned that hierarchy. Emotions are rapid, pre-wired biological coordination programs engineered by natural selection to solve recurrent life-or-death challenges before slow cortical calculation can finish.

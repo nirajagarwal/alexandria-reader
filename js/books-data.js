@@ -5228,7 +5228,7 @@
     ]
   },
   "emotions": {
-    "title": "Emotions",
+    "title": "Science of Emotions",
     "subtitle": "Fear, Anger, Joy, Grief, Love, and Seven Other Everyday Feelings in Twelve Highlights Each",
     "category": "Psychology & Behavior",
     "mode": "listicle",
@@ -5284,7 +5284,7 @@
     "chapters": [
       {
         "label": "Introduction",
-        "title": "Emotions",
+        "title": "Science of Emotions",
         "subtitle": "Twelve Ancient Survival Programs Running in a Modern World",
         "slug": "introduction",
         "formalismMode": "introduction",
