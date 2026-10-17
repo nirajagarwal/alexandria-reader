@@ -216,16 +216,51 @@ THUMBS_DIR = os.path.join(COVERS_DIR, "thumbs")
 
 
 def build_thumb_svg_from_cover(cover_svg: str, slug: str) -> str:
-    """Extract the pastel background and geometric emblem (without cover text) into a 1:1 square thumbnail SVG."""
+    """Extract the pastel background and geometric emblem (without cover text) into a high-contrast 1:1 square thumbnail SVG."""
     defs_m = re.search(r"<defs>[\s\S]*?</defs>", cover_svg)
     emblem_m = re.search(r'<g class="emblem-[^"]*"[\s\S]*?</g>', cover_svg)
     defs_block = defs_m.group(0) if defs_m else ""
     emblem_block = emblem_m.group(0) if emblem_m else ""
+
+    # 1. Darken all hex stroke/fill colors in the emblem toward deep ink (#0b0f17) for strong contrast on pastel tiles
+    emblem_block = re.sub(
+        r'(stroke|fill)="#([0-9a-fA-F]{6})"',
+        lambda m: f'{m.group(1)}="{_blend_hex("#" + m.group(2), "#0b0f17", 0.58)}"',
+        emblem_block,
+    )
+
+    # 2. Scale up stroke-widths (~3.2x, floor 4.8) so geometric & equation curves remain crisp at 68x68px
+    emblem_block = re.sub(
+        r'stroke-width="([0-9.]+)"',
+        lambda m: f'stroke-width="{max(4.8, float(m.group(1)) * 3.2):.1f}"',
+        emblem_block,
+    )
+
+    # 3. Boost opacity on stroked primitives and text so secondary curves don't wash out against the background
+    def _boost_tag_opacity(tag_m):
+        tag = tag_m.group(0)
+        if 'stroke="' in tag or tag.startswith("<text"):
+            tag = re.sub(
+                r'(?<!fill-)opacity="([0-9.]+)"',
+                lambda m: f'opacity="{min(1.0, 0.72 + float(m.group(1)) * 0.28):.2f}"',
+                tag,
+            )
+        return tag
+
+    emblem_block = re.sub(r"<[a-zA-Z]+[^>]*>", _boost_tag_opacity, emblem_block)
+
+    # 4. Slightly enlarge small vertex dots (r <= 8) so nodes read clearly at thumbnail scale
+    emblem_block = re.sub(
+        r'\br="([0-9.]+)"',
+        lambda m: f'r="{float(m.group(1)) * 1.45:.1f}"' if float(m.group(1)) <= 8.0 else m.group(0),
+        emblem_block,
+    )
+
     return (
-        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="260 650 1080 1080" width="100%" height="100%">\n'
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="310 700 980 980" width="100%" height="100%">\n'
         f"  {defs_block}\n"
-        f'  <rect x="260" y="650" width="1080" height="1080" fill="url(#bg-{slug})"/>\n'
-        f'  <rect x="260" y="650" width="1080" height="1080" fill="url(#halo-{slug})"/>\n'
+        f'  <rect x="310" y="700" width="980" height="980" fill="url(#bg-{slug})"/>\n'
+        f'  <rect x="310" y="700" width="980" height="980" fill="url(#halo-{slug})"/>\n'
         f"  {emblem_block}\n"
         f"</svg>"
     )
