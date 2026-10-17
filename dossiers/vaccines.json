@@ -2,7 +2,7 @@
   "slug": "vaccines",
   "file": "vaccines.md",
   "title": "Vaccines",
-  "subtitle": "How Cowpox Scabs, Weakened Viruses, Sugar Coats, and Fat Droplets Taught the Body to Fight Back",
+  "subtitle": "Antigenic Memory, Attenuation, Structural Virology, and the Conquest of Contagion",
   "category": "Medicine & Immunology",
   "mode": "facet",
   "format": "mechanisms",
@@ -11,116 +11,117 @@
   "bg": "#0b1f1d",
   "theme": "network-wave",
   "creator_constraints": {
-    "min_diagrams": 3
+    "min_diagrams": 0,
+    "quotes_allowed": false
   },
   "chapters": [
     {
       "chapter": 1,
-      "title": "Smallpox and the Cowpox Cousin",
-      "subtitle": "How Milkmaid Blisters, Orphan Chains, and Split Needles Wiped Out a Human Plague",
+      "title": "Cross-Reactive Memory and the Eradication of Smallpox",
+      "subtitle": "From Ottoman Variolation and Jenner's Cowpox Trial to Ring Vaccination",
       "opening_door": "A: Scene/Experiment",
-      "formalism_mode": "equation",
-      "historical_anchor": "In May 1796 in Berkeley, Gloucestershire, country physician Edward Jenner took matter from a cowpox blister on the hand of milkmaid Sarah Nelmes and scratched it into the arm of James Phipps, a boy of eight, then tested him six weeks later with live smallpox matter without a single pustule forming. In 1803, Spanish physician Francisco Javier de Balmis sailed from A Coruña with twenty-two orphan boys to carry live cowpox across the Atlantic by passing blister fluid from arm to arm every nine days. In 1965, Wyeth microbiologist Benjamin Rubin ground down the eye of a sewing machine needle into a two-pronged fork that held 0.0025 milliliters of vaccine by capillary tension, cutting the dose to one-fourth and enabling D. A. Henderson's World Health Organization teams to track down the last natural smallpox case in Merca, Somalia in October 1977.",
-      "exit_fact": "Because smallpox had no animal reservoir and required roughly 80 percent immunity in a contact ring to push its reproduction number below one, hospital cook Ali Maow Maalin's recovery in Merca in late 1977 ended three thousand years of natural human smallpox transmission."
+      "formalism_mode": "prose",
+      "historical_anchor": "In 1721, Lady Mary Wortley Montagu introduced Ottoman variolation to London, before Edward Jenner inoculated James Phipps in May 1796 in Berkeley, Gloucestershire with orthopoxvirus matter from milkmaid Sarah Nelmes and challenged him with live variola six weeks later. Between 1803 and 1806, Francisco Javier de Balmis sustained a transatlantic arm-to-arm chain across twenty-two orphan boys, and in the 1960s and 1970s D. A. Henderson and William Foege combined Benjamin Rubin's bifurcated needle with ring vaccination to corner the last natural Variola minor case in Merca, Somalia in October 1977.",
+      "exit_fact": "Because variola possessed no animal reservoir and shared conserved surface epitopes across orthopoxviruses, ring containment around hospital cook Ali Maow Maalin in Merca in October 1977 extinguished natural human smallpox transmission worldwide."
     },
     {
       "chapter": 2,
-      "title": "Rabies and the Dried Spinal Cord",
-      "subtitle": "How Louis Pasteur Raced a Lethal Virus on Its Slow Climb Up the Nerves",
+      "title": "Racing Retrograde Axonal Transport",
+      "subtitle": "Louis Pasteur, Émile Roux, and the Desiccated Rabies Spinal Cords",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "ledger_or_list",
-      "historical_anchor": "In July 1885 in Paris, young Joseph Meister arrived from Alsace at Louis Pasteur and Émile Roux's Rue d'Ulm laboratory with fourteen deep dog bites on his hands, legs, and thighs. Because rabies virus does not race through the bloodstream—it inches up motor nerves from the bite toward the spinal cord and brain at roughly one to two millimeters per hour—Pasteur had a two-to-four-week window to train the boy's immune system after the bite. Pasteur and Roux suspended rabid rabbit spinal cords inside glass flasks over potassium hydroxide crystals for up to fourteen days so dry air gradually killed the virus, then injected Meister with thirteen escalating doses over ten days from fourteen-day-dried cord to fresh one-day cord.",
-      "exit_fact": "Joseph Meister never developed rabies and later worked for decades as gatekeeper of the Pasteur Institute in Paris, while modern post-exposure rabies treatment pairs four killed-virus shots with ready-made antibodies injected straight into the bite wound to protect nearly 100 percent of patients treated promptly."
+      "formalism_mode": "prose",
+      "historical_anchor": "Whereas rabies encephalitis is nearly 100 percent fatal once the lyssavirus enters the central nervous system, the virion must first travel up peripheral motor axons via cytoplasmic dynein motors at roughly 12 to 100 millimeters per day. In July 1885 at the Rue d'Ulm laboratory in Paris, Louis Pasteur and Émile Roux exploited this post-exposure latency in severely bitten Alsatian boy Joseph Meister by injecting a 14-day potassium-hydroxide desiccation gradient of fixed-virus rabbit spinal cords across ten days.",
+      "exit_fact": "Joseph Meister developed neutralizing antibodies before the virus reached his spinal cord and survived to serve as gatekeeper of the Pasteur Institute, establishing the post-exposure prophylaxis paradigm that today pairs cell-culture inactivated vaccine with wound-infiltrated rabies immunoglobulin."
     },
     {
       "chapter": 3,
-      "title": "Diphtheria, Tetanus, and the Disarmed Poison",
-      "subtitle": "How Gaston Ramon Used Formaldehyde and Kitchen Tapioca to Tame Two Bacterial Toxins",
+      "title": "Formalin Toxoids and the Innate Danger Signal",
+      "subtitle": "Gaston Ramon, Alexander Glenny, and Disarming Bacterial Exotoxins",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "diagram",
-      "historical_anchor": "In 1890 in Berlin, Emil von Behring and Shibasaburo Kitasato discovered that diphtheria and tetanus bacteria kill not by spreading through every organ, but by releasing lethal protein poisons into the blood, and that horse serum containing antitoxin antibodies could save dying children for a few weeks. In 1923 at the Pasteur Institute annex in Garches outside Paris, veterinarian Gaston Ramon added a 0.3 to 0.4 percent splash of formalin (aqueous formaldehyde) to diphtheria toxin and warmed it at 37 degrees Celsius for a month, stitching chemical bridges across the poison so it lost all toxicity while keeping its outer shape as a harmless toxoid. In 1925 and 1926, Ramon added tapioca starch and Alexander Glenny in London added aluminum potassium sulfate (alum) to trigger a local alarm that multiplied antibody output.",
-      "exit_fact": "After routine childhood DTP immunization and maternal tetanus toxoid campaigns spread worldwide, neonatal tetanus deaths fell from roughly 787,000 babies per year in 1988 to fewer than 25,000 per year within three decades."
+      "formalism_mode": "prose",
+      "historical_anchor": "Following Emil von Behring and Shibasaburo Kitasato's 1890 demonstration of passive equine antitoxin against diphtheria and tetanus, Gaston Ramon discovered at the Pasteur Institute annex in Garches in 1923 that incubating diphtheria exotoxin with 0.3 to 0.4 percent formaldehyde at 37 degrees Celsius formed methylene bridges that abolished enzymatic toxicity while preserving three-dimensional conformational B-cell epitopes. In 1926 at the Wellcome Physiological Research Laboratories in London, Alexander Glenny precipitated diphtheria toxoid onto aluminum potassium sulfate to create an innate inflammatory depot.",
+      "exit_fact": "Universal childhood DTP immunization and maternal tetanus toxoid campaigns transferred anti-toxin IgG across the placenta, reducing global neonatal tetanus mortality from an estimated 787,000 deaths in 1988 to fewer than 25,000 per year within three decades."
     },
     {
       "chapter": 4,
-      "title": "Yellow Fever and the Hundredth Egg",
-      "subtitle": "How Max Theiler Walked a Jungle Virus Through Mouse Brains and Chick Embryos",
+      "title": "Serial Passage and Evolutionary Trade-Offs",
+      "subtitle": "Max Theiler and the One Hundred Seventy-Six Transfers of Yellow Fever 17D",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "ledger_or_list",
-      "historical_anchor": "In June 1927 in Lagos, Nigeria, Rockefeller Foundation researchers Adrian Stokes, Johannes Bauer, and N. Paul Hudson isolated yellow fever virus into rhesus monkeys from the blood of a Ghanaian patient named Asibi who survived a mild fever, though Stokes died of laboratory-contracted yellow fever two months later. Starting in 1930 at Harvard and the Rockefeller Institute in New York, Max Theiler and Hugh Smith passed the Asibi virus through mouse brains and then through hundreds of flasks of minced chick embryos whose brains and spinal cords had been surgically removed so the virus could not adapt to nerve tissue.",
-      "exit_fact": "Between the 89th and 114th subcultures in flask series 17D in 1936, the virus accumulated mutations across its genome that stripped away both its liver toxicity and its ability to multiply inside Aedes aegypti mosquitoes, earning Max Theiler the 1951 Nobel Prize for a single-dose vaccine still grown in fertilized chicken eggs today."
+      "formalism_mode": "prose",
+      "historical_anchor": "In June 1927 in Lagos, Nigeria, Adrian Stokes, Johannes Bauer, and N. Paul Hudson isolated the Asibi strain of yellow fever virus into rhesus macaques before Stokes died of laboratory-acquired yellow fever two months later. Beginning in 1930 at Harvard and the Rockefeller Institute, Max Theiler and Hugh Smith passaged the Asibi virus through mouse brains and then through minced chick embryos surgically stripped of brain and spinal cord until subculture 176 of series 17D lost both viscerotropism and neurotropism.",
+      "exit_fact": "Comparative sequencing later showed that 32 amino acid substitutions across the 17D genome simultaneously abolished human hepatocyte virulence and midgut replication inside Aedes aegypti mosquitoes, earning Max Theiler the 1951 Nobel Prize."
     },
     {
       "chapter": 5,
-      "title": "Polio and the Killed-Versus-Live Rivalry",
-      "subtitle": "How Jonas Salk's Formaldehyde Bath and Albert Sabin's Sugar Cube Stopped Summer Paralysis",
+      "title": "Systemic IgG Versus Mucosal IgA",
+      "subtitle": "Jonas Salk's Killed Poliovirus, the Cutter Disaster, and Albert Sabin's Live Attenuated Strains",
       "opening_door": "A: Scene/Experiment",
-      "formalism_mode": "equation",
-      "historical_anchor": "After John Enders, Thomas Weller, and Frederick Robbins proved at Boston Children's Hospital in 1949 that poliovirus could be grown in non-nervous tissue, Jonas Salk at the University of Pittsburgh grew all three poliovirus types in monkey kidney cells and soaked the filtered fluid in 1-to-4,000 formalin at 37 degrees Celsius for up to twelve days along a first-order exponential inactivation curve. Tested in 1.8 million schoolchildren by Thomas Francis Jr. in 1954 and announced on April 12, 1955, Salk's injected killed vaccine blocked poliovirus in the bloodstream from reaching motor nerves, while Albert Sabin at the University of Cincinnati bred weakened live strains given on a sugar cube by mouth starting in 1959–1961 to train gut immunity that stopped transmission altogether.",
-      "exit_fact": "Since the Global Polio Eradication Initiative launched in 1988, combining Sabin's oral drops to break community transmission with Salk's injected shot to eliminate vaccine-derived cases has reduced global paralysis from 350,000 children a year across 125 countries to fewer than a hundred cases in two countries, with wild types 2 and 3 eradicated worldwide."
+      "formalism_mode": "ledger_or_list",
+      "historical_anchor": "After Isabel Morgan typed the three poliovirus serotypes and John Enders, Thomas Weller, and Frederick Robbins cultured poliovirus in non-neural tissue in 1949, Jonas Salk inactivated all three serotypes with 1-to-4,000 formalin for Thomas Francis Jr.'s 1954 field trial across 1.8 million children. Weeks after the April 12, 1955 announcement, inadequate filtration of cellular aggregates at Cutter Laboratories shielded live Mahoney type 1 virus and paralyzed 200 recipients, before Albert Sabin's oral attenuated strains introduced intestinal secretory IgA immunity between 1959 and 1961.",
+      "exit_fact": "Combining Sabin's oral vaccine to block fecal-oral intestinal transmission with Salk's inactivated vaccine to prevent vaccine-associated paralytic reversion has reduced global poliomyelitis by more than 99.9 percent since 1988 and eradicated wild serotypes 2 and 3."
     },
     {
       "chapter": 6,
-      "title": "Measles, Mumps, and the Memory Eraser",
-      "subtitle": "How Maurice Hilleman Brewed a Chick-Embryo Trio That Protects Your Old Immune Memories",
+      "title": "Immune Amnesia and the Measles Paradox",
+      "subtitle": "Maurice Hilleman's Edmonston Chick-Embryo Strain and the Protection of Prior Memory",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "ledger_or_list",
-      "historical_anchor": "In February 1954 in Boston, pediatricians Thomas Peebles and John Enders isolated measles virus from throat swabs and blood of schoolboy David Edmonston during an outbreak at the Fay School. At Merck in West Point, Pennsylvania, microbiologist Maurice Hilleman passed the Edmonston strain forty additional times through chick embryo cells at 32 degrees Celsius to create the gentler Moraten strain licensed in 1968, swabbed his own daughter Jeryl Lynn's throat in March 1963 to breed the mumps vaccine within four years, and combined them with Stanley Plotkin's rubella strain into the single MMR shot in 1971. In 2015 and 2019, Michael Mina, Rik de Swart, and Stephen Elledge proved why measles vaccination cut deaths from all other childhood infections in half.",
-      "exit_fact": "Blood sequencing of unvaccinated children before and after natural measles infection revealed that wild measles virus binds the CD150 receptor on existing memory B and T cells and destroys them, wiping out between 11 and 73 percent of a child's pre-existing antibody repertoire until the immune system relearns those pathogens from scratch."
+      "formalism_mode": "equation",
+      "historical_anchor": "Following John Enders and Thomas Peebles's 1954 isolation of measles virus from schoolboy David Edmonston and Maurice Hilleman's further attenuation of the Moraten strain in chick embryo fibroblasts at 32 degrees Celsius in 1968, demographers observed that measles immunization reduced overall childhood mortality from non-measles pneumonia and diarrheal diseases by 30 to 50 percent. Between 2012 and 2019, Rik de Swart, Michael Mina, and Stephen Elledge used VirScan phage-display immunoprecipitation sequencing on 77 unvaccinated Dutch children to resolve the paradox.",
+      "exit_fact": "Phage-display profiling demonstrated that wild measles virus binds the SLAMF1 (CD150) receptor on memory B and T lymphocytes and eliminates 11 to 73 percent of a child's pre-existing antibody repertoire, whereas attenuated MMR vaccination preserves those prior immunological memories intact."
     },
     {
       "chapter": 7,
-      "title": "Hepatitis B and the Baker's Yeast Decoy",
-      "subtitle": "From Baruch Blumberg's Blood Plasma Filter to the First Cancer-Preventing Vaccine Brewed in Vats",
+      "title": "The Recombinant Decoy in Baker's Yeast",
+      "subtitle": "Baruch Blumberg, Maurice Hilleman, and the First Anti-Cancer Subunit Vaccine",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "diagram",
-      "historical_anchor": "In 1965 and 1968 at the Fox Chase Cancer Center in Philadelphia, Baruch Blumberg and Werner London discovered that the blood of chronic hepatitis B carriers swarmed with non-infectious 22-nanometer spherical protein shells—empty decoys made of the virus's outer surface protein without any viral DNA inside. After Maurice Hilleman at Merck purified and triple-inactivated those spheres from human plasma in 1981, William Rutter at UCSF, Pablo Valenzuela at Chiron, and Benjamin Hall at the University of Washington spliced the single gene for that surface protein into ordinary baker's yeast (Saccharomyces cerevisiae) in 1981, winning FDA approval in July 1986 for the first genetically engineered human vaccine.",
-      "exit_fact": "Following Taiwan's launch of the world's first universal newborn hepatitis B vaccination program in July 1984, chronic surface-antigen carriage in children plunged from roughly 10 percent to under 0.6 percent, and hepatocellular liver carcinoma incidence in vaccinated cohorts fell by 75 to 80 percent."
+      "formalism_mode": "prose",
+      "historical_anchor": "After Baruch Blumberg identified the Australia antigen (HBsAg) in 1965 and R. Palmer Beasley's prospective cohort of 22,707 Taiwanese civil servants established that chronic hepatitis B carriage multiplied hepatocellular carcinoma risk more than two-hundred-fold, Maurice Hilleman purified non-infectious 22-nanometer HBsAg spheres from human plasma using pepsin, urea, and formalin in 1981. That same year, William Rutter, Pablo Valenzuela, and Benjamin Hall cloned the viral S gene into Saccharomyces cerevisiae to express self-assembling lipoprotein spheres without human blood.",
+      "exit_fact": "Following Taiwan's July 1984 rollout of universal newborn hepatitis B immunization, chronic HBsAg carriage in children dropped from nearly 10 percent to below 0.6 percent and hepatocellular carcinoma incidence in vaccinated cohorts declined by 75 to 80 percent."
     },
     {
       "chapter": 8,
-      "title": "Hib and the Sugar-Coat Trick",
-      "subtitle": "How John Robbins and Rachel Schneerson Tied a Slippery Bacterial Coat to a Protein So Babies Could See It",
+      "title": "Polysaccharide Conjugation and the Infant Thymus",
+      "subtitle": "Oswald Avery's Hapten Principle and How John Robbins and Rachel Schneerson Defeated Haemophilus Meningitis",
       "opening_door": "B: Constraint/Paradox",
       "formalism_mode": "diagram",
-      "historical_anchor": "Before 1985, Haemophilus influenzae type b (Hib) struck roughly 20,000 American children under age five every year—causing bacterial meningitis, deafness, and throat-closing epiglottitis—yet pure vaccines made from the bacterium's outer polyribosylribitol phosphate sugar coat failed completely in infants under eighteen months. Building on Oswald Avery and Walther Goebel's 1929 Rockefeller Institute finding that linking a bacterial sugar to a protein made it visible to rabbit immune systems, John Robbins and Rachel Schneerson at the National Institutes of Health in Bethesda in 1980 chemically tied Hib's sugar coat to a harmless carrier protein such as tetanus or diphtheria toxoid.",
-      "exit_fact": "When an infant B-cell grabs the bacterial sugar and swallows the attached carrier protein, it presents the protein fragments to helper T-cells that trigger high-affinity IgG antibodies and lifelong memory, driving invasive Hib meningitis in young children down by more than 99 percent within five years of routine infant use."
+      "historical_anchor": "In a 1974 Finnish trial of 100,000 children, purified polyribosylribitol phosphate (PRP) capsular polysaccharide from Haemophilus influenzae type b failed to protect infants under eighteen months because repetitive sugar polymers act as T-cell-independent antigens that cannot be loaded onto MHC Class II molecules. Building on Oswald Avery and Walther Goebel's 1929 glycoconjugate experiments, John Robbins and Rachel Schneerson at the NIH in 1980 covalently linked PRP to protein carriers so polysaccharide-specific B cells could recruit follicular helper T cells.",
+      "exit_fact": "Following routine infant introduction of Hib conjugate vaccines in December 1990, invasive Haemophilus influenzae type b meningitis in children under five fell by more than 99 percent and pharyngeal carriage collapsed across vaccinated populations."
     },
     {
       "chapter": 9,
-      "title": "HPV and the Hollow Virus Shell",
-      "subtitle": "How Jian Zhou and Ian Frazer Built Self-Assembling Empty Shells That Stop Cervical Cancer",
+      "title": "Self-Assembling Icosahedral Shells",
+      "subtitle": "Harald zur Hausen, Jian Zhou, Ian Frazer, and the Empty Capsids of Human Papillomavirus",
       "opening_door": "A: Scene/Experiment",
-      "formalism_mode": "ledger_or_list",
-      "historical_anchor": "After Harald zur Hausen at the German Cancer Research Center in Heidelberg isolated human papillomavirus types 16 and 18 from cervical tumors in 1983 and 1984, vaccine makers faced a dead end because HPV refused to multiply in laboratory cell cultures and carried cancer-causing genes. In 1991 at the University of Queensland in Brisbane, Jian Zhou, Xiao-Yi Sun, and Ian Frazer—followed independently by Douglas Lowy and John Schiller at the U.S. National Cancer Institute—expressed the virus's single L1 outer shell gene in cells and discovered that 360 copies of L1 spontaneously snapped together into hollow 55-nanometer virus-like particles with zero viral DNA.",
-      "exit_fact": "National cancer registry studies in Sweden, England, and Scotland tracking millions of women through 2020–2024 confirmed that girls vaccinated with the L1 hollow-shell HPV vaccine before age fourteen experienced an 87 to 90 percent reduction in invasive cervical cancer—with zero cervical cancer cases recorded in the Scottish cohort fully immunized at ages twelve to thirteen."
+      "formalism_mode": "prose",
+      "historical_anchor": "After Harald zur Hausen cloned HPV-16 and HPV-18 DNA from cervical carcinoma biopsies in 1983 and 1984 and showed that viral E6 and E7 oncoproteins degrade host p53 and retinoblastoma tumor suppressors, whole-virus vaccines remained unsafe and unculturable. In 1991 at the University of Queensland, Jian Zhou, Xiao-Yi Sun, and Ian Frazer—and independently Douglas Lowy and John Schiller at the National Cancer Institute—expressed the L1 major capsid gene alone and observed 360 monomers self-assembling into 72-pentamer icosahedral virus-like particles.",
+      "exit_fact": "Population registries in Sweden, England, and Scotland tracking millions of women through 2020–2024 recorded an 87 to 90 percent reduction in invasive cervical cancer among girls vaccinated early, with zero cases detected in the Scottish cohort immunized at ages twelve to thirteen."
     },
     {
       "chapter": 10,
-      "title": "Rotavirus and the Cow-Human Swap",
-      "subtitle": "How Paul Offit, Fred Clark, and Stanley Plotkin Shuffled Eleven RNA Strands to Save Infants From Dehydration",
+      "title": "Segmented RNA Reassortment",
+      "subtitle": "Ruth Bishop, Paul Offit, Stanley Plotkin, and the Bovine-Human Rotavirus Chimeras",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation",
-      "historical_anchor": "In 1973 at the Royal Children's Hospital in Melbourne, Ruth Bishop, Geoffrey Davidson, Ian Holmes, and Brian Ruck used electron microscopy on duodenal biopsies to identify wheel-shaped rotaviruses as the leading cause of severe infant dehydration worldwide. Starting in 1980 at the Children's Hospital of Philadelphia and the Wistar Institute, Fred Clark, Paul Offit, and Stanley Plotkin isolated a calf rotavirus strain (WC3) from a Pennsylvania dairy farm and took advantage of rotavirus's segmented genome—eleven separate strands of double-stranded RNA—by co-infecting cells with calf and human strains to breed five hybrid viruses carrying ten cow genes for safety and one human surface gene for immunity.",
-      "exit_fact": "Tested in the 70,301-infant REST clinical trial across eleven countries and licensed in February 2006, the five-strain cow-human reassortant oral vaccine reduced rotavirus hospitalizations and emergency-room visits by 94.5 percent while showing no elevated risk of intestinal intussusception."
+      "formalism_mode": "prose",
+      "historical_anchor": "After Ruth Bishop's 1973 electron microscopy of duodenal biopsies in Melbourne identified rotavirus and the 1998 rhesus-human RotaShield vaccine was withdrawn in October 1999 over a 1-in-10,000 risk of intestinal intussusception, Fred Clark, Paul Offit, and Stanley Plotkin at the Children's Hospital of Philadelphia and the Wistar Institute coinjected monkey kidney cells with the bovine WC3 strain and human rotaviruses to reassort their eleven double-stranded RNA segments.",
+      "exit_fact": "Evaluated across 70,301 infants in the 2001–2005 REST trial, the pentavalent bovine-human reassortant vaccine reduced rotavirus hospitalizations by 94.5 percent without increasing intussusception risk."
     },
     {
       "chapter": 11,
-      "title": "Ebola and the Trojan Horse Ring",
-      "subtitle": "How Heinz Feldmann Dressed a Harmless Livestock Virus in Ebola's Coat to Stop an Outbreak in Guinea",
-      "opening_door": "A: Scene/Experiment",
-      "formalism_mode": "ledger_or_list",
-      "historical_anchor": "At the Public Health Agency of Canada's National Microbiology Laboratory in Winnipeg between 2001 and 2005, Heinz Feldmann, Ute Ströher, and Steven Jones engineered a harmless Trojan horse by taking Vesicular Stomatitis Virus (VSV)—a livestock virus that causes mild mouth sores in cattle—snipping out its native surface gene, and inserting the single outer glycoprotein gene of Zaire Ebola virus. During the 2015 West African epidemic in coastal Guinea, World Health Organization teams led by Ana Maria Henao-Restrepo adapted the smallpox ring-vaccination strategy in the Ebola Ça Suffit! trial, tracing 90 clusters of 7,651 contacts and contacts-of-contacts of newly diagnosed patients.",
-      "exit_fact": "In the 2015 Guinea ring trial, among the 2,119 contacts in immediately vaccinated rings who received a single shot of the VSV-Ebola Trojan-horse vaccine, zero cases of Ebola virus disease occurred ten or more days after immunization, compared to sixteen cases across delayed rings—yielding an estimated 100 percent ring vaccine efficacy."
+      "title": "Herd Thresholds and the Trap of Antibody-Dependent Enhancement",
+      "subtitle": "From Ronald Ross's Reproduction Number to Dengue Hemorrhagic Fever and the 1966 RSV Trial",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "equation",
+      "historical_anchor": "While Ronald Ross and George Macdonald's basic reproduction number governs how neutralizing antibodies halt epidemics once population immunity crosses the critical threshold, two clinical catastrophes revealed how sub-neutralizing or misdirected antibodies amplify viral disease. In the 1960s and 1970s, Scott Halstead demonstrated that heterotypic dengue antibodies complex with virions to infect Fc-gamma-receptor-bearing monocytes, while the 1966 NIH clinical trial of formalin-inactivated Respiratory Syncytial Virus hospitalized 80 percent of RSV-infected vaccinees with two infant deaths.",
+      "exit_fact": "Subsequent immunological forensics proved that formalin denaturation had flipped the RSV fusion glycoprotein into its spent postfusion state, eliciting low-avidity antibodies that deposited immune complexes and triggered Th2-skewed pulmonary eosinophilia."
     },
     {
       "chapter": 12,
-      "title": "Prefusion Spike and the Fat Bubble",
-      "subtitle": "How Barney Graham, Jason McLellan, and Pieter Cullis Pinned a Shape-Shifting Protein Inside a Lipid Nanoparticle",
+      "title": "Prefusion Conformational Locking and Ionizable Lipids",
+      "subtitle": "Barney Graham, Katalin Karikó, Drew Weissman, and the Structural Engineering of mRNA Vaccines",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "ledger_or_list",
-      "historical_anchor": "In 1966 in Washington, D.C., a formalin-killed vaccine against Respiratory Syncytial Virus (RSV) failed catastrophically—hospitalizing 80 percent of infected vaccinees—because formalin caused the virus's surface fusion protein to snap from its live compact 'prefusion' shape into a spent rod before the immune system ever saw it. At the NIH Vaccine Research Center and Dartmouth between 2013 and 2017, Barney Graham and Jason McLellan solved this structural trap for RSV and coronaviruses by substituting two rigid proline amino acids (2P) at the hinge of the spike protein to pin it in its live prefusion shape, then packaged that genetic recipe inside Pieter Cullis's four-lipid nanoparticles.",
-      "exit_fact": "When the SARS-CoV-2 genetic sequence was posted online on January 10, 2020, inserting the two-proline prefusion pin into the spike recipe and encapsulating the mRNA inside pH-switching lipid nanoparticles produced clinical-grade vaccine vials in forty-two days, achieving 94 to 95 percent efficacy against symptomatic illness in Phase 3 trials of over 73,000 volunteers."
+      "formalism_mode": "prose",
+      "historical_anchor": "Between 2013 and 2017, Jason McLellan and Barney Graham solved the atomic structure of class I viral fusion proteins in RSV and coronaviruses, demonstrating that substituting two rigid proline residues (2P) at the hinge between heptad repeat 1 and the central helix locked the metastable prefusion conformation in place. Combined with Katalin Karikó and Drew Weissman's 2005 substitution of N1-methylpseudouridine to evade Toll-like receptors 7 and 8 and Pieter Cullis's pH-switchable ionizable lipid nanoparticles, this architecture enabled rapid mRNA vaccine synthesis in January 2020.",
+      "exit_fact": "Both the stabilized prefusion RSV subunit vaccines approved in 2023 and the 2P-locked SARS-CoV-2 mRNA vaccines tested across more than 73,000 Phase 3 trial participants achieved 82 to 95 percent efficacy by presenting the intact prefusion neutralization epitopes to human B cells."
     }
   ]
 }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>From Selective Filter to All-to-All Weights — Attention | Alexandria Press</title>
+  <meta name="description" content="How Transformers Replaced Sequential Memory With Scaled Dot-Product Attention — To overcome the fixed-vector bottleneck that caused recurrent neural networks to forget the beginning of long sentences, Dzmitry Bahdanau, Kyunghyun Cho, and Yo">
+  <meta name="author" content="Alexandria Press">
+  <link rel="canonical" href="https://alexandria.press/read/attention/from-selective-filter-to-all-to-all-weights.html">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=3">
+  <link rel="apple-touch-icon" href="../../favicon.svg?v=3">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Alexandria Press">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="From Selective Filter to All-to-All Weights — Attention">
+  <meta property="og:description" content="How Transformers Replaced Sequential Memory With Scaled Dot-Product Attention — To overcome the fixed-vector bottleneck that caused recurrent neural networks to forget the beginning of long sentences, Dzmitry Bahdanau, Kyunghyun Cho, and Yo">
+  <meta property="og:url" content="https://alexandria.press/read/attention/from-selective-filter-to-all-to-all-weights.html">
+  <meta property="og:image" content="https://alexandria.press/assets/og/attention.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Attention — Selective Focus, Blindness, Contemplation, and the Architecture of Notice (Alexandria Press)">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@alexandriapress">
+  <meta name="twitter:title" content="From Selective Filter to All-to-All Weights — Attention">
+  <meta name="twitter:description" content="How Transformers Replaced Sequential Memory With Scaled Dot-Product Attention — To overcome the fixed-vector bottleneck that caused recurrent neural networks to forget the beginning of long sentences, Dzmitry Bahdanau, Kyunghyun Cho, and Yo">
+  <meta name="twitter:image" content="https://alexandria.press/assets/og/attention.png">
+  <meta name="twitter:image:alt" content="Attention — Selective Focus, Blindness, Contemplation, and the Architecture of Notice (Alexandria Press)">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Chapter", "name": "From Selective Filter to All-to-All Weights", "headline": "How Transformers Replaced Sequential Memory With Scaled Dot-Product Attention", "position": 12, "url": "https://alexandria.press/read/attention/from-selective-filter-to-all-to-all-weights.html", "image": "https://alexandria.press/assets/og/attention.png", "isPartOf": {"@type": "Book", "name": "Attention", "url": "https://alexandria.press/read/attention/"}, "publisher": {"@type": "Organization", "name": "Alexandria Press", "url": "https://alexandria.press"}}</script>
+  <script>
+  (function(){
+    var ua = navigator.userAgent || '';
+    var isBot = /bot|crawl|spider|slurp|bingpreview|facebookexternalhit|twitterbot|slackbot|discordbot|linkedinbot|whatsapp|telegram|applebot|gptbot|claudebot|perplexity|bytespider/i.test(ua);
+    if (!isBot && window.location.search.indexOf('static=1') === -1 && !navigator.webdriver) {
+      window.location.replace('../../index.html#read=attention&ch=12');
+    }
+  })();
+  </script>
+  <style>:root{--bg:#faf8f5;--ink:#1c1b18;--muted:#605a52;--border:#dcd5ca;--card:#f3efe6;--accent:#92400e}body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:'Literata',Georgia,serif;line-height:1.68;-webkit-font-smoothing:antialiased}.wrap{max-width:720px;margin:0 auto;padding:32px 22px 80px}.topbar{display:flex;justify-content:space-between;align-items:center;padding-bottom:16px;margin-bottom:28px;border-bottom:1px solid var(--border);font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:13px}.brand{font-weight:700;letter-spacing:.12em;color:var(--ink);text-decoration:none}.cta{background:var(--ink);color:var(--bg);padding:7px 14px;border-radius:6px;text-decoration:none;font-weight:600;font-size:12px;letter-spacing:.04em}.eyebrow{font-family:monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}h1{font-size:2rem;line-height:1.18;margin:0 0 6px}h2.sub{font-size:1.12rem;font-weight:400;font-style:italic;color:var(--muted);margin:0 0 24px}.prov-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px 16px;margin:22px 0;font-size:.92rem}.prov-label{font-family:monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:4px}p{margin:0 0 1.1em;text-align:justify}ul,ol{margin:0 0 1.1em;padding-left:1.4em}li{margin-bottom:.85em}.section-sep{text-align:center;color:var(--accent);font-weight:700;letter-spacing:.4em;margin:1.2em 0}figure.chapter-diagram{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px;margin:1.4em 0;text-align:center}figure.chapter-diagram svg{max-width:100%;height:auto}figcaption{font-family:monospace;font-size:11px;color:var(--muted);margin-top:8px}.math-block{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:12px;margin:1.2em 0;text-align:center;overflow-x:auto}.toc-list{list-style:none;padding:0;margin:24px 0}.toc-list li{border-bottom:1px solid var(--border);padding:12px 0;margin:0}.toc-list a{text-decoration:none;color:var(--ink);display:block}.toc-list .t-title{font-weight:600;font-size:1.05rem}.toc-list .t-sub{font-style:italic;color:var(--muted);font-size:.92rem;margin-top:2px}.toc-list .t-anchor{font-size:.84rem;color:var(--muted);margin-top:4px}.nav-row{display:flex;justify-content:space-between;gap:12px;margin-top:36px;padding-top:18px;border-top:1px solid var(--border);font-family:-apple-system,sans-serif;font-size:13px}.nav-row a{color:var(--ink);text-decoration:none;font-weight:600}</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="topbar">
+      <a class="brand" href="../../index.html">ALEXANDRIA.PRESS</a>
+      <a class="cta" href="../../index.html#read=attention&ch=12">Open in 2-Page Spread Reader &rarr;</a>
+    </nav>
+    <article>
+      <div class="eyebrow">Attention &middot; Chapter 12</div>
+      <h1>From Selective Filter to All-to-All Weights</h1>
+      <h2 class="sub">How Transformers Replaced Sequential Memory With Scaled Dot-Product Attention</h2>
+      <p>For half a billion years, every biological nervous system on Earth evolved under the same unyielding physical constraint. Because wiring an eyeball or a cerebral cortex with all-to-all high-resolution connections would consume more metabolic energy and skull volume than an organism could survive, biological attention had to act as a ruthless subtractive filter. By aiming a two-degree fovea, damping rival signals in the thalamus, and funneling sensory traffic through a fifty-bit serial bottleneck, the living brain survives by throwing away ninety-nine point nine nine nine percent of incoming reality. When computer scientists in the late twentieth century began building artificial neural networks to translate languages and parse text, they unwittingly recreated a digital version of that sequential memory bottleneck.</p>
+      <p>Through the early 2010s, state-of-the-art sequence modeling relied on Recurrent Neural Networks and Long Short-Term Memory architectures that read a sentence strictly one word at a time from left to right. As each word entered the network, the model updated a single fixed-length hidden state vector and passed that compressed summary forward to the next time step. Whenever a paragraph stretched beyond thirty or forty words, early words at the beginning of the sentence were overwritten and diluted inside that fixed-size vector, just as human working memory loses the beginning of a spoken list once its four slots overflow.</p>
+      <p>In 2014, computer scientist Dzmitry Bahdanau, working with Kyunghyun Cho and Yoshua Bengio at the University of Montreal, broke that fixed-vector bottleneck by introducing a differentiable <strong>attention mechanism</strong> for neural machine translation. Instead of forcing the decoder to generate an entire translated sentence out of one static summary vector, Bahdanau allowed the network to look back across all the encoder&#x27;s hidden states at every step and compute a learned alignment weight for each source word. That alignment dynamically highlighted whichever French words were most relevant to the specific English word being generated right then.</p>
+      <p>Three years later, in June 2017, Ashish Vaswani and seven colleagues at Google Brain and Google Research published <em>Attention Is All You Need</em>, asking a radical architectural question. If an attention matrix can link any two words across a sequence directly, why keep the slow, sequential recurrent backbone at all? Discarding recurrence completely, Vaswani&#x27;s team built the <strong>Transformer</strong> around <strong>scaled dot-product self-attention</strong>, an operation that processes every token in a passage simultaneously in parallel. Each input token is projected through learned weight matrices into three vectors of dimension $d_k$: a <strong>Query</strong> vector $Q$ representing what the token is looking for, a <strong>Key</strong> vector $K$ representing the label the token advertises to others, and a <strong>Value</strong> vector $V$ holding the content the token transmits when selected.</p>
+      <p>In a single parallel matrix multiplication computed as $\text{Attention}(Q, K, V) = \text{softmax}(QK^T / \sqrt{d_k})V$, every token takes the dot product of its Query against the Keys of every other token in the context window. It then scales the products by $\sqrt{d_k}$ so large dimensions do not push the softmax function into vanishing-gradient saturation, and normalizes the scores into probability weights that blend the Value vectors together. By splitting this calculation across multiple parallel <strong>attention heads</strong>, one head can link a pronoun directly to its noun five hundred words earlier while another head tracks verb tense or syntactic clauses across the same passage. By discarding recurrent step-by-step memory altogether and computing scaled dot-product compatibility scores between every pair of tokens in parallel, the 2017 Transformer turned attention from a biological survival filter that throws away 99.999 percent of experience into a differentiable all-to-all routing matrix.</p>
+      <aside class="prov-box"><div class="prov-label">Primary Anchor &amp; Verified Finding</div><div><strong>Historical / Experimental Grounding:</strong> To overcome the fixed-vector bottleneck that caused recurrent neural networks to forget the beginning of long sentences, Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio in Montreal introduced neural alignment in 2014, culminating in Ashish Vaswani and seven Google colleagues&#x27; June 2017 Transformer architecture.</div><div style="margin-top:6px"><strong>Empirical Payoff:</strong> By discarding recurrent step-by-step memory altogether and computing scaled dot-product compatibility scores between every pair of tokens in parallel, the 2017 Transformer turned attention from a biological survival filter that throws away 99.999 percent of experience into a differentiable all-to-all routing matrix.</div></aside>
+    </article>
+    <nav class="nav-row">
+      <span><a href="the-sovereign-faculty.html">&larr; The Sovereign Faculty</a></span>
+      <span><a href="index.html">Volume Contents</a></span>
+      <span><a href="../../index.html">All Volumes &rarr;</a></span>
+    </nav>
+  </div>
+</body>
+</html>

@@ -2,120 +2,137 @@
   "slug": "radical-subtraction",
   "file": "books/radical-subtraction.md",
   "title": "Radical Subtraction",
-  "subtitle": "Sensory Isolation and the Quiet Mind",
+  "subtitle": "Sensory Isolation, Negative Theology, and the Quiet Mind",
   "category": "Contemplative Theory",
   "mode": "facet",
   "profile": "B",
   "accent": "#4f46e5",
   "bg": "#15132b",
+  "introduction": {
+    "title": "Radical Subtraction",
+    "subtitle": "Uncovering Truth by Taking Away",
+    "core_thesis": "Across philosophy, contemplation, and psychology, the deepest invariants of human awareness are exposed not by accumulating conceptual doctrines or sensory stimuli, but by systematically subtracting inputs, attachments, and mental representations until the underlying structure of the mind stands clear."
+  },
   "chapters": [
     {
       "chapter": 1,
       "title": "The Cell on the Tagus",
-      "subtitle": "John of the Cross and the Doctrine of the Dark Night in Toledo",
+      "subtitle": "John of the Cross and the Two Dark Nights in Toledo",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation",
-      "historical_anchor": "Shortly after midnight on December 2, 1577, armed Carmelite friars broke into a small dwelling in Ávila and arrested Juan de Yepes y Álvarez. They blindfolded the reformer, tied him to a mule, and marched him eighty miles south across the freezing Castilian plateau to Toledo.",
-      "exit_fact": "He lowered himself down the cliff wall, dropped the final twelve feet into the walled courtyard of a neighboring Franciscan convent, and walked into the dawn carrying his memorized verses."
+      "formalism_mode": "ledger_or_list",
+      "historical_anchor": "Juan de Yepes y Álvarez locked inside a six-by-ten-foot monastic closet adjacent to a privy in Toledo from December 1577 to August 1578, composing the Spiritual Canticle in total darkness before formalizing his treatises Subida del Monte Carmelo and Noche Oscura.",
+      "mechanism": "John distinguished the active and passive nights of the senses from the active and passive nights of the spirit, showing why stripping away both external sensory attachments and subtle conceptual consolations is required to break the mind's dependency on finite mental objects.",
+      "exit_fact": "He lowered himself down the sheer rock wall above the Tagus River using knotted strips of his coarse wool blanket, dropped the final twelve feet into a neighboring Franciscan courtyard, and walked into the Toledo dawn carrying his memorized stanzas."
     },
     {
       "chapter": 2,
-      "title": "The Anchorhold of Norwich",
-      "subtitle": "Julian of Norwich and the Confinement of the Hazelnuts",
-      "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "ledger_or_list",
-      "historical_anchor": "Attached to the south stone wall of St. Julian's Church in Norwich stood a sealed chamber measuring roughly twelve feet square.",
-      "exit_fact": "Having watched forty years of epidemic mortality from a room she could never leave, she concluded her manuscript with the quiet observation that every contingent fracture in time would resolve into order."
+      "title": "The Walled-In Window",
+      "subtitle": "Julian of Norwich and the Architecture of the Medieval Anchorhold",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "prose",
+      "historical_anchor": "Julian of Norwich sealed inside a twelve-foot stone cell attached to St. Julian's Church in Norwich through the liturgical Rite of Enclosure following her May 1373 illness, writing the Short Text and Long Text of Revelations of Divine Love during the recurring waves of the Black Death and the 1381 Peasants' Revolt.",
+      "mechanism": "The anchorhold eliminated horizontal locomotion and reduced external exchange to two apertures—a squint facing the parish altar and a curtained window facing the street—distilling forty years of reflection into the spatial compression of all created existence held in the palm like a hazelnut.",
+      "exit_fact": "When the mystic Margery Kempe traveled to Norwich around 1413 to consult Julian through the black wool curtain of her street window, the anchoress had spent four decades inside a single stone room without ever stepping across its mortared threshold."
     },
     {
       "chapter": 3,
-      "title": "The Interior Castle",
-      "subtitle": "Teresa of Ávila and the Neurodynamics of the Seventh Mansion",
-      "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "diagram",
-      "historical_anchor": "For the final two decades of her life, Teresa de Cepeda y Ahumada operated through severe neuro-inflammatory episodes, transient paralysis, chronic tinnitus, and violent cardiac arrhythmias. During a four-day febrile coma in 1539, physicians pronounced her dead and friars dug an open grave in the convent yard of La Encarnación.",
-      "exit_fact": "When evaluating a contemplative's maturity, she ignored reports of supernatural rapture and inspected how reliably the sister handled the convent kitchen and infirmary, concluding that quiet interior absorption and practical outward service must operate as a single unit."
+      "title": "The Ground Beyond Names",
+      "subtitle": "Meister Eckhart, Gelassenheit, and the Cloud of Unknowing",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "prose",
+      "historical_anchor": "Dominican master Johannes Eckhart preaching in Middle High German in Erfurt, Strasbourg, and Cologne before his 1326–1328 inquisitorial trials in Cologne and Avignon, paired with the anonymous late-fourteenth-century English author of The Cloud of Unknowing.",
+      "mechanism": "Eckhart separated the relational, named creator Gott from the unconditioned ground Gottheit, demonstrating that because every mental concept partitions reality into subject and object, genuine releasement (Gelassenheit) requires dropping even the concept of God beneath a cloud of forgetting.",
+      "exit_fact": "On March 27, 1329, Pope John XXII issued the bull In Agro Dominico from Avignon, condemning seventeen of Eckhart's propositions as heretical and eleven as suspect while noting that the Dominican master had died before the tribunal concluded."
     },
     {
       "chapter": 4,
-      "title": "The Desert Pillar",
-      "subtitle": "Simeon Stylites and the Physics of Vertical Isolation in Syria",
-      "opening_door": "A: Scene",
-      "formalism_mode": "equation",
-      "historical_anchor": "Forty miles east of Antioch on the limestone plateau of Telanissos stands the octagonal ruin of Qal'at Sim'an, built around the weathered base of a sixty-foot stone shaft. In the spring of 423 AD, a Syrian shepherd turned monk named Simeon walked into these hills after being expelled from a local monastery because his extreme fasts alarmed the abbot.",
-      "exit_fact": "When he died standing against the railing on September 2, 459 AD, the military commander of Antioch marched six hundred Roman soldiers to the pillar to escort his body before desert tribes could seize it."
+      "title": "The Four-Cornered Negation",
+      "subtitle": "Nagarjuna and the Dismantling of Independent Essence at Nalanda",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "ledger_or_list",
+      "historical_anchor": "Second-century CE South Indian Buddhist philosopher Nagarjuna composing the Mulamadhyamakakarika (Fundamental Verses on the Middle Way), the foundational logical treatise studied for centuries across the monastic university of Nalanda.",
+      "mechanism": "Deploying the four-cornered catuskoti (tetralemma) to refute affirmation, negation, conjunction, and disjunction, Nagarjuna proved that neither causal production, temporal flow, nor the perceiving self possesses independent intrinsic essence (svabhava), revealing emptiness as dependent co-arising (pratityasamutpada).",
+      "exit_fact": "In the twenty-fourth chapter of his treatise, Nagarjuna demonstrated that if things possessed immutable intrinsic essence, no action could alter the world and no suffering could ever be ended, whereas only emptiness allows causes and conditions to function."
     },
     {
       "chapter": 5,
-      "title": "The Apophatic Cloud",
-      "subtitle": "The Anonymous English Contemplative and the Erasure of Memory",
-      "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "ledger_or_list",
-      "historical_anchor": "Somewhere in the East Midlands of England around 1375, an anonymous country priest drafted a seventy-five-chapter manual in vernacular Middle English for a young Carthusian student. He opened the manuscript with a strict operational warning: the book must never be read by clever talkers, curious academics, or anyone unwilling to sit quietly in mental darkness.",
-      "exit_fact": "When the manuscript circulated among English Carthusian Charterhouses such as Mount Grace Priory in the fifteenth century, solitary monks copied the text without attribution, preserving a stripped-down mechanical manual for shutting off the brain's narrative generator."
+      "title": "Not This, Not This",
+      "subtitle": "Adi Shankara, the Upanishads, and the Peeling Away of the False Self",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "prose",
+      "historical_anchor": "Eighth-century CE Indian philosopher Adi Shankara writing his commentaries (bhashyas) on the Brihadaranyaka Upanishad and the Brahma Sutras, formalizing the Advaita Vedanta method of neti neti.",
+      "mechanism": "Diagnosing human bondage as adhyasa—the cognitive error of superimposing the attributes of a snake onto a coiled rope in dim light—Shankara peeled away the five concentric sheaths (koshas) of food, breath, perception, intellect, and bliss on the principle that nothing observed as an object can be the observing witness (Sakshin).",
+      "exit_fact": "Before dying near the Himalayan shrine of Kedarnath around the age of thirty-two, Shankara established four monastic seats at the cardinal corners of the Indian subcontinent to preserve his commentaries on non-dual negation."
     },
     {
       "chapter": 6,
-      "title": "The Dialectic of the Nothing",
-      "subtitle": "Meister Eckhart and the Breakthrough of the Ground in Cologne",
-      "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "ledger_or_list",
-      "historical_anchor": "To call God a \"being,\" Johannes Eckhart argued from his Dominican pulpit in Cologne, was a logical mistake—because any specific being is finite, bounded, and defined by contrast with what it is not. In the winter of 1326, at the age of sixty-six, Eckhart—former Master of Sacred Theology at the University of Paris and vicar-general of Dominican houses across Bohemia and Saxony—was summoned before an inquisitorial tribunal convened by Archbishop Heinrich von Virneburg.",
-      "exit_fact": "On March 27, 1329, Pope John XXII promulgated the bull *In Agro Dominico*, condemning seventeen of Eckhart's propositions as heretical and eleven as suspect, while recording that the master had submitted his writings to the judgment of the see before his death."
+      "title": "Just Sitting at Eihei-ji",
+      "subtitle": "Eihei Dogen and the Subtraction of Goal-Directed Meditation",
+      "opening_door": "A: Scene",
+      "formalism_mode": "prose",
+      "historical_anchor": "Japanese monk Eihei Dogen training under Caodong master Tiantong Rujing in Song Dynasty China in 1225–1227 before returning to Japan to write the Fukanzazengi and Shobogenzo and founding Eihei-ji in the snowy mountains of Echizen in 1244.",
+      "mechanism": "When Rujing rejected instrumental meditation and commanded the dropping off of body and mind (shinjin datsuraku), Dogen realized that treating seated meditation as a means toward a future enlightenment prize reinforces the acquisitive ego, whereas subtracting the goal in shikantaza makes practice and realization identical (shusho itto).",
+      "exit_fact": "Inside the monks' hall at Eihei-ji, practitioners sat facing the bare plaster wall rather than the central aisle, eliminating visual comparison and external destination from the physical posture of sitting."
     },
     {
       "chapter": 7,
-      "title": "The Rhenish Hermitage",
-      "subtitle": "Hildegard of Bingen and the Scivias Telemetry at Disibodenberg",
+      "title": "The Citadel of Choice",
+      "subtitle": "Epictetus and the Stoic Subtraction of External Fortune",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation",
-      "historical_anchor": "The thirty-five illuminated plates of the Rupertsberg manuscript of *Scivias*, painted under the direct supervision of Hildegard of Bingen between 1141 and 1151, depict concentric rings of blazing gold fire, jagged crenelated battlements, and showers of brilliant sparks fading into black char. In 1970, when clinical neurologist Oliver Sacks compared those twelfth-century parchment illuminations against hospital sketches drawn by twentieth-century neurology patients, he identified the unmistakable geometric signature of classical migraine aura: fortification spectra (teichopsia) and scintillating scotomas.",
-      "exit_fact": "In 1150, she defied the abbot of Disibodenberg and moved her nuns into an independent monastery at Rupertsberg engineered with gravity-fed indoor running water."
+      "formalism_mode": "prose",
+      "historical_anchor": "Epictetus born into slavery in Hierapolis around 50 CE, serving in Nero's Rome under the imperial freedman Epaphroditus before founding his philosophical school at Nicopolis in Epirus after Emperor Domitian expelled philosophers from Italy around 89 CE.",
+      "mechanism": "The opening dichotomy of the Enchiridion divides all phenomena into what is up to us (eph' hemin) and what is not; by subtracting wealth, bodily health, political office, and reputation from the category of moral good and evil, the ruling center (hegemonikon) becomes impervious to external coercion.",
+      "exit_fact": "Nearly a century after Epictetus lectured in Epirus, Roman Emperor Marcus Aurelius carried Arrian's transcriptions of the former slave's classroom discourses into his military headquarters along the Danube frontier."
     },
     {
       "chapter": 8,
-      "title": "The Hesychast Breath",
-      "subtitle": "Gregory Palamas and the Physiology of the Uncreated Light on Mount Athos",
-      "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "diagram",
-      "historical_anchor": "At rest, an unpaced human adult breathes twelve to fifteen times per minute, producing irregular fluctuations between heart rate and arterial blood pressure. In 1338, an Italian-Greek logician named Barlaam of Calabria arrived in Constantinople and began mocking the solitary monks of Mount Athos who deliberately altered this respiratory rhythm.",
-      "exit_fact": "That decree wrote a 0.1 Hz respiratory biofeedback protocol into the constitutional law of the Byzantine Empire."
+      "title": "Decreation and Waiting",
+      "subtitle": "Simone Weil on Unmuscular Attention and the Emptying of the Ego",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "prose",
+      "historical_anchor": "French philosopher Simone Weil taking a leave from lycée teaching in 1934–1935 to work as a power-press operator at the Alsthom and Renault factories near Paris, and later filling her lined composition notebooks in Marseilles between 1941 and May 1942.",
+      "mechanism": "Weil distinguished muscular willpower—contracting the jaw and furrowing the brow to force a result—from genuine attention, which consists of suspending one's premature conclusions, stepping back through decreation, and leaving the mind empty, waiting, and penetrable to the object.",
+      "exit_fact": "When Weil died at Grosvenor Sanatorium in Ashford, Kent in August 1943 after refusing to eat more than the official rations allotted to citizens in occupied France, her Marseilles notebooks remained unpublished in the hands of Gustave Thibon and Joe Bousquet."
     },
     {
       "chapter": 9,
       "title": "The Uncarved Block",
-      "subtitle": "Zhuangzi, Butcher Ding's Ox Cleaver, and the Mechanics of Non-Interference",
+      "subtitle": "Zhuangzi, Butcher Ding's Ox Cleaver, and the Removal of Friction",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation",
-      "historical_anchor": "A mediocre cook replaces his cleaver once a month because he hacks directly against bone. A skilled cook replaces his blade once a year because he slices through tough fibrous sinew.",
-      "exit_fact": "Once the carcass lay separated on the courtyard stones, Butcher Ding stood still, wiped his nineteen-year-old cleaver clean, and slipped it back into its sheath—preserving the tool intact by refusing to pit metal against bone."
+      "formalism_mode": "prose",
+      "historical_anchor": "Third-century BCE Warring States philosophical text Zhuangzi (Chapter 3, The Mastery of Nurturing Life), recording the dialogue between Butcher Ding and Lord Wenhui of Liang.",
+      "mechanism": "Whereas a mediocre cook blunts his blade every month by hacking bone and a skilled cook replaces his blade annually by slicing tendon, Butcher Ding kept his cleaver razor-sharp for nineteen years across thousands of oxen by sliding its near-zero-thickness edge through the empty interstitial cavities (kong) between joints, illustrating wuwei as the subtraction of resistance rather than the addition of force.",
+      "exit_fact": "Once the carcass lay separated on the courtyard stones, Butcher Ding stood still, wiped his nineteen-year-old cleaver clean, and slipped it back into its sheath."
     },
     {
       "chapter": 10,
       "title": "The Sculptor's Chisel",
       "subtitle": "Plotinus, Pseudo-Dionysius, and the Removal of Conceptual Marble",
-      "opening_door": "A: Scene",
-      "formalism_mode": "ledger_or_list",
-      "historical_anchor": "Painting and sculpture operate by opposite physical algorithms. A painter begins with a bare wooden panel or canvas and builds a representation by adding successive layers of pigment, binder, and glaze.",
-      "exit_fact": "It provided the formal blueprint later deployed by Meister Eckhart in Cologne, the author of *The Cloud of Unknowing* in England, and John of the Cross in Toledo."
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "prose",
+      "historical_anchor": "Plotinus teaching in Rome around 250 CE and writing Enneads I.6.9, paired with the early-sixth-century Syrian monk who composed the Mystical Theology in Greek under the pseudonym Dionysius the Areopagite.",
+      "mechanism": "Contrasting the painter who adds layers of pigment to a panel with the sculptor who reveals a statue solely by chipping away obstructive stone, Plotinus and Pseudo-Dionysius formulated aphaeresis—the systematic stripping away of sensory predicates, psychological attributes, and affirmative categories until the unconditioned ground stands unobstructed.",
+      "exit_fact": "In 862 CE at the Frankish court of Charles the Bald, the Irish scholar John Scotus Eriugena translated the Greek manuscripts of Pseudo-Dionysius into Latin, transmitting the Syrian protocol of aphaeresis across medieval Europe."
     },
     {
       "chapter": 11,
-      "title": "The Suspended Judgment",
-      "subtitle": "Pyrrho of Elis, Sextus Empiricus, and the Quietness That Follows Equipollence",
-      "opening_door": "B: Constraint/Paradox",
+      "title": "The Suspended Scale",
+      "subtitle": "Pyrrho of Elis, Sextus Empiricus, and the Calm That Follows Equipollence",
+      "opening_door": "A: Scene",
       "formalism_mode": "diagram",
-      "historical_anchor": "Around 200 CE, the Greek empiricist physician Sextus Empiricus opened his handbook *Outlines of Pyrrhonism* with a story from a fourth-century BCE painting studio. The celebrated Hellenistic artist Apelles of Kos was painting a warhorse returning from battle.",
-      "exit_fact": "By subtracting only the extra layer of dogmatic opinion, the skeptic navigated the physical world with full motor competence and zero existential friction."
+      "historical_anchor": "Pyrrho of Elis traveling with Alexander the Great's campaign to northwest India between 327 and 325 BCE, and Greek empiricist physician Sextus Empiricus codifying Outlines of Pyrrhonism around 200 CE with the parable of the Hellenistic painter Apelles.",
+      "mechanism": "Pyrrhonism operates as a three-stage subtractive engine: isostheneia balances every dogmatic thesis against an equally weighty antithesis; epoche suspends judgment when the evidentiary scale reaches equilibrium; and ataraxia (untroubled quietness) arrives unexpectedly once the strain of dogmatic grasping ceases, like Apelles's thrown sponge leaving the natural imprint of horse foam.",
+      "exit_fact": "When Michel de Montaigne had fifty-seven Greek and Latin maxims carved into the oak ceiling beams of his library tower near Bordeaux in 1576, he drew them directly from the newly printed Renaissance editions of Sextus Empiricus."
     },
     {
       "chapter": 12,
-      "title": "The Kicked-Away Ladder",
-      "subtitle": "Ludwig Wittgenstein and Where Logical Language Draws Its Own Border",
+      "title": "The Kicked-Away Ladder and the Soundproof Tank",
+      "subtitle": "From Wittgenstein's Tractatus to the Sensory Deprivation Experiments of McGill",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "ledger_or_list",
-      "historical_anchor": "While serving as an artillery spotter and searchlight operator in the Austro-Hungarian army on the Eastern and Italian fronts between 1914 and 1918, Ludwig Wittgenstein carried small lined notebooks inside his military rucksack. Under artillery bombardment along the Vistula River and in the mountain trenches of Asiago, the former Cambridge engineering student distilled a seventy-five-page manuscript organized into seven decimal-numbered propositions.",
-      "exit_fact": "Having used formal symbolic logic to clear away the entire history of metaphysical chatter, he closed the book with Proposition 7, instructing that where one cannot speak, one must pass over in silence."
+      "formalism_mode": "prose",
+      "historical_anchor": "Ludwig Wittgenstein writing the Tractatus Logico-Philosophicus in military notebooks on the Eastern and Italian fronts between 1914 and 1918, juxtaposed with Donald Hebb, Woodburn Heron, and B. K. Doane's 1951–1954 sensory deprivation cubicles at McGill University in Montreal.",
+      "mechanism": "Wittgenstein used logical isomorphism to draw the boundary of factual language from within before kicking away his own propositions as a ladder in Proposition 6.54, while Hebb's translucent-goggle isolation chambers demonstrated empirically that when the waking brain is abruptly starved of patterned sensory input without contemplative discipline, its predictive machinery projects vivid hallucinations into the void.",
+      "exit_fact": "While the McGill student volunteers ripped off their translucent visors after seventy-two hours to escape their own unanchored neural noise, Wittgenstein gave away his inherited Vienna fortune and spent the 1920s teaching elementary school in the mountain villages of Lower Austria."
     }
   ],
   "format": "mechanisms"

@@ -133,7 +133,7 @@ Executes Stage 1 (Dossier Batch API), Stage 2 (1 Google Search per chapter valid
 python3 scripts/create_book_pipeline.py \
   --slug vaccines \
   --title "Vaccines" \
-  --subtitle "How Cowpox Scabs, Weakened Viruses, Sugar Coats, and Fat Droplets Taught the Body to Fight Back" \
+  --subtitle "Antigenic Memory, Attenuation, Structural Virology, and the Conquest of Contagion" \
   --category "Medicine & Immunology" \
   --mode facet \
   --profile B \
@@ -179,7 +179,7 @@ python3 tests/test_reader.py
 | 1 | **Non-Linear Engines** | *How Unusual Startups Escape Early Failure* | Startups & Strategy | Mechanisms |
 | 2 | **Latent Fragility** | *Hidden Structural Flaws, Coupled Cascades, and Catastrophic Engineering Failures* | Systemic Failure & Risk | Mechanisms |
 | 3 | **Singular Minds** | *How Exceptional Thinkers Solved Impossible Problems* | Cognitive Architecture | Mechanisms |
-| 4 | **Radical Subtraction** | *Sensory Isolation and the Quiet Mind* | Contemplative Theory | Mechanisms |
+| 4 | **Radical Subtraction** | *Sensory Isolation, Negative Theology, and the Quiet Mind* | Contemplative Theory | Mechanisms |
 | 5 | **Liminal Thresholds** | *Discoveries That Broke Scientific Consensus* | Anomalous Physics | Mechanisms |
 | 6 | **The Autonomous Engine** | *The Control Loops of the Human Body* | Physiology & Cybernetics | Mechanisms |
 | 7 | **Elemental Asymmetries** | *The Physical Constraints of Twelve Elements* | Materials & Chemistry | Mechanisms |
@@ -199,8 +199,8 @@ python3 tests/test_reader.py
 | 21 | **Richard Feynman** | *Translating Abstract Symbols Into Physical Toys* | Biography & Physics | Biography |
 | 22 | **Artificial Intelligence** | *The Core Concept and Eleven Neighbors That Shape Its Landscape* | Computation & Intelligence | Landscape |
 | 23 | **The Human Body** | *Twelve Organs and Systems in Twelve Highlights Each* | Life Sciences | 12×12 Highlights |
-| 24 | **Attention** | *The Core Bottleneck and Eleven Neighbors That Shape Human Focus* | Cognitive Architecture | Landscape |
-| 25 | **Self-Transcendence** | *The Core Shift and Eleven Neighbors That Dissolve the Boundaries of the Self* | Psychology & Philosophy | Landscape |
+| 24 | **Attention** | *Selective Focus, Blindness, Contemplation, and the Architecture of Notice* | Cognitive Architecture | Mechanisms |
+| 25 | **Self-Transcendence** | *Philosophy, Contemplation, Science, and the Dissolution of the Bounded Ego* | Psychology & Philosophy | Mechanisms |
 | 26 | **Entropy** | *The Core Law of Disorder and Eleven Neighbors That Govern Time, Heat, and Information* | Physics & Information | Landscape |
 | 27 | **Materials** | *How Concrete, Steel, Glass, Paper, and Silicon Built Civilization* | Materials & Engineering | Mechanisms |
 | 28 | **Claude Shannon** | *The Juggler Who Turned Information Into Physics* | Biography & Information Theory | Biography |
@@ -210,4 +210,4 @@ python3 tests/test_reader.py
 | 32 | **Alan Turing** | *Computability, Codebreaking, and the Patterns of Living Form* | Biography & Computation | Biography |
 | 33 | **The Cell** | *Twelve Molecular Machines in Twelve Highlights Each* | Molecular Biology | 12×12 Highlights |
 | 34 | **Human Functions** | *Sleeping, Breathing, Walking, Running, and Eight Other Daily Acts in Twelve Highlights Each* | Physiology & Biomechanics | 12×12 Highlights |
-| 35 | **Vaccines** | *How Cowpox Scabs, Weakened Viruses, Sugar Coats, and Fat Droplets Taught the Body to Fight Back* | Medicine & Immunology | Mechanisms |
+| 35 | **Vaccines** | *Antigenic Memory, Attenuation, Structural Virology, and the Conquest of Contagion* | Medicine & Immunology | Mechanisms |

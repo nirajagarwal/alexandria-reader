@@ -1,12 +1,12 @@
 {
   "slug": "emotions",
-  "file": "emotions.md",
+  "file": "books/emotions.md",
   "title": "Emotions",
   "subtitle": "Fear, Anger, Joy, Grief, Love, and Seven Other Everyday Feelings in Twelve Highlights Each",
   "category": "Psychology & Behavior",
+  "profile": "E: The Prospected Spaced-Dot Listicle (topic-prospector + Domain Highlights)",
   "mode": "listicle",
   "format": "highlights",
-  "profile": "C",
   "accent": "#e11d48",
   "bg": "#1f0d14",
   "theme": "harmonic-cascade",
@@ -17,86 +17,266 @@
     {
       "chapter": 1,
       "title": "Fear",
-      "subtitle": "Freezing in Place, False Alarms, and the Woman Who Poked a Haunted-House Monster",
-      "historical_anchor": "In 1986 at Cornell University Medical Center, neuroscientist Joseph LeDoux showed that sound signals from the ear split into two paths: a slow 24-millisecond high road through the thinking cortex and a fast 12-millisecond shortcut straight to the brain's alarm hub, making you flinch at a curved stick before you even know whether it is a snake.",
-      "exit_fact": "Although Patient S.M. felt zero fear of snakes, spiders, or haunted houses because calcium deposits had destroyed her amygdala on both sides, inhaling a single breath of 35 percent carbon dioxide triggered an instant panic attack—proving that the suffocation alarm lives deeper in the brainstem."
+      "subtitle": "Thalamic Shortcuts, Amygdala Lesions, and the Brainstem Suffocation Alarm",
+      "prospected_seeds": [
+        "Joseph LeDoux demonstrated in 1986 that an acoustic startle pulse reaches the lateral amygdala in 12 milliseconds via the subcortical thalamic shortcut—nearly twice as fast as the 24-to-30-millisecond cortical route that identifies whether a curved stick is a snake.",
+        "Before sympathetic fight-or-flight mobilization begins, the central amygdala signals the periaqueductal gray and vagus nerve to lock skeletal muscles and trigger transient parasympathetically mediated bradycardia (freezing), exploiting predator visual systems tuned to motion.",
+        "Acute fear triggers an adrenal epinephrine surge that clamps alpha-adrenergic receptors on cutaneous arterioles, shunting blood from skin and fingers to major leg muscles while elevating blood clotting factors to minimize hemorrhage from puncture wounds.",
+        "Sympathetic activation dilates the radial iris muscles (mydriasis) and flattens the crystalline lens for far-field threat scanning while contracting the middle-ear tensor tympani and stapedius muscles to filter low-frequency rumble.",
+        "Every human hair follicle attaches to a microscopic smooth-muscle bundle (arrector pili) that contracts under sympathetic adrenaline surges—an evolutionary relic that inflated ancestral mammalian fur coats to make a cornered animal appear 30 percent larger.",
+        "Beginning in 1994 at the University of Iowa, Antonio Damasio and Ralph Adolphs studied Patient S.M., in whom Urbach-Wiethe disease calcified both amygdalae while sparing intelligence and memory, abolishing conditioned fear toward external threats.",
+        "In 2011, Justin Feinstein escorted Patient S.M. through an exotic reptile store and the Waverly Hills Sanatorium haunted attraction; she handled live pythons without elevated skin conductance and startled a hidden actor by poking his mask.",
+        "Adolphs proved in 2005 through high-speed eye tracking that Patient S.M. failed to recognize terrified faces in photographs because amygdala destruction abolished spontaneous saccadic fixation on the eye region where widened white sclera signal terror.",
+        "Daniel Kennedy showed in 2009 that while healthy adults halt at an average interpersonal distance of 0.64 meters from a walking stranger, Patient S.M. stood comfortably at 0.34 meters, proving the amygdala regulates personal space boundaries.",
+        "In 2013, Feinstein discovered the sole stimulus capable of terrifying Patient S.M.: inhaling a single breath of 35 percent carbon dioxide triggered an immediate panic attack within ten seconds via acid-sensing ion channels (ASIC1a) in the brainstem.",
+        "Susan Mineka demonstrated in 1984 that laboratory-born rhesus macaques show zero innate fear of snakes until watching a single video of a wild monkey reacting fearfully to a snake—yet spliced videos of monkeys fearing flowers fail to condition fear.",
+        "Lilianne Mujica-Parodi showed in 2009 that odorless axillary sweat pads collected from first-time tandem skydivers selectively activated the left amygdala of blindfolded sniffers inside an fMRI scanner and heightened their startle reflexes."
+      ],
+      "historical_anchor": "An acoustic startle pulse reaches the lateral amygdala in twelve milliseconds via a direct subcortical shortcut from the auditory thalamus, as neuroscientist Joseph LeDoux demonstrated in 1986.",
+      "exit_fact": "Although blindfolded volunteers inside an fMRI scanner detected no conscious odor difference between the two sweat types, inhaling skydiver sweat selectively activated the recipient's left amygdala and sharpened acoustic startle reflexes.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 2,
       "title": "Anger",
-      "subtitle": "Boiling Blood, Costly Payback, and Why Losing Your Temper Protects You From Bullies",
-      "historical_anchor": "In 1982 in Berlin, economist Werner Güth ran the first Ultimatum Game experiments: when one player offered a greedy 9-to-1 split of real cash, the second player routinely rejected the offer so both walked away with nothing, proving that people gladly pay money out of their own pocket to punish an unfair deal.",
-      "exit_fact": "Unlike fear, which pulls blood away from the skin and leaves the hands icy cold, anger opens blood vessels in the face and hands and raises finger skin temperature by more than a full degree Celsius while preparing the fists to strike."
+      "subtitle": "Cutaneous Vasodilation, Costly Deterrence, and Left-Frontal Approach Asymmetry",
+      "prospected_seeds": [
+        "Paul Ekman and Robert Levenson demonstrated at UCSF in 1983 that fear and anger drive opposite peripheral vascular responses: fear constricts arterioles and chills the fingers, whereas anger dilates facial and palmar vessels, raising finger skin temperature by over 1 degree Celsius.",
+        "In 1988, economist Robert Frank modeled anger as an evolutionary commitment device: a purely rational calculator will never spend $500 in effort to punish a $100 theft, leaving cold calculators vulnerable to repeated predation.",
+        "Natural selection solved that deterrence gap by wiring a visible surge of rage—flushed skin, lowered brows, and vocal tremor—that overrides short-term cost-benefit accounting and convinces rivals that retaliation will occur regardless of personal cost.",
+        "Werner Güth introduced the Ultimatum Game in 1982 at the University of Cologne: when a proposer offers only 10 to 20 percent of a cash stake on a take-it-or-leave-it basis, subgame-perfect rationality predicts the responder will accept any sum above zero.",
+        "Across hundreds of trials, responders reject offers below 20 percent more than half the time, burning their own cash payout to punish greed; Ernst Fehr and Simon Gächter proved in 2002 that cooperative public-goods groups collapse without such costly punishment.",
+        "Alan Sanfey (2003) and Daria Knoch (2006) showed that unfair offers trigger competition between the anterior insula and dorsolateral prefrontal cortex (DLPFC); suppressing the right DLPFC with transcranial magnetic stimulation causes players to accept unfair splits.",
+        "In 1848 in Cavendish, Vermont, an iron tamping rod blasted through Phineas Gage's left cheek and frontal skull; Hanna Damasio's 1994 neuroimaging reconstruction proved the rod severed ventromedial prefrontal white-matter tracts that normally inhibit subcortical rage.",
+        "Eddie Harmon-Jones demonstrated in 1998 that whereas fear, disgust, and sadness activate the withdrawal-linked right prefrontal cortex on EEG, anger uniquely activates the left prefrontal cortex—the exact same approach engine that drives reward pursuit.",
+        "Brad Bushman tested Sigmund Freud's hydraulic catharsis theory on 600 angry volunteers in 2002: subjects who hammered a punching bag to let off steam administered louder, longer noise blasts to a peer afterward than subjects who sat quietly for two minutes.",
+        "Jennifer Lerner and Dacher Keltner proved in 2001 that while fear inflates risk estimates across unrelated choices, anger induces an illusion of control that makes subjects judge financial gambles and road hazards as just as safe as happy subjects do.",
+        "Anthropologist Michelle Rosaldo documented in 1980 that the Ilongot people of northern Luzon organize social life around liget—a fiery compound of anger, competitive passion, and vitality treated as the indispensable energy required for collective labor.",
+        "At Harvard in 1995, Murray Mittleman interviewed 1,623 myocardial infarction survivors and found that catecholamine surges and platelet aggregation during an outburst multiply baseline heart-attack risk 2.3-fold for two hours after acute anger."
+      ],
+      "historical_anchor": "Autonomic telemetry disproves the textbook assumption that all negative emotions share a single undifferentiated stress response. At the University of California, San Francisco in 1983, Paul Ekman and Robert Levenson measured peripheral vascular flow across distinct affective states.",
+      "exit_fact": "Elevated catecholamines increase arterial shear stress and blood platelet adhesiveness, multiplying a patient's baseline risk of a heart attack 2.3-fold during the two hours immediately following an outburst.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 3,
-      "title": "Joy",
-      "subtitle": "Crinkled Eye Corners, Contagious Smiles, and the Difference Between Wanting and Liking",
-      "historical_anchor": "In 1862 in Paris, neurologist Guillaume Duchenne used tiny electrical probes on facial muscles to show that a polite fake smile only pulls the corners of the mouth using the cheek muscle, whereas genuine joy also contracts the outer ring of muscle around the eyes—a muscle most people cannot flex on command.",
-      "exit_fact": "Psychologists LeeAnne Harker and Dacher Keltner analyzed the 1960 college yearbook photos of 141 women from Mills College and found that students who showed genuine eye-crinkling smiles at age twenty-one scored significantly higher in marital satisfaction and personal well-being thirty years later."
+      "title": "Disgust",
+      "subtitle": "Sympathetic Magic, Insular Cortex Lesions, and the Behavioral Immune System",
+      "prospected_seeds": [
+        "In 1986 at the University of Pennsylvania, Paul Rozin demonstrated the laws of similarity and contagion: students refused to eat freshly unwrapped chocolate fudge molded into the shape of dog feces and refused apple juice stirred for five seconds with a heat-sterilized dead cockroach.",
+        "Valérie Curtis and Mark Schaller showed that disgust functions as an external behavioral immune system: because fighting internal bacterial sepsis is metabolically costly and often fatal, evolution wired a hair-trigger filter that rejects any visual or olfactory cue of decay.",
+        "Joshua Susskind confirmed Charles Darwin's sensory-gate hypothesis in 2008: while fear widens the eyes and nostrils to double airflow, contracting the levator labii superioris in disgust pinches the nasal passages and narrows the visual field to block pathogen aerosols.",
+        "Unlike fear and anger, which drive sympathetic tachycardia, core pathogen disgust triggers parasympathetic vagal braking—slowing heart rate, dropping blood pressure, and shifting the stomach's three-cycle-per-minute pacemaker into gastric tachyrhythmia prior to emesis.",
+        "Paul Rozin and April Fallon showed in 1987 that although newborns spit out bitter quinine within hours of birth, toddlers under age three lack contamination disgust and willingly touch imitation feces until parental modeling switches the circuit on between ages three and five.",
+        "In 2000 at Cambridge, Andrew Calder studied Patient N.K., whose focal stroke damaged the left anterior insula and basal ganglia; while recognizing fear, anger, and joy normally, N.K. lost both the ability to recognize disgusted faces and the subjective feeling of disgust.",
+        "Psychologist Gordon Allport noted in 1955 that human saliva is swallowed continuously inside the mouth without revulsion, yet the instant that identical sterile fluid crosses the lip boundary into a clean glass, the brain reclassifies it as an external biohazard.",
+        "In 2009 at the University of Toronto, Hanah Chapman wired electromyography sensors to volunteers playing the Ultimatum Game and proved that moral betrayal activates the exact same levator labii upper-lip-curling muscle used to spit out bitter quinine.",
+        "Chen-Bo Zhong and Katie Liljenquist demonstrated the Macbeth effect in 2006: volunteers asked to transcribe an unethical deed rated antiseptic soaps higher and chose free disinfectant hand wipes twice as often as control subjects to wash away moral taint.",
+        "In 2006, Trevor Case and Betty Repacholi ran blind smell tests of soiled infant diapers and proved that mothers rated their own baby's feces as significantly less disgusting than a stranger's baby's feces—even when researchers secretly switched the labels.",
+        "At the University of Groningen in 2012, Charmaine Borg and Peter de Jong demonstrated that experimental sexual arousal temporarily suppresses pathogen disgust, leaving aroused volunteers far more willing to touch used combs or live mealworms in a bowl.",
+        "Geoff Cole and Arnold Wilkins showed in 2013 that trypophobia—the revulsion triggered in 16 percent of adults by tight clusters of small holes like lotus seed pods—is driven by mid-range spatial frequencies matching cutaneous parasite infestations and venomous animals."
+      ],
+      "historical_anchor": "Human contamination alarms obey the anthropological laws of similarity and contagion rather than rational germ calculus. At the University of Pennsylvania in 1986, psychologist Paul Rozin molded freshly unwrapped chocolate fudge into the realistic shape of dog feces.",
+      "exit_fact": "Fourier image analysis revealed that trypophobic hole clusters share the exact mid-range spatial-frequency contrast spectrum exhibited by cutaneous myiasis parasites, ticks, and venomous reptiles.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 4,
-      "title": "Sadness and Grief",
-      "subtitle": "Broken-Heart Adrenaline, Chemical Tears, and Why Bereavement Feels Like Withdrawal",
-      "historical_anchor": "In 1969, British psychiatrist Colin Murray Parkes tracked 4,486 widowed men after the death of their wives and discovered that during the first six months of grief, their death rate from heart failure and stroke jumped 40 percent above married men of the same age.",
-      "exit_fact": "Humans are the only animals known to shed emotional tears, and biochemist William Frey found in 1981 that tears cried during grief carry 24 percent more protein than tears triggered by raw onion fumes."
+      "title": "Joy",
+      "subtitle": "Orbicularis Oculi Contractions, Dopamine Prediction Errors, and Hedonic Hotspots",
+      "prospected_seeds": [
+        "In 1862 at the Salpêtrière hospital in Paris, neurologist Guillaume Duchenne used localized faradic currents on facial muscles to prove that while polite smiles only contract the zygomaticus major to lift the mouth corners, genuine joy also contracts the lateral orbicularis oculi around the eyes.",
+        "Clinical stroke lesions confirm that voluntary and spontaneous smiles travel along separate neural cables: primary motor cortex damage paralyzes one side of the mouth during a posed camera smile, whereas basal-ganglia lesions abolish spontaneous emotional smiling.",
+        "In 2001, LeeAnne Harker and Dacher Keltner coded facial muscle activation in the 1960 college yearbook photographs of 141 women at Mills College and found that students displaying genuine orbicularis oculi Duchenne smiles at age 21 scored higher in marital stability and well-being at age 52.",
+        "At the University of Michigan, Kent Berridge proved that mesolimbic dopamine controls wanting (craving and pursuit) rather than liking (pleasure): chemically depleting 99 percent of rat brain dopamine abolished walking to sugar spouts, yet sugar placed on the tongue still elicited normal hedonic lip-licking.",
+        "Berridge mapped true sensory liking to microscopic hedonic hotspots measuring just one cubic millimeter inside the rostrodorsal nucleus accumbens shell and ventral pallidum, where mu-opioid and endocannabinoid receptors amplify sweet taste pleasure threefold.",
+        "Wolfram Schultz proved in 1997 using single-neuron recordings in macaques that midbrain dopamine cells do not fire in proportion to reward size; they encode reward prediction error—spiking at unexpected windfalls, staying silent at expected payouts, and dipping when expected juice fails to arrive.",
+        "In 1978, Philip Brickman, Dan Coates, and Ronnie Janoff-Bulman compared 22 major Illinois State Lottery winners with ordinary neighbors and found that within months of winning up to a million dollars, winners reported no higher baseline daily happiness and took less pleasure in mundane routines.",
+        "Barbara Fredrickson and Christine Branigan demonstrated in 2005 that whereas fear narrows visual focus onto a threat, joy expands peripheral attentional breadth on global-local visual tasks and increases cognitive flexibility on creative word-association problems.",
+        "At Uppsala University in 1982, Ulf Dimberg wired electromyography sensors to volunteers' cheeks and proved that viewing a smiling face triggers involuntary zygomaticus micro-twitches within 300 to 400 milliseconds—even when backward masking blocks conscious awareness.",
+        "In 2022, Nicholas Coles led a 19-country consortium of 3,878 participants testing William James's facial-feedback hypothesis, confirming that consciously mimicking an actor's smiling facial configuration produces a measurable increase in subjective happiness.",
+        "Jessica Tracy and David Matsumoto analyzed photographs of sighted and congenitally blind judo athletes across 36 nations at the 2004 Olympic and Paralympic Games: blind winners who had never seen a celebration threw their arms up in a V-shape and tilted their chins back identically.",
+        "In 2008 at the University of British Columbia, Elizabeth Dunn, Lara Aknin, and Michael Norton handed commuters envelopes of $5 or $20 cash and found that subjects instructed to spend the money on someone else by 5:00 p.m. reported significantly higher evening joy than self-spenders."
+      ],
+      "historical_anchor": "Localized electrical stimulation at the Salpêtrière hospital in Paris in 1862 allowed neurologist Guillaume Duchenne to separate polite social grimaces from authentic joy.",
+      "exit_fact": "Cross-cultural replications in Canada, Uganda, and South Africa confirmed that spending money on others generates a larger, more durable lift in daily happiness than spending the identical sum on oneself.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 5,
-      "title": "Love and Attachment",
-      "subtitle": "Prairie Vole Pair Bonds, Mother's Milk Hormones, and Holding a Partner's Hand in Pain",
-      "historical_anchor": "In 2006 at the University of Virginia, psychologist James Coan placed married women inside an MRI scanner and warned them of a mild electric shock to the ankle: holding a stranger's hand calmed the brain's threat alarm slightly, but holding a loving husband's hand quieted the alarm almost completely.",
-      "exit_fact": "When two romantic partners sit together and look at each other without speaking for three minutes, their heart rates and breathing rhythms synchronize, and when one partner feels pain, their brain waves lock together while the pain drops."
+      "title": "Grief",
+      "subtitle": "Chemical Tears, Takotsubo Myocardial Stunning, and Accumbens Craving",
+      "prospected_seeds": [
+        "Homo sapiens is the only species known to shed tears from emotional distress; in 1981, biochemist William Frey compared movie-induced emotional tears against onion-fume irritant tears and found 24 percent higher protein concentration alongside ACTH and leucine-enkephalin.",
+        "At the Weizmann Institute in 2011, Shani Gelstein and Noam Sobel proved that when men sniffed odorless emotional tears collected from women, their salivary testosterone dropped by 13 percent and hypothalamic sexual and aggressive arousal declined on fMRI scans.",
+        "The aching lump in the throat before crying (globus pharyngeus) involves zero physical blockage: sympathetic fight-or-flight demand for oxygen pulls the cricoarytenoid muscles and glottis wide open while the pharynx tries to swallow against that dilated airway.",
+        "In 1969, British psychiatrist Colin Murray Parkes tracked 4,486 widowers aged 55 and older and found that during the first six months after a wife's death, all-cause mortality jumped 40 percent above married peers, driven primarily by coronary thrombosis and arrhythmias.",
+        "In 1990 in Hiroshima, cardiologist Hikaru Sato identified takotsubo cardiomyopathy (named after a narrow-necked octopus trap): an acute grief catecholamine storm stuns the beta-receptor-dense apex of the left ventricle so it balloons outward like a heart attack despite clear arteries.",
+        "Naomi Eisenberger and Matthew Lieberman (2003) showed that social rejection activates the dorsal anterior cingulate pain network, and C. Nathan DeWall proved in 2010 that taking 1,000 milligrams of acetaminophen daily for three weeks significantly blunts hurt feelings.",
+        "In 2008, neuroscientist Mary-Frances O'Connor scanned bereaved women viewing photos of deceased loved ones and found that in prolonged complicated grief, the nucleus accumbens reward hub continues firing with dopamine craving, turning bereavement into physiological withdrawal.",
+        "O'Connor showed that the bereaved brain repeatedly expects a deceased spouse to walk through the door because basal-ganglia and hippocampal spatial maps encode long-term attachment bonds as permanent priors that require thousands of prediction errors to overwrite.",
+        "At the University of Rochester in 2015, Christopher Thorstenson tested 127 observers after sad versus amusing film clips and proved that acute sadness selectively degrades visual contrast discrimination along the dopamine-dependent blue-yellow color axis.",
+        "At the University of New South Wales, Joseph Forgas demonstrated in 2009 that mild dysphoric sadness shifts cognition from top-down heuristics to bottom-up analytical scrutiny, making mildly sad witnesses incorporate fewer false details into memory than happy witnesses.",
+        "In 1872, Charles Darwin identified the oblique pulling of the inner eyebrows via the corrugator supercilii and frontalis as the universal muscular mark of grief—forming the omega-shaped forehead fold that psychiatrist Heinrich Schüle named the omega melancholicum in 1878.",
+        "Tracking bereaved spouses from pre-loss baselines through 18 months post-loss in 2002, Columbia psychologist George Bonanno proved that while 10 to 15 percent suffer chronic multi-year grief, more than 50 percent return to stable emotional functioning within weeks."
+      ],
+      "historical_anchor": "Homo sapiens is the only known vertebrate species in which emotional distress triggers lacrimal gland overflow across the cheeks. At St. Paul-Ramsey Medical Center in 1981, biochemist William Frey collected emotional tears shed during tragic films and compared them against irritant tears triggered by freshly cut onion vapors.",
+      "exit_fact": "While 10 to 15 percent of bereaved spouses suffer chronic multi-year complicated grief, more than half return to steady emotional functioning within months without delayed pathology.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 6,
-      "title": "Disgust",
-      "subtitle": "Cockroach Juice, Chocolate Fudge, and How a Rotten-Food Reflex Turned Into Moral Outrage",
-      "historical_anchor": "In 1986 at the University of Pennsylvania, psychologist Paul Rozin showed that hungry students refused to eat delicious chocolate fudge after watching it molded into the shape of dog feces, and refused to drink apple juice stirred for five seconds with a completely sterile dead cockroach.",
-      "exit_fact": "In 2009 at the University of Toronto, psychologist Hanah Chapman wired sensors to people's faces and proved that getting cheated in a money game activates the exact same upper-lip-curling muscle used to spit bitter poison out of the mouth."
+      "title": "Love and Attachment",
+      "subtitle": "Vole Vasopressin Receptors, Tactile C-Fibers, and Neural Threat Attenuation",
+      "prospected_seeds": [
+        "In 1958 at the University of Wisconsin, Harry Harlow refuted behaviorist drive-reduction theory by giving infant rhesus macaques a bare wire surrogate holding a milk bottle and a milkless frame wrapped in warm terrycloth; infants clung to the cloth mother 22 hours a day.",
+        "Fewer than 5 percent of mammal species form lifelong monogamous pairs; Sue Carter and Thomas Insel discovered that monogamous prairie voles pack high densities of oxytocin and AVPR1A vasopressin receptors directly inside the nucleus accumbens and ventral pallidum, unlike solitary montane voles.",
+        "In 2004 at Emory University, Larry Young used an adeno-associated viral vector to insert the prairie-vole AVPR1A vasopressin receptor gene into the ventral forebrain of promiscuous male meadow voles, transforming them overnight into monogamous partners that huddled with a single mate.",
+        "Helen Fisher and Lucy Brown scanned 17 newly infatuated adults in 2005 and found that gazing at a romantic partner's photograph activates the right ventral tegmental area and caudate nucleus—the exact subcortical dopamine engine that drives mammalian foraging and cocaine craving.",
+        "Andreas Bartels and Semir Zeki demonstrated at University College London in 2000 that viewing a romantic partner simultaneously deactivates the amygdala and right prefrontal social-judgment networks, providing a direct neurobiological basis for the suspension of critical scrutiny.",
+        "In 2006 at the University of Virginia, James Coan subjected married women to ankle electric-shock warnings inside an fMRI scanner: holding a stranger's hand blunted anterior cingulate threat activity slightly, while holding a trusted husband's hand quieted hypothalamic and cortical stress almost to baseline.",
+        "Pavel Goldstein wired 22 romantic couples to dual-EEG caps in 2018 during calibrated arm pain and proved that holding a partner's hand locks both brains into synchronized 8-to-12 Hertz alpha-mu waves over central-parietal cortex in direct proportion to analgesia.",
+        "Håkan Olausson proved in 2002 that hairy human skin on the arms and back is wired with unmyelinated C-tactile (CT) afferents that ignore fast friction and fire maximally only when stroked at 3 centimeters per second at 32 degrees Celsius—the exact speed and temperature of a human caress.",
+        "In 2015 at Azabu University, Takefumi Kikusui showed that 30 minutes of mutual eye contact between domestic dogs and their owners elevated urinary oxytocin by 130 percent in dogs and 300 percent in humans, whereas hand-reared wolves showed zero oxytocin surge.",
+        "Japanese psychiatrist Takeo Doi identified in 1971 the attachment emotion amae—derived from amaeru, to presume upon another's benevolent indulgence—capturing the secure, trusting expectation that a loved partner or parent will forgive childish dependence.",
+        "Anne Fernald and Patricia Kuhl proved that across every studied language, infant-directed speech raises fundamental pitch by an octave and hyper-articulates the corner vowels /i/, /a/, and /u/, capturing subcortical infant attention and doubling the speed of vowel mapping.",
+        "Tracking 724 men from 1938 across eight decades in the Harvard Study of Adult Development, psychiatrist Robert Waldinger found that neither serum cholesterol nor wealth at age 50 predicted physical health and cognitive sharpness at age 80 as strongly as warm attachment satisfaction."
+      ],
+      "historical_anchor": "Early twentieth-century behaviorists assumed that infants bond with mothers strictly because the caregiver is associated with milk delivery. At the University of Wisconsin in 1958, psychologist Harry Harlow separated infant rhesus macaques and placed two inanimate surrogates in their cages.",
+      "exit_fact": "Neither serum cholesterol nor socioeconomic status at age fifty predicted physical health and cognitive sharpness at age eighty as strongly as warm, trustworthy attachment satisfaction.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 7,
-      "title": "Guilt and Shame",
-      "subtitle": "The Urge to Hide Versus the Urge to Fix What You Broke",
-      "historical_anchor": "Across decades of studies starting in the 1990s, psychologist June Tangney proved that shame and guilt are opposite forces: shame says 'I am a bad person' and drives people to hide or lash out in anger, while guilt says 'I made a bad mistake' and drives people to apologize and repair the damage.",
-      "exit_fact": "In Tangney's longitudinal study of 476 county jail inmates released back into the community, prisoners prone to guilt were significantly less likely to be re-arrested within a year, whereas shame-prone prisoners hid their flaws, blamed others, and returned to jail at higher rates."
+      "title": "Shame and Guilt",
+      "subtitle": "Identity Collapse, Action Repair, and the Unforgeable Facial Blush",
+      "prospected_seeds": [
+        "Across three decades of studies starting in 1992, June Tangney proved that shame and guilt pull behavior in opposite directions: shame condemns the global identity (I am defective) and drives hiding or defensive anger, whereas guilt condemns the specific act (I broke that) and drives repair.",
+        "In 2014, Tangney and Jeffrey Stuewig tracked 476 county jail inmates from intake through one year post-release and found that guilt-prone inmates had significantly lower felony recidivism, whereas shame-prone inmates blamed victims and returned to jail at higher rates.",
+        "In 1995, developmental psychologist Michael Lewis handed two-year-olds a rigged rag doll whose leg fell off during play: guilt-oriented toddlers immediately approached the adult to fix the toy, whereas shame-oriented toddlers slumped their shoulders, tucked their chins, and froze.",
+        "The universal human shame posture—head dropped, shoulders rolled inward, gaze cast down—matches the primate submissive display used to shrink body size before a dominant aggressor, and Sally Dickerson proved in 2004 that social shame elevates proinflammatory TNF-alpha cytokine receptors.",
+        "In 1969 at Stanford, J. Merrill Carlsmith and Alan Gross showed that volunteers tricked into thinking they had ruined a peer's laboratory task agreed three times more often than controls to place dozens of tedious campaign phone calls for an environmental charity to relieve their guilt.",
+        "Brock Bastian demonstrated the Dobby effect in 2011: when direct apology is impossible, volunteers who wrote about a past ethical betrayal held their hand in freezing ice water significantly longer than controls and reported a sharp drop in subjective guilt afterward.",
+        "Stefan Mellander discovered in 1982 why human embarrassment reddens only the cheeks and ears: unlike all other cutaneous veins, the human facial venous plexus is lined with vasodilatory beta-adrenergic receptors that dilate under adrenaline to flood the cheeks with blood in five seconds.",
+        "Dacher Keltner and Matthew Feinberg (2012) distinguished embarrassment (lateral head turn, neck touch, sheepish smile, blush) from shame, showing that because a blush cannot be faked, observers in economic trust games entrusted significantly more money to actors who blushed after a blunder.",
+        "In 2009 at the University of Groningen, Corine Dijk and Peter de Jong proved that paradoxical intention cures blushing anxiety: instructing blushing-prone volunteers in front of an audience to deliberately try to blush as red as possible broke the sympathetic loop and cooled cheek temperature.",
+        "In her 1946 study The Chrysanthemum and the Sword, anthropologist Ruth Benedict contrasted public-shame honor cultures with private-guilt conscience cultures, and Ying Wong and Jeanne Tsai showed that collectivist communities value shame as a prosocial badge of relational humility.",
+        "Using mobile fMRI scanners inside maximum-security prisons in 2010, neuroscientist Kent Kiehl showed that clinical psychopaths—who comprise 1 percent of the general public and 20 percent of inmates—exhibit severe hypoactivity between the amygdala and ventromedial prefrontal cortex.",
+        "In 1988, James Pennebaker proved that actively hiding a shameful transgression taxes immune function: volunteers assigned to write privately for 20 minutes across four days about their deepest unconfessed mistakes showed boosted T-lymphocyte responsiveness and 50 percent fewer clinic visits."
+      ],
+      "historical_anchor": "Colloquial speech treats shame and guilt as synonyms, yet psychologist June Tangney demonstrated across three decades of research beginning in 1992 that they drive opposite behavioral trajectories.",
+      "exit_fact": "Blood assays and clinic records showed enhanced mitogen-induced T-lymphocyte proliferation and a 50 percent drop in medical visits across the following six weeks.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 8,
       "title": "Envy and Jealousy",
-      "subtitle": "Cucumber Tantrums, Silver-Medal Frowns, and the Pain of Watching a Rival Win",
-      "historical_anchor": "In 2003 at Emory University, primatologists Sarah Brosnan and Frans de Waal showed that capuchin monkeys happily ate cucumber slices all day until they saw a neighbor monkey receive a sweet grape for the exact same task—at which point the cucumber-paid monkey hurled the vegetable back at the researcher.",
-      "exit_fact": "In 1995, psychologists Victoria Medvec, Scott Madey, and Thomas Gilovich filmed Olympic medalists on the podium and proved that bronze medalists smile far more than silver medalists—because bronze winners compare themselves to finishing fourth with nothing, while silver winners torture themselves over losing gold."
+      "subtitle": "Dyadic Status Pain, Triadic Mate Guarding, and Counterfactual Bronze Smiles",
+      "prospected_seeds": [
+        "W. Gerrod Parrott and Richard Smith formalized the structural distinction between envy and jealousy in 1993: envy is a two-person dyadic ache triggered when a peer possesses superior status or resources, whereas jealousy is a three-person triadic alarm triggered when a rival threatens an attachment bond.",
+        "In 2003 at Emory University, Sarah Brosnan and Frans de Waal proved that capuchin monkeys happily traded granite tokens for cucumber slices 25 times in a row until seeing a neighbor receive a sweet grape for equal work—whereupon the cucumber-paid monkey hurled the vegetable back at the researcher.",
+        "Leon Festinger's 1954 Social Comparison Theory explains why global wealth gaps rarely provoke personal envy while small local disparities trigger intense resentment: status evaluation relies on proximate peers of similar age and background rather than distant billionaires.",
+        "In 1995, Victoria Medvec, Scott Madey, and Thomas Gilovich masked jersey numbers on 1992 Barcelona Olympics footage and proved that third-place bronze medalists smiled significantly more than second-place silver medalists, because bronze winners compare downward to fourth place while silver winners agonize upward over gold.",
+        "In 2009 in Tokyo, Hidehiko Takahashi scanned students using fMRI: reading about a superior rival activated the dorsal anterior cingulate pain cortex, and learning that the rival subsequently suffered food poisoning or career failure immediately fired the ventral striatum with dopamine Schadenfreude.",
+        "Niels van de Ven proved in 2009 that languages like Dutch (benijden vs. afgunst), Polish, and Thai separate envy into two emotions: benign envy when a rival's success feels deserved (driving upward self-improvement) and malicious envy when success feels unfair (driving sabotage).",
+        "In 2011, van de Ven, Marcel Zeelenberg, and Rik Pieters primed students with benign envy, malicious envy, or pure admiration before giving them a grueling word puzzle; subjects feeling benign envy worked 35 percent longer than controls, whereas pure admiration produced passive complacency.",
+        "Harvard economists Sara Solnick and David Hemenway surveyed 257 people in 1998 on worlds with identical prices: 50 percent preferred earning $50,000 a year where neighbors earned $25,000 over earning $100,000 a year where neighbors earned $200,000, sacrificing half their absolute purchasing power for local rank.",
+        "In 2002, Sybil Hart showed that triadic jealousy appears by six months of age: when mothers paused play to cuddle and sweet-talk a lifelike vocalizing baby doll on their lap, six-month-old infants frowned, elevated their heart rates, and kicked or pushed the plastic rival away.",
+        "At UC San Diego in 2014, Christine Harris and Caroline Prouvost had dog owners pet an animated barking plush dog, a plastic Halloween bucket, or read a book aloud; 78 percent of pet dogs pushed between owner and plush rival and 25 percent snapped at the fake dog.",
+        "In 1992, David Buss recorded skin conductance and brow electromyography across 37 cultures, showing that men exhibit higher physiological distress over sexual infidelity (reflecting ancestral paternal uncertainty) while women show higher distress over emotional infidelity (threatening resource diversion).",
+        "Named after Shakespeare's 1604 tragedy, clinical Othello syndrome causes patients to develop unshakable delusions of spousal infidelity; reviewing 105 Mayo Clinic cases in 2011, Jonathan Graff-Radford localized the disorder to right frontal lobe strokes and Parkinsonian dopamine agonists."
+      ],
+      "historical_anchor": "Everyday speech blurs envy and jealousy, yet psychologists W. Gerrod Parrott and Richard Smith formalized their structural separation in 1993 by counting the actors involved.",
+      "exit_fact": "Reviewing 105 Mayo Clinic cases in 2011, neurologist Jonathan Graff-Radford localized the delusion primarily to right dorsolateral frontal strokes and Parkinsonian dopamine-agonist medications that corrupt prediction-error circuits.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 9,
-      "title": "Embarrassment",
-      "subtitle": "Why Only Humans Blush and How Turning Red Wins Instant Forgiveness",
-      "historical_anchor": "In 1872, Charles Darwin called blushing the most peculiar and most human of all expressions because it is the only bodily reaction caused purely by thinking about what other people think of us—and trying to suppress a blush only makes the face burn brighter.",
-      "exit_fact": "Unlike every other vein in the human body, the tiny veins inside human cheeks are lined with special adrenaline sensors that widen the blood vessels instead of narrowing them, flooding the face with red blood within five seconds of a social blunder."
+      "title": "Curiosity and Surprise",
+      "subtitle": "The Information-Gap Itch, Locus Coeruleus Broadcasts, and Hippocampal Memory Stamping",
+      "prospected_seeds": [
+        "Neuroscientist Michael Davis mapped the mammalian acoustic startle pathway in 1982 to a three-synapse brainstem arc from the cochlear root neurons through the nucleus reticularis pontis caudalis to spinal motor neurons, blinking the eyes in 14 milliseconds and tensing the neck in 40 milliseconds.",
+        "When an unexpected stimulus violates sensory predictions, the frontalis muscle pulls the eyebrows high and the levator palpebrae retracts the upper eyelids while the jaw drops for silent inhalation, expanding the peripheral visual field to locate the anomaly.",
+        "In 1965, Samuel Sutton discovered the P300 event-related potential—a positive parietal voltage wave peaking 300 milliseconds after an unexpected event whose amplitude scales directly with Claude Shannon's mathematical information surprisal, I(x) = -log2 P(x).",
+        "Gary Aston-Jones and Jonathan Cohen proved in 2005 that surprise triggers a phasic burst across the 50,000 norepinephrine neurons of the brainstem locus coeruleus, broadcasting a global cortical reset signal that interrupts ongoing habits so the brain can update its internal model.",
+        "Daniel Berlyne proposed in 1960—and Celeste Kidd verified with infant eye-tracking in 2012—that visual curiosity follows an inverted-U curve (the Goldilocks effect): attention ignores both predictable repetition and chaotic noise to lock onto stimuli of intermediate complexity.",
+        "In 1994 at Carnegie Mellon, George Loewenstein formulated the Information-Gap Theory of curiosity: perceiving a specific gap between current knowledge and desired knowledge generates an aversive deprivation itch like hunger that demands closure.",
+        "At Caltech in 2009, Min Jeong Kang and Colin Camerer scanned volunteers reading trivia questions inside an fMRI machine, showing that curiosity fires the caudate nucleus and left inferior frontal cortex while amplifying pupil dilation and memory consolidation when wrong guesses are corrected.",
+        "In 2014 at UC Davis, Matthias Gruber and Charan Ranganath flashed unrelated neutral faces during the 14-second wait for a trivia answer; high curiosity caused midbrain dopamine spillover into the hippocampus that stamped the incidental stranger's face into long-term memory.",
+        "Christopher Hsee and Bowen Ruan demonstrated the Pandora effect at the University of Chicago in 2016: waiting volunteers left with trick pens labeled as delivering an electric shock clicked 75 percent more pens when uncertain which pens were wired, shocking themselves just to resolve curiosity.",
+        "At Johns Hopkins in 2015, Aimee Stahl and Lisa Feigenson showed 11-month-old infants a toy car appearing to roll straight through a solid wall or float in midair; when handed the car afterward, infants systematically banged or dropped it to test why it violated solidity or gravity.",
+        "In 2009, Ethan Bromberg-Martin and Okihide Hikosaka proved that rhesus macaques sacrifice water rewards to obtain advance cues revealing whether a 50-50 payout is coming, and midbrain dopamine neurons encode non-instrumental advance information on the same scale as water.",
+        "Using high-speed eye trackers at Northwestern University in 2016, Carola Salvi and Mark Beeman showed that 500 milliseconds before a sudden insight (Aha! moment), solvers execute an involuntary blink and gaze aversion to block visual noise while pupil diameter spikes."
+      ],
+      "historical_anchor": "Surprise begins with the fastest generalized motor reflex in the mammalian nervous system. Neuroscientist Michael Davis mapped the primary acoustic startle pathway in 1982 to just three central relay nuclei linking the cochlear root, the pontine reticular formation, and spinal motor neurons.",
+      "exit_fact": "Roughly 500 milliseconds before a sudden insight surfaces, the solver executes an involuntary eye blink and gaze shift away from the screen to shut out visual noise while locus coeruleus norepinephrine spikes pupil diameter.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 10,
-      "title": "Laughter and Play",
-      "subtitle": "Ticklish Rats, Play Bows, and Why Group Laughter Bonds Strangers",
-      "historical_anchor": "In 1997 at Bowling Green State University, neuroscientist Jaak Panksepp turned on an ultrasonic microphone while tickling laboratory rats and discovered that rats chirp with rapid 50-kilohertz laughter—and chase the researcher's hand begging for more tickles.",
-      "exit_fact": "After neuroscientist Robert Provine eavesdropped on 1,200 natural bursts of laughter in shopping malls and city sidewalks, he found that fewer than 20 percent followed anything remotely resembling a joke, and people laugh thirty times more often around others than when they are alone."
+      "title": "Loneliness",
+      "subtitle": "Selfish Herd Geometry, Conserved Transcriptional Leukocyte Shifts, and Dorsal Raphe Dopamine",
+      "prospected_seeds": [
+        "In his 1971 paper Geometry for the Selfish Herd, evolutionary biologist W. D. Hamilton proved mathematically that an animal standing on the outer perimeter of a group occupies a vast domain of predation danger, explaining why physical isolation triggers primordial panic across herding mammals.",
+        "At the University of Chicago, John Cacioppo demonstrated that loneliness is not passive sadness, but an aversive homeostatic warning signal analogous to hunger or thirst—evolved to alert an isolated hominid that its protective social perimeter has dissolved.",
+        "In 2002, Cacioppo wired lonely and socially connected young adults to night-time polysomnography monitors and proved that although both groups slept the same total hours, lonely individuals suffered significantly more nocturnal micro-awakenings from unconscious predator hypervigilance.",
+        "In 2007, Steve Cole and John Cacioppo mapped leukocyte gene expression across 22,000 genes and discovered the Conserved Transcriptional Response to Adversity (CTRA): chronic loneliness upregulates proinflammatory bacterial-wound genes while downregulating antiviral interferon genes.",
+        "Julianne Holt-Lunstad synthesized 148 prospective mortality studies covering 308,849 people in 2010 and proved that chronic social isolation increases premature mortality risk by 50 percent—matching the lethality of smoking 15 cigarettes a day and doubling the risk of obesity.",
+        "Louise Hawkley and John Cacioppo showed in 2003 through ambulatory impedance cardiography that whereas socially connected adults handle daily stress by raising cardiac output, lonely adults exhibit chronically elevated total peripheral vascular resistance (TPR) that stiffens arteries.",
+        "In 2016 at MIT, Gillian Matthews and Kay Tye identified a dedicated loneliness cluster of dopamine neurons in the brainstem dorsal raphe nucleus (DRN) that fires vigorously after 24 hours of isolation and drives an aversive craving for social contact when stimulated optogenetically.",
+        "At MIT in 2020, Livia Tomova and Rebecca Saxe placed 40 adults through 10 hours of food fasting and 10 hours of total social isolation; fMRI scans showed that viewing photos of friends after isolation activated the exact same midbrain substantia nigra craving hubs as viewing food after fasting.",
+        "John Bargh and Idit Shalev proved in 2012 that because the insular cortex processes both social connection and skin temperature, chronically lonely adults take longer, hotter baths and showers at home to self-medicate social coldness with physical warmth.",
+        "Controlled rodent isolation studies and neuropathological assessments of long-term solitary confinement demonstrate that prolonged social deprivation elevates glucocorticoids, suppresses brain-derived neurotrophic factor (BDNF), and shrinks hippocampal dendritic arbors.",
+        "In 2008 at the University of Chicago, Nicholas Epley and John Cacioppo showed that starved social circuits project mind onto non-human objects: lonely volunteers attributed significantly higher free will and emotion to pets, deities, and mechanical gadgets like robotic vacuums.",
+        "In 2019, Alexander Stahn performed high-resolution MRI scans on nine crew members before and after 14 months of geographic isolation at the Neumayer III station in Antarctica, recording a 7.2 percent volume loss in the hippocampal dentate gyrus alongside reduced serum BDNF."
+      ],
+      "historical_anchor": "Mathematical biology explains why physical separation from a group triggers immediate autonomic panic across gregarious species. In his 1971 paper on the geometry of the selfish herd, evolutionary biologist W. D. Hamilton modeled a predator emerging at a random point near a group of prey.",
+      "exit_fact": "Crew members lost an average of 7.2 percent of tissue volume in the hippocampal dentate gyrus alongside drops in circulating brain-derived neurotrophic factor (`BDNF`) and spatial processing speed.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 11,
-      "title": "Nostalgia",
-      "subtitle": "Swiss Mercenary Homesickness, Cold-Room Warmth, and How Old Songs Steady the Mind",
-      "historical_anchor": "In 1688 in Basel, Swiss physician Johannes Hofer coined the word 'nostalgia' from the Greek words for homecoming and pain to describe a mysterious wasting fever among young Swiss mercenaries fighting in lowland France who fell ill whenever they heard alpine cowherd songs.",
-      "exit_fact": "In 2012, psychologists Xinyue Zhou and Constantine Sedikides discovered that people placed in a chilly 16-degree Celsius room invoke nostalgic memories to warm up, and listening to nostalgic music makes volunteers able to hold their hand in ice-cold water significantly longer."
+      "title": "Gratitude",
+      "subtitle": "Reciprocal Altruism, Anterior Cingulate Valuation, and the Epley Estimation Gap",
+      "prospected_seeds": [
+        "Robert Trivers proposed in 1971 that gratitude evolved to regulate reciprocal altruism among non-kin, and Gerald Wilkinson confirmed the mechanism in 1984 in vampire bats (Desmodus rotundus), which starve in 60 hours and regurgitate blood meals selectively to bats that shared with them earlier.",
+        "In 2006 at Northeastern University, Monica Bartlett and David DeSteno staged a computer crash rescued by a confederate and proved that gratitude drives upstream reciprocity—causing rescued volunteers to spend 40 percent longer helping an unrelated stranger on a tedious task.",
+        "Sara Algoe formulated the Find-Remind-and-Bind theory in 2008 at UNC, showing through sorority gift-exchange and couples telemetry that gratitude tracks partner responsiveness rather than price tags to identify and cement high-value cooperative relationships.",
+        "Philip Watkins (2006) and Hongbo Yu (2018) proved that gratitude and indebtedness are neurologically and behaviorally distinct: when a helper demands future repayment, gratitude collapses into aversive indebtedness that triggers insula stress and avoidance of the benefactor.",
+        "In 2015 at USC, Glenn Fox and Antonio Damasio scanned volunteers experiencing first-person Holocaust survivor testimonies of wartime rescue and mapped subjective gratitude directly to blood-oxygen activity in the anterior cingulate and medial prefrontal cortex.",
+        "At Indiana University in 2016, Prathik Kini and Joshua Brown assigned therapy patients to write gratitude letters for three weeks; fMRI scans taken three months later during a charity task revealed lasting neural sensitization in the pregenual anterior cingulate cortex.",
+        "In 1999, Bruce Rind and David Strohmetz ran a randomized field trial across 81 restaurant dining parties and proved that when a server simply wrote 'Thank you' on the back of the check before presenting it, average tips rose from 16.3 percent to 18.1 percent—an 11 percent increase.",
+        "Francesca Gino and Adam Grant showed in 2010 that when volunteers edited a student's cover letter and received a one-sentence thank-you email, 66 percent agreed to edit another stranger's letter unpaid the next day compared to 32 percent of unthanked helpers.",
+        "In a 2005 randomized controlled trial of 577 adults at the University of Pennsylvania, Martin Seligman and Tracy Steen proved that writing and reading a 300-word gratitude letter in person to an unthanked mentor lifted happiness and lowered depression for a full month.",
+        "Robert Emmons and Michael McCullough showed in 2003 that volunteers randomly assigned to list five items of gratitude weekly or daily for ten weeks reported 25 percent higher well-being, exercised 1.5 hours more per week, and slept longer than hassle-recording controls.",
+        "In 2016 at UC San Diego, Laura Redwine and Paul Mills assigned Stage B heart-failure patients to keep an eight-week gratitude journal, documenting significant reductions in circulating inflammatory markers (CRP, TNF-alpha, and IL-6) alongside increased vagal heart-rate variability.",
+        "At the University of Chicago in 2018, Amit Kumar and Nicholas Epley proved that people hesitate to send thank-you notes because writers systematically overestimate how awkward recipients will feel while underestimating by half how warm and delighted recipients actually report feeling."
+      ],
+      "historical_anchor": "Evolutionary biologist Robert Trivers proposed in 1971 that gratitude evolved as the proximate cognitive bookkeeper governing reciprocal altruism among non-kin.",
+      "exit_fact": "Senders consistently overestimated how awkward recipients would feel and underestimated how warm and delighted recipients actually reported feeling upon opening the unexpected note.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 12,
-      "title": "Gratitude and Awe",
-      "subtitle": "Overview Astronauts, Towering Redwood Trees, and How Feeling Small Makes Us Generous",
-      "historical_anchor": "In 2015 at the University of California, Berkeley, psychologist Paul Piff and Dacher Keltner stood volunteers inside a grove of 200-foot Tasmanian blue gum eucalyptus trees for sixty seconds and staged an accident where a passerby dropped a handful of pens—and the tree-gazers picked up significantly more pens than volunteers who stared at a tall office building.",
-      "exit_fact": "Waiters and waitresses who simply wrote 'Thank you' on the back of a restaurant check saw their tips rise by 11 percent—and when psychologist Martin Seligman asked volunteers to hand-deliver a 300-word gratitude letter to someone they had never properly thanked, their happiness scores stayed elevated for a full month."
+      "title": "Awe",
+      "subtitle": "Vastness and Accommodation, the Small Self, and Interleukin-6 Attenuation",
+      "prospected_seeds": [
+        "Edmund Burke separated the sublime from beauty in 1757, and Dacher Keltner and Jonathan Haidt formalized awe in 2003 around two appraisals: encountering physical or conceptual vastness and experiencing a need for cognitive accommodation that forces mental models to update.",
+        "In 1987, space philosopher Frank White interviewed 29 Apollo and Space Shuttle astronauts and coined the Overview Effect to describe the cognitive shift triggered by viewing Earth hanging in black space without borders under a paper-thin stratospheric shell.",
+        "In 2015 at UC Berkeley, Paul Piff and Dacher Keltner stood volunteers for 60 seconds inside a grove of 60-meter Tasmanian blue gum eucalyptus trees versus facing a tall science building; when an experimenter dropped a fistful of pens seconds later, tree-gazers picked up significantly more pens.",
+        "Across field studies at Yosemite Valley and Mount Tai in 2017, Yang Bai and Dacher Keltner handed tourists blank sheets of paper to draw themselves; visitors gazing at the 900-meter granite wall of El Capitan drew their own bodies and signatures significantly smaller than wharf visitors.",
+        "At the University of Amsterdam in 2019, Michiel van Elk scanned volunteers watching panoramic awe videos and proved that awe selectively deactivates the brain's Default Mode Network (DMN)—the medial prefrontal and posterior cingulate hub responsible for self-referential ego rumination.",
+        "In 2020 at UCSF, neurologist Virginia Sturm prescribed weekly 15-minute outdoor awe walks to older adults for eight weeks; in trail selfies over two months, awe walkers progressively shrank their own faces into the corner of the frame to include more surrounding landscape.",
+        "At UC Berkeley in 2015, Jennifer Stellar assayed gingival fluid across 200 young adults and found that among seven positive emotions, frequent daily awe was the single strongest predictor of lower levels of the proinflammatory cytokine interleukin-6 (IL-6).",
+        "Melanie Rudd, Kathleen Vohs, and Jennifer Aaker demonstrated at Stanford in 2012 that watching a 60-second awe video dilates subjective time perception, leaving subjects feeling less time-starved and more willing to volunteer time to charity than happy controls.",
+        "Emiliana Simon-Thomas and Dacher Keltner showed in 2009 that awe has a universal non-verbal vocal burst across cultures: an abrupt inspiratory gasp followed by a breathy open-vowel exhalation accompanied by raised inner eyebrows and a slightly dropped jaw.",
+        "Using combined [11C]raclopride PET and fMRI at McGill University in 2011, Valorie Salimpoor and Robert Zatorre proved that musical aesthetic chills (frisson) release dopamine in the dorsal striatum (caudate) during build-up and in the ventral striatum (nucleus accumbens) at peak goosebumps.",
+        "At the University of Rochester in 2019, Jonathon McPhetres proved that inducing awe inside a planetarium dome makes adults significantly more aware of gaps in their scientific understanding and twice as likely to choose free science museum tickets over entertainment prizes.",
+        "Amie Gordon showed in 2017 that while benevolent nature awe increases parasympathetic vagal tone, the 20 percent of awe experiences triggered by threatening forces like tornadoes or volcanoes activate sympathetic fight-or-flight arousal while producing the same small-self humility."
+      ],
+      "historical_anchor": "Philosopher Edmund Burke separated the sublime from ordinary beauty in 1757 by observing that vast, overwhelming phenomena inspire reverent astonishment when viewed from physical safety.",
+      "exit_fact": "While benevolent nature awe elevates parasympathetic vagal tone, threat-based awe drives sympathetic cardiovascular arousal while producing the exact same small-self cognitive humility.",
+      "formalism_mode": "highlights"
     }
   ]
 }

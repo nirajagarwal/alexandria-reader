@@ -543,41 +543,41 @@
       "slug": "radical-subtraction",
       "file": "books/radical-subtraction.md",
       "title": "Radical Subtraction",
-      "subtitle": "Sensory Isolation and the Quiet Mind",
+      "subtitle": "Sensory Isolation, Negative Theology, and the Quiet Mind",
       "category": "Contemplative Theory",
       "mode": "facet",
       "format": "mechanisms",
       "profile": "B",
-      "accent": "#eab308",
-      "bg": "#15132b",
+      "accent": "#a1a1aa",
+      "bg": "#18181b",
       "pdf": "assets/pdfs/radical-subtraction.pdf",
       "compactPdf": "assets/pdfs/radical-subtraction-compact.pdf",
       "mobilePdf": "assets/pdfs/radical-subtraction-mobile.pdf",
       "sectionPages": [
         3,
-        4,
-        7,
-        10,
-        13,
-        16,
-        19,
-        22,
-        25,
-        28,
-        31,
-        34,
-        37
-      ],
-      "compactSectionPages": [
-        3,
-        4,
-        7,
-        10,
+        5,
+        8,
+        11,
         14,
         17,
         20,
         23,
         26,
+        29,
+        32,
+        35,
+        38
+      ],
+      "compactSectionPages": [
+        3,
+        5,
+        8,
+        11,
+        14,
+        18,
+        21,
+        24,
+        27,
         30,
         33,
         36,
@@ -587,11 +587,11 @@
         3,
         5,
         9,
-        12,
-        16,
-        20,
-        24,
-        28,
+        13,
+        17,
+        21,
+        25,
+        29,
         32,
         36,
         40,
@@ -602,119 +602,119 @@
         {
           "label": "Introduction",
           "title": "Radical Subtraction",
-          "subtitle": "What Happens When All Input Stops",
+          "subtitle": "Uncovering Truth by Taking Away",
           "slug": "introduction",
           "formalismMode": "introduction",
-          "anchor": "Most historical accounts of religious mysticism and contemplative philosophy focus on doctrinal disputes, ecclesiastical politics, or emotional devotion. These treatments view monastic enclosure and radical skepticism as psychological curiosities.",
-          "exitFact": "What emerged on the other side of that silence was not cognitive disintegration, but a stable state of unified awareness."
+          "anchor": "Most intellectual traditions treat human understanding as a problem of accumulation. To solve an impasse or comprehend reality, the student is instructed to gather more empirical observations, master a larger technical vocabulary, and stack affirmative propositions into an ever-taller conceptual edifice.",
+          "exitFact": "Whether executed through physical enclosure, four-cornered logical negation, non-instrumental sitting, or the suspension of belief, subtraction operates on a single principle: what is fundamental does not need to be manufactured from scratch, because it becomes visible the moment superfluous noise is taken away."
         },
         {
           "label": "Chapter 1",
           "title": "The Cell on the Tagus",
-          "subtitle": "John of the Cross and the Doctrine of the Dark Night in Toledo",
+          "subtitle": "John of the Cross and the Two Dark Nights in Toledo",
           "slug": "the-cell-on-the-tagus",
-          "formalismMode": "equation",
-          "anchor": "Shortly after midnight on December 2, 1577, armed Carmelite friars broke into a small dwelling in Ávila and arrested Juan de Yepes y Álvarez. They blindfolded the reformer, tied him to a mule, and marched him eighty miles south across the freezing Castilian plateau to Toledo.",
-          "exitFact": "He lowered himself down the cliff wall, dropped the final twelve feet into the walled courtyard of a neighboring Franciscan convent, and walked into the dawn carrying his memorized verses."
+          "formalismMode": "ledger_or_list",
+          "anchor": "Juan de Yepes y Álvarez locked inside a six-by-ten-foot monastic closet adjacent to a privy in Toledo from December 1577 to August 1578, composing the Spiritual Canticle in total darkness before formalizing his treatises Subida del Monte Carmelo and Noche Oscura.",
+          "exitFact": "He lowered himself down the sheer rock wall above the Tagus River using knotted strips of his coarse wool blanket, dropped the final twelve feet into a neighboring Franciscan courtyard, and walked into the Toledo dawn carrying his memorized stanzas."
         },
         {
           "label": "Chapter 2",
-          "title": "The Anchorhold of Norwich",
-          "subtitle": "Julian of Norwich and the Confinement of the Hazelnuts",
-          "slug": "the-anchorhold-of-norwich",
-          "formalismMode": "ledger_or_list",
-          "anchor": "Attached to the south stone wall of St. Julian's Church in Norwich stood a sealed chamber measuring roughly twelve feet square.",
-          "exitFact": "Having watched forty years of epidemic mortality from a room she could never leave, she concluded her manuscript with the quiet observation that every contingent fracture in time would resolve into order."
+          "title": "The Walled-In Window",
+          "subtitle": "Julian of Norwich and the Architecture of the Medieval Anchorhold",
+          "slug": "the-walled-in-window",
+          "formalismMode": "prose",
+          "anchor": "Julian of Norwich sealed inside a twelve-foot stone cell attached to St. Julian's Church in Norwich through the liturgical Rite of Enclosure following her May 1373 illness, writing the Short Text and Long Text of Revelations of Divine Love during the recurring waves of the Black Death and the 1381 Peasants' Revolt.",
+          "exitFact": "When the mystic Margery Kempe traveled to Norwich around 1413 to consult Julian through the black wool curtain of her street window, the anchoress had spent four decades inside a single stone room without ever stepping across its mortared threshold."
         },
         {
           "label": "Chapter 3",
-          "title": "The Interior Castle",
-          "subtitle": "Teresa of Ávila and the Neurodynamics of the Seventh Mansion",
-          "slug": "the-interior-castle",
-          "formalismMode": "diagram",
-          "anchor": "For the final two decades of her life, Teresa de Cepeda y Ahumada operated through severe neuro-inflammatory episodes, transient paralysis, chronic tinnitus, and violent cardiac arrhythmias. During a four-day febrile coma in 1539, physicians pronounced her dead and friars dug an open grave in the convent yard of La Encarnación.",
-          "exitFact": "When evaluating a contemplative's maturity, she ignored reports of supernatural rapture and inspected how reliably the sister handled the convent kitchen and infirmary, concluding that quiet interior absorption and practical outward service must operate as a single unit."
+          "title": "The Ground Beyond Names",
+          "subtitle": "Meister Eckhart, Gelassenheit, and the Cloud of Unknowing",
+          "slug": "the-ground-beyond-names",
+          "formalismMode": "prose",
+          "anchor": "Dominican master Johannes Eckhart preaching in Middle High German in Erfurt, Strasbourg, and Cologne before his 1326–1328 inquisitorial trials in Cologne and Avignon, paired with the anonymous late-fourteenth-century English author of The Cloud of Unknowing.",
+          "exitFact": "On March 27, 1329, Pope John XXII issued the bull In Agro Dominico from Avignon, condemning seventeen of Eckhart's propositions as heretical and eleven as suspect while noting that the Dominican master had died before the tribunal concluded."
         },
         {
           "label": "Chapter 4",
-          "title": "The Desert Pillar",
-          "subtitle": "Simeon Stylites and the Physics of Vertical Isolation in Syria",
-          "slug": "the-desert-pillar",
-          "formalismMode": "equation",
-          "anchor": "Forty miles east of Antioch on the limestone plateau of Telanissos stands the octagonal ruin of Qal'at Sim'an, built around the weathered base of a sixty-foot stone shaft. In the spring of 423 AD, a Syrian shepherd turned monk named Simeon walked into these hills after being expelled from a local monastery because his extreme fasts alarmed the abbot.",
-          "exitFact": "When he died standing against the railing on September 2, 459 AD, the military commander of Antioch marched six hundred Roman soldiers to the pillar to escort his body before desert tribes could seize it."
+          "title": "The Four-Cornered Negation",
+          "subtitle": "Nagarjuna and the Dismantling of Independent Essence at Nalanda",
+          "slug": "the-four-cornered-negation",
+          "formalismMode": "ledger_or_list",
+          "anchor": "Second-century CE South Indian Buddhist philosopher Nagarjuna composing the Mulamadhyamakakarika (Fundamental Verses on the Middle Way), the foundational logical treatise studied for centuries across the monastic university of Nalanda.",
+          "exitFact": "In the twenty-fourth chapter of his treatise, Nagarjuna demonstrated that if things possessed immutable intrinsic essence, no action could alter the world and no suffering could ever be ended, whereas only emptiness allows causes and conditions to function."
         },
         {
           "label": "Chapter 5",
-          "title": "The Apophatic Cloud",
-          "subtitle": "The Anonymous English Contemplative and the Erasure of Memory",
-          "slug": "the-apophatic-cloud",
-          "formalismMode": "ledger_or_list",
-          "anchor": "Somewhere in the East Midlands of England around 1375, an anonymous country priest drafted a seventy-five-chapter manual in vernacular Middle English for a young Carthusian student. He opened the manuscript with a strict operational warning: the book must never be read by clever talkers, curious academics, or anyone unwilling to sit quietly in mental darkness.",
-          "exitFact": "When the manuscript circulated among English Carthusian Charterhouses such as Mount Grace Priory in the fifteenth century, solitary monks copied the text without attribution, preserving a stripped-down mechanical manual for shutting off the brain's narrative generator."
+          "title": "Not This, Not This",
+          "subtitle": "Adi Shankara, the Upanishads, and the Peeling Away of the False Self",
+          "slug": "not-this-not-this",
+          "formalismMode": "prose",
+          "anchor": "Eighth-century CE Indian philosopher Adi Shankara writing his commentaries (bhashyas) on the Brihadaranyaka Upanishad and the Brahma Sutras, formalizing the Advaita Vedanta method of neti neti.",
+          "exitFact": "Before dying near the Himalayan shrine of Kedarnath around the age of thirty-two, Shankara established four monastic seats at the cardinal corners of the Indian subcontinent to preserve his commentaries on non-dual negation."
         },
         {
           "label": "Chapter 6",
-          "title": "The Dialectic of the Nothing",
-          "subtitle": "Meister Eckhart and the Breakthrough of the Ground in Cologne",
-          "slug": "the-dialectic-of-the-nothing",
-          "formalismMode": "ledger_or_list",
-          "anchor": "To call God a \"being,\" Johannes Eckhart argued from his Dominican pulpit in Cologne, was a logical mistake—because any specific being is finite, bounded, and defined by contrast with what it is not. In the winter of 1326, at the age of sixty-six, Eckhart—former Master of Sacred Theology at the University of Paris and vicar-general of Dominican houses across Bohemia and Saxony—was summoned before an inquisitorial tribunal convened by Archbishop Heinrich von Virneburg.",
-          "exitFact": "On March 27, 1329, Pope John XXII promulgated the bull *In Agro Dominico*, condemning seventeen of Eckhart's propositions as heretical and eleven as suspect, while recording that the master had submitted his writings to the judgment of the see before his death."
+          "title": "Just Sitting at Eihei-ji",
+          "subtitle": "Eihei Dogen and the Subtraction of Goal-Directed Meditation",
+          "slug": "just-sitting-at-eihei-ji",
+          "formalismMode": "prose",
+          "anchor": "Japanese monk Eihei Dogen training under Caodong master Tiantong Rujing in Song Dynasty China in 1225–1227 before returning to Japan to write the Fukanzazengi and Shobogenzo and founding Eihei-ji in the snowy mountains of Echizen in 1244.",
+          "exitFact": "Inside the monks' hall at Eihei-ji, practitioners sat facing the bare plaster wall rather than the central aisle, eliminating visual comparison and external destination from the physical posture of sitting."
         },
         {
           "label": "Chapter 7",
-          "title": "The Rhenish Hermitage",
-          "subtitle": "Hildegard of Bingen and the Scivias Telemetry at Disibodenberg",
-          "slug": "the-rhenish-hermitage",
-          "formalismMode": "equation",
-          "anchor": "The thirty-five illuminated plates of the Rupertsberg manuscript of *Scivias*, painted under the direct supervision of Hildegard of Bingen between 1141 and 1151, depict concentric rings of blazing gold fire, jagged crenelated battlements, and showers of brilliant sparks fading into black char. In 1970, when clinical neurologist Oliver Sacks compared those twelfth-century parchment illuminations against hospital sketches drawn by twentieth-century neurology patients, he identified the unmistakable geometric signature of classical migraine aura: fortification spectra (teichopsia) and scintillating scotomas.",
-          "exitFact": "In 1150, she defied the abbot of Disibodenberg and moved her nuns into an independent monastery at Rupertsberg engineered with gravity-fed indoor running water."
+          "title": "The Citadel of Choice",
+          "subtitle": "Epictetus and the Stoic Subtraction of External Fortune",
+          "slug": "the-citadel-of-choice",
+          "formalismMode": "prose",
+          "anchor": "Epictetus born into slavery in Hierapolis around 50 CE, serving in Nero's Rome under the imperial freedman Epaphroditus before founding his philosophical school at Nicopolis in Epirus after Emperor Domitian expelled philosophers from Italy around 89 CE.",
+          "exitFact": "Nearly a century after Epictetus lectured in Epirus, Roman Emperor Marcus Aurelius carried Arrian's transcriptions of the former slave's classroom discourses into his military headquarters along the Danube frontier."
         },
         {
           "label": "Chapter 8",
-          "title": "The Hesychast Breath",
-          "subtitle": "Gregory Palamas and the Physiology of the Uncreated Light on Mount Athos",
-          "slug": "the-hesychast-breath",
-          "formalismMode": "diagram",
-          "anchor": "At rest, an unpaced human adult breathes twelve to fifteen times per minute, producing irregular fluctuations between heart rate and arterial blood pressure. In 1338, an Italian-Greek logician named Barlaam of Calabria arrived in Constantinople and began mocking the solitary monks of Mount Athos who deliberately altered this respiratory rhythm.",
-          "exitFact": "That decree wrote a 0.1 Hz respiratory biofeedback protocol into the constitutional law of the Byzantine Empire."
+          "title": "Decreation and Waiting",
+          "subtitle": "Simone Weil on Unmuscular Attention and the Emptying of the Ego",
+          "slug": "decreation-and-waiting",
+          "formalismMode": "prose",
+          "anchor": "French philosopher Simone Weil taking a leave from lycée teaching in 1934–1935 to work as a power-press operator at the Alsthom and Renault factories near Paris, and later filling her lined composition notebooks in Marseilles between 1941 and May 1942.",
+          "exitFact": "When Weil died at Grosvenor Sanatorium in Ashford, Kent in August 1943 after refusing to eat more than the official rations allotted to citizens in occupied France, her Marseilles notebooks remained unpublished in the hands of Gustave Thibon and Joe Bousquet."
         },
         {
           "label": "Chapter 9",
           "title": "The Uncarved Block",
-          "subtitle": "Zhuangzi, Butcher Ding's Ox Cleaver, and the Mechanics of Non-Interference",
+          "subtitle": "Zhuangzi, Butcher Ding's Ox Cleaver, and the Removal of Friction",
           "slug": "the-uncarved-block",
-          "formalismMode": "equation",
-          "anchor": "A mediocre cook replaces his cleaver once a month because he hacks directly against bone. A skilled cook replaces his blade once a year because he slices through tough fibrous sinew.",
-          "exitFact": "Once the carcass lay separated on the courtyard stones, Butcher Ding stood still, wiped his nineteen-year-old cleaver clean, and slipped it back into its sheath—preserving the tool intact by refusing to pit metal against bone."
+          "formalismMode": "prose",
+          "anchor": "Third-century BCE Warring States philosophical text Zhuangzi (Chapter 3, The Mastery of Nurturing Life), recording the dialogue between Butcher Ding and Lord Wenhui of Liang.",
+          "exitFact": "Once the carcass lay separated on the courtyard stones, Butcher Ding stood still, wiped his nineteen-year-old cleaver clean, and slipped it back into its sheath."
         },
         {
           "label": "Chapter 10",
           "title": "The Sculptor's Chisel",
           "subtitle": "Plotinus, Pseudo-Dionysius, and the Removal of Conceptual Marble",
           "slug": "the-sculptor-s-chisel",
-          "formalismMode": "ledger_or_list",
-          "anchor": "Painting and sculpture operate by opposite physical algorithms. A painter begins with a bare wooden panel or canvas and builds a representation by adding successive layers of pigment, binder, and glaze.",
-          "exitFact": "It provided the formal blueprint later deployed by Meister Eckhart in Cologne, the author of *The Cloud of Unknowing* in England, and John of the Cross in Toledo."
+          "formalismMode": "prose",
+          "anchor": "Plotinus teaching in Rome around 250 CE and writing Enneads I.6.9, paired with the early-sixth-century Syrian monk who composed the Mystical Theology in Greek under the pseudonym Dionysius the Areopagite.",
+          "exitFact": "In 862 CE at the Frankish court of Charles the Bald, the Irish scholar John Scotus Eriugena translated the Greek manuscripts of Pseudo-Dionysius into Latin, transmitting the Syrian protocol of aphaeresis across medieval Europe."
         },
         {
           "label": "Chapter 11",
-          "title": "The Suspended Judgment",
-          "subtitle": "Pyrrho of Elis, Sextus Empiricus, and the Quietness That Follows Equipollence",
-          "slug": "the-suspended-judgment",
+          "title": "The Suspended Scale",
+          "subtitle": "Pyrrho of Elis, Sextus Empiricus, and the Calm That Follows Equipollence",
+          "slug": "the-suspended-scale",
           "formalismMode": "diagram",
-          "anchor": "Around 200 CE, the Greek empiricist physician Sextus Empiricus opened his handbook *Outlines of Pyrrhonism* with a story from a fourth-century BCE painting studio. The celebrated Hellenistic artist Apelles of Kos was painting a warhorse returning from battle.",
-          "exitFact": "By subtracting only the extra layer of dogmatic opinion, the skeptic navigated the physical world with full motor competence and zero existential friction."
+          "anchor": "Pyrrho of Elis traveling with Alexander the Great's campaign to northwest India between 327 and 325 BCE, and Greek empiricist physician Sextus Empiricus codifying Outlines of Pyrrhonism around 200 CE with the parable of the Hellenistic painter Apelles.",
+          "exitFact": "When Michel de Montaigne had fifty-seven Greek and Latin maxims carved into the oak ceiling beams of his library tower near Bordeaux in 1576, he drew them directly from the newly printed Renaissance editions of Sextus Empiricus."
         },
         {
           "label": "Chapter 12",
-          "title": "The Kicked-Away Ladder",
-          "subtitle": "Ludwig Wittgenstein and Where Logical Language Draws Its Own Border",
-          "slug": "the-kicked-away-ladder",
-          "formalismMode": "ledger_or_list",
-          "anchor": "While serving as an artillery spotter and searchlight operator in the Austro-Hungarian army on the Eastern and Italian fronts between 1914 and 1918, Ludwig Wittgenstein carried small lined notebooks inside his military rucksack. Under artillery bombardment along the Vistula River and in the mountain trenches of Asiago, the former Cambridge engineering student distilled a seventy-five-page manuscript organized into seven decimal-numbered propositions.",
-          "exitFact": "Having used formal symbolic logic to clear away the entire history of metaphysical chatter, he closed the book with Proposition 7, instructing that where one cannot speak, one must pass over in silence."
+          "title": "The Kicked-Away Ladder and the Soundproof Tank",
+          "subtitle": "From Wittgenstein's Tractatus to the Sensory Deprivation Experiments of McGill",
+          "slug": "the-kicked-away-ladder-and-the-soundproof-tank",
+          "formalismMode": "prose",
+          "anchor": "Ludwig Wittgenstein writing the Tractatus Logico-Philosophicus in military notebooks on the Eastern and Italian fronts between 1914 and 1918, juxtaposed with Donald Hebb, Woodburn Heron, and B. K. Doane's 1951–1954 sensory deprivation cubicles at McGill University in Montreal.",
+          "exitFact": "While the McGill student volunteers ripped off their translucent visors after seventy-two hours to escape their own unanchored neural noise, Wittgenstein gave away his inherited Vienna fortune and spent the 1920s teaching elementary school in the mountain villages of Lower Austria."
         }
       ]
     },
@@ -727,173 +727,173 @@
       "mode": "facet",
       "format": "mechanisms",
       "profile": "A",
-      "accent": "#a855f7",
-      "bg": "#0b2229",
+      "accent": "#eab308",
+      "bg": "#1f190b",
       "pdf": "assets/pdfs/liminal-thresholds.pdf",
       "compactPdf": "assets/pdfs/liminal-thresholds-compact.pdf",
       "mobilePdf": "assets/pdfs/liminal-thresholds-mobile.pdf",
       "sectionPages": [
         3,
-        4,
-        7,
-        9,
+        5,
+        8,
         11,
-        13,
-        15,
+        14,
         17,
-        19,
-        21,
+        20,
         23,
-        25,
-        27
+        26,
+        29,
+        32,
+        35,
+        38
       ],
       "compactSectionPages": [
         3,
-        4,
-        7,
+        5,
         9,
-        11,
         13,
-        16,
-        19,
-        22,
+        17,
+        21,
         25,
-        27,
-        30,
-        33
+        29,
+        33,
+        37,
+        41,
+        45,
+        49
       ],
       "mobileSectionPages": [
         3,
         5,
-        8,
-        11,
+        9,
         13,
-        16,
-        19,
-        22,
+        17,
+        21,
         25,
-        28,
-        30,
+        29,
         33,
-        36
+        37,
+        41,
+        45,
+        49
       ],
       "chapters": [
         {
           "label": "Introduction",
           "title": "Liminal Thresholds",
-          "subtitle": "How Science Deals with Impossible Data",
+          "subtitle": "How Science Collides With Impossible Data",
           "slug": "introduction",
           "formalismMode": "introduction",
-          "anchor": "Scientific consensus does not break when an experiment fails to confirm a hypothesis. It breaks when an experiment succeeds in measuring something that existing physical models categorize as impossible.",
-          "exitFact": "In each instance, the anomaly was not an exotic edge case; it was a herald of an unacknowledged governing equation."
+          "anchor": "Scientific consensus rarely fractures because a routine measurement falls slightly outside predicted error bars. It breaks when an instrument or field campaign records a physical event that prevailing mathematical models classify as impossible.",
+          "exitFact": "It exposes the deeper physical law that the idealization had hidden."
         },
         {
           "label": "Chapter 1",
           "title": "The Falling Stones",
-          "subtitle": "Jean-Baptiste Biot and the Aerodynamics of Cosmic Debris (L'Aigle, 1803)",
+          "subtitle": "Jean-Baptiste Biot and the Aerodynamics of Cosmic Debris at L'Aigle",
           "slug": "the-falling-stones",
-          "formalismMode": "equation",
-          "anchor": "At one o’clock in the afternoon on Tuesday, April 26, 1803, the sky over the Normandy commune of L'Aigle was clear and cloudless. Without meteorological warning, a loud detonation echoed across the orchards, followed by a rolling sound resembling artillery fire that persisted for five minutes.",
-          "exitFact": "Biot presented his comprehensive report—accompanied by the scorched iron-nickel fragments and the elliptical parish survey map—to the National Institute in Paris on July 18, 1803, ending a century of official denial by the Academy."
+          "formalismMode": "ledger_or_list",
+          "anchor": "Nearly three thousand warm, black-crusted stones lay scattered across a ten-by-four-kilometer ellipse of Normandy pastures around the commune of L'Aigle in April 1803 after a high-altitude detonation rattled windows across a hundred kilometers.",
+          "exitFact": "Biot presented his forensic report—complete with Vauquelin's chemical assays, the scorched iron-nickel fragments, and the elliptical parish map—to the National Institute in Paris on July 18, 1803, validating Ernst Chladni's extraterrestrial hypothesis and ending a century of institutional denial."
         },
         {
           "label": "Chapter 2",
           "title": "The Inverted Freeze",
-          "subtitle": "Erasto Mpemba and Non-Equilibrium Thermal Convection (Dar es Salaam, 1963)",
+          "subtitle": "Erasto Mpemba, Denis Osborne, and Non-Equilibrium Thermal Convection",
           "slug": "the-inverted-freeze",
-          "formalismMode": "equation",
-          "anchor": "Under Fourier's classical law of heat conduction, heat flux is strictly proportional to the local temperature gradient:",
-          "exitFact": "In 1969, Erasto Mpemba and Denis Osborne co-authored their experimental paper in *Physics Education*, documenting how convective flow fields, dissolved gas expulsion, and supercooling thresholds allow a hotter fluid to overtake a cooler one on the path to phase transition."
+          "formalismMode": "diagram",
+          "anchor": "Under Newton's classical law of cooling, a vessel of water starting at 100 degrees Celsius must cool down through 35 degrees before it can reach freezing, which implies that an identical vessel starting at 35 degrees should always freeze first.",
+          "exitFact": "In 1969, Erasto Mpemba and Denis Osborne published their joint experimental records in Physics Education, demonstrating how convective overturning, evaporative cooling, dissolved gas expulsion, and frost-layer thermal contact allow a hotter liquid to overtake a cooler one on the path to freezing."
         },
         {
           "label": "Chapter 3",
-          "title": "The Luminescent Bubble",
-          "subtitle": "H. Frenzel, H. Schultes, and the Physics of Acoustic Cavitation (Cologne, 1934)",
-          "slug": "the-luminescent-bubble",
+          "title": "The Star in a Jar",
+          "subtitle": "Frenzel, Schultes, and the Picosecond Implosion of Sonoluminescence",
+          "slug": "the-star-in-a-jar",
           "formalismMode": "equation",
-          "anchor": "Submerged in a darkened tank of photographic developer fluid at the University of Cologne in the winter of 1934, an ultrasonic sonar transducer left mysterious black exposure dots across unexposed silver-halide plates. Physicists H.",
-          "exitFact": "Optical spectroscopy of single-bubble sonoluminescence later confirmed that the compressed gas core reaches temperatures between 15,000 and $30,000\\text{ kelvins}$—hotter than the surface of the Sun—ionizing trapped argon and xenon atoms into a dense micro-plasma that emits a broadband flash of bremsstrahlung radiation lasting under 100 picoseconds."
+          "anchor": "Unexposed silver-halide photographic plates submerged inside a light-tight tank of developer fluid at the University of Cologne in 1934 emerged covered in dark exposure dots whenever an ultrasonic sonar transducer was energized in the bath.",
+          "exitFact": "Adiabatic shock compression inside the collapsing half-micrometer cavity heats trapped argon atoms above 20,000 kelvins—four times the surface temperature of the Sun—ionizing the core into a dense plasma that emits a broadband flash of bremsstrahlung light lasting under a hundred picoseconds before the next acoustic cycle begins."
         },
         {
           "label": "Chapter 4",
           "title": "The Crystalline Vector",
-          "subtitle": "Jacques and Pierre Curie and Hemimorphic Polar Asymmetry (Paris, 1880)",
+          "subtitle": "Jacques and Pierre Curie and the Symmetry Laws of Piezoelectricity",
           "slug": "the-crystalline-vector",
-          "formalismMode": "equation",
-          "anchor": "In 1880, in the mineralogy laboratory of the Sorbonne, Jacques Curie and his brother Pierre were investigating the pyroelectric effect—the ability of minerals like tourmaline to accumulate electric charges when heated. Contemporary physicists treated pyroelectricity as a purely thermal phenomenon.",
-          "exitFact": "One year later, Gabriel Lippmann predicted from thermodynamic conservation that the converse effect must also exist—applying a voltage to quartz must deform the crystal—and the Curie brothers measured those sub-angstrom mechanical deformations within months, using their new piezoelectric quartz balance to measure the radiation of radium eighteen years later."
+          "formalismMode": "prose",
+          "anchor": "Inside the mineralogy laboratory of the Sorbonne in Paris in 1880, brothers Jacques and Pierre Curie questioned the prevailing doctrine that tourmaline crystals generate electric charges only when heated.",
+          "exitFact": "In 1881, physicist Gabriel Lippmann derived from thermodynamic conservation that the converse effect must also exist—applying an external voltage to quartz must mechanically deform the lattice—and the Curie brothers built a lever amplifier that measured those sub-micrometer crystal displacements, turning their quartz piezoelectrometer into the precision instrument later used to measure the radiation of radium."
         },
         {
           "label": "Chapter 5",
           "title": "The Unbroken Soliton",
-          "subtitle": "John Scott Russell and the Wave of Translation (Hermiston, 1834)",
+          "subtitle": "John Scott Russell and the Solitary Wave on the Union Canal",
           "slug": "the-unbroken-soliton",
           "formalismMode": "equation",
-          "anchor": "Classical nineteenth-century hydrodynamics, formalized by George Biddell Airy and George Gabriel Stokes, proved that a localized heap of water cannot travel down a channel without flattening out. In linear wave theory, the phase speed $c$ of a surface wave depends on its wavenumber $k$ and water depth $h$:",
-          "exitFact": "When non-linear steepening exactly balances linear dispersion, the equation yields a permanent, shape-preserving solitary wave—a soliton:"
+          "anchor": "Linear nineteenth-century hydrodynamics, formalized by George Biddell Airy and George Gabriel Stokes, proved mathematically that any isolated mound of water in a channel must flatten and disperse because long wavelengths travel faster than short wavelengths.",
+          "exitFact": "At the exact hyperbolic-secant-squared wave profile that Russell chased on horseback along the Union Canal in August 1834, nonlinear amplitude steepening and third-order wavelength dispersion lock into perpetual balance, allowing a self-reinforcing soliton to travel across water, plasma, and transoceanic fiber-optic cables without losing its form."
         },
         {
           "label": "Chapter 6",
-          "title": "The Thermal Circuit",
-          "subtitle": "Thomas Johann Seebeck and Differential Metallic Diffusion (Berlin, 1821)",
-          "slug": "the-thermal-circuit",
-          "formalismMode": "equation",
-          "anchor": "A closed loop formed by soldering a strip of bismuth to a strip of copper contains no battery, no acid cell, and no moving magnet. Yet when Estonian-born physicist Thomas Johann Seebeck held one of the two bimetallic junctions between his warm fingers at the Prussian Academy of Sciences in Berlin in 1821 while leaving the opposite junction at room temperature, a compass needle suspended inside the loop swung sharply aside.",
-          "exitFact": "In 1834, French watchmaker Jean Charles Athanase Peltier discovered the exact thermodynamic inverse: driving an external electric current across a bismuth-copper junction forces one junction to absorb heat and freeze a droplet of water while the opposite junction releases heat."
+          "title": "The Bimetallic Compass",
+          "subtitle": "Thomas Johann Seebeck and Thermoelectric Diffusion in Metals",
+          "slug": "the-bimetallic-compass",
+          "formalismMode": "prose",
+          "anchor": "A closed metallic ring formed by soldering a bar of bismuth to a bent strip of copper contains no acid electrolyte, no zinc-copper voltaic pile, and no permanent magnet, yet warming one junction with a hand in Berlin in 1821 swung a suspended compass needle thirty degrees off north.",
+          "exitFact": "In 1834, Parisian physicist Jean Charles Athanase Peltier demonstrated the exact thermodynamic inverse by driving an external battery current across a bismuth-antimony junction at constant room temperature, forcing electrons climbing the Fermi-level step between the two metals to absorb lattice heat and freeze a droplet of water resting on the solder joint."
         },
         {
           "label": "Chapter 7",
-          "title": "The Disappearing Boundary",
-          "subtitle": "Thomas Andrews and the Continuity of Gaseous and Liquid States (Belfast, 1869)",
-          "slug": "the-disappearing-boundary",
+          "title": "The Vanishing Meniscus",
+          "subtitle": "Thomas Andrews and the Critical Point Where Liquid and Gas Merge",
+          "slug": "the-vanishing-meniscus",
           "formalismMode": "equation",
-          "anchor": "For two centuries, natural philosophers treated liquid and gas as fundamentally discontinuous states of matter separated by an impassable physical boundary. A liquid possessed a curved meniscus, a fixed volume, and near-incompressible density; a gas had no surface boundary and expanded indefinitely to fill any container.",
-          "exitFact": "From those two molecular constants, Van der Waals derived the exact critical coordinates where the liquid-gas boundary ceases to exist:"
+          "anchor": "Inside the chemistry laboratory at Queen's College Belfast during the 1860s, Thomas Andrews turned a steel compression screw into a water-filled cylinder to squeeze pure carbon dioxide above seventy-three atmospheres inside a thick-walled glass capillary tube.",
+          "exitFact": "Above the critical temperature where thermal kinetic energy overwhelms van der Waals intermolecular cohesion at every density, no amount of pressure can condense a gas, explaining why Michael Faraday and Johann Natterer had failed to liquefy oxygen and nitrogen at room temperature and guiding Louis Cailletet and Raoul Pictet to liquefy the last permanent gases by cascade cooling in 1877."
         },
         {
           "label": "Chapter 8",
-          "title": "The Drifting Slabs",
-          "subtitle": "Alfred Wegener and the Rheology of the Earth Mantle (Marburg, 1912)",
-          "slug": "the-drifting-slabs",
-          "formalismMode": "equation",
-          "anchor": "On January 6, 1912, at the annual meeting of the Geological Association in Frankfurt, German meteorologist and Greenland explorer Alfred Wegener delivered a paper titled *The Geophysical Basis of the Evolution of the Earth's Surface Features*. Wegener proposed that the continents are not permanent granite pillars anchored to the Earth's interior, but buoyant blocks that fractured and drifted thousands of kilometers across the ocean floor.",
-          "exitFact": "Driven by radiogenic heat from the Earth's interior, the mantle's thermal Rayleigh number ($\\text{Ra} = \\frac{g \\alpha \\Delta T D^3}{\\nu \\kappa} > 10^6$) exceeds the convective threshold, circulating the solid mantle in slow thermal plumes that carry the brittle tectonic plates across the globe at centimeters per year."
+          "title": "The Drifting Continents",
+          "subtitle": "Alfred Wegener, Arthur Holmes, and the Solid Mantle That Flows Like Tar",
+          "slug": "the-drifting-continents",
+          "formalismMode": "diagram",
+          "anchor": "For half a century after Alfred Wegener proposed continental drift in 1912, geophysicists led by Harold Jeffreys rejected the theory on a valid mechanical ground: the Earth's silicate mantle transmits earthquake shear waves with a stiffness exceeding steel, and rotational or tidal forces are a million times too weak to plow granite continents through a solid ocean floor.",
+          "exitFact": "When Harry Hess's 1962 seafloor-spreading model was joined with Fred Vine and Drummond Matthews's 1963 mapping of symmetric magnetic reversals locked inside cooling mid-ocean ridge basalt, the mechanical paradox vanished: continents do not plow through the ocean floor, but ride passively embedded within rigid lithospheric plates carried atop a convecting viscoelastic mantle."
         },
         {
           "label": "Chapter 9",
-          "title": "The Boiling Friction",
-          "subtitle": "Count Rumford, Benjamin Thompson, and the Mechanical Equivalence of Caloric (Munich, 1798)",
-          "slug": "the-boiling-friction",
-          "formalismMode": "equation",
-          "anchor": "Eighteen pounds of cold water inside a wooden box at the military arsenal in Munich came to a rolling boil in the spring of 1798 without a single spark of fire beneath it. Overseeing the manufacture of brass artillery for the Bavarian army, American-born physicist Benjamin Thompson—titled Count Rumford—had submerged a solid bronze cannon cylinder in the water tank, inserted a blunt steel borer against its base, and harnessed two horses to walk in a circle turning the shaft.",
-          "exitFact": "Comparing the thermal output of the boiling water against the wattage of the horses and the wax burned in candles, Rumford made the first experimental estimate of the mechanical equivalent of heat—a constant refined forty-five years later by James Prescott Joule to $W = J \\cdot Q$, where $J = 4.184\\text{ joules per calorie}$."
+          "title": "The Cannon-Boring Cauldron",
+          "subtitle": "Count Rumford and the Death of the Caloric Fluid in Munich",
+          "slug": "the-cannon-boring-cauldron",
+          "formalismMode": "ledger_or_list",
+          "anchor": "Inside the Electoral Military Arsenal in Munich in the spring of 1798, Benjamin Thompson, Count Rumford, submerged a brass cannon cylinder and a purposely blunted steel borer inside an oak box filled with 18.77 pounds of cold water and harnessed two horses to turn the drive shaft.",
+          "exitFact": "Because no finite block of metal can contain an inexhaustible reservoir of a conserved material fluid, Rumford reported to the Royal Society of London that heat could only be microscopic mechanical motion, establishing the first experimental ratio between horsepower and thermal output forty-five years before James Prescott Joule fixed the mechanical equivalent of heat at 4.184 joules per calorie."
         },
         {
           "label": "Chapter 10",
-          "title": "The Ghost Inventory",
-          "subtitle": "Wolfgang Pauli and the Missing Momentum of Beta Decay (Zurich, 1930)",
-          "slug": "the-ghost-inventory",
+          "title": "The Ghost Particle",
+          "subtitle": "Wolfgang Pauli and the Missing Energy of Beta Decay",
+          "slug": "the-ghost-particle",
           "formalismMode": "equation",
-          "anchor": "his dear radioactive ladies and gentlemen, began a one-page typewritten letter mailed from Zurich on December 4, 1930, to a nuclear physics conference in Tübingen. theoretical physicist Wolfgang Pauli had declined to attend the meeting in person because he preferred to attend a charity ballroom dance in Zurich, but his letter proposed a \"desperate remedy\" to rescue the law of conservation of energy.",
-          "exitFact": "Twenty-six years after Pauli's letter, in June 1956, Clyde Cowan and Frederick Reines finally captured the particle in tanks of cadmium chloride beside the Savannah River nuclear reactor via inverse beta decay ($\\bar{\\nu}_e + p \\longrightarrow n + e^+$), and wired a telegram to Zurich informing Pauli that his invisible bookkeeper had been found."
+          "anchor": "Under two-body conservation of energy and momentum, an unstable atomic nucleus decaying at rest into a daughter nucleus and a single emitted particle must eject that particle at one sharp, discrete kinetic energy, yet James Chadwick's 1914 magnetic spectrometer measurements showed beta-decay electrons emerging in a continuous smear.",
+          "exitFact": "In June 1956, Frederick Reines and Clyde Cowan captured Pauli's elusive particle in tanks of water doped with cadmium chloride beside the Savannah River nuclear reactor via inverse beta decay, detecting the delayed coincidence between positron annihilation and neutron capture and wiring a telegram to Zurich confirming that the neutrino existed."
         },
         {
           "label": "Chapter 11",
-          "title": "The Unilateral Current",
-          "subtitle": "Thomas Edison, Owen Richardson, and Thermionic Barrier Penetration (Menlo Park, 1883)",
-          "slug": "the-unilateral-current",
+          "title": "The Vacuum Leap",
+          "subtitle": "The Edison Effect, Owen Richardson, and Electrons Boiling Out of Hot Metal",
+          "slug": "the-vacuum-leap",
           "formalismMode": "equation",
-          "anchor": "Carbon soot blackening the inside of early incandescent lightbulbs in 1883 threatened to ruin Thomas Edison's commercial lighting venture in Menlo Park, New Jersey. Seeking to trap the evaporating carbon particles electrically, Edison sealed a separate metal foil plate inside the evacuated glass bulb beside the glowing horseshoe carbon filament and wired a galvanometer between the cold plate and the heated filament.",
-          "exitFact": "In 1904, John Ambrose Fleming used Edison's one-way vacuum bulb to rectify high-frequency radio waves into the first thermionic diode valve, and two years later Lee de Forest inserted a third zig-zag wire—the control grid—between the filament and the plate to create the triode amplifier."
+          "anchor": "Evacuated glass lightbulbs running for dozens of hours in Thomas Edison's Menlo Park and New York workshops between 1880 and 1883 developed a dark inner coating of carbon soot everywhere except along a narrow, clear shadow line cast by the positive leg of the glowing horseshoe filament.",
+          "exitFact": "In November 1904, former Edison London scientific adviser John Ambrose Fleming wired Edison's asymmetric vacuum bulb into a Marconi wireless receiver circuit to rectify high-frequency alternating radio waves into direct current, creating the thermionic vacuum diode that launched twentieth-century electronics."
         },
         {
           "label": "Chapter 12",
-          "title": "The Solitary Wall",
-          "subtitle": "The Draupner Platform and Non-Linear Surface Wave Modulation (North Sea, 1995)",
-          "slug": "the-solitary-wall",
-          "formalismMode": "equation",
-          "anchor": "At 3:20:47 PM on January 1, 1995, a downward-pointing infrared laser rangefinder mounted beneath the deck of the Draupner E gas platform in the central North Sea recorded a single vertical wall of water $25.6\\text{ meters}$ (84 feet) high. Throughout the afternoon storm, the surrounding sea state had averaged a significant wave height of $H_s = 11.9\\text{ meters}$.",
-          "exitFact": "The cubic non-linear focusing term $\\beta |\\psi|^2 \\psi$ siphons mechanical energy out of adjacent wave crests on either side and piles it into a single coherent breather packet (the Peregrine soliton), rearing up to three times the height of the surrounding sea for less than a minute before dispersing back into the wave train."
+          "title": "The Eighty-Five-Foot Wall",
+          "subtitle": "The Draupner Platform and the Nonlinear Focusing of Rogue Waves",
+          "slug": "the-eighty-five-foot-wall",
+          "formalismMode": "prose",
+          "anchor": "Mounted beneath the bridge walkway of the unmanned Draupner E steel jacket gas platform in the central North Sea on January 1, 1995, a downward-pointing infrared laser rangefinder sampled the storm sea twenty-one times per second as twelve-meter swells rolled beneath the pilings.",
+          "exitFact": "Subsequent European Space Agency MaxWave satellite radar surveys scanning thirty thousand global ocean snapshots detected more than ten isolated rogue waves exceeding twenty-five meters within a single three-week window, compelling maritime classification societies to replace linear Rayleigh wave tables with nonlinear Benjamin-Feir focusing models."
         }
       ]
     },
@@ -1085,8 +1085,8 @@
       "mode": "facet",
       "format": "mechanisms",
       "profile": "A",
-      "accent": "#f97316",
-      "bg": "#211a09",
+      "accent": "#ec4899",
+      "bg": "#260b19",
       "pdf": "assets/pdfs/elemental-asymmetries.pdf",
       "compactPdf": "assets/pdfs/elemental-asymmetries-compact.pdf",
       "mobilePdf": "assets/pdfs/elemental-asymmetries-mobile.pdf",
@@ -1094,164 +1094,164 @@
         3,
         4,
         7,
-        9,
-        11,
+        10,
         13,
-        15,
-        17,
-        20,
-        23,
-        26,
-        29,
-        32
-      ],
-      "compactSectionPages": [
-        3,
-        4,
-        7,
-        9,
-        11,
-        14,
         16,
         19,
         22,
         25,
         28,
         31,
-        34
+        34,
+        37
       ],
-      "mobileSectionPages": [
+      "compactSectionPages": [
         3,
         4,
         7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        29,
+        32,
+        35,
+        38
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
         9,
-        11,
-        14,
+        13,
         17,
-        20,
-        24,
-        27,
-        30,
+        21,
+        25,
+        29,
         33,
-        36
+        37,
+        41,
+        45,
+        49
       ],
       "chapters": [
         {
           "label": "Introduction",
           "title": "Elemental Asymmetries",
-          "subtitle": "The Physical Constraints of Twelve Elements",
+          "subtitle": "How Atomic Quirks Govern Industrial Power and Geopolitics",
           "slug": "introduction",
           "formalismMode": "introduction",
-          "anchor": "History usually treats power as a contest of treaties, armies, and financial systems. But behind every political and industrial shift lies a physical constraint: the practical chemistry of specific elements.",
-          "exitFact": "This book examines twelve case studies where the specific properties of a single chemical element shaped industrial development, trade chokepoints, and international competition."
+          "anchor": "History usually treats power as a contest of treaties, armies, and financial institutions. Yet beneath every industrial transformation and geopolitical standoff lies a harder boundary condition: the quantum and thermodynamic structure of the periodic table.",
+          "exitFact": "Where a single subshell or nuclear binding barrier creates an irreplaceable property, a laboratory bottleneck quickly becomes an industrial lever."
         },
         {
           "label": "Chapter 1",
           "title": "The Triple Bond Trap",
-          "subtitle": "Nitrogen and the Metabolic Ceiling of Civilization (Oppau, 1913)",
+          "subtitle": "Nitrogen, the Haber-Bosch Reactor, and the Metabolic Ceiling of Agriculture",
           "slug": "the-triple-bond-trap",
           "formalismMode": "equation",
-          "anchor": "On September 9, 1913, inside a concrete blast bunker at the BASF chemical works in Oppau, near Ludwigshafen on the Rhine, chemical engineer Carl Bosch opened the valve of an experimental high-pressure steel reactor. Over the preceding four years, physical chemist Fritz Haber had demonstrated in a Karlsruhe laboratory that nitrogen gas ($\\text{N}_2$) and hydrogen gas ($\\text{H}_2$) could be forced into synthesis to yield ammonia ($\\text{NH}_3$).",
-          "exitFact": "Today, Haber-Bosch reactors consume roughly two percent of global energy production and supply over half of the nitrogen atoms incorporated into human tissues worldwide."
+          "anchor": "Addressing the British Association for the Advancement of Science at Bristol in September 1898, chemist William Crookes warned that industrial nations faced famine as Chilean caliche nitrate beds approached depletion, prompting Fritz Haber in Karlsruhe and Carl Bosch at BASF in Oppau (1909–1913) to synthesize ammonia from atmospheric nitrogen at 200 atmospheres over a doubly promoted magnetite catalyst inside double-walled steel vessels.",
+          "exitFact": "When the Oppau ammonia plant opened in September 1913, humanity permanently breached the agricultural nitrogen ceiling; today, Haber-Bosch reactors consume nearly two percent of global energy and supply half the nitrogen atoms in human muscle and DNA."
         },
         {
           "label": "Chapter 2",
-          "title": "The Lattice Arbitrage",
-          "subtitle": "Silicon and the Purity Threshold of Planar Semiconductors (Mountain View, 1959)",
-          "slug": "the-lattice-arbitrage",
-          "formalismMode": "equation",
-          "anchor": "Constructed from germanium in 1947 at Bell Laboratories, the earliest transistors failed whenever the surrounding air grew hot. Germanium was easy to zone-refine and melted at a manageable $937^\\circ\\text{C}$, but its narrow electronic bandgap of $0.66\\text{ electron-volts}$ meant that warming a circuit above $70^\\circ\\text{C}$ thermally excited enough intrinsic electrons across the bandgap to flood the base region and short out the device.",
-          "exitFact": "Six months later, Robert Noyce evaporated thin aluminum lines directly on top of Hoerni's flat $\\text{SiO}_2$ insulator to wire multiple transistors together on a single crystal die."
+          "title": "The Native Oxide Shield",
+          "subtitle": "Silicon, Eleven-Nines Purity, and Why Germanium Lost the Semiconductor Age",
+          "slug": "the-native-oxide-shield",
+          "formalismMode": "ledger_or_list",
+          "anchor": "Constructed at Bell Telephone Laboratories in December 1947, the first germanium transistors failed above 70°C due to germanium's narrow 0.66 eV bandgap and water-soluble oxide, driving Gordon Teal at Texas Instruments (1954), Siemens engineers in Erlangen, and Jean Hoerni and Robert Noyce at Fairchild Semiconductor (1957–1959) to purify silicon to eleven nines via trichlorosilane distillation and passivate planar integrated circuits beneath thermally grown silicon dioxide glass.",
+          "exitFact": "Six months later, Fairchild co-founder Robert Noyce evaporated thin aluminum metal strips directly atop Hoerni's flat SiO2 insulator to wire multiple transistors together on a single monolithic silicon die."
         },
         {
           "label": "Chapter 3",
-          "title": "The Intercalation Bottleneck",
-          "subtitle": "Lithium and the Electrochemical Redox Gradient (Oxford, 1980)",
-          "slug": "the-intercalation-bottleneck",
+          "title": "The Intercalation Host",
+          "subtitle": "Lithium, Explosive Dendrites, and the Layered Oxide Cathode",
+          "slug": "the-intercalation-host",
           "formalismMode": "equation",
-          "anchor": "Element number three on the periodic table—lithium, with an atomic mass of $6.94\\text{ grams per mole}$ and a single $2s$ valence electron outside a closed helium shell—possesses the most negative standard reduction potential of any solid element ($E^\\circ(\\text{Li}^+/\\text{Li}) = -3.04\\text{ V}$ relative to the standard hydrogen electrode) and a theoretical specific capacity governed by Faraday's constant:",
-          "exitFact": "Even so, the tiny ionic radius of $\\text{Li}^+$ ($0.076\\text{ nm}$) creates an intense local electric field that binds polar carbonate solvent molecules into a bulky solvation shell ($r_{\\text{solvated}} \\approx 0.4\\text{ nm}$); stripping that solvent shell at the graphite interface imposes a $50\\text{ kJ/mol}$ activation energy barrier that limits fast-charging speeds at freezing temperatures."
+          "anchor": "After M. Stanley Whittingham's mid-1970s Exxon rechargeable lithium-TiS2 cells suffered fatal internal short circuits from metallic lithium dendrites, John B. Goodenough at the University of Oxford in 1980 synthesized layered lithium cobalt oxide (LiCoO2) to double cell voltage to 4.0 V, and Akira Yoshino in 1985 paired it with a petroleum-coke graphite intercalation anode.",
+          "exitFact": "Its intense local electric field binds polar solvent molecules into a bulky solvation shell (0.4 nanometers across), and stripping away that solvent cage at the graphite interface requires overcoming a 50 kJ/mol activation barrier that governs fast-charging limits at freezing temperatures."
         },
         {
           "label": "Chapter 4",
-          "title": "The Radiative Fission",
-          "subtitle": "Uranium-235 and the Thermal Neutron Cross-Section (Oak Ridge, 1944)",
-          "slug": "the-radiative-fission",
+          "title": "The Odd-Neutron Trigger",
+          "subtitle": "Uranium-235, Nucleon Spin Pairing, and the Calutrons of Oak Ridge",
+          "slug": "the-odd-neutron-trigger",
           "formalismMode": "equation",
-          "anchor": "Consuming roughly one percent of the entire electrical generation capacity of the United States in the autumn of 1944, thousands of five-ton electromagnetic calutrons inside the Y-12 plant at Oak Ridge, Tennessee, operated around the clock to separate two isotopes whose masses differ by just 1.26 percent. Inside vacuum tanks wound with 14,000 tons of silver busbars borrowed from the U.S.",
-          "exitFact": "Reaching 90 percent weapons-grade $^{235}\\text{U}$ required cascading 2,892 gaseous diffusion stages in series under a single roof covering forty-four acres."
+          "anchor": "Following Otto Hahn, Fritz Strassmann, Lise Meitner, and Otto Frisch's December 1938 discovery of nuclear fission, Niels Bohr deduced in February 1939 that only the 0.72% uranium-235 isotope fissions with slow neutrons because pairing its 143rd odd neutron releases 6.5 MeV above the 5.3 MeV scission barrier—forcing the Manhattan Project at Oak Ridge (1943–1945) to wind Y-12 calutrons with 14,000 tons of Treasury silver and cascade 2,892 K-25 gaseous diffusion stages.",
+          "exitFact": "Because a single pass enriched the gas by barely four parts in a thousand, reaching ninety percent weapons-grade 235U required cascading 2,892 gaseous diffusion stages in continuous series, consuming nearly one percent of all electricity generated in the United States in 1945."
         },
         {
           "label": "Chapter 5",
-          "title": "The Unpaired Electrons",
-          "subtitle": "Neodymium and the Coercivity of Rare Earth Permanent Magnets (Tokyo, 1982)",
-          "slug": "the-unpaired-electrons",
-          "formalismMode": "equation",
-          "anchor": "Civil conflict in Zaire's Katanga province in 1978 drove the global price of cobalt up by a factor of ten, threatening to cripple the electronics and automotive industries that relied on samarium-cobalt ($\\text{SmCo}_5$) permanent magnets. At Sumitomo Special Metals in Osaka, Japanese metallurgist Masato Sagawa set out to invent a permanent magnet built around abundant iron rather than scarce cobalt.",
-          "exitFact": "Combining iron's flux density with neodymium's coercivity ($H_c$) yielded a maximum energy product exceeding $50\\text{ mega-gauss-oersteds}$ ($400\\text{ kJ/m}^3$)—enabling the compact permanent-magnet traction motors of modern electric vehicles, offshore wind turbine generators, and hard-disk voice-coil actuators."
+          "title": "The Buried Orbital",
+          "subtitle": "Neodymium, the Katanga Cobalt Crisis, and the World's Strongest Permanent Magnets",
+          "slug": "the-buried-orbital",
+          "formalismMode": "prose",
+          "anchor": "After the May 1978 Shaba rebellion in Zaire's Katanga province spiked global cobalt prices tenfold and threatened SmCo5 magnet production, Masato Sagawa at Sumitomo Special Metals in Osaka—and independently John Croat at General Motors—discovered in 1982 that ternary Nd2Fe14B uses boron spacers and neodymium's shielded inner 4f orbitals to lock iron's high magnetic saturation against a 7.3-Tesla anisotropy field.",
+          "exitFact": "Substituting a few percent of heavier dysprosium (Z = 66) for neodymium further stiffened the anisotropy barrier against high-temperature demagnetization, enabling the compact permanent-magnet traction motors of modern electric vehicles, hard-disk voice-coil actuators, and multi-megawatt offshore wind turbines."
         },
         {
           "label": "Chapter 6",
-          "title": "The Quantum Cryogen",
-          "subtitle": "Helium-4 and the Vanishing Viscosity of the Superfluid (Cambridge, 1937)",
-          "slug": "the-quantum-cryogen",
+          "title": "The Frictionless Quantum Fluid",
+          "subtitle": "Helium-4, the Lambda Point, and Bose-Einstein Condensation in Capillaries",
+          "slug": "the-frictionless-quantum-fluid",
           "formalismMode": "equation",
-          "anchor": "Under the classical Hagen-Poiseuille law of fluid mechanics, the volumetric flow rate $\\dot{V}$ of any liquid forced through a narrow cylindrical pipe of radius $r$ and length $L$ is strictly proportional to the applied pressure drop $\\Delta P$ and inversely proportional to dynamic viscosity $\\eta$:",
-          "exitFact": "Because helium-4 combines a tiny atomic mass with weak van der Waals attraction, its quantum zero-point motion prevents it from freezing even at absolute zero under atmospheric pressure—making it the only substance in the universe that remains liquid down to $0\\text{ K}$ to cool superconducting MRI magnets and particle-accelerator cavities."
+          "anchor": "Prevented from freezing at atmospheric pressure by quantum zero-point motion, liquid helium-4 cooled below its 2.17 K lambda point was shown in November 1937 by Jack Allen and Don Misener in Cambridge and Pyotr Kapitsa in Moscow to flow through sub-micron slits with zero measurable viscosity as a Bose-Einstein condensate.",
+          "exitFact": "The superfluid is forced to flow without friction and conduct heat hundreds of times faster than solid copper—the exact property used today to cryogenically stabilize the superconducting niobium-titanium magnets of the Large Hadron Collider at 1.9 K."
         },
         {
           "label": "Chapter 7",
-          "title": "The Refractory Airframe",
-          "subtitle": "Titanium and the Kroll Reduction Energy Barrier (Boulder City, 1946)",
-          "slug": "the-refractory-airframe",
+          "title": "The Passivated Airframe",
+          "subtitle": "Titanium, the Kroll Reactor, and Flying Past the Thermal Thicket at Mach Three",
+          "slug": "the-passivated-airframe",
           "formalismMode": "equation",
-          "anchor": "Discovered in 1791 by English clergyman William Gregor in Cornwall black sands, titanium possesses a density nearly half that of steel (4.5 g/cm³ versus 7.8 g/cm³), tensile strength exceeding high-grade structural alloys, and near-total immunity to seawater corrosion. Yet for 150 years, pure metallic titanium did not exist.",
-          "exitFact": "During the Cold War, the Central Intelligence Agency established fictitious shell companies across Europe to covertly purchase hundreds of tons of titanium sponge from the Soviet Union—the world's primary producer—in order to fabricate the all-titanium airframe of the Mach 3.2 Lockheed SR-71 Blackbird."
+          "anchor": "To build the Mach 3.2 A-12 and SR-71 Blackbird reconnaissance aircraft in 1958 after aluminum softened above 150°C aerodynamic heating, Clarence Kelly Johnson's Lockheed Skunk Works used titanium sponge reduced from TiCl4 by molten magnesium under argon via William Kroll's process—covertly purchasing rutile sponge from the Soviet Union and discovering that chlorine oils, summer sweat, and cadmium wrenches cracked hot titanium.",
+          "exitFact": "Even mechanics' standard cadmium-plated steel wrenches left microscopic traces of cadmium that diffused into hot titanium bolt heads and snapped them off in flight."
         },
         {
           "label": "Chapter 8",
-          "title": "The Catalytic Terrace",
-          "subtitle": "Platinum and Proton-Exchange Adsorption Kinetics (Zurich, 1965)",
-          "slug": "the-catalytic-terrace",
-          "formalismMode": "equation",
-          "anchor": "A hydrogen fuel cell operates as an electrochemical continuous-flow engine: hydrogen gas is oxidized at the anode, oxygen gas is reduced at the cathode, and the free energy of the reaction is converted directly into electrical work without passing through a Carnot thermal cycle:",
-          "exitFact": "Modern proton-exchange membrane (PEM) fuel cells require approximately 0.1 to 0.3 grams of platinum per kilowatt of capacity—meaning that replacing the global fleet of heavy-transport combustion engines with fuel cells at current catalyst loadings would demand more platinum than is economically recoverable from the Earth's crust."
+          "title": "The Goldilocks Terrace",
+          "subtitle": "Platinum, the Sabatier Volcano Curve, and the Art of Letting Go",
+          "slug": "the-goldilocks-terrace",
+          "formalismMode": "ledger_or_list",
+          "anchor": "From Humphry Davy's 1817 glowing coal-damp wire and Johann Wolfgang Döbereiner's 1823 hydrogen lamp to Paul Sabatier's 1911 intermediate principle and Jens Nørskov's d-band center volcano curve, platinum's 5d9 6s1 electronic structure sits at the thermodynamic peak between reactive base metals that oxidize and gold terraces that repel oxygen.",
+          "exitFact": "That planetary sorting left the continental crust with an average platinum abundance of just five parts per billion—concentrated almost entirely inside two ancient geological anomalies: South Africa's Bushveld Igneous Complex and Siberia's Norilsk-Talnakh intrusion."
         },
         {
           "label": "Chapter 9",
-          "title": "The Resistive Ceiling",
-          "subtitle": "Copper and the Wiedemann-Franz Thermal Dissipation Ratio (Pasadena, 1911)",
-          "slug": "the-resistive-ceiling",
+          "title": "The Free Electron Sea",
+          "subtitle": "Copper, the Transatlantic Telegraph Cable, and Matthiessen's Impurity Law",
+          "slug": "the-free-electron-sea",
           "formalismMode": "equation",
-          "anchor": "Two thousand five hundred tons of hard-drawn copper wire, 4.19 millimeters in diameter (No. 8 BWG), stretched across 130,000 wooden poles from New York to San Francisco.",
-          "exitFact": "As copper ore grades decline globally from historical averages of two percent down to less than 0.5 percent, extracting and refining one ton of copper requires moving over two hundred tons of waste rock and consuming thousands of kilowatt-hours of electrical energy."
+          "anchor": "Investigating the failure of the August 1858 transatlantic telegraph cable, Glasgow physicist William Thomson (Lord Kelvin) and chemist Augustus Matthiessen discovered that 0.1% arsenic impurities scattered copper's delocalized 4s Fermi electron gas and cut conductivity in half—driving James Elkington's 1865 electrolytic copper refining process.",
+          "exitFact": "By casting impure blister copper as an anode in an acidic copper sulfate bath and plating it onto a pure cathode at 0.3 volts, Elkington dropped arsenic, gold, and silver impurities to the tank floor as anode slime, delivering the 99.99 percent Electrolytic Tough Pitch (ETP) copper that carries the world's electrical grid today."
         },
         {
           "label": "Chapter 10",
-          "title": "The Nuclear Valley",
-          "subtitle": "Lead and the Radiogenic Endpoint of Heavy Elements (Manchester, 1907)",
-          "slug": "the-nuclear-valley",
-          "formalismMode": "equation",
-          "anchor": "Every chemical element in the periodic table with an atomic number greater than eighty-two ($Z > 82$) is unstable and undergoes spontaneous nuclear decay. Lead ($\\text{Pb}$, element number 82) sits at the bottom of the radioactive decay cascade as the heaviest element to possess indefinitely stable isotopes.",
-          "exitFact": "Because lead has eighty-two orbital electrons, its probability of photoelectric absorption is over six hundred times greater than that of aluminum ($Z = 13$) for any given gamma photon."
+          "title": "The Radiogenic Clock",
+          "subtitle": "Lead, Clair Patterson's Ultra-Clean Room, and the True Age of the Earth",
+          "slug": "the-radiogenic-clock",
+          "formalismMode": "ledger_or_list",
+          "anchor": "Because doubly magic lead-208 (Z = 82, N = 126) halts three primordial radioactive decay chains (238U -> 206Pb, 235U -> 207Pb, 232Th -> 208Pb), geochemist Clair Patterson built the world's first ultra-clean room at Caltech in 1952–1953 to exclude ubiquitous tetraethyl-lead gasoline dust and date the Canyon Diablo meteorite to 4.55 billion years.",
+          "exitFact": "Patterson spent the next thirty years applying the same ultra-clean isotopic forensics to Greenland ice cores and deep-sea pelagic water, proving that industrial tetraethyl lead had elevated human blood lead levels more than a hundredfold above prehistoric baselines and driving the global phaseout of leaded gasoline."
         },
         {
           "label": "Chapter 11",
-          "title": "The Molten Cryolite",
-          "subtitle": "Aluminum and the Hall-Héroult Electrolytic Reduction (Oberlin, 1886)",
-          "slug": "the-molten-cryolite",
-          "formalismMode": "equation",
-          "anchor": "In February 1886, in a woodshed behind his family home in Oberlin, Ohio, chemistry graduate Charles Martin Hall was melting minerals over a gasoline-fired furnace. Working with homemade clay crucibles and battery cells constructed from glass jam jars, Hall was attempting to solve the industrial enigma of aluminum.",
-          "exitFact": "Aluminum smelters remain geographic parasites on cheap electricity, clustering near massive hydroelectric dams in Quebec, Norway, and Iceland to feed the immense continuous current required to break the aluminum-oxygen lattice."
+          "title": "The Cryolite Bath",
+          "subtitle": "Aluminum, Napoleon III's State Cutlery, and the Hall-Héroult Cell",
+          "slug": "the-cryolite-bath",
+          "formalismMode": "prose",
+          "anchor": "Displayed beside the French Crown Jewels in 1855 and cast onto the tip of the Washington Monument in 1884 because corundum (Al2O3) melts at 2,072°C and resists carbon smelting, aluminum was unlocked independently in February 1886 by Charles Martin Hall in Oberlin and Paul Héroult in Gentilly by dissolving alumina in molten Greenland cryolite (Na3AlF6) at 960°C.",
+          "exitFact": "Within ten years, aluminum plunged from silver's price to thirty cents a pound, turning smelters into permanent geographic companions of massive hydroelectric dams from Niagara Falls to Quebec and Iceland, where fourteen kilowatt-hours of electricity are still poured into every kilogram of metal to sever the aluminum-oxygen bond."
         },
         {
           "label": "Chapter 12",
-          "title": "The Graphitic Sheet",
-          "subtitle": "Carbon-12 and the Covalent Orbital Hybridization Limits (Manchester, 2004)",
-          "slug": "the-graphitic-sheet",
+          "title": "The Relativistic Honeycomb",
+          "subtitle": "Carbon, Hybridized Orbitals, and the Scotch-Tape Isolation of Graphene",
+          "slug": "the-relativistic-honeycomb",
           "formalismMode": "equation",
-          "anchor": "For seventy years, theoretical solid-state physics held that isolated two-dimensional crystalline materials could not exist at room temperature. In 1935, Lev Landau and Rudolf Peierls proved mathematically that thermal vibrations in a strictly two-dimensional lattice would cause dynamic atomic displacements comparable to the interatomic distance at any finite temperature:",
-          "exitFact": "At room temperature, graphene exhibits electron mobilities exceeding $200,000\\text{ cm}^2/(\\text{V}\\cdot\\text{s})$—over one hundred times faster than silicon—and displays the Klein paradox, in which relativistic electrons tunnel through electrostatic potential barriers with one hundred percent transmission probability regardless of barrier height."
+          "anchor": "Defying the 1930s Peierls-Landau theorem that thermal fluctuations destroy strictly two-dimensional crystals, Andre Geim and Kostya Novoselov at the University of Manchester in autumn 2004 used adhesive Scotch tape to exfoliate planar sp2 carbon sheets from graphite, revealing massless Dirac fermions governed by a linear energy-momentum dispersion.",
+          "exitFact": "At room temperature, graphene exhibits electron mobilities exceeding 200,000 cm2/(V*s) and allows relativistic charge carriers to tunnel through electrostatic barriers with one hundred percent transmission probability via the Klein paradox."
         }
       ]
     },
@@ -4123,13 +4123,13 @@
       "slug": "attention",
       "file": "books/attention.md",
       "title": "Attention",
-      "subtitle": "The Core Bottleneck and Eleven Neighbors That Shape Human Focus",
+      "subtitle": "Selective Focus, Blindness, Contemplation, and the Architecture of Notice",
       "category": "Cognitive Architecture",
-      "mode": "landscape",
-      "format": "landscape",
+      "mode": "facet",
+      "format": "mechanisms",
       "profile": "F: The Contextual Landscape (Knowra Neighborhood Mapping)",
-      "accent": "#0284c7",
-      "bg": "#0f172a",
+      "accent": "#d97706",
+      "bg": "#271705",
       "pdf": "assets/pdfs/attention.pdf",
       "compactPdf": "assets/pdfs/attention-compact.pdf",
       "mobilePdf": "assets/pdfs/attention-mobile.pdf",
@@ -4151,196 +4151,17 @@
       "compactSectionPages": [
         3,
         4,
-        7,
-        11,
-        14,
-        17,
-        20,
-        23,
+        8,
+        12,
+        15,
+        19,
+        22,
         26,
         29,
         32,
         35,
-        38
-      ],
-      "mobileSectionPages": [
-        3,
-        5,
-        9,
-        13,
-        17,
-        21,
-        25,
-        28,
-        32,
-        36,
-        39,
-        43,
-        47
-      ],
-      "chapters": [
-        {
-          "label": "Introduction",
-          "title": "Attention",
-          "subtitle": "Mapping Focus Through Its Surrounding Landscape",
-          "slug": "introduction",
-          "formalismMode": "introduction",
-          "anchor": "Every waking second, human retinas, cochleas, and skin receptors convert physical energy into roughly eleven million bits of neural traffic. Out of that sensory flood, conscious awareness processes no more than forty to fifty bits per second.",
-          "exitFact": "Together, they show how what we notice, what we miss, and how we act are governed by neural selection."
-        },
-        {
-          "label": "Chapter 1",
-          "title": "Selective Attention",
-          "subtitle": "Why a Ten-Million-Bit Sensory Flood Passes Through a Fifty-Bit Conscious Gate",
-          "slug": "selective-attention",
-          "formalismMode": "equation",
-          "anchor": "Colin Cherry's 1953 Imperial College London dichotic tape experiments, Donald Broadbent's 1958 Cambridge Applied Psychology Research Unit split-ear air-traffic control studies, and Anne Treisman's 1960 Oxford speech-switching breakthrough.",
-          "exitFact": "When Anne Treisman swapped the two prose narratives mid-sentence between her Oxford subjects' left and right headphones in 1960, listeners unconsciously jumped to the ignored ear for one or two words to keep the story grammatical before snapping back to the assigned channel."
-        },
-        {
-          "label": "Chapter 2",
-          "title": "The Thalamic Reticular Gate",
-          "subtitle": "How a Paper-Thin Shell of Inhibitory Neurons Dims Unwanted Senses at the Source",
-          "slug": "the-thalamic-reticular-gate",
-          "formalismMode": "diagram",
-          "anchor": "Francis Crick's 1984 Salk Institute paper 'Function of the Thalamic Reticular Complex: The Searchlight Hypothesis' and Michael Halassa's 2014–2015 NYU/MIT multi-electrode and optogenetic recordings of mice switching between auditory and visual attention tasks.",
-          "exitFact": "When researchers optogenetically silenced the chloride transporters inside a mouse's visual thalamic reticular neurons during a sound-detection trial, the animal could no longer ignore a flashing light distraction and its error rate jumped by more than thirty percent."
-        },
-        {
-          "label": "Chapter 3",
-          "title": "Saccadic Suppression and the Foveal Spotlight",
-          "subtitle": "Why You Are Functionally Blind for Forty Minutes Every Day While Your Eyes Jump",
-          "slug": "saccadic-suppression-and-the-foveal-spotlight",
-          "formalismMode": "ledger_or_list",
-          "anchor": "Émile Javal's 1879 Paris discovery that reading eyes jump in discrete *saccades* rather than gliding smoothly, and Alfred Yarbus's 1965 Moscow Institute for Information Transmission Problems suction-cap recordings of subjects inspecting Ilya Repin's painting *An Unexpected Visitor*.",
-          "exitFact": "Because a human executes roughly one hundred and fifty thousand ballistic saccades during sixteen waking hours—each lasting thirty to fifty milliseconds—the brain actively shuts down incoming visual motion for more than forty minutes of every day without the observer ever noticing a gap."
-        },
-        {
-          "label": "Chapter 4",
-          "title": "Biased Competition and Neural Gain",
-          "subtitle": "How Two Objects Fight for One Receptive Field Inside the Visual Cortex",
-          "slug": "biased-competition-and-neural-gain",
-          "formalismMode": "diagram",
-          "anchor": "Jeffrey Moran and Robert Desimone's 1985 NIH microelectrode recordings in macaque area V4 and Robert Desimone and John Duncan's 1995 formulation of the Biased Competition model of selective visual attention.",
-          "exitFact": "When Moran and Desimone placed both a preferred red bar and a non-preferred green bar inside a single macaque V4 neuron's receptive field, shifting the monkey's attention from the green bar to the red bar caused the exact same cell's firing rate to jump nearly threefold without either physical bar moving a millimeter on the screen."
-        },
-        {
-          "label": "Chapter 5",
-          "title": "Predator Vigilance and Bayesian Surprise",
-          "subtitle": "Why Sudden Motion and Statistical Anomalies Hijack Every Vertebrate Brain",
-          "slug": "predator-vigilance-and-bayesian-surprise",
-          "formalismMode": "equation",
-          "anchor": "Ivan Pavlov's 1910 St. Petersburg 'What-is-it?' reflex observations, Evgeny Sokolov's 1960 habituation mismatch experiments, and Laurent Itti and Pierre Baldi's 2005–2009 USC/UC Irvine eye-tracking validation of Bayesian surprise.",
-          "exitFact": "In Evgeny Sokolov's Moscow recordings, repeating a loud sixty-decibel tone twenty times extinguished the subject's autonomic orienting response completely, yet dropping the twenty-first tone to a quiet forty decibels triggered an immediate skin-conductance spike and alpha-wave block because the silence violated the brain's timing template."
-        },
-        {
-          "label": "Chapter 6",
-          "title": "Spotlight Focus Versus Open Vigilance",
-          "subtitle": "How the Left and Right Hemispheres Divide Narrow Grasping from Broad Watchfulness",
-          "slug": "spotlight-focus-versus-open-vigilance",
-          "formalismMode": "ledger_or_list",
-          "anchor": "Edoardo Bisiach and Claudio Luzzatti's 1978 University of Milan Piazza del Duomo mental-imagery experiment on right-parietal stroke patients and Lesley Rogers's 1979 avian lateralized foraging-versus-predator studies.",
-          "exitFact": "When Bisiach and Luzzatti asked patient I. G. to imagine walking across the Piazza del Duomo and turning around to face the cathedral doors, the palaces on the northern side of the square—which had been completely invisible to his mind's eye sixty seconds earlier when they sat on his imagined left—instantly reappeared in vivid detail now that they sat on his imagined right."
-        },
-        {
-          "label": "Chapter 7",
-          "title": "Working Memory and the Magical Number Four",
-          "subtitle": "Why Holding an Idea in Mind Is the Same Neural Act as Paying Attention to It",
-          "slug": "working-memory-and-the-magical-number-four",
-          "formalismMode": "ledger_or_list",
-          "anchor": "George Miller's 1956 Harvard Psychological Review paper 'The Magical Number Seven, Plus or Minus Two,' Nelson Cowan's 2001 University of Missouri four-chunk revision, and Earl Miller and Timothy Buschman's MIT prefrontal cortex recordings.",
-          "exitFact": "In Steven Luck and Edward Vogel's 1997 visual change-detection trials at the University of Iowa, human observers tracked colors, orientations, and conjunctions with near-perfect accuracy up to four objects, followed by a sharp cliff at five objects where contralateral parietal event-related potentials flatlined."
-        },
-        {
-          "label": "Chapter 8",
-          "title": "Inattentional Blindness and the Invisible Gorilla",
-          "subtitle": "Why Pilots Stare Directly at a Runway Obstacle Without Seeing It",
-          "slug": "inattentional-blindness-and-the-invisible-gorilla",
-          "formalismMode": "ledger_or_list",
-          "anchor": "Richard Haines and Edith Fischer's 1980 NASA Ames Boeing 727 Head-Up Display runway-obstruction simulator trials and Daniel Simons and Christopher Chabris's 1999 Harvard basketball-pass gorilla experiment.",
-          "exitFact": "When Daniel Memmert later repeated the basketball-pass study with infrared eye trackers, the observers who swore there was no gorilla in the room had fixated their foveas directly on the gorilla's chest an average of the exact same number of times as the observers who spotted her immediately."
-        },
-        {
-          "label": "Chapter 9",
-          "title": "The Attentional Blink and Switching Costs",
-          "subtitle": "Why the Mind Goes Blind for Half a Second After Catching a Target",
-          "slug": "the-attentional-blink-and-switching-costs",
-          "formalismMode": "equation",
-          "anchor": "Jane Raymond, Kim Shapiro, and Karen Arnell's 1992 discovery of the 'Attentional Blink' in rapid serial visual streams, Harold Pashler's 1994 Psychological Refractory Period bottleneck, and Joshua Rubinstein, David Meyer, and Jeffrey Evans's 2001 task-switching cost measurements.",
-          "exitFact": "When Raymond, Shapiro, and Arnell presented the exact same stream of ten letters per second but instructed observers to ignore the white letter completely, detection of the trailing black X three hundred milliseconds later jumped from under fifty percent back to over ninety percent, proving the blindness was caused entirely by locking the first letter into memory."
-        },
-        {
-          "label": "Chapter 10",
-          "title": "Variable-Ratio Salience and the Gain Knob",
-          "subtitle": "How Unpredictable Rewards and Brainstem Norepinephrine Lock the Gaze",
-          "slug": "variable-ratio-salience-and-the-gain-knob",
-          "formalismMode": "ledger_or_list",
-          "anchor": "B. F. Skinner and Charles Ferster's 1957 Harvard variable-ratio reinforcement experiments, Kent Berridge and Terry Robinson's 1993 Michigan dissociation of dopaminergic 'wanting' from hedonic 'liking,' and Gary Aston-Jones and Jonathan Cohen's 2005 Princeton/UPenn locus coeruleus Adaptive Gain Theory.",
-          "exitFact": "In Gary Aston-Jones and Jonathan Cohen's primate recordings, a monkey's baseline pupil diameter—governed directly by tonic firing in the thirty thousand neurons of the locus coeruleus—predicted whether the animal would stay locked on its current visual target or abandon the task to explore the room several seconds before its hand moved."
-        },
-        {
-          "label": "Chapter 11",
-          "title": "Vigilance Decrement and the Radar Watchman's Trap",
-          "subtitle": "Why Human Monitors Miss Rare Signals After Thirty Minutes of Quiet Watch",
-          "slug": "vigilance-decrement-and-the-radar-watchman-s-trap",
-          "formalismMode": "equation",
-          "anchor": "Norman Mackworth's November 1943 Cambridge Applied Psychology Unit 'Clock Test' for Royal Air Force Coastal Command anti-submarine radar crews, David Green and John Swets's Signal Detection Theory, and Jeremy Wolfe's 2005 Harvard Medical School low-prevalence baggage-screening experiments.",
-          "exitFact": "In Norman Mackworth's 1943 Cambridge bunker trials, RAF cadets watching the jumping clock pointer missed fifteen percent of double-jumps during the first thirty minutes of watch, jumped to twenty-six percent misses in the second thirty minutes, and recovered completely only when Coastal Command shortened radar watches to thirty-minute shifts or injected artificial training blips onto the screen."
-        },
-        {
-          "label": "Chapter 12",
-          "title": "Effortless Absorption and the Default Mode Seesaw",
-          "subtitle": "What Happens in the Brain When Self-Monitoring Quiets Down During Deep Focus",
-          "slug": "effortless-absorption-and-the-default-mode-seesaw",
-          "formalismMode": "diagram",
-          "anchor": "Marcus Raichle's 2001 Washington University in St. Louis discovery of the Default Mode Network via oxygen-15 PET scans, Michael Fox and Raichle's 2005 anti-correlated network discovery, and Judson Brewer's 2011 Yale fMRI studies of posterior cingulate deactivation during effortless absorption.",
-          "exitFact": "In Marcus Raichle's oxygen-15 positron emission tomography scans at Washington University, shifting a human brain from quiet daydreaming to an intense visual target-tracking task increased total cerebral energy consumption by less than five percent because the metabolic savings from shutting down the midline Default Mode Network nearly offset the cost of firing the visual attention circuits."
-        }
-      ]
-    },
-    {
-      "slug": "self-transcendence",
-      "file": "books/self-transcendence.md",
-      "title": "Self-Transcendence",
-      "subtitle": "The Core Shift and Eleven Neighbors That Dissolve the Boundaries of the Self",
-      "category": "Psychology & Philosophy",
-      "mode": "landscape",
-      "format": "landscape",
-      "profile": "F: The Contextual Landscape (Knowra Neighborhood Mapping)",
-      "accent": "#6d28d9",
-      "bg": "#1e1b4b",
-      "pdf": "assets/pdfs/self-transcendence.pdf",
-      "compactPdf": "assets/pdfs/self-transcendence-compact.pdf",
-      "mobilePdf": "assets/pdfs/self-transcendence-mobile.pdf",
-      "sectionPages": [
-        3,
-        4,
-        7,
-        10,
-        13,
-        16,
-        19,
-        22,
-        25,
-        28,
-        31,
-        34,
-        37
-      ],
-      "compactSectionPages": [
-        3,
-        5,
-        8,
-        11,
-        14,
-        17,
-        21,
-        25,
-        28,
-        32,
-        35,
-        39,
-        43
+        38,
+        41
       ],
       "mobileSectionPages": [
         3,
@@ -4360,120 +4181,299 @@
       "chapters": [
         {
           "label": "Introduction",
-          "title": "Self-Transcendence",
-          "subtitle": "Mapping the Dissolution of the Bounded Ego",
+          "title": "Attention",
+          "subtitle": "Why What You Notice Is Who You Become",
           "slug": "introduction",
           "formalismMode": "introduction",
-          "anchor": "For a biological organism to survive inside a competitive environment, its nervous system must draw a sharp border between its own flesh and the outside world. Every millisecond, cortical circuits fuse joint angles, inner-ear balance signals, and autobiographical memories into the sensation of a bounded self sitting behind the eyes.",
-          "exitFact": "We must also investigate how synchronous movement couples separate nervous systems, why multi-level evolutionary selection built a primate capable of group self-forgetfulness, how healthy ego dissolution diverges from clinical dissociation, and how stepping outside the bounded self disarms the fear of mortality across the human lifespan."
+          "anchor": "Every waking second, human retinas, cochleas, and skin receptors transduce physical energy from the surrounding environment into roughly eleven million bits of electrochemical traffic. Ten million of those bits stream down the two million axons of the optic nerves alone.",
+          "exitFact": "Reclaiming sovereignty over a wandering mind remains the foundational act of human judgment."
         },
         {
           "label": "Chapter 1",
-          "title": "Self-Transcendence",
-          "subtitle": "Why Maslow Placed Going Beyond the Ego Above Self-Actualization",
-          "slug": "self-transcendence",
-          "formalismMode": "ledger_or_list",
-          "anchor": "Viktor Frankl's 1946 Vienna lectures on logotherapy and hyper-reflection, paired with Abraham Maslow's 1967–1969 Menlo Park revision of his hierarchy ('Theory Z') placing self-transcendence above self-actualization.",
-          "exitFact": "Although introductory psychology textbooks printed after Abraham Maslow's death in June 1970 froze his hierarchy at five tiers ending in self-actualization, Maslow's final 1969 essay explicitly placed a sixth tier—self-transcendence—at the apex, warning that pursuing self-actualization as an end in itself locks the personality inside a brittle cage."
+          "title": "The Fifty-Bit Bottleneck",
+          "subtitle": "Cocktail Parties, Dichotic Tapes, and Why the Conscious Mind Can Only Hear One Voice at a Time",
+          "slug": "the-fifty-bit-bottleneck",
+          "formalismMode": "equation",
+          "anchor": "In 1953 at Imperial College London, Colin Cherry built a dichotic tape-shadowing apparatus to isolate the cocktail party problem, followed by Donald Broadbent's 1958 Cambridge split-ear air-traffic control filter model and Anne Treisman's 1960 Oxford speech-switching experiments.",
+          "exitFact": "When Anne Treisman swapped two prose passages mid-sentence between her Oxford listeners' left and right headphones in 1960, subjects unconsciously jumped to the ignored ear for one or two words to keep the sentence grammatical before snapping back to their assigned channel."
         },
         {
           "label": "Chapter 2",
-          "title": "The Temporoparietal Boundary Map",
-          "subtitle": "How a Patch of Parietal Cortex Draws the Physical Border of Your Body",
-          "slug": "the-temporoparietal-boundary-map",
-          "formalismMode": "diagram",
-          "anchor": "Matthew Botvinick and Jonathan Cohen's 1998 rubber-hand illusion in Nature, Olaf Blanke's September 2002 Geneva University Hospital electrical stimulation of the right angular gyrus, and Henrik Ehrsson's 2007 Karolinska full-body swap experiments.",
-          "exitFact": "When Henrik Ehrsson suddenly jabbed a kitchen knife toward the chest of a plastic mannequin while volunteers viewed their own real bodies through cameras mounted on the mannequin's head, the volunteers' skin conductance spiked with the exact physiological terror response of watching their own flesh being stabbed."
+          "title": "The Two-Degree Keyhole",
+          "subtitle": "Alfred Yarbus, Suction-Cup Mirrors, and Why You Are Blind for Forty Minutes Every Day",
+          "slug": "the-two-degree-keyhole",
+          "formalismMode": "ledger_or_list",
+          "anchor": "Building on Émile Javal's 1879 Paris discovery of ballistic eye saccades, Alfred Yarbus in 1965 at Moscow's Institute for Information Transmission Problems attached mirrored rubber suction caps directly to anesthetized human corneas to record scanpaths across Ilya Repin's painting An Unexpected Visitor.",
+          "exitFact": "Because a human executes roughly 150,000 ballistic saccades across sixteen waking hours—each lasting thirty to fifty milliseconds while corollary discharge silences motion processing—the brain actively shuts down visual motion for more than forty minutes every day without the observer noticing a gap."
         },
         {
           "label": "Chapter 3",
-          "title": "Posterior Cingulate Deactivation",
-          "subtitle": "What Happens When the Brain's Autobiographical Hub Drops Offline",
-          "slug": "posterior-cingulate-deactivation",
-          "formalismMode": "ledger_or_list",
-          "anchor": "Judson Brewer and colleagues' 2011–2013 Yale University School of Medicine fMRI and real-time neurofeedback studies of posterior cingulate cortex deactivation in experienced contemplatives.",
-          "exitFact": "When Judson Brewer placed subjects inside a real-time functional MRI scanner at Yale and displayed a live graph of their own posterior cingulate cortex activity, asking a subject to actively try to force the graph downward caused the red line to shoot sharply upward within four seconds, whereas simply noticing a distraction without self-criticism dropped the line into the blue."
+          "title": "Looked But Failed to See",
+          "subtitle": "Runway Collisions, Invisible Gorillas, and the Illusion of a Complete Visual Field",
+          "slug": "looked-but-failed-to-see",
+          "formalismMode": "prose",
+          "anchor": "In 1980 at NASA Ames Research Center, Richard Haines and Edith Fischer tested commercial airline captains in a Boeing 727 simulator equipped with windshield head-up displays, anticipating Arien Mack and Irvin Rock's 1998 psychophysical trials and Daniel Simons and Christopher Chabris's 1999 Harvard basketball-pass gorilla study.",
+          "exitFact": "When Daniel Memmert repeated the basketball-pass study using infrared corneal eye trackers, the observers who swore no gorilla had entered the room had fixated their foveas directly on the gorilla's chest for an average of one full second—the exact same fixation count as those who spotted her immediately."
         },
         {
           "label": "Chapter 4",
-          "title": "Entropic Brain Flattening",
-          "subtitle": "How Relaxing Top-Down Priors Dissolves the Ego's Control Hierarchy",
-          "slug": "entropic-brain-flattening",
-          "formalismMode": "equation",
-          "anchor": "Robin Carhart-Harris, David Nutt, and colleagues' 2012–2016 Imperial College London arterial spin labeling fMRI and MEG studies, and Carhart-Harris and Karl Friston's 2019 REBUS ('Relaxed Beliefs Under Psychedelics') mathematical formulation.",
-          "exitFact": "When Robin Carhart-Harris and David Nutt injected two milligrams of intravenous psilocybin into fifteen healthy volunteers inside an MRI scanner at Imperial College London in 2012 expecting to see an explosion of brain activity, they found zero brain regions with increased blood flow—and instead observed a twenty percent drop in blood flow directly inside the thalamus, anterior cingulate, and posterior cingulate ego hubs."
+          "title": "The Spotlight and the Floodlight",
+          "subtitle": "Milanese Cathedrals, Hemispheric Asymmetry, and the Two Ways a Brain Attends to the World",
+          "slug": "the-spotlight-and-the-floodlight",
+          "formalismMode": "prose",
+          "anchor": "In 1978 at the University of Milan, Edoardo Bisiach and Claudio Luzzatti tested right-parietal stroke patients describing the Piazza del Duomo from two opposite mental viewpoints, illuminating Lesley Rogers's 1979 avian lateralization findings, Marek Marsel Mesulam's 1981 spatial asymmetry model, and Iain McGilchrist's synthesis of divided hemispheric attention.",
+          "exitFact": "When Bisiach and Luzzatti asked patient I.G. to imagine walking across the Piazza del Duomo and turning around to face the cathedral doors, the northern palaces that had vanished from his memory sixty seconds earlier when they sat on his imagined left reappeared in crisp detail once they shifted to his imagined right."
         },
         {
           "label": "Chapter 5",
-          "title": "Autotelic Flow and Transient Hypofrontality",
-          "subtitle": "How Total Absorption in a Demanding Craft Silences the Inner Critic",
-          "slug": "autotelic-flow-and-transient-hypofrontality",
-          "formalismMode": "diagram",
-          "anchor": "Mihaly Csikszentmihalyi's 1975 University of Chicago studies of surgeons and rock climbers (*Beyond Boredom and Anxiety*) and Charles Limb and Allen Braun's 2008 NIH fiberglass-piano fMRI recordings of jazz improvisation.",
-          "exitFact": "When surgeons interviewed by Mihaly Csikszentmihalyi in Chicago were asked why they preferred grueling six-hour microvascular operations over quiet weekends at home, seventy-eight percent reported that the operating room was the only place where their chronic self-critical ruminations stopped."
+          "title": "The Mismatch Alarm",
+          "subtitle": "Pavlov's Interrupted Dogs, Silent Tones, and the Mathematics of Surprise",
+          "slug": "the-mismatch-alarm",
+          "formalismMode": "equation",
+          "anchor": "After Ivan Pavlov observed around 1910 in St. Petersburg that a stranger's footsteps instantly froze conditioned salivation via the orienting reflex, Evgeny Sokolov in 1960 at Moscow State University proved that a quieter or omitted tone triggers the same autonomic alarm, formalized in 2005 by Laurent Itti and Pierre Baldi as Kullback-Leibler Bayesian surprise.",
+          "exitFact": "In Sokolov's Moscow chamber, repeating a sixty-decibel tone twenty times extinguished the subject's orienting response completely, yet dropping the twenty-first tone to forty decibels—or omitting it on schedule—triggered an immediate skin-conductance spike because the quiet violated the cortex's timing template."
         },
         {
           "label": "Chapter 6",
-          "title": "Collective Effervescence and Synchronized Rhythm",
-          "subtitle": "Why Marching, Singing, and Fire-Walking Merge Individual Nervous Systems",
-          "slug": "collective-effervescence-and-synchronized-rhythm",
-          "formalismMode": "equation",
-          "anchor": "Émile Durkheim's 1912 analysis of collective effervescence, Emma Cohen and Robin Dunbar's 2010 Oxford synchronized rowing endorphin trials, and Ivana Konvalinka's 2011 San Pedro Manrique fire-walking heart-rate coupling study.",
-          "exitFact": "In Emma Cohen and Robin Dunbar's 2010 Oxford laboratory trials, varsity oarsmen who pulled ergometer handles in synchronous two-second strokes tolerated an inflated blood-pressure cuff squeezing their arms for nearly twice as many seconds—indicating a surge in central endorphin release—as when the exact same rowers pulled the exact same wattage out of phase in separate booths."
+          "title": "The Myth of Multitasking",
+          "subtitle": "Refractory Bottlenecks, Hands-Free Crashes, and the Cost of Attention Residue",
+          "slug": "the-myth-of-multitasking",
+          "formalismMode": "diagram",
+          "anchor": "Building on Harold Pashler's 1994 UC San Diego proof of the serial Psychological Refractory Period bottleneck, David Strayer and William Johnston at the University of Utah demonstrated in 2001–2006 that hands-free cell-phone conversations impair driving more than a 0.08 percent blood alcohol level, while Sophie Leroy in 2009 identified attention residue across task switches.",
+          "exitFact": "When Strayer's team recorded P300 event-related brain potentials while drivers stared directly at braking lead vehicles during a hands-free phone conversation, the amplitude of the parietal P300 wave dropped by fifty percent, proving that spoken conversation starves visual encoding at the central bottleneck even when both hands are on the wheel."
         },
         {
           "label": "Chapter 7",
-          "title": "Multi-Level Selection and the Hive Switch",
-          "subtitle": "How Evolution Built Primates That Can Temporarily Act Like Bees",
-          "slug": "multi-level-selection-and-the-hive-switch",
+          "title": "The Watchman's Trap",
+          "subtitle": "Royal Air Force Radar Scopes, Signal Detection, and Why Vigilance Collapses in the Quiet",
+          "slug": "the-watchman-s-trap",
           "formalismMode": "equation",
-          "anchor": "Charles Darwin's 1871 *The Descent of Man* tribe-selection passage, George Price's 1970 London covariance equation of multi-level selection, and Jonathan Haidt's 2012 'Hive Switch' formulation.",
-          "exitFact": "Shortly after deriving the exact mathematical equation showing how selfless sacrifice can evolve when group-level variance exceeds individual-level variance, the American chemist and mathematician George Price gave away all his money and possessions to homeless strangers in central London until he was sleeping on the floor of a squatter's room near Euston Station."
+          "anchor": "In November 1943 at Cambridge, Norman Mackworth built his jumping Clock Test for Royal Air Force Coastal Command to explain why airborne radar operators missed surfaced German U-boats after thirty minutes on patrol, laying the empirical foundation for David Green and John Swets's 1966 Signal Detection Theory and Jeremy Wolfe's 2005 low-prevalence effect.",
+          "exitFact": "In Jeremy Wolfe's 2005 baggage-screening trials at Harvard Medical School, dropping weapon prevalence from fifty percent of X-ray bags down to one percent caused trained observers to shift their decision criterion so conservatively that their miss rate more than quadrupled from seven percent to thirty percent."
         },
         {
           "label": "Chapter 8",
-          "title": "Healthy Ego Dissolution Versus Depersonalization",
-          "subtitle": "Why Losing the Self Feels Blissful in One Brain and Terrifying in Another",
-          "slug": "healthy-ego-dissolution-versus-depersonalization",
-          "formalismMode": "ledger_or_list",
-          "anchor": "Mauricio Sierra and German Berrios's 1998 Cambridge University cortico-limbic disconnection model of depersonalization disorder and King's College London Institute of Psychiatry fMRI and skin-conductance studies (2002).",
-          "exitFact": "In Mary Phillips and Mauricio Sierra's 2001 functional MRI study at the Institute of Psychiatry in London, showing disgusting or threatening photographs to healthy volunteers lit up the emotional anterior insula, whereas showing the exact same images to patients with chronic depersonalization disorder left the insula completely dark while firing Brodmann area 47 of the ventral prefrontal cortex in a rigid inhibitory lock."
+          "title": "The Magical Number Four",
+          "subtitle": "George Miller, Nelson Cowan, and Why Working Memory Is Controlled Attention",
+          "slug": "the-magical-number-four",
+          "formalismMode": "prose",
+          "anchor": "After George Miller's 1956 Harvard paper distinguished seven-item chunked memory span from single-dimension channel capacity, Nelson Cowan in 2001 demonstrated a strict three-to-four-slot limit when rehearsal is blocked, and Randall Engle at Georgia Tech proved that working-memory capacity reflects executive attention's power to block distraction.",
+          "exitFact": "In Edward Vogel, Machizawa, and Steven Luck's 2005 electrophysiological trials, individuals with low working-memory scores showed just as much parietal neural activity as high-capacity observers—not because they held more targets, but because their executive gate failed and let irrelevant background distractors flood their four slots."
         },
         {
           "label": "Chapter 9",
-          "title": "The Small Self and Prosocial Generosity",
-          "subtitle": "How Vast Landscapes Shrink the Ego and Expand Moral Concern",
-          "slug": "the-small-self-and-prosocial-generosity",
-          "formalismMode": "ledger_or_list",
-          "anchor": "Paul Piff, Pia Dietze, Matthew Feinberg, Daniel Stancato, and Dacher Keltner's 2015 UC Berkeley Tasmanian blue-gum eucalyptus grove experiments and Yang Bai's 2017 Yosemite Valley 'Small Self' circle-drawing trials.",
-          "exitFact": "In Paul Piff and Dacher Keltner's 2015 Dictator Game trials at UC Berkeley, volunteers who had just spent four minutes watching high-definition footage of vast planetary landscapes gave away forty-two percent more raffle tickets to an anonymous stranger than volunteers who had just watched an equally uplifting comedy clip."
+          "title": "The Slot Machine in the Pocket",
+          "subtitle": "Skinner's Pigeons, Dopamine Prediction Errors, and the Engineering of Compulsion",
+          "slug": "the-slot-machine-in-the-pocket",
+          "formalismMode": "prose",
+          "anchor": "Starting with B. F. Skinner and Charles Ferster's 1957 Harvard variable-ratio pigeon schedules, Wolfram Schultz demonstrated in the 1990s that primate midbrain dopamine neurons code reward prediction errors rather than pleasure itself, while Kent Berridge and Terry Robinson dissociated dopaminergic wanting from hedonic liking.",
+          "exitFact": "When Wolfram Schultz delivered a drop of fruit juice on a fifty-percent uncertain schedule after a visual cue, tonic midbrain dopamine ramping climbed to its absolute maximum during the delay before the outcome arrived, proving that maximal uncertainty—not guaranteed reward—drives the strongest neurochemical pull on attention."
         },
         {
           "label": "Chapter 10",
-          "title": "Hemispheric Silence and the Stroke of Insight",
-          "subtitle": "What Happens When Left-Brain Narrative Chatter Suddenly Stops",
-          "slug": "hemispheric-silence-and-the-stroke-of-insight",
-          "formalismMode": "ledger_or_list",
-          "anchor": "Harvard neuroanatomist Jill Bolte Taylor's December 10, 1996 left-hemisphere arteriovenous malformation hemorrhage in Belmont, Massachusetts, Michael Gazzaniga's split-brain left-hemisphere 'Interpreter' studies, and Cosimo Urgesi's 2010 University of Udine neurosurgical lesion mapping of self-transcendence.",
-          "exitFact": "When Cosimo Urgesi and his neurosurgical team at the University of Udine tested eighty-eight brain-tumor patients three days before and five days after surgery in 2010, patients whose tumors were excised from the left or right inferior posterior parietal cortex showed an immediate, statistically significant jump in Cloninger Self-Transcendence scores less than one week after leaving the operating room."
+          "title": "The Wandering Mind",
+          "subtitle": "Experience Sampling, the Default Mode Network, and the Hidden Work of Daydreaming",
+          "slug": "the-wandering-mind",
+          "formalismMode": "prose",
+          "anchor": "In 2001 at Washington University in St. Louis, Marcus Raichle discovered via oxygen-15 PET scans that the midline Default Mode Network burns maximal energy at rest, followed by Matthew Killingsworth and Daniel Gilbert's 2010 Harvard iPhone study of 2,250 adults and Jonathan Schooler and Benjamin Baird's 2012 creative-incubation trials.",
+          "exitFact": "across 250,000 real-time smartphone samples collected by Killingsworth and Gilbert in 2010, human minds wandered away from their current activity during 46.9 percent of waking hours, and never dropped below thirty percent off-task during any single human activity except making love."
         },
         {
           "label": "Chapter 11",
-          "title": "Existential Terror Management and Death Acceptance",
-          "subtitle": "Why Dissolving the Bounded Ego Disarms the Fear of Mortality",
-          "slug": "existential-terror-management-and-death-acceptance",
-          "formalismMode": "equation",
-          "anchor": "Jeff Greenberg, Sheldon Solomon, and Tom Pyszczynski's 1989 University of Arizona municipal court judge mortality-salience bail experiment and Roland Griffiths's 2016 Johns Hopkins University School of Medicine randomized trial with fifty-one terminal cancer patients.",
-          "exitFact": "In Jeff Greenberg, Sheldon Solomon, and Tom Pyszczynski's 1989 experiment with twenty-two sitting municipal court judges in Tucson, Arizona, judges who were asked to jot down two brief sentences about what would happen to their physical bodies when they died set bail nine times higher—four hundred and fifty-five dollars versus fifty dollars—on the exact same hypothetical case file as judges who had not been reminded of death."
+          "title": "The Sovereign Faculty",
+          "subtitle": "William James, Simone Weil, and the Moral Weight of Patient Notice",
+          "slug": "the-sovereign-faculty",
+          "formalismMode": "prose",
+          "anchor": "In his 1890 treatise The Principles of Psychology at Harvard, William James defined the repeated act of retrieving a wandering attention as the root of judgment, character, and will, a phenomenological insight transformed in the mid-twentieth century by French philosopher Simone Weil and Oxford moral philosopher Iris Murdoch.",
+          "exitFact": "In 2008, Heleen Slagter and Richard Davidson's electrophysiological recordings of practitioners trained in non-grasping open-monitoring contemplation showed that reducing the emotional and attentional over-investment in a first visual target nearly eliminated the half-second attentional blink that normally blinds observers to a second target."
         },
         {
           "label": "Chapter 12",
-          "title": "The Overview Horizon and Generativity",
-          "subtitle": "How Long-Term Self-Transcendence Rewires Legacy, Care, and Time Perception",
-          "slug": "the-overview-horizon-and-generativity",
-          "formalismMode": "diagram",
-          "anchor": "Erik Erikson's 1950 *Childhood and Society* formulation of generativity, Lars Tornstam's 1989–1997 Uppsala University longitudinal studies of gerotranscendence, and Laura Carstensen's 1999 Stanford socioemotional selectivity experiments.",
-          "exitFact": "When Laura Carstensen and her Stanford colleagues tracked emotional experience across ages eighteen to ninety-four using electronic pagers that beeped subjects five times a day for a week, older adults approaching the end of life reported significantly fewer negative emotions and longer-lasting positive states than twenty-five-year-olds—a shift that could be instantly reproduced in twenty-year-olds simply by framing a laboratory choice around a finite time horizon."
+          "title": "From Selective Filter to All-to-All Weights",
+          "subtitle": "How Transformers Replaced Sequential Memory With Scaled Dot-Product Attention",
+          "slug": "from-selective-filter-to-all-to-all-weights",
+          "formalismMode": "prose",
+          "anchor": "To overcome the fixed-vector bottleneck that caused recurrent neural networks to forget the beginning of long sentences, Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio in Montreal introduced neural alignment in 2014, culminating in Ashish Vaswani and seven Google colleagues' June 2017 Transformer architecture.",
+          "exitFact": "By discarding recurrent step-by-step memory altogether and computing scaled dot-product compatibility scores between every pair of tokens in parallel, the 2017 Transformer turned attention from a biological survival filter that throws away 99.999 percent of experience into a differentiable all-to-all routing matrix."
+        }
+      ]
+    },
+    {
+      "slug": "self-transcendence",
+      "file": "books/self-transcendence.md",
+      "title": "Self-Transcendence",
+      "subtitle": "Philosophy, Contemplation, Science, and the Dissolution of the Bounded Ego",
+      "category": "Psychology & Philosophy",
+      "mode": "facet",
+      "format": "mechanisms",
+      "profile": "F: The Contextual Landscape (Knowra Neighborhood Mapping)",
+      "accent": "#8b5cf6",
+      "bg": "#170f2e",
+      "pdf": "assets/pdfs/self-transcendence.pdf",
+      "compactPdf": "assets/pdfs/self-transcendence-compact.pdf",
+      "mobilePdf": "assets/pdfs/self-transcendence-mobile.pdf",
+      "sectionPages": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        23,
+        26,
+        29,
+        32,
+        35,
+        38
+      ],
+      "compactSectionPages": [
+        3,
+        4,
+        8,
+        11,
+        15,
+        19,
+        23,
+        27,
+        31,
+        35,
+        39,
+        43,
+        47
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        30,
+        34,
+        38,
+        42,
+        47,
+        51
+      ],
+      "chapters": [
+        {
+          "label": "Introduction",
+          "title": "Self-Transcendence",
+          "subtitle": "Beyond the Prison of Self-Preoccupation",
+          "slug": "introduction",
+          "formalismMode": "introduction",
+          "anchor": "In ordinary waking life, the boundary of the self feels like an indisputable physical fact. Inside the envelope of skin sits an observing subject—an inner narrator with a name, a biography, and an ongoing ledger of grievances and ambitions.",
+          "exitFact": "Understanding how the brain constructs the boundary of the self—and why loosening that boundary turns dread into peace—reveals what lies beyond self-preoccupation."
+        },
+        {
+          "label": "Chapter 1",
+          "title": "The Paradox of Self-Absorption",
+          "subtitle": "Viktor Frankl's Optical Law and Why Abraham Maslow Placed Self-Transcendence Above Self-Actualization",
+          "slug": "the-paradox-of-self-absorption",
+          "formalismMode": "prose",
+          "anchor": "Viktor Frankl's 1946 Vienna lectures on logotherapy and hyper-reflection after his liberation from Türkheim, paired with Abraham Maslow's 1967–1969 Menlo Park revision of his hierarchy of needs ('Theory Z') placing self-transcendence above self-actualization.",
+          "exitFact": "Although introductory psychology textbooks printed after Abraham Maslow's death in June 1970 froze his hierarchy at five tiers ending in self-actualization, Maslow's final 1969 essay explicitly placed a sixth tier—self-transcendence—at the apex."
+        },
+        {
+          "label": "Chapter 2",
+          "title": "The Copernican Vertigo and the Small Self",
+          "subtitle": "From Pascal's Two Infinities to the Overview Effect and the Psychology of Awe",
+          "slug": "the-copernican-vertigo-and-the-small-self",
+          "formalismMode": "prose",
+          "anchor": "Blaise Pascal's 1658–1662 fragments in the Pensées on humanity suspended between the abyss and the infinite cosmos, Apollo 14 astronaut Edgar Mitchell's February 1971 return from the Moon, and Dacher Keltner and Paul Piff's 2015–2017 UC Berkeley and Yosemite Valley field experiments on awe.",
+          "exitFact": "Visitors standing at Tunnel View in Yosemite National Park drew the circle representing themselves less than one-third the diameter drawn by control participants standing at Fisherman's Wharf in San Francisco, while simultaneously giving away over forty percent more resources in anonymous economic transfers."
+        },
+        {
+          "label": "Chapter 3",
+          "title": "The Disappearing Craftsman",
+          "subtitle": "Zhuangzi's Woodcarver, Mihaly Csikszentmihalyi, and Why Deep Absorption Silences the Inner Critic",
+          "slug": "the-disappearing-craftsman",
+          "formalismMode": "prose",
+          "anchor": "The parable of Woodcarver Qing in the 3rd-century BCE Chinese philosophical text Zhuangzi, paired with Mihaly Csikszentmihalyi's 1975 University of Chicago studies of microvascular surgeons, rock climbers, and chess masters.",
+          "exitFact": "When Charles Limb and Allen Braun placed jazz pianists inside a functional MRI scanner at the National Institutes of Health in 2008 with a non-magnetic thirty-five-key fiberglass keyboard, switching from a memorized scale to spontaneous improvisation triggered an immediate, widespread deactivation across the dorsolateral prefrontal cortex—the brain's center of self-monitoring and conscious inhibition."
+        },
+        {
+          "label": "Chapter 4",
+          "title": "The Porous Body Boundary",
+          "subtitle": "Phantom Limbs, Rubber Hands, and How the Brain Draws the Border of the Physical Self",
+          "slug": "the-porous-body-boundary",
+          "formalismMode": "prose",
+          "anchor": "Matthew Botvinick and Jonathan Cohen's 1998 rubber-hand illusion at the University of Pittsburgh and Carnegie Mellon, Olaf Blanke's September 2002 electrical stimulation of the right angular gyrus at Geneva University Hospital, and Henrik Ehrsson's 2007 Karolinska Institutet full-body ownership swap.",
+          "exitFact": "When Henrik Ehrsson jabbed a kitchen knife toward the chest of a plastic mannequin while volunteers viewed their own real bodies through cameras mounted on the mannequin's head, the volunteers' skin conductance spiked with the exact physiological alarm response of watching their own flesh being stabbed."
+        },
+        {
+          "label": "Chapter 5",
+          "title": "The Ocean and the Wave",
+          "subtitle": "Upanishadic Non-Duality, Plotinus, and William James on the Unitive Core of Mysticism",
+          "slug": "the-ocean-and-the-wave",
+          "formalismMode": "prose",
+          "anchor": "Uddalaka Aruni's salt-in-water demonstration in the 7th-century BCE Chandogya Upanishad, Plotinus's 3rd-century CE Enneads in Rome, and William James's 1901–1902 Gifford Lectures at the University of Edinburgh published as The Varieties of Religious Experience.",
+          "exitFact": "In 1960, British philosopher Walter Terence Stace analyzed hundreds of first-person contemplative reports from Christian, Islamic Sufi, Hindu Vedantic, Buddhist, and secular sources and found that once culturally learned theological interpretations were stripped away, the underlying structural report of subject-object boundary dissolution was statistically indistinguishable across traditions."
+        },
+        {
+          "label": "Chapter 6",
+          "title": "Collective Effervescence and the Shared Pulse",
+          "subtitle": "Émile Durkheim, William McNeill, and How Shared Rhythm Merges Separate Nervous Systems",
+          "slug": "collective-effervescence-and-the-shared-pulse",
+          "formalismMode": "equation",
+          "anchor": "Émile Durkheim's 1912 study of Australian Arrernte corroboree ceremonies in The Elementary Forms of the Religious Life, historian William McNeill's 1995 discovery of 'muscular bonding' from his 1941 Texas military drill, and Dimitris Xygalatas and Ivana Konvalinka's 2011 heart-rate synchronization study during the San Pedro Manrique fire-walking ritual in Spain.",
+          "exitFact": "In Emma Cohen and Robin Dunbar's 2010 Oxford laboratory trials, varsity oarsmen who pulled ergometer handles in synchronous two-second strokes tolerated an inflated blood-pressure cuff squeezing their arms for nearly twice as long as when the exact same rowers pulled the exact same mechanical wattage alone."
+        },
+        {
+          "label": "Chapter 7",
+          "title": "The Evolutionary Puzzle of Self-Sacrifice",
+          "subtitle": "Darwin's Tribe Dilemma, the Price Equation, and Why Nature Built Creatures That Die for Strangers",
+          "slug": "the-evolutionary-puzzle-of-self-sacrifice",
+          "formalismMode": "equation",
+          "anchor": "Charles Darwin's 1871 puzzle in The Descent of Man over why courageous martyrs do not die out within a tribe, paired with American physical chemist George Price's 1970 derivation of the covariance equation of multilevel selection at the Galton Laboratory in London.",
+          "exitFact": "Shortly after deriving the exact mathematical equation showing how selfless sacrifice evolves when between-group variance outweighs within-group selfishness, George Price gave away all his money, furniture, and winter coat to homeless strangers in central London until he was sleeping on the floor of a squatter's room near Euston Station."
+        },
+        {
+          "label": "Chapter 8",
+          "title": "Quieting the Autobiographical Hub",
+          "subtitle": "Default Mode Rumination, Contemplative Silence, and the Chemistry of Ego Dissolution",
+          "slug": "quieting-the-autobiographical-hub",
+          "formalismMode": "prose",
+          "anchor": "Marcus Raichle's 2001 Washington University discovery of the Default Mode Network, Judson Brewer's 2011–2013 Yale School of Medicine fMRI studies of experienced meditators, and Robin Carhart-Harris and David Nutt's 2012 Imperial College London psilocybin neuroimaging trials.",
+          "exitFact": "When Judson Brewer placed subjects inside a real-time functional MRI scanner at Yale and displayed a live graph of their own posterior cingulate cortex activity, asking a subject to actively force the graph downward caused the signal to spike upward within four seconds, whereas dropping self-monitoring caused it to plunge below baseline."
+        },
+        {
+          "label": "Chapter 9",
+          "title": "When the Left Hemisphere Goes Silent",
+          "subtitle": "Jill Bolte Taylor's Hemorrhage, Iain McGilchrist, and the Unpartitioned World",
+          "slug": "when-the-left-hemisphere-goes-silent",
+          "formalismMode": "prose",
+          "anchor": "Harvard neuroanatomist Jill Bolte Taylor's December 10, 1996 left-hemisphere arteriovenous malformation hemorrhage in Belmont, Massachusetts, Michael Gazzaniga's split-brain left-hemisphere 'Interpreter' studies, and psychiatrist Iain McGilchrist's 2009–2021 model of hemispheric attention.",
+          "exitFact": "When Cosimo Urgesi and his neurosurgical team at the University of Udine tested eighty-eight brain-tumor patients three days before and five days after surgery in 2010, patients whose tumors were excised from the inferior posterior parietal cortex showed an immediate, statistically significant jump in trait Self-Transcendence scores less than one week after leaving the operating room."
+        },
+        {
+          "label": "Chapter 10",
+          "title": "The Razor Between Ecstasy and Terror",
+          "subtitle": "Why Dissolving the Self Brings Liberation in a Monastery and Panic in a Psychiatric Ward",
+          "slug": "the-razor-between-ecstasy-and-terror",
+          "formalismMode": "ledger_or_list",
+          "anchor": "Mauricio Sierra and German Berrios's 1998–2002 Cambridge and King's College London clinical and fMRI studies of chronic depersonalization disorder, paired with Willoughby Britton's 2017 Brown University 'Varieties of Contemplative Experience' study of meditation-induced distress.",
+          "exitFact": "In Mary Phillips and Mauricio Sierra's 2001 functional MRI study at the Institute of Psychiatry in London, showing emotionally evocative photographs to healthy volunteers lit up the anterior insula, whereas showing the exact same images to patients with chronic depersonalization disorder left the insula dark while firing Brodmann area 47 of the ventral prefrontal cortex in a rigid inhibitory lock."
+        },
+        {
+          "label": "Chapter 11",
+          "title": "Disarming the Terror of Mortality",
+          "subtitle": "Ernest Becker, Epictetus, and the Clinical Rehearsal of Death",
+          "slug": "disarming-the-terror-of-mortality",
+          "formalismMode": "prose",
+          "anchor": "Stoic philosopher Epictetus's 1st-century CE discourses in Nicopolis, cultural anthropologist Ernest Becker's 1973 Pulitzer-winning synthesis The Denial of Death, Greenberg, Solomon, and Pyszczynski's 1989 Tucson municipal judge experiment, and Roland Griffiths's 2016 Johns Hopkins clinical trial with terminal cancer patients.",
+          "exitFact": "In Roland Griffiths's 2016 randomized crossover trial at Johns Hopkins School of Medicine with fifty-one patients facing life-threatening cancer, a single five-hour session that occasioned a high-scoring self-transcendent experience produced an immediate, enduring eighty percent clinical remission in death anxiety and depression six months later."
+        },
+        {
+          "label": "Chapter 12",
+          "title": "Cathedral Time and Generativity",
+          "subtitle": "Erik Erikson, Lars Tornstam, and Why Shifting the Horizon Beyond One Lifespan Transforms Human Choice",
+          "slug": "cathedral-time-and-generativity",
+          "formalismMode": "prose",
+          "anchor": "Medieval master masons laying the limestone foundations of Chartres and Cologne cathedrals across centuries they would never live to see roofed, psychoanalyst Erik Erikson's 1950 formulation of generativity in Childhood and Society, and Swedish sociologist Lars Tornstam's 1989–1997 Uppsala University longitudinal studies of gerotranscendence.",
+          "exitFact": "When Lars Tornstam surveyed over two thousand Swedish adults aged twenty to one hundred in 1995 and 2005, the steepest drop in status anxiety and the highest scores of cosmic connectedness occurred among octogenarians and centenarians who had lost the most conventional social roles."
         }
       ]
     },
@@ -5382,24 +5382,24 @@
       "format": "highlights",
       "profile": "B/C: Biological, Neural & Affective Control Loops + Decision Theory & Game-Theoretic Equilibria",
       "accent": "#e11d48",
-      "bg": "#1f0d14",
+      "bg": "#280814",
       "pdf": "assets/pdfs/emotions.pdf",
       "compactPdf": "assets/pdfs/emotions-compact.pdf",
       "mobilePdf": "assets/pdfs/emotions-mobile.pdf",
       "sectionPages": [
         3,
         4,
-        7,
-        10,
-        13,
+        8,
+        12,
         16,
-        19,
-        22,
-        25,
+        20,
+        24,
         28,
-        31,
-        34,
-        38
+        32,
+        36,
+        40,
+        44,
+        48
       ],
       "compactSectionPages": [
         3,
@@ -5419,135 +5419,135 @@
       "mobileSectionPages": [
         3,
         5,
-        9,
-        13,
-        17,
-        21,
+        10,
+        15,
+        20,
         25,
-        29,
-        33,
-        37,
-        41,
+        30,
+        35,
+        40,
         45,
-        50
+        50,
+        55,
+        60
       ],
       "chapters": [
         {
           "label": "Introduction",
           "title": "Emotions",
-          "subtitle": "Why Everyday Feelings Are Survival Tools Built Into the Body",
+          "subtitle": "Twelve Ancient Survival Programs Running in a Modern World",
           "slug": "introduction",
           "formalismMode": "introduction",
-          "anchor": "For centuries, philosophers treated emotions as messy glitches that got in the way of clear thinking. If you jumped at a shadow or lost your temper over a small insult, people assumed your rational mind had temporarily lost control.",
-          "exitFact": "Looking closely at twelve everyday feelings reveals the clever physical tricks running beneath everything we feel."
+          "anchor": "Classical philosophy and early neurology treated emotions as evolutionary noise—irrational visceral disturbances that cloud deliberate reason. Modern affective neuroscience and behavioral biology have overturned that hierarchy.",
+          "exitFact": "Viewed through twelve perpendicular observations each—spanning focal brain lesions, game-theoretic wagers, endocrinology, comparative ethology, and cross-cultural linguistics—twelve everyday feelings expose the physical control loops governing human behavior."
         },
         {
           "label": "Chapter 1",
           "title": "Fear",
-          "subtitle": "Freezing in Place, False Alarms, and the Woman Who Poked a Haunted-House Monster",
+          "subtitle": "Thalamic Shortcuts, Amygdala Lesions, and the Brainstem Suffocation Alarm",
           "slug": "fear",
           "formalismMode": "highlights",
-          "anchor": "In 1986 at Cornell University Medical Center, neuroscientist Joseph LeDoux showed that sound signals from the ear split into two paths: a slow 24-millisecond high road through the thinking cortex and a fast 12-millisecond shortcut straight to the brain's alarm hub, making you flinch at a curved stick before you even know whether it is a snake.",
-          "exitFact": "Although Patient S.M. felt zero fear of snakes, spiders, or haunted houses because calcium deposits had destroyed her amygdala on both sides, inhaling a single breath of 35 percent carbon dioxide triggered an instant panic attack—proving that the suffocation alarm lives deeper in the brainstem."
+          "anchor": "An acoustic startle pulse reaches the lateral amygdala in twelve milliseconds via a direct subcortical shortcut from the auditory thalamus, as neuroscientist Joseph LeDoux demonstrated in 1986.",
+          "exitFact": "Although blindfolded volunteers inside an fMRI scanner detected no conscious odor difference between the two sweat types, inhaling skydiver sweat selectively activated the recipient's left amygdala and sharpened acoustic startle reflexes."
         },
         {
           "label": "Chapter 2",
           "title": "Anger",
-          "subtitle": "Boiling Blood, Costly Payback, and Why Losing Your Temper Protects You From Bullies",
+          "subtitle": "Cutaneous Vasodilation, Costly Deterrence, and Left-Frontal Approach Asymmetry",
           "slug": "anger",
           "formalismMode": "highlights",
-          "anchor": "In 1982 in Berlin, economist Werner Güth ran the first Ultimatum Game experiments: when one player offered a greedy 9-to-1 split of real cash, the second player routinely rejected the offer so both walked away with nothing, proving that people gladly pay money out of their own pocket to punish an unfair deal.",
-          "exitFact": "Unlike fear, which pulls blood away from the skin and leaves the hands icy cold, anger opens blood vessels in the face and hands and raises finger skin temperature by more than a full degree Celsius while preparing the fists to strike."
+          "anchor": "Autonomic telemetry disproves the textbook assumption that all negative emotions share a single undifferentiated stress response. At the University of California, San Francisco in 1983, Paul Ekman and Robert Levenson measured peripheral vascular flow across distinct affective states.",
+          "exitFact": "Elevated catecholamines increase arterial shear stress and blood platelet adhesiveness, multiplying a patient's baseline risk of a heart attack 2.3-fold during the two hours immediately following an outburst."
         },
         {
           "label": "Chapter 3",
-          "title": "Joy",
-          "subtitle": "Crinkled Eye Corners, Contagious Smiles, and the Difference Between Wanting and Liking",
-          "slug": "joy",
+          "title": "Disgust",
+          "subtitle": "Sympathetic Magic, Insular Cortex Lesions, and the Behavioral Immune System",
+          "slug": "disgust",
           "formalismMode": "highlights",
-          "anchor": "In 1862 in Paris, neurologist Guillaume Duchenne used tiny electrical probes on facial muscles to show that a polite fake smile only pulls the corners of the mouth using the cheek muscle, whereas genuine joy also contracts the outer ring of muscle around the eyes—a muscle most people cannot flex on command.",
-          "exitFact": "Psychologists LeeAnne Harker and Dacher Keltner analyzed the 1960 college yearbook photos of 141 women from Mills College and found that students who showed genuine eye-crinkling smiles at age twenty-one scored significantly higher in marital satisfaction and personal well-being thirty years later."
+          "anchor": "Human contamination alarms obey the anthropological laws of similarity and contagion rather than rational germ calculus. At the University of Pennsylvania in 1986, psychologist Paul Rozin molded freshly unwrapped chocolate fudge into the realistic shape of dog feces.",
+          "exitFact": "Fourier image analysis revealed that trypophobic hole clusters share the exact mid-range spatial-frequency contrast spectrum exhibited by cutaneous myiasis parasites, ticks, and venomous reptiles."
         },
         {
           "label": "Chapter 4",
-          "title": "Sadness and Grief",
-          "subtitle": "Broken-Heart Adrenaline, Chemical Tears, and Why Bereavement Feels Like Withdrawal",
-          "slug": "sadness-and-grief",
+          "title": "Joy",
+          "subtitle": "Orbicularis Oculi Contractions, Dopamine Prediction Errors, and Hedonic Hotspots",
+          "slug": "joy",
           "formalismMode": "highlights",
-          "anchor": "In 1969, British psychiatrist Colin Murray Parkes tracked 4,486 widowed men after the death of their wives and discovered that during the first six months of grief, their death rate from heart failure and stroke jumped 40 percent above married men of the same age.",
-          "exitFact": "Humans are the only animals known to shed emotional tears, and biochemist William Frey found in 1981 that tears cried during grief carry 24 percent more protein than tears triggered by raw onion fumes."
+          "anchor": "Localized electrical stimulation at the Salpêtrière hospital in Paris in 1862 allowed neurologist Guillaume Duchenne to separate polite social grimaces from authentic joy.",
+          "exitFact": "Cross-cultural replications in Canada, Uganda, and South Africa confirmed that spending money on others generates a larger, more durable lift in daily happiness than spending the identical sum on oneself."
         },
         {
           "label": "Chapter 5",
-          "title": "Love and Attachment",
-          "subtitle": "Prairie Vole Pair Bonds, Mother's Milk Hormones, and Holding a Partner's Hand in Pain",
-          "slug": "love-and-attachment",
+          "title": "Grief",
+          "subtitle": "Chemical Tears, Takotsubo Myocardial Stunning, and Accumbens Craving",
+          "slug": "grief",
           "formalismMode": "highlights",
-          "anchor": "In 2006 at the University of Virginia, psychologist James Coan placed married women inside an MRI scanner and warned them of a mild electric shock to the ankle: holding a stranger's hand calmed the brain's threat alarm slightly, but holding a loving husband's hand quieted the alarm almost completely.",
-          "exitFact": "When two romantic partners sit together and look at each other without speaking for three minutes, their heart rates and breathing rhythms synchronize, and when one partner feels pain, their brain waves lock together while the pain drops."
+          "anchor": "Homo sapiens is the only known vertebrate species in which emotional distress triggers lacrimal gland overflow across the cheeks. At St. Paul-Ramsey Medical Center in 1981, biochemist William Frey collected emotional tears shed during tragic films and compared them against irritant tears triggered by freshly cut onion vapors.",
+          "exitFact": "While 10 to 15 percent of bereaved spouses suffer chronic multi-year complicated grief, more than half return to steady emotional functioning within months without delayed pathology."
         },
         {
           "label": "Chapter 6",
-          "title": "Disgust",
-          "subtitle": "Cockroach Juice, Chocolate Fudge, and How a Rotten-Food Reflex Turned Into Moral Outrage",
-          "slug": "disgust",
+          "title": "Love and Attachment",
+          "subtitle": "Vole Vasopressin Receptors, Tactile C-Fibers, and Neural Threat Attenuation",
+          "slug": "love-and-attachment",
           "formalismMode": "highlights",
-          "anchor": "In 1986 at the University of Pennsylvania, psychologist Paul Rozin showed that hungry students refused to eat delicious chocolate fudge after watching it molded into the shape of dog feces, and refused to drink apple juice stirred for five seconds with a completely sterile dead cockroach.",
-          "exitFact": "In 2009 at the University of Toronto, psychologist Hanah Chapman wired sensors to people's faces and proved that getting cheated in a money game activates the exact same upper-lip-curling muscle used to spit bitter poison out of the mouth."
+          "anchor": "Early twentieth-century behaviorists assumed that infants bond with mothers strictly because the caregiver is associated with milk delivery. At the University of Wisconsin in 1958, psychologist Harry Harlow separated infant rhesus macaques and placed two inanimate surrogates in their cages.",
+          "exitFact": "Neither serum cholesterol nor socioeconomic status at age fifty predicted physical health and cognitive sharpness at age eighty as strongly as warm, trustworthy attachment satisfaction."
         },
         {
           "label": "Chapter 7",
-          "title": "Guilt and Shame",
-          "subtitle": "The Urge to Hide Versus the Urge to Fix What You Broke",
-          "slug": "guilt-and-shame",
+          "title": "Shame and Guilt",
+          "subtitle": "Identity Collapse, Action Repair, and the Unforgeable Facial Blush",
+          "slug": "shame-and-guilt",
           "formalismMode": "highlights",
-          "anchor": "Across decades of studies starting in the 1990s, psychologist June Tangney proved that shame and guilt are opposite forces: shame says 'I am a bad person' and drives people to hide or lash out in anger, while guilt says 'I made a bad mistake' and drives people to apologize and repair the damage.",
-          "exitFact": "In Tangney's longitudinal study of 476 county jail inmates released back into the community, prisoners prone to guilt were significantly less likely to be re-arrested within a year, whereas shame-prone prisoners hid their flaws, blamed others, and returned to jail at higher rates."
+          "anchor": "Colloquial speech treats shame and guilt as synonyms, yet psychologist June Tangney demonstrated across three decades of research beginning in 1992 that they drive opposite behavioral trajectories.",
+          "exitFact": "Blood assays and clinic records showed enhanced mitogen-induced T-lymphocyte proliferation and a 50 percent drop in medical visits across the following six weeks."
         },
         {
           "label": "Chapter 8",
           "title": "Envy and Jealousy",
-          "subtitle": "Cucumber Tantrums, Silver-Medal Frowns, and the Pain of Watching a Rival Win",
+          "subtitle": "Dyadic Status Pain, Triadic Mate Guarding, and Counterfactual Bronze Smiles",
           "slug": "envy-and-jealousy",
           "formalismMode": "highlights",
-          "anchor": "In 2003 at Emory University, primatologists Sarah Brosnan and Frans de Waal showed that capuchin monkeys happily ate cucumber slices all day until they saw a neighbor monkey receive a sweet grape for the exact same task—at which point the cucumber-paid monkey hurled the vegetable back at the researcher.",
-          "exitFact": "In 1995, psychologists Victoria Medvec, Scott Madey, and Thomas Gilovich filmed Olympic medalists on the podium and proved that bronze medalists smile far more than silver medalists—because bronze winners compare themselves to finishing fourth with nothing, while silver winners torture themselves over losing gold."
+          "anchor": "Everyday speech blurs envy and jealousy, yet psychologists W. Gerrod Parrott and Richard Smith formalized their structural separation in 1993 by counting the actors involved.",
+          "exitFact": "Reviewing 105 Mayo Clinic cases in 2011, neurologist Jonathan Graff-Radford localized the delusion primarily to right dorsolateral frontal strokes and Parkinsonian dopamine-agonist medications that corrupt prediction-error circuits."
         },
         {
           "label": "Chapter 9",
-          "title": "Embarrassment",
-          "subtitle": "Why Only Humans Blush and How Turning Red Wins Instant Forgiveness",
-          "slug": "embarrassment",
+          "title": "Curiosity and Surprise",
+          "subtitle": "The Information-Gap Itch, Locus Coeruleus Broadcasts, and Hippocampal Memory Stamping",
+          "slug": "curiosity-and-surprise",
           "formalismMode": "highlights",
-          "anchor": "In 1872, Charles Darwin called blushing the most peculiar and most human of all expressions because it is the only bodily reaction caused purely by thinking about what other people think of us—and trying to suppress a blush only makes the face burn brighter.",
-          "exitFact": "Unlike every other vein in the human body, the tiny veins inside human cheeks are lined with special adrenaline sensors that widen the blood vessels instead of narrowing them, flooding the face with red blood within five seconds of a social blunder."
+          "anchor": "Surprise begins with the fastest generalized motor reflex in the mammalian nervous system. Neuroscientist Michael Davis mapped the primary acoustic startle pathway in 1982 to just three central relay nuclei linking the cochlear root, the pontine reticular formation, and spinal motor neurons.",
+          "exitFact": "Roughly 500 milliseconds before a sudden insight surfaces, the solver executes an involuntary eye blink and gaze shift away from the screen to shut out visual noise while locus coeruleus norepinephrine spikes pupil diameter."
         },
         {
           "label": "Chapter 10",
-          "title": "Laughter and Play",
-          "subtitle": "Ticklish Rats, Play Bows, and Why Group Laughter Bonds Strangers",
-          "slug": "laughter-and-play",
+          "title": "Loneliness",
+          "subtitle": "Selfish Herd Geometry, Conserved Transcriptional Leukocyte Shifts, and Dorsal Raphe Dopamine",
+          "slug": "loneliness",
           "formalismMode": "highlights",
-          "anchor": "In 1997 at Bowling Green State University, neuroscientist Jaak Panksepp turned on an ultrasonic microphone while tickling laboratory rats and discovered that rats chirp with rapid 50-kilohertz laughter—and chase the researcher's hand begging for more tickles.",
-          "exitFact": "After neuroscientist Robert Provine eavesdropped on 1,200 natural bursts of laughter in shopping malls and city sidewalks, he found that fewer than 20 percent followed anything remotely resembling a joke, and people laugh thirty times more often around others than when they are alone."
+          "anchor": "Mathematical biology explains why physical separation from a group triggers immediate autonomic panic across gregarious species. In his 1971 paper on the geometry of the selfish herd, evolutionary biologist W. D. Hamilton modeled a predator emerging at a random point near a group of prey.",
+          "exitFact": "Crew members lost an average of 7.2 percent of tissue volume in the hippocampal dentate gyrus alongside drops in circulating brain-derived neurotrophic factor (`BDNF`) and spatial processing speed."
         },
         {
           "label": "Chapter 11",
-          "title": "Nostalgia",
-          "subtitle": "Swiss Mercenary Homesickness, Cold-Room Warmth, and How Old Songs Steady the Mind",
-          "slug": "nostalgia",
+          "title": "Gratitude",
+          "subtitle": "Reciprocal Altruism, Anterior Cingulate Valuation, and the Epley Estimation Gap",
+          "slug": "gratitude",
           "formalismMode": "highlights",
-          "anchor": "In 1688 in Basel, Swiss physician Johannes Hofer coined the word 'nostalgia' from the Greek words for homecoming and pain to describe a mysterious wasting fever among young Swiss mercenaries fighting in lowland France who fell ill whenever they heard alpine cowherd songs.",
-          "exitFact": "In 2012, psychologists Xinyue Zhou and Constantine Sedikides discovered that people placed in a chilly 16-degree Celsius room invoke nostalgic memories to warm up, and listening to nostalgic music makes volunteers able to hold their hand in ice-cold water significantly longer."
+          "anchor": "Evolutionary biologist Robert Trivers proposed in 1971 that gratitude evolved as the proximate cognitive bookkeeper governing reciprocal altruism among non-kin.",
+          "exitFact": "Senders consistently overestimated how awkward recipients would feel and underestimated how warm and delighted recipients actually reported feeling upon opening the unexpected note."
         },
         {
           "label": "Chapter 12",
-          "title": "Gratitude and Awe",
-          "subtitle": "Overview Astronauts, Towering Redwood Trees, and How Feeling Small Makes Us Generous",
-          "slug": "gratitude-and-awe",
+          "title": "Awe",
+          "subtitle": "Vastness and Accommodation, the Small Self, and Interleukin-6 Attenuation",
+          "slug": "awe",
           "formalismMode": "highlights",
-          "anchor": "In 2015 at the University of California, Berkeley, psychologist Paul Piff and Dacher Keltner stood volunteers inside a grove of 200-foot Tasmanian blue gum eucalyptus trees for sixty seconds and staged an accident where a passerby dropped a handful of pens—and the tree-gazers picked up significantly more pens than volunteers who stared at a tall office building.",
-          "exitFact": "Waiters and waitresses who simply wrote 'Thank you' on the back of a restaurant check saw their tips rise by 11 percent—and when psychologist Martin Seligman asked volunteers to hand-deliver a 300-word gratitude letter to someone they had never properly thanked, their happiness scores stayed elevated for a full month."
+          "anchor": "Philosopher Edmund Burke separated the sublime from ordinary beauty in 1757 by observing that vast, overwhelming phenomena inspire reverent astonishment when viewed from physical safety.",
+          "exitFact": "While benevolent nature awe elevates parasympathetic vagal tone, threat-based awe drives sympathetic cardiovascular arousal while producing the exact same small-self cognitive humility."
         }
       ]
     },
@@ -5918,25 +5918,25 @@
       "mode": "listicle",
       "format": "highlights",
       "profile": "E: The Prospected Fleuron Listicle (12x12 Everyday Bodily Functions)",
-      "accent": "#0f766e",
-      "bg": "#0f1716",
+      "accent": "#6366f1",
+      "bg": "#0f172a",
       "pdf": "assets/pdfs/human-functions.pdf",
       "compactPdf": "assets/pdfs/human-functions-compact.pdf",
       "mobilePdf": "assets/pdfs/human-functions-mobile.pdf",
       "sectionPages": [
         3,
         4,
-        7,
-        10,
-        13,
-        16,
+        8,
+        12,
+        15,
         19,
-        22,
-        25,
-        28,
+        23,
+        27,
         31,
-        34,
-        38
+        35,
+        39,
+        43,
+        47
       ],
       "compactSectionPages": [
         3,
@@ -5956,135 +5956,135 @@
       "mobileSectionPages": [
         3,
         5,
-        9,
-        13,
-        17,
-        21,
-        25,
+        10,
+        15,
+        19,
+        24,
         29,
-        33,
-        37,
-        41,
-        45,
-        50
+        34,
+        39,
+        44,
+        49,
+        54,
+        58
       ],
       "chapters": [
         {
           "label": "Introduction",
           "title": "Human Functions",
-          "subtitle": "Twelve Ordinary Actions and How They Really Work",
+          "subtitle": "The Hidden Biomechanics and Physiology of Everyday Action",
           "slug": "introduction",
           "formalismMode": "introduction",
-          "anchor": "Every day, you sleep, breathe, walk, chew, blink, talk, sweat, and heal small cuts without giving any of those actions a second thought. Because they happen automatically or with minimal effort, it is easy to treat them as background routines that require no design or work.",
-          "exitFact": "Together, they reveal the levers, valves, pumps, and timing rules working quietly underneath ordinary human life."
+          "anchor": "Everyday actions such as taking a breath, walking across a room, swallowing water, or laughing at a remark occur with such effortless automaticity that they appear simple. That subjective ease is an illusion created by spinal pattern generators, brainstem reflexes, and elastic tissues that hide their mechanical work from conscious awareness.",
+          "exitFact": "Stripped of conversational clichés, the ordinary acts of human life stand exposed as precision biological machinery."
         },
         {
           "label": "Chapter 1",
           "title": "Sleeping",
-          "subtitle": "How the Brain Cleans Itself, Paralyses Your Muscles, and Rebuilds Memory Every Night",
+          "subtitle": "Adenosine Hourglasses, Glymphatic Flushes, and Brainstem Muscle Locks",
           "slug": "sleeping",
           "formalismMode": "highlights",
-          "anchor": "When Eugene Aserinsky attached electrodes to his sleeping son's eyelids at the University of Chicago in 1953, he discovered that the brain erupts every ninety minutes into rapid eye movement sleep.",
-          "exitFact": "Staying awake for twenty-four straight hours slows reaction time and degrades hand-eye control as severely as a blood alcohol concentration of 0.10 percent."
+          "anchor": "Eugene Aserinsky and Nathaniel Kleitman attached electrooculogram electrodes to sleeping subjects at the University of Chicago in 1953 and discovered Rapid Eye Movement (REM) sleep.",
+          "exitFact": "Positron emission tomography confirms that twenty-four hours of sleep deprivation selectively reduces glucose metabolism in the prefrontal cortex while degrading reaction times as severely as a 0.10 percent blood alcohol concentration."
         },
         {
           "label": "Chapter 2",
           "title": "Breathing",
-          "subtitle": "How a Muscle Dome, Soap-Like Fluid, and Acid Sensors Keep You Alive",
+          "subtitle": "Negative Pleural Pressure, Alveolar Surfactant, and Medullary Acid Sensors",
           "slug": "breathing",
           "formalismMode": "highlights",
-          "anchor": "Physiologist John Clements proved in 1957 that the lungs secrete a soapy lipid-protein film called surfactant that slashes the surface tension of water inside microscopic air sacs.",
-          "exitFact": "Over a single night of sleep, a human exhales nearly half a pound of solid body mass in the form of invisible carbon atoms bound into carbon dioxide gas."
+          "anchor": "Physiologist John Clements proved in 1957 that Type II alveolar cells secrete a dipalmitoylphosphatidylcholine surfactant film that slashes air-water surface tension inside the lungs.",
+          "exitFact": "Stoichiometric isotope tracking shows that oxidizing ten kilograms of human body fat requires inhaling 29 kilograms of oxygen and exporting 8.4 kilograms of solid mass as invisible exhaled carbon dioxide."
         },
         {
           "label": "Chapter 3",
           "title": "Walking",
-          "subtitle": "How Upside-Down Pendulums, Arm Swings, and Spinal Circuits Carry You Forward",
+          "subtitle": "Inverted Pendulums, Froude Transitions, and Spinal Pattern Generators",
           "slug": "walking",
           "formalismMode": "highlights",
-          "anchor": "Italian physiologist Giovanni Cavagna demonstrated in 1963 that human walking operates as an inverted pendulum that exchanges kinetic energy and gravitational potential energy at every step.",
-          "exitFact": "Averaging ten thousand steps a day across an eighty-year lifespan carries a human more than 110,000 miles—equivalent to walking four and a half times around the Earth's equator."
+          "anchor": "Italian physiologist Giovanni Cavagna demonstrated in 1963 that a walking human leg acts as a rigid inverted pendulum that exchanges kinetic energy and gravitational potential energy at every step.",
+          "exitFact": "Thomas Graham Brown proved in 1911 that mutually inhibitory half-center interneuron networks inside the lumbar spinal cord generate alternating left-right stepping rhythms without cortical commands."
         },
         {
           "label": "Chapter 4",
           "title": "Running",
-          "subtitle": "How Tendon Springs, Sweating Skin, and Neck Ligaments Built the Endurance Runner",
+          "subtitle": "Mass-Spring Mechanics, Tendon Strain Energy, and Endurance Thermoregulation",
           "slug": "running",
           "formalismMode": "highlights",
-          "anchor": "Evolutionary biologists Dennis Bramble and Daniel Lieberman showed in 2004 that humans evolved specialized spring tendons, bare sweating skin, and a skull-stabilizing nuchal ligament for endurance running.",
-          "exitFact": "Because tendons recycle a larger share of elastic bounce at higher speeds, a 150-pound human burns roughly the same one hundred calories per mile whether jogging slowly or running fast."
+          "anchor": "Evolutionary biologists Dennis Bramble and Daniel Lieberman demonstrated in 2004 that Homo erectus evolved specialized tendon springs, a nuchal ligament, and enlarged gluteal muscles for endurance running.",
+          "exitFact": "Johannes Fuss and colleagues proved in 2015 that the analgesia and euphoria of a runner's high are mediated by lipid-soluble endocannabinoids crossing the blood-brain barrier rather than circulating beta-endorphins."
         },
         {
           "label": "Chapter 5",
           "title": "Seeing and Blinking",
-          "subtitle": "How Tiny Eye Jumps, Blind Spots, and Night Rods Build Your View of the World",
+          "subtitle": "Ballistic Saccades, Tear-Film Lipids, and Neural Blink Suppression",
           "slug": "seeing-and-blinking",
           "formalismMode": "highlights",
-          "anchor": "Biophysicists Denis Baylor, Trevor Lamb, and King-Wai Yau demonstrated in 1979 using microscopic glass suction electrodes that a single retinal rod cell responds to a single photon of light.",
-          "exitFact": "Whenever red and blue cones fire simultaneously without green cone input, the visual cortex invents magenta—a color that has no wavelength in the physical spectrum of light."
+          "anchor": "Biophysicists Denis Baylor, Trevor Lamb, and King-Wai Yau proved in 1979 using microscopic glass suction electrodes that a single retinal rod photoreceptor generates a measurable current from a single photon.",
+          "exitFact": "Because green-sensitive medium cones sit between blue and red in the visible spectrum, simultaneous firing of blue and red cones without green input forces the visual cortex to construct extra-spectral magenta."
         },
         {
           "label": "Chapter 6",
           "title": "Chewing and Swallowing",
-          "subtitle": "How Enamel Shields, Taste Tricks, and Throat Valves Move Food Safely",
+          "subtitle": "Enamel Prism Toughness, Periodontal Mechanoreceptors, and the Pharyngeal Switch",
           "slug": "chewing-and-swallowing",
           "formalismMode": "highlights",
-          "anchor": "Physiologist David Julius proved in 1997 that capsaicin from chili peppers binds to the exact heat-activated ion channel that warns the nervous system of temperatures above 109 degrees Fahrenheit.",
-          "exitFact": "Over an eighty-year life, human molars grind through roughly thirty-five tons of food without wearing through a two-millimeter crown of mineral enamel."
+          "anchor": "Physiologist David Julius proved in 1997 that capsaicin from chili peppers binds the heat-gated ion channel TRPV1, triggering thermal pain pathways at room temperature.",
+          "exitFact": "Enteric neurons in Auerbach's plexus coordinate primary esophageal peristalsis by relaxing smooth muscle ahead of a food bolus with nitric oxide while contracting the ring behind it with acetylcholine."
         },
         {
           "label": "Chapter 7",
-          "title": "Speaking and Laughing",
-          "subtitle": "How Vibrating Folds, Tongue Shapes, and Belly Laughs Turn Breath Into Meaning",
-          "slug": "speaking-and-laughing",
+          "title": "Speaking",
+          "subtitle": "Myoelastic Vocal Folds, Formant Resonators, and Millisecond Voice Onset",
+          "slug": "speaking",
           "formalismMode": "highlights",
-          "anchor": "Neuroscientist Robert Provine analyzed 1,200 natural conversations and demonstrated that human laughter follows a rigid 210-millisecond acoustic cadence that occurs four times more often after ordinary remarks than after jokes.",
-          "exitFact": "An average human speaks roughly sixteen thousand words a day—the length of a sixty-page book—shaped entirely out of waste air on its way out of the lungs."
+          "anchor": "Janwillem van den Berg proved in 1958 that human vocal folds vibrate passively via myoelastic-aerodynamic coupling rather than active nerve-by-nerve muscle contractions.",
+          "exitFact": "Patricia Kuhl demonstrated that six-month-old infants discriminate all 800 consonant and vowel contrasts across human languages before synaptic pruning tunes perception to the native tongue by twelve months."
         },
         {
           "label": "Chapter 8",
-          "title": "Sweating and Shivering",
-          "subtitle": "How Evaporating Water, Shivering Muscles, and Blood Shunts Hold You at Ninety-Eight Point Six",
-          "slug": "sweating-and-shivering",
+          "title": "Laughing and Crying",
+          "subtitle": "Brainstem Vocal Bursts, Duchenne Eye Crinkles, and Emotional Tear Chemistry",
+          "slug": "laughing-and-crying",
           "formalismMode": "highlights",
-          "anchor": "Evolutionary neurobiologist Mark Changizi demonstrated in 2011 that wet finger wrinkles are an active autonomic reflex that carves drainage channels to improve grip on submerged objects.",
-          "exitFact": "The entire thermal operating window of the human brain spans barely twelve degrees Fahrenheit between fatal hypothermia below 93 degrees and lethal heatstroke above 105 degrees."
+          "anchor": "Neuroscientist Robert Provine analyzed 1,200 natural conversations in 1996 and showed that human laughter follows a rigid 210-millisecond acoustic cadence that occurs four times more often after ordinary remarks than after jokes.",
+          "exitFact": "Sympathetic demand to hold the glottis wide open for oxygen while parasympathetic crying pathways trigger pharyngeal constriction creates the opposing muscular tug-of-war felt as a lump in the throat."
         },
         {
           "label": "Chapter 9",
-          "title": "Hearing and Balancing",
-          "subtitle": "How Three Tiny Bones, Hair Bundles, and Gravity Stones Map Sound and Motion",
-          "slug": "hearing-and-balancing",
+          "title": "Sweating and Shivering",
+          "subtitle": "Latent Heat of Vaporization, Hypothalamic Setpoints, and Brown Adipose Thermogenesis",
+          "slug": "sweating-and-shivering",
           "formalismMode": "highlights",
-          "anchor": "Physicist Georg von Békésy demonstrated in 1961 that the basilar membrane inside the cochlea sorts sound frequencies mechanically along a stiffness gradient from base to apex.",
-          "exitFact": "Wired across just three synapses, the vestibulo-ocular reflex counter-rotates the eyeballs in seven milliseconds so the visual world stays steady while the head bounces during a run."
+          "anchor": "Sir Thomas Lewis discovered in 1930 that fingers immersed in ice water undergo rhythmic vasodilation every five to ten minutes—the hunting reaction—to prevent frostbite necrosis while conserving core heat.",
+          "exitFact": "Human core body temperature oscillates by 0.8 degrees Celsius across a circadian sine wave that troughs at 4:30 a.m. and peaks near 6:00 p.m., when faster nerve conduction and muscle kinetics produce most athletic records."
         },
         {
           "label": "Chapter 10",
-          "title": "Digesting",
-          "subtitle": "How Acid Baths, Detergent Bile, and Carpet-Like Folds Turn Food Into You",
-          "slug": "digesting",
+          "title": "Gripping and Throwing",
+          "subtitle": "Opposable Thumb Torque, Wet-Grip Wrinkles, and the Nine-Thousand-Degree Shoulder Whip",
+          "slug": "gripping-and-throwing",
           "formalismMode": "highlights",
-          "anchor": "Army surgeon William Beaumont conducted 238 experiments through the healed gastric fistula of fur trapper Alexis St. Martin between 1825 and 1833, proving that gastric juice dissolves meat chemically with hydrochloric acid.",
-          "exitFact": "Both the yellow tint of urine and the brown color of stool come from the same source—recycled hemoglobin from worn-out red blood cells broken down by the liver and gut microbes."
+          "anchor": "Neil Roach and Daniel Lieberman proved in 2013 that Homo erectus evolved a mobile waist, low-torsion humerus, and laterally facing glenoid socket two million years ago to store elastic energy for high-speed throwing.",
+          "exitFact": "Catching a heavy falling load relies on parallel muscle spindles (Ia afferents) to trigger stretch contraction and series Golgi tendon organs (Ib afferents) to inhibit motor neurons before the tendon ruptures."
         },
         {
           "label": "Chapter 11",
-          "title": "Healing a Cut",
-          "subtitle": "How Platelets Plug the Leak, White Cells Clean the Wreckage, and Skin Zips Shut",
-          "slug": "healing-a-cut",
+          "title": "Balancing",
+          "subtitle": "Orthogonal Canal Gyroscopes, Otolith Gravity Stones, and the Seven-Millisecond Eye Reflex",
+          "slug": "balancing",
           "formalismMode": "highlights",
-          "anchor": "Neuroscientist Patrick Wall and psychologist Ronald Melzack proposed the gate control theory of pain in 1965, showing that fast touch signals inhibit slower pain fibers in the dorsal horn of the spinal cord.",
-          "exitFact": "Unlike skin, which patches a cut with parallel collagen scar tissue at 80 percent strength, a fractured bone remodels its mineral lattice along stress lines until the repair site is completely scar-free."
+          "anchor": "Robert Bárány won the 1914 Nobel Prize for demonstrating how endolymph fluid inertia inside the three orthogonal semicircular canals drives vestibular nystagmus and post-rotatory vertigo.",
+          "exitFact": "Ethanol diffuses into the gelatinous vestibular cupula faster than into the surrounding endolymph, making the cupula buoyant so gravity deflects it and triggers spinning vertigo when an intoxicated person lies down."
         },
         {
           "label": "Chapter 12",
-          "title": "Remembering and Forgetting",
-          "subtitle": "How Electric Loops, Chemical Glue, and Active Pruning Shape What You Keep",
-          "slug": "remembering-and-forgetting",
+          "title": "Healing",
+          "subtitle": "von Willebrand Shear Traps, Neutrophil Bleach, and Contact-Inhibited Epithelial Sheets",
+          "slug": "healing",
           "formalismMode": "highlights",
-          "anchor": "Neuropsychologist Brenda Milner's decades of studies with patient Henry Molaison beginning in 1953 proved that the hippocampus is required to encode new episodic memories while procedural motor learning uses separate brain circuits.",
-          "exitFact": "Because procedural habits are wired into deep subcortical motor loops rather than the hippocampus, patients with severe memory loss can still play complex piano pieces learned decades earlier."
+          "anchor": "George Winter proved in 1962 that keeping a cutaneous wound moist beneath an occlusive dressing doubles the speed of keratinocyte re-epithelialization compared with allowing an exposed dry scab to form.",
+          "exitFact": "Unlike adult skin, which repairs deep cuts with parallel Type I collagen scar bundles at 80 percent strength, fractured bone remodels its mineral callus along principal stress lines without leaving a scar."
         }
       ]
     },
@@ -6092,7 +6092,7 @@
       "slug": "vaccines",
       "file": "books/vaccines.md",
       "title": "Vaccines",
-      "subtitle": "How Cowpox Scabs, Weakened Viruses, Sugar Coats, and Fat Droplets Taught the Body to Fight Back",
+      "subtitle": "Antigenic Memory, Attenuation, Structural Virology, and the Conquest of Contagion",
       "category": "Medicine & Immunology",
       "mode": "facet",
       "format": "mechanisms",
@@ -6104,166 +6104,166 @@
       "mobilePdf": "assets/pdfs/vaccines-mobile.pdf",
       "sectionPages": [
         3,
-        4,
-        7,
-        9,
-        12,
-        14,
-        17,
-        20,
-        23,
-        26,
-        29,
-        32,
-        34
-      ],
-      "compactSectionPages": [
-        3,
-        4,
-        7,
-        10,
-        13,
-        16,
-        19,
-        22,
-        25,
-        28,
-        31,
-        34,
-        37
-      ],
-      "mobileSectionPages": [
-        3,
         5,
         8,
         11,
-        15,
-        18,
+        14,
+        17,
         21,
-        24,
+        25,
         28,
         32,
         35,
         38,
-        41
+        42
+      ],
+      "compactSectionPages": [
+        3,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29,
+        33,
+        37,
+        41,
+        45,
+        49
+      ],
+      "mobileSectionPages": [
+        3,
+        5,
+        9,
+        13,
+        18,
+        22,
+        27,
+        32,
+        37,
+        42,
+        47,
+        52,
+        57
       ],
       "chapters": [
         {
           "label": "Introduction",
           "title": "Vaccines",
-          "subtitle": "Teaching the Immune System With Harmless Mugshots Before the Real Fight",
+          "subtitle": "Teaching the Adaptive Immune System Before the Plague Arrives",
           "slug": "introduction",
           "formalismMode": "introduction",
-          "anchor": "Catching a dangerous infection for the first time is a race against the clock. A virus or bacterium can double its numbers inside your body every hour.",
-          "exitFact": "They have walked jungle viruses through hundreds of eggs, brewed empty protein shells in baker's yeast, tied slippery bacterial sugars to proteins so babies can spot them, and pinned shape-shifting viral spikes inside microscopic fat bubbles."
+          "anchor": "Every acute infectious disease is a kinetic race between two exponential processes operating on mismatched clocks. Once a pathogenic virus or bacterium breaches a mucosal surface or enters the bloodstream, it replicates on a timescale of minutes to hours.",
+          "exitFact": "Each breakthrough solved a specific molecular obstacle in how lymphocytes recognize, process, and remember foreign antigens before the real pathogen arrives."
         },
         {
           "label": "Chapter 1",
-          "title": "Smallpox and the Cowpox Cousin",
-          "subtitle": "How Milkmaid Blisters, Orphan Chains, and Split Needles Wiped Out a Human Plague",
-          "slug": "smallpox-and-the-cowpox-cousin",
-          "formalismMode": "equation",
-          "anchor": "In May 1796 in Berkeley, Gloucestershire, country physician Edward Jenner took matter from a cowpox blister on the hand of milkmaid Sarah Nelmes and scratched it into the arm of James Phipps, a boy of eight, then tested him six weeks later with live smallpox matter without a single pustule forming. In 1803, Spanish physician Francisco Javier de Balmis sailed from A Coruña with twenty-two orphan boys to carry live cowpox across the Atlantic by passing blister fluid from arm to arm every nine days. In 1965, Wyeth microbiologist Benjamin Rubin ground down the eye of a sewing machine needle into a two-pronged fork that held 0.0025 milliliters of vaccine by capillary tension, cutting the dose to one-fourth and enabling D. A. Henderson's World Health Organization teams to track down the last natural smallpox case in Merca, Somalia in October 1977.",
-          "exitFact": "Because smallpox had no animal reservoir and required roughly 80 percent immunity in a contact ring to push its reproduction number below one, hospital cook Ali Maow Maalin's recovery in Merca in late 1977 ended three thousand years of natural human smallpox transmission."
+          "title": "Cross-Reactive Memory and the Eradication of Smallpox",
+          "subtitle": "From Ottoman Variolation and Jenner's Cowpox Trial to Ring Vaccination",
+          "slug": "cross-reactive-memory-and-the-eradication-of-smallpox",
+          "formalismMode": "prose",
+          "anchor": "In 1721, Lady Mary Wortley Montagu introduced Ottoman variolation to London, before Edward Jenner inoculated James Phipps in May 1796 in Berkeley, Gloucestershire with orthopoxvirus matter from milkmaid Sarah Nelmes and challenged him with live variola six weeks later. Between 1803 and 1806, Francisco Javier de Balmis sustained a transatlantic arm-to-arm chain across twenty-two orphan boys, and in the 1960s and 1970s D. A. Henderson and William Foege combined Benjamin Rubin's bifurcated needle with ring vaccination to corner the last natural Variola minor case in Merca, Somalia in October 1977.",
+          "exitFact": "Because variola possessed no animal reservoir and shared conserved surface epitopes across orthopoxviruses, ring containment around hospital cook Ali Maow Maalin in Merca in October 1977 extinguished natural human smallpox transmission worldwide."
         },
         {
           "label": "Chapter 2",
-          "title": "Rabies and the Dried Spinal Cord",
-          "subtitle": "How Louis Pasteur Raced a Lethal Virus on Its Slow Climb Up the Nerves",
-          "slug": "rabies-and-the-dried-spinal-cord",
-          "formalismMode": "ledger_or_list",
-          "anchor": "In July 1885 in Paris, young Joseph Meister arrived from Alsace at Louis Pasteur and Émile Roux's Rue d'Ulm laboratory with fourteen deep dog bites on his hands, legs, and thighs. Because rabies virus does not race through the bloodstream—it inches up motor nerves from the bite toward the spinal cord and brain at roughly one to two millimeters per hour—Pasteur had a two-to-four-week window to train the boy's immune system after the bite. Pasteur and Roux suspended rabid rabbit spinal cords inside glass flasks over potassium hydroxide crystals for up to fourteen days so dry air gradually killed the virus, then injected Meister with thirteen escalating doses over ten days from fourteen-day-dried cord to fresh one-day cord.",
-          "exitFact": "Joseph Meister never developed rabies and later worked for decades as gatekeeper of the Pasteur Institute in Paris, while modern post-exposure rabies treatment pairs four killed-virus shots with ready-made antibodies injected straight into the bite wound to protect nearly 100 percent of patients treated promptly."
+          "title": "Racing Retrograde Axonal Transport",
+          "subtitle": "Louis Pasteur, Émile Roux, and the Desiccated Rabies Spinal Cords",
+          "slug": "racing-retrograde-axonal-transport",
+          "formalismMode": "prose",
+          "anchor": "Whereas rabies encephalitis is nearly 100 percent fatal once the lyssavirus enters the central nervous system, the virion must first travel up peripheral motor axons via cytoplasmic dynein motors at roughly 12 to 100 millimeters per day. In July 1885 at the Rue d'Ulm laboratory in Paris, Louis Pasteur and Émile Roux exploited this post-exposure latency in severely bitten Alsatian boy Joseph Meister by injecting a 14-day potassium-hydroxide desiccation gradient of fixed-virus rabbit spinal cords across ten days.",
+          "exitFact": "Joseph Meister developed neutralizing antibodies before the virus reached his spinal cord and survived to serve as gatekeeper of the Pasteur Institute, establishing the post-exposure prophylaxis paradigm that today pairs cell-culture inactivated vaccine with wound-infiltrated rabies immunoglobulin."
         },
         {
           "label": "Chapter 3",
-          "title": "Diphtheria, Tetanus, and the Disarmed Poison",
-          "subtitle": "How Gaston Ramon Used Formaldehyde and Kitchen Tapioca to Tame Two Bacterial Toxins",
-          "slug": "diphtheria-tetanus-and-the-disarmed-poison",
-          "formalismMode": "diagram",
-          "anchor": "In 1890 in Berlin, Emil von Behring and Shibasaburo Kitasato discovered that diphtheria and tetanus bacteria kill not by spreading through every organ, but by releasing lethal protein poisons into the blood, and that horse serum containing antitoxin antibodies could save dying children for a few weeks. In 1923 at the Pasteur Institute annex in Garches outside Paris, veterinarian Gaston Ramon added a 0.3 to 0.4 percent splash of formalin (aqueous formaldehyde) to diphtheria toxin and warmed it at 37 degrees Celsius for a month, stitching chemical bridges across the poison so it lost all toxicity while keeping its outer shape as a harmless toxoid. In 1925 and 1926, Ramon added tapioca starch and Alexander Glenny in London added aluminum potassium sulfate (alum) to trigger a local alarm that multiplied antibody output.",
-          "exitFact": "After routine childhood DTP immunization and maternal tetanus toxoid campaigns spread worldwide, neonatal tetanus deaths fell from roughly 787,000 babies per year in 1988 to fewer than 25,000 per year within three decades."
+          "title": "Formalin Toxoids and the Innate Danger Signal",
+          "subtitle": "Gaston Ramon, Alexander Glenny, and Disarming Bacterial Exotoxins",
+          "slug": "formalin-toxoids-and-the-innate-danger-signal",
+          "formalismMode": "prose",
+          "anchor": "Following Emil von Behring and Shibasaburo Kitasato's 1890 demonstration of passive equine antitoxin against diphtheria and tetanus, Gaston Ramon discovered at the Pasteur Institute annex in Garches in 1923 that incubating diphtheria exotoxin with 0.3 to 0.4 percent formaldehyde at 37 degrees Celsius formed methylene bridges that abolished enzymatic toxicity while preserving three-dimensional conformational B-cell epitopes. In 1926 at the Wellcome Physiological Research Laboratories in London, Alexander Glenny precipitated diphtheria toxoid onto aluminum potassium sulfate to create an innate inflammatory depot.",
+          "exitFact": "Universal childhood DTP immunization and maternal tetanus toxoid campaigns transferred anti-toxin IgG across the placenta, reducing global neonatal tetanus mortality from an estimated 787,000 deaths in 1988 to fewer than 25,000 per year within three decades."
         },
         {
           "label": "Chapter 4",
-          "title": "Yellow Fever and the Hundredth Egg",
-          "subtitle": "How Max Theiler Walked a Jungle Virus Through Mouse Brains and Chick Embryos",
-          "slug": "yellow-fever-and-the-hundredth-egg",
-          "formalismMode": "ledger_or_list",
-          "anchor": "In June 1927 in Lagos, Nigeria, Rockefeller Foundation researchers Adrian Stokes, Johannes Bauer, and N. Paul Hudson isolated yellow fever virus into rhesus monkeys from the blood of a Ghanaian patient named Asibi who survived a mild fever, though Stokes died of laboratory-contracted yellow fever two months later. Starting in 1930 at Harvard and the Rockefeller Institute in New York, Max Theiler and Hugh Smith passed the Asibi virus through mouse brains and then through hundreds of flasks of minced chick embryos whose brains and spinal cords had been surgically removed so the virus could not adapt to nerve tissue.",
-          "exitFact": "Between the 89th and 114th subcultures in flask series 17D in 1936, the virus accumulated mutations across its genome that stripped away both its liver toxicity and its ability to multiply inside Aedes aegypti mosquitoes, earning Max Theiler the 1951 Nobel Prize for a single-dose vaccine still grown in fertilized chicken eggs today."
+          "title": "Serial Passage and Evolutionary Trade-Offs",
+          "subtitle": "Max Theiler and the One Hundred Seventy-Six Transfers of Yellow Fever 17D",
+          "slug": "serial-passage-and-evolutionary-trade-offs",
+          "formalismMode": "prose",
+          "anchor": "In June 1927 in Lagos, Nigeria, Adrian Stokes, Johannes Bauer, and N. Paul Hudson isolated the Asibi strain of yellow fever virus into rhesus macaques before Stokes died of laboratory-acquired yellow fever two months later. Beginning in 1930 at Harvard and the Rockefeller Institute, Max Theiler and Hugh Smith passaged the Asibi virus through mouse brains and then through minced chick embryos surgically stripped of brain and spinal cord until subculture 176 of series 17D lost both viscerotropism and neurotropism.",
+          "exitFact": "Comparative sequencing later showed that 32 amino acid substitutions across the 17D genome simultaneously abolished human hepatocyte virulence and midgut replication inside Aedes aegypti mosquitoes, earning Max Theiler the 1951 Nobel Prize."
         },
         {
           "label": "Chapter 5",
-          "title": "Polio and the Killed-Versus-Live Rivalry",
-          "subtitle": "How Jonas Salk's Formaldehyde Bath and Albert Sabin's Sugar Cube Stopped Summer Paralysis",
-          "slug": "polio-and-the-killed-versus-live-rivalry",
-          "formalismMode": "equation",
-          "anchor": "After John Enders, Thomas Weller, and Frederick Robbins proved at Boston Children's Hospital in 1949 that poliovirus could be grown in non-nervous tissue, Jonas Salk at the University of Pittsburgh grew all three poliovirus types in monkey kidney cells and soaked the filtered fluid in 1-to-4,000 formalin at 37 degrees Celsius for up to twelve days along a first-order exponential inactivation curve. Tested in 1.8 million schoolchildren by Thomas Francis Jr. in 1954 and announced on April 12, 1955, Salk's injected killed vaccine blocked poliovirus in the bloodstream from reaching motor nerves, while Albert Sabin at the University of Cincinnati bred weakened live strains given on a sugar cube by mouth starting in 1959–1961 to train gut immunity that stopped transmission altogether.",
-          "exitFact": "Since the Global Polio Eradication Initiative launched in 1988, combining Sabin's oral drops to break community transmission with Salk's injected shot to eliminate vaccine-derived cases has reduced global paralysis from 350,000 children a year across 125 countries to fewer than a hundred cases in two countries, with wild types 2 and 3 eradicated worldwide."
+          "title": "Systemic IgG Versus Mucosal IgA",
+          "subtitle": "Jonas Salk's Killed Poliovirus, the Cutter Disaster, and Albert Sabin's Live Attenuated Strains",
+          "slug": "systemic-igg-versus-mucosal-iga",
+          "formalismMode": "ledger_or_list",
+          "anchor": "After Isabel Morgan typed the three poliovirus serotypes and John Enders, Thomas Weller, and Frederick Robbins cultured poliovirus in non-neural tissue in 1949, Jonas Salk inactivated all three serotypes with 1-to-4,000 formalin for Thomas Francis Jr.'s 1954 field trial across 1.8 million children. Weeks after the April 12, 1955 announcement, inadequate filtration of cellular aggregates at Cutter Laboratories shielded live Mahoney type 1 virus and paralyzed 200 recipients, before Albert Sabin's oral attenuated strains introduced intestinal secretory IgA immunity between 1959 and 1961.",
+          "exitFact": "Combining Sabin's oral vaccine to block fecal-oral intestinal transmission with Salk's inactivated vaccine to prevent vaccine-associated paralytic reversion has reduced global poliomyelitis by more than 99.9 percent since 1988 and eradicated wild serotypes 2 and 3."
         },
         {
           "label": "Chapter 6",
-          "title": "Measles, Mumps, and the Memory Eraser",
-          "subtitle": "How Maurice Hilleman Brewed a Chick-Embryo Trio That Protects Your Old Immune Memories",
-          "slug": "measles-mumps-and-the-memory-eraser",
-          "formalismMode": "ledger_or_list",
-          "anchor": "In February 1954 in Boston, pediatricians Thomas Peebles and John Enders isolated measles virus from throat swabs and blood of schoolboy David Edmonston during an outbreak at the Fay School. At Merck in West Point, Pennsylvania, microbiologist Maurice Hilleman passed the Edmonston strain forty additional times through chick embryo cells at 32 degrees Celsius to create the gentler Moraten strain licensed in 1968, swabbed his own daughter Jeryl Lynn's throat in March 1963 to breed the mumps vaccine within four years, and combined them with Stanley Plotkin's rubella strain into the single MMR shot in 1971. In 2015 and 2019, Michael Mina, Rik de Swart, and Stephen Elledge proved why measles vaccination cut deaths from all other childhood infections in half.",
-          "exitFact": "Blood sequencing of unvaccinated children before and after natural measles infection revealed that wild measles virus binds the CD150 receptor on existing memory B and T cells and destroys them, wiping out between 11 and 73 percent of a child's pre-existing antibody repertoire until the immune system relearns those pathogens from scratch."
+          "title": "Immune Amnesia and the Measles Paradox",
+          "subtitle": "Maurice Hilleman's Edmonston Chick-Embryo Strain and the Protection of Prior Memory",
+          "slug": "immune-amnesia-and-the-measles-paradox",
+          "formalismMode": "equation",
+          "anchor": "Following John Enders and Thomas Peebles's 1954 isolation of measles virus from schoolboy David Edmonston and Maurice Hilleman's further attenuation of the Moraten strain in chick embryo fibroblasts at 32 degrees Celsius in 1968, demographers observed that measles immunization reduced overall childhood mortality from non-measles pneumonia and diarrheal diseases by 30 to 50 percent. Between 2012 and 2019, Rik de Swart, Michael Mina, and Stephen Elledge used VirScan phage-display immunoprecipitation sequencing on 77 unvaccinated Dutch children to resolve the paradox.",
+          "exitFact": "Phage-display profiling demonstrated that wild measles virus binds the SLAMF1 (CD150) receptor on memory B and T lymphocytes and eliminates 11 to 73 percent of a child's pre-existing antibody repertoire, whereas attenuated MMR vaccination preserves those prior immunological memories intact."
         },
         {
           "label": "Chapter 7",
-          "title": "Hepatitis B and the Baker's Yeast Decoy",
-          "subtitle": "From Baruch Blumberg's Blood Plasma Filter to the First Cancer-Preventing Vaccine Brewed in Vats",
-          "slug": "hepatitis-b-and-the-baker-s-yeast-decoy",
-          "formalismMode": "diagram",
-          "anchor": "In 1965 and 1968 at the Fox Chase Cancer Center in Philadelphia, Baruch Blumberg and Werner London discovered that the blood of chronic hepatitis B carriers swarmed with non-infectious 22-nanometer spherical protein shells—empty decoys made of the virus's outer surface protein without any viral DNA inside. After Maurice Hilleman at Merck purified and triple-inactivated those spheres from human plasma in 1981, William Rutter at UCSF, Pablo Valenzuela at Chiron, and Benjamin Hall at the University of Washington spliced the single gene for that surface protein into ordinary baker's yeast (Saccharomyces cerevisiae) in 1981, winning FDA approval in July 1986 for the first genetically engineered human vaccine.",
-          "exitFact": "Following Taiwan's launch of the world's first universal newborn hepatitis B vaccination program in July 1984, chronic surface-antigen carriage in children plunged from roughly 10 percent to under 0.6 percent, and hepatocellular liver carcinoma incidence in vaccinated cohorts fell by 75 to 80 percent."
+          "title": "The Recombinant Decoy in Baker's Yeast",
+          "subtitle": "Baruch Blumberg, Maurice Hilleman, and the First Anti-Cancer Subunit Vaccine",
+          "slug": "the-recombinant-decoy-in-baker-s-yeast",
+          "formalismMode": "prose",
+          "anchor": "After Baruch Blumberg identified the Australia antigen (HBsAg) in 1965 and R. Palmer Beasley's prospective cohort of 22,707 Taiwanese civil servants established that chronic hepatitis B carriage multiplied hepatocellular carcinoma risk more than two-hundred-fold, Maurice Hilleman purified non-infectious 22-nanometer HBsAg spheres from human plasma using pepsin, urea, and formalin in 1981. That same year, William Rutter, Pablo Valenzuela, and Benjamin Hall cloned the viral S gene into Saccharomyces cerevisiae to express self-assembling lipoprotein spheres without human blood.",
+          "exitFact": "Following Taiwan's July 1984 rollout of universal newborn hepatitis B immunization, chronic HBsAg carriage in children dropped from nearly 10 percent to below 0.6 percent and hepatocellular carcinoma incidence in vaccinated cohorts declined by 75 to 80 percent."
         },
         {
           "label": "Chapter 8",
-          "title": "Hib and the Sugar-Coat Trick",
-          "subtitle": "How John Robbins and Rachel Schneerson Tied a Slippery Bacterial Coat to a Protein So Babies Could See It",
-          "slug": "hib-and-the-sugar-coat-trick",
+          "title": "Polysaccharide Conjugation and the Infant Thymus",
+          "subtitle": "Oswald Avery's Hapten Principle and How John Robbins and Rachel Schneerson Defeated Haemophilus Meningitis",
+          "slug": "polysaccharide-conjugation-and-the-infant-thymus",
           "formalismMode": "diagram",
-          "anchor": "Before 1985, Haemophilus influenzae type b (Hib) struck roughly 20,000 American children under age five every year—causing bacterial meningitis, deafness, and throat-closing epiglottitis—yet pure vaccines made from the bacterium's outer polyribosylribitol phosphate sugar coat failed completely in infants under eighteen months. Building on Oswald Avery and Walther Goebel's 1929 Rockefeller Institute finding that linking a bacterial sugar to a protein made it visible to rabbit immune systems, John Robbins and Rachel Schneerson at the National Institutes of Health in Bethesda in 1980 chemically tied Hib's sugar coat to a harmless carrier protein such as tetanus or diphtheria toxoid.",
-          "exitFact": "When an infant B-cell grabs the bacterial sugar and swallows the attached carrier protein, it presents the protein fragments to helper T-cells that trigger high-affinity IgG antibodies and lifelong memory, driving invasive Hib meningitis in young children down by more than 99 percent within five years of routine infant use."
+          "anchor": "In a 1974 Finnish trial of 100,000 children, purified polyribosylribitol phosphate (PRP) capsular polysaccharide from Haemophilus influenzae type b failed to protect infants under eighteen months because repetitive sugar polymers act as T-cell-independent antigens that cannot be loaded onto MHC Class II molecules. Building on Oswald Avery and Walther Goebel's 1929 glycoconjugate experiments, John Robbins and Rachel Schneerson at the NIH in 1980 covalently linked PRP to protein carriers so polysaccharide-specific B cells could recruit follicular helper T cells.",
+          "exitFact": "Following routine infant introduction of Hib conjugate vaccines in December 1990, invasive Haemophilus influenzae type b meningitis in children under five fell by more than 99 percent and pharyngeal carriage collapsed across vaccinated populations."
         },
         {
           "label": "Chapter 9",
-          "title": "HPV and the Hollow Virus Shell",
-          "subtitle": "How Jian Zhou and Ian Frazer Built Self-Assembling Empty Shells That Stop Cervical Cancer",
-          "slug": "hpv-and-the-hollow-virus-shell",
-          "formalismMode": "ledger_or_list",
-          "anchor": "After Harald zur Hausen at the German Cancer Research Center in Heidelberg isolated human papillomavirus types 16 and 18 from cervical tumors in 1983 and 1984, vaccine makers faced a dead end because HPV refused to multiply in laboratory cell cultures and carried cancer-causing genes. In 1991 at the University of Queensland in Brisbane, Jian Zhou, Xiao-Yi Sun, and Ian Frazer—followed independently by Douglas Lowy and John Schiller at the U.S. National Cancer Institute—expressed the virus's single L1 outer shell gene in cells and discovered that 360 copies of L1 spontaneously snapped together into hollow 55-nanometer virus-like particles with zero viral DNA.",
-          "exitFact": "National cancer registry studies in Sweden, England, and Scotland tracking millions of women through 2020–2024 confirmed that girls vaccinated with the L1 hollow-shell HPV vaccine before age fourteen experienced an 87 to 90 percent reduction in invasive cervical cancer—with zero cervical cancer cases recorded in the Scottish cohort fully immunized at ages twelve to thirteen."
+          "title": "Self-Assembling Icosahedral Shells",
+          "subtitle": "Harald zur Hausen, Jian Zhou, Ian Frazer, and the Empty Capsids of Human Papillomavirus",
+          "slug": "self-assembling-icosahedral-shells",
+          "formalismMode": "prose",
+          "anchor": "After Harald zur Hausen cloned HPV-16 and HPV-18 DNA from cervical carcinoma biopsies in 1983 and 1984 and showed that viral E6 and E7 oncoproteins degrade host p53 and retinoblastoma tumor suppressors, whole-virus vaccines remained unsafe and unculturable. In 1991 at the University of Queensland, Jian Zhou, Xiao-Yi Sun, and Ian Frazer—and independently Douglas Lowy and John Schiller at the National Cancer Institute—expressed the L1 major capsid gene alone and observed 360 monomers self-assembling into 72-pentamer icosahedral virus-like particles.",
+          "exitFact": "Population registries in Sweden, England, and Scotland tracking millions of women through 2020–2024 recorded an 87 to 90 percent reduction in invasive cervical cancer among girls vaccinated early, with zero cases detected in the Scottish cohort immunized at ages twelve to thirteen."
         },
         {
           "label": "Chapter 10",
-          "title": "Rotavirus and the Cow-Human Swap",
-          "subtitle": "How Paul Offit, Fred Clark, and Stanley Plotkin Shuffled Eleven RNA Strands to Save Infants From Dehydration",
-          "slug": "rotavirus-and-the-cow-human-swap",
-          "formalismMode": "equation",
-          "anchor": "In 1973 at the Royal Children's Hospital in Melbourne, Ruth Bishop, Geoffrey Davidson, Ian Holmes, and Brian Ruck used electron microscopy on duodenal biopsies to identify wheel-shaped rotaviruses as the leading cause of severe infant dehydration worldwide. Starting in 1980 at the Children's Hospital of Philadelphia and the Wistar Institute, Fred Clark, Paul Offit, and Stanley Plotkin isolated a calf rotavirus strain (WC3) from a Pennsylvania dairy farm and took advantage of rotavirus's segmented genome—eleven separate strands of double-stranded RNA—by co-infecting cells with calf and human strains to breed five hybrid viruses carrying ten cow genes for safety and one human surface gene for immunity.",
-          "exitFact": "Tested in the 70,301-infant REST clinical trial across eleven countries and licensed in February 2006, the five-strain cow-human reassortant oral vaccine reduced rotavirus hospitalizations and emergency-room visits by 94.5 percent while showing no elevated risk of intestinal intussusception."
+          "title": "Segmented RNA Reassortment",
+          "subtitle": "Ruth Bishop, Paul Offit, Stanley Plotkin, and the Bovine-Human Rotavirus Chimeras",
+          "slug": "segmented-rna-reassortment",
+          "formalismMode": "prose",
+          "anchor": "After Ruth Bishop's 1973 electron microscopy of duodenal biopsies in Melbourne identified rotavirus and the 1998 rhesus-human RotaShield vaccine was withdrawn in October 1999 over a 1-in-10,000 risk of intestinal intussusception, Fred Clark, Paul Offit, and Stanley Plotkin at the Children's Hospital of Philadelphia and the Wistar Institute coinjected monkey kidney cells with the bovine WC3 strain and human rotaviruses to reassort their eleven double-stranded RNA segments.",
+          "exitFact": "Evaluated across 70,301 infants in the 2001–2005 REST trial, the pentavalent bovine-human reassortant vaccine reduced rotavirus hospitalizations by 94.5 percent without increasing intussusception risk."
         },
         {
           "label": "Chapter 11",
-          "title": "Ebola and the Trojan Horse Ring",
-          "subtitle": "How Heinz Feldmann Dressed a Harmless Livestock Virus in Ebola's Coat to Stop an Outbreak in Guinea",
-          "slug": "ebola-and-the-trojan-horse-ring",
-          "formalismMode": "ledger_or_list",
-          "anchor": "At the Public Health Agency of Canada's National Microbiology Laboratory in Winnipeg between 2001 and 2005, Heinz Feldmann, Ute Ströher, and Steven Jones engineered a harmless Trojan horse by taking Vesicular Stomatitis Virus (VSV)—a livestock virus that causes mild mouth sores in cattle—snipping out its native surface gene, and inserting the single outer glycoprotein gene of Zaire Ebola virus. During the 2015 West African epidemic in coastal Guinea, World Health Organization teams led by Ana Maria Henao-Restrepo adapted the smallpox ring-vaccination strategy in the Ebola Ça Suffit! trial, tracing 90 clusters of 7,651 contacts and contacts-of-contacts of newly diagnosed patients.",
-          "exitFact": "In the 2015 Guinea ring trial, among the 2,119 contacts in immediately vaccinated rings who received a single shot of the VSV-Ebola Trojan-horse vaccine, zero cases of Ebola virus disease occurred ten or more days after immunization, compared to sixteen cases across delayed rings—yielding an estimated 100 percent ring vaccine efficacy."
+          "title": "Herd Thresholds and the Trap of Antibody-Dependent Enhancement",
+          "subtitle": "From Ronald Ross's Reproduction Number to Dengue Hemorrhagic Fever and the 1966 RSV Trial",
+          "slug": "herd-thresholds-and-the-trap-of-antibody-dependent-enhancement",
+          "formalismMode": "equation",
+          "anchor": "While Ronald Ross and George Macdonald's basic reproduction number governs how neutralizing antibodies halt epidemics once population immunity crosses the critical threshold, two clinical catastrophes revealed how sub-neutralizing or misdirected antibodies amplify viral disease. In the 1960s and 1970s, Scott Halstead demonstrated that heterotypic dengue antibodies complex with virions to infect Fc-gamma-receptor-bearing monocytes, while the 1966 NIH clinical trial of formalin-inactivated Respiratory Syncytial Virus hospitalized 80 percent of RSV-infected vaccinees with two infant deaths.",
+          "exitFact": "Subsequent immunological forensics proved that formalin denaturation had flipped the RSV fusion glycoprotein into its spent postfusion state, eliciting low-avidity antibodies that deposited immune complexes and triggered Th2-skewed pulmonary eosinophilia."
         },
         {
           "label": "Chapter 12",
-          "title": "Prefusion Spike and the Fat Bubble",
-          "subtitle": "How Barney Graham, Jason McLellan, and Pieter Cullis Pinned a Shape-Shifting Protein Inside a Lipid Nanoparticle",
-          "slug": "prefusion-spike-and-the-fat-bubble",
-          "formalismMode": "ledger_or_list",
-          "anchor": "In 1966 in Washington, D.C., a formalin-killed vaccine against Respiratory Syncytial Virus (RSV) failed catastrophically—hospitalizing 80 percent of infected vaccinees—because formalin caused the virus's surface fusion protein to snap from its live compact 'prefusion' shape into a spent rod before the immune system ever saw it. At the NIH Vaccine Research Center and Dartmouth between 2013 and 2017, Barney Graham and Jason McLellan solved this structural trap for RSV and coronaviruses by substituting two rigid proline amino acids (2P) at the hinge of the spike protein to pin it in its live prefusion shape, then packaged that genetic recipe inside Pieter Cullis's four-lipid nanoparticles.",
-          "exitFact": "When the SARS-CoV-2 genetic sequence was posted online on January 10, 2020, inserting the two-proline prefusion pin into the spike recipe and encapsulating the mRNA inside pH-switching lipid nanoparticles produced clinical-grade vaccine vials in forty-two days, achieving 94 to 95 percent efficacy against symptomatic illness in Phase 3 trials of over 73,000 volunteers."
+          "title": "Prefusion Conformational Locking and Ionizable Lipids",
+          "subtitle": "Barney Graham, Katalin Karikó, Drew Weissman, and the Structural Engineering of mRNA Vaccines",
+          "slug": "prefusion-conformational-locking-and-ionizable-lipids",
+          "formalismMode": "prose",
+          "anchor": "Between 2013 and 2017, Jason McLellan and Barney Graham solved the atomic structure of class I viral fusion proteins in RSV and coronaviruses, demonstrating that substituting two rigid proline residues (2P) at the hinge between heptad repeat 1 and the central helix locked the metastable prefusion conformation in place. Combined with Katalin Karikó and Drew Weissman's 2005 substitution of N1-methylpseudouridine to evade Toll-like receptors 7 and 8 and Pieter Cullis's pH-switchable ionizable lipid nanoparticles, this architecture enabled rapid mRNA vaccine synthesis in January 2020.",
+          "exitFact": "Both the stabilized prefusion RSV subunit vaccines approved in 2023 and the 2P-locked SARS-CoV-2 mRNA vaccines tested across more than 73,000 Phase 3 trial participants achieved 82 to 95 percent efficacy by presenting the intact prefusion neutralization epitopes to human B cells."
         }
       ]
     }

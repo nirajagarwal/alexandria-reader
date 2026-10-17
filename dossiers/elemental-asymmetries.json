@@ -12,110 +12,110 @@
     {
       "chapter": 1,
       "title": "The Triple Bond Trap",
-      "subtitle": "Nitrogen and the Metabolic Ceiling of Civilization (Oppau, 1913)",
+      "subtitle": "Nitrogen, the Haber-Bosch Reactor, and the Metabolic Ceiling of Agriculture",
       "opening_door": "A: Scene",
       "formalism_mode": "equation",
-      "historical_anchor": "On September 9, 1913, inside a concrete blast bunker at the BASF chemical works in Oppau, near Ludwigshafen on the Rhine, chemical engineer Carl Bosch opened the valve of an experimental high-pressure steel reactor. Over the preceding four years, physical chemist Fritz Haber had demonstrated in a Karlsruhe laboratory that nitrogen gas ($\\text{N}_2$) and hydrogen gas ($\\text{H}_2$) could be forced into synthesis to yield ammonia ($\\text{NH}_3$).",
-      "exit_fact": "Today, Haber-Bosch reactors consume roughly two percent of global energy production and supply over half of the nitrogen atoms incorporated into human tissues worldwide."
+      "historical_anchor": "Addressing the British Association for the Advancement of Science at Bristol in September 1898, chemist William Crookes warned that industrial nations faced famine as Chilean caliche nitrate beds approached depletion, prompting Fritz Haber in Karlsruhe and Carl Bosch at BASF in Oppau (1909–1913) to synthesize ammonia from atmospheric nitrogen at 200 atmospheres over a doubly promoted magnetite catalyst inside double-walled steel vessels.",
+      "exit_fact": "When the Oppau ammonia plant opened in September 1913, humanity permanently breached the agricultural nitrogen ceiling; today, Haber-Bosch reactors consume nearly two percent of global energy and supply half the nitrogen atoms in human muscle and DNA."
     },
     {
       "chapter": 2,
-      "title": "The Lattice Arbitrage",
-      "subtitle": "Silicon and the Purity Threshold of Planar Semiconductors (Mountain View, 1959)",
-      "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation",
-      "historical_anchor": "Constructed from germanium in 1947 at Bell Laboratories, the earliest transistors failed whenever the surrounding air grew hot. Germanium was easy to zone-refine and melted at a manageable $937^\\circ\\text{C}$, but its narrow electronic bandgap of $0.66\\text{ electron-volts}$ meant that warming a circuit above $70^\\circ\\text{C}$ thermally excited enough intrinsic electrons across the bandgap to flood the base region and short out the device.",
-      "exit_fact": "Six months later, Robert Noyce evaporated thin aluminum lines directly on top of Hoerni's flat $\\text{SiO}_2$ insulator to wire multiple transistors together on a single crystal die."
+      "title": "The Native Oxide Shield",
+      "subtitle": "Silicon, Eleven-Nines Purity, and Why Germanium Lost the Semiconductor Age",
+      "opening_door": "A: Scene",
+      "formalism_mode": "ledger_or_list",
+      "historical_anchor": "Constructed at Bell Telephone Laboratories in December 1947, the first germanium transistors failed above 70°C due to germanium's narrow 0.66 eV bandgap and water-soluble oxide, driving Gordon Teal at Texas Instruments (1954), Siemens engineers in Erlangen, and Jean Hoerni and Robert Noyce at Fairchild Semiconductor (1957–1959) to purify silicon to eleven nines via trichlorosilane distillation and passivate planar integrated circuits beneath thermally grown silicon dioxide glass.",
+      "exit_fact": "Six months later, Fairchild co-founder Robert Noyce evaporated thin aluminum metal strips directly atop Hoerni's flat SiO2 insulator to wire multiple transistors together on a single monolithic silicon die."
     },
     {
       "chapter": 3,
-      "title": "The Intercalation Bottleneck",
-      "subtitle": "Lithium and the Electrochemical Redox Gradient (Oxford, 1980)",
+      "title": "The Intercalation Host",
+      "subtitle": "Lithium, Explosive Dendrites, and the Layered Oxide Cathode",
       "opening_door": "C: Artifact/Measurement",
       "formalism_mode": "equation",
-      "historical_anchor": "Element number three on the periodic table—lithium, with an atomic mass of $6.94\\text{ grams per mole}$ and a single $2s$ valence electron outside a closed helium shell—possesses the most negative standard reduction potential of any solid element ($E^\\circ(\\text{Li}^+/\\text{Li}) = -3.04\\text{ V}$ relative to the standard hydrogen electrode) and a theoretical specific capacity governed by Faraday's constant:",
-      "exit_fact": "Even so, the tiny ionic radius of $\\text{Li}^+$ ($0.076\\text{ nm}$) creates an intense local electric field that binds polar carbonate solvent molecules into a bulky solvation shell ($r_{\\text{solvated}} \\approx 0.4\\text{ nm}$); stripping that solvent shell at the graphite interface imposes a $50\\text{ kJ/mol}$ activation energy barrier that limits fast-charging speeds at freezing temperatures."
+      "historical_anchor": "After M. Stanley Whittingham's mid-1970s Exxon rechargeable lithium-TiS2 cells suffered fatal internal short circuits from metallic lithium dendrites, John B. Goodenough at the University of Oxford in 1980 synthesized layered lithium cobalt oxide (LiCoO2) to double cell voltage to 4.0 V, and Akira Yoshino in 1985 paired it with a petroleum-coke graphite intercalation anode.",
+      "exit_fact": "Its intense local electric field binds polar solvent molecules into a bulky solvation shell (0.4 nanometers across), and stripping away that solvent cage at the graphite interface requires overcoming a 50 kJ/mol activation barrier that governs fast-charging limits at freezing temperatures."
     },
     {
       "chapter": 4,
-      "title": "The Radiative Fission",
-      "subtitle": "Uranium-235 and the Thermal Neutron Cross-Section (Oak Ridge, 1944)",
+      "title": "The Odd-Neutron Trigger",
+      "subtitle": "Uranium-235, Nucleon Spin Pairing, and the Calutrons of Oak Ridge",
       "opening_door": "A: Scene",
       "formalism_mode": "equation",
-      "historical_anchor": "Consuming roughly one percent of the entire electrical generation capacity of the United States in the autumn of 1944, thousands of five-ton electromagnetic calutrons inside the Y-12 plant at Oak Ridge, Tennessee, operated around the clock to separate two isotopes whose masses differ by just 1.26 percent. Inside vacuum tanks wound with 14,000 tons of silver busbars borrowed from the U.S.",
-      "exit_fact": "Reaching 90 percent weapons-grade $^{235}\\text{U}$ required cascading 2,892 gaseous diffusion stages in series under a single roof covering forty-four acres."
+      "historical_anchor": "Following Otto Hahn, Fritz Strassmann, Lise Meitner, and Otto Frisch's December 1938 discovery of nuclear fission, Niels Bohr deduced in February 1939 that only the 0.72% uranium-235 isotope fissions with slow neutrons because pairing its 143rd odd neutron releases 6.5 MeV above the 5.3 MeV scission barrier—forcing the Manhattan Project at Oak Ridge (1943–1945) to wind Y-12 calutrons with 14,000 tons of Treasury silver and cascade 2,892 K-25 gaseous diffusion stages.",
+      "exit_fact": "Because a single pass enriched the gas by barely four parts in a thousand, reaching ninety percent weapons-grade 235U required cascading 2,892 gaseous diffusion stages in continuous series, consuming nearly one percent of all electricity generated in the United States in 1945."
     },
     {
       "chapter": 5,
-      "title": "The Unpaired Electrons",
-      "subtitle": "Neodymium and the Coercivity of Rare Earth Permanent Magnets (Tokyo, 1982)",
-      "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation",
-      "historical_anchor": "Civil conflict in Zaire's Katanga province in 1978 drove the global price of cobalt up by a factor of ten, threatening to cripple the electronics and automotive industries that relied on samarium-cobalt ($\\text{SmCo}_5$) permanent magnets. At Sumitomo Special Metals in Osaka, Japanese metallurgist Masato Sagawa set out to invent a permanent magnet built around abundant iron rather than scarce cobalt.",
-      "exit_fact": "Combining iron's flux density with neodymium's coercivity ($H_c$) yielded a maximum energy product exceeding $50\\text{ mega-gauss-oersteds}$ ($400\\text{ kJ/m}^3$)—enabling the compact permanent-magnet traction motors of modern electric vehicles, offshore wind turbine generators, and hard-disk voice-coil actuators."
+      "title": "The Buried Orbital",
+      "subtitle": "Neodymium, the Katanga Cobalt Crisis, and the World's Strongest Permanent Magnets",
+      "opening_door": "A: Scene",
+      "formalism_mode": "prose",
+      "historical_anchor": "After the May 1978 Shaba rebellion in Zaire's Katanga province spiked global cobalt prices tenfold and threatened SmCo5 magnet production, Masato Sagawa at Sumitomo Special Metals in Osaka—and independently John Croat at General Motors—discovered in 1982 that ternary Nd2Fe14B uses boron spacers and neodymium's shielded inner 4f orbitals to lock iron's high magnetic saturation against a 7.3-Tesla anisotropy field.",
+      "exit_fact": "Substituting a few percent of heavier dysprosium (Z = 66) for neodymium further stiffened the anisotropy barrier against high-temperature demagnetization, enabling the compact permanent-magnet traction motors of modern electric vehicles, hard-disk voice-coil actuators, and multi-megawatt offshore wind turbines."
     },
     {
       "chapter": 6,
-      "title": "The Quantum Cryogen",
-      "subtitle": "Helium-4 and the Vanishing Viscosity of the Superfluid (Cambridge, 1937)",
-      "opening_door": "C: Artifact/Measurement",
+      "title": "The Frictionless Quantum Fluid",
+      "subtitle": "Helium-4, the Lambda Point, and Bose-Einstein Condensation in Capillaries",
+      "opening_door": "B: Constraint/Paradox",
       "formalism_mode": "equation",
-      "historical_anchor": "Under the classical Hagen-Poiseuille law of fluid mechanics, the volumetric flow rate $\\dot{V}$ of any liquid forced through a narrow cylindrical pipe of radius $r$ and length $L$ is strictly proportional to the applied pressure drop $\\Delta P$ and inversely proportional to dynamic viscosity $\\eta$:",
-      "exit_fact": "Because helium-4 combines a tiny atomic mass with weak van der Waals attraction, its quantum zero-point motion prevents it from freezing even at absolute zero under atmospheric pressure—making it the only substance in the universe that remains liquid down to $0\\text{ K}$ to cool superconducting MRI magnets and particle-accelerator cavities."
+      "historical_anchor": "Prevented from freezing at atmospheric pressure by quantum zero-point motion, liquid helium-4 cooled below its 2.17 K lambda point was shown in November 1937 by Jack Allen and Don Misener in Cambridge and Pyotr Kapitsa in Moscow to flow through sub-micron slits with zero measurable viscosity as a Bose-Einstein condensate.",
+      "exit_fact": "The superfluid is forced to flow without friction and conduct heat hundreds of times faster than solid copper—the exact property used today to cryogenically stabilize the superconducting niobium-titanium magnets of the Large Hadron Collider at 1.9 K."
     },
     {
       "chapter": 7,
-      "title": "The Refractory Airframe",
-      "subtitle": "Titanium and the Kroll Reduction Energy Barrier (Boulder City, 1946)",
+      "title": "The Passivated Airframe",
+      "subtitle": "Titanium, the Kroll Reactor, and Flying Past the Thermal Thicket at Mach Three",
       "opening_door": "A: Scene",
       "formalism_mode": "equation",
-      "historical_anchor": "Discovered in 1791 by English clergyman William Gregor in Cornwall black sands, titanium possesses a density nearly half that of steel (4.5 g/cm³ versus 7.8 g/cm³), tensile strength exceeding high-grade structural alloys, and near-total immunity to seawater corrosion. Yet for 150 years, pure metallic titanium did not exist.",
-      "exit_fact": "During the Cold War, the Central Intelligence Agency established fictitious shell companies across Europe to covertly purchase hundreds of tons of titanium sponge from the Soviet Union—the world's primary producer—in order to fabricate the all-titanium airframe of the Mach 3.2 Lockheed SR-71 Blackbird."
+      "historical_anchor": "To build the Mach 3.2 A-12 and SR-71 Blackbird reconnaissance aircraft in 1958 after aluminum softened above 150°C aerodynamic heating, Clarence Kelly Johnson's Lockheed Skunk Works used titanium sponge reduced from TiCl4 by molten magnesium under argon via William Kroll's process—covertly purchasing rutile sponge from the Soviet Union and discovering that chlorine oils, summer sweat, and cadmium wrenches cracked hot titanium.",
+      "exit_fact": "Even mechanics' standard cadmium-plated steel wrenches left microscopic traces of cadmium that diffused into hot titanium bolt heads and snapped them off in flight."
     },
     {
       "chapter": 8,
-      "title": "The Catalytic Terrace",
-      "subtitle": "Platinum and Proton-Exchange Adsorption Kinetics (Zurich, 1965)",
-      "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation",
-      "historical_anchor": "A hydrogen fuel cell operates as an electrochemical continuous-flow engine: hydrogen gas is oxidized at the anode, oxygen gas is reduced at the cathode, and the free energy of the reaction is converted directly into electrical work without passing through a Carnot thermal cycle:",
-      "exit_fact": "Modern proton-exchange membrane (PEM) fuel cells require approximately 0.1 to 0.3 grams of platinum per kilowatt of capacity—meaning that replacing the global fleet of heavy-transport combustion engines with fuel cells at current catalyst loadings would demand more platinum than is economically recoverable from the Earth's crust."
+      "title": "The Goldilocks Terrace",
+      "subtitle": "Platinum, the Sabatier Volcano Curve, and the Art of Letting Go",
+      "opening_door": "A: Scene",
+      "formalism_mode": "ledger_or_list",
+      "historical_anchor": "From Humphry Davy's 1817 glowing coal-damp wire and Johann Wolfgang Döbereiner's 1823 hydrogen lamp to Paul Sabatier's 1911 intermediate principle and Jens Nørskov's d-band center volcano curve, platinum's 5d9 6s1 electronic structure sits at the thermodynamic peak between reactive base metals that oxidize and gold terraces that repel oxygen.",
+      "exit_fact": "That planetary sorting left the continental crust with an average platinum abundance of just five parts per billion—concentrated almost entirely inside two ancient geological anomalies: South Africa's Bushveld Igneous Complex and Siberia's Norilsk-Talnakh intrusion."
     },
     {
       "chapter": 9,
-      "title": "The Resistive Ceiling",
-      "subtitle": "Copper and the Wiedemann-Franz Thermal Dissipation Ratio (Pasadena, 1911)",
-      "opening_door": "C: Artifact/Measurement",
+      "title": "The Free Electron Sea",
+      "subtitle": "Copper, the Transatlantic Telegraph Cable, and Matthiessen's Impurity Law",
+      "opening_door": "A: Scene",
       "formalism_mode": "equation",
-      "historical_anchor": "Two thousand five hundred tons of hard-drawn copper wire, 4.19 millimeters in diameter (No. 8 BWG), stretched across 130,000 wooden poles from New York to San Francisco.",
-      "exit_fact": "As copper ore grades decline globally from historical averages of two percent down to less than 0.5 percent, extracting and refining one ton of copper requires moving over two hundred tons of waste rock and consuming thousands of kilowatt-hours of electrical energy."
+      "historical_anchor": "Investigating the failure of the August 1858 transatlantic telegraph cable, Glasgow physicist William Thomson (Lord Kelvin) and chemist Augustus Matthiessen discovered that 0.1% arsenic impurities scattered copper's delocalized 4s Fermi electron gas and cut conductivity in half—driving James Elkington's 1865 electrolytic copper refining process.",
+      "exit_fact": "By casting impure blister copper as an anode in an acidic copper sulfate bath and plating it onto a pure cathode at 0.3 volts, Elkington dropped arsenic, gold, and silver impurities to the tank floor as anode slime, delivering the 99.99 percent Electrolytic Tough Pitch (ETP) copper that carries the world's electrical grid today."
     },
     {
       "chapter": 10,
-      "title": "The Nuclear Valley",
-      "subtitle": "Lead and the Radiogenic Endpoint of Heavy Elements (Manchester, 1907)",
-      "opening_door": "A: Scene",
-      "formalism_mode": "equation",
-      "historical_anchor": "Every chemical element in the periodic table with an atomic number greater than eighty-two ($Z > 82$) is unstable and undergoes spontaneous nuclear decay. Lead ($\\text{Pb}$, element number 82) sits at the bottom of the radioactive decay cascade as the heaviest element to possess indefinitely stable isotopes.",
-      "exit_fact": "Because lead has eighty-two orbital electrons, its probability of photoelectric absorption is over six hundred times greater than that of aluminum ($Z = 13$) for any given gamma photon."
+      "title": "The Radiogenic Clock",
+      "subtitle": "Lead, Clair Patterson's Ultra-Clean Room, and the True Age of the Earth",
+      "opening_door": "B: Constraint/Paradox",
+      "formalism_mode": "ledger_or_list",
+      "historical_anchor": "Because doubly magic lead-208 (Z = 82, N = 126) halts three primordial radioactive decay chains (238U -> 206Pb, 235U -> 207Pb, 232Th -> 208Pb), geochemist Clair Patterson built the world's first ultra-clean room at Caltech in 1952–1953 to exclude ubiquitous tetraethyl-lead gasoline dust and date the Canyon Diablo meteorite to 4.55 billion years.",
+      "exit_fact": "Patterson spent the next thirty years applying the same ultra-clean isotopic forensics to Greenland ice cores and deep-sea pelagic water, proving that industrial tetraethyl lead had elevated human blood lead levels more than a hundredfold above prehistoric baselines and driving the global phaseout of leaded gasoline."
     },
     {
       "chapter": 11,
-      "title": "The Molten Cryolite",
-      "subtitle": "Aluminum and the Hall-Héroult Electrolytic Reduction (Oberlin, 1886)",
-      "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation",
-      "historical_anchor": "In February 1886, in a woodshed behind his family home in Oberlin, Ohio, chemistry graduate Charles Martin Hall was melting minerals over a gasoline-fired furnace. Working with homemade clay crucibles and battery cells constructed from glass jam jars, Hall was attempting to solve the industrial enigma of aluminum.",
-      "exit_fact": "Aluminum smelters remain geographic parasites on cheap electricity, clustering near massive hydroelectric dams in Quebec, Norway, and Iceland to feed the immense continuous current required to break the aluminum-oxygen lattice."
+      "title": "The Cryolite Bath",
+      "subtitle": "Aluminum, Napoleon III's State Cutlery, and the Hall-Héroult Cell",
+      "opening_door": "C: Artifact/Measurement",
+      "formalism_mode": "prose",
+      "historical_anchor": "Displayed beside the French Crown Jewels in 1855 and cast onto the tip of the Washington Monument in 1884 because corundum (Al2O3) melts at 2,072°C and resists carbon smelting, aluminum was unlocked independently in February 1886 by Charles Martin Hall in Oberlin and Paul Héroult in Gentilly by dissolving alumina in molten Greenland cryolite (Na3AlF6) at 960°C.",
+      "exit_fact": "Within ten years, aluminum plunged from silver's price to thirty cents a pound, turning smelters into permanent geographic companions of massive hydroelectric dams from Niagara Falls to Quebec and Iceland, where fourteen kilowatt-hours of electricity are still poured into every kilogram of metal to sever the aluminum-oxygen bond."
     },
     {
       "chapter": 12,
-      "title": "The Graphitic Sheet",
-      "subtitle": "Carbon-12 and the Covalent Orbital Hybridization Limits (Manchester, 2004)",
-      "opening_door": "C: Artifact/Measurement",
+      "title": "The Relativistic Honeycomb",
+      "subtitle": "Carbon, Hybridized Orbitals, and the Scotch-Tape Isolation of Graphene",
+      "opening_door": "B: Constraint/Paradox",
       "formalism_mode": "equation",
-      "historical_anchor": "For seventy years, theoretical solid-state physics held that isolated two-dimensional crystalline materials could not exist at room temperature. In 1935, Lev Landau and Rudolf Peierls proved mathematically that thermal vibrations in a strictly two-dimensional lattice would cause dynamic atomic displacements comparable to the interatomic distance at any finite temperature:",
-      "exit_fact": "At room temperature, graphene exhibits electron mobilities exceeding $200,000\\text{ cm}^2/(\\text{V}\\cdot\\text{s})$—over one hundred times faster than silicon—and displays the Klein paradox, in which relativistic electrons tunnel through electrostatic potential barriers with one hundred percent transmission probability regardless of barrier height."
+      "historical_anchor": "Defying the 1930s Peierls-Landau theorem that thermal fluctuations destroy strictly two-dimensional crystals, Andre Geim and Kostya Novoselov at the University of Manchester in autumn 2004 used adhesive Scotch tape to exfoliate planar sp2 carbon sheets from graphite, revealing massless Dirac fermions governed by a linear energy-momentum dispersion.",
+      "exit_fact": "At room temperature, graphene exhibits electron mobilities exceeding 200,000 cm2/(V*s) and allows relativistic charge carriers to tunnel through electrostatic barriers with one hundred percent transmission probability via the Klein paradox."
     }
   ],
   "format": "mechanisms"
