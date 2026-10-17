@@ -88,7 +88,7 @@ The client application ([`index.html`](index.html), [`style.css`](style.css), [`
 ├── favicon.svg                 # Light-styled Literata 'A' vector app icon
 ├── site.webmanifest            # PWA manifest
 ├── og-image.png                # 1200x630 PNG OpenGraph card for alexandria.press
-├── sitemap.xml                 # Full XML sitemap (root + 35 books + 455 chapters)
+├── sitemap.xml                 # Full XML sitemap (root + 36 books + 468 chapters)
 ├── books/                      # Canonical 12-chapter Markdown manuscripts (<slug>.md)
 ├── dossiers/                   # Verified 12-chapter research dossiers & job telemetry
 ├── assets/
@@ -131,11 +131,11 @@ python3 scripts/book_creator_server.py --port 8765
 Executes Stage 1 (Dossier Batch API), Stage 2 (1 Google Search per chapter validation = 12 grounded queries), Stage 3 (13-section Manuscript Batch API + 12-gate validator), and Stage 4 (3 Typst PDFs, OG PNG card, catalog sync, and email delivery receipt):
 ```bash
 python3 scripts/create_book_pipeline.py \
-  --slug sleep \
-  --title "Sleep" \
-  --subtitle "The Nightly Brain Shutdown and Eleven Neighbors From Circadian Clocks to Synaptic Pruning" \
-  --category "Neurobiology & Physiology" \
-  --mode landscape \
+  --slug twelve-vaccines \
+  --title "Twelve Vaccines" \
+  --subtitle "How Cowpox Scabs, Weakened Viruses, Sugar Coats, and Fat Droplets Taught the Body to Fight Back" \
+  --category "Medicine & Immunology" \
+  --mode facet \
   --profile B \
   --email reader@alexandria.press
 ```
@@ -143,36 +143,36 @@ python3 scripts/create_book_pipeline.py \
 ### 3. Validate a Book Manuscript
 Runs all structural, word-count (`520–760` words/chapter), sentence-cadence ($\le 24.0$ words/sentence), SVG geometry, LaTeX/KaTeX balance, and provenance gates:
 ```bash
-python3 scripts/validate_book.py books/sleep.md
+python3 scripts/validate_book.py books/twelve-vaccines.md
 ```
 
 ### 4. Compile Typst PDF Editions for a Single Book
 ```bash
 # Desktop (5.8in x 7.5in), Compact (5.5in x 6.8in), and Mobile (4.2in x 7.5in)
-python3 scripts/compile_typst.py books/sleep.md assets/pdfs/sleep.pdf --edition desktop
-python3 scripts/compile_typst.py books/sleep.md assets/pdfs/compact/sleep.pdf --edition compact
-python3 scripts/compile_typst.py books/sleep.md assets/pdfs/mobile/sleep.pdf --edition mobile
+python3 scripts/compile_typst.py books/twelve-vaccines.md assets/pdfs/twelve-vaccines.pdf --edition desktop
+python3 scripts/compile_typst.py books/twelve-vaccines.md assets/pdfs/twelve-vaccines-compact.pdf --edition compact
+python3 scripts/compile_typst.py books/twelve-vaccines.md assets/pdfs/twelve-vaccines-mobile.pdf --edition mobile
 ```
 
 ### 5. Publish an Existing Manuscript End-to-End
 Validates `books/<slug>.md`, generates the geometric cover SVG and thumbnail, compiles all 3 Typst PDF editions, renders the `1200×630` OpenGraph PNG card, updates `catalog.json` and `js/books-data.js`, builds `read/<slug>/*.html`, and syncs `index.html` and `sitemap.xml`:
 ```bash
 python3 scripts/publish_book.py \
-  --slug sleep \
-  --category "Neurobiology & Physiology" \
-  --accent "#4f46e5" \
-  --bg "#17153b"
+  --slug twelve-vaccines \
+  --category "Medicine & Immunology" \
+  --accent "#0d9488" \
+  --bg "#0b1f1d"
 ```
 
 ### 6. Run the Automated Test Suite
-Verifies repository hygiene, `index.html` markers, `catalog.json` parity, all 35 manuscripts and dossiers, all 455 chapter HTML pages, cover SVGs, OG PNGs, and all 105 Typst PDFs:
+Verifies repository hygiene, `index.html` markers, `catalog.json` parity, all 36 manuscripts and dossiers, all 468 chapter HTML pages, cover SVGs, OG PNGs, and all 108 Typst PDFs:
 ```bash
 python3 tests/test_reader.py
 ```
 
 ---
 
-## Published Catalog (35 Volumes)
+## Published Catalog (36 Volumes)
 
 | # | Volume | Subtitle | Category | Format |
 | :- | :--- | :--- | :--- | :--- |
@@ -210,4 +210,5 @@ python3 tests/test_reader.py
 | 32 | **Twelve Equations** | *The Mathematical Laws That Govern Heat, Waves, Gravity, and Chance* | Mathematics & Physics | Mechanisms |
 | 33 | **John von Neumann** | *The Mind That Architected Game Theory, Stored-Program Computers, and Self-Replicating Automata* | Mathematics, Computing & Biography | Biography |
 | 34 | **The Solar System** | *Twelve Worlds and Orbital Realms in Twelve Highlights Each* | Planetary Science & Astrophysics | 12×12 Highlights |
-| 35 | **Sleep** | *The Nightly Brain Shutdown and Eleven Neighbors From Circadian Clocks to Synaptic Pruning* | Neurobiology & Physiology | Landscape |
+| 35 | **Human Functions** | *Sleeping, Breathing, Walking, Running, and Eight Other Daily Acts in Twelve Highlights Each* | Physiology & Biomechanics | 12×12 Highlights |
+| 36 | **Twelve Vaccines** | *How Cowpox Scabs, Weakened Viruses, Sugar Coats, and Fat Droplets Taught the Body to Fight Back* | Medicine & Immunology | Mechanisms |

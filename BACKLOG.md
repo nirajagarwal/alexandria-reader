@@ -27,26 +27,16 @@
 
 ---
 
+### Batch 3 — In Progress (`36` Catalog Volumes)
+9. **Human Functions** — *Sleeping, Breathing, Walking, Running, and Eight Other Daily Acts in Twelve Highlights Each* (`books/human-functions.md`, `mode: "listicle"`, Profile B — **Completed & Published**)
+10. **Twelve Vaccines** — *How Cowpox Scabs, Weakened Viruses, Sugar Coats, and Fat Droplets Taught the Body to Fight Back* (`books/twelve-vaccines.md`, `mode: "facet"`, Profile B — **Completed & Published**)
+
+---
+
 ## Queued Batches (Paused — Ready to Resume Anytime)
 
-### Batch 3 (4 Volumes)
-9. **Sleep** (`sleep` · `mode: "landscape"` · Profile B · Accent `#4f46e5`)
-   - *Subtitle*: The Nightly Brain Shutdown and Eleven Neighbors From Circadian Clocks to Synaptic Pruning
-   - *12-Chapter Blueprint*:
-     1. **The Two-Process Sleep Architecture** (Borbély's Process S homeostatic adenosine accumulation vs Process C suprachiasmatic nucleus circadian drive)
-     2. **The Suprachiasmatic Master Clock** (Bargmann/Hall/Rosbash/Young's `PER`/`TIM` transcriptional-translational feedback loop and melanopsin retinal ganglion cells)
-     3. **Glymphatic Clearance** (Maiken Nedergaard's 2013 discovery of 60% interstitial space expansion and aquaporin-4 convective cerebrospinal fluid washout during slow-wave sleep)
-     4. **The Synaptic Homeostasis Hypothesis** (Giulio Tononi and Chiara Cirelli's down-selection model showing why waking potentiates synapses and slow-wave sleep scales synaptic weights down by ~18%)
-     5. **Hippocampal Sharp-Wave Ripples and Memory Replay** (György Buzsáki and Matthew Wilson's discovery of 150–250 Hz hippocampal ripples coupled to thalamocortical sleep spindles replaying waking trajectories at 10–20× speed)
-     6. **REM Paradoxical Sleep and Pontine Atonia** (Michel Jouvet's pontine tegmentum lesions in cats, acetylcholine surge with locus coeruleus norepinephrine silence, and glycinergic spinal motoneuron hyperpolarization)
-     7. **The Flip-Flop Hypothalamic Switch** (Clifford Saper's ventrolateral preoptic nucleus (VLPO) vs monoaminergic arousal nuclei mutual inhibition bistable circuit, stabilized by lateral hypothalamic orexin/hypocretin neurons—and how orexin neuron loss causes narcolepsy with cataplexy)
-     8. **Unihemispheric Sleep in Cetaceans and Birds** (Bottlenose dolphins, fur seals, and frigatebirds sleeping with one cerebral hemisphere in slow-wave delta while the other hemisphere and contralateral eye remain awake)
-     9. **Fatal Familial Insomnia and Thalamic Degeneration** (Lugaresi and Gambetti's prion mutation `PRNP` D178N selectively destroying the mediodorsal and anterior ventral thalamus, abolishing sleep spindles and causing autonomic runaway)
-     10. **Local Cortical Sleep and Sleep Deprivation Lapses** (Vladyslav Vyazovskiy's discovery that individual cortical columns in awake, sleep-deprived rats briefly go offline into local slow waves, causing behavioral micro-lapses)
-     11. **Torpor, Hibernation, and Metabolic Depression** (Arctic ground squirrels dropping core body temperature to $-2.9^\circ\text{C}$ and periodically warming up just to execute slow-wave sleep)
-     12. **Lucid Dreaming and Frontopolar Gamma Recovery** (Stephen LaBerge's pre-agreed ocular left-right REM signaling and Ursula Voss's 40 Hz frontotemporal gamma coherence)
-
-10. **Twelve Foods** (`twelve-foods` · `mode: "facet"` · Profile B · Accent `#ea580c`)
+### Batch 3 Remaining (3 Volumes)
+11. **Twelve Foods** (`twelve-foods` · `mode: "facet"` · Profile B · Accent `#ea580c`)
     - *Subtitle*: The Physics, Chemistry, and History of the Kitchen
     - *12-Chapter Blueprint*:
       1. **Bread** (Glutenin and gliadin disulfide cross-linking into viscoelastic sheets that trap Saccharomyces cerevisiae $\text{CO}_2$ bubbles)
