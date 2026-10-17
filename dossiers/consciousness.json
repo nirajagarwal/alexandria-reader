@@ -1,13 +1,14 @@
 {
   "slug": "consciousness",
-  "file": "books/consciousness.md",
+  "file": "consciousness.md",
   "title": "Consciousness",
-  "subtitle": "The Subjective Mind and Eleven Neighbors From Global Workspace to Split-Brain Patients",
-  "category": "Biology & Neuroscience",
-  "profile": "B: Biological, Neural & Affective Control Loops + F: The Contextual Landscape (Knowra Neighborhood Mapping)",
-  "mode": "landscape",
-  "accent": "#8b5cf6",
-  "bg": "#0f172a",
+  "subtitle": "Brains, Illusions, Meditation, Octopus Minds, and the Mystery of Inner Experience",
+  "category": "Neuroscience & Philosophy of Mind",
+  "mode": "facet",
+  "format": "mechanisms",
+  "profile": "B",
+  "accent": "#7c3aed",
+  "bg": "#1e1b4b",
   "theme": "network-wave",
   "creator_constraints": {
     "min_diagrams": 3
@@ -15,364 +16,99 @@
   "chapters": [
     {
       "chapter": 1,
-      "title": "Phenomenal Versus Access Consciousness",
-      "subtitle": "How Philosophy and Neurobiology Split Subjective Experience From Functional Report",
-      "lens": "anchor",
-      "verb": "anchor",
-      "what": "The foundational distinction between the subjective felt quality of experience (phenomenal consciousness) and the functional availability of neural information for verbal report, reasoning, and deliberate action (access consciousness), paired with the empirical search for the minimal Neural Correlates of Consciousness (NCC).",
-      "why_here": "The anchor concept of the volume, establishing what must be explained when eighty-six billion neurons generate an inner world and separating tractable mechanisms of cognitive access from the Explanatory Gap of subjective experience.",
-      "background_nodes": [
-        {
-          "label": "Chalmers's Hard and Easy Problems (1994–1995)",
-          "what": "David Chalmers's Tucson conference address and Journal of Consciousness Studies paper separating the 'easy problems' of cognitive function—discrimination, integration, and verbal report—from the 'hard problem' of why those functions feel like anything from the inside.",
-          "whyHere": "Prevented neuroscience from claiming to have explained subjective experience when it had only mapped stimulus-response control loops."
-        },
-        {
-          "label": "Block's Phenomenal vs. Access Split and Sperling's Grid (1960–1995)",
-          "what": "Ned Block's 1995 Behavioral and Brain Sciences distinction between P-consciousness and A-consciousness, illustrated by George Sperling's 1960 Harvard partial-report experiment where subjects experience a full twelve-letter grid flashed for fifty milliseconds but can report only four letters unless cued by a tone.",
-          "whyHere": "Demonstrated that the richness of momentary sensory experience can exceed the narrow bottleneck of working-memory report."
-        },
-        {
-          "label": "Crick and Koch's Neural Correlates of Consciousness (1990)",
-          "what": "Francis Crick and Christof Koch's Seminars in the Neurosciences framework setting aside philosophical debates to isolate the minimal set of neuronal events and mechanisms jointly sufficient for a specific conscious percept.",
-          "whyHere": "Turned consciousness into an experimental variable that could be toggled in primate and human brains while keeping physical stimuli constant."
-        }
-      ],
-      "opening_door": "Door A (Experiment/Case)",
-      "historical_anchor": "George Sperling's 1960 Harvard tachistoscope partial-report trials, Francis Crick and Christof Koch's 1990 Seminars in the Neurosciences paper, and David Chalmers's and Ned Block's 1995 papers separating phenomenal experience from cognitive access.",
+      "title": "Mary's Room and the Hard Problem",
+      "subtitle": "Why Knowing Every Fact About Red Light Still Leaves Out What Seeing Red Feels Like",
       "formalism_mode": "ledger_or_list",
-      "exit_fact": "When George Sperling sounded a high, medium, or low tone within fifty milliseconds after a twelve-letter array vanished from his tachistoscope at Harvard University in 1960, observers accurately reported more than three of the four letters in whichever row the tone selected—proving that roughly nine to ten letters remained briefly available in visual sensory memory even though un-cued whole-report recall hit a strict ceiling of 4.5 letters."
+      "historical_anchor": "In 1974, philosopher Thomas Nagel asked what it is like to be a bat navigating by sonar, in 1982 Frank Jackson locked a hypothetical neuroscientist named Mary inside a black-and-white room to study color vision, and in 1994 David Chalmers stood up at a conference in Tucson, Arizona to separate the 'easy problems' of brain wiring from the 'hard problem' of why brain activity feels like anything at all.",
+      "exit_fact": "Even if a super-scientist memorized every wavelength of light, every retinal cone response, and every neurotransmitter in the visual cortex inside a black-and-white room, stepping outside to see a ripe red tomato for the first time teaches her a new truth: what red actually looks like from the inside."
     },
     {
       "chapter": 2,
-      "title": "Global Neuronal Workspace Ignition",
-      "subtitle": "Why a Fifty-Millisecond Word Triggers an All-or-None Prefrontal Broadcast",
-      "lens": "mechanism",
-      "verb": "zoom-in",
-      "what": "The cognitive and neurobiological architecture proposed by Bernard Baars and formalized by Stanislas Dehaene and Jean-Pierre Changeux, in which localized sensory processing remains unconscious until it crosses a non-linear threshold and ignites a reverberant fronto-parietal network that broadcasts information across the cortex.",
-      "why_here": "Zooms in on the primary circuit mechanism of access consciousness, explaining the sharp temporal boundary between subliminal retinal registration and reportable awareness.",
-      "background_nodes": [
-        {
-          "label": "Baars's Global Workspace Theater (1988)",
-          "what": "Bernard Baars's cognitive architecture comparing the brain to an ensemble of unconscious specialized processors that compete for access to a central workspace stage, from which the winning coalition is broadcast back to all processors.",
-          "whyHere": "Explained why conscious capacity is serial and limited to one coherent scene at a time while unconscious processing is massively parallel."
-        },
-        {
-          "label": "Subliminal Word Masking in Fusiform Cortex (Dehaene et al., 2001)",
-          "what": "Stanislas Dehaene and Lionel Naccache's Service Hospitalier Frédéric Joliot fMRI and ERP study showing that words flashed for twenty-nine milliseconds between visual pattern masks activate the left fusiform visual word-form area without conscious detection.",
-          "whyHere": "Proved that local feedforward activation of specialized visual cortex is insufficient for conscious awareness."
-        },
-        {
-          "label": "Non-Linear P3b Ignition at ~300 Milliseconds (Sergent & Dehaene, 2005)",
-          "what": "Claire Sergent and Stanislas Dehaene's demonstration that crossing a ~50-millisecond stimulus threshold triggers a bifurcation in long-range layer II/III pyramidal neurons linking prefrontal and parietal cortices, generating an all-or-none P3b voltage wave around 300 milliseconds.",
-          "whyHere": "Identified the physical signature of workspace broadcast in the human electroencephalogram."
-        }
-      ],
-      "opening_door": "Door A (Experiment/Case)",
-      "historical_anchor": "Bernard Baars's 1988 Global Workspace monograph, Stanislas Dehaene and Jean-Pierre Changeux's 1998–2001 Collège de France and Orsay fMRI/ERP masking studies, and Claire Sergent and Dehaene's 2005 bifurcation trials.",
+      "title": "One Skull, Two Minds",
+      "subtitle": "What Happens When Surgeons Cut the Bridge Between Left and Right Brains",
       "formalism_mode": "diagram",
-      "exit_fact": "In Stanislas Dehaene and Lionel Naccache's 2001 neuroimaging trials at Orsay, increasing a word's unmasked exposure from twenty-nine milliseconds to seventy-one milliseconds boosted metabolic blood-oxygen-level-dependent activity in the left fusiform gyrus twelvefold while igniting newly recruited prefrontal and parietal regions across more than twenty thousand cubic millimeters of cortex."
+      "historical_anchor": "Starting in 1962 at the California Institute of Technology, neurobiologist Roger Sperry and his graduate student Michael Gazzaniga tested patients like W.J. and P.S. whose corpus callosum—the bundle of 200 million nerve fibers connecting the left and right hemispheres—had been surgically cut to stop severe epileptic seizures.",
+      "exit_fact": "When Gazzaniga flashed a snow scene to the mute right brain of Patient P.S. and a chicken claw to his talking left brain, the boy's left hand pointed to a snow shovel while his right hand pointed to a chicken—and without missing a beat, his left brain invented the story that you need a shovel to clean out the chicken shed."
     },
     {
       "chapter": 3,
-      "title": "Integrated Information Theory",
-      "subtitle": "Why Sixty-Nine Billion Cerebellar Neurons Contribute Nothing to Subjective Sight",
-      "lens": "contrasts",
-      "verb": "contrast",
-      "what": "Giulio Tononi's mathematical framework proposing that consciousness is identical to the intrinsic cause-effect power of a physical system—quantified by $\\Phi$ (Phi)—which measures how much information a network generates as an integrated whole above and beyond its independent parts under a minimum information partition.",
-      "why_here": "Contrasts directly with functionalist workspace models by starting from phenomenological axioms to solve a major anatomical riddle: why the neuron-dense cerebellum is unconscious while the smaller thalamocortical system is conscious.",
-      "background_nodes": [
-        {
-          "label": "Herculano-Houzel's Cerebellar Neuron Count (2009)",
-          "what": "Suzana Herculano-Houzel's Federal University of Rio de Janeiro isotropic fractionator measurements proving that of the human brain's 86 billion neurons, roughly 69 billion reside in the cerebellum while only 16 billion sit in the cerebral cortex.",
-          "whyHere": "Destroyed the folk assumption that consciousness scales with raw neuron count."
-        },
-        {
-          "label": "Cerebellar Agenesis and Parallel Feedforward Microzones",
-          "what": "Clinical cases of complete cerebellar agenesis or resection where patients retain intact subjective visual, auditory, and emotional consciousness because cerebellar Purkinje microzones operate as independent parallel feedforward loops without lateral recurrent integration.",
-          "whyHere": "Provided the decisive anatomical test case separating high-neuron-count feedforward chains from recurrently integrated networks."
-        },
-        {
-          "label": "Tononi's Minimum Information Partition and $\\Phi$ (2004–2014)",
-          "what": "Giulio Tononi's University of Wisconsin formulation of integrated information $\\Phi$, measuring the informational distance between the unpartitioned network's cause-effect repertoire and the product of its parts across the weakest link (the Minimum Information Partition).",
-          "whyHere": "Formalized why slicing a feedforward chain or collection of isolated modules drives $\\Phi$ to zero."
-        }
-      ],
-      "opening_door": "Door B (Constraint/Paradox)",
-      "historical_anchor": "Giulio Tononi and Gerald Edelman's 1998 Science paper, Tononi's 2004 BMC Neuroscience Integrated Information Theory paper, Suzana Herculano-Houzel's 2009 isotropic fractionator brain counts, and Feng Yu's 2014 Brain clinical report on primary cerebellar agenesis.",
-      "formalism_mode": "equation",
-      "exit_fact": "When neurosurgeons at the General Hospital of Jinan Military Area Command scanned a female patient in 2014 who had walked and conversed for more than two decades despite mild gait ataxia, magnetic resonance imaging revealed an empty posterior cranial fossa filled with cerebrospinal fluid where all sixty-nine billion cerebellar neurons were congenitally absent, without diminishing her conscious perceptual life."
+      "title": "Seeing Without Knowing You See",
+      "subtitle": "Blindsight, Neglected Half-Worlds, and the Strange Split Between Doing and Feeling",
+      "formalism_mode": "ledger_or_list",
+      "historical_anchor": "In 1974 in Oxford, psychologist Lawrence Weiskrantz studied Patient D.B., a man whose primary visual cortex had been surgically removed on one side: although D.B. insisted he was completely blind in his left visual field, when asked to guess and point toward flashing lights in the dark, his hand pointed to the exact spot almost every time.",
+      "exit_fact": "In 2008, Beatrice de Gelder filmed a man known as Patient T.N., who was left completely blind in both eyes after two strokes destroyed his visual cortex—yet when researchers scattered chairs, boxes, and trash cans down a long hospital hallway, he walked from one end to the other weaving smoothly around every single obstacle without touching one."
     },
     {
       "chapter": 4,
-      "title": "Split-Brain Hemispheric Division",
-      "subtitle": "How Severing Two Hundred Million Axons Created Two Independent Streams of Awareness",
-      "lens": "cases",
-      "verb": "zoom-in",
-      "what": "The neuropsychological condition investigated by Roger Sperry and Michael Gazzaniga in commissurotomy patients whose corpus callosum was surgically severed to halt intractable epilepsy, isolating the verbal left hemisphere from the mute but visuospatially conscious right hemisphere.",
-      "why_here": "Examines the most dramatic surgical perturbation of human unity of consciousness, showing what happens when a single cortical workspace is physically bisected down the midline.",
-      "background_nodes": [
-        {
-          "label": "Vogel, Bogen, Sperry, and Gazzaniga's Patient W.J. (1962)",
-          "what": "The 1962 California Institute of Technology tachistoscope experiments on World War II veteran W.J., whose corpus callosum was cut by neurosurgeons Philip Vogel and Joseph Bogen, revealing that visual stimuli flashed to the left visual field could not be named aloud yet guided accurate left-hand motor responses.",
-          "whyHere": "Provided the first controlled laboratory proof that severing interhemispheric white matter splits perceptual access in two."
-        },
-        {
-          "label": "Contralateral Optic Chiasm Routing",
-          "what": "The anatomical decussation at the optic chiasm where nasal retinal fibers cross to the opposite hemisphere while temporal fibers stay ipsilateral, sending images in the left visual hemifield exclusively to the right visual cortex and vice versa when fixation is held within 150 milliseconds.",
-          "whyHere": "Allowed experimenters to interrogate each hemisphere independently without surgical electrodes."
-        },
-        {
-          "label": "Patient P.S. and the Left-Hemisphere Interpreter (Gazzaniga & LeDoux, 1978)",
-          "what": "Michael Gazzaniga and Joseph LeDoux's simultaneous chimeric picture test on patient P.S., where the left hemisphere saw a chicken claw and the right hemisphere saw a snow scene, prompting the verbal left hemisphere to confabulate that the left hand pointed to a snow shovel to clean out a chicken shed.",
-          "whyHere": "Exposed the left hemisphere's narrative interpreter, which seamlessly fabricates post-hoc reasons for actions initiated outside its conscious workspace."
-        }
-      ],
-      "opening_door": "Door A (Experiment/Case)",
-      "historical_anchor": "Roger Sperry, Michael Gazzaniga, Joseph Bogen, and Philip Vogel's 1962 Caltech commissurotomy studies on patient W.J., Gazzaniga and Joseph LeDoux's 1977–1978 studies of patient P.S., and Sperry's 1981 Nobel Prize in Physiology or Medicine.",
+      "title": "The Spotlight Versus the Web",
+      "subtitle": "Global Workspace, Integrated Information, and Why Sixty-Nine Billion Cerebellar Neurons Stay Dark",
       "formalism_mode": "diagram",
-      "exit_fact": "When Michael Gazzaniga and Joseph LeDoux flashed the command 'walk' exclusively to the left visual field of commissurotomy patient P.S. in 1977, his mute right hemisphere read the word and caused him to stand up and walk toward the testing-room door, whereupon his verbal left hemisphere—asked why he had risen—immediately claimed that he was going to get a cold drink."
+      "historical_anchor": "In 1988, psychologist Bernard Baars compared consciousness to a theater stage spotlight—later mapped in the brain by Stanislas Dehaene as the Global Neuronal Workspace—while in 2004 psychiatrist Giulio Tononi proposed Integrated Information Theory to explain why some brain structures generate rich awareness and others with even more neurons produce none.",
+      "exit_fact": "The human cerebellum at the back of the skull holds 69 billion neurons—more than four times the 16 billion neurons in the entire cerebral cortex—yet because its cells are wired in isolated, one-way parallel chains rather than interconnected loops, people born without a cerebellum still experience normal conscious awareness."
     },
     {
       "chapter": 5,
-      "title": "Blindsight and Cortical Unconscious Routing",
-      "subtitle": "How Subcortical Visual Pathways Guide the Hand After Primary Visual Cortex Dies",
-      "lens": "contrasts",
-      "verb": "contrast",
-      "what": "The neuropsychological dissociation discovered by Lawrence Weiskrantz in which destruction of the primary visual cortex (area V1) eliminates conscious visual experience across the contralateral visual field while sparing accurate forced-choice pointing, orientation discrimination, and emotional facial mimicry via subcortical retinotectal pathways.",
-      "why_here": "Contrasts conscious geniculostriate vision with unconscious sensorimotor and affective routing, proving that complex visual guidance of behavior can run in humans without a trace of phenomenal sight.",
-      "background_nodes": [
-        {
-          "label": "Weiskrantz and Patient D.B. at Queen Square (1974)",
-          "what": "Lawrence Weiskrantz and Elizabeth Warrington's National Hospital, Queen Square experiments on patient D.B., who following surgical removal of a right occipital arteriovenous malformation insisted he saw nothing in his left hemifield yet pointed to light flashes and discriminated grating orientations at over ninety percent accuracy.",
-          "whyHere": "Coined the term 'blindsight' and overturned the assumption that accurate visual action requires conscious perception."
-        },
-        {
-          "label": "Geniculostriate vs. Extrageniculate Retinotectal Pathways",
-          "what": "The anatomical split between the primary conscious pathway (retina to dorsal lateral geniculate nucleus to V1) and the secondary subcortical pathway (roughly ten percent of retinal ganglion axons projecting via the superior colliculus and pulvinar directly to dorsal parietal area MT/V5 and the amygdala).",
-          "whyHere": "Pinpointed why V1 destruction abolishes phenomenal sight while leaving dorsal-stream action and limbic threat detection intact."
-        },
-        {
-          "label": "De Gelder's Affective Blindsight in Patient G.Y. (1999)",
-          "what": "Beatrice de Gelder and Lawrence Weiskrantz's discovery that patient G.Y., blind in his right hemifield from a childhood V1 lesion, unconsciously mimicked fearful and happy faces presented in his blind field with rapid zygomaticus and corrugator muscle contractions alongside bilateral amygdala activation.",
-          "whyHere": "Extended blindsight from geometric pointing to unconscious emotional contagion."
-        }
-      ],
-      "opening_door": "Door C (Artifact/Measurement)",
-      "historical_anchor": "Lawrence Weiskrantz and Elizabeth Warrington's 1974 Brain paper on patient D.B. at the National Hospital in London, Weiskrantz's 1986 Oxford monograph Blindsight, and Beatrice de Gelder's 1999 PNAS affective blindsight study on patient G.Y.",
-      "formalism_mode": "ledger_or_list",
-      "exit_fact": "In Beatrice de Gelder's 1999 affective blindsight recordings on patient G.Y. at Tilburg University and Oxford, bipolar electromyography electrodes taped over his cheek and brow detected congruent smiling or frowning muscle contractions within 300 to 500 milliseconds after a happy or fearful face appeared inside his blind hemifield—faster than the voluntary facial responses elicited in his intact sighted field."
+      "title": "The Controlled Hallucination",
+      "subtitle": "Rubber Hands, Out-of-Body Switches, and How a Brain in a Dark Box Guesses the World",
+      "formalism_mode": "equation",
+      "historical_anchor": "In 1998 at the University of Pittsburgh, psychiatrists Matthew Botvinick and Jonathan Cohen hid a volunteer's real left hand behind a cardboard screen, placed a lifelike rubber hand on the table in front of them, and stroked both hands in sync with two small paintbrushes for sixty seconds—tricking the brain into feeling the brush strokes inside the lifeless rubber fingers.",
+      "exit_fact": "When neuroscientist Henrik Ehrsson stood behind volunteers wearing virtual-reality goggles fed by cameras behind their back and tapped their real chest while poking the empty air below the camera, volunteers felt themselves float out of their own bodies and flinched when a hammer swung at the empty air."
     },
     {
       "chapter": 6,
-      "title": "Binocular Rivalry and Bistable Perception",
-      "subtitle": "Where the Primate Visual Hierarchy Switches From Retinal Input to Subjective Percept",
-      "lens": "building-blocks",
-      "verb": "zoom-in",
-      "what": "The perceptual alternation triggered when two incompatible images are presented simultaneously to the left and right eyes, allowing neurophysiologists to hold physical retinal input constant while tracking which cortical areas follow the stimulus and which areas flip with the observer's conscious percept.",
-      "why_here": "Provides the classic experimental building block for isolating the Neural Correlates of Consciousness across the visual hierarchy from primary cortex V1 up to the inferior temporal lobe.",
-      "background_nodes": [
-        {
-          "label": "Wheatstone's Mirror Stereoscope (1838)",
-          "what": "Charles Wheatstone's King's College London optical apparatus using angled mirrors to present distinct images to each eye, discovering that orthogonal contours or different letters ('A' and 'S') compete for dominance rather than blending.",
-          "whyHere": "Created the foundational tool for decoupling constant physical stimulation from fluctuating conscious experience."
-        },
-        {
-          "label": "Logothetis's Single-Unit Macaque Hierarchy Recordings (1989–1997)",
-          "what": "Nikos Logothetis, Jeffrey Schall, David Leopold, and David Sheinberg's microelectrode recordings in rhesus macaques during binocular rivalry, showing that only ~18% of V1 neurons track the monkey's reported percept, compared with ~40% in V4/MT and ~90% in inferior temporal (IT) cortex.",
-          "whyHere": "Mapped the exact cortical gradient where neural firing stops mirroring raw retinal photons and starts mirroring subjective awareness."
-        },
-        {
-          "label": "Mutual Inhibition and Spike-Frequency Adaptation Dynamics",
-          "what": "The dynamical systems model of rivalry (Levelt 1965; Wilson 2003) where competing neuronal pools suppress each other via GABAergic cross-inhibition while slow calcium-dependent potassium currents ($I_{\\text{AHP}}$) fatigue the dominant pool until perception flips.",
-          "whyHere": "Explained the mathematical clockwork behind spontaneous perceptual switching."
-        }
-      ],
-      "opening_door": "Door A (Experiment/Case)",
-      "historical_anchor": "Charles Wheatstone's 1838 Royal Society stereoscope paper, Willem Levelt's 1965 rivalry laws, and Nikos Logothetis, David Leopold, and David Sheinberg's 1996–1997 Nature and PNAS single-unit recordings at Baylor College of Medicine and the Max Planck Institute for Biological Cybernetics.",
+      "title": "Turning the Light Off and On",
+      "subtitle": "Anesthesia, Locked-In Tennis Players, and the Secret Signal From Inside a Lucid Dream",
       "formalism_mode": "equation",
-      "exit_fact": "When David Sheinberg and Nikos Logothetis recorded from single neurons in the inferior temporal cortex and superior temporal sulcus of awake rhesus macaques at Baylor College of Medicine in 1997 during flash-suppression and binocular rivalry trials, ninety percent of responsive neurons fired vigorously when their preferred face or sunburst pattern dominated awareness and dropped to baseline firing rates the instant the rival image suppressed it, even though both images remained focused on the retinas."
+      "historical_anchor": "In 2006 at the University of Cambridge, neuroscientist Adrian Owen placed a young woman diagnosed as being in a vegetative state after a car crash inside an fMRI scanner and asked her to imagine playing tennis or walking through her house—and her brain lit up in the exact same pattern as healthy volunteers.",
+      "exit_fact": "In 1978 at Stanford University, sleep researcher Stephen LaBerge proved that lucid dreamers are truly conscious inside their dreams by agreeing on a secret eye-movement Morse code before bedtime—and then moving his eyes left-right-left-right on the lab recording chart while dreaming that he was flying."
     },
     {
       "chapter": 7,
-      "title": "Thalamocortical Loops and General Anesthesia",
-      "subtitle": "How Propofol Locks the Frontal Cortex and Thalamus Into a Ten-Hertz Cage",
-      "lens": "mechanism",
-      "verb": "zoom-in",
-      "what": "The neurophysiological mechanism discovered by Emery Brown and Nicholas Schiff showing that general anesthetics such as propofol extinguish consciousness not by turning off all cortical neurons, but by potentiating $\\text{GABA}_\\text{A}$ inhibition to trap the thalamus and frontal cortex inside a hypersynchronous 10-hertz alpha oscillation that blocks information transfer.",
-      "why_here": "Zooms in on the reversible pharmacological switch of human consciousness, demonstrating that excessive rhythmic synchrony is just as fatal to awareness as total neural silence.",
-      "background_nodes": [
-        {
-          "label": "Propofol $\\text{GABA}_\\text{A}$ Chloride Channel Potentiation",
-          "what": "The binding of propofol (2,6-diisopropylphenol) to post-synaptic $\\text{GABA}_\\text{A}$ receptors on cortical interneurons and the thalamic reticular nucleus, prolonging inhibitory chloride conductance decay times and hyperpolarizing thalamic relay cells.",
-          "whyHere": "Identifies the exact molecular trigger that shifts thalamocortical circuit dynamics from desynchronized waking to rhythmic lockstep."
-        },
-        {
-          "label": "Anteriorization and the 10-Hertz Thalamocortical Alpha Loop (Ching & Brown, 2010–2013)",
-          "what": "Emery Brown, Patrick Purdon, and Nancy Kopell's Massachusetts General Hospital high-density EEG and computational modeling showing that propofol-induced hyperpolarization activates thalamic T-type calcium currents ($I_T$), locking the thalamus and frontal cortex into a coherent 10 Hz rhythm ('anteriorization').",
-          "whyHere": "Explained the paradoxical emergence of loud, ordered frontal EEG waves at the exact moment a patient loses consciousness."
-        },
-        {
-          "label": "Slow-Wave Phase Fragmentation in Human Cortex (Lewis et al., 2012)",
-          "what": "Laura Lewis, Emery Brown, and Sydney Cash's intracranial microelectrode recordings in human epilepsy patients undergoing propofol induction, proving that local cortical neuronal spiking becomes trapped inside brief UP states of spatially fragmented slow oscillations (0.1–1 Hz).",
-          "whyHere": "Showed why cortical areas can still fire locally under anesthesia while failing to communicate across long-range networks."
-        }
-      ],
-      "opening_door": "Door B (Constraint/Paradox)",
-      "historical_anchor": "John Glen's 1977–1980 Imperial Chemical Industries discovery of propofol, Ching, Purdon, Brown, and Kopell's 2010 PNAS thalamocortical model, Laura Lewis and Emery Brown's 2012 PNAS human intracranial microelectrode recordings, and Purdon's 2013 PNAS EEG signature study at Massachusetts General Hospital.",
-      "formalism_mode": "equation",
-      "exit_fact": "When Laura Lewis, Emery Brown, and their colleagues at Massachusetts General Hospital recorded simultaneously from eighty-four single cortical neurons in human neurosurgical patients during propofol induction in 2012, the exact second the patients stopped responding to auditory clicks coincided with abrupt 0.5-hertz slow oscillations that silenced ninety-five percent of neuronal spiking during every DOWN phase and broke phase coherence between cortical sites separated by more than two centimeters."
+      "title": "The No-Self Experiment",
+      "subtitle": "King Milinda's Chariot, the Upanishadic Witness, and Ten Thousand Hours on a Meditation Cushion",
+      "formalism_mode": "ledger_or_list",
+      "historical_anchor": "In the first-century BCE Buddhist dialogue Milinda Panha, the sage Nagasena asked King Milinda whether a royal chariot is the wheels, the axle, the yoke, or the reins—demonstrating two millennia before modern neuroscience that what we call the 'self' is a shifting bundle of parts with no tiny driver sitting inside.",
+      "exit_fact": "When neuroscientist Richard Davidson and Antoine Lutz wired Tibetan Buddhist monks with more than 10,000 to 50,000 hours of meditation practice to 256 scalp sensors at the University of Wisconsin in 2004, the monks generated the highest-amplitude continuous gamma-wave synchrony ever recorded in healthy human brains while quieting the brain's wandering ego network."
     },
     {
       "chapter": 8,
-      "title": "Detecting Covert Awareness in Vegetative Patients",
-      "subtitle": "How Mental Tennis Inside an MRI Scanner Exposed Consciousness Without Movement",
-      "lens": "cases",
-      "verb": "zoom-in",
-      "what": "The clinical neuroimaging paradigm pioneered by Adrian Owen and Steven Laureys that uses functional MRI and EEG motor-imagery commands to detect willful, conscious brain modulation in behaviorally unresponsive patients—a condition now classified as Cognitive Motor Dissociation (CMD).",
-      "why_here": "Tests the clinical boundary between access and motor output, proving that intact human consciousness can survive inside a brain that has lost every muscular channel of speech, gesture, and eye movement.",
-      "background_nodes": [
-        {
-          "label": "Owen's Cambridge Mental Tennis and House-Navigation Study (2006)",
-          "what": "Adrian Owen and Steven Laureys's September 2006 Science report on a young traumatic brain injury patient diagnosed as vegetative for five months, whose supplementary motor area and parahippocampal gyrus lit up on 3-Tesla fMRI during 30-second blocks of imagined tennis and house walking.",
-          "whyHere": "Provided the first undeniable empirical proof of willful command-following in a clinically vegetative patient."
-        },
-        {
-          "label": "Yes/No Autobiographical Communication in 54 Patients (Monti et al., 2010)",
-          "what": "Martin Monti, Adrian Owen, and Steven Laureys's 2010 New England Journal of Medicine trial across 54 patients in Cambridge and Liège, where five patients modulated brain activity on command and one patient used tennis imagery for 'yes' and spatial navigation for 'no' to answer five of six autobiographical questions.",
-          "whyHere": "Converted fMRI imagery from a passive diagnostic sign into a two-way binary communication channel."
-        },
-        {
-          "label": "Cognitive Motor Dissociation Across 241 Patients (Schiff 2015; Bodien et al., 2024)",
-          "what": "Nicholas Schiff's classification of Cognitive Motor Dissociation and the 2024 six-center international NEJM study led by Yelena Bodien and Schiff showing that fully 25 percent of 241 behaviorally unresponsive brain-injured patients exhibited covert command-following on fMRI or EEG.",
-          "whyHere": "Revealed that covert consciousness is not an isolated medical curiosity but affects one in four behaviorally non-responsive ICU survivors."
-        }
-      ],
-      "opening_door": "Door A (Experiment/Case)",
-      "historical_anchor": "Adrian Owen and Steven Laureys's 2006 Science mental-imagery fMRI study in Cambridge, Martin Monti, Owen, and Laureys's 2010 NEJM study of 54 patients in Cambridge and Liège, Nicholas Schiff's 2015 Cognitive Motor Dissociation framework, and Yelena Bodien's 2024 NEJM six-center trial.",
-      "formalism_mode": "ledger_or_list",
-      "exit_fact": "In August 2024, when Yelena Bodien, Nicholas Schiff, Steven Laureys, Adrian Owen, and the Coma Recovery Consortium analyzed functional MRI and high-density EEG recordings from 241 behaviorally unresponsive brain-injured patients across six medical centers in the United States, the United Kingdom, and Europe, sixty patients—fully twenty-five percent of the cohort—reliably activated motor or spatial cortical networks on verbal command despite failing bedside behavioral subscales."
+      "title": "Dissolving the Border of Me",
+      "subtitle": "William James's Nitrous Oxide Notebook, Ego Dissolution, and the Overview Tank",
+      "formalism_mode": "equation",
+      "historical_anchor": "In 1882 at Harvard University, philosopher and psychologist William James inhaled nitrous oxide gas and wrote in his notebook that our normal waking consciousness is but one special type of consciousness, parted from completely different forms of awareness by the filmiest of screens.",
+      "exit_fact": "When neuroscientist Robin Carhart-Harris scanned volunteers given intravenous psilocybin at Imperial College London in 2012, the compound did not light the brain up like fireworks—instead, it sharply reduced blood flow and electrical chatter inside the Default Mode Network, the exact hub that maintains the boundary between 'me' and the rest of the world."
     },
     {
       "chapter": 9,
-      "title": "The Perturbational Complexity Index",
-      "subtitle": "How Magnetic Cortical Pulses and Lempel-Ziv Compression Measure the Capacity for Experience",
-      "lens": "consequences",
-      "verb": "go",
-      "what": "The clinical 'zap-and-zip' diagnostic developed by Marcello Massimini and Giulio Tononi, which perturbs the cerebral cortex with a transcranial magnetic stimulation (TMS) pulse, records the spatiotemporal high-density EEG response, and computes its Lempel-Ziv algorithmic compressibility ($\text{PCI}$) to determine whether a patient is conscious without requiring sensory input or motor cooperation.",
-      "why_here": "Translates the abstract mathematics of integrated information into a bedside clinical meter that separates dreaming, locked-in, and minimally conscious brains from deep sleep, anesthesia, and vegetative states.",
-      "background_nodes": [
-        {
-          "label": "Cortical Effective Connectivity Breakdown in Deep Sleep (Massimini et al., 2005)",
-          "what": "Marcello Massimini and Giulio Tononi's 2005 Science study showing that a TMS pulse in waking humans triggers complex waves propagating across cortical areas for 300 milliseconds, whereas in deep NREM sleep the evoked voltage remains trapped locally beneath the magnetic coil and dies out within 150 milliseconds.",
-          "whyHere": "Demonstrated that unconsciousness during sleep stems from a breakdown of long-range cortical effective connectivity rather than local neuronal silence."
-        },
-        {
-          "label": "Lempel-Ziv Spatiotemporal Compression ('Zap-and-Zip', Casali et al., 2013)",
-          "what": "Adenauer Casali, Steven Laureys, Giulio Tononi, and Marcello Massimini's 2013 Science Translational Medicine formulation of the Perturbational Complexity Index ($\\text{PCI}$), applying Lempel-Ziv compression to the binary matrix of significant cortical source activations evoked by TMS.",
-          "whyHere": "Unified the two failure modes of consciousness—loss of integration (fragmented local response) and loss of differentiation (stereotypical global wave)—into a single scalar metric."
-        },
-        {
-          "label": "The Empirical $\\text{PCI}^* = 0.31$ Cutoff (Casarotto et al., 2016)",
-          "what": "Silvia Casarotto and Marcello Massimini's 2016 Annals of Neurology benchmark across 150 conscious and unconscious controls, establishing the empirical threshold $\\text{PCI}^* = 0.31$ that achieved 100% sensitivity in distinguishing conscious wakefulness, REM dreaming, ketamine dreaming, and locked-in syndrome from propofol/xenon anesthesia and NREM sleep.",
-          "whyHere": "Validated an objective, calibration-free cutoff that detects covert consciousness even in patients who cannot perform fMRI mental-imagery tasks."
-        }
-      ],
-      "opening_door": "Door C (Artifact/Measurement)",
-      "historical_anchor": "Marcello Massimini and Giulio Tononi's 2005 University of Wisconsin TMS-EEG sleep study, Adenauer Casali, Steven Laureys, Tononi, and Massimini's 2013 Science Translational Medicine PCI paper, and Silvia Casarotto's 2016 Annals of Neurology validation in Milan and Liège.",
-      "formalism_mode": "equation",
-      "exit_fact": "When Silvia Casarotto, Marcello Massimini, and Steven Laureys applied the calibrated $\\text{PCI}^* = 0.31$ threshold to thirty-eight behaviorally unresponsive vegetative-state patients in Milan and Liège in 2016, nine of the thirty-eight patients generated high-complexity cortical echoes above 0.31—identifying a hidden subgroup whose brains retained the integrated-and-differentiated architecture of wakefulness despite total sensory and motor isolation."
+      "title": "Alien Minds on Earth",
+      "subtitle": "What It Feels Like to Be an Octopus With Nine Brains, a Half-Sleeping Dolphin, or a Playing Bee",
+      "formalism_mode": "ledger_or_list",
+      "historical_anchor": "Separated from humans by 600 million years of evolution since our last common ancestor—a flatworm with no brain at all—the common octopus independently evolved 500 million neurons, roughly matching a dog, but distributed two-thirds of those neurons out into its eight flexible arms rather than inside its head.",
+      "exit_fact": "In 2022 at Queen Mary University of London, sensory biologist Lars Chittka gave bumblebees a hallway lined with tiny colored wooden balls and found that the bees went out of their way to climb onto the balls and roll them around hundreds of times with zero sugar reward—satisfying every scientific criterion for animal play."
     },
     {
       "chapter": 10,
-      "title": "Predictive Processing and Controlled Hallucination",
-      "subtitle": "How Top-Down Cortical Priors and Precision Weighting Construct the Bodily Self",
-      "lens": "origins",
-      "verb": "zoom-out",
-      "what": "The computational framework rooted in Hermann von Helmholtz's unconscious inference and formalized by Karl Friston and Anil Seth, in which the brain acts as a hierarchical Bayesian prediction machine whose conscious contents are the top-down generative hypotheses that best suppress bottom-up sensory prediction errors.",
-      "why_here": "Zooms out to explain why perception is an active inside-out construction rather than a passive camera readout, accounting for perceptual illusions, interoceptive emotion, and the experience of owning a body.",
-      "background_nodes": [
-        {
-          "label": "Helmholtz's Unconscious Inference (1867)",
-          "what": "Hermann von Helmholtz's 1867 Handbuch der Physiologischen Optik argument that because ambiguous retinal signals cannot uniquely specify the three-dimensional world, visual perception is an automatic hypothesis-testing inference driven by prior knowledge.",
-          "whyHere": "Laid the historical foundation for treating conscious perception as probabilistic inference rather than passive feature detection."
-        },
-        {
-          "label": "Hierarchical Predictive Coding and Precision Weighting (Rao & Ballard 1999; Friston 2005–2010)",
-          "what": "The cortical circuit architecture where deep pyramidal cells send top-down predictions ($\\hat{s}$) to lower sensory areas while superficial pyramidal cells transmit only residual prediction errors ($\\varepsilon = s - \\hat{s}$) upward, scaled by synaptic gain representing sensory precision ($\\Pi = 1/\\sigma^2$).",
-          "whyHere": "Explained why anatomical feedback projections from higher to lower visual areas outnumber feedforward fibers by roughly ten to one."
-        },
-        {
-          "label": "The Rubber-Hand Illusion and Interoceptive Selfhood (Botvinick & Cohen 1998; Seth 2013)",
-          "what": "Matthew Botvinick and Jonathan Cohen's 1998 Nature demonstration that synchronous brushing of a visible rubber hand and a hidden real hand hijacks body ownership within seconds, extended by Anil Seth to show how interoceptive predictions of visceral states generate emotional feeling.",
-          "whyHere": "Proved that even the foundational feeling of 'this body is mine' is a malleable Bayesian posterior updated by multisensory precision."
-        }
-      ],
-      "opening_door": "Door A (Experiment/Case)",
-      "historical_anchor": "Hermann von Helmholtz's 1867 treatise on physiological optics, Matthew Botvinick and Jonathan Cohen's 1998 Nature rubber-hand illusion at Pittsburgh and Carnegie Mellon, Rajesh Rao and Dana Ballard's 1999 predictive coding model, and Karl Friston and Anil Seth's 2005–2013 precision-weighted inference frameworks.",
-      "formalism_mode": "equation",
-      "exit_fact": "In Matthew Botvinick and Jonathan Cohen's 1998 experiments at the University of Pittsburgh, ten minutes of synchronous brush strokes applied to a visible rubber left hand and the subject's hidden real hand caused subjects to misjudge the physical location of their own unseen index finger by up to six centimeters toward the rubber prosthesis, while asynchronous brushing produced zero illusion and zero proprioceptive drift."
+      "title": "The Voice and the Picture Inside Your Head",
+      "subtitle": "Stream of Consciousness, Mind-Blindness, and People With Zero Inner Monologue",
+      "formalism_mode": "ledger_or_list",
+      "historical_anchor": "In 1890, William James coined the phrase 'stream of consciousness' to replace the old idea that thoughts are separate links in a chain, inspiring novelists Dorothy Richardson, Virginia Woolf, and James Joyce to write entire books mirroring the associative leaps, memories, and half-finished sentences inside a single human day.",
+      "exit_fact": "In 2015, neurologist Adam Zeman coined the term 'aphantasia' after discovering that roughly two to four percent of healthy people have a completely dark mind's eye and cannot picture their own mother's face—while psychologist Russell Hurlburt's random beeper studies revealed that many people walk through daily life with zero inner voice talking in their head."
     },
     {
       "chapter": 11,
-      "title": "Higher-Order Metacognition and Prefrontal Monitoring",
-      "subtitle": "How Anterior Prefrontal Lesions Blind Introspection While Leaving Vision Intact",
-      "lens": "neighbors",
-      "verb": "go",
-      "what": "Higher-Order Thought (HOT) theories of consciousness—championed philosophically by David Rosenthal and neurobiologically by Hakwan Lau and Stephen Fleming—which argue that first-order sensory representations in posterior cortex remain unconscious unless monitored and re-represented by metacognitive circuits in the prefrontal cortex.",
-      "why_here": "Moves horizontally to the third major theoretical contender alongside Global Workspace and Integrated Information Theory, linking subjective visual awareness directly to the human capacity for metacognitive confidence.",
-      "background_nodes": [
-        {
-          "label": "Rosenthal's Higher-Order Thought Theory (1986–2005)",
-          "what": "David Rosenthal's City University of New York theory that a mental state is conscious if and only if the subject has a simultaneous, non-inferential higher-order representation asserting that they are in that first-order state.",
-          "whyHere": "Provided a clean conceptual bridge explaining why blindsight patients have accurate first-order visual states in dorsal cortex yet feel completely blind."
-        },
-        {
-          "label": "Matched-$d'$ Metacontrast Masking in Dorsolateral Prefrontal Cortex (Lau & Passingham, 2006)",
-          "what": "Hakwan Lau and Richard Passingham's 2006 Oxford fMRI experiment using two metacontrast masking intervals (33 ms vs 104 ms) where forced-choice shape discrimination accuracy ($d'$) was identical, yet subjective visibility ratings diverged alongside dorsolateral prefrontal cortex (BA 46) activity.",
-          "whyHere": "Controlled for the major confound in NCC research—performance accuracy—isolating pure subjective awareness in prefrontal cortex."
-        },
-        {
-          "label": "Anterior Prefrontal Lesions and the $meta\\text{-}d'/d'$ Ratio (Fleming et al., 2010–2014)",
-          "what": "Brian Maniscalco and Hakwan Lau's signal-detection metric $meta\\text{-}d'/d'$ and Stephen Fleming's 2010–2014 UCL and NYU studies proving that surgical lesions to the anterior prefrontal cortex (BA 10) selectively degrade perceptual confidence accuracy while leaving first-order visual discrimination $d'$ completely intact.",
-          "whyHere": "Demonstrated a double dissociation between seeing the world and knowing how well you see it."
-        }
-      ],
-      "opening_door": "Door B (Constraint/Paradox)",
-      "historical_anchor": "David Rosenthal's 1986–2005 Higher-Order Thought theory, Hakwan Lau and Richard Passingham's 2006 Oxford fMRI study, Brian Maniscalco and Lau's 2012 meta-d' formulation, and Stephen Fleming's 2010 Science and 2014 Brain anterior prefrontal lesion studies.",
-      "formalism_mode": "diagram",
-      "exit_fact": "When Stephen Fleming and his colleagues at New York University and University College London tested patients with surgical resections of the anterior prefrontal cortex (Brodmann area 10) in 2014, the patients discriminated two-patch visual contrast grids at the exact same seventy-one percent staircase accuracy as healthy controls and temporal-lobe patients, yet their perceptual metacognitive efficiency ratio ($meta\\text{-}d'/d'$) dropped by nearly forty percent."
+      "title": "Sparks in Matter or Tricks of the User Interface",
+      "subtitle": "Panpsychism, Illusionism, and the Boldest Philosophical Bets on Mind",
+      "formalism_mode": "ledger_or_list",
+      "historical_anchor": "In 1927, philosopher Bertrand Russell and astrophysicist Arthur Eddington pointed out a strange blind spot in physics: equations tell us only how matter behaves from the outside—how an electron pushes or pulls another charge—while telling us nothing about the intrinsic nature of matter from the inside, except in the one piece of matter we inhabit directly: our own brain.",
+      "exit_fact": "Contemporary philosophy of mind is split between two radical bets: panpsychists like Galen Strawson and Philip Goff argue that basic consciousness is a fundamental property of matter alongside mass and charge, while illusionists like Daniel Dennett and Keith Frankish argue that raw 'qualia' are a simplified desktop icon the brain paints for itself."
     },
     {
       "chapter": 12,
-      "title": "The Adversarial Testing of Rival Theories",
-      "subtitle": "What Happened When Global Workspace and Integrated Information Theory Faced the Same Data",
-      "lens": "open-questions",
-      "verb": "zoom-out",
-      "what": "The 2019–2025 Cogitate Consortium adversarial collaboration led by Lucia Melloni, Liad Mudrik, Michael Pitts, Giulio Tononi, Stanislas Dehaene, and Christof Koch, which tested pre-registered incompatible predictions of Global Neuronal Workspace Theory and Integrated Information Theory across 256 human subjects using fMRI, MEG, and intracranial electrodes.",
-      "why_here": "Closes the volume at the open empirical frontier of consciousness science, showing how adversarial pre-registration exposed the limits of both leading theories and resolved a 25-year wager between Christof Koch and David Chalmers.",
-      "background_nodes": [
-        {
-          "label": "Pre-Registered Rival Predictions: Prefrontal Offset Ignition vs. Posterior Hot-Zone Maintenance",
-          "what": "The signed 2019 adversarial protocol in which Dehaene predicted a transient prefrontal ignition burst at both stimulus onset and offset with category/orientation decoding in prefrontal cortex, while Tononi predicted sustained activity and inter-areal gamma/beta synchrony across the posterior visual hot zone for the full duration (0.5, 1.0, or 1.5 seconds) of the percept.",
-          "whyHere": "Prevented post-hoc rationalization by forcing rival theorists to specify beforehand exactly what data would falsify their models."
-        },
-        {
-          "label": "Three-Modality Results Across 256 Human Subjects (Cogitate Consortium, 2023–2025)",
-          "what": "The empirical results across 120 fMRI, 102 MEG, and 34 intracranial electrocorticography subjects showing that posterior cortex tracked stimulus duration and orientation (favoring IIT) but lacked sustained inter-areal posterior synchrony, while prefrontal cortex decoded category at onset (favoring GNWT) but missed orientation and failed to ignite at stimulus offset.",
-          "whyHere": "Demonstrated that neither theory captured the full neural dynamics of conscious maintenance and broadcast."
-        },
-        {
-          "label": "The 25-Year Koch-Chalmers Bergen/New York Wager (1998–2023)",
-          "what": "The June 1998 Bremen bet between neuroscientist Christof Koch (who wagered a case of fine wine that the neural correlates of consciousness would be clear by 2023) and philosopher David Chalmers, settled publicly at New York University in June 2023 when Koch conceded and handed Chalmers a case of 1978 Madeira.",
-          "whyHere": "Marked a historic milestone of intellectual honesty at the frontier of consciousness research."
-        }
-      ],
-      "opening_door": "Door A (Experiment/Case)",
-      "historical_anchor": "Christof Koch and David Chalmers's June 1998 Bremen wager, the 2019–2025 Cogitate Consortium adversarial collaboration across 256 human fMRI, MEG, and iEEG subjects led by Lucia Melloni, Liad Mudrik, and Michael Pitts, and the June 2023 ASSC public settlement in New York.",
-      "formalism_mode": "ledger_or_list",
-      "exit_fact": "At the twenty-sixth annual meeting of the Association for the Scientific Study of Consciousness at New York University in June 2023, immediately after the Cogitate Consortium presented its three-modality results showing that both Global Neuronal Workspace Theory and Integrated Information Theory failed key pre-registered predictions across 256 human subjects, Christof Koch walked onto the auditorium stage and handed David Chalmers a bottle of 1978 Portuguese Madeira wine to settle their twenty-five-year wager."
+      "title": "Ghosts in the Silicon",
+      "subtitle": "Alan Turing's Imitation Game, John Searle's Chinese Room, and How to Test Whether a Machine Feels",
+      "formalism_mode": "diagram",
+      "historical_anchor": "In 1950, mathematician Alan Turing proposed bypassing the question 'Can machines think?' with a practical text-messaging guessing game, and thirty years later in 1980, philosopher John Searle answered Turing by imagining himself locked inside a room with a giant English rulebook for matching Chinese characters without understanding a single word of Chinese.",
+      "exit_fact": "Even if an artificial neural network passes every conversational test by predicting the next word across trillions of parameters, modern consciousness theories warn that a one-way feedforward pipeline may act like the human cerebellum—performing brilliant calculations completely in the dark without an ounce of inner feeling."
     }
-  ],
-  "format": "landscape"
+  ]
 }

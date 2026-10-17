@@ -205,7 +205,7 @@ python3 tests/test_reader.py
 | 27 | **Materials** | *How Concrete, Steel, Glass, Paper, and Silicon Built Civilization* | Materials & Engineering | Mechanisms |
 | 28 | **Claude Shannon** | *The Juggler Who Turned Information Into Physics* | Biography & Information Theory | Biography |
 | 29 | **The Ocean** | *Twelve Marine Zones and Systems in Twelve Highlights Each* | Earth & Ocean Science | 12×12 Highlights |
-| 30 | **Consciousness** | *The Subjective Mind and Eleven Neighbors From Global Workspace to Split-Brain Patients* | Neuroscience & Philosophy | Landscape |
+| 30 | **Consciousness** | *Brains, Illusions, Meditation, Octopus Minds, and the Mystery of Inner Experience* | Neuroscience & Philosophy | Mechanisms |
 | 31 | **Emotions** | *Fear, Anger, Joy, Grief, Love, and Seven Other Everyday Feelings in Twelve Highlights Each* | Psychology & Behavior | 12×12 Highlights |
 | 32 | **Alan Turing** | *Computability, Codebreaking, and the Patterns of Living Form* | Biography & Computation | Biography |
 | 33 | **The Cell** | *Twelve Molecular Machines in Twelve Highlights Each* | Molecular Biology | 12×12 Highlights |

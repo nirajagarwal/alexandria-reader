@@ -5197,17 +5197,32 @@
       "slug": "consciousness",
       "file": "books/consciousness.md",
       "title": "Consciousness",
-      "subtitle": "The Subjective Mind and Eleven Neighbors From Global Workspace to Split-Brain Patients",
+      "subtitle": "Brains, Illusions, Meditation, Octopus Minds, and the Mystery of Inner Experience",
       "category": "Neuroscience & Philosophy",
-      "mode": "landscape",
-      "format": "landscape",
+      "mode": "facet",
+      "format": "mechanisms",
       "profile": "B: Biological, Neural & Affective Control Loops + F: The Contextual Landscape (Knowra Neighborhood Mapping)",
       "accent": "#7c3aed",
-      "bg": "#0f172a",
+      "bg": "#1e1b4b",
       "pdf": "assets/pdfs/consciousness.pdf",
       "compactPdf": "assets/pdfs/consciousness-compact.pdf",
       "mobilePdf": "assets/pdfs/consciousness-mobile.pdf",
       "sectionPages": [
+        3,
+        4,
+        7,
+        10,
+        12,
+        15,
+        18,
+        21,
+        24,
+        27,
+        29,
+        32,
+        35
+      ],
+      "compactSectionPages": [
         3,
         4,
         7,
@@ -5222,153 +5237,138 @@
         34,
         37
       ],
-      "compactSectionPages": [
+      "mobileSectionPages": [
         3,
         5,
         8,
         12,
         15,
-        19,
-        22,
-        25,
-        29,
-        32,
-        35,
-        38,
-        42
-      ],
-      "mobileSectionPages": [
-        3,
-        5,
-        9,
-        13,
-        17,
+        18,
         21,
-        25,
-        29,
+        24,
+        27,
+        30,
         33,
-        37,
-        41,
-        45,
-        49
+        36,
+        39
       ],
       "chapters": [
         {
           "label": "Introduction",
           "title": "Consciousness",
-          "subtitle": "Mapping Subjective Experience Through Its Surrounding Landscape",
+          "subtitle": "Why the Most Familiar Thing in the Universe Is Also the Hardest to Explain",
           "slug": "introduction",
           "formalismMode": "introduction",
-          "anchor": "Inside the human skull, eighty-six billion neurons exchange electrochemical action potentials across a hundred trillion synaptic clefts in total physical darkness. No light photons or acoustic pressure waves ever enter the cranial vault.",
-          "exitFact": "Even complete bedside paralysis can mask covert mental command-following inside functional neuroimaging scanners."
+          "anchor": "Right now, your brain is locked inside a pitch-black bone vault. Not a single beam of sunlight or sound wave ever reaches the tissue inside your skull.",
+          "exitFact": "Beyond the laboratory, philosophy, ancient meditation traditions, modern literature, strange animal brains, and artificial intelligence each ask a deeper question: what is the \"I\" sitting behind our eyes, and where else in the universe might the light be on?"
         },
         {
           "label": "Chapter 1",
-          "title": "Phenomenal Versus Access Consciousness",
-          "subtitle": "How Philosophy and Neurobiology Split Subjective Experience From Functional Report",
-          "slug": "phenomenal-versus-access-consciousness",
+          "title": "Mary's Room and the Hard Problem",
+          "subtitle": "Why Knowing Every Fact About Red Light Still Leaves Out What Seeing Red Feels Like",
+          "slug": "mary-s-room-and-the-hard-problem",
           "formalismMode": "ledger_or_list",
-          "anchor": "George Sperling's 1960 Harvard tachistoscope partial-report trials, Francis Crick and Christof Koch's 1990 Seminars in the Neurosciences paper, and David Chalmers's and Ned Block's 1995 papers separating phenomenal experience from cognitive access.",
-          "exitFact": "When George Sperling sounded a high, medium, or low tone within fifty milliseconds after a twelve-letter array vanished from his tachistoscope at Harvard University in 1960, observers accurately reported more than three of the four letters in whichever row the tone selected—proving that roughly nine to ten letters remained briefly available in visual sensory memory even though un-cued whole-report recall hit a strict ceiling of 4.5 letters."
+          "anchor": "In 1974, philosopher Thomas Nagel asked what it is like to be a bat navigating by sonar, in 1982 Frank Jackson locked a hypothetical neuroscientist named Mary inside a black-and-white room to study color vision, and in 1994 David Chalmers stood up at a conference in Tucson, Arizona to separate the 'easy problems' of brain wiring from the 'hard problem' of why brain activity feels like anything at all.",
+          "exitFact": "Even if a super-scientist memorized every wavelength of light, every retinal cone response, and every neurotransmitter in the visual cortex inside a black-and-white room, stepping outside to see a ripe red tomato for the first time teaches her a new truth: what red actually looks like from the inside."
         },
         {
           "label": "Chapter 2",
-          "title": "Global Neuronal Workspace Ignition",
-          "subtitle": "Why a Fifty-Millisecond Word Triggers an All-or-None Prefrontal Broadcast",
-          "slug": "global-neuronal-workspace-ignition",
+          "title": "One Skull, Two Minds",
+          "subtitle": "What Happens When Surgeons Cut the Bridge Between Left and Right Brains",
+          "slug": "one-skull-two-minds",
           "formalismMode": "diagram",
-          "anchor": "Bernard Baars's 1988 Global Workspace monograph, Stanislas Dehaene and Jean-Pierre Changeux's 1998–2001 Collège de France and Orsay fMRI/ERP masking studies, and Claire Sergent and Dehaene's 2005 bifurcation trials.",
-          "exitFact": "In Stanislas Dehaene and Lionel Naccache's 2001 neuroimaging trials at Orsay, increasing a word's unmasked exposure from twenty-nine milliseconds to seventy-one milliseconds boosted metabolic blood-oxygen-level-dependent activity in the left fusiform gyrus twelvefold while igniting newly recruited prefrontal and parietal regions across more than twenty thousand cubic millimeters of cortex."
+          "anchor": "Starting in 1962 at the California Institute of Technology, neurobiologist Roger Sperry and his graduate student Michael Gazzaniga tested patients like W.J. and P.S. whose corpus callosum—the bundle of 200 million nerve fibers connecting the left and right hemispheres—had been surgically cut to stop severe epileptic seizures.",
+          "exitFact": "When Gazzaniga flashed a snow scene to the mute right brain of Patient P.S. and a chicken claw to his talking left brain, the boy's left hand pointed to a snow shovel while his right hand pointed to a chicken—and without missing a beat, his left brain invented the story that you need a shovel to clean out the chicken shed."
         },
         {
           "label": "Chapter 3",
-          "title": "Integrated Information Theory",
-          "subtitle": "Why Sixty-Nine Billion Cerebellar Neurons Contribute Nothing to Subjective Sight",
-          "slug": "integrated-information-theory",
-          "formalismMode": "equation",
-          "anchor": "Giulio Tononi and Gerald Edelman's 1998 Science paper, Tononi's 2004 BMC Neuroscience Integrated Information Theory paper, Suzana Herculano-Houzel's 2009 isotropic fractionator brain counts, and Feng Yu's 2014 Brain clinical report on primary cerebellar agenesis.",
-          "exitFact": "When neurosurgeons at the General Hospital of Jinan Military Area Command scanned a female patient in 2014 who had walked and conversed for more than two decades despite mild gait ataxia, magnetic resonance imaging revealed an empty posterior cranial fossa filled with cerebrospinal fluid where all sixty-nine billion cerebellar neurons were congenitally absent, without diminishing her conscious perceptual life."
+          "title": "Seeing Without Knowing You See",
+          "subtitle": "Blindsight, Neglected Half-Worlds, and the Strange Split Between Doing and Feeling",
+          "slug": "seeing-without-knowing-you-see",
+          "formalismMode": "ledger_or_list",
+          "anchor": "In 1974 in Oxford, psychologist Lawrence Weiskrantz studied Patient D.B., a man whose primary visual cortex had been surgically removed on one side: although D.B. insisted he was completely blind in his left visual field, when asked to guess and point toward flashing lights in the dark, his hand pointed to the exact spot almost every time.",
+          "exitFact": "In 2008, Beatrice de Gelder filmed a man known as Patient T.N., who was left completely blind in both eyes after two strokes destroyed his visual cortex—yet when researchers scattered chairs, boxes, and trash cans down a long hospital hallway, he walked from one end to the other weaving smoothly around every single obstacle without touching one."
         },
         {
           "label": "Chapter 4",
-          "title": "Split-Brain Hemispheric Division",
-          "subtitle": "How Severing Two Hundred Million Axons Created Two Independent Streams of Awareness",
-          "slug": "split-brain-hemispheric-division",
+          "title": "The Spotlight Versus the Web",
+          "subtitle": "Global Workspace, Integrated Information, and Why Sixty-Nine Billion Cerebellar Neurons Stay Dark",
+          "slug": "the-spotlight-versus-the-web",
           "formalismMode": "diagram",
-          "anchor": "Roger Sperry, Michael Gazzaniga, Joseph Bogen, and Philip Vogel's 1962 Caltech commissurotomy studies on patient W.J., Gazzaniga and Joseph LeDoux's 1977–1978 studies of patient P.S., and Sperry's 1981 Nobel Prize in Physiology or Medicine.",
-          "exitFact": "When Michael Gazzaniga and Joseph LeDoux flashed the command 'walk' exclusively to the left visual field of commissurotomy patient P.S. in 1977, his mute right hemisphere read the word and caused him to stand up and walk toward the testing-room door, whereupon his verbal left hemisphere—asked why he had risen—immediately claimed that he was going to get a cold drink."
+          "anchor": "In 1988, psychologist Bernard Baars compared consciousness to a theater stage spotlight—later mapped in the brain by Stanislas Dehaene as the Global Neuronal Workspace—while in 2004 psychiatrist Giulio Tononi proposed Integrated Information Theory to explain why some brain structures generate rich awareness and others with even more neurons produce none.",
+          "exitFact": "The human cerebellum at the back of the skull holds 69 billion neurons—more than four times the 16 billion neurons in the entire cerebral cortex—yet because its cells are wired in isolated, one-way parallel chains rather than interconnected loops, people born without a cerebellum still experience normal conscious awareness."
         },
         {
           "label": "Chapter 5",
-          "title": "Blindsight and Cortical Unconscious Routing",
-          "subtitle": "How Subcortical Visual Pathways Guide the Hand After Primary Visual Cortex Dies",
-          "slug": "blindsight-and-cortical-unconscious-routing",
-          "formalismMode": "ledger_or_list",
-          "anchor": "Lawrence Weiskrantz and Elizabeth Warrington's 1974 Brain paper on patient D.B. at the National Hospital in London, Weiskrantz's 1986 Oxford monograph Blindsight, and Beatrice de Gelder's 1999 PNAS affective blindsight study on patient G.Y.",
-          "exitFact": "In Beatrice de Gelder's 1999 affective blindsight recordings on patient G.Y. at Tilburg University and Oxford, bipolar electromyography electrodes taped over his cheek and brow detected congruent smiling or frowning muscle contractions within 300 to 500 milliseconds after a happy or fearful face appeared inside his blind hemifield—faster than the voluntary facial responses elicited in his intact sighted field."
+          "title": "The Controlled Hallucination",
+          "subtitle": "Rubber Hands, Out-of-Body Switches, and How a Brain in a Dark Box Guesses the World",
+          "slug": "the-controlled-hallucination",
+          "formalismMode": "equation",
+          "anchor": "In 1998 at the University of Pittsburgh, psychiatrists Matthew Botvinick and Jonathan Cohen hid a volunteer's real left hand behind a cardboard screen, placed a lifelike rubber hand on the table in front of them, and stroked both hands in sync with two small paintbrushes for sixty seconds—tricking the brain into feeling the brush strokes inside the lifeless rubber fingers.",
+          "exitFact": "When neuroscientist Henrik Ehrsson stood behind volunteers wearing virtual-reality goggles fed by cameras behind their back and tapped their real chest while poking the empty air below the camera, volunteers felt themselves float out of their own bodies and flinched when a hammer swung at the empty air."
         },
         {
           "label": "Chapter 6",
-          "title": "Binocular Rivalry and Bistable Perception",
-          "subtitle": "Where the Primate Visual Hierarchy Switches From Retinal Input to Subjective Percept",
-          "slug": "binocular-rivalry-and-bistable-perception",
+          "title": "Turning the Light Off and On",
+          "subtitle": "Anesthesia, Locked-In Tennis Players, and the Secret Signal From Inside a Lucid Dream",
+          "slug": "turning-the-light-off-and-on",
           "formalismMode": "equation",
-          "anchor": "Charles Wheatstone's 1838 Royal Society stereoscope paper, Willem Levelt's 1965 rivalry laws, and Nikos Logothetis, David Leopold, and David Sheinberg's 1996–1997 Nature and PNAS single-unit recordings at Baylor College of Medicine and the Max Planck Institute for Biological Cybernetics.",
-          "exitFact": "When David Sheinberg and Nikos Logothetis recorded from single neurons in the inferior temporal cortex and superior temporal sulcus of awake rhesus macaques at Baylor College of Medicine in 1997 during flash-suppression and binocular rivalry trials, ninety percent of responsive neurons fired vigorously when their preferred face or sunburst pattern dominated awareness and dropped to baseline firing rates the instant the rival image suppressed it, even though both images remained focused on the retinas."
+          "anchor": "In 2006 at the University of Cambridge, neuroscientist Adrian Owen placed a young woman diagnosed as being in a vegetative state after a car crash inside an fMRI scanner and asked her to imagine playing tennis or walking through her house—and her brain lit up in the exact same pattern as healthy volunteers.",
+          "exitFact": "In 1978 at Stanford University, sleep researcher Stephen LaBerge proved that lucid dreamers are truly conscious inside their dreams by agreeing on a secret eye-movement Morse code before bedtime—and then moving his eyes left-right-left-right on the lab recording chart while dreaming that he was flying."
         },
         {
           "label": "Chapter 7",
-          "title": "Thalamocortical Loops and General Anesthesia",
-          "subtitle": "How Propofol Locks the Frontal Cortex and Thalamus Into a Ten-Hertz Cage",
-          "slug": "thalamocortical-loops-and-general-anesthesia",
-          "formalismMode": "equation",
-          "anchor": "John Glen's 1977–1980 Imperial Chemical Industries discovery of propofol, Ching, Purdon, Brown, and Kopell's 2010 PNAS thalamocortical model, Laura Lewis and Emery Brown's 2012 PNAS human intracranial microelectrode recordings, and Purdon's 2013 PNAS EEG signature study at Massachusetts General Hospital.",
-          "exitFact": "When Laura Lewis, Emery Brown, and their colleagues at Massachusetts General Hospital recorded simultaneously from eighty-four single cortical neurons in human neurosurgical patients during propofol induction in 2012, the exact second the patients stopped responding to auditory clicks coincided with abrupt 0.5-hertz slow oscillations that silenced ninety-five percent of neuronal spiking during every DOWN phase and broke phase coherence between cortical sites separated by more than two centimeters."
+          "title": "The No-Self Experiment",
+          "subtitle": "King Milinda's Chariot, the Upanishadic Witness, and Ten Thousand Hours on a Meditation Cushion",
+          "slug": "the-no-self-experiment",
+          "formalismMode": "ledger_or_list",
+          "anchor": "In the first-century BCE Buddhist dialogue Milinda Panha, the sage Nagasena asked King Milinda whether a royal chariot is the wheels, the axle, the yoke, or the reins—demonstrating two millennia before modern neuroscience that what we call the 'self' is a shifting bundle of parts with no tiny driver sitting inside.",
+          "exitFact": "When neuroscientist Richard Davidson and Antoine Lutz wired Tibetan Buddhist monks with more than 10,000 to 50,000 hours of meditation practice to 256 scalp sensors at the University of Wisconsin in 2004, the monks generated the highest-amplitude continuous gamma-wave synchrony ever recorded in healthy human brains while quieting the brain's wandering ego network."
         },
         {
           "label": "Chapter 8",
-          "title": "Detecting Covert Awareness in Vegetative Patients",
-          "subtitle": "How Mental Tennis Inside an MRI Scanner Exposed Consciousness Without Movement",
-          "slug": "detecting-covert-awareness-in-vegetative-patients",
-          "formalismMode": "ledger_or_list",
-          "anchor": "Adrian Owen and Steven Laureys's 2006 Science mental-imagery fMRI study in Cambridge, Martin Monti, Owen, and Laureys's 2010 NEJM study of 54 patients in Cambridge and Liège, Nicholas Schiff's 2015 Cognitive Motor Dissociation framework, and Yelena Bodien's 2024 NEJM six-center trial.",
-          "exitFact": "In August 2024, when Yelena Bodien, Nicholas Schiff, Steven Laureys, Adrian Owen, and the Coma Recovery Consortium analyzed functional MRI and high-density EEG recordings from 241 behaviorally unresponsive brain-injured patients across six medical centers in the United States, the United Kingdom, and Europe, sixty patients—fully twenty-five percent of the cohort—reliably activated motor or spatial cortical networks on verbal command despite failing bedside behavioral subscales."
+          "title": "Dissolving the Border of Me",
+          "subtitle": "William James's Nitrous Oxide Notebook, Ego Dissolution, and the Overview Tank",
+          "slug": "dissolving-the-border-of-me",
+          "formalismMode": "equation",
+          "anchor": "In 1882 at Harvard University, philosopher and psychologist William James inhaled nitrous oxide gas and wrote in his notebook that our normal waking consciousness is but one special type of consciousness, parted from completely different forms of awareness by the filmiest of screens.",
+          "exitFact": "When neuroscientist Robin Carhart-Harris scanned volunteers given intravenous psilocybin at Imperial College London in 2012, the compound did not light the brain up like fireworks—instead, it sharply reduced blood flow and electrical chatter inside the Default Mode Network, the exact hub that maintains the boundary between 'me' and the rest of the world."
         },
         {
           "label": "Chapter 9",
-          "title": "The Perturbational Complexity Index",
-          "subtitle": "How Magnetic Cortical Pulses and Lempel-Ziv Compression Measure the Capacity for Experience",
-          "slug": "the-perturbational-complexity-index",
-          "formalismMode": "equation",
-          "anchor": "Marcello Massimini and Giulio Tononi's 2005 University of Wisconsin TMS-EEG sleep study, Adenauer Casali, Steven Laureys, Tononi, and Massimini's 2013 Science Translational Medicine PCI paper, and Silvia Casarotto's 2016 Annals of Neurology validation in Milan and Liège.",
-          "exitFact": "When Silvia Casarotto, Marcello Massimini, and Steven Laureys applied the calibrated $\\text{PCI}^* = 0.31$ threshold to thirty-eight behaviorally unresponsive vegetative-state patients in Milan and Liège in 2016, nine of the thirty-eight patients generated high-complexity cortical echoes above 0.31—identifying a hidden subgroup whose brains retained the integrated-and-differentiated architecture of wakefulness despite total sensory and motor isolation."
+          "title": "Alien Minds on Earth",
+          "subtitle": "What It Feels Like to Be an Octopus With Nine Brains, a Half-Sleeping Dolphin, or a Playing Bee",
+          "slug": "alien-minds-on-earth",
+          "formalismMode": "ledger_or_list",
+          "anchor": "Separated from humans by 600 million years of evolution since our last common ancestor—a flatworm with no brain at all—the common octopus independently evolved 500 million neurons, roughly matching a dog, but distributed two-thirds of those neurons out into its eight flexible arms rather than inside its head.",
+          "exitFact": "In 2022 at Queen Mary University of London, sensory biologist Lars Chittka gave bumblebees a hallway lined with tiny colored wooden balls and found that the bees went out of their way to climb onto the balls and roll them around hundreds of times with zero sugar reward—satisfying every scientific criterion for animal play."
         },
         {
           "label": "Chapter 10",
-          "title": "Predictive Processing and Controlled Hallucination",
-          "subtitle": "How Top-Down Cortical Priors and Precision Weighting Construct the Bodily Self",
-          "slug": "predictive-processing-and-controlled-hallucination",
-          "formalismMode": "equation",
-          "anchor": "Hermann von Helmholtz's 1867 treatise on physiological optics, Matthew Botvinick and Jonathan Cohen's 1998 Nature rubber-hand illusion at Pittsburgh and Carnegie Mellon, Rajesh Rao and Dana Ballard's 1999 predictive coding model, and Karl Friston and Anil Seth's 2005–2013 precision-weighted inference frameworks.",
-          "exitFact": "In Matthew Botvinick and Jonathan Cohen's 1998 experiments at the University of Pittsburgh, ten minutes of synchronous brush strokes applied to a visible rubber left hand and the subject's hidden real hand caused subjects to misjudge the physical location of their own unseen index finger by up to six centimeters toward the rubber prosthesis, while asynchronous brushing produced zero illusion and zero proprioceptive drift."
+          "title": "The Voice and the Picture Inside Your Head",
+          "subtitle": "Stream of Consciousness, Mind-Blindness, and People With Zero Inner Monologue",
+          "slug": "the-voice-and-the-picture-inside-your-head",
+          "formalismMode": "ledger_or_list",
+          "anchor": "In 1890, William James coined the phrase 'stream of consciousness' to replace the old idea that thoughts are separate links in a chain, inspiring novelists Dorothy Richardson, Virginia Woolf, and James Joyce to write entire books mirroring the associative leaps, memories, and half-finished sentences inside a single human day.",
+          "exitFact": "In 2015, neurologist Adam Zeman coined the term 'aphantasia' after discovering that roughly two to four percent of healthy people have a completely dark mind's eye and cannot picture their own mother's face—while psychologist Russell Hurlburt's random beeper studies revealed that many people walk through daily life with zero inner voice talking in their head."
         },
         {
           "label": "Chapter 11",
-          "title": "Higher-Order Metacognition and Prefrontal Monitoring",
-          "subtitle": "How Anterior Prefrontal Lesions Blind Introspection While Leaving Vision Intact",
-          "slug": "higher-order-metacognition-and-prefrontal-monitoring",
-          "formalismMode": "diagram",
-          "anchor": "David Rosenthal's 1986–2005 Higher-Order Thought theory, Hakwan Lau and Richard Passingham's 2006 Oxford fMRI study, Brian Maniscalco and Lau's 2012 meta-d' formulation, and Stephen Fleming's 2010 Science and 2014 Brain anterior prefrontal lesion studies.",
-          "exitFact": "When Stephen Fleming and his colleagues at New York University and University College London tested patients with surgical resections of the anterior prefrontal cortex (Brodmann area 10) in 2014, the patients discriminated two-patch visual contrast grids at the exact same seventy-one percent staircase accuracy as healthy controls and temporal-lobe patients, yet their perceptual metacognitive efficiency ratio ($meta\\text{-}d'/d'$) dropped by nearly forty percent."
+          "title": "Sparks in Matter or Tricks of the User Interface",
+          "subtitle": "Panpsychism, Illusionism, and the Boldest Philosophical Bets on Mind",
+          "slug": "sparks-in-matter-or-tricks-of-the-user-interface",
+          "formalismMode": "ledger_or_list",
+          "anchor": "In 1927, philosopher Bertrand Russell and astrophysicist Arthur Eddington pointed out a strange blind spot in physics: equations tell us only how matter behaves from the outside—how an electron pushes or pulls another charge—while telling us nothing about the intrinsic nature of matter from the inside, except in the one piece of matter we inhabit directly: our own brain.",
+          "exitFact": "Contemporary philosophy of mind is split between two radical bets: panpsychists like Galen Strawson and Philip Goff argue that basic consciousness is a fundamental property of matter alongside mass and charge, while illusionists like Daniel Dennett and Keith Frankish argue that raw 'qualia' are a simplified desktop icon the brain paints for itself."
         },
         {
           "label": "Chapter 12",
-          "title": "The Adversarial Testing of Rival Theories",
-          "subtitle": "What Happened When Global Workspace and Integrated Information Theory Faced the Same Data",
-          "slug": "the-adversarial-testing-of-rival-theories",
-          "formalismMode": "ledger_or_list",
-          "anchor": "Christof Koch and David Chalmers's June 1998 Bremen wager, the 2019–2025 Cogitate Consortium adversarial collaboration across 256 human fMRI, MEG, and iEEG subjects led by Lucia Melloni, Liad Mudrik, and Michael Pitts, and the June 2023 ASSC public settlement in New York.",
-          "exitFact": "At the twenty-sixth annual meeting of the Association for the Scientific Study of Consciousness at New York University in June 2023, immediately after the Cogitate Consortium presented its three-modality results showing that both Global Neuronal Workspace Theory and Integrated Information Theory failed key pre-registered predictions across 256 human subjects, Christof Koch walked onto the auditorium stage and handed David Chalmers a bottle of 1978 Portuguese Madeira wine to settle their twenty-five-year wager."
+          "title": "Ghosts in the Silicon",
+          "subtitle": "Alan Turing's Imitation Game, John Searle's Chinese Room, and How to Test Whether a Machine Feels",
+          "slug": "ghosts-in-the-silicon",
+          "formalismMode": "diagram",
+          "anchor": "In 1950, mathematician Alan Turing proposed bypassing the question 'Can machines think?' with a practical text-messaging guessing game, and thirty years later in 1980, philosopher John Searle answered Turing by imagining himself locked inside a room with a giant English rulebook for matching Chinese characters without understanding a single word of Chinese.",
+          "exitFact": "Even if an artificial neural network passes every conversational test by predicting the next word across trillions of parameters, modern consciousness theories warn that a one-way feedforward pipeline may act like the human cerebellum—performing brilliant calculations completely in the dark without an ounce of inner feeling."
         }
       ]
     },
