@@ -93,7 +93,7 @@ When generating or regenerating a book, select the profile that matches its doma
   - When the breakthrough was mathematical, physical, or astronomical (Eratosthenes, Archimedes, Kepler, Grothendieck, Shannon, Noether), show the authentic geometric or mathematical derivation.
   - When the breakthrough was medical, biological, philological, or philosophical (James Lind's scurvy trial, Ignaz Semmelweis's Vienna maternity clinics, William James's stream of thought or pragmatist maxim, Lorenzo Valla's philological exposure of the Donation of Constantine), show the exact experimental protocol, schematic diagram, or primary textual comparison—**do not invent fake equations for non-mathematical discoveries**.
 
-### Profile E: The Prospected Fleuron Listicle (`mode: "listicle"`)
+### Profile E: The Prospected Dinkus Listicle (`mode: "listicle"`)
 *Applies when narrative is not the right fit and the reader wants 12 dynamite, perpendicular highlights per chapter (e.g., `The Human Body`, where Chapter 1 is 12 dynamite facts about the Heart).*
 - **Prospecting Engine (`topic-prospector` + Domain Knowledge)**:
   - Before writing each chapter, run a **Topic Prospector** pass on that chapter's subject to mine perpendicular, cross-disciplinary seeds—insights that violate expectations, reveal hidden mechanics, dissolve categories, and lean into concrete numbers, measurements, or named studies.
@@ -101,7 +101,7 @@ When generating or regenerating a book, select the profile that matches its doma
 - **Typographic Structure (12 Paragraphs Separated by `❦`)**:
   - Do **not** use numbered lists (`1.`, `2.`) or bullet points for the 12 items.
   - Write **12 standalone paragraphs** per chapter (~45–55 words per paragraph; ~550–700 words total per chapter).
-  - Separate each of the 12 paragraphs with a standalone centered **fleuron (`❦`)** on its own line (`11` fleurons per chapter between the `12` paragraphs).
+  - Separate each of the 12 paragraphs with a standalone centered **dinkus (`* * *`)** on its own line (`11` fleurons per chapter between the `12` paragraphs).
   - Every paragraph must open directly with the substance (never throat-clearing) and pack a concrete number, physical ratio, or surprising mechanism.
 
 ### Profile F: The Contextual Landscape (`mode: "landscape"`, from `knowra.com`)

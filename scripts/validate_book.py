@@ -385,8 +385,9 @@ def validate_book(
             errors.extend(validate_svg_diagram(svg_b.strip(), f"{filename}:{expected_label}"))
 
         body_no_code = re.sub(r"```[\s\S]*?```", "", body)
-        # Exclude standalone fleuron separators from word count
-        body_words = len([w for w in body_no_code.split() if w not in ("❦", "☙", "⁂", "✦")])
+        # Exclude standalone dinkus separators from word count
+        body_no_sep = re.sub(r"(?m)^\s*(?:\*\s*\*\s*\*|[❦☙⁂✦])\s*$", "", body_no_code)
+        body_words = len(body_no_sep.split())
 
         if idx == 0:
             # Introduction word count & no-chapter-summary check (~250 words target)
@@ -407,14 +408,14 @@ def validate_book(
                 )
 
             if book_mode == "listicle":
-                fleuron_count = len(re.findall(r"(?m)^\s*[❦☙⁂✦]\s*$", body_no_code))
-                if fleuron_count != 11:
+                dinkus_count = len(re.findall(r"(?m)^\s*\*\s*\*\s*\*\s*$", body_no_code))
+                if dinkus_count != 11:
                     errors.append(
-                        f"Chapter {idx} ('{h2[2:]}') in listicle mode must have 12 single-paragraph items separated by 11 standalone fleuron ('❦') lines (found {fleuron_count} fleurons)."
+                        f"Chapter {idx} ('{h2[2:]}') in listicle mode must have 12 single-paragraph items separated by 11 standalone dinkus ('* * *') lines (found {dinkus_count} dinkus lines)."
                     )
                 if re.search(r"(?m)^\s*\d+\.\s+", body_no_code):
                     errors.append(
-                        f"Chapter {idx} ('{h2[2:]}') in listicle mode must NOT use numbered lists ('1. ', '2. ')—use 12 paragraphs separated by standalone fleuron ('❦') lines."
+                        f"Chapter {idx} ('{h2[2:]}') in listicle mode must NOT use numbered lists ('1. ', '2. ')—use 12 paragraphs separated by standalone dinkus ('* * *') lines."
                     )
             else:
                 # Concrete grounding check (must have a 3-4 digit year or BCE/CE date)
@@ -434,7 +435,7 @@ def validate_book(
                 )
 
             # Check opening sentence cadence
-            paragraphs = [p.strip() for p in re.split(r"\n\s*\n", body_no_code) if p.strip() and p.strip() not in ("❦", "☙", "⁂", "✦")]
+            paragraphs = [p.strip() for p in re.split(r"\n\s*\n", body_no_sep) if p.strip()]
             first_para = paragraphs[0] if paragraphs else ""
             if re.match(r"^(In|On|At)\s+(January|February|March|April|May|June|July|August|September|October|November|December|the\s+(?:morning|afternoon|evening|night|spring|summer|autumn|winter|early|late)|\d{4}|\d{1,2}:\d{2})", first_para):
                 date_open_count += 1
