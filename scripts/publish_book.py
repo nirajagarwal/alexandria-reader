@@ -212,8 +212,28 @@ def _derive_cover_stops(bg: str, accent: str):
     return top_pastel, mid_pastel, edge_pastel
 
 
+THUMBS_DIR = os.path.join(COVERS_DIR, "thumbs")
+
+
+def build_thumb_svg_from_cover(cover_svg: str, slug: str) -> str:
+    """Extract the pastel background and geometric emblem (without cover text) into a 1:1 square thumbnail SVG."""
+    defs_m = re.search(r"<defs>[\s\S]*?</defs>", cover_svg)
+    emblem_m = re.search(r'<g class="emblem-[^"]*"[\s\S]*?</g>', cover_svg)
+    defs_block = defs_m.group(0) if defs_m else ""
+    emblem_block = emblem_m.group(0) if emblem_m else ""
+    return (
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="260 650 1080 1080" width="100%" height="100%">\n'
+        f"  {defs_block}\n"
+        f'  <rect x="260" y="650" width="1080" height="1080" fill="url(#bg-{slug})"/>\n'
+        f'  <rect x="260" y="650" width="1080" height="1080" fill="url(#halo-{slug})"/>\n'
+        f"  {emblem_block}\n"
+        f"</svg>"
+    )
+
+
 def sync_covers_data():
-    """Rebuild js/covers-data.js from assets/covers/*.svg so inline cover SVGs stay in sync."""
+    """Rebuild assets/covers/thumbs/*.svg and js/covers-data.js (emblem-only square thumbnails for Home cards)."""
+    os.makedirs(THUMBS_DIR, exist_ok=True)
     covers_js_path = os.path.join(BASE_DIR, "js", "covers-data.js")
     covers = {}
     for fname in sorted(os.listdir(COVERS_DIR)):
@@ -221,9 +241,11 @@ def sync_covers_data():
             continue
         slug = fname[:-4]
         svg_text = open(os.path.join(COVERS_DIR, fname), encoding="utf-8").read().strip()
-        covers[slug] = svg_text
+        thumb_svg = build_thumb_svg_from_cover(svg_text, slug)
+        open(os.path.join(THUMBS_DIR, fname), "w", encoding="utf-8").write(thumb_svg)
+        covers[slug] = thumb_svg
     js_out = (
-        "// Alexandria Press - Inlined Vector SVG Covers\n"
+        "// Alexandria Press - Inlined Vector SVG Thumbnails (Home Catalog Cards)\n"
         "(function(root) {\n"
         "  const covers = " + json.dumps(covers, indent=2, ensure_ascii=False) + ";\n"
         '  if (typeof window !== "undefined") window.EMBEDDED_COVER_SVGS = covers;\n'
@@ -234,11 +256,11 @@ def sync_covers_data():
 
 
 def _wrap_title_svg(title: str):
-    """Wrap titles >20 chars into 2 balanced lines with +2px (138 SVG units) vertical spacing."""
+    """Wrap PDF cover titles >20 chars into 2 balanced lines with clean PDF-cover proportions."""
     text = title.strip()
     words = text.split()
     if len(text) <= 20 or len(words) <= 1:
-        return 102, 365, html.escape(text)
+        return 88, 380, html.escape(text)
     best_idx = 1
     best_max = 9999
     for i in range(1, len(words)):
@@ -250,19 +272,19 @@ def _wrap_title_svg(title: str):
             best_idx = i
     line1 = html.escape(" ".join(words[:best_idx]))
     line2 = html.escape(" ".join(words[best_idx:]))
-    dy = 138
+    dy = 116
     inner = f'<tspan x="800" dy="0">{line1}</tspan><tspan x="800" dy="{dy}">{line2}</tspan>'
-    return 102, 320, inner
+    return 88, 332, inner
 
 
 def _wrap_subtitle_svg(subtitle: str):
-    """Split subtitle into 2 or 3 balanced lines in the bottom zone (y_center=2015) and return (font_size, y_start, inner_svg)."""
+    """Split PDF cover subtitle into 1, 2, or 3 balanced lines in the bottom zone (y_center=1985) without horizontal distortion."""
     text = subtitle.strip()
     words = text.split()
-    if len(text) <= 24 or len(words) <= 3:
-        return 78, 2015, html.escape(text)
+    if len(text) <= 28 or len(words) <= 3:
+        return 54, 1985, html.escape(text)
 
-    if len(text) <= 46:
+    if len(text) <= 54:
         # 2 balanced lines
         best_idx = 1
         best_max = 9999
@@ -275,13 +297,13 @@ def _wrap_subtitle_svg(subtitle: str):
                 best_idx = i
         line1 = html.escape(" ".join(words[:best_idx]))
         line2 = html.escape(" ".join(words[best_idx:]))
-        sub_font_size = 78
-        dy = 122
-        y_start = 2015 - dy // 2
+        sub_font_size = 54
+        dy = 82
+        y_start = 1985 - dy // 2
         inner = f'<tspan x="800" dy="0">{line1}</tspan><tspan x="800" dy="{dy}">{line2}</tspan>'
         return sub_font_size, y_start, inner
 
-    # 3 balanced lines for subtitles > 46 chars
+    # 3 balanced lines for subtitles > 54 chars
     best_pair = (1, 2)
     best_max = 9999
     n = len(words)
@@ -298,15 +320,47 @@ def _wrap_subtitle_svg(subtitle: str):
     line1 = html.escape(" ".join(words[:i]))
     line2 = html.escape(" ".join(words[i:j]))
     line3 = html.escape(" ".join(words[j:]))
-    sub_font_size = 74 if best_max <= 27 else 70
-    dy = 115 if sub_font_size == 74 else 109
-    y_start = 2015 - dy
+    sub_font_size = 50 if best_max <= 30 else 47
+    dy = 76 if sub_font_size == 50 else 72
+    y_start = 1985 - dy
     inner = (
         f'<tspan x="800" dy="0">{line1}</tspan>'
         f'<tspan x="800" dy="{dy}">{line2}</tspan>'
         f'<tspan x="800" dy="{dy}">{line3}</tspan>'
     )
     return sub_font_size, y_start, inner
+
+
+def refresh_existing_pdf_cover_typography(slug: str, title: str, subtitle: str):
+    """Update title and subtitle blocks in an existing assets/covers/<slug>.svg for optimal PDF cover proportions while preserving its bespoke emblem."""
+    cover_path = os.path.join(COVERS_DIR, f"{slug}.svg")
+    if not os.path.exists(cover_path):
+        return False
+    svg = open(cover_path, encoding="utf-8").read()
+    text_blocks = list(re.finditer(r'<g text-anchor="middle"[^>]*>\s*<text[^>]*fill="([^"]+)"[^>]*>[\s\S]*?</text>\s*</g>', svg))
+    if len(text_blocks) < 2:
+        return False
+    title_color = text_blocks[0].group(1)
+    subtitle_color = text_blocks[-1].group(1)
+    title_font_size, title_y, title_inner = _wrap_title_svg(title)
+    sub_font_size, sub_y, sub_inner = _wrap_subtitle_svg(subtitle)
+    new_title_g = (
+        f'<g text-anchor="middle">\n'
+        f'    <text x="800" y="{title_y}" font-family="\'Literata\', Georgia, serif" font-size="{title_font_size}" font-weight="700" letter-spacing="-0.01em" fill="{title_color}">{title_inner}</text>\n'
+        f"  </g>"
+    )
+    new_sub_g = (
+        f'<g text-anchor="middle">\n'
+        f'    <text x="800" y="{sub_y}" font-family="\'Literata\', Georgia, serif" font-size="{sub_font_size}" font-weight="400" letter-spacing="0.01em" fill="{subtitle_color}">{sub_inner}</text>\n'
+        f"  </g>"
+    )
+    # Replace last block first so indices stay valid
+    s2, e2 = text_blocks[-1].span()
+    svg = svg[:s2] + new_sub_g + svg[e2:]
+    s1, e1 = text_blocks[0].span()
+    svg = svg[:s1] + new_title_g + svg[e1:]
+    open(cover_path, "w", encoding="utf-8").write(svg)
+    return True
 
 
 def generate_cover_svg(slug: str, title: str, subtitle: str, category: str, accent: str, bg: str, theme: str):
@@ -343,7 +397,7 @@ def generate_cover_svg(slug: str, title: str, subtitle: str, category: str, acce
 
   {emblem}
 
-  <g text-anchor="middle" transform="translate(800, 0) scale(0.87, 1) translate(-800, 0)">
+  <g text-anchor="middle">
     <text x="800" y="{sub_y}" font-family="'Literata', Georgia, serif" font-size="{sub_font_size}" font-weight="400" letter-spacing="0.01em" fill="{subtitle_color}">{sub_inner}</text>
   </g>
 </svg>
@@ -365,7 +419,11 @@ def update_index_and_sitemap(slug: str, title: str, subtitle: str, category: str
     )
     new_card = f"""<article class="book-card" data-key="{slug}" data-title="{esc_title}" data-subtitle="{esc_sub}" data-category="{esc_cat}" onclick="openBookFromCatalog('{slug}')" title="{esc_title} — {esc_sub}">
                     <div class="book-cover-frame">
-                        <img src="assets/covers/{slug}.svg" alt="{esc_title} Cover" loading="eager">
+                        <img src="assets/covers/thumbs/{slug}.svg" alt="{esc_title}" loading="eager">
+                    </div>
+                    <div class="book-card-info">
+                        <div class="book-card-title">{esc_title}</div>
+                        <div class="book-card-subtitle">{esc_sub}</div>
                     </div>
                 </article>"""
 
@@ -439,15 +497,22 @@ def main():
                 sys.exit(1)
             md_text = open(md_file, encoding="utf-8").read()
             title, subtitle, chapters = extract_book_metadata(md_text)
+            if slug == "flights-and-perches":
+                title = "Twelve Facets"
+                subtitle = "The Restless Mind of William James"
+            refresh_existing_pdf_cover_typography(slug, title, subtitle)
+            update_index_and_sitemap(slug, title, subtitle, meta.get("category", "Systems & Science"))
             pdf_path = os.path.join(BASE_DIR, "assets", "pdfs", f"{slug}.pdf")
             comp_path = os.path.join(BASE_DIR, "assets", "pdfs", f"{slug}-compact.pdf")
             mob_path = os.path.join(BASE_DIR, "assets", "pdfs", f"{slug}-mobile.pdf")
+            cover_path = os.path.join(COVERS_DIR, f"{slug}.svg")
             needs_compile = (
                 args.recompile
                 or not os.path.exists(pdf_path)
                 or not os.path.exists(comp_path)
                 or not os.path.exists(mob_path)
                 or os.path.getmtime(md_file) > os.path.getmtime(pdf_path)
+                or (os.path.exists(cover_path) and os.path.getmtime(cover_path) > os.path.getmtime(pdf_path))
                 or not meta.get("sectionPages")
                 or not meta.get("compactSectionPages")
                 or not meta.get("mobileSectionPages")

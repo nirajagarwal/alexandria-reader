@@ -76,13 +76,35 @@ Write `/Users/niraj/book-writer/<filename>.md` and validate it with `python3 scr
 9. **Clean Exits (Zero Concluding Sermons)**: End every chapter directly on the concrete `exit_fact`. Never add a moralizing summary sentence ("X showed that...", "This demonstrated that...", "Ultimately...", "serves as a testament").
 10. **Strict 3-Line Headers & LaTeX Hygiene**: Use `### Chapter N` / `# Title` / `## Subtitle` with zero colons. Escape literal currency dollar signs (`\$100`), never wrap bare numbers in `$50$`, and use `\sum\nolimits` inside `\frac{...}{...}`.
 11. **Earned Schematic Diagrams (` ```svg ` — 2 to 4 Per Book Max)**: In chapters marked `"diagram"`, include a clean ` ```svg ` block with `viewBox="0 0 600 H"` ($140 \le H \le 250$), `data-caption="FIG. N.1 — ..."`, CSS theme variables (`var(--text-color)`, `var(--text-muted)`, `var(--accent-color)`, `var(--border-color)`, `var(--card-bg)`), $\le 34$ SVG primitives, and `<rect>` box widths at least `24px` wider than their enclosed `<text>`.
+12. **Epistemic Hedges & Anti-Conflation**: Never conflate separate defects across multi-incident failures, never attribute later lab measurements to earlier field pioneers, and never upgrade unconfirmed forensic hypotheses into proven judicial/federal findings.
+```
+
+---
+
+## Stage 3.5: Mandatory Independent Fact-Check & Provenance Pass (Separate Subagent)
+
+Because error density in machine synthesis tracks narrative pressure—and an author agent has confirmation bias toward its own draft—you **MUST** spawn an **independent Fact-Checker Subagent** immediately after chapter or full-book synthesis (before PDF compilation and publication) using the **Canonical Fact-Checker Prompt Template** below:
+
+```markdown
+You are an independent Fact-Checker and Provenance Auditor for Alexandria Press.
+Read `/Users/niraj/book-writer/<filename>.md` and `/Users/niraj/book-writer/dossiers/<slug>.json`.
+Do NOT trust the manuscript's fluency. Audit all 12 chapters against external sources (`wiki-grounding` MCP tools, `pubmed-database`, `literature-search-openalex`, or `search_web`) across the six Alexandria failure modes:
+
+1. **Direct Quote Purge**: Verify there are ZERO multi-word direct quotations (`"..."` >= 5 words) anywhere in the manuscript.
+2. **Empirical Direction & Sign Audit (Anti-Thesis-Bending)**: For every cited scientific study, clinical trial, or psychological report, verify that the manuscript states the *actual direction and metric* found by the authors (never inverted or exaggerated to fit a moral or narrative thesis).
+3. **Chronology, Dates & Attribution Audit**: Check every year, calendar date, ship/company/institution name, and gene/molecule discovery date. Verify that no entity or gene is referenced anachronistically before it was named or founded.
+4. **Anti-Conflation Audit**: Where a historical system had multiple failures or where a later laboratory experiment refined an earlier pioneer's work, verify that the incidents and investigators are cleanly distinguished.
+5. **Epistemic Hedges & Anti-Absolutes Audit**: Verify that unconfirmed mechanisms, out-of-court settlements, or contested historical hypotheses retain their proper qualifiers rather than being stated as proven judicial/federal facts, and check that sweeping absolutes ("never", "every single", "worse than random") match the real source bounds.
+6. **Isomorphic Parallels & Internal Math Audit**: Verify that every cross-domain parallel obeys the *exact same mathematical equation* (delete any decorative biological or physical metaphor), and check all arithmetic ratios and unit comparisons across the chapter and book for internal consistency.
+
+Output a concise Chapter-by-Chapter Fact-Check Ledger (`VERIFIED` / `FIXED`), apply all necessary corrections directly to `/Users/niraj/book-writer/<filename>.md`, and run `python3 scripts/validate_book.py <filename>.md` until it outputs `[PASS]` with 0 errors and 0 warnings.
 ```
 
 ---
 
 ## Stage 4: Deterministic Quality Gate (`scripts/validate_book.py`)
 
-Run the hard validator script against the completed manuscript:
+Run the hard validator script against the fact-checked manuscript:
 
 ```bash
 python3 scripts/validate_book.py <slug_with_underscores>.md
@@ -103,9 +125,9 @@ python3 scripts/validate_book.py <slug_with_underscores>.md
 ## Stage 5: Creator Steering Pass ("Director's Cut") & Publication (`v2` & Done)
 
 1. **Creator Steering Prompt (`v1` $\rightarrow$ `v2`)**:
-   - After `v1` is synthesized, if the creator provides steering input (e.g., *"Swap Chapter 8 for his Brazil expedition"*, *"Change the title to Twelve Facets"*):
+   - After `v1` is synthesized and fact-checked, if the creator provides steering input (e.g., *"Swap Chapter 8 for his Brazil expedition"*, *"Change the title to Twelve Facets"*):
      1. Update `dossiers/<slug>.json`.
-     2. Regenerate the affected chapters (or full manuscript `v2`) and run `python3 scripts/validate_book.py <filename>.md`.
+     2. Regenerate the affected chapters (or full manuscript `v2`), run the independent fact-check pass on any new chapters, and run `python3 scripts/validate_book.py <filename>.md`.
      3. Once `v2` passes with 0 errors, lock the book and call it done.
 2. **Publish & Deploy (`scripts/publish_book.py`)**:
    ```bash
@@ -118,4 +140,5 @@ python3 scripts/validate_book.py <slug_with_underscores>.md
    python3 scripts/validate_book.py --all
    git add . && git commit -m "Publish volume: <Title>" && git push origin main && npx vercel --prod --yes
    ```
+
 

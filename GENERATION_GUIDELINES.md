@@ -51,8 +51,9 @@ Every book generation prompt must include and enforce these universal constraint
    - Never end a chapter with a "high-school essay" summary paragraph (*"X showed that..."*, *"This demonstrated that..."*, *"His life proved that..."*).
    - End directly on the final factual outcome, physical resolution, or empirical consequence. Trust the reader to draw the conclusion.
 
-9. **Epistemic Honesty & Header Formatting**
-   - Distinguish hard historical telemetry from company lore or hagiography (*"According to company lore..."*).
+9. **Epistemic Honesty, Anti-Conflation & Header Formatting**
+   - **Preserve Source Hedges & Unconfirmed Mechanisms**: State verified telemetry and primary records plainly. Never upgrade an unconfirmed forensic hypothesis (such as a suspected surveying projection error when physical evidence was destroyed) into a proven judicial or federal conclusion, and never strip statistical or historical qualifiers into sweeping absolutes (*"never"*, *"every single"*, *"worse than random"*).
+   - **Anti-Conflation & Internal Arithmetic Consistency**: Never conflate separate defects across multi-incident failures (such as the Tyler cursor-editing race condition versus the Yakima 8-bit counter overflow in Therac-25) or attribute a later laboratory measurement to an earlier field pioneer. Ensure all numerical ratios and unit comparisons across a chapter and book are dimensionally and arithmetically consistent.
    - **Strict Three-Line Headers (Zero Colons)**:
      ```markdown
      ### Chapter [N]
@@ -64,6 +65,16 @@ Every book generation prompt must include and enforce these universal constraint
     - **Restraint First (2–4 Per Book, Max 1 Per Chapter)**: Only include a diagram when a spatial topology, optical/mechanical apparatus, feedback loop, or timeline is genuinely clearer drawn than described in prose. Never include decorative or generic box-and-arrow filler.
     - **Theme-Aware Inline SVG**: Use fenced ` ```svg ` blocks with `viewBox="0 0 600 H"` ($140 \le H \le 250$) and `data-caption="FIG. X.1 — ..."`. Use CSS variables (`var(--text-color)`, `var(--text-muted)`, `var(--accent-color)`, `var(--border-color)`, `var(--card-bg)`) rather than hardcoded black/white colors so diagrams adapt seamlessly to Light, Dark, and Sepia themes.
     - **Complexity & Collision Cap**: Keep diagrams sparse ($\le 34$ SVG primitives), use `font-size` between `11` and `18`, ensure every `<rect>` box is at least `20px` wider than its enclosed `<text>`, and verify zero text/box collisions via `scripts/validate_book.py`.
+
+11. **Mandatory Independent Fact-Check & Provenance Audit Pass**
+    - Because error density in machine synthesis tracks narrative pressure, every volume must undergo an **independent fact-check pass** (either after each chapter or immediately after full-book generation) executed by a separate verification subagent before PDF compilation.
+    - The independent Fact-Checker Agent extracts and audits six specific failure modes across all 12 chapters:
+      1. **Direct Quote Purge**: Verify zero multi-word direct quotations (`"..."` $\ge 5$ words) exist anywhere in the text.
+      2. **Empirical Direction & Sign Audit**: Verify against primary literature (`pubmed-database`, `literature-search-openalex`, `wiki-grounding`, web search) that every cited study or experiment reports the *actual direction and metric* found by the authors, never inverted to fit a moral trope.
+      3. **Chronology & Attribution Audit**: Verify exact years, dates, ship/institution names, and chronological sequences (e.g., ensuring a gene or organization was not named anachronistically before its discovery or founding).
+      4. **Multi-Incident & Pioneers Conflation Audit**: Verify that separate failures in the same system or later laboratory measurements versus earlier field experiments are cleanly distinguished.
+      5. **Epistemic Hedge Audit**: Verify that unconfirmed mechanisms, out-of-court settlements, and statistical trends retain their source qualifiers rather than being stated as absolute or judicially proven facts.
+      6. **Isomorphic Parallel & Internal Math Audit**: Verify that any cross-domain analogy obeys the *exact same mathematical equation* (deleting decorative metaphors) and that all ratios and numbers within and across chapters are arithmetically consistent.
 
 ---
 

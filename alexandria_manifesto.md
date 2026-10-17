@@ -82,15 +82,17 @@ Every volume generated for Alexandria Press is governed by eight non-negotiable 
 #### 1. Direct, Plainspoken Prose & Honest Machine Synthesis
 Say things simply. We are not trying to sound "literary" or disguise machine synthesis behind artificial warmth. Avoid overwrought academic jargon, grand rhetorical flourishes, and awe-inducing adjectives. Where a structured bullet list brings immediate visual clarity to a ledger, protocol, or multi-part mechanism, use it unapologetically. Complexity belongs in the underlying mechanics—never in decorative vocabulary.
 
-#### 2. Mandatory Empirical Grounding & Zero Fabricated Quotations (Paraphrase Only)
-Never write a chapter as an abstract essay or textbook definition. Every chapter must anchor its mechanism in real events, physical experiments, clinical cases, or primary historical records with named individuals, years, institutions, and verifiable measurements. **Never place multi-word direct quotations (`"..."`) attributed to historical figures or scientists in prose**: language models under thesis pressure inevitably smooth or fabricate quotations. Always paraphrase arguments, papers, and testimonies in crisp, accurate indirect speech.
+#### 2. Mandatory Empirical Grounding, Anti-Thesis-Bending & Zero Direct Quotations
+Never write a chapter as an abstract essay or textbook definition. Every chapter must anchor its mechanism in real events, physical experiments, clinical cases, or primary historical records with named individuals, years, institutions, and verifiable measurements.
+* **Paraphrase Only (Zero Direct Quotations)**: Never place multi-word direct quotations (`"..."` of five or more words) attributed to historical figures or scientists in prose. Language models under thesis pressure inevitably smooth or fabricate quotations; always paraphrase arguments, papers, and testimonies in crisp, accurate indirect speech.
+* **Never Bend Evidence to Fit a Thesis**: Error density in machine synthesis tracks narrative pressure. If a primary study or empirical report contradicts a popular trope (for example, Stanley Rachman's finding that decorated bomb-disposal operators exhibited *lower* physiological reactivity under stress rather than feeling equal fear and recovering faster), **align the chapter's thesis with the actual empirical finding**—never invert or massage a study to fit a pre-chosen moral arc.
 
 #### 3. High-Density Compression (550–720 Words per Chapter; ~250-Word Topic-Only Introductions)
 * **Introductions (~250 Words)**: Keep the book's Introduction around 250 words (strictly 140–300 words). Introduce the core topic and structural thesis directly—never summarize or preview the individual chapters.
 * **Chapters (550–720 Words)**: Our punchiness comes from compression. A chapter must unpack *how* the mechanism worked step by step without drifting into the LLM's verbose, encyclopedic mean. Keep chapters tightly compressed between 550 and 720 words (~600–650 words ideal) so every sentence carries a fact, a measurement, or a causal link.
 
 #### 4. Earned Formalisms & Isomorphic Parallels Only (Zero Math Cosplay or Decorative Metaphors)
-Include display equations (`$$...$$`) only when a genuine, established mathematical, physical, chemical, or statistical law governs the phenomenon (such as the Kuramoto model, Shannon channel capacity, Fick's diffusion law, the Kelly criterion, or Manning's hydraulic flow). Never invent fake conceptual equations or pseudo-proportionalities (such as $\text{Fragility} \propto \text{Inertia} \times \text{Orthodoxy}^2$) just to put symbols on the page. Similarly, include a cross-domain parallel only when the exact same mathematical equation governs both systems—never attach decorative biological or physics metaphors.
+Include display equations (`$$...$$`) only when a genuine, established mathematical, physical, chemical, or statistical law governs the phenomenon (such as the Kuramoto model, Shannon channel capacity, Fick's diffusion law, the Kelly criterion, or Manning's hydraulic flow). Never invent fake conceptual equations or pseudo-proportionalities (such as $\text{Fragility} \propto \text{Inertia} \times \text{Orthodoxy}^2$) just to put symbols on the page. Similarly, **include a cross-domain parallel only when the exact same mathematical equation governs both systems**—never attach decorative biological or physics metaphors (*"inversion of Kleiber's Law"*, *"epigenetic membrane compartmentalization"*) that merely sound scientific.
 
 #### 5. Sentence Cadence: Lower Average Length & Natural Variance (17–22 Words/Sentence)
 Left unchecked, language models drift toward a monotonous 32–36 word "participial march" (*"Working alongside..., X did Y"*). Target a crisp average sentence length of **17–22 words** (strictly $\le 24$ words/sentence) with natural variance between direct 10–14 word declarative statements and 20–26 word technical explanations. Break up sprawling multi-clause sentences into direct statements, and never attempt artificial 2–3 word melodramatic fragments.
@@ -104,8 +106,9 @@ Never open or pad chapters with novelistic micro-details that invite hallucinate
 #### 7. Clean Exits (Withhold Concluding Sermons)
 Resist the urge to end a chapter with either a theatrical mic-drop or a dutiful "high-school essay" summary paragraph (*"X showed that..."*, *"This demonstrated that..."*, *"His life proved that..."*). When the final empirical fact or physical resolution lands, stop. Juxtapose the facts and trust the reader to close the circuit.
 
-#### 8. Epistemic Honesty and Strict Header Architecture
-* **Fact vs. Lore**: State verified telemetry and primary records plainly. When referencing famous historical lore, contested figures, or hagiography, explicitly note the provenance in prose rather than reporting legend in the same register as laboratory data.
+#### 8. Epistemic Honesty, Anti-Conflation & Strict Header Architecture
+* **Preserve Source Hedges & Unconfirmed Mechanisms**: State verified telemetry and primary records plainly. Never upgrade an unconfirmed forensic hypothesis (such as the suspected surveying projection error at Lake Peigneur, where physical evidence was destroyed) into a proven judicial or federal conclusion. Never strip source qualifiers into sweeping absolutes (*"never had a single betrayal"*, *"worse than random"*).
+* **Anti-Conflation & Internal Arithmetic Consistency**: Never conflate separate defects across multi-incident failures (such as the Tyler cursor-editing race condition versus the Yakima 8-bit counter overflow in the Therac-25 accidents) or attribute a later laboratory measurement to an earlier field pioneer. Verify that every numerical ratio and unit comparison across a chapter and book is dimensionally and arithmetically consistent.
 * **Three-Line Header Standard**: Never use colons in titles, chapter labels, or section headers. Display the chapter identifier, plainspoken title, and concrete subtitle on three separate lines:
   - Line 1: `### Chapter [Number]` or `### Introduction`
   - Line 2: `# [Title]`
@@ -128,29 +131,26 @@ While the eight universal laws bind every book, different domains rely on differ
 3. **Decision Theory, Economics & Enterprise Mechanics** (*Non-Linear Engines*, *Architectures of Choice*, *Fictions of Order*, *Bonds of Enmity*, *Paper Panics*)
    - *Narrative Anchor*: A high-stakes historical wager, corporate survival crisis, financial blowup, or military/statistical case study.
    - *Forensic Engine*: The exact probability calculus, payoff convexity, balance-sheet ledger, network topology, or game-theoretic equilibrium.
-4. **Intellectual Ruptures & Consensus Breaking** (*Singular Minds*, *Tales of Audacity*, *Ghosts in the Parchment*, *Flights and Perches*, *The Curious Physicist*)
+4. **Intellectual Ruptures & Consensus Breaking** (*Singular Minds*, *Tales of Audacity*, *Ghosts in the Parchment*, *Twelve Facets*, *The Curious Physicist*)
    - *Narrative Anchor*: The entrenched institutional orthodoxy, the specific anomalous observation that broke it, and the physical or intellectual cost paid by the investigator.
    - *Forensic Engine*: Uses formal mathematical derivations where the discovery was mathematical or astronomical, and uses exact experimental protocols, clinical trials, or primary evidence tables where the breakthrough was biological, medical, or empirical.
 
 ---
 
 ### The Creator Platform
-# The Two-Pass Creator Workflow
-## Composite Option Selection, First-Pass Synthesis, and One-Shot Steering
+# The Two-Pass Creator Workflow & Independent Fact-Check Gate
+## Composite Option Selection, First-Pass Synthesis, Adversarial Fact Audit, and Steering
 
-When a creator brings a topic to Alexandria Press, we do not hand them a blank canvas that invites 300-page fluff, nor do we offer four variations of the exact same structural template. Instead, every volume is produced through a bounded **Two-Pass Creator Workflow** where **content angle and structural form are chosen together**:
+When a creator brings a topic to Alexandria Press, we do not hand them a blank canvas that invites 300-page fluff, nor do we offer four variations of the exact same structural template. Instead, every volume is produced through a bounded **Creator Workflow** with an **Independent Fact-Check Pass**:
 
 1. **Topic Input $\rightarrow$ 3–4 Composite Options (`Topic Angle × Structural Form × 12-Chapter Construction`)**
    * The creator enters a raw topic (a person, an everyday object, a scientific field, an institution, a place).
    * The engine evaluates the topic against the **Nine-Form Stockpile** (`"facet"`, `"listicle"`, `"landscape"`, `"contrast"`, `"anatomy"`, `"field-guide"`, `"scale"`, `"inversion"`, `"chain"`) and presents **3–4 distinct composite options**.
-   * Each composite option specifies:
-     - **Title & Subtitle**
-     - **Structural Form (`mode`) & Why It Fits This Angle**
-     - **12-Chapter Construction** (how the 12 chapters are sliced across the volume, and how each chapter is built internally).
 2. **Composite Selection $\rightarrow$ `v1` Generation**
-   * The creator chooses their preferred composite option (or mixes a topic angle from one option with a form from another).
-   * The engine compiles a locked 12-chapter dossier (`dossiers/<slug>.json`), synthesizes the complete `v1` volume, and enforces all eight universal laws via the deterministic validator (`scripts/validate_book.py`).
-3. **Creator Steering Prompt $\rightarrow$ `v2` Regeneration & Done**
-   * Reacting to a tangible 12-chapter manuscript is vastly sharper than specifying rules in the abstract. After reading `v1`, the creator issues a single set of steering prompts (for example: *"Include at least one verbatim quote in every chapter"*, *"Make Chapter 1 a deeper biographical profile"*, or *"Add a schematic diagram to Chapter 2"*).
-   * The engine compiles those steering instructions into the dossier and validator rules, regenerates `v2`, verifies 100% gate compliance, publishes the volume, and calls it done.
+   * The engine compiles a locked 12-chapter dossier (`dossiers/<slug>.json`) and synthesizes the `v1` manuscript.
+3. **Mandatory Independent Fact-Check Pass (Separate Verification Agent)**
+   * Immediately after chapter or full-book synthesis, an **independent Fact-Checker Agent** (operating in a separate context with zero authorial bias toward the draft) extracts and audits every empirical claim, date, attribution, study direction, multi-incident distinction, numerical ratio, and cross-domain parallel against primary literature and grounding databases (`wiki-grounding`, `pubmed-database`, `literature-search-openalex`, web search), patching any conflation, overstatement, or date slip before validation.
+4. **Deterministic Quality Gate & Creator Steering (`v2` & Done)**
+   * The manuscript is verified against all deterministic structural, typographic, math, and prose rules in `scripts/validate_book.py`, steered if requested by the creator, compiled into three responsive Typst PDF editions (`desktop`, `compact`, `mobile`), and deployed.
+
 
