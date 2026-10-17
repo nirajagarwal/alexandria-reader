@@ -21,6 +21,7 @@ import sys
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(BASE_DIR, "scripts"))
+from create_book_pipeline import verify_prompt_lock  # noqa: E402
 from lib import load_catalog  # noqa: E402
 
 ALLOWED_ROOT_MDS = {
@@ -28,6 +29,7 @@ ALLOWED_ROOT_MDS = {
     "GENERATION_GUIDELINES.md",
     "BACKLOG.md",
     "README.md",
+    "AGENTS.md",
 }
 
 
@@ -37,6 +39,8 @@ def test_repo_layout_and_core_files():
         "style.css",
         "catalog.json",
         "backlog.json",
+        "prompt-lock.json",
+        "AGENTS.md",
         "js/app.js",
         "js/books-data.js",
         "scripts/lib.py",
@@ -55,6 +59,8 @@ def test_repo_layout_and_core_files():
         assert os.path.exists(path), f"Missing required file: {rel}"
         assert os.path.getsize(path) > 0, f"File is empty: {rel}"
 
+    verify_prompt_lock()
+
     # Verify redundant js/covers-data.js and dossiers/topic_queue.json are removed
     assert not os.path.exists(os.path.join(BASE_DIR, "js", "covers-data.js")), (
         "Redundant js/covers-data.js should be removed"
@@ -67,7 +73,7 @@ def test_repo_layout_and_core_files():
     root_mds = [f for f in os.listdir(BASE_DIR) if f.endswith(".md")]
     stray_mds = [f for f in root_mds if f not in ALLOWED_ROOT_MDS]
     assert not stray_mds, f"Found stray book markdown files in repo root (must live in books/): {stray_mds}"
-    print("✓ Repo layout hygiene, core scripts, PDF.js vendor assets, and Literata fonts verified.")
+    print("✓ Repo layout hygiene, core scripts, prompt-lock.json, PDF.js vendor assets, and Literata fonts verified.")
 
 
 def test_index_html_and_markers():

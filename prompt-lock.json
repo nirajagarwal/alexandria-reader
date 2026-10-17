@@ -1,0 +1,12 @@
+{
+  "locked": true,
+  "policy": "Prompts and guidelines are LOCKED. Any future book generation or rewrite request MUST ask the user whether to use the locked prompt as-is or make changes to the prompt before modifying any locked file.",
+  "updated_at": "2026-10-17T20:49:25.244095+00:00",
+  "files": {
+    "alexandria_manifesto.md": "a2db69541a2945b864ec3fadd822794e6398b5a86b41c1899f66a39d35ae2a11",
+    "GENERATION_GUIDELINES.md": "48d563f78ee3738c85b572bb291f7142c9f80f194b71d2af1e16a1c5faf28d11",
+    ".agent/skills/generate-alexandria-book/SKILL.md": "e07ce2fe2d5bf6b77ecb09506b2be5bc63a6944375e651ed3d2d1aedb6250452",
+    "AGENTS.md": "2a8d961101227bc5b0412a78a4d0ead6a64a8a1dde1f98a9fa391e563120111c",
+    "scripts/create_book_pipeline.py": "956219a5fa0939d2b9c656970d8231cb5f73c6d5f71e33341878bfd62f30c136"
+  }
+}

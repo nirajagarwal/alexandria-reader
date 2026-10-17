@@ -17,6 +17,7 @@ in `dossiers/jobs/<job_id>.json` and `dossiers/jobs/latest.json`.
 import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import datetime
+import hashlib
 import json
 import os
 import re
@@ -33,7 +34,67 @@ from lib import BOOKS_DIR, DOSSIERS_DIR, load_catalog, slugify_text  # noqa: E40
 from validate_book import validate_book, validate_svg_diagram  # noqa: E402
 
 JOBS_DIR = os.path.join(DOSSIERS_DIR, "jobs")
+PROMPT_LOCK_PATH = os.path.join(BASE_DIR, "prompt-lock.json")
+LOCKED_PROMPT_FILES = [
+    "alexandria_manifesto.md",
+    "GENERATION_GUIDELINES.md",
+    ".agent/skills/generate-alexandria-book/SKILL.md",
+    "AGENTS.md",
+    "scripts/create_book_pipeline.py",
+]
 MODEL_NAME = "models/gemini-4-argon"
+
+
+def compute_prompt_hashes() -> dict[str, str]:
+    hashes = {}
+    for rel_path in LOCKED_PROMPT_FILES:
+        abs_path = os.path.join(BASE_DIR, rel_path)
+        if not os.path.exists(abs_path):
+            raise RuntimeError(f"Locked prompt/guideline file missing: {rel_path}")
+        with open(abs_path, "rb") as f:
+            hashes[rel_path] = hashlib.sha256(f.read()).hexdigest()
+    return hashes
+
+
+def update_prompt_lock() -> dict:
+    payload = {
+        "locked": True,
+        "policy": (
+            "Prompts and guidelines are LOCKED. Any future book generation or rewrite request "
+            "MUST ask the user whether to use the locked prompt as-is or make changes to the prompt "
+            "before modifying any locked file."
+        ),
+        "updated_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        "files": compute_prompt_hashes(),
+    }
+    with open(PROMPT_LOCK_PATH, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+        f.write("\n")
+    return payload
+
+
+def verify_prompt_lock() -> dict:
+    if not os.path.exists(PROMPT_LOCK_PATH):
+        raise RuntimeError(
+            "prompt-lock.json is missing! Prompts and guidelines are locked; run "
+            "`python3 scripts/create_book_pipeline.py --update-lock` only with explicit user approval."
+        )
+    with open(PROMPT_LOCK_PATH, encoding="utf-8") as f:
+        lock_data = json.load(f)
+    expected = lock_data.get("files", {})
+    current = compute_prompt_hashes()
+    drifted = []
+    for rel_path in LOCKED_PROMPT_FILES:
+        if expected.get(rel_path) != current.get(rel_path):
+            drifted.append(rel_path)
+    if drifted:
+        raise RuntimeError(
+            f"PROMPT LOCK VIOLATION: Locked prompt/guideline files were modified without explicit user approval: "
+            f"{', '.join(drifted)}. Ask the user before changing the prompt, and only run "
+            f"`python3 scripts/create_book_pipeline.py --update-lock` if approved."
+        )
+    return lock_data
+
 
 # Gemini 4 Argon Pricing (USD per 1M tokens)
 # Introductory Period (through Nov 30, 2026): On-demand $2.00 input / $10.00 output; Batch (50% off): $1.00 input / $5.00 output
@@ -1091,6 +1152,7 @@ def stage4_publish_and_notify(spec: dict, tracker: CostAndStateTracker):
 
 
 def run_book_creator_pipeline(spec: dict, job_id: str | None = None) -> dict:
+    verify_prompt_lock()
     api_key = load_env_api_key()
     slug = spec.get("slug") or slugify_text(spec["title"])
     spec["slug"] = slug
@@ -1134,6 +1196,8 @@ def resume_job_stage4(job_id: str) -> dict:
 
 def main():
     parser = argparse.ArgumentParser(description="Run the Alexandria Press Gemini 4 Argon Batch Book Creator.")
+    parser.add_argument("--verify-lock", action="store_true", help="Verify that locked prompt and guideline files match prompt-lock.json")
+    parser.add_argument("--update-lock", action="store_true", help="Update prompt-lock.json after explicit user approval of prompt changes")
     parser.add_argument("--resume-stage4", default="", help="Resume an existing job ID at Stage 4")
     parser.add_argument("--slug", default="", help="Book slug (auto-derived from title if omitted)")
     parser.add_argument("--title", default="", help="Book title (no colons)")
@@ -1155,6 +1219,19 @@ def main():
     parser.add_argument("--job-id", default="", help="Optional job ID")
     args = parser.parse_args()
 
+    if args.update_lock:
+        payload = update_prompt_lock()
+        print("[PROMPT LOCK UPDATED] prompt-lock.json synchronized:")
+        print(json.dumps(payload, indent=2))
+        return
+
+    if args.verify_lock:
+        payload = verify_prompt_lock()
+        print("[PROMPT LOCK VERIFIED] All 5 locked prompt and guideline files match prompt-lock.json:")
+        for rel_path, digest in payload["files"].items():
+            print(f"  ✓ {rel_path}: {digest[:16]}...")
+        return
+
     if args.resume_stage4:
         res = resume_job_stage4(args.resume_stage4)
         print("\n=== BOOK CREATOR PIPELINE COMPLETE (RESUMED STAGE 4) ===")
@@ -1162,7 +1239,7 @@ def main():
         return
 
     if not args.title or not args.subtitle:
-        parser.error("--title and --subtitle are required unless --resume-stage4 is specified")
+        parser.error("--title and --subtitle are required unless --resume-stage4, --verify-lock, or --update-lock is specified")
 
     fmt = args.format
     if not fmt:

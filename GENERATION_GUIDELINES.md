@@ -1,5 +1,8 @@
 # Alexandria Press — Book Generation Guidelines
 
+> [!IMPORTANT]
+> **LOCKED SPECIFICATION (`prompt-lock.json`)**: These generation guidelines, [`alexandria_manifesto.md`](alexandria_manifesto.md), [`scripts/create_book_pipeline.py`](scripts/create_book_pipeline.py), and [`.agent/skills/generate-alexandria-book/SKILL.md`](.agent/skills/generate-alexandria-book/SKILL.md) are **LOCKED**. Whenever a future book generation or rewrite is requested, you MUST ask the user whether to proceed with the locked prompt and guidelines or whether they want to make changes to the prompt before modifying these files or overriding prompt instructions.
+
 These guidelines translate the **Alexandria Manifesto** ([`alexandria_manifesto.md`](alexandria_manifesto.md)) into the **Two-Tier Generation Architecture**:
 - **Tier 1**: Seven broad laws common to all books.
 - **Tier 2**: Topic-specific prompt profiles that adapt the *Narrative Vector* and *Forensic Engine* to the specific subject without forcing a one-size-fits-all template.

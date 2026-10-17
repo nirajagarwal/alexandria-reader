@@ -1,6 +1,9 @@
 # Alexandria (alexandria.press)
 ## The Living Library of Machine-Synthesized Knowledge
 
+> [!IMPORTANT]
+> **LOCKED SPECIFICATION (`prompt-lock.json`)**: This Manifesto, [`GENERATION_GUIDELINES.md`](GENERATION_GUIDELINES.md), [`scripts/create_book_pipeline.py`](scripts/create_book_pipeline.py), and [`.agent/skills/generate-alexandria-book/SKILL.md`](.agent/skills/generate-alexandria-book/SKILL.md) are **LOCKED**. On any future book generation or book rewrite request, you MUST ask the user whether to use the locked prompt and guidelines as-is or whether they want to make changes to the prompt before editing these files or overriding prompt instructions.
+
 > A million books to reveal the unseen facets of reality in ways no single human could assemble—and a platform for every reader to generate their own.
 
 ---
