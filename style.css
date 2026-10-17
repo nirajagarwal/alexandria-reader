@@ -220,10 +220,10 @@
         }
 
         .pdf-book-frame {
-            --pt: 1.5px;
+            --pt: 1.2px;
             --m-h: calc(30.24 * var(--pt));
             --hdr-y: calc(17.38 * var(--pt));
-            --ftr-y: calc(16.50 * var(--pt));
+            --ftr-y: calc(14.85 * var(--pt));
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -241,13 +241,13 @@
         .pdf-book-frame[data-edition="compact"] {
             --m-h: calc(25.92 * var(--pt));
             --hdr-y: calc(14.38 * var(--pt));
-            --ftr-y: calc(12.50 * var(--pt));
+            --ftr-y: calc(10.85 * var(--pt));
         }
 
         .pdf-book-frame[data-edition="mobile"] {
             --m-h: calc(23.04 * var(--pt));
             --hdr-y: calc(15.50 * var(--pt));
-            --ftr-y: calc(13.50 * var(--pt));
+            --ftr-y: calc(12.15 * var(--pt));
         }
 
         /* Subtle book spine shadow between facing pages in two-page mode */
