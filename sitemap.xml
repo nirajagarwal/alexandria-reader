@@ -595,90 +595,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alexandria.press/read/affective-topologies/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://alexandria.press/read/affective-topologies/introduction.html</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alexandria.press/read/affective-topologies/the-uncontrollable-loop.html</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alexandria.press/read/affective-topologies/the-derivative-of-expectation.html</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alexandria.press/read/affective-topologies/the-phantom-prior.html</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alexandria.press/read/affective-topologies/the-law-of-contagion.html</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alexandria.press/read/affective-topologies/the-status-ledger.html</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alexandria.press/read/affective-topologies/the-overview-collapse.html</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alexandria.press/read/affective-topologies/the-inflammatory-gaze.html</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alexandria.press/read/affective-topologies/the-suffocation-alarm.html</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alexandria.press/read/affective-topologies/the-decorticate-deterrent.html</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alexandria.press/read/affective-topologies/the-epistemic-drive.html</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alexandria.press/read/affective-topologies/the-myelinated-truce.html</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alexandria.press/read/affective-topologies/the-allostatic-debt.html</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://alexandria.press/read/architectures-of-choice/</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -2623,73 +2539,73 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alexandria.press/read/emotions/the-dual-road-alarm.html</loc>
+    <loc>https://alexandria.press/read/emotions/fear.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alexandria.press/read/emotions/the-pathogen-shield.html</loc>
+    <loc>https://alexandria.press/read/emotions/anger.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alexandria.press/read/emotions/the-credible-threat.html</loc>
+    <loc>https://alexandria.press/read/emotions/joy.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alexandria.press/read/emotions/the-severed-attachment-loop.html</loc>
+    <loc>https://alexandria.press/read/emotions/sadness-and-grief.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alexandria.press/read/emotions/the-public-gaze-versus-the-private-debt.html</loc>
+    <loc>https://alexandria.press/read/emotions/love-and-attachment.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alexandria.press/read/emotions/the-relative-payoff-trap.html</loc>
+    <loc>https://alexandria.press/read/emotions/disgust.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alexandria.press/read/emotions/the-information-gap.html</loc>
+    <loc>https://alexandria.press/read/emotions/guilt-and-shame.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alexandria.press/read/emotions/the-involuntary-blush.html</loc>
+    <loc>https://alexandria.press/read/emotions/envy-and-jealousy.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alexandria.press/read/emotions/the-play-bow-breath.html</loc>
+    <loc>https://alexandria.press/read/emotions/embarrassment.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alexandria.press/read/emotions/the-swiss-mercenary-s-fever.html</loc>
+    <loc>https://alexandria.press/read/emotions/laughter-and-play.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alexandria.press/read/emotions/the-asymmetric-curl.html</loc>
+    <loc>https://alexandria.press/read/emotions/nostalgia.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alexandria.press/read/emotions/the-upstream-reciprocity-engine.html</loc>
+    <loc>https://alexandria.press/read/emotions/gratitude-and-awe.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

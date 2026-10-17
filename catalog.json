@@ -1256,185 +1256,6 @@
       ]
     },
     {
-      "slug": "affective-topologies",
-      "file": "books/affective-topologies.md",
-      "title": "Affective Topologies",
-      "subtitle": "The Predictive Control Loops of Human Emotion",
-      "category": "Neuroscience & Cybernetics",
-      "mode": "facet",
-      "format": "mechanisms",
-      "profile": "B",
-      "accent": "#f43f5e",
-      "bg": "#26101d",
-      "pdf": "assets/pdfs/affective-topologies.pdf",
-      "compactPdf": "assets/pdfs/affective-topologies-compact.pdf",
-      "mobilePdf": "assets/pdfs/affective-topologies-mobile.pdf",
-      "sectionPages": [
-        3,
-        4,
-        7,
-        10,
-        13,
-        16,
-        19,
-        22,
-        26,
-        29,
-        32,
-        35,
-        39
-      ],
-      "compactSectionPages": [
-        3,
-        4,
-        8,
-        12,
-        16,
-        20,
-        24,
-        28,
-        32,
-        36,
-        40,
-        44,
-        48
-      ],
-      "mobileSectionPages": [
-        3,
-        5,
-        9,
-        13,
-        17,
-        21,
-        25,
-        30,
-        35,
-        39,
-        43,
-        47,
-        52
-      ],
-      "chapters": [
-        {
-          "label": "Introduction",
-          "title": "Affective Topologies",
-          "subtitle": "How the Brain Predicts What You Feel",
-          "slug": "introduction",
-          "formalismMode": "introduction",
-          "anchor": "For more than a century, biology and folk psychology treated emotions as reflexes. In this classical picture, an external event strikes the senses, travels to a subcortical center, and triggers a pre-packaged bodily program—a racing pulse for fear, a clenched jaw for anger, or a heavy chest for grief.",
-          "exitFact": "Seen through its physiological wiring, human emotion is the biological control architecture that keeps the organism alive long enough to think."
-        },
-        {
-          "label": "Chapter 1",
-          "title": "The Uncontrollable Loop",
-          "subtitle": "Martin Seligman, Yoked Circuits, and the Mechanics of Dread",
-          "slug": "the-uncontrollable-loop",
-          "formalismMode": "equation",
-          "anchor": "In 1967, inside a sound-attenuated basement laboratory at the University of Pennsylvania, psychologists Martin Seligman and Steven Maier placed mongrel dogs into rubberized cloth hammocks known as Pavlovian harnesses. The dogs were divided into triplets and wired into an electrical circuit that delivered brief, six-milliampere shocks to their hind footpads.",
-          "exitFact": "In the shuttle box the next day, the yoked dogs remained motionless on the grid not because their muscles were damaged, but because their dorsal raphe circuits had updated a structural prior that motor output and sensory relief were statistically independent."
-        },
-        {
-          "label": "Chapter 2",
-          "title": "The Derivative of Expectation",
-          "subtitle": "Wolfram Schultz, Midbrain Dopamine, and the Spikes of Joy",
-          "slug": "the-derivative-of-expectation",
-          "formalismMode": "equation",
-          "anchor": "A single raster plot recorded at the University of Fribourg in 1993 altered how neuroscience understands pleasure and anticipation. Neurophysiologist Wolfram Schultz had lowered an insulated tungsten microelectrode through a stainless-steel guide cannula into the ventral tegmental area (area A10) of an awake long-tailed macaque (*Macaca fascicularis*).",
-          "exitFact": "In Schultz's macaques, once the probability of the apple juice reached 100 percent, even doubling the familiar trial blocks failed to elicit a single extra spike at the moment of consumption."
-        },
-        {
-          "label": "Chapter 3",
-          "title": "The Phantom Prior",
-          "subtitle": "Colin Murray Parkes, Bereavement Wards, and the Updating of Attachment",
-          "slug": "the-phantom-prior",
-          "formalismMode": "equation",
-          "anchor": "In the first six months after the death of a wife, a widower over the age of fifty-four suffers a 40 percent jump in overall mortality compared to married men of the exact same age. When British psychiatrist Colin Murray Parkes, along with statisticians Bernard Benjamin and R.",
-          "exitFact": "For months after a funeral, the cortex has accepted the death certificate, but the subcortical striatum continues firing high-precision search commands for an allostatic partner whose return probability has dropped to zero."
-        },
-        {
-          "label": "Chapter 4",
-          "title": "The Law of Contagion",
-          "subtitle": "Paul Rozin, Sterilized Cockroaches, and the Insular Perimeter",
-          "slug": "the-law-of-contagion",
-          "formalismMode": "ledger_or_list",
-          "anchor": "A five-centimeter American cockroach (*Periplaneta americana*), baked inside a medical autoclave at 121 degrees Celsius under fifteen pounds per square inch of pressurized steam, contains zero living bacteria, viruses, or fungal spores. Yet when University of Pennsylvania psychologists Paul Rozin, Linda Millman, and Carol Nemeroff used sterile forceps in 1986 to dip an autoclaved cockroach into a glass of fresh apple juice for five seconds, stir it once, and lift it out, seated undergraduate volunteers refused to drink a single drop.",
-          "exitFact": "While these patients accurately identified facial expressions and vocal tones of fear, anger, happiness, and sadness at normal rates, they were selectively blind to disgust on human faces and failed to register visceral revulsion toward sanitary and moral violations alike."
-        },
-        {
-          "label": "Chapter 5",
-          "title": "The Status Ledger",
-          "subtitle": "Frans de Waal, Whitehall Civil Servants, and the Cost of Inequity",
-          "slug": "the-status-ledger",
-          "formalismMode": "equation",
-          "anchor": "Between 1967 and 1977, epidemiologist Michael Marmot examined the medical records and death certificates of 17,530 male British civil servants working across the ministries of Whitehall in London. Unlike factory laborers or destitute populations, every man in the Whitehall cohort held a stable, white-collar office job, enjoyed a guaranteed government pension, lived in safe urban or suburban housing, and had free, universal access to the British National Health Service.",
-          "exitFact": "Among Marmot's Whitehall civil servants, sitting one grade below an executive peer meant enduring thousands of daily micro-signals of subordinate rank and restricted autonomy, keeping the hypothalamic-pituitary-adrenal axis firing low-grade cortisol and fibrinogen into the coronary arteries year after year."
-        },
-        {
-          "label": "Chapter 6",
-          "title": "The Overview Collapse",
-          "subtitle": "Edgar Mitchell, the Default Mode Network, and the Mechanics of Awe",
-          "slug": "the-overview-collapse",
-          "formalismMode": "ledger_or_list",
-          "anchor": "On February 7, 1971, as the Apollo 14 command module *Kitty Hawk* hurtled back toward Earth from lunar orbit at 24,000 miles per hour, lunar module pilot Edgar Mitchell had very few checklist duties. The spacecraft had been placed into its passive thermal control mode—dubbed the \"barbecue roll\"—rotating slowly along its longitudinal axis at three revolutions per minute to distribute solar heat evenly across the hull.",
-          "exitFact": "While all positive emotions trended toward healthier profiles, daily experiences of awe proved the single strongest statistical predictor of low circulating IL-6 ($\\beta = -0.32$), dropping systemic inflammation markers alongside the subjective shrinkage of the autobiographical self."
-        },
-        {
-          "label": "Chapter 7",
-          "title": "The Inflammatory Gaze",
-          "subtitle": "Dickerson, Slavich, and the Immunological Signature of Shame",
-          "slug": "the-inflammatory-gaze",
-          "formalismMode": "ledger_or_list",
-          "anchor": "Why does the human immune system flood the bloodstream with bacterial wound-fighting proteins within twenty minutes of a humiliating public speech? In 2004, health psychologists Sally Dickerson, Tara Gruenewald, and Margaret Kemeny at the University of California, Los Angeles, brought healthy young adults into a laboratory and assigned them to one of two carefully matched cognitive stress conditions.",
-          "exitFact": "Internally, those same cytokines travel back across the blood-brain barrier via the vagus nerve to induce \"sickness behavior\"—anhedonia, fatigue, and social withdrawal—forcing the disgraced individual to stay low and conserve energy until the social threat passes."
-        },
-        {
-          "label": "Chapter 8",
-          "title": "The Suffocation Alarm",
-          "subtitle": "Donald Klein, Sodium Lactate, and the Brainstem Mechanics of Panic",
-          "slug": "the-suffocation-alarm",
-          "formalismMode": "equation",
-          "anchor": "Ten milliliters per kilogram of body weight of 0.5 molar sodium DL-lactate, dripped through a forearm intravenous catheter over twenty minutes, produces almost no emotional effect in a healthy human being. When psychiatrist Donald Klein and researcher Ferris Pitts Jr.",
-          "exitFact": "In panic disorder, the gain on these brainstem chemoreceptors is set abnormally high, causing minuscule fluctuations in arterial $P_{\\text{CO}_{2}}$ or lactate in a stuffy elevator to detonate an emergency escape reflex built for someone buried alive."
-        },
-        {
-          "label": "Chapter 9",
-          "title": "The Decorticate Deterrent",
-          "subtitle": "Walter Cannon, Hypothalamic Release, and the Game Theory of Rage",
-          "slug": "the-decorticate-deterrent",
-          "formalismMode": "ledger_or_list",
-          "anchor": "Using a blunt surgical spatula passed through a small cranial opening, Harvard Medical School researcher Philip Bard and department chair Walter B. Cannon removed the entire cerebral cortex, the basal ganglia, and the anterior half of the thalamus across forty-six anesthetized cats in the autumn of 1927, leaving only the caudal hypothalamus, midbrain, and brainstem connected to the spinal cord.",
-          "exitFact": "Like Thomas Schelling's driver who rips the steering wheel off the column and throws it out the window during a game of highway chicken, hypothalamic rage announces to the adversary that the cortical calculator has been taken offline—forcing the exploiter either to recalibrate the victim's welfare weight upward or face guaranteed mutual destruction."
-        },
-        {
-          "label": "Chapter 10",
-          "title": "The Epistemic Drive",
-          "subtitle": "Harry Harlow, Mechanical Puzzles, and the Information Calculus of Curiosity",
-          "slug": "the-epistemic-drive",
-          "formalismMode": "equation",
-          "anchor": "For the first half of the twentieth century, American psychology was dominated by Clark Hull's drive-reduction theory. According to this strict homeostatic doctrine, an animal was an inert biological machine that moved only when a primary tissue deficit—low blood glucose, cellular dehydration, cold, pain, or reproductive hormone pressure—created an aversive internal tension.",
-          "exitFact": "In humans, Matthias Gruber and Charan Ranganath demonstrated via fMRI at UC Davis in 2014 that high-curiosity questions ignite the ventral tegmental area and nucleus accumbens, bathing the hippocampus in dopamine that enhances long-term memory consolidation not only for the answer itself, but for completely unrelated faces shown during the window of epistemic arousal."
-        },
-        {
-          "label": "Chapter 11",
-          "title": "The Myelinated Truce",
-          "subtitle": "Ernst Fehr, Intranasal Oxytocin, and the Vagal Circuit of Trust",
-          "slug": "the-myelinated-truce",
-          "formalismMode": "ledger_or_list",
-          "anchor": "On June 2, 2005, economists Ernst Fehr and Michael Kosfeld at the University of Zurich, together with neuroscientist Markus Heinrichs, published the ledger of 128 healthy male students who walked into a computer laboratory to play a single-shot, anonymous financial trust game. Fifty minutes before sitting down at the terminals, half the men had been randomly assigned to inhale three puffs per nostril of a synthetic nasal spray delivering 24 international units (IU) of oxytocin—a nine-amino-acid neuropeptide synthesized in the paraventricular and supraoptic nuclei of the hypothalamus—while the other half inhaled an identical placebo spray containing only the inactive carrier solution.",
-          "exitFact": "Trust is not a sentimental belief; it is a precision-weighting dial in the lateral central amygdala coupled to a myelinated cranial nerve brake that lets two organisms capture a cooperative surplus without triggering a pre-emptive strike."
-        },
-        {
-          "label": "Chapter 12",
-          "title": "The Allostatic Debt",
-          "subtitle": "Bruce McEwen, Hippocampal Receptors, and the Resonance of Calm",
-          "slug": "the-allostatic-debt",
-          "formalismMode": "equation",
-          "anchor": "In 1968, neuroendocrinologist Bruce McEwen injected trace doses of radioactive tritium-labeled corticosterone ($^{3}\\text{H}$-corticosterone) into the bloodstream of adrenalectomized rats at Rockefeller University in New York. At the time, every endocrinology textbook taught that adrenal stress hormones—cortisol in humans, corticosterone in rodents—acted inside the brain only at the hypothalamus, where they served as a simple thermostat switch to shut off further release of adrenocorticotropic hormone from the pituitary gland.",
-          "exitFact": "Within three minutes of 0.1-hertz breathing, heart-rate oscillation amplitude quadruples, RMSSD climbs, baroreceptor afferents travel up the glossopharyngeal and vagus nerves into the nucleus of the solitary tract, and ascending inhibitory signals quiet the locus coeruleus and amygdala—restoring the prefrontal-hippocampal brake that Bruce McEwen first glimpsed on his autoradiographs in 1968."
-        }
-      ]
-    },
-    {
       "slug": "architectures-of-choice",
       "file": "books/architectures-of-choice.md",
       "title": "Architectures of Choice",
@@ -5555,10 +5376,10 @@
       "slug": "emotions",
       "file": "books/emotions.md",
       "title": "Emotions",
-      "subtitle": "The Evolutionary Calculus and Neural Circuitry of Human Feeling",
+      "subtitle": "Fear, Anger, Joy, Grief, Love, and Seven Other Everyday Feelings in Twelve Highlights Each",
       "category": "Psychology & Behavior",
-      "mode": "facet",
-      "format": "mechanisms",
+      "mode": "listicle",
+      "format": "highlights",
       "profile": "B/C: Biological, Neural & Affective Control Loops + Decision Theory & Game-Theoretic Equilibria",
       "accent": "#e11d48",
       "bg": "#1f0d14",
@@ -5568,16 +5389,16 @@
       "sectionPages": [
         3,
         4,
-        8,
-        11,
-        14,
-        17,
-        20,
-        23,
-        26,
-        29,
-        32,
-        35,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        34,
         38
       ],
       "compactSectionPages": [
@@ -5605,128 +5426,128 @@
         25,
         29,
         33,
-        38,
-        43,
-        47,
-        51
+        37,
+        41,
+        45,
+        50
       ],
       "chapters": [
         {
           "label": "Introduction",
           "title": "Emotions",
-          "subtitle": "The Hidden Engineering of Human Feeling",
+          "subtitle": "Why Everyday Feelings Are Survival Tools Built Into the Body",
           "slug": "introduction",
           "formalismMode": "introduction",
-          "anchor": "Ancient Stoic philosophers and early twentieth-century economists treated human emotions as archaic noise. In their view, passions were visceral storms that clouded rational judgment.",
-          "exitFact": "Far from being irrational flaws, human feelings are high-speed allostatic control loops and strategic commitment devices written directly into neural tissue."
+          "anchor": "For centuries, philosophers treated emotions as messy glitches that got in the way of clear thinking. If you jumped at a shadow or lost your temper over a small insult, people assumed your rational mind had temporarily lost control.",
+          "exitFact": "Looking closely at twelve everyday feelings reveals the clever physical tricks running beneath everything we feel."
         },
         {
           "label": "Chapter 1",
-          "title": "The Dual-Road Alarm",
-          "subtitle": "Joseph LeDoux's Thalamic Shortcut and Patient S.M.'s Bilateral Amygdala Calcification",
-          "slug": "the-dual-road-alarm",
-          "formalismMode": "diagram",
-          "anchor": "Joseph LeDoux's 1986–1996 auditory fear-conditioning pathway tracing in rats at Cornell and NYU (the 12-millisecond thalamo-amygdala low road versus the 24-millisecond thalamo-cortico-amygdala high road), paired with Justin Feinstein, Ralph Adolphs, and Antonio Damasio's 2011–2013 University of Iowa studies of Patient S.M. (Urbach-Wiethe ECM1 bilateral amygdala calcification) inhaling 35 percent carbon dioxide.",
-          "exitFact": "Within eight to fifteen seconds of inhaling a single breath of thirty-five percent carbon dioxide, Patient S.M. and two other bilateral amygdala-lesioned patients experienced full autonomic panic attacks and tore off their breathing masks—proving that internal suffocation alarms bypass the amygdala entirely via acid-sensing chemoreceptors in the brainstem."
+          "title": "Fear",
+          "subtitle": "Freezing in Place, False Alarms, and the Woman Who Poked a Haunted-House Monster",
+          "slug": "fear",
+          "formalismMode": "highlights",
+          "anchor": "In 1986 at Cornell University Medical Center, neuroscientist Joseph LeDoux showed that sound signals from the ear split into two paths: a slow 24-millisecond high road through the thinking cortex and a fast 12-millisecond shortcut straight to the brain's alarm hub, making you flinch at a curved stick before you even know whether it is a snake.",
+          "exitFact": "Although Patient S.M. felt zero fear of snakes, spiders, or haunted houses because calcium deposits had destroyed her amygdala on both sides, inhaling a single breath of 35 percent carbon dioxide triggered an instant panic attack—proving that the suffocation alarm lives deeper in the brainstem."
         },
         {
           "label": "Chapter 2",
-          "title": "The Pathogen Shield",
-          "subtitle": "Paul Rozin's Fudge Trials and the Insular Cortex Hijack From Toxins to Taboos",
-          "slug": "the-pathogen-shield",
-          "formalismMode": "ledger_or_list",
-          "anchor": "Paul Rozin, Linda Millman, Carol Nemeroff, and April Fallon's 1986–1987 University of Pennsylvania experiments on the laws of sympathetic magic (sterilized cockroach in juice and chocolate fudge shaped like dog feces), paired with Andrew Calder's 2000 insular lesion case and Hanah Chapman's 2009 facial electromyography of the levator labii muscle across bitter quinine, fecal photographs, and Ultimatum Game unfairness.",
-          "exitFact": "In Hanah Chapman's 2009 electromyography trials at the University of Toronto, receiving an unfair nine-to-one dollar split in an economic game triggered the exact same levator labii superioris upper-lip curl and anterior insula activation evolved to spit bitter plant alkaloids out of the mouth."
+          "title": "Anger",
+          "subtitle": "Boiling Blood, Costly Payback, and Why Losing Your Temper Protects You From Bullies",
+          "slug": "anger",
+          "formalismMode": "highlights",
+          "anchor": "In 1982 in Berlin, economist Werner Güth ran the first Ultimatum Game experiments: when one player offered a greedy 9-to-1 split of real cash, the second player routinely rejected the offer so both walked away with nothing, proving that people gladly pay money out of their own pocket to punish an unfair deal.",
+          "exitFact": "Unlike fear, which pulls blood away from the skin and leaves the hands icy cold, anger opens blood vessels in the face and hands and raises finger skin temperature by more than a full degree Celsius while preparing the fists to strike."
         },
         {
           "label": "Chapter 3",
-          "title": "The Credible Threat",
-          "subtitle": "Robert Frank's Commitment Problem and Why Irrational Retaliation Wins Rational Bargaining",
-          "slug": "the-credible-threat",
-          "formalismMode": "equation",
-          "anchor": "Thomas Schelling's 1960 strategic commitment paradox and Robert H. Frank's 1988 Passions Within Reason commitment model explaining why visible autonomic anger deters theft when prosecution costs exceed stolen value, validated by Alan Sanfey and Jonathan Cohen's 2003 Princeton fMRI Ultimatum Game trials.",
-          "exitFact": "In Alan Sanfey and Jonathan Cohen's 2003 Princeton fMRI trials, whenever a player's anterior insula response to an unfair eight-to-two dollar split exceeded activity in the dorsolateral prefrontal cortex, the angry player rejected the free two dollars so that the greedy proposer walked away with zero."
+          "title": "Joy",
+          "subtitle": "Crinkled Eye Corners, Contagious Smiles, and the Difference Between Wanting and Liking",
+          "slug": "joy",
+          "formalismMode": "highlights",
+          "anchor": "In 1862 in Paris, neurologist Guillaume Duchenne used tiny electrical probes on facial muscles to show that a polite fake smile only pulls the corners of the mouth using the cheek muscle, whereas genuine joy also contracts the outer ring of muscle around the eyes—a muscle most people cannot flex on command.",
+          "exitFact": "Psychologists LeeAnne Harker and Dacher Keltner analyzed the 1960 college yearbook photos of 141 women from Mills College and found that students who showed genuine eye-crinkling smiles at age twenty-one scored significantly higher in marital satisfaction and personal well-being thirty years later."
         },
         {
           "label": "Chapter 4",
-          "title": "The Severed Attachment Loop",
-          "subtitle": "Colin Murray Parkes's Widowhood Mortality Studies and Nucleus Accumbens Yearning",
-          "slug": "the-severed-attachment-loop",
-          "formalismMode": "ledger_or_list",
-          "anchor": "John Bowlby and Colin Murray Parkes's 1969–1972 British Medical Journal bereavement studies tracking 4,486 widowers (finding a 40 percent mortality surge in the first six months), Hikaru Sato's 1990 Takotsubo catecholamine cardiomyopathy, and Mary-Frances O'Connor's 2008 UCLA fMRI study of prolonged grief.",
-          "exitFact": "In Mary-Frances O'Connor's 2008 UCLA neuroimaging trials, viewing a photograph of a deceased loved one activated the dorsal anterior cingulate pain network in all bereaved women, but only those with prolonged grief disorder simultaneously fired the nucleus accumbens—turning an unrewritable attachment bond into a persistent dopamine craving."
+          "title": "Sadness and Grief",
+          "subtitle": "Broken-Heart Adrenaline, Chemical Tears, and Why Bereavement Feels Like Withdrawal",
+          "slug": "sadness-and-grief",
+          "formalismMode": "highlights",
+          "anchor": "In 1969, British psychiatrist Colin Murray Parkes tracked 4,486 widowed men after the death of their wives and discovered that during the first six months of grief, their death rate from heart failure and stroke jumped 40 percent above married men of the same age.",
+          "exitFact": "Humans are the only animals known to shed emotional tears, and biochemist William Frey found in 1981 that tears cried during grief carry 24 percent more protein than tears triggered by raw onion fumes."
         },
         {
           "label": "Chapter 5",
-          "title": "The Public Gaze Versus the Private Debt",
-          "subtitle": "June Tangney's Prisoner Studies and the Fork Between Hiding and Repair",
-          "slug": "the-public-gaze-versus-the-private-debt",
-          "formalismMode": "diagram",
-          "anchor": "Ruth Benedict's 1946 and Helen Block Lewis's 1971 shame-versus-guilt distinction, June Price Tangney and Jeff Stuewig's 2007–2014 longitudinal study of 476–550 Virginia county jail inmates tracking post-release criminal recidivism, and Daniel Sznycer's 2016–2018 cross-cultural welfare trade-off calibration studies.",
-          "exitFact": "Across Daniel Sznycer's 2016 and 2018 cross-cultural trials spanning fifteen societies from the United States and India to Ecuadorian horticulturalists, the intensity of shame people felt for twenty-nine specific failings correlated at 0.84 with the exact degree to which local neighbors devalued a community member for that same trait."
+          "title": "Love and Attachment",
+          "subtitle": "Prairie Vole Pair Bonds, Mother's Milk Hormones, and Holding a Partner's Hand in Pain",
+          "slug": "love-and-attachment",
+          "formalismMode": "highlights",
+          "anchor": "In 2006 at the University of Virginia, psychologist James Coan placed married women inside an MRI scanner and warned them of a mild electric shock to the ankle: holding a stranger's hand calmed the brain's threat alarm slightly, but holding a loving husband's hand quieted the alarm almost completely.",
+          "exitFact": "When two romantic partners sit together and look at each other without speaking for three minutes, their heart rates and breathing rhythms synchronize, and when one partner feels pain, their brain waves lock together while the pain drops."
         },
         {
           "label": "Chapter 6",
-          "title": "The Relative Payoff Trap",
-          "subtitle": "Sarah Brosnan's Capuchin Cucumber Revolt and Ventral Striatum Social Comparison",
-          "slug": "the-relative-payoff-trap",
-          "formalismMode": "equation",
-          "anchor": "Sarah Brosnan and Frans de Waal's 2003 Emory University capuchin monkey (Cebus apella) cucumber-versus-grape token exchange experiment, Ernst Fehr and Klaus Schmidt's 1999 inequity-aversion utility equation, and Hidehiko Takahashi's 2009 fMRI pairing of anterior cingulate envy with ventral striatum Schadenfreude.",
-          "exitFact": "In Hidehiko Takahashi's 2009 functional magnetic resonance imaging trials in Chiba, Japan, the stronger a participant's dorsal anterior cingulate pain response had been while reading about a rival's triumph, the stronger their ventral striatum dopamine reward burst fired moments later when that same rival suffered a sudden misfortune."
+          "title": "Disgust",
+          "subtitle": "Cockroach Juice, Chocolate Fudge, and How a Rotten-Food Reflex Turned Into Moral Outrage",
+          "slug": "disgust",
+          "formalismMode": "highlights",
+          "anchor": "In 1986 at the University of Pennsylvania, psychologist Paul Rozin showed that hungry students refused to eat delicious chocolate fudge after watching it molded into the shape of dog feces, and refused to drink apple juice stirred for five seconds with a completely sterile dead cockroach.",
+          "exitFact": "In 2009 at the University of Toronto, psychologist Hanah Chapman wired sensors to people's faces and proved that getting cheated in a money game activates the exact same upper-lip-curling muscle used to spit bitter poison out of the mouth."
         },
         {
           "label": "Chapter 7",
-          "title": "The Information Gap",
-          "subtitle": "George Loewenstein's Curiosity Curve and Dopamine Firing for Non-Instrumental Answers",
-          "slug": "the-information-gap",
-          "formalismMode": "equation",
-          "anchor": "Daniel Berlyne's 1954 epistemic curiosity framework, George Loewenstein's 1994 Carnegie Mellon information-gap theory (inverted-U curiosity curve over partial knowledge), Ethan Bromberg-Martin and Okihide Hikosaka's 2009–2011 macaque midbrain dopamine and lateral habenula recordings for non-instrumental advance information, and Matthias Gruber's 2014 UC Davis hippocampal memory study.",
-          "exitFact": "In Matthias Gruber and Charan Ranganath's 2014 UC Davis neuroimaging trials, waiting fourteen seconds for the answer to a high-curiosity trivia question ramped up substantia nigra and nucleus accumbens dopamine activity so strongly that participants also remembered unrelated bystander faces flashed during the waiting period twenty-four hours later."
+          "title": "Guilt and Shame",
+          "subtitle": "The Urge to Hide Versus the Urge to Fix What You Broke",
+          "slug": "guilt-and-shame",
+          "formalismMode": "highlights",
+          "anchor": "Across decades of studies starting in the 1990s, psychologist June Tangney proved that shame and guilt are opposite forces: shame says 'I am a bad person' and drives people to hide or lash out in anger, while guilt says 'I made a bad mistake' and drives people to apologize and repair the damage.",
+          "exitFact": "In Tangney's longitudinal study of 476 county jail inmates released back into the community, prisoners prone to guilt were significantly less likely to be re-arrested within a year, whereas shame-prone prisoners hid their flaws, blamed others, and returned to jail at higher rates."
         },
         {
           "label": "Chapter 8",
-          "title": "The Involuntary Blush",
-          "subtitle": "Charles Darwin's Reddening Paradox and Dacher Keltner's Appeasement Signal",
-          "slug": "the-involuntary-blush",
-          "formalismMode": "ledger_or_list",
-          "anchor": "Charles Darwin's 1872 analysis of blushing in The Expression of the Emotions in Man and Animals, Stefan Mellander's 1982 demonstration of unique beta-adrenergic sympathetic vasodilation in human facial veins, and Dacher Keltner and Matthew Feinberg's 1997–2012 UC Berkeley nonverbal appeasement and economic trust game experiments.",
-          "exitFact": "In Matthew Feinberg, Robb Willer, and Dacher Keltner's 2012 Berkeley economic experiments, participants handed fifty percent more real money in trust games to partners who blushed, looked down, and touched their faces after an awkward social mishap than to partners who remained composed."
+          "title": "Envy and Jealousy",
+          "subtitle": "Cucumber Tantrums, Silver-Medal Frowns, and the Pain of Watching a Rival Win",
+          "slug": "envy-and-jealousy",
+          "formalismMode": "highlights",
+          "anchor": "In 2003 at Emory University, primatologists Sarah Brosnan and Frans de Waal showed that capuchin monkeys happily ate cucumber slices all day until they saw a neighbor monkey receive a sweet grape for the exact same task—at which point the cucumber-paid monkey hurled the vegetable back at the researcher.",
+          "exitFact": "In 1995, psychologists Victoria Medvec, Scott Madey, and Thomas Gilovich filmed Olympic medalists on the podium and proved that bronze medalists smile far more than silver medalists—because bronze winners compare themselves to finishing fourth with nothing, while silver winners torture themselves over losing gold."
         },
         {
           "label": "Chapter 9",
-          "title": "The Play-Bow Breath",
-          "subtitle": "Jaak Panksepp's Ultrasonic Rat Tickling and the Metabolic Cost of Social Grooming",
-          "slug": "the-play-bow-breath",
-          "formalismMode": "ledger_or_list",
-          "anchor": "Jaak Panksepp and Jeffrey Burgdorf's 1997–2000 Bowling Green discovery of 50-kilohertz ultrasonic chirps in tickled juvenile rats, Robert Provine's 1996–2000 acoustic field study of 1,200 natural human conversations, and Robin Dunbar's 2012 Oxford endorphin pain-threshold and primate grooming-scale trials.",
-          "exitFact": "In Robin Dunbar's 2012 Oxford pain-tolerance trials, fifteen minutes of synchronized group laughter raised participants' ischemic blood-pressure-cuff pain thresholds by roughly ten percent while solitary viewing or polite conversation left thresholds flat—allowing choral laughter to broadcast an endogenous opioid bond to three times as many partners at once as fingertip grooming."
+          "title": "Embarrassment",
+          "subtitle": "Why Only Humans Blush and How Turning Red Wins Instant Forgiveness",
+          "slug": "embarrassment",
+          "formalismMode": "highlights",
+          "anchor": "In 1872, Charles Darwin called blushing the most peculiar and most human of all expressions because it is the only bodily reaction caused purely by thinking about what other people think of us—and trying to suppress a blush only makes the face burn brighter.",
+          "exitFact": "Unlike every other vein in the human body, the tiny veins inside human cheeks are lined with special adrenaline sensors that widen the blood vessels instead of narrowing them, flooding the face with red blood within five seconds of a social blunder."
         },
         {
           "label": "Chapter 10",
-          "title": "The Swiss Mercenary's Fever",
-          "subtitle": "Johannes Hofer's Seventeenth-Century Medical Diagnosis and Sedikides's Thermoregulatory Buffer",
-          "slug": "the-swiss-mercenary-s-fever",
-          "formalismMode": "diagram",
-          "anchor": "Johannes Hofer's June 1688 University of Basel medical dissertation coining nostalgia (nostos + algos) among Swiss mercenaries hearing the Alpine Kuhreihen melody, and Constantine Sedikides, Tim Wildschut, and Xinyue Zhou's 2006–2012 Southampton and Sun Yat-sen University experiments on social connectedness and cold-room thermoregulation.",
-          "exitFact": "In Xinyue Zhou, Tim Wildschut, and Constantine Sedikides's 2012 thermoregulation trials, volunteers placed in a chilly sixteen-degree-Celsius room spontaneously experienced higher nostalgia than peers in warm rooms, and recalling a nostalgic memory allowed participants to hold their hands submerged in four-degree-Celsius ice water for thirty-four seconds compared to twenty-seven seconds for controls."
+          "title": "Laughter and Play",
+          "subtitle": "Ticklish Rats, Play Bows, and Why Group Laughter Bonds Strangers",
+          "slug": "laughter-and-play",
+          "formalismMode": "highlights",
+          "anchor": "In 1997 at Bowling Green State University, neuroscientist Jaak Panksepp turned on an ultrasonic microphone while tickling laboratory rats and discovered that rats chirp with rapid 50-kilohertz laughter—and chase the researcher's hand begging for more tickles.",
+          "exitFact": "After neuroscientist Robert Provine eavesdropped on 1,200 natural bursts of laughter in shopping malls and city sidewalks, he found that fewer than 20 percent followed anything remotely resembling a joke, and people laugh thirty times more often around others than when they are alone."
         },
         {
           "label": "Chapter 11",
-          "title": "The Asymmetric Curl",
-          "subtitle": "Paul Ekman's Unilateral Lip Raise and John Gottman's Four-Horseman Divorce Predictor",
-          "slug": "the-asymmetric-curl",
-          "formalismMode": "equation",
-          "anchor": "Paul Ekman and Wallace Friesen's 1986 cross-cultural identification of Action Unit 14 (unilateral buccinator and zygomaticus major contraction), and John Gottman and Robert Levenson's 1992–2002 University of Washington Love Lab longitudinal tracking of marital stability, the five-to-one affect balance equation, and partner infectious illness rates.",
-          "exitFact": "Across John Gottman and Robert Levenson's longitudinal University of Washington marriage studies, the exact count of unilateral Action Unit 14 contempt expressions flashed during a single fifteen-minute conflict conversation not only predicted divorce with over ninety percent accuracy, but also predicted how many infectious respiratory illnesses the targeted spouse suffered over the next four years."
+          "title": "Nostalgia",
+          "subtitle": "Swiss Mercenary Homesickness, Cold-Room Warmth, and How Old Songs Steady the Mind",
+          "slug": "nostalgia",
+          "formalismMode": "highlights",
+          "anchor": "In 1688 in Basel, Swiss physician Johannes Hofer coined the word 'nostalgia' from the Greek words for homecoming and pain to describe a mysterious wasting fever among young Swiss mercenaries fighting in lowland France who fell ill whenever they heard alpine cowherd songs.",
+          "exitFact": "In 2012, psychologists Xinyue Zhou and Constantine Sedikides discovered that people placed in a chilly 16-degree Celsius room invoke nostalgic memories to warm up, and listening to nostalgic music makes volunteers able to hold their hand in ice-cold water significantly longer."
         },
         {
           "label": "Chapter 12",
-          "title": "The Upstream Reciprocity Engine",
-          "subtitle": "Robert Trivers's Altruism Ledger and Sara Algoe's Find-Remind-and-Bind Amplification",
-          "slug": "the-upstream-reciprocity-engine",
-          "formalismMode": "equation",
-          "anchor": "Robert Trivers's 1971 reciprocal altruism inequality, Monica Bartlett and David DeSteno's 2006 Northeastern University crashed-computer upstream reciprocity experiment, Martin Nowak and Sebastien Roch's 2007 mathematical theory of upstream reciprocity, and Sara Algoe's 2008–2012 UNC Chapel Hill find-remind-and-bind model.",
-          "exitFact": "In Monica Bartlett and David DeSteno's 2006 Northeastern University trials, participants whose crashed computers were rescued by a helpful confederate spent fifty percent more time completing tedious survey sheets for that benefactor and equally extended their helping time by fifty percent for a complete stranger they had never met."
+          "title": "Gratitude and Awe",
+          "subtitle": "Overview Astronauts, Towering Redwood Trees, and How Feeling Small Makes Us Generous",
+          "slug": "gratitude-and-awe",
+          "formalismMode": "highlights",
+          "anchor": "In 2015 at the University of California, Berkeley, psychologist Paul Piff and Dacher Keltner stood volunteers inside a grove of 200-foot Tasmanian blue gum eucalyptus trees for sixty seconds and staged an accident where a passerby dropped a handful of pens—and the tree-gazers picked up significantly more pens than volunteers who stared at a tall office building.",
+          "exitFact": "Waiters and waitresses who simply wrote 'Thank you' on the back of a restaurant check saw their tips rise by 11 percent—and when psychologist Martin Seligman asked volunteers to hand-deliver a 300-word gratitude letter to someone they had never properly thanked, their happiness scores stayed elevated for a full month."
         }
       ]
     },

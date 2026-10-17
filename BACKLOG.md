@@ -21,7 +21,7 @@
 
 ### Batch 2 — Completed & Published (`34` Catalog Volumes)
 5. **Consciousness** — *The Subjective Mind and Eleven Neighbors From Global Workspace to Split-Brain Patients* (`books/consciousness.md`, `mode: "landscape"`, Profile B)
-6. **Emotions** — *The Evolutionary Calculus and Neural Circuitry of Human Feeling* (`books/emotions.md`, `mode: "facet"`, Profile C)
+6. **Emotions** — *Fear, Anger, Joy, Grief, Love, and Seven Other Everyday Feelings in Twelve Highlights Each* (`books/emotions.md`, `mode: "listicle"`, Profile C)
 7. **Alan Turing** — *Computability, Codebreaking, and the Patterns of Living Form* (`books/alan-turing.md`, `mode: "facet"`, Profile D)
 8. **The Cell** — *Twelve Molecular Machines in Twelve Highlights Each* (`books/the-cell.md`, `mode: "listicle"`, Profile B)
 

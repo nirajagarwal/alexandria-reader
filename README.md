@@ -88,7 +88,7 @@ The client application ([`index.html`](index.html), [`style.css`](style.css), [`
 ├── favicon.svg                 # Light-styled Literata 'A' vector app icon
 ├── site.webmanifest            # PWA manifest
 ├── og-image.png                # 1200x630 PNG OpenGraph card for alexandria.press
-├── sitemap.xml                 # Full XML sitemap (root + 36 books + 468 chapters)
+├── sitemap.xml                 # Full XML sitemap (root + 35 books + 455 chapters)
 ├── books/                      # Canonical 12-chapter Markdown manuscripts (<slug>.md)
 ├── dossiers/                   # Verified 12-chapter research dossiers & job telemetry
 ├── assets/
@@ -165,14 +165,14 @@ python3 scripts/publish_book.py \
 ```
 
 ### 6. Run the Automated Test Suite
-Verifies repository hygiene, `index.html` markers, `catalog.json` parity, all 36 manuscripts and dossiers, all 468 chapter HTML pages, cover SVGs, OG PNGs, and all 108 Typst PDFs:
+Verifies repository hygiene, `index.html` markers, `catalog.json` parity, all 35 manuscripts and dossiers, all 455 chapter HTML pages, cover SVGs, OG PNGs, and all 105 Typst PDFs:
 ```bash
 python3 tests/test_reader.py
 ```
 
 ---
 
-## Published Catalog (36 Volumes)
+## Published Catalog (35 Volumes)
 
 | # | Volume | Subtitle | Category | Format |
 | :- | :--- | :--- | :--- | :--- |
@@ -183,32 +183,31 @@ python3 tests/test_reader.py
 | 5 | **Liminal Thresholds** | *Discoveries That Broke Scientific Consensus* | Anomalous Physics | Mechanisms |
 | 6 | **The Autonomous Engine** | *The Control Loops of the Human Body* | Physiology & Cybernetics | Mechanisms |
 | 7 | **Elemental Asymmetries** | *The Physical Constraints of Twelve Elements* | Materials & Chemistry | Mechanisms |
-| 8 | **Affective Topologies** | *The Predictive Control Loops of Human Emotion* | Neuroscience & Cybernetics | Mechanisms |
-| 9 | **Architectures of Choice** | *Practical Decision Theory for an Unpredictable World* | Decision Science & Strategy | Mechanisms |
-| 10 | **Tales of Audacity** | *Twelve Stories of Breaking Entrenched Consensus* | History & Strategy | Mechanisms |
-| 11 | **Architectures of the Grid** | *The Physical Wiring That Keeps Modern Society Running* | Infrastructure & Physics | Mechanisms |
-| 12 | **Sensory Worlds** | *How Non-Human Nervous Systems Measure Reality* | Ethology & Biophysics | Mechanisms |
-| 13 | **Instruments of Precision** | *Twelve Machines That Expanded the Boundaries of Measurement* | Physics & Metrology | Mechanisms |
-| 14 | **Biological Ingenuity** | *Twelve Evolutionary Solutions to Physical Limits* | Evolutionary Biophysics | Mechanisms |
-| 15 | **Ghosts in the Parchment** | *Twelve Forensic Recoveries of Lost Texts and Deciphered Scripts* | Philology & Forensics | Mechanisms |
-| 16 | **Protocols of Coordination** | *How Strangers Build Trust Without Central Authority* | Economics & Institutions | Mechanisms |
-| 17 | **Anatomies of Diagnostic Error** | *Twelve Medical Mysteries That Revealed Hidden Biology* | Medicine & Pathology | Mechanisms |
-| 18 | **Planetary Triggers** | *How Small Physical Instabilities Unleash Catastrophic Energy* | Earth & Planetary Physics | Mechanisms |
-| 19 | **Virtues** | *Why Courage, Honesty, and Restraint Survive in a Selfish World* | Moral Psychology & Strategy | Mechanisms |
-| 20 | **Plants** | *How Familiar Crops, Trees, and Alkaloids Remade the Human World* | Botany & Civilization | Mechanisms |
-| 21 | **The Curious Physicist** | *Twelve Facets of Richard Feynman* | Physics & Biography | Biography |
-| 22 | **Paper Panics** | *Twelve Financial Manias, Runs, and Liquidity Crashes* | Financial History & Risk | Mechanisms |
-| 23 | **Artificial Intelligence** | *The Core Concept and Eleven Neighbors That Shape Its Landscape* | Computer Science & Intelligence | Landscape |
-| 24 | **The Human Body** | *Twelve Organs and Systems in Twelve Highlights Each* | Anatomy & Physiology | 12×12 Highlights |
-| 25 | **Attention** | *The Core Bottleneck and Eleven Neighbors That Shape Human Focus* | Cognitive Science & Psychology | Landscape |
-| 26 | **Self-Transcendence** | *The Core Shift and Eleven Neighbors That Dissolve the Boundaries of the Self* | Psychology & Contemplative Science | Landscape |
-| 27 | **Entropy** | *The Core Law of Disorder and Eleven Neighbors That Govern Time, Heat, and Information* | Physics & Information | Landscape |
-| 28 | **Materials** | *How Concrete, Steel, Glass, Paper, and Silicon Built Civilization* | Materials Science & Engineering | Mechanisms |
-| 29 | **Claude Shannon** | *The Juggler Who Turned Information Into Physics* | Information Theory & Biography | Biography |
-| 30 | **The Ocean** | *Twelve Marine Zones and Systems in Twelve Highlights Each* | Oceanography & Earth Science | 12×12 Highlights |
-| 31 | **Consciousness** | *The Subjective Mind and Eleven Neighbors From Global Workspace to Split-Brain Patients* | Neuroscience & Philosophy of Mind | Landscape |
-| 32 | **Emotions** | *The Mathematical Laws That Govern Heat, Waves, Gravity, and Chance* | Mathematics & Physics | Mechanisms |
-| 33 | **John von Neumann** | *The Mind That Architected Game Theory, Stored-Program Computers, and Self-Replicating Automata* | Mathematics, Computing & Biography | Biography |
-| 34 | **The Solar System** | *Twelve Worlds and Orbital Realms in Twelve Highlights Each* | Planetary Science & Astrophysics | 12×12 Highlights |
-| 35 | **Human Functions** | *Sleeping, Breathing, Walking, Running, and Eight Other Daily Acts in Twelve Highlights Each* | Physiology & Biomechanics | 12×12 Highlights |
-| 36 | **Vaccines** | *How Cowpox Scabs, Weakened Viruses, Sugar Coats, and Fat Droplets Taught the Body to Fight Back* | Medicine & Immunology | Mechanisms |
+| 8 | **Architectures of Choice** | *Practical Decision Theory for an Unpredictable World* | Decision Science & Strategy | Mechanisms |
+| 9 | **Tales of Audacity** | *Twelve Stories of Breaking Entrenched Consensus* | History & Strategy | Mechanisms |
+| 10 | **Architectures of the Grid** | *The Physical Wiring That Keeps Modern Society Running* | Infrastructure & Physics | Mechanisms |
+| 11 | **Sensory Worlds** | *How Non-Human Nervous Systems Measure Reality* | Ethology & Biophysics | Mechanisms |
+| 12 | **Instruments of Precision** | *Twelve Machines That Expanded the Boundaries of Measurement* | Physics & Metrology | Mechanisms |
+| 13 | **Ghosts in the Parchment** | *How Scholars Exposed Forgeries, Deciphered Lost Scripts, and Reconstructed Vanished Books* | Philology & Forensics | Mechanisms |
+| 14 | **Fictions of Order** | *Twelve Legal Inventions That Engineered the Modern World* | Law & Institutions | Mechanisms |
+| 15 | **Bonds of Enmity** | *How Blood Feuds, Rivalries, and Escalation Traps Lock Adversaries Together* | Conflict & Game Theory | Mechanisms |
+| 16 | **William James** | *Flights, Perches, and the Science of the Stream of Thought* | Biography & Psychology | Biography |
+| 17 | **Planetary Triggers** | *How Small Physical Instabilities Unleash Catastrophic Energy* | Geophysics & Thermodynamics | Mechanisms |
+| 18 | **Virtues** | *Why Courage, Honesty, and Restraint Survive in a Selfish World* | Ethics & Human Behavior | Mechanisms |
+| 19 | **Plants** | *How Familiar Crops, Trees, and Alkaloids Remade the Human World* | Botany & History | Mechanisms |
+| 20 | **Paper Panics** | *Twelve Financial Manias, Runs, and Liquidity Crashes* | Economics & Financial History | Mechanisms |
+| 21 | **Richard Feynman** | *Translating Abstract Symbols Into Physical Toys* | Biography & Physics | Biography |
+| 22 | **Artificial Intelligence** | *The Core Concept and Eleven Neighbors That Shape Its Landscape* | Computation & Intelligence | Landscape |
+| 23 | **The Human Body** | *Twelve Organs and Systems in Twelve Highlights Each* | Life Sciences | 12×12 Highlights |
+| 24 | **Attention** | *The Core Bottleneck and Eleven Neighbors That Shape Human Focus* | Cognitive Architecture | Landscape |
+| 25 | **Self-Transcendence** | *The Core Shift and Eleven Neighbors That Dissolve the Boundaries of the Self* | Psychology & Philosophy | Landscape |
+| 26 | **Entropy** | *The Core Law of Disorder and Eleven Neighbors That Govern Time, Heat, and Information* | Physics & Information | Landscape |
+| 27 | **Materials** | *How Concrete, Steel, Glass, Paper, and Silicon Built Civilization* | Materials & Engineering | Mechanisms |
+| 28 | **Claude Shannon** | *The Juggler Who Turned Information Into Physics* | Biography & Information Theory | Biography |
+| 29 | **The Ocean** | *Twelve Marine Zones and Systems in Twelve Highlights Each* | Earth & Ocean Science | 12×12 Highlights |
+| 30 | **Consciousness** | *The Subjective Mind and Eleven Neighbors From Global Workspace to Split-Brain Patients* | Neuroscience & Philosophy | Landscape |
+| 31 | **Emotions** | *Fear, Anger, Joy, Grief, Love, and Seven Other Everyday Feelings in Twelve Highlights Each* | Psychology & Behavior | 12×12 Highlights |
+| 32 | **Alan Turing** | *Computability, Codebreaking, and the Patterns of Living Form* | Biography & Computation | Biography |
+| 33 | **The Cell** | *Twelve Molecular Machines in Twelve Highlights Each* | Molecular Biology | 12×12 Highlights |
+| 34 | **Human Functions** | *Sleeping, Breathing, Walking, Running, and Eight Other Daily Acts in Twelve Highlights Each* | Physiology & Biomechanics | 12×12 Highlights |
+| 35 | **Vaccines** | *How Cowpox Scabs, Weakened Viruses, Sugar Coats, and Fat Droplets Taught the Body to Fight Back* | Medicine & Immunology | Mechanisms |
