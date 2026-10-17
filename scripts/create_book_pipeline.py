@@ -382,31 +382,81 @@ def stage1_generate_dossier_batch(api_key: str, spec: dict, tracker: CostAndStat
     profile = spec.get("profile", "B")
     profile_desc = PROFILE_GUIDANCE.get(profile, PROFILE_GUIDANCE["B"])
 
-    mode_instructions = ""
-    if mode == "landscape":
-        mode_instructions = """
-Structural Form (`mode: "landscape"`):
-- Chapter 1 examines the core phenomenon itself and its governing conceptual tension.
-- Chapters 2 through 12 explore 11 distinct neighboring concepts, rival frameworks, boundary cases, or non-obvious extensions that illuminate the core phenomenon from different angles.
-"""
-    elif mode == "listicle":
-        mode_instructions = """
-Structural Form (`mode: "listicle"`):
-- Each of the 12 chapters examines one major subsystem, zone, or component of the topic through 12 counterintuitive, high-signal empirical facts (`prospected_seeds`: array of 12 strings per chapter).
-"""
-    elif fmt == "biography":
-        mode_instructions = """
-Structural Form (`format: "biography"`):
-- Chapter 1 examines the thinker's formative cognitive style and intellectual departure point.
-- Chapters 2 through 12 each examine one decisive theorem, experiment, machine, or intellectual collision.
+    if mode == "listicle":
+        prompt = f"""You are the Editorial Architect for Alexandria Press (alexandria.press).
+
+ALEXANDRIA MANIFESTO FIRST PRINCIPLE:
+"We are not writing to impress. The material we have itself is impressive. We need to get out of the way and let the material speak for itself."
+
+Design a 12-chapter `12x12` Prospected Highlights (`mode: "listicle"`) dossier JSON for:
+- Slug: "{spec['slug']}"
+- Title: "{title}" (no colons)
+- Subtitle: "{subtitle}" (no colons)
+- Category: "{category}"
+
+FORM ARCHITECTURE (`mode: "listicle"` — 12 Subsystems × 12 Highlights Each):
+1. In the `listicle` form, continuous narrative is NOT used. Instead, each of the 12 chapters examines one major organ, zone, function, or component of "{title}" through **12 standalone, perpendicular highlights (`prospected_seeds`)**.
+2. Prospect across distant angles—physics, biology, evolutionary quirks, history, clinical anomalies, chemistry, and everyday human experience—so the 12 seeds in each chapter feel genuinely surprising and non-repetitive.
+3. Each seed in `"prospected_seeds"` (array of 12 strings per chapter) should state both the counterintuitive observation/measurement and the underlying reason or mechanism why it happens.
+4. Chapter `title` and `subtitle` must not contain colons (`:`).
+5. Include a `"search_query"` (8–14 words) to verify key quantitative facts in the chapter via Google Search.
+
+Return ONLY a valid JSON object matching this structure:
+{{
+  "slug": "{spec['slug']}",
+  "title": "{title}",
+  "subtitle": "{subtitle}",
+  "category": "{category}",
+  "mode": "listicle",
+  "format": "listicle",
+  "profile": "{profile}",
+  "chapters": [
+    {{
+      "chapter": 1,
+      "title": "...",
+      "subtitle": "...",
+      "formalism_mode": "listicle",
+      "historical_anchor": "Summary of the primary researchers, physiological/physical benchmarks, and historical records anchoring this chapter's 12 highlights.",
+      "exit_fact": "The concrete empirical fact or measurement that closes the 12th highlight of the chapter.",
+      "prospected_seeds": [
+        "1. First counterintuitive fact + underlying mechanism...",
+        "2. Second counterintuitive fact + underlying mechanism...",
+        "3. ...",
+        "4. ...",
+        "5. ...",
+        "6. ...",
+        "7. ...",
+        "8. ...",
+        "9. ...",
+        "10. ...",
+        "11. ...",
+        "12. Twelfth counterintuitive fact + underlying mechanism..."
+      ],
+      "search_query": "..."
+    }}
+  ]
+}}
 """
     else:
-        mode_instructions = """
-Structural Form (`mode: "facet"` / `format: "mechanisms"`):
+        if mode == "landscape":
+            mode_instructions = """
+FORM ARCHITECTURE (`mode: "landscape"` — Contextual Concept Landscape):
+- Chapter 1 examines the anchor concept itself (`what` it is, its governing mechanism, and its central tension).
+- Chapters 2 through 12 explore 11 distinct neighboring concepts, rival frameworks, boundary cases, or consequences that illuminate the anchor concept from different angles (`what` the neighbor is + `why_here` how it constrains, enables, or contrasts with the central topic).
+"""
+        elif fmt == "biography":
+            mode_instructions = """
+FORM ARCHITECTURE (`format: "biography"` — 12-Facet Intellectual Biography):
+- Chapter 1 examines the thinker's formative cognitive style and early intellectual departure point.
+- Chapters 2 through 12 each examine one decisive theorem, experiment, machine, or intellectual collision.
+"""
+        else:
+            mode_instructions = """
+FORM ARCHITECTURE (`mode: "facet"` / `format: "mechanisms"` — 12-Facet Monograph):
 - Design 12 distinct chapters that examine the subject across its deepest scientific mechanisms, competing theories, curious anomalies, and philosophical or cross-disciplinary dimensions.
 """
 
-    prompt = f"""You are the Editorial Architect for Alexandria Press (alexandria.press).
+        prompt = f"""You are the Editorial Architect for Alexandria Press (alexandria.press).
 
 ALEXANDRIA MANIFESTO FIRST PRINCIPLE:
 "We are not writing to impress. The material we have itself is impressive. We need to get out of the way and let the material speak for itself."
@@ -428,7 +478,6 @@ TWO-TIER ARCHITECTURE GUIDELINES:
    - `"ledger_or_list"`: when a mechanism is experimental, clinical, or comparative and a 3–4 item structured breakdown clarifies the protocol or contrast.
    - `"diagram"`: at most 1–3 chapters across the book, only where a 3-stage schematic flow genuinely clarifies the system.
    - `"prose"`: continuous essay prose when the mechanism is philosophical, historical, contemplative, or conceptual.
-   (If `mode` is `"listicle"`, set `"formalism_mode": "listicle"` for all chapters.)
 4. Rotate Opening Doors across the 12 chapters (`Scene/Collision`, `Constraint/Paradox`, `Artifact/Measurement`) so chapters do not all begin with the same formula.
 5. Chapter `title` and `subtitle` must not contain colons (`:`).
 6. Include a `"search_query"` (8–14 words) to verify the chapter's primary researcher, year, and empirical details via Google Search.
@@ -643,6 +692,7 @@ def build_chapter_prompt(dossier: dict, ch: dict) -> str:
     ch_title = ch["title"].replace(":", "")
     ch_sub = ch["subtitle"].replace(":", "")
     f_mode = ch.get("formalism_mode", "prose")
+    mode = dossier.get("mode", "facet")
     anchor = ch.get("historical_anchor", "")
     exit_fact = ch.get("exit_fact", "")
     v_facts = "\n".join(f"- {f}" for f in ch.get("verified_facts", []))
@@ -650,15 +700,31 @@ def build_chapter_prompt(dossier: dict, ch: dict) -> str:
     profile = dossier.get("profile", "B")
     profile_desc = PROFILE_GUIDANCE.get(profile, PROFILE_GUIDANCE["B"])
 
-    if f_mode == "listicle":
+    if mode == "listicle" or f_mode == "listicle":
         seeds = ch.get("prospected_seeds", [])
         seeds_str = "\n".join(f"  {idx}. {s}" for idx, s in enumerate(seeds, 1)) if seeds else ""
-        formalism_instr = f"""
-Format (`mode: "listicle"`):
-- Write 12 standalone paragraphs (~48–56 words per paragraph, ~600–670 words total) separated by 11 standalone lines containing `· · ·`.
-{f"- Seeds:{chr(10)}{seeds_str}" if seeds_str else ""}
-"""
-    elif f_mode == "diagram":
+        return f"""Write Chapter {ch_num} of "{dossier['title']}: {dossier['subtitle']}" for Alexandria Press.
+
+Start with this exact 3-line header (no colons `:`):
+### Chapter {ch_num}
+# {ch_title}
+## {ch_sub}
+
+Form (`mode: "listicle"` — 12 Prospected Highlights):
+- In this form, narrative is NOT used. Write **12 standalone paragraphs** (~48–56 words per paragraph, ~600–680 words total) separated by **11 standalone centered lines containing `· · ·`**.
+- Do NOT use numbered lists (`1.`, `2.`) or bullet points.
+{f"- Prospected Seeds:{chr(10)}{seeds_str}" if seeds_str else f"- Core Anchor: {anchor}"}
+{f"- Verified Primary Details:{chr(10)}{v_facts}" if v_facts else ""}
+- 12th Highlight Closing Fact: {exit_fact}
+
+Alexandria Manifesto Compass Points (`listicle` form):
+1. Authorial Humility: "We are not writing to impress. The material we have itself is impressive. Get out of the way and let the material speak for itself."
+2. Open Every Highlight Directly With the Surprise: Start each of the 12 paragraphs directly with the counterintuitive fact, physical measurement, or paradox, and explain the underlying mechanism in 2–3 clear, direct sentences.
+3. Clean Exit & Hygiene: Paraphrase all statements in indirect speech (no 5+ word direct quotes inside `"..."`), escape literal dollar currency as `\\$100`, and end the 12th paragraph directly on its concrete fact without a moralizing summary sentence.
+
+Output ONLY the Markdown for Chapter {ch_num} starting with `### Chapter {ch_num}`."""
+
+    if f_mode == "diagram":
         formalism_instr = f"""
 Earned Visual: Include `[DIAGRAM_SLOT_{ch_num}]` on its own line between two paragraphs where a schematic fits, and at the very end after `===DIAGRAM_LABELS===` provide 6 short labels (`<= 14` chars each): `Box1Title | Box1Sub | Box2Title | Box2Sub | Box3Title | Box3Sub`.
 """
@@ -675,6 +741,13 @@ Earned Structure: Use a concise bulleted list (3–4 items) if it sharpens the e
 Format: Continuous essay prose. Include an equation or bullet list only if the mechanism genuinely requires it.
 """
 
+    landscape_note = ""
+    if mode == "landscape":
+        if ch_num == 1:
+            landscape_note = "- Landscape Role (Anchor Concept): Unpack the core phenomenon itself, its governing mechanism, and its central conceptual tension.\n"
+        else:
+            landscape_note = f"- Landscape Role (Neighbor Concept): Explain both what `{ch_title}` is (`what`) and how it connects to, constrains, or contrasts with `{dossier['title']}` (`why_here`).\n"
+
     return f"""Write Chapter {ch_num} of "{dossier['title']}: {dossier['subtitle']}" for Alexandria Press.
 
 Start with this exact 3-line header (no colons `:`):
@@ -683,7 +756,7 @@ Start with this exact 3-line header (no colons `:`):
 ## {ch_sub}
 
 Chapter Grounding & Mechanism:
-- Narrative Vector & Forensic Deep-Dive: {anchor}
+{landscape_note}- Narrative Vector & Forensic Deep-Dive: {anchor}
 {f"- Verified Primary Details:{chr(10)}{v_facts}" if v_facts else ""}
 - Closing Resolution: {exit_fact}
 - Tier-2 Domain Profile: {profile_desc}
