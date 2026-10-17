@@ -20,7 +20,7 @@ import sys
 import tempfile
 import xml.etree.ElementTree as ET
 
-from lib import BASE_DIR, PDFS_DIR as PDF_OUT_DIR, load_catalog, resolve_book_md  # noqa: E402
+from lib import BASE_DIR, PDFS_DIR as PDF_OUT_DIR, load_catalog, resolve_book_md, save_catalog  # noqa: E402
 
 
 def load_books_metadata():
@@ -339,7 +339,7 @@ def convert_body_to_typst(body: str, temp_dir: str, sec_idx: int, accent_hex: st
                     list_items.append(f"- {convert_inline_markdown_to_typst(m_ul.group(1))}")
                 elif m_ol:
                     list_items.append(f"+ {convert_inline_markdown_to_typst(m_ol.group(1))}")
-            out_typ.append("#block(inset: (left: 4pt, y: 1pt))[\n" + "\n".join(list_items) + "\n]")
+            out_typ.append("\n".join(list_items))
             continue
 
         # Otherwise normal paragraph (possibly mixed with trailing list lines)
@@ -535,6 +535,8 @@ def build_typ_source(
         "",
         f'#set text(font: "Literata", size: {f_size}, fill: ink-color, lang: "en")',
         f"#set par(justify: true, leading: {leading}, spacing: {spacing})",
+        f"#set list(indent: 4pt, spacing: {spacing})",
+        f"#set enum(indent: 4pt, spacing: {spacing})",
         "",
         *cover_block,
         "// TITLE & CONTENTS FRONTISPIECE",
@@ -573,14 +575,14 @@ def build_typ_source(
                 f'#text(size: {toc_title_sz}, weight: "semibold", fill: ink-color)['
                 f'#box(width: {num_col_w})[#text(fill: muted-color, weight: "regular")[—]]#box[Introduction]]'
             )
-            sub_line = f'#pad(left: {num_col_w})[#text(size: {toc_sub_sz}, fill: muted-color)[{sub_esc}]]'
+            sub_line = f'#pad(left: {num_col_w})[#text(size: {toc_sub_sz}, style: "italic", fill: muted-color)[{sub_esc}]]'
         else:
             # Escape period (\\.) so Typst never parses "1. Title" as a block-level #enum list!
             title_line = (
                 f'#text(size: {toc_title_sz}, weight: "semibold", fill: ink-color)['
                 f'#box(width: {num_col_w})[{idx}\\.]#box[{title_esc}]]'
             )
-            sub_line = f'#pad(left: {num_col_w})[#text(size: {toc_sub_sz}, fill: muted-color)[{sub_esc}]]'
+            sub_line = f'#pad(left: {num_col_w})[#text(size: {toc_sub_sz}, style: "italic", fill: muted-color)[{sub_esc}]]'
 
         toc_entries.append(
             f'  #block(above: {toc_entry_gap}, below: 0pt, breakable: false)[\n'
@@ -623,7 +625,7 @@ def build_typ_source(
         typ_lines.append("#v(2pt)")
         typ_lines.append(f'#text(font: "Literata", size: {title_sz}, weight: "bold", fill: ink-color)[{title_txt}]')
         typ_lines.append("#v(1pt)")
-        typ_lines.append(f'#text(font: "Literata", size: 10.6pt, fill: sub-color)[{subtitle_txt}]')
+        typ_lines.append(f'#text(font: "Literata", size: 10.6pt, style: "italic", fill: sub-color)[{subtitle_txt}]')
         typ_lines.append("#v(4pt)")
         typ_lines.append("#line(length: 2.2in, stroke: 0.5pt + rule-color)")
         typ_lines.append("#v(5pt)")
@@ -638,7 +640,7 @@ def build_typ_source(
                 intro_sz = "9.8pt" if w_cnt > 330 else ("10.3pt" if w_cnt > 270 else "10.8pt")
                 intro_lead = "0.52em" if w_cnt > 330 else "0.55em"
                 intro_spac = "0.76em" if w_cnt > 330 else "0.82em"
-            typ_lines.append(f'#block[#set text(size: {intro_sz}); #set par(leading: {intro_lead}, spacing: {intro_spac});\n{body_typ}\n]')
+            typ_lines.append(f'#block[#set text(size: {intro_sz}); #set par(leading: {intro_lead}, spacing: {intro_spac}); #set list(spacing: {intro_spac}); #set enum(spacing: {intro_spac});\n{body_typ}\n]')
         else:
             typ_lines.append(body_typ)
 
@@ -771,6 +773,7 @@ def main():
         parser.print_help()
         sys.exit(1)
 
+    changed_catalog = False
     for fpath in target_files:
         slug, resolved_path = resolve_book_md(fpath)
         meta = books_meta.get(slug, {})
@@ -779,10 +782,18 @@ def main():
         pdf_path, sec_pages, comp_path, comp_pages, mob_path, mob_pages = compile_book_to_pdf(
             resolved_path, category=cat, accent_hex=accent
         )
+        if slug in books_meta:
+            books_meta[slug]["sectionPages"] = sec_pages
+            books_meta[slug]["compactSectionPages"] = comp_pages
+            books_meta[slug]["mobileSectionPages"] = mob_pages
+            changed_catalog = True
         size_kb = os.path.getsize(pdf_path) / 1024.0
         comp_kb = os.path.getsize(comp_path) / 1024.0
         mob_kb = os.path.getsize(mob_path) / 1024.0
         print(f"[OK] {slug:28s} -> desktop ({size_kb:5.1f} KB) | compact ({comp_kb:5.1f} KB) | mobile ({mob_kb:5.1f} KB)")
+
+    if changed_catalog:
+        save_catalog(books_meta)
 
 
 if __name__ == "__main__":

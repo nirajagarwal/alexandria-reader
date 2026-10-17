@@ -608,21 +608,10 @@
         .home-brand {
             display: inline-flex;
             align-items: center;
-            gap: 12px;
             cursor: pointer;
             text-decoration: none;
             user-select: none;
             flex-shrink: 0;
-        }
-
-        .home-brand-icon {
-            width: 32px !important;
-            height: 32px !important;
-            min-width: 32px !important;
-            max-width: 32px !important;
-            border-radius: 6px;
-            object-fit: contain;
-            display: block;
         }
 
         .home-brand-title {
