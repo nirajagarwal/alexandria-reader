@@ -607,10 +607,8 @@
         const modal = document.getElementById('sources-modal');
         if (modal) {
             modal.classList.add('open');
-            const activeItem = modal.querySelector('.source-item.active');
-            if (activeItem) {
-                setTimeout(() => activeItem.scrollIntoView({ block: 'nearest', behavior: 'smooth' }), 40);
-            }
+            const container = document.getElementById('sources-container');
+            if (container) container.scrollTop = 0;
         }
     }
 
