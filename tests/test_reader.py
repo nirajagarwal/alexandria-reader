@@ -85,13 +85,18 @@ def test_index_html_and_markers():
     assert 'id="pdf-book-frame"' in html_text
     assert 'id="pdf-slot-left"' in html_text
     assert 'id="pdf-slot-right"' in html_text
+    assert 'id="edge-zone-prev"' in html_text
+    assert 'id="edge-zone-next"' in html_text
     assert 'id="prev-spread-btn"' in html_text
     assert 'id="next-spread-btn"' in html_text
+    assert 'id="sources-modal"' in html_text
+    assert 'id="catalog-filters"' in html_text
+    assert 'id="library-modal"' not in html_text, "Redundant #library-modal should be removed"
     assert 'class="running-footer"' not in html_text, "Legacy .running-footer should be removed"
     assert 'id="col-left"' not in html_text, "Legacy HTML reflow columns should be removed"
 
     catalog = load_catalog()
-    card_keys = re.findall(r'<article class="book-card" data-key="([^"]+)"', html_text)
+    card_keys = re.findall(r'class="book-card"[^>]*data-key="([^"]+)"', html_text)
     assert card_keys == list(catalog.keys()), (
         f"Catalog cards in index.html ({len(card_keys)}) do not match catalog.json order ({len(catalog)})"
     )
@@ -101,7 +106,7 @@ def test_index_html_and_markers():
 def test_catalog_dossiers_and_pdfs():
     catalog = load_catalog()
     books_js_path = os.path.join(BASE_DIR, "js", "books-data.js")
-    assert os.path.getsize(books_js_path) < 150_000, "js/books-data.js should remain slim (<150 KB)"
+    assert os.path.getsize(books_js_path) < 500_000, "js/books-data.js should remain slim (<500 KB with provenance)"
 
     content = open(books_js_path, "r", encoding="utf-8").read()
     p_end = content.find("return {") + len("return ")
@@ -114,9 +119,24 @@ def test_catalog_dossiers_and_pdfs():
     for slug, entry in catalog.items():
         b = books[slug]
         assert "markdown" not in b, f"{slug} should not embed raw markdown in js/books-data.js"
+        assert b.get("format") in ("mechanisms", "landscape", "highlights", "biography"), (
+            f"{slug} missing valid format in js/books-data.js: {b.get('format')}"
+        )
         assert len(b.get("chapters", [])) == 13, (
             f"{slug} must have 13 sections (Introduction + 12 Chapters), found {len(b.get('chapters', []))}"
         )
+
+        # Verify static crawlable book & chapter HTML pages exist
+        book_read_index = os.path.join(BASE_DIR, "read", slug, "index.html")
+        assert os.path.exists(book_read_index), f"Missing crawlable book index: read/{slug}/index.html"
+        for ch_idx, ch in enumerate(b["chapters"]):
+            ch_slug = ch.get("slug")
+            assert ch_slug, f"Missing chapter slug for {slug} ch_idx={ch_idx}"
+            ch_html_path = os.path.join(BASE_DIR, "read", slug, f"{ch_slug}.html")
+            assert os.path.exists(ch_html_path), f"Missing crawlable chapter page: read/{slug}/{ch_slug}.html"
+            if ch_idx >= 1:
+                assert ch.get("anchor"), f"Missing provenance anchor for {slug} ch {ch_idx}"
+                assert ch.get("exitFact"), f"Missing provenance exitFact for {slug} ch {ch_idx}"
 
         # Verify manuscript, dossier, cover SVG, and thumbnail SVG exist
         md_path = os.path.join(BASE_DIR, "books", f"{slug}.md")
@@ -149,7 +169,7 @@ def test_catalog_dossiers_and_pdfs():
             )
 
     print(
-        f"✓ All {len(catalog)} volumes verified across catalog.json, books/*.md, dossiers/*.json, covers, thumbs, and 3-edition Typst PDFs."
+        f"✓ All {len(catalog)} volumes verified across catalog.json, books/*.md, dossiers/*.json, read/<slug>/*.html, covers, thumbs, and 3-edition Typst PDFs."
     )
 
 

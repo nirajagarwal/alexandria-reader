@@ -30,7 +30,10 @@
         "Steady winds above 3 meters per second twist the upper ocean into counter-rotating horizontal corkscrew vortices discovered by Irving Langmuir in 1938, herding floating seaweed, foam, and oil into parallel streaks spaced 10 to 50 meters apart above the downwelling convergence lines.",
         "Long dismissed as mariners' folklore because linear models predict one such event every 10,000 years, rogue waves were proved real on January 1, 1995, when a laser on the Draupner platform in the North Sea recorded a single 25.6-meter wall of water focused from 12-meter swells by nonlinear Benjamin-Feir instability.",
         "Out of more than one million described insect species on Earth, only five wingless water striders of the genus Halobates live permanently on the open ocean, skating across the sea's surface tension on water-repellent microtrichia hairs and laying their eggs on floating seabird feathers."
-      ]
+      ],
+      "historical_anchor": "The uppermost 50 to 1,000 micrometers of the ocean is not ordinary water. It forms a gelatinous film called the sea surface microlayer, enriched with lipids, proteins, and carbohydrates secreted by plankton.",
+      "exit_fact": "Water-repellent leg hairs trap an air film that keeps them afloat and breathing through breaking waves.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 2,
@@ -49,7 +52,10 @@
         "Bottom friction and internal wave breaking dissipate 3.7 terawatts of tidal power daily, slowing Earth's rotation and pushing the Moon away at 3.8 centimeters per year—confirmed in 1963 when John Wells counted 400 daily growth bands per annual ring in 380-million-year-old Devonian fossil corals.",
         "Walter Munk calculated in 1998 that cold polar water sinking into the abyss would turn the global ocean into a stagnant cold pool within millennia unless 2 terawatts of turbulent mechanical energy mixed heat downward across the thermocline, half of it supplied by breaking internal tides.",
         "California grunion fish (Leuresthes tenuis) ride the highest waves of a full- or new-moon spring tide onto wet beach sand to bury their eggs just as the fortnightly tide recedes, where the embryos wait ten days in damp sand until the next spring tide's surf mechanically triggers hatching in two minutes."
-      ]
+      ],
+      "historical_anchor": "The Sun's gravitational pull on Earth is 178 times stronger than the Moon's, yet the Moon dominates ocean tides by more than two to one. Tides are driven by the gradient of gravity across Earth's 12,742-kilometer diameter.",
+      "exit_fact": "The embryos wait ten days in damp sand until the next spring tide's surf triggers hatching.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 3,
@@ -68,7 +74,10 @@
         "For a one-millimeter copepod, slow feeding paddles through seawater as viscous as honey (Reynolds number near 1), yet when a fish approaches, the crustacean snaps four pairs of legs in sequence to vault forward at 500 body lengths per second, punching instantly into inertial flow (Reynolds number 1,000).",
         "The colonial siphonophore Physalia physalis (Portuguese man o' war) cannot swim and relies entirely on a gas-filled sail bladder; to prevent a steady wind from stranding the entire species on one lee shore, colonies grow either left-handed or right-handed sails that tack 45 degrees in opposite directions.",
         "While ordinary fish lose all metabolic muscle heat to the water as blood passes through their gills, Atlantic bluefin tuna (Thunnus thynnus) route blood through a countercurrent vascular heat exchanger (rete mirabile) that traps 95 percent of swimming heat, holding core muscles at 28 degrees Celsius in 7-degree water."
-      ]
+      ],
+      "historical_anchor": "Pure water is intrinsically blue rather than colorless. Vibrational overtones of the oxygen-hydrogen covalent bond absorb red and orange wavelengths within the top 15 meters of the sea.",
+      "exit_fact": "Trapping 95 percent of heat, a bluefin keeps its muscles at 28 degrees Celsius in 7-degree water.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 4,
@@ -87,7 +96,10 @@
         "Crowded corals wage nightly turf wars for sunlight: when a slow-growing massive coral touches a fast-growing branching neighbor, it transforms feeding tentacles within days into elongated sweeper tentacles five times normal length, packed with armor-piercing nematocysts that burn the rival back to bare limestone.",
         "At reef cleaning stations, two-gram cleaner wrasses (Labroides dimidiatus) pick 1,200 parasites a day from the open jaws of predatory groupers; Redouan Bshary showed that when a cleaner cheats by biting the client's nutritious mucus, the grouper punishes the cleaner by chasing it or switching stations.",
         "Detlef Lohse and Barbara Schmitz proved in 2000 that the four-centimeter pistol shrimp (Alpheus heterochaelis) stuns prey not by mechanical claw impact, but by shooting a 30-meter-per-second water jet that opens a vacuum cavitation bubble—imploding at 218 decibels and heating trapped gas to 4,700 Kelvin."
-      ]
+      ],
+      "historical_anchor": "Sailing aboard HMS *Beagle* in 1842, Charles Darwin marveled that coral reefs thrive as crowded oases inside clear tropical waters with almost zero nutrients. Jasper de Goeij solved Darwin's Paradox in 2013 by discovering the sponge loop.",
+      "exit_fact": "Imploding at 218 decibels, the bubble heats trapped gas to 4,700 Kelvin and stuns prey.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 5,
@@ -106,7 +118,10 @@
         "Predatory California sheephead wrasses (Semicossyphus pulcher) help control sea urchins while running a protogynous sex-change clock: every single individual hatches and matures as a pink female, transforming into a black-and-white dominant male with a forehead crest only after reaching roughly 30 centimeters and eight years of age.",
         "Grazing at the base of kelp forests, red abalone (Haliotis rufescens) build inner nacre shells out of 95 percent brittle aragonite tiles and 5 percent protein mortar in a staggered brick staircase that deflects micro-cracks—making mother-of-pearl 3,000 times tougher to fracture than pure calcium carbonate mineral.",
         "Coastal Laminaria kelps concentrate iodide ions from seawater 30,000-fold; Frithjof Kupper proved in 2008 that when low tide exposes the blades to atmospheric ozone and sunlight, the kelp releases iodide outside its cells as an inorganic antioxidant that scavenges ozone and releases iodine gas to seed coastal clouds."
-      ]
+      ],
+      "historical_anchor": "Frozen into the Arctic pack ice aboard the *Fram* in 1893, Fridtjof Nansen noticed that icebergs drifted 20 to 40 degrees to the right of the wind. Vagn Walfrid Ekman solved the puzzle in 1905.",
+      "exit_fact": "When low tide exposes blades to sunlight and ozone ($\\text{O}_3$), released iodide scavenges the ozone and vents iodine gas that seeds coastal cloud droplets.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 6,
@@ -125,7 +140,10 @@
         "Pacific trade winds pile sea level 15 to 20 centimeters higher on the western Pacific side of Indonesia than on the Indian Ocean side, driving 15 Sverdrups of warm water through the narrow Makassar and Lombok straits as the Indonesian Throughflow—the critical tropical return valve of the global conveyor.",
         "At the southern tip of Africa, the fast Agulhas Current makes a hairpin U-turn back into the Indian Ocean and pinches off massive 300-kilometer Agulhas Rings that drift across the South Atlantic, injecting the extra Indian Ocean salt needed to keep the North Atlantic overturning pump running.",
         "Henry Stommel demonstrated in 1961 that thermohaline circulation has an on-off bistable switch because freshwater caps can halt deep sinking—explaining how glacial Lake Agassiz bursting into the North Atlantic 12,900 years ago shut down the Atlantic overturning current and plunged Europe into the 1,200-year Younger Dryas freeze."
-      ]
+      ],
+      "historical_anchor": "Oceanographers measure currents in Sverdrups ($\\text{Sv}$), where one Sverdrup equals one million cubic meters per second—roughly the flow of all Earth's rivers combined. Squeezing through the Florida Straits at 30 Sverdrups, the Gulf Stream swells to 150 Sverdrups off Cape Hatteras, moving more than one hundred times the flow of all world rivers.",
+      "exit_fact": "That flood shut down the overturning current and plunged Europe into the 1,200-year Younger Dryas freeze.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 7,
@@ -144,7 +162,10 @@
         "Two-meter Humboldt jumbo squids (Dosidicus gigas) hunt voraciously in oxygenated surface waters at night and plunge into the anoxic core of the eastern Pacific Oxygen Minimum Zone at dawn; Brad Seibel proved they survive twelve daytime hours without suffocating by suppressing their metabolism by 80 percent.",
         "When attacked in the dark water column, the transparent pelagic polychaete worm Tomopteris is one of the only marine animals that flashes golden-yellow bioluminescence (570 nanometers) instead of blue, shooting glowing yellow mucus sparks from its paddle feet as decoys while swimming silently away.",
         "Flapping through the upper twilight zone on muscular wing-lobes evolved from a snail's foot, shelled pteropods (Limacina helicina) secrete paper-thin spiral shells of metastable aragonite—50 percent more soluble than calcite—whose pitting within forty-eight hours of low aragonite saturation acts as an early gauge of ocean acidification."
-      ]
+      ],
+      "historical_anchor": "Between 200 and 1,000 meters depth lies the mesopelagic twilight zone, where downwelling blue sunlight dims tenfold every 75 meters. At 800 meters, midday light is 100 billion times fainter than on land.",
+      "exit_fact": "Consequently, pteropod shells develop dissolution pits within forty-eight hours whenever aragonite saturation drops below 1.0.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 8,
@@ -163,7 +184,10 @@
         "First mapped by the HMS Challenger expedition in the 1870s, the Carbonate Compensation Depth (CCD) sits around 4,500 meters like an inverted alpine snowline: above it, white calcareous ooze blankets mid-ocean ridges, while below it, 450 atmospheres of pressure and cold CO2-rich water dissolve every falling limestone shell before burial.",
         "The Carbonate Compensation Depth sits at 5,000 meters in the young North Atlantic yet rises to 4,200 meters in the North Pacific because abyssal Pacific water sits at the 1,000-year tail end of the global conveyor, having accumulated so much respiratory carbonic acid that it dissolves falling shells a kilometer higher.",
         "The ocean stores 38,000 gigatons of dissolved inorganic carbon (fifty times the atmospheric pool); Jorge Sarmiento and Robbie Toggweiler proved in 1984 that if marine plankton died and the biological carbon pump stopped tomorrow, upwelling would vent trapped deep carbon and raise atmospheric CO2 by 150 to 200 parts per million."
-      ]
+      ],
+      "historical_anchor": "Peering through the quartz window of his steel Bathysphere off Bermuda in the 1930s, William Beebe watched a continuous blizzard of white flakes drifting downward through black water. Noboru Suzuki and Kenji Kato coined the term marine snow in 1953.",
+      "exit_fact": "Without the biological carbon pump raining snow downward, upwelling would vent trapped deep carbon and raise atmospheric carbon dioxide by 150 to 200 parts per million.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 9,
@@ -182,7 +206,10 @@
         "Norwegian biologist Johan Ruud confirmed in 1954 that Antarctic crocodile icefish (Channichthyidae) circulate crystal-clear, colorless blood with zero hemoglobin or red blood cells—surviving because -1.9-degree water holds double the dissolved oxygen of tropical water and their oversized hearts pump low-viscosity plasma through wide capillaries.",
         "Arthur DeVries discovered in 1969 that Antarctic notothenioid fishes avoid freezing solid in -1.9-degree frazil slush by packing their blood with Antifreeze Glycoproteins, which Christina Cheng proved in 1997 evolved directly from a duplicated pancreatic trypsinogen digestive enzyme gene.",
         "Because snow-covered sea ice reflects 85 percent of sunlight back into space (albedo 0.85) while dark open seawater absorbs 94 percent (albedo 0.06), melting one square kilometer of white Arctic ice replaces a mirror with a solar collector—an ice-albedo feedback warming the Arctic nearly four times faster than the global average."
-      ]
+      ],
+      "historical_anchor": "Freshwater lakes reach maximum density at $+4.0$ degrees Celsius, so water chilled below 4 degrees floats on top and freezes easily. In 35-PSU seawater, salt pushes the density maximum below the $-1.9$-degree freezing point.",
+      "exit_fact": "That ice-albedo feedback warms the Arctic nearly four times faster than the global average.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 10,
@@ -201,7 +228,10 @@
         "Whale vertebrae and jawbones contain up to 60 percent pure lipid oil by weight (2,000 kilograms of fat per skeleton); once flesh is stripped, anaerobic bacteria digest those interior bone fats using seawater sulfate and excrete a steady halo of hydrogen sulfide gas for fifty years that powers chemosynthetic mats.",
         "Greg Rouse, Shana Goffredi, and Robert Vrijenhoek discovered in 2004 that whale skeletons at 2,891 meters in Monterey Canyon are carpeted in ruby-plumed Osedax zombie worms, which lack a mouth or gut and drill into solid bone with green roots that pump out hydrochloric acid and collagenase to feed internal symbiotic bacteria.",
         "Because whale carcasses sit tens of kilometers apart on the abyssal plain, the first Osedax larva landing on bare bone becomes a two-centimeter female, while 50 to 100 later larvae landing on her body arrest as microscopic 0.5-millimeter dwarf males inside her mucus tube that spend their lives making sperm from larval yolk."
-      ]
+      ],
+      "historical_anchor": "Lying between 3,000 and 6,000 meters depth, the abyssal plains cover more than 50 percent of Earth's solid surface—an area larger than all seven continents combined. A kilometer of pelagic ooze buries volcanic hills to slopes gentler than one meter per kilometer.",
+      "exit_fact": "They make sperm from embryonic yolk.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 11,
@@ -220,7 +250,10 @@
         "Below 500 meters depth at 2 degrees Celsius, upward-seeping methane gas locks water molecules into solid crystalline cages of white methane clathrate ice, colonized by pink polychaete ice worms (Hesiocauda methanicola, discovered in 1997) that carve hollows into the burning ice while grazing methanotrophic bacteria.",
         "Deborah Kelley discovered the Lost City field off the Mid-Atlantic Ridge in December 2000: 60-meter-tall white carbonate towers driven not by volcanic magma, but by exothermic serpentinization of mantle olivine rock with seawater—venting warm (40 to 90 degrees Celsius), strongly alkaline (pH 9 to 11) fluid rich in hydrogen gas.",
         "Biochemists Michael Russell, William Martin, and Nick Lane noted that when Lost City's pH-10 hydrogen-rich fluid bubbles through iron-nickel-sulfur mineral pores into an ancient pH-6 carbon-dioxide ocean, the rock wall holds a natural 200-millivolt proton gradient matching the universal ATP synthase proton pump of all cellular life."
-      ]
+      ],
+      "historical_anchor": "Searching for missing plate-tectonic heat along the Galápagos Rift in February 1977 at 2,500 meters depth, geophysicists John Corliss and Robert Ballard dove aboard DSV *Alvin* into a sunless basalt valley. Their headlights revealed lush gardens of two-meter red-plumed tubeworms and giant white clams.",
+      "exit_fact": "That gradient matches the ATP synthase proton pump of all life.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 12,
@@ -239,7 +272,11 @@
         "Roger Payne and Douglas Webb calculated in 1971 that before modern container-ship noise, the 188-decibel, 20-Hertz infrasonic songs of fin and blue whales—whose 75-meter wavelengths fit the SOFAR channel and lose less than 0.003 decibels per kilometer—could propagate across entire ocean basins.",
         "To hunt giant squid in pitch blackness at 1,500 meters depth, the male sperm whale (Physeter macrocephalus) fires a pneumatically driven click backward through two tons of liquid spermaceti head oil off a concave skull air-mirror, focusing a 236-decibel sonar beam that detects a squid half a kilometer away.",
         "Because ocean sound speed rises 4.6 meters per second per degree Celsius, Walter Munk lowered a 57-Hertz acoustic source into the SOFAR channel off Heard Island in the southern Indian Ocean in January 1991 and recorded the refracted pulse 3.5 hours later on both the Atlantic and Pacific coasts of North America 18,000 kilometers away."
-      ]
+      ],
+      "historical_anchor": "Named after Hades, the hadal zone comprises forty-six V-shaped trenches between 6,000 and 11,000 meters depth where oceanic plates plunge into the mantle. Sounded by HMS *Challenger* with hemp rope at 8,184 meters off Guam in 1875, the Mariana Trench's Challenger Deep reaches $10,925 \\pm 12$ meters.",
+      "exit_fact": "coasts 18,000 kilometers away.",
+      "formalism_mode": "highlights"
     }
-  ]
+  ],
+  "format": "highlights"
 }

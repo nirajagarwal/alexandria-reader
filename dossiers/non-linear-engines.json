@@ -14,84 +14,109 @@
       "title": "The Star Graph",
       "subtitle": "Federal Express and the Topological Arbitrage of Memphis",
       "opening_door": "A: Scene",
-      "formalism_mode": "diagram"
+      "formalism_mode": "diagram",
+      "historical_anchor": "Fourteen modified Dassault Falcon 20 twin-engine jets taxied onto the runways of Memphis International Airport in Tennessee on the night of April 17, 1973. Over the preceding two years, founder Fred Smith had assembled \\$25 million in venture debt and family equity to build Federal Express.",
+      "exit_fact": "Federal Express recorded its first monthly profit of \\$59,000 in July 1975, and after lobbying Congress to pass the Air Cargo Deregulation Act of 1977, replaced its small Falcon jets with Boeing 727 freighters."
     },
     {
       "chapter": 2,
       "title": "The Planar Genesis",
       "subtitle": "Fairchild Semiconductor and the Invention of Silicon Equity",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "ledger_or_list"
+      "formalism_mode": "ledger_or_list",
+      "historical_anchor": "Ten crisp one-dollar bills, signed in ink across their faces at the Clift Hotel in San Francisco in September 1957, served as the founding contract of modern Silicon Valley. Eight signatures belonged to Julius Blank, Victor Grinich, Jean Hoerni, Eugene Kleiner, Jay Last, Gordon Moore, Robert Noyce, and Sheldon Roberts.",
+      "exit_fact": "When Sherman Fairchild exercised his \\$3 million buyout option in October 1959, each founder received \\$250,000 in stock—seed capital that Noyce, Moore, Kleiner, and their colleagues soon deployed to launch Intel, Kleiner Perkins, and dozens of successor \"Fairchildren\" firms across the Santa Clara Valley."
     },
     {
       "chapter": 3,
       "title": "The Drawback Flywheel",
       "subtitle": "Standard Oil and the Cleveland Massacre",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "diagram"
+      "formalism_mode": "diagram",
+      "historical_anchor": "Refining crude oil into illuminating kerosene in 1870 required almost no proprietary chemistry. Any operator with a cast-iron boiler, a condensing worm coil, and a coal firebox could enter the market.",
+      "exit_fact": "Within six weeks, Standard Oil's share of American refining capacity jumped from 4 percent to 25 percent, and reached 90 percent by 1879."
     },
     {
       "chapter": 4,
       "title": "The Symbiotic Vector",
       "subtitle": "PayPal and the Virulence of the eBay Host",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Cryptographic money beaming between handheld organizers was the original product built by Confinity when Peter Thiel, Max Levchin, and Luke Nosek opened their Palo Alto office in late 1998. Levchin wrote public-key encryption routines that allowed PalmPilot owners to transfer digital cash across restaurant tables using their devices' infrared ports.",
+      "exit_fact": "Even after eBay acquired rival processor Billpoint and restricted competing checkout links, power sellers refused to abandon PayPal, forcing eBay to acquire PayPal for \\$1.5 billion in October 2002."
     },
     {
       "chapter": 5,
       "title": "The Analog Citadel",
       "subtitle": "Linear Technology and the Thirty-Year Gross Margin",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Every digital microprocessor is deaf and blind to the physical universe until an analog circuit translates continuous reality into binary voltages. Sound, temperature, pressure, radio waves, and battery currents are continuous physical variables.",
+      "exit_fact": "Across thirty years as a public company before Analog Devices acquired it for \\$14.8 billion in 2016, Linear Technology maintained gross margins above 75 percent and operating margins near 46 percent."
     },
     {
       "chapter": 6,
       "title": "The Protocol Commons",
       "subtitle": "Netscape and the Zero-Marginal-Cost Capture of the Web",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "A compressed binary file named `mosaic-netscape-0.9` appeared on a public File Transfer Protocol (FTP) server in Mountain View, California, on October 13, 1994. Six months earlier, Marc Andreessen had teamed up with Silicon Graphics founder Jim Clark to launch Mosaic Communications Corporation, soon renamed Netscape.",
+      "exit_fact": "When Netscape went public on NASDAQ on August 9, 1995, just sixteen months after incorporation, its shares doubled on the first day of trading to value the company at \\$2.9 billion."
     },
     {
       "chapter": 7,
       "title": "The Seven-Line Abstraction",
       "subtitle": "Stripe and the Collapse of Online Payment Friction",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "By the autumn of 2010, a software developer could provision a hundred virtual cloud servers on Amazon Web Services in three minutes. That same developer could deploy a web application worldwide in an afternoon.",
+      "exit_fact": "They typed the seven lines of `Stripe.js` directly into the codebase, a practice that became known as the \"Collison installation.\" Backed by Peter Thiel, Elon Musk, and Sequoia Capital, Stripe grew to process over \\$1 trillion in annual payment volume across millions of internet businesses."
     },
     {
       "chapter": 8,
       "title": "The Asymmetric Ratio",
       "subtitle": "Instagram and the Thirteen-Employee Scale Architecture",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Working out of a shared office space at Pier 38 on the San Francisco waterfront in early 2010, Kevin Systrom and Mike Krieger noticed that their location-based check-in web app, Burbn, was failing to gain traction. Modeled after Foursquare, Burbn was cluttered with check-ins, scheduling tools, leaderboards, and photo attachments.",
+      "exit_fact": "Recognizing that smartphone-native photo sharing threatened Facebook's desktop social graph, Zuckerberg negotiated directly over a single weekend to acquire the thirteen-person startup for \\$1 billion in cash and stock."
     },
     {
       "chapter": 9,
       "title": "The Infinite Shelf",
       "subtitle": "Amazon and the Negative Working Capital Arbitrage",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "diagram"
+      "formalism_mode": "diagram",
+      "historical_anchor": "A flagship suburban book superstore in 1994—a 40,000-square-foot retail building operated by Barnes & Noble or Borders—could physically shelve at most 175,000 distinct titles. Every hardcover sitting on an oak display table tied up working capital.",
+      "exit_fact": "Supplier trade credit became an interest-free working-capital engine that financed Amazon's expansion past its May 1997 IPO."
     },
     {
       "chapter": 10,
       "title": "The Commodity Inversion",
       "subtitle": "SpaceX and the First-Principles Physics of Aerospace",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Returning from Moscow in early 2002 after Russian aerospace officials demanded \\$8 million apiece for refurbished Dnepr intercontinental ballistic missiles, Elon Musk built a first-principles spreadsheet itemizing the raw materials inside an orbital launch vehicle. Using London Metal Exchange spot prices, he summed the mass fractions of aerospace-grade 6061-T6 and 2195 aluminum-lithium alloy, titanium 6Al-4V, Inconel 718 nickel superalloy, carbon-fiber composite, copper wiring, liquid oxygen, and RP-1 rocket-grade kerosene.",
+      "exit_fact": "Three months later, NASA awarded SpaceX a \\$1.6 billion Commercial Resupply Services contract to service the International Space Station."
     },
     {
       "chapter": 11,
       "title": "The Percolation Threshold",
       "subtitle": "Uber and the Spatial Density of Urban Dispatch",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "When Garrett Camp and Travis Kalanick launched UberCab in San Francisco in May 2010 with a handful of black Lincoln Town Cars, urban ground transportation was governed by statutory supply caps. The San Francisco Municipal Transportation Agency restricted the entire city of 800,000 residents to roughly 1,500 licensed taxi medallions.",
+      "exit_fact": "Repeating that city-by-city density playbook—and launching UberX in July 2012 so non-commercial drivers could join the supply pool in personal sedans—pushed the platform past the spatial percolation threshold across hundreds of cities worldwide."
     },
     {
       "chapter": 12,
       "title": "The Dedicated Terminal",
       "subtitle": "Bloomberg and the Closed-Loop Financial Network",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Before 1982, pricing an amortizing mortgage-backed security or a callable corporate bond on a Wall Street trading desk required slow manual arithmetic. A trader had to flip through printed yield books and punch cash flows by hand into a Hewlett-Packard HP-12C pocket calculator while market prices moved.",
+      "exit_fact": "Retaining customer renewal rates above 90 percent across market cycles, Bloomberg charged a flat annual lease of roughly \\$20,000 to \\$24,000 per terminal with zero volume discounts—whether a firm leased two machines or ten thousand—expanding past 325,000 active terminals worldwide and \\$10 billion in annual recurring revenue."
     }
-  ]
+  ],
+  "format": "mechanisms"
 }

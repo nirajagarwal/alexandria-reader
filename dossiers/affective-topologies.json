@@ -14,84 +14,109 @@
       "title": "The Uncontrollable Loop",
       "subtitle": "Martin Seligman, Yoked Circuits, and the Mechanics of Dread",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "In 1967, inside a sound-attenuated basement laboratory at the University of Pennsylvania, psychologists Martin Seligman and Steven Maier placed mongrel dogs into rubberized cloth hammocks known as Pavlovian harnesses. The dogs were divided into triplets and wired into an electrical circuit that delivered brief, six-milliampere shocks to their hind footpads.",
+      "exit_fact": "In the shuttle box the next day, the yoked dogs remained motionless on the grid not because their muscles were damaged, but because their dorsal raphe circuits had updated a structural prior that motor output and sensory relief were statistically independent."
     },
     {
       "chapter": 2,
       "title": "The Derivative of Expectation",
       "subtitle": "Wolfram Schultz, Midbrain Dopamine, and the Spikes of Joy",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "A single raster plot recorded at the University of Fribourg in 1993 altered how neuroscience understands pleasure and anticipation. Neurophysiologist Wolfram Schultz had lowered an insulated tungsten microelectrode through a stainless-steel guide cannula into the ventral tegmental area (area A10) of an awake long-tailed macaque (*Macaca fascicularis*).",
+      "exit_fact": "In Schultz's macaques, once the probability of the apple juice reached 100 percent, even doubling the familiar trial blocks failed to elicit a single extra spike at the moment of consumption."
     },
     {
       "chapter": 3,
       "title": "The Phantom Prior",
       "subtitle": "Colin Murray Parkes, Bereavement Wards, and the Updating of Attachment",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "In the first six months after the death of a wife, a widower over the age of fifty-four suffers a 40 percent jump in overall mortality compared to married men of the exact same age. When British psychiatrist Colin Murray Parkes, along with statisticians Bernard Benjamin and R.",
+      "exit_fact": "For months after a funeral, the cortex has accepted the death certificate, but the subcortical striatum continues firing high-precision search commands for an allostatic partner whose return probability has dropped to zero."
     },
     {
       "chapter": 4,
       "title": "The Law of Contagion",
       "subtitle": "Paul Rozin, Sterilized Cockroaches, and the Insular Perimeter",
       "opening_door": "A: Scene",
-      "formalism_mode": "ledger_or_list"
+      "formalism_mode": "ledger_or_list",
+      "historical_anchor": "A five-centimeter American cockroach (*Periplaneta americana*), baked inside a medical autoclave at 121 degrees Celsius under fifteen pounds per square inch of pressurized steam, contains zero living bacteria, viruses, or fungal spores. Yet when University of Pennsylvania psychologists Paul Rozin, Linda Millman, and Carol Nemeroff used sterile forceps in 1986 to dip an autoclaved cockroach into a glass of fresh apple juice for five seconds, stir it once, and lift it out, seated undergraduate volunteers refused to drink a single drop.",
+      "exit_fact": "While these patients accurately identified facial expressions and vocal tones of fear, anger, happiness, and sadness at normal rates, they were selectively blind to disgust on human faces and failed to register visceral revulsion toward sanitary and moral violations alike."
     },
     {
       "chapter": 5,
       "title": "The Status Ledger",
       "subtitle": "Frans de Waal, Whitehall Civil Servants, and the Cost of Inequity",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Between 1967 and 1977, epidemiologist Michael Marmot examined the medical records and death certificates of 17,530 male British civil servants working across the ministries of Whitehall in London. Unlike factory laborers or destitute populations, every man in the Whitehall cohort held a stable, white-collar office job, enjoyed a guaranteed government pension, lived in safe urban or suburban housing, and had free, universal access to the British National Health Service.",
+      "exit_fact": "Among Marmot's Whitehall civil servants, sitting one grade below an executive peer meant enduring thousands of daily micro-signals of subordinate rank and restricted autonomy, keeping the hypothalamic-pituitary-adrenal axis firing low-grade cortisol and fibrinogen into the coronary arteries year after year."
     },
     {
       "chapter": 6,
       "title": "The Overview Collapse",
       "subtitle": "Edgar Mitchell, the Default Mode Network, and the Mechanics of Awe",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "ledger_or_list"
+      "formalism_mode": "ledger_or_list",
+      "historical_anchor": "On February 7, 1971, as the Apollo 14 command module *Kitty Hawk* hurtled back toward Earth from lunar orbit at 24,000 miles per hour, lunar module pilot Edgar Mitchell had very few checklist duties. The spacecraft had been placed into its passive thermal control mode—dubbed the \"barbecue roll\"—rotating slowly along its longitudinal axis at three revolutions per minute to distribute solar heat evenly across the hull.",
+      "exit_fact": "While all positive emotions trended toward healthier profiles, daily experiences of awe proved the single strongest statistical predictor of low circulating IL-6 ($\\beta = -0.32$), dropping systemic inflammation markers alongside the subjective shrinkage of the autobiographical self."
     },
     {
       "chapter": 7,
       "title": "The Inflammatory Gaze",
       "subtitle": "Dickerson, Slavich, and the Immunological Signature of Shame",
       "opening_door": "A: Scene",
-      "formalism_mode": "ledger_or_list"
+      "formalism_mode": "ledger_or_list",
+      "historical_anchor": "Why does the human immune system flood the bloodstream with bacterial wound-fighting proteins within twenty minutes of a humiliating public speech? In 2004, health psychologists Sally Dickerson, Tara Gruenewald, and Margaret Kemeny at the University of California, Los Angeles, brought healthy young adults into a laboratory and assigned them to one of two carefully matched cognitive stress conditions.",
+      "exit_fact": "Internally, those same cytokines travel back across the blood-brain barrier via the vagus nerve to induce \"sickness behavior\"—anhedonia, fatigue, and social withdrawal—forcing the disgraced individual to stay low and conserve energy until the social threat passes."
     },
     {
       "chapter": 8,
       "title": "The Suffocation Alarm",
       "subtitle": "Donald Klein, Sodium Lactate, and the Brainstem Mechanics of Panic",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Ten milliliters per kilogram of body weight of 0.5 molar sodium DL-lactate, dripped through a forearm intravenous catheter over twenty minutes, produces almost no emotional effect in a healthy human being. When psychiatrist Donald Klein and researcher Ferris Pitts Jr.",
+      "exit_fact": "In panic disorder, the gain on these brainstem chemoreceptors is set abnormally high, causing minuscule fluctuations in arterial $P_{\\text{CO}_{2}}$ or lactate in a stuffy elevator to detonate an emergency escape reflex built for someone buried alive."
     },
     {
       "chapter": 9,
       "title": "The Decorticate Deterrent",
       "subtitle": "Walter Cannon, Hypothalamic Release, and the Game Theory of Rage",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "ledger_or_list"
+      "formalism_mode": "ledger_or_list",
+      "historical_anchor": "Using a blunt surgical spatula passed through a small cranial opening, Harvard Medical School researcher Philip Bard and department chair Walter B. Cannon removed the entire cerebral cortex, the basal ganglia, and the anterior half of the thalamus across forty-six anesthetized cats in the autumn of 1927, leaving only the caudal hypothalamus, midbrain, and brainstem connected to the spinal cord.",
+      "exit_fact": "Like Thomas Schelling's driver who rips the steering wheel off the column and throws it out the window during a game of highway chicken, hypothalamic rage announces to the adversary that the cortical calculator has been taken offline—forcing the exploiter either to recalibrate the victim's welfare weight upward or face guaranteed mutual destruction."
     },
     {
       "chapter": 10,
       "title": "The Epistemic Drive",
       "subtitle": "Harry Harlow, Mechanical Puzzles, and the Information Calculus of Curiosity",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "For the first half of the twentieth century, American psychology was dominated by Clark Hull's drive-reduction theory. According to this strict homeostatic doctrine, an animal was an inert biological machine that moved only when a primary tissue deficit—low blood glucose, cellular dehydration, cold, pain, or reproductive hormone pressure—created an aversive internal tension.",
+      "exit_fact": "In humans, Matthias Gruber and Charan Ranganath demonstrated via fMRI at UC Davis in 2014 that high-curiosity questions ignite the ventral tegmental area and nucleus accumbens, bathing the hippocampus in dopamine that enhances long-term memory consolidation not only for the answer itself, but for completely unrelated faces shown during the window of epistemic arousal."
     },
     {
       "chapter": 11,
       "title": "The Myelinated Truce",
       "subtitle": "Ernst Fehr, Intranasal Oxytocin, and the Vagal Circuit of Trust",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "ledger_or_list"
+      "formalism_mode": "ledger_or_list",
+      "historical_anchor": "On June 2, 2005, economists Ernst Fehr and Michael Kosfeld at the University of Zurich, together with neuroscientist Markus Heinrichs, published the ledger of 128 healthy male students who walked into a computer laboratory to play a single-shot, anonymous financial trust game. Fifty minutes before sitting down at the terminals, half the men had been randomly assigned to inhale three puffs per nostril of a synthetic nasal spray delivering 24 international units (IU) of oxytocin—a nine-amino-acid neuropeptide synthesized in the paraventricular and supraoptic nuclei of the hypothalamus—while the other half inhaled an identical placebo spray containing only the inactive carrier solution.",
+      "exit_fact": "Trust is not a sentimental belief; it is a precision-weighting dial in the lateral central amygdala coupled to a myelinated cranial nerve brake that lets two organisms capture a cooperative surplus without triggering a pre-emptive strike."
     },
     {
       "chapter": 12,
       "title": "The Allostatic Debt",
       "subtitle": "Bruce McEwen, Hippocampal Receptors, and the Resonance of Calm",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "In 1968, neuroendocrinologist Bruce McEwen injected trace doses of radioactive tritium-labeled corticosterone ($^{3}\\text{H}$-corticosterone) into the bloodstream of adrenalectomized rats at Rockefeller University in New York. At the time, every endocrinology textbook taught that adrenal stress hormones—cortisol in humans, corticosterone in rodents—acted inside the brain only at the hypothalamus, where they served as a simple thermostat switch to shut off further release of adrenocorticotropic hormone from the pituitary gland.",
+      "exit_fact": "Within three minutes of 0.1-hertz breathing, heart-rate oscillation amplitude quadruples, RMSSD climbs, baroreceptor afferents travel up the glossopharyngeal and vagus nerves into the nucleus of the solitary tract, and ascending inhibitory signals quiet the locus coeruleus and amygdala—restoring the prefrontal-hippocampal brake that Bruce McEwen first glimpsed on his autoradiographs in 1968."
     }
-  ]
+  ],
+  "format": "mechanisms"
 }

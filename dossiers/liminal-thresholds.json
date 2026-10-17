@@ -14,84 +14,109 @@
       "title": "The Falling Stones",
       "subtitle": "Jean-Baptiste Biot and the Aerodynamics of Cosmic Debris (L'Aigle, 1803)",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "At one o’clock in the afternoon on Tuesday, April 26, 1803, the sky over the Normandy commune of L'Aigle was clear and cloudless. Without meteorological warning, a loud detonation echoed across the orchards, followed by a rolling sound resembling artillery fire that persisted for five minutes.",
+      "exit_fact": "Biot presented his comprehensive report—accompanied by the scorched iron-nickel fragments and the elliptical parish survey map—to the National Institute in Paris on July 18, 1803, ending a century of official denial by the Academy."
     },
     {
       "chapter": 2,
       "title": "The Inverted Freeze",
       "subtitle": "Erasto Mpemba and Non-Equilibrium Thermal Convection (Dar es Salaam, 1963)",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Under Fourier's classical law of heat conduction, heat flux is strictly proportional to the local temperature gradient:",
+      "exit_fact": "In 1969, Erasto Mpemba and Denis Osborne co-authored their experimental paper in *Physics Education*, documenting how convective flow fields, dissolved gas expulsion, and supercooling thresholds allow a hotter fluid to overtake a cooler one on the path to phase transition."
     },
     {
       "chapter": 3,
       "title": "The Luminescent Bubble",
       "subtitle": "H. Frenzel, H. Schultes, and the Physics of Acoustic Cavitation (Cologne, 1934)",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Submerged in a darkened tank of photographic developer fluid at the University of Cologne in the winter of 1934, an ultrasonic sonar transducer left mysterious black exposure dots across unexposed silver-halide plates. Physicists H.",
+      "exit_fact": "Optical spectroscopy of single-bubble sonoluminescence later confirmed that the compressed gas core reaches temperatures between 15,000 and $30,000\\text{ kelvins}$—hotter than the surface of the Sun—ionizing trapped argon and xenon atoms into a dense micro-plasma that emits a broadband flash of bremsstrahlung radiation lasting under 100 picoseconds."
     },
     {
       "chapter": 4,
       "title": "The Crystalline Vector",
       "subtitle": "Jacques and Pierre Curie and Hemimorphic Polar Asymmetry (Paris, 1880)",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "In 1880, in the mineralogy laboratory of the Sorbonne, Jacques Curie and his brother Pierre were investigating the pyroelectric effect—the ability of minerals like tourmaline to accumulate electric charges when heated. Contemporary physicists treated pyroelectricity as a purely thermal phenomenon.",
+      "exit_fact": "One year later, Gabriel Lippmann predicted from thermodynamic conservation that the converse effect must also exist—applying a voltage to quartz must deform the crystal—and the Curie brothers measured those sub-angstrom mechanical deformations within months, using their new piezoelectric quartz balance to measure the radiation of radium eighteen years later."
     },
     {
       "chapter": 5,
       "title": "The Unbroken Soliton",
       "subtitle": "John Scott Russell and the Wave of Translation (Hermiston, 1834)",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Classical nineteenth-century hydrodynamics, formalized by George Biddell Airy and George Gabriel Stokes, proved that a localized heap of water cannot travel down a channel without flattening out. In linear wave theory, the phase speed $c$ of a surface wave depends on its wavenumber $k$ and water depth $h$:",
+      "exit_fact": "When non-linear steepening exactly balances linear dispersion, the equation yields a permanent, shape-preserving solitary wave—a soliton:"
     },
     {
       "chapter": 6,
       "title": "The Thermal Circuit",
       "subtitle": "Thomas Johann Seebeck and Differential Metallic Diffusion (Berlin, 1821)",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "A closed loop formed by soldering a strip of bismuth to a strip of copper contains no battery, no acid cell, and no moving magnet. Yet when Estonian-born physicist Thomas Johann Seebeck held one of the two bimetallic junctions between his warm fingers at the Prussian Academy of Sciences in Berlin in 1821 while leaving the opposite junction at room temperature, a compass needle suspended inside the loop swung sharply aside.",
+      "exit_fact": "In 1834, French watchmaker Jean Charles Athanase Peltier discovered the exact thermodynamic inverse: driving an external electric current across a bismuth-copper junction forces one junction to absorb heat and freeze a droplet of water while the opposite junction releases heat."
     },
     {
       "chapter": 7,
       "title": "The Disappearing Boundary",
       "subtitle": "Thomas Andrews and the Continuity of Gaseous and Liquid States (Belfast, 1869)",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "For two centuries, natural philosophers treated liquid and gas as fundamentally discontinuous states of matter separated by an impassable physical boundary. A liquid possessed a curved meniscus, a fixed volume, and near-incompressible density; a gas had no surface boundary and expanded indefinitely to fill any container.",
+      "exit_fact": "From those two molecular constants, Van der Waals derived the exact critical coordinates where the liquid-gas boundary ceases to exist:"
     },
     {
       "chapter": 8,
       "title": "The Drifting Slabs",
       "subtitle": "Alfred Wegener and the Rheology of the Earth Mantle (Marburg, 1912)",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "On January 6, 1912, at the annual meeting of the Geological Association in Frankfurt, German meteorologist and Greenland explorer Alfred Wegener delivered a paper titled *The Geophysical Basis of the Evolution of the Earth's Surface Features*. Wegener proposed that the continents are not permanent granite pillars anchored to the Earth's interior, but buoyant blocks that fractured and drifted thousands of kilometers across the ocean floor.",
+      "exit_fact": "Driven by radiogenic heat from the Earth's interior, the mantle's thermal Rayleigh number ($\\text{Ra} = \\frac{g \\alpha \\Delta T D^3}{\\nu \\kappa} > 10^6$) exceeds the convective threshold, circulating the solid mantle in slow thermal plumes that carry the brittle tectonic plates across the globe at centimeters per year."
     },
     {
       "chapter": 9,
       "title": "The Boiling Friction",
       "subtitle": "Count Rumford, Benjamin Thompson, and the Mechanical Equivalence of Caloric (Munich, 1798)",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Eighteen pounds of cold water inside a wooden box at the military arsenal in Munich came to a rolling boil in the spring of 1798 without a single spark of fire beneath it. Overseeing the manufacture of brass artillery for the Bavarian army, American-born physicist Benjamin Thompson—titled Count Rumford—had submerged a solid bronze cannon cylinder in the water tank, inserted a blunt steel borer against its base, and harnessed two horses to walk in a circle turning the shaft.",
+      "exit_fact": "Comparing the thermal output of the boiling water against the wattage of the horses and the wax burned in candles, Rumford made the first experimental estimate of the mechanical equivalent of heat—a constant refined forty-five years later by James Prescott Joule to $W = J \\cdot Q$, where $J = 4.184\\text{ joules per calorie}$."
     },
     {
       "chapter": 10,
       "title": "The Ghost Inventory",
       "subtitle": "Wolfgang Pauli and the Missing Momentum of Beta Decay (Zurich, 1930)",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "his dear radioactive ladies and gentlemen, began a one-page typewritten letter mailed from Zurich on December 4, 1930, to a nuclear physics conference in Tübingen. theoretical physicist Wolfgang Pauli had declined to attend the meeting in person because he preferred to attend a charity ballroom dance in Zurich, but his letter proposed a \"desperate remedy\" to rescue the law of conservation of energy.",
+      "exit_fact": "Twenty-six years after Pauli's letter, in June 1956, Clyde Cowan and Frederick Reines finally captured the particle in tanks of cadmium chloride beside the Savannah River nuclear reactor via inverse beta decay ($\\bar{\\nu}_e + p \\longrightarrow n + e^+$), and wired a telegram to Zurich informing Pauli that his invisible bookkeeper had been found."
     },
     {
       "chapter": 11,
       "title": "The Unilateral Current",
       "subtitle": "Thomas Edison, Owen Richardson, and Thermionic Barrier Penetration (Menlo Park, 1883)",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Carbon soot blackening the inside of early incandescent lightbulbs in 1883 threatened to ruin Thomas Edison's commercial lighting venture in Menlo Park, New Jersey. Seeking to trap the evaporating carbon particles electrically, Edison sealed a separate metal foil plate inside the evacuated glass bulb beside the glowing horseshoe carbon filament and wired a galvanometer between the cold plate and the heated filament.",
+      "exit_fact": "In 1904, John Ambrose Fleming used Edison's one-way vacuum bulb to rectify high-frequency radio waves into the first thermionic diode valve, and two years later Lee de Forest inserted a third zig-zag wire—the control grid—between the filament and the plate to create the triode amplifier."
     },
     {
       "chapter": 12,
       "title": "The Solitary Wall",
       "subtitle": "The Draupner Platform and Non-Linear Surface Wave Modulation (North Sea, 1995)",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "At 3:20:47 PM on January 1, 1995, a downward-pointing infrared laser rangefinder mounted beneath the deck of the Draupner E gas platform in the central North Sea recorded a single vertical wall of water $25.6\\text{ meters}$ (84 feet) high. Throughout the afternoon storm, the surrounding sea state had averaged a significant wave height of $H_s = 11.9\\text{ meters}$.",
+      "exit_fact": "The cubic non-linear focusing term $\\beta |\\psi|^2 \\psi$ siphons mechanical energy out of adjacent wave crests on either side and piles it into a single coherent breather packet (the Peregrine soliton), rearing up to three times the height of the surrounding sea for less than a minute before dispersing back into the wave train."
     }
-  ]
+  ],
+  "format": "mechanisms"
 }

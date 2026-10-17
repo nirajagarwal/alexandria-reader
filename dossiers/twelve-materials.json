@@ -121,5 +121,6 @@
       "formalism_mode": "equation",
       "exit_fact": "In January 2006, NASA's Stardust capsule parachuted into the Utah desert carrying thousand-cell blocks of silica aerogel that had decelerated comet Wild 2 dust grains from 6.1 kilometers per second to a dead stop within millimeters without melting a single mineral crystal."
     }
-  ]
+  ],
+  "format": "mechanisms"
 }

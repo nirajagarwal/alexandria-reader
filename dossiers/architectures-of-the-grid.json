@@ -14,84 +14,109 @@
       "title": "The Frequency Anchor",
       "subtitle": "Spinning Turbines and the Constant 60 Hz Balance",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "At 1:31 p.m. Eastern Daylight Time on August 14, 2003, the 597-megawatt Eastlake Unit 5 coal-fired generator on the shore of Lake Erie in Willoughby, Ohio, tripped offline after its excitation system overheated while trying to supply reactive power to air conditioners across northern Ohio.",
+      "exit_fact": "states and Ontario without electricity for up to four days."
     },
     {
       "chapter": 2,
       "title": "The Girdle of the Deep",
       "subtitle": "The First Telegraph Wire Across the Atlantic Floor",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "On August 16, 1858, clerks in the wooden cable house at Knightstown on Valentia Island, Ireland, began tapping out a ninety-eight-word congratulatory telegram from Queen Victoria to President James Buchanan in Washington. Across 1,660 nautical miles of the North Atlantic seabed, operators at Bay of Bulls in Trinity Bay, Newfoundland, watched their receiving instruments for sixteen hours and thirty minutes before the final word arrived—a transmission rate of roughly ten minutes per word.",
+      "exit_fact": "Two weeks after landing the 1866 shore end at Heart's Content, the *Great Eastern* steamed back to mid-ocean, grappled the broken 1865 cable from a depth of 3,700 meters on its thirtieth drag, spliced on fresh line, and gave the Atlantic two working telegraph channels."
     },
     {
       "chapter": 3,
       "title": "The Hydraulic Incline",
       "subtitle": "Running Water Over Mountain Slopes by Gravity Alone",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "To supply the baths, fountains, and castellum tanks of the Roman colony of *Nemausus* (modern Nîmes in southern France) around 50 CE, imperial engineers tapped the Eure spring near Uzès at an elevation of seventy-two meters above sea level. The stone receiving basin on the hill above Nîmes sat at an elevation of fifty-five meters.",
+      "exit_fact": "Over four centuries of operation after municipal maintenance crews waned in late antiquity, unscraped carbonate sinter accumulated in laminated layers up to forty-eight centimeters thick on each inner wall of the Nîmes aqueduct, pinching the original 1.2-meter-wide waterway down to a narrow central slot until medieval builders quarried the dense Roman crust as polished ornamental marble for local churches."
     },
     {
       "chapter": 4,
       "title": "The Rail Synchronization",
       "subtitle": "Why Steam Trains Forced Britain to Standardize Time",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Walk past the Palladian stone facade of The Exchange on Corn Street in Bristol, England, and look up at the turret clock installed above the portico in 1822. Sticking out from the central spindle of the gilded dial are two separate minute hands fixed at an angle to one another.",
+      "exit_fact": "On October 18, 1884, delegates from twenty-five nations met at the International Meridian Conference in Washington, D.C., and voted twenty-two to one (with San Domingo dissenting and France and Brazil abstaining) to fix the transit instrument at Greenwich as the Prime Meridian for global civil time."
     },
     {
       "chapter": 5,
       "title": "The Nodal Bottleneck",
       "subtitle": "Canals, Shallow Straits, and Global Shipping Chokepoints",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Around eighty percent of global merchandise trade by volume moves aboard ocean vessels, yet the maximum hull dimensions of the world's cargo fleet are dictated not by open-ocean wave mechanics, but by the mud, concrete, and limestone walls of four narrow maritime chokepoints. Naval architects classify modern ships by the exact bathymetric envelopes of those passages: Neopanamax vessels (366 meters long, 51.25 meters beam, 15.2 meters draft) built to fit inside the third set of Panama Canal lock chambers opened in 2016; Malaccamax vessels (20.5 meters maximum draft) limited by the shallow sandbars of the Phillips Channel in the Strait of Malacca; and Suezmax vessels (20.1 meters draft for ships up to 50 meters wide, or 16.0 meters draft for ships approaching 59 meters wide) constrained by the trapezoidal dredged trench of the Suez Canal.",
+      "exit_fact": "Fourteen tugboats, led by the oceanic salvage tug *Alp Guard* with 285 metric tons of bollard pull, could not wrench the hull free until the Suez Canal Authority's cutter-suction dredger *Mashhour* vacuumed 30,000 cubic meters of wet sand and clay from around the buried bow over six days, and the peak lunar spring tide on March 29 raised the canal level by forty-six centimeters, supplying the extra buoyancy needed to break the clay's grip at 15:05 EET."
     },
     {
       "chapter": 6,
       "title": "The Switching Matrix",
       "subtitle": "From Tangled Copper Loops to Automated Exchanges",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "On the morning of March 10, 1891, the United States Patent Office granted Patent No. 447,918 to an undertaker in Kansas City, Missouri, named Almon Brown Strowger.",
+      "exit_fact": "Armed with Strowger's clattering electromechanical step switches and Erlang's probability tables, engineers wired thousands of local offices into a hierarchical continental switching matrix whose last electromechanical banks in rural North America did not click shut until the 1990s."
     },
     {
       "chapter": 7,
       "title": "The Steel Box Standard",
       "subtitle": "How One Aluminum Container Rewired Global Trade",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "In 1954, the Maritime Cargo Transportation Conference of the U.S. National Academy of Sciences dispatched a team of industrial engineers to track every piece of freight loaded aboard the 10,600-deadweight-ton break-bulk cargo ship SS *Warrior* on a single voyage from Brooklyn, New York, to Bremerhaven, Germany.",
+      "exit_fact": "In 1965, during international standardization talks in Geneva, McLean's Sea-Land Service released Tantlinger's corner-casting and twistlock patents royalty-free to the International Organization for Standardization (ISO), establishing the ISO 668 and ISO 1161 geometry (20-foot and 40-foot lengths, 8-foot width) that every container ship cell guide, port gantry crane, railway well car, and semi-trailer chassis on Earth still locks into today."
     },
     {
       "chapter": 8,
       "title": "The Borderless Table",
       "subtitle": "How Fragile Trust Holds the Internet Together",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "The global internet is not a single unified network; it is a loose federation of roughly 75,000 independent physical networks known as Autonomous Systems (AS)—regional telecommunications carriers, national fiber backbones, university campuses, cloud data centers, and submarine cable operators—each identified by a unique Autonomous System Number (ASN). Physically, these networks bolt together inside windowless carrier-neutral colocation facilities called Internet Exchange Points, such as DE-CIX in Frankfurt or Equinix in Ashburn, Virginia, where yellow single-mode optical patch fibers link the border routers of one company directly to the border routers of another.",
+      "exit_fact": "Because 25 bits beats 24 bits, global routers pivoted back to California, restoring service minutes before PCCW finally severed Pakistan Telecom's rogue announcement at 21:01 UTC."
     },
     {
       "chapter": 9,
       "title": "The Thermal Chain",
       "subtitle": "How Artificial Cold Created the Modern City",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "To melt one kilogram of solid water ice at $0^\\circ\\text{C}$ into one kilogram of liquid water at $0^\\circ\\text{C}$ requires pumping 334 kilojoules of thermal energy directly into the crystal lattice—the exact same quantity of heat needed to raise a kilogram of liquid water from freezing all the way to $80^\\circ\\text{C}$, nearly hot enough to brew coffee. During the phase transition from solid to liquid, every joule of absorbed heat goes into breaking hydrogen bonds between water molecules rather than increasing kinetic temperature, locking the surrounding air at $0^\\circ\\text{C}$ until the last crystal melts.",
+      "exit_fact": "Coupled with ammonia-cooled port warehouses and refrigerated steamships, this continuous thermal conduit severed metropolitan populations from the radius of local farms and later provided the unbroken sub-zero pipeline required to ship blood plasma, insulin, and cryogenic vaccines around the globe."
     },
     {
       "chapter": 10,
       "title": "The Orbital Clockwork",
       "subtitle": "Why GPS Satellites Must Correct for Bent Spacetime",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Before the 430-kilogram Navigation Technology Satellite 2 (NTS-2) was bolted atop an Atlas F booster at Vandenberg Air Force Base in California for launch on June 23, 1977, engineers from the U.S. Naval Research Laboratory wired a tiny hardware frequency synthesizer offset into the satellite's two rubidium-vapor and cesium-beam atomic clocks.",
+      "exit_fact": "On July 21, 1977, ground control transmitted the command engaging the $-4.4647 \\times 10^{-10}$ frequency synthesizer offset, locking the orbital clockwork to terrestrial time so that not only road navigation, but also cellular tower handoffs, high-frequency financial trade timestamps, and synchrophasor relays on high-voltage power grids can take their pulse from orbit."
     },
     {
       "chapter": 11,
       "title": "The Subterranean River",
       "subtitle": "How Brick Intercepting Sewers Saved London",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "During the third week of June 1858, an early summer heatwave pushed shade temperatures in central London to $35^\\circ\\text{C}$ ($95^\\circ\\text{F}$) and baked the exposed low-tide mudbanks of the River Thames into a fermenting six-foot-deep crust of raw human sewage. Directly beside the river stood the newly rebuilt Palace of Westminster.",
+      "exit_fact": "When cholera struck England one last time in July 1866, ninety-three percent of the London deaths occurred in a single East London pocket around Old Ford where the Northern Low-Level Sewer had not yet been connected; once Bazalgette's masons bricked in that final junction, epidemic cholera never returned to London."
     },
     {
       "chapter": 12,
       "title": "The Extreme Ultraviolet Mirror",
       "subtitle": "How Global Computation Depends on Molten Tin Droplets",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Every microprocessor, graphics card, and smartphone chip on Earth is manufactured by projecting a microscopic shadow of a circuit blueprint onto a silicon wafer coated with light-sensitive chemical resist. For half a century, the steady doubling of transistor density predicted by Gordon Moore in 1965 depended on shrinking the minimum printable wire width—the critical dimension $CD$—governed by Lord Rayleigh's optical diffraction equation:",
+      "exit_fact": "After bouncing off the collector mirror, the reflective circuit mask, and ten consecutive Zeiss Bragg mirrors ($0.70^{11} \\approx 0.02$), barely two percent of the plasma light reaches the silicon wafer—just enough to etch transistor gates thirteen atoms wide for every advanced artificial intelligence processor and smartphone on Earth."
     }
-  ]
+  ],
+  "format": "mechanisms"
 }

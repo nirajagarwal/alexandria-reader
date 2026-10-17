@@ -14,84 +14,109 @@
       "title": "The Triple Bond Trap",
       "subtitle": "Nitrogen and the Metabolic Ceiling of Civilization (Oppau, 1913)",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "On September 9, 1913, inside a concrete blast bunker at the BASF chemical works in Oppau, near Ludwigshafen on the Rhine, chemical engineer Carl Bosch opened the valve of an experimental high-pressure steel reactor. Over the preceding four years, physical chemist Fritz Haber had demonstrated in a Karlsruhe laboratory that nitrogen gas ($\\text{N}_2$) and hydrogen gas ($\\text{H}_2$) could be forced into synthesis to yield ammonia ($\\text{NH}_3$).",
+      "exit_fact": "Today, Haber-Bosch reactors consume roughly two percent of global energy production and supply over half of the nitrogen atoms incorporated into human tissues worldwide."
     },
     {
       "chapter": 2,
       "title": "The Lattice Arbitrage",
       "subtitle": "Silicon and the Purity Threshold of Planar Semiconductors (Mountain View, 1959)",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Constructed from germanium in 1947 at Bell Laboratories, the earliest transistors failed whenever the surrounding air grew hot. Germanium was easy to zone-refine and melted at a manageable $937^\\circ\\text{C}$, but its narrow electronic bandgap of $0.66\\text{ electron-volts}$ meant that warming a circuit above $70^\\circ\\text{C}$ thermally excited enough intrinsic electrons across the bandgap to flood the base region and short out the device.",
+      "exit_fact": "Six months later, Robert Noyce evaporated thin aluminum lines directly on top of Hoerni's flat $\\text{SiO}_2$ insulator to wire multiple transistors together on a single crystal die."
     },
     {
       "chapter": 3,
       "title": "The Intercalation Bottleneck",
       "subtitle": "Lithium and the Electrochemical Redox Gradient (Oxford, 1980)",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Element number three on the periodic table—lithium, with an atomic mass of $6.94\\text{ grams per mole}$ and a single $2s$ valence electron outside a closed helium shell—possesses the most negative standard reduction potential of any solid element ($E^\\circ(\\text{Li}^+/\\text{Li}) = -3.04\\text{ V}$ relative to the standard hydrogen electrode) and a theoretical specific capacity governed by Faraday's constant:",
+      "exit_fact": "Even so, the tiny ionic radius of $\\text{Li}^+$ ($0.076\\text{ nm}$) creates an intense local electric field that binds polar carbonate solvent molecules into a bulky solvation shell ($r_{\\text{solvated}} \\approx 0.4\\text{ nm}$); stripping that solvent shell at the graphite interface imposes a $50\\text{ kJ/mol}$ activation energy barrier that limits fast-charging speeds at freezing temperatures."
     },
     {
       "chapter": 4,
       "title": "The Radiative Fission",
       "subtitle": "Uranium-235 and the Thermal Neutron Cross-Section (Oak Ridge, 1944)",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Consuming roughly one percent of the entire electrical generation capacity of the United States in the autumn of 1944, thousands of five-ton electromagnetic calutrons inside the Y-12 plant at Oak Ridge, Tennessee, operated around the clock to separate two isotopes whose masses differ by just 1.26 percent. Inside vacuum tanks wound with 14,000 tons of silver busbars borrowed from the U.S.",
+      "exit_fact": "Reaching 90 percent weapons-grade $^{235}\\text{U}$ required cascading 2,892 gaseous diffusion stages in series under a single roof covering forty-four acres."
     },
     {
       "chapter": 5,
       "title": "The Unpaired Electrons",
       "subtitle": "Neodymium and the Coercivity of Rare Earth Permanent Magnets (Tokyo, 1982)",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Civil conflict in Zaire's Katanga province in 1978 drove the global price of cobalt up by a factor of ten, threatening to cripple the electronics and automotive industries that relied on samarium-cobalt ($\\text{SmCo}_5$) permanent magnets. At Sumitomo Special Metals in Osaka, Japanese metallurgist Masato Sagawa set out to invent a permanent magnet built around abundant iron rather than scarce cobalt.",
+      "exit_fact": "Combining iron's flux density with neodymium's coercivity ($H_c$) yielded a maximum energy product exceeding $50\\text{ mega-gauss-oersteds}$ ($400\\text{ kJ/m}^3$)—enabling the compact permanent-magnet traction motors of modern electric vehicles, offshore wind turbine generators, and hard-disk voice-coil actuators."
     },
     {
       "chapter": 6,
       "title": "The Quantum Cryogen",
       "subtitle": "Helium-4 and the Vanishing Viscosity of the Superfluid (Cambridge, 1937)",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Under the classical Hagen-Poiseuille law of fluid mechanics, the volumetric flow rate $\\dot{V}$ of any liquid forced through a narrow cylindrical pipe of radius $r$ and length $L$ is strictly proportional to the applied pressure drop $\\Delta P$ and inversely proportional to dynamic viscosity $\\eta$:",
+      "exit_fact": "Because helium-4 combines a tiny atomic mass with weak van der Waals attraction, its quantum zero-point motion prevents it from freezing even at absolute zero under atmospheric pressure—making it the only substance in the universe that remains liquid down to $0\\text{ K}$ to cool superconducting MRI magnets and particle-accelerator cavities."
     },
     {
       "chapter": 7,
       "title": "The Refractory Airframe",
       "subtitle": "Titanium and the Kroll Reduction Energy Barrier (Boulder City, 1946)",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Discovered in 1791 by English clergyman William Gregor in Cornwall black sands, titanium possesses a density nearly half that of steel (4.5 g/cm³ versus 7.8 g/cm³), tensile strength exceeding high-grade structural alloys, and near-total immunity to seawater corrosion. Yet for 150 years, pure metallic titanium did not exist.",
+      "exit_fact": "During the Cold War, the Central Intelligence Agency established fictitious shell companies across Europe to covertly purchase hundreds of tons of titanium sponge from the Soviet Union—the world's primary producer—in order to fabricate the all-titanium airframe of the Mach 3.2 Lockheed SR-71 Blackbird."
     },
     {
       "chapter": 8,
       "title": "The Catalytic Terrace",
       "subtitle": "Platinum and Proton-Exchange Adsorption Kinetics (Zurich, 1965)",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "A hydrogen fuel cell operates as an electrochemical continuous-flow engine: hydrogen gas is oxidized at the anode, oxygen gas is reduced at the cathode, and the free energy of the reaction is converted directly into electrical work without passing through a Carnot thermal cycle:",
+      "exit_fact": "Modern proton-exchange membrane (PEM) fuel cells require approximately 0.1 to 0.3 grams of platinum per kilowatt of capacity—meaning that replacing the global fleet of heavy-transport combustion engines with fuel cells at current catalyst loadings would demand more platinum than is economically recoverable from the Earth's crust."
     },
     {
       "chapter": 9,
       "title": "The Resistive Ceiling",
       "subtitle": "Copper and the Wiedemann-Franz Thermal Dissipation Ratio (Pasadena, 1911)",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Two thousand five hundred tons of hard-drawn copper wire, 4.19 millimeters in diameter (No. 8 BWG), stretched across 130,000 wooden poles from New York to San Francisco.",
+      "exit_fact": "As copper ore grades decline globally from historical averages of two percent down to less than 0.5 percent, extracting and refining one ton of copper requires moving over two hundred tons of waste rock and consuming thousands of kilowatt-hours of electrical energy."
     },
     {
       "chapter": 10,
       "title": "The Nuclear Valley",
       "subtitle": "Lead and the Radiogenic Endpoint of Heavy Elements (Manchester, 1907)",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Every chemical element in the periodic table with an atomic number greater than eighty-two ($Z > 82$) is unstable and undergoes spontaneous nuclear decay. Lead ($\\text{Pb}$, element number 82) sits at the bottom of the radioactive decay cascade as the heaviest element to possess indefinitely stable isotopes.",
+      "exit_fact": "Because lead has eighty-two orbital electrons, its probability of photoelectric absorption is over six hundred times greater than that of aluminum ($Z = 13$) for any given gamma photon."
     },
     {
       "chapter": 11,
       "title": "The Molten Cryolite",
       "subtitle": "Aluminum and the Hall-Héroult Electrolytic Reduction (Oberlin, 1886)",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "In February 1886, in a woodshed behind his family home in Oberlin, Ohio, chemistry graduate Charles Martin Hall was melting minerals over a gasoline-fired furnace. Working with homemade clay crucibles and battery cells constructed from glass jam jars, Hall was attempting to solve the industrial enigma of aluminum.",
+      "exit_fact": "Aluminum smelters remain geographic parasites on cheap electricity, clustering near massive hydroelectric dams in Quebec, Norway, and Iceland to feed the immense continuous current required to break the aluminum-oxygen lattice."
     },
     {
       "chapter": 12,
       "title": "The Graphitic Sheet",
       "subtitle": "Carbon-12 and the Covalent Orbital Hybridization Limits (Manchester, 2004)",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "For seventy years, theoretical solid-state physics held that isolated two-dimensional crystalline materials could not exist at room temperature. In 1935, Lev Landau and Rudolf Peierls proved mathematically that thermal vibrations in a strictly two-dimensional lattice would cause dynamic atomic displacements comparable to the interatomic distance at any finite temperature:",
+      "exit_fact": "At room temperature, graphene exhibits electron mobilities exceeding $200,000\\text{ cm}^2/(\\text{V}\\cdot\\text{s})$—over one hundred times faster than silicon—and displays the Klein paradox, in which relativistic electrons tunnel through electrostatic potential barriers with one hundred percent transmission probability regardless of barrier height."
     }
-  ]
+  ],
+  "format": "mechanisms"
 }

@@ -373,5 +373,6 @@
       "formalism_mode": "ledger_or_list",
       "exit_fact": "When Genmiao Wang, Edith Sevick, Emil Mittag, Debra Searles, and Denis Evans dragged a 6.3-micrometer latex microsphere through purified water inside a feedback-controlled laser trap at the Australian National University in 2002 across 540 repeated trajectories, thermal collisions from surrounding water molecules drove net entropy production negative over one-tenth-of-a-second intervals in more than one-third of all runs, while decaying toward zero violations beyond two seconds in exact agreement with the fluctuation theorem."
     }
-  ]
+  ],
+  "format": "landscape"
 }

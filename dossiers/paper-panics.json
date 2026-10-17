@@ -121,5 +121,6 @@
       "formalism_mode": "ledger_or_list",
       "exit_fact": "During a single fourteen-second window at 2:45 p.m., high-frequency trading firms passed twenty-seven thousand futures contracts back and forth while changing their net inventory by fewer than two hundred contracts."
     }
-  ]
+  ],
+  "format": "mechanisms"
 }

@@ -150,5 +150,7 @@
       "exit_fact": "During the final two-tenths of a second before the two black holes merged on September 14, 2015, their collision radiated three solar masses of pure gravitational wave energy—briefly outshining all the stars in the observable universe combined and nudging LIGO's mirrors by four attometers."
     }
   ],
-  "file": "books/instruments-of-precision.md"
+  "file": "books/instruments-of-precision.md",
+  "mode": "facet",
+  "format": "mechanisms"
 }

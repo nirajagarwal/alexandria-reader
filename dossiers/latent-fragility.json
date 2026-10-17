@@ -14,84 +14,109 @@
       "title": "The Top-Heavy Flagship",
       "subtitle": "Metacentric Instability and the Sinking of the Warship Vasa",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "When marine archaeologists raised the intact oak hull of the Swedish warship *Vasa* from thirty-two meters of anoxic Baltic mud in April 1961, her sixty-four gun carriages still stood at their stations. Her lower gunports gaped wide open.",
+      "exit_fact": "Seawater poured onto the lower gundeck at thirty tons per minute, destroying the remaining buoyancy in seconds."
     },
     {
       "chapter": 2,
       "title": "The Dual Software Race",
       "subtitle": "Concurrent State Bugs in the Therac-25 Radiation Overdoses",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "diagram"
+      "formalism_mode": "diagram",
+      "historical_anchor": "In early medical linear accelerators such as the Therac-6 and Therac-20, patient safety relied on physical hardware locks. Whenever a hospital technician selected high-energy X-ray mode, heavy electromechanical interlocks bolted a tungsten-tantalum target and a beam-flattening filter across the path of the 25-megaelectronvolt (MeV) electron beam.",
+      "exit_fact": "When the Yakima operator pressed the `Set` button during that brief rollover window, the software bypassed the turntable interlock and fired an unspread electron beam directly into the patient's chest."
     },
     {
       "chapter": 3,
       "title": "The Dormant Flag on Server Eight",
       "subtitle": "Dead Code Reuse and the Forty-Five-Minute Liquidation of Knight Capital",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Forty-five seconds after the opening bell rang at the New York Stock Exchange on August 1, 2012, trading desks across Wall Street noticed violent price swings across 154 listed equities. Across the Hudson River in Jersey City, Knight Capital Group had just switched on its updated order routing engines.",
+      "exit_fact": "Forced to liquidate that \\$6.65 billion portfolio before settlement, Knight lost \\$440 million in forty-five minutes—burning \\$10 million per minute and wiping out its \\$365 million equity cushion in a single morning."
     },
     {
       "chapter": 4,
       "title": "The Cost-Plus Ratchet",
       "subtitle": "Aerospace Subcontractor Chains and the Falcon 1 Hardware Failures",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Aerospace launch procurement in the late twentieth century was governed by cost-plus-award-fee contracting under Federal Acquisition Regulation (FAR) Part 16. When Elon Musk analyzed the economics of orbital boosters before founding Space Exploration Technologies (SpaceX) in May 2002, American medium- and heavy-lift launches were dominated by Boeing's Delta IV and Lockheed Martin's Atlas V rockets.",
+      "exit_fact": "Total capital expenditure across the entire four-flight program remained under \\$100 million."
     },
     {
       "chapter": 5,
       "title": "The Thirty-Seven-Second Overflow",
       "subtitle": "Inherited Inertial Code and the Destruction of Ariane 5 Flight 501",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Thirty-six seconds after liftoff from the Guiana Space Centre in Kourou, French Guiana, on June 4, 1996, the maiden flight of the European Space Agency's Ariane 5 heavy-lift launcher was climbing smoothly through 3,700 meters of altitude at Mach 0.7. Built over ten years at a development cost of \\$7 billion, Ariane 5 Flight 501 carried four Cluster magnetospheric research satellites worth \\$370 million.",
+      "exit_fact": "Because the `OBC` had not been programmed to recognize a dual-SRI shutdown, it interpreted the raw diagnostic error bits as valid flight telemetry indicating an extreme attitude deviation, and commanded the booster nozzles to hard-over deflection."
     },
     {
       "chapter": 6,
       "title": "The Synchronized Footbridge",
       "subtitle": "Coupled Pedestrian Oscillators on the London Millennium Crossing",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Within fifteen minutes of its ceremonial opening across the River Thames on June 10, 2000, the London Millennium Footbridge began sliding sideways beneath two thousand pedestrians. Connecting St.",
+      "exit_fact": "The dampers increased structural damping twentyfold before the crossing reopened in February 2002."
     },
     {
       "chapter": 7,
       "title": "The Salt Dome Whirlpool",
       "subtitle": "Hydrostatic Dissolution and the Draining of Lake Peigneur",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Beneath the shallow waters of Lake Peigneur in Iberia Parish, Louisiana, rose the Jefferson Island salt dome. Since 1920, the Diamond Crystal Salt Company had excavated that subterranean pillar of pure halite ($\\text{NaCl}$) into a five-level labyrinth of dry caverns supported by eighty-foot salt pillars.",
+      "exit_fact": "For forty-eight hours, the canal pulled Gulf of Mexico saltwater backward over a 150-foot temporary waterfall, permanently converting a ten-foot freshwater lake into a 200-foot saltwater bay."
     },
     {
       "chapter": 8,
       "title": "The Torsional Flutter of Puget Sound",
       "subtitle": "Aeroelastic Self-Excitation and the Collapse of Tacoma Narrows",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Four months after opening to traffic across Puget Sound in Washington State, the 2,800-foot central suspension span of the Tacoma Narrows Bridge twisted itself to pieces on November 7, 1940, in a steady 42-mile-per-hour wind. Designed by New York consulting engineer Leon Moisseiff using elastic deflection theory, the bridge was the third-longest suspension span in the world, yet by far the narrowest and most flexible.",
+      "exit_fact": "The bridge became a self-excited aerodynamic engine where every twist extracted energy from the steady wind to amplify the next cycle."
     },
     {
       "chapter": 9,
       "title": "The Square Window Corner",
       "subtitle": "De Havilland Comet Fatigue Cracks and Stress Concentration in Pressurized Cabins",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Twenty minutes after departing Rome's Ciampino Airport for London on January 10, 1954, British Overseas Airways Corporation (BOAC) Flight 781 climbed through 26,000 feet above the Tyrrhenian Sea. Without a radio distress call, the de Havilland DH.106 Comet 1 jetliner—registered `G-ALYP`—disintegrated in mid-air.",
+      "exit_fact": "Thereafter, every commercial jetliner was engineered with rounded oval windows and crack-stopping circumferential tear straps."
     },
     {
       "chapter": 10,
       "title": "The Doubled Load on Box Beam Four",
       "subtitle": "How a Simple Rod Substitution Caused the Hyatt Regency Walkway Collapse",
       "opening_door": "A: Scene",
-      "formalism_mode": "diagram"
+      "formalism_mode": "diagram",
+      "historical_anchor": "Fifteen hundred guests gathered in the four-story glass atrium of the newly opened Hyatt Regency Hotel in Kansas City, Missouri, on the evening of July 17, 1981, for a big-band dance competition. High above the lobby floor, three 120-foot concrete-and-steel pedestrian skybridges spanned the open space.",
+      "exit_fact": "Under the dancers' weight, the thin steel flanges curled upward at `Box Beam 9U`, pulling the washer straight through the split seam and unzipping the span."
     },
     {
       "chapter": 11,
       "title": "The Cold-Stiffened O-Ring",
       "subtitle": "How Fluoroelastomer Glass Transition Defeated Dual Redundancy on Challenger",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "diagram"
+      "formalism_mode": "diagram",
+      "historical_anchor": "Sub-freezing Arctic air poured across Florida's Kennedy Space Center on the night of January 27, 1986, hours before the scheduled launch of Space Shuttle *Challenger* (Mission STS-51-L). From Morton Thiokol headquarters in Brigham City, Utah, staff engineer Roger Boisjoly and his seals team pleaded on an emergency teleconference with NASA managers to halt the countdown.",
+      "exit_fact": "Because the ambient cold affected both O-rings identically, a single environmental variable defeated both the primary and backup seals at once."
     },
     {
       "chapter": 12,
       "title": "The Frozen Pitot Tube",
       "subtitle": "Air France Flight 447 and the Paradox of Automation Hand-Off at Thirty-Five Thousand Feet",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Cruising at 35,000 feet (Flight Level 350) over the mid-Atlantic Ocean on the night of June 1, 2009, Air France Flight 447 flew into the towering convective cloud tops of the Intertropical Convergence Zone. The Airbus A330-203, registered `F-GZCP`, carried 228 people from Rio de Janeiro to Paris.",
+      "exit_fact": "Even after Captain Dubois re-entered the cockpit at 02:11:42 UTC, the silent stall warning and uncoupled sidesticks masked the 40-degree angle of attack until the intact airliner struck the Atlantic Ocean at 02:14:28 UTC."
     }
-  ]
+  ],
+  "format": "mechanisms"
 }

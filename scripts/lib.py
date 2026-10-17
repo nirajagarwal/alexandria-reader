@@ -9,6 +9,7 @@ and `catalog.json` / `backlog.json` helpers shared by `validate_book.py`,
 
 import json
 import os
+import re
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BOOKS_DIR = os.path.join(BASE_DIR, "books")
@@ -16,6 +17,7 @@ DOSSIERS_DIR = os.path.join(BASE_DIR, "dossiers")
 COVERS_DIR = os.path.join(BASE_DIR, "assets", "covers")
 THUMBS_DIR = os.path.join(COVERS_DIR, "thumbs")
 PDFS_DIR = os.path.join(BASE_DIR, "assets", "pdfs")
+READ_HTML_DIR = os.path.join(BASE_DIR, "read")
 
 CATALOG_PATH = os.path.join(BASE_DIR, "catalog.json")
 BACKLOG_PATH = os.path.join(BASE_DIR, "backlog.json")
@@ -42,6 +44,19 @@ LEGACY_SLUGS = {
     "bonds-of-enmity",
 }
 
+BIOGRAPHY_SLUGS = {
+    "flights-and-perches",
+    "curious-physicist",
+    "claude-shannon",
+    "alan-turing",
+}
+
+
+def slugify_text(text: str) -> str:
+    """Convert a heading or title string into a clean URL slug."""
+    s = re.sub(r"[^a-z0-9]+", "-", (text or "").lower()).strip("-")
+    return s or "section"
+
 
 def normalize_slug(slug_or_path: str) -> str:
     """Convert any slug, filename, or path into a canonical hyphenated slug."""
@@ -61,7 +76,6 @@ def resolve_book_md(slug_or_path: str) -> tuple[str, str]:
     if os.path.exists(canonical_path):
         return slug, canonical_path
 
-    # Check if the caller passed an explicit path that exists
     if os.path.exists(slug_or_path):
         return slug, os.path.abspath(slug_or_path)
 
@@ -69,7 +83,6 @@ def resolve_book_md(slug_or_path: str) -> tuple[str, str]:
     if os.path.exists(rel_candidate):
         return slug, os.path.abspath(rel_candidate)
 
-    # Default to canonical books/<slug>.md path
     return slug, canonical_path
 
 
@@ -114,14 +127,29 @@ def save_backlog(backlog: dict) -> None:
         f.write("\n")
 
 
+def infer_book_format(slug: str, mode: str) -> str:
+    """Return canonical catalog filter format (`mechanisms` | `landscape` | `highlights` | `biography`)."""
+    if slug in BIOGRAPHY_SLUGS:
+        return "biography"
+    if mode == "landscape":
+        return "landscape"
+    if mode == "listicle":
+        return "highlights"
+    return "mechanisms"
+
+
 def write_books_js_from_catalog(catalog: dict) -> None:
     """Regenerate `js/books-data.js` UMD bundle deterministically from `catalog.json`."""
     js_payload = {}
     for slug, entry in catalog.items():
+        mode = entry.get("mode", "facet")
+        fmt = entry.get("format") or infer_book_format(slug, mode)
         js_payload[slug] = {
             "title": entry["title"],
             "subtitle": entry["subtitle"],
             "category": entry.get("category", "Systems & Science"),
+            "mode": mode,
+            "format": fmt,
             "pdf": entry.get("pdf", f"assets/pdfs/{slug}.pdf"),
             "compactPdf": entry.get("compactPdf", f"assets/pdfs/{slug}-compact.pdf"),
             "mobilePdf": entry.get("mobilePdf", f"assets/pdfs/{slug}-mobile.pdf"),
@@ -147,27 +175,81 @@ def write_books_js_from_catalog(catalog: dict) -> None:
         f.write(js_content)
 
 
-def extract_book_metadata(md_text: str) -> tuple[str, str, list[dict]]:
-    """Extract `(title, subtitle, chapters)` from an Alexandria Press markdown manuscript."""
+def extract_book_metadata(md_text: str, dossier: dict | None = None) -> tuple[str, str, list[dict]]:
+    """Extract `(title, subtitle, chapters)` with provenance metadata from manuscript + dossier."""
     secs = [s.strip() for s in md_text.split("\n---\n") if s.strip()]
     first_lines = [l.strip() for l in secs[0].splitlines() if l.strip()] if secs else []
     title = first_lines[0].lstrip("#").strip() if first_lines else "Untitled Volume"
     subtitle = first_lines[1].lstrip("#").strip() if len(first_lines) > 1 else ""
+    dossier_chapters = (dossier or {}).get("chapters", []) if isinstance(dossier, dict) else []
+    book_mode = (dossier or {}).get("mode", "facet") if isinstance(dossier, dict) else "facet"
+
     chapters = []
     for idx, sec in enumerate(secs[1:]):
+        lines = sec.splitlines()
         headers = []
-        for l in sec.splitlines():
+        body_start = 0
+        for line_i, l in enumerate(lines):
             if l.strip().startswith("#"):
                 headers.append(l.strip().lstrip("#").strip())
                 if len(headers) == 3:
+                    body_start = line_i + 1
                     break
         while len(headers) < 3:
             headers.append("")
+
+        label_str = headers[0] or ("Introduction" if idx == 0 else f"Chapter {idx}")
+        title_str = headers[1] or "Untitled"
+        sub_str = headers[2] or ""
+        body_raw = "\n".join(lines[body_start:]).strip()
+
+        if idx == 0:
+            ch_slug = "introduction"
+            clean_b = re.sub(r"\s+", " ", body_raw).strip()
+            sents = re.split(r"(?<=[.!?])\s+", clean_b)
+            anchor = " ".join(sents[:2]).strip() if sents else ""
+            exit_fact = sents[-1].strip() if len(sents) > 2 else ""
+            formalism_mode = "introduction"
+        else:
+            ch_slug = slugify_text(title_str)
+            d_ch = dossier_chapters[idx - 1] if (idx - 1) < len(dossier_chapters) else {}
+            if "```svg" in body_raw.lower() or "```diagram" in body_raw.lower():
+                formalism_mode = "diagram"
+            elif "$$" in body_raw:
+                formalism_mode = "equation"
+            elif book_mode == "listicle" or "· · ·" in body_raw or "❦" in body_raw:
+                formalism_mode = "highlights"
+            else:
+                formalism_mode = d_ch.get("formalism_mode") or "ledger_or_list"
+
+            clean_b = re.sub(r"```(?:svg|diagram)[\s\S]*?```", "", body_raw, flags=re.IGNORECASE)
+            clean_b = re.sub(r"\$\$[\s\S]*?\$\$", "", clean_b)
+            paras = [
+                pr.strip()
+                for pr in re.split(r"\n\s*\n", clean_b)
+                if pr.strip() and not pr.strip().startswith(("· · ·", "❦", "- ", "* ", "1. "))
+            ]
+            anchor = d_ch.get("historical_anchor", "").strip()
+            if not anchor and paras:
+                first_p = re.sub(r"\s+", " ", paras[0])
+                sents = re.split(r"(?<=[.!?])\s+", first_p)
+                anchor = " ".join(sents[:2]).strip()
+
+            exit_fact = d_ch.get("exit_fact", "").strip()
+            if not exit_fact and paras:
+                last_p = re.sub(r"\s+", " ", paras[-1])
+                sents = re.split(r"(?<=[.!?])\s+", last_p)
+                exit_fact = sents[-1].strip() if sents else last_p
+
         chapters.append(
             {
-                "label": headers[0] or ("Introduction" if idx == 0 else f"Chapter {idx}"),
-                "title": headers[1] or "Untitled",
-                "subtitle": headers[2] or "",
+                "label": label_str,
+                "title": title_str,
+                "subtitle": sub_str,
+                "slug": ch_slug,
+                "formalismMode": formalism_mode,
+                "anchor": anchor,
+                "exitFact": exit_fact,
             }
         )
     return title, subtitle, chapters

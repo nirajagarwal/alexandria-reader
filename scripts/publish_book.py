@@ -40,15 +40,18 @@ from lib import (  # noqa: E402
     INDEX_HTML_PATH,
     LEGACY_SLUGS,
     PDFS_DIR,
+    READ_HTML_DIR,
     SITEMAP_PATH,
     THUMBS_DIR,
     extract_book_metadata,
+    infer_book_format,
     load_backlog,
     load_catalog,
     normalize_slug,
     resolve_book_md,
     save_backlog,
     save_catalog,
+    slugify_text,
     write_books_js_from_catalog,
 )
 from validate_book import validate_book  # noqa: E402
@@ -404,11 +407,338 @@ def generate_cover_svg(slug: str, title: str, subtitle: str, category: str, acce
     return cover_path
 
 
+def _render_markdown_section_to_semantic_html(sec_md: str) -> str:
+    """Convert a chapter or introduction markdown section body into clean semantic HTML for crawlers and static view."""
+    lines = sec_md.splitlines()
+    body_start = 0
+    h_cnt = 0
+    for i, l in enumerate(lines):
+        if l.strip().startswith("#"):
+            h_cnt += 1
+            if h_cnt == 3:
+                body_start = i + 1
+                break
+    body = "\n".join(lines[body_start:]).strip()
+
+    blocks = []
+
+    def _save_blk(h_str: str) -> str:
+        idx = len(blocks)
+        blocks.append(h_str)
+        return f"\n\n@@HTML_BLK_{idx}@@\n\n"
+
+    def _repl_svg(m):
+        svg_raw = m.group(1).strip()
+        cap_m = re.search(r'data-caption="([^"]+)"', svg_raw)
+        cap_html = f'<figcaption>{html.escape(cap_m.group(1))}</figcaption>' if cap_m else ""
+        return _save_blk(f'<figure class="chapter-diagram">{svg_raw}{cap_html}</figure>')
+
+    body = re.sub(r"```(?:svg|diagram)\s*\n([\s\S]*?)```", _repl_svg, body, flags=re.IGNORECASE)
+
+    def _repl_math(m):
+        eq_txt = html.escape(m.group(1).strip())
+        return _save_blk(f'<div class="math-block"><code>$${eq_txt}$$</code></div>')
+
+    body = re.sub(r"\$\$([\s\S]*?)\$\$", _repl_math, body)
+
+    def _inline_fmt(txt: str) -> str:
+        txt = txt.replace("\\$", "$")
+        t = html.escape(txt)
+        t = re.sub(r"`([^`]+)`", r"<code>\1</code>", t)
+        t = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", t)
+        t = re.sub(r"\*([^*]+)\*", r"<em>\1</em>", t)
+        return t
+
+    paras = [p.strip() for p in re.split(r"\n\s*\n", body) if p.strip()]
+    out_html = []
+    for p in paras:
+        m_b = re.match(r"^@@HTML_BLK_(\d+)@@$", p)
+        if m_b:
+            out_html.append(blocks[int(m_b.group(1))])
+            continue
+        p_lines = [l.strip() for l in p.splitlines() if l.strip()]
+        if not p_lines:
+            continue
+        if len(p_lines) == 1 and p_lines[0] in ("· · ·", "···", "• • •", "❦"):
+            out_html.append('<div class="section-sep">· · ·</div>')
+            continue
+        if all(l.startswith(">") for l in p_lines):
+            q = " ".join(re.sub(r"^>\s*", "", l) for l in p_lines)
+            out_html.append(f"<blockquote>{_inline_fmt(q)}</blockquote>")
+            continue
+        if all(re.match(r"^[*\-]\s+", l) for l in p_lines):
+            items = [f"<li>{_inline_fmt(re.sub(r'^[*-]\\s+', '', l))}</li>" for l in p_lines]
+            out_html.append("<ul>\n  " + "\n  ".join(items) + "\n</ul>")
+            continue
+        if all(re.match(r"^\d+\.\s+", l) for l in p_lines):
+            items = [f"<li>{_inline_fmt(re.sub(r'^\\d+\\.\\s+', '', l))}</li>" for l in p_lines]
+            out_html.append("<ol>\n  " + "\n  ".join(items) + "\n</ol>")
+            continue
+        out_html.append(f"<p>{_inline_fmt(' '.join(p_lines))}</p>")
+
+    return "\n      ".join(out_html)
+
+
+def sync_crawlable_read_pages(catalog: dict) -> None:
+    """
+    Generate static crawlable HTML pages for every volume (`read/<slug>/index.html`)
+    and every section/chapter (`read/<slug>/<ch-slug>.html`) with full semantic HTML,
+    OpenGraph preview tags, JSON-LD structured data, and automatic reader handoff.
+    """
+    os.makedirs(READ_HTML_DIR, exist_ok=True)
+    shared_css = (
+        ":root{--bg:#faf8f5;--ink:#1c1b18;--muted:#605a52;--border:#dcd5ca;--card:#f3efe6;--accent:#92400e}"
+        "body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:'Literata',Georgia,serif;line-height:1.68;-webkit-font-smoothing:antialiased}"
+        ".wrap{max-width:720px;margin:0 auto;padding:32px 22px 80px}"
+        ".topbar{display:flex;justify-content:space-between;align-items:center;padding-bottom:16px;margin-bottom:28px;border-bottom:1px solid var(--border);font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:13px}"
+        ".brand{font-weight:700;letter-spacing:.12em;color:var(--ink);text-decoration:none}"
+        ".cta{background:var(--ink);color:var(--bg);padding:7px 14px;border-radius:6px;text-decoration:none;font-weight:600;font-size:12px;letter-spacing:.04em}"
+        ".eyebrow{font-family:monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}"
+        "h1{font-size:2rem;line-height:1.18;margin:0 0 6px}"
+        "h2.sub{font-size:1.12rem;font-weight:400;font-style:italic;color:var(--muted);margin:0 0 24px}"
+        ".prov-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px 16px;margin:22px 0;font-size:.92rem}"
+        ".prov-label{font-family:monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:4px}"
+        "p{margin:0 0 1.1em;text-align:justify}"
+        "ul,ol{margin:0 0 1.1em;padding-left:1.4em}"
+        "li{margin-bottom:.85em}"
+        ".section-sep{text-align:center;color:var(--accent);font-weight:700;letter-spacing:.4em;margin:1.2em 0}"
+        "figure.chapter-diagram{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px;margin:1.4em 0;text-align:center}"
+        "figure.chapter-diagram svg{max-width:100%;height:auto}"
+        "figcaption{font-family:monospace;font-size:11px;color:var(--muted);margin-top:8px}"
+        ".math-block{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:12px;margin:1.2em 0;text-align:center;overflow-x:auto}"
+        ".toc-list{list-style:none;padding:0;margin:24px 0}"
+        ".toc-list li{border-bottom:1px solid var(--border);padding:12px 0;margin:0}"
+        ".toc-list a{text-decoration:none;color:var(--ink);display:block}"
+        ".toc-list .t-title{font-weight:600;font-size:1.05rem}"
+        ".toc-list .t-sub{font-style:italic;color:var(--muted);font-size:.92rem;margin-top:2px}"
+        ".toc-list .t-anchor{font-size:.84rem;color:var(--muted);margin-top:4px}"
+        ".nav-row{display:flex;justify-content:space-between;gap:12px;margin-top:36px;padding-top:18px;border-top:1px solid var(--border);font-family:-apple-system,sans-serif;font-size:13px}"
+        ".nav-row a{color:var(--ink);text-decoration:none;font-weight:600}"
+    )
+
+    for slug, entry in catalog.items():
+        book_dir = os.path.join(READ_HTML_DIR, slug)
+        os.makedirs(book_dir, exist_ok=True)
+        _, md_path = resolve_book_md(slug)
+        raw_md = open(md_path, encoding="utf-8").read()
+        secs = [s.strip() for s in raw_md.split("\n---\n") if s.strip()][1:]
+        chapters = entry.get("chapters", [])
+        b_title = entry["title"]
+        b_sub = entry["subtitle"]
+        b_cat = entry.get("category", "Systems & Science")
+        cover_url = f"https://alexandria.press/assets/covers/{slug}.svg"
+
+        # 1. Generate each section/chapter page: read/<slug>/<ch_slug>.html
+        for idx, ch in enumerate(chapters):
+            ch_slug = ch.get("slug") or ("introduction" if idx == 0 else slugify_text(ch["title"]))
+            ch["slug"] = ch_slug
+            ch_title = ch["title"]
+            ch_sub = ch.get("subtitle", "")
+            ch_label = ch.get("label", "Introduction" if idx == 0 else f"Chapter {idx}")
+            ch_anchor = ch.get("anchor", "")
+            ch_exit = ch.get("exitFact", "")
+            sec_md = secs[idx] if idx < len(secs) else ""
+            body_html = _render_markdown_section_to_semantic_html(sec_md)
+
+            page_url = f"https://alexandria.press/read/{slug}/{ch_slug}.html"
+            reader_target = f"../../index.html#read={slug}" if idx == 0 else f"../../index.html#read={slug}&ch={idx}"
+            meta_desc = f"{ch_sub} — {ch_anchor}"[:240].strip(" —")
+
+            ld_chapter = {
+                "@context": "https://schema.org",
+                "@type": "Chapter",
+                "name": ch_title,
+                "headline": ch_sub,
+                "position": idx,
+                "url": page_url,
+                "isPartOf": {
+                    "@type": "Book",
+                    "name": b_title,
+                    "url": f"https://alexandria.press/read/{slug}/",
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Alexandria Press",
+                    "url": "https://alexandria.press",
+                },
+            }
+
+            prov_html = ""
+            if idx > 0 and (ch_anchor or ch_exit):
+                prov_html = (
+                    f'<aside class="prov-box">'
+                    f'<div class="prov-label">Primary Anchor &amp; Verified Finding</div>'
+                    f'<div><strong>Historical / Experimental Grounding:</strong> {html.escape(ch_anchor)}</div>'
+                    + (f'<div style="margin-top:6px"><strong>Empirical Payoff:</strong> {html.escape(ch_exit)}</div>' if ch_exit else "")
+                    + "</aside>"
+                )
+
+            prev_link = (
+                f'<a href="{chapters[idx - 1]["slug"]}.html">&larr; {html.escape(chapters[idx - 1]["title"])}</a>'
+                if idx > 0
+                else f'<a href="index.html">&larr; {html.escape(b_title)} Contents</a>'
+            )
+            next_link = (
+                f'<a href="{chapters[idx + 1]["slug"]}.html">{html.escape(chapters[idx + 1]["title"])} &rarr;</a>'
+                if idx + 1 < len(chapters)
+                else '<a href="../../index.html">All Volumes &rarr;</a>'
+            )
+
+            ch_html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{html.escape(ch_title)} — {html.escape(b_title)} | Alexandria Press</title>
+  <meta name="description" content="{html.escape(meta_desc)}">
+  <link rel="canonical" href="{page_url}">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Alexandria Press">
+  <meta property="og:title" content="{html.escape(ch_title)} — {html.escape(b_title)}">
+  <meta property="og:description" content="{html.escape(meta_desc)}">
+  <meta property="og:url" content="{page_url}">
+  <meta property="og:image" content="{cover_url}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{html.escape(ch_title)} — {html.escape(b_title)}">
+  <meta name="twitter:description" content="{html.escape(meta_desc)}">
+  <meta name="twitter:image" content="{cover_url}">
+  <script type="application/ld+json">{json.dumps(ld_chapter, ensure_ascii=False)}</script>
+  <script>
+  (function(){{
+    var ua = navigator.userAgent || '';
+    var isBot = /bot|crawl|spider|slurp|bingpreview|facebookexternalhit|twitterbot|slackbot|discordbot|linkedinbot|whatsapp|telegram|applebot|gptbot|claudebot|perplexity|bytespider/i.test(ua);
+    if (!isBot && window.location.search.indexOf('static=1') === -1 && !navigator.webdriver) {{
+      window.location.replace('{reader_target}');
+    }}
+  }})();
+  </script>
+  <style>{shared_css}</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="topbar">
+      <a class="brand" href="../../index.html">ALEXANDRIA.PRESS</a>
+      <a class="cta" href="{reader_target}">Open in 2-Page Spread Reader &rarr;</a>
+    </nav>
+    <article>
+      <div class="eyebrow">{html.escape(b_title)} &middot; {html.escape(ch_label)}</div>
+      <h1>{html.escape(ch_title)}</h1>
+      <h2 class="sub">{html.escape(ch_sub)}</h2>
+      {body_html}
+      {prov_html}
+    </article>
+    <nav class="nav-row">
+      <span>{prev_link}</span>
+      <span><a href="index.html">Volume Contents</a></span>
+      <span>{next_link}</span>
+    </nav>
+  </div>
+</body>
+</html>
+"""
+            open(os.path.join(book_dir, f"{ch_slug}.html"), "w", encoding="utf-8").write(ch_html)
+
+        # 2. Generate volume index page: read/<slug>/index.html
+        book_url = f"https://alexandria.press/read/{slug}/"
+        intro_html = _render_markdown_section_to_semantic_html(secs[0]) if secs else ""
+        has_part_ch = [
+            {
+                "@type": "Chapter",
+                "position": i,
+                "name": c["title"],
+                "headline": c.get("subtitle", ""),
+                "url": f"https://alexandria.press/read/{slug}/{c['slug']}.html",
+            }
+            for i, c in enumerate(chapters)
+        ]
+        ld_book = {
+            "@context": "https://schema.org",
+            "@type": "Book",
+            "name": b_title,
+            "headline": b_sub,
+            "genre": b_cat,
+            "url": book_url,
+            "image": cover_url,
+            "publisher": {
+                "@type": "Organization",
+                "name": "Alexandria Press",
+                "url": "https://alexandria.press",
+            },
+            "hasPart": has_part_ch,
+        }
+        toc_items_html = []
+        for i, c in enumerate(chapters):
+            lbl = "Introduction" if i == 0 else f"{i}. {html.escape(c['title'])}"
+            anch = f'<div class="t-anchor">{html.escape(c.get("anchor", ""))}</div>' if i > 0 and c.get("anchor") else ""
+            toc_items_html.append(
+                f'<li><a href="{c["slug"]}.html">'
+                f'<div class="t-title">{lbl}</div>'
+                f'<div class="t-sub">{html.escape(c.get("subtitle", ""))}</div>'
+                f"{anch}</a></li>"
+            )
+        vol_html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{html.escape(b_title)} — {html.escape(b_sub)} | Alexandria Press</title>
+  <meta name="description" content="{html.escape(b_sub)}. Twelve-chapter monograph published by Alexandria Press.">
+  <link rel="canonical" href="{book_url}">
+  <meta property="og:type" content="book">
+  <meta property="og:site_name" content="Alexandria Press">
+  <meta property="og:title" content="{html.escape(b_title)} — {html.escape(b_sub)}">
+  <meta property="og:description" content="{html.escape(b_sub)}">
+  <meta property="og:url" content="{book_url}">
+  <meta property="og:image" content="{cover_url}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{html.escape(b_title)} — {html.escape(b_sub)}">
+  <meta name="twitter:description" content="{html.escape(b_sub)}">
+  <meta name="twitter:image" content="{cover_url}">
+  <script type="application/ld+json">{json.dumps(ld_book, ensure_ascii=False)}</script>
+  <script>
+  (function(){{
+    var ua = navigator.userAgent || '';
+    var isBot = /bot|crawl|spider|slurp|bingpreview|facebookexternalhit|twitterbot|slackbot|discordbot|linkedinbot|whatsapp|telegram|applebot|gptbot|claudebot|perplexity|bytespider/i.test(ua);
+    if (!isBot && window.location.search.indexOf('static=1') === -1 && !navigator.webdriver) {{
+      window.location.replace('../../index.html#read={slug}');
+    }}
+  }})();
+  </script>
+  <style>{shared_css}</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="topbar">
+      <a class="brand" href="../../index.html">ALEXANDRIA.PRESS</a>
+      <a class="cta" href="../../index.html#read={slug}">Open Interactive 2-Page Spread Reader &rarr;</a>
+    </nav>
+    <header>
+      <div class="eyebrow">{html.escape(b_cat)}</div>
+      <h1>{html.escape(b_title)}</h1>
+      <h2 class="sub">{html.escape(b_sub)}</h2>
+    </header>
+    <section>
+      {intro_html}
+    </section>
+    <section>
+      <div class="eyebrow" style="margin-top:28px">Contents &amp; Provenance Ledger (12 Chapters)</div>
+      <ul class="toc-list">
+        {"".join(toc_items_html)}
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
+"""
+        open(os.path.join(book_dir, "index.html"), "w", encoding="utf-8").write(vol_html)
+
+
 def sync_index_and_sitemap_from_catalog(catalog: dict) -> None:
     """
     Deterministically regenerate the `<!-- BEGIN:JSON_LD -->` and `<!-- BEGIN:CATALOG_GRID -->`
-    sections of `index.html`, plus `sitemap.xml`, directly from `catalog.json`.
+    sections of `index.html`, static crawlable `read/<slug>/` HTML pages, and `sitemap.xml`.
     """
+    sync_crawlable_read_pages(catalog)
     index_html = open(INDEX_HTML_PATH, encoding="utf-8").read()
 
     # 1. Regenerate JSON-LD block
@@ -419,7 +749,7 @@ def sync_index_and_sitemap_from_catalog(catalog: dict) -> None:
                 "@type": "Book",
                 "name": entry["title"],
                 "headline": entry["subtitle"],
-                "url": f"https://alexandria.press/?book={slug}",
+                "url": f"https://alexandria.press/read/{slug}/",
                 "image": f"https://alexandria.press/assets/covers/{slug}.svg",
             }
         )
@@ -452,14 +782,15 @@ def sync_index_and_sitemap_from_catalog(catalog: dict) -> None:
         count=1,
     )
 
-    # 2. Regenerate Catalog Grid block
+    # 2. Regenerate Catalog Grid block with crawlable hrefs and data-format attributes
     cards_html = []
     for slug, entry in catalog.items():
         esc_title = html.escape(entry["title"])
         esc_sub = html.escape(entry["subtitle"])
         esc_cat = html.escape(entry.get("category", "Systems & Science"))
+        fmt = entry.get("format") or infer_book_format(slug, entry.get("mode", "facet"))
         cards_html.append(
-            f'                <article class="book-card" data-key="{slug}" data-title="{esc_title}" data-subtitle="{esc_sub}" data-category="{esc_cat}" onclick="openBookFromCatalog(\'{slug}\')" title="{esc_title} — {esc_sub}">\n'
+            f'                <a class="book-card" href="read/{slug}/index.html" data-key="{slug}" data-format="{fmt}" data-title="{esc_title}" data-subtitle="{esc_sub}" data-category="{esc_cat}" onclick="if(!event.metaKey &amp;&amp; !event.ctrlKey &amp;&amp; !event.shiftKey &amp;&amp; event.button === 0){{event.preventDefault(); openBookFromCatalog(\'{slug}\');}}" title="{esc_title} — {esc_sub}">\n'
             f'                    <div class="book-cover-frame">\n'
             f'                        <img src="assets/covers/thumbs/{slug}.svg" alt="{esc_title}" loading="eager">\n'
             f'                    </div>\n'
@@ -467,7 +798,7 @@ def sync_index_and_sitemap_from_catalog(catalog: dict) -> None:
             f'                        <div class="book-card-title">{esc_title}</div>\n'
             f'                        <div class="book-card-subtitle">{esc_sub}</div>\n'
             f'                    </div>\n'
-            f"                </article>"
+            f"                </a>"
         )
     grid_block = (
         "<!-- BEGIN:CATALOG_GRID -->\n"
@@ -483,7 +814,7 @@ def sync_index_and_sitemap_from_catalog(catalog: dict) -> None:
 
     open(INDEX_HTML_PATH, "w", encoding="utf-8").write(index_html)
 
-    # 3. Regenerate sitemap.xml
+    # 3. Regenerate sitemap.xml (root + all 34 books + all 442 section/chapter pages)
     today = datetime.date.today().isoformat()
     smap_lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
@@ -495,17 +826,29 @@ def sync_index_and_sitemap_from_catalog(catalog: dict) -> None:
         "    <priority>1.0</priority>",
         "  </url>",
     ]
-    for slug in catalog.keys():
+    for slug, entry in catalog.items():
         smap_lines.extend(
             [
                 "  <url>",
-                f"    <loc>https://alexandria.press/?book={slug}</loc>",
+                f"    <loc>https://alexandria.press/read/{slug}/</loc>",
                 f"    <lastmod>{today}</lastmod>",
                 "    <changefreq>weekly</changefreq>",
                 "    <priority>0.9</priority>",
                 "  </url>",
             ]
         )
+        for ch in entry.get("chapters", []):
+            ch_slug = ch.get("slug") or slugify_text(ch["title"])
+            smap_lines.extend(
+                [
+                    "  <url>",
+                    f"    <loc>https://alexandria.press/read/{slug}/{ch_slug}.html</loc>",
+                    f"    <lastmod>{today}</lastmod>",
+                    "    <changefreq>monthly</changefreq>",
+                    "    <priority>0.8</priority>",
+                    "  </url>",
+                ]
+            )
     smap_lines.append("</urlset>\n")
     open(SITEMAP_PATH, "w", encoding="utf-8").write("\n".join(smap_lines))
 
@@ -546,12 +889,13 @@ def publish_single_volume(
         print("  WARN:", w)
 
     md_text = open(md_path, encoding="utf-8").read()
-    title, subtitle, chapters = extract_book_metadata(md_text)
+    title, subtitle, chapters = extract_book_metadata(md_text, dossier_meta)
 
     eff_cat = category or existing.get("category") or dossier_meta.get("category") or "Systems & Science"
     eff_accent = accent or existing.get("accent") or dossier_meta.get("accent") or "#d97706"
     eff_bg = bg or existing.get("bg") or dossier_meta.get("bg") or "#1c1917"
-    eff_mode = existing.get("mode") or dossier_meta.get("mode") or "mechanisms"
+    eff_mode = dossier_meta.get("mode") or existing.get("mode") or "facet"
+    eff_format = infer_book_format(slug, eff_mode)
     eff_profile = existing.get("profile") or dossier_meta.get("profile") or "A"
 
     cover_file = os.path.join(COVERS_DIR, f"{slug}.svg")
@@ -592,6 +936,7 @@ def publish_single_volume(
         "subtitle": subtitle,
         "category": eff_cat,
         "mode": eff_mode,
+        "format": eff_format,
         "profile": eff_profile,
         "accent": eff_accent,
         "bg": eff_bg,
@@ -647,7 +992,7 @@ def main():
         write_books_js_from_catalog(catalog)
         sync_thumbs_from_covers()
         sync_index_and_sitemap_from_catalog(catalog)
-        print(f"Successfully synced all {len(catalog)} volumes into catalog.json, js/books-data.js, index.html, and sitemap.xml.")
+        print(f"Successfully synced all {len(catalog)} volumes into catalog.json, js/books-data.js, read/*, index.html, and sitemap.xml.")
         return
 
     if args.batch is not None:
@@ -708,3 +1053,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

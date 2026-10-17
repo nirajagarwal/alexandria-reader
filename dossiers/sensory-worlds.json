@@ -129,5 +129,7 @@
       "governing_formalism": "Structured three-layer optical stack of cephalopod skin: (1) Top layer of neuromuscular chromatophore organs (yellow, red, brown pigment sacs expanded by radial muscles wired directly to motor neurons in the subesophageal brain without hormonal delay), (2) Middle layer of acetylcholine-tuned reflectin protein plates (iridophores) shifting thin-film constructive interference wavelengths, and (3) Bottom layer of broadband diffuse white leucophores scattering ambient light.",
       "exit_fact": "End on how the cuttlefish bypasses the impossible computational bottleneck of controlling two million individual chromatophores by wiring them into roughly thirty fixed dermal motor fields triggered by just three visual spatial-frequency templates."
     }
-  ]
+  ],
+  "mode": "facet",
+  "format": "mechanisms"
 }

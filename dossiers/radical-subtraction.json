@@ -14,84 +14,109 @@
       "title": "The Cell on the Tagus",
       "subtitle": "John of the Cross and the Doctrine of the Dark Night in Toledo",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Shortly after midnight on December 2, 1577, armed Carmelite friars broke into a small dwelling in Ávila and arrested Juan de Yepes y Álvarez. They blindfolded the reformer, tied him to a mule, and marched him eighty miles south across the freezing Castilian plateau to Toledo.",
+      "exit_fact": "He lowered himself down the cliff wall, dropped the final twelve feet into the walled courtyard of a neighboring Franciscan convent, and walked into the dawn carrying his memorized verses."
     },
     {
       "chapter": 2,
       "title": "The Anchorhold of Norwich",
       "subtitle": "Julian of Norwich and the Confinement of the Hazelnuts",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "ledger_or_list"
+      "formalism_mode": "ledger_or_list",
+      "historical_anchor": "Attached to the south stone wall of St. Julian's Church in Norwich stood a sealed chamber measuring roughly twelve feet square.",
+      "exit_fact": "Having watched forty years of epidemic mortality from a room she could never leave, she concluded her manuscript with the quiet observation that every contingent fracture in time would resolve into order."
     },
     {
       "chapter": 3,
       "title": "The Interior Castle",
       "subtitle": "Teresa of Ávila and the Neurodynamics of the Seventh Mansion",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "diagram"
+      "formalism_mode": "diagram",
+      "historical_anchor": "For the final two decades of her life, Teresa de Cepeda y Ahumada operated through severe neuro-inflammatory episodes, transient paralysis, chronic tinnitus, and violent cardiac arrhythmias. During a four-day febrile coma in 1539, physicians pronounced her dead and friars dug an open grave in the convent yard of La Encarnación.",
+      "exit_fact": "When evaluating a contemplative's maturity, she ignored reports of supernatural rapture and inspected how reliably the sister handled the convent kitchen and infirmary, concluding that quiet interior absorption and practical outward service must operate as a single unit."
     },
     {
       "chapter": 4,
       "title": "The Desert Pillar",
       "subtitle": "Simeon Stylites and the Physics of Vertical Isolation in Syria",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Forty miles east of Antioch on the limestone plateau of Telanissos stands the octagonal ruin of Qal'at Sim'an, built around the weathered base of a sixty-foot stone shaft. In the spring of 423 AD, a Syrian shepherd turned monk named Simeon walked into these hills after being expelled from a local monastery because his extreme fasts alarmed the abbot.",
+      "exit_fact": "When he died standing against the railing on September 2, 459 AD, the military commander of Antioch marched six hundred Roman soldiers to the pillar to escort his body before desert tribes could seize it."
     },
     {
       "chapter": 5,
       "title": "The Apophatic Cloud",
       "subtitle": "The Anonymous English Contemplative and the Erasure of Memory",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "ledger_or_list"
+      "formalism_mode": "ledger_or_list",
+      "historical_anchor": "Somewhere in the East Midlands of England around 1375, an anonymous country priest drafted a seventy-five-chapter manual in vernacular Middle English for a young Carthusian student. He opened the manuscript with a strict operational warning: the book must never be read by clever talkers, curious academics, or anyone unwilling to sit quietly in mental darkness.",
+      "exit_fact": "When the manuscript circulated among English Carthusian Charterhouses such as Mount Grace Priory in the fifteenth century, solitary monks copied the text without attribution, preserving a stripped-down mechanical manual for shutting off the brain's narrative generator."
     },
     {
       "chapter": 6,
       "title": "The Dialectic of the Nothing",
       "subtitle": "Meister Eckhart and the Breakthrough of the Ground in Cologne",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "ledger_or_list"
+      "formalism_mode": "ledger_or_list",
+      "historical_anchor": "To call God a \"being,\" Johannes Eckhart argued from his Dominican pulpit in Cologne, was a logical mistake—because any specific being is finite, bounded, and defined by contrast with what it is not. In the winter of 1326, at the age of sixty-six, Eckhart—former Master of Sacred Theology at the University of Paris and vicar-general of Dominican houses across Bohemia and Saxony—was summoned before an inquisitorial tribunal convened by Archbishop Heinrich von Virneburg.",
+      "exit_fact": "On March 27, 1329, Pope John XXII promulgated the bull *In Agro Dominico*, condemning seventeen of Eckhart's propositions as heretical and eleven as suspect, while recording that the master had submitted his writings to the judgment of the see before his death."
     },
     {
       "chapter": 7,
       "title": "The Rhenish Hermitage",
       "subtitle": "Hildegard of Bingen and the Scivias Telemetry at Disibodenberg",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "The thirty-five illuminated plates of the Rupertsberg manuscript of *Scivias*, painted under the direct supervision of Hildegard of Bingen between 1141 and 1151, depict concentric rings of blazing gold fire, jagged crenelated battlements, and showers of brilliant sparks fading into black char. In 1970, when clinical neurologist Oliver Sacks compared those twelfth-century parchment illuminations against hospital sketches drawn by twentieth-century neurology patients, he identified the unmistakable geometric signature of classical migraine aura: fortification spectra (teichopsia) and scintillating scotomas.",
+      "exit_fact": "In 1150, she defied the abbot of Disibodenberg and moved her nuns into an independent monastery at Rupertsberg engineered with gravity-fed indoor running water."
     },
     {
       "chapter": 8,
       "title": "The Hesychast Breath",
       "subtitle": "Gregory Palamas and the Physiology of the Uncreated Light on Mount Athos",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "diagram"
+      "formalism_mode": "diagram",
+      "historical_anchor": "At rest, an unpaced human adult breathes twelve to fifteen times per minute, producing irregular fluctuations between heart rate and arterial blood pressure. In 1338, an Italian-Greek logician named Barlaam of Calabria arrived in Constantinople and began mocking the solitary monks of Mount Athos who deliberately altered this respiratory rhythm.",
+      "exit_fact": "That decree wrote a 0.1 Hz respiratory biofeedback protocol into the constitutional law of the Byzantine Empire."
     },
     {
       "chapter": 9,
       "title": "The Uncarved Block",
       "subtitle": "Zhuangzi, Butcher Ding's Ox Cleaver, and the Mechanics of Non-Interference",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "A mediocre cook replaces his cleaver once a month because he hacks directly against bone. A skilled cook replaces his blade once a year because he slices through tough fibrous sinew.",
+      "exit_fact": "Once the carcass lay separated on the courtyard stones, Butcher Ding stood still, wiped his nineteen-year-old cleaver clean, and slipped it back into its sheath—preserving the tool intact by refusing to pit metal against bone."
     },
     {
       "chapter": 10,
       "title": "The Sculptor's Chisel",
       "subtitle": "Plotinus, Pseudo-Dionysius, and the Removal of Conceptual Marble",
       "opening_door": "A: Scene",
-      "formalism_mode": "ledger_or_list"
+      "formalism_mode": "ledger_or_list",
+      "historical_anchor": "Painting and sculpture operate by opposite physical algorithms. A painter begins with a bare wooden panel or canvas and builds a representation by adding successive layers of pigment, binder, and glaze.",
+      "exit_fact": "It provided the formal blueprint later deployed by Meister Eckhart in Cologne, the author of *The Cloud of Unknowing* in England, and John of the Cross in Toledo."
     },
     {
       "chapter": 11,
       "title": "The Suspended Judgment",
       "subtitle": "Pyrrho of Elis, Sextus Empiricus, and the Quietness That Follows Equipollence",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "diagram"
+      "formalism_mode": "diagram",
+      "historical_anchor": "Around 200 CE, the Greek empiricist physician Sextus Empiricus opened his handbook *Outlines of Pyrrhonism* with a story from a fourth-century BCE painting studio. The celebrated Hellenistic artist Apelles of Kos was painting a warhorse returning from battle.",
+      "exit_fact": "By subtracting only the extra layer of dogmatic opinion, the skeptic navigated the physical world with full motor competence and zero existential friction."
     },
     {
       "chapter": 12,
       "title": "The Kicked-Away Ladder",
       "subtitle": "Ludwig Wittgenstein and Where Logical Language Draws Its Own Border",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "ledger_or_list"
+      "formalism_mode": "ledger_or_list",
+      "historical_anchor": "While serving as an artillery spotter and searchlight operator in the Austro-Hungarian army on the Eastern and Italian fronts between 1914 and 1918, Ludwig Wittgenstein carried small lined notebooks inside his military rucksack. Under artillery bombardment along the Vistula River and in the mountain trenches of Asiago, the former Cambridge engineering student distilled a seventy-five-page manuscript organized into seven decimal-numbered propositions.",
+      "exit_fact": "Having used formal symbolic logic to clear away the entire history of metaphysical chatter, he closed the book with Proposition 7, instructing that where one cannot speak, one must pass over in silence."
     }
-  ]
+  ],
+  "format": "mechanisms"
 }

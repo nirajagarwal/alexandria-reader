@@ -121,5 +121,6 @@
       "formalism_mode": "ledger_or_list",
       "exit_fact": "When ironclad hulls and steam engines replaced wooden warships in the 1860s, tens of thousands of oaks planted after Trafalgar were still only halfway to the century-old maturity required for a warship's hull."
     }
-  ]
+  ],
+  "format": "mechanisms"
 }

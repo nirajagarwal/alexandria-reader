@@ -30,7 +30,10 @@
         "When Erwin Neher and Bert Sakmann pressed a fire-polished glass micropipette with a one-micrometer tip against a frog muscle fiber in 1976, they achieved a gigaohm seal that resolved the two-picoampere square current pulses of a single acetylcholine receptor channel snapping open and shut in microseconds.",
         "Voltage-gated sodium and potassium channels sense membrane voltage through four S4 transmembrane alpha helices studded with positively charged arginine residues every third position, which screw outward by 5 to 15 angstroms across the membrane electric field when depolarization releases the inward electrostatic tug.",
         "To keep a fast-firing neuron from locking in continuous excitation, the voltage-gated sodium channel uses a hinged-lid ball-and-chain inactivation gate—discovered by Clay Armstrong and Francisco Bezanilla in 1977—that plugs the open inner pore within one millisecond of opening until the membrane repolarizes."
-      ]
+      ],
+      "historical_anchor": "Evert Gorter and François Grendel extracted the lipids from a known count of red blood cells in 1925 and spread them across a Langmuir water trough. Compressing the floating film to a single molecular layer covered twice the surface area of the intact cells.",
+      "exit_fact": "It swings into the open inner pore to block ion flow until the membrane repolarizes.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 2,
@@ -49,7 +52,10 @@
         "Stephan Wilkens and Wolfgang Junge showed that while the central gamma rotor spins at up to 100 revolutions per second, a slender peripheral stalk (the b2-delta-OSCP stator) braces the alpha3-beta3 catalytic head against the membrane a-subunit with enough elastic compliance to smooth out stepping torque.",
         "Under physiological conditions, the F1 motor stalls when backward mechanical torque reaches 40 piconewton-nanometers; multiplying that stall torque by a 120-degree angular step (2.09 radians) yields 84 piconewton-nanometers of mechanical work, matching nearly 100 percent of the free energy of one hydrolyzed ATP molecule.",
         "Electron cryo-tomography by Werner Kühlbrandt revealed that mitochondrial ATP synthase complexes assemble into V-shaped dimers seated at an 86-degree angle, physically bending the inner mitochondrial membrane into the tight 20-nanometer tubular cristae ridges that act as proton traps."
-      ]
+      ],
+      "historical_anchor": "A resting human body holds only about 50 grams of adenosine triphosphate (ATP) at any given moment. Yet our cells hydrolyze and resynthesize roughly 60 to 75 kilograms of ATP every twenty-four hours.",
+      "exit_fact": "Those rigid rows physically bend the inner mitochondrial membrane into tight 20-nanometer cristae ridges that focus protons onto the turbine inlets.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 3,
@@ -68,7 +74,10 @@
         "Unwinding the E. coli chromosome at 1,000 base pairs per second with the hexameric DnaB helicase twists the ahead duplex by 100 turns every second; without DNA gyrase (a Type II topoisomerase discovered by Martin Gellert in 1976) cutting both strands to pass another duplex through, supercoiling torque would stall the fork in seconds.",
         "Because removing the final RNA primer at the very tip of a linear eukaryotic chromosome leaves an uncopied 3-prime overhang (James Watson's 1972 end-replication problem), Elizabeth Blackburn and Carol Greider discovered telomerase in 1985—a ribonucleoprotein reverse transcriptase that uses its own built-in RNA template to extend chromosome ends with TTAGGG repeats.",
         "Inside a dividing human cell, 30,000 to 50,000 replication origins fire across the 46 chromosomes so that slow eukaryotic polymerases—moving at 30 to 50 nucleotides per second rather than bacterial 1,000-nucleotide speeds—can duplicate all six billion base pairs within an eight-hour S-phase window."
-      ]
+      ],
+      "historical_anchor": "Arthur Kornberg purified the first DNA-synthesizing enzyme, DNA Polymerase I, from *Escherichia coli* extracts in 1956. Skeptical biochemists doubted that a blind enzyme could copy genetic sequences accurately.",
+      "exit_fact": "To duplicate all six billion base pairs inside an eight-hour S-phase window, human cells fire 30,000 to 50,000 replication origins in parallel.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 4,
@@ -87,7 +96,10 @@
         "No transfer RNA recognizes the stop codons UAA, UAG, or UGA; instead, protein release factors RF1 and RF2 fold into a molecular mimic of a tRNA whose conserved GGQ loop reaches into the peptidyl transferase center to coordinate a water molecule that hydrolyzes the finished protein off the P-site tRNA.",
         "If an mRNA strand breaks in half and lacks a stop codon, the bacterial ribosome stalls at the torn 3-prime end until a hybrid molecule called tmRNA (10Sa RNA, discovered by Kenneth Keiler and Robert Sauer in 1996) enters the A-site like a tRNA, switches the template to its own internal reading frame, and appends an 11-amino-acid ssrA destruction tag.",
         "Alexander Rich showed in 1962 that cells amplify protein output by threading a single messenger RNA through a daisy chain of 10 to 80 ribosomes spaced just 80 nucleotides apart (a polyribosome or polysome), curling eukaryotic mRNAs into closed loops from 5-prime cap to 3-prime poly-A tail so terminating ribosomes immediately reinitiate."
-      ]
+      ],
+      "historical_anchor": "George Palade discovered ribosomes in 1955 as dense 20-nanometer granules carpeting the endoplasmic reticulum in electron micrographs. In a rapidly dividing *Escherichia coli* cell, 50,000 to 70,000 ribosomes make up nearly 30 percent of the bacterium's total dry weight.",
+      "exit_fact": "Terminating ribosomes immediately re-enter at the start codon.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 5,
@@ -106,7 +118,10 @@
         "Because a single cytoplasmic dynein dimer is a weak, erratic walker stalling at 1 to 2 piconewtons, Andrew Carter and Ron Vale showed in 2014 that activating adapters like BICD2 recruit two dynein dimers side by side onto one dynactin scaffold—doubling the stall force to 4.5 piconewtons and enabling millimeter-long processive runs.",
         "First isolated from *Tetrahymena* cilia by Ian Gibbons in 1965, axonemal dyneins line the nine outer microtubule doublets of cilia and sperm flagella in a 9+2 array; when dynein arms walk along adjacent doublets pinned at the base by nexin links, sliding shear converts into a 20- to 60-hertz whip-like beat.",
         "Neurotropic viruses including rabies, herpes simplex, and poliovirus enter nerve terminals at a peripheral wound or mucosal surface and hijack cytoplasmic dynein motors to ride retrograde up the axon into the central nervous system—explaining why rabies incubation time scales directly with the physical distance from bite to brain."
-      ]
+      ],
+      "historical_anchor": "If a human motor neuron relied on passive diffusion ($t \\approx x^2 / 2D$) to send a synaptic vesicle down a one-meter sciatic axon from the spine to the foot, the trip would take fifty years. Molecular motor proteins beat that diffusive barrier.",
+      "exit_fact": "That fixed motor speed explains why rabies incubation time scales with bite distance.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 6,
@@ -125,7 +140,10 @@
         "Because many human introns exceed 10,000 nucleotides while exons average a tight 140 to 150 nucleotides, Susan Berget showed in 1995 that the vertebrate spliceosome uses exon definition: U2AF at the upstream 3-prime splice site and U1 snRNP at the downstream 5-prime site bridge across the short exon via SR proteins before pairing across the vast intron.",
         "Approximately 15 to 30 percent of all disease-causing single-nucleotide mutations in human genetics—including spinal muscular atrophy (SMA) and Hutchinson-Gilford progeria—damage health not by changing an amino acid, but by disrupting splice sites or exonic splicing enhancers.",
         "Developed by Adrian Krainer and colleagues and approved in 2016 as the first therapy for spinal muscular atrophy, the antisense oligonucleotide drug nusinersen (Spinraza) binds an intronic silencer on *SMN2* pre-mRNA to block a repressor protein—coaxing the spliceosome to include exon 7 and restore functional survival motor neuron protein."
-      ]
+      ],
+      "historical_anchor": "Richard Roberts and Phillip Sharp independently hybridized mature adenovirus-2 messenger RNA to the single-stranded viral DNA that encoded it in 1977. Under the electron microscope, three giant loops of uncopied single-stranded DNA bulged out from the hybrid duplex.",
+      "exit_fact": "That block coaxes the spliceosome to retain exon 7 and restore full-length motor-neuron protein.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 7,
@@ -144,7 +162,10 @@
         "Sitting atop the 20S barrel, the 19S regulatory particle uses the Rpn11 deubiquitinase to clip off and recycle the ubiquitin tags for reuse while a hexameric ring of six AAA+ ATPase motors (Rpt1–Rpt6) grabs an unstructured tail of the target protein and pulls with up to 11 piconewtons of force to unravel even rock-stable GFP barrels.",
         "Inside the middle two beta rings of the 20S proteasome sit six active sites armed with N-terminal threonine nucleophiles (displaying caspase-like, trypsin-like, and chymotrypsin-like specificity) that processively shred the threaded polypeptide into 7- to 9-amino-acid fragments—the exact length required for MHC Class I immune presentation on the cell surface.",
         "Synthesized by Julian Adams and colleagues and approved in 2003, the boronic-acid drug bortezomib (Velcade) forms a reversible tetrahedral adduct with the catalytic threonine of the proteasome's beta-5 subunit; because multiple myeloma plasma cells churn out massive quantities of misfolded immunoglobulin chains, blocking their proteasomal trash shredder triggers rapid apoptotic suicide."
-      ]
+      ],
+      "historical_anchor": "Christian Anfinsen showed in 1961 that denatured ribonuclease A refolds spontaneously in a dilute glass beaker, proving that amino acid sequence dictates three-dimensional structure. Inside a living *Escherichia coli* cell, however, macromolecular crowding reaches 350 milligrams per milliliter.",
+      "exit_fact": "Clogging their proteasomes triggers lethal endoplasmic-reticulum stress while sparing normal tissues.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 8,
@@ -163,7 +184,10 @@
         "When an importin-beta shuttle carries an NLS cargo into the nucleus, abundant nuclear Ran-GTP binds to an allosteric arch on importin-beta and pries open its cargo-binding jaws to release the protein; inversely, exportins like CRM1 (Exportin-1) can grip a leucine-rich Nuclear Export Signal only when simultaneously bound to nuclear Ran-GTP, dropping the cargo in the cytoplasm once RanGAP1 triggers GTP hydrolysis.",
         "Bulk messenger RNA export bypasses the Ran-GTP gradient entirely and uses a dedicated molecular ratchet: the heterodimer Mex67-Mtr2 (NXF1-NXT1 in humans) ferries mRNA ribonucleoproteins through the FG mesh until the ATP-powered DEAD-box helicase Dbp5, anchored exclusivamente to the cytoplasmic filaments of the pore, strips Mex67 off the RNA to prevent back-sliding.",
         "Certain cells exploit the nuclear pore as a one-way mechanical timer: during oocyte maturation and viral infection, large 18-nanometer Hepatitis B virus capsids bind importins directly on their outer shells to squeeze intact through the FG-repeat mesh into the nuclear basket before uncoating their DNA."
-      ]
+      ],
+      "historical_anchor": "Weighing 110 to 120 megadaltons in vertebrates—roughly thirty times the mass of a bacterial ribosome—the Nuclear Pore Complex (NPC) is the largest protein assembly in the eukaryotic cell. Each pore fuses the inner and outer nuclear membranes into a circular grommet.",
+      "exit_fact": "Old nuclear pores eventually leak cytoplasmic proteins into the nucleus.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 9,
@@ -182,7 +206,10 @@
         "Rather than scrapping the entire 700-kilodalton, 20-subunit Photosystem II dimeric complex when D1 burns out, plants and cyanobacteria run a surgical repair cycle: they unstack the thylakoid grana, slide out and chop up only the damaged D1 subunit with FtsH proteases, and slot a freshly translated D1 protein back into the existing frame.",
         "When a cloud clears and sunlight suddenly exceeds the capacity of the Calvin cycle, thylakoid lumen acidification (below pH 5.5) protonates the PsbS protein and activates violaxanthin de-epoxidase to convert light-harvesting antennas within seconds into heat-dissipating radiators (Non-Photochemical Quenching)—dumping 80 percent of excess absorbed photons harmlessly as thermal vibration.",
         "Using femtosecond X-ray free-electron lasers (XFEL) at Stanford's LCLS and Japan's SACLA between 2014 and 2023, Jan Kern, Vittal Yachandra, Junko Yano, and Jian-Ren Shen captured stop-motion movies of the $\\text{Mn}_4\\text{CaO}_5$ cluster expanding during the $S_2 \\to S_3$ transition as a sixth oxygen atom ($O_6$, from a substrate water molecule) inserts right beside $O_5$ to forge the $O-O$ bond."
-      ]
+      ],
+      "historical_anchor": "Virtually every molecule of dioxygen ($\\text{O}_2$) in Earth's atmosphere—some $1.2 \\times 10^{18}\\text{ kilograms}$ of gas—was ripped out of liquid water by a single catalytic machine: Photosystem II. Evolved by cyanobacteria more than 2.4 billion years ago, its water-splitting active site has remained conserved down to the exact atomic ligands across every cyanobacterium, alga, and land plant.",
+      "exit_fact": "A sixth oxygen atom ($\\text{O}_6$) from a second water molecule inserts right alongside $\\text{O}_5$ to forge the $\\text{O–O}$ bond.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 10,
@@ -201,7 +228,10 @@
         "When all six *E. coli* motors spin counterclockwise, their left-handed helical filaments wrap into a single propulsive bundle that drives a one-second straight run at 30 micrometers per second; when one or more motors switch to clockwise rotation within a millisecond, torque twists that filament into a right-handed curly waveform that flies out of the bundle and tumbles the cell onto a new random heading.",
         "Dennis Bray and Victor Sourjik showed that nose-mounted chemoreceptor arrays act as an ultra-sensitive molecular transistor with a Hill coefficient of 15 to 20: when attractant drops, the kinase CheA phosphorylates the diffusible messenger CheY into CheY-P, which binds the FliM switch on the flagellar C-ring to trigger clockwise tumbling.",
         "To prevent chemoreceptors from saturating as the cell climbs into higher attractant zones, the methyltransferase CheR slowly adds methyl groups to four glutamate residues on the receptor while the methylesterase CheB strips them off—creating a four-second biochemical working memory that resets receptor sensitivity to zero net output across five orders of magnitude in chemical concentration."
-      ]
+      ],
+      "historical_anchor": "For nearly a century, microscopists assumed bacteria swam by waving flexible tails like miniature eels or eukaryotic sperm. Howard Berg and Robert Anderson proved in 1973 that the bacterial flagellum has zero internal motor proteins along its shaft.",
+      "exit_fact": "That four-second biochemical memory continually resets the baseline to compare the present second against the past three.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 11,
@@ -220,7 +250,10 @@
         "Even after the Mitotic Checkpoint Complex shuts off and activates the Anaphase-Promoting Complex (APC/C), sister chromatids cannot separate until the giant protease separase—kept gagged throughout interphase and metaphase by an inhibitory chaperone called securin (discovered by Kim Nasmyth and Frank Uhlmann in 1999)—is freed when APC/C ubiquitylates securin for proteasomal destruction.",
         "Once unleashed at the metaphase-to-anaphase transition, active separase slices open the Kleisin subunit (Scc1/Rad21) of the ring-shaped cohesin complexes that have physically handcuffed sister DNA molecules together since S-phase replication—causing all 46 human chromosome pairs to split synchronously within seconds.",
         "Isolated from the bark of the Pacific yew tree (*Taxus brevifolia*) by Monroe Wall and Mansukh Wani in 1971 and mechanistically explained by Susan Horwitz in 1979, the blockbuster chemotherapy drug paclitaxel (Taxol) kills rapidly dividing cancer cells not by dissolving their mitotic spindles, but by binding inside the beta-tubulin lumen to freeze dynamic instability—starving kinetochores of tension and locking cells in fatal mitotic arrest."
-      ]
+      ],
+      "historical_anchor": "Tim Mitchison and Marc Kirschner discovered in 1984 that microtubules do not polymerize to a quiet equilibrium length. Instead, individual filaments switch stochastically between steady growth and rapid catastrophic shrinkage.",
+      "exit_fact": "That stabilization robs kinetochores of dynamic tension and traps cancer cells in mitotic arrest.",
+      "formalism_mode": "highlights"
     },
     {
       "chapter": 12,
@@ -239,7 +272,11 @@
         "Once Cas9 slices a chromosomal gene inside a human cell, the cell's own Non-Homologous End Joining (NHEJ) repair pathway stitches the broken ends back together with small frame-shifting insertions or deletions to knock out the gene, whereas supplying a donor DNA template during S/G2 phase allows Homology-Directed Repair (HDR) to write in a precise sequence correction.",
         "To rewrite single DNA letters without making dangerous double-strand breaks, David Liu engineered Base Editors in 2016 (fusing catalytically nicking Cas9 to a cytidine or evolved adenine deaminase to convert $C \\cdot G$ to $T \\cdot A$ or $A \\cdot T$ to $G \\cdot C$) and Prime Editors in 2019 (fusing a Cas9 nickase to a reverse transcriptase guided by a pegRNA that directly copies new genetic text into the nicked strand).",
         "In November and December 2023, regulators in the United Kingdom and the United States approved exagamglogene autotemcel (Casgevy)—the first CRISPR-Cas9 medicine in human history—which edits a patient's own hematopoietic stem cells at the erythroid enhancer of the *BCL11A* repressor gene to reactivate fetal hemoglobin and cure sickle cell disease and beta-thalassemia."
-      ]
+      ],
+      "historical_anchor": "Yoshizumi Ishino sequenced the alkaline phosphatase isozyme gene (*iap*) in *Escherichia coli* in 1987 and noticed five unusual 29-base-pair palindromic DNA repeats separated by non-repeating 32-base-pair spacers. At the time, no known genetic element shared that periodic architecture.",
+      "exit_fact": "Infusing the edited cells back into the patient reactivates fetal hemoglobin to cure sickle cell disease and $\\beta$-thalassemia.",
+      "formalism_mode": "highlights"
     }
-  ]
+  ],
+  "format": "highlights"
 }

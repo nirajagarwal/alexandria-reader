@@ -14,84 +14,109 @@
       "title": "The Absorbing Barrier",
       "subtitle": "Non-Ergodicity from the St. Petersburg Paradox to Long-Term Capital Management",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "On September 9, 1713, the Swiss mathematician Nicolaus Bernoulli mailed a letter from Basel to the French probabilist Pierre Rémond de Montmort in Paris containing a five-sentence gambling puzzle that paralyzed classical economics for three centuries. Suppose a casino offers a fair coin toss.",
+      "exit_fact": "After the Federal Reserve Bank of New York orchestrated a \\$3.625 billion rescue by fourteen banks on September 23, 1998, the exact bond convergence trades that bankrupted the partners turned profitable for the rescue consortium eighteen months later—inside a game from which the original equity holders had already been permanently erased."
     },
     {
       "chapter": 2,
       "title": "The Kelly Frontier",
       "subtitle": "Optimal Bet Sizing from Bell Labs to the Las Vegas Blackjack Tables",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "During the university spring break of April 1961, Massachusetts Institute of Technology mathematics instructor named Edward O. Thorp walked onto the casino floor of the Sands Hotel in Las Vegas with \\$10,000 in hundred-dollar bills provided by a New York backer named Manny Kimmel.",
+      "exit_fact": "Applying Kelly bet sizing in Las Vegas alongside their wives, Betty Shannon and Vivian Thorp, they multiplied their stakes until wire breaks retired the machine, after which Thorp applied fractional Kelly sizing to convertible bond arbitrage at Princeton Newport Partners, compounding capital at 19.1 percent annualized for twenty years without a losing quarter."
     },
     {
       "chapter": 3,
       "title": "Asymmetric Convexity",
       "subtitle": "Optionality from Thales of Miletus to Modern R&D Portfolios",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "In Book I, Chapter 11 of the *Politics*, compiled at the Lyceum in Athens around 330 BCE, Aristotle preserved the earliest recorded financial option contract in history. Citizens of the Ionian port city of Miletus had mocked the natural philosopher Thales for his poverty, arguing that his astronomical calculations of eclipses and solstices were useless because they produced no wealth.",
+      "exit_fact": "Approved by the Food and Drug Administration as Epogen on June 1, 1989, that single surviving call option generated more than \\$25 billion in cumulative sales, paying for every failed experiment in the company's history a thousand times over."
     },
     {
       "chapter": 4,
       "title": "The One-Way Door",
       "subtitle": "Real Options and Reversibility at Intel in October 1985",
       "opening_door": "A: Scene",
-      "formalism_mode": "ledger_or_list"
+      "formalism_mode": "ledger_or_list",
+      "historical_anchor": "In morning in October 1985, inside a fourth-floor executive office at Intel Corporation's headquarters at 3065 Bowers Avenue in Santa Clara, California, President Andrew S. Grove sat across from Chief Executive Officer Gordon E.",
+      "exit_fact": "By 1992, seven years after closing its last DRAM line, Intel's annual net profit passed \\$1.07 billion, and the company became the largest semiconductor manufacturer on Earth."
     },
     {
       "chapter": 5,
       "title": "The Weight of Evidence",
       "subtitle": "Bayesian Updating and Decibans Inside Bletchley Park's Hut 8",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Punched onto two-foot-wide sheets of heavy manila stationery manufactured in the Oxfordshire market town of Banbury, rows of twenty-six alphabet letters sat aligned over illuminated glass tables inside Hut 8 at Bletchley Park in the spring of 1941. Across the North Atlantic, Admiral Karl Dönitz's German U-boat wolfpacks were sinking more than 300,000 tons of Allied merchant shipping every month.",
+      "exit_fact": "By June 1941, powered by deciban scoring tables, Hut 8 was reading Admiral Dönitz's daily U-boat traffic within thirty-six hours of transmission, enabling the British Admiralty's Submarine Tracking Room to steer North Atlantic convoys silently around waiting wolfpacks for the remainder of the year."
     },
     {
       "chapter": 6,
       "title": "The Missing Fuselage",
       "subtitle": "Survivorship Bias in Abraham Wald's 1943 Bomber Vulnerability Memos",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Across the aluminum skin of American B-17 Flying Fortresses and B-24 Liberators limping back to airfields in East Anglia during the spring of 1943, ordnance crews recorded a consistent pattern of battle damage. When statistical officers divided the returning bombers into four structural zones and tallied every 20-millimeter cannon hole and flak-shrapnel tear per square foot of surface area, the empirical distribution looked unmistakable:",
+      "exit_fact": "On Wald's recommendation, the Army Air Forces reversed their blueprints, leaving the bullet-scarred fuselages unarmored and wrapping the pristine, unmarked engines and cockpits in heavy steel plate—a protocol that remained standard across American combat aircraft through the Korean and Vietnam wars."
     },
     {
       "chapter": 7,
       "title": "The Severed Tail",
       "subtitle": "Goodhart's Law from Colonial Hanoi to the Qumran Caves",
       "opening_door": "A: Scene",
-      "formalism_mode": "ledger_or_list"
+      "formalism_mode": "ledger_or_list",
+      "historical_anchor": "An urgent administrative ledger compiled by the French municipal health service in Hanoi on June 12, 1902, recorded a puzzling spike in sanitation operations: in a single twenty-four-hour period, local bounty hunters had delivered 15,041 severed rat tails to city collection stations. Over the preceding five years, Governor-General Paul Doumer had transformed the capital of French Indochina by laying nine miles of subterranean stone sewers beneath the European Quarter.",
+      "exit_fact": "Once the French colonial treasury priced rat tails at 1 centime apiece in June 1902, the metric stopped measuring rodent mortality and began measuring the agricultural yield of Hanoi's illicit rat farms."
     },
     {
       "chapter": 8,
       "title": "The Minimax Brink",
       "subtitle": "Game Theory and Credible Commitment in October 1962",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "At 11:00 a.m. on Tuesday, October 16, 1962, inside the Cabinet Room of the White House, President John F.",
+      "exit_fact": "on October 28, fourteen Soviet ships carrying missile equipment halted along the 500-mile quarantine line, and Radio Moscow broadcast Khrushchev's order to crate the thirty-six SS-4 missiles in Cuba and ship them back to the Soviet Union."
     },
     {
       "chapter": 9,
       "title": "The Concorde Trap",
       "subtitle": "Sunk Costs and Asymmetric Loss Aversion in Prospect Theory",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "On November 29, 1962, the British Minister of Aviation Julian Amery and the French Ambassador Geoffroy de Courcel met in London to sign an intergovernmental treaty binding Sud Aviation of Toulouse and the British Aircraft Corporation of Filton to jointly build a Mach 2.04 supersonic commercial airliner. Named *Concorde*, the delta-wing jet was projected by ministries in London and Paris to cost a combined £150 million to develop and to capture orders for 250 aircraft.",
+      "exit_fact": "When the British government finally wrote off the debt and handed five Concordes to British Airways for £1 each, the biologists Richard Dawkins and Jane Brockmann named the propensity to waste fatal energy defending a ruined investment the \"Concorde fallacy.\""
     },
     {
       "chapter": 10,
       "title": "The Two-Second Roll",
       "subtitle": "Hydraulic Transients and the OODA Loop Over MiG Alley",
       "opening_door": "A: Scene",
-      "formalism_mode": "ledger_or_list"
+      "formalism_mode": "ledger_or_list",
+      "historical_anchor": "Six miles above the Yalu River in northwestern Korea on the afternoon of May 18, 1952, United States Air Force pilot named Captain John R. Boyd banked his swept-wing North American F-86E Sabre into the white contrails of Soviet-built Mikoyan-Gurevich MiG-15 fighters crossing south from Manchuria.",
+      "exit_fact": "After three or four rapid reversals, the cumulative time lag shattered the Soviet pilot's mental model, inducing acute panic—often causing desperate MiG pilots to stall into flat spins or eject at high altitude without taking a single bullet hole from the Sabre's six .50-caliber machine guns."
     },
     {
       "chapter": 11,
       "title": "The Tenth Man",
       "subtitle": "Institutionalizing Dissent from the 1973 Yom Kippur Failure to the Pre-Mortem",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "ledger_or_list"
+      "formalism_mode": "ledger_or_list",
+      "historical_anchor": "At 4:00 a.m. on Saturday, October 6, 1973—the holiest day of the Jewish calendar, Yom Kippur—Zvi Zamir, Director of the Israeli foreign intelligence agency Mossad, telephoned Major General Eli Zeira, head of the Israeli Defense Forces' Directorate of Military Intelligence (*Aman*), from a safe house in London.",
+      "exit_fact": "Switching from conditional speculation to retrospective explanation increased the identification of concrete failure modes by 30 percent, breaking the social silence that blinded Tel Aviv in October 1973."
     },
     {
       "chapter": 12,
       "title": "The Gittins Index",
       "subtitle": "Exploration versus Exploitation and the Multi-Armed Bandit",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "During the darkest months of the Battle of the Atlantic in 1942, Allied operations researchers in London confronted a sequential resource-allocation problem that defeated every mathematician who touched it. Whether testing newly synthesized anti-malarial drugs on wounded soldiers, allocating coastal radar search flights across U-boat transit corridors, or choosing which factory tooling design to standardize, the mathematical core was identical: when you have a fixed budget of trials and several options with unknown failure rates, how long do you keep testing unfamiliar alternatives (*exploration*) before pouring all remaining resources into the best option discovered so far (*exploitation*)?",
+      "exit_fact": "When time remaining is abundant ($\\beta \\to 1$), the uncertainty bonus expands and drives bold exploration; when the deadline is imminent ($\\beta \\to 0$), the uncertainty bonus collapses to zero and the Gittins Index converges to the empirical mean, commanding the allocator to cash in the best known asset on the table."
     }
-  ]
+  ],
+  "format": "mechanisms"
 }

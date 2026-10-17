@@ -14,84 +14,109 @@
       "title": "The Hydraulic Impedance",
       "subtitle": "Otto Frank, Ernest Starling, and Myocardial Compliance in London",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Inside the physiology laboratory at University College London in the spring of 1914, Ernest Starling observed an isolated canine heart. The organ sat mounted within a scaffold of glass cannulae, brass pressure reservoirs, and mercury manometers.",
+      "exit_fact": "That elastic expansion stores kinetic energy as wall tension and recoils during diastole to keep blood moving smoothly through peripheral tissue beds."
     },
     {
       "chapter": 2,
       "title": "The Countercurrent Multiplexer",
       "subtitle": "Werner Kuhn and the Medullary Osmotic Gradient in Basel",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "diagram"
+      "formalism_mode": "diagram",
+      "historical_anchor": "No biological membrane in the animal kingdom possesses a molecular pump capable of driving neutral water molecules uphill against an osmotic gradient. Yet human kidneys routinely excrete urine four times more concentrated than blood plasma.",
+      "exit_fact": "That hormone inserts aquaporin-2 channels into the collecting duct wall so water diffuses passively into the $1,200\\text{ mOsm/kg}$ medulla."
     },
     {
       "chapter": 3,
       "title": "The Convective Sieve",
       "subtitle": "Christian Bohr, August Krogh, and Alveolar Gas Exchange in Copenhagen",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "At the University of Copenhagen physiological laboratory in 1904, Danish physician Christian Bohr, assisted by Karl Hasselbalch and August Krogh, measured the oxygen-binding curves of whole blood inside custom tonometers. For decades, physiologists had assumed that hemoglobin bound oxygen like a simple bimolecular chemical reagent.",
+      "exit_fact": "Without any neural command, local waste chemistry forces the protein to unload up to eighty percent of its oxygen cargo directly into the starving muscle fibers."
     },
     {
       "chapter": 4,
       "title": "The Homeostatic Brake",
       "subtitle": "Walter Holbrook Gaskell and Parasympathetic Vagal Hysteresis in Cambridge",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Severed from all neural connections in an oxygenated surgical bath, or transplanted into a recipient's chest, the human heart beats at an intrinsic rhythm of 100 to 110 contractions per minute. Yet a healthy adult sitting quietly in a chair exhibits a resting pulse of 60 beats per minute.",
+      "exit_fact": "By holding the resting heart under a fast-release tonic brake rather than relying on a slow accelerator, the circulation can double its output almost instantaneously simply by lifting vagal inhibition."
     },
     {
       "chapter": 5,
       "title": "The Convective Flush",
       "subtitle": "Maiken Nedergaard and Glymphatic Interstitial Clearance in Rochester",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "diagram"
+      "formalism_mode": "diagram",
+      "historical_anchor": "Fluorescent tracers injected into the cerebrospinal fluid of living mice in 2012 exposed a macroscopic clearance circuit inside the mammalian brain that anatomists had overlooked for more than a century. At the University of Rochester Medical Center, Danish neuroscientist Maiken Nedergaard and her colleague Jeffrey Iliff observed the living cerebral cortex through a two-photon laser scanning microscope.",
+      "exit_fact": "Hydraulic resistance plummets, CSF rushes through the widened parenchyma, and amyloid-beta clearance accelerates twenty-fold."
     },
     {
       "chapter": 6,
       "title": "The Calcium Trigger",
       "subtitle": "Setsuro Ebashi and the Troponin Molecular Switch in Tokyo",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "When pure actin filaments and pure myosin filaments are extracted from rabbit skeletal muscle and mixed in a glass beaker with adenosine triphosphate (ATP), the proteins precipitate into an immediate, irreversible contraction. In 1942 at the University of Szeged, Albert Szent-Györgyi had demonstrated that extracted actomyosin threads contract violently upon contact with ATP.",
+      "exit_fact": "Troponin I snaps tropomyosin back over the binding sites, and the muscle relaxes."
     },
     {
       "chapter": 7,
       "title": "The Photonic Transducer",
       "subtitle": "George Wald and Retinal Rhodopsin Isomerization at Woods Hole",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "A single photon of green light at a wavelength of 500 nanometers carries an energy quantum of roughly $2.48\\text{ electron-volts}$, or $4 \\times 10^{-19}\\text{ Joules}$. That energy is fifteen orders of magnitude smaller than the kinetic energy of a falling snowflake.",
+      "exit_fact": "Hundreds of membrane channels snap shut, blocking $10^7$ sodium ions from entering and hyperpolarizing the cell membrane to slow its synaptic glutamate release onto downstream bipolar neurons."
     },
     {
       "chapter": 8,
       "title": "The Thermal Core",
       "subtitle": "Carl von Voit, Max Rubner, and Metabolic Energy Conservation in Munich",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Inside the Physiological Institute of the University of Munich in 1894, Max Rubner sealed a small experimental dog inside a double-walled copper chamber submerged in an insulated water bath. Trained under Carl von Voit, Rubner had spent a decade building the world's first high-precision animal respiration calorimeter to settle the central dispute of nineteenth-century biology.",
+      "exit_fact": "Secreting up to 2 liters of hypotonic fluid per hour, evaporation sheds over 1,300 watts of thermal load through phase change."
     },
     {
       "chapter": 9,
       "title": "The Electrochemical Gate",
       "subtitle": "Alan Hodgkin, Andrew Huxley, and the Axonal Voltage Clamp in Plymouth",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "diagram"
+      "formalism_mode": "diagram",
+      "historical_anchor": "Measuring nearly one millimeter in diameter, the giant axon of the Atlantic squid (*Loligo forbesii*) is one hundred times thicker than a mammalian motor nerve fiber. In 1939, it was the only nerve fiber known to science large enough to let an experimenter thread a glass capillary electrode straight down its intracellular core without tearing the outer membrane.",
+      "exit_fact": "That insulation forces the action potential to leap electrotonically between uninsulated nodes of Ranvier at velocities up to $120\\text{ meters per second}$."
     },
     {
       "chapter": 10,
       "title": "The Master Oscillator",
       "subtitle": "Colin Pittendrigh, Seymour Benzer, and Suprachiasmatic Phase Alignment in Pasadena",
       "opening_door": "A: Scene",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Almost every biochemical reaction in a test tube obeys Svante Arrhenius's exponential rate law. Reaction velocity doubles or triples for every ten-degree Celsius rise in temperature ($Q_{10} = 2.0 \\text{ to } 3.0$).",
+      "exit_fact": "That glutamatergic pulse induces immediate *Per1* transcription and advances oscillator phase into exact lockstep with the rotation of the Earth."
     },
     {
       "chapter": 11,
       "title": "The Acid-Base Servo",
       "subtitle": "John Scott Haldane, Lawrence Henderson, and the Medullary Chemoreceptor Loop in Oxford",
       "opening_door": "B: Constraint/Paradox",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "Arterial blood in a healthy human maintains a free hydrogen ion concentration ($[\\text{H}^+]$) of roughly $40\\text{ nanomoles per liter}$—one-millionth the concentration of blood sodium ions—corresponding to a pH of 7.40. Yet cellular metabolism pours roughly 15,000 millimoles of volatile carbonic acid and 70 millimoles of non-volatile sulfuric and phosphoric acids into the bloodstream every twenty-four hours.",
+      "exit_fact": "That alkaline shift initially braked the medullary center until the kidneys excreted bicarbonate over four days to reset the $20:1$ buffer ratio at the new altitude."
     },
     {
       "chapter": 12,
       "title": "The Glycemic Integral Controller",
       "subtitle": "Frederick Banting, Charles Best, and the Pancreatic Bihormonal Loop in Toronto",
       "opening_door": "C: Artifact/Measurement",
-      "formalism_mode": "equation"
+      "formalism_mode": "equation",
+      "historical_anchor": "At any moment, the entire five-liter blood volume of an adult human contains just four grams of dissolved free glucose. That single level teaspoon of sugar is held at a concentration near $90\\text{ mg/dL}$ ($5.0\\text{ mmol/L}$).",
+      "exit_fact": "Within ninety minutes, arterial plasma glucose returns to its $90\\text{ mg/dL}$ baseline with zero steady-state error."
     }
-  ]
+  ],
+  "format": "mechanisms"
 }

@@ -586,20 +586,14 @@ def build_typ_source(
 
         toc_entries.append(
             f'  #block(above: {toc_entry_gap}, below: 0pt, breakable: false)[\n'
-            f'    #context {{\n'
-            f'      let target = label("sec-{idx}")\n'
-            f'      let pg = counter(page).at(target).first()\n'
-            f'      link(target)[\n'
-            f'        #grid(\n'
-            f'          columns: (1fr, auto),\n'
-            f'          column-gutter: 8pt,\n'
-            f'          row-gutter: {toc_inner_gap},\n'
-            f'          [{title_line}],\n'
-            f'          align(right + bottom)[#text(font: "IBM Plex Mono", size: 7.4pt, fill: muted-color)[#pg]],\n'
-            f'          grid.cell(colspan: 2)[{sub_line}]\n'
-            f'        )\n'
-            f'      ]\n'
-            f'    }}\n'
+            f'    #link(label("sec-{idx}"))[\n'
+            f'      #grid(\n'
+            f'        columns: (1fr,),\n'
+            f'        row-gutter: {toc_inner_gap},\n'
+            f'        [{title_line}],\n'
+            f'        [{sub_line}]\n'
+            f'      )\n'
+            f'    ]\n'
             f'  ]'
         )
     toc_entries.append("]")
