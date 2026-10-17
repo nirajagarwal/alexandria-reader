@@ -31,7 +31,7 @@
         window.pdfjsLib.GlobalWorkerOptions.workerSrc = 'vendor/pdfjs/pdf.worker.min.js';
     }
 
-    const PDF_BUILD_VERSION = '20261017b';
+    const PDF_BUILD_VERSION = '20261017c';
     const COVER_PAGE = 1;       // Physical Page 1 is the Full-Bleed Book Cover
     const TOC_PAGE = 2;         // Physical Page 2 is the Title & Contents Frontispiece
     const READER_FIRST_PAGE = 2; // Default opening spread starts at Page 2 (Contents + Intro)
@@ -147,11 +147,19 @@
     }
 
     function getStageViewport() {
-        const vpW = document.documentElement.clientWidth || window.innerWidth;
-        const vpH = document.documentElement.clientHeight || window.innerHeight;
+        const stageEl = document.getElementById('spread-container') || document.getElementById('main-stage');
+        const stageW = (stageEl && stageEl.clientWidth > 100) ? stageEl.clientWidth : Infinity;
+        const stageH = (stageEl && stageEl.clientHeight > 100) ? stageEl.clientHeight : Infinity;
+        const vvW = (window.visualViewport && window.visualViewport.width > 100) ? window.visualViewport.width : Infinity;
+        const vvH = (window.visualViewport && window.visualViewport.height > 100) ? window.visualViewport.height : Infinity;
+        const winW = window.innerWidth || document.documentElement.clientWidth || 360;
+        const winH = window.innerHeight || document.documentElement.clientHeight || 640;
+        const vpW = Math.min(winW, vvW, stageW);
+        const vpH = Math.min(winH, vvH, stageH);
+        const isMob = vpW < 600;
         return {
-            availW: Math.max(200, vpW - 12),
-            availH: Math.max(200, vpH - 12)
+            availW: Math.max(200, Math.floor(vpW - (isMob ? 10 : 12))),
+            availH: Math.max(200, Math.floor(vpH - (isMob ? 16 : 12)))
         };
     }
 
@@ -862,11 +870,13 @@
     function handleHashRoute() {
         const hash = window.location.hash;
         const searchParams = new URLSearchParams(window.location.search);
-        const queryBook = searchParams.get('book');
+        let queryBook = searchParams.get('book');
+        if (queryBook === 'sleep') queryBook = 'human-functions';
 
         if (hash.startsWith('#read=')) {
             const params = new URLSearchParams(hash.slice(1));
-            const bookKey = params.get('read');
+            let bookKey = params.get('read');
+            if (bookKey === 'sleep') bookKey = 'human-functions';
             const pageParam = parseInt(params.get('page') || '0', 10);
             const chParam = params.get('ch');
             if (EMBEDDED_BOOKS[bookKey]) {
@@ -903,12 +913,16 @@
 
     // Event Listeners
     let resizeTimer = null;
-    window.addEventListener('resize', () => {
+    function scheduleSpreadResize() {
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(() => {
             rebuildAndRenderSpread();
         }, 60);
-    });
+    }
+    window.addEventListener('resize', scheduleSpreadResize);
+    if (window.visualViewport) {
+        window.visualViewport.addEventListener('resize', scheduleSpreadResize);
+    }
 
     // Touch swipe left/right to turn pages on mobile/tablet
     let touchStartX = 0;
@@ -935,13 +949,13 @@
 
     // Book Creator Studio State & Logic
     const PIPELINE_PRESETS = {
-        'sleep': {
-            slug: 'sleep',
-            title: 'Sleep',
-            subtitle: 'The Nightly Brain Shutdown and Eleven Neighbors From Circadian Clocks to Synaptic Pruning',
-            category: 'Neurobiology & Physiology',
-            mode: 'landscape',
-            format: 'landscape',
+        'human-functions': {
+            slug: 'human-functions',
+            title: 'Human Functions',
+            subtitle: 'Sleeping, Breathing, Walking, Running, and Eight Other Daily Acts in Twelve Highlights Each',
+            category: 'Physiology & Biomechanics',
+            mode: 'listicle',
+            format: 'highlights',
             profile: 'B'
         },
         'twelve-foods': {
@@ -993,12 +1007,12 @@
 
     let creatorState = {
         step: 1,
-        slug: 'sleep',
-        title: 'Sleep',
-        subtitle: 'The Nightly Brain Shutdown and Eleven Neighbors From Circadian Clocks to Synaptic Pruning',
-        category: 'Neurobiology & Physiology',
-        mode: 'landscape',
-        format: 'landscape',
+        slug: 'human-functions',
+        title: 'Human Functions',
+        subtitle: 'Sleeping, Breathing, Walking, Running, and Eight Other Daily Acts in Twelve Highlights Each',
+        category: 'Physiology & Biomechanics',
+        mode: 'listicle',
+        format: 'highlights',
         profile: 'B',
         email: 'niraj@alexandria.press',
         activeJobId: null,

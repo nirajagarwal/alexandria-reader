@@ -295,10 +295,10 @@
         },
         {
           "@type": "Book",
-          "name": "Sleep",
-          "headline": "The Nightly Brain Shutdown and Eleven Neighbors From Circadian Clocks to Synaptic Pruning",
-          "url": "https://alexandria.press/read/sleep/",
-          "image": "https://alexandria.press/assets/og/sleep.png"
+          "name": "Human Functions",
+          "headline": "Sleeping, Breathing, Walking, Running, and Eight Other Daily Acts in Twelve Highlights Each",
+          "url": "https://alexandria.press/read/human-functions/",
+          "image": "https://alexandria.press/assets/og/human-functions.png"
         }
       ]
     }
@@ -308,7 +308,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=44">
+    <link rel="stylesheet" href="style.css?v=45">
 
     <!-- PDF.js for Typst Digital Spread Rendering -->
     <script src="vendor/pdfjs/pdf.min.js"></script>
@@ -656,13 +656,13 @@
                         <div class="book-card-subtitle">Twelve Molecular Machines in Twelve Highlights Each</div>
                     </div>
                 </a>
-                <a class="book-card" href="read/sleep/index.html" data-key="sleep" data-format="landscape" data-title="Sleep" data-subtitle="The Nightly Brain Shutdown and Eleven Neighbors From Circadian Clocks to Synaptic Pruning" data-category="Neurobiology &amp; Physiology" onclick="if(!event.metaKey &amp;&amp; !event.ctrlKey &amp;&amp; !event.shiftKey &amp;&amp; event.button === 0){event.preventDefault(); openBookFromCatalog('sleep');}" title="Sleep — The Nightly Brain Shutdown and Eleven Neighbors From Circadian Clocks to Synaptic Pruning">
+                <a class="book-card" href="read/human-functions/index.html" data-key="human-functions" data-format="highlights" data-title="Human Functions" data-subtitle="Sleeping, Breathing, Walking, Running, and Eight Other Daily Acts in Twelve Highlights Each" data-category="Physiology &amp; Biomechanics" onclick="if(!event.metaKey &amp;&amp; !event.ctrlKey &amp;&amp; !event.shiftKey &amp;&amp; event.button === 0){event.preventDefault(); openBookFromCatalog('human-functions');}" title="Human Functions — Sleeping, Breathing, Walking, Running, and Eight Other Daily Acts in Twelve Highlights Each">
                     <div class="book-cover-frame">
-                        <img src="assets/covers/thumbs/sleep.svg" alt="Sleep" loading="eager">
+                        <img src="assets/covers/thumbs/human-functions.svg" alt="Human Functions" loading="eager">
                     </div>
                     <div class="book-card-info">
-                        <div class="book-card-title">Sleep</div>
-                        <div class="book-card-subtitle">The Nightly Brain Shutdown and Eleven Neighbors From Circadian Clocks to Synaptic Pruning</div>
+                        <div class="book-card-title">Human Functions</div>
+                        <div class="book-card-subtitle">Sleeping, Breathing, Walking, Running, and Eight Other Daily Acts in Twelve Highlights Each</div>
                     </div>
                 </a>
                 <!-- END:CATALOG_GRID -->
@@ -836,10 +836,10 @@
             <div class="creator-step-pane active" id="creator-step-1">
                 <div class="creator-field-group">
                     <label class="creator-label" for="creator-title">Volume Title / Topic</label>
-                    <input type="text" id="creator-title" class="creator-input" placeholder="e.g. Sleep, Twelve Foods, Leonardo da Vinci..." oninput="handleCreatorTitleInput(this.value)">
+                    <input type="text" id="creator-title" class="creator-input" placeholder="e.g. Human Functions, Twelve Foods, Leonardo da Vinci..." oninput="handleCreatorTitleInput(this.value)">
                     <div class="creator-chips-row" id="creator-pipeline-chips">
                         <span class="creator-chips-label">Pipeline Queue:</span>
-                        <button type="button" class="creator-chip" onclick="selectPipelineTopic('sleep')">Sleep</button>
+                        <button type="button" class="creator-chip" onclick="selectPipelineTopic('human-functions')">Human Functions</button>
                         <button type="button" class="creator-chip" onclick="selectPipelineTopic('twelve-foods')">Twelve Foods</button>
                         <button type="button" class="creator-chip" onclick="selectPipelineTopic('leonardo-da-vinci')">Leonardo da Vinci</button>
                         <button type="button" class="creator-chip" onclick="selectPipelineTopic('the-night-sky')">The Night Sky</button>
@@ -851,7 +851,7 @@
                 <div class="creator-field-group">
                     <label class="creator-label">Structural Container (12 Chapters)</label>
                     <div class="creator-format-grid" id="creator-format-grid">
-                        <button type="button" class="creator-format-card active" data-format="landscape" data-mode="landscape" onclick="selectCreatorFormat('landscape', 'landscape', this)">
+                        <button type="button" class="creator-format-card" data-format="landscape" data-mode="landscape" onclick="selectCreatorFormat('landscape', 'landscape', this)">
                             <div class="cf-title">Conceptual Landscape</div>
                             <div class="cf-desc">Core anchor concept in Ch 1 + eleven neighboring concepts across mechanisms, contrasts &amp; cases.</div>
                         </button>
@@ -859,9 +859,9 @@
                             <div class="cf-title">12-Facet Mechanisms</div>
                             <div class="cf-desc">Twelve distinct physical, engineering, or historical mechanisms unpacked from primary records.</div>
                         </button>
-                        <button type="button" class="creator-format-card" data-format="highlights" data-mode="listicle" onclick="selectCreatorFormat('highlights', 'listicle', this)">
+                        <button type="button" class="creator-format-card active" data-format="highlights" data-mode="listicle" onclick="selectCreatorFormat('highlights', 'listicle', this)">
                             <div class="cf-title">12&times;12 Highlights</div>
-                            <div class="cf-desc">Twelve subsystems in twelve perpendicular quantitative facts each, separated by fleurons (&#10086;).</div>
+                            <div class="cf-desc">Twelve daily functions or subsystems in twelve crisp highlights each, separated by centered dividers (&middot; &middot; &middot;).</div>
                         </button>
                         <button type="button" class="creator-format-card" data-format="biography" data-mode="facet" onclick="selectCreatorFormat('biography', 'facet', this)">
                             <div class="cf-title">12-Facet Biography</div>
@@ -880,13 +880,13 @@
             <div class="creator-step-pane" id="creator-step-2">
                 <div class="creator-field-group">
                     <label class="creator-label" for="creator-subtitle">Volume Subtitle (No Colons)</label>
-                    <input type="text" id="creator-subtitle" class="creator-input" placeholder="e.g. The Nightly Brain Shutdown and Eleven Neighbors From Circadian Clocks to Synaptic Pruning">
+                    <input type="text" id="creator-subtitle" class="creator-input" placeholder="e.g. Sleeping, Breathing, Walking, Running, and Eight Other Daily Acts in Twelve Highlights Each">
                 </div>
 
                 <div class="creator-two-col">
                     <div class="creator-field-group">
                         <label class="creator-label" for="creator-category">Catalog Discipline</label>
-                        <input type="text" id="creator-category" class="creator-input" placeholder="e.g. Neurobiology &amp; Physiology">
+                        <input type="text" id="creator-category" class="creator-input" placeholder="e.g. Physiology &amp; Biomechanics">
                     </div>
                     <div class="creator-field-group">
                         <label class="creator-label" for="creator-profile">Editorial Profile</label>
@@ -969,7 +969,7 @@
     </div>
 
     <!-- Book Dataset & Reader Application -->
-    <script src="js/books-data.js?v=48"></script>
-    <script src="js/app.js?v=48"></script>
+    <script src="js/books-data.js?v=49"></script>
+    <script src="js/app.js?v=49"></script>
 </body>
 </html>

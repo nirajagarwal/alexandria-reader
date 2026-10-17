@@ -109,6 +109,7 @@
 
         html, body {
             height: 100vh;
+            height: 100dvh;
             width: 100vw;
             background-color: var(--bg-color);
             color: var(--text-color);
@@ -196,7 +197,7 @@
 
         .pdf-book-frame[data-edition="mobile"] {
             --m-h: calc(23.04 * var(--pt));
-            --hdr-y: calc(15.50 * var(--pt));
+            --hdr-y: calc(18.50 * var(--pt));
             --ftr-y: calc(12.15 * var(--pt));
         }
 
@@ -671,7 +672,7 @@
 
         @media (max-width: 899px) {
             #main-stage, main {
-                padding: 2px 4px;
+                padding: max(6px, env(safe-area-inset-top, 6px)) 4px max(6px, env(safe-area-inset-bottom, 6px)) 4px;
             }
             .folio-btn {
                 padding: 2px 4px;
@@ -931,20 +932,32 @@
             overflow: hidden;
         }
 
+        /* Lightweight Editorial Book Creator Studio */
+        .home-nav-actions .folio-btn.creator-trigger-btn {
+            width: auto;
+            padding: 0 11px;
+            gap: 5px;
+            font-size: 0.73rem;
+            letter-spacing: 0.08em;
+            font-weight: 600;
+        }
+
         @media (max-width: 760px) {
             .home-container {
-                padding: 14px 14px calc(60px + env(safe-area-inset-bottom, 0px)) 14px;
+                padding: max(14px, calc(env(safe-area-inset-top, 0px) + 10px)) 14px calc(60px + env(safe-area-inset-bottom, 0px)) 14px;
             }
             .home-header {
                 display: flex;
                 flex-wrap: wrap;
                 align-items: center;
-                gap: 8px 10px;
+                justify-content: space-between;
+                gap: 8px 6px;
                 margin-bottom: 14px;
                 padding-bottom: 12px;
             }
             .home-brand-title {
-                font-size: 1.02rem;
+                font-size: 0.94rem;
+                letter-spacing: 0.11em;
             }
             .home-nav-actions {
                 display: contents;
@@ -952,6 +965,18 @@
             .home-icon-group {
                 order: 2;
                 margin-left: auto;
+                gap: 6px;
+            }
+            .home-nav-actions .folio-btn {
+                width: 30px;
+                height: 30px;
+            }
+            .home-nav-actions .folio-btn.creator-trigger-btn {
+                width: auto;
+                height: 30px;
+                padding: 0 9px;
+                font-size: 0.68rem;
+                letter-spacing: 0.06em;
             }
             .home-tagline {
                 order: 3;
@@ -986,16 +1011,6 @@
                 height: 60px;
                 min-width: 60px;
             }
-        }
-
-        /* Lightweight Editorial Book Creator Studio */
-        .home-nav-actions .folio-btn.creator-trigger-btn {
-            width: auto;
-            padding: 0 11px;
-            gap: 5px;
-            font-size: 0.73rem;
-            letter-spacing: 0.08em;
-            font-weight: 600;
         }
 
         .creator-modal-card {

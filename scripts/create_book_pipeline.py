@@ -663,8 +663,10 @@ Knowra Contextual Landscape Details:
 """
 
     if f_mode == "listicle":
-        formalism_instr = """
-FORMALISM MODE — 12-ITEM LISTICLE (`mode: "listicle"`):
+        seeds = ch.get("prospected_seeds", [])
+        seeds_str = "\n".join(f"  {idx}. {s}" for idx, s in enumerate(seeds, 1)) if seeds else ""
+        formalism_instr = f"""
+FORMALISM MODE — 12-HIGHLIGHT LISTICLE (`mode: "listicle"`, `format: "highlights"`):
 - Write EXACTLY 12 standalone paragraphs (~48–54 words per paragraph, totaling 580–650 words across the chapter).
 - Separate the 12 paragraphs with 11 standalone lines containing ONLY `· · ·` surrounded by blank lines:
   Paragraph 1...
@@ -673,6 +675,8 @@ FORMALISM MODE — 12-ITEM LISTICLE (`mode: "listicle"`):
 
   Paragraph 2...
 - Do NOT use numbered lists (`1.`, `2.`), bullet lists, SVG diagrams, or `$$...$$` display equations.
+- Open every paragraph directly with the surprising physical fact, everyday bodily or physical experience, and concrete numbers—zero throat-clearing and zero academic jargon.
+{f"- Expand these 12 prospected seeds:{chr(10)}{seeds_str}" if seeds_str else ""}
 """
     elif f_mode == "diagram":
         formalism_instr = f"""
@@ -719,13 +723,14 @@ VERIFIED PRIMARY ANCHOR & FACTS (from Google Search Grounding):
 {formalism_instr}
 
 NON-NEGOTIABLE ALEXANDRIA MANIFESTO LAWS:
-1. WORD COUNT: The chapter body (after the 3-line header) MUST be between **580 and 670 words** (hard validator gate: `520–760` words). Count carefully so it is never under 550 or over 720 words.
-2. SENTENCE LENGTH CADENCE: Keep average sentence length between **17 and 21 words per sentence** (hard gate: `<= 23.0` words/sentence). Write direct, declarative sentences with active verbs. Avoid long 35-word multi-clause sentences, and avoid 2-word fragment gimmicks.
-3. ZERO DIRECT QUOTATIONS: NEVER include direct quotations of 5 or more words inside `"..."` or `“...”`. Paraphrase all statements and primary sources in crisp indirect speech.
-4. ZERO NOVELISTIC MICRO-DETAILS: NEVER include weekdays with time of day (`Monday morning`, `Sunday afternoon`), weather cold-opens (`On a cold morning`), or hyphenated ages (`forty-three-year-old`, `32-year-old`).
-5. OPENING CADENCE ({door}): {open_rule}
-6. CLEAN EXIT: End the final paragraph directly on the concrete `exit_fact` measurement/outcome. NEVER write moralizing concluding sentences (`"proved that"`, `"demonstrated that"`, `"showed that"`, `"reminds us that"`, `"serves as a testament"`, `"Ultimately,"`, `"In conclusion"`).
-7. BANNED WORDS & LATEX HYGIENE: Never use `breathtaking`, `awe-inspiring`, `mind-boggling`, `staggering`, or `paradigm-shifting`. Escape any literal currency dollar sign as `\\$100`, never wrap bare numbers in `$50$`, and never leak raw un-delimited LaTeX commands outside `$...$`.
+1. PLAIN-ENGLISH CLARITY & ZERO ACADEMIC JARGON: Write in plainspoken, vivid everyday English using ordinary nouns and active verbs. NEVER try to impress with dense academic/Latinate jargon (e.g., never write "perceptual disengagement and motor quiescence", "monosynaptic tract", "transcriptional-translational autoregulatory loop"). Explain how things actually work so any curious human immediately pictures the mechanism. Never include journal volume, issue, or page numbers in prose.
+2. WORD COUNT: The chapter body (after the 3-line header) MUST be between **580 and 670 words** (hard validator gate: `520–760` words). Count carefully so it is never under 550 or over 720 words.
+3. SENTENCE LENGTH CADENCE: Keep average sentence length between **17 and 21 words per sentence** (hard gate: `<= 23.0` words/sentence). Write direct, declarative sentences with active verbs. Avoid long 35-word multi-clause sentences, and avoid 2-word fragment gimmicks.
+4. ZERO DIRECT QUOTATIONS: NEVER include direct quotations of 5 or more words inside `"..."` or `“...”`. Paraphrase all statements and primary sources in crisp indirect speech.
+5. ZERO NOVELISTIC MICRO-DETAILS: NEVER include weekdays with time of day (`Monday morning`, `Sunday afternoon`), weather cold-opens (`On a cold morning`), or hyphenated ages (`forty-three-year-old`, `32-year-old`).
+6. OPENING CADENCE ({door}): {open_rule}
+7. CLEAN EXIT: End the final paragraph directly on the concrete `exit_fact` measurement/outcome. NEVER write moralizing concluding sentences (`"proved that"`, `"demonstrated that"`, `"showed that"`, `"reminds us that"`, `"serves as a testament"`, `"Ultimately,"`, `"In conclusion"`).
+8. BANNED WORDS & LATEX HYGIENE: Never use `breathtaking`, `awe-inspiring`, `mind-boggling`, `staggering`, or `paradigm-shifting`. Escape any literal currency dollar sign as `\\$100`, never wrap bare numbers in `$50$`, and never leak raw un-delimited LaTeX commands outside `$...$`.
 
 Output ONLY the Markdown for Chapter {ch_num} starting with `### Chapter {ch_num}`."""
 
@@ -741,10 +746,11 @@ MANDATORY 3-LINE HEADER (must appear at the very top of your output, with ZERO c
 ## {intro_sub}
 
 NON-NEGOTIABLE RULES:
-1. WORD COUNT: The Introduction body (after the 3-line header) MUST be **200 to 250 words** (hard validator gate: `140–300` words; write 3 crisp paragraphs of ~75 words each).
-2. TOPIC-ONLY INTRODUCTION: Introduce the core phenomenon, physical constraints, and governing tension of {title} only. **NEVER summarize, list, or preview the individual chapters** (never write phrases like "this volume traces", "this volume examines", "across twelve chapters", or "the twelve chapters that follow").
-3. SENTENCE CADENCE: Keep average sentence length at **17–21 words/sentence** (`<= 23.0` w/s).
-4. ZERO QUOTES & ZERO HYPERBOLE: No direct quotations (`"..."`), no novelistic weather/weekday openings, and no banned words (`breathtaking`, `awe-inspiring`, `mind-boggling`, `staggering`, `paradigm-shifting`).
+1. PLAIN-ENGLISH CLARITY & ZERO JARGON: Write in clear, plainspoken everyday English. Never use stiff academic jargon or Latinate phrasing to sound impressive.
+2. WORD COUNT: The Introduction body (after the 3-line header) MUST be **200 to 250 words** (hard validator gate: `140–300` words; write 3 crisp paragraphs of ~75 words each).
+3. TOPIC-ONLY INTRODUCTION: Introduce the core phenomenon, physical constraints, and governing tension of {title} only. **NEVER summarize, list, or preview the individual chapters** (never write phrases like "this volume traces", "this volume examines", "across twelve chapters", or "the twelve chapters that follow").
+4. SENTENCE CADENCE: Keep average sentence length at **17–21 words/sentence** (`<= 23.0` w/s).
+5. ZERO QUOTES & ZERO HYPERBOLE: No direct quotations (`"..."`), no novelistic weather/weekday openings, and no banned words (`breathtaking`, `awe-inspiring`, `mind-boggling`, `staggering`, `paradigm-shifting`).
 
 Output ONLY the Markdown for the Introduction starting with `### Introduction`."""
 

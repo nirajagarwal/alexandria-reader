@@ -499,6 +499,7 @@ def build_typ_source(
         '#let muted-color = rgb("#655f57")',
         '#let rule-color = rgb("#dcd5ca")',
         '#let current-chapter = state("current-chapter", "")',
+        '#let mob-hdr(s) = if s.clusters().len() > 24 { s.clusters().slice(0, 23).join() + "..." } else { s }',
         "",
         "#set page(",
         f"  width: {page_w},",
@@ -517,7 +518,7 @@ def build_typ_source(
         '      set text(font: "IBM Plex Mono", size: 6.5pt, tracking: 0.8pt, fill: muted-color)',
         (
             "      if not is-chap-start {\n"
-            "        align(left)[#pad(right: 84pt)[#upper(chap-title)]]\n"
+            "        align(left)[#pad(right: 104pt)[#upper(mob-hdr(chap-title))]]\n"
             "      }"
             if is_mobile
             else (
@@ -683,7 +684,7 @@ MOBILE_PRESET = {
     "font_size": "11.8pt",
     "leading": "0.58em",
     "spacing": "0.90em",
-    "margin_top": "0.42in",
+    "margin_top": "0.46in",
     "margin_v": "0.38in",
     "margin_h": "0.32in",
     "header_ascent": "12pt",

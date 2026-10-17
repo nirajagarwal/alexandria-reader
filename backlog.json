@@ -118,15 +118,15 @@
       "status": "queued",
       "books": [
         {
-          "slug": "sleep",
-          "file": "books/sleep.md",
-          "title": "Sleep",
-          "subtitle": "The Nightly Brain Shutdown and Eleven Neighbors From Circadian Clocks to Synaptic Pruning",
-          "category": "Neurobiology & Physiology",
-          "mode": "landscape",
+          "slug": "human-functions",
+          "file": "books/human-functions.md",
+          "title": "Human Functions",
+          "subtitle": "Sleeping, Breathing, Walking, Running, and Eight Other Daily Acts in Twelve Highlights Each",
+          "category": "Physiology & Biomechanics",
+          "mode": "listicle",
           "profile": "B",
-          "accent": "#4f46e5",
-          "bg": "#17153b",
+          "accent": "#0f766e",
+          "bg": "#0f1716",
           "status": "completed"
         },
         {

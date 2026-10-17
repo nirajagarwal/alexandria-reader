@@ -1621,11 +1621,11 @@
       23,
       27,
       31,
-      35,
-      39,
-      44,
-      49,
-      54
+      36,
+      40,
+      45,
+      50,
+      55
     ],
     "chapters": [
       {
@@ -1970,10 +1970,10 @@
       30,
       35,
       40,
-      44,
-      49,
-      54,
-      59
+      45,
+      50,
+      55,
+      60
     ],
     "chapters": [
       {
@@ -2663,13 +2663,13 @@
       13,
       17,
       22,
-      26,
-      31,
-      36,
-      40,
-      44,
-      48,
-      52
+      27,
+      32,
+      37,
+      42,
+      46,
+      50,
+      54
     ],
     "chapters": [
       {
@@ -3186,12 +3186,12 @@
       17,
       21,
       25,
-      28,
-      32,
-      36,
-      40,
-      44,
-      48
+      29,
+      33,
+      37,
+      41,
+      45,
+      49
     ],
     "chapters": [
       {
@@ -3531,15 +3531,15 @@
       5,
       9,
       13,
-      16,
-      20,
-      24,
-      28,
-      31,
-      35,
-      39,
-      43,
-      47
+      17,
+      21,
+      25,
+      29,
+      32,
+      36,
+      40,
+      44,
+      48
     ],
     "chapters": [
       {
@@ -5923,31 +5923,46 @@
       }
     ]
   },
-  "sleep": {
-    "title": "Sleep",
-    "subtitle": "The Nightly Brain Shutdown and Eleven Neighbors From Circadian Clocks to Synaptic Pruning",
-    "category": "Neurobiology & Physiology",
-    "mode": "landscape",
-    "format": "landscape",
-    "pdf": "assets/pdfs/sleep.pdf",
-    "compactPdf": "assets/pdfs/sleep-compact.pdf",
-    "mobilePdf": "assets/pdfs/sleep-mobile.pdf",
+  "human-functions": {
+    "title": "Human Functions",
+    "subtitle": "Sleeping, Breathing, Walking, Running, and Eight Other Daily Acts in Twelve Highlights Each",
+    "category": "Physiology & Biomechanics",
+    "mode": "listicle",
+    "format": "highlights",
+    "pdf": "assets/pdfs/human-functions.pdf",
+    "compactPdf": "assets/pdfs/human-functions-compact.pdf",
+    "mobilePdf": "assets/pdfs/human-functions-mobile.pdf",
     "sectionPages": [
       3,
-      5,
-      8,
-      11,
-      14,
-      18,
-      21,
+      4,
+      7,
+      10,
+      13,
+      16,
+      19,
+      22,
       25,
       28,
       31,
       34,
-      37,
-      40
+      38
     ],
     "compactSectionPages": [
+      3,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      44,
+      48
+    ],
+    "mobileSectionPages": [
       3,
       5,
       9,
@@ -5960,140 +5975,125 @@
       37,
       41,
       45,
-      49
-    ],
-    "mobileSectionPages": [
-      3,
-      5,
-      9,
-      14,
-      18,
-      23,
-      27,
-      32,
-      36,
-      41,
-      45,
-      49,
-      53
+      50
     ],
     "chapters": [
       {
         "label": "Introduction",
-        "title": "Sleep",
-        "subtitle": "The Physical and Conceptual Architecture of Sleep",
+        "title": "Human Functions",
+        "subtitle": "Twelve Ordinary Actions and How They Really Work",
         "slug": "introduction",
         "formalismMode": "introduction",
-        "anchor": "Sleep is a periodic, reversible state of perceptual disengagement and motor quiescence that appears across almost every animal species studied. On evolutionary grounds, the persistence of this behavior presents a profound biological paradox.",
-        "exitFact": "Across multiple scales of biological organization, molecular oscillators, subcortical switches, and global cortical rhythms collaborate to partition neural computation across time, ensuring that the physical machinery of thought survives its own daytime activity."
+        "anchor": "Every day, you sleep, breathe, walk, chew, blink, talk, sweat, and heal small cuts without giving any of those actions a second thought. Because they happen automatically or with minimal effort, it is easy to treat them as background routines that require no design or work.",
+        "exitFact": "Together, they reveal the levers, valves, pumps, and timing rules working quietly underneath ordinary human life."
       },
       {
         "label": "Chapter 1",
-        "title": "Sleep Architecture",
-        "subtitle": "How the Brain Alternates Between Deep Slow Waves and Rapid Eye Movement Cycles",
-        "slug": "sleep-architecture",
-        "formalismMode": "ledger_or_list",
-        "anchor": "Following initial December 1951 polygraph trials on his eight-year-old son Armond using an Offner Dynograph, University of Chicago graduate student Eugene Aserinsky and his advisor Nathaniel Kleitman published their landmark study in September 1953. Recording electrooculograms and monopolar frontal brain potentials with a Grass Electroencephalograph across 20 normal adult subjects, they identified recurring 20-minute bursts of rapid, jerky, binocularly symmetrical eye movements. These active periods were accompanied by low-voltage, irregular cortical waves and an average respiratory rate of 16.9 breaths per minute compared to 13.4 breaths per minute during ocular quiescence, representing a 26 percent increase.",
-        "exitFact": "When subjects were awakened and interrogated during these rapid ocular bursts across 27 experimental trials, 20 yielded detailed visual dream narratives for a 74 percent recall rate, whereas 23 awakenings during ocular quiescence produced 19 instances of complete failure to recall dreaming, leaving visual recall under 9 percent."
+        "title": "Sleeping",
+        "subtitle": "How the Brain Cleans Itself, Paralyses Your Muscles, and Rebuilds Memory Every Night",
+        "slug": "sleeping",
+        "formalismMode": "highlights",
+        "anchor": "When Eugene Aserinsky attached electrodes to his sleeping son's eyelids at the University of Chicago in 1953, he discovered that the brain erupts every ninety minutes into rapid eye movement sleep.",
+        "exitFact": "Staying awake for twenty-four straight hours slows reaction time and degrades hand-eye control as severely as a blood alcohol concentration of 0.10 percent."
       },
       {
         "label": "Chapter 2",
-        "title": "The Flip-Flop Switch",
-        "subtitle": "Mutual Inhibition Between the Ventrolateral Preoptic Nucleus and Monoaminergic Arousal Centers",
-        "slug": "the-flip-flop-switch",
-        "formalismMode": "diagram",
-        "anchor": "In 1996 at Beth Israel Hospital and Harvard Medical School in Boston, Jonathan E. Sherin, Priyattam J. Shiromani, Robert W. McCarley, and Clifford B. Saper used Fos immunocytochemistry and retrograde cholera toxin B tracing in Sprague-Dawley rats to map sleep-active neurons in the ventrolateral preoptic nucleus. They proved that Fos protein expression rose in direct proportion to sleep time and innervated the wake-promoting tuberomammillary nucleus, while a follow-up study in 2000 by Jun Lu and Clifford B. Saper at Beth Israel Deaconess Medical Center showed that bilateral ibotenic acid lesions destroying 80 to 90 percent of VLPO cluster neurons reduced non-rapid eye movement sleep time by 50 to 60 percent and delta power by 60 to 70 percent.",
-        "exitFact": "In human narcolepsy type 1 patients, postmortem hypothalamic tissue assays reveal an 85 to 95 percent loss of orexin-producing neurons, removing the lateral hypothalamic stabilizer on the flip-flop switch and triggering abrupt daytime intrusions of rapid eye movement sleep and muscle atonia."
+        "title": "Breathing",
+        "subtitle": "How a Muscle Dome, Soap-Like Fluid, and Acid Sensors Keep You Alive",
+        "slug": "breathing",
+        "formalismMode": "highlights",
+        "anchor": "Physiologist John Clements proved in 1957 that the lungs secrete a soapy lipid-protein film called surfactant that slashes the surface tension of water inside microscopic air sacs.",
+        "exitFact": "Over a single night of sleep, a human exhales nearly half a pound of solid body mass in the form of invisible carbon atoms bound into carbon dioxide gas."
       },
       {
         "label": "Chapter 3",
-        "title": "Homeostatic Sleep Pressure",
-        "subtitle": "Extracellular Adenosine Accumulation and the Exponential Rise of Slow-Wave Drive",
-        "slug": "homeostatic-sleep-pressure",
-        "formalismMode": "equation",
-        "anchor": "In 1981 and 1982 at the University of Zurich, Alexander A. Borbély formulated the Two-Process Model of sleep regulation after computing Fast Fourier Transforms of all-night electroencephalographic recordings in human subjects before and after 40.5 hours of total sleep deprivation. In 1997 at Harvard Medical School and the Brockton Veterans Administration Medical Center, Tarja Porkka-Heiskanen, Robert E. Strecker, and Robert W. McCarley implanted in vivo microdialysis probes coupled to high-performance liquid chromatography into the cholinergic basal forebrain of freely moving cats. Their measurements demonstrated that extracellular adenosine concentrations steadily accumulated during 6 hours of prolonged wakefulness to reach 200 percent of initial baseline values before declining slowly during recovery sleep.",
-        "exitFact": "In healthy young adults, homeostatic Process S accumulates during wakefulness along a saturating exponential trajectory with a time constant of 18.2 hours and dissipates during recovery sleep with an exponential decay time constant of 4.2 hours."
+        "title": "Walking",
+        "subtitle": "How Upside-Down Pendulums, Arm Swings, and Spinal Circuits Carry You Forward",
+        "slug": "walking",
+        "formalismMode": "highlights",
+        "anchor": "Italian physiologist Giovanni Cavagna demonstrated in 1963 that human walking operates as an inverted pendulum that exchanges kinetic energy and gravitational potential energy at every step.",
+        "exitFact": "Averaging ten thousand steps a day across an eighty-year lifespan carries a human more than 110,000 miles—equivalent to walking four and a half times around the Earth's equator."
       },
       {
         "label": "Chapter 4",
-        "title": "The Suprachiasmatic Master Clock",
-        "subtitle": "Transcriptional-Translational Feedback Loops Synchronizing Internal Time to Solar Light",
-        "slug": "the-suprachiasmatic-master-clock",
-        "formalismMode": "equation",
-        "anchor": "In 1999 at Harvard Medical School and Brigham and Women's Hospital in Boston, Charles A. Czeisler, Jeanne F. Duffy, Richard E. Kronauer, and colleagues placed 24 healthy young and older human subjects inside a temporal isolation suite for 28 days under a 28-hour forced desynchrony protocol at dim light below 15 lux. By uncoupling the sleep-wake cycle from endogenous core body temperature, cortisol, and plasma melatonin rhythms, Czeisler proved the intrinsic human circadian pacemaker runs at a tight mean period of 24 hours and 11 minutes, or 24.18 hours, with a standard deviation of just 0.13 hours, or roughly 8 minutes.",
-        "exitFact": "As demonstrated by Kong L. Toh, Louis J. Ptáček, Ying-Hui Fu, and colleagues in 2001, a single serine-to-glycine missense mutation in the human PER2 gene at position 662 impairs phosphorylation by casein kinase I epsilon and delta. In Familial Advanced Sleep Phase Syndrome, this single amino acid substitution shortens the endogenous circadian period by roughly 1.1 hours to 23.3 hours and advances the daily rhythms of sleep, core body temperature, and melatonin by 3.5 to 4 hours, driving sleep onset near 1930 hours and spontaneous awakening near 0430 hours."
+        "title": "Running",
+        "subtitle": "How Tendon Springs, Sweating Skin, and Neck Ligaments Built the Endurance Runner",
+        "slug": "running",
+        "formalismMode": "highlights",
+        "anchor": "Evolutionary biologists Dennis Bramble and Daniel Lieberman showed in 2004 that humans evolved specialized spring tendons, bare sweating skin, and a skull-stabilizing nuchal ligament for endurance running.",
+        "exitFact": "Because tendons recycle a larger share of elastic bounce at higher speeds, a 150-pound human burns roughly the same one hundred calories per mile whether jogging slowly or running fast."
       },
       {
         "label": "Chapter 5",
-        "title": "The Glymphatic Clearance System",
-        "subtitle": "Astrocytic Aquaporin-4 Channels and Convective Interstitial Flush During Slow-Wave Sleep",
-        "slug": "the-glymphatic-clearance-system",
-        "formalismMode": "ledger_or_list",
-        "anchor": "In 2013 at the University of Rochester Medical Center, Lulu Xie, Hongyi Kang, and Maiken Nedergaard used in vivo two-photon laser scanning microscopy and real-time tetramethylammonium iontophoresis through cranial windows in live mice to compare waking and sleeping brains. They discovered that the cortical interstitial space volume fraction expanded from roughly 14 percent in awake mice to 23 percent during natural slow-wave sleep or ketamine-xylazine anesthesia.",
-        "exitFact": "This 60 percent expansion of the extracellular interstitial volume fraction during slow-wave sleep increases convective exchange between cerebrospinal fluid and interstitial fluid, accelerating the clearance rate of radiolabeled amyloid-beta-1-40 from the mouse cerebral cortex by twofold compared to wakefulness."
+        "title": "Seeing and Blinking",
+        "subtitle": "How Tiny Eye Jumps, Blind Spots, and Night Rods Build Your View of the World",
+        "slug": "seeing-and-blinking",
+        "formalismMode": "highlights",
+        "anchor": "Biophysicists Denis Baylor, Trevor Lamb, and King-Wai Yau demonstrated in 1979 using microscopic glass suction electrodes that a single retinal rod cell responds to a single photon of light.",
+        "exitFact": "Whenever red and blue cones fire simultaneously without green cone input, the visual cortex invents magenta—a color that has no wavelength in the physical spectrum of light."
       },
       {
         "label": "Chapter 6",
-        "title": "Synaptic Homeostasis and Downscaling",
-        "subtitle": "Why Waking Plasticity Saturates Cortical Circuits and How Slow Waves Prune Dendritic Spines",
-        "slug": "synaptic-homeostasis-and-downscaling",
-        "formalismMode": "diagram",
-        "anchor": "In February 2017 at the University of Wisconsin-Madison, neuroscientists Luisa de Vivo, Michele Bellesi, William Marshall, Giulio Tononi, and Chiara Cirelli used serial block-face scanning electron microscopy to reconstruct 6,920 cortical synapses in the primary motor and primary somatosensory cortices of mice across sleep and wakefulness. Working alongside electron microscopy specialists Eric Bushong and Mark Ellisman, the team measured the exact three-dimensional surface area of the axon-spine interface and spine head volume as direct morphological correlates of synaptic strength across thousands of dendritic spines.",
-        "exitFact": "After 6 to 8 hours of sleep, the mean axon-spine interface surface area shrank by approximately 18 percent across the lower 80 percent of weaker, more plastic cortical synapses compared to awake mice, selectively sparing the largest 20 percent of synapses that lacked recycling endosomes."
+        "title": "Chewing and Swallowing",
+        "subtitle": "How Enamel Shields, Taste Tricks, and Throat Valves Move Food Safely",
+        "slug": "chewing-and-swallowing",
+        "formalismMode": "highlights",
+        "anchor": "Physiologist David Julius proved in 1997 that capsaicin from chili peppers binds to the exact heat-activated ion channel that warns the nervous system of temperatures above 109 degrees Fahrenheit.",
+        "exitFact": "Over an eighty-year life, human molars grind through roughly thirty-five tons of food without wearing through a two-millimeter crown of mineral enamel."
       },
       {
         "label": "Chapter 7",
-        "title": "Hippocampal Replay and Memory Consolidation",
-        "subtitle": "Sharp-Wave Ripples Coupled to Thalamocortical Spindles Transferring Episodic Traces to Neocortex",
-        "slug": "hippocampal-replay-and-memory-consolidation",
-        "formalismMode": "ledger_or_list",
-        "anchor": "In 1994 at the University of Arizona in Tucson, Matthew A. Wilson and Bruce L. McNaughton implanted microdrive arrays of 12 four-wire tetrodes into the dorsal CA1 hippocampus of three male Fischer-344 rats to record ensembles of 50 to 100 pyramidal place cells simultaneously before, during, and after spatial foraging tasks. They demonstrated in the July 29, 1994 issue of Science that neuronal pairs with overlapping spatial firing fields during waking behavior exhibited a significantly elevated pairwise cross-correlation during subsequent slow-wave sleep compared to pre-task slow-wave sleep, decaying with a time constant of roughly 12 to 45 minutes.",
-        "exitFact": "During post-task slow-wave sleep, hippocampal place cell ensembles replay waking spatial trajectories inside 50-to-100-millisecond sharp-wave ripples at a time-compression factor of 10 to 20 times real-world running speed."
+        "title": "Speaking and Laughing",
+        "subtitle": "How Vibrating Folds, Tongue Shapes, and Belly Laughs Turn Breath Into Meaning",
+        "slug": "speaking-and-laughing",
+        "formalismMode": "highlights",
+        "anchor": "Neuroscientist Robert Provine analyzed 1,200 natural conversations and demonstrated that human laughter follows a rigid 210-millisecond acoustic cadence that occurs four times more often after ordinary remarks than after jokes.",
+        "exitFact": "An average human speaks roughly sixteen thousand words a day—the length of a sixty-page book—shaped entirely out of waste air on its way out of the lungs."
       },
       {
         "label": "Chapter 8",
-        "title": "REM Sleep Atonia and Predictive Coding",
-        "subtitle": "Pontine Glycinergic Paralysis and Pontogeniculooccipital Waves Driving Internal Model Simulation",
-        "slug": "rem-sleep-atonia-and-predictive-coding",
-        "formalismMode": "equation",
-        "anchor": "In 1965 at the University of Lyon, Michel Jouvet and François Delorme performed bilateral electrolytic lesions of the peri-locus coeruleus in the pontine tegmentum of cats, eliminating REM skeletal muscle atonia while preserving cortical desynchronization and pontogeniculo-occipital waves. In June 1986 at the Minnesota Regional Sleep Disorders Center at Hennepin County Medical Center, Carlos H. Schenck, Scott R. Bundlie, Milton G. Ettinger, and Mark W. Mahowald documented the human clinical correlate via video-polysomnography in 5 older patients consisting of 4 men aged 67 to 72 and 1 woman aged 60. These patients exhibited variable loss of chin electromyographic atonia, elevated rapid eye movement ocular density, and complex dream-enacting limb movements such as punches and kicks during REM sleep.",
-        "exitFact": "Longitudinal neurological cohorts demonstrate that over 80 percent of patients diagnosed with idiopathic REM sleep behavior disorder convert to alpha-synucleinopathies including Parkinson's disease, dementia with Lewy bodies, or multiple system atrophy within 12 to 14 years of initial onset."
+        "title": "Sweating and Shivering",
+        "subtitle": "How Evaporating Water, Shivering Muscles, and Blood Shunts Hold You at Ninety-Eight Point Six",
+        "slug": "sweating-and-shivering",
+        "formalismMode": "highlights",
+        "anchor": "Evolutionary neurobiologist Mark Changizi demonstrated in 2011 that wet finger wrinkles are an active autonomic reflex that carves drainage channels to improve grip on submerged objects.",
+        "exitFact": "The entire thermal operating window of the human brain spans barely twelve degrees Fahrenheit between fatal hypothermia below 93 degrees and lethal heatstroke above 105 degrees."
       },
       {
         "label": "Chapter 9",
-        "title": "Unihemispheric Slow-Wave Sleep",
-        "subtitle": "How Cetaceans and Migratory Birds Sleep With Half a Brain to Maintain Respiration and Flight",
-        "slug": "unihemispheric-slow-wave-sleep",
-        "formalismMode": "equation",
-        "anchor": "In 1977 at the Severtsov Institute of Evolutionary Morphology and Ecology of Animals in Moscow and its Utrish Marine Station on the Black Sea, Lev Mukhametov, Alexander Ya. Supin, and Inna G. Polyakova implanted chronic epidural electrodes over the parietal and occipital cortices of 9 Black Sea bottlenose dolphins (Tursiops truncatus). Recording continuously across multi-day sessions, they published in Brain Research that high-amplitude delta slow waves (1 to 4 Hz) appeared exclusively in one cerebral hemisphere at a time for alternating bouts while the opposite hemisphere displayed low-voltage desynchronized waking activity.",
-        "exitFact": "In 2016, Niels Rattenborg and colleagues at the Max Planck Institute for Ornithology fitted miniature electroencephalogram data loggers onto great frigatebirds (Fregata minor) during non-stop transoceanic flights of up to 10 days, finding the birds slept predominantly unihemispherically while soaring on thermal updrafts for an average of 42 minutes (0.69 hours) per day compared to 12.8 hours per day on land."
+        "title": "Hearing and Balancing",
+        "subtitle": "How Three Tiny Bones, Hair Bundles, and Gravity Stones Map Sound and Motion",
+        "slug": "hearing-and-balancing",
+        "formalismMode": "highlights",
+        "anchor": "Physicist Georg von Békésy demonstrated in 1961 that the basilar membrane inside the cochlea sorts sound frequencies mechanically along a stiffness gradient from base to apex.",
+        "exitFact": "Wired across just three synapses, the vestibulo-ocular reflex counter-rotates the eyeballs in seven milliseconds so the visual world stays steady while the head bounces during a run."
       },
       {
         "label": "Chapter 10",
-        "title": "Torpor, Hibernation, and Anesthesia",
-        "subtitle": "Why Hypometabolic Stasis and Pharmacological Coma Still Accumulate Homeostatic Sleep Debt",
-        "slug": "torpor-hibernation-and-anesthesia",
-        "formalismMode": "diagram",
-        "anchor": "In 1991 at Stanford University, Lorenz Trachsel, Dale M. Edgar, and H. Craig Heller implanted cortical EEG electrodes and cortical thermistors into golden-mantled ground squirrels (Spermophilus lateralis) overwintering at an ambient temperature of 5 degrees Celsius, while Serge Daan, Brian M. Barnes, and Arjen M. Strijkstra concurrently conducted parallel recordings in arctic ground squirrels (Spermophilus parryii). Both teams discovered that when squirrels periodically rewarmed from near-freezing brain temperatures to euthermia at approximately 37 degrees Celsius during interbout arousals, the animals immediately entered intense slow-wave sleep with delta power proportional to the duration of the preceding torpor bout.",
-        "exitFact": "During a 7-month hibernation season, ground squirrels expend 70 to 80 percent of their total winter energy budget on periodic rewarming arousals to euthermia, spending the majority of those brief normothermic intervals in high-amplitude slow-wave sleep."
+        "title": "Digesting",
+        "subtitle": "How Acid Baths, Detergent Bile, and Carpet-Like Folds Turn Food Into You",
+        "slug": "digesting",
+        "formalismMode": "highlights",
+        "anchor": "Army surgeon William Beaumont conducted 238 experiments through the healed gastric fistula of fur trapper Alexis St. Martin between 1825 and 1833, proving that gastric juice dissolves meat chemically with hydrochloric acid.",
+        "exitFact": "Both the yellow tint of urine and the brown color of stool come from the same source—recycled hemoglobin from worn-out red blood cells broken down by the liver and gut microbes."
       },
       {
         "label": "Chapter 11",
-        "title": "Sleep Across the Brainless Frontier",
-        "subtitle": "Quiescent Behavioral States and Reactive Oxygen Species Defense in Jellyfish, Worms, and Flies",
-        "slug": "sleep-across-the-brainless-frontier",
-        "formalismMode": "equation",
-        "anchor": "In 2017 at the California Institute of Technology, co-first authors Ravi D. Nath, Claire N. Bedbrook, and Michael J. Abrams alongside senior investigators Paul W. Sternberg, Viviana Gradinaru, and Lea Goentoro tracked the bell-pulsation frequencies of upside-down jellyfish (Cassiopea spp.) continuously across day-night cycles using automated infrared video imaging. They discovered that Cassiopea reduced bell pulsations by 32 percent at night from roughly 58 pulses per minute to 39 pulses per minute, floated for up to 5 seconds with a threefold delay in arousal latency following a physical platform-drop stimulus, and exhibited homeostatic daytime quiescence rebound after mechanical water-jet perturbation.",
-        "exitFact": "In June 2020 at Harvard Medical School, Alexandra Vaccaro, Yosef Kaplan Dor, and Dragana Rogulja demonstrated in Cell that severe sleep deprivation in Drosophila melanogaster and mice triggers a massive accumulation of reactive oxygen species specifically in the gut that shortens fruit fly lifespan by roughly 50 percent (causing 100 percent cohort mortality around day 20), whereas oral administration of antioxidant compounds like melatonin, lipoic acid, or NAD+ neutralizes intestinal oxidative stress and rescues sleepless flies to a normal lifespan."
+        "title": "Healing a Cut",
+        "subtitle": "How Platelets Plug the Leak, White Cells Clean the Wreckage, and Skin Zips Shut",
+        "slug": "healing-a-cut",
+        "formalismMode": "highlights",
+        "anchor": "Neuroscientist Patrick Wall and psychologist Ronald Melzack proposed the gate control theory of pain in 1965, showing that fast touch signals inhibit slower pain fibers in the dorsal horn of the spinal cord.",
+        "exitFact": "Unlike skin, which patches a cut with parallel collagen scar tissue at 80 percent strength, a fractured bone remodels its mineral lattice along stress lines until the repair site is completely scar-free."
       },
       {
         "label": "Chapter 12",
-        "title": "Total Sleep Deprivation and Fatal Familial Insomnia",
-        "subtitle": "Thermoregulatory Collapse, Prion Thalamic Degeneration, and the Unsolved Lethal Core of Sleeplessness",
-        "slug": "total-sleep-deprivation-and-fatal-familial-insomnia",
-        "formalismMode": "ledger_or_list",
-        "anchor": "In 1983 at the University of Chicago, Allan Rechtschaffen, Marcia A. Gilliland, Bernard M. Bergmann, and Jacqueline B. Winter placed pairs of rats on a rotating disk-over-water apparatus controlled by real-time computerized electroencephalogram and electromyogram amplitude detection, rotating the platform for 6 seconds whenever the experimental rat entered sleep while the yoked control rat could sleep during intervals. Three years later in 1986 at the University of Bologna and Case Western Reserve University, Elio Lugaresi, Rossella Medori, Pasquale Montagna, and Pierluigi Gambetti documented Fatal Familial Insomnia in a 53-year-old Italian man named Silvano who suffered progressive loss of sleep spindles and slow waves, autonomic sympathetic storms, and death after 9 months. Subsequent neuropathological autopsy revealed 80 to 90 percent neuronal loss and reactive astrogliosis selectively concentrated in the anterior ventral and mediodorsal thalamic nuclei.",
-        "exitFact": "In the University of Chicago disk-over-water experiments, 100 percent of totally sleep-deprived rats died or reached imminent terminal hypothermia within 11 to 32 days despite doubling their daily caloric food intake, exhibiting a 1.0-to-2.0-degree Celsius decline in core body temperature, ulcerative skin lesions, and opportunistic systemic bacterial sepsis while yoked control rats exposed to identical physical disk rotations survived healthy."
+        "title": "Remembering and Forgetting",
+        "subtitle": "How Electric Loops, Chemical Glue, and Active Pruning Shape What You Keep",
+        "slug": "remembering-and-forgetting",
+        "formalismMode": "highlights",
+        "anchor": "Neuropsychologist Brenda Milner's decades of studies with patient Henry Molaison beginning in 1953 proved that the hippocampus is required to encode new episodic memories while procedural motor learning uses separate brain circuits.",
+        "exitFact": "Because procedural habits are wired into deep subcortical motor loops rather than the hippocampus, patients with severe memory loss can still play complex piano pieces learned decades earlier."
       }
     ]
   }
